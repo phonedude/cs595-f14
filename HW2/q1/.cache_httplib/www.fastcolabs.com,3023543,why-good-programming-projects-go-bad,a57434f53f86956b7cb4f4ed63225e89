@@ -1,0 +1,1598 @@
+status: 200
+x-response-time: 325ms
+content-length: 97350
+via: 1.1 varnish
+content-location: http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad
+x-cache: MISS
+accept-ranges: bytes
+x-timer: S1411595982.467167,VS0,VE345
+vary: Accept-Encoding
+-content-encoding: gzip
+server: nginx
+last-modified: Wed, 24 Sep 2014 21:59:42 GMT
+connection: keep-alive
+x-served-by: cache-iad2134-IAD
+x-cache-hits: 0
+cache-control: max-age=0
+date: Wed, 24 Sep 2014 21:59:42 GMT
+x-rid: 5ryuk1
+content-type: text/html; charset=utf-8
+age: 0
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/NewsArticle" itemid="http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad"><!--<![endif]-->
+    <head>
+
+        
+
+  
+    
+    
+    
+    
+    <script>
+      (function(){({mobiles:"iphone ipod blackberry android motorola bb10 mobile".split(" "),mobileExempts:["ipad"],start:function(){var a=window.location.href;a.match(/http:\/\/(.[^\/?]+)/);var c=this.isMobile();!this.readCookie("_nored")&&this.isMobile()&&(c&&-1<a.toLowerCase().indexOf("fullsite")&&!this.readCookie("_nored")?this.createCookie("_nored","1",1):c&&this.readCookie("_noread")||!c||(a=a.replace("www.","").replace("http://","http://m."),window.location=a))},isMobile:function(){for(var a=navigator.userAgent.toLowerCase(),
+  c=this.mobiles,f=c.length,b=this.mobileExempts,d=b.length,e=0;e<d;e++)if(-1<a.search(b[e]))return!1;for(e=0;e<f;e++)if(-1<a.search(c[e]))return!0;return!1},createCookie:function(a,c,f){var b="",d=new Date;f&&(d.setTime(d.getTime()+864E5*f),b="; expires="+d.toGMTString());document.cookie=a+"="+c+b+"; path=/"},readCookie:function(a){a+="=";for(var c=document.cookie.split(";"),f=c.length,b=[],d=0;d<f;d++){for(b=c[d];" "===b.charAt(0);)b=b.substring(1,b.length);if(0===b.indexOf(a))return b.substring(a.length,
+  b.length)}return null},eraseCookie:function(a){this.createCookie(a,"",-1)}}).start()})();
+    </script>
+    
+  
+
+
+
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Why Good Programming Projects Go Bad ⚙ Co.Labs ⚙ code + community</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        
+        <link rel="stylesheet" href="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/fl/css/main.css"/>
+        
+
+        
+
+
+
+
+
+	<meta name="description" content="Fred Brooks wrote the software development classic The Mythical Man-Month almost 40 years ago. In this interview, Brooks explains why managers still..."/>
+
+
+	<meta name="keywords" content="fred brooks,ibm,relational database,operating system,national science foundation,department of computer science,university of north carolina,harvard,computer science department,software engineering">
+
+
+<link rel="canonical" href="http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad"/>
+
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.fastcolabs.com/3023543/why-good-programming-projects-go-bad">
+
+
+
+	<meta property="og:type" content="article">
+
+	<meta property="og:title" content="Why Good Programming Projects Go Bad">
+
+	<meta property="og:url" content="http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad">
+
+	<meta property="og:locale" content="en_US">
+
+	<meta property="og:description" content="Fred Brooks wrote the software development classic The Mythical Man-Month almost 40 years ago. In this interview, Brooks explains why managers still...">
+
+	<meta property="og:image" content="http://h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg">
+
+	<meta property="og:site_name" content="Co.Labs">
+
+	<meta property="fb:app_id" content="147469925415420">
+
+	<meta property="fb:admins" content="100000062710915">
+
+	<meta property="article:published_time" content="2013-12-16T16:17:00.000Z">
+
+	<meta property="article:modified_time" content="2013-12-17T02:43:47.000Z">
+
+	<meta property="article:publisher" content="https://www.facebook.com/fastcolabs">
+
+	<meta property="article:section" content="Co.Labs">
+
+	<meta property="article:tag" content="Mythical Man Month">
+
+	<meta property="article:tag" content="No silver bullet.">
+
+	<meta property="article:tag" content="project management">
+
+
+
+	<meta name="twitter:card" content="summary_large_image">
+
+	<meta name="twitter:title" content="Why Good Programming Projects Go Bad">
+
+	<meta name="twitter:description" content="Fred Brooks wrote the software development classic The Mythical Man-Month almost 40 years ago. In this interview, Brooks explains why managers still...">
+
+	<meta name="twitter:url" content="http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad">
+
+	<meta name="twitter:site" content="@FastCoLabs">
+
+	<meta name="twitter:image" content="http://h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg">
+
+	<meta name="twitter:domain" content="fastcolabs.com">
+
+	<meta name="twitter:creator" content="@deciara">
+
+
+
+	<meta itemprop="name" content="Why Good Programming Projects Go Bad">
+
+	<meta itemprop="description" content="Fred Brooks wrote the software development classic The Mythical Man-Month almost 40 years ago. In this interview, Brooks explains why managers still...">
+
+	<meta itemprop="image" content="http://h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg">
+
+
+
+
+
+
+<meta content="related_content_manifest" value="08ac38bb-8e25-46d0-9be3-569c2ffdd7b5"/>
+
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml">
+
+        <script src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/fl/js/vendor/modernizr.min.js"></script>
+        <script src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/fl/js/vendor/jquery.min.js"></script>
+
+        
+  
+  <script async>
+  (function() {
+    
+      __mtm = [ '53207e84e7d4f9a55857560e', 'd36wtdrdo22bqa.cloudfront.net/mngr', 'tdi.mezzobit.com' ];
+    
+    var s = document.createElement('script');
+    s.async = 1;
+    s.src = '//' + __mtm[1] + '/mtm.js';
+    var e = document.getElementsByTagName('script')[0];
+    (e.parentNode || document.body).insertBefore(s, e);
+  })();
+  </script>
+
+
+
+  
+  <script type="text/javascript">
+    var _sf_startpt=(new Date()).getTime();
+  </script>
+
+
+
+  
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(
+      ['_setAccount', 'UA-4300461-31'],
+      ['_trackPageview'],
+      ['rollup._setAccount', 'UA-4300461-33'],
+      ['rollup._trackPageview']
+    );
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+
+
+<script type="text/javascript">
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement("script");
+    gads.async = true;
+    gads.type = "text/javascript";
+    var useSSL = "https:" == document.location.protocol;
+    gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+    var node =document.getElementsByTagName("script")[0];
+    node.parentNode.insertBefore(gads, node);
+   })();
+</script>
+
+        
+    </head>
+    <body class="<!--[if IE]>ie<![endif]-->">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+          
+
+<header id="header" class="absolute">
+  <div class="header-wrap">
+
+      
+
+      <div class="ad-unit hide-for-small hide-on-print ad-min-height" data-advertising="flexleaderboard" data-cb-ad-id="flexleaderboard_1" data-cb-dfp-id="unit=flexleaderboard;size=970x90,970x66,970x60,728x90,970x250;pos=top">
+            <div class="dart-ad hide-on-print" id="ad-unit-top-header"></div>
+      </div>
+
+      
+
+
+<div class="contain-to-grid clearfix"> 
+
+  <nav id="navigation" class="top-bar">
+
+  <ul class="title">
+    
+    <li class="name">
+      
+      
+       <h1 itemscope itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="//www.fastcompany.com/" data-event-category="recirculation" data-event-action="Top Nav" data-event-label="Clicked: Logo Fastcompany">
+          <img itemprop="logo" alt="Fast Company logo" title="Fast Company" src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svg/FastCompany-logo-white.svg" data-svg-fallback="//h.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svgfallback/FastCompany-logo-white.png" class="svg-fallback-nav" width="100" height="18">
+        </a>
+       </h1>
+       
+       <div class="hide" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="//www.fastcompany.com/" itemprop="url"><span itemprop="title">Fast Company</span></a>
+       </div>
+    </li>
+    <li class="toggle-topbar">
+      <a  href="#"
+          data-event-category="topbar"
+          data-event-action="toggle"
+          data-event-label="Topbar: Brands"></a>
+    </li>
+  </ul>
+
+  <section class="hide-on-print">
+
+    
+    <ul class="left brands hide-for-medium-down">
+      <li class="coexist" data-event-category="recirculation" data-event-action="Top Nav" data-event-label="Clicked: FastcoExist">
+        <a href="//www.fastcoexist.com">
+        <img src="//d.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svg/fastcoexist-dark.svg" data-svg-fallback="//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svgfallback/fastcoexist-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Exist
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="codesign">
+        <a href="//www.fastcodesign.com" data-event-category="recirculation" data-event-action="Top Nav" data-event-label="Clicked: FastcoDesign">
+        <img src="//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svg/fastcodesign-dark.svg" data-svg-fallback="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svgfallback/fastcodesign-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Design
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="cocreate">
+        <a href="//www.fastcocreate.com" data-event-category="recirculation" data-event-action="Top Nav" data-event-label="Clicked: FastcoCreate">
+        <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svg/fastcocreate-dark.svg" data-svg-fallback="//h.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svgfallback/fastcocreate-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Create
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+      <li class="colabs">
+        <a href="//www.fastcolabs.com" data-event-category="recirculation" data-event-action="Top Nav" data-event-label="Clicked: FastcoLabs">
+        <img src="//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svg/fastcolabs-dark.svg" data-svg-fallback="//h.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svgfallback/fastcolabs-dark.png" class="svg-fallback-nav" width="10" height="10">
+          Labs
+        </a>
+      </li>
+      <li class="divider show-for-small"></li>
+    </ul>
+
+    
+
+
+    
+    <ul class="right">
+
+      
+      <li class="divider show-for-small"></li>
+
+      <li class="">
+        <a  href="//fastcompany.com/videos"
+            class="toggle-megadrop"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Programs">Video</a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-megadrop features">
+        <a  href="#megadrop-features"
+            class="toggle-megadrop"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Features">Features</a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="subscribe">
+        <a  href="/newsletters"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Emails">Emails</a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-megadrop archive">
+        <a  href="#megadrop-archive"
+            class="toggle-megadrop"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Archive">Issues</a>
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="print-subscribe">
+        
+          <a  href="https://magazine.fastcompany.com/loc/FST/topnavcolabs1"
+              class="toggle-megadrop"
+              target="_blank"
+              data-event-category="topbar"
+              data-event-action="click"
+              data-event-label="Topbar: Subscribe">Subscribe</a>
+        
+      </li>
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-button search" data-name="search">
+        <a  href="#search"
+            class="toggle-notify"
+            data-event-category="topbar"
+            data-event-action="toggle"
+            data-event-label="Topbar: Search">
+          <span class="icon-search icon" title="Search"></span>
+        </a>
+      </li>
+
+      
+
+
+      
+
+
+      
+      
+        <li class="divider show-for-small"></li>
+        <li class="has-dropdown share">
+          <a  href="#"
+              rel="share"
+              data-event-category="topbar"
+              data-event-action="toggle"
+              data-event-label="Topbar: Share">
+            <span class="icon-mail-forward icon" title="Share"></span>
+          </a>
+          <ul class="dropdown">
+            <li><label>Find Us</label></li>
+            <li class="divider"></li>
+            
+              <li><a href="http://www.facebook.com/fastcolabs" class="network-facebook">Facebook</a></li>
+            
+              <li><a href="https://twitter.com/FastCoLabs" class="network-twitter">Twitter</a></li>
+            
+              <li><a href="https://plus.google.com/u/0/b/118243011872731622612/118243011872731622612/posts" class="network-googleplus">Google+</a></li>
+            
+              <li><a href="https://alpha.app.net/fastcolabs" class="network-appnet">App.net</a></li>
+            
+          </ul>
+        </li>
+      
+
+      
+      <li class="divider show-for-small"></li>
+      <li class="has-dropdown login not-loggedin">
+        <a  href="#"
+            rel="login"
+            data-event-category="topbar"
+            data-event-action="click"
+            data-event-label="Topbar: Login">
+          <span class="icon-user" title="Sign in"></span>
+        </a>
+        <ul class="dropdown" id="visitor-dropdown-topbar">
+          <li><a href="#"
+            class="logout"
+            rel="logout"
+            data-event-category="topbar"
+            data-event-action="click"
+            data-event-label="Topbar: Logout">Sign&nbsp;Out</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+
+  </nav>
+
+</div>
+
+
+      
+
+  </div>
+
+</header>
+
+
+<div id="sticky-top-bar-wrapper">
+  <div id="sticky-top-bar"></div>
+</div>
+
+<div id="megadrop">
+  <div class="megadrop-wrapper row">
+    <div class="mobile-main-nav-padding">
+
+      <section id="megadrop-brands"    data-order="1" data-name="brands"    class="card"></section>
+      <section id="megadrop-features"  data-order="2" data-name="features"  class="card"></section>
+      <section id="megadrop-issues"    data-order="3" data-name="issues"    class="card"></section>
+      <section id="megadrop-subscribe" data-order="4" data-name="subscribe" class="card"></section>
+      <section id="megadrop-visitor"   data-order="5" data-name="visitor"   class="card"></section>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="admin-panel"></div>
+
+          <div id="non-displayable" class="hide-override">
+  
+</div>
+          <div id="page" class="identity-fastcolabs kind-article type-post slug-fastcolabs">
+
+  <section id="page-jumbotron" class="hide-on-print">
+    <div class="container">
+      
+
+  
+
+    
+    
+
+      
+        <figure class="jumbotron" itemscope itemprop="image" itemtype="http://schema.org/ImageObject">
+
+          
+
+              
+              
+
+                <img src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg" width="1280" height="720" id="poster" itemprop="contentUrl representativeOfPage">
+
+              
+              
+          
+
+          
+
+        </figure>
+
+      
+
+    
+
+  
+
+
+
+
+  
+    <span itemscope itemtype="http://schema.org/Organization">
+     <a itemprop="url" href="//www.fastcolabs.com" id="logo" class="navigate hide-for-small hide-on-print">
+      
+       <img itemprop="logo" src="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svg/fastcolabs-light-txt.svg" data-svg-fallback="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/svgfallback/fastcolabs-light-txt.png" width="100" height="123" class="hide-on-print">
+      
+     </a>
+    </span>
+    
+    <span class="hide" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="//www.fastcolabs.com" itemprop="url"><span itemprop="title">Co.Labs</span></a>
+    </span>
+  
+
+
+    </div>
+  </section>
+
+  <div class="page-inner">
+
+    <div class="page-background hide-on-print">
+      <div class="tile"></div>
+      <div class="gradient"></div>
+    </div>
+
+    <div id="page-main" class="page-main row">
+
+      <div class="page-main-wrap">
+
+        <div id="page-body" class="eight columns">
+          <section id="page-body-content" class="page-body">
+            <div class="container">
+              <article data-resource-id="3023543"
+          id="post-3023543"
+          class="node full-view kind-article slug-fastcolabs clearfix"
+          itemscope="" itemtype="http://nik.io/v1/schema/Article">
+<span itemprop="permalink" content="http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad"></span>
+
+  <div class="pull-left-meta hide-for-large">
+    <div class="hide-for-medium-down">
+      <p>2013-12-16</p>
+        
+
+          
+
+            
+
+            
+              <h4 class="tag">
+                <p><a href="/"><span>Co.Labs</span></a></p>
+              </h4>
+            
+
+          
+
+        
+    </div>
+  </div>
+
+  <header>
+
+    <div class="summary row collapse">
+      
+
+      
+
+      <h1 class="title twelve columns" itemprop="title headline">Why Good Programming Projects Go Bad</h1>
+
+      
+      <div class="deck nine columns pull-three" itemprop="deck description"><p>Fred Brooks wrote the software development classic <em>The Mythical Man-Month</em> almost 40 years ago. In this interview, Brooks explains why managers still make the same mistakes.</p></div>
+      
+    </div>
+
+    <div class="tools row collapse">
+
+      <div class="five columns" itemscope itemtype="http://schema.org/Person">
+        
+            
+            <div class="byline">
+              By
+              
+                
+                  
+
+                  
+                     <a rel="author" href="/user/ciara-byrne" itemprop="byline" class="navigate" data-resource-type="user">Ciara Byrne</a>
+                  
+                
+
+              
+            </div>
+            
+        
+      </div>
+
+      <div class="six columns hide-on-print">
+        <div class="share-box"></div>
+      </div>
+
+    </div>
+
+
+
+
+    
+
+    <hr class="hr-long" />
+
+  </header>
+
+  <hr class="break"/>
+
+  <div class="row collapse">
+    <div class="body prose twelve columns" itemprop="body articleBody">
+      <p>In 1964, <a href="//www.fastcompany.com/person/fred-brooks" class="profile">Fred Brooks</a> found himself in charge of one of the biggest software projects ever attempted--the operating system for the <a href="http://www-03.ibm.com/ibm/history/exhibits/mainframe/mainframe_intro2.html" target="_blank">IBM 360 series</a>--a new family of general purpose computers which became known as mainframes. Brooks quickly realized that managing a software project was very different from producing hardware. He documented his observations in the software development classic <a href="http://www.amazon.com/The-Mythical-Man-Month-Engineering-Anniversary/dp/0201835959" target="_blank"><em>The Mythical Man-Month</em></a>, in which Brooks famously declared that “adding manpower to a late software project, makes it later.”</p>
+
+<p>Although it was published almost 40 years ago, <em>The Mythical Man-Month</em> is still astonishingly relevant today. Brooks writes elegantly, astutely, and often entertainingly about the <a href="http://driek.home.xs4all.nl/me/mmm.html" target="_blank">joys and woes</a> of the craft of software development and the psychology of those who make it (one of his famous maxims: “All programmers are optimists”).</p>
+
+<p>Brooks went on to found the Computer Science Department at University of North Carolina and receive the <a href="https://en.wikipedia.org/wiki/A._M._Turing_Award" target="_blank">Turing award</a> in 1999. In 2010, he published his latest book, <a href="http://www.amazon.com/gp/product/0201362988?ie=UTF8&amp;tag=joelonsoftware&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0201362988" target="_blank"><em>The Design of Design: Essays from a Computer Scientist</em></a>. Now 82, he talked to Co.Labs about project management, designers, and why managers still make the same mistakes.</p>
+
+<p><p class="interview-question">How did you first become interested in computers?</p></p>
+
+<p><p class="interview-answer">I grew up in a small farm market town in Eastern North Carolina--Greenville, North Carolina. I was reading, I think it was <em>Time</em>, in the public library and the cover had a drawing of the <a href="http://www-03.ibm.com/ibm/history/exhibits/markI/markI_intro.html" target="_blank">Harvard Mark I</a>. I had been interested in manual methods of business data processing since I'd been about eight or nine (I started with a card file on my map collection), <a href="http://kk.org/thetechnium/archives/2008/06/one_dead_media.php" target="_blank">edge-notched cards</a>, those kind of tools. So when I read about this I was fascinated, and I decided that's what I wanted to do.</p></p>
+
+<p><p class="interview-question"><em>The Mythical Man-Month</em> was based on your experience of managing the OS/360 project at IBM. How did you end up heading up that project?</p></p>
+
+<p><p class="interview-answer">I went to Harvard in Computer Science. (It was called Applied Mathematics in those days.) I did my dissertation under Howard Aiken, who had built the Harvard Mark I back in 1944. Then I joined IBM working on the <a href="https://en.wikipedia.org/wiki/IBM_7030_Stretch" target="_blank">Stretch supercomputer</a> for four years. After being in charge of architecture for a new product line which did not fly, I was chosen to manage the <a href="http://www.computerhistory.org/revolution/mainframe-computers/7/161" target="_blank">System 360 computer family hardware.</a> That was 1961. In 1964 it became evident that the hardware was on track and was being released into the factories on time. We were getting good cost estimates and all that, but the software was in big trouble. So my boss and I decided that I should go run the operating system project and see what I could do about bailing it out.</p></p>
+
+<p><p class="interview-question">How big a project was the OS/360 for IBM?</p></p>
+
+<p><p class="interview-answer">I don't know the total cost, but I've heard numbers anywhere from 300 to 500 million 1960s dollars. Those dollars would be today about 10 times more valuable, somewhere in the neighborhood of $3-5 billion. At the peak the project had a thousand people, but the average was much lower than that--we built up. There were laboratories all over the world--Britain, Germany, France, Sweden, California, and New York State. </p></p>
+
+<p><p class="interview-question">You have said that “<a href="http://money.cnn.com/magazines/fortune/fortune_archive/2005/12/12/8363107/" target="_blank">Everybody quotes it</a> (<a href="http://money.cnn.com/magazines/fortune/fortune_archive/2005/12/12/8363107/" target="_blank"><em>The Mythical Man-Month</em></a>), some people read it, and a few people go by it.” Why is that?</p></p>
+
+<p><p class="interview-answer">It's all about disciplined decisions that are hard from a manager’s point of view. Just look at the <a href="http://swampland.time.com/2013/10/24/traffic-didnt-crash-the-obamacare-site-alone-bad-coding-did-too/" target="_blank">software mess over the rollout of the health law</a>. They made almost every mistake in the book. The book has more than 500,000 copies in print and is used in most software engineering curricula, so many people have learnt from those mistakes of the past. But it's evident that if one picks people who are not software engineers to run major software engineering projects, you wouldn't expect them to have studied the subject. Therefore they make the same mistakes again. The biggest mistake with the health law rollout was that there was no one in charge. That's the biggest of all mistakes. That project seems to have had neither architect nor project manager. How bad can you get?</p></p>
+
+<p><p class="interview-question">Why is it so important to have both a project manager and an architect on a software project?</p></p>
+
+<p><p class="interview-answer">I think it's important even with a small team to distinguish the functions of the project manager from the function of the architect. When I was teaching software engineering, which I did 22 times here (The Department of Computer Science at the University of North Carolina, which Brooks founded), I always made even teams of four people choose a separate project manager from the architect, who was responsible for the technical content. The project manager is responsible for schedule, resources, and such. I notice the same division of function occurs in the film industry. A film has a producer who is in charge, but the person whose name is last on the credits is the director. The producer is responsible for making it happen, and the director works for the producer, but the director is responsible for the artistic content. I think that the same separation of function which evolved in that industry applies as well in ours.<br /><br />The project manager first has to be tough, second place has to be flexible. A motto I consider important is “Never uncertain; always open.” I saw that in Latin (Numquam incertus; semper apertus) on the ceiling of a German fraternity in Heidelberg. It's important to always have a direction and be going there. You can't steer a ship that's not underway. But it's also important to be open to changes in circumstance and direction and not just to be completely bullheaded. A project manager also has to be a people person. Project management is a people function and most of the problems are people problems. </p></p>
+
+<p><p class="interview-question">Almost 40 years after the publication of <em>The Mythical Man-Month</em>, why is it still so difficult to estimate how long it will take to make a large piece of software?</p></p>
+
+<p><p class="interview-answer">The problem is that we are working with ever-new technology on ever-new development. Product development always contains many uncertainties. In building a house we are working with known technologies and pretty well-known specifications. Building a whole new thing like building the first nuclear submarine or building the first space shuttle, you don't know what you're going to run into. Any piece of software is a whole new thing, unless you are just copying somebody else's. </p></p>
+
+<p><p class="interview-question">In <a href="http://www.amazon.com/The-Design-Essays-Computer-Scientist/dp/0201362988" target="_blank"><em>The Design of Design</em></a> you say “I believe ‘a science of design’ to be an impossible and indeed misleading goal.” Why?</p></p>
+
+<p><p class="interview-answer">The difference between science and engineering is not so much what scientists and engineers do as why they do it. The scientist may spend a lot of effort building an apparatus for an experiment, but he builds in order to learn. The engineer may spend a lot of time studying materials or previous designs or users, but he learns in order to build. I think that distinction is crucial. So I believe the <a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=12766" target="_blank">National Science Foundation</a>'s program hunting for a science of design, or indeed Simon’s original <a href="http://www.amazon.com/The-Sciences-Artificial-3rd-Edition/dp/0262691914" target="_blank"><em>Sciences of the Artificial</em></a> book, was chasing a thing which isn't--a chimera--because building is different from learning the laws of nature. One can systematize physics; one doesn't necessarily systematize the process by which physicists work. There's not necessarily a science of science in other words, so to expect a science of design, which is really a quite different undertaking, I think is misguided.</p></p>
+
+<p><p class="interview-question">You also say that “standard corporate standard design processes do indeed work against great and innovative design” but that process can also improve average performance. How does the designer know when to apply process? </p></p>
+
+<p><p class="interview-answer">That's the judgment that distinguishes good designers from poor ones, I think. There's no way to tell a person how to do that. It’s possible to train people to do that by putting them through many projects, mentored and advised so that they acquire the feel, the taste, and the judgment. There's an old saying “good judgment comes from experience and experience comes from bad judgment.” I think that applies to the training of designers.</p></p>
+
+<p><p class="interview-question">How should designers be trained?</p></p>
+
+<p><p class="interview-answer">Supervised, mentored design experience in a variety of projects. A rotation between different aspects of the design and construction process. The designer stands between the user and the builder. He needs to understand the user and that means spending time with users doing what users do. He needs to understand what building's about, and that means spending time building stuff.<br /><br />Most big companies have a pathway for training managers with job rotations, maybe with formal academic training (Brooks dispatched one of his own reports, <a href="http://www.johndcook.com/blog/2010/04/12/best-management-decision/" target="_blank">Edgar Codd</a>, who later invented the relational database, back to grad school mid-career), and then working up multiple levels. In IBM the most promising of the young managers were made <a href="https://en.wikipedia.org/wiki/Aide-de-camp" target="_blank">aide-de-camps</a> to the chief executives. The chief financial officer, the CEO, the chief operating officer had lieutenants who were considered very promising and might one day inherit those jobs. This mentoring process I think is just as important for designers as it is for managers. The managers are the ones who decide who gets trained. They are aware of the need to train new managers but they don't have any reason to understand or believe intuitively in the need for training the designers.</p></p>
+
+<p><p class="interview-question">What did IBM’s CEO teach you about making things?</p></p>
+
+<p><p class="interview-answer">When I was leaving IBM to come to North Carolina, Mr. Watson (IBM's CEO Thomas Watson Jr.) asked me down to the executive dining room for a one-on-one lunch. You know what that's about--that's an arm-twisting session. He proposed that I stay at IBM. I didn't want to do that. I said, “I really like to make things, and I want to get back closer to the technology”, because I was a third-level manager by this point. He said something very enlightening and very memorable. He said “I like to make things too. Have you looked at Poughkeepsie (IBM’s biggest computer manufacturing complex) recently?” And then I realized that this 10,000-person plant and laboratory complex was his creation. He had persuaded his daddy to get the company into the computer business. I never would have thought of that as making things. He raised my vision a whole lot in one sentence. </p></p>
+    </div>
+
+    
+      <div class="twelve columns poster-credit" itemprop="caption contributor">
+        <span><p>[Image: Flickr user <a href="http://www.flickr.com/photos/stevendepolo/5190591885/in/photostream/" target="_blank">Steven Depolo</a>]</p></span>
+      </div>
+    
+
+    
+  </div>
+
+  <div class="after-body clearfix">
+
+    
+      <hr class="hr-long" />
+      <div class="tags clearfix hide-on-print">
+        <p><span>Article Tags: </span><a href="/tag/mythical-man-month">Mythical Man Month</a><a href="/tag/no-silver-bullet">No silver bullet.</a><a href="/tag/project-management">project management</a></p>
+      </div>
+      <hr class="hr-long" />
+    
+
+    
+    <aside class="share-bottom twelve clearfix hide-on-print"></aside>
+
+    <br class="clear" />
+    <hr class="hr-long" />
+
+    
+
+    
+    <aside id="author" class="clearfix  ">
+      <div class="author-wrap clearfix">
+
+        <div class="row">
+
+         
+            <div class="three columns mobile-one">
+              <figure class="poster">
+                <a class="author-readmore" href="http://www.fastcolabs.com/user/ciara-byrne">
+                  <img class="author-headshot" src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/profile-s/profile/3006504-photo-mg9037.jpg" />
+                </a>
+              </figure>
+            </div>
+            <div class="teaser nine columns mobile-three">
+          
+
+
+              <h4 class="author-name" itemprop="author">Ciara Byrne</h4>
+              
+                <div class="author-teaser">
+                  <p>Lapsed developer, current tech journalist and wannabe data scientist.</p>
+                </div>
+                
+                <div class="author-readmore">
+                 <a href="http://www.fastcolabs.com/user/ciara-byrne">Continue</a>
+                </div>
+                
+
+              
+            </div>
+
+          </div>
+
+      </div>
+    </aside>
+
+    
+
+    <aside class="pager clearfix">
+      <div class="pager-wrap clearfix">
+
+        <div class="row">
+
+          <div class="twelve columns">
+
+            <div class="three columns mobile-two pager-page previous">
+              
+            </div>
+
+            <div class="six columns hide-for-small time">
+              <time itemprop="datePublished" datetime="2013-12-16">December 16, 2013 | 11:17 AM</time>
+            </div>
+
+            <div class="three columns mobile-two pager-page next end">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <hr class="hr-long" />
+
+    <section id="comments">
+        <div id="comments-form">
+    
+        
+<div class="comment-form-header clearfix">
+
+    
+
+      <h3>Add New Comment</h3>
+
+      
+
+        <button name="login" class="account-login">Sign In</button>
+
+      
+
+    
+</div>
+
+
+
+<form class="comment-reply-form clearfix">
+    <textarea name="comment_reply_text" maxlength="1000" rows="7" cols="80" placeholder="Type your comment here."></textarea>
+
+    
+      
+    
+
+    <button name="comment_reply_submit" type="submit" class="submit">Submit</button>
+</form>
+
+
+
+    
+</div>
+
+<div id="comments-content" data-set-newest="" data-set-oldest="" data-total="0"  data-is-closed="">
+    <div class="comment-list-header">
+    
+        <h3 class="comment-count">
+  <span class="comment-num">0</span> <span class="comment-num-text">Comments</span>
+</h3>
+
+
+
+    
+    </div>
+
+    <div class="comment-list">
+    
+        <ul class="comment-list ">
+  
+    
+  
+</ul>
+
+    
+    </div>
+
+    <div class="comment-list-footer"></div>
+</div>
+
+    </section>
+
+    <aside id="related"></aside>
+  </div>
+</article>
+
+<br class="clearfix show-for-small" />
+
+
+
+
+
+
+
+            </div>
+          </section>
+
+          <section id="page-body-after" class="page-body-after">
+              
+          </section>
+        </div>
+
+        <div id="sidebar-wrapper" class="four columns">
+          
+          <div class="row">
+            <aside id="page-series" class="twelve columns page-sidebar hide-on-print series clearfix">
+              <div class="container">
+                
+              </div>
+            </aside>
+          </div>
+
+          <div class="row">
+            <aside id="page-sidebar" class="twelve columns page-sidebar hide-on-print">
+              <div class="container">
+                <div id="sidebar-top" class="hide-on-print" data-region="sidebar_nofollow">
+
+<div id="sidebar-add-unit-imu_1" data-name="imu_1">
+  <div class="block ad-unit" data-advertising="imu_1" data-cb-ad-id="imu_1" data-cb-dfp-id="unit=imu_1;size=300x250,300x600,300x1050;pos=imu_1">
+      <div class="dart-ad" id="ad-unit-sidebar-imu_1"></div>
+      <div class="ad-label"></div>
+  </div>
+</div>
+
+
+</div>
+
+<div id="sidebar-follow" class="hide-on-print hide-for-small" data-region="sidebar">
+
+    <div id="sidebar-block-branding" data-name="branding">
+<div class="block">
+
+  <canvas id="canvas" width="300" height="300">
+    <div class="branding-fallback"></div>
+  </canvas>
+
+  <hgroup>
+    <h3><a href="/">Co.LABS</a></h3>
+    <h5 class="editor">Editor: <a href="/user/noah-robischon">Noah Robischon</a></h5>
+  </hgroup>
+
+</div>
+</div>
+
+
+    <div id="sidebar-block-newsletters" class="hide-for-small" data-name="newsletters">
+  <div class="block">
+  	<div class="wrapper">
+	    <h2>Subscribe to Newsletters</h2>
+
+  		<div class = "subscribe-form">
+  			<div class="form-padding">
+  				<form action="//www.fastcompany.com/newsletters">
+  					<label for="email">Enter Your Email:</label>
+  				    <input type="text" value="" name="email" class="email" id="email" placeholder="@" />
+  				    	<input type="submit" id="subscribe" value="submit" class="btn" alt="Subscribe"/>
+			    </form>
+		    </div>
+	   	</div>
+
+   	</div>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-featured_colabs1" class="sidebar-block-featured hide-for-small" data-name="featured_colabs1">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3035463"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs dark" href="http://www.fastcolabs.com/technology">
+              <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1480/fl/images/svg/fastcolabs-dark-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3035463/how-matts-machine-works"
+            title="How Matt&#x27;s Machine Works"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//g.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/09/3035463-poster-p-1-all-your-websites-are-belong-to-us.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3035463/how-matts-machine-works"
+          title="How Matt&#x27;s Machine Works"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">How Matt's Machine Works</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3035754"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-elasticity">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs dark" href="/section/elasticity">
+              <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1480/fl/images/svg/fastcolabs-dark-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3035754/can-ebola-be-stopped-by-treating-it-like-a-terrorist-network"
+            title="Can Ebola Be Stopped By Treating It Like A Terrorist Network?"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//b.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/09/3035754-poster-p-1-how-the-militarys-anti-terror-data-science-is-being-used-to-track-ebola.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3035754/can-ebola-be-stopped-by-treating-it-like-a-terrorist-network"
+          title="Can Ebola Be Stopped By Treating It Like A Terrorist Network?"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Can Ebola Be Stopped By Treating It Like A Terrorist Network?</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3035729"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-internet-of-things">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="/section/internet-of-things">
+              <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1480/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3035729/internet-of-things/apples-ibeacons-are-going-to-transform-much-more-than-advertising"
+            title="Apple&#x27;s iBeacons Are Going To Transform Much More Than Advertising"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//g.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/09/3035729-poster-p-2-apples-ibeacons-are-going-to-transform-much-more-than-advertising.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3035729/internet-of-things/apples-ibeacons-are-going-to-transform-much-more-than-advertising"
+          title="Apple&#x27;s iBeacons Are Going To Transform Much More Than Advertising"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Apple's iBeacons Are Going To Transform Much More Than Advertising</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3034617"
+  class="node teaser-view sidebar kind-slideshow site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1480/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3034617/how-spotifys-music-obsessed-culture-makes-the-company-rock"
+            title="How Spotify&#x27;s Music-Obsessed Culture Keeps Employees Hooked"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//f.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/08/3034617-poster-p-1-spotify.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3034617/how-spotifys-music-obsessed-culture-makes-the-company-rock"
+          title="How Spotify&#x27;s Music-Obsessed Culture Keeps Employees Hooked"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">How Spotify's Music-Obsessed Culture Keeps Employees Hooked</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3035879"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-elasticity">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="/section/elasticity">
+              <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1480/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3035879/whats-homomorphic-encryption-and-why-did-it-just-win-a-macarthur-genius-grant"
+            title="What&#x27;s Homomorphic Encryption And Why Did It Just Win A MacArthur Genius Grant?"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/09/3035879-poster-homomorphic-cropped.gif" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3035879/whats-homomorphic-encryption-and-why-did-it-just-win-a-macarthur-genius-grant"
+          title="What&#x27;s Homomorphic Encryption And Why Did It Just Win A MacArthur Genius Grant?"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">What's Homomorphic Encryption And Why Did It Just Win A MacArthur Genius Grant?</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3024395"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1480/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3024395/what-you-need-to-know-about-engineers-to-do-a-mobile-startup"
+            title="What You Need To Know About Engineers To Do A Mobile Startup"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//d.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/01/3024395-poster-p-1-what-you-need-to-know-about-engineers-to-do-a-mobile-startup.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3024395/what-you-need-to-know-about-engineers-to-do-a-mobile-startup"
+          title="What You Need To Know About Engineers To Do A Mobile Startup"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">What You Need To Know About Engineers To Do A Mobile Startup</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div id="sidebar-add-unit-imu_2" data-name="imu_2">
+  <div class="block ad-unit" data-advertising="imu_2" data-cb-ad-id="imu_2" data-cb-dfp-id="unit=imu_2;size=300x250,300x600,300x1050;pos=imu_2">
+      <div class="dart-ad" id="ad-unit-sidebar-imu_2"></div>
+      <div class="ad-label"></div>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-featured_colabs2" class="sidebar-block-featured hide-for-small" data-name="featured_colabs2">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3035910"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1504/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3035910/three-reasons-apple-pay-is-going-to-work"
+            title="Three Reasons Apple Pay Is Going To Work"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//f.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/09/3035910-poster-p-1-behind-the-scenes-of-apple-pay.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3035910/three-reasons-apple-pay-is-going-to-work"
+          title="Three Reasons Apple Pay Is Going To Work"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Three Reasons Apple Pay Is Going To Work</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3026989"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="http://www.fastcolabs.com/technology">
+              <img src="//b.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1504/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3026989/an-up-to-date-laymans-guide-to-accessing-the-deep-web"
+            title="An Up-To-Date Layman&#x27;s Guide To Accessing The Deep Web"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//c.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/02/3026989-poster-p-1-an-up-to-date-laymans-guide-to-accessing-the-deep-web.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3026989/an-up-to-date-laymans-guide-to-accessing-the-deep-web"
+          title="An Up-To-Date Layman&#x27;s Guide To Accessing The Deep Web"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">An Up-To-Date Layman's Guide To Accessing The Deep Web</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-trending" class="hide-for-small" data-name="trending">
+  <div class="block trending">
+    <h4 class="subheader trending"><span>Trending Articles</span></h4>
+    <ol class="trending"></ol>
+  </div>
+</div>
+
+
+
+    <div id="sidebar-block-featured_colabs3" class="sidebar-block-featured hide-for-small" data-name="featured_colabs3">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3026698"
+  class="node teaser-view sidebar kind-slideshow site-fastcolabs slug-elasticity">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="/section/elasticity">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1460/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3026698/inside-duckduckgo-googles-tiniest-fiercest-competitor"
+            title="Inside DuckDuckGo, Google&#x27;s Tiniest, Fiercest Competitor"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//e.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/02/3026698-poster-p-1-inside-duck-duck-go.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3026698/inside-duckduckgo-googles-tiniest-fiercest-competitor"
+          title="Inside DuckDuckGo, Google&#x27;s Tiniest, Fiercest Competitor"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Inside DuckDuckGo, Google's Tiniest, Fiercest Competitor</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+        <li><article
+  data-id="3025785"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-fastcolabs">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs dark" href="http://www.fastcolabs.com/technology">
+              <img src="//e.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1460/fl/images/svg/fastcolabs-dark-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3025785/meet-the-man-who-solved-the-mysterious-cicada-3301-puzzle"
+            title="Meet The Man Who Solved The Mysterious Cicada 3301 Puzzle"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//h.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/01/3025785-poster-p-1-meet-the-man-who-solved-the-mysterious-cicada-3301-puzzle.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3025785/meet-the-man-who-solved-the-mysterious-cicada-3301-puzzle"
+          title="Meet The Man Who Solved The Mysterious Cicada 3301 Puzzle"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Meet The Man Who Solved The Mysterious Cicada 3301 Puzzle</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    
+
+    
+
+    <div id="sidebar-add-unit-imu_3" data-name="imu_3">
+  <div class="block ad-unit" data-advertising="imu_3" data-cb-ad-id="imu_3" data-cb-dfp-id="unit=imu_3;size=300x250,300x600,300x1050;pos=imu_3">
+      <div class="dart-ad" id="ad-unit-sidebar-imu_3"></div>
+      <div class="ad-label"></div>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-featured_colabs4" class="sidebar-block-featured hide-for-small" data-name="featured_colabs4">
+  <div class="block">
+    <ul class="post-list">
+      
+        <li><article
+  data-id="3035721"
+  class="node teaser-view sidebar kind-article site-fastcolabs slug-elasticity">
+
+  <figure class="poster">
+      
+        
+          <h4 class="slug subheader">
+            <a class="fastcolabs light" href="/section/elasticity">
+              <img src="//c.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1480/fl/images/svg/fastcolabs-light-notxt.svg" width="30" height="30">
+            </a>
+          </h4>
+        
+      
+
+      
+        <a  href="/3035721/elasticity/baidu-is-taking-search-out-of-text-era-and-taking-on-google-with-deep-learning"
+            title="Inside Baidu&#x27;s Plan To Beat Google By Taking Search Out Of The Text Era"
+            class="navigate"
+            data-event-category="recirculation"
+            data-event-action="Sidebar">
+      
+
+        
+          <img src="//h.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2014/09/3035721-poster-p-1-baidu-is-taking-search-out-of-text-era-and-taking-on-google-with-deep-learning.jpg" />
+        
+
+        </a>
+  </figure>
+
+  <h3 class="title">
+    
+      <a  href="/3035721/elasticity/baidu-is-taking-search-out-of-text-era-and-taking-on-google-with-deep-learning"
+          title="Inside Baidu&#x27;s Plan To Beat Google By Taking Search Out Of The Text Era"
+          class="navigate"
+          data-event-category="recirculation" 
+          data-event-action="Sidebar">Inside Baidu's Plan To Beat Google By Taking Search Out Of The Text Era</a>
+    
+  </h3>
+
+  <div class="source-logo"></div>
+
+</article>
+</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    <div id="sidebar-block-footer" data-name="footer">
+  <div class="block">
+    <footer class="closure">
+      <ul class="links">
+        <li><a href="http://mediakit.fastcompany.com/">Advertise</a></li>
+        <li><a href="http://www.fastcompany.com/privacy-policy">Privacy Policy</a></li>
+        <li><a href="http://www.fastcompany.com/terms-and-conditions">Terms</a></li>
+        <li><a href="http://www.fastcompany.com/about-us">About Us</a></li>
+      </ul>
+
+      <hr class="hr-sidebar" />
+
+      <p>
+        <small class="copyright"><a href="http://www.fastcompany.com/">Fast Company</a> &amp; <a href="http://www.inc.com">Inc</a> &copy; 2014 Mansueto Ventures, LLC.</small>
+        <a href="http://www.aboutads.info/" target="_new" class="icon_adoption" rel="nofollow">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANCAAAAAC4QtCeAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAJ0Uk5TAAB2k804AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAEgAAABIAEbJaz4AAACASURBVAjXYyir3PaDAQby09KL9/2FcjIWf1mbVX0Mwklfw8DwbF5awzkwZzXDjco/j/vTuq+COe93APXcLE5bCeKczvzOwPCoPG0xiHMq6/f9SWkdF4HK1jKcyepJazgFNnrBpwtpVUchRuempR17+htqaU/55l9w5xzf+RHOBgC94zlXyQTR6wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMy0wMy0wOFQxOToxMDo0NC0wNTowMNnS5vEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTMtMDMtMDhUMTk6MTA6NDQtMDU6MDCoj15NAAAAAElFTkSuQmCC" width="12" height="13" alt="">
+        </a>
+      </p>
+
+    </footer>
+  </div>
+</div>
+
+
+</div>
+
+
+              </div>
+            </aside>
+          </div>
+
+        </div>
+
+      </div><!-- .page-main-wrap -->
+
+    </div><!-- /#page-main -->
+
+  </div><!-- /.page-inner -->
+
+</div><!-- /#page -->
+
+          
+
+          
+        </div>
+
+        
+        <div id="share-modal" class="reveal-modal large"></div>
+
+        
+        <div id="dialog"></div>
+        <div id="dialog-bg"></div>
+
+        
+        <div id="send-article-modal" class="reveal-modal small hide-on-print" style="z-index: 9999;"></div>
+
+        
+        <div id="login-modal" class="reveal-modal large hide-on-print" style="z-index: 9999;"></div>
+        
+        
+        <ul class="messages"></ul>
+
+        
+        <div id="widget-admin-modal" class="reveal-modal large twelve columns hide-on-print"></div>
+
+        
+
+  
+  <script type="text/javascript" src="//f.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/js/vendor/omniture-scode-prod.js"></script>
+  <script type="text/javascript"><!--
+
+  
+    
+    fastco_s.server="fastcolabs";
+    
+    fastco_s.pageName="fastcolabs:3023543:why-good-programming-projects-go-bad";
+    fastco_s.events="event9";
+
+    fastco_s.prop1="technology";
+    fastco_s.prop2="technology";
+    fastco_s.prop3="Why Good Programming Projects Go Bad";
+    fastco_s.prop4="http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad";
+    fastco_s.prop8="Ciara Byrne";
+    fastco_s.prop9="2013-12-16";
+    fastco_s.prop10="3023543";
+    fastco_s.prop11="Ciara Byrne";
+    fastco_s.prop13="1";
+    fastco_s.prop21="anonymous";
+    fastco_s.prop22="anonymous:fastcolabs:3023543:why-good-programming-projects-go-bad";
+    fastco_s.prop23="anonymous";
+    fastco_s.prop28="article";
+    fastco_s.prop30="mythical-man-month|no-silver-bullet.|project-management";
+    
+
+    
+  
+
+  var s_code=fastco_s.t();if(s_code)document.write(s_code)//--></script>
+  <script type="text/javascript"><!--
+  if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+  //--></script><noscript><img src="http://grunerandjahr.112.2o7.net/b/ss/gjincfastcoprod/1/H.24.4--NS/0/5658306"
+  height="1" width="1" alt="" style="border:0;" /></noscript><!--/DO NOT REMOVE/-->
+  
+
+
+
+  
+  <script type="text/javascript">
+  var _sf_async_config={
+    useCanonical: true,
+    uid:2768,
+    domain:"fastcolabs.com",
+    sections:"fastcolabs.com",
+    authors:"Ciara Byrne" ,
+    playerdomain: 'api.twistage.com'
+  };
+
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+         "js/chartbeat_pub.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+  </script>
+
+
+        <script type="text/javascript">
+  window.bootstrap_type = 'post';
+  window.bootstrap_kind = 'article';
+  window.bootstrap_id = '3023543';
+  window.bootstrap_obj = {"id":3023543,"solrId":"fastcompany|node|3023543","nid":3023543,"md5":"bf59d2e5f0b76adc4eadb048cfe58360","type":"post","kind":"article","site":{"name":"fastcolabs.com","title":"Co.Labs","url":"http://www.fastcolabs.com","slug":"fastcolabs"},"site_id":"fastcompany","status":true,"updated":"2013-12-17T02:43:47.000Z","published":"2013-12-16T16:17:00.000Z","available_date":"2013-12-16T16:17:00.000Z","url":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad","isOwnSite":true,"path":"/3023543/why-good-programming-projects-go-bad","title":"Why Good Programming Projects Go Bad","isArticle":true,"blocks":{"sidebar":["branding","newsletters","featured_colabs1","imu_2","featured_colabs2","trending","featured_colabs3","imu_3","featured_colabs4","footer"],"sidebar_nofollow":["imu_1"]},"ads":{"path":"/4160/mv.fclabs/technology/technology"},"poster":{"shade":true,"hideLogo":false,"assets":{"original":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","url":"//f.fastcompany.net/multisite_files/fastcompany/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","mimetype":"image/jpeg","width":1920,"height":1080,"ratio":1.7777777777777777,"is_placeholder":false},"full":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/1280//poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","url":"//e.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","mimetype":"image/jpeg","width":1280,"height":720,"ratio":1.7777777777777777,"is_placeholder":false},"teaser":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/620x350//poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","url":"//h.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","mimetype":"image/jpeg","width":620,"height":350,"ratio":1.7714285714285714,"is_placeholder":false},"sidebar":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/300x166//poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","url":"//h.fastcompany.net/multisite_files/fastcompany/imagecache/300x166/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","mimetype":"image/jpeg","width":300,"height":166,"ratio":1.8072289156626506,"is_placeholder":false},"thumbnail":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/320x240//poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","url":"//e.fastcompany.net/multisite_files/fastcompany/imagecache/320x240/poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","mimetype":"image/jpeg","width":320,"height":240,"ratio":1.3333333333333333,"is_placeholder":false}},"caption":null,"credit":"<p>[Image: Flickr user <a href=\"http://www.flickr.com/photos/stevendepolo/5190591885/in/photostream/\" target=\"_blank\">Steven Depolo</a>]</p>"},"labels":{"tags":[{"plain":"Mythical Man Month","slug":"mythical-man-month"},{"plain":"No silver bullet.","slug":"no-silver-bullet"},{"plain":"project management","slug":"project-management"}],"topics":[{"plain":"Technology","slug":"technology"}]},"teaser":{"html":"<p>Fred Brooks wrote the software development classic <em>The Mythical Man-Month</em> almost 40 years ago. In this interview, Brooks explains why managers still make the same mistakes.</p>","plain":"Fred Brooks wrote the software development classic The Mythical Man-Month almost 40 years ago. In this interview, Brooks explains why managers still make the same mistakes."},"analytics":{"omniture":{"server":"fastcolabs","channel":"technology","pageName":"fastcolabs:3023543:why-good-programming-projects-go-bad","pageType":"","prop1":"technology","prop2":"technology","prop3":"Why Good Programming Projects Go Bad","prop4":"http:\\/\\/www.fastcolabs.com\\/3023543\\/why-good-programming-projects-go-bad","prop5":"","prop6":"","prop8":"Ciara Byrne","prop9":"2013-12-16","prop10":3023543,"prop11":"Ciara Byrne","prop13":"1","prop28":"article","prop30":"mythical-man-month|no-silver-bullet.|project-management","events":"event9"}},"date":{"updated":{"datetime":"2013-12-17T02:43:47.000Z","short":"2013-12-16","medium":"December 16, 2013","long":"December 16, 2013 | 9:43 PM"},"published":{"datetime":"2013-12-16T16:17:00.000Z","short":"2013-12-16","medium":"December 16, 2013","long":"December 16, 2013 | 11:17 AM"}},"meta":{"title":null,"description":null,"canonical_url":null},"poster_element":{"full":"image","teaser":"image"},"cache_lifetime":null,"headline":{"html":"Why Good Programming Projects Go Bad","plain":"Why Good Programming Projects Go Bad"},"amazon_affiliate":true,"author":{"display_name":"Ciara Byrne","id":"fastcompany|node|3006504","uid":374086,"nid":3006504,"name":"ciara-byrne","email":"deciarab@gmail.com","site_id":"fastcompany","site":"fastcolabs.com","url":"http://www.fastcolabs.com/user/ciara-byrne","path":"/user/ciara-byrne","images":{"full":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/profile/3006504-photo-mg9037.jpg","url":"//d.fastcompany.net/multisite_files/fastcompany/profile/3006504-photo-mg9037.jpg","mimetype":"image/jpeg","is_placeholder":false},"small":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/59x59//profile/3006504-photo-mg9037.jpg","url":"//f.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3006504-photo-mg9037.jpg","mimetype":"image/jpeg","is_placeholder":false,"height":59,"width":59},"thumb":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/profile-s//profile/3006504-photo-mg9037.jpg","url":"//e.fastcompany.net/multisite_files/fastcompany/imagecache/profile-s/profile/3006504-photo-mg9037.jpg","mimetype":"image/jpeg","is_placeholder":false}},"social":{"linkedin":{"username":"deciarabgmail.com","uid":"deciarabgmail.com","url":"http://www.linkedin.com/in/deciarabgmail.com","site":{"title":"Linkedin","slug":"linkedin"}},"twitter":{"username":"deciara","uid":"deciara","url":"http://www.twitter.com/deciara","site":{"title":"Twitter","slug":"twitter"}}},"teaser":{"html":"<p>Lapsed developer, current tech journalist and wannabe data scientist.</p>","plain":"Lapsed developer, current tech journalist and wannabe data scientist."},"roles":{"staff":true},"items":[{"display_name":"Ciara Byrne","id":"fastcompany|node|3006504","uid":374086,"nid":3006504,"name":"ciara-byrne","email":"deciarab@gmail.com","site_id":"fastcompany","site":"fastcolabs.com","url":"http://www.fastcolabs.com/user/ciara-byrne","path":"/user/ciara-byrne","images":{"full":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/profile/3006504-photo-mg9037.jpg","url":"//d.fastcompany.net/multisite_files/fastcompany/profile/3006504-photo-mg9037.jpg","mimetype":"image/jpeg","is_placeholder":false},"small":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/59x59//profile/3006504-photo-mg9037.jpg","url":"//f.fastcompany.net/multisite_files/fastcompany/imagecache/59x59/profile/3006504-photo-mg9037.jpg","mimetype":"image/jpeg","is_placeholder":false,"height":59,"width":59},"thumb":{"host":"//www.fastcompany.com","path":"/multisite_files/fastcompany/imagecache/profile-s//profile/3006504-photo-mg9037.jpg","url":"//e.fastcompany.net/multisite_files/fastcompany/imagecache/profile-s/profile/3006504-photo-mg9037.jpg","mimetype":"image/jpeg","is_placeholder":false}},"social":{"linkedin":{"username":"deciarabgmail.com","uid":"deciarabgmail.com","url":"http://www.linkedin.com/in/deciarabgmail.com","site":{"title":"Linkedin","slug":"linkedin"}},"twitter":{"username":"deciara","uid":"deciara","url":"http://www.twitter.com/deciara","site":{"title":"Twitter","slug":"twitter"}}},"teaser":{"html":"<p>Lapsed developer, current tech journalist and wannabe data scientist.</p>","plain":"Lapsed developer, current tech journalist and wannabe data scientist."},"roles":{"staff":true}}],"hideByline":false,"hideBy":false,"multiAuthor":false,"hideAuthorBox":false},"slides":null,"videos":null,"attribution":null,"deck":{"html":"<p>Fred Brooks wrote the software development classic <em>The Mythical Man-Month</em> almost 40 years ago. In this interview, Brooks explains why managers still make the same mistakes.</p>","plain":"Fred Brooks wrote the software development classic The Mythical Man-Month almost 40 years ago. In this interview, Brooks explains why managers still make the same mistakes."},"body":"<p>In 1964, Fred Brooks found himself in charge of one of the biggest software projects ever attempted--the operating system for the <a href=\"http://www-03.ibm.com/ibm/history/exhibits/mainframe/mainframe_intro2.html\" target=\"_blank\">IBM 360 series</a>--a new family of general purpose computers which became known as mainframes. Brooks quickly realized that managing a software project was very different from producing hardware. He documented his observations in the software development classic <a href=\"http://www.amazon.com/The-Mythical-Man-Month-Engineering-Anniversary/dp/0201835959\" target=\"_blank\"><em>The Mythical Man-Month</em></a>, in which Brooks famously declared that “adding manpower to a late software project, makes it later.”</p>\n\n<p>Although it was published almost 40 years ago, <em>The Mythical Man-Month</em> is still astonishingly relevant today. Brooks writes elegantly, astutely, and often entertainingly about the <a href=\"http://driek.home.xs4all.nl/me/mmm.html\" target=\"_blank\">joys and woes</a> of the craft of software development and the psychology of those who make it (one of his famous maxims: “All programmers are optimists”).</p>\n\n<p>Brooks went on to found the Computer Science Department at University of North Carolina and receive the <a href=\"https://en.wikipedia.org/wiki/A._M._Turing_Award\" target=\"_blank\">Turing award</a> in 1999. In 2010, he published his latest book, <a href=\"http://www.amazon.com/gp/product/0201362988?ie=UTF8&amp;tag=joelonsoftware&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0201362988\" target=\"_blank\"><em>The Design of Design: Essays from a Computer Scientist</em></a>. Now 82, he talked to Co.Labs about project management, designers, and why managers still make the same mistakes.</p>\n\n<p><p class=\"interview-question\">How did you first become interested in computers?</p></p>\n\n<p><p class=\"interview-answer\">I grew up in a small farm market town in Eastern North Carolina--Greenville, North Carolina. I was reading, I think it was <em>Time</em>, in the public library and the cover had a drawing of the <a href=\"http://www-03.ibm.com/ibm/history/exhibits/markI/markI_intro.html\" target=\"_blank\">Harvard Mark I</a>. I had been interested in manual methods of business data processing since I'd been about eight or nine (I started with a card file on my map collection), <a href=\"http://kk.org/thetechnium/archives/2008/06/one_dead_media.php\" target=\"_blank\">edge-notched cards</a>, those kind of tools. So when I read about this I was fascinated, and I decided that's what I wanted to do.</p></p>\n\n<p><p class=\"interview-question\"><em>The Mythical Man-Month</em> was based on your experience of managing the OS/360 project at IBM. How did you end up heading up that project?</p></p>\n\n<p><p class=\"interview-answer\">I went to Harvard in Computer Science. (It was called Applied Mathematics in those days.) I did my dissertation under Howard Aiken, who had built the Harvard Mark I back in 1944. Then I joined IBM working on the <a href=\"https://en.wikipedia.org/wiki/IBM_7030_Stretch\" target=\"_blank\">Stretch supercomputer</a> for four years. After being in charge of architecture for a new product line which did not fly, I was chosen to manage the <a href=\"http://www.computerhistory.org/revolution/mainframe-computers/7/161\" target=\"_blank\">System 360 computer family hardware.</a> That was 1961. In 1964 it became evident that the hardware was on track and was being released into the factories on time. We were getting good cost estimates and all that, but the software was in big trouble. So my boss and I decided that I should go run the operating system project and see what I could do about bailing it out.</p></p>\n\n<p><p class=\"interview-question\">How big a project was the OS/360 for IBM?</p></p>\n\n<p><p class=\"interview-answer\">I don't know the total cost, but I've heard numbers anywhere from 300 to 500 million 1960s dollars. Those dollars would be today about 10 times more valuable, somewhere in the neighborhood of $3-5 billion. At the peak the project had a thousand people, but the average was much lower than that--we built up. There were laboratories all over the world--Britain, Germany, France, Sweden, California, and New York State. </p></p>\n\n<p><p class=\"interview-question\">You have said that “<a href=\"http://money.cnn.com/magazines/fortune/fortune_archive/2005/12/12/8363107/\" target=\"_blank\">Everybody quotes it</a> (<a href=\"http://money.cnn.com/magazines/fortune/fortune_archive/2005/12/12/8363107/\" target=\"_blank\"><em>The Mythical Man-Month</em></a>), some people read it, and a few people go by it.” Why is that?</p></p>\n\n<p><p class=\"interview-answer\">It's all about disciplined decisions that are hard from a manager’s point of view. Just look at the <a href=\"http://swampland.time.com/2013/10/24/traffic-didnt-crash-the-obamacare-site-alone-bad-coding-did-too/\" target=\"_blank\">software mess over the rollout of the health law</a>. They made almost every mistake in the book. The book has more than 500,000 copies in print and is used in most software engineering curricula, so many people have learnt from those mistakes of the past. But it's evident that if one picks people who are not software engineers to run major software engineering projects, you wouldn't expect them to have studied the subject. Therefore they make the same mistakes again. The biggest mistake with the health law rollout was that there was no one in charge. That's the biggest of all mistakes. That project seems to have had neither architect nor project manager. How bad can you get?</p></p>\n\n<p><p class=\"interview-question\">Why is it so important to have both a project manager and an architect on a software project?</p></p>\n\n<p><p class=\"interview-answer\">I think it's important even with a small team to distinguish the functions of the project manager from the function of the architect. When I was teaching software engineering, which I did 22 times here (The Department of Computer Science at the University of North Carolina, which Brooks founded), I always made even teams of four people choose a separate project manager from the architect, who was responsible for the technical content. The project manager is responsible for schedule, resources, and such. I notice the same division of function occurs in the film industry. A film has a producer who is in charge, but the person whose name is last on the credits is the director. The producer is responsible for making it happen, and the director works for the producer, but the director is responsible for the artistic content. I think that the same separation of function which evolved in that industry applies as well in ours.<br /><br />The project manager first has to be tough, second place has to be flexible. A motto I consider important is “Never uncertain; always open.” I saw that in Latin (Numquam incertus; semper apertus) on the ceiling of a German fraternity in Heidelberg. It's important to always have a direction and be going there. You can't steer a ship that's not underway. But it's also important to be open to changes in circumstance and direction and not just to be completely bullheaded. A project manager also has to be a people person. Project management is a people function and most of the problems are people problems. </p></p>\n\n<p><p class=\"interview-question\">Almost 40 years after the publication of <em>The Mythical Man-Month</em>, why is it still so difficult to estimate how long it will take to make a large piece of software?</p></p>\n\n<p><p class=\"interview-answer\">The problem is that we are working with ever-new technology on ever-new development. Product development always contains many uncertainties. In building a house we are working with known technologies and pretty well-known specifications. Building a whole new thing like building the first nuclear submarine or building the first space shuttle, you don't know what you're going to run into. Any piece of software is a whole new thing, unless you are just copying somebody else's. </p></p>\n\n<p><p class=\"interview-question\">In <a href=\"http://www.amazon.com/The-Design-Essays-Computer-Scientist/dp/0201362988\" target=\"_blank\"><em>The Design of Design</em></a> you say “I believe ‘a science of design’ to be an impossible and indeed misleading goal.” Why?</p></p>\n\n<p><p class=\"interview-answer\">The difference between science and engineering is not so much what scientists and engineers do as why they do it. The scientist may spend a lot of effort building an apparatus for an experiment, but he builds in order to learn. The engineer may spend a lot of time studying materials or previous designs or users, but he learns in order to build. I think that distinction is crucial. So I believe the <a href=\"https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=12766\" target=\"_blank\">National Science Foundation</a>'s program hunting for a science of design, or indeed Simon’s original <a href=\"http://www.amazon.com/The-Sciences-Artificial-3rd-Edition/dp/0262691914\" target=\"_blank\"><em>Sciences of the Artificial</em></a> book, was chasing a thing which isn't--a chimera--because building is different from learning the laws of nature. One can systematize physics; one doesn't necessarily systematize the process by which physicists work. There's not necessarily a science of science in other words, so to expect a science of design, which is really a quite different undertaking, I think is misguided.</p></p>\n\n<p><p class=\"interview-question\">You also say that “standard corporate standard design processes do indeed work against great and innovative design” but that process can also improve average performance. How does the designer know when to apply process? </p></p>\n\n<p><p class=\"interview-answer\">That's the judgment that distinguishes good designers from poor ones, I think. There's no way to tell a person how to do that. It’s possible to train people to do that by putting them through many projects, mentored and advised so that they acquire the feel, the taste, and the judgment. There's an old saying “good judgment comes from experience and experience comes from bad judgment.” I think that applies to the training of designers.</p></p>\n\n<p><p class=\"interview-question\">How should designers be trained?</p></p>\n\n<p><p class=\"interview-answer\">Supervised, mentored design experience in a variety of projects. A rotation between different aspects of the design and construction process. The designer stands between the user and the builder. He needs to understand the user and that means spending time with users doing what users do. He needs to understand what building's about, and that means spending time building stuff.<br /><br />Most big companies have a pathway for training managers with job rotations, maybe with formal academic training (Brooks dispatched one of his own reports, <a href=\"http://www.johndcook.com/blog/2010/04/12/best-management-decision/\" target=\"_blank\">Edgar Codd</a>, who later invented the relational database, back to grad school mid-career), and then working up multiple levels. In IBM the most promising of the young managers were made <a href=\"https://en.wikipedia.org/wiki/Aide-de-camp\" target=\"_blank\">aide-de-camps</a> to the chief executives. The chief financial officer, the CEO, the chief operating officer had lieutenants who were considered very promising and might one day inherit those jobs. This mentoring process I think is just as important for designers as it is for managers. The managers are the ones who decide who gets trained. They are aware of the need to train new managers but they don't have any reason to understand or believe intuitively in the need for training the designers.</p></p>\n\n<p><p class=\"interview-question\">What did IBM’s CEO teach you about making things?</p></p>\n\n<p><p class=\"interview-answer\">When I was leaving IBM to come to North Carolina, Mr. Watson (IBM's CEO Thomas Watson Jr.) asked me down to the executive dining room for a one-on-one lunch. You know what that's about--that's an arm-twisting session. He proposed that I stay at IBM. I didn't want to do that. I said, “I really like to make things, and I want to get back closer to the technology”, because I was a third-level manager by this point. He said something very enlightening and very memorable. He said “I like to make things too. Have you looked at Poughkeepsie (IBM’s biggest computer manufacturing complex) recently?” And then I realized that this 10,000-person plant and laboratory complex was his creation. He had persuaded his daddy to get the company into the computer business. I never would have thought of that as making things. He raised my vision a whole lot in one sentence. </p></p>","magazine":null,"parallax":null,"spokenLayer":false,"sponsored":false,"twitter_headline":null,"google_news":{"editors_picks":false,"standout":false},"juno_template":null,"inline_custom_css":null,"widget_custom_content":null,"custom_header":null,"sticky_top_bar":null,"hide_outbrain":false,"hide_comments":false,"hide_afterbody":false,"rank_order":{},"displayable":null,"distribution":{},"poster_iframe":{},"poster_svg":{},"special":{"assets":{}},"video_autoplay":0,"general":{},"tags":[{"plain":"Mythical Man Month","slug":"mythical-man-month"},{"plain":"No silver bullet.","slug":"no-silver-bullet"},{"plain":"project management","slug":"project-management"}],"topic":{"plain":"Technology","slug":"technology"},"slug":{"title":"Co.Labs","name":"fastcolabs.com","url":"http://www.fastcolabs.com/technology","slug":"fastcolabs","topicslug":"technology"},"related":{"profiles":{"items":[{"full_name":"Fred Brooks","name":"fred-brooks","path":"/person/fred-brooks"}]}},"keywords":{"tags":["Fred Brooks","IBM","relational database","operating system","National Science Foundation","Department of Computer Science","University of North Carolina","Harvard","Computer Science Department","software engineering"],"socialtags":["computing","technology","software-development","software-project-management","fred-brooks","software-development-process","the-mythical-man-month","ibm-7030-stretch","software","ibm","software-peter-principle","maestro-i","technology-internet"]},"social_links":{"googleplus":{"active":"active","slug":"googleplus","icon":"icon-google-plus","name":"Google +","popupWidth":480,"popupHeight":665,"_url":"https://plus.google.com/share?","_params":{"url":false},"clean_params":{"url":"http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad"},"url":"https://plus.google.com/share?url=http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad","params":{"url":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad"}},"twitter":{"slug":"twitter","icon":"icon-twitter","name":"Twitter","popupWidth":555,"popupHeight":395,"_url":"http://twitter.com/share?","_params":{"url":false,"via":false,"text":false,"hashtags":false,"related":false},"clean_params":{"url":"http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad","via":false,"text":"Why%20Good%20Programming%20Projects%20Go%20Bad","hashtags":false,"related":false},"url":"http://twitter.com/share?url=http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad&text=Why%20Good%20Programming%20Projects%20Go%20Bad","params":{"url":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad","via":false,"text":"Why Good Programming Projects Go Bad","hashtags":false,"related":false}},"facebook":{"slug":"facebook","icon":"icon-facebook","name":"Facebook","popupWidth":555,"popupHeight":370,"_url":"http://www.facebook.com/sharer.php?","_params":{"u":false,"app_id":false,"display":false},"clean_params":{"u":"http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad","app_id":"123388861116012","display":"popup"},"url":"http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad&app_id=123388861116012&display=popup","params":{"u":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad","app_id":123388861116012,"display":"popup"}},"linkedin":{"slug":"linkedin","icon":"icon-linkedin","name":"Linkedin","popupWidth":600,"popupHeight":465,"_url":"http://www.linkedin.com/shareArticle?mini=true&","_params":{"url":false,"title":false,"text":false,"source":false},"clean_params":{"url":"http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad","title":false,"source":false,"media":"Why%20Good%20Programming%20Projects%20Go%20Bad"},"url":"http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad&media=Why%20Good%20Programming%20Projects%20Go%20Bad","params":{"url":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad","title":false,"source":false,"media":"Why Good Programming Projects Go Bad"}},"pinterest":{"slug":"pinterest","icon":"icon-pinterest","name":"Pinterest","popupWidth":750,"popupHeight":316,"_url":"http://www.pinterest.com/pin/create/button/?","_params":{"url":false,"text":false,"image":false},"clean_params":{"url":"http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad","text":false,"image":false,"description":"Why%20Good%20Programming%20Projects%20Go%20Bad","media":"http%3A%2F%2Fwww.fastcompany.com%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F620x350%2F%2Fposter%2F2013%2F12%2F3023543-poster-p-1-why-good-programming-projects-go-bad.jpg"},"url":"http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad&description=Why%20Good%20Programming%20Projects%20Go%20Bad&media=http%3A%2F%2Fwww.fastcompany.com%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F620x350%2F%2Fposter%2F2013%2F12%2F3023543-poster-p-1-why-good-programming-projects-go-bad.jpg","params":{"url":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad","text":false,"image":false,"description":"Why Good Programming Projects Go Bad","media":"http://www.fastcompany.com/multisite_files/fastcompany/imagecache/620x350//poster/2013/12/3023543-poster-p-1-why-good-programming-projects-go-bad.jpg"}},"stumbleupon":{"slug":"stumbleupon","icon":"icon-stumbleupon","name":"Stumbleupon","popupWidth":980,"popupHeight":575,"_url":"http://www.stumbleupon.com/submit?","_params":{"url":false,"title":false},"clean_params":{"url":"http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad","title":"Why%20Good%20Programming%20Projects%20Go%20Bad"},"url":"http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad&title=Why%20Good%20Programming%20Projects%20Go%20Bad","params":{"url":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad","title":"Why Good Programming Projects Go Bad"}},"reddit":{"slug":"reddit","icon":"icon-reddit","name":"Reddit","popupWidth":980,"popupHeight":750,"_url":"http://www.reddit.com/submit?","_params":{"url":false,"title":false},"clean_params":{"url":"http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad","title":"Why%20Good%20Programming%20Projects%20Go%20Bad"},"url":"http://www.reddit.com/submit?url=http%3A%2F%2Fwww.fastcolabs.com%2F3023543%2Fwhy-good-programming-projects-go-bad&title=Why%20Good%20Programming%20Projects%20Go%20Bad","params":{"url":"http://www.fastcolabs.com/3023543/why-good-programming-projects-go-bad","title":"Why Good Programming Projects Go Bad"}}},"self_link":"/api/v1/posts/3023543.html?fields=blocks%2Cads%2Cposter%2Clabels%2Cteaser%2Canalytics%2Cdate%2Cmeta%2Cposter_element%2Cslug%2Ccache_lifetime%2Cheadline%2Camazon_affiliate%2Cauthor%2Cseries%2Cslides%2Cvideos%2Cattribution%2Cdeck%2Cdigest%2Cbody%2Cmagazine%2Cseries_order%2Cparallax%2CspokenLayer%2Csponsored%2Ctwitter_headline%2Cgoogle_news%2Cjuno_template%2Crelated_works%2Crelated_profiles%2Cinline_custom_css%2Cwidget_custom_content%2Ccustom_header%2Csticky_top_bar%2Chide_outbrain%2Chide_comments%2Chide_afterbody%2Crank_order%2Ccustom_header%2Cdisplayable%2Cdistribution%2Cposter_iframe%2Cposter_svg%2Cspecial%2Cvideo_autoplay%2Cgeneral&limit=1","welcomeAd":{"frequency":"24","ipadOnly":"0","onOff":"0"},"config":{"analytics":{"omniture":{"server":"fastcolabs","tracking_pixel":"http://grunerandjahr.112.2o7.net/b/ss/gjincfastcoprod/1/H.24.4--NS/0/5658306","s_code":"//f.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/js/vendor/omniture-scode-prod.js"},"redaril":{"rid":"1966:1965","RADFP":40046,"ca_id":85327},"nielsen":{"client_id":"us-805310h"},"google_analytics":{"web_property_id":"UA-4300461-31","rollup_property_id":"UA-4300461-33"},"comscore":{"c1":2,"c2":6916907,"publisher_id":6916907},"chartbeat":{"uid":2768,"domain":"fastcolabs.com","sections":"fastcolabs.com","authors":"Shane Snow","sponsorName":""},"pingdom":{"id":"51954fe2abe53d0e77000000"},"buzzfeed":{"domain":"fastcolabs.com"},"mezzobit":{"dev":"5327548de7d4f9a5585756fe","prod":"53207e84e7d4f9a55857560e"}},"comments":{"server":"/comment","forum":"fastcolabs"},"disqus":{"_api_key":"sSxne7WU9G3cjfQ0SYj1AKNs45625ARssbQLkoBWvOy88Lh4GEdoE4AVwEz376pg","forum":"fastcolabs","developer":1},"embed":{"liverail_publisher_id":1562,"player_profile":"fastcolabs_episode","colors":{"highlight":"#ff1200"},"watermark":{"url":"//b.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/watermark.png","height":250,"width":250},"placeholder":{"url":"/embed/placeholder.png","height":480,"width":852}},"facebook":{"admins":100000062710915,"app_id":147469925415420,"locale":"en_US","publisher":"https://www.facebook.com/fastcolabs","channel_path":"/channel.html"},"fastyou":{"server":"//www.fastyou.com"},"identity":{"name":"fastcolabs.com","slug":"fastcolabs","site_name":"Co.Labs","site_url":"//www.fastcolabs.com","front":"/","base_path":"/","files_dir":"multisite_files/fastcompany","poster_default":{"protocol":"http","host":"%s.fastcompany.net","path":"/asset_files/static/placeholders/fastcolabs-%d.jpg","basepath":"/asset_files/static","height":720,"width":1280},"slogan":"code + community","description":"This site is a workshop where everyone in the coding community can learn, share, collaborate, and build.","copyright":"Copyright 2013, Mansueto Ventures","logo":"//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/colabs_logo_dark.png","gnewslogo":"//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/gnewslogo.png","delimiter":"⚙","site_zone":"mansueto.fclabs","timezone":"America/New_York","magazine_subscription_link":"https://magazine.fastcompany.com/loc/FST/topnavcolabs1","editor":{"name":"Chris Dannen","email":"cdannen@fastcompany.com"},"contact":{"name":"Fast Company","email":"faster@fastcompany.com"},"keywords":["code","github","news","blog"],"social":{"facebook":{"networkName":"Facebook","userid":"FastCoLabs","url":"http://www.facebook.com/fastcolabs"},"twitter":{"networkName":"Twitter","userid":"FastCoLabs","url":"https://twitter.com/FastCoLabs"},"googleplus":{"networkName":"Google+","userid":"118243011872731622612","url":"https://plus.google.com/u/0/b/118243011872731622612/118243011872731622612/posts"},"appnet":{"networkName":"App.net","userid":"fastcolabs","url":"https://alpha.app.net/fastcolabs"}}},"pinterest":{"domain_verify":"4f13da17c1fa28e45e21ad33caacf1dd"},"twitter":{"site":"FastCoLabs","via":"FastCoLabs","related":"FastCoLabs"}},"loadedFor":{"full":1}};
+  window.bootstrap_config = {"analytics":{"omniture":{"server":"fastcolabs","tracking_pixel":"http://grunerandjahr.112.2o7.net/b/ss/gjincfastcoprod/1/H.24.4--NS/0/5658306","s_code":"//f.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/js/vendor/omniture-scode-prod.js"},"redaril":{"rid":"1966:1965","RADFP":40046,"ca_id":85327},"nielsen":{"client_id":"us-805310h"},"google_analytics":{"web_property_id":"UA-4300461-31","rollup_property_id":"UA-4300461-33"},"comscore":{"c1":2,"c2":6916907,"publisher_id":6916907},"chartbeat":{"uid":2768,"domain":"fastcolabs.com","sections":"fastcolabs.com","authors":"Shane Snow","sponsorName":""},"pingdom":{"id":"51954fe2abe53d0e77000000"},"buzzfeed":{"domain":"fastcolabs.com"},"mezzobit":{"dev":"5327548de7d4f9a5585756fe","prod":"53207e84e7d4f9a55857560e"}},"comments":{"server":"/comment","forum":"fastcolabs"},"disqus":{"forum":"fastcolabs","developer":1},"embed":{"liverail_publisher_id":1562,"player_profile":"fastcolabs_episode","colors":{"highlight":"#ff1200"},"watermark":{"url":"//b.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/watermark.png","height":250,"width":250},"placeholder":{"url":"/embed/placeholder.png","height":480,"width":852}},"facebook":{"admins":100000062710915,"app_id":147469925415420,"locale":"en_US","publisher":"https://www.facebook.com/fastcolabs","channel_path":"/channel.html"},"fastyou":{"server":"//www.fastyou.com"},"identity":{"name":"fastcolabs.com","slug":"fastcolabs","site_name":"Co.Labs","site_url":"//www.fastcolabs.com","front":"/","base_path":"/","files_dir":"multisite_files/fastcompany","poster_default":{"protocol":"http","host":"%s.fastcompany.net","path":"/asset_files/static/placeholders/fastcolabs-%d.jpg","basepath":"/asset_files/static","height":720,"width":1280},"slogan":"code + community","description":"This site is a workshop where everyone in the coding community can learn, share, collaborate, and build.","copyright":"Copyright 2013, Mansueto Ventures","logo":"//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/colabs_logo_dark.png","gnewslogo":"//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/images/gnewslogo.png","delimiter":"⚙","site_zone":"mansueto.fclabs","timezone":"America/New_York","magazine_subscription_link":"https://magazine.fastcompany.com/loc/FST/topnavcolabs1","editor":{"name":"Chris Dannen","email":"cdannen@fastcompany.com"},"contact":{"name":"Fast Company","email":"faster@fastcompany.com"},"keywords":{"0":"code","1":"github","2":"news","3":"blog"},"social":{"facebook":{"networkName":"Facebook","userid":"FastCoLabs","url":"http://www.facebook.com/fastcolabs"},"twitter":{"networkName":"Twitter","userid":"FastCoLabs","url":"https://twitter.com/FastCoLabs"},"googleplus":{"networkName":"Google+","userid":"118243011872731622612","url":"https://plus.google.com/u/0/b/118243011872731622612/118243011872731622612/posts"},"appnet":{"networkName":"App.net","userid":"fastcolabs","url":"https://alpha.app.net/fastcolabs"}}},"pinterest":{"domain_verify":"4f13da17c1fa28e45e21ad33caacf1dd"},"twitter":{"site":"FastCoLabs","via":"FastCoLabs","related":"FastCoLabs"},"env":"production"};
+</script>
+
+
+        
+
+        
+          <script data-main="//a.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/fl/js/amd-app" src="//f.fastcompany.net/multisite_files/fastcompany/static/sites/201409/1507/fl/js/vendor/require.js"></script>
+        
+
+    </body>
+</html>

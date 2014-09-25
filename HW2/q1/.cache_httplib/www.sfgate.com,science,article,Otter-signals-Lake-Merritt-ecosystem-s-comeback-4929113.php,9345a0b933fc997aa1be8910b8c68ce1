@@ -1,0 +1,2103 @@
+status: 200
+content-length: 174877
+content-location: http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php
+x-powered-by: PHP/5.2.12
+set-cookie: SSLB=0; path=/; domain=.sfgate.com
+expires: Wed, 24 Sep 2014 22:11:40 GMT
+vary: Accept-Encoding
+connection: keep-alive
+-content-encoding: gzip
+x-block-status: stale
+pragma: no-cache
+cache-control: max-age=0, no-cache
+date: Wed, 24 Sep 2014 22:11:40 GMT
+x-gen-mode: full
+server: Apache/2.2.3 (Red Hat)
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!-- ux hearst/article/article_main.tpl -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+<head><!-- eid:article.4929113 -->    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHUF9ACQcHVVRV"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:17,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:17,2:18,ee:"QJf3ax"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:18,2:17,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:18,2:17,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:18,2:17,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:18,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:11,2:14,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],14:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],17:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],18:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:17,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+    <script>var HDN = HDN || {}; HDN.t_firstbyte = Number(new Date());</script>
+    <!-- generated at 2014-09-24 14:25:16 on prodwcm7 running vr5.22.0.23 -->
+    <meta name="adwiz-site" content="sfc" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+
+    <script type='text/javascript' src='http://c.amazon-adsystem.com/aax2/amzn_ads.js'></script>
+    <script type='text/javascript'>
+        try {
+            amznads.getAds('3070');
+        } catch(e) { /*ignore*/ }
+    </script>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+    bizobject_identifier = "article_4929113";
+
+    var requestTime = new Date(1411586716 * 1000);
+
+                                        
+                
+        
+        // bizobject variables
+        var omni_channelPath = "News :: Science";
+        var omni_title = "Otter signals Lake Merritt ecosystem's comeback";
+        var omni_bizObjectId = "4929113";
+        var omni_className = "article";
+        var omni_publicationDate = "2013-10-26 22:44:35";
+        var omni_sourceSite="sfgate";
+
+        // article specific variables
+        var omni_authorName = "WILL KANE";
+        var omni_authorTitle = "";
+        var omni_pageNumber = "1";
+        var omni_breakingNewsFlag = "";
+        var omni_localNewsFlag = "";
+
+        
+        var omni_premiumStatus = "free";
+        var omni_premiumEndDate = "";
+        var omni_originalSource = "SF";
+            
+        // ]]>
+    </script>
+<!--[if IE 6]><script type="text/javascript" src="/js/hdn/utils/DD_belatedPNG_0.0.8a-min.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="/external/css/global.sharedmain.r5.22.1.2.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/external/css/global.sharedmodules.r5.22.1.2.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/external/css/global.sharedpages.r5.22.1.2.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/external/css/global.sitemain.r5.22.1.2.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/external/css/global.sitemodules.r5.22.1.2.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/external/css/global.sitepages.r5.22.1.2.css" media="all" />
+    <script type="text/javascript" src="/js/hdn/utils/modernizr-2.6.2.min.js"></script>
+    <script>window.jQuery || document.write('<scr' + 'ipt src="/js/hdn/utils/jquery.1.7.1.min.js"><\/scr' + 'ipt>');</script>
+
+    <!-- TEMPORARY ASSET PLACEMENT -->
+    <link rel="stylesheet" type="text/css" href="/css/modules/siteheader_v2.css?r5.22.0.23" media="all">
+    <script type="text/javascript" src="/js/hdn/utils/jquery.doubletap.js?r5.22.0.23"></script>
+    <script type="text/javascript" src="/js/modules/siteheader_v2.js?r5.22.0.23"></script>
+    <script type="text/javascript" src="/js/modules/weather.js?r5.22.0.23"></script>
+
+    <script type="text/javascript" src="/external/js/global.header.r5.22.1.2.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+    <title>Otter signals Lake Merritt ecosystem&#039;s comeback - SFGate</title>
+    <link rel="SHORTCUT ICON" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+                                                                <link rel="canonical" href="http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php" />
+            <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php" />        
+        
+            <meta name="description" content="Greg Lewis had just finished his evening row on Oakland's Lake Merritt when he saw a slick, squirmy, furry bundle hoist itself out of the water and onto the edge of the dock.  Lewis, who develops air pollution monitors, snapped a few shots, and like that, the animal plopped back into the water and paddled off.  No one has reported seeing the otter since, and biologists ordered Lewis to keep his mouth shut until they were sure the popular, photogenic animal wasn't going to make the lake a home.  Before Oakland was developed, Lake Merritt was a brackish lagoon that would swell and shrink with the tide and was home to otters, sea lions and an extraordinary array of migrating birds.  The otter was probably searching the Oakland Estuary for a new fishing hole when it swam up a culvert, squeezed between metal bars designed to keep trash from flowing into the bay and started exploring the 155-acre lake.  Threats to survivalRussian and other European hunters killed thousands of river and sea otters, all so the ladies of the Victorian age could wear their thick, water-repellent fur coats.  Habitat loss from construction of dams and canals also depleted the river otter ranks." />
+        
+        
+            <meta name="author.name" content="Will Kane" />
+    <meta name="author.title" content="" />
+    <meta name="date.release" content="2013/26/10" />
+    <meta name="time.release" content="15:44" />
+    <meta name="publisher" content="San Francisco Chronicle" />
+    <meta name="sections" content="News,Science" />
+    <meta name="subject" content="fishing,nature,waste,wildlife,rivers,air pollution" />
+    <meta name="news_keywords" content="fishing,nature,waste,wildlife,rivers,air pollution" />
+                <meta name="ICBM" content="37.8012389, -122.258299" />
+                                        <!-- hearst/home/header_sailthru.tpl -->
+<meta property="sailthru.title" content="Otter signals Lake Merritt ecosystem's comeback" />
+<meta name="sailthru.date" content="2013-10-26 15:44:00 -0700" />
+<meta name="sailthru.author" content="Will Kane" />
+                    <meta property="sailthru.location" content="37.8012389, -122.258299" />
+            <meta name="sailthru.tags" content="section-news,section-science,california-department,lake-merritt-institute,lake-merritt,oakland-california,northern-california,bay-area,berkeley-california,greg-lewis,richard-bailey,megan-isadore,otter,river-otter,river-otters,tracks-river-otter,north-american-river-otter,lake,river-otter-sightings,river-otter-ranks,young-river-otter,river,water-repellent-fur-coats,oakland-voters,staff-writer,water,european-hunters,air-pollution-monitors,evening-row,biologist,furry-bundle-hoist,fishing-hole,pollution,wildlife-biologist,climbing-trees" />
+    
+<meta name="sailthru.image.thumb" content="http://ww3.hdnux.com/photos/24/37/42/5372046/3/sailthruImage.jpg" />
+<!-- e hearst/home/header_sailthru.tpl -->
+                        <script src="http://widget.perfectmarket.com/wwwsfgate/load.js"></script>
+
+
+        
+    <meta property="og:title" content="Otter signals Lake Merritt ecosystem's comeback" />
+            <meta property="og:description" content="Greg Lewis had just finished his evening row on Oakland's Lake Merritt when he saw a slick, squirmy, furry bundle hoist itself out of the water and onto the edge of the dock.  Lewis, who develops air pollution monitors, snapped a few shots, and like that, the animal plopped back into the water and paddled off.  No one has reported seeing the otter since, and biologists ordered Lewis to keep his mouth shut until they were sure the popular, photogenic animal wasn't going to make the lake a home.  Before Oakland was developed, Lake Merritt was a brackish lagoon that would swell and shrink with the tide and was home to otters, sea lions and an extraordinary array of migrating birds.  The otter was probably searching the Oakland Estuary for a new fishing hole when it swam up a culvert, squeezed between metal bars designed to keep trash from flowing into the bay and started exploring the 155-acre lake.  Threats to survivalRussian and other European hunters killed thousands of river and sea otters, all so the ladies of the Victorian age could wear their thick, water-repellent fur coats.  Habitat loss from construction of dams and canals also depleted the river otter ranks." />
+        <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php" />
+    <meta property="og:image" content="http://ww3.hdnux.com/photos/24/37/42/5372046/3/200x200.jpg" />
+    <meta property="og:site_name" content="SFGate" />
+                                <meta property="og:latitude" content="37.8012389"/>
+                            <meta property="og:longitude" content="-122.258299"/>
+                            <meta property="og:street-address" content="Lake Merritt, Oakland, CA, USA"/>
+                            <meta property="og:locality" content="Oakland"/>
+                            <meta property="og:region" content="CA"/>
+                                    <meta property="og:country-name" content="US"/>
+            
+        <!-- business/templates/hearst/home/header_parsely.tpl -->
+
+
+<meta name='parsely-page' content='{"title":"Otter signals Lake Merritt ecosystem&#39;s comeback","link":"http:\/\/www.sfgate.com\/science\/article\/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php#src=pl","image_url":"http:\/\/ww3.hdnux.com\/photos\/24\/37\/42\/5372046\/3\/200x200.jpg","post_id":"article_4929113","pub_date":"2013-10-26T22:44:35Z","section":"science","type":"post","author":"Will Kane"}'>
+
+<!-- business/templates/hearst/home/header_parsely.tpl -->
+    
+    
+    <!-- /business/templates/hearst/home/header_fbpage.tpl-->
+
+
+            <meta property="fb:page_id" content="105702905593" />
+        <meta property="fb:admins" content="653226748,681491972,1561585996,100001146826482,100001539234772,601331469,653226748,58963564,710213297,19000865"/>
+                <meta property="fb:app_id" content="1609422252616351"/>
+    
+<!-- e /business/templates/hearst/home/header_fbpage.tpl-->    <!-- templates/hearst/home/viafouraHeadMeta.tpl -->
+<meta property="vf:unique_id" content="sfgate-article-4929113" />
+<!-- e templates/hearst/home/viafouraHeadMeta.tpl -->
+        <script type="text/javascript" id="adPositionManagerScriptTag" src="http://aps.hearstnp.com/Scripts/loadAds.js"></script>
+                        
+    <!-- Tutorial freeform -->
+    
+    <!-- hearst/item/standalone.tpl -->
+<span id="modifiedAt" data="2014-06-06 20:09:32"></span><!-- mid:freeform.29975 -->
+<!-- RM -->
+
+    <!-- CSS/JS Hotfix freeform -->
+    
+    <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.14477 -->
+<!-- Olive e-Edition -->
+<link rel="stylesheet" type="text/css" href="/css/hdn/utils/olive_modal.css">
+<script type="text/javascript" src="/js/hdn/utils/jquery.digitaldoor.js"></script>
+
+<style>
+@media screen and (max-width: 1280px){
+	header .timestamp {width: auto;}
+	.userTesting {margin-right: 20px;}
+}
+@media screen and (min-width: 1216px)  and (max-width:1280px){.subnavRight .nav-hcat img {height: 122px;}}
+.hst-breaking-now li.desktop_item_blurb{height:auto;}
+.hst-siteheader .sitenav a {padding:8px 8px 4px;}
+.hst-exclusive_content {float:left;}
+.hst-mediumrectangle {float:none;}
+.hst-slideshowpromo {clear:both;}
+.hst-newGallery .hst-mediumrectangle, .photo-Gallery .hst-mediumrectangle {padding: 0;}
+.hst-exclusive_content .exitText {line-height: 30px;}
+.hst-articletools2 .arbox {float: left; margin: 0 9px 0 0; padding-top: 2px;}
+.hst-articletools2 .last {margin: 0;}
+#mobile {display:none;}
+.hst-breaking-now ul.img {width: 276px!important;}
+.hst-breaking-now {margin: 0 0 10px;}
+
+/* CFREE-7054 */
+.hst-newGallery .hst-freeform { overflow:visible; }
+
+/* CFREE-7075*/
+.hdn-comments .viafoura .hdn-vf-comment-counts { display: block; }
+.subnav .hasSubMenu:after {height: 14px !important;}
+.hst-newGallery .hst-freeform {float: left;}
+
+/* CFREE-7125 */
+.body em, .body i { font-style: italic; }
+.hst-simplelist.scroll ul {overflow-y: scroll; overflow-wrap: normal; overflow-x: hidden;}
+
+/* NDN */
+.hdnce-item-9357 { clear: both; }
+
+.entertainmentredesign .page-content {background: #d6d6d6;}
+
+/* Fix to remove related links from third-party content */
+.article-content .inline-zone .hst-simplelist {display: none;}
+
+</style>
+
+<!-- Disable weather selection on3rd parties -->
+<script>
+$(window).load(function(){if($("body").hasClass("hst-cmfThirdPartyHeader")){$("#weatherChange").remove();}});
+</script>
+<style>
+.hst-cmfThirdPartyHeader .weather__current-forecast .city {cursor: auto;}
+.hst-cmfThirdPartyHeader .weather__current-forecast .city:after {background-position: -20px 0;}
+#A728 {margin: 10px 0;}
+</style>
+<!-- e/ Disable weather selection on3rd parties -->
+
+<!-- Bing Webmaster Tools verification -->
+<meta name="msvalidate.01" content="9451CA04ABC9D1D5C6419C73B4C4F7B7" />
+
+<!-- CREQ-910 -->
+<script type="text/javascript">
+	// <![CDATA[
+	jQuery(function($) {if($("body").hasClass("hst-cmfThirdPartyHeader")){$('.hst-siteheader a').attr('target', '_top');}});
+	// ]]>
+</script>
+
+<!-- Temporary fix for Viafoura. 'at' cookie name is similar to another cookie '_gat' and function was not robust enough to handle the two. This should be removed once a permanent fix is in place -->
+<script type="text/javascript">
+	// <![CDATA[
+HDN.publishVf = function () {
+    var atC = document.cookie.split(/\bat=/);
+    var lUCookie = '';
+    if (atC.length == 2) {
+        lUCookie = encodeURIComponent(HDN.getAtCookie());
+    }
+    window.viafoura.publish("user.custom_login", {
+        site: "viafouraDefinedCookie",
+        cookie: lUCookie
+    });
+    return;
+};
+HDN.getAtCookie = function () {
+    var atC = document.cookie.split(/\bat=/);
+    var lUCookie = '';
+    if (atC.length == 2) {
+        atC = atC.pop().split(";").shift();
+        // check to see if cookie was stored encoded
+        if (atC.indexOf("=") == -1) { // decode if no equale signs
+            return decodeURIComponent(atC)
+        }
+        return atC;
+    }
+    return '';
+};
+	// ]]>
+</script>
+
+            
+        </head>
+    <body class="body science hst-article" location="news">
+    <script type="text/javascript" src="/external/js/global.top.r5.22.1.2.js"></script>
+            <!-- ux/sfgate/tmpl/article_omniture.php -->
+
+<!-- Adobe TagManager: SFGate Main -->
+<script type="text/javascript">//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtaGVhcnN0LTMwNzctMzk0NC0=/amc.js\"></sc"+"ript>");
+//]]></script>
+<!-- End Adobe TagManager -->
+
+<!-- e ux/sfgate/tmpl/article_omniture.php -->
+            <div id="outer_bg_container">
+            <!-- outer gradient background image repeat-y  -->
+            <div id="inner_bg_container">
+                <!-- top fading gradient image fixed  -->
+                <div class="container">
+<!-- ux/sfgate/tmpl/site_first_content.php -->
+<!-- end ux/sfgate/tmpl/site_first_content.php -->
+
+
+<!-- hearst/home/navigation.tpl -->
+	<!-- ux hearst/home/navigation_main.tpl -->
+<header>
+						<div class="hst-leaderboard">
+	<div id="A728" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A728"); /*]]>*/</script></div>
+</div>
+						<!-- ux hearst/common/userTesting.tpl -->
+<div class="userTesting">
+	<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.32584 -->
+<!-- feedback_links -->
+<a id="popup_window" data-popup-target="#example-popup">Leave Beta Test</a><a id="feedback" href="http://sgiz.mobi/s3/c3ccffd93a52">Feedback</a>
+<!-- /feedback_links -->
+</div>
+<div id="example-popup" class="popup">
+	<div class="popup-body">
+		<span class="popup-exit"></span>
+		<div class="popup-content">
+			
+      <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.32322 -->
+<div id="enterBeta" class="hidden">
+<h2>Welcome to the new SFGate.com</h2>
+<div class="copy">
+<p>We have re-imagined our design in a bold new way. Before we roll it out for everyone, we are giving select readers an opportunity to try out the new design. We welcome your feedback.</p>
+</div>
+</div>
+
+<div id="leaveBeta" class="hidden">
+<h2>Thanks for being an SFGate.com Reader</h2>
+<div class="copy">
+<p>We've removed you from the beta test of the new design.<br><em>Please note:</em> if you clear your cookies you may be invited back to the beta. In order to prevent this from happening, please do not clear your SFGate.com cookies for the next 30 days.</p>
+</div>
+</div>
+<style>.popup .popup-exit {background-position: -48px -240px;}</style>
+		</div>
+	</div>
+</div>
+<div class="popup-overlay"></div>
+<!-- e hearst/common/userTesting.tpl -->
+		<div id="subHead" class="subHead">
+			<div class="innerWrap">
+				<div class="weatherWrapper">
+					<div class="weather__current-forecast">
+						<a href="/weather/"><div class="condition"><span class="icon"></span></div><span class="temp"></span></a>
+						<span class="city"></span>
+						<p id="weatherChange"></p>
+					</div>
+					<div class="weatherChange"><span class="icon"></span></div>
+				</div>
+				<form class="searchWrapper" id="search_form" action="/search/?" method="get" target="_top">
+					<input type="hidden" name="action" value="search" />
+					<input type="hidden" name="firstRequest" value="1" />
+                    
+                    <input type="hidden" name="searchindex" value="property" />
+                                            <input type="hidden" name="channel" value="science" />
+                        <input type="hidden" name="search" value="1" />
+                                        					<input type="text" name="query" id="search_query" value="Search" class="textInputNote">
+					<input type="submit" value="Submit" class="submit" />
+				</form>
+				<div class="socialWrapper">
+					<ul>
+						<li class="socialIcon facebook"><a href="https://www.facebook.com/SFGate/" target="_blank"><span class="icon"></span></a></li>
+						<li class="socialIcon twitter"><a href="https://twitter.com/sfgate/" target="_blank"><span class="icon"></span></a></li>
+						<li class="socialIcon google"><a href="https://plus.google.com/118071641239908367285/posts/" target="_blank"><span class="icon"></span></a></li>
+						<li class="socialIcon pinterest"><a href="http://www.pinterest.com/sfgate/" target="_blank"><span class="icon"></span></a></li>
+						<li class="socialIcon rss"><a href="/rss/"><span class="icon"></span></a></li>
+						<li class="text user_tools" id="reg_member">
+							
+							<script type="text/javascript">
+								// <![CDATA[
+								if ( typeof window.print_sfgate_un != "undefined" ){
+									print_sfgate_un('reg_member');
+								}
+								// ]]>
+							</script>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<nav id="siteNav" class="site-nav">
+            <div class="navMask"></div>
+			<div class="shadow-nav"></div>
+			<div class="innerWrap">
+													
+
+<!-- hearst/sitemenu/dynamic_r1.tpl -->
+
+
+<!-- ux hearst/sitemenu/menuSiteNav_r1.tpl -->
+    <ul class="topnav menuItems">
+    
+                                                                          <li class="subMenuContainer" location="home"><span class="cover"></span><a href="/" class="subMenuLink homeLink home hdn-analytics"><span class="icon"></span><span class="hdn-analytics-data">visit|Home|navigation-www|1</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem"  class="hasSubMenu" data="0"><a href="/chronicle-contacts/" class="hdn-analytics hasSubMenu">Contact SFGate<span class="hdn-analytics-data">visit|Home-Contact SFGate|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem"  class="hasSubMenu" ><a href="/aboutsfgate/" class="hdn-analytics hasSubMenu">About SFGate<span class="hdn-analytics-data">visit|Home-About SFGate|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem"  class="hasSubMenu" ><a href="http://www.hearst.com/newspapers/san-francisco-chronicle" class="hdn-analytics hasSubMenu">About SF Chronicle<span class="hdn-analytics-data">visit|Home-About SF Chronicle|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem"  class="hasSubMenu" ><a href="http://extras.sfgate.com/chronicle/new/pages/home.php" class="hdn-analytics hasSubMenu">Advertise with us<span class="hdn-analytics-data">visit|Home-Advertise with us|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem"  class="hasSubMenu" ><a href="/privacy-policy/" class="hdn-analytics hasSubMenu">Privacy policy<span class="hdn-analytics-data">visit|Home-Privacy policy|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/index/" class="hdn-analytics">Site Index<span class="hdn-analytics-data">visit|Home-Site Index|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/cgi-bin/newsletter/services/main" class="hdn-analytics">Newsletters<span class="hdn-analytics-data">visit|Home-Newsletters|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/getus/" class="hdn-analytics">Get news alerts<span class="hdn-analytics-data">visit|Home-Get news alerts|navigation-www|8</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                          <div class="submenu" data="0" length="2">
+                        <ul class="submenuUlList">
+                                                    <li><a href="/feedback/" class="hdn-analytics">Customer Support<span class="hdn-analytics-data">visit|Customer Support-Contact SFGate-Customer Support|navigation-www|1</span></a></li>
+                                                    <li><a href="/submissions/" class="hdn-analytics">Submissions & Tips<span class="hdn-analytics-data">visit|Submissions & Tips-Contact SFGate-Submissions & Tips|navigation-www|2</span></a></li>
+                                                </ul>
+                      </div>
+                                                                              <div class="submenu" data="" length="6">
+                        <ul class="submenuUlList">
+                                                    <li><a href="/faq/" class="hdn-analytics">FAQ<span class="hdn-analytics-data">visit|FAQ-About SFGate-FAQ|navigation-www|1</span></a></li>
+                                                    <li><a href="http://www.sfgate.com/cgi-bin/webreg/user/reg_cnt" class="hdn-analytics">Register on SFGate<span class="hdn-analytics-data">visit|Register on SFGate-About SFGate-Register on SFGate|navigation-www|2</span></a></li>
+                                                    <li><a href="http://www.sfgate.com/cgi-bin/newsletter/services/main" class="hdn-analytics">SFGate Newsletters<span class="hdn-analytics-data">visit|SFGate Newsletters-About SFGate-SFGate Newsletters|navigation-www|3</span></a></li>
+                                                    <li><a href="/staff/" class="hdn-analytics">SFGate Staff<span class="hdn-analytics-data">visit|SFGate Staff-About SFGate-SFGate Staff|navigation-www|4</span></a></li>
+                                                    <li><a href="/chronicle/hr/" class="hdn-analytics">Careers<span class="hdn-analytics-data">visit|Careers-About SFGate-Careers|navigation-www|5</span></a></li>
+                                                    <li><a href="http://www.hearst.com/" class="hdn-analytics">Hearst<span class="hdn-analytics-data">visit|Hearst-About SFGate-Hearst|navigation-www|6</span></a></li>
+                                                </ul>
+                      </div>
+                                                                              <div class="submenu" data="" length="9">
+                        <ul class="submenuUlList">
+                                                    <li><a href="http://www.sfchronicle.com/newsroom_contacts/" class="hdn-analytics">SF Chronicle Staff<span class="hdn-analytics-data">visit|SF Chronicle Staff-About SF Chronicle-SF Chronicle Staff|navigation-www|1</span></a></li>
+                                                    <li><a href="https://myaccount.sfchronicle.com/dsssubscribe.aspx?pid=90" class="hdn-analytics">Become a Subscriber<span class="hdn-analytics-data">visit|Become a Subscriber-About SF Chronicle-Become a Subscriber|navigation-www|2</span></a></li>
+                                                    <li><a href="https://myaccount.sfchronicle.com/" class="hdn-analytics">Manage Your Subscription<span class="hdn-analytics-data">visit|Manage Your Subscription-About SF Chronicle-Manage Your Subscription|navigation-www|3</span></a></li>
+                                                    <li><a href="http://www.sfchronicle.com/customer_service/" class="hdn-analytics">SF Chronicle Delivery<span class="hdn-analytics-data">visit|SF Chronicle Delivery-About SF Chronicle-SF Chronicle Delivery|navigation-www|4</span></a></li>
+                                                    <li><a href="https://myaccount.sfchronicle.com/Login.aspx" class="hdn-analytics">E-Edition<span class="hdn-analytics-data">visit|E-Edition-About SF Chronicle-E-Edition|navigation-www|5</span></a></li>
+                                                    <li><a href="http://www.sfgate.com/faq/#faq10" class="hdn-analytics">Back Copies<span class="hdn-analytics-data">visit|Back Copies-About SF Chronicle-Back Copies|navigation-www|6</span></a></li>
+                                                    <li><a href="/chronicle/hr/" class="hdn-analytics">Careers<span class="hdn-analytics-data">visit|Careers-About SF Chronicle-Careers|navigation-www|7</span></a></li>
+                                                    <li><a href="http://nieonline.com/sfchronicle" class="hdn-analytics">Chron in Education<span class="hdn-analytics-data">visit|Chron in Education-About SF Chronicle-Chron in Education|navigation-www|8</span></a></li>
+                                                    <li><a href="/corrections/" class="hdn-analytics">Corrections<span class="hdn-analytics-data">visit|Corrections-About SF Chronicle-Corrections|navigation-www|9</span></a></li>
+                                                </ul>
+                      </div>
+                                                                              <div class="submenu" data="" length="5">
+                        <ul class="submenuUlList">
+                                                    <li><a href="http://extras.sfgate.com/chronicle/new/pages/home.php" class="hdn-analytics">Media Kit<span class="hdn-analytics-data">visit|Media Kit-Advertise with us-Media Kit|navigation-www|1</span></a></li>
+                                                    <li><a href="http://sfgate.kaango.com//" class="hdn-analytics">Place a Classified Ad<span class="hdn-analytics-data">visit|Place a Classified Ad-Advertise with us-Place a Classified Ad|navigation-www|2</span></a></li>
+                                                    <li><a href="/privacy-policy/" class="hdn-analytics">About Our Ads<span class="hdn-analytics-data">visit|About Our Ads-Advertise with us-About Our Ads|navigation-www|3</span></a></li>
+                                                    <li><a href="http://www.legalnotice.org/pl/SFGate/landing1.aspx" class="hdn-analytics">Public Notices<span class="hdn-analytics-data">visit|Public Notices-Advertise with us-Public Notices|navigation-www|4</span></a></li>
+                                                    <li><a href="http://local.sfgate.com/" class="hdn-analytics">Local Business Directory<span class="hdn-analytics-data">visit|Local Business Directory-Advertise with us-Local Business Directory|navigation-www|5</span></a></li>
+                                                </ul>
+                      </div>
+                                                                              <div class="submenu" data="" length="3">
+                        <ul class="submenuUlList">
+                                                    <li><a href="/termsandconditions/" class="hdn-analytics">Terms of Use<span class="hdn-analytics-data">visit|Terms of Use-Privacy policy-Terms of Use|navigation-www|1</span></a></li>
+                                                    <li><a href="http://www.sfgate.com/privacy-policy/#caprivacyrights" class="hdn-analytics">Your California Privacy Rights<span class="hdn-analytics-data">visit|Your California Privacy Rights-Privacy policy-Your California Privacy Rights|navigation-www|2</span></a></li>
+                                                    <li><a href="http://www.aboutads.info/choices/" class="hdn-analytics">Ad Choices<span class="hdn-analytics-data">visit|Ad Choices-Privacy policy-Ad Choices|navigation-www|3</span></a></li>
+                                                </ul>
+                      </div>
+                                                                                                                                                                </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="news"><span class="cover"></span><a href="/news/" class="subMenuLink news hdn-analytics">News<span class="hdn-analytics-data">visit|News|navigation-www|2</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="/bayarea/" class="hdn-analytics">Bay Area & State<span class="hdn-analytics-data">visit|News-Bay Area & State|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/traffic" class="hdn-analytics">Traffic<span class="hdn-analytics-data">visit|News-Traffic|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/nation/" class="hdn-analytics">Nation<span class="hdn-analytics-data">visit|News-Nation|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/world/" class="hdn-analytics">World<span class="hdn-analytics-data">visit|News-World|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/politics/" class="hdn-analytics">Politics<span class="hdn-analytics-data">visit|News-Politics|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/crime/" class="hdn-analytics">Crime<span class="hdn-analytics-data">visit|News-Crime|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/technology/" class="hdn-analytics">Tech<span class="hdn-analytics-data">visit|News-Tech|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.legacy.com/obituaries/sfgate/" class="hdn-analytics">Obituaries<span class="hdn-analytics-data">visit|News-Obituaries|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/opinion/" class="hdn-analytics">Opinion<span class="hdn-analytics-data">visit|News-Opinion|navigation-www|9</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/health/" class="hdn-analytics">Health<span class="hdn-analytics-data">visit|News-Health|navigation-www|10</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/education/" class="hdn-analytics">Education<span class="hdn-analytics-data">visit|News-Education|navigation-www|11</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://video.sfgate.com/" class="hdn-analytics">Video<span class="hdn-analytics-data">visit|News-Video|navigation-www|12</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/elections/" class="hdn-analytics">Elections<span class="hdn-analytics-data">visit|News-Elections|navigation-www|13</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/endorsements/" class="hdn-analytics">Endorsements<span class="hdn-analytics-data">visit|News-Endorsements|navigation-www|14</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="sports"><span class="cover"></span><a href="/sports/" class="subMenuLink sports hdn-analytics">Sports<span class="hdn-analytics-data">visit|Sports|navigation-www|3</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="http://blog.sfgate.com/49ers/" class="hdn-analytics">49ers<span class="hdn-analytics-data">visit|Sports-49ers|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/raiders/" class="hdn-analytics">Raiders<span class="hdn-analytics-data">visit|Sports-Raiders|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/giants/" class="hdn-analytics">Giants<span class="hdn-analytics-data">visit|Sports-Giants|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/sports/giantsfandom/" class="hdn-analytics">Giants Fandom<span class="hdn-analytics-data">visit|Sports-Giants Fandom|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/athletics/" class="hdn-analytics">A's<span class="hdn-analytics-data">visit|Sports-A's|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/warriors/" class="hdn-analytics">Warriors<span class="hdn-analytics-data">visit|Sports-Warriors|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/sharks/" class="hdn-analytics">Sharks<span class="hdn-analytics-data">visit|Sports-Sharks|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/sports/49ersfandom/" class="hdn-analytics">49ers Fandom<span class="hdn-analytics-data">visit|Sports-49ers Fandom|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=nfl/indexpic.htm" class="hdn-analytics">NFL<span class="hdn-analytics-data">visit|Sports-NFL|navigation-www|9</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=mlb/indexpic.htm" class="hdn-analytics">MLB<span class="hdn-analytics-data">visit|Sports-MLB|navigation-www|10</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=nba/indexpic.htm" class="hdn-analytics">NBA<span class="hdn-analytics-data">visit|Sports-NBA|navigation-www|11</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/collegesports/" class="hdn-analytics">College<span class="hdn-analytics-data">visit|Sports-College|navigation-www|12</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/preps/" class="hdn-analytics">Preps<span class="hdn-analytics-data">visit|Sports-Preps|navigation-www|13</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=golf-m/indexpic.htm" class="hdn-analytics">Golf<span class="hdn-analytics-data">visit|Sports-Golf|navigation-www|14</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/outdoors/" class="hdn-analytics">Outdoors<span class="hdn-analytics-data">visit|Sports-Outdoors|navigation-www|15</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/sports/tv/" class="hdn-analytics">TV<span class="hdn-analytics-data">visit|Sports-TV|navigation-www|16</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="business"><span class="cover"></span><a href="/business/" class="subMenuLink business hdn-analytics">Business<span class="hdn-analytics-data">visit|Business|navigation-www|4</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="/technology/" class="hdn-analytics">Technology<span class="hdn-analytics-data">visit|Business-Technology|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://finance.sfgate.com" class="hdn-analytics">Finance<span class="hdn-analytics-data">visit|Business-Finance|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://markets.sfgate.com/" class="hdn-analytics">Markets<span class="hdn-analytics-data">visit|Business-Markets|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/mortgagerates/" class="hdn-analytics">Mortgage Rates<span class="hdn-analytics-data">visit|Business-Mortgage Rates|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://homeguides.sfgate.com/" class="hdn-analytics">Home Guides<span class="hdn-analytics-data">visit|Business-Home Guides|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.legalnotice.org/pl/SFGate/landing1.aspx" class="hdn-analytics">Public Notices<span class="hdn-analytics-data">visit|Business-Public Notices|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/sponsoredarticles/business/" class="hdn-analytics">Sponsored Content<span class="hdn-analytics-data">visit|Business-Sponsored Content|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://blog.sfgate.com/techchron/" class="hdn-analytics">The Tech Chronicles<span class="hdn-analytics-data">visit|Business-The Tech Chronicles|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://blog.sfgate.com/pender/" class="hdn-analytics">Net Worth Plus<span class="hdn-analytics-data">visit|Business-Net Worth Plus|navigation-www|9</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://blog.sfgate.com/bottomline/" class="hdn-analytics">Bottom Line<span class="hdn-analytics-data">visit|Business-Bottom Line|navigation-www|10</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="ae"><span class="cover"></span><a href="/entertainment/" class="subMenuLink ae hdn-analytics">A&E<span class="hdn-analytics-data">visit|A&E|navigation-www|5</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="/entertainment/" class="hdn-analytics">Entertainment<span class="hdn-analytics-data">visit|A&E-Entertainment|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://blog.sfgate.com/dailydish/" class="hdn-analytics">The Daily Dish<span class="hdn-analytics-data">visit|A&E-The Daily Dish|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/movies/" class="hdn-analytics">Movies<span class="hdn-analytics-data">visit|A&E-Movies|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/music/" class="hdn-analytics">Music & Nightlife<span class="hdn-analytics-data">visit|A&E-Music & Nightlife|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/performance/" class="hdn-analytics">Performance<span class="hdn-analytics-data">visit|A&E-Performance|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/art/" class="hdn-analytics">Art<span class="hdn-analytics-data">visit|A&E-Art|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://events.sfgate.com/" class="hdn-analytics">Events<span class="hdn-analytics-data">visit|A&E-Events|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/books/" class="hdn-analytics">Books<span class="hdn-analytics-data">visit|A&E-Books|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/tv/" class="hdn-analytics">TV<span class="hdn-analytics-data">visit|A&E-TV|navigation-www|9</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/horoscope/" class="hdn-analytics">Horoscope<span class="hdn-analytics-data">visit|A&E-Horoscope|navigation-www|10</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/comics/" class="hdn-analytics">Comics<span class="hdn-analytics-data">visit|A&E-Comics|navigation-www|11</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/games/" class="hdn-analytics">Games<span class="hdn-analytics-data">visit|A&E-Games|navigation-www|12</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/thingstodo/" class="hdn-analytics">Things To Do<span class="hdn-analytics-data">visit|A&E-Things To Do|navigation-www|13</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="food"><span class="cover"></span><a href="/food/" class="subMenuLink food hdn-analytics">Food<span class="hdn-analytics-data">visit|Food|navigation-www|6</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="/restaurants/" class="hdn-analytics">Restaurants<span class="hdn-analytics-data">visit|Food-Restaurants|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/recipes/" class="hdn-analytics">Recipes<span class="hdn-analytics-data">visit|Food-Recipes|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/wine/" class="hdn-analytics">Wine<span class="hdn-analytics-data">visit|Food-Wine|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/food/top100/2014/" class="hdn-analytics">Top 100 Restaurants<span class="hdn-analytics-data">visit|Food-Top 100 Restaurants|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/wine/article/Top-100-Wines-of-2013-5023413.php" class="hdn-analytics">Top 100 Wines<span class="hdn-analytics-data">visit|Food-Top 100 Wines|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/bargainbites" class="hdn-analytics">Bargain Bites<span class="hdn-analytics-data">visit|Food-Bargain Bites|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.opentable.com/start.aspx?m=4&ref=7801" class="hdn-analytics">Reservations<span class="hdn-analytics-data">visit|Food-Reservations|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://insidescoopsf.sfgate.com/" class="hdn-analytics">Inside Scoop SF<span class="hdn-analytics-data">visit|Food-Inside Scoop SF|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://healthyeating.sfgate.com/" class="hdn-analytics">Healthy Eating<span class="hdn-analytics-data">visit|Food-Healthy Eating|navigation-www|9</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                    </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="living"><span class="cover"></span><a href="/living/" class="subMenuLink living hdn-analytics">Living<span class="hdn-analytics-data">visit|Living|navigation-www|7</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="/homeandgarden/" class="hdn-analytics">Home & Garden<span class="hdn-analytics-data">visit|Living-Home & Garden|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/style/" class="hdn-analytics">Style<span class="hdn-analytics-data">visit|Living-Style|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/sfsocial/" class="hdn-analytics">Parties<span class="hdn-analytics-data">visit|Living-Parties|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/philanthropy/" class="hdn-analytics">Philanthropy<span class="hdn-analytics-data">visit|Living-Philanthropy|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/lust/" class="hdn-analytics">Lust<span class="hdn-analytics-data">visit|Living-Lust|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/homerx/" class="hdn-analytics">Home RX<span class="hdn-analytics-data">visit|Living-Home RX|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/skiing/" class="hdn-analytics">Ski<span class="hdn-analytics-data">visit|Living-Ski|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/happy/" class="hdn-analytics">Happy<span class="hdn-analytics-data">visit|Living-Happy|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/lgbt/" class="hdn-analytics">LGBT<span class="hdn-analytics-data">visit|Living-LGBT|navigation-www|9</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://remodeling.sfgate.com/" class="hdn-analytics">Houzz<span class="hdn-analytics-data">visit|Living-Houzz|navigation-www|10</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/sponsoredarticles/lifestyle/" class="hdn-analytics">Sponsored<span class="hdn-analytics-data">visit|Living-Sponsored|navigation-www|11</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="travel"><span class="cover"></span><a href="/travel/" class="subMenuLink travel hdn-analytics">Travel<span class="hdn-analytics-data">visit|Travel|navigation-www|8</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="/getaways/" class="hdn-analytics">Weekend Getaways<span class="hdn-analytics-data">visit|Travel-Weekend Getaways|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/neighborhoods/" class="hdn-analytics">Neighborhoods<span class="hdn-analytics-data">visit|Travel-Neighborhoods|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/winecountry/" class="hdn-analytics">Wine Country<span class="hdn-analytics-data">visit|Travel-Wine Country|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/monterey-carmel/" class="hdn-analytics">Monterey-Carmel<span class="hdn-analytics-data">visit|Travel-Monterey-Carmel|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/renotahoe/" class="hdn-analytics">Tahoe<span class="hdn-analytics-data">visit|Travel-Tahoe|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/hawaii/" class="hdn-analytics">Hawaii<span class="hdn-analytics-data">visit|Travel-Hawaii|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/mexico/" class="hdn-analytics">Mexico<span class="hdn-analytics-data">visit|Travel-Mexico|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/vegas/" class="hdn-analytics">Vegas<span class="hdn-analytics-data">visit|Travel-Vegas|navigation-www|8</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="columns"><span class="cover"></span><a href="/columns/" class="subMenuLink columns hdn-analytics">Columns<span class="hdn-analytics-data">visit|Columns|navigation-www|9</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="http://www.sfgate.com/columns/diningout/" class="hdn-analytics">Michael Bauer<span class="hdn-analytics-data">visit|Columns-Michael Bauer|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columnists/carroll/" class="hdn-analytics">Jon Carroll<span class="hdn-analytics-data">visit|Columns-Jon Carroll|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columnists/garchik" class="hdn-analytics">Leah Garchik<span class="hdn-analytics-data">visit|Columns-Leah Garchik|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columnists/jenkins" class="hdn-analytics">Bruce Jenkins<span class="hdn-analytics-data">visit|Columns-Bruce Jenkins|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columnists/johnson" class="hdn-analytics">Chip Johnson<span class="hdn-analytics-data">visit|Columns-Chip Johnson|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columnists/killion/" class="hdn-analytics">Ann Killion<span class="hdn-analytics-data">visit|Columns-Ann Killion|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columns/kroichick/" class="hdn-analytics">Ron Kroichick<span class="hdn-analytics-data">visit|Columns-Ron Kroichick|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/columns/lee/" class="hdn-analytics">Thomas Lee<span class="hdn-analytics-data">visit|Columns-Thomas Lee|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/columnists/matier-ross/" class="hdn-analytics">Matier & Ross<span class="hdn-analytics-data">visit|Columns-Matier & Ross|navigation-www|9</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/columnists/nevius/" class="hdn-analytics">C.W Nevius<span class="hdn-analytics-data">visit|Columns-C.W Nevius|navigation-www|10</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/columns/networth/" class="hdn-analytics">Kathleen Pender<span class="hdn-analytics-data">visit|Columns-Kathleen Pender|navigation-www|11</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/columnists/ostler/" class="hdn-analytics">Scott Ostler<span class="hdn-analytics-data">visit|Columns-Scott Ostler|navigation-www|12</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/columns/bottomline/" class="hdn-analytics">Andrew S Ross<span class="hdn-analytics-data">visit|Columns-Andrew S Ross|navigation-www|13</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/columnists/saunders/" class="hdn-analytics">Debra J Saunders<span class="hdn-analytics-data">visit|Columns-Debra J Saunders|navigation-www|14</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+              </ul>
+            </li>
+                        
+                                                                          <li class="subMenuContainer topLevel" location="cars"><span class="cover"></span><a href="http://cars.sfgate.com" class="subMenuLink cars hdn-analytics">Cars<span class="hdn-analytics-data">visit|Cars|navigation-www|1</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="http://cars.sfgate.com/Dealers?zipCode=94103&make=&maxDistance=100&sortBy=1" class="hdn-analytics">Dealers<span class="hdn-analytics-data">visit|Cars-Dealers|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columns/clickandclack/" class="hdn-analytics">Click and Clack<span class="hdn-analytics-data">visit|Cars-Click and Clack|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://blog.sfgate.com/topdown/" class="hdn-analytics">Car Blog<span class="hdn-analytics-data">visit|Cars-Car Blog|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/columns/myride/" class="hdn-analytics">My Ride<span class="hdn-analytics-data">visit|Cars-My Ride|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/cars/sellyourcar/" class="hdn-analytics">Sell Your Car<span class="hdn-analytics-data">visit|Cars-Sell Your Car|navigation-www|5</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                    </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="jobs"><span class="cover"></span><a href="/jobs/" class="subMenuLink jobs hdn-analytics">Jobs<span class="hdn-analytics-data">visit|Jobs|navigation-www|2</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="http://www.bizbuysell.com/partner/san-francisco-businesses-for-sale" class="hdn-analytics">Be Your Own Boss<span class="hdn-analytics-data">visit|Jobs-Be Your Own Boss|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://events.sfgate.com/search?acat=&new=n&sort=0&srad=50&srss=10&ssrss=5&st=event&svt=text&swhat=&swhen=&swhere=San+Francisco%2CCA&trim=1&cat=1111" class="hdn-analytics">Job Events<span class="hdn-analytics-data">visit|Jobs-Job Events|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/jobs/placeanad/" class="hdn-analytics">Advertise<span class="hdn-analytics-data">visit|Jobs-Advertise|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://bayarea.salary.com/SalaryWizard/LayoutScripts/Swzl_NewSearch.aspx" class="hdn-analytics">Salary Wizard<span class="hdn-analytics-data">visit|Jobs-Salary Wizard|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://blog.sfgate.com/gettowork/" class="hdn-analytics">Get To Work<span class="hdn-analytics-data">visit|Jobs-Get To Work|navigation-www|5</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                    </div>
+              </ul>
+            </li>
+                        
+                                                              <li class="subMenuContainer topLevel" location="realestate"><span class="cover"></span><a href="/realestate/" class="subMenuLink realestate hdn-analytics">Real Estate<span class="hdn-analytics-data">visit|Real Estate|navigation-www|3</span></a>
+                              <ul class="subnav ">
+                <div class="subnavLeft">
+                  <ul class="subnavlinks">
+                                                            <li class="subMenuItem" ><a href="/newhomes/" class="hdn-analytics">New Homes<span class="hdn-analytics-data">visit|Real Estate-New Homes|navigation-www|1</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/openhomes/" class="hdn-analytics">Open Homes<span class="hdn-analytics-data">visit|Real Estate-Open Homes|navigation-www|2</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/luxuryhomes/" class="hdn-analytics">Luxury<span class="hdn-analytics-data">visit|Real Estate-Luxury|navigation-www|3</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/rentals/" class="hdn-analytics">Rentals<span class="hdn-analytics-data">visit|Real Estate-Rentals|navigation-www|4</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/mortgagerates/" class="hdn-analytics">Mortgage Rates<span class="hdn-analytics-data">visit|Real Estate-Mortgage Rates|navigation-www|5</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.loopnet.com/looplink/sfgate/searchpage.aspx" class="hdn-analytics">Commercial<span class="hdn-analytics-data">visit|Real Estate-Commercial|navigation-www|6</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="/realestate/advertise/" class="hdn-analytics">Place an ad<span class="hdn-analytics-data">visit|Real Estate-Place an ad|navigation-www|7</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://homeguides.sfgate.com/" class="hdn-analytics">Home Guides<span class="hdn-analytics-data">visit|Real Estate-Home Guides|navigation-www|8</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/webdb/homesales" class="hdn-analytics">Homesales<span class="hdn-analytics-data">visit|Real Estate-Homesales|navigation-www|9</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://www.sfgate.com/webdb/foreclosures" class="hdn-analytics">Foreclosures<span class="hdn-analytics-data">visit|Real Estate-Foreclosures|navigation-www|10</span></a></li>
+                                                                                <li class="subMenuItem" ><a href="http://blog.sfgate.com/ontheblock" class="hdn-analytics">On the Block Blog<span class="hdn-analytics-data">visit|Real Estate-On the Block Blog|navigation-www|11</span></a></li>
+                                                      </ul>
+                </div>
+                <div class="subnavRight">
+                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+              </ul>
+            </li>
+                        
+                                            <li class="subMenuContainer topLevel" location="findsave"><span class="cover"></span><a href="http://findnsave.sfgate.com/" class="subMenuLink findsave hdn-analytics">Find&Save<span class="hdn-analytics-data">visit|Find&Save|navigation-www|4</span></a></li>
+                        
+                </ul>
+<!-- e ux hearst/sitemenu/menuSiteNav_r1.tpl -->
+
+<!-- e hearst/sitemenu/dynamic_r1.tpl -->				<span id="nav768" class="tabletAssets"></span>
+				<span id="nav1024"></span>
+			</div>
+		</nav>
+		<div id="siteNavSpacer"></div>
+		<div class="hst-billboard">
+    <div class="innerWrap">
+                    <div id="RM" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("RM"); /*]]>*/</script></div>
+                <div id="A951" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A951"); /*]]>*/</script></div>
+    </div>
+</div>
+	</header>
+<!-- e ux hearst/home/navigation_main.tpl -->
+<!-- e hearst/home/navigation.tpl -->
+<!-- commentsOn: 1, commentKey: sfgate-article-4929113 -->
+    <div class="page-content news">
+    
+                        <!-- templates/design/article/story_page.tpl -->
+
+<div class="faux-21 clearfix">
+    <div class="span-21b clearfix">
+        <!-- hearst/article/types/story.tpl -->
+
+<table class="hst-articleprinter">
+    <tr>
+        <td class="print"><form><input type="submit" value="Print This Article" onclick="print();return false;" /></form></td>
+        <td class="back"><a href="/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php">&laquo; Back to Article</a></td>
+    </tr>
+</table>
+
+<div id="hst-printable-ad" class="hst-printable-ad">
+</div>
+<div class="hnews hentry item">
+
+<!-- src/business/templates/hearst/article/types/standard_title.tpl -->
+
+        <div class="hst-articletitle articletitle">
+            <p class="brand"><!--  BRAND  --></p>
+            <!-- src/business/templates/hearst/article/headline.tpl -->
+    <h1 class="headline entry-title">Otter signals Lake Merritt ecosystem's comeback</h1>
+    <!-- e src/business/templates/hearst/article/headline.tpl -->
+            <!-- src/business/templates/hearst/article/types/byline.tpl -->
+
+<h5 class="byline"><span class="name">Will Kane</span></h5><!-- e src/business/templates/hearst/article/types/byline.tpl -->
+                                                                <h5 class="timestamp updated" title="2013-10-27T07:31:08Z">
+                Updated 7:31&nbsp;am, Sunday, October 27, 2013
+            </h5>
+        </div>
+
+<!-- e src/business/templates/hearst/article/types/standard_title.tpl -->
+
+    <!-- design/gallery/main.tpl -->
+
+    <div class="hst-galleryitem clearfix">
+      <div class="header clearfix">
+      
+              <p class="pagination clearfix">
+        <a href="#next" onclick="this.blur(); hst_galleryitem_index.next(); setHashToSelectedItem(); return false;"><img  id="hst_galleryitem_index_next_en" src="/img/pages/slideshow/item/button-next.gif" alt="next" /></a><a href="#previous" onclick="this.blur(); hst_galleryitem_index.prev(); setHashToSelectedItem(); return false;"><img id="hst_galleryitem_index_prev_en" src="/img/pages/slideshow/item/button-prev.gif" alt="previous" /></a>
+        <span class="showing" id="hst_galleryitem_index_showing"></span>
+        </p>
+      
+      
+    </div>
+    <ul class="clearfix">
+           <li id="hst_galleryitem_index1" comment_id="sfgate-photo-5372046">
+                           <a href="#next" onclick="this.blur(); hst_galleryitem_index.next(); setHashToSelectedItem(); return false;"><img id="sfgate-photo-5372046" src="http://ww3.hdnux.com/photos/24/37/42/5372046/3/628x471.jpg" alt="A river otter climbs a dock at Lake Merritt early this month, inspiring hope for the lake's future. Photo: Greg Lewis, Courtesy" /></a>
+         
+         
+<!-- src/business/templates/design/gallery/caption.tpl -->
+
+	
+		<div class="caption">
+			A river otter climbs a dock at Lake Merritt early this month, inspiring hope for the lake's future.
+							Photo: Greg Lewis, Courtesy
+			            
+		</div><div id="sfgate-photo-5372046-caption" style="display:none;">A river otter climbs a dock at Lake Merritt early this month,...</div>
+
+	
+<!-- /src/business/templates/design/gallery/caption.tpl -->
+
+              </li>
+           <li id="hst_galleryitem_index2" class="hidden" comment_id="sfgate-photo-5371982">
+                           <a href="#next" onclick="this.blur(); hst_galleryitem_index.next(); setHashToSelectedItem(); return false;"><img id="sfgate-photo-5371982" src="http://ww3.hdnux.com/photos/24/37/41/5371982/3/628x471.jpg" alt="Crews gather trash from Lake Merritt, where bacteria are at their lowest levels in years. Photo: Michael Macor, The Chronicle" /></a>
+         
+         
+<!-- src/business/templates/design/gallery/caption.tpl -->
+
+	
+		<div class="caption">
+			Crews gather trash from Lake Merritt, where bacteria are at their lowest levels in years.
+							Photo: Michael Macor, The Chronicle
+			            
+		</div><div id="sfgate-photo-5371982-caption" style="display:none;">Crews gather trash from Lake Merritt, where bacteria are at their...</div>
+
+	
+<!-- /src/business/templates/design/gallery/caption.tpl -->
+
+              </li>
+           <li id="hst_galleryitem_index3" class="hidden" comment_id="sfgate-photo-5371979">
+                           <a href="#next" onclick="this.blur(); hst_galleryitem_index.next(); setHashToSelectedItem(); return false;"><img id="sfgate-photo-5371979" src="http://ww4.hdnux.com/photos/24/37/41/5371979/3/628x471.jpg" alt="Volunteers collect debris from Lake Merritt, where the first river otter in decades was spotted this month. The sighting is seen as proof that the Oakland ecosystem is coming back after years of deterioration. Photo: Michael Macor, The Chronicle" /></a>
+         
+         
+<!-- src/business/templates/design/gallery/caption.tpl -->
+
+	
+		<div class="caption">
+			Volunteers collect debris from Lake Merritt, where the first river otter in decades was spotted this month. The sighting is seen as proof that the Oakland ecosystem is coming back after years of deterioration.
+							Photo: Michael Macor, The Chronicle
+			            
+		</div><div id="sfgate-photo-5371979-caption" style="display:none;">Volunteers collect debris from Lake Merritt, where the first river...</div>
+
+	
+<!-- /src/business/templates/design/gallery/caption.tpl -->
+
+              </li>
+          </ul>
+
+      <form action="javascript:void();">
+    <input type="hidden" id="hst_galleryitem_index_idi" value="1" />
+    <input type="hidden" id="hst_galleryitem_index_pi" value="False" />
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+    // set the pluck file to the proper photo.
+          var hrst_liid = 1;
+        var hst_rotation_label = '';
+            new hstrot(3,1,'hst_galleryitem_index',0,3,1);
+        hst_galleryitem_index.setup();
+    
+    function hst_KeyCheck(e) {
+      var KeyID = (window.event) ? event.keyCode : e.keyCode;
+      switch(KeyID)
+      {
+        case 37:
+        hst_galleryitem_index.prev(); // arrow left
+        setHashToSelectedItem();
+        break;
+
+        case 39:
+        hst_galleryitem_index.next(); // arrow right
+        setHashToSelectedItem();
+        break;
+      }
+    }
+    
+    document.onkeyup = hst_KeyCheck;
+
+    //]]>
+    </script>
+   
+   </div><!--/.hst-galleryitem-->
+
+                        <div class="hst-gallerynav small clearfix">
+
+                    <div class="carousel">
+                        <ul class="clearfix">
+                            
+                                                                        <li id="hst_gallerynav_index1">
+                                <a class="hdnce-e hdnce-photo-5372046" href="#photo-5372046" onclick="hst_gallerynav_index.showitem(hst_galleryitem_index,1); setHashToSelectedItem();">
+                                  <img src="http://ww3.hdnux.com/photos/24/37/42/5372046/3/gallery_thumb.jpg" alt="A river otter climbs a dock at Lake Merritt early this month, inspiring hope for the lake's future." />
+                                </a>
+                              </li>
+                                                                                                                      <li id="hst_gallerynav_index2">
+                                <a class="hdnce-e hdnce-photo-5371982" href="#photo-5371982" onclick="hst_gallerynav_index.showitem(hst_galleryitem_index,2); setHashToSelectedItem();">
+                                  <img src="http://ww3.hdnux.com/photos/24/37/41/5371982/3/gallery_thumb.jpg" alt="Crews gather trash from Lake Merritt, where bacteria are at their lowest levels in years." />
+                                </a>
+                              </li>
+                                                                                                                      <li id="hst_gallerynav_index3">
+                                <a class="hdnce-e hdnce-photo-5371979" href="#photo-5371979" onclick="hst_gallerynav_index.showitem(hst_galleryitem_index,3); setHashToSelectedItem();">
+                                  <img src="http://ww4.hdnux.com/photos/24/37/41/5371979/3/gallery_thumb.jpg" alt="Volunteers collect debris from Lake Merritt, where the first river otter in decades was spotted this month. The sighting is seen as proof that the Oakland ecosystem is coming back after years of deterioration." />
+                                </a>
+                              </li>
+                                                            
+                                            </ul>
+                    </div>
+
+                    <form action="javascript:void();">
+                        <input type="hidden" id="hst_gallerynav_index_idi" value="1" />
+                        <input type="hidden" id="hst_gallerynav_index_pi" value="False" />
+                    </form>
+
+  <script type="text/javascript">
+  //<![CDATA[
+    document.getElementById('hst_gallerynav_index_idi').value = hrst_liid;
+    var hst_rotation_label = '';
+    new hstrot(3,7,'hst_gallerynav_index',0,3,1);
+    hst_gallerynav_index.setup();
+
+
+    $('.hst-galleryitem').click(function (e) { e.stopPropagation(); });
+    $('.hst-gallerynav').click(function (e) { e.stopPropagation(); });
+
+
+
+
+
+  //]]>
+  </script>
+
+                </div><!--/.hst-gallerynav-->
+                                <p>&nbsp;</p>
+        
+    <!-- e design/gallery/main.tpl -->    
+    <script type="text/javascript">
+    jQuery(function($) {
+        $.storySlideshow(354);
+    });
+    </script>
+    
+<script type="text/javascript" src="/js/hdn/slideshow/refresh.js?r5.22.0.23"></script>
+<iframe style="display:none;" id="galleryrefresher" name="galleryrefresher" src="/tmpl/slideshow_empty.html"></iframe>
+<iframe style="display:none;" id="gallery_pos_refresher" name="gallery_pos_refresher" src="/tmpl/slideshow_empty.html"></iframe>
+<script>HDN.doRefresh = 1;</script>
+  <div class="hst-articlebox">
+        
+        <div class="hst-freeform hdnce-e hdnce-item-19231"><!-- mid:freeform.19231 -->
+          <style type="text/css">
+.hst-articlebox{ 
+width:300px !important; 
+} </style>
+
+<div id="ndn-video-single" class="ndn-widget" style="display: none;"></div>
+      </div>
+  
+        <div class="hst-freeform hdnce-e hdnce-item-22359"><!-- mid:freeform.22359 -->
+          
+      </div>
+  
+    <!-- hearst/article/article_tools.tpl -->
+
+
+
+<!-- temporary inline style, don't judge me! -->
+
+<style type="text/css">
+	.fb_share_count_wrapper {width: 52px;}
+	.FBConnectButton_Small .FBConnectButton_Text {padding:2px 2px 3px 3px;}
+	.FBConnectButton_Small, .FBConnectButton_RTL_Small {font-size:9px;line-height:10px;}
+	.print_link {height: 25px;}
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<div class="hst-articletools">
+
+	<!-- Wrap  -->
+	<div class="inner_social_wrap clearfix" style="margin-bottom:15px;">
+
+	<div id="tweetmeme_1" style="float: left;">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php?cmpid=twitter" data-count="vertical" data-via="SFGate">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	</div>
+	
+	<!--
+	<div style="float: left; width:45px; padding-left:8px;">
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.sfgate.com%2Fscience%2Farticle%2FOtter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php%3Fcmpid%3Dfb&amp;layout=box_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;font=tahoma&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:65px;" allowTransparency="true"></iframe>
+	</div>
+	-->
+	
+	<div style="float: left; padding-left:8px;" class="fb-share-button" data-href="http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php?cmpid=fb" data-type="box_count"></div>
+	
+	<div style="float: left; padding-left: 8px;margin-right:8px;">
+		<g:plusone size="tall" href="http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php?cmpid=gplus"></g:plusone>
+	</div>
+	
+	<script type="text/javascript">
+		(function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+	</script>
+	
+	<div style="float: left; margin-top:40px;">
+		<!-- Pin it -->
+		<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.sfgate.com%2Fscience%2Farticle%2FOtter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php&media=http://ww3.hdnux.com/photos/24/37/42/5372046/3/rawImage.jpg&description=Otter+signals+Lake+Merritt+ecosystem%27s+comeback" data-pin-do="buttonPin" data-pin-config="above"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+		<!-- Please call pinit.js only once per page -->
+		<script src="//assets.pinterest.com/js/pinit.js" data-pin-zero="true" async type="text/javascript" /></script>
+		
+	</div>
+	
+	</div><!-- end Wrap -->
+	
+	<!--
+	<div style="clear:both; padding-bottom:10px;"></div>
+	-->
+	
+	<table style="float:left; width:50%;">
+		<tr>
+							<td class="size">
+					<img src="/img/pages/article/tools_size.gif" alt="" />
+					<a class="larger" href="javascript:hst_chsize('plus')">Larger</a> | <a class="text" href="javascript:hst_chsize('minus')">Smaller</a>
+				</td>
+					</tr>
+				<tr><td class="print print_link"><a href="javascript:hst_print();"><img src="/img/pages/article/tools_print.gif" alt="" />Printable Version</a></td></tr>
+	</table>
+	<table style="float:left; width:45%;">
+		<tr>
+			<td class="print size">
+				<a href="mailto:?subject=Otter%20signals%20Lake%20Merritt%20ecosystem%27s%20comeback&body=http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php" /><img src="http://www.newstimes.com/img/pages/article/tools_mail.gif" alt="" />Email This</a>
+				<!-- RM 20174
+				<a href="#" onclick="popup('/?controllerName=emailThis&sitename=sfgate&object=article&objectid=4929113&site=19&title=Otter+signals+Lake+Merritt+ecosystem%27s+comeback&url=http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php'); return false;"><img src="http://www.newstimes.com/img/pages/article/tools_mail.gif" alt="" />Email This</a>
+				-->
+			</td>
+		</tr>
+		<tr>
+			<td class="print size"><div class="poplaunch"><div class="toolspop fontpop" id="hst_articletools_fontpop" onmouseover="popShow(this.id);" onmouseout="popHide(this.id);" style="display:none;"><form action="#"><p class="choice"><input type="radio" id="font_radio_georgia" name="font_radio" value="1" onclick="hst_chfont('georgia');" checked="checked" /> <span class="georgia">Georgia <span class="isdefault">(default)</span></span></p><p class="choice"><input type="radio" id="font_radio_verdana" name="font_radio" value="2" onclick="hst_chfont('verdana');" /> <span class="verdana">Verdana</span></p><p class="choice"><input type="radio" id="font_radio_times" name="font_radio" value="3"   onclick="hst_chfont('times');" /> <span class="times">Times New Roman</span></p><p class="choice"><input type="radio" id="font_radio_arial" name="font_radio" value="4"  onclick="hst_chfont('arial');" /> <span class="arial">Arial</span></p></form></div><a href="#" onclick="popShow('hst_articletools_fontpop', this); return false;"><img src="http://www.newstimes.com/img/pages/article/tools_dropdown.gif" alt="" />Font</a></div></td>
+			<td class="ad"><div class="hst-microbar">
+	<div id="A88" class="ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("A88"); /*]]>*/ </script></div>
+</div></td>
+		</tr>
+	</table>
+	
+	
+	
+	<div style="clear:both;"></div>
+</div><!--/.hst-articletools-->
+<!-- e hearst/article/article_tools.tpl -->    
+    
+	<!-- src/business/templates/hearst/article/relatedStories.tpl -->
+<!-- src/business/templates/hearst/article/relatedStories.tpl -->    
+        
+
+    <!-- zone ModA -->
+    <!-- / zone ModA -->
+    
+  </div>
+
+<div class="hst-articlepager-report" id="articlepagerreport">Page 1 of 1</div>
+<div class="hst-articletext"><div id="fontprefs_top" class="georgia md">
+
+  <div id="text" class="entry-content">
+                    <p><a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22Greg+Lewis%22">Greg Lewis</a> had just finished his evening row on Oakland's Lake Merritt when he saw a slick, squirmy, furry bundle hoist itself out of the water and onto the edge of the dock.</p>
+<p>It was a river otter, the first one spotted in Lake Merritt in decades.</p>
+<p>"I saw his head pop up and saw him pull himself on the dock," Lewis, 53, of Berkeley, said of the surprise Oct. 6 encounter. "He looked at us, we looked at him for a bit."</p>
+<p>Lewis, who develops air pollution monitors, snapped a few shots, and like that, the animal plopped back into the water and paddled off.</p>
+<p>No one has reported seeing the otter since, and biologists ordered Lewis to keep his mouth shut until they were sure the popular, photogenic animal wasn't going to make the lake a home.</p>
+<p>But the sighting alone is proof, experts said, that Lake Merritt is making a comeback.</p>
+<p>"It is one indication that the lake is getting healthier," said <a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22Richard+Bailey%22">Richard Bailey</a>, executive director of the <a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22Lake+Merritt+Institute%22">Lake Merritt Institute</a>, a nonprofit that monitors the lake. "Another indication, just this week, was that we spotted an osprey on an island in the lake. We haven't seen one of those here in a decade."</p>
+<p>Bacteria in the lake are at some of their lowest levels in years, and there's half as much trash floating in the lake as there was in 2005, Bailey said.</p>
+<h3 class="subhead">Revitalizing lake</h3>
+<p>Oakland is trying hard to revitalize the lake. Oakland voters passed a $198 million bond in 2002 to spiff up the lake, and in February, the city inaugurated a new channel that will eventually restore the natural order by reconnecting the lake to the bay.</p>
+<p>Before Oakland was developed, Lake Merritt was a brackish lagoon that would swell and shrink with the tide and was home to otters, sea lions and an extraordinary array of migrating birds.</p>
+<p>As Oakland grew from a town to a city, it choked the lake's connection to the bay and started pouring sewage into the lake. The water stagnated, and wildlife fled.</p>
+<p>But the appearance of a river otter might be a sign that that's all changing.</p>
+<p>The otter was probably searching the Oakland Estuary for a new fishing hole when it swam up a culvert, squeezed between metal bars designed to keep trash from flowing into the bay and started exploring the 155-acre lake.</p>
+<p>"It is exciting, but not particularly surprising," said <a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22Megan+Isadore%22">Megan Isadore</a>, the co-founder of the River Otter Ecology Project, a Marin County group that tracks river otter sightings across the Bay Area. "River otters are making a recovery in the Bay Area. They were gone from the Bay Area for a long time."</p>
+<p><a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22The+North%22">The North</a> American river otter once lived in almost every creek and lake in Northern California. The fissipeds - animals with padded feet - are members of the weasel family. They can live in salt water, brackish water or fresh water and are agile on their feet, sometimes even climbing trees.</p>
+<h3 class="subhead">Threats to survival</h3>
+<p>Russian and other European hunters killed thousands of river and sea otters, all so the ladies of the Victorian age could wear their thick, water-repellent fur coats. Habitat loss from construction of dams and canals also depleted the river otter ranks. Pollution, including mercury from gold mining, reduced the population further.</p>
+<p>But increasingly, otters are being spotted across the Bay Area. Earlier this year, a young river otter frolicked at the ruins of San Francisco's Sutro Baths. The otter, dubbed Sutro Sam, was the first otter spotted in the city in almost a half century. Sam eventually left the baths.</p>
+<p>It is not impossible, but unlikely, that Sam swam across the bay to Oakland. But it is hard to tell otters apart, Isadore said.</p>
+<p>"We know that there are otters all over in the Oakland area, and otters have a pretty variable social life," Isadore said. "He was probably just exploring, came to visit and see if there are a lot of other nice fish for him.</p>
+<p>"He probably was there for a few days, and then he went somewhere with better fishing," Isadore added.</p>
+<p><a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22Conrad+Jones%22">Conrad Jones</a>, a wildlife biologist for the <a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22California+Department%22">California Department</a> of Fish and Wildlife, said spotting an otter in Lake Merritt was "encouraging, certainly, but it is too early to say if what we are doing is paying off."</p>
+<p>"The biggest milestone," Jones said, "is if it comes back, it stays, it successfully breeds, and those kids grow up."</p>
+<p class="dtlcomment">Will Kane is a <a href="/?controllerName=search&action=search&channel=science&search=1&inlineLink=1&query=%22San+Francisco+Chronicle%22">San Francisco Chronicle</a> staff writer. E-mail: <a href="mailto:wkane@sfchronicle.com">wkane@sfchronicle.com</a> Twitter: <a href="http://twitter.com/WillKane">@WillKane</a></p>
+      	  	
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    $('#text').paginator('.hst-articlepager', $('.hst-articlebox').height());
+  });
+  </script>
+  
+
+
+      </div></div><!--/.hst-articletext-->
+</div><!--/nlg wrapper-->
+
+<div class="hst-articlefooter">
+<!-- hearst/article/article_tools_2.tpl  -->
+
+
+
+	<!-- temporary inline style below, don't judge me! -->
+	<div class="hst-articletools2">
+	    <!-- Use on sfgate -->
+		<div class="arbox print first">
+			<a href="javascript:hst_print();"><img src="/img/pages/article/tools_print.gif" alt="" style="vertical-align: middle;" /> Printable Version</a>
+		</div>
+		<div class="arbox print">
+			<a href="mailto:?subject=Otter%20signals%20Lake%20Merritt%20ecosystem%27s%20comeback&body=http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php" /><img src="http://www.newstimes.com/img/pages/article/tools_mail.gif" alt="" style="vertical-align: middle;" /> Email This</a>
+			<!-- RM 20174
+			<a href="#" onclick="popup('/?controllerName=emailThis&sitename=sfgate&object=article&objectid=4929113&site=19&title=Otter+signals+Lake+Merritt+ecosystem%27s+comeback&url=http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php'); return false;"><img src="/img/pages/article/tools_mail.gif"  alt="" style="vertical-align: middle;" /> Email This</a>
+			-->
+		</div>
+		
+		
+		<style type="text/css">
+		    .fb_iframe_wrap_hdn .fb_iframe_widget span,  .fb_iframe_wrap_hdn .fb_iframe_widget iframe {
+		        width: 92px !important;
+		    }
+		</style>
+		
+		
+		<div class="arbox facebook fb_iframe_wrap_hdn">
+		
+		<div class="fb-share-button" data-href="http%3A%2F%2Fwww.sfgate.com%2Fscience%2Farticle%2FOtter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php" data-type="button_count" ></div>
+		
+		</div>
+		<div class="arbox">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php?cmpid=twitter" data-count="horizontal" data-via="SFGate">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</div>
+		<div class="arbox">
+			<g:plusone size="medium" href="http://www.sfgate.com/science/article/Otter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php?cmpid=gplus"></g:plusone>
+		</div>
+		
+		<script type="text/javascript">
+			(function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
+		</script>
+		
+		<!-- CFREE-6902
+		<div class="arbox last">
+			
+			<script type="text/javascript">
+				//hack to fix linkedin JS bug
+				window.name=window.name || "";
+			</script>
+			
+			<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+			<script type="IN/Share" data-counter="right"></script>
+		</div>
+		-->
+		<div class="arbox last">
+			<!-- Pin it -->
+			
+			<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.sfgate.com%2Fscience%2Farticle%2FOtter-signals-Lake-Merritt-ecosystem-s-comeback-4929113.php&media=http://ww3.hdnux.com/photos/24/37/42/5372046/3/rawImage.jpg&description=Otter+signals+Lake+Merritt+ecosystem%27s+comeback" 
+			data-pin-do="buttonPin" data-pin-config="beside" data-pin-zero="true"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+	        
+	   </div>
+	</div><!--/.hst-articletools2-->
+
+
+<!-- e hearst/article/article_tools_2.tpl -->
+
+        <div class="hst-freeform hdnce-e hdnce-item-19386"><!-- mid:freeform.19386 -->
+          <div class="OUTBRAIN" data-widget-id="AR_2" data-ob-template="sfgate" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+      </div>
+  
+        <div class="hst-freeform hdnce-e hdnce-item-19387"><!-- mid:freeform.19387 -->
+          <div class="OUTBRAIN" data-widget-id="AR_3" data-ob-template="sfgate" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+      </div>
+  
+  
+  
+
+
+      <!-- comments get dynamically inserted here -->
+
+<div id="comments" class="hdn-comments">
+              <!-- ux/sfgate/templates/hearst/home/modal_signin_form.tpl -->
+        <script type="text/javascript">HDN.onLoginSuccess = print_sfgate_un;</script>
+        <script src="/js/hdn/utils/jquery.placeholder.js"></script>
+        <script type="text/javascript">
+            jQuery(function(){
+                $("#modal_signin_close").on("click",function(){
+                    $('#modal_signin_div').hide();
+                    return false;
+                });
+                $('#modal_signin_div .checkbox-div').on("click",function(){
+                    if ($(this).text() == "X") {
+                        $(this).text("");
+                        $('#modal_signin_rememberme').removeAttr('checked');
+                    } else {
+                        $(this).text("X");
+                        $('#modal_signin_rememberme').attr('checked', 'checked');
+                    }
+                    return false;
+                });
+                try {$('input, textarea').placeholder();} catch (e) {}
+            });
+        </script>
+        <div id="modal_signin_div" class="signin">
+            <div id="modal_signin_error_div" style="display:none;"></div>
+            <form data-ajax="false" id="modal_signin_form" action="http://www.sfgate.com/cgi-bin/sso/action/mobile_login" method="post">
+                <a href="http://www.sfgate.com/cgi-bin/webreg/user/reg_cnt" class="form-link">Need to Register?</a>
+                <button id="modal_signin_close">X</button> 
+                <div class="line_separator"></div>
+                <input type="text" id="modal_signin_user" name="user" maxlength="15" selected autocapitalize="off" value="" data-mini="true" placeholder="USERNAME" />
+                <input type="password" id="modal_signin_password" name="password" maxlength="15" selected autocapitalize="off" value="" data-mini="true" placeholder="PASSWORD" />
+                <div class="checkbox-container">
+                    <div class="checkbox-div"></div>
+                    <input type="checkbox" id="modal_signin_rememberme" name="rememberme" value="1" class="custom-check" />
+                    <label for="modal_signin_rememberme" data-corners="false">Remember Me</label>
+                </div>
+                <input type="hidden" name="Submit" value="Update">
+                <input type="submit" value="Sign-in" data-mini="true" data-corners="false" class="submit-btn">
+                <a href="http://www.sfgate.com/cgi-bin/webreg/user/reset_init" class="form-link forgot">Forgot your password?</a>
+            </form>
+        </div>
+        <!-- e ux/sfgate/templates/hearst/home/modal_signin_form.tpl -->
+
+    <div id="hdn-vf-comments"></div>
+</div>  
+<!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-13257-promo_gallery"><!-- hearst/collections/promo_gallery.tpl -->
+<!-- collection.promo_gallery.13257 -->
+<div class="hst-spwide"><div class="edge2"><div class="edge3"><div class="edge4 clearfix">
+			<!-- templates/design/collection/promo_gallery/single_zone.tpl  -->
+
+	<div class="header clearfix">
+        <!-- zone1 -->
+        <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><span class="first-word">Inside</span> SFGate</h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->        <!-- e zone1 -->
+        		<p class="nav hidden"><a href="#" class="prev"><img src="/img/modules/slideshow/promo/wide/button-prev.gif" alt="Previous Button" /></a><a href="#" class="next"><img src="/img/modules/slideshow/promo/wide/button-next.gif" alt="Next Button" /></a></p>
+        <span class="rss">
+          <a type="application/rss+xml" target="_blank" class="collection-rss-link" href="/home/collectionRss/story-slideprow-inside-13257.php">
+            <img src="/img/utils/rss_icon.png" alt="Click to View RSS Feed" />
+          </a>
+        </span>
+    </div>
+
+	<!-- collections/promo_gallery_body.tpl -->
+  <ul class="clearfix">
+                <div class="tab">
+                                                                        
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a class="hdnce-e hdnce-blogPost-1459695"  href="http://blog.sfgate.com/hottopics/2014/09/23/obama-salutes-marines-while-holding-a-cup/"><img src="http://ww1.hdnux.com/photos/32/25/64/6905088/7/landscape_gallery_promo.jpg" alt="" /></a></p>
+                                                <h4><a class="hdnce-e hdnce-blogPost-1459695"  href="http://blog.sfgate.com/hottopics/2014/09/23/obama-salutes-marines-while-holding-a-cup/">Obama cup-salute called disrespectful</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a   href="/living/slideshow/8-of-the-Most-Memorable-80s-Teen-Movie-Bedrooms-93900.php"><img src="http://ww3.hdnux.com/photos/32/17/65/6880594/3/landscape_gallery_promo.jpg" alt="Sixteen Candles Samantha Baker has to deal with many indignities on her sweet 16 (including her family forgetting her birthday), but her sweet top-floor bedroom and private phone line make up for some of her teen trauma. That is, until her grandparents commandeer her room.      How To Style Your Sofa   11 Rooms Made Even Better By Show-Stopping Rugs   10 Decorating Myths To Stop Believe Now   How To Design A Truly Extraordinary Bathroom   13 Things You Should Never Have In Your Home" /></a></p>
+                                                <h4><a   href="/living/slideshow/8-of-the-Most-Memorable-80s-Teen-Movie-Bedrooms-93900.php">8 memorable '80s teen movie bedrooms</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a   href="/bayarea/article/Horror-show-hotel-transformed-into-home-for-5773412.php"><img src="http://ww4.hdnux.com/photos/32/24/25/6899047/11/landscape_gallery_promo.jpg" alt="The former Stanford Hotel on Kearny Street is being renovated to house 130 homeless veterans, with supportive amenities." /></a></p>
+                                                <h4><a   href="/bayarea/article/Horror-show-hotel-transformed-into-home-for-5773412.php">'Horror show’ S.F. hotel transformed</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item last">
+                                                <p class="illo"><a class="hdnce-e hdnce-blogPost-1459213"  href="http://blog.sfgate.com/cmcginnis/2014/09/23/how-to-deal-with-americans/"><img src="http://ww3.hdnux.com/photos/32/25/20/6902810/3/landscape_gallery_promo.png" alt="" /></a></p>
+                                                <h4><a class="hdnce-e hdnce-blogPost-1459213"  href="http://blog.sfgate.com/cmcginnis/2014/09/23/how-to-deal-with-americans/">How people are trained to deal with Americans</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/24/26/6899098/5/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/music/article/Katy-Perry-review-Don-t-analyze-just-enjoy-5775326.php">Katy Perry review: Don’t analyze, just enjoy show</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/32/25/05/6902108/7/landscape_gallery_promo.png">
+                                                <h4><a class="hdnce-e hdnce-blogPost-1459089"  href="http://blog.sfgate.com/relationships/2014/09/23/ring-overboard-paddle-boat-proposal-goes-very-wrong/">Paddle boat proposal goes very wrong</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/24/43/6899913/5/landscape_gallery_promo.jpg">
+                                                <h4><a class="hdnce-e hdnce-blogPost-1458596"  href="http://blog.sfgate.com/techchron/2014/09/23/facebooks-sheryl-sandberg-featured-in-a-comic-book/">Facebook's Sandberg in a comic book</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item last" img="http://ww4.hdnux.com/photos/32/24/30/6899227/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/cars/myride/article/Early-adopter-fulfills-electric-car-dream-5765385.php">Early adopter fulfills electric car dream</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/25/22/24/5580043/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/science/article/California-sea-otter-population-declines-5772806.php">Sharks partly to blame for otter recovery stall</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/20/06/6881705/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/49ers/slideshow/49ers-legend-unveil-statues-93936.php">49ers legends unveil statues at new museum</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/24/25/6899037/5/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/news/article/Eric-Lynch-Howard-Stern-s-diminutive-foil-dies-5772792.php">Eric Lynch, Howard Stern's diminutive foil, dies</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item last" img="http://ww4.hdnux.com/photos/32/23/76/6897551/3/landscape_gallery_promo.jpg">
+                                                <h4><a class="hdnce-e hdnce-blogPost-1458082"  href="http://insidescoopsf.sfgate.com/blog/2014/09/22/soma-restaurant-asks-hard-to-please-people-to-stay-away-embraces-msg/">S.F. restaurant loves MSG, blasts gluten-free</a></h4>
+                                        </li>
+                                
+                                
+                                </div>
+  </ul>
+
+  <script type="text/javascript">
+    //<![CDATA[
+        jQuery(function($) {
+                jQuery('.hst-spwide').slideshow();
+        });
+    //]]>
+  </script>
+
+<!-- e promo_gallery_body.tpl -->
+<!-- e templates/design/collection/promo_gallery/single_zone.tpl -->	</div></div></div></div><!--/.hst-spwide-->
+<!-- e hearst/collections/promo_gallery.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+        <div class="hst-freeform hdnce-e hdnce-item-22361"><!-- mid:freeform.22361 -->
+          <script type="text/javascript"
+ src="http://dmeserv.newsinc.com/repub/sfgatecom_45981/dynamicWidgets.js"></script>
+ <script type="text/javascript">
+ NDNDynVideoWidgets();
+ </script>
+      </div>
+  </div>
+
+<!-- e hearst/article/types/story.tpl -->    </div><!--/.span-21b-->
+    <!-- templates/hearst/article/types/story_right.tpl  -->
+
+<div class="span-10 last">
+
+    
+          
+    <!-- ux/sfgate/tmpl/subscribe_promo.php -->
+
+<!-- e ux/sfgate/tmpl/subscribe_promo.php -->
+
+    
+    <!-- ux/sfgate medium_rectangle_ad_first.tpl -->
+<div id="hst-mediumrectangle1" class="hst-mediumrectangle clearfix">
+
+<div id="A300" class="A300 ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A300"); /*]]>*/</script></div>
+<div id="A300x600" class="A300x600 ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A300x600"); /*]]>*/</script></div>
+
+</div>
+<!-- e ux/sfgate medium_rectangle_ad_first.tpl --> 
+
+    
+  
+        <div class="hst-freeform hdnce-e hdnce-item-7226"><!-- mid:freeform.7226 -->
+          <div
+    class="ndn_embed"
+    data-config-widget-id="10984"
+    data-config-type="VideoLauncher/Slider300x250"
+    data-config-tracking-group="45981"
+    data-config-site-section="sfgate2slider_nws_non_sec"></div>
+      </div>
+  
+        <div class="hst-freeform hdnce-e hdnce-item-19388"><!-- mid:freeform.19388 -->
+          <div class="OUTBRAIN" data-widget-id="SB_1" data-ob-template="sfgate" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+      </div>
+  <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-21243-exclusive_content"><!-- hearst/collections/exclusive_content.tpl -->
+<!-- collection.exclusive_content.21243 -->
+    <!-- templates/design/collection/exclusive_content/tripple_zone.tpl  -->
+
+<div class="hst-exclusive_content">
+  <div class="header clearfix">
+    <a href="http://www.sfchronicle.com"><img src="/img/icons/logo_home_small.png" alt="SFGate Logo" /></a>
+  </div>
+  <!-- zone1 -->
+  <div class="promo-msg">
+    <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><span class="first-word">On</span> SFChronicle.com</h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->  </div>
+  <!-- e zone1 -->
+  <div class="copy">	
+    <!-- hearst/collections/exclusive_content_body.tpl -->
+              <p class="illo"><a   href="http://www.sfchronicle.com/art/article/Art-review-Ai-Weiwei-installation-on-Alcatraz-5775639.php?cmpid=premnews"><img class="thumb" src="http://ww4.hdnux.com/photos/32/25/50/6904359/5/blockstates2.jpg" alt="A detail of &quot;With Wind&quot; (2014) installation of paper kites by Ai Weiwei in &quot;@Large: Ai Weiwei on Alcatraz&quot;" /></a></p>
+      <div class="detail">
+        <ul>
+          <li class="item first"><h4 class="first"><a   href="http://www.sfchronicle.com/art/article/Art-review-Ai-Weiwei-installation-on-Alcatraz-5775639.php?cmpid=premnews">Ai Weiwei's Alcatraz show not really for tourists</a></h4></li>
+              <li class="item subitems">
+      <h4>
+                  <a   href="http://www.sfchronicle.com/health/article/Gums-added-to-food-generally-considered-safe-5771430.php?cmpid=premnews">Are gums in 'unmeltable' ice creams safe?</a>
+              </h4>
+    </li>
+          <li class="item subitems">
+      <h4>
+                  <a   href="http://www.sfchronicle.com/sports/shea/article/Giants-A-s-would-face-hungrier-teams-in-wild-5776078.php?cmpid=premnews">Giants, A’s could face hungry teams</a>
+              </h4>
+    </li>
+          <li class="item subitems">
+      <h4>
+                  <a   href="http://www.sfchronicle.com/tv/article/Black-ish-review-ABC-scores-with-topical-5775558.php?cmpid=premnews">'Black-ish': ABC scores with topical sitcom</a>
+              </h4>
+    </li>
+  </ul>
+</div>
+<!-- e hearst/collections/exclusive_content_body.tpl -->  </div>
+  <!-- zone2 -->
+  <div class="zone2">
+    <!-- widgets/hearst/textField/widget.tpl -->
+<p class="exitText">Subscriber? It's yours!</p><!-- e widgets/hearst/textField/widget.tpl -->
+  </div>
+  <!-- e zone2 -->
+  <!-- zone3 -->
+  <div class="promo-msg-2">
+    <!-- widgets/hearst/exitLink/widget.tpl -->
+                                  <p class="exit"><a href="/ultimateaccess/">Activate!</a></p>
+  <!-- e widgets/hearst/exitLink/widget.tpl -->
+<!-- widgets/hearst/textField/widget.tpl -->
+<p class="exitText">Activate for access to SFChronicle.com!</p><!-- e widgets/hearst/textField/widget.tpl -->
+  </div>
+  <!-- e zone3 -->
+</div>
+
+<!-- e templates/design/collection/exclusive_content/tripple_zone.tpl  --><!-- e hearst/collections/exclusive_content.tpl -->
+
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl --><!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-13261-promo_slideshow"><!-- hearst/collections/promo_slideshow.tpl -->
+<!-- collection.promo_slideshow.13261 -->
+<div class="hst-slideshowpromo"><div class="edge2"><div class="edge3"><div class="edge4 clearfix">
+			<!-- templates/design/collection/promo_slideshow/single_zone.tpl  -->
+
+	<div class="header clearfix">
+        <!-- zone1 -->
+        <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><span class="first-word">Photo</span> Galleries</h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->        <!-- e zone1 -->
+        		<span>
+			<a type="application/rss+xml" target="_blank" class="collection-rss-link" href="/home/collectionRss/story-slidepro-13261.php">
+				<img src="/img/utils/rss_icon.png" alt="Click to View RSS Feed" />
+			</a>
+		</span>
+
+		<p class="nav hidden"><a href="#" class="prev"><img src="/img/modules/slideshow/promo/wide/button-prev.gif" alt="Previous Button" /></a><a href="#" class="next"><img src="/img/modules/slideshow/promo/wide/button-next.gif" alt="Next Button" /></a></p>
+		
+		
+    </div>
+
+	<!-- collections/promo_slideshow_body.tpl -->
+  <ul class="clearfix">
+                <div class="tab">
+                                            
+
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a   href="/entertainment/slideshow/Bay-Area-events-Sept-25-28-94316.php"><img src="http://ww1.hdnux.com/photos/32/26/37/6907900/3/square_horiz_promo.jpg" alt="Saturday’s fifth annual  Superhero Street Fair  hosts an wide array of music and art from some of the Bay Area’s most talented and creative superheroes. The event, which runs from 1 to 11 p.m. along Islais Creek Promenade, includes a “Super Power Fashion Show,” a superhero vs. villains tug-o-war every hour, gladiator jousting, an outdoor bazaar and seven stages of live music featuring some of the best dance music collectives in the Bay Area, including Symbiosis, Enchanted Forest and MUTI Music. Tickets: $20; $10 if you come in costume." /></a></p>
+                                                <h4><a   href="/entertainment/slideshow/Bay-Area-events-Sept-25-28-94316.php">Bay Area events, Sept. 25-28</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a   href="/entertainment/slideshow/039-Lost-039-easter-eggs-and-other-things-you-94315.php"><img src="http://ww4.hdnux.com/photos/32/26/36/6907827/3/square_horiz_promo.gif" alt="The first shot of the entire series was of Jack Shepherd's eye opening ..." /></a></p>
+                                                <h4><a   href="/entertainment/slideshow/039-Lost-039-easter-eggs-and-other-things-you-94315.php">&#039;Lost&#039; easter eggs and other things you might have missed</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last">
+                                                <p class="illo"><a   href="/technology/slideshow/September-9-Apple-launch-93225.php"><img src="http://ww2.hdnux.com/photos/32/05/61/6839405/7/square_horiz_promo.jpg" alt="Tim Cook, Apple CEO, talks during the Apple announcement at  the Flint Center for the Performing Arts on Tuesday, September 9,  2014 in Cupertino, Calif." /></a></p>
+                                                <h4><a   href="/technology/slideshow/September-9-Apple-launch-93225.php">September 9 Apple launch</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/26/17/6906849/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/style/slideshow/Shao-An-Chang-039-s-SFStyle-94296.php">Shao-An Chang&#039;s #SFStyle</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/00/54/6818581/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/style/slideshow/Shamus-Scott-Grubb-039-s-SFStyle-92976.php">Shamus Scott Grubb&#039;s #SFStyle</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww1.hdnux.com/photos/32/26/11/6906460/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/moms/slideshow/Chelsea-Clinton-shows-off-her-pregnant-belly-94288.php">Chelsea Clinton shows off her pregnant belly</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/26/11/6906437/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/food/slideshow/Dining-in-Memphis-94287.php">Dining in Memphis</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/32/25/36/6903740/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/business/slideshow/9-incredibly-successful-startups-that-were-born-94253.php">9 successful startups that were born at Stanford</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww3.hdnux.com/photos/32/25/72/6905534/7/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/Ten-American-species-our-children-may-never-see-94282.php">Ten American species our children may never see</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/32/25/60/6904884/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/parties/slideshow/Neiman-Marcus-Vanity-Fair-s-Art-of-Fashion-94277.php">Neiman Marcus & Vanity Fair's Art of Fashion</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/25/41/6903914/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/food/slideshow/Quince-in-San-Francisco-gets-a-new-look-94259.php">Quince in San Francisco gets a new look</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww2.hdnux.com/photos/32/24/04/6897945/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/entertainment/dayinpictures/slideshow/Day-in-Pictures-Sept-23-2014-94256.php">Day in Pictures, Sept. 23, 2014</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/32/25/36/6903699/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/outdoors/slideshow/Konwakiton-Glacier-floods-Mud-Creek-94252.php">Konwakiton Glacier floods Mud Creek</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/32/25/35/6903628/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/entertainment/slideshow/039-Jimi-All-Is-By-My-Side-039-premiere-94247.php">&#039;Jimi: All Is By My Side&#039; premiere</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww2.hdnux.com/photos/32/25/13/6902513/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/Projected-marijuana-tax-revenue-per-state-94223.php">Projected marijuana tax revenue per state</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/32/25/14/6902579/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/Details-from-Colorado-marijuana-sales-study-94225.php">Details from Colorado marijuana sales study</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/27/03/20/6042645/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/living/slideshow/Engagement-facts-82267.php">10 fun facts about marriage proposals</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww4.hdnux.com/photos/32/24/65/6901107/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/moms/slideshow/Top-banned-literary-classics-94190.php">Top banned literary classics</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/24/65/6901061/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/food/slideshow/Dining-in-Nashville-94189.php">Dining in Nashville</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/32/24/64/6901023/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/realestate/slideshow/16-Spruce-St-in-Presidio-Heights-94188.php">16 Spruce St. in Presidio Heights</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww3.hdnux.com/photos/32/24/63/6900990/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/Readers-sound-off-How-to-really-pronounce-Bay-94187.php">Readers sound off: How to (really) pronounce Bay Area names</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/31/46/23/6710512/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/How-do-you-say-certain-Bay-Area-streets-and-91378.php">How do you say certain Bay Area streets and landmarks?</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/32/24/74/6901527/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/giants/slideshow/Giants-defeat-Dodgers-5-2-94201.php">Giants defeat Dodgers 5-2</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww1.hdnux.com/photos/32/23/50/6896140/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/Photos-of-the-Day-94105.php">Photos of the Day</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/24/02/6897821/13/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/Photos-of-the-Day-94184.php">Photos of the Day</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/24/36/6899646/3/square_horiz_promo.png">
+                                                <h4><a   href="/news/slideshow/Dahlia-Society-throws-a-picnic-94179.php">Dahlia Society throws a picnic</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww3.hdnux.com/photos/32/24/33/6899430/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/Trannyshack-94176.php">Trannyshack</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/32/24/03/6897883/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/news/slideshow/quot-Lost-in-Translation-quot-94145.php">&quot;Lost in Translation&quot;</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww2.hdnux.com/photos/32/24/04/6897957/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/entertainment/dayinpictures/slideshow/Day-in-Pictures-Sept-11-201422-94149.php">Day in Pictures, Sept. 22, 2014</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww3.hdnux.com/photos/26/74/01/6013002/9/square_horiz_promo.jpg">
+                                                <h4><a   href="/entertainment/slideshow/Did-you-know-these-stars-dated-81845.php">Did you know these stars dated?</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/21/43/6887650/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/technology/slideshow/iPhone-6-goes-on-sale-in-San-Francisco-93991.php">iPhone 6 goes on sale in San Francisco</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/22/37/76/4849562/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/moms/slideshow/Kids-039-books-celebrating-diversity-65418.php">Kids&#039; books celebrating diversity</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww4.hdnux.com/photos/32/23/33/6895315/9/square_horiz_promo.jpg">
+                                                <h4><a   href="/49ers/slideshow/Week-3-49ers-vs-Cardinals-94134.php">Week 3: 49ers vs. Cardinals</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/32/23/71/6897272/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/outdoors/slideshow/Mount-Shasta-glacier-floods-stream-94131.php">Mount Shasta glacier floods stream</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/25/30/6903306/6/square_horiz_promo.gif">
+                                                <h4><a   href="/entertainment/slideshow/039-Lost-039-easter-eggs-and-other-things-you-94240.php">'Lost' turns 10</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww3.hdnux.com/photos/32/23/62/6896830/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/food/slideshow/Causwells-94120.php">Causwells</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/32/23/54/6896444/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/cars/slideshow/2014-Subaru-Crosstrek-hybrid-94107.php">2014 Subaru Crosstrek hybrid</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/24/00/6897674/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/giants/slideshow/Chris-Dominguez-039-s-home-run-94139.php">Chris Dominguez&#039;s home run</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                
+                                                                        <li class="item last" img="http://ww4.hdnux.com/photos/32/23/30/6895115/3/square_horiz_promo.jpg">
+                                                <h4><a   href="/outdoors/slideshow/Coastsiders-get-salmon-pay-off-94097.php">Coastsiders get salmon pay-off</a></h4>
+                                        </li>
+                                                                                                                                        
+
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/22/50/6892058/5/square_horiz_promo.jpg">
+                                                <h4><a   href="/outdoors/slideshow/North-State-bladesmith-94070.php">North State bladesmith</a></h4>
+                                        </li>
+                                                                                                            </div>
+  </ul>
+
+  <script type="text/javascript">
+    //<![CDATA[
+        jQuery(function($) {
+                jQuery('.hst-slideshowpromo').slideshow();
+        });
+    //]]>
+  </script>
+
+<!-- e promo_slideshow_body.tpl -->
+<!-- e templates/design/collection/promo_slideshow/single_zone.tpl -->	</div></div></div></div><!--/.hst-slideshowpromo-->
+<!-- e hearst/collections/promo_slideshow.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+<!-- hearst/home/mostPopular.tpl -->
+
+
+
+            <div class="most-popular">
+        <!-- hearst/home/most_popular_header.tpl -->
+    	<div class="header clearfix">
+	  <h2>Most Popular</h2>
+  	</div>
+    <!-- e hearst/home/most_popular_header.tpl -->
+
+                                <div class="content">
+                <div class="contentGroups">  
+                <ul>
+                                    <li>
+                        <span>1</span>
+                        <h4><!-- ux hearst/home/most_popular_title_link.tpl -->
+
+<a  class="hdn-analytics" href="http://blog.sfgate.com/crime/2014/09/24/woodside-man-pulled-off-virgin-plane-for-sex-act/" title="Woodside man pulled off Virgin plane for sex act">Woodside man pulled off Virgin plane for sex act<span class="hdn-analytics-data" style="display:none;">visit|blog-crime|most_popular|1</span></a>
+<!-- e ux hearst/home/most_popular_title_link.tpl -->
+</h4>
+                    </li>
+                                                    <li>
+                        <span>2</span>
+                        <h4><!-- ux hearst/home/most_popular_title_link.tpl -->
+
+<a  class="hdn-analytics" href="http://blog.sfgate.com/techchron/2014/09/24/bug-or-feature-iphone-6-plus-bends-easily/" title="Bug or feature? iPhone 6 Plus bends easily">Bug or feature? iPhone 6 Plus bends easily<span class="hdn-analytics-data" style="display:none;">visit|blog-techchron|most_popular|2</span></a>
+<!-- e ux hearst/home/most_popular_title_link.tpl -->
+</h4>
+                    </li>
+                                                    <li>
+                        <span>3</span>
+                        <h4><!-- ux hearst/home/most_popular_title_link.tpl -->
+
+<a  class="hdn-analytics" href="/news/local/slideshow/Food-obsessions-by-state-93997.php" title="Food obsessions by state">Food obsessions by state<span class="hdn-analytics-data" style="display:none;">visit|slideshow-93997|most_popular|3</span></a>
+<!-- e ux hearst/home/most_popular_title_link.tpl -->
+</h4>
+                    </li>
+                                                    <li>
+                        <span>4</span>
+                        <h4><!-- ux hearst/home/most_popular_title_link.tpl -->
+
+<a  class="hdn-analytics" href="http://blog.sfgate.com/sfmoms/2014/09/24/mom-irate-when-2nd-grade-teacher-refuses-vagina-cookies/" title="Mom irate when 2nd grade teacher refuses vagina cookies">Mom irate when 2nd grade teacher refuses vagina cookies<span class="hdn-analytics-data" style="display:none;">visit|blog-sfmoms|most_popular|4</span></a>
+<!-- e ux hearst/home/most_popular_title_link.tpl -->
+</h4>
+                    </li>
+                                                    <li>
+                        <span>5</span>
+                        <h4><!-- ux hearst/home/most_popular_title_link.tpl -->
+
+<a  class="hdn-analytics" href="http://blog.sfgate.com/sfmoms/2014/09/24/chelsea-clinton-shows-off-baby-bump-at-clinton-global-initiative/" title="Chelsea Clinton shows off baby bump at Clinton Global Initiative">Chelsea Clinton shows off baby bump at Clinton Global Initiative<span class="hdn-analytics-data" style="display:none;">visit|blog-sfmoms|most_popular|5</span></a>
+<!-- e ux hearst/home/most_popular_title_link.tpl -->
+</h4>
+                    </li>
+                </ul><ul>                                    <li>
+                        <span>6</span>
+                        <h4><!-- ux hearst/home/most_popular_title_link.tpl -->
+
+<a  class="hdn-analytics" href="http://blog.sfgate.com/techchron/2014/09/24/warning-ios-8-0-1-update-may-kill-cell-service-touch-id/" title="Warning: iOS 8.0.1 update may kill cell service, Touch ID [Updated]">Warning: iOS 8.0.1 update may kill cell service, Touch ID...<span class="hdn-analytics-data" style="display:none;">visit|blog-techchron|most_popular|6</span></a>
+<!-- e ux hearst/home/most_popular_title_link.tpl -->
+</h4>
+                    </li>
+                                                    <li class="last">
+                        <span>7</span>
+                        <h4><!-- ux hearst/home/most_popular_title_link.tpl -->
+
+<a  class="hdn-analytics" href="/business/slideshow/9-incredibly-successful-startups-that-were-born-94253.php" title="9 successful startups that were born at Stanford">9 successful startups that were born at Stanford<span class="hdn-analytics-data" style="display:none;">visit|slideshow-94253|most_popular|7</span></a>
+<!-- e ux hearst/home/most_popular_title_link.tpl -->
+</h4>
+                    </li>
+                                                 </ul>
+                </div>
+            </div>
+                            <div class="controls">
+        <a class="hdn-analytics prev" href="javascript:mp_prev();"><span class="icon"></span><span class="hdn-analytics-data">page_up|most_popular|most_popular|0</span></a>
+        <a class="hdn-analytics next" href="javascript:mp_next();"><span class="label">More</span><span class="icon"></span><span class="hdn-analytics-data">page_down|most_popular|most_popular|0</span></a>
+        </div>
+        <script src="/js/hdn/river/cards.js"></script>
+        </div><!--/most-popular-->
+    
+<!--e hearst/home/mostPopular.tpl -->    <!-- hearst/ads/medium_rectangle_ad_second.tpl -->
+
+<div id="hst-mediumrectangle2" class="hst-mediumrectangle clearfix">
+<div id="B300" class="B300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("B300"); /*]]>*/ </script></div>
+</div>
+<!-- e medium_rectangle_ad_second.tpl -->
+    <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-13260-blockstates_vertical_alt"><!-- collections/blockstates_vertical_alt.tpl -->
+<!-- collection.blockstates_vertical_alt.13260 -->
+<div class="hst-blockstates hst-blockstates-vertical"><div class="edge2"><div class="edge3"><div class="edge4 clearfix">
+  <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><span class="first-word">From</span> our homepage</h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->  <a type="application/rss+xml" target="_blank" class="collection-rss-link" href="/home/collectionRss/story-blocks-13260.php"><img src="/img/utils/rss_icon.png" alt="Click to View RSS Feed" /></a>
+                                     <div class="tabcontent">
+        
+                  <div class="hide-rss-link hdnce-e hdnce-collection-14677-blockstates_tab_alt"><!-- collections/blockstates_tab.tpl -->
+<!-- collection.blockstates_tab_alt.14677 -->
+<ul>
+
+                    <li class="item first">
+                                        <p class="illo"><a class="hdnce-e hdnce-blogPost-1460329"  href="http://blog.sfgate.com/techchron/2014/09/24/bug-or-feature-iphone-6-plus-bends-easily/"><img src="http://ww3.hdnux.com/photos/32/26/35/6907738/3/blockstates2.jpg" alt="iPhone 6 Dali ad" /></a>
+                                <br /><span class="credit">Fb.com/PhoneDesigner</span></p>
+                
+                    <h4><a class="hdnce-e hdnce-blogPost-1460329"  href="http://blog.sfgate.com/techchron/2014/09/24/bug-or-feature-iphone-6-plus-bends-easily/">iPhone's bend kinda surreal</a></h4>
+                    <div class="detail">Big, thin 6 Plus turns out to be pretty flexible. And some folks are having fun with this bug/feature.</div>
+
+                
+                </li>
+        </ul>
+<!-- e blockstates_tab.tpl -->
+
+</div>              </div>
+                                         <div class="tabcontent">
+        
+                  <div class="hide-rss-link hdnce-e hdnce-collection-14678-blockstates_tab_alt"><!-- collections/blockstates_tab.tpl -->
+<!-- collection.blockstates_tab_alt.14678 -->
+<ul>
+
+                    <li class="item first">
+                                        <p class="illo"><a   href="/realestate/walkthrough/article/Cow-Hollow-Mediterranean-balances-classical-with-5775256.php"><img src="http://ww2.hdnux.com/photos/32/25/36/6903717/3/blockstates2.jpg" alt="2900 Baker St. in Cow Hollow is a four-bedroom Mediterranean. " /></a>
+                                <br /><span class="credit">Jacob Elliott Photography</span></p>
+                
+                    <h4><a class=""  href="/realestate/walkthrough/article/Cow-Hollow-Mediterranean-balances-classical-with-5775256.php">Classic style on Baker St.</a></h4>
+                    <div class="detail"><p>Built in 1936, Mediterranean right next to the Presidio, has 4 bedrooms and great views.</p>
+</div>
+
+                
+                </li>
+        </ul>
+<!-- e blockstates_tab.tpl -->
+
+</div>              </div>
+                                         <div class="tabcontent last">
+        
+                  <div class="hide-rss-link hdnce-e hdnce-collection-14679-blockstates_tab_alt"><!-- collections/blockstates_tab.tpl -->
+<!-- collection.blockstates_tab_alt.14679 -->
+<ul>
+
+                    <li class="item first">
+                                        <p class="illo"><a   href="/news/local/slideshow/Food-obsessions-by-state-93997.php"><img src="http://ww2.hdnux.com/photos/31/77/67/6815225/5/blockstates2.jpg" alt="High-quality ingredients lift the basic bean and cheese taco to a happiness-inducing level." /></a>
+                                <br /><span class="credit">© 2014 San Antonio Express-News</span></p>
+                
+                    <h4><a class=""  href="/news/local/slideshow/Food-obsessions-by-state-93997.php">Food obsessions by state</a></h4>
+                    <div class="detail">One state's in love with tacos. Others can't get enough prunes. But one dish tops them all.</div>
+
+                
+                </li>
+        </ul>
+<!-- e blockstates_tab.tpl -->
+
+</div>              </div>
+                               </div></div></div></div><!--/.hst-blockstates-vertical -->
+<!-- e blockstates_vertical_alt.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+  
+    <!-- hearst/ads/medium_rectangle_ad_third.tpl -->
+
+<div id="hst-mediumrectangle3" class="hst-mediumrectangle clearfix">
+<div id="S300" class="S300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("S300"); /*]]>*/ </script></div>
+</div>
+<!-- e medium_rectangle_ad_third.tpl -->
+</div><!--/.span-10-->
+
+<!-- e templates/hearst/article/types/story_right.tpl  --></div><!--/.faux-21-->
+<!-- e templates/design/article/story_page.tpl -->                </div>
+
+<!-- src/business/templates/hearst/common/footer.tpl -->
+    <!-- ux hearst/common/site_footer.tpl -->
+                <!-- THIRDPARTY FOOTER MARKER --><!-- DONT REMOVE -->
+                <div class="hst-sitefooter clearfix">
+                    <!-- Begin Hearst Ad -->
+                    <div id="B728" class="footer_banner">
+                        <script type="text/javascript">/*<![CDATA[*/hearstPlaceAd("B728");/*]]>*/</script>
+                    </div>
+                    <!-- End Hearst Ad -->      
+                    
+                    <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.4249 -->
+<div id="footernav">
+<ul class="main">
+<li><a href="/">Home</a></li>
+<li><a href="/news/">News</a></li>
+<li><a href="/sports/">Sports</a></li>
+<li><a href="/business/">Business</a></li>
+<li><a href="/entertainment/">Entertainment</a></li>
+<li><a href="/food/">Food</a></li>
+<li><a href="/living/">Living</a></li>
+<li><a href="/travel/">Travel</a></li>
+<li><a href="http://www.findnsave.com/" rel="nofollow">Find&amp;Save Local Shopping</a></li>
+<li><a href="http://jobsearch.local-jobs.monster.com/Search.aspx?wt.mc_n=hjnpsearch&ch=sanfranchron&q=&where=San%20Francisco,%20CA&re=130&cy=us&brd=1">Find Bay Area Jobs</a></li>
+<li><a href="/realestate/">Real Estate</a></li>
+<li><a href="/cars/">Cars</a></li>
+<li class="last"><a href="/index/">Site Index</a></li>
+</ul>
+<div class="sub">
+<div>
+<div class="footeritem">Company Info:</div>
+<ul>
+<li><a href="/chronicle-contacts/">Contact Us</a></li>
+<li><a href="/staff/">SFGate staff</a></li>
+<li><a href="http://www.hearst.com/">Hearst</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
+<li><a href="/privacy-policy/#caprivacyrights">Your California Privacy Rights</a></li>
+<li><a href="/termsandconditions/">Terms & Conditions</a></li>
+<li><a href="http://www.sfgate.com/chronicle/hr/">Join our Team</a></li>
+<li><a href="http://nieonline.com/sfchronicle">Chron in Education</a></li>
+<li><a href="/events/">Events &amp; Promotions</a></li>
+<li class="last"><a href="/submissions/">Submissions</a></li>
+</ul>
+</div>
+<div>
+<div class="footeritem">Advertising Services:</div>
+<ul>
+<li><a href="http://extras.sfgate.com/chronicle/new/pages/home.php">Advertise with us</a></li>
+<li><a href="http://sfgate.kaango.com//">Place a Classified</a></li>
+<li><a href="/privacy/">About Our Ads</a></li>
+<li><a href="http://www.legalnotice.org/pl/SFGate/landing1.aspx">Public Notices</a></li>
+<li><a href="http://local.sfgate.com">Local Businesses: Business Directory</a></li>
+<li class="last"><a href="http://www.aboutads.info/choices/">Ad Choices</a></li>
+</ul>
+</div>
+<div>
+<div class="footeritem">Reader Services:</div>
+<ul>
+<li><a href="http://myaccount.sfchronicle.com/dsssubscribe.aspx?pid=95">Subscribe Now</a></li>
+<li><a href="http://myaccount.sfchronicle.com">Manage Your Subscription</a></li>
+<li><a href="/ipad/">iPad</a></li>
+<li><a href="http://eedition.sfchronicle.com">E-Edition</a></li>
+<li><a href="" onClick="hdnToggleMobile(); return false;">Mobile Site</a></li>
+<li><a href="/rss/">RSS</a></li>
+<li><a href="/cgi-bin/newsletter/services/main">Newsletters</a></li>
+<li><a href="/feedback/">Feedback</a></li>
+<!-- <li><a href="/gallery/buyphotos/">Buy Photos</a></li> -->
+<li><a href="/faq/">FAQ</a></li>
+<li><a href="/corrections/">Corrections</a></li>
+<li class="last"><a href="/getus">Get Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<script type="text/javascript"> 
+var GALLERIA_IMAGE_LOAD_COUNT = 0; 
+</script>
+                </div><!--/.hst-sitefooter-->
+            </div><!--/.container-->
+            <!-- ux/sfgate/templates/hearst/common/footer_branding.tpl -->
+<p id="sitecopyright">
+	<a href="/chronicle/info/copyright/">&copy; 2014 Hearst Communications, Inc.</a><br />
+	<img src="http://imgs.sfgate.com/graphics/utils/hearst_logo.gif" alt="Hearst Newspapers" />
+</p>
+<!-- e ux/sfgate/templates/hearst/common/footer_branding.tpl -->
+            <!-- cmf/sites/sfgate/tmpl/analytics_footer.php -->
+
+<!-- e cmf/sites/sfgate/tmpl/analytics_footer.php -->
+            <!-- /src/business/templates/hearst/common/opengraph_load.tpl -->
+    <div id="fb-root"></div>
+  
+  <script type="text/javascript">
+  //the window.name is a hack to fix errors in the actual facebook.js file
+  window.name=window.name || "";
+    window.fbAsyncInit = function() {
+      FB.init({
+	appId      : '1609422252616351', // App ID
+	channelURL : 'http://www.sfgate.com/channel.html', // Channel File
+	status     : true, // check login status
+	cookie     : true, // enable cookies to allow the server to access the session
+	oauth      : true, // enable OAuth 2.0
+	xfbml      : true  // parse XFBML
+      });
+      
+            		
+	// Additional initialization code
+	FB.Event.subscribe('comment.create', function(response) {	  
+	    HDN.comment_ping( {
+	      "id": 4929113,
+	      "site": "sfgate",
+	      "type": "article"
+	    });      
+	});
+	
+            
+    };
+    // Load the SDK Asynchronously
+    (function(d){
+       var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+       js = d.createElement('script'); js.id = id; js.async = true;
+       js.src = "//connect.facebook.net/en_US/all.js";
+       d.getElementsByTagName('head')[0].appendChild(js);
+     }(document));
+    
+  </script>
+  
+              <!-- /src/business/templates/hearst/common/outbrain_silent_tag.tpl -->
+
+
+
+                            <!-- templates/hearst/home/viafouraFooterJS.tpl -->
+<script>
+    
+    
+    (function (v, s) {
+        v.type = 'text/javascript';
+        v.async = !0;
+        v.src = location.protocol !== 'https:' ? '//cdn.viafoura.net/vf.js' : '//api.viafoura.com/app/js/vf.js';
+        s.parentNode.insertBefore(v, s)
+    }(document.createElement('script'), document.getElementsByTagName('script')[0]));
+
+
+    $(document).ready(function () {
+        if ($('#hdn-vf-comments').length) {HDN.authOnReady('free',false)}
+        HDN.getBlogCommentCount();
+    });
+    
+</script>
+<!-- e templates/hearst/home/viafouraFooterJS.tpl -->
+                        <!-- src/business/templates/hearst/common/footer_bottom.tpl -->
+
+<!-- Buzzfeed partner code -->
+<div id="BF_WIDGET_1">&nbsp;</div>
+
+<script type="text/javascript">
+(function( ){
+BF_WIDGET_JS=document.createElement("script"); BF_WIDGET_JS.type="text/javascript";
+BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=sfgate.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+setTimeout(function() {document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script>
+
+<!-- e Buzzfeed partner code -->
+
+<!-- e src/business/templates/hearst/common/footer_bottom.tpl -->
+                            <!-- hearst/common/sailthruJS.tpl -->
+
+<script type="text/javascript" src="http://ak.sail-horizon.com/horizon/v1.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // Sailthru Concierge
+        if (window.Sailthru) {
+            Sailthru.setup({
+                domain: 'horizon.sfgate.com'
+            });
+        }
+    });
+</script>
+
+<!-- e hearst/common/sailthruJS.tpl -->
+                                        <script type="text/javascript" src="/external/js/global.bottom.r5.22.1.2.js"></script>
+                        <script src="http://widget.perfectmarket.com/wwwsfgate/load.js"></script>
+
+                    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"3fd06eaac1","applicationID":"147157","transactionName":"MwQBZ0RXV0NTVhBdDgpONkFfGVBeVlAcGhEMEQ==","queueTime":0,"applicationTime":48,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-460.min.js"}</script></body>
+    </html><!-- e site_footer.tpl -->
+
+
+
+
+
+<!-- e src/business/templates/hearst/common/footer.tpl --><!-- e ux hearst/article/article_main.tpl -->

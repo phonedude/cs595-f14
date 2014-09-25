@@ -1,0 +1,1033 @@
+status: 200
+content-location: http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/
+x-powered-by: PHP/5.3.3
+set-cookie: WR_SID=128.82.53.39.1411596720132795; path=/; max-age=315360000;
+ domain=.stephenwolfram.com
+server: Apache
+link: <http://blog.stephenwolfram.com/?p=6952>; rel=shortlink
+date: Wed, 24 Sep 2014 22:12:00 GMT
+content-type: text/html; charset=UTF-8
+x-pingback: http://blog.stephenwolfram.com/xmlrpc.php
+
+<!DOCTYPE html>
+<html lang="en" prefix="fb: http://www.facebook.com/2008/fbml, og: http://ogp.me/ns#">
+<head>
+<title>Putting the Wolfram Language (and Mathematica) on Every Raspberry Pi&mdash;Stephen Wolfram Blog</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="/common/images/favicon.ico" type="image/x-icon">
+<meta name="Description" content="Wolfram Language and Mathematica are now free for every Raspberry Pi computer, with exciting possibilities for education, embedded computing, & more." />
+<script type="text/javascript" src="/common/javascript/jquery/core/1.7.1/jquery.js"></script>
+<script type="text/javascript" src="/wp-content/themes/sw-v2/sw.js"></script>
+<link rel="stylesheet" href="/wp-content/themes/sw-v2/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/common/templates/www.stephenwolfram.com/css/main-styles.css" />
+<link rel="alternate" type="application/rss+xml" title="Stephen Wolfram Blog RSS Feed" href="http://blog.stephenwolfram.com/feed/" />
+<link rel="alternate" type="application/atom+xml" title="Stephen Wolfram Blog Atom Feed" href="http://blog.stephenwolfram.com/feed/atom/" />
+<link rel="pingback" href="http://blog.stephenwolfram.com/xmlrpc.php" />
+<script type="text/javascript" src="http://wac.36F4.edgecastcdn.net/0036F4/small/blogsw/js/menu.js"></script>
+<link rel="stylesheet" href="/common/javascript/jquery/ui/1.10.2/themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="/common/javascript/jquery/plugins/colorbox/colorbox.css">
+<script src="/common/javascript/jquery/ui/1.10.2/ui/jquery.ui.core.js"></script>
+<script src="/common/javascript/jquery/ui/1.10.2/ui/jquery.ui.widget.js"></script>
+<script src="/common/javascript/jquery/ui/1.10.2/ui/jquery.ui.mouse.js"></script>
+<script src="/common/javascript/jquery/ui/1.10.2/ui/jquery.ui.slider.js"></script>
+<script src="/common/javascript/jquery/plugins/colorbox/jquery.colorbox.js"></script>
+<link rel="alternate" type="application/rss+xml" title="Stephen Wolfram Blog &raquo; Putting the Wolfram Language (and &lt;i&gt;Mathematica&lt;/i&gt;) on Every Raspberry Pi Comments Feed" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/feed/" />
+<script type='text/javascript' src='http://blog.stephenwolfram.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<script type='text/javascript' src='http://blog.stephenwolfram.com/wp-content/plugins/wolfram-cdf-plugin/cdfplugin.js?ver=2.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.stephenwolfram.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.stephenwolfram.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Something Very Big Is Coming: Our Most Important Technology Project Yet' href='http://blog.stephenwolfram.com/2013/11/something-very-big-is-coming-our-most-important-technology-project-yet/' />
+<link rel='next' title='&#8220;Happy Holidays&#8221;, the Wolfram Language Way' href='http://blog.stephenwolfram.com/2013/12/happy-holidays-the-wolfram-language-way/' />
+<link rel='shortlink' href='http://blog.stephenwolfram.com/?p=6952' />
+<link rel='canonical' href='http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/'/>
+
+<!-- WP-SWFObject 2.3 by unijimpe -->
+<script src="/wp-content/plugins/wp-swfobject/2.0/swfobject.js" type="text/javascript"></script>
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-33987538-1', 'blog.stephenwolfram.com');
+     ga('send', 'pageview');
+
+   </script>
+</head>
+
+<body id="blog">
+<div id="wrapper">
+		<header id="header">
+		<div id="logo"><a href="/">Stephen Wolfram</a></div>
+		<nav id="nav">
+			<ul>
+				<li class="about"><a href="http://www.stephenwolfram.com/about/">ABOUT</a></li>
+				<li class="blog"><a href="http://blog.stephenwolfram.com">BLOG</a></li>     
+				<li class="publications"><a href="http://www.stephenwolfram.com/publications/">PUBLICATIONS</a></li>     
+				<li class="media"><a href="http://www.stephenwolfram.com/media/">MEDIA</a></li>     
+				<li class="scrapbook"><a href="http://www.stephenwolfram.com/scrapbook/page1/">SCRAPBOOK</a></li>   
+				<li class="contact"><a href="http://www.stephenwolfram.com/contact/">CONTACT</a></li>
+			</ul>
+		</nav>
+		<noscript>
+			<div id="noscript">This page requires that JavaScript be enabled in your browser. <a href="http://www.wolfram.com/javascript.html">Learn how &raquo;</a></div>
+		</noscript>
+	</header>		
+		<div id="content">
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#join-small").addClass('join-small-js');
+$("#exit-button").addClass('exit-button-js');
+$("#respond").addClass('respond-js');
+});
+</script>
+
+	
+		<h2><a href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/" rel="bookmark" title="Permanent Link to Putting the Wolfram Language (and Mathematica) on Every Raspberry Pi">Putting the Wolfram Language (and <i>Mathematica</i>) on Every Raspberry Pi</a></h2>
+		<time  class="date" datetime="2013-11-21">November 21, 2013</time>
+		<div class="post_content">
+			<p>Last week I <a href="http://blog.stephenwolfram.com/2013/11/something-very-big-is-coming-our-most-important-technology-project-yet/">wrote about</a> our large-scale plan to use new technology we&#8217;re building to inject sophisticated computation and knowledge into everything. Today I&#8217;m pleased to <a href="http://www.wolfram.com/raspberry-pi/">announce</a> a step in that direction: working with the <a href="http://www.raspberrypi.org/" target="_blank">Raspberry Pi Foundation</a>, effective immediately there&#8217;s a pilot release of the <a href="http://reference.wolfram.com/language/">Wolfram Language</a>&#8212;as well as <a href="http://www.wolfram.com/mathematica/"><em>Mathematica</em></a>&#8212;that will soon be <a href="http://www.raspberrypi.org/archives/5282" target="_blank">bundled</a> as part of the standard system software for every Raspberry Pi computer.</p>
+<p><a href="http://www.wolfram.com/raspberry-pi/"><img class="alignnone size-full wp-image-7127" title="Wolfram Language and Mathematica now free on Raspberry Pi" src="http://blog.stephenwolfram.com/data/uploads/2013/11/wolfram-language-and-mathematica-on-raspberry-pi-1.png" alt="Wolfram Language and Mathematica now free on Raspberry Pi" width="505" height="324" /></a><span id="more-6952"></span><br />
+In effect, this is a technology preview: it&#8217;s an early, unfinished, glimpse of the Wolfram Language. Quite soon the Wolfram Language is going to start showing up in lots of places, notably on the web and in the cloud. But I&#8217;m excited that the timing has worked out so that we&#8217;re able to give the Raspberry Pi community&#8212;with its emphasis on education and invention&#8212;the very first chance to put the Wolfram Language into action.</p>
+<p>I&#8217;m a great believer in the importance of programming as a central component of education. And I&#8217;m excited that with the Wolfram Language I think we finally have a powerful programming language worthy of the <a href="http://blog.stephenwolfram.com/2012/10/kids-arduinos-and-quadricopters/">next generation</a>. We&#8217;ve got a language that&#8217;s not mostly concerned with the details of computers, but is instead about being able to understand and create things on the basis of huge amounts of built-in computational ability and knowledge.</p>
+<p>It&#8217;s tremendously satisfying&#8212;and educational. Writing a tiny program, perhaps not even a line long, and already having something really interesting happen. And then being able to scale up larger and larger. Making use of all the powerful <a href="http://reference.wolfram.com/language/guide/LanguageOverview.html">programming paradigms</a> that are built into the Wolfram Language.</p>
+<p>And with Raspberry Pi there&#8217;s something else too: immediately being able to interact with the outside world. Being able to take pure code, and connect it to sensors and devices that do things.</p>
+<p>I think it&#8217;s pretty amazing that we&#8217;re now at the point where all the knowledge and computation in the Wolfram Language can run in a $25 computer. And I think that it&#8217;s the beginning of something very important. Because it means that going forward it&#8217;s going to be technically possible to embed the Wolfram Language in pretty much any new machine or system. In effect immediately injecting high-level intelligence and capabilities.</p>
+<p>I&#8217;ve waited a long time for this. Back in 1988 when <em>Mathematica</em> was <a href="http://mathematica25.com/">first released</a>, it could only just fit in a high-end Mac of the time, but not yet a PC. A decade later&#8212;even though it had grown a lot&#8212;it could run well on pretty much any newly sold personal computer. But embedded computers were a different story&#8212;where one expected that only <a href="http://reference.wolfram.com/language/CCodeGenerator/guide/CCodeGenerator.html">specially compiled</a> simple code could run.</p>
+<p>But I knew that one day what would become the Wolfram Language would be able to run in its complete form on an embedded computer. And now it&#8217;s clear that finally that day has come: with the Raspberry Pi, we&#8217;ve passed the threshold for being able to run the Wolfram Language on an embedded computer anywhere.</p>
+<p>To be clear, the Raspberry Pi is perhaps 10 to 20 times slower at running the Wolfram Language than a typical current-model laptop (and sometimes even slower when it&#8217;s lacking architecture-specific internal libraries). But for many things, the speed of the Raspberry Pi is just fine. And for example, my old test of computing 1989^1989 that used to take many seconds on the computers that existed when <em>Mathematica</em> was young now runs in an immeasurably short time on the Raspberry Pi.</p>
+<p>From a software engineering point of view, what&#8217;s being bundled with the Raspberry Pi is a pilot version of our new Wolfram Engine. Then there are two applications on the Pi powered by this engine.  The first is a command-line version of the Wolfram Language. And the second is <em>Mathematica</em> with its notebook user interface, providing in effect a rich document-based way of interacting with the Wolfram Language.</p>
+<p><img class="aligncenter size-full wp-image-7104" src="http://blog.stephenwolfram.com/data/uploads/2013/11/wolfram-language-and-mathematica-icons1.png" alt="Wolfram Language and Mathematica icons" title="Wolfram Language and Mathematica icons" width="478" height="194" /></p>
+<p>The command-line Wolfram Language is quite zippy on the Raspberry Pi. The full notebook interface to <em>Mathematica</em>&#8212;requiring as it does the whole X Window stack&#8212;can be a trifle sluggish by modern standards (and we had to switch a few things off by default, like our new <a href="http://blog.stephenwolfram.com/2012/12/what-are-you-going-to-do-next-introducing-the-predictive-interface/">Predictive Interface</a>, because they just slowed things down too much). But it&#8217;s still spectacular: the first time <em>Mathematica</em> has been able to run at all on anything like a $25 computer.</p>
+<p>And it&#8217;s the whole system. Nothing is left out. All <a href="http://reference.wolfram.com/language">5000+ Wolfram Language functions</a>.  All capabilities of <em>Mathematica</em> and its notebook interface.</p>
+<p>For me, one of the most striking things about having all this on the Raspberry Pi is how it encourages me to try a new style of real-world-connected computing. For a start, it&#8217;s easy to connect devices to a Pi. And a Pi is small and cheap enough that I can put it almost anywhere. And if I start a Wolfram Language program on it, it&#8217;s reliable enough that I can expect it to pretty much go on running forever&#8212;analyzing and uploading sensor data, controlling an autonomous system, analyzing and routing traffic, or whatever.</p>
+<p>Building in as much automation as possible has been a longstanding principle of mine for the Wolfram Language. And when it comes to external devices, this means consistently curating properties of devices, and then setting up general symbolic functions for interacting with them.</p>
+<p>Here&#8217;s how one would take this whole technology stack and use it to switch on LEDs by setting voltages on GPIO pins:</p>
+<p><img class="alignnone size-full wp-image-7120" src="http://blog.stephenwolfram.com/data/uploads/2013/11/gpio-with-wolfram-language.png" alt="GPIO with Wolfram Language" title="GPIO with Wolfram Language" width="505" height="142" /></p>
+<p>And here&#8217;s some image analysis on a selfie taken by a RaspiCam:</p>
+<p><img class="alignnone size-full wp-image-7121" src="http://blog.stephenwolfram.com/data/uploads/2013/11/raspicam-with-wolfram-language.png" alt="RaspiCam self-portrait image analysis with Wolfram Language" title="RaspiCam self-portrait image analysis with Wolfram Language" width="505" height="244" /></p>
+<p>Something we&#8217;re releasing alongside the Raspberry Pi bundle is a <a href="http://www.wolfram.com/raspberry-pi/RemoteDevelopmentKitInstaller.cdf">Remote Development Kit</a>, that allows one to develop code and maintain a notebook interface on a standard laptop or other computer, while seamlessly executing code on a networked remote Raspberry Pi. The current RDK connects to a copy of <em>Mathematica</em> (such as <a href="http://www.wolfram.com/solutions/education/students/"><em>Mathematica Student Edition</em></a>) running on any Mac, PC or Linux machine; soon there will be other options, for example on the web.</p>
+<p>Within the Wolfram Language there&#8217;s actually a whole emerging structure for symbolically representing remote running language instances&#8212;and for collecting results, dispatching commands, doing computations in parallel, and so on. We&#8217;re also going to have WolframLink (derived from the <a href="http://reference.wolfram.com/language/guide/MathLinkAPI.html"><em>MathLink</em></a> protocol that we&#8217;ve used for nearly 25 years), that&#8217;ll let one exchange code, data or anything else in a very flexible way.</p>
+<p>I&#8217;m very excited to see what kinds of things people invent with the Wolfram Language on the Raspberry Pi&#8212;and I look forward to reading about some of them in the <a href="http://community.wolfram.com/content?curTag=raspberry%20pi">Wolfram+Raspberry Pi section</a> on <a href="http://community.wolfram.com/">Wolfram Community</a>, as well as on the <a href="http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&amp;t=30868&amp;p=413300&amp;hilit=mathematica#p413300" target="_blank">Raspberry Pi Foundation</a> website.</p>
+<p><img src="http://blog.stephenwolfram.com/data/uploads/2013/11/raspberry-pi-on-wolfram-community1.png" alt="Raspberry Pi post on Wolfram Community" title="Raspberry Pi post on Wolfram Community" width="505" height="344" class="alignnone size-full wp-image-7142" /></p>
+<p>In the next few months, it&#8217;s all going to get more and more interesting. What we&#8217;re releasing today on the Raspberry Pi is just the first pilot for the Wolfram Language. There&#8217;ll be many updates, particularly as we approach the first production release of the language.</p>
+<p>As with Wolfram|Alpha on the web, the Wolfram Language (and <em>Mathematica</em>) on the Raspberry Pi are going to be free for anyone to use for personal purposes. (There&#8217;s also going to be a licensing mechanism for commercial uses, other Linux ARM systems, and so on.)</p>
+<p>As a footnote to history, I might mention that the Raspberry Pi is only the second computer ever on which <em>Mathematica</em> has been bundled for free use. (Not counting, of course, all the computers at universities with site licenses, etc.) <a href="http://mathematica25.com/1987_nextsignson-2/">The first</a> was Steve Jobs&#8217;s NeXT computer in 1988.</p>
+<p>I still regularly run into people today who tell me how important <em>Mathematica</em> on the NeXT was for them. Not to mention the gaggle of NeXT computers that were bought by CERN for physicists to run <em>Mathematica</em>&#8212;but ended up being diverted to invent the web.</p>
+<p>What will be done with the millions of instances of the Wolfram Language that are bundled on Raspberry Pi computers around the world? Maybe some amazing and incredibly important invention will be made with them. Maybe some kid somewhere will be inspired, and will go on to change the world.</p>
+<p>But one thing is clear: with the Wolfram Language on Raspberry Pi we&#8217;ve got a new path for learning programming&#8212;and connecting it to the real world&#8212;that a great many people are going to be able to benefit from. And I am very pleased to have been able to do my part to make this happen.</p>
+<p>&nbsp;&nbsp;</p>
+		</div>
+            		<div class="post_foot single">
+			 <div class="category">
+			 	<p>Posted in: <a href="/category/data-science" title="View all posts in Data Science">Data Science</a>, <a href="/category/education" title="View all posts in Education">Education</a>, <a href="/category/mathematica" title="View all posts in Mathematica"><em>Mathematica</em></a>, <a href="/category/new-technology" title="View all posts in New Technology">New Technology</a>, <a href="/category/wolfram-language" title="View all posts in Wolfram Language">Wolfram Language</a></p>
+			</div>
+			 <div class="post_footer_left">
+                  <p><a href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/#comments" class="comments-link"  title="Comment on Putting the Wolfram Language (and Mathematica) on Every Raspberry Pi">25 Comments</a></p>
+            </div>
+			<div class="social">
+	<div class="socialIcons">
+		<a class="facebook icon" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fblog.stephenwolfram.com%2F2013%2F11%2Fputting-the-wolfram-language-and-mathematica-on-every-raspberry-pi%2F&amp;t=Putting+the+Wolfram+Language+%28and+%3Ci%3EMathematica%3C%2Fi%3E%29+on+Every+Raspberry+Pi" title="Share on Facebook" target="blank"></a>
+
+		<a class="twitter icon" href="http://twitter.com/home?status=Currently%20reading%20http%3A%2F%2Fblog.stephenwolfram.com%2F2013%2F11%2Fputting-the-wolfram-language-and-mathematica-on-every-raspberry-pi%2F" title="Share on Twitter" target="_blank"></a>
+
+		<a class="reddit icon" href="http://www.reddit.com/submit?url=http%3A%2F%2Fblog.stephenwolfram.com%2F2013%2F11%2Fputting-the-wolfram-language-and-mathematica-on-every-raspberry-pi%2F&amp;title=Putting+the+Wolfram+Language+%28and+%3Ci%3EMathematica%3C%2Fi%3E%29+on+Every+Raspberry+Pi" title="Share on Reddit" target="_blank"></a>
+
+		<a class="linkedin icon" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fblog.stephenwolfram.com%2F2013%2F11%2Fputting-the-wolfram-language-and-mathematica-on-every-raspberry-pi%2F&amp;title=Putting+the+Wolfram+Language+%28and+%3Ci%3EMathematica%3C%2Fi%3E%29+on+Every+Raspberry+Pi" title="Share on Linkedin" target="_blank"></a>
+
+		<a class="more-post" href="http://www.addthis.com/bookmark.php?pub=L4DJFTEHPAW2JE1G&amp;url=http%3A%2F%2Fblog.stephenwolfram.com%2F2013%2F11%2Fputting-the-wolfram-language-and-mathematica-on-every-raspberry-pi%2F&amp;title=Putting+the+Wolfram+Language+%28and+Mathematica%29+on+Every+Raspberry+Pi" target="_blank" title="Bookmark using any bookmark manager">More</a>
+	</div>
+</div>		</div>
+<div id="footer_more_posts" class="singlenav">
+	<p class="entry_bottom_heading first">RELATED POSTS</p>		<div class="footer_post_wrapper">
+			<div class="footer_thumbnail"><a href="http://blog.stephenwolfram.com/2014/09/introducing-tweet-a-program/"><img width="64" height="54" src="http://blog.stephenwolfram.com/data/uploads/2014/09/introducing-tweet-a-program.png" class="attachment- wp-post-image" alt="introducing-tweet-a-program" title="" /></a></div>
+			<div class="footer_post">
+				<p><a href="http://blog.stephenwolfram.com/2014/09/introducing-tweet-a-program/">Introducing Tweet-a-Program</a></p>
+				<p>September 18, 2014</p>
+			</div>
+		</div>
+				<div class="footer_post_wrapper">
+			<div class="footer_thumbnail"><a href="http://blog.stephenwolfram.com/2014/09/launching-today-mathematica-online/"><img width="64" height="54" src="http://blog.stephenwolfram.com/data/uploads/2014/09/launching-today-mathematica-online.png" class="attachment- wp-post-image" alt="Launching Today: Mathematica Online!" title="" /></a></div>
+			<div class="footer_post">
+				<p><a href="http://blog.stephenwolfram.com/2014/09/launching-today-mathematica-online/">Launching Today: <em>Mathematica</em> Online!</a></p>
+				<p>September 15, 2014</p>
+			</div>
+		</div>
+				<div class="footer_post_wrapper">
+			<div class="footer_thumbnail"><a href="http://blog.stephenwolfram.com/2014/07/entrepreneurism-of-ideas-an-education-adventure/"><img width="64" height="54" src="http://blog.stephenwolfram.com/data/uploads/2014/07/entrepreneurism-of-ideas-an-education-adventure.png" class="attachment- wp-post-image" alt="entrepreneurism-of-ideas-an-education-adventure" title="" /></a></div>
+			<div class="footer_post">
+				<p><a href="http://blog.stephenwolfram.com/2014/07/entrepreneurism-of-ideas-an-education-adventure/">Entrepreneurism of Ideas: An Education Adventure</a></p>
+				<p>July 28, 2014</p>
+			</div>
+		</div>
+						<p class="entry_bottom_heading ">NEXT POST</p>
+		<div class="footer_post_wrapper">
+			<div class="footer_thumbnail"><a href="http://blog.stephenwolfram.com/2013/12/happy-holidays-the-wolfram-language-way/"><img width="64" height="54" src="http://blog.stephenwolfram.com/data/uploads/2014/05/happy-holidays-the-wolfram-language-way.png" class="attachment- wp-post-image" alt="“Happy Holidays”, the Wolfram Language Way" title="" /></a></div>
+			<div class="footer_post">
+				<p><a href="http://blog.stephenwolfram.com/2013/12/happy-holidays-the-wolfram-language-way/" rel="next">&#8220;Happy Holidays&#8221;, the Wolfram Language Way</a></p>
+				<p>December 27, 2013</p>
+			</div>
+		</div>
+				<p class="entry_bottom_heading">PREVIOUS POST</p>
+		<div class="footer_post_wrapper">
+			<div class="footer_thumbnail"><a href="http://blog.stephenwolfram.com/2013/11/something-very-big-is-coming-our-most-important-technology-project-yet/"><img width="64" height="54" src="http://blog.stephenwolfram.com/data/uploads/2014/05/something-very-big-is-coming.png" class="attachment- wp-post-image" alt="Something Very Big Is Coming: Our Most Important Technology Project Yet" title="" /></a></div>
+			<div class="footer_post">
+				<p><a href="http://blog.stephenwolfram.com/2013/11/something-very-big-is-coming-our-most-important-technology-project-yet/" rel="prev">Something Very Big Is Coming: Our Most Important Technology Project Yet</a></p>
+				<p>November 13, 2013</p>
+			</div>
+		</div>
+		<div style="clear: both;"><!-- --></div>
+</div>
+<div style="clear: both;"><!-- --></div>
+	
+
+	<div id="comments_wrapper">
+    <span id="comments"></span>
+
+
+
+<div id="respond">
+
+<h3 class="comments-heading"><div class="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/#respond" style="display:none;">cancel [x]</a></div></h3>
+
+
+
+<div id="join-small">
+    <div class="input-fields">
+        <div class="inner">
+            <input type="text" id="fakeComment">
+            <label for="fakeComment" class="placeholder show">Join the discussion</label>
+            <img src="/wp-content/themes/sw-v2/images/join-button.png" id="join-button" alt="">
+        </div>
+    </div>
+</div>
+
+<form action="http://blog.stephenwolfram.com/wp-comments-post.php" method="post" id="commentform">
+<div id="join-big">
+        <div id="exit-button"><div id="exit-image"></div><div style="clear: both;"></div></div>
+    <div id="comment-area"><div><textarea name="comment" id="comment" tabindex="1"></textarea></div></div>
+	<p><span id="commentError" style="color: red; margin: 0; padding: 0 0 15px 0; display:none">Please enter your comment (at least 5 characters).</span></p>
+    <div class="level">
+        <div class="half-length"><label for="author">Name (required)</label></div>
+        <div class="half-length "><div class="pad-left"><label for="email">Email (will not be published; required)</label></div></div>
+        <div style="clear:both;"></div>
+    </div>
+    <div>
+        <div class="half-length"><input type="text" name="author" id="author" value="" size="22" tabindex="2" aria-required='true' /><p><span id="nameError" style="color:red; display:none">Please enter your name.</span></p></div>
+        <div class="half-length "><div class="pad-left"><input type="text" name="email" id="email" value="" size="22" tabindex="3" aria-required='true' /></div>
+		<p><span id="emailError" style="margin-left: 10px; color:red; display:none">Please&nbsp;enter&nbsp;a&nbsp;valid&nbsp;email&nbsp;address.</span></p></div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="level">
+        <div class="half-length"><label for="url">Website</label></div>
+        <div style="clear:both;"></div>
+        <div class="half-length"><input type="text" name="url" id="url" value="" size="22" tabindex="4" /></div>
+        <div style="clear:both;"></div>
+        <p><input name="submit" type="submit" id="submit" class="button" tabindex="5" value="Submit comment &raquo;" onclick="return checkCommentFields()" /></p>
+        <div style="clear:both;"></div>
+    </div>
+<div class="post_separator_no_margin"></div>
+</div>
+
+
+    <h3 id="comments-heading">
+        <span class="num-comments"><span>25</span></span> comments<span id="show-all-comments">. Show all &raquo;</span>    </h3>
+
+
+    <div id="comment-section">
+        <div class="navigation">
+            <div class="alignleft"></div>
+            <div class="alignright"></div>
+        </div>
+
+        <ol class="commentlist">
+          <li class="comment even thread-even depth-1" id="li-comment-378256">
+	<table id="comment-378256" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>yay!!!</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://amanointeractive.com' rel='external nofollow' class='url'>alfanick</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-378256">November 21, 2013 at 12:48 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-378328">
+	<table id="comment-378328" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Elated today, not only for the rest of the world, who will soon have these computable resources in their hands, perhaps eventually more ubiquitously then Google; but also for S.W., who has been building up to this, for many years.</p>
+<p>An exciting time, to live in.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>DCWhatthe</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-378328">November 21, 2013 at 1:11 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-378388">
+	<table id="comment-378388" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Good job,  Wolfram Research team. It may be a small step in your large-scale plan, but it truly offers the inspiration to launch a new generation into the world of computer-based math.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Garrett</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-378388">November 21, 2013 at 1:27 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-378390">
+	<table id="comment-378390" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>The Mathematica/Pi announcement is great !   &#8216; Way to get the technology into the hands and minds of kids !!    Applause [Infinity, Volume-&gt;11]</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Brian</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-378390">November 21, 2013 at 1:29 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-378436">
+	<table id="comment-378436" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>I still have my B&amp;W NeXT Cube running Mathematica, thanks for rebundling it with yet another revolutionary computer.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Adam Hill</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-378436">November 21, 2013 at 1:41 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-378443">
+	<table id="comment-378443" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Great! Good Idea!<br />
+I completely agree with your point of view.<br />
+thank you very much.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>M.Pierno</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-378443">November 21, 2013 at 1:43 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-379257">
+	<table id="comment-379257" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Excellent move!</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Andrew Moylan</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-379257">November 21, 2013 at 6:20 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-379704">
+	<table id="comment-379704" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>You nailed it Wolfram \m/</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>longcao</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-379704">November 21, 2013 at 8:50 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-380302">
+	<table id="comment-380302" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Raspi &#8211; The NeXT big thing.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://nasirjumani.com' rel='external nofollow' class='url'>NasirJumani</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-380302">November 22, 2013 at 12:32 am</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-380663">
+	<table id="comment-380663" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>This is great! A big &#8216;Thanks<br />
+ to you and team.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Shijor Shamsudeen</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-380663">November 22, 2013 at 2:18 am</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-382584">
+	<table id="comment-382584" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Amazing.  Just yesterday we had decided to buy a bunch of Pis for our small, rural New Zealand primary school&#8230;and now this!  Location is truly no longer a barrier.  Our stronger students, who are waltzing through CodeAcademy and Project Euler will love this!</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://Www.boi.ac.nz' rel='external nofollow' class='url'>Donald Chandler</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-382584">November 22, 2013 at 12:47 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-382617">
+	<table id="comment-382617" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>This is a really amazing step&#8230;</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://loghound.com' rel='external nofollow' class='url'>John McLaughlin</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-382617">November 22, 2013 at 12:58 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-383820">
+	<table id="comment-383820" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Fantastic News!!!!  I cannot wait to build a Wolfram device with a Pi.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://www.linkedin.com/pub/robin-franke/13/385/560/' rel='external nofollow' class='url'>Robin Franke</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-383820">November 22, 2013 at 7:37 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-395610">
+	<table id="comment-395610" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Very remarkable! Admirable! The Wolfram Language can have a profound impact in research and education in Mathematics. Projects like Theorema 2.0 can leverage the Wolfram Language creations to foster a new paradigm of research and collaboration, in which smart formats like CDFs can substitute old journal formats, for instance, and mathematical content can be accessible efficiently through the Internet!<br />
+Deeply interested in how an increasing network of mathematicians, scientists and engineers can leverage these new powers to create a global (computational!) knowledge bases of definitions, proved theorems, models and algorithms, in a way that scales the outcome of the efforts of professionals, and uses the Internet and machine learning capabilities to engineer coordinated discovery and create meaningful professional connections.<br />
+Deeply interested also in how these portable computational knowledge can have a profound impact in creating educational content, or program chips, etc!</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>David Mateos-Núñez</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-395610">November 25, 2013 at 2:24 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-407291">
+	<table id="comment-407291" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Impressed with this, thanks.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://www.cafe-encounter.net' rel='external nofollow' class='url'>Chris F Carroll</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-407291">November 28, 2013 at 6:08 am</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-463847">
+	<table id="comment-463847" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Ummm&#8230; this has already been created. It&#8217;s called SKYNET!  Can&#8217;t wait!</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Brett</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-463847">December 12, 2013 at 11:07 am</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-463958">
+	<table id="comment-463958" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>This will change dramatically all industrial automation systems. Up to now they were quite primitive. But with that approach it will easily be possible to develop automation system with a high degree of intelligence.<br />
+With that, industry will not only make major advances but also save major amounts of money, because industrial production processes can get optimised, so that less resources are needed,  maintenance can be done early enough, so that stillstands can get avoided and the production machines can be designed much safer. And that will save many lives.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Claus Martin</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-463958">December 12, 2013 at 2:13 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-464126">
+	<table id="comment-464126" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>I just installed it on my Raspberry Pi&#8230;it looks great! Thanks Mr. Wolfram!</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://www.bulldogmath.com' rel='external nofollow' class='url'>John C.</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-464126">December 12, 2013 at 7:50 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-464133">
+	<table id="comment-464133" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Congrats on a truly awesome accomplishment.  I agree that the benefits will greatly outweigh the cost in time the efforts of the company&#8217;s teams over the years, from the first days of the standalone kernel to now.  What a tool set!</p>
+<p>A former version 2 user.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Bill Kiele</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-464133">December 12, 2013 at 8:07 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-464624">
+	<table id="comment-464624" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>can&#8217;t wait.  better get a Raspberry now.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Tony</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-464624">December 13, 2013 at 9:51 am</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-464712">
+	<table id="comment-464712" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>MapThread[Happiness,{All,At Mathematica}], great work!</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>ade</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-464712">December 13, 2013 at 12:14 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-474964">
+	<table id="comment-474964" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Superb idea, and most generous! Now all I need to do is find the time to take advantage of it on my Pi <img src='http://blog.stephenwolfram.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://www.metacase.com/blogs/stevek/blogView' rel='external nofollow' class='url'>Steven Kelly</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-474964">December 16, 2013 at 9:38 am</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-488381">
+	<table id="comment-488381" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>Thank you, this really opens up some amazing possibilities.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Brian</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-488381">December 20, 2013 at 6:22 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-488877">
+	<table id="comment-488877" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>I was looking for this. My plan is to develop intelligent  module for control systems. Initially, I planned to use Smaltalk, but avaibility of many functions in Mathematica changed my mind.</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div><a href='http://minidata.ca' rel='external nofollow' class='url'>Feliks Gazinski</a></div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-488877">December 20, 2013 at 9:43 pm</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+  <li class="comment even thread-even depth-1" id="li-comment-556565">
+	<table id="comment-556565" class="balloon" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td class="uleft"></td>
+	<td colspan="2" class="umid">&nbsp;</td>
+	<td class="uright"></td>
+	</tr>
+	<tr>
+	<td colspan="4" class="mid">
+      
+      <p>I was so mad that Texas Tech&#8217;s Mechanical Engineering department makes you take a Matlab class and then the professors expect you to learn Mathmatica nearly over night. I dropped a class because of that idiotic notion. Just wasn&#8217;t worth my time to learn another programming language (that is locked to my Mac might I add) to pass a class that I could go take down the road cheaper without the need for either Mathmatica or Matlab. Maybe I&#8217;ll look into picking Mathmatica up a bit more now…</p>
+	</td>
+	</tr>
+	<tr>
+	<td class="lleft"><div><!-- --></div></td>
+	<td class="comment-author vcard"><div>Colin</div></td>
+	<td class="comment-meta commentmetadata" width="100%">
+		<div>
+		<a class="comment-permlink" href="http://blog.stephenwolfram.com/2013/11/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/comment-page-1/#comment-556565">January 12, 2014 at 2:12 am</a>
+						</div>
+	</td>
+	<td class="lright"><div><!-- --></div></td>
+	</tr>
+	</table>
+</li>
+        </ol>
+        <span id="hide-comments">Hide comments &raquo;</span>
+
+        <div class="navigation">
+            <div class="alignleft"></div>
+            <div class="alignright"></div>
+        </div>
+    </div>
+
+ 
+
+
+<input type='hidden' name='comment_post_ID' value='6952' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+
+</form>
+
+
+</div><!-- respond -->
+
+</div><!-- wrapper -->
+<script type="text/javascript">
+function checkCommentFields()
+{
+
+    if($(".socialLoggedIn").is(":visible"))
+        return true;
+
+
+    var ret = true;
+    if($("#author").val().trim().length < 2)
+    {
+        $("#nameError").fadeIn();
+        ret = false;
+    }
+    else
+    {
+        $("#nameError").fadeOut();
+    }
+
+    if(!validEmail($("#email").val().trim()))
+    {
+        $("#emailError").fadeIn();
+        ret = false;
+    }
+    else
+    {
+        $("#emailError").fadeOut();
+    }
+
+    if($("#comment").val().trim().length < 5)
+    {
+        $("#commentError").fadeIn();
+        ret = false;
+    }
+    else
+    {
+        $("#commentError").fadeOut();
+    }
+
+    return ret;
+}
+
+$(document).ready(function(){
+    $('.comment-author a').attr("target", "_blank");
+    if(window.location.href.indexOf("comment-page-1") > -1) {
+        $('#comment-section').removeClass('hide');
+    }
+
+    $("#author").keyup(function() {
+        if($("#nameError").is(":visible") && $("#author").val().trim().length >= 2)
+            $("#nameError").fadeOut();
+    });
+
+    $("#email").keyup(function() {
+        if($("#emailError").is(":visible") && validEmail($("#email").val().trim()))
+            $("#emailError").fadeOut();
+    });
+
+    $("#comment").keyup(function() {
+        if($("#commentError").is(":visible") && $("#comment").val().trim().length >= 5)
+            $("#commentError").fadeOut();
+    });
+});
+
+
+
+function validEmail(email)
+{
+    signPos = email.indexOf("@");
+    dotPos = email.lastIndexOf(".");
+
+    if (email.length < 6 || signPos == -1 || dotPos == -1 || (dotPos < signPos) || (dotPos - signPos == 1) || dotPos == email.length-1 )
+    {
+        return false;
+    }
+
+    return true;
+}
+</script>		<footer id="footer">&copy; Stephen Wolfram, LLC | <a href="/terms">Terms</a></footer>
+</div>
+
+<div id="sidebar">
+		<form class="headerSearchBox" method="get" action="http://blog.stephenwolfram.com/" id="search">
+		<input class="searchboxsub" type="text" value="" name="s" id="query_1" placeholder="Search Blog" />
+		<input type="submit" class="headerSearchSubmit" value="" title="Search">
+	</form>
+	<img src="/wp-content/themes/sw-v2/images/stephen-wolfram-sidebar.jpg" alt="" title="">
+	<div class="sidebar-social">
+		<a href="/feed/" class="big-social-icon rss" title="RSS"></a>
+		<a href="http://www.facebook.com/pages/Stephen-Wolfram/188916357807416" class="big-social-icon facebook" title="Facebook" target="_blank"></a>
+		<a href="http://twitter.com/#!/stephen_wolfram" class="big-social-icon twitter" title="Twitter" target="_blank"></a>
+		<a href="http://www.linkedin.com/in/stephenwolfram" class="big-social-icon linkedin" title="LinkedIn" target="_blank"></a>
+	</div>
+	<div class="sidebar-image-caption">
+		<p>Founder &amp; CEO of Wolfram Research</p>
+		<p>Creator of <em>Mathematica</em> &amp; Wolfram|Alpha</p>
+		<p>Author of <em>A New Kind of Science</em></p>
+	</div>
+	<div class="sidebar-pod">
+		<p class="sidebar-heading">Recent Posts</p>
+		<div class="sidebar-inner">
+			<div id="postContainer">loading...</div>
+		</div>
+		<a href="" id="loadMore" class="more-recent-posts">More &darr;</a>
+	<span id="total_posts" class="total88"></span>	</div>
+	<div class="sidebar-pod">
+		<p class="sidebar-heading">Popular Categories</p>
+		<div class="categories-list-row sidebar-inner">
+			<ul class="categories-list">
+			<li><a href="/category/big-picture">Big Picture</a></li><li><a href="/category/companies-and-business">Companies and Business</a></li><li><a href="/category/computational-science">Computational Science</a></li><li><a href="/category/data-science">Data Science</a></li><li><a href="/category/education">Education</a></li><li><a href="/category/future-perspectives">Future Perspectives</a></li><li><a href="/category/historical-perspectives">Historical Perspectives</a></li><li><a href="/category/life-and-times">Life and Times</a></li><li><a href="/category/life-science">Life Science</a></li></ul><ul class="categories-list"><li><a href="/category/mathematica"><em>Mathematica</em></a></li><li><a href="/category/mathematics">Mathematics</a></li><li><a href="/category/new-kind-of-science">New Kind of Science</a></li><li><a href="/category/new-technology">New Technology</a></li><li><a href="/category/personal-analytics">Personal Analytics</a></li><li><a href="/category/physical-science">Physical Science</a></li><li><a href="/category/wolfram-alpha">Wolfram|Alpha</a></li><li><a href="/category/wolfram-language">Wolfram Language</a></li><li><a href="/category/other">Other</a></li>			</ul>
+		</div>
+	</div>
+	<div class="sidebar-pod">
+		<p class="sidebar-heading">Archive</p>
+		<div class="sidebar-archive sidebar-inner">
+			<ul>
+									<li class="first"><a href="http://blog.stephenwolfram.com/2014/">2014</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2013/">2013</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2012/">2012</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2011/">2011</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2010/">2010</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2009/">2009</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2008/">2008</a></li>
+										<li class="first"><a href="http://blog.stephenwolfram.com/2007/">2007</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2006/">2006</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2004/">2004</a></li>
+										<li><a href="http://blog.stephenwolfram.com/2003/">2003</a></li>
+								</ul>
+		</div>
+	</div>
+</div></div><!-- end of "outerWrap" -->
+
+		</body>
+</html>

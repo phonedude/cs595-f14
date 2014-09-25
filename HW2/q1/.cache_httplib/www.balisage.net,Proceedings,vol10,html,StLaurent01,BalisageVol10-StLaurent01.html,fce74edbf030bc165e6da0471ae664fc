@@ -1,0 +1,1273 @@
+status: 200
+content-length: 148822
+content-location: http://www.balisage.net/Proceedings/vol10/html/StLaurent01/BalisageVol10-StLaurent01.html#d59611e155
+accept-ranges: bytes
+server: Apache/1.3.42 (Unix) mod_auth_tkt/2.1.0 FrontPage/5.0.2.2635
+ mod_ssl/2.8.31 OpenSSL/0.9.8r
+last-modified: Fri, 01 Aug 2014 18:21:49 GMT
+etag: "1acbc06-24556-53dbdabd"
+date: Wed, 24 Sep 2014 22:21:48 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Allure of Gothic Markup</title>
+<link rel="stylesheet" href="../../../balisage-proceedings.css" type="text/css">
+<meta name="generator" content="Balisage Conference Proceedings XSLT (v1.2)">
+<meta name="keywords" content="Technology Adoption, Standardization, Interoperability, Validating, Information Architecture">
+<script type="text/javascript">
+    function toggle(folderID) {
+      folder = document.getElementById("folder-"+folderID);
+      icon = document.getElementById("icon-"+folderID)
+      // need to:
+      //   switch folder.style.display between 'none' and 'block'
+      //   switch between collapse and expand icons
+      if (folder.style.display != "block") {
+        folder.style.display = "block";
+        icon.src = "../../../icons/minus.png" ;
+        icon.alt = "collapse" ;
+      }
+      else {
+        folder.style.display = "none";
+        icon.src = "../../../icons/plus.png" ;
+        icon.alt = "expand" ;
+      };
+      return;
+    }
+
+   function hidecite(citeID) {
+     cite = document.getElementById(citeID);
+     cite.style.display = "none";
+     return;
+   }
+   
+   function showcite(citeID,anchorID) {
+     cite = document.getElementById(citeID);
+
+     citeLeft = cite.style.left;
+     citeTop = cite.style.top;
+     
+     if (citeLeft != (getLeft(anchorID)+"px") ||
+         citeTop != (getTop(anchorID)+"px")) {
+       cite.style.display = "none";
+     }
+     
+     if (cite.style.display != "table-cell") {
+        movebox(citeID, anchorID);
+        cite.style.display = "table-cell";
+     }
+     else {
+       cite.style.display = "none";
+     };
+     return;
+   }
+
+   function movebox(citeID, anchorID) {
+
+     cite = document.getElementById(citeID);
+     
+     // alert(cite.offsetWidth + " by " + cite.offsetHeight)
+     
+     horizontalOffset = getLeft(anchorID);
+     // horizontalOffset = (inMain(anchorID)) ?
+     // (horizontalOffset - 260) : (horizontalOffset + 20)
+     // (horizontalOffset - (20 + cite.offsetWidth)) : (horizontalOffset + 20)
+
+     verticalOffset = getTop(anchorID);
+     // verticalOffset = (inMain(anchorID)) ?
+     // (verticalOffset - 20) : (verticalOffset + 20)
+     // (verticalOffset - (20 + cite.offsetHeight)) : (verticalOffset + 20)
+
+     /*
+     horizontalOffset = getAbsoluteLeft(anchorID) - getScrollLeft(anchorID) + 20;
+     if (inMain(anchorID)) {
+       horizontalOffset = horizontalOffset - 300;
+     }
+     verticalOffset = getAbsoluteTop(anchorID) - getScrollTop(anchorID) - 40;
+     if (inMain(anchorID)) {
+       verticalOffset = verticalOffset - 300;
+     }
+     */
+     
+     cite.style.left = horizontalOffset + "px";
+     cite.style.top = verticalOffset + "px";
+   }
+   
+   function getLeft(objectID) {
+     var left = getAbsoluteLeft(objectID) - getScrollLeft(objectID);
+     left = (inMain(objectID)) ? (left - 260) : (left + 20)    
+     return left;
+   }
+   
+   function getTop(objectID) {
+     var top = getAbsoluteTop(objectID) - getScrollTop(objectID);
+     top = (inMain(objectID)) ? (top - 50) : (top + 20)
+     return top;     
+   }
+   
+   function getAbsoluteLeft(objectId) {
+   // Get an object left position from the upper left viewport corner
+     o = document.getElementById(objectId)
+     oLeft = o.offsetLeft            // Get left position from the parent object
+     while(o.offsetParent!=null) {   // Parse the parent hierarchy up to the document element
+       oParent = o.offsetParent    // Get parent object reference
+       oLeft += oParent.offsetLeft // Add parent left position
+       o = oParent
+      }
+    return oLeft
+    }
+
+    function getAbsoluteTop(objectId) {
+    // Get an object top position from the upper left viewport corner
+      o = document.getElementById(objectId)
+      oTop = o.offsetTop            // Get top position from the parent object
+      while(o.offsetParent!=null) { // Parse the parent hierarchy up to the document element
+        oParent = o.offsetParent  // Get parent object reference
+        oTop += oParent.offsetTop // Add parent top position
+        o = oParent
+      }
+    return oTop
+    }
+
+   function getScrollLeft(objectId) {
+     // Get a left scroll position
+     o = document.getElementById(objectId)
+     oLeft = o.scrollLeft            // Get left position from the parent object
+     while(o.offsetParent!=null) {   // Parse the parent hierarchy up to the document element
+       oParent = o.offsetParent    // Get parent object reference
+       oLeft += oParent.scrollLeft // Add parent left position
+       o = oParent
+      }
+    return oLeft
+    }
+
+    function getScrollTop(objectId) {
+    // Get a right scroll position
+      o = document.getElementById(objectId)
+      oTop = o.scrollTop            // Get top position from the parent object
+      while(o.offsetParent!=null) { // Parse the parent hierarchy up to the document element
+        oParent = o.offsetParent  // Get parent object reference
+        oTop += oParent.scrollTop // Add parent top position
+        o = oParent
+      }
+    return oTop
+    }
+
+    function inMain(objectId) {
+    // returns true if in div#main
+      o = document.getElementById(objectId)
+      while(o.parentNode != null) { // Parse the parent hierarchy up to div#main
+        oParent = o.parentNode
+        if (o.id == "main") { return true; }
+        o = oParent;
+      }
+    return false;
+    }
+
+
+   /*
+   function showcite(citeID) {
+      cite = document.getElementById(citeID);
+      if (cite.style.display != "table-cell") {
+        cite.style.display = "table-cell";
+      }
+      else {
+        cite.style.display = "none";
+      };
+      return;
+    }
+    */
+
+      </script>
+</head>
+<body>
+<div class="inline-citation" id="cite-PatternLanguage" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-PatternLanguage')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Alexander, Christopher, et al. <span class="ital">A Pattern Language: Towns, Buildings, Construction</span>. New York: Oxford University Press, 1977.</p>
+</div>
+<div class="inline-citation" id="cite-Timeless" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Timeless')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Alexander, Christopher. <span class="ital">The Timeless Way of Building</span>. New York: Oxford University Press, 1979.</p>
+</div>
+<div class="inline-citation" id="cite-Houses" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Houses')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Alexander, Christopher, et al. <span class="ital">The Production of Houses</span>. New York: Oxford University Press, 1985.</p>
+</div>
+<div class="inline-citation" id="cite-Origins" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Origins')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Alexander, Christoper. "The Origins of Pattern Theory, the Future of the Theory, and the Generation of a Living World."  <a href="http://www.patternlanguage.com/archive/ieee/ieeetext.htm" class="link" target="_new">http://www.patternlanguage.com/archive/ieee/ieeetext.htm</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Battle" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Battle')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Alexander, Christopher, et al. <span class="ital">The Battle for the Life and Beauty of the Earth</span>. New York: Oxford University Press, 2012.</p>
+</div>
+<div class="inline-citation" id="cite-MechTurk" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-MechTurk')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Amazon Mechanical Turk. <a href="https://www.mturk.com/mturk/" class="link" target="_new">https://www.mturk.com/mturk/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Beck" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Beck')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Beck, Jeff. "The False Security of Closed XML Systems." Presented at Balisage: The Markup Conference 2011, Montr&eacute;al, Canada, August 2 - 5, 2011. In Proceedings of Balisage: The Markup Conference 2011. Balisage Series on Markup Technologies, vol. 7 (2011). doi:<a href="http://dx.doi.org/10.4242/BalisageVol7.Beck01" class="doi" target="_new">10.4242/BalisageVol7.Beck01</a>. <a href="http://www.balisage.net/Proceedings/vol7/html/Beck01/BalisageVol7-Beck01.html" class="link" target="_new">http://www.balisage.net/Proceedings/vol7/html/Beck01/BalisageVol7-Beck01.html</a>.</p>
+</div>
+<div class="inline-citation" id="cite-SemWebArch" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-SemWebArch')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Berners-Lee, Tim. "Semantic Web - XML 2000- slide 'Architecture'"  <a href="http://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html" class="link" target="_new">http://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html</a>.</p>
+</div>
+<div class="inline-citation" id="cite-xml2nd" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-xml2nd')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Bosak, Jon, and Bray, Tim. "XML and the Second-Generation Web". <span class="ital">Scientific American</span>, May 1999. Pages 89-93. doi:<a href="http://dx.doi.org/10.1038/scientificamerican0599-89" class="doi" target="_new">10.1038/scientificamerican0599-89</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Pizza" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Pizza')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Burnard, Lou, and Sperberg-McQueen, C. Michael. "TEI Pizza Chef". <a href="http://www.tei-c.org/Vault/P4/pizza.html" class="link" target="_new">http://www.tei-c.org/Vault/P4/pizza.html</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Butterick" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Butterick')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Butterick, Matthew. "The Bomb in the Garden" <a href="http://unitscale.com/mb/bomb-in-the-garden/" class="link" target="_new">http://unitscale.com/mb/bomb-in-the-garden/</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Cargill" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Cargill')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Cargill, Carl. "Why Standardization Efforts Fail". <a href="http://quod.lib.umich.edu/j/jep/3336451.0014.103/--why-standardization-efforts-fail?rgn=main;view=fulltext" class="link" target="_new">http://quod.lib.umich.edu/j/jep/3336451.0014.103/--why-standardization-efforts-fail?rgn=main;view=fulltext</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Evolution" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Evolution')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Connolly, Dan, et al. "The Evolution of Web Documents: The Ascent of XML", in <span class="ital">XML: Principles, Tools, and Techniques</span>. Sebastopol, CA: O'Reilly Media, 1997. <a href="http://www.xml.com/pub/a/w3j/s3.connolly.html" class="link" target="_new">http://www.xml.com/pub/a/w3j/s3.connolly.html</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-WebComponents" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-WebComponents')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Cooney, Dominic, and Glazkov, Dmitri. Introduction to Web Components. <a href="http://www.w3.org/TR/components-intro/" class="link" target="_new">http://www.w3.org/TR/components-intro/</a>.</p>
+</div>
+<div class="inline-citation" id="cite-JSON" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-JSON')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Crockford, Douglas. "Introducing JSON". <a href="http://www.json.org/" class="link" target="_new">http://www.json.org/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Cushing" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Cushing')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Cushing, Ellen. "Dawn of the Digital Sweatshop". <a href="http://www.eastbayexpress.com/oakland/dawn-of-the-digital-sweatshop/Content?oid=3301022" class="link" target="_new">http://www.eastbayexpress.com/oakland/dawn-of-the-digital-sweatshop/Content?oid=3301022</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Hypermedia" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Hypermedia')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">DeRose, Steven and Durand, David. <span class="ital">Making Hypermedia Work: A User's Guide to HyTime</span>. Boston: Kluwer Academic Publishers, 1994. doi:<a href="http://dx.doi.org/10.1007/978-1-4615-2754-1" class="doi" target="_new">10.1007/978-1-4615-2754-1</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Dublin" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Dublin')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Dublin Core Metadata Initiative. "DCMI Specifications". <a href="http://dublincore.org/specifications/" class="link" target="_new">http://dublincore.org/specifications/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-XMLbye" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-XMLbye')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">DuVander, Adam. "http://blog.programmableweb.com/2012/12/17/leading-apis-say-bye-xml-in-new-versions/". <a href="http://blog.programmableweb.com/2012/12/17/leading-apis-say-bye-xml-in-new-versions/" class="link" target="_new">http://blog.programmableweb.com/2012/12/17/leading-apis-say-bye-xml-in-new-versions/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-YAML" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-YAML')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Evans, Clark. "YAML: YAML Ain't Markup Language". <a href="http://www.yaml.org/" class="link" target="_new">http://www.yaml.org/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-prollyfill" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-prollyfill')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Extensible Web Community Group. <a href="http://prollyfill.org/" class="link" target="_new">http://prollyfill.org/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-manifesto" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-manifesto')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">
+<a href="http://extensiblewebmanifesto.org/" class="link" target="_new">http://extensiblewebmanifesto.org/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-DesignPatterns" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-DesignPatterns')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Gamma, Erich, et al. <span class="ital">Design Patterns: Elements of Reusable Software</span>. Boston: Addison-Wesley, 1995.</p>
+</div>
+<div class="inline-citation" id="cite-SGMLhand" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-SGMLhand')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Goldfarb, Charles. <span class="ital">The SGML Handbook</span>. Oxford: Oxford University Press, 1990.</p>
+</div>
+<div class="inline-citation" id="cite-Polyfills" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Polyfills')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">"HTML5 Cross Browser Polyfills". <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills" class="link" target="_new">https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-DSDL" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-DSDL')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">ISO/IEC 19757 - DSDL. "Document Schema Definition Languages". <a href="http://dsdl.org/" class="link" target="_new">http://dsdl.org/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-PolyfillOverhead" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-PolyfillOverhead')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Jehl, Scott. "Polyfilling picture without the overhead". <a href="http://www.w3.org/community/respimg/2012/03/15/polyfilling-picture-without-the-overhead/" class="link" target="_new">http://www.w3.org/community/respimg/2012/03/15/polyfilling-picture-without-the-overhead/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Plurality" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Plurality')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Jelliffe, Rick. "Safe Plurality: Can it be done using OOXML's Markup Compatibility and Extensions mechanism?". <a href="http://broadcast.oreilly.com/2009/02/safe-plurality-markup-compatab.html" class="link" target="_new">http://broadcast.oreilly.com/2009/02/safe-plurality-markup-compatab.html</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Dialect" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Dialect')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Jelliffe, Rick. "XML's Dialect Problem: Diversity is not the problem; it is the requirement". <a href="http://broadcast.oreilly.com/2012/03/xmls-dialect-problem.html" class="link" target="_new">http://broadcast.oreilly.com/2012/03/xmls-dialect-problem.html</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Katz" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Katz')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Katz, Yehuda.  "Extend the Web Forward". <a href="http://yehudakatz.com/2013/05/21/extend-the-web-forward/" class="link" target="_new">http://yehudakatz.com/2013/05/21/extend-the-web-forward/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Responsive" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Responsive')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Marquis, Mat. "Responsive Images and Web Standards at the Turning Point". <a href="http://alistapart.com/article/responsive-images-and-web-standards-at-the-turning-point" class="link" target="_new">http://alistapart.com/article/responsive-images-and-web-standards-at-the-turning-point</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-XAF" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-XAF')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Megginson, David. "XML Architectural Forms". <a href="http://www.megginson.com/XAF" class="link" target="_new">http://www.megginson.com/XAF</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-LocalSchema" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-LocalSchema')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Megginson, David. Facebook correspondence. </p>
+</div>
+<div class="inline-citation" id="cite-PrefaceGothic" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-PrefaceGothic')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Morris, William. "Preface to the Nature of Gothic", in <span class="ital">The Nature of Gothic</span>, London: Kelmscott Press, 1892. <a href="http://www.marxists.org/archive/morris/works/1892/ruskin.htm" class="link" target="_new">http://www.marxists.org/archive/morris/works/1892/ruskin.htm</a>.</p>
+</div>
+<div class="inline-citation" id="cite-DevPolyfills" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-DevPolyfills')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Osmani, Addy. "The Developer&rsquo;s Guide To Writing Cross-Browser JavaScript Polyfills". <a href="http://addyosmani.com/blog/writing-polyfills/" class="link" target="_new">http://addyosmani.com/blog/writing-polyfills/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Vocabularies" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Vocabularies')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Perry, Walter. "Standard Data Vocabularies Unquestionably Harmful". <a href="http://www.xml.com/pub/a/2002/05/29/perry.html" class="link" target="_new">http://www.xml.com/pub/a/2002/05/29/perry.html</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Polymer" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Polymer')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Polymer Project. <a href="http://www.polymer-project.org/" class="link" target="_new">http://www.polymer-project.org/</a>
+</p>
+</div>
+<div class="inline-citation" id="cite-Gothic" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Gothic')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Ruskin, John. "The Nature of Gothic", in <span class="ital">The Stones of Venice, Volume II: The Sea-Stories</span> Mineola: Dover Phoenix Editions, 2005.</p>
+</div>
+<div class="inline-citation" id="cite-MCE" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-MCE')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">"Semantics of MCE". <a href="https://www.assembla.com/spaces/IS29500/wiki/Semantics_of_MCE" class="link" target="_new">https://www.assembla.com/spaces/IS29500/wiki/Semantics_of_MCE</a>.</p>
+</div>
+<div class="inline-citation" id="cite-ShadowDOM" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-ShadowDOM')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Shadow DOM. <a href="http://www.w3.org/TR/shadow-dom/" class="link" target="_new">http://www.w3.org/TR/shadow-dom/</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Sharp" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Sharp')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Sharp, Remy. "What is a Polyfill?"  <a href="http://remysharp.com/2010/10/08/what-is-a-polyfill/" class="link" target="_new">http://remysharp.com/2010/10/08/what-is-a-polyfill/</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Smith" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Smith')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Smith, Michael [tm]. "Getting agreements is hard (some thoughts on Matthew Butterick&rsquo;s &ldquo;The Bomb in the Garden&rdquo; talk at TYPO San Francisco)". <a href="http://www.w3.org/QA/2013/04/getting_agreements_is_hard_som.html" class="link" target="_new">http://www.w3.org/QA/2013/04/getting_agreements_is_hard_som.html</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Sympathy" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Sympathy')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Spuybroek, Lars. <span class="ital">The Sympathy of Things: Ruskin and the Ecology of Design</span>. Rotterdam: V2_Publishing, 2011.</p>
+</div>
+<div class="inline-citation" id="cite-thomas" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-thomas')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Thomas, Dave. 4/10/13 8:39pm, elixir-lang  <a href="https://groups.google.com/d/msg/elixir-lang-core/N2joXbsuJGs/_knNJt8VQvsJ" class="link" target="_new">https://groups.google.com/d/msg/elixir-lang-core/N2joXbsuJGs/_knNJt8VQvsJ</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Usdin" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Usdin')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Usdin, B. Tommie. "Standards considered harmful." Presented at Balisage: The Markup Conference 2009, Montr&eacute;al, Canada, August 11 - 14, 2009. In Proceedings of Balisage: The Markup Conference 2009. Balisage Series on Markup Technologies, vol. 3 (2009). doi:<a href="http://dx.doi.org/10.4242/BalisageVol3.Usdin01" class="doi" target="_new">10.4242/BalisageVol3.Usdin01</a>. <a href="http://www.balisage.net/Proceedings/vol3/html/Usdin01/BalisageVol3-Usdin01.html" class="link" target="_new">http://www.balisage.net/Proceedings/vol3/html/Usdin01/BalisageVol3-Usdin01.html</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Examplotron" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Examplotron')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">van der Vlist, Eric. "Examplotron". <a href="http://examplotron.org/" class="link" target="_new">http://examplotron.org/</a>.</p>
+</div>
+<div class="inline-citation" id="cite-Censor" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-Censor')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">Webster, Stephen C. "Low-wage Facebook contractor leaks secret censorship list". <a href="http://www.rawstory.com/rs/2012/02/22/low-wage-facebook-contractor-leaks-secret-censorship-list/" class="link" target="_new">http://www.rawstory.com/rs/2012/02/22/low-wage-facebook-contractor-leaks-secret-censorship-list/</a>.</p>
+</div>
+<div class="inline-citation" id="cite-XMLschemaDraft" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-XMLschemaDraft')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">World Wide Web Consortium. "World Wide Web Consortium Releases First Working Drafts of XML Schema Specification"  <a href="http://www.w3.org/1999/05/schema-1st-wd" class="link" target="_new">http://www.w3.org/1999/05/schema-1st-wd</a>.</p>
+</div>
+<div class="inline-citation" id="cite-XMLschemaPR" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-XMLschemaPR')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">World Wide Web Consortium. "World Wide Web Consortium Issues XML Schema as a W3C Recommendation".  <a href="http://www.w3.org/2001/05/xml-schema-pressrelease.html.en" class="link" target="_new">http://www.w3.org/2001/05/xml-schema-pressrelease.html.en</a>.</p>
+</div>
+<div class="inline-citation" id="cite-WAI-ARIA" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-WAI-ARIA')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">World Wide Web Consortium. "WAI-ARIA Overview"  <a href="http://www.w3.org/WAI/intro/aria" class="link" target="_new">http://www.w3.org/WAI/intro/aria</a>.</p>
+</div>
+<div class="inline-citation" id="cite-DataAttributes" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-DataAttributes')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">World Wide Web Consortium. "HTML5 -- A vocabulary and associated APIs for HTML and XHTML", 3.2.3.9 Embedding custom non-visible data with the data-* attributes.   <a href="http://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes" class="link" target="_new">http://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes</a>.</p>
+</div>
+<div class="inline-citation" id="cite-xmlbooster" style="display:none;width: 240px">
+<a class="quiet" href="javascript:hidecite('cite-xmlbooster')" style="font-size:90%"><img src="../../../icons/eks.png" alt="[x]" style="float:right;clear:both;margin:1px"></a>
+<p style="margin:0ex">XML Booster.  <a href="http://xmlbooster.com/" class="link" target="_new">http://xmlbooster.com/</a>.</p>
+</div>
+<div id="mast">
+<div class="content">
+<h2 class="article-title" id="d59611e2">The Allure of Gothic Markup</h2>
+<h3 class="subtitle">
+<i>Prioritizing Local Adaptation</i>
+</h3>
+<div class="author">
+<h3 class="author">Simon St.Laurent</h3>
+<div class="affiliation">
+<p class="jobtitle">Senior Editor</p>
+<p class="orgname">O'Reilly Media, Inc.</p>
+</div>
+<h5 class="author-email">
+<code class="email">&lt;<a class="email" href="mailto:simonstl@simonstl.com">simonstl@simonstl.com</a>&gt;</code>
+</h5>
+</div>
+<div class="legalnotice-block">
+<p id="d59611e46">Copyright &copy; 2013 Simon St.Laurent. Permission for reuse readily granted.</p>
+</div>
+<div class="mast-box">
+<p class="title">
+<a href="javascript:toggle('d59611e12')" class="quiet"><img class="toc-icon" src="../../../icons/plus.png" alt="expand" id="icon-d59611e12"></a> <span onclick="javascript:toggle('d59611e12');return true">Abstract</span>
+</p>
+<div class="folder" id="folder-d59611e12" style="display:none">
+<p id="d59611e13">XML inherited and worsened SGML's legalistic tendencies, promoting a world of markup built to industrial standards.  The sad reality of schemas is that they offer a defective transformation, one so crippled that it dehumanizes people working with them while giving us a broken impression of the world.  We can still escape, but need to openly shift from falsely static globals to a world of local adaptation and transformation.</p>
+</div>
+</div>
+<div class="toc">
+<p>
+<b>Table of Contents</b>
+</p>
+<dl>
+<dt>
+<span class="section"><a href="#d59611e59" class="toc">Introduction</a></span>
+</dt>
+<dd>
+<dl>
+<dt>
+<span class="section"><a href="#d59611e70" class="toc">Original Sin: Deep in the Standards</a></span>
+</dt>
+<dd>
+<dl>
+<dt>
+<span class="section"><a href="#d59611e82" class="toc">The Legalistic Applications of SGML</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e107" class="toc">Ground Rules: XML</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e134" class="toc">Pinning Down Butterflies with URIs</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e155" class="toc">The First Hit is Free: Augmented Infosets and the PSVI</a></span>
+</dt>
+</dl>
+</dd>
+<dt>
+<span class="section"><a href="#d59611e201" class="toc">Old Magic: Learning About Conversation from Architecture</a></span>
+</dt>
+<dd>
+<dl>
+<dt>
+<span class="section"><a href="#d59611e210" class="toc">The Nature of Gothic</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e274" class="toc">Patterns for Conversation</a></span>
+</dt>
+</dl>
+</dd>
+<dt>
+<span class="section"><a href="#d59611e443" class="toc">New Magic, from Clark and Crockford to the Present</a></span>
+</dt>
+<dd>
+<dl>
+<dt>
+<span class="section"><a href="#d59611e448" class="toc">Not Required</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e459" class="toc">Leaving Gaps</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e466" class="toc">Generic Parsers, not Parser Generators</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e475" class="toc">Peace Through Massive Overbuilding</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e492" class="toc">Peace Through Sprinkling</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e503" class="toc">Peace Through Conflict</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e518" class="toc">Accepting Failure</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e531" class="toc">Valuing Errors</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e540" class="toc">Mechanical Turks</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e556" class="toc">JSON Shakes it Up</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e579" class="toc">Polyfills</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e611" class="toc">Relational Decline</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e620" class="toc">RESTfulness</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e627" class="toc">Strictly Local Uses of Schemas</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e647" class="toc">Transition Components - DSDL and MCE</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e670" class="toc">Examplotron: A Bridge?</a></span>
+</dt>
+</dl>
+</dd>
+<dt>
+<span class="section"><a href="#d59611e677" class="toc">Toward a New Practice</a></span>
+</dt>
+<dd>
+<dl>
+<dt>
+<span class="section"><a href="#d59611e702" class="toc">Negotiation Style</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e715" class="toc">Extending it ourselves</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e725" class="toc">Changes Inside</a></span>
+</dt>
+<dt>
+<span class="section"><a href="#d59611e764" class="toc">Rehumanizing Electronic Communications</a></span>
+</dt>
+</dl>
+</dd>
+<dt>
+<span class="section"><a href="#d59611e803" class="toc">Acknowledgments</a></span>
+</dt>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="mast-box">
+<p class="title">
+<a href="javascript:toggle('d59611e15')" class="linkbox"><img class="toc-icon" src="../../../icons/plus.png" alt="expand" id="icon-d59611e15"></a> <span onclick="javascript:toggle('d59611e15');return true">Simon St.Laurent</span>
+</p>
+<div class="folder" id="folder-d59611e15" style="display:none">
+<h5 class="author-email">
+<code class="email">&lt;<a class="email" href="mailto:simonstl@simonstl.com">simonstl@simonstl.com</a>&gt;</code>
+</h5>
+<div class="affiliation">
+<p class="jobtitle">Senior Editor</p>
+<p class="orgname">O'Reilly Media, Inc.</p>
+</div>
+<div class="personblurb">
+<p id="d59611e22">A troublemaker, Simon St.Laurent has been working with XML since the early drafts of the specification.  His first book on XML, XML: A Primer, went through three editions, each time teaching a new group of developers a variety of bad ideas.  Apparently the example using XML to manage lighting inspired several protocols for excessively complicated control systems.  His book Cookies may be partially responsible for the erosion of privacy.  His other books have done less damage because they haven't sold as well, but he fears that Introducing Erlang and Introducing Elixir may prove to be contributing factors in the development of Skynet.</p>
+<p id="d59611e36">His more positive contributions include a partially-completed book on hand tool woodworking, various writings on Quakerism, and two adorable children.  He has lately become obsessed with hospitality and craft, leading to binges of repentance for past (and current) work.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="navbar">
+<p class="navbar">
+<a class="navbar-link" href="../../../index.html">Series Home</a> | <a class="navbar-link" href="../../../bibliography.html">Master bibliography</a> | <a class="navbar-link" href="../../../authors.html">Author index</a> | <a class="navbar-link" href="../../../topics.html">Topic index</a> | <b>This paper:</b> Web | <a class="navbar-link" target="_new" href="../../../vol10/print/StLaurent01/BalisageVol10-StLaurent01.html">Print/Mobile</a> | <a class="navbar-link" target="_new" href="../../../vol10/epub/StLaurent01/BalisageVol10-StLaurent01.epub">EPUB</a> | <a class="navbar-link" target="_new" href="../../../vol10/xml/StLaurent01/BalisageVol10-StLaurent01.xml">XML Source</a> | <a class="navbar-link" href="../../../vol10/author-pkg/StLaurent01/BalisageVol10-StLaurent01.html">Slides and Materials</a>
+</p>
+</div>
+<div id="balisage-header">
+<a href="http://www.balisage.net"><img style="float:right;border:none" alt="Balisage logo" height="105px" src="../../../icons/Balisage-logoType-2013.png"></a>
+<h2 class="page-header">Balisage: The Markup Conference 2013</h2>
+<h1 class="page-header">Proceedings</h1>
+</div>
+<div id="main">
+<div class="article">
+<div class="citation-block">
+<p class="title">
+<a href="javascript:toggle('citation')" class="linkbox"><img class="toc-icon" src="../../../icons/plus.png" alt="expand" id="icon-citation"></a> <span onclick="javascript:toggle('citation');return true">How to cite this paper</span>
+</p>
+<div class="folder" id="folder-citation" style="display:none">
+<p class="citation">St.Laurent, Simon. &ldquo;The Allure of Gothic Markup: Prioritizing Local Adaptation.&rdquo;  Presented at Balisage: The Markup Conference 2013, Montr&eacute;al, Canada, August 6 - 9, 2013. In <i>Proceedings of Balisage: The Markup Conference 2013</i>. Balisage Series on Markup Technologies, vol. 10 (2013). doi:<span class="doi">10.4242/BalisageVol10.StLaurent01</span>.</p>
+</div>
+</div>
+<h2 class="article-title" id="d59611e2">The Allure of Gothic Markup</h2>
+<h3 class="subtitle">
+<i>Prioritizing Local Adaptation</i>
+</h3>
+<div class="confgroup">
+<span class="conftitle">Balisage: The Markup Conference 2013<br>
+</span><span class="confdates">August 6 - 9, 2013<br>
+</span>
+</div>
+<div class="section" id="d59611e59">
+<h2 class="title" style="clear: both">Introduction</h2>
+<p id="d59611e62">Markup specialists and their predecessors have wasted decades creating works that open possibilities in the short run but close them in the long run.  The continuous headaches of versioning and differentiating vocabularies are a symptom of our failure, of the brittleness we have so enthusiastically embraced.</p>
+<p id="d59611e64">Seven years ago, speaking on an XML panel at a Web conference, I told attendees to go experiment with vocabularies, and try new paths.  The browser universe was too constrained, I said, too bound up with ideas about validation, whether HTML or XML or something else.  No one seemed enthusiastic about that advice, and I had startled myself to have recommended it so seriously. </p>
+<p id="d59611e66">There was no escape, though - it was the right advice, and continues to be.</p>
+<p id="d59611e68">Much of the markup world has actually turned to experimenting, building very different structures around their work.  They mix social organization that distributes decision-making more widely with technical approaches, many of them applying old tools but reflecting enhancements to processing environments.</p>
+<div class="section" id="d59611e70">
+<h3 class="title" style="clear: both">Original Sin: Deep in the Standards</h3>
+<p id="d59611e73">Markup made mistakes early.  The culture of agreements first, processing later, appeared in the earliest standards, indeed in the ISO approach to standardization.  As Len Bullard described the attitude more recently: </p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e76">Contracts have to care.  If they don&rsquo;t then the humans won&rsquo;t. </p>
+<p class="attribution">&mdash; xml-dev, 4/9/13 10:36pm</p>
+</blockquote>
+</div>
+<p id="d59611e80">That paranoia, that intrinsic doubt about what humans will do, has percolated deep into markup technologies.</p>
+<div class="section" id="d59611e82">
+<h4 class="title" style="clear: both">The Legalistic Applications of SGML</h4>
+<p id="d59611e85">SGML required documents to come with an declaration of their structure.  Brittleness was built into the system.  Documents were not meant to exist by themselves, but rather as part of an SGML application, defined as such:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e88">
+4.279 SGML Application: Rules that apply SGML to a text processing application.  An SGML application includes a formal specification of the markup constructs used in the application, expressed in SGML.  It can also include a non-SGML definition of semantics, application conventions, and/or processing.		
+	</p>
+<p id="d59611e90">NOTES</p>
+<p id="d59611e92">1. The formal specification of an SGML application normally includes document type definitions, data content notations, and entity sets, and possibly a concrete syntax or capacity set.... (SGML Handbook, 126)</p>
+</blockquote>
+</div>
+<p id="d59611e94">The SGML Handbook notes that SGML applications needn't actually be "applications" as most computer users expect them:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e100">
+Indeed, there are publishing situations where an SGML application can be useful with no processing specifications at all (not even application-specific ons [sic]), because each user will specify unique processing in a unique system environment.  The historical explanation for this phenomenon is that in publishing (unlike, say, word processing before the laser printer), the variety of potential processing is unlimited and should not be constrained.  
+		</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e103" href="javascript:showcite('cite-SGMLhand','d59611e103')">Goldfarb 1990</a>, page 130</p>
+</blockquote>
+</div>
+<p id="d59611e105">But while processing should not be constrained, document structure must be.  SGML documents must contain a DOCTYPE declaration, which must in turn reference (or include) a DTD, and those DTDs rapidly became the battleground over which the users of SGML fought.</p>
+</div>
+<div class="section" id="d59611e107">
+<h4 class="title" style="clear: both">Ground Rules: XML</h4>
+<p id="d59611e110">Those battles - or perhaps it is nicer to say negotiations - carried over into the XML world.  Although XML allowed documents to go forth boldly naked without a DTD, the expected approach for its use still involved prior agreement.  Citing Lewis Carroll's Humpty Dumpty, the W3C's Dan Connolly warned of the dangers of diverse semantics:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e113">For any document to communicate successfully from author to readers, all parties concerned must agree that words all choose them to mean. [sic] Semantics can only be interpreted within the context of a community. For example, millions of HTML users worldwide agree that &lt;B&gt; means bold text, or that &lt;H1&gt; is a prominent top-level document heading...</p>
+<p id="d59611e115"> When communities collide, ontological misunderstandings can develop for several reasons...</p>
+<p id="d59611e117">The best remedy is to codify private ontologies that serve to identify the active context of any document. This is the ideal role for a well-tempered DTD. Consider two newspapers with specific in-house styles for bylines, captions, company names, and so on. Where they share stories on a wire service, for example, they can identify it as their story, or convert it according to an industry-wide stylebook.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e120" href="javascript:showcite('cite-Evolution','d59611e120')">Connolly 1997</a>, page 120.</p>
+</blockquote>
+</div>
+<p id="d59611e122">Phrasing things more positively, Jon Bosak and Tim Bray described the work ahead and why people were eager to do it:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e125">
+	What XML does is less magical but quite effective nonetheless. It lays down ground rules that clear away a layer of programming details so that people with similar interests can concentrate on the hard part&mdash;agreeing on how they want to represent the information they commonly exchange. This is not an easy problem to solve, but it is not a new one, either.
+</p>
+<p id="d59611e127">
+	Such agreements will be made, because the proliferation of incompatible computer systems has imposed delays, costs and confusion on nearly every area of human activity. People want to share ideas and do  business without all having to use the same computers; activity-specific interchange languages go a long way toward making that possible. Indeed, a shower of new acronyms ending in "ML" testifies to the inventiveness unleashed by XML in the sciences, in business, and in the scholarly disciplines.
+</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e130" href="javascript:showcite('cite-xml2nd','d59611e130')">Bosak and Bray 1999</a>, page 92.</p>
+</blockquote>
+</div>
+<p id="d59611e132">Businesses and developers took up that challenge, and thousands of committees blossomed.  XML "solved" the syntactic layer, and it was time to invest millions in defining structure.</p>
+</div>
+<div class="section" id="d59611e134">
+<h4 class="title" style="clear: both">Pinning Down Butterflies with URIs</h4>
+<p id="d59611e137">The world of agreements wasn't enough for XML's keepers at the W3C. Tim Berners-Lee's Semantic Web visions required globally unique identifiers for vocabularies.  In the period when Berners-Lee considered XML a key foundation for that work, that meant spackling URIs into markup to create globally unique markup identifiers and build them into vocabularies.</p>
+<p id="d59611e139">As the SGML community had ventured into hypertext, they too had found difficulties in sharing structures across vocabularies and recognizing those structures.  They lacked pretensions of building a single global system, however, and had proposed a very different route: architectural forms.</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e142">Architectural forms permit DTD writers to use their own element type names for HyTime structures.   Not only is the architectural form notion fundamental to HyTime, it is a new and useful SGML coding technique that can, if used wisely, ease the standardization of tagging practices by steering a route between the Scylla of excessing rigidity and the Charybdis of excessive freedom that threaten such standards when they must serve large, disparate groups of users. </p>
+<p id="d59611e144">...A standard intended for widespread use [among disparate vocabularies] thus cannot conveniently enforce particular tag names.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e147" href="javascript:showcite('cite-Hypermedia','d59611e147')">DeRose and Durand 1994</a>, page 79.</p>
+</blockquote>
+</div>
+<p id="d59611e149">While there was some work done to bring architectural forms to XML - most visibly David Megginson's <a class="xref" id="d59611e151" href="javascript:showcite('cite-XAF','d59611e151')">XML Architectural Forms</a> - architectural forms lost a bitter battle inside the W3C.  While confidentiality makes it difficult to tell precisely what happened, public sputtering suggests that architectural forms' vision of adaptation to local schemas did not not appeal to the Director of the W3C's intention of building globally-understood vocabularies identified by URIs.  Instead, the XML world was given a mandate to create vocabularies with globally unique identifiers.</p>
+<p id="d59611e153">Architectural forms were a limited set of transformations, still deeply intertwined with the contractual expectations of DTDs.  The stomping they received at the W3C, however, was a sign of static expectations to come.</p>
+</div>
+<div class="section" id="d59611e155">
+<h4 class="title" style="clear: both">The First Hit is Free: Augmented Infosets and the PSVI</h4>
+<p id="d59611e158">As more and more developers took Bosak and Bray's promises seriously, XML reached field after field, migrating far beyond the document-centered territory SGML had considered its home.  While the ideas of agreement and validation were popular in many areas, DTDs did not feel like an appropriate answer to many developers.  Many developers' expectations had been shaped by databases, strongly typed languages, and fields that wanted more intricate specifications of content.</p>
+<p id="d59611e160">The W3C responded with XML Schema, a pair of specifications defining a language for specifying deterministic document structures and content, supporting associated processing.  Like its DTD predecessor, XML Schema's validation process modified the document, adding default values for attributes (the classic case). Going beyond what DTDs had done, it also annotated the infoset of the reported document with type information accessible to later processing.</p>
+<p id="d59611e162">While press releases are not usually a great place to learn about the details of specifications, they are an excellent place to learn about what those specifications are meant to do.  In the case of XML Schema, there are even a few to choose from.  At the outset, 1999's press release was excited about the potential for establishing standards for many kinds of transactions:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e165">Many applications can benefit from the development of schemas:</p>
+<div class="itemizedlist" id="d59611e167">
+<ul>
+<li id="d59611e168">
+<p id="d59611e169">Databases must, for example, communicate detailed information about the legal values of particular fields in the data being exchanged.
+</p>
+</li>
+<li id="d59611e171">
+<p id="d59611e172">
+Publishing and syndication services must be able to describe the properties of headlines, news stories, thumbnail images, cross-references, etc.
+</p>
+</li>
+<li id="d59611e174">
+<p id="d59611e175">
+For electronic commerce, schemas can be used to define business transactions within markets and between parties, and to provide rules for validating business documents. </p>
+</li>
+</ul>
+</div>
+<p id="d59611e177">When XML is used to exchange technical information in a multi-vendor environment, schemas will allow software to distinguish data governed by industry-standard and vendor-specific schemas.... </p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e180" href="javascript:showcite('cite-XMLschemaDraft','d59611e180')">W3C 1999</a>
+</p>
+</blockquote>
+</div>
+<p id="d59611e181">In 2001, when the XML Schema Recommendations arrived, the press release described schemas as finally fulfilling the promises XML had previously made:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e184">"XML Schema makes good on the promises of extensibility and power at the heart of XML," said Tim Berners-Lee, W3C Director. "In conjunction with XML Namespaces, XML Schema is the language for building XML applications."</p>
+<p id="d59611e186">By bringing datatypes to XML, XML Schema increases XML's power and utility to the developers of electronic commerce systems, database authors and anyone interested in using and manipulating large volumes of data on the Web. By providing better integration with XML Namespaces, it makes it easier than it has ever been to define the elements and attributes in a namespace, and to validate documents which use multiple namespaces defined by different schemas.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e189" href="javascript:showcite('cite-XMLschemaPR','d59611e189')">W3C 2001</a>
+</p>
+</blockquote>
+</div>
+<p id="d59611e190">It wasn't just that XML Schemas would "make good on the promises of extensibility and power", but, as later specifications demonstrated, that they would provide a foundation for further work in processing XML as strongly typed data.  The Post-Schema Validation Infoset, effectively a type-annotated version of documents that passed validation, became the foundation on which XSLT 2.0 and XQuery would build.  XML itself didn't require that you use schemas of any kind, but the core toolset incorporated more and more assumptions based on schema capabilities, without any separation of concerns.  "XML" practice clearly incorporated XML schema practice.</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;" id="d59611e192">
+<h3 class="title">Note</h3>
+<p id="d59611e193">XML Schema had a key place in TimBL's own vision of the Semantic Web, as shown at [<a class="xref" id="d59611e195" href="javascript:showcite('cite-SemWebArch','d59611e195')">Semantic Web Architecture</a>].  Perhaps namespaces were more important to him, given their foundation in URIs, but XML Schema also helped drive namespaces deeper into XML with qname content.  Over time, however, Berners-Lee has largely lost interest in XML, and the Semantic Web has regularly looked elsewhere for syntax.</p>
+</div>
+<p id="d59611e197">As schema proponents had hoped, the technology took off, becoming a central component in a rapidly growing "Web Services" ecosystem, largely built with tools that made it (relatively) easy to bind XML data to program structures using the type information provided by schemas.  Schemas served not only as documentation and validation tools but as tools for structuring code.  (They also served as configuration for XML editors of various kinds.)</p>
+<p id="d59611e199">However, as the limitations and intrusions of XML Schema became clearer, alternate approaches appeared.  RELAX NG was in many ways a simpler and better thought-out approach to creating comprehensive schemas, while Schematron's rule-based approach offered a very different kind of testing.  Examplotron built on Schematron's ideas to create a very different model of a schema, re-establishing the value of using sample documents for conversations about document interchange.</p>
+</div>
+</div>
+<div class="section" id="d59611e201">
+<h3 class="title" style="clear: both">Old Magic: Learning About Conversation from Architecture</h3>
+<p id="d59611e204"> The model of prior agreement, of prior structure, isn't unique to markup.  It emerged from bureaucratic models that had grown in both commerce and government during the Industrial Revolution, a period that mixed social tumult with insistence on standardization of products and process.  "Top-down" approaches became the norm in a world where manufacturing and engineering reorganized themselves around design and calculation.</p>
+<p id="d59611e206">Markup emerged from the industrial mind-set common to even the most idealized computing models.  Its creators had grown up in a world dominated by industrial models of production, and computers themselves matched that command-and-control drive toward efficiency.  Despite the general triumph of the industrial model, it has never really bothered to answer its critics.  It hasn't had to - material plenty and the race to keep up have distracted us - but those critics still have things to teach us, even about markup.</p>
+<p id="d59611e208">John Ruskin in the 19th century and Christopher Alexander in the 20th offer an alternative to industrial models, an opportunity to humanize practice.  Unsurprisingly for work centered on human capabilities, conversation is a key tool.  Ruskin extends the building conversation to include the lowliest workers, while Alexander pushes further to include current and future users of buildings and structures.</p>
+<div class="section" id="d59611e210">
+<h4 class="title" style="clear: both">The Nature of Gothic</h4>
+<p id="d59611e213">New fields like to flatter themselves by styling themselves after older ones.  While computing is often engineering (or plumbing) minus the structured training, it more typically compares itself to architecture. Like architecture, it hopes to achieve some form of grace in both its visible and invisible aspects, creating appealing structures that will remain standing.  While we may have calmed down a bit from the heroic architect model of Howard Roark in The Fountainhead, markup language creators still expect to be able to lay things out as plans and have them faithfully executed by others who will live up to our specifications.</p>
+<p id="d59611e218">Writing a century before computing's emergence, John Ruskin's The Nature of Gothic (a chapter of The Stones of Venice) offered a very different view of the proper relationship between craftsman and architect. This is long, but even Ruskin's asides have parallels to computing practice, so please pause to study this quote more than its Victorian prose might otherwise tempt you to do:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e227">SAVAGENESS. I am not sure when the word "Gothic" was first generically applied to the architecture of the North but I presume that, whatever the date of its original usage, it was intended to imply reproach, and express the barbaric character of the nations among whom that architecture arose... As far as the epithet was used scornfully, it was used falsely; but there is no reproach in the word, rightly understood; on the contrary, there is a profound truth, which the instinct of mankind almost unconsciously recognizes. It is true, greatly and deeply true, that the architecture of the North is rude and wild; -but it is not true, that, for this reason, We are to condemn it, or despise. Far otherwise: I believe it is in this very character that it deserves our profoundest reverence. </p>
+<p id="d59611e229">...go forth again to gaze upon the old cathedral front, where you have smiled so often at the fantastic ignorance of the old sculptors: examine once more those ugly goblins, and formless monsters, and stern statues, anatomiless and rigid; but do not mock at them, for they are signs of the life and liberty of every workman who struck the stone; a freedom of thought, and rank in scale of being, such as no laws, no charters, no charities can secure; but which it must be the first aim of all Europe at this day to regain for her children.</p>
+<p id="d59611e231">Let me not be thought to speak wildly or extravagantly. It is verily this degradation of the operative into a machine, which, more than any other evil of the times, is leading the mass of the nations everywhere into vain, incoherent, destructive struggling for a freedom of which they cannot explain the nature to themselves....</p>
+<p id="d59611e233">We have much studied and much perfected, of late, the great civilized invention of the division of labor; only we give it a false name. It is not, truly speaking, the labor that is divided; but the men:&mdash;Divided into mere segments of men&mdash;broken into small fragments and crumbs of life; so that all the little piece of intelligence that is left in a man is not enough to make a pin, or a nail, but exhausts itself in making the point of a pin, or the head of a nail. Now it is a good and desirable thing, truly, to make many pins in a day; but if we could only see with what crystal sand their points were polished,&mdash;sand of human soul, much to be magnified before it can be discerned for what it is,&mdash;we should think there might be some loss in it also.</p>
+<p id="d59611e235">...Enough, I trust, has been said to show the reader that the rudeness or imperfection which at first rendered the term &ldquo;Gothic&rdquo; one of reproach is indeed, when rightly understood, one of the most noble characters of Christian architecture, and not only a noble but an essential one. It seems a fantastic paradox, but it is nevertheless a most important truth, that no architecture can be truly noble which is not imperfect. And this is easily demonstrable. For since the architect, whom we will suppose capable of doing all in perfection, cannot execute the whole with his own hands, he must either make slaves of his workmen in the old Greek, and present English fashion, and level his work to a slave&rsquo;s capacities, which is to degrade it; or else he must take his workmen as he finds them, and let them show their weaknesses together with their strength, which will involve the Gothic imperfection, but render the whole work as noble as the intellect of the age can make it.</p>
+<p id="d59611e237">	
+	The second mental element above named was CHANGEFULNESS, or Variety.
+</p>
+<p id="d59611e239">
+	I have already enforced the allowing independent operation to the inferior workman, simply as a duty to him, and as ennobling the architecture by rendering it more Christian. We have now to consider what reward we obtain for the performance of this duty, namely, the perpetual variety of every feature of the building.
+</p>
+<p id="d59611e241">
+	Wherever the workman is utterly enslaved, the parts of the building must of course be absolutely like each other; for the perfection of his execution can only be reached by exercising him in doing one thing, and giving him nothing else to do. The degree in which the workman is degraded may be thus known at a glance, by observing whether the several parts of the building are similar or not; and if, as in Greek work, all the capitals are alike, and all the mouldings unvaried, then the degradation is complete; if, as in Egyptian or Ninevite work, though the manner of executing certain figures is always the same, the order of design is perpetually varied, the degradation less total; if, as in Gothic work, there is perpetual change both in design and execution, the workman must have been altogether set free....
+</p>
+<p id="d59611e243">
+Experience, I fear, teaches us that accurate and methodical habits in daily life are seldom characteristic of those who either quickly perceive or richly possess, the creative powers of art; there is, however, nothing inconsistent between the two instincts, and nothing to hinder us from retaining our business habits, and yet fully allowing and enjoying the noblest gifts of Invention. We already do so, in every other branch of art except architecture, and we only do not so there because we have been taught that it would be wrong. 
+</p>
+<p id="d59611e245">
+Our architects gravely inform us that, as there are four rules of arithmetic, there are five orders of architecture; we, in our simplicity , think that this sounds consistent, and believe them. They inform us also that there is one proper form for Corinthian capitals, another for Doric, and another for Ionic. We, considering that there is also a proper form for the letters A, B, and C, think that this also sounds consistent, and accept the proposition. Understanding, therefore, that one form of the capitals is proper and no other, and having a conscientious horror of a impropriety we allow the architect to provide us with the said capitals, of the proper form, in such and such a quantity, and in all other points to take care that the legal forms are observed; which having done, we rest in forced confidence that we are well housed.
+</p>
+<p id="d59611e247">
+	But our higher instincts are not deceived. We take no pleasure in the building provided for us, resembling that which we take in a new book or a new picture. We may be proud of its size, complacent in its correctness, and happy in its convenience. We may take the same pleasure in its symmetry and workmanship as in a well-ordered room, or a skillful piece of manufacture. And this we suppose to be all the pleasure that architecture was ever intended to give us. 
+</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e251" href="javascript:showcite('cite-Gothic','d59611e251')">Ruskin 1853</a>, paragraphs xxvi-xxviii.</p>
+</blockquote>
+</div>
+<p id="d59611e253">What has architecture to do with markup?</p>
+<p id="d59611e255">In the virtual world, markup creates the spaces in which we interact.  It creates bazaars, agoras, government buildings, and even churches.  Markup builds the government office, the sales floor, the loading dock. Markup offers us decorations and distractions.  Markup is our architecture.</p>
+<p id="d59611e257">The concerns which apply to architecture also apply to markup.  Markup process, often deliberately, parallels that of the contemporary design approach.  Define a problem.  Develop a shared vision for solving it.  Hire experts who create plans specifying that vision in detail, and send them to the "workmen" to be built.</p>
+<p id="d59611e259">Ruskin's friend William Morris, in his Preface to The Nature of Gothic, warns of the costs of that style of work.</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e265">To some of us when we first read it, now many years ago, it seemed to point out a new road on which the world should travel. And in spite of all the disappointments of forty years, and although some of us, John Ruskin amongst others, have since learned what the equipment for that journey must be, and how many things must be changed before we are equipped, yet we can still see no other way out of the folly and degradation of Civilization.</p>
+<p id="d59611e267">For the lesson which Ruskin here teaches us is that art is the expression of man's pleasure in labour; that it is possible for man to rejoice in his work, for, strange as it may seem to us to-day, there have been times when he did rejoice in it; and lastly, that unless man's work once again becomes a pleasure to him, the token of which change will be that beauty is once again a natural and necessary accompaniment of productive labour, all but the worthless must toil in pain, and therefore live in pain. So that the result of the thousands of years of man's effort on the earth must be general unhappiness and universal degradation; unhappiness and degradation, the conscious burden of which will grow in proportion to the growth of man's intelligence, knowledge, and power over material nature.  </p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e270" href="javascript:showcite('cite-PrefaceGothic','d59611e270')">Morris 1892</a>, paragraphs xxvi-xxviii.</p>
+</blockquote>
+</div>
+<p id="d59611e272">Architecture has largely ignored these concerns, and computing, alas, has taken its lessons from that ignorance.  Let us instead take Ruskin's worker free of alienation - valuing savageness and supporting changefulness - as a goal worth achieving.</p>
+</div>
+<div class="section" id="d59611e274">
+<h4 class="title" style="clear: both">Patterns for Conversation</h4>
+<p id="d59611e277">Christopher Alexander has the strange distinction of being an architect more revered and imitated in computing than in his own field.  When, during an XML conference in Philadelphia, I stopped at the American Institute of Architects to buy A Pattern Language and The Timeless Way of Building, the cashier informed me that I must be a programmer, because "only programmers buy those books. Architects don't."</p>
+<div class="section" id="d59611e285">
+<h5 class="title" style="clear: both">Architects and Programmers</h5>
+<p id="d59611e288">Programmers have indeed bought A Pattern Language, but for mostly the wrong reasons. The classic text, Design Patterns, cites Alexander as its inspiration and brought him to the wide attention of the computing community:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e297">1.1 What Is a Design Pattern?</p>
+<p id="d59611e299">Christopher Alexander says, "Each pattern describes a problem which occurs over and over in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice." [AIS+ 77, page x]  Even though Alexander was talking about patterns in buildings and town, what he says is true about object-oriented design patterns. Our solutions are expressed in terms of objects and interfaces instead of walls and doors, but at the core of both kinds of patterns is a solution to a problem in context.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e302" href="javascript:showcite('cite-DesignPatterns','d59611e302')">Gamma 1995</a>, pages 2-3.</p>
+</blockquote>
+</div>
+<p id="d59611e304">Even at this stage, however, they have already over-simplified Alexander's approach to patterns, seeing a top-down approach that isn't there.  "A solution to a problem in context" is the goal of most non-fiction writing, but the writers of Design Patterns have forgotten the critical question of who solves those problems and how.  They seem to have assumed that since Alexander is an architect, these patterns are meant to be applied by architects.</p>
+<p id="d59611e309">However, Alexander argues that the conversation must be broader.  At the top of that same page x, one finds:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e312">It is shown [in The Timeless Way of Building] that towns and buildings will not be able to become alive, unless they are made by all the people in society, and unless these people share a common pattern language, within which to make these buildings, and unless this pattern language is alive itself.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e318" href="javascript:showcite('cite-PatternLanguage','d59611e318')">Alexander 1977</a>, page x.</p>
+</blockquote>
+</div>
+<p id="d59611e320">The conclusion of Design Patterns, unfortunately, repeats and amplifies its error, in a way that perhaps only computer programmers could:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e326">4. Alexander claims his patterns will generate complete buildings.  We do not claim that our patterns will generate complete programs.</p>
+<p id="d59611e328">When Alexander claims you can design a house simply by applying his patterns one after another, he has goals similar to those of object-oriented design methodologists who give step-by-step rules for design.  Alexander doesn't deny the need for creativity; some of his patterns require understanding the living habits of people who will use the building, and his belief in the "poetry" of design implies a level of expertise beyond the pattern language itself.  But his description of how patterns generate designs implies that a pattern language can make the design process deterministic and repeatable.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e331" href="javascript:showcite('cite-DesignPatterns','d59611e331')">Gamma 1995</a>, page 356.</p>
+</blockquote>
+</div>
+<p id="d59611e333">It is hard to imagine a more bizarre misreading of Alexander: a projection of top-down design assumptions applied to a text whose primary purpose is to overturn them.  Gamma, Helm, et al. provide an unfortunately perfect demonstration of how developers borrow badly from architecture.  (He recognizes the misreading in <a class="xref" id="d59611e335" href="javascript:showcite('cite-Origins','d59611e335')">Alexander 1996</a>.)</p>
+<p id="d59611e337">What Alexander actually offers is not a "design process deterministic and repeatable," but tools for conversation.  The "level of expertise" is partially aesthetic, but in many ways social.  He takes seriously "all the people in society" from the prior quote, and the job of the architect is less to design and more to facilitate.  A Pattern Language is not a set of fixed rules that has emerged from practice, but a constantly evolving and shifting foundation that must combine with other local patterns to be of use.</p>
+</div>
+<div class="section" id="d59611e342">
+<h5 class="title" style="clear: both">Establishing Continuous Conversation</h5>
+<p id="d59611e345">Unlike most models for including users in design, Alexander's process keeps the conversation going throughout the creation of works, and includes the workers and the users in that conversation.  He has learned (perhaps from Ruskin) that treating workers as automata imposes deep costs, and recognized the quality of construction that people have achieved over centuries, even in financially poor environments, without the aid of architects.  His building process allows for the layering of detail to respond to particular circumstances rather than laying out rules which must be applied in all cases.</p>
+<p id="d59611e347">How do patterns work?  Alexander tells the story of implementation in The Production of Houses:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e353">"In order to get a reasonable house which works well and which nevertheless expresses the uniqueness of each family, the families all used an instrument we call the pattern language... The particular pattern language contained twenty-one patterns... 
+</p>
+<p id="d59611e355">
+this language has the amazing capacity to unify the generic needs which are felt by every family, and which make a house functional and sensible, with the unique idiosyncrasies that make every family different, and thus to produce a house which is unique and personal, but also one which satisfies the basic needs of a good house.
+</p>
+<p id="d59611e357">
+this pattern language... allowed us to produce a variety of houses, each one essentially a variant of a fundamental house "type" (defined by the twenty-one patterns together), and yet each one personal and unique according to the special character of the family who used it.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e360" href="javascript:showcite('cite-Houses','d59611e360')">Alexander 1985</a>, pages 175-6.</p>
+</blockquote>
+</div>
+<p id="d59611e362">It didn't all go smoothly, however, as one additional angle, the creation of new patterns, didn't materialize in the earlier work to shape the overall cluster of houses:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e365">the families became enthusiastic about the project as they began to see the richness inherent in the patterns.  However, our efforts to get them to modify the language, to contribute other patterns of their own, were disappointing.</p>
+<p id="d59611e367">Under normal circumstances, the architect-builder of a particular area would also modify and refine these patterns, according to local custom.  In this particular project, we were so occupied by the demands of construction that we had little time to undertake work of this sort.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e370" href="javascript:showcite('cite-Houses','d59611e370')">Alexander 1985</a>, page 133.</p>
+</blockquote>
+</div>
+<p id="d59611e372">However, in other projects, he had better luck developing pattern languages based on input from the community:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e375">Once we have learned to take a reading of people's true desires and feelings, we can then describe the patterns that are needed to generate a profound campus environment.  The system, or "language" of these patterns can give the community the beautiful world they need and want, the physical organization that will make their world practical, beautiful, life-enhancing, and truly useful.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e378" href="javascript:showcite('cite-Battle','d59611e378')">Alexander 2012</a>, page 131.</p>
+</blockquote>
+</div>
+<p id="d59611e380">For the Eishin Campus, Alexander's team and a large group of administrators, teachers, and students developed 110 patterns specific to that project, informed by the broader list in A Pattern Language but moving beyond it.</p>
+<p id="d59611e385">The conversation doesn't end when construction starts, either.  Patterns apply at all levels of development, from regional planning to finished details.  Construction is an opportunity to make changes along the way, as the reality of earlier decisions becomes clears.  This approach not only involves the users of the building, but transforms the role of the architect.</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e388">it is axiomatic, for us that the people who build the houses must be active, mentally and spiritually, while they are building, so that of course they must have the power to make design decisions while they are building, and must have an active relation to the conception of the building, not a passive one.  This makes it doubly clear that the builders must be architects.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e391" href="javascript:showcite('cite-Houses','d59611e391')">Alexander 1985</a>, pages 74-5.</p>
+</blockquote>
+</div>
+<p id="d59611e394">Alexander's approach obliterates the traditional separation between designers and builders, refusing to cooperate with a model he believes creates a "breakdown of the physical environment... It is hardly possible to experience a profound relationship with these places.  So the landscape of our era has become, and continues to become, a wasteland." [<a class="xref" id="d59611e396" href="javascript:showcite('cite-Battle','d59611e396')">Alexander 2012</a>, page 80.]</p>
+</div>
+<div class="section" id="d59611e398">
+<h5 class="title" style="clear: both">Schematics, Standardization, and Alienation</h5>
+<p id="d59611e401">What has created that wasteland?  While Alexander's early writings focus mostly on the positive he hopes to encourage, his later works, works from the field, cannot avoid dealing with a world structured to make his style of work difficult, if not impossible.  As the scale of construction has grown, specialization and centralization have led to ever-more detached and standardized approaches that cannot help but produce bad work.</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e404">
+"The great complexity needed by a human settlement cannot be transmitted via paper; and the separation of functions between architect and builder is therefore out of the question.  The complexity can only be preserved if the architect and contractor are one.  All this makes clear that the architect must be the builder.
+</p>
+<p id="d59611e406">
+And the opposite is true also.  In modern times, the contractor and his crew are deeply and sadly alienated from the buildings they produce. Since the buildings are seen as "products," no more than that, and since they are specified to the last nail by the architect, the process of building itself becomes alienated, desiccated, a machine assembly process, with no love in it, no feeling, no warmth, and no humanity. 
+</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e409" href="javascript:showcite('cite-Houses','d59611e409')">Alexander 1985</a>, pages 74-5.</p>
+</blockquote>
+</div>
+<p id="d59611e411">While reliance on drawings is one aspect of the problem, the industrial model of component construction adds an entirely new level of potential trouble.  Standards limit choices, reinforcing the mistakes created by separation of concerns:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e414">Today's systems of housing production almost all rely, in one form or another, on standardized building components.  These components may be very small (electrical boxes, for instance), or intermediate (2x4 studs), or very large (precast concrete rooms); but regardless of their size, buildings are understood to be assembled out of these components.  In this sense then, the actual construction phase of the housing production process has become an assembly phase: an occasion where prefabricated components are assembled, on site, to produce the complete houses.
+</p>
+<p id="d59611e416">
+It has been little understood how vast the effect of this has been on housing: how enormous the degree of control achieved, unintentionally, by these components and the demands of their assembly.  Yet, as anyone who has intimate knowledge of building knows, these components are merciless in their demands.  They control the arrangement of details.  They prohibit variation.  They are inflexible with respect to ornament, or whimsy, or humor, or any little human touch a person might like to make."
+</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e419" href="javascript:showcite('cite-Houses','d59611e419')">Alexander 1985</a>, page 220.</p>
+</blockquote>
+</div>
+<p id="d59611e421">Changing this is not easy, as Alexander learns repeatedly.  His books have become more biting over time, reflecting the hostility of established practice to his different approaches.  A world in which inspectors demand to approve signed drawings before allowing construction is not especially compatible with an approach that defines itself in terms of conversation and techniques.  His latest book, The Battle for the Life and Beauty of the Earth, makes that conflict explicit, describing it as a "necessary confrontation" between two incompatible approaches to building: System-A and System-B.</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e427">
+System-A is a system of production in which local adaptation is primary.  Its processes are governed by methods that make each building, and each part of each building, unique and uniquely crafted to its context.
+</p>
+<p id="d59611e429">
+System-B is, on the contrary, dedicated to an overwhelmingly machinelike philosophy. The components and products are without individual identity and most often alienating in their psychological effect.
+</p>
+<p id="d59611e431">
+The pressure to use such a system comes mainly from the desire to make a profit, and from the desire to do it at the highest possible speed.
+</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e434" href="javascript:showcite('cite-Battle','d59611e434')">Alexander 2012</a>, page 43.</p>
+</blockquote>
+</div>
+<p id="d59611e436">In Alexander's telling, System-B grows from mass production and the ideologies of classicism and industrialism that Ruskin and Morris blasted generations before.  System-B has spread from the Victorian factories to every aspect of building construction (and computing as well).  System-A, Alexander's preferred system, is older but has largely been discarded in the race to industrialize everything.  His more detailed telling reveals another dimension to the problem of System-B: it is not only profit-seeking, but its adherents have been so surrounded by it that they have a difficult time imagining that anything else could work.</p>
+<p id="d59611e438">System-B is also the worldview that dominates computing.  There are occasional counterculture moments and corners that resist System-B. However, even in a software world that at least <span class="ital">seems</span> like it should be more flexible than its explicitly industrial hardware side, the march toward the mass production of identical and mildly configurable products (and the standards that facilitate them) continues inexorably.</p>
+</div>
+</div>
+</div>
+<div class="section" id="d59611e443">
+<h3 class="title" style="clear: both">New Magic, from Clark and Crockford to the Present</h3>
+<p id="d59611e446">While much of the markup world is infused with the System-B concepts that Alexander encourages us to reject, there are corners, influences, and opportunities that can help us cast aside markup's traditional model of design-first-and-then-execute.  None of these pieces by itself is exactly a revolution, and some may even seem contradictory. Some of them are indeed side effects of the schema-based approach. While they may seem familiar, combining them offers a path to a different approach and new conversations.  All of them point to opportunities for a shift in markup culture.</p>
+<div class="section" id="d59611e448">
+<h4 class="title" style="clear: both">Not Required</h4>
+<p id="d59611e451">Ever since XML 1.0 permitted documents without a DOCTYPE declaration, it has at least been possible to work with XML in the absence of a schema.  While in most of my travels I have only found people using this freedom for experimental purposes or for very small-scale work, conversation on xml-dev did turn up some people who simply avoid using schemas.  They do, however, seem to use standard formats, but test and document them by other means.  These practices are often criticized, especially when the content leaves those often closed systems [<a class="xref" id="d59611e453" href="javascript:showcite('cite-Beck','d59611e453')">Beck 2011</a>].</p>
+<p id="d59611e455">Even in the best of these cases, though, throwing off schemas is not enough if the expectations of fixed vocabularies remain behind, as Walter Perry warned over a decade ago in [<a class="xref" id="d59611e457" href="javascript:showcite('cite-Vocabularies','d59611e457')">Perry 2002</a>]</p>
+</div>
+<div class="section" id="d59611e459">
+<h4 class="title" style="clear: both">Leaving Gaps</h4>
+<p id="d59611e462">Even the most obsessively controlling schema vocabularies allow developers to leave some space for growth. ANY in DTDs and xs:any in XML Schema are the classics, and variations allow a mixture of precision and openness.</p>
+<p id="d59611e464">Support for these gaps, however, varies wildly in practice.  Both tools and culture push back against the open models.  Tools that came from the strictly defined expectations of object definitions have a difficult time dealing with "underspecified" markup.  The culture of interoperability testing often encourages maximum agreement.  Do open spaces make it easier to create new options, or do they just create new headaches when it's time to move from one version of the a defined vocabulary to another?  Gaps create tension with many supposed best practices.</p>
+</div>
+<div class="section" id="d59611e466">
+<h4 class="title" style="clear: both">Generic Parsers, not Parser Generators</h4>
+<p id="d59611e469">Although it is certainly possible to write parser generators that lock tightly onto a particular vocabulary and parse nothing else, it happens less often than might seem likely.  There are tools for creating parser generators, like [<a class="xref" id="d59611e471" href="javascript:showcite('cite-xmlbooster','d59611e471')">XML Booster</a>], and there are certainly cases where it is more efficient or more secure than processing the results of a generic parser.  However, judging from job listings and general conversation, parser generation has had a much smaller role in XML than it has had, for example, in ASN.1.  (I've had a difficult time in ASN.1 conversations even convincing developers that generic parsers were possible and useful.)</p>
+<p id="d59611e473">Data binding tools, of course, can produce tight bonds even when run on top of a generic parser, but XML's explicit support for generic parsing has at least created the opportunity for looser coupling.</p>
+</div>
+<div class="section" id="d59611e475">
+<h4 class="title" style="clear: both">Peace Through Massive Overbuilding</h4>
+<p id="d59611e478">Some vocabularies have taken an "everything but the kitchen sink" approach. Two of the most popular document vocabularies, DocBook and the Text Encoding Initiative (TEI), both include gigantic sets of components.  While both provide support through tools for those components, many organizations use subsets like the DocBook subset used for this paper. While subsets vary, having a common foundation generally makes transformations easy and fallback to generic tools an option. The TEI pizza chef [<a class="xref" id="d59611e480" href="javascript:showcite('cite-Pizza','d59611e480')">TEI Pizza Chef</a>], which served up custom DTDs, typically a TEI subset, stands out as a past highlight of this approach.</p>
+<p id="d59611e482">Building a vocabulary so large that most people work with it only through subsets may seem excessive, but it opens the way to conversation among users of different subsets.  In many ways, this is similar to (though operating in the reverse direction of) Rick Jelliffe's suggestion that:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e485">"In particular, rather than everyone having to adopt the same schema for the same content type, all that is necessary is for people to revise (or create) each schema so that they are dialects (in the sense above) of the same language. That "language" is close to being the superset information model." </p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e488" href="javascript:showcite('cite-Dialect','d59611e488')">Jellife 2012</a>.</p>
+</blockquote>
+</div>
+<p id="d59611e490">So long as the superset model is broad enough, peace can be maintained.</p>
+</div>
+<div class="section" id="d59611e492">
+<h4 class="title" style="clear: both">Peace Through Sprinkling</h4>
+<p id="d59611e495">Rather than building supersets, some groups have focused on building the smallest thing that could possibly work for their use cases.  Dublin Core [<a class="xref" id="d59611e497" href="javascript:showcite('cite-Dublin','d59611e497')">DCMI</a>] is probably the most famous of these, though a variety of annotations from [<a class="xref" id="d59611e499" href="javascript:showcite('cite-WAI-ARIA','d59611e499')">WAI-ARIA</a>] to [<a class="xref" id="d59611e501" href="javascript:showcite('cite-DataAttributes','d59611e501')">HTML5 Data Attributes</a>].  These approaches offer a range of techniques for adding a portion of information used by a certain kind of processor to other vocabularies.  They allow multiple processors to see different pieces of a document, though frequently there is still a unified vision of the document managed by those who sprinkle in these components.</p>
+</div>
+<div class="section" id="d59611e503">
+<h4 class="title" style="clear: both">Peace Through Conflict</h4>
+<p id="d59611e506">While I cited <a class="xref" id="d59611e508" href="javascript:showcite('cite-Evolution','d59611e508')">Connolly 1997</a> above, I halted the quote at a convenient point. There is more to that argument - still schema (DTD) focused, but acknowledging conversation beyond the original creation point:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e511"> As competing DTDs are shared among the community, semantics are clarified by acclamation [15]. Furthermore, as DTDs themselves are woven into the Web, they can be discovered dynamically, further accelerating the evolution of community ontologies.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e514" href="javascript:showcite('cite-Evolution','d59611e514')">Connolly 1997</a>, page 121.</p>
+</blockquote>
+</div>
+<p id="d59611e516">While there has been more visible competition among schema languages than among vocabularies specified with schemas, there are constant overlaps among vocabulary projects as well as some direct collisions.  "Acclamation" may be too strong a word, as steady erosion seems a more typical process, but there is certainly motion.</p>
+</div>
+<div class="section" id="d59611e518">
+<h4 class="title" style="clear: both">Accepting Failure</h4>
+<p id="d59611e521">Resisting System-B is easiest, perhaps perversely, in a corner of the software universe that has long hoped to make System-B's "design by specification" possible: functional and declarative programming.  These styles of software development remove features that add instability to imperative approaches, often in the pursuit of mathematical provability, reliability and massive scale.  These design constraints, though intended to maximize industrial-scale processing of information, also make possible a wide range of more flexible approaches to handling information.</p>
+<p id="d59611e523">The paradigmatic application of these tools in the markup world lies in the technologies we call stylesheets, or style sheets, depending on who is editing at any given moment. While Cascading Style Sheets (CSS) and Extensible Stylesheet Language (XSL) were frequently seen as competitors when XML first arrived, both offer similar capabilities in this regard.  They both are (or at least can be) excellent at tolerating failure, with little harm done.</p>
+<p id="d59611e525">The key to that tolerance is pattern matching - selectors for CSS, XPath for XSLT.  If patterns don't match, they don't match, and the process goes on.  XSLT offers many more features for modifying results, and is more malleable, but neither of them worry much if a document matches their expectations.  At worst they produce empty results.  XSLT is capable of operating more generically, and of working with content it didn't match explicitly.  The XSLT toolset can support reporting and transformation that goes beyond the wildest dreams of schema enthusiasts - and can do much more useful work than validation and annotation along the way.</p>
+<p id="d59611e527">Pattern matching is also central to a number of explicitly functional languages. While they were built for things like mathematical provability, "nine nines" reliability, and structured management of state, those constraints actually give them the power needed to go beyond XSLT's ability to process individual documents. Erlang's "let it crash" philosophy, for example, makes it (relatively) easy to build robust programs that can handle flamingly unexpected situations without grinding to a halt.  Failures can be picked up and given different processing, discarded or put in a queue for different handling.</p>
+<p id="d59611e529">A calm response to the unexpected opens many new possibilities.</p>
+</div>
+<div class="section" id="d59611e531">
+<h4 class="title" style="clear: both">Valuing Errors</h4>
+<p id="d59611e534">Years ago, Walter Perry said in a talk that often the most interesting communications were the ones that broke the rules.  They might be mistakes, but they might also be signs of changing conditions, efforts to game the system, or an indication that the system itself was flawed.</p>
+<p id="d59611e536">Errors and flaws have become more popular since.  While much of the effort poured into test-driven development is about making sure they don't happen, a key side effect of that work is new approaches to providing meaningful error messages when they do happen.  "Test failed" is useful but incomplete.</p>
+<p id="d59611e538">In distributed systems, errors aren't necessarily just bugs, an instant path to the discard bin.  While the binary pass/fail of many testing approaches encourage developers to stomp out communications that aren't quite right, turning instead to the meaningful error messages (and error handling) side of that conversation can be much more fruitful.</p>
+</div>
+<div class="section" id="d59611e540">
+<h4 class="title" style="clear: both">Mechanical Turks</h4>
+<p id="d59611e543">After decades of trying to isolate computing processes from human intervention, some developers are now including humans in the processing chain. After all, it's not difficult to treat such conversations as just another asynchronous call, especially in an age of mobile devices. Not everything has to be processed instantly.</p>
+<p id="d59611e545">Amazon developed the [<a class="xref" id="d59611e547" href="javascript:showcite('cite-MechTurk','d59611e547')">Amazon Mechanical Turk</a>] service, named after an 18th chess-playing "machine" that turned out to have a person inside of it.  It looked like brilliant technology, and was, if humans count.  Amazon adds digital management to the approach, distributing "Human Intelligence Tasks" across many  anonymous workers. Facebook uses similar if more centralized approaches to censor photos. [<a class="xref" id="d59611e549" href="javascript:showcite('cite-Censor','d59611e549')">Facebook Censorship</a>] The Mechanical Turk model has led to some dire work situations [<a class="xref" id="d59611e551" href="javascript:showcite('cite-Cushing','d59611e551')">Cushing 2012</a>] in which humans are treated as cheap cogs in a computing machine, as a System B industrial approach seeks cheap labor to maximize profit.</p>
+<p id="d59611e553">Horrible as some of these approaches are, they make it very clear that even large-scale digital systems can pause to include humans in the decision-making process.  It isn't actually that difficult. Connecting these services to markup processing, however, requires interfaces for letting people specify what should be done with unexpected markup.  "Keep it, it's okay" with a note, or an option to escalate to something stronger (perhaps even human-to-human conversation) may be an acceptable start.</p>
+</div>
+<div class="section" id="d59611e556">
+<h4 class="title" style="clear: both">JSON Shakes it Up</h4>
+<p id="d59611e559">While XML seemed to be conquering the communications universe, even finally reaching the Web as the final X in AJAX, many developers dreamed of an escape from its strange world of schemas, transformations, and seemingly endless debates about data representation.  Douglas Crockford found an answer uniquely well-suited to the Web, extracted in fact from the JavaScript programming language itself.  [<a class="xref" id="d59611e561" href="javascript:showcite('cite-JSON','d59611e561')">JSON</a>] (JavaScript Object Notation) rapidly became popular with JavaScript developers. JSON had an innate advantage in that it could bypass same-origin requirements, but its use has spread far beyond those situations.</p>
+<p id="d59611e563">JSON uses a different syntax, but much more importantly, the nature of the conversation also shifted.  Perhaps because it comes from a free-wheeling JavaScript background, expectations of structure have always been loose.  Coordination can happen, but reuse and modification is a more common pattern than formal structuring. Many JSON formats are created by single information hubs, rather than across groups of providers, and conversion to internal formats is just a normal fact of life for JSON data consumption.  </p>
+<p id="d59611e565">JSON, while somewhat less readable to humans than markup, was both easy to work with in a JavaScript context and compatible with (actually a subset of) the [<a class="xref" id="d59611e567" href="javascript:showcite('cite-YAML','d59611e567')">YAML</a>] data serialization supported by a few other languages.  JSON was just a data format, a means for developers to pass information from one program to another.  Although JSON schemas and JSON transformation tools exist, they are relatively minor corners of JSON culture.</p>
+<p id="d59611e569">Despite those glaring absences, JSON use continues to expand rapidly.  It replaced XML as a default format in Ruby on Rails, and dominates current Ajax usage.  Perhaps more striking, it is becoming more common in public use, exactly the territory where prior agreement was deemed most important [<a class="xref" id="d59611e571" href="javascript:showcite('cite-XMLbye','d59611e571')">Bye XML</a>]. It hasn't replaced XML in that space yet, but is claiming a larger and larger share.  Documentation and samples, it seems, is enough.</p>
+<p id="d59611e573">So why stick with markup and not just leap to JSON's more open approach?  Mostly because of the tools described in the previous section.  Markup understands transformation and decoration better than JSON.  Despite its largely schema-free world, JSON is still primarily about tight binding to program structures. The schemas are invisible, often unspecified but they still exist when a document is loaded.</p>
+<p id="d59611e575">However, JSON programmers do plenty of transformation internally.  They base their expectations of schemas more on sources than on documents, and some have gone so far as to establish simple source-testing regimens that warn them of change.  Source-based versioning is also common in the world of JSON APIs.  Rather than the URI of a namespace changing or the details of a schema, new versions of APIs are often simply hosted at new URLs, with the changed content coming from a new location to give developers time to adapt.</p>
+<p id="d59611e577">JSON's curly braces may earn sneers from XML developers who prefer their angle brackets, but JSON is doing more with less.</p>
+</div>
+<div class="section" id="d59611e579">
+<h4 class="title" style="clear: both">Polyfills</h4>
+<p id="d59611e582">XML was supposed to reach the browser.  Mostly, it didn't, but the current state of the browser has much to teach XML.  Some of that is ugly, of course. Even without a hard focus on schemas, the power of the browser vendors and the continuing insistence on standardization have limited possibilities.  Here we see that it is not only the formalization of schemas but the cultural values surrounding them that create brittleness and stifle experiments.</p>
+<p id="d59611e584">However, that very brokenness, failed versioning, and the lingering hangovers of old software led to the development of a new software pattern, the polyfill [<a class="xref" id="d59611e586" href="javascript:showcite('cite-Sharp','d59611e586')">Sharp 2010</a>].  Polyfills are JavaScript code (sometimes combined with HTML and CSS) that quietly extend a browser to support JavaScript libraries that are missing or markup that it doesn't understand.  Building cross-browser polyfills is tricky, but [<a class="xref" id="d59611e588" href="javascript:showcite('cite-DevPolyfills','d59611e588')">Osmani 2011</a>] not that much more difficult than creating cross-browser frameworks.  Even the limited world of HTML5-specific polyfills is vast [<a class="xref" id="d59611e590" href="javascript:showcite('cite-Polyfills','d59611e590')">Polyfills List</a>].</p>
+<p id="d59611e592">While the HTML+CSS+JavaScript architecture is extremely flexible, there are some barriers, largely created by browser makers' efforts to optimize bandwidth and processing.  Efforts to create a picture element - combining concerns of responsive design and human interaction - have faced challenges around timing, pre-loading in particular.  Media processing is (as usual) one of the hardest challenges in working with the browser environment.  Establishing communications and respect between vendors and those using their products in perhaps even more difficult.</p>
+<p id="d59611e594">The W3C and browser vendors are working to address those challenges as well as create new frameworks that make polyfills easier to build and more efficient.  The Shadow DOM [<a class="xref" id="d59611e596" href="javascript:showcite('cite-ShadowDOM','d59611e596')">Shadow DOM</a>] and Web Components [<a class="xref" id="d59611e598" href="javascript:showcite('cite-WebComponents','d59611e598')">Web Components</a>] work both aim directly at making polyfills a more standard part of web development environments.  Google's recent work on [<a class="xref" id="d59611e600" href="javascript:showcite('cite-Polymer','d59611e600')">Polymer</a>] is an example of a browser vendor pushing hard in this space.</p>
+<p id="d59611e602">Separately, the Extensible Web Manifesto [<a class="xref" id="d59611e604" href="javascript:showcite('cite-manifesto','d59611e604')">Manifesto 2013</a>] encourages this work as a way to shift much work done in JavaScript to work done in markup:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e607">We want web developers to write more declarative code, not less. This calls for eliminating the standards bottleneck to introducing new declarative forms, and giving library and framework authors the tools to create them.</p>
+</blockquote>
+</div>
+<p id="d59611e609">While XML processing models are typically different, offering no tools to extend processors at the document creator's discretion, this approach could prove useful in situations where processors have chosen to place more trust in users.  It also clearly offers an option to developers tired of waiting for the W3C, the WHATWG, and the browser vendors to add markup functionality to HTML5.</p>
+</div>
+<div class="section" id="d59611e611">
+<h4 class="title" style="clear: both">Relational Decline</h4>
+<p id="d59611e614">Structured data has had a difficult few decades in general. While XML's schemas defined structure, relational database purists (most notably Fabian Pascal) heaped scorn on XML's daring to step outside the sharply defined boundaries of RDBMS tables and joins.  Much of the pressure for XML Schema's insistence on deterministic structures and strongly typed data came from communities who considered the constraints in 1990s RDBMS practice to be a good thing - but XML's very success was a key factor in making clear that the relational model was not the only possible story for data.</p>
+<p id="d59611e616">The challenges of scaling within the constraints of Atomicity, Consistency, Isolation, and Durability (ACID), led to several rapid generations of change in the database community.  While there are probably more relational databases deployed today than there were when XML appeared, the NoSQL movement has ended the era when developers only chose among relational databases unless their project was extremely unusual.</p>
+<p id="d59611e618">This shift has little direct effect on markup processing, but it does reduce the cultural pressures to only create data structures conforming to a well-known schema.</p>
+</div>
+<div class="section" id="d59611e620">
+<h4 class="title" style="clear: both">RESTfulness</h4>
+<p id="d59611e623">REST is a communications style based on HTTP's limited number of methods, treating those constraints as a virtue teaching us to build with few verbs and many nouns.  There is nothing in REST-based work specific to schemas - schemas (or the lack thereof) are a detail of the work that happens inside the local processors.</p>
+<p id="d59611e625">However, in contrast to their more RPC-based predecessors, which emerged from the CORBA and object-oriented worlds, this lack of specification is still a significant opening.  A minimal set of verbs makes it much easier to process a much larger set of nouns, with fewer expectations set up front.</p>
+</div>
+<div class="section" id="d59611e627">
+<h4 class="title" style="clear: both">Strictly Local Uses of Schemas</h4>
+<p id="d59611e630">Some developers and organizations see schemas as a limited-use tool, applied primarily in a local context to reflect local quality assurance and document creation needs.</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e633">Since the late 1990s, I've suggested that my consulting customers think of a schema not as an integral part of XML document/data exchange, but as a special auxiliary file that can fill up to two supporting roles:</p>
+<p id="d59611e635">1. A special stylesheet that renders a boolean value (valid/not valid) for QA.</p>
+<p id="d59611e637">2. A template for rare and high-specialized structured-authoring applications.</p>
+<p id="d59611e639">If you don't need at least one of those, then you probably don't need a schema.</p>
+<p class="attribution">&mdash; David Megginson [<a class="xref" id="d59611e643" href="javascript:showcite('cite-LocalSchema','d59611e643')">Correspondence 2013</a>]</p>
+</blockquote>
+</div>
+<p id="d59611e645">So long as authoring applications expect schemas as input, schemas will be necessary.  There are other ways to do quality assurance, of course, but schemas are common.  Will developers resist the temptation to apply schemas more broadly than these cases, when tools and practice point them that direction?</p>
+</div>
+<div class="section" id="d59611e647">
+<h4 class="title" style="clear: both">Transition Components - DSDL and MCE</h4>
+<p id="d59611e650">Much of the best thinking in markup schemas has worked under the banner of <a class="xref" id="d59611e652" href="javascript:showcite('cite-DSDL','d59611e652')">DSDL</a>.  RELAX NG, Schematron, and some more obscure pieces demonstrate more flexible alternatives to the W3C's XML Schema.  Namespace Validation Dispatching Language (NVDL) finally offers tools for mixing validation approaches based on the namespace qualifiers applied to content.  Document Schema Renaming Language (DSRL) offers a simple transformation approach for comparing documents to local schemas.  These parts are still tightly bound to schema validation approaches, but they at least add flexibility and add more options.</p>
+<p id="d59611e654">Markup Compatibility and Extensibility (<a class="xref" id="d59611e656" href="javascript:showcite('cite-MCE','d59611e656')">MCE</a>), coming out of the Open Office XML work, finally asks hard questions about different degrees of "understanding" a document:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e659">Attributes in the Markup Compatibility namespace shall be either Ignorable, ProcessContent, ExtensionElements, or MustUnderstand.  Elements of the Markup Compatibility namespace shall be either AlternateContent, Choice, or Fallback.</p>
+</blockquote>
+</div>
+<p id="d59611e661">As Rick Jelliffe describes it:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e664">This is a kind of having your cake and eating it too, you might think; the smart thing that gives it a hope of working is that MCE also provides some attributes PreserveElements and PreserveAttributes which let you (the standards writer or the extended document developer) list the elements that do not need to be stripped when modifying some markup.</p>
+<p id="d59611e666">I think standards developers who are facing the cat-herding issue of multiple implementations and the need for all sorts of extensions should seriously consider the MCE approach.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e669" href="javascript:showcite('cite-Plurality','d59611e669')">Jellife 2009</a>
+</p>
+</blockquote>
+</div>
+</div>
+<div class="section" id="d59611e670">
+<h4 class="title" style="clear: both">Examplotron: A Bridge?</h4>
+<p id="d59611e673">Examplotron <a class="xref" id="d59611e675" href="javascript:showcite('cite-Examplotron','d59611e675')">Examplotron</a> is in fact a schema language, but it is also a possible bridge between expectations from the Age of Schemas and other possibilities.  It uniquely combines communications through sample documents with the possibility of validation processing, and seems like a base for describing further transformations.  To the extent that a schema technology could work successfully within System A, Examplotron is clearly the strongest candidate.  (Schematron isn't too far behind, but lacks the document-sharing orientation.)</p>
+</div>
+</div>
+<div class="section" id="d59611e677">
+<h3 class="title" style="clear: both">Toward a New Practice</h3>
+<p id="d59611e680">While these many pieces have been opening doors for a long time, they tend to be used in isolation, or in contexts where schema and agreement still rule, if quietly.  While no one (to my knowledge) has yet combined them to create a model of networked markup communications operating in Alexander's System-A, there are now more than enough pieces to sketch out a path there.</p>
+<p id="d59611e682">The first step, however, is more difficult than any of the technical components.  System-A requires a shift in priorities, from industrial efficiency to local adaptation.  Despite the propaganda for "embracing change" over the last few decades, actually valuing changefulness at the conversation level is more difficult.  Schemas constrain it, as does the software we typically build around schemas.  The stories around markup have valued the static far more than the changeful.</p>
+<p id="d59611e684">Change this.  Value changefulness, and yes, even savageness, and let the static go.</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;" id="d59611e686">
+<h3 class="title">Note</h3>
+<p id="d59611e687">Many organizations will consider all of these suggestions inappropriate, unless perhaps they can be shown to provide massive cost savings within a framework they think they can manage with their current approach.  As the cost savings are likely to be modest, and this style of processing a difficult fit with their organizational style, that is unlikely.  I make no claims that this approach can make inroads with organizations that have regimentation, hierarchy, and control near the top of their management value system. Obsessed with security?  This is probably not for you.</p>
+<p id="d59611e689">Adding System-A to a System-B context is especially difficult.</p>
+</div>
+<p id="d59611e691">So what does valuing changefulness look like in practice?  It changes your toolset from schemas to transformations.  It means recognizing that schemas are in fact a weak transformation, converting documents to a binary valid/not result with an optional annotation system.  It demands shifting to a model in which you expect to perform explicit transformations on every document you handle.  It demands taking Alexander's model of local adaptation seriously.</p>
+<p id="d59611e693">If it's any comfort, XML developers are not the only ones facing this change. Dave Thomas suggests:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e696">"It's clear (to me, at least) that the idea of programming is not longer the art of maintaining state. Instead, we're moving towards coding as a means of transforming state. Object Orientation has served us well with state-based programming. But now we need to move on." [<a class="xref" id="d59611e698" href="javascript:showcite('cite-thomas','d59611e698')">Thomas 2013</a>]</p>
+</blockquote>
+</div>
+<p id="d59611e700">So what does transformation look like?  It operates on several levels, but perhaps it is easiest to start with negotiation - the piece of the puzzle that schemas were supposed to let us consider at least temporarily solved.</p>
+<div class="section" id="d59611e702">
+<h4 class="title" style="clear: both">Negotiation Style</h4>
+<p id="d59611e705">Negotiation in the schema sense is typically a gathering of opinions, working together to hammer out a schema for future communications.  To avoid the cost of holding that conversation frequently, it makes sense to gather as many possible voices as possible, though that "as many" is often slashed by requiring that the voices be 'expert'.  After all, too many people in a conversation also adds delay, often for little benefit.  The result is a formal structure that can be used to share data, a form of contract among the participants and anyone else who wishes to join that conversation.</p>
+<p id="d59611e707">Most forms of negotiation, however, are much less formal than a diplomatic council or standards organization.  People bargain constantly, and not just over prices.  The forms of communications within business change constantly, often fitting the chaotic model of shared spreadsheets much more readily than the formal structure of relational databases.  While spreadsheets carry all the headaches of individual files that are easily misplaced, there is nothing inherently superior about a tightly-structured centralized database.  The advantages of databases emerge almost exclusively when large quantities of data need to be shared according to a formal process.  Telling a story with a database typically requires sifting and selecting its information to be presented in a different form.</p>
+<p id="d59611e709">The negotiation style of spreadsheets typically works according to a simple process: "send me what works for you, and I'll see if I can make it work."  There may be massive gaps of spreadsheet prowess, business understanding, tools choice, or sheer power between the participants, but having a concrete basis for the conversation generally eases those, or leads to a request for simplification and a broader conversation.</p>
+<p id="d59611e711">Exchanging XML documents has a similar concrete effect.  Marked up documents are not that difficult to explore so long as you have a rough familiarity with the language used for the markup or willingness to consult a dictionary.  Just as there might be questions about how a spreadsheet is structured, there can be conversation about markup structure choices.  Just as the contents of a spreadsheet can be questioned, there is room to discuss whether the model the spreadsheet uses for a particular problem is the appropriate one.  Just as with spreadsheets, there is rarely need to ask for a deeply formalized representation of the underlying model.</p>
+<p id="d59611e713">XML has one major advantage over a spreadsheet, however - it is far, far easier to extract information from XML documents than from spreadsheets.  Writing code that extracts content from person A's spreadsheet and reliably places it in person B's different spreadsheet is possible, but difficult. Changes make it even harder.  Spreadsheets weren't built with that in mind.  Markup was.</p>
+</div>
+<div class="section" id="d59611e715">
+<h4 class="title" style="clear: both">Extending it ourselves</h4>
+<p id="d59611e718">In one context, this is easy.  Because the HTML world allows developers to send code along with their markup, the situation in browsers is actually simpler than the world where markup is the sole content of messages.  Markup in the browser is surrounded by opportunities to explain what it is and even to do something with it.  (Markup plus logic is at least as capable as spreadsheet cells and logic, after all!)</p>
+<p id="d59611e720">The picture polyfill debacle seems to tell the story of callous browser vendors who have their own bad ideas blowing off the people who use their projects most intensively.  In the long run, however, it is more of a pointer to the way things can be.  CSS and JavaScript have developed to the point where they can tell the story of markup, with HTML necessary - strictly speaking - for a very few tasks like form fields.  ARIA can provide metadata supporting accessibility, and if things are really tough, XSLT (and JavaScript implementations of it) are now available to transform documents in whatever markup vocabulary to an HTML equivalent, perhaps enhanced with SVG or Canvas.</p>
+<p id="d59611e722">Browser vendors get lots of press, good and bad, for implementing new features and new APIs.  The quiet reality, though, is that there is no longer any good reason for them to control our markup vocabularies.  We can do that, and we can do it today.</p>
+</div>
+<div class="section" id="d59611e725">
+<h4 class="title" style="clear: both">Changes Inside</h4>
+<p id="d59611e728">Supporting a more flexible negotiation style in cases where documents travel without supporting logic requires a major break with prior models of development.</p>
+<p id="d59611e730">Most software for processing documents created by markup - not all, but by far the majority - follow a consistent process.  A parser reads a document, checking its structure against syntactic and possibly structural expectations.  During or after that reading, if the document passes, the data is bound to internal structures, possibly using additional information added to the document by the testing process.</p>
+<p id="d59611e732">Perhaps most important, however, isn't the nature of the parser (generic or not), the schema type used, or the nature of the data binding.  The most important aspect of this is that each receiving process only supports a single or a few vocabularies.  (The primary exception is for completely generic processing, which doesn't care and generally doesn't know what kind of markup it's dealing with. This is common in editors and some kinds of filters.)  Extending that support, changing the vocabulary expectations, requires programmer intervention.</p>
+<p id="d59611e734">Avoiding programmer intervention has been the foundation of data processing for decades.  Much of the joy around schemas celebrated that schemas themselves could be used to create code for handling markup vocabularies.  Yes, of course you still needed to add business logic to that code, but generated code would reduce the time needed to write, and adoption of common schemas would even allow the sharing of at least a portion of the business logic code over time.</p>
+<p id="d59611e736">The design choices in schema and schema culture come from the dream of a machine that would run by itself, with only periodic human intervention when updates were necessary, plus the usual maintenance now considered the cost center of IT.</p>
+<p id="d59611e738">So what might a different model look like?</p>
+<p id="d59611e740">The machine doesn't run by itself.  Human intervention is routinely acceptable, and facilitated by a toolset that assumes that humans are available to do the mapping previously performed by schemas, data-binding, and similar approaches.  All participants in a conversation have their own processing structures, but those structures are explicitly adapted to internal needs, not external conversation. (Yes, it is possible that one of those internal needs will be to facilitate external conversation, but that need should not set the terms in most cases.)</p>
+<p id="d59611e742">Human intervention isn't required for every message, however.  Over time, such a processing system will develop a library of known transformations to and from external vocabularies and in particular to and from known senders.  Intervention arises when new or ambiguous information arrives.  A new party has joined the conversation, or a previously known sender has added or deleted sections of a document.  In short, intervention is necessary when prior mapping failed.</p>
+<p id="d59611e744">Intriguingly, this approach can fulfill one of the failed promises of XML Schema:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e747"> When XML is used to exchange technical information in a multi-vendor environment, schemas will ... help applications know when it is safe to ignore information they do not understand, and when they must not do so. This means schemas may help make software more robust and systems more able to change and adapt to evolving situations. </p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e750" href="javascript:showcite('cite-XMLschemaDraft','d59611e750')">W3C 1999</a>
+</p>
+</blockquote>
+</div>
+<p id="d59611e752">Schemas can flag information as outside of the schema and still pass it on, but it has no way to determine the 'safety' of such information or to encourage change, unless someone is monitoring the schema processing closely.  By contrast, such cases are not anomalies in the mapping system - they are just day to day business.</p>
+<p id="d59611e754">But wait, isn't there still a schema?  Isn't the transformation from external representation to internal structure a hidden schema? HTML5 style?  Perhaps, especially if there some kind of document describing that transformation that can be shared.  However, unlike the schemas that currently dominate the markup world, these transformations don't describe a single document structure.  They describe a set of possible mappings between a document structure and a specific internal structure.  That substantially reduces the prospects for (abuse) reuse.</p>
+<p id="d59611e756">Also, while it is possible that a transformation would return a binary succeeded/failed response like the valid/not-valid result of most schema processing, there is a much broader range of possibilities.  Partial mappings may be completely acceptable.  Failures may simply be prompts to create new mappings.</p>
+<p id="d59611e758">The cost of programmers, though.  What about the cost of programmers? Their time isn't cheap, and we have other things for them to do!  Even Bray and Bosak cautiously warned us that programmers were necessary, and schemas would only reduce the amount of time they needed!</p>
+<p id="d59611e760">These transformations aren't usually that difficult.  Simple transformations are easily designed through basic interfaces.  Complex transformations may require template logic on the order of XSLT.  Especially difficult transformations, particularly of compact markup styles might require an understanding of regular expressions.</p>
+<p id="d59611e762">Except perhaps for especially twisted regular expressions, however, none of these skills requires what we pretend today is a "rock star" programmer.  There are many contexts, but the home context is relatively simple, and transformations themselves are more intricate than deep.  While establishing this model might require regular contributions from experts, and having experts available is useful, over time the need for expertise should decline.  Transformation should not be as difficult as, say, natural language translation.</p>
+</div>
+<div class="section" id="d59611e764">
+<h4 class="title" style="clear: both">Rehumanizing Electronic Communications</h4>
+<p id="d59611e767">Changing tracks is difficult, especially when an entire technology culture has been built on values of industrial and bureaucratic efficiency aimed at minimizing human involvement in small but constant processing decisions.  Pioneers created vocabularies for the purpose of controlling a market and leaping ahead of competition, hoping that the resulting brittle processing model would make it too difficult to refactor their advantage away.</p>
+<p id="d59611e769">However, rather than striving for maximum automation, developers have the opportunity to aim for systems that are both more flexible and more human than current models allow.  Developers can build on a model of automating what humans hate to do, rather than automating everything.  The three great virtues of the Desperate Perl Hacker displaced by XML's arrival - laziness, impatience, and hubris - can take their rightful and continual place in a community of processing rather than disappearing in a cloud of efficiency.  Automate what is convenient for humans communicating, not entire processes.</p>
+<p id="d59611e771">That changes the role of markup experts as well.  Instead of consulting on vocabularies and leaving others to implement them, we have to take a more active role on a smaller number of projects:</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e774">Let us imagine building five hundred houses.  In today's normal method of building large-scale housing projects, one architect and one contractor often control a rather large volume of houses or apartments...
+</p>
+<p id="d59611e776">
+	The architect-builder... has greater powers but more limited domain. Any one architect builder may control no more than twenty houses at a time, but he will take full responsibility for their design and construction, and he will work far more intensely with the individual families, and with the individual details of their houses. Thus, in this model of construction, both design and construction are decentralized....
+</p>
+<p id="d59611e778">
+	Of course, this means that the architect-builders play a different role in society.  There are more of them - taking the place of the alienated construction workers and architectural draftsmen who now provide the manpower to make the centralized system work...
+</p>
+<p id="d59611e780">We envisage a new kind of professional who is able to see the buildings which he builds as works of love, works of craft, individual; and who creates a process in which the families are allowed, and even encouraged, to play their natural role in helping to lay out their houses and helping to create their own community."</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e783" href="javascript:showcite('cite-Houses','d59611e783')">Alexander 1985</a>, pages 76-8.</p>
+</blockquote>
+</div>
+<p id="d59611e785">Some of us work this way already, of course.</p>
+<p id="d59611e787">Working this way also allows to us focus on one of Alexander's most general patterns in his question for local adaptation: site repair.</p>
+<div class="blockquote">
+<blockquote class="blockquote">
+<p id="d59611e790">Buildings must always be built on those parts of the land which are in the worst condition, not the best....</p>
+<p id="d59611e792">If we always build on that part of the land which is most healthy, we can be virtually certain that a great deal of the land will always be less than healthy.  If we want the land to be healthy all over - all of it - then we must do the opposite.  We must treat every new act of building as an opportunity to mend some rent in the existing cloth; each ac of building gives us the chance to make one of the ugliest and least healthy parts of the environment more healthy - as for those parts which are already healthy and beautiful - they of course need no attention.  And in fact, we much discipline ourselves most strictly to leave them alone, so that our energy actually goes to the places which need it.  This is the principle of site repair.</p>
+<p class="attribution">&mdash; <a class="xref" id="d59611e795" href="javascript:showcite('cite-PatternLanguage','d59611e795')">Alexander 1977</a>, pages 509-10.</p>
+</blockquote>
+</div>
+<p id="d59611e797">This means continuous mending, continuous repair, by people close enough to the ground to see what needs work.  Continuous refactoring has entered the programming lexicon, and needs to become a dominant part of the markup lexicon.</p>
+<p id="d59611e799">In a world saturated with the message of industrial efficiency and in a computing culture deeply soaked in expectations of standardizing away as many interactions as possible, this Alexanderine model will be at least as difficult to achieve as it is in architecture.  Possible on the margins, yes, perhaps in experiments, but not to be taken seriously.  That is a normal starting point for this conversation, and this paper just an opening.</p>
+<p id="d59611e801">Markup workers of the world, unite! You have nothing to lose but your chains.</p>
+</div>
+</div>
+<div class="section" id="d59611e803">
+<h3 class="title" style="clear: both">Acknowledgments</h3>
+<p id="d59611e806">In addition to the Balisage reviewers, I would like to thank Mark Bernstein, Mike Amundsen, Matt Edgar, Walter Perry, and the xml-dev list for helpful reviews, inspiration, and sparring.</p>
+</div>
+</div>
+<div class="bibliography" id="d59611e808">
+<h2 class="title" style="clear:both">Bibliography</h2>
+<p class="bibliomixed" id="PatternLanguage">
+<a href="#d59611e318">[Alexander 1977] </a>Alexander, Christopher, et al. <span class="ital">A Pattern Language: Towns, Buildings, Construction</span>. New York: Oxford University Press, 1977.</p>
+<p class="bibliomixed" id="Timeless">[Alexander 1979] Alexander, Christopher. <span class="ital">The Timeless Way of Building</span>. New York: Oxford University Press, 1979.</p>
+<p class="bibliomixed" id="Houses">
+<a href="#d59611e360">[Alexander 1985] </a>Alexander, Christopher, et al. <span class="ital">The Production of Houses</span>. New York: Oxford University Press, 1985.</p>
+<p class="bibliomixed" id="Origins">
+<a href="#d59611e335">[Alexander 1996] </a>Alexander, Christoper. "The Origins of Pattern Theory, the Future of the Theory, and the Generation of a Living World."  <a href="http://www.patternlanguage.com/archive/ieee/ieeetext.htm" class="link" target="_new">http://www.patternlanguage.com/archive/ieee/ieeetext.htm</a>
+</p>
+<p class="bibliomixed" id="Battle">
+<a href="#d59611e378">[Alexander 2012] </a>Alexander, Christopher, et al. <span class="ital">The Battle for the Life and Beauty of the Earth</span>. New York: Oxford University Press, 2012.</p>
+<p class="bibliomixed" id="MechTurk">
+<a href="#d59611e547">[Amazon Mechanical Turk] </a>Amazon Mechanical Turk. <a href="https://www.mturk.com/mturk/" class="link" target="_new">https://www.mturk.com/mturk/</a>
+</p>
+<p class="bibliomixed" id="Beck">
+<a href="#d59611e453">[Beck 2011] </a>Beck, Jeff. "The False Security of Closed XML Systems." Presented at Balisage: The Markup Conference 2011, Montr&eacute;al, Canada, August 2 - 5, 2011. In Proceedings of Balisage: The Markup Conference 2011. Balisage Series on Markup Technologies, vol. 7 (2011). doi:<a href="http://dx.doi.org/10.4242/BalisageVol7.Beck01" class="doi" target="_new">10.4242/BalisageVol7.Beck01</a>. <a href="http://www.balisage.net/Proceedings/vol7/html/Beck01/BalisageVol7-Beck01.html" class="link" target="_new">http://www.balisage.net/Proceedings/vol7/html/Beck01/BalisageVol7-Beck01.html</a>.</p>
+<p class="bibliomixed" id="SemWebArch">
+<a href="#d59611e195">[Semantic Web Architecture] </a>Berners-Lee, Tim. "Semantic Web - XML 2000- slide 'Architecture'"  <a href="http://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html" class="link" target="_new">http://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html</a>.</p>
+<p class="bibliomixed" id="xml2nd">
+<a href="#d59611e130">[Bosak and Bray 1999] </a>Bosak, Jon, and Bray, Tim. "XML and the Second-Generation Web". <span class="ital">Scientific American</span>, May 1999. Pages 89-93. doi:<a href="http://dx.doi.org/10.1038/scientificamerican0599-89" class="doi" target="_new">10.1038/scientificamerican0599-89</a>.</p>
+<p class="bibliomixed" id="Pizza">
+<a href="#d59611e480">[TEI Pizza Chef] </a>Burnard, Lou, and Sperberg-McQueen, C. Michael. "TEI Pizza Chef". <a href="http://www.tei-c.org/Vault/P4/pizza.html" class="link" target="_new">http://www.tei-c.org/Vault/P4/pizza.html</a>
+</p>
+<p class="bibliomixed" id="Butterick">[Butterick 2013] Butterick, Matthew. "The Bomb in the Garden" <a href="http://unitscale.com/mb/bomb-in-the-garden/" class="link" target="_new">http://unitscale.com/mb/bomb-in-the-garden/</a>.</p>
+<p class="bibliomixed" id="Cargill">[Cargill 2011] Cargill, Carl. "Why Standardization Efforts Fail". <a href="http://quod.lib.umich.edu/j/jep/3336451.0014.103/--why-standardization-efforts-fail?rgn=main;view=fulltext" class="link" target="_new">http://quod.lib.umich.edu/j/jep/3336451.0014.103/--why-standardization-efforts-fail?rgn=main;view=fulltext</a>.</p>
+<p class="bibliomixed" id="Evolution">
+<a href="#d59611e120">[Connolly 1997] </a>Connolly, Dan, et al. "The Evolution of Web Documents: The Ascent of XML", in <span class="ital">XML: Principles, Tools, and Techniques</span>. Sebastopol, CA: O'Reilly Media, 1997. <a href="http://www.xml.com/pub/a/w3j/s3.connolly.html" class="link" target="_new">http://www.xml.com/pub/a/w3j/s3.connolly.html</a>
+</p>
+<p class="bibliomixed" id="WebComponents">
+<a href="#d59611e598">[Web Components] </a>Cooney, Dominic, and Glazkov, Dmitri. Introduction to Web Components. <a href="http://www.w3.org/TR/components-intro/" class="link" target="_new">http://www.w3.org/TR/components-intro/</a>.</p>
+<p class="bibliomixed" id="JSON">
+<a href="#d59611e561">[JSON] </a>Crockford, Douglas. "Introducing JSON". <a href="http://www.json.org/" class="link" target="_new">http://www.json.org/</a>
+</p>
+<p class="bibliomixed" id="Cushing">
+<a href="#d59611e551">[Cushing 2012] </a>Cushing, Ellen. "Dawn of the Digital Sweatshop". <a href="http://www.eastbayexpress.com/oakland/dawn-of-the-digital-sweatshop/Content?oid=3301022" class="link" target="_new">http://www.eastbayexpress.com/oakland/dawn-of-the-digital-sweatshop/Content?oid=3301022</a>
+</p>
+<p class="bibliomixed" id="Hypermedia">
+<a href="#d59611e147">[DeRose and Durand 1994] </a>DeRose, Steven and Durand, David. <span class="ital">Making Hypermedia Work: A User's Guide to HyTime</span>. Boston: Kluwer Academic Publishers, 1994. doi:<a href="http://dx.doi.org/10.1007/978-1-4615-2754-1" class="doi" target="_new">10.1007/978-1-4615-2754-1</a>.</p>
+<p class="bibliomixed" id="Dublin">
+<a href="#d59611e497">[DCMI] </a>Dublin Core Metadata Initiative. "DCMI Specifications". <a href="http://dublincore.org/specifications/" class="link" target="_new">http://dublincore.org/specifications/</a>
+</p>
+<p class="bibliomixed" id="XMLbye">
+<a href="#d59611e571">[Bye XML] </a>DuVander, Adam. "http://blog.programmableweb.com/2012/12/17/leading-apis-say-bye-xml-in-new-versions/". <a href="http://blog.programmableweb.com/2012/12/17/leading-apis-say-bye-xml-in-new-versions/" class="link" target="_new">http://blog.programmableweb.com/2012/12/17/leading-apis-say-bye-xml-in-new-versions/</a>
+</p>
+<p class="bibliomixed" id="YAML">
+<a href="#d59611e567">[YAML] </a>Evans, Clark. "YAML: YAML Ain't Markup Language". <a href="http://www.yaml.org/" class="link" target="_new">http://www.yaml.org/</a>
+</p>
+<p class="bibliomixed" id="prollyfill">[Prollyfill] Extensible Web Community Group. <a href="http://prollyfill.org/" class="link" target="_new">http://prollyfill.org/</a>
+</p>
+<p class="bibliomixed" id="manifesto">
+<a href="#d59611e604">[Manifesto 2013] </a><a href="http://extensiblewebmanifesto.org/" class="link" target="_new">http://extensiblewebmanifesto.org/</a>
+</p>
+<p class="bibliomixed" id="DesignPatterns">
+<a href="#d59611e302">[Gamma 1995] </a>Gamma, Erich, et al. <span class="ital">Design Patterns: Elements of Reusable Software</span>. Boston: Addison-Wesley, 1995.</p>
+<p class="bibliomixed" id="SGMLhand">
+<a href="#d59611e103">[Goldfarb 1990] </a>Goldfarb, Charles. <span class="ital">The SGML Handbook</span>. Oxford: Oxford University Press, 1990.</p>
+<p class="bibliomixed" id="Polyfills">
+<a href="#d59611e590">[Polyfills List] </a>"HTML5 Cross Browser Polyfills". <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills" class="link" target="_new">https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills</a>
+</p>
+<p class="bibliomixed" id="DSDL">
+<a href="#d59611e652">[DSDL] </a>ISO/IEC 19757 - DSDL. "Document Schema Definition Languages". <a href="http://dsdl.org/" class="link" target="_new">http://dsdl.org/</a>
+</p>
+<p class="bibliomixed" id="PolyfillOverhead">[Jehl 2012] Jehl, Scott. "Polyfilling picture without the overhead". <a href="http://www.w3.org/community/respimg/2012/03/15/polyfilling-picture-without-the-overhead/" class="link" target="_new">http://www.w3.org/community/respimg/2012/03/15/polyfilling-picture-without-the-overhead/</a>
+</p>
+<p class="bibliomixed" id="Plurality">
+<a href="#d59611e669">[Jellife 2009] </a>Jelliffe, Rick. "Safe Plurality: Can it be done using OOXML's Markup Compatibility and Extensions mechanism?". <a href="http://broadcast.oreilly.com/2009/02/safe-plurality-markup-compatab.html" class="link" target="_new">http://broadcast.oreilly.com/2009/02/safe-plurality-markup-compatab.html</a>
+</p>
+<p class="bibliomixed" id="Dialect">
+<a href="#d59611e488">[Jellife 2012] </a>Jelliffe, Rick. "XML's Dialect Problem: Diversity is not the problem; it is the requirement". <a href="http://broadcast.oreilly.com/2012/03/xmls-dialect-problem.html" class="link" target="_new">http://broadcast.oreilly.com/2012/03/xmls-dialect-problem.html</a>
+</p>
+<p class="bibliomixed" id="Katz">[Katz 2013] Katz, Yehuda.  "Extend the Web Forward". <a href="http://yehudakatz.com/2013/05/21/extend-the-web-forward/" class="link" target="_new">http://yehudakatz.com/2013/05/21/extend-the-web-forward/</a>
+</p>
+<p class="bibliomixed" id="Responsive">[Marquis 2012] Marquis, Mat. "Responsive Images and Web Standards at the Turning Point". <a href="http://alistapart.com/article/responsive-images-and-web-standards-at-the-turning-point" class="link" target="_new">http://alistapart.com/article/responsive-images-and-web-standards-at-the-turning-point</a>
+</p>
+<p class="bibliomixed" id="XAF">
+<a href="#d59611e151">[XML Architectural Forms] </a>Megginson, David. "XML Architectural Forms". <a href="http://www.megginson.com/XAF" class="link" target="_new">http://www.megginson.com/XAF</a>
+</p>
+<p class="bibliomixed" id="LocalSchema">
+<a href="#d59611e643">[Correspondence 2013] </a>Megginson, David. Facebook correspondence. </p>
+<p class="bibliomixed" id="PrefaceGothic">
+<a href="#d59611e270">[Morris 1892] </a>Morris, William. "Preface to the Nature of Gothic", in <span class="ital">The Nature of Gothic</span>, London: Kelmscott Press, 1892. <a href="http://www.marxists.org/archive/morris/works/1892/ruskin.htm" class="link" target="_new">http://www.marxists.org/archive/morris/works/1892/ruskin.htm</a>.</p>
+<p class="bibliomixed" id="DevPolyfills">
+<a href="#d59611e588">[Osmani 2011] </a>Osmani, Addy. "The Developer&rsquo;s Guide To Writing Cross-Browser JavaScript Polyfills". <a href="http://addyosmani.com/blog/writing-polyfills/" class="link" target="_new">http://addyosmani.com/blog/writing-polyfills/</a>
+</p>
+<p class="bibliomixed" id="Vocabularies">
+<a href="#d59611e457">[Perry 2002] </a>Perry, Walter. "Standard Data Vocabularies Unquestionably Harmful". <a href="http://www.xml.com/pub/a/2002/05/29/perry.html" class="link" target="_new">http://www.xml.com/pub/a/2002/05/29/perry.html</a>
+</p>
+<p class="bibliomixed" id="Polymer">
+<a href="#d59611e600">[Polymer] </a>Polymer Project. <a href="http://www.polymer-project.org/" class="link" target="_new">http://www.polymer-project.org/</a>
+</p>
+<p class="bibliomixed" id="Gothic">
+<a href="#d59611e251">[Ruskin 1853] </a>Ruskin, John. "The Nature of Gothic", in <span class="ital">The Stones of Venice, Volume II: The Sea-Stories</span> Mineola: Dover Phoenix Editions, 2005.</p>
+<p class="bibliomixed" id="MCE">
+<a href="#d59611e656">[MCE] </a>"Semantics of MCE". <a href="https://www.assembla.com/spaces/IS29500/wiki/Semantics_of_MCE" class="link" target="_new">https://www.assembla.com/spaces/IS29500/wiki/Semantics_of_MCE</a>.</p>
+<p class="bibliomixed" id="ShadowDOM">
+<a href="#d59611e596">[Shadow DOM] </a>Shadow DOM. <a href="http://www.w3.org/TR/shadow-dom/" class="link" target="_new">http://www.w3.org/TR/shadow-dom/</a>.</p>
+<p class="bibliomixed" id="Sharp">
+<a href="#d59611e586">[Sharp 2010] </a>Sharp, Remy. "What is a Polyfill?"  <a href="http://remysharp.com/2010/10/08/what-is-a-polyfill/" class="link" target="_new">http://remysharp.com/2010/10/08/what-is-a-polyfill/</a>.</p>
+<p class="bibliomixed" id="Smith">[Smith 2013] Smith, Michael [tm]. "Getting agreements is hard (some thoughts on Matthew Butterick&rsquo;s &ldquo;The Bomb in the Garden&rdquo; talk at TYPO San Francisco)". <a href="http://www.w3.org/QA/2013/04/getting_agreements_is_hard_som.html" class="link" target="_new">http://www.w3.org/QA/2013/04/getting_agreements_is_hard_som.html</a>.</p>
+<p class="bibliomixed" id="Sympathy">[Spuybroek 2011] Spuybroek, Lars. <span class="ital">The Sympathy of Things: Ruskin and the Ecology of Design</span>. Rotterdam: V2_Publishing, 2011.</p>
+<p class="bibliomixed" id="thomas">
+<a href="#d59611e698">[Thomas 2013] </a>Thomas, Dave. 4/10/13 8:39pm, elixir-lang  <a href="https://groups.google.com/d/msg/elixir-lang-core/N2joXbsuJGs/_knNJt8VQvsJ" class="link" target="_new">https://groups.google.com/d/msg/elixir-lang-core/N2joXbsuJGs/_knNJt8VQvsJ</a>.</p>
+<p class="bibliomixed" id="Usdin">[Usdin 2009] Usdin, B. Tommie. "Standards considered harmful." Presented at Balisage: The Markup Conference 2009, Montr&eacute;al, Canada, August 11 - 14, 2009. In Proceedings of Balisage: The Markup Conference 2009. Balisage Series on Markup Technologies, vol. 3 (2009). doi:<a href="http://dx.doi.org/10.4242/BalisageVol3.Usdin01" class="doi" target="_new">10.4242/BalisageVol3.Usdin01</a>. <a href="http://www.balisage.net/Proceedings/vol3/html/Usdin01/BalisageVol3-Usdin01.html" class="link" target="_new">http://www.balisage.net/Proceedings/vol3/html/Usdin01/BalisageVol3-Usdin01.html</a>.</p>
+<p class="bibliomixed" id="Examplotron">
+<a href="#d59611e675">[Examplotron] </a>van der Vlist, Eric. "Examplotron". <a href="http://examplotron.org/" class="link" target="_new">http://examplotron.org/</a>.</p>
+<p class="bibliomixed" id="Censor">
+<a href="#d59611e549">[Facebook Censorship] </a>Webster, Stephen C. "Low-wage Facebook contractor leaks secret censorship list". <a href="http://www.rawstory.com/rs/2012/02/22/low-wage-facebook-contractor-leaks-secret-censorship-list/" class="link" target="_new">http://www.rawstory.com/rs/2012/02/22/low-wage-facebook-contractor-leaks-secret-censorship-list/</a>.</p>
+<p class="bibliomixed" id="XMLschemaDraft">
+<a href="#d59611e180">[W3C 1999] </a>World Wide Web Consortium. "World Wide Web Consortium Releases First Working Drafts of XML Schema Specification"  <a href="http://www.w3.org/1999/05/schema-1st-wd" class="link" target="_new">http://www.w3.org/1999/05/schema-1st-wd</a>.</p>
+<p class="bibliomixed" id="XMLschemaPR">
+<a href="#d59611e189">[W3C 2001] </a>World Wide Web Consortium. "World Wide Web Consortium Issues XML Schema as a W3C Recommendation".  <a href="http://www.w3.org/2001/05/xml-schema-pressrelease.html.en" class="link" target="_new">http://www.w3.org/2001/05/xml-schema-pressrelease.html.en</a>.</p>
+<p class="bibliomixed" id="WAI-ARIA">
+<a href="#d59611e499">[WAI-ARIA] </a>World Wide Web Consortium. "WAI-ARIA Overview"  <a href="http://www.w3.org/WAI/intro/aria" class="link" target="_new">http://www.w3.org/WAI/intro/aria</a>.</p>
+<p class="bibliomixed" id="DataAttributes">
+<a href="#d59611e501">[HTML5 Data Attributes] </a>World Wide Web Consortium. "HTML5 -- A vocabulary and associated APIs for HTML and XHTML", 3.2.3.9 Embedding custom non-visible data with the data-* attributes.   <a href="http://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes" class="link" target="_new">http://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes</a>.</p>
+<p class="bibliomixed" id="xmlbooster">
+<a href="#d59611e471">[XML Booster] </a>XML Booster.  <a href="http://xmlbooster.com/" class="link" target="_new">http://xmlbooster.com/</a>.</p>
+</div>
+</div>
+<div id="author-keywords">
+<h5 class="keywords">
+<span class="label">Author's keywords for this paper: </span><span class="keyword">Markup</span>; <span class="keyword">Schemas</span>; <span class="keyword">Architecture</span>; <span class="keyword">Transformation</span>; <span class="keyword">Polyfill</span>
+</h5>
+</div>
+<div id="balisage-footer">
+<h3 style="font-family: serif; margin:0.25em; font-style: italic">Balisage Series on Markup Technologies</h3>
+</div>
+</div>
+</body>
+</html>

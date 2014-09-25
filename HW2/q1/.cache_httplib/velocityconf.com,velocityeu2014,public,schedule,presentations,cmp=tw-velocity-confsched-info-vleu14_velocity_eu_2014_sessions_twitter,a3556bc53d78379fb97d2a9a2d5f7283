@@ -1,0 +1,3174 @@
+status: 200
+x-request-id: 25191a5e84754bb5601aa6ce421c67a4
+content-location: http://velocityconf.com/velocityeu2014/public/schedule/presentations?cmp=tw-velocity-confsched-info-vleu14_velocity_eu_2014_sessions_twitter
+set-cookie: oreilly_enation_session=d41b5c506e340eee239291e91d1975b9; path=/;
+ HttpOnly
+x-powered-by: Phusion Passenger 4.0.45
+vary: Accept-Encoding
+content-length: 108985
+server: Apache/2.2.14 (Ubuntu)
+x-runtime: 2.440211
+-content-encoding: gzip
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Wed, 24 Sep 2014 22:21:52 GMT
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"61e2f91637","applicationID":"349946","transactionName":"dAxbFxYNWlpXRBxEEFUPXABLEVVeV1JGWAAYE0cGFwdYQlNCWlsLRA==","queueTime":0,"applicationTime":2386,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAIPV15ACwcJXVVU"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+	<!-- L:S content/theme/html_system_head  (0) -->
+	<!-- load web fonts -->
+
+<script type="text/javascript">
+  (function() {
+    document.getElementsByTagName("html")[0].setAttribute("class","wf-loading")
+    document.getElementsByTagName("html")[0].setAttribute("className","wf-loading") // for IE
+    var config = {
+      kitId: 'bmj2nsh',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//fonts.oreillystatic.com/'+config.kitId+'.js';tk.type="text/javascript";tk.async="false";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+<style>
+.wf-loading .typewriter {
+  font-family: Courier New;
+  color: rgba(0, 0, 0, 0); 
+}
+
+.wf-loading body, p, ol, ul, td { 
+  font-family: Arial, Verdana, Helvetica, sans-serif; 
+}
+ 
+.wf-active .typewriter {
+  font-family: 'oreilly-urw-typewriter-narro', Courier New;
+}
+
+.wf-active body, p, ol, ul, td { 
+  font-family: 'open-sans', Arial, Verdana, Helvetica, sans-serif;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  	<link href="/stylesheets/general.css?1411419338" media="screen" rel="stylesheet" type="text/css" />
+
+	<!-- controller_js -->
+	<script src="//cdn.oreillystatic.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="/javascripts/application.js?1411419338" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery_star_rating_pack.js?03" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.form.min.js" type="text/javascript"></script>
+	<!-- extra_external_javascript -->
+	
+	<!-- extra_styles -->
+  <link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.rating-3.14.css" media="screen" rel="stylesheet" type="text/css" />
+	<!-- extra_javascript -->
+		
+	<!-- theme_external_javascript -->
+	
+
+
+
+  <style>
+  .en_eval_link { vertical-align:top; }
+  </style>
+
+	<!-- L:E content/theme/html_system_head  (0) -->
+	<!-- L:S content/theme/html_head  (0) -->
+	<title>
+  
+  
+  
+  
+
+All Tutorials &amp; Sessions: Velocity Europe 2014 - O&#x27;Reilly Conferences, November 17 - 19, 2014, Barcelona, Spain
+</title>
+
+
+  <!-- content/head_extra -->
+
+
+
+<!--metadata-->
+<meta property="og:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_og200x200.gif" />
+<meta name="twitter:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_og_twitter120x120.gif" />
+<meta name="twitter:site" content="@velocityconf" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" /> 
+
+<meta property="og:title" name="twitter:title" content="All Tutorials &amp; Sessions - Velocity Europe 2014" />
+<meta property="og:description" name="twitter:description" content="All confirmed tutorials &amp; sessions for O&#x27;Reilly Velocity Conference happening 17-19 November, 2014 in Barcelona, Spain" />  
+
+
+
+
+
+
+
+
+<!-- Chartbeat Head -->
+<script type="text/javascript">
+<!--
+// js/charbeat_head
+var _sf_startpt=(new Date()).getTime()
+-->
+</script>
+        
+        
+        <link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/2014v1_min_css.css" media="screen" rel="Stylesheet" type="text/css" />
+        <link href="//cdn.oreillystatic.com/en/assets/1/event/121/velocityeu2014_inside_css.css" media="screen" rel="Stylesheet" type="text/css" />
+
+
+
+
+<style>
+/* for skip to main content link (seen by screen readers) */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+body { background:#fff; color:#000; margin:0; font-size: 80%; }
+div#en_main_parts { width: 100%; }
+
+div#en_content, div#en_main { width: 100%; margin: 0; padding: 0; min-width: 910px; }
+.content_row { width: 870px; margin: 0 auto; padding: 0 20px; }
+.branding_bar { background-color: #008a96; width: 100%; height: 40px;-webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -o-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -ms-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);}
+#logo { padding-top: 9px; float: left;}
+
+/* for Franchise links at top of page */
+div#velocity_links { font-weight: bold; float: right; }
+div#velocity_links .inner { padding: 7px 0; font-size: 11px; letter-spacing:.03em; color: #004e55;}
+div#velocity_links a {color: #004e55;text-decoration:none;}
+div#velocity_links .current {color: #7fd3da;}
+div#velocity_links .current a {color: #7fd3da;text-decoration: none;}
+div#velocity_links .static {color: #004e55;}
+
+div.tagline { color: #ea6820; text-transform: uppercase;  font-weight: bold; padding-bottom: 3px; }
+div.tagline_date_location .location { text-transform: uppercase; }
+
+a { text-decoration: none; color: #1010dd; }
+a:hover { text-decoration: underline; }
+
+.btn-orange { display:block; text-decoration:none; text-transform: uppercase; font-size: 13px; line-height: 1.3em; color:#fff; padding: 8px 0; text-align:center; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; background: -webkit-gradient(linear, left top, right top, from(#fb8e00), to(#d37700)); background: -webkit-linear-gradient(top, #fb8e00, #d37700); background: -moz-linear-gradient(top, #fb8e00, #d37700); background: -o-linear-gradient(top, #fb8e00, #d37700); background: -ms-linear-gradient(top, #fb8e00, #d37700); background: linear-gradient(top, #fb8e00, #d37700); background-color: #fb8e00; font-weight: bold; width: 250px; }
+a.btn-orange:hover { text-decoration:none; }
+
+.user_tools {clear:right;padding-top:20px;}
+
+
+div#top_level_nav ul#nav ul.level_three { margin: -29px 0 0 205px; width: 20em; }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/javascripts/supersleight-min.js"></script>
+  <![endif]-->
+
+
+
+
+
+<link rel="apple-touch-icon" href="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_iphone_icon.png" type="image/png" />
+<link rel="icon" type="image/png" href="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_favicon.png">
+
+
+
+
+<meta name="description" content="All confirmed tutorials &amp; sessions for O&#x27;Reilly Velocity Conference happening 17-19 November, 2014 in Barcelona, Spain" />
+<meta name="Category" content="Conferences" />
+
+
+<meta name="search_date" content="2014-11-17" />
+
+
+<meta name="search-conf-name" content="Velocity Europe 2014" />
+
+
+
+
+
+
+
+
+
+
+<!--for Google Webmaster Tools -->
+<meta name="verify-v1" content = "ejKlkisc2aaHXLk+37fMPNCfcsC5GdJYO2qoBXRRM7g=" />
+
+<!--
+<link rel="image_src" href="http://oreilly.com/images/oreilly/oreilly_large.gif" />
+-->
+
+
+<script type="text/javascript">
+window._umbel = window._umbel || [];
+(function()
+{ var u = document.createElement('script'); u.type = 'text/javascript'; u.async = true; u.src = document.location.protocol + '//tags.api.umbel.com/fnhibijmwrhmldyn/w.js?d=' + new Date().getMonth() + '' + new Date().getDate(); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(u, s); }
+
+)();
+</script>
+
+
+	<!-- L:E content/theme/html_head  (0) -->
+</head>
+<body class='en_c_schedule en_a_presentations' id='en_schedule_presentations'>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+<div class="visuallyhidden"><a href="#mid">Skip to main content</a></div>
+<div id="en_content" itemscope itemtype="http://data-vocabulary.org/Event"><!-- closed in after_main-->
+<meta itemprop="startDate" datetime="2014-11-17T00:00-00:00" content="November 17, 2014" />
+<meta itemprop="endDate" datetime="2014-11-19T00:00-00:00" content="November 19, 2014"/>
+<meta itemprop="location" content="Barcelona, Spain" />
+<meta itemprop="summary" content="All Tutorials &amp; Sessions - Velocity Europe 2014" />
+
+<div id="en_main_parts"><!-- closed in after_main -->    
+       
+  <div id="en_header">
+     <div class="branding_bar">
+      <div class="content_row">
+        <a href="http://oreilly.com"><img id="logo" src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/orm_branding_bar_transparent_logo.png" alt="O'Reilly Media, Inc" width="129" height="22" border="0" /></a>
+<div id="velocity_links">
+  <div class="inner">
+    <div style="padding-top:5px; text-transform:uppercase;"><span class="static">Velocity Conference:</span>&nbsp;&nbsp;<a href="http://velocityconf.com/sc">Santa Clara</a>&nbsp; &#8226; &nbsp;<a href="http://velocity.oreilly.com.cn/2014/">Beijing</a>&nbsp; &#8226; &nbsp;<a href="http://velocityconf.com/ny">New York</a>&nbsp; &#8226; &nbsp;<span class="current">Barcelona</span>
+    </div>
+  </div>
+</div>
+      </div><!-- div.content_row -->
+     </div><!-- div.branding_bar -->
+
+    <div id="inside_header">
+        <div class="content_row" style="position: relative;">
+        <div id="top_level_nav">
+<ul id="nav" class="superfish">
+                  
+                  <li><a href="https://en.oreilly.com/velocityeu2014/public/register" class="level_one">Register</a>
+  <ul class="level_two">
+    <li><a href="https://en.oreilly.com/velocityeu2014/public/register" class="level_two">Pricing &amp; Registration</a></li>
+	<li><a href="/velocityeu2014/public/content/all-access" class="level_two">Velocity All-Access Pass</a></li>
+	<li><a href="/velocityeu2014/public/content/convince-manager" class="level_two">Convince Your Manager</a></li>
+	<li><a href="/velocityeu2014/public/content/media" class="level_two">Media Registration</a></li>
+	<li><a href="/velocityeu2014/public/content/hotel" class="level_two">Venue, Hotel &amp; Travel</a></li>
+    	
+  </ul>
+</li>
+
+<li><a href="http://velocityconf.com/velocityeu2014/public/schedule/grid/public" class="level_one">Program</a>
+  <ul class="level_two">
+    <li><a href="http://velocityconf.com/velocityeu2014/public/schedule/grid/public" class="level_two">Schedule</a></li>
+    <li><a href="/velocityeu2014/public/schedule/stype/tutorial" class="level_two">Tutorials</a></li>
+	<li><a href="#" class="level_two" style="cursor:default;">Sessions by Track</a>
+		<ul class="level_three">
+        <li><a href="/velocityeu2014/public/schedule/topic/1178" class="level_three">Performance</a></li>
+        <li><a href="/velocityeu2014/public/schedule/topic/1179" class="level_three">Operations</a></li>
+		<li><a href="/velocityeu2014/public/schedule/topic/1180" class="level_three">Mobile</a></li>
+		<li><a href="/velocityeu2014/public/schedule/topic/1181" class="level_three">Culture &amp; Organizational Change</a></li>
+        <!--li><a href="/velocityeu2014/public/schedule/topic/???" class="level_three">Sponsored Sessions</a></li-->
+      </ul>
+	</li>
+	<li><a href="/velocityeu2014/public/schedule/stype/keynote" class="level_two">Keynotes</a></li>
+	<li><a href="/velocityeu2014/public/schedule/speakers" class="level_two">Speakers</a></li>
+    
+    <li><a href="/velocityeu2014/public/schedule/stype/event" class="level_two">Events</a></li>
+    
+    
+    
+  </ul>
+</li>
+
+
+
+<li><a href="/velocityeu2014/public/content/sponsors" class="level_one level_main">Sponsor Pavilion</a>
+  <ul class="level_two">
+    <li><a href="/velocityeu2014/public/content/sponsors" class="level_two">Sponsors</a></li>
+    <li><a href="/velocityeu2014/public/content/exhibitors" class="level_two">Exhibitors</a></li>
+    <li><a href="/velocityeu2014/public/content/media-partners" class="level_two">Media Partners</a></li>
+    
+  </ul>
+</li>
+
+<li><a href="/velocityeu2014/public/content/contact" class="level_one level_main">Connect</a>
+  <ul class="level_two">
+    <li><a href="/velocityeu2014/public/content/contact" class="level_two">Contact Us</a></li>
+    
+    <li><a href="/velocityeu2014/user/account" class="level_two">Your Account</a></li>
+  </ul>
+</li>
+
+<li><a href="/velocityeu2014/public/content/about" class="level_one level_main">About</a>
+  <ul class="level_two">
+    <li><a href="/velocityeu2014/public/content/about" class="level_two">About Velocity</a></li>
+    <li><a href="/velocityeu2013/" class="level_two" target="_blank">Velocity Europe 2013</a></li>
+    <li><a href="http://velocityconf.com" class="level_two" target="_blank">Other Velocity Events</a></li>
+    <li><a href="http://oreilly.com/conferences/diversity.html" class="level_two" target="_blank">Conference Diversity</a></li>
+	<li><a href="http://oreilly.com/conferences/code-of-conduct.html" class="level_two" target="_blank">Code of Conduct</a></li>
+  </ul>
+</li>
+
+
+<li><a href="/velocityeu2014/user/account" class="level_one level_main">Your Account</a>
+<ul class="level_two">
+  <li><a href="/velocityeu2014/user/account" class="level_two">Log in</a></li>
+
+</ul>
+</li>
+
+                  
+</ul>
+</div><!-- #top_level_nav-->
+            <a href="/velocityeu2014" border="0"><img id="event_logo" src="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity14_logo.png" alt="Velocity Conference" width="363" height="99" border="0" /></a>
+                       
+            <div id="tagline_date_location">
+              <div class="tagline_date_location">
+                 <div class="tagline">Building a Faster, Stronger Web</div>
+                 <div class="date_location">17&ndash;19 November, 2014<br /><span class="location">Barcelona, Spain</span></div>
+              </div><!-- tagline_date_location -->
+           </div><!-- #tagline_date_location -->
+          
+           
+         </div><!-- div.content_row -->
+    </div> <!-- inside_header --> 
+  </div><!-- //en_header -->
+  <div id="en_body">
+    <div id="en_main">
+    <div id="mid">
+    
+     
+
+	
+	<div id="en_preamble">
+		<div>
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+<div style="float: right; margin-left: 20px;">
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+<a href="https://en.oreilly.com/velocityeu2014/public/register" class="btn-orange cta" style="line-height:1.7em;"><span style="text-transform: capitalize; font-weight: normal; font-size: 10px; font-size: 1.0rem;">See Pricing &amp; Packages<br />Early Price Ends  2 October</span></a></div>
+</div>
+<h1>All Tutorials &amp; Sessions</h1>
+<p>Below is the preliminary list of all confirmed sessions and tutorials for Velocity Europe 2014. We are still in the process of adding more content to the program, and will release the day-by-day schedule in the coming weeks.</p>
+	</div>
+
+
+
+<div id="en_proceedings">
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37693">A Journey to Component Driven Front End Web Development</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/137186">Andrew Betts</a> (FT Labs)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  At the FT we have 600 web domains, dozens of live web products, some old, some new, and ever more complex solutions to get the best user experience.  We&#x27;re making the change to drive everything from shared components, using an open source model, and this talk will briefly explain how.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36910">Advanced Image Compression Techniques</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/125405">Tobias Baldauf</a> (Akamai)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  Image assets are a major impediment to page load times. Best practices for common image compression have been evangelized. To further reduce image bytesize, we have to get creative: discover how to apply lossy compression to lossless formats, automatically detect good compression levels and learn how disciplines like computer vision and machine learning can help us to improve image compression.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37330">An Introduction To Statistical Anomaly Detection</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/142">Baron Schwartz</a> (VividCortex)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  An overview of statistical techniques for anomaly detection: how it&#x27;s done, how well it works on machine data, what we can learn from other disciplines.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37170">Balancing Performance and Security of SSL/TLS Deployments</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/119869">John Graham-Cumming</a> (CloudFlare)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  More and more web sites are using HTTPS making understanding the performance and security tradeoffs of configuring SSL/TLS important. Some ciphers are fast, but insecure; others secure, but slower. This talk will detail best practices gathered from  one of the world&#x27;s largest SSL deployments at CloudFlare.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37705">Better Performance Through Better Design</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/175833">Mark Zeman</a> (SpeedCurve)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Everybody needs to care about performance but often only the engineers do. An exploration of how design processes and wrapping a layer of visual storytelling around the data can engage the whole organization and motivate change. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37127">Breaking News at 1000ms</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/144625">Patrick Hamann</a> (the Guardian)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Using new research and real world examples, Patrick will cover a range of techniques – from the controversial to bleeding edge – the Guardian are using to make their next generation website load as fast as possible, and ultimately breaking the news to the user within 1000ms.
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37766">Building a Device Lab</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/155837">Lara Hogan</a> (Etsy), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/163245">Destiny Montague</a> (Etsy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  Learn how to build a device lab as a product for your coworkers to test their work on a spectrum of operating systems and versions. We’ll cover how to choose devices, organization and cabling, power supply troubleshooting, and tips for getting your users to use the lab considerately.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37112">Building the FirefoxOS Homescreen</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/179106">Kevin Grandon</a> (Mozilla)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  We built a mobile OS, and we were crazy enough to do it in javascript.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37325">Caching the Uncacheable</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/141120">Artur Bergman</a> (Fastly)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  In the past, CDNs have been used to cache and distribute static objects. But issues around invalidation, staleness, and a lack of visibility have prevented us from using CDNs to fully leverage the benefits of caching when it comes to dynamic content. We&#x27;ll look at the challenges CDNs have faced with dynamic content and how to fully integrate your applications to leverage their global reach.  
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37805">Closing Reception (Sponsored by SOASTA)</a>
+				</div>
+				<div class="en_session_speakers">
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Join us after tutorials on the last day of Velocity for a Closing Reception and make those last connections before leaving the conference. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36806">Cognitive Biases in Engineering Organizations</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/79586">Jonathan Klein</a> (Etsy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Human logic, unlike that of the machines which we program and use every day, isn&#x27;t perfect.  We make mistakes, we establish bad mental habits, and we have many cognitive biases that negatively impact our ability to be successful engineers.  In this talk I will outline some of the most common biases that show up in engineering organizations, and how to recognize and overcome them.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37716">Collaboration Beyond the Tech Silo</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/119441">James Stewart</a> (Government Digital Service)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  The same commitment to collaboration, communication and empathy that drives devops can be applied much more widely across organisations, bringing together radically different disciplines to respond to user needs. This session looks at how to drive that sort of collaboration and how vital it is to transforming large organisations.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37137">Continuous and Visible Security Testing with BDD-Security</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/179776">Stephen de Vries</a> (ContinuumSecurity)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Security testing is often seen as a specialist activity that requires external experts with leather jackets. But security tests have a lot in common with functional tests. In fact, by using Selenium and open source security tools we can build re-usable, automated security tests that fit a CD pipeline and we can write them as specifications using JBehave so that they&#x27;re visible to the whole team.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37640">CoreOps - CoreOS for Sysadmins</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/181647">Kelsey Hightower</a> (CoreOS)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  Linux containers provide the ability to reliably deploy 1000s of application instances in seconds, but how do we manage it all? The answer is CoreOS.  This workshop will help you wrap your mind around complex topics such as distributed configuration management, service discovery, and application scheduling. 
+
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37970">Cultures of Continuous Learning</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/152299">Vanessa Hurst</a> (CodeMontage)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  “In times of drastic change, it is the learners who inherit the future.” Ever-changing technologies and evolving systems require we never stop learning, but how does successful learning happen in increasingly complex organizations?
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36948">Customizing Chef for Fun and Profit</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/129964">Jon Cowie</a> (Etsy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  A whistlestop tour through the internals of Chef, exploring how everything fits together and the various places you can hook in custom code. I&#x27;m particularly going to focus on helping you decide when it&#x27;s appropriate to use each customization type and also whether or not you *should* customize.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37118">Delivering Optimal Images for Phones and Tablets on the Modern Web</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/107272">Joshua Marantz</a> (Google)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Evolving mobile hardware and networks have made it challenging for web sites to deliver an optimal experience to each client. If you send the same image to both a WiFi Retina tablet and a 3G phone, you compromise speed and bandwidth cost against image quality. We&#x27;ll look at using HTML and CSS image markup, CDNs, HTTP caching directives and how WPO can deliver a great UX with minimal effort.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37146">Design Reviews for Operations</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/135930">Mandi Walls</a> (Chef)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  This talk includes some guidance and tips for Operations folks attending design review meetings with Development teams in advance of the launch of a new feature or application.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37728">Diving Deep into RUM-based Mobile Waterfalls</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/139568">Mike McCall</a> (Akamai Technologies Inc)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  A new performance timing spec from the W3C, Resource Timing, is now supported in recent versions of some mobile browsers.  We will take a deep dive into the Resource Timing-based RUM data we get from mobile devices, examine their waterfalls, and make an attempt to understand what does and doesn&#x27;t make a difference in mobile performance.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37720">Don’t kill yourself: Mobile web perf tricks that aren’t worth it—and some that are</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/122259">Lyza Gardner</a> (Cloud Four)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Pain for gain. Certainly—sometimes. Meaningful leaps in performance occasionally require heroic effort. But is it always worth it? And does it have to be so hard? There’s quite a collection of RWD and mobile web performance tips and hacks out there; let’s assess which ones deliver satisfaction and which ones leave you sweaty, angry and with little real result. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37081">Etsy’s Journey to Building a Continuous Integration Infrastructure for Mobile Apps</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/163248">Nassim Kammah</a> (Etsy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  At this time, the app stores approval process prevents us from practicing Continuous Delivery for native mobile apps. Nonetheless, we can still practice agile development, committing often and detecting defects as early as they are introduced with a robust continuous integration infrastructure. This talk will explore Etsy&#x27;s journey to building such an infrastructure.
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36864">Everything You Wanted to Know About Web Performance (But Were Afraid to Ask)</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/94006">Tammy Everts</a> (Radware), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/159203">Kent Alstad</a> (Radware Canada)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  This tutorial covers a broad set of performance fundamentals — from user expectations to business metrics to optimization best practices — to help you hit the ground running for the next three days.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37191">Extreme Web Performance for Mobile Devices</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/69608">Maximiliano Firtman</a> (ITMaster Professional Training)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  The mobile web space moves really fast and every year the whole ecosystem changes. But one thing remains unchanged: the need for extreme performance. If you have a mobile site, a responsive web or you are about to create one, this tutorial will give you the techniques to measure and improve the performance after understanding the mobile web world today and testing on your own mobile device.
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36978">Guide to survive a World Wide Event </a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/179892">Almudena Vivanco</a> (Telefónica I+D), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/179894">Mateus Bartz</a> (Telefónica)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Movistar TV is the Telefonica online tv solution, broadcasting in Spain, Brazil, Chile, Argentina and Peru. Since 2013 a team of 200 people are working together in offering the best online experience and our goal for 2014 is FIFA World Cup. Continuous Performance Integration and monitoring is the key to success to achieve the best experience in events like Barça-Madrid in 2013
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37190">High Performance WebSocket</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/109402">Wesley Hales</a> (Shape Security)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Adding a WebSocket service to an application is often misunderstood to be high performance by default, however there are many more considerations that must be made, both on the client and server, before the best performance can be achieved. This talk will provide the checklist and examples you need to fine tune your application’s real-time performance. 
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37176">How BBC Sport Scales Engineering</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/162968">Keith Mitchell</a> (BBC)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  BBC Sport online is Europe&#x27;s best-loved Sports site handling billions of requests each month. The engineering team behind this has expanded rapidly over the past 2 years and has established new working practices in order to deliver a team as performant as the final product. This session describes the key aspects of our culture, how it&#x27;s evolved, the challenges we faced and our current approaches.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37116">How we Sped up Baidu Map&#x27;s Mobile Website to the Next Level</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/176531">Zheng Jia</a> (Baidu)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Maps are one of the fundamental services for mobile users and are more often used on mobile platform than others. So the performance of map mobile sites is so important that no one should ignore. Speeding up the sites can reduce the time that users find places, get directions, make decisions about where to eat, etc.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37203">Is TLS Fast Yet?</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/88031">Ilya Grigorik</a> (Google)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  TLS has exactly one performance problem: it is not used widely enough. Everything else can be optimized.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37084">IT Janitor - How to Tidy Up</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/163165">Mark Barnes</a> (Financial Times)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Unless you are a startup with only one product line you probably have systems that you need to decommission. Chances are those systems are already slowing you down.    This session is about the lessons learnt by the decommissioning team at the Financial Times while we tried to put away the old broken toys to make enough space to play with the new ones.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37141">It&#x27;s 3AM, Do You Know Why You Got Paged?</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/156158">Ryan Frantz</a> (Etsy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  When it’s three in the morning, it’s hard enough waking up, let alone getting your brain in gear to fix problems. Computers should provide us with additional context around an alert, so that we can resolve issues faster and get back to sleep. This presentation discusses how to contextualize alerts, automatically, so that engineers can address issues faster and get back to what they were doing.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36906">Kanban - A Way Towards DevOps in the Legacy Enterprise</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/179187">Yuval Yeret</a> (AgileSparks)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  The Kanban Method is a way to evolve towards a more effective flow-oriented operation that is very aligned with DevOps thinking. In this session we will see how exactly this process works and how it can help guide legacy enterprises towards the promised land of a DevOps culture, structure and toolchain. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37751">Life after ‘Human Error’</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/182743">Steven Shorrock</a> (EUROCONTROL)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  When things go wrong in organizations, one thing is almost always found in the post-mortem: ‘human error’. But things are not so straightforward. ‘Human error’ fails to capture the context and complexity of work and systems. There is a better way. Let’s journey through the steps of recovery, from explaining away events to understanding how your system really works. 
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/38145">LIGHTNING DEMO: Always Keep an Eye on Your Website Performance - PerfBar</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/186602">Khalid  Lafi</a> (WireFilter)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  PerfBar is a tool that puts dozens of metrics (as well as custom metric support) at the tip of your fingers with just a single script include. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37195">Lightning Demos</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/88031">Ilya Grigorik</a> (Google), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/180291">Nils Kuhn</a> (iteratec GmbH), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/129818">Uwe Beßle</a> (iteratec GmbH)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  There will be two separate lightning demos presented at this time.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37628">Linux Containers From Scratch</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/176878">Joshua Hoffman</a> (SoundCloud)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  Linux containers are the new hotness. I will deconstruct the Linux Container concept, discuss what linux containers are and are not, explore the available tools, and walk through building linux containers from scratch.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37824">Look, Ma, No Image Requests!</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/173268">Pamela Fox</a> (Khan Academy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  In a single day and one code review, we were able to remove 10+ HTTP requests for images from our landing page, and sped up the page load time by more than 2x. This talk looks at the 5 different techniques for removing those images and the tools that made those techniques easier.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37692">Lossy Compression of True-color PNG Images</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/182088">Kornel Lesiński</a> (FT Labs)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  PNG images with alpha transparency are incredibly useful in web design, but their large file sizes are at odds with good page performance.
+
+With a special encoder it&#x27;s possible to create PNG images that are up to 40% smaller, and still compatible with all browsers, support smooth transparency and millions of colors.
+
+I&#x27;m going to show you how to do it, whether you&#x27;re a designer or a developer.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37823">Lowering the Barrier to Programming</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/173268">Pamela Fox</a> (Khan Academy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  As the web gets bigger and more ubiquitous, we will need more programmers and more people understanding programming. How can we do that? I&#x27;ll share what I&#x27;ve learned from teaching programming to newbies, online at Khan Academy and in-person for women in San Francisco.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36964">Mansplaining 101: Cisadmin Edition</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/179646">Marni Cohen</a> (Puppet Labs)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Mansplaining is tricky to identify, but easy to avoid. It’s also one of the biggest obstacles to creating a diverse technical team — especially one that’s welcoming to women. Learn how to foster a work environment that’s inclusive for all, and build a stronger team.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37296">Microservices - What an Ops Team Needs to Know</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/133468">Michael Brunton-Spall</a> (Government Digital Service)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Your software architects are probably out there drinking the Microservices kool-aid right now, and dreaming of building the next system using those patterns.
+Microservices is a wonderful silver bullet that has the possibility and capability to make an operations teams life a complete nightmare.
+Learn how to talk to your architects and dev team and help them think about the problems
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37123">Mobile Performance: When is Good Practice Irresponsible?</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/146415">Andy Still</a> (Intechnica)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  This session will look at some recommendations for performance improvement on mobile devices and ask whether they are responsible or irresponsible when viewed beyond just performance of our application. This will cover areas such as the impact on battery life, data usage and other issues that can lead to users removing apps. We will also look at what can be done to minimise these negative impacts.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37887">Monday Opening Welcome</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/1669">Steve Souders</a> (Fastly), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/74932">Courtney Nash</a> (O&#x27;Reilly), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/1351">John Allspaw</a> (Etsy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Program Chairs, Steve Souders, Courtney Nash and John Allspaw, open the first day of keynotes. Additional keynote speakers will be announced soon.
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36976">Monitoring: The Math Behind Bad Behavior</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/4103">Theo Schlossnagle</a> (OmniTI/Circonus)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Understand how applied math can make sense out of the overwhelming flow of metrics.  We&#x27;ll discuss strategies and manage expectations for the future of &quot;big data&quot; style monitoring.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37218">Offline-first Web Apps</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/180092">Matt Andrews</a> (Financial Times)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Service Worker is set to turn the web on its head, enabling websites to run fast on any connection.  Learn how to use it and its predecessor to eliminate the network to create web apps with unbeatable performance.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37209">Performance is a People Problem</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/115971">Ben Evans</a> (jClarity)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  In this session, we will discuss how the care and feeding of modern production environments extends beyond the domain of the Ops team, and into development, testing and management functions. We&#x27;ll examine common communication and other problems (such as cognitive biases), and look at some innovative ways to approach solving them.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37080">Performance Testing 101</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/157316">Ian Molyneaux</a> (Intechnica)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  Because of the expectation for increasingly complex applications to be deployed quickly, many professionals don&#x27;t take the time to ensure that they&#x27;ll perform well or scale effectively. Ian Molyneaux, author of &quot;The Art of Application Performance Testing&quot;, will explain the complete life cycle of the testing process and will demonstrate best practices to help your performance tests succeed.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36865">Progressive Image Rendering: Good or Evil?</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/94006">Tammy Everts</a> (Radware), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/159203">Kent Alstad</a> (Radware Canada)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Everyone has strong opinions about progressive images. Some believe that progressive images improve performance by showing the user something while they look at the screen. But others believe that progressive images increase user frustration. We took these assumptions to the lab to see if we could definitively answer the question: do progressive images deliver a better or worse user experience?
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36013">Recruiting for Diversity in Tech</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/3047">Laine Campbell</a> (Pythian)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  As technology jobs become increasingly hard to fill, the average starting salary of an engineer in the valley is more than the median family income in the US for many demographics. Laine will discuss how to build your organization to become a culture and process that drives diversity in recruiting, hiring and retaining.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37156">Recycling: Why the Web is slowing your Mobile App</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/150179">Colin Bendell</a> (Akamai)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  If you are building a mobile app or hybrid responsive app you are probably thinking deeply about reusing components and data APIs from your web site. In this talk we will explore some common pitfalls in using web components &amp; web APIs in mobile apps. We will look at the impact on operations, network performance, scalability and reliability - and how to overcome these challenges.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37152">Responsive and Fast: Iterating Live on a RWD Site</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/150179">Colin Bendell</a> (Akamai)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  This workshop will show how we can take a Responsive site and by making key changes improve the performance for different screens resolutions, network conditions and devices.   We will take a “naïve” RWD site, transform it, and make it fast using commonly available tools and techniques before your very eyes.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37178">Responsive Images are Coming to a Browser Near You</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/155970">Yoav Weiss</a> (WL Square)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Today, Responsive Web design often means using one of the various Responsive Images hacks or take a performance hit. In a short while, that will no longer be the case. A native Responsive Images solution is coming soon to a browser near you. In this session we will discuss this solution in depth, and see how you can start using it in your current designs.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37231">RIP Onload: Finding a Better Measurement Yardstick</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/150588">Buddy Brewer</a> (SOASTA), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/56035">Philip Tellis</a> (SOASTA)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Looking for an alternative to onload? Let&#x27;s find one together.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37211">Running Cross Functional Service Teams</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/178662">Philip Reynolds</a> (Workday)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Service orientated architecture and, more recently, microservice architectures have become popular patterns as large scale architectures. The idea of decoupling services and having independently deployable units lends itself well to large scale applications in the cloud.
+
+Those same principles of autonomous units can also be applied organisationally leading to greater efficiencies at scale.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36993">RWD is not a Panacea</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/53274">Estelle Weyl</a> (Standardista.com)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Responsive Web Design is the solution for improving your mobile site. Or is it?  A bloated site that simply shrinks in width is not a usable site. Squishy design is not the only, or even the main, solution for improved mobile user experience. Learn how to leverage modern web standards to improve performance so your sites, responsive or not, are more usable, accessible. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37804">Sponsor Pavilion Reception</a>
+				</div>
+				<div class="en_session_speakers">
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Join us in the Sponsor Pavilion on Tuesday, 18 November after sessions for the Velocity Sponsor Pavilion Reception. Visit the exhibitors, mingle with other attendees, and enjoy great refreshments and drinks. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37111">Statistical Learning-based Automatic Anomaly Detection @Twitter</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/150556">Arun Kejariwal</a> (Twitter)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  High performance and availability is key to providing the best end-user experience. In this regard, one of the challenges is to proactively detect anomalies – which may occur due to, for example but not limited to, events such as Superbowl – so as to mitigate their impact. We present a statistically rigorous method for automatic anomaly detection.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37329">Teams Are Systems, Too: The Theory Of Constraints In Action</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/142">Baron Schwartz</a> (VividCortex)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  This is a story of how systems taught me about people, and people taught me about systems. Once you see it, you can&#x27;t unsee it: systems and teams both do work, and have the same types of bottlenecks. The real breakthrough is figuring out what to do about it, and that&#x27;s where systems and people are very different. I&#x27;ll share in detail.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37264">The Black Magic of Engineering Management</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/25240">Adam Christian</a> (Sauce Labs Inc)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  I&#x27;ve spent the last four years at Sauce Labs making the transition from small startup Javascript Developer, to &quot;Engineering Management&quot; in a rapidly growing startup environment. I would like to share what I&#x27;ve learned about management, startups, and personal growth.  This is the talk I wish I had seen, regularly, for the last 4 years - it would have saved me mountains of time and heartache.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37215">The Interruptive Nature of Operations</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/137037">Avleen Vig</a> (Etsy), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/150204">Carolyn Rowland</a> (Independent)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  How do you improve your productivity in a high-interrupt environment? This tutorial discusses the impact of interruptions on individuals in centralised and distributed teams. We&#x27;ll discuss the causes of interruptions, their impact, and methods to overcome the challenges presented. Engineers and managers will learn about ways interruptions can be managed to reduce stress and increase productivity.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36837">The Machine is Dead, Long Live the Machine! - Service Resilience and Deployment Automation at The BBC</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/166140">Yavor Atanasov</a> (BBC)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  This session will cover the tools and services we are developing to allow BBC teams to build scalable and resilient services on AWS and other providers. We will cover infrastructure provisioning, software building, baking of machine images, service isolation, security, deployment orchestration and more. We will also look at how these tools reflect and shape engineering culture at the BBC.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36958">The Path Forward: Scaling Management without Sacrificing Culture</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/119976">Patrick McDonnell</a> (Etsy), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/119981">Mike Rembetsy</a> (Etsy)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  How can your organization scale management without sacrificing the culture you have worked hard to build? Grow your own managers! This talk will focus on the steps Etsy has taken to overcome the pitfalls that lie in the path of transitioning from individual contributor to manager and how to encourage those who want to become managers for the right reasons.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37888">Tuesday Opening Welcome</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/1351">John Allspaw</a> (Etsy), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/74932">Courtney Nash</a> (O&#x27;Reilly), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/1669">Steve Souders</a> (Fastly)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Program Chairs, John Allspaw, Courtney Nash and Steve Souders open the second day of keynotes. Additional keynote speakers will be announced soon.
+
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/36030">Using Promise Theory to Improve Digital Service Quality</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/154703">Jeff Sussna</a> (Ingineering.IT)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  
+
+
+Promise Theory is a formal model for describing complex distributed systems. It can also be used to describe socio-technical systems such as DevOps or even entire digital service organizations. This session will demonstrate Promise Theory’s ability to improve service quality by helping us increase empathy and better understand certainty and uncertainty in the systems we manage. 
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/38135">Velocity Ask The Audience Quiz</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/125323">Perry Dyball</a> (Seatwave Ltd), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/119828">Stephen Thair</a> (DevOpsGuys)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  In the closing session rather than having the audience asking a panel of experts for their top performance tips, we are going to be asking YOU for all the answers. Using quiz tech from getkahoot.com, there will be rounds on Web Performance, DevOps, Mobile and finally Miscellanea where things get a little freaky! Make sure your smart phones are powered up for a chance to win some great prizes.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/38105">WebPerfDays</a>
+				</div>
+				<div class="en_session_speakers">
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Inspired by the ever popular DevOpsDays, WebPerfDays is the “unconference” conference that brings the web performance community together. WebPerfDays Barcelona 2014 takes place 20 November, the day after Velocity in Barcelona.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37181">What are Third-party Components Doing to Your Site&#x27;s Performance?</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/125942">Andy Davies</a> (NCC Group), 
+	
+		<a href="/velocityeu2014/public/schedule/speaker/180332">Simon Hearne</a> (NCC Group)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  Sites increasingly rely on third-party scripts to deliver features but there is little data on how they interact with our sites and what their impact on performance is.
+
+We’ve been analysing the data from ites we monitor to get a better understanding of third-party performance and in this session will share our findings along with advice on how to make informed choices.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37303">What Ops Can Learn From Design</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/4658">Robert Treat</a> (OmniTI)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  If you think there is a gap between dev &amp; ops, then design must seem like it comes from another planet. But many of the core ideas behind design work are directly applicable to the world of ops, especially given that running a successful website is no longer (just) about keeping servers up, but about designing human &amp; technical systems that help enable people achieve continuous operations.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37180">Who&#x27;s Afraid of the Big Bad Preloader?</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/155970">Yoav Weiss</a> (WL Square)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+				
+				<div class="en_session_description">
+				  The preloader is an essential performance optimization mechanism that exists across all modern browsers, yet it remains a mystery to many Web developers. In this session, we will explain what the preloader is, what it does, what developers need to know about it, and what the future may hold for it.
+				</div>
+			</div>
+	
+		
+		
+			
+		
+                
+                <div class="en_session">
+				<div class="en_session_title">
+					<a href="/velocityeu2014/public/schedule/detail/37017">Zero Downtime Deployment with Ansible</a>
+				</div>
+				<div class="en_session_speakers">
+	
+		<a href="/velocityeu2014/public/schedule/speaker/175437">Stein Inge Morisbak</a> (Bekk Consulting AS)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+                        
+                 
+			<div class="session_type_note">
+				<span class="label label-workshop">Tutorial</span> <strong>Please note:</strong> to attend, your registration must include <a href="/velocityeu2014/public/register">Tutorials</a> on Wednesday.<!-- p.id  -->
+			</div>
+		
+				
+				<div class="en_session_description">
+				  Ansible is a radically simple and lightweight provisioning framework which makes your servers and applications easier to provision and deploy. In this tutorial you will be given an introduction to Ansible and learn how to provision Linux servers with a web-proxy, a database and some other packages. Furthermore we will automate zero-downtime deployment of a Java web application.
+				</div>
+			</div>
+	
+</div>
+
+
+</div><!-- #mid -->
+
+
+<style>#sponsors_contacts.row { border-top: 2px solid #B5B5B5; }</style>
+<div id="sponsors_contacts" class="row">
+<div id="sponsor_container">
+
+
+<div id="sponsor_title">&nbsp;</div>
+<!--sponsors title image-->
+<div class="spacer">&nbsp;</div>
+<div id="sponsors">
+
+
+<div class="big_sponsor_level">Diamond Sponsor</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.keynote.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/keynote14150.gif" alt="Keynote Systems" width="150" border="0" /><span class="lazy_placeholder">Keynote Systems</span></a></li></ul>
+
+<div class="big_sponsor_level">Elite Sponsor</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.edgecast.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/verizonedgecast.gif" alt="EdgeCast, now part of Verizon" width="150" border="0" /><span class="lazy_placeholder">EdgeCast, now part of Verizon</span></a></li></ul>
+
+<div class="sponsor_list_heading">Platinum Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.compuware.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/compuware_apm.gif" alt="Compuware Corporation" width="120" height="40" border="0" /><span class="lazy_placeholder">Compuware Corporation</span></a></li><li><a href="http://www.limelight.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/limelight.gif" alt="Limelight Networks, Inc." width="120" height="26" border="0" /><span class="lazy_placeholder">Limelight Networks, Inc.</span></a></li></ul>
+
+<div class="sponsor_list_heading">Gold Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.akamai.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/akamai-2.gif" alt="Akamai" width="105" height="44" border="0" /><span class="lazy_placeholder">Akamai</span></a></li><li><a href="http://www.appdynamics.com/free" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/appdynamicsgrey.gif" alt="AppDynamics" width="120" height="12" border="0" /><span class="lazy_placeholder">AppDynamics</span></a></li><li><a href="https://www.pingdom.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/pingdom.gif" alt="Pingdom" width="120" height="63" border="0" /><span class="lazy_placeholder">Pingdom</span></a></li></ul>
+
+<div class="sponsor_list_heading">Silver Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.aerospike.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/aerospike.gif" alt="Aerospike" width="120" height="21" border="0" /><span class="lazy_placeholder">Aerospike</span></a></li><li><a href="http://www.catchpoint.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/catchpoint.gif" alt="Catchpoint" width="120" height="31" border="0" /><span class="lazy_placeholder">Catchpoint</span></a></li><li><a href="http://www.getchef.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/chef.gif" alt="Chef" width="102" height="100" border="0" /><span class="lazy_placeholder">Chef</span></a></li><li><a href="http://www.dyn.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/dynlogo.gif" alt="Dyn Inc." width="120" height="47" border="0" /><span class="lazy_placeholder">Dyn Inc.</span></a></li><li><a href="http://www.facebook.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/facebook14.gif" alt="Facebook" width="120" height="39" border="0" /><span class="lazy_placeholder">Facebook</span></a></li><li><a href="http://www.fastly.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/fastly.gif" alt="Fastly" width="120" height="46" border="0" /><span class="lazy_placeholder">Fastly</span></a></li><li><a href="http://www.incapsula.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/incapsula.gif" alt="Incapsula" width="120" height="24" border="0" /><span class="lazy_placeholder">Incapsula</span></a></li><li><a href="https://www.ruxit.com/?utm_source=velocity_east_website&utm_medium=conference&utm_campaign=velocity_east_fy15" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/ruxit.gif" alt="ruxit" width="120" height="38" border="0" /><span class="lazy_placeholder">ruxit</span></a></li><li><a href="http://smartbear.com/products/web-monitoring/website-monitoring/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/smartbearalertsite_uxm.gif" alt="SmartBear" width="120" height="29" border="0" /><span class="lazy_placeholder">SmartBear</span></a></li><li><a href="http://www.soasta.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/soasta_2.gif" alt="SOASTA" width="120" height="24" border="0" /><span class="lazy_placeholder">SOASTA</span></a></li><li><a href="http://www.thousandeyes.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/thousandeyes.gif" alt="ThousandEyes" width="120" height="85" border="0" /><span class="lazy_placeholder">ThousandEyes</span></a></li></ul>
+
+<div class="sponsor_list_heading">Innovator</div>
+<ul class="plain sponsorList"><li><a href="http://coscale.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/coscalelogo.gif" alt="CoScale" width="120" height="52" border="0" /><span class="lazy_placeholder">CoScale</span></a></li></ul>
+
+<div class="sponsor_list_heading">Media Partners</div>
+<ul class="plain sponsorList"><li><a href="http://barcelonajs.org/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/barcelonajs.gif" alt="BarcelonaJS" width="100" height="100" border="0" /><span class="lazy_placeholder">BarcelonaJS</span></a></li><li><a href="http://sixrevisions.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/six_revisions.gif" alt="Six Revisions" width="120" height="48" border="0" /><span class="lazy_placeholder">Six Revisions</span></a></li></ul>
+
+
+</div>
+
+
+<div id="contacts">
+<div>
+<h3>Sponsorship Opportunities</h3>
+<p>For exhibition and sponsorship opportunities, contact Gloria Lombardo at <a href="mailto:glombardo@oreilly.com">glombardo@oreilly.com</a></p>
+</div>
+<div>
+<h3>Partner Opportunities</h3>
+<p>For information on trade opportunities with O'Reilly conferences contact <a href="mailto:partners@oreilly.com">partners@oreilly.com</a></p>
+</div>
+<div>
+<h3>Press and Media</h3>
+<p>For media-related inquiries, contact Maureen Jennings at <a href="mailto:maureen@oreilly.com">maureen@oreilly.com</a></p>
+</div>
+<div>
+<h3>Contact Us</h3>
+<p>View a complete list of <a href="/velocityeu2014/public/content/contact">Velocity contacts</a></p>
+</div>
+</div><!-- /contacts -->
+
+</div><!-- /#sponsor_container -->
+</div><!--div#sponsors_contacts-->
+    </div><!-- en_main -->
+        
+            
+            <div id="en_footerwrap">
+                <div id="en_footer">
+                    <!-- after_main -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+
+<style type="text/css" media="screen">
+    div.banner_ad a[data-defer="random"] { display: none; }
+</style>
+<div class="banner_ad">
+    
+<div class="banners">
+<a href="http://www.edgecast.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/113/velocity2014_verizon_edgecast_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="EdgeCast, now part of Verizon">EdgeCast, now part of Verizon</a>
+<a href="http://www.keynote.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/121/velocityeu2014_keynote_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Keynote Systems">Keynote Systems</a>
+</div>
+
+
+</div> <!-- .banner_ad -->
+
+
+<div id="footer_logo">
+    
+	<div class="copyright">
+		&copy;2014, O'Reilly UK Ltd<br />(800) 889-8969 or (707) 827-7019 <br />Monday-Friday 7:30am-5pm PT<br /> All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.<br />
+<a href="mailto:conf-webmaster@oreilly.com" class="webmaster">conf-webmaster@oreilly.com</a>
+	</div>
+</div> <!-- div#footer_logo-->
+<div class="footercol">
+    <ul>
+        <li><strong>Velocity</strong></li>
+        <li><a href="/velocityeu2014/public/content/about">About</a></li>
+
+
+<li><a href="https://en.oreilly.com/velocityeu2014/public/register">Register for Velocity</a></li>
+        <li><a href="/velocityeu2014/public/content/hotel">Venue, Hotel &amp; Travel</a></li>
+
+        <li><a href="http://www.oreilly.com/conferences/diversity.html" target="_blank">Diversity</a></li>
+        <li><a href="http://www.oreilly.com/conferences/code-of-conduct.html" target="_blank">Code of Conduct</a></li>
+        <li><a href="/velocityeu2014/public/content/sitemap">Sitemap</a></li>
+        <li><a href="http://velocityconf.com">More Velocity Events</a></li>
+        <li><a href="http://www.oreilly.com/privacy.html" target="_blank">Privacy Policy</a></li>
+    </ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>Stay Connected</strong></li>
+  <li><a href="/velocityeu2014/public/content/contact">Contact Us</a></li>
+  <li><a href="http://post.oreilly.com/form/oreilly/signup" target="_blank">Velocity Bulletin</a></li>
+  <li><a href="http://post.oreilly.com/form/oreilly/signup" target="_blank">Web Ops &amp; Performance Newsletter</a></li>
+  <li><a href="http://twitter.com/velocityconf" target="_blank">Twitter</a></li>
+  <li><a href="http://www.facebook.com/velocityconf" target="_blank">Facebook</a></li>
+  <li><a href="http://www.linkedin.com/groups?gid=1303037" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>More O'Reilly Sites</strong></li>
+  <li><a href="http://conferences.oreilly.com" target="_blank">O'Reilly Conferences</a></li>
+  <li><a href="http://www.oreilly.com" target="_blank">oreilly.com</a></li>
+  <li><a href="http://radar.oreilly.com" target="_blank">O'Reilly Radar</a></li>
+  <li><a href="http://oreilly.com/videos/" target="_blank">O'Reilly Video</a></li>
+  <li><a href="http://www.oreilly.com/webcasts/" target="_blank">O'Reilly Webcasts</a></li>
+  <li><a href="http://oreillyschool.com/" target="_blank">School of Technology</a></li>
+  <li><a href="http://igniteshow.com" target="_blank">Ignite</a></li>
+</ul>
+</div>
+                </div>
+            </div>
+        </div><!-- div#en_body -->
+    </div><!-- en_main_parts -->
+    
+    
+</div><!-- en_content -->
+
+
+
+<link href="//cdn.oreillystatic.com/en/assets/1/event/121/velocityeu2014_btf_css.css" media="screen" rel="Stylesheet" type="text/css" />
+
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 966350787;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/966350787/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+  <script type="text/javascript">
+  $(function() {
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+
+
+  });
+  </script>
+
+  
+
+  
+  <script>
+  $(document).ready(function () {
+
+    /* init nav */
+    $("#top_level_nav #nav").superfish();
+
+  
+
+    /* make links with class=external open up external */
+    $("a.external").click(function (e) {
+      e.preventDefault();
+      window.open($(this).attr("href"));
+    });
+
+  });
+  </script>
+
+  
+   
+
+  <!--lazy load images -->
+  <script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/lazyload_min_v2.js" type="text/javascript"></script>
+
+  <!-- effects -->
+  <script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/superfish_v1.3.1.js" type="text/javascript"></script>
+
+  <script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/accordion.js" type="text/javascript"></script>
+
+  
+  <script language="javascript" type="text/javascript">
+  <!--
+      // Initialize Banners
+      $( function () {
+           if ($('div.banners').length) {
+              $( "div.banner_ad" ).each( function ( i, e ) {
+                      var banners = new Array();
+                      $( e ).find( 'a[data-defer="random"]' ).each( function( i0, e0 ) {
+                              banners.push( $( e0 ) );
+                          });
+                      
+                      var b = banners[ Math.floor( Math.random() * banners.length ) ];
+                      var i = $( "<img />" );
+                      i.load( function() { b.html( i ); b.fadeIn( 1000 ); } );
+                      i.attr( "src", b.attr( "data-img-src" ) );
+                      i.attr( "alt", b.attr( "data-img-alt" ) );
+                  });
+             }
+          });
+  //-->
+  </script>
+
+
+
+<!-- js/chartbeat_footer --> 
+<script type="text/javascript">
+	var _sf_async_config={uid:1632,domain:"velocityconf.com"};
+	(function(){
+		function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			(("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			"js/chartbeat.js");
+			document.body.appendChild(e);
+		}
+		
+		var oldonload = window.onload;
+		window.onload = (typeof window.onload != 'function') ?
+		loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+<!-- site catalyst -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var localScAcct = "orvelocityeu"; 
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--//
+ /* Specify the Report Suite ID(s) to track here */ 
+/* localScAcct is specified in content/scripts/sitecatalyst_cfg */
+//var globalScAcct = "ororeillyglobaldev";
+var globalScAcct = "orglobal";
+
+var s_account = localScAcct + "," + globalScAcct;
+/*s_code.js must be called via the current protocol to avoid mixed content warnings */
+var s_code_protocol;
+var s_code_url = "cdn.oreillystatic.com/assets/js/s_code.js";
+if (window.location.protocol == "https:"){
+document.write('<script id="s_code_script" type="text/javascript" src="https://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' + '/script>');
+}else{
+document.write('<script id="s_code_script" type="text/javascript" src="http://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' +'/script>');
+}
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var myChannel, myPageName, myTitle, mySeries, myEvent, myEventTitle, mySection, mySection2, mySection3, myLoggedStatus,myEventPhase,localScAcct,myPubDate,mySystemPageType;
+
+if(typeof(myTitleAppend) == 'undefined')
+var myTitleAppend = "";
+else myTitleAppend = ": " + myTitleAppend;
+
+myChannel = "confs";
+
+myTitle       = "all tutorials &amp; sessions" + myTitleAppend;
+
+
+mySection   = new Array(myChannel);
+mySeries = "velocity";
+
+mySection.push(mySeries);
+mySection2 = mySection.slice(); 
+
+myEventPhase = "registration"; 
+
+var myEventStartDate = new Date ("November 17, 2014");
+var today            = new Date();
+if (today > myEventStartDate){
+     myEventPhase = "post-conference";
+}
+ myPubDate = "11/17/2014"; 
+myEventTitle = "Velocity Europe 2014";
+myEvent      = "velocityeu2014";
+mySection2.push(myEvent)
+
+mySection3 = mySection2.slice(); 
+mySystemPageType = "presentations";
+
+
+mySection3.push(mySystemPageType)
+myPageName   = myChannel + ":" + myEvent + " " + myTitle;
+mySection    = mySection.join(":");
+mySection2   = mySection2.join(":");
+mySection3   = mySection3.join(":");
+
+myLoggedStatus = "logged out";
+
+/* You may give each page an identifying name, server, and channel on
+the next lines..... */
+s.pageName = myPageName.toLowerCase(); 
+//s.server   = ""; OK TO DELETE THIS LINE?
+s.channel  = myChannel;
+//s.pageType = "";OK TO DELETE THIS LINE?
+s.prop1  = mySection;
+s.prop2  = mySection2;
+s.prop3  = mySection3;
+s.prop4  = mySystemPageType; //not using this currently
+s.prop5  = myTitle;
+s.prop7  = myPubDate;
+s.prop15 = s.eVar24 = myLoggedStatus;
+s.prop29 = myEventPhase;//this has more work to do.
+s.prop38 = myEventTitle;
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";  // need way to distinguish amongst these
+s.products="";     // only put products on for purchases.
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ororeillyglobaldev.122.2O7.net/b/ss/ororeillyglobaldev/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+<!-- crazy egg heatmap -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script"); var b=document.getElementsByTagName('script')[0]; a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000); a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3144621-21']);
+  _gaq.push(['_setSiteSpeedSampleRate', 100]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>

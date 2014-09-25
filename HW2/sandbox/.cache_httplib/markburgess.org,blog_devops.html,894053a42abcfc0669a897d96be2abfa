@@ -1,0 +1,644 @@
+status: 200
+content-length: 30857
+content-location: http://markburgess.org/blog_devops.html
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+server: Apache/2.2.16
+last-modified: Wed, 23 Jul 2014 08:53:31 GMT
+-content-encoding: gzip
+etag: "812310a-7889-4fed8797d7675"
+date: Mon, 22 Sep 2014 17:04:52 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Mark Burgess Website</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="green", allows you to change the colour of the text - other classes are: "blue", "orange", "red", "purple" and "yellow" -->
+          <h1><span class="green">homepage</span> mark burgess</h1>
+        </div>
+        <div id="menubar">
+          <ul id="menu">
+            <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+            <!-- put class="first" in the a tag for the first page in the menu -->
+            <!-- put class="last" in the a tag for the last page in the menu -->
+            <li class="tab_selected"><a class="first" href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="faust.html">Faust</a></li>
+            <li><a class="last" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+
+        <h1>Thoughts...</h1>
+
+           <h2>New book</h2>
+        <h3>The Science of information infrastructure</h3>
+
+         <a href="certainty.html"><img src="img/InSearchOfCertainty.jpg" width="200" align="right"></a>
+
+
+
+        <h2>Cloud minders</h2>
+        <h3>USENIX ;login, April 2009</h3>
+
+         <a href="https://www.usenix.org/publications/login/april-2009-volume-34-number-2/cloud-minders">Read</a>
+
+         <p></p>
+        <h2>CFEngine 3</h2>
+
+         <a href="http://cfengine.com">Read</a>
+
+         <p></p>
+        <h2>Don't criticize my grammar</h2>
+        <h3>A personal rant</h3>
+
+         <a href="grammar.html">Read</a>
+
+        <p></p>
+
+        <h2>Occasional letter diaries</h2>
+        <a href="letter1993.html">1993</a><br>
+        <a href="letter1995.html">1995</a><br>
+        <a href="letter1997.html">1997</a><br>
+        <a href="letter1999.html">1999</a><br>
+        <a href="letter2000.html">2000</a><br>
+        <a href="letter2002.html">2002</a><br>
+      </div>
+      <div id="content">
+
+        <!-- insert the page content here -->
+
+
+    <h1>The Promises of DevOps</h1>
+
+<h2>A promise theory perspective on DevOps</h2>
+
+<p>
+<i>DevOps is evolving from what started as little more than a rally cry, into a
+culture for continuous delivery of IT services.  As more pieces of the
+puzzle fall into place, we understand that DevOps is primarily
+a matter of human collaboration -- assisted, but not encompassed by,
+certain tools and technologies.  This essay is my take on DevOps, and why
+I think it is about embracing distributed, autonomous operational methods that
+support scalable </i>human-computer<i> processes.</i>
+
+<p>
+Cooperation within human-computer systems is an issue that has
+occupied me intensely since around 2002, when discussions at the
+USENIX LISA Configuration Management Workshop uncovered very different
+intuitions about how system administrators should work together with tools to build and
+maintain functioning IT systems.
+
+<p>For some reason, the discussion about cooperation became tangled
+with that of configuration management -- perhaps this was because
+configuration management was where the hard questions about operations
+were being discussed. But this was really a red herring.
+
+To anyone who studies cooperation, it becomes quickly clear that it
+has little to do with computers or programming or configuration at its heart. The principles of
+cooperation are the universal matters of <i>availability of information</i> and
+<i>intent</i>. Computers might be the agents through which intentions
+are expressed, but the major part of cooperation is a human story.
+
+
+<h4>DevOps and Service Delivery</h4>
+
+<p>
+The term DevOps emerged (some would say it <a
+href="http://itrevolution.com/the-convergence-of-devops/">converged</a>)
+from the world of web operations to highlight one of several
+weak-links in IT infrastructure engineering: transducing factory
+product (Dev) into consumable product through a delivery mechanism
+(Ops). The increased speed craved by the demand for the new `E-commerce' (as it was known then),
+and exemplified by the scale of operations at companies like Google,
+Amazon, and Microsoft, made old methods of infrastructure engineering
+an actual hindrance to doing business.  The business imperative to
+innovate in the high tempo world of the Internet, and the supply chain
+to deliver those innovations had an operations bottleneck: the
+outdated methods of operations could not get the changes out fast
+enough.
+
+<p>As many of the key orators of DevOps have emphasized, the problem
+was not just one of technology, it was (and still is, for most shops)
+one of culture. The long-standing demolition approach to management:
+destroy and reload a golden images should have died out years ago as a
+method for change, but it persists even now. Such methods are static
+approaches to a dynamic problem.  Initially the only alternative in
+town was CFEngine 2, as used by many companies with high levels of
+operational expertise like Amazon, EBay, Facebook, and LinkedIn, who were able
+to get ahead and achieve the speed they needed to scale up
+operations. This helped to define new ways of thinking about
+deployment. Later, CFEngine would be joined by Puppet and then Chef
+(and the <i>next-generation</i> CFEngine 3) to add to today's options for
+speedy deployments. 
+
+<p>The culture of scalable, continuous delivery itself spread from these
+origin companies, as post-employees diffused into other start-ups and
+the tools and ideas began to gain momentum.
+But speed to implement change is not enough if it
+is throttled by something else -- the outstanding issue of cooperative
+process. Deployment processes were suffering from culture shock.
+
+<h4>Impedance mismatch: CAMS</h4>
+
+<p>There is basic conflict of interest between the roles of developer
+and operations engineer that is not typical of the supply chains of other
+industries.  Web developers are motivated to push out new goodness as
+fast as possible. Infrastructure engineers often have little incentive to change
+anything. They are used to being ignored until
+something goes wrong, whereupon they are the first line of blame for the fault.
+Deploying something without due diligence would only land them in
+trouble.  To developers during the web boom, operational resistance was the problem. To
+operations, developmental change was the problem.  There was an impedance
+mismatch in the cooperation circuit that needed fixing: enter DevOps.
+
+<p>How do you fix the problem? The <a href="http://www.amazon.com/The-Evolution-Cooperation-Robert-Axelrod/dp/0465021212/ref=sr_1_1?ie=UTF8&qid=1340474672&sr=8-1&keywords=theory+of+coperation">Theory Of Cooperation</a> says it's straightforward: 
+arrange mutual benefit, that
+enriches the lives of both. John Willis and Damon Edwards elegantly put this into four
+categories of initiative, which were labelled <a href="http://www.opscode.com/blog/2010/07/16/what-devops-means-to-me/">CAMS</a>:
+
+<ul>
+<li><b>Culture</b> (of communication and discipline)
+<li><b>Automation</b> (superhuman scale and speed)
+<li><b>Measurement</b> (bringing verification and certainty)
+<li><b>Sharing</b> (to enable a rapidly growing community to raise the bar quickly)
+</ul>
+
+<P>These cornerstones mirror the so-called four barriers to progress and offer strategies
+to mitigate:
+
+<ul>
+<li>Don't know what to do (share knowledge)
+<li>Don't know how to do it (share culture)
+<li>Can't gauge progress (measure it)
+<li>Can't see who is responsible (automate it)
+</ul>
+
+<p>
+From the perspective of Promise Theory (PT), this makes some sense, as
+I hope to suggest below.  PT says that all cooperation stems from intent
+(a human quality).  How do you fix human intent? Well, the
+cornerstones are reasonable strategies to get started. Let's see why.
+
+<h4>Modelling intent</h4>
+
+<p>The arguments begun at the Configuration Management
+Workshops around cooperative automation in 2002, motivated me to cut
+through the opinions that were based mainly on unsubstantiated belief,
+and open the way for a new approach based on ideas that could be
+substantiated with science. In other words, ideas that could be
+explained and verified. So I turned back to research and spent 5 years
+developing a fundamental model for distributed configuration and
+cooperation.
+
+<p>My background in mathematical physics led me to delve into the
+wealth of experience accumulated by physicists and mathematicians over
+the centuries: after all, modelling "stuff that happens" is the domain
+of physics.  The model I eventually came up with (in collaboration
+with my then research student Siri Fagernes and colleague Jan
+Bergstra) was an algebraic approach that unified a number of different
+ideas from the scientific literature into a useful language -- using a
+formalized notion of `promises'.
+
+<p>After a presentation and discussion at the international conference
+of Distributed Systems, Operations and Management in 2005, this got
+the nickname Promise Theory. The idea of promises turns out to be a
+great metaphor for expressing intentions about both animate and
+inanimate objects (if you are tenacious reader, with a bent for formal
+languages, you can see the details of this reasoning in our book
+<a href="http://www.amazon.com/Promise-Theory-Principles-Applications-Volume/dp/1495437779/ref=sr_1_3?ie=UTF8&qid=1391713533&sr=8-3&keywords=promise+theory">Promise Theory: Principles and Applications</a>). The issue of intent turned out to be a much
+larger one than I had anticipated, but the details revealed not only truths about
+configuration management, but all interacting systems.
+
+<h4>Finding the impedance mismatch</h4>
+
+<p>One of the things that a physics approach does right is to start
+with the basic engineering questions: what are the important scales
+(of time, for instance) as changes happen in your system (how fast are
+different things changing)? Addressing such questions allows you to
+see where systems are mismatched, e.g. under-utilized or
+over-utilized (to use the language of queues). This is useful given
+that such a mismatch of expectations had already landed in the laps of
+the largest growing part of the Web-IT industry.
+
+<table width="40%" align="right" cellpadding="10"> <tr><td><div id="sidebar">
+...cooperation has nothing to do with computers or
+programming. The principles of cooperation are universal matters of
+information exchange, and <i>intent</i>.
+</div></td></tr></table>
+
+<p>So what were the timescales?
+
+<p>
+As the story of promises was developing through 2004-2006, Web 2.0 was
+undergoing something of a big bang event: the demand for IT systems
+was multiplying and growing at incredible speed, and the pressures
+placed on a much slower-growing number of system administrators were
+mounting. In the past, new computers came once every few years, but
+this was about to jump a gear: to grow into a web giant, new computers
+were coming every week.  Only top companies had the resources, tools
+and expertise to do this. Companies like banks, EBay, LinkedIn and
+Facebook, etc were famously made possible with the help of CFEngine 2 (back then)
+and a level of expert knowledge combined with intent to
+scale. The deeper problem was now surfacing -- the human,
+<i>business</i> issue of the mismatch between the <i>time to
+market</i> and the <i>time to build</i> the infrastructure to support
+it.
+
+<h4>Promise Theory</h4>
+
+<p>In what sense is DevOps a possible answer to this problem?
+Let's look at this from the viewpoint of promises. To get there, I need to
+summarize some basics.
+<p>
+Like any scientific method, PT is not a solution to anything, it is a
+language to describe and discuss cooperative behaviour. The idea is
+that, if you start with a highly expressive language that allows to
+you describe any scenario with necessary resolution, then you can
+compare any two things in a common framework and decide between them.
+
+PT is, if you like, an approach to modelling cooperative systems
+that allows you to ask: "how sure can we be that this will work"? And
+"at what rate"?
+<p>
+PT is also a kind of `atomic theory'. It gives a table of elements (basic
+promises) from which any substance can be put together, like a
+chemistry of intentions (once an intention about self is made public, it becomes a promise).
+SOA or Service Oriented Architecture is an example of a promise-oriented model,
+that is based on Web Services and APIs, because it defines autonomous services (agents) with
+interfaces (APIs) each of which keeps well-documented promises.
+<p>
+The principles that PT cites exist to maintain generality, and to ensure
+that as few assumptions as possible are made.  It also takes care of
+the idea that every agent's world-view is incomplete, i.e. there are different viewpoints
+that are limited by what the different parties in a cooperative environment can see and know.
+
+<p>What is unusual about PT, compared to other scientific models is
+that it models human intentions, and it does it in a way that is completely impersonal.
+By allowing contact with game theory models, we can also see how
+cooperative models ultimately have an economic explanation (often
+referred to as bounded rationality). <i>Why should I keep my promises?
+What will I get out of it?</i>
+
+<p>Applying PT starts like this:
+<ol>
+<li><b>Identify the key players (agents of intent)</b> 
+
+<p>An agent in PT is any part of a human-computer system that can
+intend or promise something <i>independently</i>. In this case, these
+will be people, computers, policy documents, etc -- i.e. anything that
+can document intent (regardless of its original source), and therefore
+express a promise that someone or something might be required to keep.
+
+<p>To get this part of the modelling right, we need to be careful not
+to confuse <i>intentions</i> with <i>actions</i> or messages. We are
+not talking about the moving parts of a clock, or even an HTTP request, but the motivations
+that play a role in making everything happen. Actions may or may not
+be necessary to fulfill intentions. Maybe inaction is necessary!
+
+<p>To be <i>independent</i> an agent only needs to think differently or
+have a different perspective, access to different information, etc.
+This is about the separation of concerns.
+If we want agents that reason differently to work together, they
+need to promise to behave in a mutually beneficial way. These agents can
+be humans (as in the business-IT bridge) or computers (as in a multi-tier server queue).
+
+<li><b>Deal with the Uncertainty</b>
+
+<p>Want absolute certainty? Forget it!  In the real world there is no
+absolute certainty. If you want to live in this fairy tale world, return 
+to CS 101 and prove theorems until you hit Hume, DeMoivre,
+Godel and Kripke, and see that information is always either <a href="http://research.iu.hio.no/papers/dsom2005.pdf">incomplete, subject to unknown error, or
+unverifiable</a>.  Then mourn the collapse of your world view in private
+-- you are no use as an engineer. Dealing with uncertainty is what
+science is really for.
+
+<p>Promises might or might not be kept (for a hundred different
+reasons). We don't know precisely, but we can evaluate the likelihood.
+Even a machine can break down and fail to keep a promise, so we need
+to model this.  Each promise will have a probability associated with
+it, based on our trust or belief in its future behaviour. 
+
+<p>In the simplistic two-state model of faults, where manufacturer's
+like to talk of all their 9's, the expressions Mean Time Before
+Failure (MTBF) and Mean Time To Repair (MTTR) are coined.  These are
+probabilistic measures, so they have to be multiplied by the number of
+instances we have. In today's massive scale environments, what used to
+be a small chance of failure or MTBF gets amplified to a large one --
+to counter this, we need <a href="http://www.cfengine.com/blog/ten-reasons-for-5-minute-configuration-repair">speedy repair</a>, if we are going to keep our promises.
+
+<p>Agents only keep promises about their own behaviour, however.  If
+we try to make promises on others' behalf, they will most likely be
+rejected, impossible to implement, or the other agent might not even
+know about them. So it is a "pull" rather than a "push" model, because
+it assumes that agents only bend to external influence if they want to --
+that control cannot be pushed by force. We look more realistically upon
+illusions like forcible military command structures as cases
+where there is consensus to voluntarily follow orders -- even these sometimes fail.
+
+<li><b>From requirements to promises</b>
+
+<p>In PT we assume that agents cannot be forced to follow a plan,
+because something might prevent that. One reason is that they are
+independently governed -- because ultimately there is a stubborn person behind
+every agent, whether its face is human or machine.
+<p>
+The goal in PT cooperation is to ensure that agents make all the
+promises necessary so that some magical on-looker, with access to all
+the information, would be able to say that an entire cooperative
+operation could be seen as if it were a single entity making a single
+service-promise (the algebra tells you if the
+set of promises is complete or not). How we coax the agents to make promises depends on
+what kinds of agents they are. If they are human, economic incentives
+are the generic answer.  If the agents are programmable, then they
+need to be programmed to keep the promises. We call this voluntary
+cooperation. For humans, the economics are social, professional and
+economic, and the former are captured in CAMS.
+<p>
+Is this crazy? Why not just force everyone to comply, like clockwork?
+Because that makes no sense. A computer follows instructions because
+it was constructed voluntarily to do so. If we change that promise by
+pulling out its input wire, it no longer does. And, as for humans, ... Cooperation is
+voluntary in the sense that it cannot be forced by an external agent
+(without possibly actually attacking the system to compromise its
+independence).
+
+
+<li><b>Mismatches of intent</b>
+
+<p>If all agents share the same intentions, there would be no need for
+promises.  Everyone would get along and sing in perfect harmony,
+working towards a common purpose. The fact that the initial state of a
+system has unknown intentions means we have to set up things like
+`agreements', where agents promise to behave in a certain way. This is what we
+call orchestration.
+
+<p>For every promise made to serve or provide something (call it X) by one agent in a supply chain,
+the next agent has to promise to use the result X in order to promise
+Y to the next agent and so on. Someone has to receive/use the service (promises labelled "-") 
+that is offered or given (promises labelled "+").
+So there is a simply symmetry of intent, with polarity like a battery driving
+activity in a system. Chains, however are fragile: every agent is a single
+point of failure, so we try for short tiered cooperatives. In truth, most
+organizations are not chains, but networks of promises.
+
+<p>This does not necessarily imply serial ordering. Agents can keep
+their promises in parallel.  In an actual orchestra, cooperation
+happens by promising everyone a copy of the music (so that they can
+work autonomously). Each player promises to read the music and play
+this. The conductor promises to provide a service of certain clock
+ticks and volume settings provided by the conductor service, and the
+players promise to follow these. The cooperation is pull-based and
+entirely voluntary. Signals play a part in coordinating the
+cooperation but the main intent is communicated through the documented
+score.
+
+
+</ol>
+
+<h4>The main findings of promise theory</h4>
+
+<p>
+PT seems upside down to some people. They want to think in terms of
+obligations.  <b>A should do B</b>, <b>C must do D</b>, etc. But,
+apart from riling human beings' sense of dignity, that approach leads
+quickly to <a
+href="https://www.researchgate.net/publication/225156041_An_Approach_to_Understanding_Policy_Based_on_Autonomy_and_Voluntary_Cooperation?ev=prf_pub">provable
+inconsistencies</a>.  The problem is that the source of any obligation
+(the obliger) is external to the agent that it being obliged. Thus if
+the agent is either unable or unwilling to cooperate (perhaps because
+it never received a message), the problem cannot be resolved without
+solving another distributed cooperation problem to figure out what
+went wrong!  And so on, ad nauseum. (One begins to see the fallacy of
+trusting centralized push models and separate monitoring systems.)
+
+<p>
+Promise theory assumes that an agent can only make promises about its
+own behaviour (because that is all it is in control of), and this cuts through
+the distributed issue, ensuring that the
+information and resources needed to resolve any problem are
+local and available to the agent, so it can autonomously repair (self-heal)
+a process. 
+
+<table>
+<tr><td>
+<b>DevOps cooperation: </b>
+Dev promises things that Ops like, Ops promise things that Dev likes.
+Both of them promise to keep the supply chain working at a certain rate,
+i.e. Dev supplies at a rate that Ops can promise to deploy.
+<br><br>
+By choosing to express this as promises, we know the estimates were made
+with accurate information by the agent responsible, not by external
+wishful thinkers without a clue.
+</td></tr>
+</table>
+
+<p>In a human world, this is obvious. If humans or computers command
+the resources they use, without caveats, they can make clear promises
+about what they can and can't deliver.
+
+<p>
+Strong couplings (hard dependencies) are fictitious couplings
+(obligations and demands), that make systems brittle and fragile under
+unrealistic assumptions, whether they are human, computer or
+human-computer in nature. Expecting only best-effort promises, leads
+to more weakly coupled systems that therefore are more plastic and resilient. They
+lead to robust systems, with "slack", because one expects incomplete
+information and can design to expect failure.
+
+<p>If we encourage a system based on autonomous parts, cooperating
+loosely, we have the maximum chance of being able to behave according
+to expectations.
+
+<table>
+<tr><td>
+<p>The Dev-Ops relationship is not special. The same cooperation applies to all other business
+developers and implementers. 
+<ul>
+<li>Management promises goals, staff promise to listen and implement goals at a certain rate.
+<li>Parts manufacturer promises to deliver parts at a certain rate. System integrator promises
+to use these parts at a rate less than or equal to this, and to produce its derivative
+product at a rate less than or equal to that (this is a simplification of the queue).
+</ul>
+</td></tr>
+</table>
+
+<p>Several proponents of DevOps have rediscovered the Deming cycle for
+keeping promises and its descendants via Toyota, 
+<ul>
+<li>Kanban continuous, incremental change and delivery.
+
+<li>Kaizen continuous improvement in the service chain.
+</ul>
+<p>These capture the same kinds of cooperative impedance matchings.
+<p>
+Finally, although everyone talks of supply chains -- these things are really
+much more complicated <i>networks</i> of cause and effect. By applying graph
+theory to the network of promise, we can also find likely problem areas
+and bottlenecks, to achieve full business-unit alignments.
+
+
+<center>
+<b>A simplified promise model for an IT service company<br>+ is a promise given, - is a promise to use</b><br>
+<a href="img/PT.png"><img src="img/PT.png" width="700"></a>
+</center>
+<p>
+In the figure above, I've sketched just a few of the many promises/roles
+that make an organization look like a single service entity. I focused on a primarily "Ops"
+perspective to keep the picture uncluttered (clearly there are many more promises
+needed to make a company!). In the picture, an
+architect promises to turn management goals into a design. Policy
+writers promise to turn the design into Design Sketches (CFEngine 3),
+Cookbooks (Chef), or Modules (Puppet) perhaps with the help of
+community repositories. Ops integrates policy with application changes
+and uses config tools to transduce this into working infrastructure.
+The role of DevOps is one of several cooperative relationships that
+makes the organization function.
+
+<p>Why won't the DevOps promise relationship break down? Because there is an
+`economic' motivation to keep it there, provided by the "C" in CAMS.
+
+<p><i>NOTE: I based the role of OPS here on CFEngine 3: OPS is that agency that
+matches policy methods to infrastructure using only a configuration
+management tool as an intermediary (hands-free). This means that the config tool
+(CFEngine) keeps the promise of correct infrastructure and OPS is
+"hands-free" to manage on a continuous basis. Other tools and
+approaches take different views. For instance, if you used a command
+to deploy policy once only after building something, then the promise
+is severed and the infrastructure is basically floating freely
+(unmanaged). Then we would have to recapture it by getting it to
+promise monitoring, and add crisis response, etc. CFEngine 3's pure
+promise implementation says: let the promise about infrastructure
+design stand, and the config tool will keep the promise by automating 
+continuous verification and repair.</i>
+
+
+<h4>Splicing Dev onto Ops (timescale impedance matching)</h4>
+
+<p>Models fail when they can no longer survive the assumptions on which
+they were built. The old centralized management of the 1990s, sandblasting golden images
+out to hosts, broke down when the <i>time to market</i> for product improvements
+fell below the <i>time to deploy</i> for the change.
+
+<p>If we want a model that can last, we need to make it general. This
+is why I built CFEngine 3 (as a tool in this chain) to be a fairly
+pure implementation of PT atoms, so that anything built on top of
+those atoms would be able to keep cooperative promise robustly.
+
+<p>If the delivery of a product holds back the business, business will
+find a way around the blockage.  This is a business imperative, not
+really an IT one.  If a shoe producer can't get its shoes into shops
+in time for the Christmas sale, because the delivery system is too
+slow, it will find a new one, or carry the shoes by itself if it has
+to. The survival of a business depends on this.
+
+<p>The only thing that is special about IT developers (programmers) is
+that they are close enough to IT operations to be able to understand
+each other fairly well. DevOps, is not only cultural, it is practically social.
+
+
+<h4>The culture of command-line: throw it over the wall</h4>
+
+<p>You knew it, the heroic sysadmin is not going down that easily. The
+legendary legerdemain of the one-liner, shell command extraordinaire,
+to fix an apparent problem (<i>after the fact</i>, mind you), is still considered to be
+a dragon slain by many sysadmins. 
+
+<p>But the "do it once and walk away" (until you're called back) approach
+to management does not cut it in a system of continuous service
+delivery, or large size, for the MTBF reasons mentioned above. You're
+probability of error is getting multiplied by a large number, so you might think
+you don't have time to think about maintenance, but in fact you need to think
+about it even more.  
+You can't just build and deploy, and throw it over the wall,
+hoping for the best -- you need to maintain systems and prevent them from
+failing in the first place. That means your
+automation needs to be self-monitoring and self-healing.
+
+<p>The ease with which machines can be built today is distorting our
+view of reliability to some extent, by diverted attention from
+resilient strategies. The pendulum will swing back, as more start-ups
+mature to become mission critical. Just because web services can
+hide their faults behind load balancers, and rebuild a machine on the
+fly, does not make this a defensible practice for many other mission
+critical services (e.g. banking), where the diversity of applications
+is at the level of thousands of different interacting parts, not just a few tiers.
+
+<p>In an orchestra, the conductor does not wait for a player to pass out, then drag 
+him or her off stage, to replace with a new one. A better strategy would be
+to prevent the issue in the first place, to avoid an embarrassing spectacle.
+If the wing falls off a plane...
+
+<p>Here is a danger of technology.  Our culture of "make it easy" can
+draw out the professional laziness in operations to the point where
+high profile web companies can claim that fault prevention doesn't
+matter. They don't mean this, so why pretend?
+
+Maintenance is the key to keeping any ship afloat. The four pillars of
+CAMS imply maintenance in measurement and automation.
+
+<h4>Coda</h4>
+
+<p>
+DevOps is a fascinating cultural movement, that has grown from
+business need into a revival of engineering pride. Promise Theory
+suggests that the practices of CAMS are fundamental in the sense that
+they encourage the continuity of autonomy with weak coupling, and
+maintain the incentive for cooperation to match the timescales
+of process.
+
+<p>The need for companies to be aligned with a
+`sense of purpose' (goals) is more acute than ever before. IT is no longer
+just `nice to have' -- it is a business imperative, a <i>societal</i> imperative.
+It is infrastructure.
+
+<p>More than that, by encouraging pride in a job well done, DevOps
+contributes to our human dignity and elevates operations from the role
+of firefighting to that of <i>infrastructure engineering</i>.
+
+
+
+      </div>
+    </div>
+    <div id="footer">Copyright &copy; Mark Burgess. All Rights
+    Reserved. | <a
+    href="http://validator.w3.org/check?uri=referer">XHTML</a> | <a
+    href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |
+    <a href="http://www.dcarter.co.uk">design by dcarter</a></div>
+  </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10544326-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
+ 

@@ -1,0 +1,1010 @@
+status: 200
+x-request-id: 30755d5d4f55e2088e348077bda8820c
+x-served-by: web5.dfw
+content-location: http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/#:eyJzIjoidCIsImkiOiJfY3BvdzM2cTRwemt1YjlybCJ9
+vary: Accept-Encoding
+content-length: 74252
+x-cacheable: Yes
+connection: keep-alive
+-content-encoding: gzip
+x-cache-hits: 0
+x-ua-compatible: IE=edge,chrome=1,IE=Edge,chrome=1
+cache-control: public, private, must-revalidate, max-age=1561482
+date: Mon, 22 Sep 2014 10:07:11 GMT
+content-type: text/html; charset=utf-8
+x-runtime: 0.156216
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+     __  __           _           _     _
+~_,-|  \/  | __ _ ___| |__   __ _| |__ | | ___
+    | |\/| |/ _` / __| '_ \ / _` | '_ \| |/ _ \,-~_,- - - ,
+~_,-| |  | | (_| \__ \ | | | (_| | |_) | |  __/    |   /\_/\
+    |_|  |_|\__,_|___/_| |_|\__,_|_.__/|_|\___|  ~=|__( ^ .^)
+~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,""   ""
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+-->
+<html data-env='production' lang='en' xml:lang='en'>
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"faaaef6476","applicationID":"1135420","transactionName":"cAkNR0ENXQpXF0tJDUASEBxACl4R","queueTime":0,"applicationTime":148,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-412.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwYHUF9ACQIDUVVQBw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){try{u?u-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(d){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(c){"stack"in c&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,c="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,d=e(c);if(d&&(r.rxSize=d),this.sameOrigin){var f=t.getResponseHeader("X-NewRelic-App-Data");f&&(n.cat=f.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,c=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var c=e(o);c&&(r.txSize=c)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var d=0;u>d;d++)n.addEventListener(s[d],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+c(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+c(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,c="addEventListener",d="attachEvent",f=(""+location).split("?")[0],p=e.exports={offset:i(),origin:f,features:[]};u[c]?(u[c]("DOMContentLoaded",o,!1),s[c]("load",n,!1)):(u[d]("onreadystatechange",r),s[d]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),c=this,d=r&&r(a,c)||{}}catch(f){i([f,"",[a,c,s],d])}o(e+"start",[a,c,s],d);try{return n=t.apply(c,a)}catch(p){throw o(e+"err",[a,c,p],d),p}finally{o(e+"end",[a,c,n],d)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,c="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,c?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<script>
+  window.__o = {"channel":"tech","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":3718.5,"h_buy":null,"h_pub_buy":null,"v_cur":7.9,"v_max":7.9,"v_cur_i":7,"v_max_i":7,"events":"event54,event61,event62,event63,event64","top_channel":"tech","content_source_type":"Internal - Editorial Series","content_source_name":"Heartbleed","author_name":"Mashable Team","age":"154","pub_day":10,"pub_month":4,"pub_year":2014,"pub_date":"04/10/2014","isPostView":true,"post_lead_type":"Default","topics":"Apps and Software,banks,Facebook,Google,Heartbleed Bug,Mashable Must Reads,Mobile,security,Tech,Twitter,Uncategorized,U.S.,World,Yahoo","campaign":null,"display_mode":null};
+  window._gaq = window._gaq || [];
+  window._gaq.push(['_setAccount', 'UA-92124-1']);
+</script>
+<title>The Heartbleed Hit List: The Passwords You Need to Change Right Now</title>
+<link href="http://rack.0.mshcdn.com/assets/app-06dff83b7f0c90362d7ab2317f117f6c.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://rack.2.mshcdn.com/assets/posts-f43bab143ef8bdc693436a202532c9ae.css" media="all" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<link href="http://rack.3.mshcdn.com/assets/iehax-957092b11e263c6b850533d06d5aaa2c.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<meta content='no' name='apple-mobile-web-app-capable'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href='https://plus.google.com/113493854651753327245' rel='publisher'>
+<link href='http://feeds.mashable.com/Mashable' rel='alternate' title='Mashable' type='application/rss+xml'>
+<link href='http://rack.0.mshcdn.com/assets/favicon-f4f209c501a0902a12e1a674354bb356.png' rel='icon' type='image/png'>
+<meta content='mid:12105681' name='linkedin:owner'>
+<meta content='122071082108' property='fb:app_id'>
+<meta content='18807449704' property='fb:page_id'>
+<meta content='nYmtX7H2sSCkK8gHpQGxr7Es2526DgUaqb6PGYSX' name='readability-verification'>
+<link href='http://rack.3.mshcdn.com/assets/mashable.touchicon-4b641ab8741e4f02da5817297fdaa9b8.png' rel='apple-touch-icon-precomposed'>
+
+<link data-page-subject="true" href="http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/" rel="canonical" /><link data-page-subject="true" href="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/f185cc9b/662/Heartbleed-Refresh.jpg" rel="image_src" /><meta content="http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/" data-page-subject="true" property="og:url" /><meta content="The Heartbleed Hit List: The Passwords You Need to Change Right Now" data-page-subject="true" property="og:title" /><meta content="article" data-page-subject="true" property="og:type" /><meta content="Mashable" data-page-subject="true" property="og:site_name" /><meta content="Heartbleed: A look at which companies have issued a security patch to fix the Heartbleed bug. " data-page-subject="true" property="og:description" /><meta content="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/f185cc9b/662/Heartbleed-Refresh.jpg" data-page-subject="true" property="og:image" /><meta content="2014-04-10T00:23:26Z" data-page-subject="true" property="og:article:published_time" /><meta content="2014-08-25T23:10:47Z" data-page-subject="true" property="og:article:modified_time" /><meta content="https://www.facebook.com/mashable" data-page-subject="true" property="og:article:publisher" /><meta content="Heartbleed: A look at which companies have issued a security patch to fix the Heartbleed bug. " data-page-subject="true" name="description" /><meta content="yahoo, google, facebook, twitter, security, banks, uncategorized, tech, apps-software, mobile" data-page-subject="true" name="keywords" /><meta content="The Heartbleed Hit List: The Passwords You Need to Change Right Now" data-page-subject="true" name="twitter:title" /><meta content="A look at which companies have issued a security patch to fix the Heartbleed bug. " data-page-subject="true" name="twitter:description" /><meta content="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/63e50328/662/Heartbleed-Refresh.jpg" data-page-subject="true" name="twitter:image" /><meta content="@mashable" data-page-subject="true" name="twitter:site" /><meta content="http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/" data-page-subject="true" name="twitter:url" /><meta content="@mashable" data-page-subject="true" name="twitter:creator" /><meta content="photo" data-page-subject="true" name="twitter:card" /><meta content="560" data-page-subject="true" name="twitter:image:width" /><meta content="750" data-page-subject="true" name="twitter:image:height" /><meta content="2014-04-10 00:23:26 UTC" data-page-subject="true" name="date" /><meta content="Mashable Team" data-page-subject="true" name="sailthru.author" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/56918b74/662/Heartbleed-Refresh.jpg" data-page-subject="true" name="sailthru.image.thumb" /><meta content="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3e5b392b/662/Heartbleed-Refresh.jpg" data-page-subject="true" name="sailthru.image.full" /><meta content="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/e2b05196/662/Heartbleed-Refresh.jpg" data-page-subject="true" name="sailthru.lead_image" /><meta content="http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/0e00457b/662/Heartbleed-Refresh.jpg" data-page-subject="true" name="sailthru.secondary_image" /><meta content="http://on.mash.to/1kLRfST" data-page-subject="true" name="short_url" /><meta name=parsely-page content='{"title":"The Heartbleed Hit List: The Passwords You Need to Change Right Now","link":"http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/","image_url":"http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/f185cc9b/662/Heartbleed-Refresh.jpg","type":"post","post_id":2521613,"pub_date":"2014-04-10T00:23:26Z","section":"tech","author":"Mashable Team","tags":["Internal - Editorial Series","Internal - Editorial Series - Heartbleed","Topics - Apps and Software","Topics - banks","Topics - Facebook","Topics - Google","Topics - Heartbleed Bug","Topics - Mashable Must Reads","Topics - Mobile","Topics - security","Topics - Tech","Topics - Twitter","Topics - Uncategorized","Topics - U.S.","Topics - World","Topics - Yahoo"]}' data-page-subject=true >
+
+<script src='//cdn.optimizely.com/js/58011369.js'></script>
+<script src="http://rack.2.mshcdn.com/assets/app-b12c944b5769da5554b357b098a2216d.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script src="http://rack.2.mshcdn.com/assets/polyfill-6620db93ad92c8f787391361dfe3f23c.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class='body_posts body_show' data-authorid='20' data-gvav='true' data-gvcav='true' data-gvcfv='true' data-gvcv='true' data-gvmfv='true' data-gvmv='true' data-jsid='posts/show' data-postid='2521613' data-sec0='tech' data-sec1='apps|mob|us|world' data-sec2='posts' data-topic='facebook|security' viewport='fixed'>
+<h1 class='semantic'>Mashable</h1>
+<header id='flyout-container'></header>
+<div id='peek'>
+<div id='sticky'>
+
+<header id='site-header'><div class='navbar'>
+<div class='navbar-inner'><ul class='main-menu nav inline'>
+<li class='menu'><a class='icon-reorder' href='#'></a></li>
+<li class='logo'><a class='brand' data-turbo-target='body-container' href='/'><span>Mashable</span><img alt="Header_logo.v2" src="http://rack.1.mshcdn.com/assets/header_logo.v2-30574d105ad07318345ec8f1a85a3efa.png" /></a></li>
+<li class='submenu collapsable pull-right' id='sign-in'><a href='/login/'><span>Sign in</span></a></li>
+<li class='follow submenu pull-right'><a class='follow-trigger' href='/2011/11/18/follow-mashable/'><span class='fb'></span>
+<span class='tw'></span>
+<span class='gp'></span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<div class='pull-right follow'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='2.4m'>Like</a>
+<a class='twitter-follow-button' data-dnt='true' data-show-count='true' data-show-screen-name='false' href='https://twitter.com/mashable'>
+Follow @mashable
+</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+<div class='g-override-container'>
+<div class='g-ytsubscribe' data-channel='mashable'></div>
+</div>
+<a alt='RSS Feed' class='rss' href='http://feeds.mashable.com/Mashable' title='RSS Feed'></a>
+<a alt='Email Subscriptions' class='email' href='/subscriptions' title='Email Subscriptions'></a>
+<div class='more'>
+<a href="/2011/11/18/follow-mashable/">see more&nbsp;&nbsp;&gt;</a></div>
+</div>
+</div>
+</div></li>
+<li class='nav-search submenu pull-right'><a class='search-trigger' href='/search/'>Search</a>
+<div class='dropdown-content'>
+<div class='page-container'>
+<div class='header-search-form'>
+<form accept-charset="UTF-8" action="/search/" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ie-search-wrapper'><input autocomplete="off" class="header-search" id="q" name="q" type="text" value="" /></div>
+<input class="btn btn-primary header-search-submit" name="commit" type="submit" value="Search" /></form><div class='header-search-results'></div>
+</div>
+</div>
+</div></li>
+<li class='collapsable' data-tags=''><a href="/category/must-reads">Must Reads</a></li>
+<li class='collapsable channel submenu' data-tags='how-to,facebook,twitter,youtube,google-plus'><a href="/social-media/">Social Media</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='apps-software,dev-design,gadgets,mobile'><a href="/tech/">Tech</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='advertising,marketing,media,small-business,startups,jobs'><a href="/business/">Business</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='film,gaming,music,sports,television'><a href="/entertainment/">Entertainment</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='us,world,climate,history,space,australia,social-good'><a href="/us-world/">US &amp; World</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='pics,memes,comics,conversations,videos-watercooler'><a href="/watercooler/">Watercooler</a><div class='submenu-content'></div></li>
+<li class='submenu more'><a href='#'><!-- %span=t "header.nav.more" -->
+<span>More</span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<ul class='columns'><li><ul class='column-list'><li class='header'>Channels</li>
+<li><a href="/category/must-reads">Must Reads</a></li>
+<li><a href="/social-media/">Social Media</a></li>
+<li><a href="/tech/">Tech</a></li>
+<li><a href="/business/">Business</a></li>
+<li><a href="/entertainment/">Entertainment</a></li>
+<li><a href="/us-world/">US &amp; World</a></li>
+<li><a href="/watercooler/">Watercooler</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Company</li><li><a href="/about/">About Us</a></li><li><a href="http://www.wrightsmedia.com/sites/mashable/">Licensing &amp; Reprints</a></li><li><a href="http://mashable.com/2013/">Archive</a></li><li><a href="http://mashable.theresumator.com/">Mashable Careers</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Contact</li><li><a href="/contact-us/">Contact Us</a></li><li><a href="/submit/">Submit News</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Advertise</li><li><a href="/advertise/">Advertise</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Legal</li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Apps</li><li><a href="http://itunes.apple.com/us/app/mashable/id356202138?mt=8">iPhone App</a></li><li><a href="http://itunes.apple.com/us/app/mashable-for-ipad/id370097986?mt=8">iPad App</a></li><li><a href="https://play.google.com/store/apps/details?id=com.mashable.android.phoenix">Android App</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Resources</li><li><a href="/2011/11/18/follow-mashable/">Subscriptions</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Sites</li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="http://events.mashable.com/">Events</a></li><li><a href="http://mashable.com/sgs/">Social Good Summit</a></li><li><a href="http://mashable.com/media-summit/">Media Summit</a></li></ul></li></ul>
+</div>
+</div></li>
+</ul></div>
+</div></header>
+</div>
+<div id='scrollable'><div class='loader'></div>
+<div class="ad_container"><span class="ad" data-params="{&quot;tile&quot;:3,&quot;adnum&quot;:3,&quot;sec0&quot;:&quot;tech&quot;,&quot;sec1&quot;:&quot;apps|mob|us|world&quot;,&quot;sec2&quot;:&quot;posts&quot;,&quot;topic&quot;:&quot;facebook|security&quot;,&quot;postid&quot;:2521613,&quot;gvcfv&quot;:&quot;true&quot;,&quot;gvmfv&quot;:&quot;true&quot;,&quot;gvcv&quot;:&quot;true&quot;,&quot;gvmv&quot;:&quot;true&quot;,&quot;gvcav&quot;:&quot;true&quot;,&quot;gvav&quot;:&quot;true&quot;,&quot;posts&quot;:&quot;Heartbleed&quot;,&quot;authorid&quot;:20,&quot;type&quot;:&quot;survey&quot;}"></span></div><header class='box970'>
+<div class='page-container'><center class='visible-desktop'><div class="ad_container"><span class="ad" data-params="{&quot;tile&quot;:4,&quot;adnum&quot;:4,&quot;sec0&quot;:&quot;tech&quot;,&quot;sec1&quot;:&quot;apps|mob|us|world&quot;,&quot;sec2&quot;:&quot;posts&quot;,&quot;topic&quot;:&quot;facebook|security&quot;,&quot;postid&quot;:2521613,&quot;gvcfv&quot;:&quot;true&quot;,&quot;gvmfv&quot;:&quot;true&quot;,&quot;gvcv&quot;:&quot;true&quot;,&quot;gvmv&quot;:&quot;true&quot;,&quot;gvcav&quot;:&quot;true&quot;,&quot;gvav&quot;:&quot;true&quot;,&quot;posts&quot;:&quot;Heartbleed&quot;,&quot;authorid&quot;:20,&quot;type&quot;:&quot;banner&quot;}"></span></div></center></div>
+</header>
+<div class='posts show' id='body-container'><div id='main'>
+<div class='page-container'>
+
+<div id='body'><hgroup class='page-header channel' data-channel='tech' data-section='sec0=tech&amp;sec1=index&amp;sec2=' id='post-head'>
+<h2>Tech</h2>
+<div class='follow-channel'>
+<div class='follow-buttons'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='1.7m'>Like</a>
+<a class='social-stub social-share twitter follow' data-shares='3.7m' href='https://twitter.com/intent/follow?region=follow_link&amp;screen_name=mashable&amp;tw_p=followbutton&amp;variant=2.0' target='_blank'>Follow</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+</div>
+</div>
+</hgroup>
+<div class='flex-box'>
+<div class='box-cell'>
+<div class='above_960 adsense outside_post'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_slot = "3991492827";
+</script>
+<script>
+  if(!hideAd) google_ad_width = 728;
+</script>
+<script>
+  if(!hideAd) google_ad_height = 15;
+</script>
+<script src='http://pagead2.googlesyndication.com/pagead/show_ads.js'></script>
+</div>
+
+<div id='post-content'>
+<div id='post-slider'><article class='full post' data-campaign='Heartbleed' data-channel='tech' data-id='5345e48db05f9d66bc000e85' data-series-id='53457613b589e43510002d66' data-subchannels='apps-software|mobile|us|world' data-topic='facebook|security' data-velocity='397,404,412,420,429,438,448,457,467,477,487,502,513,518,529,540,549,559,569,579,590,602,607,619,632,645,659,673,687,701,716,732,747,764,781,798,815,831,847,864,879,895,901,916,921,937,952,968,983,1000' data-wp-id='2521613' id='story'>
+<header class='article-header'>
+<h1 class='title' href='http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/'>The Heartbleed Hit List: The Passwords You Need to Change Right Now</h1>
+<aside class='shares social'>
+<div class='total-shares' data-index='0'>
+<em class='minimal'>662.3k</em>
+<div class='caption'>Shares</div>
+</div>
+<div class='share-buttons'>
+<div class='share-button-boxy'><a class="social-stub social-share facebook" data-layout="box_count" data-shares="577121" data-uid="azZb" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share twitter" data-shares="51938" data-uid="azZb" href="https://twitter.com/intent/tweet?original_referer=http://mashable.com/&amp;source=tweetbutton&amp;text=The+Heartbleed+Hit+List%3A+The+Passwords+You+Need+to+Change+Right+Now&amp;url=http%3A%2F%2Fmashable.com%2F2014%2F04%2F09%2Fheartbleed-bug-websites-affected%2F&amp;via=mashable">Tweet</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share google_plus" data-shares="10565" data-size="tall" data-uid="azZb" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share linked_in" data-shares="14415" data-uid="azZb" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share stumble_upon" data-shares="7861" data-uid="azZb" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share pinterest" data-shares="409" data-uid="azZb" href="#"></a></div>
+</div>
+<div class='velocity-graph tooltip-trigger' title='The Mashable Velocity graph shows how quickly people are sharing this article on the social Web.'>
+<canvas class='velocity'></canvas>
+<div class='caption'>What's This?</div>
+</div>
+</aside>
+
+<div class='above_960 adsense'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_channel = "9077376301";
+</script>
+<script>
+  if(!hideAd) google_ad_output = "js";
+</script>
+<script>
+  if(!hideAd) google_max_num_ads = "3";
+</script>
+<script>
+  if(!hideAd) google_ad_type = "text";
+</script>
+<script>
+  if(!hideAd) google_feedback = "on";
+</script>
+<script src='http://pagead2.googlesyndication.com/pagead/show_ads.js'></script>
+</div>
+
+<figure class='article-image'><img alt="Heartbleed-refresh" class="microcontent" data-fragment="lead-image" data-image="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3e5b392b/662/Heartbleed-Refresh.jpg" data-micro="1" data-url="null" src="http://rack.3.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3e5b392b/662/Heartbleed-Refresh.jpg" /><figcaption class="image-caption">It's time to update your passwords to various sites affected by the Heartbleed bug.</figcaption><div class="image-credit">Image:  <a href="http://www.istockphoto.com/user_view.php?id=7954002" target="_blank">Mashable composite. iStockphoto</a>, <a href=" http://heartbleed.com/ " target="_blank"> SoberP</a></div></figure>
+
+<div class="article-info"><a class="byline" href="/author/mashable-team/"><img alt="Mashable%2520team-1724" class="author_image" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzEyLzAzLzNjL01hc2hhYmxlMjBULjNjN2IxLnBuZwpwCXRodW1iCTkweDkwIwplCWpwZw/2fddd65c/d71/Mashable%2520Team-1724.jpg" /><div class="author_and_date"><span class="author_name">By Mashable Team</span><time datetime="Thu, 10 Apr 2014 00:23:26 +0000">2014-04-10 00:23:26 UTC</time></div></a></div>
+
+</header>
+<section class='article-content'>
+
+<p>An encryption flaw called the <a href="http://mashable.com/2014/04/08/major-security-encryption-bug-heartbleed/" data-crackerjax="#post-slider">Heartbleed bug</a> is already being dubbed one of the biggest security threats the Internet has ever seen. The bug has affected many popular websites and services — ones you might use every day, like Gmail and Facebook — and could have quietly exposed your sensitive account information (such as passwords and credit card numbers) over the past two years.</p>
+<p>But it hasn't always been clear which sites have been affected. <em>Mashable</em> reached out some of the most popular social, email, banking and commerce sites on the web. We've rounded up their responses below.</p>
+<div class="see-also"><p>See also: <a href="http://mashable.com/2014/04/09/heartbleed-what-to-do/" data-crackerjax="#post-slider">How to Protect Yourself From the Heartbleed Bug</a></p></div>
+<p>Some Internet companies that were vulnerable to the bug have already updated their servers with a security patch to fix the issue. This means you'll need to go in and change your passwords immediately for these sites. Even that is <a href="http://mashable.com/2014/04/09/heartbleed-nightmare/" data-crackerjax="#post-slider">no guarantee that your information wasn't already compromised</a>, but there's also no indication that hackers knew about the exploit before this week. The companies that are advising customers to change their passwords are doing so as a precautionary measure.</p>
+<p>Although changing your password regularly is always good practice, if a site or service hasn't yet patched the problem, your information will still be vulnerable. </p>
+<p>Also, if you reused the same password on multiple sites, and one of those sites was vulnerable, you'll need to change the password everywhere. It's not a good idea to use the same password across multiple sites, anyway.</p>
+<p>We'll keep updating the list as new information comes in. <em>Last update: April 19, 11:00 a.m. ET</em></p>
+<style type="text/css"><!--
+td { background-color: white; }
+</style>
+<h2 style="margin-top: 22px;">Social Networks</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>Facebook</strong></p></td>
+<td><p>Unclear</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We added protections for Facebook’s implementation of OpenSSL before this issue was publicly disclosed. We haven’t detected any signs of suspicious account activity, but we encourage people to ... set up a unique password."</p></td>
+</tr>
+<tr>
+<td><p><strong>Instagram</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"Our security teams worked quickly on a fix and we have no evidence of any accounts being harmed. But because this event impacted many services across the web, we recommend you update your password on Instagram and other sites, particularly if you use the same password on multiple sites.”</p></td>
+</tr>
+<tr>
+<td><p><strong>LinkedIn</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We didn't use the offending implementation of OpenSSL in www.linkedin.com or www.slideshare.net. As a result, HeartBleed does not present a risk to these web properties."</p></td>
+</tr>
+<tr>
+<td><p><strong>Pinterest</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We fixed the issue on Pinterest.com, and didn’t find any evidence of mischief. To be extra careful, we e-mailed Pinners who may have been impacted, and encouraged them to change their passwords."</p></td>
+</tr>
+<tr>
+<td><p><strong>Tumblr</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We have no evidence of any breach and, like most networks, our team took immediate action to fix the issue."</p></td>
+</tr>
+<tr>
+<td><p><strong>Twitter</strong></p></td>
+<td><p>No</p></td>
+<td><p>Yes</p></td>
+<td><p>Unclear</p></td>
+<td style="font-size: 90%"><p>Twitter <a href="http://status.twitter.com/post/82109064906/ssl-security-update" target="_blank">wrote</a> that OpenSSL "is widely used across the internet and at Twitter. We were able to determine that [our] servers were not affected by this vulnerability. We are continuing to monitor the situation." While reiterating that they were unaffected, Twitter told <em>Mashable</em> that they did apply a patch.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Other Companies</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>Apple</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"iOS and OS X never incorporated the vulnerable software and key web-based services were not affected."</p></td>
+</tr>
+<tr>
+<td><p><strong>Amazon</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Amazon.com is not affected."</p></td>
+</tr>
+<tr></tr>
+<tr>
+<td><p><strong>Google</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes*</p></td>
+<td style="font-size: 90%"><p>“We have assessed the SSL vulnerability and applied patches to key Google services.” Search, Gmail, YouTube, Wallet, Play, Apps and App Engine were affected; Google Chrome and Chrome OS were not.<br><br>*Google <a href="http://abcnews.go.com/Business/heartbleed-online-bug/story?id=23256168" target="_blank">said</a> users do not need to change their passwords, but because of the previous vulnerability, better safe than sorry.</p></td>
+</tr>
+<tr>
+<td><p><strong>Microsoft</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>Microsoft services were not running OpenSSL, according to LastPass.</p></td>
+</tr>
+<tr>
+<td><p><strong>Yahoo</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"As soon as we became aware of the issue, we began working to fix it... and we are working to implement the fix across the rest of our sites right now."  Yahoo Homepage, Yahoo Search, Yahoo Mail, Yahoo Finance, Yahoo Sports, Yahoo Food, Yahoo Tech, Flickr and Tumblr were patched. More patches to come, Yahoo says.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Email</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>AOL</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>AOL told <em>Mashable</em> it was not running the vulnerable version of the software.</p></td>
+</tr>
+<tr>
+<td><p><strong>Gmail</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes*</p></td>
+<td style="font-size: 90%"><p>“We have assessed the SSL vulnerability and applied patches to key Google services.”<br><br>*Google <a href="http://abcnews.go.com/Business/heartbleed-online-bug/story?id=23256168" target="_blank">said</a> users do not need to change their passwords, but because of the previous vulnerability, better safe than sorry.</p></td>
+</tr>
+<tr>
+<td><p><strong>Hotmail / Outlook</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>Microsoft services were not running OpenSSL, according to LastPass.</p></td>
+</tr>
+<tr>
+<td><p><strong>Yahoo Mail</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"As soon as we became aware of the issue, we began working to fix it... and we are working to implement the fix across the rest of our sites right now."</p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Stores and Commerce</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>Amazon</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Amazon.com is not affected."</p></td>
+</tr>
+<tr>
+<td><p><strong>Amazon Web Services</strong> (for website operators)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>Most services were unaffected or Amazon was already able to apply mitigations (<a href="https://aws.amazon.com/security/security-bulletins/aws-services-updated-to-address-openssl-vulnerability/" target="_blank">see advisory note here</a>). Elastic Load Balancing, Amazon EC2, Amazon Linux AMI, Red Hat Enterprise Linux, Ubuntu, AWS OpsWorks, AWS Elastic Beanstalk and Amazon CloudFront were patched.</p></td>
+</tr>
+<tr>
+<td><p><strong>eBay</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"eBay.com was never vulnerable to this bug because we were never running a vulnerable version of OpenSSL."</p></td>
+</tr>
+<tr></tr>
+<tr>
+<td><p><strong>Etsy</strong></p></td>
+<td><p>Yes*</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>Etsy <a href="https://blog.etsy.com/news/2014/security-update-openssl-heartbleed/?ref=about_blog_title" target="_blank">said</a> that only a small part of its infrastructure was vulnerable, and they have patched it.</p></td>
+</tr>
+<tr>
+<td><p><strong>GoDaddy</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We’ve been updating GoDaddy services that use the affected OpenSSL version." <a href="http://godaddyblog.com/open-ssl-heartbleed-weve-patched-servers/" target="_blank">Full Statement</a></p></td>
+</tr>
+<tr>
+<td><p><strong>Groupon</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Groupon.com does not utilize a version of the OpenSSL library that is susceptible to the Heartbleed bug."</p></td>
+</tr>
+<tr>
+<td><p><strong>Nordstrom</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Nordstrom websites do not use OpenSSL encryption."</p></td>
+</tr>
+<tr>
+<td><p><strong>PayPal</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Your PayPal account details were not exposed in the past and remain secure." <a href="https://www.paypal-community.com/t5/PayPal-Forward/OpenSSL-Heartbleed-Bug-PayPal-Account-Holders-are-Secure/ba-p/797568" target="_blank">Full Statement</a></p></td>
+</tr>
+<tr>
+<td><p><strong>Target</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"[We] launched a comprehensive review of all external facing aspects of Target.com... and do not currently believe that any external-facing aspects of our sites are impacted by the OpenSSL vulnerability."</p></td>
+</tr>
+<tr>
+<td><p><strong>Walmart</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We do not use that technology so we have not been impacted by this particular breach."</p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Videos, Photos, Games &amp; Entertainment</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>Flickr</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"As soon as we became aware of the issue, we began working to fix it... and we are working to implement the fix across the rest of our sites right now."</p></td>
+</tr>
+<tr>
+<td><p><strong>Hulu</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>No comment provided.</p></td>
+</tr>
+<tr>
+<td><p><strong>Minecraft</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We were forced to temporary suspend all of our services. ... The exploit has been fixed. We can not guarantee that your information wasn't compromised." <a href="https://mojang.com/2014/04/heartbleed/" target="_blank">More Information</a></p></td>
+</tr>
+<tr>
+<td><p><strong>Pandora</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>No comment provided.</p></td>
+</tr>
+<tr>
+<td><p><strong>Netflix</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"Like many companies, we took immediate action to assess the vulnerability and address it. We are not aware of any customer impact. It’s a good practice to change passwords from time to time, now would be a good time to think about doing so. "</p></td>
+</tr>
+<tr>
+<td style="font-size: 85%"><p><strong>SoundCloud</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>SoundCloud emphasized that there were no indications of any foul play and that the company's actions were simply precautionary.</p></td>
+</tr>
+<tr>
+<td><p><strong>YouTube</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes*</p></td>
+<td style="font-size: 90%"><p>“We have assessed the SSL vulnerability and applied patches to key Google services.”<br><br>*Google <a href="http://abcnews.go.com/Business/heartbleed-online-bug/story?id=23256168" target="_blank">said</a> users do not need to change their passwords, but because of the previous vulnerability, better safe than sorry.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Financial</h2>
+<p>All the banks we contacted (see below) said they were unaffected by Heartbleed, but U.S. regulators <a href="http://mashable.com/2014/04/10/u-s-regulators-warn-banks-to-fix-heartbleed-bug/" data-crackerjax="#post-slider">have warned</a> banks to patch their systems.</p>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>American Express</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"There was no compromise of any customer data. While we are not requiring customers to take any specific action at this time, it is a good security practice to regularly update Internet passwords."</p></td>
+</tr>
+<tr>
+<td><p><strong>American Funds</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>American Funds <a href="https://www.americanfunds.com/resources/news/heartbleed.html" target="_blank">told customers</a> to change their username and passwords, as the company "learned of a very narrow window of risk to those who logged into americanfunds.com between December 12, 2013 and April 14, 2014."</p></td>
+</tr>
+<tr>
+<td><p><strong>Bank of America</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"A majority of our platforms do NOT use OpenSSL, and the ones that do, we have confirmed no vulnerabilities."</p></td>
+</tr>
+<tr>
+<td><p><strong>Barclays</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>No comment provided.</p></td>
+</tr>
+<tr>
+<td><p><strong>Capital One</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Capital One uses a version of encryption that is not vulnerable to Heartbleed."</p></td>
+</tr>
+<tr>
+<td><p><strong>Chase</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"These sites don’t use the encryption software that is vulnerable to the Heartbleed bug."</p></td>
+</tr>
+<tr>
+<td><p><strong>Citigroup</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>Citigroup does not use Open SSL in "customer-facing retail banking and credit card sites and mobile apps"</p></td>
+</tr>
+<tr>
+<td><p><strong>E*Trade</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>E*Trade is still investigating.</p></td>
+</tr>
+<tr>
+<td><p><strong>Fidelity</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We have multiple layers of security in place to protect our customer sites and services."</p></td>
+</tr>
+<tr>
+<td><p><strong>PNC</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We have tested our online and mobile banking systems and confirmed that they are not vulnerable to the Heartbleed bug."</p></td>
+</tr>
+<tr>
+<td><p><strong>Schwab</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Efforts to date have not detected this vulnerability on Schwab.com or any of our online channels."</p></td>
+</tr>
+<tr>
+<td><p><strong>Scottrade</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Scottrade does not use the affected version of OpenSSL on any of our client-facing platforms."</p></td>
+</tr>
+<tr>
+<td><p><strong>TD Ameritrade</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>TD Ameritrade "doesn't use the versions of openSSL that were vulnerable."</p></td>
+</tr>
+<tr>
+<td><p><strong>TD Bank</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We're currently taking precautions and steps to protect customer data from this threat and have no reason to believe any customer data has been compromised in the past."</p></td>
+</tr>
+<tr>
+<td><p><strong>T. Rowe Price</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"The T. Rowe Price websites are not vulnerable to the “Heartbleed” SSL bug nor were they vulnerable in the past."</p></td>
+</tr>
+<tr>
+<td><p><strong>U.S. Bank</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We do not use OpenSSL for customer-facing, Internet banking channels, so U.S. Bank customer data is NOT at risk."</p></td>
+</tr>
+<tr>
+<td><p><strong>Vanguard</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We are not using, and have not used, the vulnerable version of OpenSSL."</p></td>
+</tr>
+<tr>
+<td><p><strong>Venmo</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>Venmo sent an email to its users, saying the company took "immediate steps to patch the potential vulnerability" and recommended that they change their passwords.</p></td>
+</tr>
+<tr>
+<td><p><strong>Wells Fargo</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>No reason provided.</p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Government and Taxes</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>1040.com</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We're not vulnerable to the Heartbleed bug, as we do not use OpenSSL."</p></td>
+</tr>
+<tr>
+<td><p><strong>FileYour Taxes.com</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We continuously patch our servers to keep them updated. However, the version we use was not affected by the issue, so no action was taken."</p></td>
+</tr>
+<tr>
+<td><p><strong>H&amp;R Block</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"We are reviewing our systems and currently have found no risk to client data from this issue."</p></td>
+</tr>
+<tr>
+<td><p><strong>Healthcare .gov</strong></p></td>
+<td><p>Unclear</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>Healthcare.gov originally told <em>Mashable</em>, "Consumer accounts are not affected by this vulnerability." But they later <a href="https://www.healthcare.gov/heartbleed/" target="_blank">posted</a>, "We have taken steps to address Heartbleed issues and reset consumers’ passwords out of an abundance of caution."</p></td>
+</tr>
+<tr>
+<td><p><strong>Intuit (TurboTax)</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>Turbotax <a href="http://blog.turbotax.intuit.com/2014/04/09/turbotax-is-secured-against-the-heartbleed-internet-vulnerability/" target="_blank">wrote</a> that "engineers have verified TurboTax is not affected by Heartbleed." The company has issued new certificates anyway, and said it's not "proactively advising" users to change their passwords.</p></td>
+</tr>
+<tr>
+<td><p><strong>IRS</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"The IRS continues to accept tax returns as normal ... and systems continue operating and are not affected by this bug. We are not aware of any security vulnerabilities related to this situation."</p></td>
+</tr>
+<tr>
+<td><p><strong>TaxACT</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Customers can update their passwords at any time, although we are not proactively advising them to do so at this time."</p></td>
+</tr>
+<tr>
+<td><p><strong>USAA</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>USAA <a href="https://communities.usaa.com/t5/USAA-News/USAA-Takes-Measures-Against-Heartbleed-Bug/ba-p/25876" target="_blank">said</a> that it has "already taken measures to help prevent a data breach and implemented a patch earlier this week."</p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Other</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>Box</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We're currently working with our customers to proactively reset passwords and are also reissuing new SSL certificates for added protection."</p></td>
+</tr>
+<tr>
+<td><p><strong>Dropbox</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>On <a href="https://twitter.com/dropbox_support/status/453673783480832000" target="_blank">Twitter</a>: "We’ve patched all of our user-facing services &amp; will continue to work to make sure your stuff is always safe."</p></td>
+</tr>
+<tr>
+<td><p><strong>Evernote</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Evernote's service, Evernote apps, and Evernote websites ... all use non-OpenSSL implementations of SSL/TLS to encrypt network communications." <a href="http://discussion.evernote.com/topic/56287-heartbleed/" target="_blank">Full Statement</a></p></td>
+</tr>
+<tr>
+<td><p><strong>GitHub</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>GitHub <a href="https://github.com/blog/1818-security-heartbleed-vulnerability" target="_blank">said</a> it has patched all its systems, deployed new SSL certificates and revoked old ones. GitHub is asking all users to change password, enable two-factor authentication and "revoke and recreate personal access and application tokens."</p></td>
+</tr>
+<tr>
+<td><p><strong>IFTTT</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>IFTTT emailed all its users and logged them out, prompting them to change their password on the site.</p></td>
+</tr>
+<tr>
+<td><p><strong>OKCupid</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We, like most of the Internet, were stunned that such a serious bug has existed for so long and was so widespread."</p></td>
+</tr>
+<tr>
+<td><p><strong>Spark Networks (JDate, Christian Mingle)</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>Sites do not use OpenSSL.</p></td>
+</tr>
+<tr>
+<td><p><strong>SpiderOak</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>Spideroak <a href="https://spideroak.com/blog/20140408174250-spideroak-com-related-ssl-certificates-changed-today-due-openssl-bug" target="_blank">said</a> it patched its servers, but the desktop client doesn't use a vulnerable version of OpenSSL, so "customers do not need to take any special action."</p></td>
+</tr>
+<tr>
+<td><p><strong>Wikipedia</strong> (if you have an account)</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"We recommend changing your password as a standard precautionary measure, but we do not currently intend to enforce a password change for all users." <a href="https://blog.wikimedia.org/2014/04/10/wikimedias-response-to-the-heartbleed-security-vulnerability/" target="_blank">Full Statement</a></p></td>
+</tr>
+<tr>
+<td><p><strong>Wordpress</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>Wordpress <a href="http://en.blog.wordpress.com/2014/04/15/security-update/" target="_blank">confirmed</a> that it was vulnerable to Heartbleed and that it has patched its servers "within a few hours of the public disclosure." Wordpress is not forcing users to change their passwords, but said users "are welcome" to do it.</p></td>
+</tr>
+<tr>
+<td style="font-size: 90%"><p><strong>Wunderlist</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p><span style="float: left; padding-right: 5px; margin-top: -4px;" class="yes">Yes</span> Yes</p></td>
+<td style="font-size: 90%"><p>"You’ll have to simply log back into Wunderlist. We also strongly recommend that you reset your password for Wunderlist." <a href="https://www.wunderlist.com/blog/how-we-fixed-the-heartbleed-bug" target="_blank">Full Statement</a></p></td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-top: 22px;">Password Managers</h2>
+<table class="comparison-chart">
+<thead><tr>
+<th width="80"></th>
+<th width="70"><p>Was it affected?</p></th>
+<th width="70"><p>Is there a patch?</p></th>
+<th width="70"><p>Do you need to change your password?</p></th>
+<th><p>What did they say?</p></th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><strong>1Password</strong></p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>1Password said in a <a href="http://blog.agilebits.com/2014/04/08/imagine-no-ssl-encryption-its-scary-if-you-try/" target="_blank">blog post</a> that its technology "is not built upon SSL/TLS in general, and not upon OpenSSL in particular." So users don't need to change their master password.</p></td>
+</tr>
+<tr>
+<td><p><strong>Dashlane</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>Dashlane said in a <a href="https://www.dashlane.com/blog/security/dashlane-heartbleed-bug/" target="_blank">blog post</a> users' accounts were not impacted and the master password is safe as it is never transmitted. The site does use OpenSSL when syncing data with its servers but Dashlane said it has patched the bug, issued new SSL certificates and revoked previous ones.</p></td>
+</tr>
+<tr>
+<td><p><strong>LastPass</strong></p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p></td>
+<td style="font-size: 90%"><p>"Though LastPass employs OpenSSL, we have multiple layers of encryption to protect our users and never have access to those encryption keys." Users don't need to change their master passwords because <a href="http://blog.lastpass.com/2014/04/lastpass-and-heartbleed-bug.html?showComment=1396972067260#c3424197100234033838" target="_blank">they're never sent to the server</a>. But passwords for other sites stored in LastPass might need to be changed.</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Reporters who contributed to this story include Samantha Murphy Kelly, Lorenzo Francheschi-Bicchierai, Seth Fiegerman, Adario Strange and Kurt Wagner.</em></p>
+<p><em><strong>What other sites are you concerned about?</strong> Let us know in the comments.</em></p>
+<p><strong>BONUS: What Is the Heartbleed Bug?</strong></p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/8oI_laHhGjE?list=PLSKUhDnoJjYn0TV9V84C4Wr2DjKPc492c" frameborder="0" allowfullscreen></iframe></p>
+
+
+
+
+</section>
+<footer class='article-topics'>
+Topics:
+<a href="/category/apps-software/">Apps and Software</a>, <a href="/category/banks/">banks</a>, <a href="/category/facebook/">Facebook</a>, <a href="/category/google/">Google</a>, <a href="/category/heartbleed-bug/">Heartbleed Bug</a>, <a href="/category/must-reads/">Mashable Must Reads</a>, <a href="/category/mobile/">Mobile</a>, <a href="/category/security/">security</a>, <a href="/category/tech/">Tech</a>, <a href="/category/twitter/">Twitter</a>, <a href="/category/us/">U.S.</a>, <a href="/category/world/">World</a>, <a href="/category/yahoo/">Yahoo</a>
+</footer>
+<div data-display-daily-newsletter='show' id='newsletter-signup'></div>
+
+<div id='taboola-container'>
+<div class='iframe-container'>
+<iframe class='taboola' src='/taboola/'></iframe>
+</div>
+</div>
+<script>
+  if(window.pageChanged)
+    window.omni({"channel":"tech","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":3718.5,"h_buy":null,"h_pub_buy":null,"v_cur":7.9,"v_max":7.9,"v_cur_i":7,"v_max_i":7,"events":"event54,event61,event62,event63,event64","top_channel":"tech","content_source_type":"Internal - Editorial Series","content_source_name":"Heartbleed","author_name":"Mashable Team","age":"154","pub_day":10,"pub_month":4,"pub_year":2014,"pub_date":"04/10/2014","isPostView":true,"post_lead_type":"Default","topics":"Apps and Software,banks,Facebook,Google,Heartbleed Bug,Mashable Must Reads,Mobile,security,Tech,Twitter,Uncategorized,U.S.,World,Yahoo","campaign":null,"display_mode":null});
+    metaData = {"link":[["canonical","http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/"],["image_src","http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/f185cc9b/662/Heartbleed-Refresh.jpg"]],"meta_property":[["og:url","http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/"],["og:title","The Heartbleed Hit List: The Passwords You Need to Change Right Now"],["og:type","article"],["og:site_name","Mashable"],["og:description","Heartbleed: A look at which companies have issued a security patch to fix the Heartbleed bug. "],["og:image","http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/f185cc9b/662/Heartbleed-Refresh.jpg"],["og:article:published_time","2014-04-10T00:23:26Z"],["og:article:modified_time","2014-08-25T23:10:47Z"],["og:article:publisher","https://www.facebook.com/mashable"]],"meta_name":[["description","Heartbleed: A look at which companies have issued a security patch to fix the Heartbleed bug. "],["keywords","yahoo, google, facebook, twitter, security, banks, uncategorized, tech, apps-software, mobile"],["twitter:title","The Heartbleed Hit List: The Passwords You Need to Change Right Now"],["twitter:description","A look at which companies have issued a security patch to fix the Heartbleed bug. "],["twitter:image","http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/63e50328/662/Heartbleed-Refresh.jpg"],["twitter:site","@mashable"],["twitter:url","http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/"],["twitter:creator","@mashable"],["twitter:card","photo"],["twitter:image:width","560"],["twitter:image:height","750"],["date","2014-04-10 00:23:26 UTC"],["sailthru.author","Mashable Team"],["sailthru.image.thumb","http://rack.2.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/56918b74/662/Heartbleed-Refresh.jpg"],["sailthru.image.full","http://rack.3.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3e5b392b/662/Heartbleed-Refresh.jpg"],["sailthru.lead_image","http://rack.3.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/e2b05196/662/Heartbleed-Refresh.jpg"],["sailthru.secondary_image","http://rack.1.mshcdn.com/media/ZgkyMDE0LzA4LzI1LzE3L0hlYXJ0YmxlZWRSLmVkNDc3LmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/0e00457b/662/Heartbleed-Refresh.jpg"]],"short_url":[["short_url","http://on.mash.to/1kLRfST"]]};
+</script>
+<div class='right_rail_replace'>
+<div class="ad_container"><span class="ad" data-params="{&quot;tile&quot;:1,&quot;adnum&quot;:1,&quot;sec0&quot;:&quot;tech&quot;,&quot;sec1&quot;:&quot;apps|mob|us|world&quot;,&quot;sec2&quot;:&quot;posts&quot;,&quot;topic&quot;:&quot;facebook|security&quot;,&quot;postid&quot;:2521613,&quot;gvcfv&quot;:&quot;true&quot;,&quot;gvmfv&quot;:&quot;true&quot;,&quot;gvcv&quot;:&quot;true&quot;,&quot;gvmv&quot;:&quot;true&quot;,&quot;gvcav&quot;:&quot;true&quot;,&quot;gvav&quot;:&quot;true&quot;,&quot;posts&quot;:&quot;Heartbleed&quot;,&quot;authorid&quot;:20,&quot;type&quot;:&quot;no_right_rail&quot;}"></span></div>
+</div>
+</article>
+</div>
+<div class='article-comments limit-comments'>
+<div data-article-id="5345e48db05f9d66bc000e85" data-checksum="6bfe2cd215a9057aa2183e92782e538a" data-collection-meta="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IlRoZSBIZWFydGJsZWVkIEhpdCBMaXN0OiBUaGUgUGFzc3dvcmRzIFlvdSBOZWVkIHRvIENoYW5nZSBSaWdodCBOb3ciLCJ1cmwiOiJodHRwOi8vbWFzaGFibGUuY29tLzIwMTQvMDQvMDkvaGVhcnRibGVlZC1idWctd2Vic2l0ZXMtYWZmZWN0ZWQvIiwidGFncyI6InlhaG9vLGdvb2dsZSxmYWNlYm9vayx0d2l0dGVyLHNlY3VyaXR5LGJhbmtzLHVuY2F0ZWdvcml6ZWQsdGVjaCxhcHBzLXNvZnR3YXJlLG1vYmlsZSx1cyx3b3JsZCxoaWdobGlnaHRzLGhlYXJ0YmxlZWQtYnVnIiwiY2hlY2tzdW0iOiI2YmZlMmNkMjE1YTkwNTdhYTIxODNlOTI3ODJlNTM4YSIsImFydGljbGVJZCI6IjUzNDVlNDhkYjA1ZjlkNjZiYzAwMGU4NSJ9.vc-av310lYnq56RSWUGCk8pPKvmL5slbb4xk2XDtmkw" data-network="mashable.fyre.co" data-root="zor.livefyre.com" data-site-id="312274" id="livefyre_comments"></div>
+<a class='btn btn-light load-comments' href='#'>Load Comments</a>
+<div id='powered_by_livefyre_new'>
+<a href='http://livefyre.com' target='_blank'>Powered by Livefyre</a>
+</div>
+</div>
+</div>
+</div>
+<aside class='box-cell sidebar'>
+<div class='ad sidebar-inset sidebar-drop'>
+<div class="ad_container"><span class="ad" data-params="{&quot;tile&quot;:2,&quot;adnum&quot;:1,&quot;sec0&quot;:&quot;tech&quot;,&quot;sec1&quot;:&quot;apps|mob|us|world&quot;,&quot;sec2&quot;:&quot;posts&quot;,&quot;topic&quot;:&quot;facebook|security&quot;,&quot;postid&quot;:2521613,&quot;gvcfv&quot;:&quot;true&quot;,&quot;gvmfv&quot;:&quot;true&quot;,&quot;gvcv&quot;:&quot;true&quot;,&quot;gvmv&quot;:&quot;true&quot;,&quot;gvcav&quot;:&quot;true&quot;,&quot;gvav&quot;:&quot;true&quot;,&quot;posts&quot;:&quot;Heartbleed&quot;,&quot;authorid&quot;:20,&quot;type&quot;:&quot;right_rail&quot;}"></span></div>
+
+</div>
+<h1 class='ribbon hot'>What's Hot</h1>
+<div class='sidebar-inset' id='big-stories'></div>
+</aside>
+</div>
+<div id='more-in-channel'>
+<div class='page-header channel' data-channel='tech' data-section='sec0=tech&amp;sec1=index&amp;sec2='>
+<h2>More in Tech</h2>
+</div>
+<div class='fixable-wrapper' id='column-headers'>
+<div class='column-headers'>
+<div class='headers'>
+<div class='header column1 waypoint' data-fixselector='header.fixable'><a data-short='New' href='#'>
+<em>The New Stuff</em>
+</a></div>
+<div class='header column2 waypoint' data-fixselector='header.fixable'><a data-short='Rising' href='#'>
+<em>The Next Big Thing</em>
+</a></div>
+<div class='header column3 waypoint' data-fixselector='header.fixable'><a data-short='Hot' href='#'>
+<em>What's Hot</em>
+</a></div>
+</div>
+</div>
+</div>
+<div class='slide-window'>
+<div class='flex-box columns'><section class='column box-cell new-stories' id='column-new'><h1 class='semantic'>The New Stuff</h1>
+<div class='column-content'></div></section><section class='column box-cell hot-stories' id='column-rising'><h1 class='semantic'>The Next Big Thing</h1>
+<div class='column-content'></div></section><section class='column box-cell big-stories' id='column-hot'><h1 class='semantic'>What's Hot</h1>
+<div class='column-content'></div></section></div>
+</div>
+</div>
+
+<script>
+  loadScriptAsync("//platform.twitter.com/oct.js", "twitteroct")
+  var timer;
+  timer = every(500, function() {
+    if ((typeof twttr !== "undefined" && twttr !== null) && (twttr.conversion != null)) {
+      clearInterval(timer);
+      return twttr.conversion.trackPid('l4o6d');
+    }
+  });
+</script>
+<noscript>
+<img alt='' height='1' src='https://analytics.twitter.com/i/adsct?txn_id=l4o6d&amp;p_id=Twitter' style='display:none;' width='1'>
+<img alt='' height='1' src='//t.co/i/adsct?txn_id=l4o6d&amp;p_id=Twitter' style='display:none;' width='1'>
+</noscript>
+
+<div id='parsely-root' style='display: none'>
+<span data-parsely-site='mashable.com' id='parsely-cfg'></span>
+</div>
+<script>
+  loadScriptAsync("//static.parsely.com/p.js", "parsely")
+</script>
+</div>
+</div>
+</div><div id='fb-root'></div><script>
+  if(window.initPage) { window.initPage() }
+  else { $(function() { window.initPage(); })}
+</script>
+</div><footer id='site-footer-wrapper'>
+<div class='page-container' id='site-footer'><ul class='nav'><li><a href="/about/">About Us</a></li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="/advertise/">Advertise</a></li><li><a href="/2011/05/09/connect-with-mashable/">Subscribe</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul><ul class='social'><li><a class='facebook' href='http://www.facebook.com/mashable/' target='_social'></a></li>
+<li><a class='twitter' href='https://twitter.com/mashable' target='_social'></a></li>
+<li><a class='gplus' href='https://plus.google.com/+Mashable' target='_social'></a></li>
+<li><a class='rss' href='http://feeds.mashable.com/Mashable' target='_social'></a></li>
+<li><a class='pinterest' href='http://pinterest.com/mashable/' target='_social'></a></li>
+<li><a class='youtube' href='http://www.youtube.com/user/mashable' target='_social'></a></li>
+<li><a class='stumbleupon' href='http://www.stumbleupon.com/channel/Mashable' target='_social'></a></li>
+<li><a class='linkedin' href='http://www.linkedin.com/today/mashable.com' target='_social'></a></li></ul>
+<div class='about'>
+<a class='brand' href='/'>
+Mashable
+</a>
+<span class='blurb'>is a leading source for news, information and resources for the Connected Generation. Mashable reports on the importance of digital innovation and how it empowers and inspires people around the world. Mashable's record 34 million unique visitors worldwide and 15 million social media followers are one of the most influential and engaged online communities. Founded in 2005, Mashable is headquartered in New York City with an office in San Francisco.</span>
+</div>
+<ul class='copyright-and-legal'>
+<li>
+&copy;2005-2014
+Mashable, Inc.
+</li>
+<li>
+Reproduction without explicit permission is prohibited. All Rights Reserved.
+</li>
+<li>
+Designed in collaboration with <a rel="nofollow" href="http://www.codeandtheory.com">Code &amp; Theory</a>
+</li>
+</ul>
+</div>
+</footer>
+
+<noscript>
+<img src='http://b.scorecardresearch.com/p?c1=2&amp;c2=8750086&amp;cv=2.0&amp;cj=1'>
+</noscript></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+status: 200
+content-length: 21395
+x-xss-protection: 1; mode=block
+content-location: http://www.transitmix.net/
+x-content-type-options: nosniff
+vary: Accept-Encoding
+server: Cowboy
+connection: close
+via: 1.1 vegur
+date: Mon, 22 Sep 2014 17:04:28 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html;charset=utf-8
+-content-encoding: gzip
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-4.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"00c7856fa8","applicationID":"3247913","transactionName":"IV5YRRBYXA5SQxhiCgxQQkMDGGQQVl9EWBcPWE4LWGVfF0NURAtZKl5bVE1wdTYXGRkbXEs=","queueTime":15,"applicationTime":4,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-454.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwYGUVZQGwACUFZbBgI="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t(3),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(6),t(4),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:"QJf3ax",4:5,5:15,6:6,handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(2),t(1).create()),i=t(3)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:"QJf3ax",2:15,3:16}],5:[function(t,e){var n=(t(3),t(1).create()),r=t(2)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:"QJf3ax",2:16,3:15}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(3),t(1).create()),o=t(2)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:"QJf3ax",2:16,3:15}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t(2).create(),a=t(1),s=t(3),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:"QJf3ax",3:16}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t(3),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(5),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:"QJf3ax",4:7,5:4,handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t(1).create(),o={};e.exports=n,n.ee=r,r.q=o},{1:"QJf3ax"}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t(1),o=t(2),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:"QJf3ax",2:15}]},{},["G9z0Bl",3,8]);</script>
+  <meta name="description" content="Design, remix, and share your perfect transit map. Transitmix is a simple transit sketching tool for transit agencies and transit planners.">
+  <meta name="viewport" content="width=device-width">
+  
+  <!-- bounce old internet explorer -->
+  <!--[if lte IE 9]>
+  <meta http-equiv="refresh" content="3;url=http://browser-update.org/update.html" />
+  <![endif]-->
+  
+  <title>Transitmix | A transit sketching tool.</title>
+
+  <!-- typekit -->
+  <script src="http://use.typekit.net/xkd8pzb.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <!-- mapbox css -->
+  <link href="http://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css" rel="stylesheet" />
+
+  <!-- our fresh styles -->
+  <link rel='stylesheet' href='/assets/app.3ae5163b342fded0b453fa2053fa13cd.css' />
+</head>
+<body>
+  <p class="description">A sketching tool for transit planners. Transitmix makes it easy to draw new transit lines, understand the underlying costs, and share ideas with the public. Start designing your perfect transit map today!</p>
+  <div id="map">
+    <a href="https://mapzen.com/" class="mapzen-maplogo" target="_blank">Mapzen</a>
+    <a href="http://mapbox.com/about/maps" class="mapbox-maplogo" target="_blank">Mapbox</a>
+  </div>
+
+  <!-- underscore templates -->
+  <script type="text/template" id="tmpl-feedback-view">
+    <div class="feedbackHint">What is Transitmix?</div>
+    <div class="feedbackExpansion" style="display:none">
+      <div class="feedbackDescription">This is an <a href="https://github.com/codeforamerica/transitmix/blob/master/README.md" target="_blank">early preview</a> of a transit planning app, made by <a href="http://codeforamerica.org/about/" target="_blank">Code for America</a>. Help make it better by <a href="mailto:transitmix@codeforamerica.org">emailing us</a> with feedback, or catch us on twitter: <a href="https://twitter.com/transitmixapp" target="_blank">@transitmixapp</a>.</div>
+      <div class="feedbackDescription">Or sign up for email updates:</div>
+       <form class="feedbackForm" action="https://tinyletter.com/transitmix" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/transitmix', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+        <input type="text" style="width:250px" name="email" id="tlemail" placeholder="enter email address" />
+        <input type="hidden" value="1" name="embed"/><input class="feedbackSubmit" type="submit" value="Subscribe" />
+      </form>
+    </div>
+  </script>
+
+  <script type="text/template" id="tmpl-home-view">
+    <div class="homeViewWrapper">
+      <div class="homeTitle">Transitmix</div>
+      <div class="homeDescription">Design, remix, and share your perfect transit map.<br />Choose a city:</div>
+      <div class="homeCityWrapper">
+        <span class="homeCity" contenteditable="true">San Francisco, CA</span>
+        <span class="homeStartButton">Start</span>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/template" id="tmpl-MapDetailsView">
+    <header>
+      <h1>{{ name }}</h1>
+      <div class="toggleSettings"></div>
+      {# if (remixedFromId) { #}
+        <div class="source">Remixed from <span class="remixedFrom">#{{ remixedFromId }}</span></div>
+      {# } #}
+      <div class="stats">
+        This map: <label class="lineCount"></label> lines, 
+        <label class="distance"></label>, 
+        <label class="costWrapper"><label class="cost"></label> per year, </label>
+        <label class="hoursWrapper"><label class="hours"></label> hrs / year, </label>
+        <label class="buses"></label> buses at peak</div>
+    </header>
+
+    <div class="scrollable">
+      <div class="lines">
+        <!-- Lines are dynamically inserted here -->
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="left">
+        <span class="add">Add a line</span>
+      </div>
+
+      <div class="right">
+       <span class="export"></span>
+       <span class="share">Share</span>
+       <span class="remix">Remix</span>
+      </div>
+    </div>
+
+    <div class="sharebox" style="display:none">
+        <input type="text" />
+        Download <a href="/api/maps/{{ id }}.kml">KML</a> or <a href="/api/maps/{{ id }}.zip">Shapefile</a>
+  </script>
+
+  <script type="text/template" id="tmpl-MapDetailsView-empty">
+    <header>
+      <h1>{{ name }}</h1>
+      <div class="toggleSettings"></div>
+      <p>Lovely city you've got there. But it sure could use some transit.<!-- ' Fix syntax coloring in Sublime--></p>
+      <p>Start by <span class="add">adding a transit line</span>.</p>
+    </header>
+    <div class="advancedStart">
+      <p>Want more control? Then <span class="toggleSettingsText">configure the settings</span> first.</p>
+    </div>
+  </script>
+
+  <script type="text/template" id="tmpl-MapDetailsItemView">
+    <div class="mapDetailsItemView" style="background:{{ color }}">
+      <div class="name">{{ name }}</div>
+      <div class="stats">{{ distance }} • {{ total.buses }} buses • {{ totalCost }}</div>
+    </div>
+  </script>
+
+  <script type="text/template" id="tmpl-LineDetailsView">
+    <nav>
+      <div class="back">&#8592; All lines</div>
+      <div class="right">
+        <div class="add">Add a line</div>
+        <div class="delete">Delete</div>
+      </div>
+    </nav>
+
+    <header style="background: {{ color }}">
+      <div class="name" contenteditable="true"><!-- dynamically inserted --></div>
+    </header>
+
+    <div class="serviceWindows" style="background: {{ color2 }};">
+      <div class="columns">
+        <span class="windowName"></span>
+        <span class="from">From</span> 
+        <span class="to">To</span>
+        <span class="headway">Every</span>
+      </div>
+
+      <div class="windows">
+        <!-- dynamically inserted -->
+      </div>
+    </div>
+
+    <div class="outputs" style="background: {{ color3 }}">
+      <h2>This line:</h2>
+      <span class="distance">0 miles</span> <span class="showMileageOutputs"></span><br/>
+      <span class="buses">0 buses</span> at peak <span class="showBusOutputs"></span><br/>
+      <div class="costWrapper">
+        <span class="cost">$0</span> / year <span class="showCostOutputs"></span>
+      </div>
+      <div class="revenueHoursWrapper" style="display:none">
+        <span class="bigRevenueHours"></span> / year <span class="showCostOutputs"></span>
+      </div>
+    </div>
+
+    <div class="outputs advancedOutputs mileageOutputs" style="background: {{ color3 }}">
+      <h2>Distance:</h2>
+      <span class="halfDistance">1.80 miles</span> each way<br/>
+      <p>Support for differing inbound and outbound lines coming soon.</p>
+    </div>
+
+    <div class="outputs advancedOutputs busOutputs" style="background: {{ color3 }}">
+      <h2>Bus assumptions:</h2>
+      <input type="text" class="speed"> avg. speed<br/>
+      <input type="text" class="layover"> recovery time<br/>
+    </div>
+
+    <div class="outputs advancedOutputs costOutputs" style="background: {{ color3 }}">
+      <div class="dayCounts">
+        Assuming: <input type="text" class="weekdaysPerYear"> weekdays,<br/>
+        <input type="text" class="saturdaysPerYear"> saturdays,
+        and <input type="text" class="sundaysPerYear"> sundays.
+      </div>
+
+      <span class="revenueHours">4504</span> service hours<br/>
+      x <input type="text" class="hourlyCost"> per hour<br/>
+      <p><a target="_blank" href="http://www.humantransit.org/02box.html">Read more</a> on transit costs.</p>
+    </div>
+  </script>
+
+  <script type="text/template" id="tmpl-ServiceWindowView">
+    <span class="toggle" style="display:none"></span>
+    <span class="windowName"></span>
+    <input type="text" class="from"></span>
+    <input type="text" class="to"></span>
+    <input type="text" class="headway"></span>
+  </script>
+
+  <script type="text/template" id="tmpl-NearbyEmptyView">
+  <div class="apology">Sorry, we haven't loaded in bus lines for this city yet. But just send us a short note, and we'll get right to it.</div>
+  <iframe height="419" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://transitmix.wufoo.com/embed/zwhnrd40xiflgv/"><a href="https://transitmix.wufoo.com/forms/zwhnrd40xiflgv/">Fill out my Wufoo form!</a></iframe><div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/gallery/templates/">Wufoo templates</a> to make your own HTML forms.</div>
+  </script>
+
+  <script type="text/template" id="tmpl-MapSettingsView">
+    <h2>Line Defaults</h2>
+    <div class="closeSettings">&#x2715;</div>
+
+    <div class="innerSettings"</div>
+      <div class="weekdays">
+        <h3>Service Windows</h3>
+        <div class="weekdayServiceWindows serviceWindows"></div>
+      </div>
+
+      <div class="weekends">
+        <div class="weekendServiceWindows serviceWindows"></div>
+      </div>
+
+      <div class="additional">
+        <h3>Advanced</h3>
+        <div class="item"><input type="text" class="speed"> avg. speed</div>
+        <div class="item"><input type="text" class="layover"> recovery time</div>
+        <div class="item"><input type="text" class="hourlyCost"> per hour</div>
+      </div>
+
+      <div class="additional">
+        <div class="item"><input type="text" class="weekdaysPerYear"> weekdays</div>
+        <div class="item"><input type="text" class="saturdaysPerYear"> saturdays</div>
+        <div class="item"><input type="text" class="sundaysPerYear"> sundays</div>
+      </div>
+
+      <div class="additional">
+        <div class="item toggleParent serviceHoursToggle"><div class="toggle"></div> Show service hours, not cost</div>
+        <div class="item toggleParent metricUnitsToggle"><div class="toggle"></div> Use metric units (km)</div>
+        <div class="item">&nbsp;</div>
+      </div>
+    </div>
+
+    <p>Will apply to new lines. You can also <span class="applyToAll">apply to all existing lines</span>.</p>
+  </script>
+
+  <!-- libs -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.stickit/0.7.0/backbone.stickit.min.js"></script>
+  <script src="//api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js"></script>
+
+  <!-- the finest quality javascripts -->
+  <script src='/assets/app.07b41ebb6861f85993e1e6bf1cb59234.js'></script>
+
+  
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34519248-4', 'auto');
+    ga('send', 'pageview');
+    </script>
+  
+</body>
+</html>

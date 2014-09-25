@@ -1,0 +1,1130 @@
+status: 200
+content-length: 162124
+vary: Accept-Encoding
+x-cacheable: YES
+x-author: sarah stillman
+varnish-x-cache: MISS
+x-type: article
+x-access: n
+x-developers: Conde Nast is hiring. http://www.condenast.com/careers
+cache-control: must-revalidate, max-age=60
+-varied-accept-encoding: gzip, deflate
+x-varnish: 1967177774
+accept-ranges: bytes
+expires: Mon, 22 Sep 2014 16:36:54 GMT
+last-modified: Mon, 22 Sep 2014 12:07:39 GMT
+x-id: 1563231
+-content-encoding: gzip
+link: <http://www.newyorker.com/?p=1563231>; rel=shortlink
+date: Mon, 22 Sep 2014 16:35:54 GMT
+access-control-allow-origin: *
+x-format: 
+content-location: http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc
+x-section: a reporter at large
+server: Apache
+connection: keep-alive
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!doctype html>
+<!--[if IE 7]> <html class="no-js oldie ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/NewsArticle"> <!--<![endif]-->
+<head>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFVlRbGwcDV1ZRBwQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t(3),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(6),t(4),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:"QJf3ax",4:5,5:15,6:6,handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(2),t(1).create()),i=t(3)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:"QJf3ax",2:15,3:16}],5:[function(t,e){var n=(t(3),t(1).create()),r=t(2)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:"QJf3ax",2:16,3:15}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(3),t(1).create()),o=t(2)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:"QJf3ax",2:16,3:15}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t(2).create(),a=t(1),s=t(3),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:"QJf3ax",3:16}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t(3),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(5),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:"QJf3ax",4:7,5:4,handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t(1).create(),o={};e.exports=n,n.ee=r,r.q=o},{1:"QJf3ax"}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t(1),o=t(2),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:"QJf3ax",2:15}]},{},["G9z0Bl",3,8]);</script>
+<title>Get Out of Jail, Inc. - The New Yorker</title>
+
+<meta name="copyright" content="Copyright (c) Conde Nast 2014">
+<meta name="author" content="">
+<meta name="description" itemprop="description" content="">
+
+<meta itemprop="name" content="Get Out of Jail, Inc.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- minimal-ui=1 -->
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="The New Yorker">
+
+<meta name="environment" content="prod">
+<meta name="tny:id" content="1563231">
+<link rel="shortcut icon" href="/wp-content/assets/dist/img/icon/favicon.ico">
+<link rel="apple-touch-icon" href="/wp-content/assets/dist/img/icon/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/wp-content/assets/dist/img/icon/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/wp-content/assets/dist/img/icon/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/assets/dist/img/icon/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/assets/dist/img/icon/apple-touch-icon-144x144-precomposed.png">
+
+<meta property="fb:app_id" content="179662042076731">
+<meta property="fb:admins" content="648235154,789168297,688620285">
+
+	<script src="/wp-content/assets/dist/js/tny-reajs.min.js"></script>
+
+<script>
+	var TNY = TNY || {};
+	TNY.initIsMobile = TNY.reajs.checkViewport('mobile');
+</script>
+
+<link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="//stats2.newyorker.com" /><link rel="dns-prefetch" href="//sstats.newyorker.com" />
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" />
+<link rel="publisher" href="https://plus.google.com/+newyorker"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Get Out of Jail, Inc. - The New Yorker" />
+<meta property="og:description" content="On a cold November afternoon, Harriet Cleveland, a forty-nine-year-old mother of three, waved me over from the steps of her pink cottage in Montgomery, Alabama. She was off to her part-time job as a custodian at a local day-care center, looking practical but confectionary: pink lipstick, a pastel yellow-and-pink tunic, and dangly pink earrings. We’d need to start walking soon, she explained. The job, which paid seven dollars and twenty-five cents an hour, was the only one she’d been able to find for some time, and was four and a half miles away. As we set off beneath loblolly pines, she recounted the events that had led me to her doorstep: her arrest and jailing for a string of traffic tickets that she was unable to pay. It was, in part, a story of poverty and constraint, but it was also a story of the lucrative and fast-growing “alternatives to incarceration” industry." />
+<meta property="og:url" content="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" />
+<meta property="og:site_name" content="The New Yorker" />
+<meta property="article:tag" content="(Judge) Larry Ward" />
+<meta property="article:tag" content="(Judge) Lynneice Washington" />
+<meta property="article:tag" content="(Judge) Stephen Wallace" />
+<meta property="article:tag" content="(Judge) Tommy Nail" />
+<meta property="article:tag" content="Alternatives to Incarceration" />
+<meta property="article:tag" content="Amy Lerman" />
+<meta property="article:tag" content="Ankle Bracelets" />
+<meta property="article:tag" content="Avalon Correctional Services" />
+<meta property="article:tag" content="BI Incorporated" />
+<meta property="article:tag" content="Cary Aspinwall" />
+<meta property="article:tag" content="Charlie Waldrep" />
+<meta property="article:tag" content="Corrections Industry" />
+<meta property="article:tag" content="Corruption" />
+<meta property="article:tag" content="Courts" />
+<meta property="article:tag" content="David Hamil" />
+<meta property="article:tag" content="Debtors’ Prison" />
+<meta property="article:tag" content="Don Smith" />
+<meta property="article:tag" content="Foster Cook" />
+<meta property="article:tag" content="Gayle Gear" />
+<meta property="article:tag" content="GEO Group" />
+<meta property="article:tag" content="Halfway Houses" />
+<meta property="article:tag" content="Harriet Cleveland" />
+<meta property="article:tag" content="Isaac T. Hopper" />
+<meta property="article:tag" content="Jack Long" />
+<meta property="article:tag" content="Jacob Denney" />
+<meta property="article:tag" content="Jails" />
+<meta property="article:tag" content="John Augustus" />
+<meta property="article:tag" content="Judges" />
+<meta property="article:tag" content="Judicial Correction Services (J.C.S.)" />
+<meta property="article:tag" content="JusticeHome" />
+<meta property="article:tag" content="Justin Jones" />
+<meta property="article:tag" content="Law" />
+<meta property="article:tag" content="Logan Jones" />
+<meta property="article:tag" content="Louis Bullock" />
+<meta property="article:tag" content="Meagan Poole" />
+<meta property="article:tag" content="Melissa Poore" />
+<meta property="article:tag" content="Monica Norton" />
+<meta property="article:tag" content="Montgomery, Alabama" />
+<meta property="article:tag" content="Nancy La Vigne" />
+<meta property="article:tag" content="Patrick Harvey" />
+<meta property="article:tag" content="Politics" />
+<meta property="article:tag" content="Privatization" />
+<meta property="article:tag" content="Probation" />
+<meta property="article:tag" content="Probation Debts" />
+<meta property="article:tag" content="Profiteering" />
+<meta property="article:tag" content="Quiznos" />
+<meta property="article:tag" content="Rehabilitation" />
+<meta property="article:tag" content="Sara Zampierin" />
+<meta property="article:tag" content="Sentinel Offender Services" />
+<meta property="article:tag" content="Sexual Harassment" />
+<meta property="article:tag" content="Spencer Bryan" />
+<meta property="article:tag" content="Surveillance" />
+<meta property="article:tag" content="Tamico Norton" />
+<meta property="article:tag" content="Tickets" />
+<meta property="article:tag" content="Tim Fugatt" />
+<meta property="article:tag" content="Traffic Violations" />
+<meta property="article:tag" content="Tulsa, Oklahoma" />
+<meta property="article:tag" content="Work-Release Programs" />
+<meta property="article:tag" content="Wrongful Death" />
+<meta property="og:image" content="http://www.newyorker.com/wp-content/uploads/2014/06/140623_r25159.jpg" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@newyorker"/>
+<meta name="twitter:domain" content="The New Yorker"/>
+<meta name="twitter:creator" content="@newyorker"/>
+<meta name="twitter:image:src" content="http://www.newyorker.com/wp-content/uploads/2014/06/140623_r25159.jpg"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WP_VARS = {"THEME_URI":"http:\/\/www.newyorker.com\/wp-content\/themes\/tny","ajaxurl":"https:\/\/www.newyorker.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-common/cn.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-common/popups/1.1.0/cn.popups-1.1.0.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-common/cn.mobile.js?ver=20130717'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var deviceviews = {"mobileMax":"600","tabletMax":"850"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/mu-plugins/cn-wordpress/lib/js/jquery.devices.js?ver=20130717'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var s_account = "conde-newyorker";
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/config/cn-fe-stats/s_code.js?ver=20130717'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var platformEnvironment = "production";
+var sitehost = "http:\/\/www.newyorker.com";
+var omniture_init = [];
+CN.omniture = CN.omniture || {};CN.omniture.conf = {"s_account":"conde-newyorker","server":"stats2.newyorker.com","secureServer":"sstats.newyorker.com","internalFilters":"javascript:,newyorker.com,advancemags.com"};;
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-stats/omniture.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-ads/cn.dart.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-ads/cn.ad.arsaccelerator.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-content/assets/js/vendors/cn-fe-ads/cn.ad.refresh.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-ecom/cn.ecom.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-ecom/ecomfw.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/js/cn-fe-ecom/promotheus/promotheus.js?ver=20130717'></script>
+<script type='text/javascript' src='http://www.newyorker.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel='shortlink' href='http://www.newyorker.com/?p=1563231' />
+<!-- wp-parsely Plugin Version 1.6 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.6' />
+<meta name='parsely-page' id='parsely-page' content='{"title":"Get Out of Jail, Inc.","link":"http:\/\/www.newyorker.com\/magazine\/2014\/06\/23\/get-out-of-jail-inc","image_url":"http:\/\/www.newyorker.com\/wp-content\/uploads\/2014\/06\/140623_r25159-320x240-1405880137.jpg","type":"post","post_id":"1563231","pub_date":"2014-06-16T04:00:00Z","section":"Uncategorized","author":"Sarah Stillman","tags":["(judge) larry ward","(judge) lynneice washington","(judge) stephen wallace","(judge) tommy nail","alternatives to incarceration","amy lerman","ankle bracelets","avalon correctional services","bi incorporated","cary aspinwall","charlie waldrep","corrections industry","corruption","courts","david hamil","debtors\u2019 prison","don smith","foster cook","gayle gear","geo group","halfway houses","harriet cleveland","isaac t. hopper","jack long","jacob denney","jails","john augustus","judges","judicial correction services (j.c.s.)","justicehome","justin jones","law","logan jones","louis bullock","meagan poole","melissa poore","monica norton","montgomery, alabama","nancy la vigne","patrick harvey","politics","privatization","probation","probation debts","profiteering","quiznos","rehabilitation","sara zampierin","sentinel offender services","sexual harassment","spencer bryan","surveillance","tamico norton","tickets","tim fugatt","traffic violations","tulsa, oklahoma","work-release programs","wrongful death"]}' />
+
+		<style type="text/css">
+			body.customize-support #hd.collapsed #nav-container {
+				margin-top: 28px;
+			}
+		</style>        <!-- Google Site Speed -->
+        <script type="text/javascript">var _ga_start = (new Date()).getTime();</script>
+                    <script type="text/javascript" class="site_init">
+            //<!--
+                CN.site.init({
+                    code:             'NYR',
+                    title:            'The New Yorker',
+                    name:             'newyorker',
+                    alias:            'newyorker.com',
+                    domain:           'newyorker.com',
+                    tld:              'newyorker.com',
+                    baseUrl:          'http://www.newyorker.com',
+                    mobilecompatible: 'true',
+                    httpStatusCode:    200,
+            userServiceUrl: 'http://user-service.condenast.com',
+userServiceKey: 'TE7pnBDUEVco2vXPPNQVZNFlipc=',
+ecomUrl: 'https://subscribe.newyorker.com/api/circ/xml/Transaction',
+socialRes: 'http://www.newyorker.com/services/livefyre/userToken',
+                    env: 'PROD'  // Put something consistent last so we don't have a trailing comma (appease IE)
+                });
+
+                CN.isMobile = TNY.initIsMobile;
+                CN.isTablet = jQuery.devices.tablet();
+                CN.checkDeviceView = jQuery.devices.checkDeviceView;
+            //-->
+            </script>
+                            <!-- AD INIT: CN.dart.init version 2 -->
+                <script type="text/javascript">
+                //<!--
+                    CN.dartKwsArray = [ "dphiffer","judge_larry_ward_tag","judge_lynneice_washington_tag","judge_stephen_wallace_tag","judge_tommy_nail_tag","alternatives_to_incarceration_tag","amy_lerman_tag","ankle_bracelets_tag","avalon_correctional_services_tag","bi_incorporated_tag","cary_aspinwall_tag","charlie_waldrep_tag","corrections_industry_tag","corruption_tag","courts_tag","david_hamil_tag","debtors_prison_tag","don_smith_tag","foster_cook_tag","gayle_gear_tag","geo_group_tag","halfway_houses_tag","harriet_cleveland_tag","isaac_t_hopper_tag","jack_long_tag","jacob_denney_tag","jails_tag","john_augustus_tag","judges_tag","judicial_correction_services_j_c_s_tag","justicehome_tag","justin_jones_tag","law_tag","logan_jones_tag","louis_bullock_tag","meagan_poole_tag","melissa_poore_tag","monica_norton_tag","montgomery_alabama_tag_2","nancy_la_vigne_tag","patrick_harvey_tag","politics_tag","privatization_tag","probation_tag","probation_debts_tag","profiteering_tag","quiznos_tag","rehabilitation_tag","sara_zampierin_tag","sentinel_offender_services_tag","sexual_harassment_tag","spencer_bryan_tag","surveillance_tag","tamico_norton_tag","tickets_tag","tim_fugatt_tag","traffic_violations_tag","tulsa_oklahoma_tag_2","work_release_programs_tag","wrongful_death_tag","magazine","2014","06","23","get_out_of_jail_inc","article","a_reporter_at_large" ];
+
+                
+                    CN.dart.init({
+                        adUnits: {
+                            unit1: CN.isMobile ? 'newyorker.mobile.dart' : 'newyorker.dart',
+                            unit2: 'magazine',
+                            unit3: 'channel_none',
+                            unit4: ''
+                        },
+                        kws: CN.dartKwsArray,
+                        charmap : {' ' : '+', '-' : '_'}
+                    });
+                                //-->
+                    </script>
+                            <script type="text/javascript">
+                CN.popups = CN.popups || {};
+                CN.popups.setCookieLife(48);
+                CN.popups.setExiting(false, {
+                    path: '/exit-pop/',
+                    width: 460,
+                    height: 295,
+                }).excludeExitPath( '/wp-admin', '/wp-login.php' ).excludeExitDomain("newyorker.com","www.newyorker.com","origin.www.newyorker.com");
+                CN.popups.setATGArriving(false).setATGLayer(false).setATGExiting(false);
+
+                        CN.popups.setLayer(false).setArriving(false);
+                CN.popups.init();
+                    </script>
+                        <!-- CM: page-ads.js -->
+            <script type="text/javascript">
+            //<!--
+                var _ghearst_vars = (function() {
+                    var commonParams = 'ad_category_prefix=magazine'
+                                        + '&amp;browser_path=%2Fmagazine%2F2014%2F06%2F23%2Fget-out-of-jail-inc'
+                                        + '&amp;cat_prefixes=%2Cmagazine%2C2014%2C06%2C23%2Cget-out-of-jail-inc'
+                                        + '&amp;site_prefix=newyorker'
+                                        + '&amp;subdomain=mprod'
+                                        + '&amp;url_name=get-out-of-jail-inc';
+
+                                var metaKeyWords = (function() {
+                        var
+                            i                  = 0,
+                            metaKeywordContent = '',
+                            nameAttribute      = null,
+                            metaCollection     = document.getElementsByTagName('meta');
+
+                        for (i=0;i<metaCollection.length;i++) {
+                            nameAttribute = metaCollection[i].name.search(/keywords/);
+                            if (nameAttribute!= -1) {
+                                metaKeywordContent = metaCollection[i].content;
+                                metaKeywordContent = metaKeywordContent.replace(/,/g,'%2C'); // to replace ,
+                                metaKeywordContent = metaKeywordContent.replace(/ /g,''); // to replace space
+                            }
+                        }
+                        return encodeURIComponent(metaKeywordContent);
+                    })();
+            
+                    var deviceParams = (function() {
+                                                    if ( CN.checkDeviceView('desktop') ) {
+                                    return 'AMS_NYR_MAGAZINE_TEXTLINK%2CAMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_GLOBAL_HEADER%2CAMS_NYR_GLOBAL_HEADERCALLOUT%2CAMS_NYR_GLOBAL_NAVBAR%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER%2CAMS_NYR_GLOBAL_NAVBAR_STICKY%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY';
+                                }
+                                                                if ( CN.checkDeviceView('tablet') ) {
+                                    return 'AMS_NYR_MAGAZINE_TEXTLINK%2CAMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_TABLET_GLOBAL_SUBNAV';
+                                }
+                                                                if ( CN.checkDeviceView('mobile') ) {
+                                    return 'AMS_NYR_MAGAZINE_TEXTLINK%2CAMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_MOBILE_GLOBAL_SUBNAV';
+                                }
+                                                    })();
+
+            
+                    return {
+                        'ams_ads_script_src' : 'https://subscribe.newyorker.com/ams/page-ads.js?'
+                                                + commonParams + ''
+                                                + '&amp;keywords=' + metaKeyWords + ''
+                                                + '&amp;position_list=' + deviceParams + ''
+                    };
+                })();
+
+                if (!window.$h) {window.$h = {}}
+                (function(){
+                    if (!$h.util) {
+                        $h.util = {
+                            buildScriptTag: function(src){
+                                if (!!src){ document.write('<scr' + 'ipt src="'+src+'" type="text/javascript"></scr' + 'ipt>');}
+                            }
+                        }
+                    }
+                    $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+                })();
+            //-->
+            </script>
+            	<link rel="stylesheet" href="/wp-content/assets/dist/css/core-545.min.css">
+
+<script src="//assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-9cb2a39d627a819b6ca42ab76f651dbfa7b1a535.js"></script>
+<script src="//use.typekit.net/wth6gwt.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+	<meta itemprop="printPage" content="048">
+	</head>
+<body>
+	<nav role="navigation" class="mobile-nav">
+  <ul class="nav-links" >
+    <li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+	<li id="subscribe">
+		<div id="AMS_NYR_MOBILE_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_MOBILE_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_MOBILE_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div>		<div id="AMS_NYR_TABLET_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_TABLET_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_TABLET_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div>    </li>
+    <li class="menu-item sub-nav mob-sign-in block-list user-ln-status-mobi"><a id="user-sign-in" class="mobi-sign-in-button" title="Sign in to your account">Sign In</a>  
+<span id="mobi-nav-link" class="link-sub-hamnav"> Link your subscription</span></li>
+	<li id="mobi-account-link-1" class="menu-item sub-nav hiddenMobiMenu"></li>
+	<li id="mobi-account-link-2" class="menu-item sub-nav hiddenMobiMenu"></li>
+  </ul>
+</nav>
+  <div class="page-container">
+    <div class="header-ad">
+
+  <div class="advertisement"><div id="header728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="header728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "header", { sz: "728x90", kws: [ "top" ], collapse: true } );
+} 
+}</script></div><div class="advertisement"><div id="header_mobile320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="header_mobile320x50_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "header_mobile", { sz: ( "320x50" ), kws: [ "top" ], collapse: true } );
+} 
+}</script></div></div>
+
+<header id="hd" role="banner">
+	<div id="nav-container">
+		<div id="mobile-nav-container">
+			<div id="mobile-logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<nav role="navigation" id="primary-nav">
+				<ul>
+					<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+					<li id="subscribe">
+					<div id="AMS_NYR_GLOBAL_NAVBAR_STICKY" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>						<div id="subscribe-rollover">
+							<div class="subscribe-links-wrapper">
+								<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0,399,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249,399,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>							</div>
+						</div>
+										</li>
+						<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 					<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle smallnav-search">Search</a></li>
+
+				</ul>
+			</nav>
+		</div>
+		<section class="logo-container">
+			<span title="" id="mobile-nav" class="icon-menu"></span>
+
+					<div class="subscribe-links">
+				<div id="AMS_NYR_GLOBAL_HEADER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="//subscribe.condenet.com/images_covers/cover_newyorker_80.jpg">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).html( pageAds.AMS_NYR_GLOBAL_HEADER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div><div id="AMS_NYR_GLOBAL_HEADERCALLOUT" class="ecom-placement"><img src="/wp-content/assets/dist/img/cn-ecom/failsafe/NYT_global_headercallout_150x110.png" usemap="#GLOBAL_HEADERCALLOUT_MAP" width="150" height="110" border="0"><map id="GLOBAL_HEADERCALLOUT_MAP" name="GLOBAL_HEADERCALLOUT_MAP"><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="1,12,76,107" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="78,12,147,40" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Renew your Subscription" alt="Renew your Subscription to the New Yorker magazine" coords="78,42,147,56" href="https://w1.buysub.com/pubs/N3/NYR/login.jsp?cds_page_id=135517&cds_mag_code=NYR" target="_blank" /><area shape="rect" title="Give a Gift Subscription" alt="Give a Subscription to The New Yorker as a Gift" coords="78,58,147,75" href="http://www.newyorker.com/go/giftfailsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe to The New Yorker outside the USA" coords="78,77,147,107" href="http://www.newyorker.com/go/internationalfailsafe" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).html( pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>			</div>
+		
+			<div id="logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<div class="social-and-user-links">
+				<ul class="user-info">
+
+					<span id="sign_in" class="user-ln-status">
+					<li id="sign-in-list" class="demo-link big plain"><span data-type="sign-in" class="header-nav-link" id="sign-in" title="Sign in to your account"><span id="fallback-signin-link">Sign in</span></span></li>
+					<li class="demo-link big plain"></li>&nbsp;|&nbsp;
+					<li id="link-sub-nav" class="nav-menu">Link your subscription</li>
+					</span>
+					<li class="n-store"><a href="http://www.condenaststore.com/~/new-yorker-store?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=SHOP&amp;AID=1247905545" target="_blank" title="The New Yorker Store">TNY Store</a></li>
+					
+
+					<li class="demo-link big plain"><span id="sign-out-wrapper" class="big plain"></span></li>
+				</ul>
+				<ul class="social-menu">
+					<li class="facebook"><a href="https://facebook.com/newyorker" title="Facebook">F</a></li>
+					<li class="twitter"><a href="https://twitter.com/newyorker" title="Twitter">T</a></li>
+					<li class="google-plus"><a href="https://plus.google.com/+newyorker/posts" title="Google+">G+</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<nav role="navigation" id="primary-nav">
+			<ul>
+				<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+				<li id="subscribe">
+				<div id="AMS_NYR_GLOBAL_NAVBAR" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>					<div id="subscribe-rollover">
+						<div class="subscribe-links-wrapper">
+							<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0,399,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249,399,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>						</div>
+					</div>
+								</li>
+					<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 				<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle bignav-search">Search</a></li>
+
+			</ul>
+			<div id="floatingAd" style="display:none;"><div id="floatingAd_content"><div id="AMS_NYR_POPUP_FLOATINGAD" class="ecom-placement">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    /* AMS_NYR_POPUP_FLOATINGAD not in pageAds for desktop */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for tablet */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div><div id="floatingAd_header"><a href="javascript:void(0)" class="close">Close</a></div></div>
+		</nav>
+	</div>
+
+
+</header>    <div class="content-wrapper">
+	<div id="main" role="main" class="single-post single-article">
+
+			<article itemscope itemtype="http://schema.org/Article" data-details='{"title":"Get Out of Jail, Inc.","author":[1485201,"Sarah Stillman","http:\/\/www.newyorker.com\/contributors\/sarah-stillman"],"wordCount":10774,"paragraphCount":91}'>
+			<meta itemprop="url" content="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" />
+			<meta itemprop="wordCount" content="10738" />
+			<header id="page-header">
+				<hgroup id="masthead">
+					<h4 class="rubric">
+						<a href="http://www.newyorker.com/magazine/a-reporter-at-large" title="A Reporter at Large" itemprop="articleSection printSection">A Reporter at Large</a>
+													<a href="http://www.newyorker.com/magazine/2014/06/23" title="Published in 2014-06-23" itemprop="printEdition">
+								<span class="magazine-date" itemprop="datePublished" content="2014-06-23">June 23, 2014 Issue</span>
+							</a>
+
+											</h4>
+					<h1 itemprop="name headline">Get Out of Jail, Inc.</h1>
+					<h2>Does the alternatives-to-incarceration industry profit from injustice?</h2>
+					<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/sarah-stillman" title="Sarah Stillman" rel="author" itemprop="name author">Sarah Stillman</a></span></h3>
+					<!-- TODO: Add LinkedIn and Pinterest Support [#98] -->
+
+
+
+<nav class="social-buttons">
+	<ul>
+    <li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" data-type="button"></div></li>    <li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" data-text="Get Out of Jail, Inc." data-via="newyorker" data-dnt="true"></a></li>    <li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc"></div></li>    	<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: Get%20Out%20of%20Jail%2C%20Inc.&body=On a cold November afternoon, Harriet Cleveland, a forty-nine-year-old mother of three, waved me over from the steps of her pink cottage in Montgomery, Alabama. She was off to her part-time job as a custodian at a local day-care center, looking practical but confectionary: pink lipstick, a pastel...%0A%0AContinue reading at http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png"/></a></li>	<li class="share-print"><a href="javascript:window.print(); return false;"><img src="/wp-content/assets/dist/img/icon/printer.png"/></a></li>	</ul>
+</nav>
+				</hgroup>
+								<div class="issue-info">
+					<figure id="original-issue">
+						<a href="http://www.newyorker.com/magazine/2014/06/23" title="Published in 2014-06-23" itemprop="printEdition">
+							<img width="176" height="240" src="http://www.newyorker.com/wp-content/uploads/2014/06/2014_06_23-200.jpg" class="attachment-thumbnail wp-post-image" alt="2014_06_23" />						</a>
+					</figure>
+
+											<a href="http://www.newyorker.com/magazine/2014/06/23" title="View Table of Contents" class="more-link">Table of Contents <span>&raquo;</span></a>
+									</div>
+							</header>
+
+			<div class="module-container-rail non-solid-rail">
+				<div class="module-container-stacked post-content">
+					<div itemprop="articleBody" class="articleBody" id="articleBody">
+
+						
+													<figure itemprop="" class="vertical attachment-medium landscape img-expandable featured">
+								<a href="http://www.newyorker.com/wp-content/uploads/2014/06/140623_r25159-1200.jpg" title="Get Out of Jail, Inc." itemprop="url">
+									<img itemprop="image" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_r25159-320.jpg" class="vertical attachment-medium" alt="Harriet Cleveland’s troubles began with traffic tickets. When she couldn’t pay her fines, she was sentenced to two years’ probation with Judicial Correction Services, which added its own fees. Her debts soon mounted.">								</a>
+																<figcaption class="caption" itemprop="description">
+									<span class="caption-text">Harriet Cleveland’s troubles began with traffic tickets. When she couldn’t pay her fines, she was sentenced to two years’ probation with Judicial Correction Services, which added its own fees. Her debts soon mounted.</span>									<span class="credit" itemprop="copyrightHolder">
+										<span class="hideFromView">Credit</span> Photograph by Jessica Dimmock.									</span>								</figcaption>
+															</figure>
+												
+					
+
+								
+
+						<a class="tny-slot" name="/2" total_words="0"></a><a class="tny-page" name="/1" total_words="0"></a><p class="descender" word_count="154">On a cold November afternoon, Harriet Cleveland, a forty-nine-year-old mother of three, waved me over from the steps of her pink cottage in Montgomery, Alabama. She was off to her part-time job as a custodian at a local day-care center, looking practical but confectionary: pink lipstick, a pastel yellow-and-pink tunic, and dangly pink earrings. We’d need to start walking soon, she explained. The job, which paid seven dollars and twenty-five cents an hour, was the only one she’d been able to find for some time, and was four and a half miles away. As we set off beneath loblolly pines, she recounted the events that had led me to her doorstep: her arrest and jailing for a string of traffic tickets that she was unable to pay. It was, in part, a story of poverty and constraint, but it was also a story of the lucrative and fast-growing “alternatives to incarceration” industry.</p> <p word_count="102">Cleveland’s troubles began in 2008, when a police roadblock went up in her neighborhood. She soon received several tickets for driving without insurance and without a license. “I knew it was wrong,” she told me, but she had to take her son to school and to travel to work. When she was unable to pay her fines, a judge sentenced her to two years of probation with Judicial Correction Services, a for-profit company; she would owe J.C.S. the sum of two hundred dollars a month, with forty of it going toward a “supervision” fee. Cleveland considered the arrangement a reprieve.</p><div class="content-ad-wrapper first"><div class="advertisement"><div id="yrailTop300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailTop300x250_frame"></div><div id="yrailTop320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailTop300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "top" ], collapse: true } ); } }</script></div></div> <p word_count="176">The first year, Cleveland regularly reported to the J.C.S. office with cash in her purse, whatever she could put together, handing it to a woman in a crisp collared shirt, who she assumed was working for the state. But she quickly fell behind on payments, in part because her weekly cash deliveries sometimes went solely to covering the company’s supervision fee. She had lost her full-time day-care job the previous winter, after the local Hyundai plant cut workers’ hours, and employees stopped dropping their kids off each morning. Cleveland was broke. Instead of hiring someone to fix the holes in her bedroom walls, caused by shifting prairie soil beneath the house’s foundation, she stuffed towels in the cracks to keep out the cold. In early 2012, she turned over nearly all her income-tax rebate—some two thousand dollars—to J.C.S. But by that summer her total court costs and fines had soared from hundreds of dollars incurred by the initial tickets to $4,713, including more than a thousand dollars in private-probation fees.</p> <p word_count="79">For much of the previous year, a J.C.S. officer had warned Cleveland that her probation would soon be revoked and her name placed on what Cleveland called the “jail list.” As she looked for full-time work, she rented an empty room in her home to an elderly stranger with dementia, and sifted through neighbors’ trash for soda cans to cash in at the scrap yard. For months, she felt hopeful that she could fend off a reckoning.</p> <p word_count="90">Now, as we walked against the bitter wind, Cleveland paused to point out various landmarks. She gestured toward two modest white clapboards: “See that there? That’s Ralph Abernathy’s house. And Nat King Cole’s!” Earlier, we’d stopped at a curb where a birdhouse was stuffed with books; a piece of plywood nailed to its roof read, “Granny Jackson’s Little Free Library.” Cleveland often borrowed novels from the book box, relishing, in fiction, the very things that dogged her in real life: suspense and sudden plot twists.</p> <p word_count="105">Cleveland told me that when she was first assigned to J.C.S. her probation officer had taken down the names and phone numbers of her family members. As she fell behind on her payments, the company began calling Cleveland’s relatives—her daughter, her estranged mother, her daughter’s paternal grandmother—to tell them that if she couldn’t come up with the money she would be sent to “sit out” her probation debts in jail. The size of her debt now seemed impossibly large, but months went by without any signs of trouble. Maybe the people at J.C.S. would be lenient.</p> <p class="descender" word_count="177">Within the private corrections industry, “alternatives to incarceration”—including probation services and halfway houses—used to be regarded as an afterthought. The size of America’s incarcerated population more than quadrupled in the three decades since 1980, and, in time, the private sector seized an immensely lucrative opportunity; between 1990 and 2009, the number of inmates in private prisons increased seventeen-fold, and revenues for the largest private-prison firm, Corrections Corporation of America (C.C.A.), reached $1.7 billion. In the past few years, however, politicians from both major parties have begun to turn against mass incarceration. Attorney General Eric Holder has routinely condemned the “inadvisable and unsustainable” policies that have made America’s prison population by far the largest in the world. In New Jersey, Governor Chris Christie has denounced a “failed war on drugs that believes incarceration is the cure of every ill.” In Texas, Governor Rick Perry has helped redirect some two billion dollars from the prison economy toward alternatives like drug treatment. Incarceration rates have slowly declined since 2010; conventional private prisons may no longer be a growth industry.</p> <a class="tny-slot" name="/3" total_words="883"></a><div class="content-ad-wrapper"><div class="advertisement"><div id="yrailBottom300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailBottom300x250_frame"></div><div id="yrailBottom320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailBottom300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "bottom" ], collapse: true } ); } }</script></div></div><a class="tny-page" name="/2" total_words="883"></a><p word_count="161">Some investors have begun to turn their attention to extra-carceral institutions, such as private halfway houses, electronic monitoring, “civil commitment” centers for sex offenders, and for-profit residential treatment facilities. Private-prison corporations themselves have begun to expand into the “alternatives” industry. The GEO Group now has an array of “community reëntry services” and treatment programs. In 2011, it acquired the country’s largest electronic-monitoring firm, BI Incorporated, for four hundred and fifteen million dollars. Last August, C.C.A. bought a California-based enterprise called Correctional Alternatives. Private-probation companies, too, have quietly taken off in recent years, often selling themselves as a cheap way to keep small-time offenders out of jail. In 2010, Judicial Correction Services made the magazine <em>Inc.’s</em> list of “the fastest growing private companies in America,” for the third year in a row; a year later, it was acquired by Correctional Healthcare Companies, which now boasts of attending to the “full spectrum” of offenders’ lives: “pre-custody, in custody, and post-custody.”</p> <p word_count="131">Probation companies say that they provide a vital social service, with an emphasis on rehabilitation. “At the very center of our mission is keeping probationers out of jail by helping them successfully complete probation,” J.C.S. declares. (For the most part, these companies deal not with felony probationers—“probation” as it’s usually understood—but with people whose offenses are often too minor to merit jail time.) Florida Probation Service has adopted the motto “Probation with a heart,” and emphasizes that its supervision services have lofty social ambitions: “With just a small amount of desire from the probationer, together we can achieve the restoration of a successful life.” In addition to debt collection, many companies offer electronic ankle bracelets, drug testing, and behavioral-therapy courses with names like Cage Your Rage.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_a18353-600.jpg"><figcaption><span class="caption">“He finally called, and it  kill him.”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="103">With municipal budgets under enormous strain across the country, the industry has also pitched itself as a source of revenue for small courts. “If your municipality is looking to reduce incarceration rates and to increase the collection of fines and court costs in the municipal court, please give our office a call today,” the Georgia-based Freedom Probation Services advertises. In return for an exclusive contract with a municipality, companies like Freedom Probation offer their services to courts for free. The private-probation business has established a presence in such states as Utah, Missouri, Montana, and Colorado, although its home remains in the Cotton Belt.</p> <p word_count="135">The industry aims to shift the financial burden of probation directly onto probationers. Often, this means charging petty offenders—such as those with traffic debts—for a government service that was once provided for free. These probationers aren’t just paying a court-ordered fine; they’re typically paying an ever-growing share of the court’s administrative expenses, as well as a separate fee to the for-profit company that supervises their probation and enforces a payment schedule—a consolidated weekly or monthly set of charges divided between the court and the company. The system is known as “offender-funded” justice. But legal challenges to it are mounting, amid concerns about abuse, corruption, and the use of state penalties to collect private profits. In a wide range of cases, offender-funded justice may not result in justice at all.</p> <p class="descender" word_count="107">Some courts seem to take seriously the probation companies’ promises. One recent morning, in the faded mining town of Bessemer, Alabama, a judge named Lynneice Washington presided thoughtfully over a room of people packed into battered church pews that had been repurposed as court benches. Small brown bugs crawled in and out of empty Bible racks, and mildew prompted a chorus of sneezes. “Good grades—that’s awesome!” Washington told a seventeen-year-old boy who was struggling to pay a speeding ticket. When the boy confirmed that he had a job at a local Piggly Wiggly, she sent him home with more time to round up the cash.</p> <p word_count="99">A young homeless man shuffled up to the bench. Judge Washington scolded him for disregarding court fines: “This isn’t Burger King, ‘Have it your way’! When the court tells you to do something, you have to do it.” After he explained that he had a job at Radio Shack, she gave him more time to pay up, pointing him to a woman standing at the back of the court who wore an Alabama Court Services badge. “All services are provided at no charge to the courts that we serve,” A.C.S. declares. “All programs are offender funded.”</p> <a class="tny-slot" name="/4" total_words="1619"></a><p word_count="70">“Probation services is more than just a collection agency,” Washington told the assembled. “They can help you find housing, help you get a job.” Many in the court looked relieved to hear about the company’s services. “I thought it was going to be ‘three hots and a cot,’  ” said Eugene Acoff, a gray-haired employee of Klean Kuts Lawn Care, who was waiting his turn in court between landscaping jobs.</p> <p word_count="159">Probationers in other municipal courts around the state have a harder time of it. Although the U.S. Supreme Court ruled, in Bearden v. Georgia (1983), that probation cannot be revoked, or jail time dispensed, simply because a defendant is too poor to pay a fine, few judges check to see if defendants have the means to pay before jailing them. Many cases are resolved in less than two minutes, without a lawyer representing the defendant or a court reporter present. As I travelled around Alabama, I watched more than a hundred defendants face possible jail time for unpaid fines tied to minor offenses. Some defendants were simply careless, and there is no constitutional impediment to jailing a driver who willfully refuses to pay a ticket. But many people I met were indigent; some were homeless. Like Eugene Acoff, they often belonged to the growing number of Alabama residents who are at once employed and unable to make ends meet.</p> <a class="tny-page" name="/3" total_words="1848"></a><p word_count="116">Nearly fifty miles east, in the small town of Childersburg, an icy atmosphere prevailed in the court of Judge Larry Ward. (Another municipal court that he presided over, in nearby Harpersville, had been shut down in 2012, after a scathing legal ruling declared the debt-collecting practices there “disgraceful.”) On the afternoon I visited, last fall, shortly before Ward’s retirement, dozens of defendants pleading guilty formed a line curling out the door. There was hardly a lawyer in sight. Tense whispers swept the courtroom each time Judge Ward sent a debtor to jail. “Alicia,” people murmured, like a round of telephone, as a stout, sad-looking woman with spiky blond hair was handcuffed and escorted out by police.</p> <p word_count="81">Meagan Poole, a young mother who had just been released from medical care, was threatened with jail after she failed to pay several hundred dollars in court costs and J.C.S. supervision fees tied to an expired license plate. She was thirteen dollars short. “Either you go get the money or you’re going to jail,” Judge Ward said. She ran to the parking lot to see what she could shake from friends and family by the 5 <small>P.M.</small> deadline.</p> <p word_count="86">“Here’s how it is,” said a gaunt construction worker who was waiting for a public-intoxication hearing outside the courthouse in Clanton, a peach-farming town at the center of the state. “If you don’t have seven hundred dollars, then the company makes you pay one thousand four hundred.” He shook his head. “They’re jacking it all up!” He rattled off the names of friends and family members also “on J.C.S.”: a brother, a brother-in-law, a cousin, a pink-sneakered friend standing beside him.</p> <p word_count="92">“They really don’t care what you do, as long as you hand over your money,” a student in his twenties told me outside the J.C.S. office in Montgomery, where he was dropping off his payment. “It’s like paying protection to the Mafia.” He shrugged, gave a small laugh, and climbed back into the rusty Jeep he’d driven, illegally, to make the payment—his license had been suspended, but he had to report regularly to the J.C.S. office for his payments in order to avoid jail.</p> <p word_count="62">Harriet Cleveland often did the same, when she still had a car. “I know I done wrong,” she told me, about her practice of driving without a license to pay off fines for driving without a license. When a warrant was finally issued for her arrest, she figured that fighting back would get her nowhere; the law had her on the hook.</p> <p class="descender" word_count="109">On a windy night in Birmingham, I sat down at the Rogue Tavern with two state judges who are concerned about the rise of private probation. “Welcome to a Third World country,” Tommy Nail, who has a longtime seat on the Tenth Judicial Circuit, said as he beckoned me over to a table. A weathered man in his late sixties, Nail is an outspoken critic of private probation. “There is clear legal precedent that you can’t incarcerate someone because they’re indigent,” he told me. When courts are driven to seek revenue, Nail said, their objective is “no longer in the best interest of the defendant, or society.”</p> <p word_count="58">“We’re no different than a payday or a title-loan company, if our central purpose is collections,” Stephen Wallace, a criminal-court judge in his thirties, added. The trend, Wallace pointed out, is rooted in a financial crisis facing America’s small courts. “The legislature cut budgets so drastically that the judiciary have to be debt collectors,” he said.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_a18314-600.jpg"><figcaption><span class="caption">“Wow—you’re actually doing that with just the weight of your anger, disappointment, and frustration with me?”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <a class="tny-slot" name="/5" total_words="2452"></a><p word_count="214">This predicament is hardly unique to the states where private probation operates. Although debtors’ prisons were abolished by federal law in the eighteen-thirties, people across America are routinely jailed for fees and fines that they are too poor to pay. Spokesmen for the private-probation industry stress that only judges, not the firms under contract, have the authority to decide who goes to jail for nonpayment, and who counts as indigent. But private-supervision fees, which are often significantly higher than what states would charge for equivalent services (many states charge nothing at all), can add substantially to judicial fines, and Wallace notes that companies rely on the threat of jail time to generate collections. Nail worries, too, that competition among probation companies for exclusive contracts with local courts invites corruption. Not long ago, in Tennessee, a judge was sent to prison after an F.B.I. probe found him taking kickbacks estimated to be as large as a hundred thousand dollars from a private-probation company and a driving school in exchange for sending them offenders. In Idaho, a decade-long experiment with private probation collapsed following complaints of profiteering and illegal fees. (Public probation has had its share of scandals, too, often owing to the simple fact that government-run offices in most states are grossly overstretched.)</p> <p word_count="179">Even lawful dealings can reveal uncomfortable intimacies between public and private interests. As a prosecutor in Hoover, Alabama, Charlie Waldrep brought cases against individuals who were often sentenced to probation with J.C.S. At the same time, as an attorney in private practice, Waldrep represented J.C.S. when it acquired a profitable exclusive contract with the city of Birmingham, in the same county. The prominent Birmingham firm where Waldrep is a partner has also represented J.C.S. in an ongoing lawsuit, defending it against allegations that the firm had violated the constitutional rights of indigent probationers. Gayle Gear, a Birmingham lawyer and activist who often lobbies on behalf of poor probationers, says, “You would have to close your ears, shut your eyes, and grit your teeth to not think that gives the appearance of impropriety.” The real problem, in her view, arises from “the inherent conflict of interest when the court is making money off of a private enterprise.” She has asked the U.S. Justice Department’s Office for Civil Rights to investigate the issue.</p> <a class="tny-page" name="/4" total_words="2845"></a><p word_count="91"> “J.C.S. was in Hoover long before I got there,” Waldrep told me. “I don’t have anything to do with anybody being placed on probation with them. I didn’t get paid more or less in Hoover, or anywhere else, because of representing them.” Decisions about probation, he noted, ultimately rest in the hands of judges, not prosecutors. In such a context, “private-probation companies serve a very useful purpose,” he went on, since “they shift the cost of probation onto the person who was irresponsible in the first instance.”</p> <p word_count="91"> “There are a lot of reputable, honest people in this industry,” David Hamil, who runs his own small private-probation firm in Acworth, Georgia, told me. The key, he thinks, is to encourage more transparency about the scale of profits, and to institute regulations that prevent profiteering. “To be fair and treat folks right, we may not make a million bucks out of the gate, but we’re going to provide a service and we’ll be able to go to sleep at night and not have to look over our shoulder.”</p> <p word_count="110">Both transparency and oversight are currently in short supply, however. This past February, Human Rights Watch published a report that catalogued problems endemic in private-probation services across the South, including “easy opportunities for corruption,” the wielding of “coercive power” against debtors and their families, and “Kafkaesque” electronic-monitoring sentences for minor crimes, which subject offenders to steep surveillance fees. The report found that these problems were “not a consequence of probation privatization per se” but what comes to pass when “public officials allow probation companies to profit by extracting fees directly from probationers, and then fail to exercise the kind of oversight needed to protect probationers from abusive and extortionate practices.”</p> <p word_count="129">Last fall, I spoke with Jack Long, a Georgia attorney who filed a habeas petition on behalf of a client who, after stealing a two-dollar can of beer from a convenience store, was ordered to spend a year wearing an ankle bracelet operated by a company called Sentinel Offender Services. The man wound up owing more than a thousand dollars to the company in fees and late-payment penalties, and started selling his blood plasma to keep pace. It wasn’t enough. Eventually, a judge whose court had an exclusive contract with Sentinel jailed him for the unpaid fees. Long told me that he’s met dozens of probationers who were jailed because of Sentinel’s electronic-monitoring bills, most of which, he argues, were not authorized by any legal statute.</p> <a class="tny-slot" name="/6" total_words="3266"></a><p word_count="93">“Imagine if every hospital or credit-card company were allowed to do that,” Long said of Sentinel’s practice of turning debtors back to the state to be jailed. “There’s nothing wrong with making a profit, but our court system is not a business, and our courts should not be used as a profit channel.” In September, a state Superior Court judge ruled that part of Sentinel’s operation “offends fundamental tenets of due process,” and prohibited the use of electronic monitoring for misdemeanors. The ruling was stayed while the company is appealing.</p> <p word_count="97">Back at Birmingham’s Rogue Tavern, Tommy Nail grew exasperated as he described how politicians, reluctant to raise taxes, have invited abuses by making municipal courts ever more reliant on high collection rates. (Alabama has the lowest state and local tax collections per capita in the nation.) “When you inject a profit motive into the criminal-justice system, you’re opening it up to corruption and abuse,” he later told me, adding, “You are asking the poorest of the poor to fund the court system, and that’s what’s causing all of these abuses, in my opinion.”</p> <p word_count="68">Stephen Wallace stressed that probation is meant to be a legal sentence with a precise duration. But in Alabama, as in Georgia, private companies often continue to collect fees and fines from debtors long after their legal authority to do so has elapsed. “It’s in their best interest to keep the collections process going, instead of calculating when probation has expired,” Wallace explained. “They’re terrorizing people.”</p> <p class="descender" word_count="112">Harriet Cleveland didn’t share Nail and Wallace’s distrust. Her weekly trips to the J.C.S. office were a hardship, but she also considered them an act of penance. “She was very nice,” Cleveland said of her probation officer. “She would listen to me, but it wasn’t her job to help me get a job. She’d just say, ‘You’ll go back to court’—which I knew meant jail—‘but bring me some money and I can stop that.’  ” Cleveland told me another reason that she felt loyal to the J.C.S. office: its employees had been mercifully understanding on an occasion when she did something “terrible.”</p> <p word_count="138">It was around the time that Cleveland faced foreclosure on her home, in May, 2012, just before her utilities were shut off. She had been briefly jailed twice for failure to service her debts. The amount continued to compound; every six months, she owed two hundred and forty dollars in supervision fees. Unless she quickly came up with some cash, she feared that she would be sent to jail for a longer time, and lose the part-time custodial job she had found. Then, one day, her youngest child, a junior in high school, forgot his backpack at school. When Cleveland picked it up, she discovered fifty dollars in one of its pockets—“an act of God,” she said. She hurried to the J.C.S. office and handed over the cash, explaining tearfully, “This is my son’s money.”</p> <p word_count="30">“You do what you have to do, Ms. Cleveland,” her probation officer replied, striking Cleveland’s name off the list of people to be reported to the court that day.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_a18271-600.jpg"><figcaption><span class="caption">“The bone is not the reward—digging for the bone is the reward.”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <a class="tny-page" name="/5" total_words="3804"></a><p word_count="132">Stealing from her son sent Cleveland into a spiral of self-reproach, and damaged their relationship. He hardly spoke to her for months. “He still ain’t forgiven me for that,” she told me. According to Foster Cook, the director of a program at the University of Alabama called Treatment Alternatives for Safer Communities, actions like Cleveland’s are common. Cook recently conducted a survey of more than sixty private probationers after he noticed that many of his clients in addiction programs were “buried” under court debts that often created more problems for taxpayers than they solved. The vast majority of respondents had forgone rent, groceries, medicine, or all three to pay fees to private-probation firms. A third had committed an illegal act, such as selling drugs or stealing, to make their payments.</p> <p word_count="78">Cleveland redoubled her efforts to find better-paying work, studying the job-counselling signs at the probation office. “Women’s Interview Attire,” one poster read, listing items that she could only covet: “Solid color, conservative suit,” “manicured nails,” “portfolio or briefcase.” Another sign, “Top Reasons You Can’t Find a Job,” summed up Cleveland’s troubles: “Lack Confidence”; “<small>GAPS</small> in work history that are unexplained or unaccounted for” (unless “jailed for debt” was a sufficient explanation); “Phone Number Disconnected Often.”</p> <a class="tny-slot" name="/7" total_words="4014"></a><p word_count="167">Cleveland rarely heard back when she dropped off her handwritten résumé at gas stations, fast-food restaurants, and toy stores. Operating on tips from friends, she began walking through abandoned homes to gather metal parts to resell. After a neighbor complained, Cleveland was sent to jail for five days on a trespassing charge, and was threatened with yet another fine. Although the period of her legal probation had expired that March, J.C.S. continued to collect what little it could from her and warned that revocation—meaning, most likely, more jail time—was inevitable if she didn’t increase her payments. By then, she felt that she had exhausted every avenue, including taking out a title loan on her car at an annual interest rate of three hundred per cent. (The car was repossessed.) She had reason to worry that she would lose her home. Soon, J.C.S. gave up on trying to collect more from her and turned her case back to the court.</p> <p word_count="125">Last June, Cleveland received a letter from the District Attorney’s office. “Balance Due: $2,714,” it warned. “You <small>MUST</small> pay this amount in full . . . or you may be <small>ARRESTED</small>.” Cleveland noticed that the amount she owed was far higher than the original fees she had chipped away at for more than two years, and she called the D.A.’s office, desperate for an explanation. Only much later did she learn that the D.A. had nearly doubled her fines because of her failure to pay, adding a thirty-per-cent collection fee, a warrant fee, and other surcharges. Terrified of another jailing, but broke, Cleveland failed to appear in court as ordered. She hoped that her case would slide by until her tax rebate came, in January.</p> <p word_count="72">On a Tuesday morning in August, Cleveland was at home babysitting her two-year-old grandson when a policeman rolled up in an unmarked Chevy. She had left her front door open to allow in the breeze. “Can I speak to Harriet Cleveland?” the officer asked. Cleveland let him inside, to the living room she’d decorated with a Thomas Kinkade poster, a big fish tank, and family photographs. He placed her under arrest.</p> <p word_count="90">Cleveland panicked, crying, “I’ve got my grandbaby here!” She called her eldest son to come pick up the child, and changed out of her pajamas. Then she was led in handcuffs to the back of the police car, and taken to a cell in Montgomery’s city jail. She was sentenced to spend the next month there unless she could come up with seventeen hundred dollars—a policy known as Pay or Stay. She slept on the floor, using old blankets to block the sewage from a leaking toilet.</p> <p word_count="131">She quickly made friends, though. That was her way. As a child growing up in the nineteen-seventies in Montgomery’s Gibbs Village projects, one of the most violent in the state, Cleveland had a watchful nature that her aunt called “grown-folks sense.” She studied the adults around her and learned how to detect trouble before it came, even if she couldn’t fend it off. Sometimes that meant making herself unseen. She had a speech impediment, and learned to avoid her classmates’ taunts by staying silent. Now, as an adult, she kept an eye out for fellow-invisibles. In jail, she helped a woman give birth on the floor of the cell, laying down a towel and massaging her as other women screamed for medical help. None arrived; the baby was stillborn.</p> <p word_count="130">Early in her jail stay, she was visited by an attorney named Sara Zampierin and a researcher named Jacob Denney, both with the Southern Poverty Law Center. At the courthouse on the day of her sentencing, Denney had approached Cleveland’s eldest son and told him that Cleveland’s arrest appeared to violate state law and the equal-protection clause of the Fourteenth Amendment. His organization could help the family try to get her out of jail. Now Zampierin and Denney had come to the Montgomery jail to see if Cleveland would consider filing suit against the court. Cleveland was tired of sleeping on a sewage-soaked floor, far from her kids, for traffic debts that felt insurmountable. She wanted to keep her job, and her home. She agreed to file suit.</p> <p word_count="176">She wasn’t alone. Across Alabama, a series of legal challenges alleging constitutional violations have been brought against private-probation companies and courts. Often, the plaintiffs are people who hardly imagined themselves to be fight-the-man types. Last November, I ate barbecue with Tim Fugatt, a church music director in the pinprick town of Sylacauga. In early 2012, while he was preparing for services on a Sunday afternoon, police came to his door, threatened him with a Taser, and locked him up because he’d fallen behind on J.C.S. probation costs tied to driving with an expired license plate two years earlier. His wife, Kristy, was jailed the same day, on similar charges. The couple had used their car to visit their son, who had been hospitalized for a serious neurological condition that later proved fatal; they had informed the company of their dire financial straits and provided medical records. The Fugatts’ lawyer, Danny Evans, told me that J.C.S.’s fee-collection methods are like “putting your foot on the necks of the most vulnerable people.”</p> <a class="tny-slot" name="/8" total_words="4905"></a><a class="tny-page" name="/6" total_words="4905"></a><p word_count="116">Zampierin and Denney returned to the Montgomery jail a few days after their first visit. Cleveland learned that J.C.S. was a private enterprise that had made profits from cases like hers, and that courts were legally required to determine whether a person had the ability to pay before revoking probation for nonpayment. She was excited by the return visit, but she wasn’t sure how much to hope for. She was worried about whether she’d still have a home when she got out; her tenant with dementia had bounced two rent checks. “I felt a little relief, but not much,” she recalled. “I told myself, We’ll just have to wait and see.”</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_a18036-600.jpg"><figcaption><span class="caption">“What is it about an unfavorable soccer outcome that makes me want to wreak immediate havoc in the streets?”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p class="descender" word_count="119">Probation and other institutional alternatives to incarceration date to mid-nineteenth-century reform movements. The aim was to remedy the problem that “houses of correction” seldom lived up to their name. In 1841, a wealthy Boston cobbler named John Augustus tendered bail for a man awaiting sentencing for public drunkenness. Augustus brought the man home for three weeks and gave him a bed, hearty meals, and help finding a job. When the defendant returned to court, the judge was impressed enough by his sobriety that he waived the man’s prison time and dropped his fines to a penny. Augustus called his institution “probation,” from the Latin for “to test, to prove.” His personal scroll of supervisees soon grew to sixteen feet.</p> <p word_count="126">Around the same time, the Quaker abolitionist Isaac T. Hopper founded the Prison Association of New York, in part to support inmates returning home to their families. His daughter, Abby Hopper Gibbons, went further, establishing the Home for Discharged Female Convicts in a brick Greek Revival row house in the East Village, where a small group of women and girls fresh from prison would study the Bible and receive training in basic skills like sewing. When rehabilitation was deemed complete, they were given work as domestic servants. Most of the women had been locked up for “intemperance.” By the time they left the home, after months of no cursing, no drinking, and lots of singing around a grand piano, few remained in the throes of addiction.</p> <p word_count="62">Gibbons’s halfway-house concept won early converts; the Prison Association of New York boasted that its homes cut recidivism to less than five per cent. The <em>Times</em> declared in 1862 that the institution “has convinced us that the cheapest as well as the surest protection to society against the bad, is to make them good; to convert felons into upright and virtuous citizens.”</p> <p word_count="119">In recent years, small nonprofit and religious treatment homes with state and local contracts have been bought out or replaced, in many states, by large-scale halfway-house companies. These organizations shelter hundreds, even thousands, of people on their way back from prison, and offer drug treatment, stable housing, and job training. As with the private-probation industry, they have allowed penal corporations to expand beyond prison walls. Some halfway-house facilities are offshoots of private prisons; the GEO Group’s Reëntry Services, for instance, promises “safe, secure alternatives to detention that are proven to reduce recidivism.” Others, like the New Jersey-based Community Education Centers, are independent companies devoted to helping “each offender to make a successful transition back into their community.”</p> <p word_count="146">One of the nation’s biggest commercial halfway-house operators is Avalon Correctional Services. Founded in 1985, Avalon is headquartered in Oklahoma and also operates in Texas and Wyoming, with bids to expand further. The company’s founder, Don Smith, reportedly worked his way up from laboring in oil fields, gas stations, and grocery stores, and recently purchased a mansion in a wooded area outside Oklahoma City. In 2001, a profile in the Tulsa <em>World</em> noted that Smith had set out looking for “a recession-proof niche.” Halfway-house programs turned out to be a savvy bet. In 2012, Oklahoma, which has one of the nation’s highest incarceration rates, adopted reform legislation known as Justice Reinvestment, which is expected to curtail the growth of the state’s prisons by eighteen hundred beds over ten years; some of the savings—a projected hundred and twenty million dollars—would be devoted to rehabilitation.</p> <p word_count="66">Avalon has been well placed to meet the need for prison alternatives. According to promotional materials, the company’s approach “Reduces Crime” and is “More cost effective than building new prisons, Reduces overcrowding, Saves Taxpayers Millions of dollars, Generates Revenue.” Brian Costello, Avalon’s C.E.O., told me in an e-mail, “Our halfway-house focus is gainful employment, one of the best indicators of future success.”</p> <a class="tny-slot" name="/9" total_words="5659"></a><p word_count="148">But when I visited Tulsa in December I heard troubling stories from former employees and residents about Avalon’s for-profit homes for men and women in the city. Soon, I received an envelope in the mail stuffed with hundreds of pages of incident reports about drug use, sales, and overdoses at the men’s facility. The envelope contained a copy of a handwritten letter to state authorities from a onetime Avalon resident named Patrick Harvey, describing an unnerving code of discipline. Offenders were ordered by staff to beat each other bloody, for punishment or sport, Harvey wrote: “We were told to fight or we would be jumped on.” He was writing from jail, where he feared being seen as a snitch. “I was just wanting to brief you on what’s going on and maybe you can help please! Please! Please! I have a wife and three kids.”</p> <a class="tny-page" name="/7" total_words="5807"></a><p word_count="193">Other documents in the envelope revealed an investigation at the jail by state Department of Corrections officials, who found that half a dozen offenders had arrived there from Avalon after having been beaten, some so badly that they had to be hospitalized. One man was described as being “forced to fight other offenders while staff and offenders made bets.” Other men echoed Harvey’s description of widespread drug use, and what he called “extortion big time.” I spoke with former halfway-house staff who confirmed these claims and took them further. Rich Lohman, a former Avalon case manager who spent more than five years working for the company before losing his job, believes that the beatings had an economic motive: instead of using established means of punishment, which typically required residents to be sent back to prison for infractions like escapes or drug sales, facility administrators relied on “informal discipline” to insure that offenders remained “a big six-foot pile of money in a bed.” (For each bunk occupied at Avalon, the company reportedly receives more than thirty dollars a day; an inmate “shipped out” on account of discipline means a loss of that revenue.)</p> <p word_count="136">In January, a Tulsa civil-rights lawyer named Louis Bullock sent me a video captured on a cell phone inside the facility. It showed what Avalon residents called “fight night,” an event allegedly organized by the staff, where two shirtless young men pounded each other as onlookers placed bets. (One called out, “Sock that nigger!”) “In all of these years, I’ve never seen anything as out of control and destructive as the environment that they created at Avalon, the openness of the inmate-to-inmate violence,” Bullock told me. He had spoken to half a dozen inmates, who had remarkably consistent stories of enduring, or dispensing, vicious beatings, and is now preparing to sue on their behalf. Of another set of beatings, he said, “They called it ‘taking them to court’—that was used as a disciplinary tool.</p> <p word_count="114">“Clearly, this was so that the inmates wouldn’t be moved out of the facility, so that they would keep their beds full,” Bullock went on. “That’s why the drug use was so widely tolerated—they’d start losing people to occupy their beds if they busted that.” (One former resident told me that he had relapsed within seventy-two hours of his arrival, upon finding “a dope man in almost every room. In one room you could go and get the K2”—a hallucinogen—“in another room you could go and get the ice, down the hall you can go get the weed, and in another room you could go get the pills.”)</p> <p word_count="42">Avalon officials had denied rumors of fight nights at the halfway house. “If they’re fighting, then they must be using cotton gloves, because there’s nobody hurt,” an administrator named Donnie Coffman told the <em>Oklahoman’s </em>Graham Lee Brewer last November.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_a18323-600.jpg"><figcaption><span class="caption">“Would it be considered racially insensitive for me to ask what would be considered racially insensitive?”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="148">Then, shortly after my conversation with Bullock, the video he sent me hit the local news, followed by additional allegations in papers like the Tulsa <em>World</em>. It was a major setback for Avalon, which had been lobbying for a significant expansion. The Department of Corrections disclosed its own investigations into the men’s facility in Tulsa, and then suspended the company’s contract. “The violations are so serious that the Department will begin depopulating Avalon Tulsa immediately without notice,” Reginald Hines, a deputy director in the Department of Corrections, wrote in a public letter to the company, citing problems with “count, security, possession of contraband and offender safety.” (Avalon acknowledged the existence of “isolated incidents” and, in a press release, said it would institute changes. The company also noted that “incidents occur daily at every correctional facility, public or private,” and characterized the crackdown as “politically motivated retaliation.”)</p> <a class="tny-slot" name="/10" total_words="6440"></a><p word_count="81">Concerns have not been limited to Oklahoma. Several years ago, in Colorado, an Avalon halfway house was shuttered after a state public-safety examination revealed lax security, poor drug-testing procedures, and tunnels where weapons and drugs were stashed, as well as allegations of sex between offenders and staff in a so-called Boom Boom Room. More recently, in Texas, the escape of a serial rapist from an Avalon facility drew public scrutiny, and prompted the company to promise to review its security procedures.</p> <p class="descender" word_count="141">Down the road from the Avalon men’s facility in Tulsa is the Turley Residential Center, the company’s female facility. The vast majority of Turley’s residents spend their days in a work-release program, prepping Taco Bell burritos or cleaning motel rooms or styling hair. Much of the women’s salaries goes back to the state to repay the cost of their incarceration, making the arrangement a good deal for taxpayers. (Housing a woman at an Avalon facility costs the state around thirty-five dollars a day, compared with the approximate forty-five-dollar expense of prison.) According to Brian Costello, some of the jobs that women obtained in work release have helped them launch careers. He told me in an e-mail that several recent Turley graduates founded Muddy Paws, a “very successful” dog-grooming enterprise, and that others are employed in hotel management.</p> <p word_count="95">Still, work-release programs have a troubled history. The institution recalls the convict-lease system that arose in the South during Reconstruction and lasted until the Second World War. According to Douglas Blackmon’s Pulitzer Prize-winning “Slavery by Another Name” (a book banned from an Alabama prison not long ago for being “incendiary”), thousands of debtors, most of them black, were sent to “work off” court fines for a host of petty crimes, like vagrancy, gambling, or “selling cotton after sunset”—leased out to private companies as free or cheap labor for coal mines, lumberyards, and railroads.</p> <p word_count="188">Modern work-release programs have undergone a major transformation since then. At best, they can help cut incarceration costs while easing the transition from prison to employment. Although Oklahoma law stipulates that “work release placement is not a voluntary program,” participants are entitled to any wages that might be left from their jobs at fast-food shops and thrift stores after fines, fees, taxes, and incarceration costs are subtracted. Even so, some former residents of Avalon facilities claim that the program was run recklessly, putting both offenders and the public at risk. In the town of Muskogee, I met with a quiet, lumbering man named Fred Oliver, who lost part of his left hand while working on a maintenance crew at a municipal golf course, in an Avalon work-release program. He threatened to sue Avalon, charging a lack of safety gear provided on the site; his lawyer claimed that a private company had been contracted to maintain the grounds and improperly profited from the labor of offenders like Oliver—work-release participants who say that they were rarely, if ever, paid. (Oliver settled with the maintenance company for an undisclosed amount.)</p> <a class="tny-page" name="/8" total_words="6945"></a><p word_count="197">At Avalon’s Turley facility, women have raised a very different kind of safety complaint. According to a lawsuit filed last August—which began as Jane Does 1-50 v. Avalon Correctional Services, Inc.—a group of Turley residents sent to work-release jobs at a Quiznos sandwich shop in south Tulsa were subjected to “outrageous” forms of abuse. A male manager who lived at the back of the shop allegedly told his “Turley girls” that if they didn’t submit to his advances he could have them sent back to prison. A former Turley staff member told me that the man gave these women the freedom to do as they wanted (go off during the day, use his car, use drugs), as long as they would give him sexual favors; he would grope and harass those who wouldn’t coöperate. When she notified the chief administrator, she said, Turley stopped sending residents to the Quiznos shop for a while. Options for employment were limited, however, and before long placements there started again, she recalls. (“But you know what he’s doing to those women!” the staffer says she protested. She believes that the decision was financially motivated.)</p> <p word_count="137">One afternoon last winter, I drove three hours south from Tulsa along the Indian Nation Turnpike, crossing the Muddy Boggy Creek to meet Melissa Poore, a thirty-four-year-old mother of four and one of the lawsuit’s Jane Does. Poore had agreed to sit down with me at her ex-boyfriend’s home in Boswell (population: 709). The route offered long stretches of squat, dense forest and golden grasses, and the few outposts that dotted the way all seemed to bear the names of locals: Linda’s Beauty Shop, Kirk’s Gun Repair, McCann’s Feed. When I reached the address that Poore had given me, a one-story brick-and-plank house at the end of a dirt road, she hurried out to greet me. A member of the Choctaw Nation, she had clear green eyes, steep cheekbones, and long straight hair.</p> <a class="tny-slot" name="/11" total_words="7279"></a><p word_count="65">It was easy to imagine why the Quiznos manager might have picked Poore for his shop, if reports about his preference for hiring only “the prettiest Turley girls” held any truth. Former Turley residents I interviewed told me that his hiring practices were notorious. Mazie Grant, one of Turley’s older residents, recalls women being dismissed for having gray hair or for being “too dark.”</p> <p word_count="181">Sitting on a living-room couch beneath a mounted collection of black porcelain angels, her eyes on her lap, Poore described a pattern of drug abuse that began in early adolescence. Meth addiction landed her in prison in 2011; a year later, she arrived at Turley for a work-release program. Her first job was making sandwiches at Quiznos. Sometimes, she said, she stayed overnight, at her supervisor’s request, helping him to restock food supplies. “I wound up relapsing after he put his hands on me,” she told me, recounting how her supervisor would grab her breasts, making remarks like “I want to suck your juices.” When she and other Turley women at the shop threatened to complain, he smirked. “His famous line was ‘You’re just a felon, no one’s going to believe you anyway,’ ” she told me. After he busted her lip and tore out her earring while demanding sexual favors, she complained to Avalon administrators, but, she says, “The chief of security just kind of laughed about it, really—I still got sent back to work the next day.”</p> <p word_count="108">Poore says she decided to use her cell phone to record audio of her supervisor’s sexual impropriety, so that she would have evidence to back up her wish to change jobs. When he caught her, she alleges, he flew into a rage, grabbing her from behind, ripping her shirt, and attacking her. (Internal Avalon documents confirm that her “shirt appeared to be torn and she had scratched [sic] on her right shoulder area,” although other possible causes were also suggested; when the supervisor was asked later that week for security footage from Quiznos that would have recorded the incident, he claimed that “someone had stole the recording.”)</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_a18294-600.jpg"><figcaption><span class="caption">“Godot says, ‘Running late, frowny face, winky face.’ ”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="248">On the afternoon of the alleged assault, Poore fled, and the Quiznos supervisor alerted Avalon’s administrator, who notified the police; the supervisor claimed that he had fired Poore several days earlier, suspecting that she had stolen checks. Although Poore caught a bus back to Turley within a few hours, she was charged with felonious escape, and sent back to prison—solitary confinement for the first month—to serve out the rest of her sentence. Not long after, another Turley resident claimed that the same manager had sexually assaulted her on the job. According to an internal Avalon report, “She alleges that while employed on occasion he would rub his body against her body . . . and also alleges that he has inappropriately touched her buttocks. . . . She reported that she was uncomfortable with her working conditions to the Chief of Security of Turley but was advised to continue her work day to avoid a misconduct, and she complied until a friend helped her gain employment at Subway.” I spoke with a third former Turley resident, who described having sex with the Quiznos supervisor for the privileges it afforded: if she coöperated sexually, he would let her take his credit card to buy “makeup, cigarettes, whatever I needed,” and allow her to visit with her infant son. “It’s disgusting, but I did it,” she said, noting that she “took advantage” of what had seemed at first like an opportunity, relapsing into meth use and funnelling drugs back into Turley.</p> <a class="tny-page" name="/9" total_words="7881"></a><p word_count="158">Poore had hoped that Turley would provide a path back to sobriety and steady work. Instead, she told me, between the sexual coercion at Quiznos and the prevalence of drugs at the facility, it encouraged relapse. There was “corruption everywhere” among low-wage guards, she said, which led to residents stealing jeans and perfume while working in stores in exchange for favors from staff. “I’ve always kept quiet about everything,” she said. But what happened at Quiznos broke something in her, Poore told me, and last August she joined the lawsuit against Avalon. The suit claims that a significant number of residents at the Turley Residential Center faced “sexual abuse and sex-based manipulation” at the sandwich shop. It also claims that Avalon’s staff “continually disregarded the complaints despite receiving multiple reports from different women about the same employer . . . and continued to send women to this same employer despite knowledge that women had repeatedly complained of sexual abuse.”</p> <a class="tny-slot" name="/12" total_words="8039"></a><p word_count="87">Police investigated the Quiznos supervisor, but the District Attorney’s office declined to file charges and the supervisor appears to have fled town. The shop is now closed. But I was able to speak with Abbas Ghanei, a Quiznos franchise owner who had originally brought in the supervisor. “Everyone is innocent until they are proven guilty,” Ghanei said. Of the former Turley residents’ claims, he added, “They are halfway-house girls. They are always full of surprises and excuses. They’re the ones who broke the law, anyway.”</p> <p word_count="79">Avalon calls the sexual-abuse lawsuit baseless and has sought to have it dismissed, in part on the ground that Oklahoma law bars suits against private corrections companies based solely on mental or emotional injuries. Several months before the allegations, Poore’s case manager noted, “Client . . . states that she really enjoy her job. Nothing further to report.” Two months before the purported escape, the same caseworker wrote, “She do not in any way feel like she is being sexually harassed.”</p> <p word_count="150">According to Spencer Bryan and Logan Jones, attorneys who represent the Jane Does, other women have come forward with stories of harassment or abuse since they filed the suit. (Internal company documents also reflect reports of “inappropriate staff/offender relationships,” including nightly sexual liaisons between a Turley officer and an offender.) A decade ago, Bryan worked as a corporate lawyer for private prisons. In the years since, he has changed sides. He has come to believe that the for-profit halfway-house industry—at least, when it’s poorly regulated, as he considers it to be in Oklahoma—has “encouraged practices that maximized profits at the expense of the offender population.” The Jane Does’ suit proved to be just one in a series with a common claim: that lax oversight and perverse profit incentives have kept Avalon from supporting the rehabilitation of its offenders, or even, at times, from protecting their lives.</p> <p class="descender" word_count="81">Tamico Norton, a plump-cheeked thirty-six-year-old, came to the Turley Residential Center in May of 2013. Almost immediately upon waking on the day after her arrival, she fell ill. “She said, ‘Mama, I’m not feeling so good,’ ” her mother, Monica Norton, recalls of their last conversation, which took place on Turley’s pay phone. Monica urged her to rest. By the next day, Norton lay in a coma at St. John Medical Center, setting in motion yet another civil-rights lawsuit against Avalon.</p> <p word_count="142">Norton’s symptoms started with pains in her stomach, which quickly spread to her chest and throat. By 2:25 <small>P.M.</small>, according to a formal incident report first obtained by the Tulsa <em>World</em> reporter Cary Aspinwall, who broke news of the suit and related developments, “Offender Norton could not walk under her own strength and began vomiting, yelling, and screaming.” Instead of seeking medical help, the staff allegedly issued a scolding, assuming that she was high. Norton was ordered to sit in the “hot seat,” a prominent chair at the building’s security post generally reserved, residents say, for petty humiliation. (A shift supervisor claimed that Norton was put there for observation and to be tested for drugs; at the time, tennis balls stuffed with K2 routinely soared over the facility’s fence, and staff suspected that Norton might be on the drug.)</p> <p word_count="150">“Is she O.K.?” several Turley residents recall asking in alarm, as Norton grasped at her throat and chest. She urinated in her pants and slumped lower in the chair. By 4<small> P.M.</small>, a supervisor noted that she “did not appear to have movement on the right side of her body.” Norton spent more than five hours slumped in the hot seat before she was taken to the hospital. (“As soon as it became apparent that she might need medical attention, we immediately called 911,” Brian Costello wrote in an e-mail.) The medical diagnosis was a blood clot in the brain. The next evening, she was declared dead. An autopsy was never performed, but Avalon’s own testing found that she was “negative for any illegal drug usage.” Her family has filed a wrongful-death suit. Their attorney, Anthony Allen, said that the death exemplified a “medieval” disregard for Turley residents’ welfare.</p> <p word_count="234">The pending suits against Avalon piled up. Hundreds of thousands of dollars in damages could be at stake, and many millions more in government contracts. The litigation appears to have spurred other forms of unwanted attention. In January, corrections authorities acknowledged that the F.B.I. was investigating Avalon’s alleged misconduct at its Tulsa work-release facility for men. In late March, not long after the emergency closure of the Tulsa halfway house, the Department of Corrections ordered a surprise drug test at the company’s largest facility in the state, the Carver Transitional Center, in Oklahoma City. More than fifty per cent of the company’s residents tested positive. Although local news outlets, including the <em>Oklahoman</em>, the <em>World</em>, and <em>Oklahoma Watch</em>, doggedly covered each new development, the company proved quick to rebound, and reopened its Tulsa men’s facility in April, following a series of changes. Justin Jones, who resigned as the head of Oklahoma’s Department of Corrections last year, told me that he had repeatedly advised state legislators, some of whom took sizable campaign contributions from Avalon, about the recidivism rate of residents of private-sector halfway houses. In a March, 2013, letter to State Senator Clark Jolley, he reported that the rate at which offenders were returned to higher-security facilities from Avalon’s Carver Center—often for infractions like escapes and drug use—was nearly quadruple that of the state-run community-corrections facilities.</p> <a class="tny-slot" name="/13" total_words="8962"></a><a class="tny-page" name="/10" total_words="8962"></a><p word_count="70">In Jones’s view, the private halfway-house industry lacks incentives to succeed at rehabilitation. “If they are for-profit, and especially if they are publicly traded, they have to answer to shareholders,” he noted, which may come at the expense of treatment and other priorities. Yet the fact that some halfway houses may be managed poorly doesn’t mean that the hopes that nineteenth-century reformers had for the institutions are unattainable.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_donnelly-1999-04-12-600.jpg"><figcaption><span class="pub-date">April 12, 1999</span><span class="caption">“Hello? Risotto-crisis hot line?”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p class="descender" word_count="68">“Good halfway houses will understand that leaving prison and trying to adjust to the outside world can be a very rocky transition,” Nancy La Vigne, the director of the Urban Institute’s Justice Policy Center, says. “The good halfway houses are the ones that have wraparound services to help people deal with the lack of job skills, substance-abuse problems, and other issues in a way that’s supportive.”</p> <p word_count="69">In 2013, a Pennsylvania study concluded that inmates released to halfway houses across the state had worse recidivism rates than their counterparts who were sent directly back into society. In congressional testimony, La Vigne cited research showing that “the type and quality of programs” at a halfway house can mean the difference between an institution that makes communities safer and one that raises recidivism rates and fails to treat addictions.</p> <p word_count="95">Across the country, experiments in prison alternatives are proliferating, many with evident success. In Brooklyn, an ambitious new program called JusticeHome, launched last year, allows a small number of mothers who plead guilty to felonies to stay at home with their families, receiving parenting training, G.E.D. classes, and other resources at a tenth the cost of sending the women to prison. The program is supported by data that show how such investments help to break patterns of imprisonment and reduce the chance that the children of offenders will end up in foster care.</p> <p word_count="186">Oklahoma, too, has its success stories. While in Tulsa, I attended a graduation ceremony for Women in Recovery, a pioneering outpatient-treatment program launched, in 2009, with funding from the George Kaiser Family Foundation. The program offers intensive addiction treatment to women in lieu of long prison terms, with the goal of disrupting the intergenerational cycle of poverty. Oklahoma has the highest female incarceration rate in the country, and nearly thirty per cent of female inmates in the state have parents who did time. Participants generally enter Women in Recovery on nonviolent charges tied to the state’s substance-abuse plagues—crystal meth, crack cocaine, prescription drugs. If they complete the requirements, their sentences are deferred or suspended. The program is situated on the second floor of Tulsa’s Family and Children’s Services building, and has four pastel rooms for addiction treatment and trauma counselling; a bustling employment lab; and a parental-coaching room filled with plastic tea sets and Tinkertoys. (The coaching room has a two-way mirror, so that when a mother reunites with her kids an observing therapist can offer tips through a bug in her ear.)</p> <p word_count="123">On the morning of graduation, families made their way across an icy lot toward the sleek Aloft Hotel in downtown Tulsa. The lobby smelled of brownies and fruit; the graduates, trained in a culinary-arts course offered in Women in Recovery’s kitchen, had assembled box lunches for some three hundred attendees. The women lived in semi-independent housing, and all were graduating with jobs—mostly service positions at hotels and chain stores like Panera or Bath &#038; Body Works, but also some higher-skilled jobs, like welding and electrical work—that might help pay off whatever court costs and penalties they owe. Those costs can be substantial: in Oklahoma, strict mandatory sentences are often combined with steep statutory fines, in the tens of thousands of dollars.</p> <p word_count="210">The hotel auditorium buzzed as the graduates took the stage in groups of three. Duelling photos were projected onto a screen as each woman stepped to the microphone: on the left, a recent mug shot, some red-eyed and ratty-haired, and, on the right, a program portrait bathed in prairie light. The graduates knew that they had been lucky to land where they did. “I started using meth when I was fourteen,” a woman named Sarah told the crowd. “I was in a high-speed chase, hit a tree, and learned that I was pregnant at the hospital.” Her arrest didn’t bring panic so much as relief, she explained: she could finally stop running. Being admitted to Women in Recovery meant that she wouldn’t have to give birth in a prison or a jail. (More than sixty per cent of women in the program were abused as kids; more than a third have been sexually assaulted; and most fled home or foster care in their teens.) “I’m sixty-two years old, and I’ve spent eighteen years in prison, forty-five years in my addiction,” another graduate, Diane Boyd, said. For the first time in nearly half a century, Boyd went on, she had a system in place to stay clean.</p> <a class="tny-slot" name="/14" total_words="9783"></a><p class="descender" word_count="95">“It may be cheaper to move people out of prison, but that has to be the beginning, and not the end, of the conversation,” Amy Lerman, a Berkeley political scientist and the co-author of a new book about crime and citizenship, says. “There’s a really big set of questions that we don’t have good answers to.” Halfway houses and private probation are both under-researched and poorly understood, in her view. The alternatives-to-incarceration industry “isn’t going anywhere anytime soon, so we need to be thinking about what kind of role private companies play.”</p> <a class="tny-page" name="/11" total_words="9878"></a><p word_count="261">If a national debate about the future of halfway houses is starting to arrive at the legislative level—in part owing to revelations of abuse and negligence in recent years, which, as of March, have spurred new regulations of federal facilities—the private-probation industry can expect some scrutiny as well. Last month, the U.S. District Court for the Middle District of Alabama held a hearing to address the claims of three plaintiffs with cases similar to Harriet Cleveland’s: all had been unable to pay court costs and private-probation fees associated with traffic tickets, and all three had been jailed by the city of Montgomery as a result. The judge made a preliminary ruling in the debtors’ favor—he issued an injunction banning the city from “collecting or attempting to collect all outstanding fines, fees, costs, surcharges, or the outstanding balance of any monies owed to the City or to Judicial Correction Services, Inc. (‘JCS’) associated with traffic tickets.” He also wrote that the plaintiffs “have a substantial likelihood of success on the merits of its claim that the Defendant City of Montgomery (‘the City’) violated their Fourteenth Amendment due process and equal protection rights.” He asked the city to submit a plan detailing how it intends to assess a debtor’s ability to pay, and what alternatives to jail, such as community service, it will provide the indigent. At a hearing on June 30th, the judge is expected to make a ruling about how Montgomery will be allowed to collect court debts, including its use of J.C.S.</p> <p word_count="105">In the meantime, a habeas petition filed by the attorney Sara Zampierin and her team got Harriet Cleveland freed from jail, and the process of discovery in her suit against the court yielded some surprises. It turned out that Cleveland had actually paid one of the tickets that had landed her in jail; sloppy accounting is commonplace in understaffed courts. What’s more, J.C.S. officers had sometimes placed Cleveland’s payments directly into its corporate accounts, with hardly anything applied toward her actual court costs. According to internal company records, Cleveland once made a two-hundred-dollar payment that went straight to J.C.S.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/06/140623_booth-2001-03-12-600.jpg"><figcaption><span class="pub-date">March 12, 2001</span><span class="caption">“See that man sitting right over there? He gives me fever.”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="174">Although suits like Cleveland’s are humble in scope, they have implications for the hundreds of thousands of defendants who appear each year before municipal courts tied to private-probation firms. Zampierin is alleging violations of her client’s most basic rights—to counsel, to due process, and to equal protection. On our walk to the day-care center, Cleveland told me that our discussion of her time “on the program”—she still spoke of J.C.S. as if it were a cousin of Weight Watchers—made her think of “Stone Fox,” a children’s book she’d picked up recently at work. It features a young Wyoming boy who lives with his grandfather, a potato farmer, until the old man falls behind on his property taxes and takes to his bed. The boy vows that he’ll save the farm from foreclosure. “He tried everything, but he just couldn’t pay,” she said as we walked our final quarter mile. Eventually, the boy enters a dog-sled race with his dog, seeking the cash prize.</p> <a class="tny-slot" name="/15" total_words="10418"></a><p word_count="36">Suddenly, Cleveland began to weep. “That dog, it just ran and ran,” she said. “And then it ran its heart out.” In sight of the finish line, the dog collapses of exhaustion, dying on the snow.</p> <p word_count="77">Cleveland took me to the jungle-themed reading room at the day-care center, where “Stone Fox” was on a shelf beneath a string of lights. She opened it to a sketch of a shadowy “tax man,” who had come to collect from the reed-thin farm boy half his size. “ ‘I’m warning you, if you don’t pay, we have our ways,’ the man said, derringer on his hip. ‘And it’s all legal. All fair and legal.’  ”</p> <p word_count="56">A district-court judge will soon issue a decision about whether Cleveland’s own treatment has been fair and legal. Cleveland says she prays that her case in Montgomery will be successful, if only because she has hardly anything left to hand over to the authorities. “You can’t squeeze blood from a turnip,” she told me.</p> <p word_count="86">When we spoke one recent afternoon before her day-care shift, Cleveland still had “Stone Fox” on her mind, so I bought a copy. The tale of the boy’s attempt to hold on to his grandfather’s potato fields turned out to be every bit as grim as she had recounted. In the book’s final chapter, the boy manages to carry his dog’s carcass across the finish line, helped along by a fellow-racer, thus winning the cash that will ultimately save the family farm.</p> <p word_count="65">Harriet Cleveland prays most nights for a simpler twist—maybe divine intervention, or some cash tucked under a sidewalk flagstone, or, better yet, a full-time job at one of the twenty local businesses where she has left her freshly typed résumé in an attempt to keep her small pink house. “I know it’s raggedy,” she told me. “But at least it’s mine.” <span class="dingbat">♦</span></p> 						<!-- TODO: Add LinkedIn and Pinterest Support [#98] -->
+
+
+
+<nav class="social-buttons">
+	<ul>
+    <li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" data-type="button"></div></li>    <li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" data-text="Get Out of Jail, Inc." data-via="newyorker" data-dnt="true"></a></li>    <li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc"></div></li>    	<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: Get%20Out%20of%20Jail%2C%20Inc.&body=On a cold November afternoon, Harriet Cleveland, a forty-nine-year-old mother of three, waved me over from the steps of her pink cottage in Montgomery, Alabama. She was off to her part-time job as a custodian at a local day-care center, looking practical but confectionary: pink lipstick, a pastel...%0A%0AContinue reading at http://www.newyorker.com/magazine/2014/06/23/get-out-of-jail-inc" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png"/></a></li>	<li class="share-print"><a href="javascript:window.print(); return false;"><img src="/wp-content/assets/dist/img/icon/printer.png"/></a></li>	</ul>
+</nav>
+					</div>
+						<section class="article-contributors">
+						
+<section class="author-details" itemscope itemtype="http://schema.org/Person">
+		<article>
+						<figure>
+			  <a rel="me" itemprop="url" class="author-thumb" href="http://www.newyorker.com/contributors/sarah-stillman" title="Sarah Stillman"><img width="320" height="320" src="http://www.newyorker.com/wp-content/uploads/2014/07/Stillman.gif" class="attachment-medium wp-post-image" alt="Stillman" itemprop="thumbnail" /></a>
+			</figure>
+						<div class="author-masthead">	
+				<p>Sarah Stillman is a staff writer at <em>The New Yorker</em> and a visiting scholar at the N.Y.U. Arthur L. Carter Journalism Institute. </p>
+			</div>
+			<ul class="author-links">
+					<li>
+						<a class="light-button" href="http://www.newyorker.com/contributors/sarah-stillman" title="Sarah Stillman">Bio</a>
+					</li>
+					<li>
+						<a class="light-button" href="http://www.newyorker.com/contributors/sarah-stillman/all" title="Sarah Stillman">All work</a>
+					</li>
+																			</ul>
+		</article>
+</section>
+<div class="author-ampersand">&amp;</div>
+						</section>
+												<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+							<meta itemprop="name" content="The New Yorker">
+						</span>
+					</div>
+					<aside class="container-rail">
+
+    <section id="newsletter-signup">
+    <h5 class="popping">Sign up to get the best of The New Yorker delivered to your inbox every day</h5>
+    	<div class="newsletterContainer">
+	      <form action="http://www.newyorker.com/wp-admin/admin-ajax.php" method="post" name="newsletter-form" id="newsletter-form" novalidate="novalidate">
+	      <input type="hidden" name="action" value="newsletter_subscribe">
+	      <input type="hidden" name="formName" value="newsletter-form">
+	      <input type="hidden" name="url" value="http://www.newyorker.com"><input type="hidden" name="source_code" value="footer-unit">    <fieldset>
+	          <legend><h5>Sign up for newsletters</h5></legend>
+	          <label for="newsletter-email" class="replace">E-mail address</label>
+	          <input name="email" id="newsletter-email" type="email" placeholder="E-mail address" required="" class="">
+	          <button type="submit" name="submit-newsletter" id="submit-newsletter-content">Sign up</button>
+	      </fieldset>
+	      <div class="form_response"></div>        
+	          <ul>
+	              <li>
+
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_217" name="newsletterId[]" value="217""">
+	                      <label for="newsletterId_217">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_442" name="newsletterId[]" value="442">
+	                      <label for="newsletterId_442">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5122" name="newsletterId[]" value="5122" checked="checked">
+	                      <label for="newsletterId_5122">
+	                  </fieldset>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5129" name="newsletterId[]" value="5129">
+	                      <label for="newsletterId_5129">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	          </ul>
+	      </form>
+	    <span id="newsletter-message"></span>
+      </div>
+  </section>
+  <div class="recirculation">
+        <div class="tablet-half-wrapper">
+      
+            <div id="most-popular-polar-text"></div>
+      <div class="clearfix"></div>
+    </div> <!-- // div.tablet-left-wrapper -->
+    <div class="tablet-half-wrapper recirc-most-popular-wrapper">
+      <!-- TODO add optional sponsor -->
+      
+<div id="most-popular" class="module most-popular">
+  <h5 class="small">Most Popular</h5>
+  <ol>
+    <li>
+      <p><a href="//www.newyorker.com/humor/borowitz-report/largest-climate-change-march-history-unlikely-convince-idiots?src=mp">Largest Climate-Change March in History Unlikely to Convince Idiots</a></p>
+      <h3>By Andy Borowitz</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/magazine/2014/09/29/fight-lives?src=mp">The Fight of Their Lives</a></p>
+      <h3>By Dexter Filkins</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/books/page-turner/how-chris-mccandless-died?src=mp">How Chris McCandless Died</a></p>
+      <h3>By Jon Krakauer</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/news/hendrik-hertzberg/the-late-stephen-colbert?src=mp">The Late Stephen Colbert</a></p>
+      <h3>By Hendrik Hertzberg</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/magazine/2014/09/22/last-amazon?src=mp">The Last Amazon</a></p>
+      <h3>By Jill Lepore</h3>
+</li>
+  </ol>
+</div>
+<!-- cached -->
+<div id="related-stories-polar"></div><div id="most-popular-polar-logo"></div><div class="post-sponsor clearfix"></div>
+
+      <!-- End TODO of optional sponsor -->
+
+      <div class="clearfix"></div>
+    </div> <!-- // div.tablet-right-wrapper -->
+  </div>
+</aside>
+
+		</article>
+		<section class="module">
+	<div id="you-might-like" class="big-titled-curation" style="display: none;">
+		<h5 class="popping">You Might Like</h5>
+		<div id="yml-list" class="stories"></div>
+	</div>
+</section>
+	</div>
+	<section id="promotions" class="container">
+	<ul>
+		<li>
+			<h5><a href="/jigsaw">Jigsaw<span>&nbsp;</span>Puzzle</a></h5>
+			<figure>
+				<a href="/jigsaw"><img src="/wp-content/assets/img/promotions/jigsaw.png" alt="Jigsaw Puzzle"/></a>
+			</figure>
+		</li>
+		<li id="links-strongbox">
+			<h5><a href="https://projects.newyorker.com/strongbox/">Strongbox<span>&nbsp;</span>Submissions</a></h5>
+			<figure>
+				<a href="https://projects.newyorker.com/strongbox/"><img src="/wp-content/assets/img/promotions/strongbox.png" alt="Strongbox" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" taregt="_blank">Goings On<span>&nbsp;</span>App</a></h5>
+			<figure>
+				<a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" target="_blank"><img src="/wp-content/assets/img/promotions/tny-goat.jpg" alt="Goings On App" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="/about/us">About<span>&nbsp;</span>Us</a></h5>
+			<figure>
+				<a href="/about/us"><img src="/wp-content/assets/img/promotions/tnr-digital.png" alt="About Us" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="http://contest.newyorker.com/">Caption<span>&nbsp;</span>Contest</a></h5>
+			<figure>
+				<a href="http://contest.newyorker.com/"><img src="/wp-content/assets/img/promotions/caption-contest.png" alt="Caption Contest" /></a>
+			</figure>
+		</li>
+		<li class="festival">
+			<h5><a href="/festival/">The New Yorker<span>&nbsp;</span>Festival</a></h5>
+			<figure>
+				<a href="/festival/"><img src="/wp-content/assets/img/promotions/tny-FestIcon.jpg" alt="The New Yorker Festival" /></a>
+			</figure>
+		</li>
+	</ul>
+</section>
+
+<div class="entry-unrelated">
+	<div id="modal-strongbox">
+		<a href="#" id="links-strongbox-close" title="Close">&#10005;</a>
+		<div id="sb-header" role="banner">
+	
+			<h1 class="sb-main">
+				<span>The New Yorker</span> Strongbox
+				<svg width="135" height="135" xmlns="http://www.w3.org/2000/svg">
+					<defs><linearGradient spreadMethod="pad" y2="0.07813" x2="0.88281" y1="0.91797" x1="0.07422" id="svg_14"><stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+					<g>
+					<path d="m6.74918,27.25192l61.0069,-21.50198l60.75703,21.50198l-0.25,81.50894l-60.75703,20.502l-61.2569,-21.502l0.5,-80.50894z" stroke-width="8" stroke="#ffffff" fill="#000000"/>
+					<path d="m68.00609,49.00389l56.506,-19.50197l0,76.25794l-57.006,19.25301l0.5,-76.00897z" stroke-width="0" stroke="#000000" fill="url(#svg_14)"/>
+					<ellipse ry="4.875" rx="4.876" cy="95.634" cx="23.376" stroke-width="0" stroke="#000000" fill="#f70707"/>
+					</g>
+				</svg>
+			</h1><br/>
+	
+			<div class="sb-contain">
+				<p>Strongbox is a new way for you to share information, messages, and files with our writers and editors and is designed to provide you with a greater degree of anonymity and security than afforded by conventional e-mail.</p>
+				<p>To help protect your anonymity, Strongbox is only accessible using the Tor network (<strong>https://www.torproject.org</strong>). When using Strongbox, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+				<p>You can read our full privacy promise <a href="#strongbox-privacy-promise" alt="privacy promise">here</a>.</p>
+				<p><em>The New Yorker</em> Strongbox is powered by <a href="https://pressfreedomfoundation.org/securedrop" title="SecureDrop" id="sb-securedrop-logo">SecureDrop</a>.</p>
+			</div>
+		</div>
+		<div id="sb-main" role="main">
+			<div id="sb-points">
+				<div class="sb-contain">
+					<h2>To get to Strongbox and begin using it to contact writers and editors at <em>The New Yorker</em>, just follow <strong>these&nbsp;two&nbsp;steps</strong>:</h2>
+					<ol>
+						<li><i>1</i>Download and install software to access the Tor Project: <strong>https://www.torproject.org</strong>. This should only take a few minutes. </li>
+						<li><i>2</i>Once you have access to the Tor network, go to Strongbox at <strong>http://strngbxhwyuu37a3.onion</strong>, where you will find further instructions on how to submit files and messages to <em>The New Yorker</em>.</li>
+					</ol>
+					<p class="sb-instructions">You will be assigned a randomly generated and unique code name as part of the process. If a writer or editor at <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> wants to contact you about the information you have submitted, he or she will leave a message for you in Strongbox. These messages are the only way we will be able to reach you, and this message can only be accessed using your code name.</p>
+				</div>
+			</div>
+			<div id="sb-privacy">
+				<div class="sb-contain">
+					<h3 id="strongbox-privacy-promise">Our privacy promise</h3>
+					<p><a name="strongbox-privacy-promise" href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker's</em></a> Strongbox is designed to let you communicate with our writers and editors with greater anonymity and security than afforded by conventional e-mail.</p>
+					<p>When you visit or use our public Strongbox server at <i>http://strngbxhwyuu37a3.onion</i>, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and our parent company, Cond&#233; Nast, will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+					<p>Strongbox servers are under the physical control of <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and Cond&#233; Nast.</p>
+					<p>Strongbox is designed to be accessed only through a &ldquo;hidden service&rdquo; on the Tor anonymity network, which is set up to conceal both your online and physical location from us and to offer full end-to-end encryption for your communications with us. This provides a higher level of security and anonymity in your communication with us than afforded by standard e-mail or unencrypted Web forms. Strongbox does not provide perfect security. Among other risks, if you share your unique code name, or if your computer is compromised, any activities, including communications through Strongbox, should be considered compromised as well.</p>
+					<p>The system is provided on an &ldquo;as is&rdquo; basis, with no warranties or representations, and any use of it is at the user's own risk.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<aside id="footer-ad">
+			<!-- Need to have mobile ad sizes reevaluated -->
+		  <div class="advertisement"><div id="footerMobile320x51_frame" class="displayAd displayAd320x51Js" data-cb-ad-id="footerMobile320x51_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "footerMobile", { sz: ( "320x51" ), kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div>		  <div class="advertisement"><div id="footer728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="footer728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "footer", { sz: "728x90", kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div>		</aside>
+
+		<div id="digital-editions"><div id="AMS_NYR_GLOBAL_FOOTER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" data-mobile="http://www.newyorker.com/go/mobilefailsafe" target="_blank"><img class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_Desktop_1020x180.jpg" data-src-tablet="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_TabletRedesign_728x128.jpg" data-src-mobile="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Mobile_300x50.NavyTote.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div></div>
+		<footer>
+			<nav id="tny-footer">
+			  <ul>
+				<li><a href="/about/us/?src=tny-footer" title="About Us">About Us</a></li>
+				<li><a href="/about/faq/?src=tny-footer" title="Frequently Asked Questions">FAQ</a></li>
+				<li><a href="http://w1.buysub.com/servlet/CSGateway?cds_mag_code=NYR" title="Customer Care">Customer Care</a></li>
+				<li><a href="http://www.condenaststore.com/-se/cartoonbank.htm?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=tny-footer&amp;AID=1247905545" title="">Cartoon Bank</a></li>
+				<li><a href="http://www.newyorkeronthetown.com/?src=tny-footer" title="">On The Town</a></li>
+				<li><a href="/about/feeds/?src=tny-footer" title="">RSS</a></li>
+				<li><a href="/about/contact/?src=tny-footer" title="">Contact Us</a></li>
+			  </ul>
+			  <ul>
+		    	<li><a href="http://www.condenaststore.com/-se/newyorkerstore.htm?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=tny-footer&amp;AID=1247905545" title="">The New Yorker Store</a></li>
+			    <li><a href="http://www.condenast.com/careers?src=tny-footer" title="">Careers</a></li>
+			    <li><a href="http://www.condenast.com/reprints-permissions?src=tny-footer" title="">Reprints/Permissions</a></li>
+			    <li><a href="/about/press/?src=tny-footer" title="Press Center">Press</a></li>
+			    <li><a href="http://www.condenast.com/brands/new-yorker/media-kit/?src=tny-footer" title="">The New Yorker Media Kit</a></li>
+			  </ul>
+			</nav>
+			<div id="conde-footer">
+  <div class="global-footer-logo">
+    <a href="http://www.condenast.com?src=tny-footer" title="Cond&eacute; Nast Digital">Cond&eacute; Nast Digital</a>
+  </div>
+  <div class="global-footer-subscriptions">
+      <form action="/" name="sub_dropmenus" id="sub_dropmenus">
+        <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="sub_list" id="sub_list" size="1">
+            <option selected="selected" value="">Subscribe to a magazine</option>
+            <option value="">
+            </option><option value="http://www.magazinestoresubscriptions.com?src=univdropdown">View All Titles</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?src=tny-footer">Allure</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?src=tny-footer">Architectural Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?src=tny-footer">Brides</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?src=tny-footer">Details</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?src=tny-footer">Glamour</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?src=tny-footer">Golf Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?src=tny-footer">Golf World</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?src=tny-footer">GQ</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?src=tny-footer">Lucky</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?src=tny-footer">Self</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?src=tny-footer">Teen Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?src=tny-footer">The New Yorker</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?src=tny-footer">Vanity Fair</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?src=tny-footer">Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?src=tny-footer">W</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div class="global-footer-sister-sites">
+      <form action="/" name="mag_dropmenus" id="mag_dropmenus">
+          <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="mag_list" id="mag_list">
+            <option selected="selected" value="">Other Cond&eacute; Nast sites</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="http://www.allure.com?src=tny-footer">Allure</option>
+            <option value="http://www.architecturaldigest.com?src=tny-footer">Architectural Digest</option>
+            <option value="http://www.arstechnica.com?src=tny-footer">Ars Technica</option>
+            <option value="http://www.bonappetit.com?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="http://www.brides.com?src=tny-footer">Brides.com</option>
+            <option value="http://www.concierge.com/cntraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="http://www.concierge.com?src=tny-footer">Concierge</option>
+            <option value="http://www.details.com?src=tny-footer">Details</option>
+            <option value="http://www.epicurious.com?src=tny-footer">Epicurious</option>
+            <option value="http://www.glamour.com?src=tny-footer">Glamour</option>
+            <option value="http://www.golfdigest.com?src=tny-footer">Golf Digest</option>
+            <option value="http://www.golfworld.com?src=tny-footer">Golf World</option>
+            <option value="http://www.gq.com?src=tny-footer">GQ</option>
+            <option value="http://www.hotelchatter.com?src=tny-footer">Hotel Chatter</option>
+            <option value="http://www.jaunted.com?src=tny-footer">Jaunted</option>
+            <option value="http://www.luckymag.com?src=tny-footer">Lucky</option>
+            <option value="http://www.nutritiondata.com?src=tny-footer">NutritionData</option>
+            <option value="http://www.reddit.com?src=tny-footer">Reddit</option>
+            <option value="http://thescene.com?src=tny-footer">The Scene</option>
+            <option value="http://www.self.com?src=tny-footer">Self</option>
+            <option value="http://www.style.com?src=tny-footer">Style</option>
+            <option value="http://www.teenvogue.com?src=tny-footer">Teen Vogue</option>
+            <option value="http://www.vanityfair.com?src=tny-footer">Vanity Fair</option>
+            <option value="http://www.vegaschatter.com?src=tny-footer">Vegas Chatter</option>
+            <option value="http://www.vogue.com?src=tny-footer">Vogue</option>
+            <option value="http://www.wmagazine.com?src=tny-footer">W</option>
+            <option value="http://www.wired.com?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div id="copy">
+  	<p><small>Use of this site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy">User Agreement</a> (effective January 1, 2014) and <a href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (effective January 1, 2014). <a href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a> The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Cond&eacute; Nast. <a href="http://www.condenast.com/privacy-policy#privacypolicy-optout">Ad Choices&nbsp;<img width="10" height="10" src="/wp-content/assets/dist/img/icon/ad_choices_arrow.png" alt="Ad Choices"></a></small></p>
+  </div>
+</div>
+		</footer>
+	</div> <!-- end .content-wrapper -->
+</div> <!-- end .page-container -->
+            <script type="text/javascript">
+            //<!--
+                CN.config.set({
+                    title        : document.title,
+                                    facebook     : {pageid: "9258148868"},
+                                    isiFrame     : true
+                });
+            //-->
+            </script>
+            
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="newyorker.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+            <script type="text/javascript" class="omniture_block">
+            //<!--
+                CN.stats.omniture.init();
+                CN.stats.omniture.setStatus( CN.site.httpStatusCode );
+
+            var mobile_view = jQuery.devices.getDeviceView();
+CN.stats.omniture.setMobileView( mobile_view );
+
+                if ( CN.cookie.get('amg_user_partner') != '' ) {
+                    CN.stats.omniture.setCustomProp( "52", CN.cookie.get('amg_user_partner') );
+                }
+
+                CN.stats.omniture.setContentType( "Article" );
+
+                if ( CN.stats.omniture.setReferrer !== undefined && document.referrer.match( CN.site.tld ) ) {
+                    var referrer = document.referrer;
+                    referrer=referrer.split("?")[0];
+                    CN.stats.omniture.setReferrer( referrer );
+                }
+
+                if ( CN.stats.omniture.setKeywords !== undefined ) {
+                    CN.stats.omniture.setKeywords( "judge-larry-ward-tag|judge-lynneice-washington-tag|judge-stephen-wallace-tag|judge-tommy-nail-tag|alternatives-to-incarceration-tag|amy-lerman-tag|ankle-bracelets-tag|avalon-correctional-services-tag|bi-incorporated-tag|cary-aspinwall-tag|charlie-waldrep-tag|corrections-industry-tag|corruption-tag|courts-tag|david-hamil-tag|debtors-prison-tag|don-smith-tag|foster-cook-tag|gayle-gear-tag|geo-group-tag|halfway-houses-tag|harriet-cleveland-tag|isaac-t-hopper-tag|jack-long-tag|jacob-denney-tag|jails-tag|john-augustus-tag|judges-tag|judicial-correction-services-j-c-s-tag|justicehome-tag|justin-jones-tag|law-tag|logan-jones-tag|louis-bullock-tag|meagan-poole-tag|melissa-poore-tag|monica-norton-tag|montgomery-alabama-tag-2|nancy-la-vigne-tag|patrick-harvey-tag|politics-tag|privatization-tag|probation-tag|probation-debts-tag|profiteering-tag|quiznos-tag|rehabilitation-tag|sara-zampierin-tag|sentinel-offender-services-tag|sexual-harassment-tag|spencer-bryan-tag|surveillance-tag|tamico-norton-tag|tickets-tag|tim-fugatt-tag|traffic-violations-tag|tulsa-oklahoma-tag-2|work-release-programs-tag|wrongful-death-tag|article|a-reporter-at-large" );
+                }
+
+            CN.stats.omniture.setAuthorName( "dphiffer" );
+CN.stats.omniture.setContentId( "1563231" );
+if ( CN.url.params('event') == 'loginsuccess' ) {
+ CN.stats.omniture.trackAction( 'login', document, { events: 'event21' } );
+}
+if(CN.isMobile){ CN.stats.omniture.setCustomProp('51', 'mobile') };
+CN.stats.omniture.setCustomProp('62', '2014-06-16 00:00:00');
+CN.stats.omniture.setCustomProp('61', '2364h|98d');
+(function(){ var page_count = (document.querySelectorAll(".tny-page").length + 1); CN.stats.omniture.setCustomProp( "60", page_count ); })();
+(function($){var currentDate,currentMonth,visitedCount,storedVisitedArticles,visitedArticles=[],uniquePathName,isCurrentNew,lastVisitedMonth,$mainEl;currentDate=new Date;currentMonth=currentDate.getMonth();lastVisitedMonth=localStorage.getItem("lastVisitMonth")||-1;if(currentMonth==lastVisitedMonth){visitedCount=localStorage.getItem("visitedCount")||0;storedVisitedArticles=localStorage.getItem("visitedArticles");if(storedVisitedArticles!==null){storedVisitedArticles=storedVisitedArticles.split(",")}visitedArticles=visitedArticles.concat(storedVisitedArticles)}else{visitedCount=0}uniquePathName=location.pathname;isCurrentNew=$.inArray(uniquePathName,visitedArticles)==-1;$mainEl=$("#main");if($mainEl.hasClass("single-article")||$mainEl.hasClass("single-blog")||$mainEl.hasClass("single-post")){if(isCurrentNew){visitedCount=++visitedCount;visitedArticles.push(uniquePathName)}}localStorage.setItem("visitedCount",visitedCount);localStorage.setItem("visitedArticles",visitedArticles);localStorage.setItem("lastVisitMonth",currentMonth);CN.stats.omniture.setCustomProp("44",visitedCount)})(jQuery);
+CN.stats.omniture.setCustomProp('8', '');
+CN.stats.omniture.setCustomProp('9', '');
+CN.stats.omniture.setCustomProp('55', 'Sarah Stillman');
+CN.stats.omniture.setCustomProp('6', 'channel_none');
+CN.stats.omniture.setCustomProp('7', 'channel_none/rubric-A Reporter at Large');
+var page_count = document.getElementsByClassName("tny-page").length + 1; if(page_count == 1) { CN.stats.omniture.setPaginationValue( "page_single" );} else { CN.stats.omniture.setPaginationValue( "page_1" ); }
+                // Run page tracking (also calls .init() again )
+                if ( CN.preventAutoTrack != true ) {
+                    CN.stats.omniture.doPageTracking();
+                }
+            //-->
+            </script>
+            <noscript>
+                <a href="http://www.omniture.com" title="Web Analytics">
+                    <img src="http://condenast.112.2o7.net/b/ss/conde-newyorker/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" />
+                </a>
+            </noscript>
+                    <script type="text/javascript">
+        //<!--
+            var _gaq = _gaq || [];
+            var _ga_end = (new Date()).getTime();
+            var _ga_total = parseInt(_ga_end - _ga_start);
+            var _ga_sample_percent = 50;
+        _gaq.push(['a._setAccount', 'UA-8293713-14']);
+_gaq.push(['a._trackPageview']);
+if (0 < _ga_total && _ga_total < 1000*60*60) {
+_gaq.push(['a._trackTiming', 'Page', 'Load Time', _ga_total, 'Page Load Time', 100]);
+}
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        //-->
+        </script>
+        <div id="fancyModal" class="fancy modal" aria-hidden="true"></div>
+	<div id="CMU_RIGHTRAIL_CONTAINER">
+  <div id="AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Search_Tablet_300x250.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div></div>	
+<script>
+window.jQuery || document.write('<script src="/wp-content/assets/dist/js/vendors/jquery/jquery.min.js"><\/script>');
+_satellite.pageBottom();
+</script>
+
+
+    <script src="/wp-content/assets/dist/js/core-545.min.js"></script> 
+
+ <script>!function(d,s,id){ var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><script>(function() { var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;po.src = "//apis.google.com/js/plusone.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);})();</script>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"2907deeb56","applicationID":"4337305","transactionName":"YlIEZhNSXxEAABYNW1sYJ1EVWl4MThALClNZUktTE0dYAQ0G","queueTime":0,"applicationTime":1555,"ttGuid":"","agentToken":"","atts":"ThUHEFtITB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-454.min.js"}</script></body>
+</html>

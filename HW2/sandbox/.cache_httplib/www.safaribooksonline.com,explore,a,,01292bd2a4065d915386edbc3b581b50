@@ -1,0 +1,2349 @@
+status: 200
+content-length: 140579
+via: 1.1 varnish
+vary: Cookie,Accept-Language
+content-language: en
+x-cache-hits: 0
+cache-control: max-age=0
+x-served-by: cache-jfk1026-JFK
+x-cache: MISS
+set-cookie: original_referer=direct;
+ Path=/, csrftoken=sidQff6M4vkbqZTfMNEnNAW6o0uLay5n;
+ expires=Mon, 21-Sep-2015 17:06:39 GMT; Max-Age=31449600; Path=/
+accept-ranges: bytes
+-content-encoding: gzip
+date: Mon, 22 Sep 2014 17:06:39 GMT
+x-client-ip: 128.82.38.16
+content-location: https://www.safaribooksonline.com/explore/a/
+age: 0
+x-timer: S1411405598.354162,VS0,VE697
+server: nginx/1.1.19
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<!--[if lt IE 8 ]> <html class="ie lte8 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 lte9 lte8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 lte9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="notie no-js" data-url="/explore/a/"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <meta property="og:site_name" content="Safari"/>
+    <meta property="og:image" content="https://www.safaribooksonline.com/static/corp/img/safari-og.png">
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@safari">
+    <meta name="twitter:creator" content="@safari">
+    <meta name="twitter:title" content="Safari - The best books and video courses from the brightest minds.">
+    <meta name="twitter:description" content="Unlimited access to hundreds of thousands of hours of business, tech, and design training, and the tools to help you find just the parts you need today.">
+    <meta name="twitter:image:src" content="https://www.safaribooksonline.com/static/corp/img/safari-og.png">
+    <meta name="pocket-site-verification" content="d85d500c38bf753d13cc3ea0ccbb35" />
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon" href="/static/corp/img/apple-touch-icon.png" />
+
+    <title>Topics </title>
+
+    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQQDUVVVGwcDUlhXAgQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t(3),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(6),t(4),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:"QJf3ax",4:5,5:15,6:6,handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(2),t(1).create()),i=t(3)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:"QJf3ax",2:15,3:16}],5:[function(t,e){var n=(t(3),t(1).create()),r=t(2)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:"QJf3ax",2:16,3:15}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(3),t(1).create()),o=t(2)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:"QJf3ax",2:16,3:15}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t(2).create(),a=t(1),s=t(3),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:"QJf3ax",3:16}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t(3),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(5),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:"QJf3ax",4:7,5:4,handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t(1).create(),o={};e.exports=n,n.ee=r,r.q=o},{1:"QJf3ax"}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t(1),o=t(2),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:"QJf3ax",2:15}]},{},["G9z0Bl",3,8]);</script>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/static/corp/CACHE/css/62710a91426f.css" type="text/css" />
+    
+
+    <script type="text/javascript" src="/static/corp/CACHE/js/d3bccaef2e26.js"></script>
+
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
+    <script src="//cdn.optimizely.com/js/754231730.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <link href="//netdna.bootstrapcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy">
+      <link href="/static/js/respond.proxy.gif" id="respond-redirect" rel="respond-redirect">
+      <script src="/static/js/respond.proxy.js"></script>
+      <script scr="/static/corp/js/src/jquery.xdomainrequest.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+
+<header class="global">
+  <nav class="main-nav">
+    <a href="/" class="ident"><span>Safari</span></a>
+
+    
+    <div class="sign-in"><a href="#" class="login js-login">Sign In</a>
+      <div class="js-login-modal login-form-wrapper fadeIn">
+        <div class="inner">
+          <form action="/accounts/login/" method="post" class="login-form">
+              <h4 class="stag-sans-section-heading">Sign In</h4>
+                <input type='hidden' name='csrfmiddlewaretoken' value='sidQff6M4vkbqZTfMNEnNAW6o0uLay5n' />
+              <input id="id_email" maxlength="200" name="email" type="text" autofocus="autofocus" autocorrect="off" autocapitalize="off"  tabindex="1" placeholder="Email address or user name" class="required" />
+              
+              
+              <input id="id_password1" name="password1" type="password" placeholder="Password" autocorrect="off" autocapitalize="off" class="required" tabindex="2" />
+              
+              <input id="id_is_login_form" name="is_login_form" type="hidden" value="true" />
+
+              <div class="noshow" style="display: none;">
+                <p><label for="id_leaveblank">Leave Blank:</label> <input id="id_leaveblank" name="leaveblank" type="text" value="" /></p>
+                <p><label for="id_dontchange">Don&#39;t Change:</label> <input id="id_dontchange" name="dontchange" type="text" value="http://" /></p>
+              </div>
+              <button type="submit" class="button with-chevron" value="Sign In">Sign In</button>
+              <span class="small"><a href="/accounts/password/reset/" class="forgotpass">Forgot Password?</a></span>
+            </form>
+
+            <div class="not-a-subscriber">
+              <h4 class="stag-sans-section-heading">Not a Member?</h4>
+              <ul>
+                <li><a href="/#trial" class="button secondary with-chevron temp lg-free js-subscribe-link">Try It Free</a></li>
+                <li class="or">or</li>
+                <li><a class="button secondary with-chevron temp lg-free js-subscribe-link" href="/signup/">Join Now</a></li>
+                
+                
+                
+                <li class="small">You can also <a href="/explore/">explore the library</a> or <a href="/our-library/">take the tour</a>.</li>
+                
+              </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="dropdown">
+      <a class="trigger" href="#"></a>
+      <ul class="drop-content">
+        <li><a class="" href="/enterprise/">Enterprise</a></li>
+        <li><a class="" href="/pricing/">Pricing</a></li>
+        <li><a class="active"href="/explore/">Explore</a></li>
+        <li><a class="" href="/our-library/">Tour</a></li>
+        <li class="search-field"><form id="js-search-form" action="/search/">
+        <input data-search-text-focus= "Search books and videos..." data-search-text-idle = "Search..." id="search" type="search" name="q" placeholder="Search..." autocomplete="off" required />
+        <input type="submit" value="search" class="search-submit" /></form></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+    
+
+<section class="jumbotron no-image">
+  <div class="layer1">
+    <div class="grid">
+      <div class="col-1-2 hero">
+        <h1>Topics</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="static-masonry grid topics-index aggregations">
+  
+  <div class="col-1-3">
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile"/>
+        <a href="/explore/a/agile" itemprop="about">Agile</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/scrum" itemprop="about name">Scrum</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/scrum"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/kanban" itemprop="about name">Kanban</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/kanban"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/stand-ups" itemprop="about name">Stand-ups</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/stand-ups"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/test-driven-development" itemprop="about name">Test-driven Development</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/test-driven-development"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/pair-programming" itemprop="about name">Pair Programming</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/pair-programming"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/extreme-programming" itemprop="about name">Extreme Programming</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/extreme-programming"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/continuous-integration" itemprop="about name">Continuous Integration</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/continuous-integration"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/retrospectives" itemprop="about name">Retrospectives</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/retrospectives"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/requirements" itemprop="about name">Requirements</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/requirements"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/agile/estimating" itemprop="about name">Estimating</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/agile/estimating"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics"/>
+        <a href="/explore/a/analytics" itemprop="about">Analytics</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/google-analytics" itemprop="about name">Google Analytics</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/google-analytics"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/microsoft-excel" itemprop="about name">Microsoft Excel</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/microsoft-excel"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/histograms" itemprop="about name">Histograms</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/histograms"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/normal-distribution" itemprop="about name">Normal Distribution</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/normal-distribution"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/standard-deviation" itemprop="about name">Standard Deviation</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/standard-deviation"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/charting-data" itemprop="about name">Charting Data</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/charting-data"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/hypothesis-testing" itemprop="about name">Hypothesis Testing</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/hypothesis-testing"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/regression-testing" itemprop="about name">Regression Testing</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/regression-testing"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/outliers" itemprop="about name">Outliers</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/outliers"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/uniform-distribution" itemprop="about name">Uniform Distribution</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/uniform-distribution"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/r" itemprop="about name">R</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/r"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/analytics/kpis" itemprop="about name">KPIs</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/analytics/kpis"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios"/>
+        <a href="/explore/a/appleios" itemprop="about">Apple/iOS</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/programming" itemprop="about name">Programming</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/programming"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/accelerometer-gyroscope" itemprop="about name">Accelerometer &amp; Gyroscope</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/accelerometer-gyroscope"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/views" itemprop="about name">Views</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/views"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/location" itemprop="about name">Location</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/location"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/app-store" itemprop="about name">App Store</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/app-store"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/photos-video" itemprop="about name">Photos &amp; Video</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/photos-video"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/icloud" itemprop="about name">iCloud</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/icloud"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/social-media" itemprop="about name">Social Media</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/social-media"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/bluetooth" itemprop="about name">Bluetooth</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/bluetooth"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/itunes" itemprop="about name">iTunes</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/itunes"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/appleios/notifications" itemprop="about name">Notifications</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/appleios/notifications"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/big-data"/>
+        <a href="/explore/a/big-data" itemprop="about">Big Data</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/big-data/apache-pig" itemprop="about name">Apache Pig</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/big-data/apache-pig"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/big-data/cassandra" itemprop="about name">Cassandra</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/big-data/cassandra"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/big-data/mongodb" itemprop="about name">MongoDB</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/big-data/mongodb"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/big-data/sqoop" itemprop="about name">Sqoop</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/big-data/sqoop"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/big-data/mapreduce" itemprop="about name">MapReduce</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/big-data/mapreduce"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/big-data/hadoop" itemprop="about name">Hadoop</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/big-data/hadoop"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business"/>
+        <a href="/explore/a/business" itemprop="about">Business</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/business/data-and-analytics" itemprop="about name">Data and Analytics</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business/data-and-analytics"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/business/social-media" itemprop="about name">Social Media</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business/social-media"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/business/sales" itemprop="about name">Sales</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business/sales"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/business/project-management" itemprop="about name">Project Management</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business/project-management"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/business/marketing" itemprop="about name">Marketing</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business/marketing"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/business/management-skills" itemprop="about name">Management Skills</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business/management-skills"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/business/leadership" itemprop="about name">Leadership</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/business/leadership"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c"/>
+        <a href="/explore/a/c" itemprop="about">C</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/functions" itemprop="about name">Functions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/functions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/memory-management" itemprop="about name">Memory Management</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/memory-management"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/pointers" itemprop="about name">Pointers</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/pointers"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/basic-data-types" itemprop="about name">Basic Data Types</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/basic-data-types"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/libraries" itemprop="about name">Libraries</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/libraries"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/debugging" itemprop="about name">Debugging</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/debugging"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/header-files" itemprop="about name">Header Files</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/header-files"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/file-i-o" itemprop="about name">File I/O</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/file-i-o"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/threads" itemprop="about name">Threads</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/threads"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/strings" itemprop="about name">Strings</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/strings"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/data-structures" itemprop="about name">Data Structures</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/data-structures"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/operators" itemprop="about name">Operators</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/operators"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/arrays" itemprop="about name">Arrays</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/arrays"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/compilers" itemprop="about name">Compilers</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/compilers"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/unions" itemprop="about name">Unions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/unions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c/statements" itemprop="about name">Statements</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c/statements"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus"/>
+        <a href="/explore/a/c-plus-plus" itemprop="about">C++</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/classes" itemprop="about name">Classes</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/classes"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/strings" itemprop="about name">Strings</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/strings"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/member-functions" itemprop="about name">Member Functions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/member-functions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/memory-management" itemprop="about name">Memory Management</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/memory-management"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/operator-overloading" itemprop="about name">Operator Overloading</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/operator-overloading"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/debugging" itemprop="about name">Debugging</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/debugging"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/performance" itemprop="about name">Performance</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/performance"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/namespaces" itemprop="about name">Namespaces</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/namespaces"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/destructors" itemprop="about name">Destructors</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/destructors"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/templates" itemprop="about name">Templates</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/templates"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/functions" itemprop="about name">Functions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/functions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/file-i-o" itemprop="about name">File I/O</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/file-i-o"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/object-oriented-programming" itemprop="about name">Object-Oriented Programming</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/object-oriented-programming"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/constructors" itemprop="about name">Constructors</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/constructors"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/arrays" itemprop="about name">Arrays</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/arrays"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/threads" itemprop="about name">Threads</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/threads"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/interfaces" itemprop="about name">Interfaces</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/interfaces"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/iterators" itemprop="about name">Iterators</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/iterators"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/exception-handling" itemprop="about name">Exception Handling</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/exception-handling"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/i-o-streams" itemprop="about name">I/O Streams</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/i-o-streams"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/standard-template-library-stl" itemprop="about name">Standard Template Library (STL)</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/standard-template-library-stl"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/c-plus-plus/pointers" itemprop="about name">Pointers</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/c-plus-plus/pointers"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud"/>
+        <a href="/explore/a/cloud" itemprop="about">Cloud</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/simpledb" itemprop="about name">SimpleDB</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/simpledb"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/dropbox" itemprop="about name">DropBox</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/dropbox"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/vmware" itemprop="about name">VMware</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/vmware"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/google-app-engine" itemprop="about name">Google App Engine</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/google-app-engine"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/office-365" itemprop="about name">Office 365</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/office-365"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/ec2" itemprop="about name">EC2</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/ec2"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/aws" itemprop="about name">AWS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/aws"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/heroku" itemprop="about name">Heroku</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/heroku"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/cloud/windows-azure" itemprop="about name">Windows Azure</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/cloud/windows-azure"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming"/>
+        <a href="/explore/a/core-programming" itemprop="about">Core Programming</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/apis" itemprop="about name">APIs</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/apis"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/refactoring" itemprop="about name">Refactoring</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/refactoring"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/architecture" itemprop="about name">Architecture</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/architecture"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/http" itemprop="about name">HTTP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/http"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/shell" itemprop="about name">Shell</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/shell"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/performance" itemprop="about name">Performance</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/performance"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/algorithms" itemprop="about name">Algorithms</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/algorithms"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/regular-expressions" itemprop="about name">Regular Expressions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/regular-expressions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/apache" itemprop="about name">Apache</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/apache"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/xml" itemprop="about name">XML</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/xml"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/solr" itemprop="about name">Solr</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/solr"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/design-patterns" itemprop="about name">Design Patterns</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/design-patterns"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/core-programming/devops" itemprop="about name">DevOps</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/core-programming/devops"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/data-visualization"/>
+        <a href="/explore/a/data-visualization" itemprop="about">Data Visualization</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/data-visualization/d3-js" itemprop="about name">D3.js</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/data-visualization/d3-js"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/data-visualization/tableau" itemprop="about name">Tableau</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/data-visualization/tableau"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/data-visualization/r" itemprop="about name">R</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/data-visualization/r"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/data-visualization/excel" itemprop="about name">Excel</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/data-visualization/excel"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/data-visualization/matplotlib" itemprop="about name">matplotlib</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/data-visualization/matplotlib"/>
+        
+      </ul>
+    </div>
+    
+  </div>
+  
+  <div class="col-1-3">
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases"/>
+        <a href="/explore/a/databases" itemprop="about">Databases</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/mysql" itemprop="about name">MySQL</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/mysql"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/sqlite" itemprop="about name">SQLite</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/sqlite"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/filemaker-pro" itemprop="about name">FileMaker Pro</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/filemaker-pro"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/microsoft-access" itemprop="about name">Microsoft Access</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/microsoft-access"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/postgresql" itemprop="about name">PostgreSQL</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/postgresql"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/oracle" itemprop="about name">Oracle</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/oracle"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/sql-server" itemprop="about name">SQL Server</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/sql-server"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/foreign-keys" itemprop="about name">Foreign Keys</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/foreign-keys"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/data-types" itemprop="about name">Data Types</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/data-types"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/primary-keys" itemprop="about name">Primary Keys</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/primary-keys"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/indexes" itemprop="about name">Indexes</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/indexes"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/normalization" itemprop="about name">Normalization</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/normalization"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/operators" itemprop="about name">Operators</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/operators"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/views" itemprop="about name">Views</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/views"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/sql" itemprop="about name">SQL</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/sql"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/transactions" itemprop="about name">Transactions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/transactions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/databases/tables" itemprop="about name">Tables</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/databases/tables"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/devops"/>
+        <a href="/explore/a/devops" itemprop="about">DevOps</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/devops/vagrant" itemprop="about name">Vagrant</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/devops/vagrant"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/devops/vmware" itemprop="about name">VMWare</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/devops/vmware"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/devops/jenkins" itemprop="about name">Jenkins</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/devops/jenkins"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/devops/chef" itemprop="about name">Chef</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/devops/chef"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware"/>
+        <a href="/explore/a/diy-hardware" itemprop="about">DIY &amp; Hardware</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/lego-mindstorms" itemprop="about name">LEGO MINDSTORMS® </a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/lego-mindstorms"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/raspberry-pi" itemprop="about name">Raspberry Pi</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/raspberry-pi"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/kinect" itemprop="about name">Kinect</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/kinect"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/arduino" itemprop="about name">Arduino</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/arduino"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/sensors" itemprop="about name">Sensors</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/sensors"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/electronics" itemprop="about name">Electronics</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/electronics"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/motors" itemprop="about name">Motors</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/motors"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/diy-hardware/bluetooth" itemprop="about name">Bluetooth</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/diy-hardware/bluetooth"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java"/>
+        <a href="/explore/a/java" itemprop="about">Java</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/jpa" itemprop="about name">JPA</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/jpa"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/scala" itemprop="about name">Scala</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/scala"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/glassfish" itemprop="about name">GlassFish</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/glassfish"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/netbeans" itemprop="about name">NetBeans</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/netbeans"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/jsp" itemprop="about name">JSP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/jsp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/tomcat" itemprop="about name">Tomcat</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/tomcat"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/jax-rs" itemprop="about name">JAX-RS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/jax-rs"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/maven" itemprop="about name">Maven</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/maven"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/ejb" itemprop="about name">EJB</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/ejb"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/grails" itemprop="about name">Grails</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/grails"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/junit" itemprop="about name">JUnit</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/junit"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/hibernate" itemprop="about name">Hibernate</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/hibernate"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/groovy" itemprop="about name">Groovy</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/groovy"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/jboss" itemprop="about name">JBoss</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/jboss"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/spring" itemprop="about name">Spring</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/spring"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/struts" itemprop="about name">Struts</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/struts"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/java-ee" itemprop="about name">Java EE</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/java-ee"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/concurrency" itemprop="about name">Concurrency</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/concurrency"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/interfaces" itemprop="about name">Interfaces</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/interfaces"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/generics" itemprop="about name">Generics</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/generics"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/jdbc" itemprop="about name">JDBC</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/jdbc"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/regular-expressions" itemprop="about name">Regular Expressions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/regular-expressions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/strings" itemprop="about name">Strings</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/strings"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/object-oriented-java" itemprop="about name">Object Oriented Java</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/object-oriented-java"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/servlets" itemprop="about name">Servlets</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/servlets"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/servlet-containers" itemprop="about name">Servlet Containers</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/servlet-containers"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/jndi" itemprop="about name">JNDI</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/jndi"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/exceptions" itemprop="about name">Exceptions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/exceptions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/jar-files" itemprop="about name">JAR files</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/jar-files"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/java/annotations" itemprop="about name">Annotations</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/java/annotations"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript"/>
+        <a href="/explore/a/javascript" itemprop="about">JavaScript</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/ext-js" itemprop="about name">Ext JS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/ext-js"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/jquery" itemprop="about name">jQuery</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/jquery"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/requirejs" itemprop="about name">RequireJS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/requirejs"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/sencha-touch" itemprop="about name">Sencha Touch</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/sencha-touch"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/yui" itemprop="about name">YUI</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/yui"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/coffeescript" itemprop="about name">CoffeeScript</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/coffeescript"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/angularjs" itemprop="about name">AngularJS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/angularjs"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/node-js" itemprop="about name">Node.js</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/node-js"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/events" itemprop="about name">Events</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/events"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/inheritance" itemprop="about name">Inheritance</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/inheritance"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/object-oriented-javascript" itemprop="about name">Object Oriented JavaScript</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/object-oriented-javascript"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/debugging" itemprop="about name">Debugging</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/debugging"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/testing" itemprop="about name">Testing</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/testing"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/loops" itemprop="about name">Loops</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/loops"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/html" itemprop="about name">HTML</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/html"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/dojo" itemprop="about name">Dojo</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/dojo"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/variables" itemprop="about name">Variables</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/variables"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/regular-expressions" itemprop="about name">Regular Expressions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/regular-expressions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/mongoose" itemprop="about name">Mongoose</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/mongoose"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/ember-js" itemprop="about name">Ember.js</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/ember-js"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/dom" itemprop="about name">DOM</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/dom"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/json" itemprop="about name">JSON</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/json"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/closure" itemprop="about name">Closure</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/closure"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/ajax" itemprop="about name">Ajax</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/ajax"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/functional-programming" itemprop="about name">Functional Programming</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/functional-programming"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/javascript/backbone" itemprop="about name">Backbone</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/javascript/backbone"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft"/>
+        <a href="/explore/a/microsoft" itemprop="about">Microsoft</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/net" itemprop="about name">.NET</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/net"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/office" itemprop="about name">Office</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/office"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/exchange" itemprop="about name">Exchange</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/exchange"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/sql-server" itemprop="about name">SQL Server</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/sql-server"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/windows-8" itemprop="about name">Windows 8</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/windows-8"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/azure" itemprop="about name">Azure</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/azure"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/microsoft-dynamics" itemprop="about name">Microsoft Dynamics</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/microsoft-dynamics"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/vista" itemprop="about name">Vista</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/vista"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/microsoft-access" itemprop="about name">Microsoft Access</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/microsoft-access"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/powershell" itemprop="about name">PowerShell</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/powershell"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/active-directory" itemprop="about name">Active Directory</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/active-directory"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/silverlight" itemprop="about name">Silverlight</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/silverlight"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/iis" itemprop="about name">IIS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/iis"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/microsoft-forefront" itemprop="about name">Microsoft Forefront</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/microsoft-forefront"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/windows-xp" itemprop="about name">Windows XP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/windows-xp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/sharepoint" itemprop="about name">SharePoint</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/sharepoint"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/microsoft-project" itemprop="about name">Microsoft Project</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/microsoft-project"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/visio" itemprop="about name">Visio</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/visio"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/windows-7" itemprop="about name">Windows 7</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/windows-7"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/microsoft/microsoft-lync" itemprop="about name">Microsoft Lync</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/microsoft/microsoft-lync"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/mobile"/>
+        <a href="/explore/a/mobile" itemprop="about">Mobile</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/mobile/ios" itemprop="about name">iOS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/mobile/ios"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/mobile/android" itemprop="about name">Android</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/mobile/android"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/mobile/phonegap" itemprop="about name">PhoneGap</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/mobile/phonegap"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/mobile/jquery-mobile" itemprop="about name">jQuery Mobile</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/mobile/jquery-mobile"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/mobile/windows-phone" itemprop="about name">Windows Phone</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/mobile/windows-phone"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/mobile/sencha-touch" itemprop="about name">Sencha Touch</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/mobile/sencha-touch"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net"/>
+        <a href="/explore/a/net" itemprop="about">.NET</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/vb-net" itemprop="about name">VB.NET</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/vb-net"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/wcf" itemprop="about name">WCF</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/wcf"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/asp-net" itemprop="about name">ASP.NET</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/asp-net"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/c-sharp" itemprop="about name">C#</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/c-sharp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/ado-net" itemprop="about name">ADO.NET</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/ado-net"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/wpf" itemprop="about name">WPF</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/wpf"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/j-sharp" itemprop="about name">J#</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/j-sharp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/linq" itemprop="about name">LINQ</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/linq"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/visual-studio" itemprop="about name">Visual Studio</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/visual-studio"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/entity-framework" itemprop="about name">Entity Framework</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/entity-framework"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/net/concurrency" itemprop="about name">Concurrency</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/net/concurrency"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking"/>
+        <a href="/explore/a/networking" itemprop="about">Networking</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/vpn" itemprop="about name">VPN</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/vpn"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/cisco" itemprop="about name">Cisco</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/cisco"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/junos" itemprop="about name">Junos</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/junos"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/network-security" itemprop="about name">Network Security</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/network-security"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/dns" itemprop="about name">DNS</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/dns"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/ipv6" itemprop="about name">IPv6</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/ipv6"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/tcp-ip" itemprop="about name">TCP/IP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/tcp-ip"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/ethernet" itemprop="about name">Ethernet</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/ethernet"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/ip-addresses" itemprop="about name">IP Addresses</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/ip-addresses"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/firewalls" itemprop="about name">Firewalls</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/firewalls"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/udp" itemprop="about name">UDP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/udp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/iana" itemprop="about name">IANA</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/iana"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/snmp" itemprop="about name">SNMP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/snmp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/acls" itemprop="about name">ACLs</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/acls"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/routers" itemprop="about name">Routers</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/routers"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/nat" itemprop="about name">NAT</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/nat"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/dhcp" itemprop="about name">DHCP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/dhcp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/networking/switches" itemprop="about name">Switches</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/networking/switches"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages"/>
+        <a href="/explore/a/new-languages" itemprop="about">New Languages</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/new-languages/scala" itemprop="about name">Scala</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages/scala"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/new-languages/f" itemprop="about name">F</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages/f"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/new-languages/erlang" itemprop="about name">Erlang</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages/erlang"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/new-languages/clojure" itemprop="about name">Clojure</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages/clojure"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/new-languages/haskell" itemprop="about name">Haskell</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages/haskell"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/new-languages/scratch" itemprop="about name">Scratch</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages/scratch"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/new-languages/go" itemprop="about name">Go</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/new-languages/go"/>
+        
+      </ul>
+    </div>
+    
+  </div>
+  
+  <div class="col-1-3">
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql"/>
+        <a href="/explore/a/nosql" itemprop="about">NoSQL</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/hive" itemprop="about name">Hive</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/hive"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/hbase" itemprop="about name">HBase</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/hbase"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/pig" itemprop="about name">Pig</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/pig"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/couchdb" itemprop="about name">CouchDB</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/couchdb"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/cassandra" itemprop="about name">Cassandra</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/cassandra"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/hadoop" itemprop="about name">Hadoop</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/hadoop"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/mongodb" itemprop="about name">MongoDB</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/mongodb"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/nosql/mapreduce" itemprop="about name">MapReduce</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/nosql/mapreduce"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/personal-professional-development"/>
+        <a href="/explore/a/personal-professional-development" itemprop="about">Personal &amp; Professional Development</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/personal-professional-development/influence" itemprop="about name">Influence</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/personal-professional-development/influence"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/personal-professional-development/coaching" itemprop="about name">Coaching</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/personal-professional-development/coaching"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/personal-professional-development/motivation" itemprop="about name">Motivation</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/personal-professional-development/motivation"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/personal-professional-development/teams" itemprop="about name">Teams</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/personal-professional-development/teams"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php"/>
+        <a href="/explore/a/php" itemprop="about">PHP</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/drupal" itemprop="about name">Drupal</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/drupal"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/wordpress" itemprop="about name">WordPress</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/wordpress"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/variables" itemprop="about name">Variables</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/variables"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/forms" itemprop="about name">Forms</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/forms"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/php-ini-file" itemprop="about name">php.ini file</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/php-ini-file"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/apache" itemprop="about name">Apache</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/apache"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/cookies" itemprop="about name">Cookies</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/cookies"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/php/regular-expressions" itemprop="about name">Regular Expressions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/php/regular-expressions"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management"/>
+        <a href="/explore/a/project-management" itemprop="about">Project Management</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/expected-monetary-value" itemprop="about name">Expected Monetary Value</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/expected-monetary-value"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/uml" itemprop="about name">UML</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/uml"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/estimation" itemprop="about name">Estimation</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/estimation"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/kpis" itemprop="about name">KPIs</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/kpis"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/requirements" itemprop="about name">Requirements</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/requirements"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/scope-creep" itemprop="about name">Scope Creep</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/scope-creep"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/objectives" itemprop="about name">Objectives</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/objectives"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/stakeholders" itemprop="about name">Stakeholders</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/stakeholders"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/flowcharts" itemprop="about name">Flowcharts</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/flowcharts"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/work-breakdown-structure" itemprop="about name">Work Breakdown Structure</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/work-breakdown-structure"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/project-management/change-control" itemprop="about name">Change Control</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/project-management/change-control"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python"/>
+        <a href="/explore/a/python" itemprop="about">Python</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/django" itemprop="about name">Django</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/django"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/ipython" itemprop="about name">IPython</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/ipython"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/numpy" itemprop="about name">NumPy</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/numpy"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/scipy" itemprop="about name">SciPy</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/scipy"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/list-comprehensions" itemprop="about name">List Comprehensions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/list-comprehensions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/modules" itemprop="about name">Modules</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/modules"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/decorators" itemprop="about name">Decorators</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/decorators"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/timers" itemprop="about name">Timers</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/timers"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/network-programming" itemprop="about name">Network Programming</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/network-programming"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/threads" itemprop="about name">Threads</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/threads"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/strings" itemprop="about name">Strings</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/strings"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/exceptions" itemprop="about name">Exceptions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/exceptions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/files" itemprop="about name">Files</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/files"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/object-oriented-programming" itemprop="about name">Object-Oriented Programming</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/object-oriented-programming"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/polymorphism" itemprop="about name">Polymorphism</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/polymorphism"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/testing" itemprop="about name">Testing</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/testing"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/serialization" itemprop="about name">Serialization</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/serialization"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/basic-types" itemprop="about name">Basic Types</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/basic-types"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/regular-expressions" itemprop="about name">Regular Expressions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/regular-expressions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/twisted" itemprop="about name">Twisted</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/twisted"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/debugging" itemprop="about name">Debugging</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/debugging"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/python/inheritance" itemprop="about name">Inheritance</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/python/inheritance"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby"/>
+        <a href="/explore/a/ruby" itemprop="about">Ruby</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/jruby" itemprop="about name">JRuby</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/jruby"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/rails" itemprop="about name">Rails</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/rails"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/symbols" itemprop="about name">Symbols</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/symbols"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/objects" itemprop="about name">Objects</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/objects"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/classes" itemprop="about name">Classes</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/classes"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/debugging" itemprop="about name">Debugging</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/debugging"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/regular-expressions" itemprop="about name">Regular Expressions</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/regular-expressions"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/sinatra" itemprop="about name">Sinatra</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/sinatra"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ruby/blocks" itemprop="about name">Blocks</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ruby/blocks"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security"/>
+        <a href="/explore/a/security" itemprop="about">Security</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/ssl" itemprop="about name">SSL</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/ssl"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/snort" itemprop="about name">Snort</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/snort"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/firewalls" itemprop="about name">Firewalls</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/firewalls"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/pgp" itemprop="about name">PGP</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/pgp"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/monitoring" itemprop="about name">Monitoring</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/monitoring"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/network-attacks" itemprop="about name">Network Attacks</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/network-attacks"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/digital-signatures" itemprop="about name">Digital Signatures</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/digital-signatures"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/dmzs" itemprop="about name">DMZs</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/dmzs"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/ssh" itemprop="about name">SSH</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/ssh"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/viruses" itemprop="about name">Viruses</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/viruses"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/penetration-testing" itemprop="about name">Penetration Testing</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/penetration-testing"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/passwords" itemprop="about name">Passwords</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/passwords"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/access-control" itemprop="about name">Access Control</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/access-control"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/certificate-authorities" itemprop="about name">Certificate Authorities</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/certificate-authorities"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/website-attacks" itemprop="about name">Website Attacks</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/website-attacks"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/public-key-encryption" itemprop="about name">Public Key Encryption</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/public-key-encryption"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/security/encryption" itemprop="about name">Encryption</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/security/encryption"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/tools"/>
+        <a href="/explore/a/tools" itemprop="about">Tools</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/tools/git" itemprop="about name">Git</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/tools/git"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/tools/eclipse" itemprop="about name">Eclipse</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/tools/eclipse"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/tools/vim" itemprop="about name">Vim</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/tools/vim"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/tools/linux" itemprop="about name">Linux</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/tools/linux"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/tools/mercurial" itemprop="about name">Mercurial</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/tools/mercurial"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/tools/emacs" itemprop="about name">Emacs</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/tools/emacs"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ux-ia"/>
+        <a href="/explore/a/ux-ia" itemprop="about">UX &amp; IA</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ux-ia/adobe-photoshop" itemprop="about name">Adobe Photoshop</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ux-ia/adobe-photoshop"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ux-ia/usability" itemprop="about name">Usability</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ux-ia/usability"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ux-ia/usability-testing" itemprop="about name">Usability Testing</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ux-ia/usability-testing"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ux-ia/user-centred-design" itemprop="about name">User-centred Design</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ux-ia/user-centred-design"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/ux-ia/interface-design" itemprop="about name">Interface Design</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/ux-ia/interface-design"/>
+        
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="head">
+        <div class="card-type">
+          Topic
+        </div>
+        <div class="action-strip">
+          <div class="share-button">
+            <!--<img src="/static/corp/img/app-icon-share-brown.svg"/>-->
+          </div>
+        </div>
+      </div>
+      <div class="title" itemscope itemtype ="http://schema.org/CollectionPage">
+        <meta itemprop="name" content="Titles"/>
+        <meta itemprop="url" content="http://safaribooksonline.com//explore/a/web-performance"/>
+        <a href="/explore/a/web-performance" itemprop="about">Web Performance</a>
+      </div>
+      <ul class="topics">
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/web-performance/compression" itemprop="about name">Compression</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/web-performance/compression"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/web-performance/proxies" itemprop="about name">Proxies</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/web-performance/proxies"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/web-performance/tools" itemprop="about name">Tools</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/web-performance/tools"/>
+        
+          <li itemscope itemtype ="http://schema.org/CollectionPage">
+            <a href="/explore/a/web-performance/latency" itemprop="about name">Latency</a>
+            <meta itemprop="url" content="http://safaribooksonline.com//explore/a/web-performance/latency"/>
+        
+      </ul>
+    </div>
+    
+  </div>
+  
+</section>
+
+
+    
+    <footer>
+      <nav class="grid">
+        <ul class="footer-nav col-1-4">
+          <li><a href="/explore/"><span>Explore</span></a></li>
+          <li><a href="/our-library/"><span>Tour</span></a></li>
+          <li><a href="/pricing/"><span>Pricing</span></a></li>
+          <li><a href="/enterprise/"><span>Enterprise</span></a></li>
+          <li><a href="/government/"><span>Government</span></a></li>
+          <li><a href="/academic-public-library/"><span>Education</span></a></li>
+        </ul>
+        <ul class="footer-contact col-1-4">
+          <li><a href="/explore/a/"><span>Topics</span></a></li>
+          <li><a href="http://blog.safaribooksonline.com"><span>Blog</span></a></li>
+          <li><a href="/contact/"><span>Contact</span></a></li>
+          <li><a href="/careers/"><span>Careers</span></a></li>
+          <li><a href="/press-resources/"><span>Press Resources</span></a></li>
+          <li><a href="http://support.safaribooksonline.com"><span>Support</span></a></li>
+        </ul>
+        <ul class="footer-social col-1-4">
+          <li id="footer-twitter"><a href="https://twitter.com/safari"><span>Twitter</span></a></li>
+          <li id="footer-github"><a href="http://github.com/safarijv"><span>GitHub</span></a></li>
+          <li id="footer-facebook"><a href="http://www.facebook.com/safaribooksonline"><span>Facebook</span></a></li>
+          <li id="footer-linkedin"><a href="http://www.linkedin.com/groups?gid=148652&mostPopular=&trk=tyah"><span>LinkedIn</span></a></li>
+          <li id="footer-google"><a href="https://plus.google.com/+safaribooksonline" rel="publisher"><span>Google+</span></a></li>
+        </ul>
+        <ul class="footer-legal col-1-4">
+          <li><a href="/terms/"><span>Terms of Service</span></a></li>
+          <li><a href="/membership-agreement/"><span>Membership Agreement</span></a></li>
+          <li><a href="/privacy/"><span>Privacy Policy</span></a></li>
+          <li><a href="/cookies/"><span>Cookies</span></a></li>
+        </ul>
+      </nav>
+      <div class="footer-copyright">
+        Copyright &copy; 2014 Safari Books Online.
+      </div>
+    </footer>
+
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39299553-7', 'auto');
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+  //enable demographic tracking
+  ga('require', 'displayfeatures');
+  // Optimizely Universal Analytics Integration code
+  window.optimizely = window.optimizely || [];
+  window.optimizely.push(['activateUniversalAnalytics']);
+  ga(function(tracker) {var clientId = tracker.get('clientId'); ga('set', 'dimension6', clientId);});
+  
+  ga('send', 'pageview');
+  
+</script>
+
+    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init('fe42a3507c097e9a9d1e9f881d833cfb');</script><!-- end Mixpanel -->
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/4200.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+    <script type="text/javascript">
+  var _kiq = _kiq || [];
+  (function(){
+    setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+    s.async = true; s.src = '//s3.amazonaws.com/ki.js/52692/brA.js'; f.parentNode.insertBefore(s, f);
+    }, 1);
+  })();
+</script>
+    <script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/53baf90add11cb17be000125.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script>
+                
+
+    <script>
+      function last_touch( name ){
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");  
+  var regexS = "[\\?&]"+name+"=([^&#]*)";  
+  var regex = new RegExp( regexS );  
+  var results = regex.exec( window.location.href ); 
+   if( results == null )    return "";  
+  else    return results[1];
+}
+
+mixpanel.register({ last_utm_source: last_touch("utm_source") });
+mixpanel.register({ last_utm_medium: last_touch("utm_medium") });
+mixpanel.register({ last_utm_campaign: last_touch("utm_campaign") });
+mixpanel.register({ last_utm_content: last_touch("utm_content") });
+$(".js-login").click(function() {
+  mixpanel.track("M: Header Clicked Sign In"); 
+});
+mixpanel.track_links(".lg-free", "Login Modal: Signup", {decision: "Free Plan"});
+mixpanel.track_links(".lg-subscribe", "Login Modal: Subscribe", {decision: "Subscribe Now"});
+mixpanel.track_forms("#registration-form", "M: Hero Signup CTA");
+
+      
+  mixpanel.track("M: Viewed Learn Topic - Index");
+  mixpanel.register_once({ initial_landing_page: "Learn Topic - Index" });
+
+    </script>
+    
+
+
+<div class="chat-wrapper closed">
+  <!-- Begin Button Code.  Paste this code where you want the chat button to appear. -->
+  <div class="liveagent_button" id="liveagent_button_online_573000000008OPR" style=" display: none " >
+    <input class="sales-chat-btn form-submit orange" type="submit" value="Chat with Sales"  style="" />
+  </div>
+  <div class="liveagent_button" id="liveagent_button_offline_573000000008OPR" style="display: none;" >
+    <!-- <a href="/enterprise#form" onclick="ga('send','event','button','click', 'live chat offline', {'hitCallback': function(){document.location = '/enterprise#form';}}); return false;"><input class="sales-chat-btn form-submit orange" type="submit" value="Chat with Sales" style=""/></a> -->
+    <!-- <input class="sales-chat-btn form-submit orange" type="submit" value="Chat with Sales"  style="" /> -->
+  </div>
+  
+  <script type="text/javascript">
+    if (!window._laq) { window._laq = []; }
+    window._laq.push(function(){
+    liveagent.showWhenOnline('573000000008OPR', document.getElementById('liveagent_button_online_573000000008OPR'));
+    liveagent.showWhenOffline('573000000008OPR', document.getElementById('liveagent_button_offline_573000000008OPR'));
+    });
+  </script>
+  
+  <!-- End Button Code -->
+  <iframe id="chatformcontainer" src="/chatrequest/" style=""></iframe>
+</div> <!-- End chat-wrapper -->
+<script type='text/javascript' src='https://c.la1a1.salesforceliveagent.com/content/g/deployment.js'></script>
+<script type='text/javascript'>
+  liveagent.init('https://d.la1a1.salesforceliveagent.com/chat', '572000000008OPW', '00D00000000hgdL');
+</script>
+
+
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"licenseKey":"510f1a6865","transactionName":"YgdaZ0NSW0cEB0RdWltNfkZfUEFdCgofVVJSEF1UUEdcWwsXHkJcUBVLCVhdUVEd","errorBeacon":"bam.nr-data.net","applicationTime":349,"queueTime":0,"beacon":"beacon-1.newrelic.com","agent":"js-agent.newrelic.com/nr-454.min.js","applicationID":"4369555"}</script>
+  </body>
+</html>

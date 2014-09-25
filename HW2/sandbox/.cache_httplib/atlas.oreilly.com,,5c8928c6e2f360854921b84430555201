@@ -1,0 +1,340 @@
+status: 200
+content-length: 29512
+via: 1.1 vegur
+content-location: https://atlas.oreilly.com/
+set-cookie: _orm-atlas_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRkkiJTE2YzY1MTMyZmNjMjczY2FjZTAwZWVkMjlhZmRhMjU0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTFLblRmZzE4b2JhZWloaFltc1RlV3lKWWNyMW1pcEsrLzhoQzJWZWNxYkk9BjsARkkiEXByZXZpb3VzX3VybAY7AEYiBi8%3D--ef378bd34345d3b36e0cb162b6edee4de61fc731;
+ path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000
+x-request-id: 039c50b3-1ff4-4531-8154-d3ce35436c0a
+server: Cowboy
+connection: keep-alive
+etag: "12fd18926861208d1fd50be3c7ef7db3"
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Mon, 22 Sep 2014 16:48:06 GMT
+x-frame-options: DENY
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+x-runtime: 0.014025
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-4.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"a063e870cd","applicationID":"2661316","transactionName":"dF8PEhYNWFlTQRtaW1pVTg8KBlFN","queueTime":9,"applicationTime":10,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-454.min.js","extra":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAQOWFVTGwEGUlBRBgc="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t(3),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(6),t(4),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:"QJf3ax",4:5,5:15,6:6,handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(2),t(1).create()),i=t(3)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:"QJf3ax",2:15,3:16}],5:[function(t,e){var n=(t(3),t(1).create()),r=t(2)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:"QJf3ax",2:16,3:15}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(3),t(1).create()),o=t(2)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:"QJf3ax",2:16,3:15}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t(2).create(),a=t(1),s=t(3),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:"QJf3ax",3:16}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t(3),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(5),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:"QJf3ax",4:7,5:4,handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t(1).create(),o={};e.exports=n,n.ee=r,r.q=o},{1:"QJf3ax"}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t(1),o=t(2),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:"QJf3ax",2:15}]},{},["G9z0Bl",3,8]);</script>
+  <title>O&#x27;Reilly Atlas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <script type="text/javascript" src="//use.typekit.net/xos3lfv.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link href="https://d32xvvb5lxy7xi.cloudfront.net/assets/application-d23c8b8604732fb435c8e86760884d7e.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="https://d32xvvb5lxy7xi.cloudfront.net/assets/libraries-5f8d06191b40fec5f8f3ecf2c96fe622.js" type="text/javascript"></script>
+  <script src="https://d32xvvb5lxy7xi.cloudfront.net/assets/application-25fc4fcd487525f2974fc2915da24dca.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="1KnTfg18obaeihhYmsTeWyJYcr1mipK+/8hC2VecqbI=" name="csrf-token" />
+  <script type="text/javascript">
+
+    $(function() {
+
+      $("a#link-for-publishers").click(function() {
+        $(".tab-anchor[data-target='#atlas-for-publishers'").trigger('click')
+      });
+
+      $("a#link-for-business").click(function() {
+        $(".tab-anchor[data-target='#atlas-for-business'").trigger('click')
+      });
+
+    });
+
+      // segmentio
+      window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var i=0;i<analytics.methods.length;i++){var method=analytics.methods[i];analytics[method]=analytics.factory(method)}window.analytics.load=function(a){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+a+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},window.analytics.SNIPPET_VERSION="2.0.5",
+      window.analytics.load("37pq6ln7ck"),
+      window.analytics.page();
+  </script>
+</head>
+<body id="splash">
+  <div class="navbar">
+    <div class="container">
+      <a class="brand" href="/"><span class="logo logo-white"></span></a>
+      <ul class="nav pull-right">
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="http://sites.oreilly.com/oreillyatlas/atlas-case-studies/ch01.html">Case Studies</a></li>
+        <li><a href="#cases" id="link-for-publishers">For Publishers</a></li>
+        <li><a href="#cases" id="link-for-business">For Business</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="/users/sign_in">Sign In</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h3 id="atlas-brand">Atlas</h3>
+    </div>
+  </div>
+
+  <div id="intro">
+    <div class="container">
+      <section class="row">
+        <div class="span12">
+          <h1>Push-Button Publishing Is Here.</h1>
+          <h2>Write. Design. Publish. It’s That Simple.</h2>
+          <img alt="Splash-graphic" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-graphic-454d0307ba176444357cb3d8009d1176.jpg" />
+          <a href="/users/sign_up" class="btn group-btn">Sign up for a Free Trial</a>
+          <a href="mailto:atlasinfo@oreilly.com" class="btn group-btn">Contact Sales</a>
+          <a href="http://docs.atlas.oreilly.com" class="btn btn-wide"><i class="icon-play-circle"></i> &nbsp;Explore Atlas. Watch the videos.</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="testimonials">
+    <div class="container">
+      <section class="row">
+        <div class="span12">
+          <h1>What Our Users Are Saying.</h1>
+        </div>
+      </section>
+      <section class="row" id="testimonial-grid">
+        <div class="span6" id="testimonial-grid-left">
+          <div class="testimonial">
+            <blockquote>Atlas is an amazing platform....writing a technical book is now massively simpler than it has ever been before.</blockquote>
+            <span>Scott Chacon, GitHub <img alt="Splash-chacon" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-chacon-c2fcaee064242ce2da4fe9aab6bb56cb.jpg" /></span>
+          </div>
+          <div class="testimonial">
+            <blockquote>My team loves the platform.</blockquote>
+            <span>North Atlantic Books <img alt="Splash-north" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-north-8bb44f49692f4dceca62b83f9c590ef5.jpg" /></span>
+          </div>
+          <div class="testimonial">
+            <blockquote>Kudos for delivering such an effective authoring platform. It’s been a joy to work with and it makes my job as an author so much easier. I evaluated other publishers and your platform is just so much better than the alternatives&mdash;mostly MS Word templates and other rudimentary tools. This is powerful and should be used as a differentiator as you sign authors.</blockquote>
+            <span>Kelly Goetsch, Author using Atlas <img alt="Splash-kelly" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-kelly-18e973b453467a0d03b329460f25fc1c.jpg" /></span>
+          </div>
+        </div>
+        <div class="span6" id="testimonial-grid-right">
+          <div class="testimonial">
+            <blockquote>Your product is amazing, and the level of support really makes Atlas stand out even more.</blockquote>
+            <span>Troy Mott, Backstop Media <img alt="Splash-troy" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-troy-ccd65afc107c2fc1662142e8f3220b5e.jpg" /></span>
+          </div>
+          <div class="testimonial">
+            <blockquote>The basic idea as well (as well as the implementation) is marvelous. I can see we could have avoided sending files back and forth with Atlas. I love the magic content creations (PDF, e-book, etc.) buttons.</blockquote>
+            <span>David Grossman, Author using Atlas <img alt="Splash-david" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-david-a14f04a06729c0658a22598fe7be89e8.jpg" /></span>
+          </div>
+          <div class="testimonial">
+            <blockquote>Maintaining the book using Git is really nice because you have all the powerful version-control features built in. I would definitely recommend Atlas to anyone wanting to produce an online site or online book.</blockquote>
+            <span>Scott Murray, Author using Atlas <img alt="Splash-scott" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-scott-bf696e16ea3b6250ab48396233dd33c2.jpg" /></span>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="span12">
+          <a href="http://sites.oreilly.com/oreillyatlas/atlas-case-studies/ch01.html" class="btn btn-wide">See how Atlas is improving content development.</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="cases">
+    <div class="container">
+      <section class="row">
+        <div class="span12">
+          <div class="tabs-container">
+            <ul class="tabs horizontal">
+              <li data-target="#atlas-for-publishers" class="tab-anchor active">Atlas for Publishers</li>
+              <li data-target="#atlas-for-business" class="tab-anchor">Atlas for Business</li>
+            </ul>
+            <div class="tab-content">
+
+              <!-- Atlas for Publishers -->
+              <div class="tab-pane active" id="atlas-for-publishers">
+
+                <div class="row case-detail">
+                  <div class="span12">
+                      <h1>Atlas is created by publishers, for publishers, to solve today’s pressing publishing challenges.</h1>
+                      <h2>On the Atlas platform, you write, design, and publish in one environment and workflow. Produce  print or digital   content without an expensive “retooling” of fundamental processes&mdash;and even publish content that is “born digital” in   print.  It’s that simple.</h2>
+                  </div>
+                </div>
+
+                <div class="row case-row">
+                  <div class="span6">
+                    <h3>Time is money. And money is money.</h3>
+                    <img alt="Splash-case-money" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-money-0a02cc7dcec53acc4beef704b01f76c5.jpg" />
+                    <p>Shave months off your time to market by radically streamlining the publishing process. Save up to 75% of your production costs by automating conversions, line/page breaking, and typesetting.</p>
+                  </div>
+                  <div class="span6">
+                    <h3>Lose the complexity.</h3>
+                    <img alt="Splash-case-complexity" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-complexity-4d4a1b62aa07b8eccf044bc444c66441.jpg" />
+                    <p>With the push of a single button, Atlas renders your content into PDF, EPUB, MOBI, website, and print PDF—every format, for every type of device.</p>
+                  </div>
+                </div>
+
+                <div class="row case-row">
+                  <div class="span6">
+                    <h3>Go beyond the printed page.</h3>
+                    <img alt="Splash-case-beyond" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-beyond-c39ad7d576e57e5bf6d35b229961668c.jpg" />
+                    <p>Atlas is digital-native and enables you to embed dynamic content. Video, audio, interactive data visualizations, coding environments, interactive widgets, and more can be incorporated easily into every format that supports them.</p>
+                  </div>
+                  <div class="span6">
+                    <h3>Get on the same page.</h3>
+                    <img alt="Splash-case-same-page" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-same-page-78682ca1c8571aaccb0b4e9536e40d0a.jpg" />
+                    <p>Authors, editors, and production teams work together on one platform that keeps track of all changes made, who made them, and when; then they merge all changes into one canonical document. No more sending files back and forth and wondering who has the latest version!</p>
+                  </div>
+                </div>
+
+                <div class="row case-row">
+                  <div class="span6">
+                    <h3>It’s not as scary as you might think.</h3>
+                    <img alt="Splash-case-editor" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-editor-98517ec414c51038063a47acd33bc8fe.jpg" />
+                    <p>Atlas’s intuitive editor uses a familiar interface and offers all of the features of widely used software like Word and WordPress.</p>
+                  </div>
+                  <div class="span6">
+                    <h3>Control your content.</h3>
+                    <img alt="Splash-case-your-content" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-your-content-08869937c5791850331fae3745494571.jpg" />
+                    <p>You can always access or move your own content&mdash;it’s in a non-proprietary, open format, so you can’t get locked in.</p>
+                  </div>
+                </div>
+
+                <div class="row case-row">
+                  <div class="span6">
+                    <h3>Future-proof your publishing.</h3>
+                    <img alt="Splash-case-html-css" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-html-css-0ee98a0d8759182d5e91265258b8cd7e.jpg" />
+                    <p>Atlas uses modern open standards for your content markup: HTML5 and CSS3. New format? No problem. Atlas’s extensible architecture and transformation engines make adding new format outputs an easy process, ensuring that content created in Atlas can be rendered into any new or updated format that comes along.</p>
+                  </div>
+                  <div class="span6">
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Atlas for Business -->
+              <div class="tab-pane" id="atlas-for-business">
+
+                <div class="row case-detail">
+                  <div class="span12">
+                    <h1>Create collaboratively, update instantly, track revisions, and control access.</h1>
+                    <h2>Whether you’re publishing product documentation, marketing collateral, or internal manuals, your content needs to be up-to-date and on brand.</h2>
+                  </div>
+                </div>
+
+                <div class="row case-row">
+                  <div class="span6">
+                    <h3>Safeguard your brand with O’Reilly Atlas.</h3>
+                    <img alt="Splash-case-look" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-look-6cc56f8651061d366596519544232171.jpg" />
+                    <p>Create and control the look and feel of your publications, whether digital or print.</p>
+                  </div>
+                  <div class="span6">
+                    <h3>Streamline documentation.</h3>
+                    <img alt="Splash-case-money" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-money-0a02cc7dcec53acc4beef704b01f76c5.jpg" />
+                    <p>The Atlas workflow is decentralized and collaborative, with full version control. Save time and money with Atlas’s smart automation.</p>
+                  </div>
+                </div>
+
+                <div class="row case-row">
+                  <div class="span6">
+                    <h3>Lose the complexity.</h3>
+                    <img alt="Splash-case-complexity" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-complexity-4d4a1b62aa07b8eccf044bc444c66441.jpg" />
+                    <p>With the push of a button, Atlas publishes your content into PDF, EPUB, MOBI, website, and print PDF—every format, for every type of device.</p>
+                  </div>
+                  <div class="span6">
+                    <h3>Take control of changes and revisions.</h3>
+                    <img alt="Splash-case-revision" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-revision-34d4b551c3ddab510eb11b2ee54b78d8.jpg" />
+                    <p>With Atlas’s powerful collaboration features, everyone involved in a project can work on it simultaneously. Control access levels, review and accept proposed changes, add comments, and easily revert to any prior version. Atlas’s ironclad version-control system, built on Git, keeps track of all changes made, who made them, and when, so you can focus on what’s important—your content.</p>
+                  </div>
+                </div>
+
+                <div class="row case-row">
+                  <div class="span6">
+                    <h3>Design beautiful, branded layouts.</h3>
+                    <img alt="Splash-case-html-css" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-html-css-0ee98a0d8759182d5e91265258b8cd7e.jpg" />
+                    <p>Atlas comes with professionally styled templates; because it’s based on CSS, you can also easily create your own to match your existing branding and content designs. Additionally, you can control changes made to the layout so it consistently conforms to your corporate standards.</p>
+                  </div>
+                  <div class="span6">
+                    <h3>Go beyond the printed page.</h3>
+                    <img alt="Splash-case-beyond" src="https://d32xvvb5lxy7xi.cloudfront.net/assets/splash-case-beyond-c39ad7d576e57e5bf6d35b229961668c.jpg" />
+                    <p>Atlas is digital-native and enables you to embed dynamic content. Video, audio, interactive data visualizations, coding environments, interactive widgets, and more, can be incorporated easily into every format that supports them.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <a href="/users/sign_up" class="btn group-btn">Sign up for a Free Trial</a>
+          <a href="mailto:atlasinfo@oreilly.com" class="btn group-btn">Contact Sales</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="features">
+    <div class="container">
+      <section class="row">
+        <div class="span12">
+          <h1>Features</h1>
+        </div>
+      </section>
+      <section class="row">
+        <div class="span4">
+
+          <div class="feature-box">
+            <h3><i class="glyphicons git_branch"></i> Version Control</h3>
+            <p>Atlas is based on Git, the powerful version-control system that tracks every change in your content, who made it, and when it happened—and allows you to instantly revert to any previous version.</p>
+          </div>
+
+          <div class="feature-box">
+            <h3><i class="icon-css3"></i> CSS Templates</h3>
+            <p>If you know CSS, you can design a book for all our formats. If you don’t, choose one of our beautiful templates.</p>
+          </div>
+
+          <div class="feature-box">
+            <h3><i class="icon-superscript"></i> STEM Content</h3>
+            <p>Atlas has built-in support for MathML, LaTeX, and syntax highlighting.</p>
+          </div>
+
+        </div>
+        <div class="span4">
+
+          <div class="feature-box">
+            <h3><i class="icon-comments"></i> Collaboration</h3>
+            <p>Tired of pushing MS Word files back and forth? Atlas lets you seamlessly collaborate with co-authors, editors, reviewers, and other people on your team.</p>
+          </div>
+
+          <div class="feature-box">
+            <h3><i class="glyphicons ipad"></i> Digital Formats</h3>
+            <p>Atlas exports to PDF, EPUB, MOBI, and Web at the push of a button.</p>
+          </div>
+
+          <div class="feature-box">
+            <h3><i class="glyphicons imac"></i> Interactivity</h3>
+            <p>Use audio, video, and custom JavaScript widgets. For print output, these features are automatically converted to images.</p>
+          </div>
+
+        </div>
+        <div class="span4">
+
+          <div class="feature-box">
+            <h3><i class="icon-html5"></i> Semantic Markup</h3>
+            <p>If you know HTML, you know our HTMLBook format. If you don’t, writing in the Atlas interface is as simple as using a word processor.</p>
+          </div>
+
+          <div class="feature-box">
+            <h3><i class="icon-book"></i> Print Formats</h3>
+            <p>Publishing to print? No problem.  Atlas outputs print-ready PDF for both offset and print-on-demand uses.</p>
+          </div>
+
+        </div>
+      </section>
+      <section class="row down40">
+        <a href="/users/sign_up" class="btn group-btn">Sign up for a Free Trial</a>
+        <a href="mailto:atlasinfo@oreilly.com" class="btn group-btn">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+  </script>
+
+</body>
+</html>
