@@ -1,0 +1,315 @@
+status: 200
+content-length: 17372
+content-location: http://people.csail.mit.edu/mrub/vidmag/
+accept-ranges: bytes
+server: Apache/2.2.22 (Ubuntu)
+last-modified: Sat, 12 Apr 2014 15:38:29 GMT
+etag: "5ede70e2-43dc-4f6da3deba740"
+date: Wed, 24 Sep 2014 22:31:06 GMT
+content-type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eulerian Video Magnification</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15462818-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+
+<body>
+<div class="container">
+
+<span class="venue">SIGGRAPH 2012</span>
+<div align="center"><span class="title">Eulerian Video Magnification for Revealing Subtle Changes in the World</span></div>
+<table border="0" align="center" class="authors">
+    <tr align="center">
+      <td>Hao-Yu Wu<sup>1</sup></td>
+      <td><a href="http://people.csail.mit.edu/mrub/" class="author">Michael Rubinstein</a><sup>1</sup></td>
+      <td><a href="mailto:eugene.shih@gmail.com">Eugene Shih</a><sup>2</sup></td>
+      <td><p><a href="http://people.csail.mit.edu/guttag/">John Guttag</a><sup>1</sup></p></td>
+      <td><a href="http://people.csail.mit.edu/fredo/" class="author">Fr&eacute;do Durand</a><sup>1</sup></td>
+      <td><a href="http://people.csail.mit.edu/billf/">William T. Freeman</a><sup>1</sup></td>
+    </tr>
+  </table>
+  <table border="0" align="center" class="affiliations">
+    <tr>
+      <td><sup>1</sup><a href="http://www.csail.mit.edu/">MIT CSAIL</a></td>
+      <td><sup>2</sup><a href="http://www.qrclab.com/">Quanta Research Cambridge, Inc.</a></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="200" border="0" align="center">
+    <tr>
+      <td><img src="images/teaser.jpg" width="820" /></td>
+    </tr>
+    <tr>
+      <td><p class="caption">An example of using our Eulerian Video Magnification framework for visualizing the human pulse. (a) Four frames from the 
+        original video sequence. (b) The same four frames with the subject's pulse signal amplified. (c) A vertical scan line from the input (top) 
+        and output (bottom) videos plotted over time shows how our method amplifies the periodic color variation. In the input sequence the signal 
+      is imperceptible, but in the magnified sequence the variation is clear.</p></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <span class="section">Abstract</span>
+  <p>Our goal is to reveal temporal variations in videos that are difficult 
+    or impossible to see with the naked eye and display them in 
+    an indicative manner. Our method, which we call Eulerian Video 
+    Magnification, takes a standard video sequence as input, and applies 
+    spatial decomposition, followed by temporal filtering to the 
+    frames. The resulting signal is then amplified to reveal hidden information. 
+    Using our method, we are able to visualize the flow 
+    of blood as it fills the face and also to amplify and reveal small 
+    motions. Our technique can run in real time to show phenomena 
+  occurring at temporal frequencies selected by the user.<br />
+  <br />
+  </p>
+
+<p class="bibtex">@article{Wu12Eulerian,
+  author = {Hao-Yu Wu and Michael Rubinstein and Eugene Shih and John Guttag and Fr\'{e}do Durand and
+  William T. Freeman},
+  title = {Eulerian Video Magnification for Revealing Subtle Changes in the World},
+  journal = {ACM Transactions on Graphics (Proc. SIGGRAPH 2012)},
+  year = {2012},
+  volume = {31},
+  number = {4},
+}</p>
+
+<p><strong><br />
+  Paper</strong>: <a href="http://people.csail.mit.edu/mrub/papers/vidmag.pdf">PDF</a>, <a href="vidmag-errata.pdf">Errata</a></p>
+
+<p><strong>Supplemental:</strong> <a href="vidmag-supplemental.pdf">PDF</a> (the derivation in Appendix A in the paper given in more detail)</p>
+<p><strong>SIGGRAPH 2012 Presentation</strong>: <a href="vidmagSIGGRAPH2012.zip">PPT 
+with videos</a> (150MB)</p>
+<p><a href="http://web.mit.edu/lilis/www/videomag.html">Visualization of Eulerian motion magnification</a><a href="http://web.mit.edu/lilis/www/videomag.html"></a> (Courtesy	of	Lili	Sun)</p>
+<p><a href="http://videoscope.qrclab.com/">Videoscope by Quanta Research</a> - upload your videos and have them magnified!</p>
+<table border="0">
+  <tr>
+    <td><img src="images/new.gif" width="65" height="35" /></td>
+    <td>Michael&#39;s PhD thesis:
+	<a href="http://people.csail.mit.edu/mrub/PhDThesis/">Analysis and 
+	Visualization of Temporal Variations in Video</a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><strong>SIGGRAPH 2012 Supplemental Video:</strong></p>
+<table width="200" border="0" align="center">
+    <tr>
+      <td><iframe width="853" height="480" src="http://www.youtube.com/embed/ONZcjs1Pjmk" frameborder="0" allowfullscreen></iframe></td>
+    </tr>
+    <tr>
+      <td align="center">Download:  <a href="vidmag.mov">mov</a> (220 MB)</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p><strong>Our NSF SciVis 2012 video &quot;Revealing Invisible Changes In The World&quot;:</strong></p>
+  <p>
+  <a href="http://www.nsf.gov/news/special_reports/scivis/winners_2012.jsp">NSF International Science &amp; Engineering Visualization Challenge 2012</a><br />
+  <br />
+  <a href="http://www.sciencemag.org/content/339/6119/518.full"><abbr title="Science"><em>Science</em></abbr><span itemprop="datePublished"> </span>Vol. 339 No. 6119 pp. 518-519, <span itemprop="datePublished">February 1 2013</span></a><br />
+    <br />
+  </p>
+  <table width="200" border="0" align="center">
+    <tr>
+      <td><iframe width="853" height="480" src="http://www.youtube.com/embed/e9ASH8IBJ2U" frameborder="0" allowfullscreen></iframe></td>
+    </tr>
+    <tr>
+      <td align="center">Download:  <a href="EVM_NSFSciVis2012.mov">mov</a> (230 MB)<a href="http://www.nsf.gov/news/special_reports/scivis/winners_2012.jsp"><br />
+      </a></td>
+    </tr>
+  </table>  
+  <p>&nbsp;</p>
+<h2>Related Publications</h2>
+	<p>
+	<a href="http://people.csail.mit.edu/mrub/PhDThesis/">Analysis and Visualization of Temporal Variations in Video</a>, 
+	Michael Rubinstein, PhD Thesis, MIT Feb 2014</p>
+	<p>
+	Riesz Pyramids for Fast Phase-Based Video Magnification, ICCP 2014, to 
+	appear</p>
+	<p>
+	<a href="http://people.csail.mit.edu/nwadhwa/phase-video/">Phase-Based Video Motion Processing</a>, SIGGRAPH 2013</p>
+	<p>
+	&nbsp;</p>
+	<h2>Press</h2>
+  <table width="745" border="0">
+    <tr>
+      <td width="186" style="height: 20px">Yedioth Ahronoth (Hebrew)</td>
+      <td width="430" style="height: 20px"><a href="YDT_2013_03_17_078.pdf">The Hidden Secrets of Video</a></td>
+      <td width="57" style="height: 20px"></td>
+      <td width="54" style="height: 20px"></td>
+    </tr>
+    <tr>
+      <td>Discovery Channel</td>
+      <td><a href="Discovery_EVM_20130228.html">Daily Planet</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Daily Mail</td>
+      <td>
+	  <a href="http://www.dailymail.co.uk/news/article-2286202/Eulerian-Video-Magnification-Video-technology-helps-spot-motion-changes.html">
+	  How to spot a liar (and cheat at poker)</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>NY Times</td>
+      <td><a href="http://bits.blogs.nytimes.com/2013/02/27/scientists-uncover-invisible-motion-in-video/">Scientists Uncover Invisible Motion in Video</a></td>
+      <td><a href="http://www.youtube.com/watch?v=3rWycBEHn3s">Video</a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Txchnologist</td>
+      <td><a href="http://txchnologist.com/post/42033132543/new-video-process-reveals-heart-rate-invisible">New Video Process Reveals Heart Rate, Invisible Movement</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>MIT News</td>
+      <td><a href="http://web.mit.edu/newsoffice/2013/csail-team-honored-for-revealing-invisible-changes.html">MIT researchers honored for 'Revealing Invisible Changes'</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Wired UK</td>
+      <td><a href="http://www.wired.co.uk/news/archive/2012-07/25/mit-algorithm">MIT algorithm measures your pulse by looking at your face</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Technology Review</td>
+      <td><a href="http://www.technologyreview.com/news/428498/software-detects-motion-that-the-human-eye-cant/">Software Detects Motion that the Human Eye Can't See</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="height: 20px">BBC Radio</td>
+      <td style="height: 20px"><a href="http://www.bbc.co.uk/programmes/p00trstp#p00vmt98">MIT Video colour amplification</a></td>
+      <td style="height: 20px"></td>
+      <td style="height: 20px"></td>
+    </tr>
+    <tr>
+      <td>Der Spiegel (German)</td>
+      <td><a href="http://www.spiegel.de/wissenschaft/technik/video-analyse-software-macht-puls-und-atmung-sichtbar-a-840836.html">Video software can make pulse visible</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>MIT News</td>
+      <td><a href="http://web.mit.edu/newsoffice/2012/amplifying-invisible-video-0622.html">Researchers amplify variations in video, making the invisible visible</a></td>
+      <td><a href="http://www.youtube.com/watch?v=sVlC_-e-4yg">Video</a></td>
+      <td><a href="http://web.mit.edu/site/spotlight/3429">Spotlight</a></td>
+    </tr>
+    <tr>
+      <td>Imaging Resource</td>
+      <td><a href="http://www.imaging-resource.com/news/2012/06/14/is-baby-still-breathing-find-out...-from-a-video">Is baby still breathing? Find out… from a video!</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>PetaPixel</td>
+      <td><a href="http://www.petapixel.com/2012/06/13/magnifying-the-subtle-changes-in-video-to-reveal-the-invisible/">Magnifying the Subtle Changes in Video to Reveal the Invisible</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Huffington Post</td>
+      <td><a href="http://www.huffingtonpost.com/2012/06/04/eulerian-video-magnification-video-technology_n_1568956.html">MIT's New Video Technology Could Give You Superhuman Sight</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Gizmodo</td>
+      <td><a href="http://gizmodo.com/5915506/new-x+ray-vision+style-video-can-show-a-pulse-beating-through-skin">New X-Ray Vision-Style Video Can Show a Pulse Beating Through Skin</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <h2><a name="code" id="code"></a>Code and Binaries</h2>
+  <p>- <a href="code/EVM_Matlab-1.1.zip">Matlab source code</a> (v1.1, 2013-03-02)<br />
+  Reproduces all the results in the paper. See the README file for details.</p>
+  <p>- Executables for <a href="bin/EVM_Matlab_bin-1.1-win64.zip">64-bit Windows</a>, <a href="bin/EVM_Matlab_bin-1.1-linux64.zip">64-bit Linux</a> and <a href="bin/EVM_Matlab_bin-1.1-mac64.zip">64-bit Mac</a> (v1.1, 2013-09-05)<br />
+    This is a compiled version of the MATLAB code the can be run from the command line. It doesn't 
+    require any programming or for MATLAB to be installed. Instead, these binaries use the MATLAB Compiler Runtime (MCR), which is free and only takes a couple of minutes to install. See the README file for details.</p>
+<p>The code and executables are provided for <strong>non-commercial research purposes only</strong>.  By
+    downloading and using the code, you are consenting to be bound by all terms
+    of <a href="code/LICENSE.pdf">this software release agreement</a>. Contact
+    the authors if you wish to use the code commercially.<br />
+  <span style="font-weight: bold; color: #F00;">* This work is patent pending</span> </p>
+<p>Please cite our paper if you use any part of the code or videos supplied on this web page.</p>
+  <p><br />
+  <strong>Tips for recording and processing videos:</strong></p>
+  <p>At capture time:<br />
+- Minimize extraneous motion. Put the camera on a tripod. If  appropriate, provide support for your subject (e.g. hand on a table, stable  chair).&nbsp;<br />
+- Minimize image noise. Use a camera with a good sensor,  make sure there is enough light.<br />
+- Record in the highest spatial resolution possible and have the subject occupy most of the frame. The more pixels covering the object of interest - the better the signal you would be able to extract.<br />
+- If possible, record/store your video uncompressed. Codecs that compress frames independently (e.g. Motion JPEG) are usually preferable over codecs exploiting inter-frame redundancy (e.g. H.264) that, under some settings, can introduce compression-related temporal signals to the video.</p>
+  <p>When Processing:<br />
+    - To amplify motion, we recommend our new <a href="http://people.csail.mit.edu/nwadhwa/phase-video/">phase-based  pipeline</a>.<br />
+    - To amplify color, use the linear pipeline (the paper and code in this page).<br />
+    - Choose the correct time scale that you want to amplify.  For example, heart beats tend to occur around once per second for adults,  corresponding to 1Hz, and you can amplify content between 0.5Hz and 3Hz to be  safe. The narrower the interval, the more focused the amplification is and the  less noise gets amplified, but at the risk of missing physical phenomena.<br />
+    - Don't forget to account for the video frame rate when specifying the temporal passband! See our code for examples.</p>
+  <p style="font-weight: bold; color: #F00;">&nbsp;</p>
+<h2>Data</h2>
+  <p>All videos are in MPEG-4 format and encoded using H.264.</p>
+  <table border="0" align="center" cellspacing="0" class="data">
+    <tr>
+      <td align="center"><p class="data"><img src="images/thumbnails/baby.jpg" height="100"/></p>
+        <p class="data"><a href="video/baby.mp4">source</a> <a href="video/baby-iir-r1-0.4-r2-0.05-alpha-10-lambda_c-16-chromAtn-0.1.mp4">result</a></p></td>
+      <td align="center"><p class="data"><img src="images/thumbnails/baby2.jpg" height="100"/></p>
+        <p class="data"><a href="video/baby2.mp4">source</a> <a href="video/baby2-ideal-from-2.3333-to-2.6667-alpha-150-level-6-chromAtn-1.mp4">result</a></p></td>
+      <td align="center"><p class="data"><img src="images/thumbnails/face.jpg" height="100"/></p>
+        <p class="data"><a href="video/face.mp4">source</a> <a href="video/face-ideal-from-0.83333-to-1-alpha-50-level-4-chromAtn-1.mp4">result</a></p></td>
+      <td align="center"><p class="data"><img src="images/thumbnails/face2.jpg" height="100"/></p>
+        <p class="data"><a href="video/face2.mp4">source</a> <a href="video/face2-ideal-from-0.83333-to-1-alpha-50-level-6-chromAtn-1.mp4">result
+          (color)</a></p>
+        <p class="data"><a href="video/face2-butter-from-0.5-to-10-alpha-20-lambda_c-80-chromAtn-0.mp4">result
+          (motion)</a></p></td>
+      <td align="center"><p class="data"><img src="images/thumbnails/guitar.jpg" height="100"/></p>
+        <p class="data"><a href="video/guitar.mp4">source</a> <a href="video/guitar-ideal-from-72-to-92-alpha-75-lambda_c-10-chromAtn-0.mp4">result (low E)</a> <a href="video/guitar-ideal-from-100-to-120-alpha-150-lambda_c-10-chromAtn-0.mp4">result (A)</a></p></td>
+    </tr>
+  </table>
+  <table border="0" align="center" cellspacing="0" class="data">
+    <tr>
+      <td align="center"><p class="data"><img src="images/thumbnails/subway.jpg" height="100"/></p>
+        <p class="data"><a href="video/subway.mp4">source</a> <a href="video/subway-butter-from-3.6-to-6.2-alpha-60-lambda_c-45-chromAtn-0.3.mp4">result</a></p></td>
+      <td align="center"><p class="data"><img src="images/thumbnails/shadow.jpg" height="100"/></p>
+        <p class="data"><a href="video/shadow.mp4">source</a> <a href="video/shadow-butter-from-0.5-to-10-alpha-5-lambda_c-48-chromAtn-0.mp4">result</a></p></td>
+      <td align="center"><p class="data"><img src="images/thumbnails/camera.jpg" height="100"/></p>
+        <p class="data"><a href="video/camera.mp4">source</a> <a href="video/camera-butter-from-45-to-100-alpha-150-lambda_c-20-chromAtn-0.mp4">result</a></p></td>
+      <td align="center"><p class="data"><img src="images/thumbnails/wrist.jpg" height="100"/></p>
+        <p class="data"><a href="video/wrist.mp4">source</a> <a href="video/wrist-iir-r1-0.4-r2-0.05-alpha-10-lambda_c-16-chromAtn-0.1.mp4">result</a></p></td>
+    </tr>
+  </table>
+  <h2>&nbsp;</h2>
+<h2>Acknowledgements</h2>
+<p>We would like to thank Guha Balakrishnan, Steve
+    Lewin-Berlin and Neal Wadhwa for their helpful feedback, and the SIGGRAPH
+    reviewers for their comments. We thank Ce Liu and Deqing Sun for helpful
+    discussions on the Eulerian vs. Lagrangian analysis. We also thank Dr. Donna
+    Brezinski, Dr.  Karen McAlmon, and the Winchester Hospital staff for helping us
+    collect videos of newborn babies. This work was partially supported by DARPA
+    SCENICC program, NSF CGV-1111415, and Quanta Computer. Michael Rubinstein was
+    partially supported by an NVIDIA Graduate Fellowship.</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+<p align="center" class="date">Last updated: Feb 2014</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1066 @@
+status: 200
+x-tx-id: 56eb7765-cb9b-4c2d-8a2a-ca1acfa8474b
+content-location: http://www.cnet.com/news/how-trapped-are-your-digital-movies-and-tv-shows/
+set-cookie: fly_geo={"countryCode": "us"};
+ expires=Wed, 01-Oct-2014 22:15:45 GMT; path=/;
+ domain=.cnet.com, fly_default_edition=us;
+ expires=Wed, 01-Oct-2014 22:15:45 GMT; path=/;
+ domain=.cnet.com, fly_device=desktop; expires=Wed, 01-Oct-2014 22:15:45 GMT;
+ path=/;
+ domain=.cnet.com, fly_zip=23501-23515+23517-23521+23523+23529+23541+23551;
+ expires=Wed, 01-Oct-2014 22:15:45 GMT; path=/; domain=.cnet.com
+accept-ranges: bytes
+expires: Wed, 24 Sep 2014 22:55:34 GMT
+vary: Accept-Encoding
+content-length: 100608
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+cache-control: max-age=3600, private
+date: Wed, 24 Sep 2014 22:15:45 GMT
+access-control-allow-origin: http://www.cnet.com
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#"><head><!-- MacLeod loves you! --><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQCVVdaGwAGU1VUAAE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:17,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:17,2:18,ee:"QJf3ax"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:18,2:17,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:18,2:17,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:18,2:17,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:18,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:11,2:14,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],14:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],17:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],18:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:17,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script><meta content="en_US" http-equiv="Content-Language"><title>How trapped are your digital movies and TV shows? - CNET</title><meta name="description" content="Buying films or TV episodes from a digital media outlet may be great if you watch though one particular device. But what happens if you change from iOS to Android? From a PC to a Mac? From a Roku to Apple TV? We chart it out."><link rel="canonical" href="http://www.cnet.com/news/how-trapped-are-your-digital-movies-and-tv-shows/"><link rel="alternate" hreflang="x-default" href="http://www.cnet.com/news/how-trapped-are-your-digital-movies-and-tv-shows/"><link rel="alternate" hreflang="en-au" href="http://www.cnet.com/au/news/how-trapped-are-your-digital-movies-and-tv-shows/"><link rel="alternate" hreflang="en-gb" href="http://www.cnet.com/uk/news/how-trapped-are-your-digital-movies-and-tv-shows/"><link rel="alternate" hreflang="en-ie" href="http://www.cnet.com/uk/news/how-trapped-are-your-digital-movies-and-tv-shows/"><link rel="alternate" hreflang="en-us" href="http://www.cnet.com/news/how-trapped-are-your-digital-movies-and-tv-shows/"><link rel="search" type="application/opensearchdescription+xml" title="CNET Search" href="http://www.cnet.com/opensearch.xml"><meta property="og:site_name" content="CNET"><meta property="og:title" content="How trapped are your digital movies and TV shows? - CNET"><meta property="og:description" content="Buying films or TV episodes from a digital media outlet may be great if you watch though one particular device. But what happens if you change from iOS to Android? From a PC to a Mac? From a Roku to Apple TV? We chart it out."><meta property="og:image" content="http://cnet4.cbsistatic.com/hub/i/r/2013/01/31/1e43da17-f0e2-11e2-8c7c-d4ae52e62bcc/thumbnail/670x503/a5f5a7374cec9fc858e087bfc8123479/Microsoft_Excel.jpg"><meta property="og:type" content="Article"><meta property="og:url" content="http://www.cnet.com/news/how-trapped-are-your-digital-movies-and-tv-shows/"><meta property="fb:app_id" content="16995676698"><meta property="fb:admins" content="100001036810388"><meta property="article:publisher" content="https://www.facebook.com/cnet"><meta content="30261067" property="twitter:account_id"><meta content="summary" property="twitter:card"><meta content="http://www.cnet.com/news/how-trapped-are-your-digital-movies-and-tv-shows/" property="twitter:url"><meta content="How trapped are your digital movies and TV shows?" property="twitter:title"><meta content="Buying films or TV episodes from a digital media outlet may be great if you watch though one particular device. But what happens if you change from iOS to Android? From a PC to a Mac? From a Roku to Apple TV? We chart it out." property="twitter:description"><meta content="http://cnet4.cbsistatic.com/hub/i/r/2013/01/31/1e43da17-f0e2-11e2-8c7c-d4ae52e62bcc/thumbnail/670x503/a5f5a7374cec9fc858e087bfc8123479/Microsoft_Excel.jpg" property="twitter:image"><meta content="670" property="twitter:image:width"><meta content="503" property="twitter:image:height"><meta content="@CNET" property="twitter:site"><meta content="@dannysullivan" property="twitter:creator"><meta content="I1kHyfzmmG1fEVjq8GBUgkfCHc6PNtxce1_VyUuJhws" name="google-site-verification"><meta content="wNWLoFvk5wsdZQ-u75uCNiaHNa7FLFmNtH2t7dZbXmQ" name="google-site-verification"><meta content="47524839a64b83c951afca9ef6c838e0" name="p:domain_verify"><meta content="Product reviews and prices, software downloads, and tech news - CNET" name="msapplication-tooltip"><meta content="http://www.cnet.com/" name="msapplication-starturl"><meta content="width=1024;height=768" name="msapplication-window"><meta content="#424244" name="msapplication-navbutton-color"><meta content="name=Home; action-uri=http://www.cnet.com/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Downloads; action-uri=http://download.cnet.com/; icon-uri=http://download.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=News; action-uri=http://www.cnet.com/news/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Reviews; action-uri=http://www.cnet.com/reviews/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Videos; action-uri=http://www.cnet.com/videos/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Forums; action-uri=http://forums.cnet.com/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta name="tp:baseUrl" content="http://cnet2.cbsistatic.com/fly/804-fly/bundles/cnetmpxpdk/pdk"><meta name="viewport" content="width=device-width"><meta name="fragment" content="!"><link rel="stylesheet" href="http://cnet1.cbsistatic.com/fly/804-fly/bundles/cnetcss/css/core/main.desktop.css"><link rel="stylesheet" href="http://cnet3.cbsistatic.com/fly/804-fly/bundles/cnetcss/css/article/article.desktop.css"><!--[if IE 8]> <link rel="stylesheet" href="http://cnet4.cbsistatic.com/fly/804-fly/bundles/cnetcss/css/core/ie/ie8.css" /> <![endif]--><!--[if IE 9]> <link rel="stylesheet" href="http://cnet3.cbsistatic.com/fly/804-fly/bundles/cnetcss/css/core/ie/ie9.css" /> <![endif]--><script type="text/javascript">
+    window.CnetPageVars = {
+        ads: {
+            enabled: true,
+            data: {"gpt":{"targeting":{"section":"news","pid":"72c4e488-8c86-11e2-b06b-024c619f5c3d","tag":["amazon","google-play","itunes","google","hulu"],"device":"desktop","ptype":"article","cid":"how-trapped-are-your-digital-movies-and-tv-shows","env":"prod"},"adConfig":{"network":{"dev":8264,"prod":8264},"method":"async-inline","regions":[{"region":"uk","countries":["gb","ie","za","bh","kw","om","qa","sa","ae","iq","eg","ye","fr"]},{"region":"au","countries":["au","nz"]},{"region":"asia","countries":["sg","my","th","id","ph","hk","vn","in","tw"]}],"adUnits":{"intromercial":{"outOfPage":true},"skin":{"sizes":[[1600,1000]],"position":"top","eventCallbacks":{"slotRenderEnded":"adSkinCallback"}},"resourceCenterTop":{"sizes":[[371,301]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,250],[300,600],[300,1050]],"position":"top"},"marqueeTop":{"sizes":[[300,60]],"position":"top"},"mpuTop":{"sizes":[[300,250]],"position":"top"},"mpuBottom":{"sizes":[[300,250],[300,600],[300,1050]],"position":"bottom"},"leaderPlusTop":{"sizes":[[970,66],[728,90],[970,250]],"position":"top","eventCallbacks":{"slotRenderEnded":"leaderboardTopPlusCallback"}},"leaderTop":{"sizes":[[970,66],[728,90]],"position":"top"},"buttonTop":{"sizes":[[88,31],[70,20],[155,40]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"omnibarTop":{"sizes":[[980,45]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"textLinkTop":{"sizes":[[401,11]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"dynamicTextLinkTop":{"sizes":[[1171,61]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"mpuMiddle":{"sizes":[[300,250]],"position":"middle"},"leaderPlusMantle":{"sizes":[[970,66],[728,90],[970,250]],"position":"mantle","eventCallbacks":{"slotRenderEnded":"leaderPlusMantleCallback"}},"leaderBottom":{"sizes":[[970,66],[728,90]],"position":"bottom"},"leaderPlusBottom":{"sizes":[[970,66],[728,90]],"position":"bottom"},"dynamicShowcaseTop":{"sizes":[[371,771]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"infoBoardTop":{"sizes":[[771,201],[620,90]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"infoButtonsTop":{"sizes":[[771,61]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"socialLogoBottom":{"sizes":[[88,31]],"position":"bottom","eventCallbacks":{"slotRenderEnded":"sharebarCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"sponsoredFeedTop":{"sizes":[[571,121]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"inlineProductCarouselTop":{"sizes":[[621,221]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"windowTop":{"sizes":[[120,90]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"windowBottom":{"sizes":[[120,90]],"position":"bottom","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"sponsoredMatchTop":{"sizes":[[971,201]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replaySquareTop":{"sizes":[[271,271]],"position":"top","eventCallbacks":{"slotRenderEnded":"replaySquareCallBack"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayWideTop":{"sizes":[[771,131]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayShowcaseTop":{"sizes":[[371,291]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"overgifTop":{"sizes":[[251,11]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"showcaseTop":{"sizes":[[3,3]],"position":"top"},"videoThumbnailTop":{"sizes":[[171,231]],"position":"top","eventCallbacks":{"slotRenderEnded":"videoThumbnailTopCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true}},"mobile":{"adUnits":{"hpto":{"outOfPage":true},"mobileBannerTop":{"sizes":[[320,50],[6,1]],"position":"increment"},"mobileBannerMpuHptoOverlay":{"outOfPage":true},"mobileMpuBottom":{"sizes":[300,250]},"mobileBanner":{"sizes":[[320,50]],"position":"increment"},"mobileReplaySquare":{"sizes":[[271,271]],"position":"increment"},"mobileBannerPlus":{"sizes":[[300,250],[320,50],[621,221]],"position":"increment"},"mobileMpu":{"sizes":[[300,250]],"position":"increment"},"mobileOvergif":{"sizes":[[251,11]],"position":"increment","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true}}},"tablet":{"adUnits":{"resourceCenterTop":{"sizes":[[300,300]],"position":"top"},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,600],[300,250]]},"marqueeTop":{"sizes":[[234,60]],"position":"top"},"mpuTop":{"sizes":[[300,250],[300,600]],"position":"top"},"mpuBottom":{"sizes":[[300,250]],"position":"bottom"},"leaderTop":{"sizes":[[728,90],[970,66]],"position":"bottom"},"leaderPlusTop":{"sizes":[[728,90],[970,66],[970,250]],"position":"top"}}},"siteName":"cnet","collapseEmptyDiv":false,"setRefreshUnfilledSlots":true,"setClearUnfilledSlots":false,"disableInitialLoad":false,"disableInitialLoadCompanions":false,"enableSingleRequest":true,"enableAsyncRendering":true,"defaultRegion":"aw","deviceRegions":{"mobile":[{"region":"aw","countries":["all"]}],"desktop":[],"tablet":[]}},"containerId":"54233dd5e2de9","slotVars":{"network":"8264","siteName":"cnet","collapseEmptyDiv":"","topics":"mobile\/tablets","platform":"desktop"},"adType":"gpt","adDivIds":["social-logo-bottom-54233dd5e2de9","info-board-top-54233dd5e2de9","mpu-plus-top-54233dd5e2de9","leader-bottom-54233dd5e2de9","omnibar-top-54233dd5e2de9","text-link-top-54233dd5e2de9","intromercial-54233dd5e2de9","skin-54233dd5e2de9","leader-top-54233dd5e2de9","dynamic-text-link-top-54233dd5e2de9"]},"cookieName":"cnet_ad","cookieServicePath":"http:\/\/www.cnet.com\/ad\/ad-cookie\/","session":4,"subSession":6}
+        },
+        assetsVersion: {
+            version: '804-fly'
+        },
+        cmsEdit: {
+            contentId: '72c4e488-8c86-11e2-b06b-024c619f5c3d',
+            contentType: 'magnet_article'
+        },
+        device: 'desktop',
+        edition: {
+            code: 'us'
+        },
+        environment: 'prod',
+        tracking: {
+            enabled: true
+        },
+        promotionals: {
+            flyoutPromo:{
+                url: '/flyout-promo/'
+            }
+        },
+        user: {
+            baseUrl: 'https://secure-fly-beta.cnet.com',
+            'urls': {
+                'login': "https://secure-fly-beta.cnet.com/user/login/",
+                'register': "https://secure-fly-beta.cnet.com/user/registration/",
+                'confirmRegistration': "http://www.cnet.com/user/instructions-confirm-registration/",
+                'forgotPassword': "https://secure-fly-beta.cnet.com/user/forgotten-password/",
+                'passwordSent': "http://www.cnet.com/user/password-sent/",
+                'createUsername': "http://www.cnet.com/user/create-username/",
+                'sendConfirmation': "http://www.cnet.com/user/send-confirmation/?registered=1",
+                'userData': "http://www.cnet.com/user/get-data/",
+                'flag': "http://www.cnet.com/user/flag/"
+            }
+        }
+    };
+
+
+        
+    var utag_data = {"isEnabled":true,"articleAuthorId":["9ea2e65c-8175-11e2-9d12-0018fe8a00b0"],"articleAuthorName":["danny sullivan"],"articleId":"72c4e488-8c86-11e2-b06b-024c619f5c3d","articlePubDate":"2013-01-31 17:09:09","articleTitle":"how trapped are your digital movies and tv shows?","articleType":"magnet_article","collectionId":[],"collectionName":[],"deviceType":"desktop","isDev":"0","pageNum":"1","pageType":"article","siteEdition":"us","siteHier":["news","mobile","tablets"],"siteSection":"news","siteType":"responsive web","topicId":["1c31d95d-c387-11e2-8208-0291187b029a","1bc9c932-c387-11e2-8208-0291187b029a","1c080a46-c387-11e2-8208-0291187b029a","1c1356b9-c387-11e2-8208-0291187b029a","1c445348-c387-11e2-8208-0291187b029a","1c5a20d4-c387-11e2-8208-0291187b029a","1c83a249-c387-11e2-8208-0291187b029a","1c31d95d-c387-11e2-8208-0291187b029a"],"topicName":["tech culture","gadgets","tablets","internet","laptops","phones","mobile","tech culture"],"dwAccount":"cbsicnetglobalsite","dwHost":"dw.cbsi.com","siteId":1,"reportSuiteId":"cbsicnetglobalsite","bkSiteId":3321,"limit":4,"collectionSlug":[],"tagSlugs":["amazon","google-play","itunes","google","hulu"],"topicSlugs":["tech-culture","gadgets","tablets","internet","laptops","phones","mobile","tech-culture"],"siteName":"cnet","tealium":{"profile":"cnetglobalsite","env":"prod"},"soastaBucket":"us_desktop"};
+</script><script type="text/javascript" src="http://cnet3.cbsistatic.com/fly/804-fly/bundles/flyjs/js/libs/require-2.1.2.js"></script><script type="text/javascript">
+    require.config({"baseUrl":"\/804-fly\/bundles\/cnetjs\/js-build","config":{"version":{"fly\/components\/accordion":"1.0","fly\/components\/alert":"1.0","fly\/components\/base":"1.0","fly\/components\/carousel":"1.0","fly\/components\/dropdown":"1.0","fly\/components\/fixate":"1.0","fly\/components\/form-validate":"1.0","fly\/components\/image-gallery":"1.0","fly\/components\/iframe-messenger":"1.0","fly\/components\/livefyre-commentcount":"1.0","fly\/components\/livefyre-conversation":"1.0","fly\/components\/load-more":"1.0","fly\/components\/load-more-scroll":"1.0","fly\/components\/loading":"1.0","fly\/components\/modal":"1.0","fly\/components\/modal-iframe":"1.0","fly\/components\/poll":"1.0","fly\/components\/social-button":"1.0","fly\/components\/social-counts":"1.0","fly\/components\/social-links":"1.0","fly\/components\/tabs":"1.0","fly\/components\/tooltip":"1.0","fly\/components\/video":"1.0","fly\/libs\/easy-xdm":"2.4.19.3","fly\/libs\/jquery.cookie":"1.2","fly\/libs\/jquery.mobile":"1.3.0","fly\/libs\/jquery.throttle-debounce":"1.1","fly\/libs\/jquery.widget":"1.9.2","fly\/libs\/urs":"1.0","fly\/managers\/ad":"1.0","fly\/managers\/components":"1.0","fly\/managers\/cookie":"1.0","fly\/managers\/debug":"1.0","fly\/managers\/geo":"1.0","fly\/managers\/gpt":"4.0","fly\/managers\/history":"1.0","fly\/managers\/madison":"1.0","fly\/managers\/social-authentication":"1.0","fly\/managers\/user":"1.0","fly\/utils\/data-prefix":"1.0","fly\/utils\/data-selector":"1.0","fly\/utils\/function-natives":"1.0","fly\/utils\/guid":"1.0","fly\/utils\/jquery-mobile-init":"1.0","fly\/utils\/log":"1.0","fly\/utils\/object-helper":"1.0","fly\/utils\/string-helper":"1.0","fly\/utils\/string-vars":"1.0","fly\/utils\/url-helper":"1.0","libs\/jshashtable":"2.1","libs\/jsonp":"2.4.0","libs\/modernizr.custom":"2.6.2","libs\/jquery\/dotdotdot":"1.6.1","libs\/jquery\/flexslider":"2.1","libs\/jquery\/lazyload":"1.9.3","libs\/jquery\/mobile":"1.4.0a1","libs\/jquery\/numberformatter":"1.2.3","libs\/jquery\/placeholder":"0.2.4","libs\/jquery\/scrollbar":"0.2.4","libs\/jquery\/tablesorter":"2.0.5","libs\/jquery\/ui\/jquery.ui.core":"1.9.2","libs\/jquery\/ui\/jquery.ui.draggable":"1.9.2","libs\/jquery\/ui\/jquery.ui.mouse":"1.9.2","libs\/jquery\/ui\/jquery.ui.position":"1.9.2","libs\/jquery\/ui\/jquery.ui.slider":"1.9.2","libs\/jquery\/ui\/jquery.ui.touch-punch":"0.2.2"}},"shim":{"version!fly\/libs\/jquery.mobile":["version!fly\/utils\/jquery-mobile-init"],"version!libs\/jquery\/dotdotdot":["jquery"],"version!libs\/jquery\/flexslider":["jquery"],"version!libs\/jquery\/lazyload":["jquery"],"version!libs\/jquery\/numberformatter":["jquery","version!libs\/jshashtable"],"version!libs\/jquery\/placeholder":["jquery"],"version!libs\/jquery\/scrollbar":["jquery"],"version!libs\/jquery\/tablesorter":["jquery"],"version!libs\/jquery\/ui\/jquery.ui.core":["jquery"],"version!libs\/jquery\/ui\/jquery.ui.draggable":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget","version!libs\/jquery\/ui\/jquery.ui.mouse"],"version!libs\/jquery\/ui\/jquery.ui.mouse":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget"],"version!libs\/jquery\/ui\/jquery.ui.position":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget"],"version!libs\/jquery\/ui\/jquery.ui.slider":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget","version!libs\/jquery\/ui\/jquery.ui.mouse","version!libs\/jquery\/ui\/jquery.ui.touch-punch"],"version!libs\/jquery\/ui\/jquery.ui.touch-punch":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget","version!libs\/jquery\/ui\/jquery.ui.mouse"],"version!libs\/jsonp":["jquery"],"tealium":["jquery"]},"map":{"*":{"anonc":"\/\/dw.cbsi.com\/anonc.js","google-csa":"\/\/www.google.com\/adsense\/search\/async-ads.js","gpt":"\/\/www.googletagservices.com\/tag\/js\/gpt.js","gpt-mobile":"\/\/www.googletagservices.com\/tag\/js\/gpt_mobile.js","linked-in":"\/\/platform.linkedin.com\/in.js","livefyre":"\/\/zor.livefyre.com\/wjs\/v3.0\/javascripts\/livefyre.js","livefyre-commentcount":"\/\/zor.livefyre.com\/wjs\/v1.0\/javascripts\/CommentCount.js","mpx":"http:\/\/cnet3.cbsistatic.com\/fly\/bundles\/cnetmpxpdk\/pdk\/tpPdk.js","nrelate":"http:\/\/static2.nrcdn.com\/common_js\/0.52.0\/nr_loader.min.js","pinterest":"\/\/assets.pinterest.com\/js\/pinit.js","recaptcha":"http:\/\/www.google.com\/recaptcha\/api\/js\/recaptcha_ajax.js","tealium":"\/\/tags.tiqcdn.com\/utag\/cbsi\/cnetglobalsite\/prod\/utag.js","twitter":"\/\/platform.twitter.com\/widgets.js","typekit":"http:\/\/fonts.cnet.com\/zrx0zuz.js","typekit-secure":"https:\/\/secure.cnet.com\/typekitssl-fly","urs":"http:\/\/cn.cbsimg.net\/cnwk.1d\/Aud\/javascript\/urs.js","yahooAds":"https:\/\/s.yimg.com\/uq\/syndication\/yad.js","yahooMultiAds":"https:\/\/s.yimg.com\/uv\/dm\/scripts\/syndication.js"}}});
+                        require(['http://cnet4.cbsistatic.com/fly/804-fly/bundles/cnetjs/js-build/main.default.js']);
+            </script><!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]--><script type="text/javascript" src="http://fonts.cnet.com/zrx0zuz.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script></head><body class="not-logged-in us " data-cms-edit='{"url":"http:\/\/cms-beta.cnet.com\/content\/magnet_article\/72c4e488-8c86-11e2-b06b-024c619f5c3d"}'>
+                        <header id="rbHeader" class="page-header"><div id="omnibar_top">
+                                    <div id="omnibar-top-54233dd5e2de9" class="ad-omnibar-top" data-ad="omnibar-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing omnibar-top-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("omnibar-top-54233dd5e2de9");
+    </script></div>
+            </div>            <div id="secondary">
+            <div id="headerTextAd">
+                                    <div id="text-link-top-54233dd5e2de9" class="ad-text-link-top" data-ad="text-link-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing text-link-top-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("text-link-top-54233dd5e2de9");
+    </script></div>
+            </div>            
+<div id="socialHeader">
+    <span>Connect with us</span>
+            <div class="socialWrapper" data-component='["touchMenuHover","iframeHoverFix"]'>
+                
+                        <div class="networkWrapper">
+        <a target="_blank" href="http://www.facebook.com/cnet" class="social-menu-facebook">facebook</a>
+    </div>
+
+        
+                        <div class="networkWrapper">
+        <a target="_blank" href="https://twitter.com/intent/user?screen_name=cnet" class="social-menu-twitter">twitter</a>
+    </div>
+
+        
+                        <div class="networkWrapper">
+        <a target="_blank" href="https://plus.google.com/+CNET" class="social-menu-google">google</a>
+    </div>
+
+            </div>
+
+</div>
+        </div>
+                <div class="fixation" data-component="fixate" data-fixate-options='{"offset":{"top":0,"bottom":0},"guideTop":"#secondary"}'>
+            <div id="primary">
+                                    <a id="rbLogo" href="/">CNET</a>
+                
+                <form method="get" action="/search/" class="col-3 headerSearchForm">
+                    <div class="searchBar">
+                        <input type="text" placeholder="Search CNET" id="primarySearch" name="query" value=""><button type="submit" class="searchButton" value="Search"></button>
+                    </div>
+                </form>
+                                    
+
+<nav id="primaryNav" section="brandnav" data-endpoint="/component/load/xhr/"><div class="menu double" id="reviewsMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/reviews/">Reviews</a>
+        <div class="menuWrapper">
+            <!--[if lt IE 9]>
+            <noscript><div class="navTag"></noscript>
+            <![endif]-->
+            <nav><div class="navWrapper" data-component="headerMenu" data-ajax="reviews">
+                    <ul class="topCategories"><li class="hed">Top Categories</li>
+                        <li data-ajax="reviews-appliances"><a href="/topics/appliances/">Appliances</a></li>
+                        <li data-ajax="reviews-audio"><a href="/topics/audio/">Audio</a></li>
+                        <li data-ajax="reviews-cameras"><a href="/topics/cameras/">Cameras</a></li>
+                        <li data-ajax="reviews-car"><a href="/topics/car-tech/">Car Tech</a></li>
+                        <li data-ajax="reviews-desktops"><a href="/topics/desktops/">Desktops</a></li>
+                        <li data-ajax="reviews-headphones"><a href="/topics/headphones/">Headphones</a></li>
+                        <li data-ajax="reviews-laptops"><a href="/topics/laptops/">Laptops</a></li>
+                        <li data-ajax="reviews-networking"><a href="/topics/networking/">Networking</a></li>
+                        <li data-ajax="reviews-phones"><a href="/topics/phones/">Phones</a></li>
+                        <li data-ajax="reviews-printers"><a href="/topics/printers/">Printers</a></li>
+                        <li data-ajax="reviews-software"><a href="/topics/software/">Software</a></li>
+                        <li data-ajax="reviews-tablets"><a href="/topics/tablets/">Tablets</a></li>
+                        <li data-ajax="reviews-tvs"><a href="/topics/tvs/">TVs</a></li>
+                        <li data-ajax="reviews-wearable"><a href="/topics/wearable-tech/">Wearable Tech</a></li>
+                                                    <li data-ajax="reviews-deals"><a href="/deals/">Deals</a></li>
+                            <li data-ajax="reviews-webhosting"><a href="/web-hosting/" data-vanity-rewritten="true">Web Hosting</a></li>
+                                            </ul></div>
+            </nav><!--[if lt IE 9]>
+            <noscript></div></noscript>
+            <![endif]--></div>
+    </div>
+    <div class="menu double active" id="newsMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/news/">News</a>
+        <div class="menuWrapper">
+            <!--[if lt IE 9]>
+            <noscript><div class="navTag"></noscript>
+            <![endif]-->
+            <nav><div class="navWrapper" data-component="headerMenu" data-ajax="news">
+                    <ul class="topCategories"><li class="hed">Top Categories</li>
+                        <li data-ajax="news-apple"><a href="/apple/" data-vanity-rewritten="true">Apple</a></li>
+                        <li data-ajax="news-computers"><a href="/topics/computers/" data-vanity-rewritten="true">Computers</a></li>
+                        <li data-ajax="news-crave"><a href="/crave/" data-vanity-rewritten="true">Crave</a></li>
+                                                    <li data-ajax="reviews-deals"><a href="/deals/">Deals</a></li>
+                                                <li data-ajax="news-internet"><a href="/topics/internet/" data-vanity-rewritten="true">Internet</a></li>
+                        <li data-ajax="news-microsoft"><a href="/tags/microsoft/">Microsoft</a></li>
+                        <li data-ajax="news-mobile"><a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a></li>
+                        <li data-ajax="news-photography"><a href="/topics/photography/" data-vanity-rewritten="true">Photography</a></li>
+                        <li data-ajax="news-security"><a href="/topics/security/" data-vanity-rewritten="true">Security</a></li>
+                        <li data-ajax="news-scitech"><a href="/topics/sci-tech/" data-vanity-rewritten="true">Sci-Tech</a></li>
+                        <li data-ajax="news-culture"><a href="/topics/tech-culture/" data-vanity-rewritten="true">Tech Culture</a></li>
+                        <li data-ajax="news-tech"><a href="/topics/tech-industry/" data-vanity-rewritten="true">Tech Industry</a></li>
+                        <li data-ajax="news-photos"><a href="/pictures/">Photo Galleries</a></li>
+                        <li data-ajax="video-news"><a href="/videos/cnet-news/" data-vanity-rewritten="true">Video</a></li>
+                    </ul></div>
+            </nav><!--[if lt IE 9]>
+            <noscript></div></noscript>
+            <![endif]--></div>
+    </div>
+    <div class="menu double" id="videoMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/videos/">Video</a>
+        <div class="menuWrapper">
+        <!--[if lt IE 9]>
+        <noscript><div class="navTag"></noscript>
+        <![endif]-->
+        <nav><div class="navWrapper" data-component="headerMenu" data-ajax="videos">
+                <ul class="topCategories"><li class="hed">Top Categories</li>
+                    <li data-ajax="video-adventuresintech"><a href="/adventures-in-tech/" data-vanity-rewritten="true">Adventures in Tech</a></li>
+                    <li data-ajax="video-apple"><a href="/apple-byte/" data-vanity-rewritten="true">Apple Byte</a></li>
+                    <li data-ajax="video-cartech"><a href="/topics/car-tech/videos/" data-vanity-rewritten="true">Car Tech</a></li>
+                    <li data-ajax="video-cnetoncars"><a href="/cnet-on-cars/" data-vanity-rewritten="true">CNET On Cars</a></li>
+                    <li data-ajax="video-cnettop5"><a href="/cnet-top-5/" data-vanity-rewritten="true">CNET Top 5</a></li>
+                    <li data-ajax="video-cnetupdate"><a href="/cnet-update/" data-vanity-rewritten="true">CNET Update</a></li>
+                    <li data-ajax="video-googlicious"><a href="/googlicious/" data-vanity-rewritten="true">Googlicious</a></li>
+                    <li data-ajax="video-howto"><a href="/how-to/videos/" data-vanity-rewritten="true">How To</a></li>
+                    <li data-ajax="video-nextbigthing"><a href="/next-big-thing/" data-vanity-rewritten="true">Next Big Thing</a></li>
+                    <li data-ajax="video-news"><a href="/videos/cnet-news/" data-vanity-rewritten="true">News</a></li>
+                    <li data-ajax="video-phones"><a href="/topics/phones/videos/" data-vanity-rewritten="true">Phones</a></li>
+                    <li data-ajax="video-prizefight"><a href="/prizefight/" data-vanity-rewritten="true">Prizefight</a></li>
+                    <li data-ajax="video-tablets"><a href="/topics/tablets/videos/" data-vanity-rewritten="true">Tablets</a></li>
+                    <li data-ajax="video-404"><a href="/the-404/" data-vanity-rewritten="true">The 404</a></li>
+                    <li data-ajax="video-fix"><a href="/the-fix/" data-vanity-rewritten="true">The Fix</a></li>
+                    <li data-ajax="video-tomorrowdaily"><a href="/tomorrow-daily/" data-vanity-rewritten="true">Tomorrow Daily</a></li>
+                    <li data-ajax="video-xcar"><a href="/xcar/" data-vanity-rewritten="true">XCAR</a></li>
+                </ul></div>
+        </nav><!--[if lt IE 9]>
+        <noscript></div></noscript>
+        <![endif]--></div>
+    </div>
+    <div class="menu single" id="howtoMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/how-to/">How To</a>
+        <div class="menuWrapper">
+            <!--[if lt IE 9]>
+            <noscript><div class="navTag"></noscript>
+            <![endif]-->
+            <nav><ul class="topCategories"><li class="hed">Top Categories</li>
+                    <li><a href="/topics/appliances/how-to/">Appliances</a></li>
+                    <li><a href="/topics/computers/how-to/">Computers</a></li>
+                    <li><a href="/topics/gaming/how-to/">Gaming</a></li>
+                    <li><a href="/topics/home-entertainment/how-to/">Home Entertainment</a></li>
+                    <li><a href="/topics/internet/how-to/">Internet</a></li>
+                    <li><a href="/topics/mobile-apps/how-to/">Mobile Apps</a></li>
+                    <li><a href="/topics/phones/how-to/">Phones</a></li>
+                    <li><a href="/topics/photography/how-to/">Photography</a></li>
+                    <li><a href="/topics/security/how-to/">Security</a></li>
+                    <li><a href="/topics/tablets/how-to/">Tablets</a></li>
+                    <li><a href="http://forums.cnet.com/" data-user-action="legacy">Forums</a></li>
+                    <li><a href="/internet-speed-test/" data-vanity-rewritten="true">Speed Test</a></li>
+                </ul></nav><!--[if lt IE 9]>
+            <noscript></div></noscript>
+            <![endif]--></div>
+    </div>
+    <div class="menu" id="download">
+        <a class="menuHead" href="http://www.download.com" data-user-action="legacy">Download</a>
+    </div>
+
+    
+    
+<div id="headerLogin" class="menu single" data-component="touchMenuHover">
+    <div class="menuHead" data-trigger="menu">
+        <span data-user-var="userName">Log In / Join</span>
+        <div class="user-avatar" data-user-var="avatar"></div>
+    </div>
+    <div class="menuWrapper">
+        <!--[if lt IE 9]>
+        <noscript><div class="navTag"></noscript>
+        <![endif]-->
+        <nav><ul class="topCategories logged-out"><li>
+                    <a data-user-show='{"action":"login","params":{"appId":376},"suppressReload":true}'>Log In to CNET</a>
+                </li>
+                <li class="social-login">
+                    <span class="sign-in-with">Sign In with</span>
+                                            <span class="social-site sa-facebook" data-user-social='{"socialSite":"facebook","action":"login","params":{"appId":376}}'>Facebook</span>
+                                            <span class="social-site sa-google" data-user-social='{"socialSite":"google","action":"login","params":{"appId":376}}'>Google</span>
+                                            <span class="social-site sa-yahoo" data-user-social='{"socialSite":"yahoo","action":"login","params":{"appId":376}}'>Yahoo</span>
+                                    </li>
+                <li>
+                    <a data-user-show='{"action":"register","params":{"appId":376}}'>Join CNET</a>
+                </li>
+                <li><a href="/join-cnet/">Member Benefits</a></li>
+            </ul><ul class="topCategories logged-in"><li class="social-login">
+                    <span>
+                                            <span class="social-site sa-facebook" data-user-link="facebook">Facebook</span>
+                                            <span class="social-site sa-google" data-user-link="google">Google</span>
+                                            <span class="social-site sa-yahoo" data-user-link="yahoo">Yahoo</span>
+                                        </span>
+                </li>
+                <li><a data-user-var="profileLink" data-template="/profiles/__username__/">My Profile</a></li>
+                <li><a href="/user/logout/" data-user-action="logout">Log Out</a></li>
+            </ul></nav><!--[if lt IE 9]>
+        <noscript></div></noscript>
+        <![endif]--></div>
+</div>
+
+    
+<div class="menu single" id="editionMenu" data-component="touchMenuHover">
+    <span class="menuHead" data-trigger="menu"><span id="selectedEdition">US</span> Edition</span>
+    <div class="menuWrapper">
+        <!--[if lt IE 9]>
+        <noscript><div class="navTag"></noscript>
+        <![endif]-->
+        <nav><ul class="topCategories" data-component="editionToggler"><li class="hed">Other editions</li>
+                                                    <li><a data-edition="uk" href="/uk/news/how-trapped-are-your-digital-movies-and-tv-shows/">United Kingdom</a></li>
+                                                    <li><a data-edition="au" href="/au/news/how-trapped-are-your-digital-movies-and-tv-shows/">Australia</a></li>
+                                <li><a target="_blank" href="http://www.cnetnews.com.cn/">China</a></li>
+                <li><a target="_blank" href="http://www.cnetfrance.fr/">France</a></li>
+                <li><a target="_blank" href="http://www.cnet.de/">Germany</a></li>
+                <li><a target="_blank" href="http://japan.cnet.com/">Japan</a></li>
+                <li><a target="_blank" href="http://www.cnet.co.kr/">Korea</a></li>
+                                    <li><a data-edition="es" href="/es/">CNET en Español</a></li>
+                            </ul></nav><!--[if lt IE 9]>
+        <noscript></div></noscript>
+        <![endif]--></div>
+</div>
+</nav></div>
+        </div>
+    </header><div id="intromercial-54233dd5e2de9" class="ad-intromercial" data-ad="intromercial">
+    <script>
+        window.console && console.log && console.log("ADS: queuing intromercial-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("intromercial-54233dd5e2de9");
+    </script></div>
+            
+                            <div id="rbContent" class="                    ">
+                    <div data-toc-item="72c4e488-8c86-11e2-b06b-024c619f5c3d">
+                            <div id="rbSkin" data-article-num="1">
+            <span id="adSkinLeft"></span>
+            <span id="adSkinRight"></span>
+            
+                                    <div id="skin-54233dd5e2de9" class="ad-skin" data-ad="skin">
+    <script>
+        window.console && console.log && console.log("ADS: queuing skin-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("skin-54233dd5e2de9");
+    </script></div>
+                        
+                                    <div id="leader-top-54233dd5e2de9" class="ad-leader-top" data-ad="leader-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing leader-top-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("leader-top-54233dd5e2de9");
+    </script></div>
+                    
+                            <div class="articleContent container">
+            
+                                                            <div class="row">
+    <div class="col-8">
+        <ul class="breadcrumb" section="bc"><li>
+                <a href="/">CNET</a>
+                <span class="divider"> </span>
+            </li>
+
+                                                            <li>
+                        <a href="/topics/tech-culture/">Tech Culture</a>
+                        <span class="divider"></span>
+                    </li>
+                            
+            <li>How trapped are your digital movies and TV shows?</li>
+        </ul></div>
+</div>
+                                                    <div class="container">
+    <div class="row">
+                    <div class="row">
+        <div class="col-12">
+                                            <div class="row">
+                                    <div class="col-8">
+                                                    
+                                                        
+                                                        
+
+
+                            
+                                            
+    
+    
+<article itemscope itemtype="http://schema.org/Article" id="article-body" section="articleBody"><meta itemprop="thumbnailUrl" content="http://cnet3.cbsistatic.com/hub/i/r/2013/01/31/1e43da17-f0e2-11e2-8c7c-d4ae52e62bcc/thumbnail/770x433/571c81dc91c450b353a816fca8f7c7b9/Microsoft_Excel.jpg"><meta itemprop="keywords" content="Tech Culture, Gadgets, Tablets, Internet, Laptops, Phones, Mobile, Amazon, Google Play, iTunes, Google, Hulu, Microsoft, Netflix, Roku, YouTube, Safari, Windows RT"><meta itemprop="url" content="http://www.cnet.com/news/how-trapped-are-your-digital-movies-and-tv-shows/"><h1 itemprop="headline">How trapped are your digital movies and TV shows?</h1>
+        <p class="article-dek" itemprop="description">Buying films or TV episodes from a digital media outlet may be great if you watch though one particular device. But what happens if you change from iOS to Android? From a PC to a Mac? From a Roku to Apple TV? We chart it out.</p>
+    
+            
+    <div id="article-info" class="row article-byline" section="author">
+        <ul><li itemscope itemtype="http://schema.org/Person">by
+                                                            <a itemprop="name" rel="author" class="author" href="http://www.cnet.com/profiles/dannysullivan/">
+                            Danny Sullivan
+                        </a>
+                    
+                                            <span class="asset-twitter">
+                            <a target="_blank" href="https://twitter.com/intent/user?screen_name=dannysullivan" class="twitter-follow-link">
+                                <div class="twitter">
+                                    <div class="icon icon-twitter-red"></div>
+                                </div>
+                            </a>
+                                                            <a target="_blank" href="https://twitter.com/intent/user?screen_name=dannysullivan" class="twitter-follow-link">@dannysullivan</a>
+                                                    </span>
+                    
+                                                                    </li>
+
+                                                        <li><time itemprop="datePublished" class="2013-01-31 17:09:09">January 31, 2013 9:09 AM PST</time></li>
+            
+                                </ul></div>
+    
+            
+
+    
+    
+<ul class="sharebar inline-view" data-component="sharebar" data-sharebar-options='{"title":"How trapped are your digital movies and TV shows?","description":"Buying films or TV episodes from a digital media outlet may be great if you watch though one particular device. But what happens if you change from iOS to Android? From a PC to a Mac? From a Roku to Apple TV? We chart it out.","url":"http:\/\/www.cnet.com\/news\/how-trapped-are-your-digital-movies-and-tv-shows\/","data":{"media":"http:\/\/cnet4.cbsistatic.com\/hub\/i\/r\/2013\/01\/31\/1e43da17-f0e2-11e2-8c7c-d4ae52e62bcc\/thumbnail\/170x128\/4b727210945d99fbc125024e8aa18b89\/Microsoft_Excel.jpg"}}'><li class="comment-count" data-livefyre-count="72c4e488-8c86-11e2-b06b-024c619f5c3d">
+        <a href="#comments">
+            <div class="social-button-small comments">
+    <div class="icon icon-small-comments">comments</div>
+</div>
+
+            <span class="count">0</span>
+        </a>
+    </li>
+    
+    <li class="share-button">
+        <a data-popup="facebook" data-counts="">
+            <div class="social-button-small facebook">
+    <div class="icon icon-small-facebook">facebook</div>
+</div>
+
+            <span class="count"></span>
+        </a>
+    </li>
+
+    <li class="share-button">
+        <a data-popup="twitter" data-counts="">
+            <div class="social-button-small twitter">
+    <div class="icon icon-small-twitter">twitter</div>
+</div>
+
+            <span class="count"></span>
+        </a>
+    </li>
+                 <li class="share-button">
+            <a data-popup="linkedin" data-counts="">
+                <div class="social-button-small linkedin">
+    <div class="icon icon-small-linkedin">linkedin</div>
+</div>
+
+                <span class="count"></span>
+            </a>
+        </li>
+    
+    <li class="share-button">
+        <a data-popup="googlePlus">
+            <div class="social-button-small googleplus">
+    <div class="icon icon-small-googleplus">googleplus</div>
+</div>
+
+        </a>
+    </li>
+
+    <li class="share-button moreButton" data-component="touchMenuHover">
+        <div class="social-button-small more">
+    <div class="icon icon-small-more">more</div>
+</div>
+
+        <span>more</span>
+        <span class="plus">+</span>
+        <div class="hoverWrap">
+            <ul><li class="share-button">
+                    <a data-link="email">
+                        <div class="social-button-small email">
+    <div class="icon icon-small-email">email</div>
+</div>
+
+                    </a>
+                </li>
+                <li class="share-button">
+                    <a data-popup="tumblr">
+                        <div class="social-button-small tumblr">
+    <div class="icon icon-small-tumblr">tumblr</div>
+</div>
+
+                    </a>
+                </li>
+                                <li class="share-button">
+                    <a data-popup="stumbleupon">
+                        <div class="social-button-small stumble">
+    <div class="icon icon-small-stumble">stumble</div>
+</div>
+
+                    </a>
+                </li>
+                <li class="share-button">
+                    <a data-popup="delicious">
+                        <div class="social-button-small delicious">
+    <div class="icon icon-small-delicious">delicious</div>
+</div>
+
+                    </a>
+                </li>
+                <li class="share-button">
+                    <a data-popup="reddit">
+                        <div class="social-button-small reddit">
+    <div class="icon icon-small-reddit">reddit</div>
+</div>
+
+                    </a>
+                </li>
+                                                    <li class="share-button">
+                        <a data-popup="pinterest">
+                            <div class="social-button-small pinterest">
+    <div class="icon icon-small-pinterest">pinterest</div>
+</div>
+
+                        </a>
+                    </li>
+                                <li class="share-button">
+                    <a data-popup="digg">
+                        <div class="social-button-small digg">
+    <div class="icon icon-small-digg">digg</div>
+</div>
+
+                    </a>
+                </li>
+            </ul></div>
+    </li>
+
+    <li id="sponsor_ad" class="sponsor">
+        
+                                    <div id="social-logo-bottom-54233dd5e2de9" class="ad-social-logo-bottom" data-ad="social-logo-bottom">
+    <script>
+        window.console && console.log && console.log("ADS: queuing social-logo-bottom-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("social-logo-bottom-54233dd5e2de9");
+    </script></div>
+                </li>
+</ul><div class="article-main-body row" itemprop="articleBody" data-use-autolinker="true">
+        
+<p>Have you decided to ditch DVDs and Blu-rays to instead buy movies and TV shows only in a pure digital format?
+</p><p>
+There are certainly advantages to that. But one of the biggest downsides of going all digital is that how you can view your content is largely dependent on the service you purchased it from.</p><p>
+
+<b>Digital video providers</b>
+<br>In this column, I look at how "trapped" video content purchased from <a href="/products/apple-itunes/" data-is-autolink="true">iTunes</a>, Amazon, Vudu, <a href="/products/microsoft-xbox-one/" data-is-autolink="true">Xbox</a> and Google Play may be. The first four video marketplaces were <a href="https://www.npd.com/wps/portal/npd/us/news/press-releases/the-npd-group-as-digital-video-gets-increasing-attention-dvd-and-blu-ray-earn-the-lions-share-of-revenue/" target="_blank" data-component="externalLink">listed yesterday</a> by NPD as among the top ways people purchase digital video. Google Play is probably still in the "Other" category. But with <a href="/android-update/" data-is-autolink="true">Android</a> devices growing and Google continuing to push its own Google Play marketplace, it seemed well worth including in this survey.</p>
+
+<p>Why would anyone give up on physical discs? My last column, "<span class="link" section="shortcodeLink">
+                    <a href="/news/keep-your-blu-rays-and-dvds-hollywood-ive-gone-digital/">Keep your Blu-rays and DVDs, Hollywood -- I've gone digital</a>
+            </span>," covered some of the reasons I want to abandon them. Digital means I don't have to get off my couch, find a movie disc and shove it into my Blu-ray player. My Roku player can just pull a movie I own down from the cloud. Digital also means if I'm on a trip, and away from my physical movie collection, I can pull the movie down to my laptop or tablet.</p><p>
+
+<b>The digital trade-offs</b><br>
+But as <span class="link" section="shortcodeLink">
+                    <a href="/news/keep-your-blu-rays-and-dvds-hollywood-ive-gone-digital/">many people who commented</a>
+            </span> in response to my last column note, giving up on discs means giving up control. They're entirely correct, too. You're giving up the ability to absolutely, positively know that the movie or TV show you own is available to watch in the highest possible quality, without some terms of service down the road possibly taking it away.</p>
+
+<p>Quality is a big issue. For the convenience of having your video content made available to a variety of devices via the cloud, you might find that the best quality isn't always available. That Blu-ray might come with an iTunes, Amazon or UltraViolet digital redemption code, but that doesn't mean you'll get a digital copy equal to your Blu-ray's quality. Even if you do, some devices might be restricted to only getting standard definition quality.</p><p>
+
+<b>The trapped video matrix</b><br>
+
+Enough preamble. Below is a chart of how trapped your video might be, followed by explanations. I've tried to cover the major ways people might try to view their digital films, and I've actually tested all of these to see if they work as promised.
+
+</p><p>Yes, if you have a physical disc, there are ways to rip the movie, strip it of copy protection and get it into various devices. I'm not including that option because my assumption is that most people aren't wanting to spend the time and effort involved in doing that. Rather, I think they'd like to purchase movies from providers that give them as much native freedom and control as possible.</p>
+
+<p>And yes, I know, technically discs are a digital video format. But I'm using "digital" in the same way that Hollywood itself does, as a term to mean an alternative to physical media.</p>
+
+<p>On to the chart:</p><p><figure class="image pull-none image-large" section="shortcodeImage"><span><img src="http://cnet2.cbsistatic.com/hub/i/r/2013/01/31/2a6b1ecf-fdbd-11e2-8c7c-d4ae52e62bcc/resize/620x/ac9a07c85cc2344a997f171fba8a17a2/Microsoft_Excel-1.jpg" class="" alt="" itemprop="image"></span><figcaption><span class="caption">The trapped video matrix</span><span class="credit">
+                                            Danny Sullivan
+                                        </span></figcaption></figure></p>
+
+<p></p>
+
+<p><b>Browser</b><br>The first viewing option listed is "browser," which covers whether you can watch your purchased video within a web browser on a computer. If so, that's probably the most open and device-independent option out there, though it's less useful on phones, where smaller screen sizes can make logging-in and navigating to your purchased video a pain -- or where the lack of Flash or other plug-in support may make viewing impossible.</p>
+
+<p>Sadly, while browser-based viewing may sound fairly open, it can also come with unexpected drawbacks. Amazon streams HD movies you own in 480p SD-quality, rather than 720p or 1080p HD-quality. Nothing in the browser playback window tells you this. But it's in the <a href="http://www.amazon.com/gp/help/customer/display.html/ref=hp_200238920_aivstream?nodeId=201112530" target="_blank" data-component="externalLink">small print</a> of the help pages, if you hunt around.</p>
+
+<p>Google also doesn't stream HD content -- either movies or TV shows -- in actual HD quality. You'll be stuck at 480p, and you'll only know this if you go to the video quality option to check. Google does note this when you purchase a video, but that might get overlooked by some. It also has a <a href="http://support.google.com/googleplay/bin/answer.py?hl=en&amp;answer=2528768" target="_blank" data-component="externalLink">help page</a> that explains more.</p>
+
+<p>Vudu comes out seeming the big winner with full HD streaming in your browser. But then again, this kind of sucked:</p>
+
+<p><figure class="image pull-none image-large" section="shortcodeImage"><span><img src="http://cnet2.cbsistatic.com/hub/i/r/2013/01/31/2a7318bb-fdbd-11e2-8c7c-d4ae52e62bcc/resize/620x/5519d7176c6021d59a1ce906d7bd2b43/VUDU_To_Go.jpg" class="" alt="" itemprop="image"></span></figure></p><p>
+
+I was trying to watch one of my videos on an external monitor hooked to my laptop. Vudu wanted me to use a cable that supports HDCP copy protection. Without that cable, it would only give me SD quality. Maybe I have the right cable somewhere, but given I had indeed paid for my content, getting treated like a pirate and not being able to watch my content in HD on the monitor of my choosing didn't make me happy.</p>
+
+<p><b>Mac Download</b><br>
+
+It can be nice to download your video content for offline viewing. My next category on the chart is whether you can do this on a Mac. iTunes, of course, makes it easy for Apple content. Vudu is the only other major platform supporting Mac downloads. Just don't try doing it with Chrome. Vudu will ask you to use another browser. I used Firefox; Safari would probably be fine, too.</p>
+
+<p><b>PC Download</b><br>
+
+Next up: can you download content to your Windows PC? Sure -- in fact, all but Google allow this.</p><p>But there's a gotcha again with Amazon, where when using its <a href="http://www.amazon.com/gp/video/ontv/player" target="_blank" data-component="externalLink">Unbox player</a>, HD movies <a href="http://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-1?ie=UTF8&amp;nodeId=3773&amp;qid=1359600343" target="_blank" data-component="externalLink">will only</a> be downloaded in SD quality. TV content, however, can be downloaded in HD quality.</p><p>
+
+Amazon also has a restriction that you can only download to two devices. Except it might really be four devices, when you actually start playing with the download options. And there's no way to deauthorize those devices, other than contacting Amazon support -- which I did through chat. It only took a few minutes, but the whole situation feels confused, and Amazon's <a href="http://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-3?ie=UTF8&amp;nodeId=200572830&amp;qid=1359600623&amp;sr=1-3" target="_blank" data-component="externalLink">page</a> about it isn't much help.</p>
+
+<p>As for Xbox Video, confusingly, its <a href="http://www.xbox.com/en-US/Live/how-to-watch#topic-2" target="_blank" data-component="externalLink">help page</a> says to use the Zune software to download video, with no mention that if you have Windows 8 or Windows RT, this seems unnecessary. You can download Xbox Video content from within the Video application that's native to those operating systems. Also, be warned. Once you start that download in Windows 8, there seems to be no pause option.</p>
+
+<p><b>iOS</b><br>
+
+Can you get your video on an iPad, iPhone or iOS device, through an app? No surprise, that's not an issue for those who own Apple devices. They all support this. However, what quality are you getting? I'd never thought to look before doing this testing. When I downloaded from the cloud, nothing on my iPad Retina prompted me about what quality I wanted or indicated what quality I received. It's probably HD, but it would be nice to easily know that.</p>
+
+<p>The <a href="http://www.amazon.com/gp/feature.html?&amp;docId=1000798971" target="_blank" data-component="externalLink">Amazon Instant Video app for iOS</a> was surprisingly good, but as with Apple, it's hard to know what the download quality is.</p>
+
+<p>Vudu <a href="http://www.vudu.com/setup_ipad.html" target="_blank" data-component="externalLink">claims</a> to support the iPad, but that's really just supporting playback in the Safari browser . There's no download option for offline viewing. Some videos are even restricted from playing on iOS. </p>
+
+<p>Finally, content you buy on Google Play is made available nicely through the Google's YouTube app, under the Purchased area. But there's no download option.</p>
+
+<p><b>Android</b><br>
+
+Can you get your video on an Android device? Not if you buy through iTunes. Not if you buy from Amazon. Even if you try to use your browser to stream Amazon video, a Flash requirement will likely stop you in your tracks. Xbox Video is out, too.</p>
+
+<p><a href="http://www.vudu.com/setup_android.html" target="_blank" data-component="externalLink">Vudu has an app</a> which is nice, and unlike the iPad, allows for downloading video for offline viewing. However, you'll be limited to SD quality. </p><p>
+Google Play, unsurprisingly, has the best support for Android. Indeed, having an Android device <a href="http://support.google.com/googleplay/bin/answer.py?hl=en&amp;answer=1266228&amp;topic=1257642&amp;ctx=topic" target="_blank" data-component="externalLink">is the only way</a> to get HD content from Google Play and to have it offline.</p>
+
+<p><b>Kindle</b><br>Want to view your video content on a Kindle? Amazon supports it, of course. It also makes it very clear exactly what your download quality options are, which I like:</p><p><figure class="image pull-none image-large" section="shortcodeImage"><span><img src="http://cnet1.cbsistatic.com/hub/i/r/2013/01/31/2a7c49fb-fdbd-11e2-8c7c-d4ae52e62bcc/resize/620x/4abf76ee5db6e6a6a2119f3d5c408991/Screenshot_2013-01-30-22-54-46.png.jpg" class="" alt="" itemprop="image"></span><figcaption><span class="caption">Kindle download options</span></figcaption></figure></p><p>FYI, 720p shows as the maximum rather than 1080p because the Kindle Fire HD I own can only do 720p. The bigger Kindle Fire HD 8.9 can do 1080p. </p>
+
+<p>None of the other providers supports the Kindle. I even tried to get Google Play and Vudu content to work through the Kindle's browser but had no luck.</p>
+
+<p><b>Windows Phone</b><br>
+As you'd expect, Microsoft's Xbox Video supports Microsoft's Windows Phone. No one else does, not even if you try to go to Amazon, Vudu or Google through the phone's browser.</p>
+
+
+<p>As for Xbox Video, the support is pretty poor. Forget downloading your purchases from the cloud, as Apple, Amazon and Google all allow for their mobile devices. You need to download to your computer, then get a cable, then connect your phone to the computer and transfer using the Zune software. </p>
+
+<p>That worked for my Lumia 900 Windows 7.5 phone, using a Windows 8 laptop. But Zune wouldn't recognize my HTC 8X Windows Phone 8. I tried using the <a href="http://www.windowsphone.com/en-us/how-to/wp8/windows-phone-app-for-desktop" target="_blank" data-component="externalLink">Windows Phone app</a> for Windows 8 as an alternative, but it kept giving an error that my video couldn't be shared. Maybe that's why the Xbox Video download <a href="http://www.xbox.com/en-US/Live/how-to-watch#topic-2" target="_blank" data-component="externalLink">instructions</a> don't mention the app, because it doesn't work. Too bad -- I was left with no way to get my purchased video onto my phone.</p>
+
+<p><b>Surface</b><br>
+
+Given that Microsoft is pushing its Surface tablet hard, I wanted to include it in the roundup. I looked at Surface with Windows RT, the less expensive model and still the only Surface model shipping at the moment. The more expensive Surface Pro, which launches next week, is really just a full-fledged Windows 8 computer in a nice package. Whatever a PC can do, it can do. But Surface RT -- and any Windows RT computer -- is more limited. 
+</p><p>You can't install the Amazon Unbox player, so you can't download Amazon video for offline viewing. There are no apps from others beyond Microsoft that allow for playing or downloading video. However, its Internet Explorer browser will allow for streaming video from Amazon, Vudu, and Google.</p>
+
+<p><b>Roku</b><br>The Roku box is one of my favorite gadgets. I use it almost every night to stream content directly from places like Netflix and Hulu to my TV. It also offers great support for Amazon and Vudu, up to 1080p quality, if you have a higher-end model.</p>
+
+<p><b>Xbox</b><br>
+While Xbox Video has no real support outside devices using Microsoft's own operating systems, Xbox itself is pretty open to other providers. You can buy and view your purchased content from Xbox Video, of course. But you can also access Amazon and Vudu. While the YouTube app is offered, purchased videos you have available in YouTube from Google Play aren't listed. If you try to access them by saving them as a favorite or to your Watch Later list, they still won't play.</p>
+
+<p><b>Apple TV</b><br>As with Roku, I like Apple TV for how simple it makes it to stream video from places like Netflix and Hulu to my TV. But if you want to watch purchased video, your choice is unsurprisingly only iTunes. None of the other providers is an option. Yes, you can get YouTube, but your purchased videos from Google Play won't be listed. Even if you add them using your computer to your YouTube Watch Later or Favorites lists, they won't be listed at all on Apple TV.</p>
+
+<p><b>Other devices</b><br>
+
+There are many other devices that I haven't covered, perhaps most notably the Wii and the PS3. I don't own either, so I couldn't test them. Amazon and Vudu say they both support the PS3; Amazon supports the Wii. YouTube is available on both the Wii and PS3, but I'm fairly certain that as with Apple TV and the Xbox, purchased videos wouldn't be accessible. </p>
+
+<p><b>And the winner is...</b><br>
+
+So who's the winner in all this, the provider that if you buy from allows you the most choice?</p>
+
+<p>That's a pretty tough call. It's easy to look at all the "no's" in the Xbox Video column and perhaps think that's the wrong choice to make. But if you own an Xbox and a PC, you'll get better quality downloads than Amazon currently allows, despite also being on the Xbox and the PC.</p>
+
+<p>Google also may seem a pretty poor choice, when you consider that you can't download to anything but an Android device, and that streaming through the browser is only in SD. But if you're consuming video primarily through Android devices, Google is going to give you the quality edge over the only alternative, Vudu.</p>
+
+<p>If you have several Apple devices, iTunes can make a lot of sense. Sure, you could buy from Vudu and download to your Mac, like iTunes allows. But Vudu support for iOS is pretty limited. Sure, you could buy from Amazon on iOS as an alternative to iTunes. But then you won't have an option to download to your Mac. On the flipside, you do have more alternatives compared with Xbox and Google. And those alternatives potentially give you options should you one day leave Apple behind.</p>
+
+<p>As for the alternatives, both Amazon and Vudu are compelling in their own ways. Amazon's lack of Android support is a drawback, but if you like Kindle, you're covered there. Going with devices that support Amazon also means you perhaps may get drawn into Amazon's Prime Video, a huge selection of "free" content -- free for a relatively low annual fee that comes with other major perks.</p>
+
+<p>Vudu perhaps stands out as the unique player without hardware to pitch. There's no Vudu phone, tablet, or computer. Vudu's future is being integrated into all these other devices. That perhaps makes it one of the best hopes for being a provider who traps your content the least. But then again, it's potentially in the riskiest position of being cut off.</p>
+
+<p>I don't know the answer. It's ultimately going to be up to each person.  I hope the chart above helps some in making those choices. I do wish that every box had a "yes" in it. I'd certainly feel less trapped if that were the case. 
+</p><p>
+What I really want is to buy a movie from any provider and have it work on any device, so that I never have to make or update a chart like this again.</p>
+
+        
+        
+
+    </div>
+
+    <footer><div class="row collections-topics-and-tags" section="tag">
+    <dl><dt>
+            <b>Tags: </b>
+        </dt>
+
+        
+                    <dd>
+                <a href="/topics/tech-culture/">Tech Culture</a>
+            </dd>
+                    <dd>
+                <a href="/topics/gadgets/">Gadgets</a>
+            </dd>
+                    <dd>
+                <a href="/topics/tablets/">Tablets</a>
+            </dd>
+                    <dd>
+                <a href="/topics/internet/">Internet</a>
+            </dd>
+                    <dd>
+                <a href="/topics/laptops/">Laptops</a>
+            </dd>
+                    <dd>
+                <a href="/topics/phones/">Phones</a>
+            </dd>
+                    <dd>
+                <a href="/topics/mobile/">Mobile</a>
+            </dd>
+        
+                    <dd>
+                <a href="/tags/amazon/">Amazon</a>
+            </dd>
+                    <dd>
+                <a href="/tags/google-play/">Google Play</a>
+            </dd>
+                    <dd>
+                <a href="/tags/itunes/">iTunes</a>
+            </dd>
+                    <dd>
+                <a href="/tags/google/">Google</a>
+            </dd>
+                    <dd>
+                <a href="/tags/hulu/">Hulu</a>
+            </dd>
+                    <dd>
+                <a href="/tags/microsoft/">Microsoft</a>
+            </dd>
+                    <dd>
+                <a href="/tags/netflix/">Netflix</a>
+            </dd>
+                    <dd>
+                <a href="/tags/roku/">Roku</a>
+            </dd>
+                    <dd>
+                <a href="/tags/youtube/">YouTube</a>
+            </dd>
+                    <dd>
+                <a href="/tags/safari/">Safari</a>
+            </dd>
+                    <dd>
+                <a href="/tags/windows-rt/">Windows RT</a>
+            </dd>
+        
+    </dl></div>
+        
+                            
+                    <span data-component="bestFitVideoPromo" data-best-fit-video-promo-options='{"defaultAsset":{"type":"component_editorial_component","id":"news-video-promo"},"primaryAsset":{"type":"content_review","id":""}}'>
+        </span>
+            
+                    
+                        <div class="row about-author" itemscope itemtype="http://schema.org/Person" section="author">
+                <div class="col-8">
+                                                                                        <h6><span>About the author</span></h6>
+                    
+                                            <div class="col-1 profilePic">
+                            <a itemprop="name" rel="author" href="/profiles/dannysullivan/">
+                                            
+                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2012/02/17/cffee9f8-eacb-11e2-8339-d4ae52e62bcc/thumbnail/70x70/8c7f3dfffa2404f39e39e23061857fcc/headshots_dannysullivan.jpg" class="" alt="Danny Sullivan mugshot" height="70" width="70"></figure></a>
+                        </div>
+                    
+                    <div class="col-7 author-info">
+                        <div class="row author-details">
+                            <span class="author-name">
+                                <a itemprop="name" rel="author" class="authors" href="/profiles/dannysullivan/">
+                                    Danny Sullivan
+                                </a>
+                            </span>
+
+                                                            <span class="author-social">
+                                    <ul class="author-social"><li><a target="_blank" href="https://twitter.com/intent/user?screen_name=dannysullivan" id="twitter-circle">
+                                            <div class="social-button-small twitter">
+    <div class="icon icon-small-twitter">twitter</div>
+</div>
+</a></li>
+                                        
+                                                                                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=dannysullivan" id="fb-circle">
+                                            <div class="social-button-small facebook">
+    <div class="icon icon-small-facebook">facebook</div>
+</div>
+</a></li>
+                                        
+                                                                                    <li><a rel="author" target="_blank" href="http://plus.google.com/113217924531763968801?rel=author" id="google-circle">
+                                            <div class="social-button-small googleplus">
+    <div class="icon icon-small-googleplus">googleplus</div>
+</div>
+</a></li>
+                                                                            </ul></span>
+                            
+                                                            <div class="row author-bio">
+                                    <p class="shortBio">
+                                        Danny Sullivan is a journalist who has covered the search and internet marketing space for over 15 years. He's founding editor of Search Engine Land and Marketing Land, and writes a personal blog called Daggle (and maintains his disclosures page there).
+                                        <a rel="author" href="/profiles/dannysullivan/">
+                                            See full bio
+                                        </a>
+                                    </p>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+                    
+                    <div class="yad-magnet yad-how-trapped-are-your-digital-movies-and-tv-shows" data-component="yahooAdSearch" data-yahoo-ad-search-options='{"yahooId":"6260d330-5e03-3d07-8454-5329587c1b5f","yahooSelector":".yad-how-trapped-are-your-digital-movies-and-tv-shows"}'></div>
+            </footer></article><!-- Ad: Removed: ad_name "inline_product_carousel_top" was removed --><div id="info-board-top-54233dd5e2de9" class="ad-info-board-top" data-ad="info-board-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing info-board-top-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("info-board-top-54233dd5e2de9");
+    </script></div>
+                                                                                            
+                                                        
+                                                        <div class="collapsible" data-component="toggle">
+            
+<!-- General comments -->
+<div id="livefyreContainer-72c4e488-8c86-11e2-b06b-024c619f5c3d" class="livefyreContainer">
+    <a name="comments" class="livefyreJumpTarget"> </a>
+    <h3><span>Join the discussion</span></h3>
+
+    
+            <div id="livefyreConversation-72c4e488-8c86-11e2-b06b-024c619f5c3d" class="livefyreConversation" data-component="livefyreConversation" data-livefyre-conversation-options='{"globalConfig":{"network":"cnet.fyre.co"},"commentStreamConfigs":{"siteId":311569,"articleId":"57566817_12","el":"livefyreConversation-72c4e488-8c86-11e2-b06b-024c619f5c3d","checksum":"d2b4e7a6fcac1966ee7182c358962945","collectionMeta":"eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IkhvdyB0cmFwcGVkIGFyZSB5b3VyIGRpZ2l0YWwgbW92aWVzIGFuZCBUViBzaG93cz8iLCJ1cmwiOiJodHRwOlwvXC93d3cuY25ldC5jb21cL25ld3NcL2hvdy10cmFwcGVkLWFyZS15b3VyLWRpZ2l0YWwtbW92aWVzLWFuZC10di1zaG93c1wvIiwiY2hlY2tzdW0iOiJkMmI0ZTdhNmZjYWMxOTY2ZWU3MTgyYzM1ODk2Mjk0NSIsImFydGljbGVJZCI6IjU3NTY2ODE3XzEyIn0.NyTnZYQLUXmNQL-OnXeiuFkv19lUmVgAUe71JheopYI"},"profileURL":"\/profiles\/%7Busername%7D\/"}'></div>
+    
+    <div class="livefyreFooter">
+                <p class="livefyrePowered">Conversation powered by Livefyre</p>
+    </div>
+</div>
+
+            <div class="toggleComments" data-item="trigger">
+                <span class="showComments">Show Comments</span>
+                <span class="hideComments">Hide Comments</span>
+            </div>
+        </div>
+                                                                        </div>
+            <div class="col-4">
+                                                    
+                                                        
+                                            
+        
+
+<div class="tocfixate" data-component="fixate" data-fixate-options='{"offset":{"top":90,"bottom":0,"topPlus":90},"guideTopPlus":"[data-toc-item=\u002772c4e488-8c86-11e2-b06b-024c619f5c3d\u0027] .breadcrumb","guideLeft":"[data-toc-item=\u002772c4e488-8c86-11e2-b06b-024c619f5c3d\u0027] .container .col-12 &gt; .row &gt; .col-8","guideBottom":"[data-toc-item=\u002772c4e488-8c86-11e2-b06b-024c619f5c3d\u0027] .ad-leader-bottom"}'>
+        <div class="tocWrapper" data-toc="wrapper">
+        <div class="toc" data-toc="container" data-component="toc">
+
+                                                                                                
+                                
+                <h5>This Week's Must Reads</h5>
+
+                                                    <div class="item current" data-toc="item" section="TOC.1">
+                        <div class="progressContainer"></div>
+                        <a class="title" data-goto="72c4e488-8c86-11e2-b06b-024c619f5c3d" data-url="/news/how-trapped-are-your-digital-movies-and-tv-shows/">
+
+                            <div class="col-1">
+                                <div class="progress">1</div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="hed">How trapped are your digital movies and TV shows?</div>
+
+                                                                                                    <span class="topic">Tech Culture</span>
+                                                            </div>
+                        </a>
+                    </div>
+
+                                                                            <div class="item" data-toc="item" section="TOC.2">
+                        <div class="progressContainer"></div>
+                        <a class="title" data-goto="5a525097-f8dc-4ebf-b1e0-f8f5d9630c2f" data-url="/news/apples-touch-id-still-vulnerable-to-hack-security-researcher-finds/">
+
+                            <div class="col-1">
+                                <div class="progress">2</div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="hed">Apple's Touch ID still vulnerable to hack, security researcher finds</div>
+
+                                                                                                    <span class="topic">Security</span>
+                                                            </div>
+                        </a>
+                    </div>
+
+                                                                            <div class="item" data-toc="item" section="TOC.3">
+                        <div class="progressContainer"></div>
+                        <a class="title" data-goto="46873cb4-1165-494b-96fb-67f199f094fe" data-url="/news/blackberry-hopes-love-it-or-hate-it-passport-earns-it-a-second-chance/">
+
+                            <div class="col-1">
+                                <div class="progress">3</div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="hed">BlackBerry hopes 'love it or hate it' Passport earns it a second chance</div>
+
+                                                                                                    <span class="topic">Mobile</span>
+                                                            </div>
+                        </a>
+                    </div>
+
+                                                                            <div class="item" data-toc="item" section="TOC.4">
+                        <div class="progressContainer"></div>
+                        <a class="title" data-goto="c982ca61-a4cb-489c-9fd7-642d4a224309" data-url="/news/scientists-make-quantum-leap-teleport-data-farther-than-ever-before/">
+
+                            <div class="col-1">
+                                <div class="progress">4</div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="hed">Scientists make quantum leap, teleport data farther than ever</div>
+
+                                                                                                    <span class="topic">Sci-Tech</span>
+                                                            </div>
+                        </a>
+                    </div>
+
+                                                                            <div class="item last" data-toc="item" section="TOC.5">
+                        <div class="progressContainer"></div>
+                        <a class="title" data-goto="565f8d9b-8079-45fc-bdac-354df740f40f" data-url="/news/iphone-6-models-set-gold-standard-in-photo-video-quality-tests/">
+
+                            <div class="col-1">
+                                <div class="progress">5</div>
+                            </div>
+
+                            <div class="col-3">
+                                <div class="hed">iPhone 6 models 'set gold standard' in photo, video quality tests</div>
+
+                                                                                                    <span class="topic">Phones</span>
+                                                            </div>
+                        </a>
+                    </div>
+
+                                                                            </div>
+    </div>
+
+    
+                                    <div id="mpu-plus-top-54233dd5e2de9" class="ad-mpu-plus-top" data-ad="mpu-plus-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing mpu-plus-top-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("mpu-plus-top-54233dd5e2de9");
+    </script></div>
+            </div>
+
+                                                                        </div>
+                                </div>
+                        </div>
+            </div>
+                <div class="row">
+        <div class="col-12">
+                                                    
+                                                        
+                                            
+                                    <div id="leader-bottom-54233dd5e2de9" class="ad-leader-bottom" data-ad="leader-bottom">
+    <script>
+        window.console && console.log && console.log("ADS: queuing leader-bottom-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("leader-bottom-54233dd5e2de9");
+    </script></div>
+                                                                                            
+                                                        
+                                                        
+<!--[if lt IE 9]> <noscript> <div class="sectionTag fullWidthSixAssets"> </noscript> <![endif]-->
+<section class="fullWidthSixAssets" section="fullWidthSixAssets"><div class="col-12 items">
+        <h5><span>Latest Galleries from CNET</span></h5>
+
+                    
+            <a href="/pictures/iphone-6-plus-vs-galaxy-note-3-cameras-compared-pictures/" class="col-2 item imageLinkWrapper" target="_blank">
+                <div class="image">
+                                                    
+                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2014/09/24/e2a53341-7283-4bfb-a1f3-13abcffb1bb7/thumbnail/170x128/d5628e5039f77027f9943fb269c575c6/img0158.jpg" class="" alt="" height="128" width="170"></figure><div class="dek">iPhone 6 Plus vs. Galaxy Note 3: Cameras compared (pictures) </div>
+                </div>
+            </a>
+                    
+            <a href="/pictures/meet-orbnext-the-chameleon-of-the-smart-home-pictures/" class="col-2 item imageLinkWrapper" target="_blank">
+                <div class="image">
+                                                    
+                                <figure class=" img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2014/09/24/40eadde2-44b9-4fd3-b9e5-fbbe87960548/thumbnail/170x128/eaeb85cde55ca84573b7af70328c57a1/orbnext-11.jpg" class="" alt="" height="128" width="170"></figure><div class="dek">Meet Orbnext, the chameleon of the smart home (pictures) </div>
+                </div>
+            </a>
+                    
+            <a href="/pictures/alcatel-onetouch-fierce-2-pictures/" class="col-2 item imageLinkWrapper" target="_blank">
+                <div class="image">
+                                                    
+                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/09/23/800eeb36-3ee6-4b47-86db-567aa3e17593/thumbnail/170x128/1e429e9e66248f3d0a2f8ca3213964eb/alcatel-onetouch-fierce-2-5078-006.jpg" class="" alt="" height="128" width="170"></figure><div class="dek">Size up Alcatel's 5-inch OneTouch Fierce 2 (pictures) </div>
+                </div>
+            </a>
+                    
+            <a href="/pictures/lg-g-vista-pictures/" class="col-2 item imageLinkWrapper" target="_blank">
+                <div class="image">
+                                                    
+                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/09/23/438e66c6-804b-434f-89c1-bbad5d10e9c3/thumbnail/170x128/ea75b06ccf8d0a3e6ff70ff7a345783e/lg-g-vista-4848-001.jpg" class="" alt="" height="128" width="170"></figure><div class="dek">Big LG G Vista goes big on value (pictures) </div>
+                </div>
+            </a>
+                    
+            <a href="/pictures/kyocera-hydro-life/" class="col-2 item imageLinkWrapper" target="_blank">
+                <div class="image">
+                                                    
+                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/09/23/4adac297-ff01-44f4-80e1-29373ac5a257/thumbnail/170x128/60f15a9b4689a4f6a906bd7750db01e7/kyocera-hydro-life-4763-001.jpg" class="" alt="" height="128" width="170"></figure><div class="dek">A closer look at the Kyocera Hydro Life </div>
+                </div>
+            </a>
+                    
+            <a href="/pictures/tastemade-makes-it-easy-to-make-video-reviews-pictures-screenshots/" class="col-2 item imageLinkWrapper" target="_blank">
+                <div class="image">
+                                                    
+                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2014/09/23/520bd766-aa86-42ab-adc4-b5dec70dbeaf/thumbnail/170x128/aeeaa5d44151d836d9955b0d0b3cdb1a/tastemadepromo.jpg" class="" alt="" height="128" width="170"></figure><div class="dek">Tastemade makes it easy to make video reviews (pictures) </div>
+                </div>
+            </a>
+            </div>
+
+    </section></div>
+
+<!--[if lt IE 9]> <noscript></div></noscript> <![endif]-->
+
+
+                                                                        </div>
+            </div>
+        </div>
+</div>
+
+
+
+                            </div>
+            
+                            </div>
+            </div>
+
+            
+
+            
+                            <div id="breaking-news" data-component="breakingNews"></div>
+            
+                                                    
+<footer id="rbFooter"><div id="footerCopyright" class="col-12">
+        <span class="copyright">© CBS Interactive Inc.  /  All Rights Reserved.</span>
+        <div id="legal">
+            <a href="http://legalterms.cbsinteractive.com/privacy" rel="nofollow">Privacy Policy</a>
+            <a href="http://legalterms.cbsinteractive.com/adchoice" rel="nofollow">Ad Choice</a>
+            <a href="http://legalterms.cbsinteractive.com/terms-of-use" rel="nofollow">Terms of Use</a>
+            <a href="http://legalterms.cbsinteractive.com/eula" rel="nofollow">Mobile User Agreement</a>
+        </div>
+    </div>
+
+    <div class="container">
+        
+                                    <div id="dynamic-text-link-top-54233dd5e2de9" class="ad-dynamic-text-link-top" data-ad="dynamic-text-link-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing dynamic-text-link-top-54233dd5e2de9 for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("dynamic-text-link-top-54233dd5e2de9");
+    </script></div>
+                </div>
+
+    <nav id="footerMap" class="container"><ul class="col-2 first"><li><a href="/">cnet</a></li>
+        </ul><ul class="col-2"><li class="section">Reviews</li>
+            <li><a href="/reviews/">All Reviews</a></li>
+            <li><a href="/topics/audio/">Audio</a></li>
+            <li><a href="/topics/cameras/">Cameras</a></li>
+            <li><a href="/topics/car-tech/">Car Tech</a></li>
+            <li><a href="/topics/desktops/">Desktops</a></li>
+            <li><a href="/topics/laptops/">Laptops</a></li>
+            <li><a href="/topics/phones/">Phones</a></li>
+            <li><a href="/topics/tablets/">Tablets</a></li>
+            <li><a href="/topics/tvs/">TVs</a></li>
+        </ul><ul class="col-2"><li class="section">News</li>
+            <li><a href="/news/">All News</a></li>
+            <li><a href="/apple/" data-vanity-rewritten="true">Apple</a></li>
+            <li><a href="/crave/" data-vanity-rewritten="true">Crave</a></li>
+            <li><a href="/topics/internet/" data-vanity-rewritten="true">Internet</a></li>
+            <li><a href="/tags/microsoft/">Microsoft</a></li>
+            <li><a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a></li>
+            <li><a href="/topics/sci-tech/" data-vanity-rewritten="true">Sci-Tech</a></li>
+            <li><a href="/topics/security/" data-vanity-rewritten="true">Security</a></li>
+            <li><a href="/topics/tech-industry/" data-vanity-rewritten="true">Tech Industry</a></li>
+        </ul><ul class="col-2"><li class="section">Video</li>
+            <li><a href="/videos/">All Video</a></li>
+            <li><a href="/apple-byte/" data-vanity-rewritten="true">Apple Byte</a></li>
+            <li><a href="/cnet-on-cars/" data-vanity-rewritten="true">CNET On Cars</a></li>
+            <li><a href="/cnet-top-5/" data-vanity-rewritten="true">CNET Top 5</a></li>
+            <li><a href="/cnet-update/" data-vanity-rewritten="true">CNET Update</a></li>
+            <li><a href="/next-big-thing/" data-vanity-rewritten="true">Next Big Thing</a></li>
+            <li><a href="/the-404/" data-vanity-rewritten="true">The 404</a></li>
+            <li><a href="/the-fix/" data-vanity-rewritten="true">The Fix</a></li>
+            <li><a href="/xcar/" data-vanity-rewritten="true">XCAR</a></li>
+        </ul><ul class="col-2" data-component="mobileFooterLink"><li class="section">More</li>
+            <li><a href="http://www.cbsinteractive.com/">About CBS Interactive</a></li>
+            <li><a href="/about/" data-vanity-rewritten="true">About CNET</a></li>
+            <li><a href="/cnet100/">CNET 100</a></li>
+            <li><a href="http://forums.cnet.com/">CNET Forums</a></li>
+            <li><a href="/apps/">CNET Mobile</a></li>
+                    <li><a href="http://shopper.cnet.com/deals/">CNET Shopper Deals</a></li>
+                    <li><a href="https://cbsi.secure.force.com/CBSi/knowledgehome">Help Center</a></li>
+            <li><a href="http://reprints.ygsgroup.com/m/cnet/">Permissions</a></li>
+        </ul><ul class="col-2 last"><li class="section">Follow CNET via...</li>
+            <li><a href="http://www.facebook.com/cnet" class="social-core-facebook">Facebook</a></li>
+            <li><a href="http://twitter.com/cnet" class="social-core-twitter">Twitter</a></li>
+            <li><a href="https://plus.google.com/u/0/105198124856956810263/posts" class="social-core-google">Google+</a></li>
+            <li><a href="http://www.youtube.com/user/CNETTV" class="social-core-youtube">YouTube</a></li>
+            <li><a href="http://www.linkedin.com/today/news.cnet.com" class="social-core-linkedin">LinkedIn</a></li>
+            <li><a href="http://cnet.tumblr.com/" class="social-core-tumblr">Tumblr</a></li>
+            <li><a href="http://pinterest.com/cnet" class="social-core-pinterest">Pinterest</a></li>
+            <li><a href="/join-cnet/" class="social-core-newsletters">Newsletters</a></li>
+            <li><a href="/rss/" class="social-core-rss" data-vanity-rewritten="true">RSS</a></li>
+        </ul></nav></footer><!--Visual Revenue Reader Response Tracking Script (v6) --><script type="text/javascript">
+    function vr_init() {
+        $('.load-more').trigger('click');
+    }
+
+    var _vrq = _vrq || [];
+    _vrq.push(['id', 514]);
+    _vrq.push(['automate', false]);
+    _vrq.push(['track', function(){}]);
+    (function(d, a){
+    var s = d.createElement(a),
+    x = d.getElementsByTagName(a)[0];
+    s.async = true;
+    s.src = 'http://a.visualrevenue.com/vrs.js';
+    x.parentNode.insertBefore(s, x);
+    })(document, 'script');
+</script><!-- End of VR RR Tracking Script - All rights reserved --><div data-component="yahooBeacon" data-yahoo-beacon-options='{"yahooId":"3dea089e-a865-35a2-aee5-6271e85057cf","yahooClass":"YAD-3dea089e-a865-35a2-aee5-6271e85057cf"}'></div><script type="text/javascript">var a=document.createElement("script");a.type="text/javascript";a.async=!0;var b=["http://1ab45d4854fe036a37ff-6643978b1699ef52a80b7f45a7bcfe3d.r85.cf2.rackcdn.com","https://f779fb3225a63b647b8a-6643978b1699ef52a80b7f45a7bcfe3d.ssl.cf2.rackcdn.com"];a.src=("https:"==document.location.protocol?b[1]:b[0])+"/ypcbpl8yho5x.js";var d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(a,d);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-4.newrelic.com","licenseKey":"252d33b7c9","applicationID":"3674670","transactionName":"Y1xRYUdUX0ICUUxaDloWclZBXF5fTFNKRwhXVVZqRlxfVg9XFkYS","queueTime":0,"applicationTime":330,"ttGuid":"","agentToken":"","atts":"TxtSFw9OTEw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-460.min.js"}</script></body></html>

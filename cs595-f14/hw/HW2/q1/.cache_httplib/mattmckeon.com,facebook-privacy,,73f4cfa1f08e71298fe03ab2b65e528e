@@ -1,0 +1,194 @@
+status: 200
+content-length: 12880
+content-location: http://mattmckeon.com/facebook-privacy/
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+server: Apache
+last-modified: Wed, 20 Feb 2013 20:08:02 GMT
+-content-encoding: gzip
+etag: "3250-4d62d83ec0c80"
+date: Wed, 24 Sep 2014 22:21:20 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>The Evolution of Privacy on Facebook</title>
+	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>
+	<!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="css/main.css" type="text/css"/>
+	
+	 <script src="processing-0.8.min.js" type="text/javascript" charset="utf-8"></script> 
+		
+		<script type="text/javascript">
+		 var images = ["frame1.png", "frame2.png", "frame3.png", "frame4.png", "frame5.png", "frame6.png"];
+		 var currentFrame = 0;
+		 function preloadFrames()
+			{
+				var img;
+				for (var i = 0; i<images.length; i++)
+				{
+					 img = new Image();
+					img.src = images[i];
+				}
+			}
+			
+			function advanceSlide()
+			{
+				var img = document.getElementById("slideFrame");
+				currentFrame = (currentFrame + 1) % images.length;
+				img.src = images[currentFrame];
+			}
+			
+			function toggleVis()
+			{
+				var img = document.getElementById("imageVersion");
+				var canvas = document.getElementById("canvasVersion");
+				if (img.style.display == "none")
+				{
+					canvas.style.display = "none";
+					img.style.display = "block";
+					preloadFrames();
+				}
+				else
+				{
+					img.style.display = "none";
+					canvas.style.display = "block";
+				}
+			}
+		</script>
+</head>
+<body>
+	<div class="container">
+		<h1>The Evolution of Privacy on Facebook</h1>
+		<h4>Changes in default profile settings over time</h4>
+		<div id="canvasVersion">
+			<em>Trouble seeing the vis? Try switching to <a href="#" onclick="toggleVis();return false;">an image-based version</a></em>.
+			<canvas id="vis" datasrc="facebook-privacy.pjs" width="780" height="650"></canvas>
+		</div>
+		<div id="imageVersion" style="display:none">
+			<em><a href="#" onclick="toggleVis();return false;">Switch to the animated version</a> (won't work in IE)</em>.<br/>
+			<a href="#" onclick="advanceSlide(); return false;"><img id="slideFrame" style="width:810px;height:670px;border:0" src="frame1.png"/></a>		  
+		</div>
+	<!--[if IE]>
+		<script type="text/javascript">
+			toggleVis();
+		</script>
+	<![endif]-->
+	<br/>
+	<div class="span-6">
+		<a href="#disqus_thread">num</a> 
+	</div>
+	<div class="span-16" style="text-align: right">
+		<b>Want to use this graphic in print or on your website? <a href="usage.html">Read this.</a></b>
+	</div>
+	<hr/>
+	<div class="span-14 colborder">
+		<h3>About</h3>
+		<p>Facebook is a great service. <a href="http://www.facebook.com/mattmckeon">I have a profile</a>, and so does nearly everyone I know under the age of 60.</p>
+		<p>However, Facebook hasn't always managed its users' data well. In the beginning, it restricted the visibility of a user's personal information to just their friends and their "network" (college or school). Over the past couple of years, the default privacy settings for a Facebook user's personal information have become more and more permissive. They've also changed how your personal information is classified several times, sometimes in a manner that has been confusing for their users. This has largely been part of Facebook's effort to correlate, publish, and monetize their social graph: a massive database of entities and links that covers everything from where you live to the movies you like and the people you trust.</p>
+		<p><a href="http://www.eff.org/deeplinks/2010/04/facebook-timeline">This blog post</a> by Kurt Opsahl at the the EFF gives a brief timeline of Facebook's Terms of Service changes through April of 2010. It's a great overview, but I was a little disappointed it wasn't an <em>actual</em> timeline: hence my initial inspiration for this infographic.</p>  
+		<p>Let me be clear about something: <em><b>I like Facebook</b></em>. It's helped me reconnect with dozens of people with whom I'd lost touch, and I admire the work their team does. I hope your takeaway from this infographic isn't "I'm deleting my account"; rather, I hope it's "I'm checking my privacy settings <em>right now</em>, and changing them to a level with which I'm comfortable".</p>
+		<hr/>
+		<a name="data"><h3>Data</h3></a>
+		<p>The data for this chart was derived from my interpretation of the Facebook Terms of Service over the years, along with my personal memories of the default privacy settings for different classes of personal data. The population sizes are statistics from Google, the Facebook Data Team, and wild guesses based on what seemed reasonable to me.</p>
+		<p><b>I welcome data corrections</b>, so please <a href="#comments">leave a comment below</a> if you have better numbers to share.</p> 
+		<hr/>
+		<h3>Types of Personal Data</h3>
+		<p>Facebook's classification system for personal data has changed significantly over the years. I tried to capture what I thought were broad topics that have remained relatively consistent. But they might need some explanation.</p>
+		<ul>
+			<li><b>Likes</b>: a person, band, movie, web page, or any other entity represented in Facebook's social graph that has a "like" button. "Likes" started with status updates, but have now grown to encompass pretty much everything. In Facebook Newspeak, they're a "Connection".</li>
+			<li><b>Name, Picture, Gender, Birthday, Contact Info</b>: self-explanatory</li>
+			<li><b>Extended Profile Data</b>: Your family members, city, place of birth, religious views, favorite authors, schools attended -- anything that is an entity you can list a relationship to in your profile.</li>
+			<li><b>Friends</b>: The people you've friended</li>
+			<li><b>Networks</b>: The personal networks you've set up on Facebook (e.g. colleges &amp; universities or companies).</li>
+			<li><b>Wall posts &amp; Photos</b>: Self-explanatory.
+		</ul>
+		<hr/>
+		<h3>Audiences</h3>
+		<p>Audience sizes are based on averages, interpolations of those averages across time, and guesses from my personal experience where that data was unavailable.</p>
+		<p>One thing you may notice is that by 2009, the term "Network" for the inner circle is replaced by "FoF", or "Friends of Friends". Facebook introduced this in 2008 to cater to users whose networks were too large to be manageable. My guess is that this effectively shrank the potential number of people who could see this particular kind of data. I ballparked an estimate for the average size of this extended friend network by taking the average number of friends a user had in 2009 (130) and assuming there was on average a 2/3rds overlap with each of their friends, yielding an average of 8450 people.</p>
+		<hr/>
+		<h3>Implementation</h3>
+		<p>The audience scale is logarithmic, so that we can compare audience sizes of 100 and 1 billion. I also did a big no-no and mapped the audience size to the length of the slice, not its area. I don't feel too terrible about this, because the area comparison is already distorted by the log scale. Plus, frankly, the linear scale just looks better.</p>
+		<p>I built this sketch using <a href="http://processingjs.org/">Processing.js</a>. You're welcome to <a href="facebook-privacy.pjs">download the source</a>. Sorry, no Internet Explorer.</p>
+		<hr/>
+		<h3>About me</h3>
+		<p>My name's Matt McKeon. I'm a developer with the <a href="http://www.research.ibm.com/visual/">Visual Communication Lab</a> at IBM Research's <a href="http://www.research.ibm.com/social/">Center for Social Software</a>. The views expressed here are my own, and do not reflect those of IBM. You can find me on <a href="http://twitter.com/mattmckeon">Twitter</a> and (hah) <a href="http://facebook.com/mattmckeon">Facebook</a>.</p>
+	</div>
+	<div class="span-6" colborder>
+		<h4>UPDATES</h4>
+		<ul>
+			<li><em>05/19/10 5:50PM EST</em> - Since I've received quite a few inquiries, I've clarified my position on <a href="usage.html">usage of this graphic</a> online and in print.</li>
+			<li><em>05/15/10 11:15AM EST</em> - <a href="http://mattmckeon.com/facebook-privacy/#comment-50349151">Haggai Hundert</a> was kind enough to show me proof that Photo Albums existed in 2005. Therefore, I've reinstituted them for that year. Thanks Haggai!</li>
+			<li><em>05/12/10 10:40PM EST</em> - Found an <a href="http://blog.facebook.com/blog.php?post=2207522130">official blog post</a> that suggests Photo Albums didn't exist in 2005. I've grayed them out for that year.</li>
+			<li><em>05/12/10 8:30PM EST</em> - For completeness, I've included "Contact Info" as a personal data category. I'm making the assumption that it's defaulted to Friends Only since 2005.</li>
+			<li><em>05/11/10 11:45PM EST</em> - After reading a couple of old posts on the Facebook blog, I decided that my using "Network" to refer to both Networks and Friends-of-Friends was too confusing, and my guesses on the sizes of these networks were sloppy. I've reduced my estimates of the FoF network, and fixed the title so that it changes at what I think is the appropriate time. See the "Audiences" section of the writeup for details.</li>
+			<li><em>05/11/10 8:30AM EST</em> - Added subtitle and WARNING blurb below vis.</li>
+			<li><em>05/10/10 11:10PM EST</em> - Found an error: the "Networks" slice should be tracking the "Name" and "Picture" slices, since those are revealed when searching for a user.</li>
+			<li><em>05/10/10 9:30PM EST</em> - After further reflection, I've decided that "Demographics" is too broad a category. I split it into "Birthday" and "Gender"; the rest is captured by "Extended Profile Data".</li>
+			<li><em>05/10/10 6:30PM EST</em> - Blurb added to the About section RE: I like Facebook, really, I do!</li>
+			<li><em>05/10/10 8:30AM EST</em> - Corrections: <a href="http://mattmckeon.com/facebook-privacy/#comment-49140280">Jaoe</a> and <a href="http://mattmckeon.com/facebook-privacy/#comment-49169392">becca</a> pointed out that Wall Posts and Photos now default to "Everyone"; <a href="http://mattmckeon.com/facebook-privacy/#comment-49188088">Abbey</a> recalls that Name and Picture have been available to all Facebook users since 2005.</li>
+			<li><em>05/07/10 11:30PM EST</em> - the "Like" category is now grayed out before 2009 (thanks <a href="http://mattmckeon.com/facebook-privacy/#comment-49050421">"pops"</a>!) and photos are now shown as being available to your network by 2006 (thanks <a href="http://mattmckeon.com/facebook-privacy/#comment-49033486">theharmonyguy</a>!).</li>
+		</ul>
+	</div>	
+	<hr class="space"/>
+	<a name="#comments">&nbsp;</a>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	  /**
+	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+	    */
+	  (function() {
+	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	   dsq.src = 'http://mattmckeon.disqus.com/embed.js';
+	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=mattmckeon">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	<hr/>
+	</div>
+	<script type="text/javascript">
+	//<![CDATA[
+	(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+		if(links[i].href.indexOf('#disqus_thread') >= 0) {
+			query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+		}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/mattmckeon/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+	//]]>
+	</script>
+<!-- 	<div style="text-align:center"> -->
+<!-- 	  <script type="text/javascript"><\!-- -->
+<!-- 					     google_ad_client = "ca-pub-9663018061375574"; -->
+<!-- 					     google_ad_slot = "5201558552"; -->
+<!-- 					     google_ad_width = 728; -->
+<!-- 					     google_ad_height = 90; -->
+<!-- 					     //-\-> -->
+<!-- 	  </script> -->
+<!-- 	  <script type="text/javascript" -->
+<!-- 		  src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> -->
+<!-- 	  </script> -->
+<!-- 	</div> -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-7546247-1");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	
+</body>
+</html>

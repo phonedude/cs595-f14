@@ -1,0 +1,524 @@
+status: 200
+content-length: 30381
+content-location: http://ejohn.org/blog/project-based-interviews/
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding
+server: nginx/0.7.65
+last-modified: Wed, 24 Sep 2014 21:19:15 GMT
+connection: keep-alive
+etag: "460141-76ad-503d63c77ac25"
+date: Wed, 24 Sep 2014 22:11:42 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<meta name="viewport" content="width=720"/>
+  <title>John Resig -   Use Project-based Interviews Instead of &#8220;GitHub&#8221;</title>
+  <link href="/css/style.css" media="screen" rel="Stylesheet" type="text/css"/>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/JohnResig" />
+</head>
+<body>
+<div id="wrapper">
+<div id="head" class="other">
+    <div class="wrap">
+	<div class="nav">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog/">Blog</a></li>
+			<li><a href="/research/">Research</a></li>
+			<li><a rel="author" href="/about/">About Me</a></li>
+		</ul>
+	</div>
+	<div class="side">
+		<a href="http://ejohn.org/about/"><img src="/files/jeresig-full-profile-2013.48.jpg" class="logo" alt="John Resig" width="48" height="48"/></a>
+		<div class="text">
+			<span class="name"><strong>John</strong> Resig</span><br/>
+			<a rel="author" href="/about/">Contact</a>,
+			<a href="http://eepurl.com/ywvS9">Subscribe</a>
+		</div>
+	</div>
+    </div>
+</div>
+<div id="wrap">
+	<div id="body"><div class="wrap">
+<h2>  Use Project-based Interviews Instead of &#8220;GitHub&#8221;</h2><br/>
+
+		
+		
+  			
+				<div class="postentry">
+
+
+<p>First, some background: I highly recommend that you read the following two blog posts: by Ashe Dryden: <a href="http://ashedryden.com/blog/the-ethics-of-unpaid-labor-and-the-oss-community">The Ethics of Unpaid Labor and the OSS Community</a> and by James Coglan: <a href="https://blog.jcoglan.com/2013/11/15/why-github-is-not-your-cv/">Why Github is not your CV</a>. They make some fantastic points and communicate the issues surrounding &#8220;Using Github as your CV&#8221;.</p>
+<p>Both of these were largely provoked by this tweet by Chris Anderson:</p>
+<blockquote class="twitter-tweet" lang="en"><p>Advice received on hiring software devs: reject anyone who doesn&#39;t have a <a href="https://twitter.com/github">@GitHub</a> profile (the more active the better). Agree?</p>
+<p>&mdash; Chris Anderson (@chr1sa) <a href="https://twitter.com/chr1sa/statuses/395388032976556032">October 30, 2013</a></p></blockquote>
+<p>I had a similar, extremely popular, tweet from 2011:</p>
+<blockquote class="twitter-tweet" lang="en"><p>When it comes to hiring, I&#39;ll take a Github commit log over a resume any day.</p>
+<p>&mdash; John Resig (@jeresig) <a href="https://twitter.com/jeresig/statuses/33968704983138304">February 5, 2011</a></p></blockquote>
+<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>I wanted to take this chance to clarify my position on using Github during the interview process a bit.</p>
+<p>To start, the position being posited by Chris is absolutely wrong. No one should ever require a Github profile in favor of a resume (unless you&#8217;re applying for a job at Github, perhaps?). Nor should anyone prefer candidates who provide a Github profile over those who don&#8217;t.</p>
+<p>(And to clarify, some people seem to be getting caught up in the terminology &#8211; I see many people using &#8216;Github&#8217; as a placeholder for &#8216;any OSS activity&#8217;, I hope no one is being that literal.)</p>
+<p>When you&#8217;re applying for a job it&#8217;s generally advised that the more high-quality information that you provide, the better. Anything that emphasizes your work habits, the quality of work that you will perform, and your interests is ideal. Thus the more targeted information you&#8217;re able to provide, the better. Github can provide this for some but almost certainly can&#8217;t be the final arbiter of this information for all.</p>
+<p>We&#8217;ve had dev applicants at <a href="https://www.khanacademy.org/">Khan Academy</a> who&#8217;ve applied with traditional resumes, resume + Github profile, resume + personal web site, resume + links to projects they&#8217;ve worked on, resume + a custom project made special for the interview.</p>
+<p>Out of all of these submissions the ones that&#8217;ve had the most impact are the ones where the candidates have gone above-and-beyond and done some custom coding, made a custom web site, or contributed to <a href="https://github.com/Khan">one of our Open Source projects</a> as part of the application process. A popular project is one where candidates make a custom exercise using our <a href="https://github.com/khan/khan-exercises">exercise framework</a>.</p>
+<p>There are a few reasons why this particular approach is so effective:</p>
+<ol>
+<li>It communicates just how interested the candidate is in the job: That they&#8217;re willing to go above-and-beyond to demonstrate their interest.</li>
+<li>They show that the sort of things they&#8217;re interested in working on are largely aligned with what we&#8217;re trying to do (especially if they make an exercise with our exercise framework).</li>
+<li>If it&#8217;s a coding project you can get a sense for what their code quality is like and how they wish to portray themselves.</li>
+</ol>
+<p>Naturally this isn&#8217;t completely ideal as it requires a candidate to put in considerably more time into their application than just generating a single-sheet resume. That being said the level of information that is conveyed is so much higher that it almost isn&#8217;t comparable.</p>
+<p>The traditional interview process is broken. It&#8217;s high-stress and a poor representation of what you&#8217;ll actually experience working for the employer, or working with the candidate.</p>
+<p>Over this past summer I developed a new &#8220;take-home&#8221; project-based interview for JavaScript-centric candidates to Khan Academy. I wanted a way to try to better-quantify a person&#8217;s development ability without having to necessarily suss out their best code from Github, or elsewhere.</p>
+<p>I extracted a tangible, contained, project that I had assigned to one of my interns and turned it into a project. Thus far it&#8217;s worked extremely well as, as can be <a href="http://blog.pamelafox.org/2013/09/technical-interviews-make-me-cry.html">attested to by Pamela Fox</a> (who completed the project with flying colors). I&#8217;m very pleased with this approach as it gets all the benefit of the candidate creating a custom project on their own but it has the added benefit of communicating to the candidate the exact type of projects that they&#8217;ll be working on here at Khan Academy.</p>
+<p>I&#8217;d love to open up the project at some point to show how it&#8217;s done but it&#8217;s still an effective tool in our interviewing toolbox and I&#8217;m not sure I want to lose that just yet!</p>
+<p>However, you can be privy to the project-based interview process if you wish to <a href="http://hire.jobvite.com/j/?cj=o0HMVfw8&#038;s=ejohn.org">apply to Khan Academy</a>! Specifically if you&#8217;re interested in working with <a href="http://www.pamelafox.org/">Pamela Fox</a> and me to build <a href="https://www.khanacademy.org/cs">Khan Academy&#8217;s Computer Science</a> platform (<a href="http://ejohn.org/blog/introducing-khan-cs/">more details on the launch</a>, a <a href="http://ejohn.org/blog/talk-khan-academy-computer-science/">technical talk</a> I gave on it after launch).</p>
+<p>If this really excites you then <a href="http://hire.jobvite.com/j/?cj=o0HMVfw8&#038;s=ejohn.org">you should apply</a> for a Software Developer position at Khan Academy and specifically request to go through the JavaScript project interview with myself. I&#8217;ll give you the project to work on and we&#8217;ll discuss the results extensively.</p>
+<p>The biggest drawback to this approach is that we&#8217;re demanding some of your free time to gather this information. We&#8217;re not sure what the best way is to offset this, as of yet. However by doing the project you&#8217;ll likely be able to skip a number of stages in our interview process and hopefully get started on changing the world with us at Khan Academy all the sooner.</p>
+ 
+
+				</div>
+
+		<p><small><strong>Posted:</strong> November 21st, 2013				</small>
+		<!--&#183; <a href="http://ejohn.org/blog/project-based-interviews/" class="retweet" title="Use Project-based Interviews Instead of &#8220;GitHub&#8221;"></a>-->
+		</p>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://ejohn.org/blog/project-based-interviews/"
+    dc:identifier="http://ejohn.org/blog/project-based-interviews/"
+    dc:title="Use Project-based Interviews Instead of &#8220;GitHub&#8221;"
+    trackback:ping="http://ejohn.org/blog/project-based-interviews/trackback/" />
+</rdf:RDF>				-->
+				<hr/>
+                                <form action="http://jquery.us1.list-manage1.com/subscribe/post?u=9d97dbe5f30bdee8c85a45e9e&amp;id=7257ed4444" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>   
+                                        <p><label for="mce-EMAIL">Subscribe for email updates:</label>
+                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></p>
+                                </form>
+		<p><small>If you particularly enjoy my work, I appreciate donations <a href="https://www.gittip.com/jeresig">given with Gittip</a>.</small></p>
+
+<!-- You can start editing here. -->
+
+
+	<h4 id="comments">
+	16 Comments		<a href="#postcomment" title="Jump to the comments form" id="showcomment" onclick="document.getElementById('commentlist').style.display='block';">(Show Comments)</a>
+		</h4>
+
+	<ol id="commentlist" style="display:none;">
+
+	
+		<li class="alt " id="comment-393780">
+		
+		<h3 class="commenttitle"><b><a href='http://davidwparker.com' rel='external nofollow' class='url'>David Parker</a></b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393780" title="Permanent link to this comment">1:42 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>Great post John.</p>
+<p>We also do project-based interviews. We do this in lieu of both Github and more importantly, technical interviews. I&#8217;d rather see that you can get the job done than theoretical answers to questions that don&#8217;t matter.</p>
+<p>As to compensation, we offer to pay our interviewees for their time. I&#8217;m sure that Khan Academy has enough money, and few enough interviewees that make it to the project phase you could offer to pay a little money? Or am I wildly off on the number of interviewees?</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" author" id="comment-393781">
+		
+		<h3 class="commenttitle"><b><a href='http://ejohn.org/' rel='external nofollow' class='url'>John Resig</a></b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393781" title="Permanent link to this comment">1:45 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>@David: Good point, we&#8217;ve considered paying the interviewees as well although we haven&#8217;t implemented that, yet. We do get a lot of interviewees so it would be a substantial amount of money. It&#8217;s tricky as we&#8217;re mostly trying to figure out how to scale this up in a reasonable way (especially since it has the potential to simplify the interview process for us to a large degree).</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class="alt " id="comment-393782">
+		
+		<h3 class="commenttitle"><b><a href='http://timmywillison.com' rel='external nofollow' class='url'>Timmy Willison</a></b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393782" title="Permanent link to this comment">2:21 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>This is how I was hired for my first developer job. I don&#8217;t think I would have been able to demonstrate my commitment or capabilities had the company not asked me to build something. I am very thankful.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" " id="comment-393784">
+		
+		<h3 class="commenttitle"><b>exim</b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393784" title="Permanent link to this comment">2:56 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>Why the &#8220;Authorization to work in the US&#8221; requirement?</p>
+<p>You might be afraid of word-wide remote employment (so far), but are you really unable to sponsor a work permit? Besides H1B&#8217;s, there are other workaround visas.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class="alt " id="comment-393785">
+		
+		<h3 class="commenttitle"><b>Michael Pryor</b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393785" title="Permanent link to this comment">3:22 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>&#8220;The biggest drawback to this approach is that we’re demanding some of your free time to gather this information&#8221;</p>
+<p>You&#8217;d be demanding some of their free time to come to an in-person interview (or coding screen) as well, and it would be a lot less obvious to you if it was a good fit.  You shouldn&#8217;t look at this as a drawback.  This is an efficiency.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" " id="comment-393786">
+		
+		<h3 class="commenttitle"><b><a href='http://log.paulbetts.org' rel='external nofollow' class='url'>Paul Betts</a></b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393786" title="Permanent link to this comment">3:36 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>Even GitHub would (and has!) hired someone who doesn&#8217;t have a GitHub profile (or has one, but it&#8217;s not particularly active), though it certainly is a point in your favor if you have code we can read.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class="alt " id="comment-393787">
+		
+		<h3 class="commenttitle"><b>Nathan</b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393787" title="Permanent link to this comment">3:40 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>I thought I&#8217;d mention that I&#8217;ve been using a take-home project-based interview approach for years now. I discovered that (especially around here) &#8211; there&#8217;s a lot of people that think they know a lot more than they do.</p>
+<p>Giving them a small project really lets me evaluate someone on their actual skills, and also see what areas they may need support in if they get the job. Generally, we weed people out with a face-to-face chat (just to get a feel for them) before giving them the project &#8211; and we pay them for their time too. Having a chat first really helps to weed out a lot of time-wasters. There&#8217;s no fixed interview questions &#8211; we just get a feel for them and talk about stuff they&#8217;ve done. It tends to make the list of people that we give the project to quite small and keeps the process quite affordable.</p>
+<p>In general, I find the small fee for a few hours of contractor work is more than fair when you look at it in the context of what it can cost to find a good employee.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" " id="comment-393788">
+		
+		<h3 class="commenttitle"><b>Mike</b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393788" title="Permanent link to this comment">4:02 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>I just went through months of interviews with development companies. I finally accepted an offer, but the months-long trials gave me some insight.</p>
+<p>The most difficult problems I encountered were:</p>
+<p>1) No personal communication at all. The application process required that I re-design my resume for some custom system &#8211; sometimes it was a third-party platform, sometimes custom &#8211; either way it was a complete waste of my time because it would take hours a day to really do a good job. Most of the time, I&#8217;d get an email back about my qualifications not matching, even in cases where my experience is easily far beyond what they&#8217;re looking for.</p>
+<p>2) Too many companies refused to look at my GitHub or other work. There&#8217;s suddenly a trend where everyone refuses to look at my portfolio because they&#8217;ve been &#8220;scammed&#8221; too many times. They refuse to look at my code on github because they don&#8217;t trust I wrote it. I was blown away by these people&#8230;</p>
+<p>4) Some companies have *very* poorly designed tests. One company had a live code review session with me but they were grading me down on things that were personal preference &#8211; asking me what&#8217;s wrong with a piece of code and the answer turned out to be the spacing, tabs vs spaces, etc. I&#8217;ve even seen questions designed to trick the applicant, looking for people who know some inane technicality that most people get caught up on.</p>
+<p>5) It&#8217;s fine to do a project as part of the application. However, when you&#8217;re applying to hundreds of jobs in race to support your family, you can&#8217;t possibly spend a day doing unpaid work for every company that asks. I had to turn down dozens of crazy free-work requests, it&#8217;s just spam.</p>
+<p>The company I finally accepted an offer from had a single phone call after my application, and then a simple mockup project (with the requirement that no existing libraries be used). That actually sounded fun to do. I spent a day working on it and impressed everyone with the work. They also looked through all of my portfolio and GitHub work.</p>
+<p>Maybe 5% of all companies I applied to handled the application process in a way I&#8217;d call &#8220;humane&#8221;.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class="alt " id="comment-393789">
+		
+		<h3 class="commenttitle"><b>Engineer</b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393789" title="Permanent link to this comment">4:23 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>This is an excellent idea.</p>
+<p>I&#8217;ve got a project that I&#8217;ll have you implement as well, so I have an idea of what kind of team you&#8217;ve got going.</p>
+<p>This way it&#8217;s mutual too- you give up as much time as I give up.</p>
+<p>Much better than the limited 2 minutes of questions candidates get in traditional interviews (always answered vaguely.)</p>
+<p>Show me a company that&#8217;s as interested in jumping thru hoops as they are in making me jump thru hoops, and I&#8217;ll show you a company that&#8217;s not desperate for great engineers.</p>
+<p>Part of how the process is broken is how completely one sided it is.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" " id="comment-393790">
+		
+		<h3 class="commenttitle"><b>Nathaniel Eliot</b>
+	
+		<small><small>
+			(November 21, 2013 
+			at <a href="#comment-393790" title="Permanent link to this comment">6:43 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>Infochimps did a small project as the last portion of the interview process. It was roughly a week or two worth of real (but low priority) work, and was paid accordingly. One of the best interview techniques I&#8217;ve ever encountered, and not just because I got a job through it.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class="alt " id="comment-393825">
+		
+		<h3 class="commenttitle"><b><a href='http://westoque.com' rel='external nofollow' class='url'>William Estoque</a></b>
+	
+		<small><small>
+			(November 22, 2013 
+			at <a href="#comment-393825" title="Permanent link to this comment">7:07 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>Excellent post! Just basing a candidate on his Github profile for a job interview is really one-sided. I&#8217;ve seen/worked with good developers that have pretty much not done any open source at all.</p>
+<p>On how I do things, I usually give candidates a take home project that usually contains 2 exercises with it a local git repo so I can see progress on how they eventually came up with the solution. It also mimics the &#8220;real world&#8221; process of the job so you get most of the things you need to know.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" " id="comment-393826">
+		
+		<h3 class="commenttitle"><b>Rich D</b>
+	
+		<small><small>
+			(November 22, 2013 
+			at <a href="#comment-393826" title="Permanent link to this comment">8:58 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>@Engineer</p>
+<p>In this scenario you have many engineers are competing for a position.  Sometimes the situation is reversed, and companies compete for an engineer.  In that situation the companies will be the &#8216;interviewees&#8217; and spend time competing for the engineer&#8217;s limited time.</p>
+<p>Similar to sports, some athletes need to tryout to make the team, and some athletes have teams fighting over them.  It&#8217;s not always desperation, just the nature of competition.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class="alt " id="comment-393840">
+		
+		<h3 class="commenttitle"><b><a href='http://www.thejuliagroup.com' rel='external nofollow' class='url'>Annmaria</a></b>
+	
+		<small><small>
+			(November 23, 2013 
+			at <a href="#comment-393840" title="Permanent link to this comment">3:06 pm</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>Some people spend years working on proprietary or classified projects. For me, putting my side projects on github isn&#8217;t a priority although it&#8217;s been on my to-do list for a long time. When I hire people, I ask for some code samples and for them to explain to me why they made the coding decisions they did.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" " id="comment-393920">
+		
+		<h3 class="commenttitle"><b>Nick</b>
+	
+		<small><small>
+			(November 26, 2013 
+			at <a href="#comment-393920" title="Permanent link to this comment">1:37 am</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>Just curious &#8211; is this option also open to students applying for internships?</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class="alt " id="comment-394031">
+		
+		<h3 class="commenttitle"><b>Bill White</b>
+	
+		<small><small>
+			(November 27, 2013 
+			at <a href="#comment-394031" title="Permanent link to this comment">10:09 am</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>I&#8217;ve been given take home projects for interviews.  I&#8217;ve not found them every very satisfying.  The interviewers can&#8217;t reasonably expect the interviewee to spend more than a day on the project, and it&#8217;s hard to show anything substantive on a project that small.  The ones I&#8217;ve been asked to do were essentially trivial.  I&#8217;ve found that asking some simple programming question separates the sheep from the goats pretty well.  Asking: &#8220;Write a C definition of a linked list, and a function to print one backwards.&#8221; seems to be very appropriate.  Asking &#8220;Write a C function which inspects each member of a sized array of integers and returns true if all the integers are equal to 6.&#8221; seems to separate about 50% of the people I&#8217;ve interviewed in the past.</p>
+<p>I have never worked for an employer who would let me work on any open source project.  All the companys I have worked for have used open source pretty heavily, but I have always been enjoined from participating in any projects by non-compete clauses and proprietary information confidentiality clauses.  I suspect most people are like that.</p>
+</div>
+		
+		</li>
+
+		
+	
+		<li class=" " id="comment-394225">
+		
+		<h3 class="commenttitle"><b>Anon Coder</b>
+	
+		<small><small>
+			(December 4, 2013 
+			at <a href="#comment-394225" title="Permanent link to this comment">9:26 am</a>)
+					</small></small>
+		</h3>
+		
+		<div class="comment-text"><p>One question about project work: what about non-competes.</p>
+<p>Since it&#8217;s not uncommon to move to a competitor of a current employer, you would be essentially working for two competing companies, which is likely a breach of an employment contract, as well as a very bad idea in general.</p>
+</div>
+		
+		</li>
+
+		
+	
+	</ol>
+	
+	<!--<p class="small">
+	<a href='http://ejohn.org/blog/project-based-interviews/feed/'><abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post</a>		</p>-->
+
+
+
+<br/><hr/>
+<p><b>Comments are closed.</b><br/>
+Comments are automatically turned off two weeks after the original post. If you have a question
+concerning the content of this post, please feel free to <a href="http://ejohn.org/about/">contact me</a>.</p>
+<hr/>
+
+
+		<!--<script src="http://feeds.feedburner.com/~s/JohnResig?i=http://ejohn.org/blog/project-based-interviews/" type="text/javascript" charset="utf-8"></script>-->
+		<!--<img src="http://ejohn.org/apps/rss/?from=single&amp;id=6054" style="width:0px;height:0px;"/>-->
+
+		
+				
+	
+        </div></div>
+
+        <div id="side">
+                <div id="projects">
+                        <!--<h2>JavaScript Books</h2>-->
+
+                        <div class="box">
+                        <a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=193398869X&linkCode=as2&tag=jspro-20"><img src="/files/jsninja.74.jpg" class="icon" alt="Secrets of the JavaScript Ninja" width="74" height="94"/></a>
+                        <div class="desc">
+                                <h3><a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=193398869X&linkCode=as2&tag=jspro-20">Secrets of the JS Ninja</a></h3>
+                                <p>Secret techniques of top JavaScript programmers. Published by Manning.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <a href="http://ukiyo-e.org"><img src="/images/ukiyoe-76.png" class="icon" alt="Ukiyo-e Database and Search" width="74" height="74"/></a>
+                        <div class="desc">
+													<h3><a href="http://ukiyo-e.org/">Ukiyo-e.org</a></h3>
+													<p>Japanese woodblock print database and search engine.</p>
+												</div>
+												</div>
+												<!--
+                        <div class="box">
+                        <a href="http://jspro.org/"><img src="/images/ejohn-side-book.gif" class="icon" alt="Pro JavaScript Techniques"/></a>
+                        <div class="desc">
+                                <h3><a href="http://jspro.org/">Pro JavaScript</a></h3>
+                                <p>The best techniques for professional  JavaScript. Published by Apress.</p>
+                        </div>
+                        </div>
+												-->
+
+                        <!--<h3>Subscribe</h3>-->
+												<br/>
+                        <div class="box">
+				<form action="http://jquery.us1.list-manage1.com/subscribe/post?u=9d97dbe5f30bdee8c85a45e9e&amp;id=7257ed4444" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<label for="mce-EMAIL">Subscribe for email updates:</label>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+                        </div>
+                        <div class="box">
+                        <a href="http://twitter.com/jeresig"><img src="/images/twitter-74.png" class="icon" alt="John Resig Twitter Updates" width="74" height="74"/></a>
+                        <div class="desc">
+                                <h3><a href="http://twitter.com/jeresig">@jeresig</a></h3>
+                                <p>Infrequent, short, updates and links.</p>
+                        </div>
+                        </div>
+
+                        <!--<h2><a href="http://jobs.jsninja.com/">JavaScript Jobs</a></h2>-->
+												<br/>
+                        <div class="box">
+			<h3><a href="http://jobs.jsninja.com/">JavaScript Jobs</a></h3>
+			<!--<h3><a href="http://www.mozilla.com/en-US/careers/">Mozilla: Browser Jobs</a></h3>-->
+                        </div>
+
+            <script type="text/javascript" src="http://cdn.adpacks.com/adpacks.js?legacyid=1266114&zoneid=1386&key=4781b916559ccb5e5661d93b10000fad&serve=C6SI42Y&placement=ejohnorg&circle=dev" id="_adpacks_js"></script>
+
+			<!--<br/>
+                        <div class="box">
+                        <a href="http://ukiyo-e.org"><img src="/images/ukiyoe-76.png" class="icon" alt="Ukiyo-e Database and Search"/></a>
+                        <div class="desc">
+													<h3><a href="http://ukiyo-e.org/">Ukiyo-e.org</a></h3>
+													<p>Japanese woodblock print database and search engine.</p>
+												</div>
+												</div>-->
+
+                        <div class="box">
+												<!-- https://www.digitalocean.com/?refcode=092a26769f8e -->
+			  <a href="http://mediatemple.net/">VPS Hosting Provided by Media Temple</a>
+			</div>
+                </div>
+        </div>
+
+</div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-50335-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.074 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-09-24 16:19:15 -->
+
+<!-- super cache -->

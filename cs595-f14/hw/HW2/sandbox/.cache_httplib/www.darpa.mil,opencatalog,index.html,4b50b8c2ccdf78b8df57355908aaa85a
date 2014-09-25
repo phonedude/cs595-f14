@@ -1,0 +1,472 @@
+status: 200
+content-length: 26490
+date: Mon, 22 Sep 2014 16:48:42 GMT
+content-location: http://www.darpa.mil/opencatalog/index.html
+x-powered-by: ASP.NET
+x-aspnet-version: 2.0.50727
+vary: Accept-Encoding
+server: Microsoft-IIS/7.5
+last-modified: Tue, 16 Sep 2014 19:22:38 GMT
+connection: keep-alive
+-content-encoding: gzip
+cache-control: public, max-age=3034
+-varied-accept-encoding: gzip, deflate
+x-frame-options: SAMEORIGIN
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+
+  <!DOCTYPE html>
+  <html lang='en'>
+  <head>
+  <meta charset="utf-8">
+  <title>DARPA - Open Catalog</title>
+  <link rel='stylesheet' href='css/style_v2.css' type='text/css'/>
+  <link rel='stylesheet' href='css/banner_style.css' type='text/css'/>
+  <link rel='stylesheet' href='css/flick/jquery-ui-1.10.4.custom.css' type='text/css'/>
+  <link rel='stylesheet' href='css/list_style.css' type='text/css'/>
+  <link rel='stylesheet' href='css/header_footer.css' type='text/css'/>
+  <link rel='stylesheet' href="css/nv.d3.css" rel="stylesheet" type="text/css">  
+  <script language="javascript" type='text/javascript' src="list.min.js"></script>
+  <script language="javascript" type='text/javascript' src="d3.v3.js"></script>
+  <script language="javascript" type='text/javascript' src="nv.d3.js"></script>
+  <script language="javascript" type='text/javascript' src="tooltip.js"></script>
+  <script language="javascript" type='text/javascript' src="nv.utils.js"></script>
+  <script language="javascript" type='text/javascript' src="utils.js"></script>
+  <script language="javascript" type='text/javascript' src="legend.js"></script>
+  <script language="javascript" type='text/javascript' src="axis.js"></script>
+  <script language="javascript" type='text/javascript' src="distribution.js"></script>
+  <script language="javascript" type="text/javascript" src="jquery-1.11.1.min.js"></script>
+  <script language="javascript" type='text/javascript' src="jquery-ui.js"></script>
+  <script language="javascript" type='text/javascript' src='jquery.tablesorter.min.js'></script>
+  </head>
+  <body>
+ 
+
+<script type='text/javascript'>
+var swList = pubList = spubList = ssftList = "";
+
+$(document).ready(function() 
+    { 
+	   $('#sftwr').tablesorter({
+		// sort on the first column and second column, order asc 
+        	sortList: [[0,0],[1,0]] 
+    	}); 
+        $('#pubs').tablesorter({
+        	sortList: [[0,0],[1,0]] 
+    	});
+        $('#splash').tablesorter({
+		// sort on the first column, order asc 
+        	sortList: [[0,0]] 
+    	});
+		
+		//get the list of tabs and the number of tabs
+		var tabList = $('#tabs >ul >li');
+		var tabCount = $('#tabs >ul >li').size();
+		
+		//create table tabs
+		$(function() {
+			$( "#tabs" ).tabs
+			var param_tab = decodeURIComponent(getUrlParams("tab"));
+			var param_term = decodeURIComponent(getUrlParams("term"));
+			if(param_tab == "false"){ 
+				if($("#tabs0"))
+					$("#tabs").tabs({active: 0}); //software tab
+				else
+					$("#tabs").tabs({active: 1}); //publications tab
+			}
+			else if(param_tab && param_term){
+				if (param_tab == "tabs0")
+					swSearch(param_term);
+				else if (param_tab == "tabs1")
+					pubSearch(param_term);
+			}
+			else{
+				if (param_tab == "tabs0")
+					$("#tabs").tabs({active: 0});  //software tab
+				else if (param_tab == "tabs1")
+					$("#tabs").tabs({active: 1});  //publications tab
+			}
+
+		});
+
+		//configure table search and clear button for software and publications table
+		for (var i=0; i<tabCount; i++){
+			
+			var tabName = tabList[i].textContent.toLowerCase(); //name of tab
+
+			if(tabName == "software"){
+				var tabTable = $('#tabs0 table'); //table within this tab
+				var tabHeaders = getTableHeaders(tabTable);	
+				
+				var sw_options = {
+				  valueNames: tabHeaders
+				};
+				
+				swList = new List(tabName, sw_options);
+
+				$("#clear0").click(function() {
+					var currId = this.id.match(/\d+/g);
+					$("#search" + currId[0]).val("");
+					swList.search();
+				});
+			}
+			
+			if(tabName == "publications"){
+				var tabTable = $('#tabs1 table'); //table within this tab
+				var tabHeaders = getTableHeaders(tabTable);	
+				
+				var pub_options = {
+				  valueNames: tabHeaders
+				};
+
+				pubList = new List(tabName, pub_options);
+
+				$("#clear1").click(function() {
+					var currId = this.id.match(/\d+/g);
+					$("#search" + currId[0]).val("");
+					pubList.search();
+				});
+				
+			}
+			
+			if(tabName == "search"){
+
+				var table_clone = $('#tabs table').clone();
+				for (var k=0; k<table_clone.length; k++){
+					var searchHeaders = getTableHeaders(table_clone[k]);
+					var search_options = {
+						  valueNames: searchHeaders
+					};
+					
+					if (table_clone[k].id == "sftwr"){
+						$("#softwareSearch #sftwrTable").append(table_clone[k]);
+						//tables are hidden initially
+						$("#softwareSearch #sftwrTable").hide();
+						ssftList = new List("softwareSearch", search_options);					
+					}
+					else{
+						$("#publicationsSearch #pubTable").append(table_clone[k]);
+						$("#publicationsSearch #pubTable").hide();
+						spubList = new List("publicationsSearch", search_options);
+					}
+					
+				}
+
+				$("#clear2").click(function() {
+					var currId = this.id.match(/\d+/g);
+					$("#search" + currId[0]).val("");
+					if (ssftList != "")
+						ssftList.search();
+					if (spubList != "")
+						spubList.search();
+					//when search is cleared tables need to be hidden
+					$("#softwareSearch #sftwrTable").hide();
+					$("#publicationsSearch #pubTable").hide();
+						
+				});
+
+			}
+		}   
+    } 
+);
+
+function jump(h){
+    var url = location.href;
+    location.href = "#"+h;
+        history.replaceState(null,null,url)
+}
+
+function swSearch(link){
+	console.log(link);
+	var search_text = "";
+	if(link.hash)
+		search_text = link.hash.replace("#", "");
+	else
+		search_text = link;
+	$('#tabs').tabs({active: 0}); //publications tab
+	var search_box = $("#search0");
+	search_box.val(search_text);
+
+	setTimeout(function(){
+		$('html, body').animate({
+			scrollTop: $("#tabs").offset().top
+		}, 0);
+		search_box.focus();
+		search_box.select();
+		swList.search(search_text);
+		
+	},300);
+}
+
+function pubSearch(link){
+	console.log(link);
+	var search_text = "";
+	if(link.hash)
+		search_text = link.hash.replace("#", "");
+	else
+		search_text = link;
+	$('#tabs').tabs({active: 1}); //publications tab
+	var search_box = $("#search1");
+	search_box.val(search_text);
+
+	setTimeout(function(){
+		$('html, body').animate({
+			scrollTop: $("#tabs").offset().top
+		}, 0);
+		search_box.focus();
+		search_box.select();
+		pubList.search(search_text);		
+	},300);
+}
+
+function allSearch(this_search){
+	if(this_search.value != "" && this_search.value.length >= 3){
+		var value = this_search.value; 
+		//TODO: Implement Stop Words
+		ssftList.search(value);
+		
+		//hide table if there are no rows that match the search term
+		if ($("#softwareSearch #sftwrTable tbody").children().length != 0)
+			$("#softwareSearch #sftwrTable").show();
+		else
+			$("#softwareSearch #sftwrTable").hide();
+		
+		if(spubList != ""){
+			var value = this_search.value;
+			spubList.search(value);
+			
+			if ($("#publicationsSearch #pubTable tbody").children().length != 0)
+				$("#publicationsSearch #pubTable").show();
+			else
+				$("#publicationsSearch #pubTable").hide();
+		}
+	}
+	else{
+		//if search_term is empty or not 3 chars in length, make sure the tables are hidden
+		$("#publicationsSearch #pubTable").hide();
+		$("#softwareSearch #sftwrTable").hide();
+	}
+}
+
+function getTableHeaders(table){
+	var this_table;
+	 
+	if(table[0])
+		this_table = table[0];
+	else
+		this_table = table;
+		
+	var headerRow = this_table.tHead.rows[0].cells; //header row of table
+	var tableHeaders = [];
+
+	for (var j=0; j<headerRow.length; j++) 
+		tableHeaders.push(headerRow[j].textContent.toLowerCase());
+
+	return tableHeaders;		
+}
+
+function licenseInfo(short_nm, long_nm, link, description, event){
+
+	var x=event.clientX;
+	var y=event.clientY;
+	
+	$( "#dialog" ).removeClass("ribbon-dialog");
+	$(".ui-dialog").removeClass("ribbon-dialog vertical-green vertical-red");
+	$(".ui-dialog-titlebar").removeClass("ribbon-dialog-text");
+	
+	if(short_nm != ""){
+		$( "#dialog" ).empty().dialog({
+		position: [x , y - 20],
+		title: short_nm
+		});
+
+		if(description != "")
+			$("#dialog").html("<a href='" + link + "'>" + long_nm + "</a>: " + description);
+		else
+			$("#dialog").html("<a href='" + link + "'>" + long_nm + "</a>");
+	
+		$(".ui-dialog").mouseleave( function () {
+			 $( "#dialog" ).dialog( "close" );
+		  });
+	}
+}
+
+function getUrlParams(param_name)
+{
+       var query = window.location.search.substring(1);
+       var params = query.split("&");
+       for (var i=0;i<params.length;i++) {
+               var pair = params[i].split("=");
+               if(pair[0] == param_name){return pair[1];}
+       }
+       return(false);
+}
+
+function dateInfo(ribbon, event){
+	if(ribbon !="")
+	{
+		var date_id = document.getElementById(ribbon).firstChild.id;
+		var str_pattern = /(\d{4})(\d{2})(\d{2})/;
+		var date = date_id.replace(str_pattern,"$2-$3-$1"); //full date string
+
+		var ribbon_type = document.getElementById(ribbon).firstChild.getAttribute("name"); 
+		var x=event.clientX;
+		var y=event.clientY;
+		var text = "";
+		var background = "";
+		
+		if(ribbon_type == "NEW"){
+			text = "CREATED";
+			$(".ui-dialog").removeClass('vertical-green');
+			background = "vertical-red";
+		}
+		else{
+			text = ribbon_type;
+			$(".ui-dialog").removeClass('vertical-red');
+			background = "vertical-green";
+		}
+
+		$( "#dialog" ).empty().dialog({
+		position: [x , y - 20],
+		title: text + ": " + date,
+		});		
+		
+		$( "#dialog" ).addClass("ribbon-dialog");
+		$(".ui-dialog").addClass(background + " ribbon-dialog");
+		$(".ui-dialog-titlebar").addClass("ribbon-dialog-text");
+		
+
+
+		$(".ui-dialog").mouseleave( function () {
+			 $( "#dialog" ).dialog( "close" );
+		});
+	}
+}
+</script>
+<header class='darpa-header'><div class='darpa-header-images'><a href='http://www.darpa.mil/'><img class='darpa-logo' src='darpa-transparent-v2.png'></a><a href='index.html' class='programlink'><img src='Open-Catalog-Single-Big.png'></a></div></header>
+<div width='98%'><p>Welcome to the DARPA Open Catalog, which contains a curated list of DARPA-sponsored software and peer-reviewed publications. DARPA sponsors fundamental and applied research in a variety of areas that may lead to experimental results and reusable technology designed to benefit multiple government domains.</p>
+<p>The DARPA Open Catalog organizes publicly releasable material from DARPA programs. DARPA has an open strategy to help increase the impact of government investments.</p>
+<p>DARPA is interested in building communities around government-funded research. DARPA plans to continue to make available information generated by DARPA programs, including software, publications, data, and experimental results.</p></div><div id=''><p>The table on this page lists the programs currently participating in the catalog.</p>
+<p>Program Manager:<br>
+Dr. Christopher White<br>
+<a href='mailto:christopher.white@darpa.mil'>christopher.white@darpa.mil</a></p>
+<p>Report a problem: <a href="mailto:opencatalog@darpa.mil">opencatalog@darpa.mil</a></p>
+<p>Last updated: 2014-09-16</p></div>
+<div style = 'width:100%; float:left;'><h2>Current Catalog Programs:</h2></div>
+<table id='splash' class='tablesorter'> 
+<thead> 
+<tr> 
+    <th>DARPA Program</th>
+    <th>Office</th> 	
+    <th>Description</th> 
+</tr> 
+</thead> 
+<tbody> 
+<TR>
+ <TD width=230> <a href='AA.html'>AA</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Active Authentication (AA) program seeks to develop novel ways of validating the identity of computer users by focusing on the unique aspects of individuals through software-based biometrics. Biometrics are defined as the characteristics used to recognize individuals based on one or more intrinsic physical or behavioral traits. This program is focused on behavioral biometrics.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='ADAMS.html'>ADAMS</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Anomaly Detection at Multiple Scales (ADAMS) program seeks to create, adapt and apply technology to anomaly characterization and detection in massive data sets. Anomalies in data cue the collection of additional, actionable information in a wide variety of real world contexts.</TD>
+</TR><TR>
+ <TD width=230> <a href='APAC.html'>APAC</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Automated Program Analysis for Cybersecurity (APAC) program aims to address the challenge of timely and robust security validation of mobile apps by first defining security properties to be measured against and then developing automated tools to perform the measuring. APAC draws heavily from the field of formal-methods program analysis (theorem proving, logic and machine proofing) to keep malicious code out of DoD Android-based application marketplaces. APAC seeks to apply recent research breakthroughs in this field in an attempt to scale DoD's program analysis capability to a level never before achieved with an automated solution.</TD>
+</TR><TR>
+ <TD width=230> <a href='BET.html'>BET</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The objective of the Binary Executable Transforms (BET) program is to produce revolutionary technologies for analyzing executable binaries to identify and extract executable components. Executable components are defined as a fully encapsulated set of subroutines, data structures, objects and global variables that accomplish a particular function, along with metadata documenting the component's arguments and any system libraries used. Specifically, BET performers are conducting innovative research in: &bull; Automatically analyzing binaries and identifying functional components. &bull; Automatically slicing and extracting identified functionality into reusable components with well-defined inputs and outputs. &bull; Combining static and dynamic binary analysis to improve understanding of binary executables. &bull; Exploring formal verification methods to prove functional component properties. &bull; Developing intermediate representation language to support program slicing. &bull; Developing technologies to enable exploration and research for the BET program.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='BOLT.html'>BOLT</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Broad Operational Language Translation (BOLT) program is aimed at enabling communication with non-English-speaking populations and identifying important information in foreign-language sources by: 1) allowing English-speakers to understand foreign-language sources of all genres, including chat, messaging and informal conversation; 2) providing English-speakers the ability to quickly identify targeted information in foreign-language sources using natural-language queries; and 3) enabling multi-turn communication in text and speech with non-English speakers. If successful, BOLT would deliver all capabilities free from domain or genre limitations.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='CFT.html'>CFT</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Cyber Fast Track (CFT) program sought revolutionary advances in cyber science, devices, and systems through low-cost, quick-turnaround projects.  To achieve this, CFT engaged a novel performer base many of whom were new to government contracting.  From August 2011 to April 2013 the program attracted 550 proposal submissions, of which 90 percent were from performers that had never previously worked with the government, and awarded 135 contracts. </TD>
+</TR><TR>
+ <TD width=230> <a href='CRASH.html'>CRASH</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Clean-Slate Design of Resilient, Adaptive, Secure Hosts (CRASH) program is focused on the design of new computer systems that are highly resistant to cyberattack, can adapt after a successful attack to continue rendering useful services, learn from previous attacks how to guard against and cope with future attacks, and can repair themselves after attacks have succeeded. This program addresses computer architectures from processors and instruction sets, includes operating systems and programming languages, and extends up to application level tools.</TD>
+</TR><TR>
+ <TD width=230> <a href='CSFV.html'>CSFV</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>Crowd Sourced Formal Verification (CSFV) is a DARPA program that aims to investigate whether large numbers of non-experts can perform formal verification faster and more cost-effectively than conventional processes. The goal is to transform verification into a more accessible task by creating fun, intuitive games that reflect formal verification problems. Playing the games would effectively help software verification tools complete corresponding formal verification proofs.</TD>
+</TR><TR>
+ <TD width=230> <a href='CyberGenome.html'>Cyber Defense (CyberGenome)</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Cyber Defense Program is developing the core computing and networking technologies required to protect DoD's information, information infrastructure, and mission-critical information systems. This includes new cyber-forensic techniques to automate the discovery, identification, and characterization of malware variants and thereby accelerate the development of effective responses.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='DCAPS.html'>DCAPS</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Detection and Computational Analysis of Psychological Signals (DCAPS) program aims to develop novel analytical tools to assess psychological status of warfighters in the hopes of improving psychological health awareness and enabling them to seek timely help. DCAPS tools will be developed to analyze patterns in everyday behaviors to detect subtle changes associated with post-traumatic stress disorder, depression and suicidal ideation. In particular, DCAPS hopes to advance the state-of-the-art in extraction and analysis of 'honest signals' from a wide variety of sensory data inherent in daily social interactions. DCAPS is not aimed at providing an exact diagnosis, but at providing a general metric of psychological health.</TD>
+</TR><TR>
+ <TD width=230> <a href='DEFT.html'>DEFT</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>Automated, deep natural-language processing (NLP) technology may hold a solution for more efficiently processing text information and enabling understanding connections in text that might not be readily apparent to humans. DARPA created the Deep Exploration and Filtering of Text (DEFT) program to harness the power of NLP. Sophisticated artificial intelligence of this nature has the potential to enable defense analysts to efficiently investigate orders of magnitude more documents, which would enable discovery of implicitly expressed, actionable information within those documents.</TD>
+</TR><TR>
+ <TD width=230> <a href='ENGAGE.html'>ENGAGE</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>DARPA created the ENGAGE program to enable the development of education and training systems that are better, faster, continuously optimized, and massively scalable.  ENGAGE is exploring software- and data-intensive education and training methods that harness the power of large user populations to optimize instruction.</TD>
+</TR><TR>
+ <TD width=230> <a href='FLASHLIGHT.html'>FLASHLIGHT</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The FLASHLIGHT program seeks to prevent data exfiltration and information leakage through the use of a hardened audit and inspection capability that attests to the integrity and legitimacy of data leaving a network enclave.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='GRAPHS.html'>GRAPHS</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>DSO</TD>
+ <TD>GRAPHS is developing scalable algorithms and statistical methods for the analysis and modelling of very large and dynamically evolving networks, with the intent of developing predictive methods for anomalous and exceptional events in networks. A major focus of the program has been quantitative and structural aspects of large networks and the attending models. The program is divided into a few thrusts, with performers working in sampling techniques for graphs, geometric embeddings into hyperbolic spaces, Gaussian Conditional Random Fields, meso-level network behaviors, and link prediction.</TD>
+</TR><TR>
+ <TD width=230> <a href='HACMS.html'>HACMS</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The High-Assurance Cyber Military Systems (HACMS) program goal is to create technology for the construction of high-assurance cyber-physical systems, where high assurance is defined to mean functionally correct and satisfying appropriate safety and security properties. Key technologies include interactive software synthesis systems, verification tools, and specification languages.</TD>
+</TR><TR>
+ <TD width=230> <a href='MRC.html'>MRC</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Mission-oriented Resilient Clouds (MRC) program is addressing some of the security challenges facing cloud computing by developing technologies to detect, diagnose and respond to attacks in the cloud, with the goal of effectively building a 'community health system' for the cloud. MRC is also developing technologies intended to enable missions that are supported by cloud computing and other networked systems to continue functioning while under cyberattack.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='PPAML.html'>PPAML</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>Machine learning - the ability of computers to understand data, manage results and infer insights from uncertain information - is the force behind many recent revolutions in computing. Email spam filters, smartphone personal assistants and self-driving vehicles are all based on research advances in machine learning. Unfortunately, even as the demand for these capabilities is accelerating, every new application requires a Herculean effort. Teams of hard-to-find experts must build expensive, custom tools that are often painfully slow and can perform unpredictably against large, complex data sets.</BR></BR>The Probabilistic Programming for Advancing Machine Learning (PPAML) program aims to address these challenges. Probabilistic programming is a new programming paradigm for managing uncertain information. Using probabilistic programming languages, PPAML seeks to greatly increase the number of people who can successfully build machine learning applications and make machine learning experts radically more effective. Moreover, the program seeks to create more economical, robust and powerful applications that need less data to produce more accurate results - features inconceivable with today's technology.</TD>
+</TR><TR>
+ <TD width=230> <a href='PROCEED.html'>PROCEED</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>DARPA's Programming Computation on Encrypted Data (PROCEED) program is a research effort that seeks to develop methods that allow computing with encrypted data without first decrypting that data, making it possible to compute more securely in untrusted environments.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='RATS.html'>RATS</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>The Robust Automatic Transcription of Speech (RATS) program will create algorithms and software for performing the following tasks on potentially speech-containing signals received over communication channels that are extremely noisy and/or highly distorted: speech activity detection, language identification, speaker identification, and key word spotting.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='RP.html'>Revolutionizing Prosthetics</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>BTO</TD>
+ <TD>DARPA launched the Revolutionizing Prosthetics program with a radical goal: Create an advanced electromechanical prosthetic upper limb with near-natural control that enhances independence and improves quality of life for amputees, and gain U.S. Food and Drug Administration (FDA) approval for its use. In May 2014, less than eight years after the effort was launched, that dream is a reality; the FDA approved the DEKA Arm System.</TD>
+</TR><TR>
+ <TD width=230> <a href='SAFER.html'>SAFER</a></TD>
+ <TD width=70>I2O</TD>
+ <TD>The SAFER program seeks to develop technology to enable safe, resilient communications over the Internet, particularly in situations in which third parties attempt to discover the identity or location of the end users, or block communications. The program also seeks to provide the technological quality of service required to support applications such as electronic mail, instant messaging, voice over IP, and other media that promote effective communication.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='SMISC.html'>SMISC</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>The general goal of the Social Media in Strategic Communication (SMISC) program is to develop a new science of social networks built on an emerging technology base.  Through the program, DARPA seeks to develop tools to support the efforts of human operators to counter misinformation or deception campaigns with truthful information.</TD>
+</TR><TR>
+ <TD width=230> <div class='wrapper'><a href='XDATA.html'>XDATA</a><div class='ribbon-wrapper'><div class='ribbon-standard ribbon-green'>UPDATED</div></div></div></TD>
+ <TD width=70>I2O</TD>
+ <TD>XDATA is developing an open source software library for big data to help overcome the challenges of effectively scaling to modern data volume and characteristics. The program is developing the tools and techniques to process and analyze large sets of imperfect, incomplete data. Its programs and publications focus on the areas of analytics, visualization, and infrastructure to efficiently fuse, analyze and disseminate these large volumes of data.</TD>
+</TR>
+</tbody> 
+</table>
+<br>
+
+<footer>
+<div class='footer-style'>
+<hr>  
+<p><a href='http://www.darpa.mil/FOIA.aspx'>FOIA</a> | <a href='http://www.darpa.mil/Privacy_Security_Notice.aspx'>Privacy and Security</a> | 
+<a href='http://www.darpa.mil/NoFearAct.aspx'>No Fear Act</a> | <a href='http://www.darpa.mil/External_Link.aspx?url=http://dodcio.defense.gov/DoDSection508/Std_Stmt.aspx'>Accessibility/Section 508</a></p>
+</div>
+</footer>
+</div>
+</body>
+</html>
