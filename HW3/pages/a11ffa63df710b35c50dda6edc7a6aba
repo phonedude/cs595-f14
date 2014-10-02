@@ -1,0 +1,1147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"61e2f91637","applicationID":"349946","transactionName":"dAxbFxYNWlpXRBxEEFUPXABLAVlYRlNdQEpeDVEGHA==","queueTime":0,"applicationTime":159,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAIPV15ACwcJXVVU"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+	<!-- L:S content/theme/html_system_head  (0) -->
+	<!-- load web fonts -->
+
+<script type="text/javascript">
+  (function() {
+    document.getElementsByTagName("html")[0].setAttribute("class","wf-loading")
+    document.getElementsByTagName("html")[0].setAttribute("className","wf-loading") // for IE
+    var config = {
+      kitId: 'bmj2nsh',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//fonts.oreillystatic.com/'+config.kitId+'.js';tk.type="text/javascript";tk.async="false";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+<style>
+.wf-loading .typewriter {
+  font-family: Courier New;
+  color: rgba(0, 0, 0, 0); 
+}
+
+.wf-loading body, p, ol, ul, td { 
+  font-family: Arial, Verdana, Helvetica, sans-serif; 
+}
+ 
+.wf-active .typewriter {
+  font-family: 'oreilly-urw-typewriter-narro', Courier New;
+}
+
+.wf-active body, p, ol, ul, td { 
+  font-family: 'open-sans', Arial, Verdana, Helvetica, sans-serif;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  	
+
+	<!-- controller_js -->
+	
+
+
+
+
+	<!-- extra_external_javascript -->
+	
+	<!-- extra_styles -->
+  
+	<!-- extra_javascript -->
+		
+	<!-- theme_external_javascript -->
+	
+
+
+
+	<!-- L:E content/theme/html_system_head  (0) -->
+	<!-- L:S content/theme/html_head  (0) -->
+	<title>
+  
+  
+  
+  
+
+Velocity Europe 2014 - O&#x27;Reilly Conferences, November 17 - 19, 2014, Barcelona, Spain
+</title>
+
+
+  <!-- content/head_extra -->
+
+
+
+<!--metadata-->
+<meta property="og:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_og200x200.gif" />
+<meta name="twitter:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_og_twitter120x120.gif" />
+<meta name="twitter:site" content="@velocityconf" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" /> 
+
+
+
+  <link rel="canonical" href="http://velocityconf.com/eu/public/content/?event=121home" />
+  <meta property="og:url" name="twitter:url" content="http://velocityconf.com/eu/public/content/?event=121home" /> 
+<meta property="og:title" name="twitter:title" content=" Velocity Europe 2014" />
+  <meta property="og:description" name="twitter:description" content="O&#x27;Reilly Velocity Conference focuses on scalable, fast, and reliable websites and services. Hear from web operations and performance experts, share ideas, and join other participants pioneerin..." /> 
+
+
+
+
+
+
+
+<!-- Chartbeat Head -->
+<script type="text/javascript">
+<!--
+// js/charbeat_head
+var _sf_startpt=(new Date()).getTime()
+-->
+</script>
+        
+        
+
+
+
+<style>
+/* for skip to main content link (seen by screen readers) */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+body { background:#fff; color:#000; margin:0; font-size: 80%; }
+div#en_main_parts { width: 100%; }
+
+div#en_content, div#en_main { width: 100%; margin: 0; padding: 0; min-width: 910px; }
+.content_row { width: 870px; margin: 0 auto; padding: 0 20px; }
+.branding_bar { background-color: #008a96; width: 100%; height: 40px;-webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -o-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -ms-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);}
+#logo { padding-top: 9px; float: left;}
+
+/* for Franchise links at top of page */
+div#velocity_links { font-weight: bold; float: right; }
+div#velocity_links .inner { padding: 7px 0; font-size: 11px; letter-spacing:.03em; color: #004e55;}
+div#velocity_links a {color: #004e55;text-decoration:none;}
+div#velocity_links .current {color: #7fd3da;}
+div#velocity_links .current a {color: #7fd3da;text-decoration: none;}
+div#velocity_links .static {color: #004e55;}
+
+div.tagline { color: #ea6820; text-transform: uppercase;  font-weight: bold; padding-bottom: 3px; }
+div.tagline_date_location .location { text-transform: uppercase; }
+
+a { text-decoration: none; color: #1010dd; }
+a:hover { text-decoration: underline; }
+
+.btn-orange { display:block; text-decoration:none; text-transform: uppercase; font-size: 13px; line-height: 1.3em; color:#fff; padding: 8px 0; text-align:center; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; background: -webkit-gradient(linear, left top, right top, from(#fb8e00), to(#d37700)); background: -webkit-linear-gradient(top, #fb8e00, #d37700); background: -moz-linear-gradient(top, #fb8e00, #d37700); background: -o-linear-gradient(top, #fb8e00, #d37700); background: -ms-linear-gradient(top, #fb8e00, #d37700); background: linear-gradient(top, #fb8e00, #d37700); background-color: #fb8e00; font-weight: bold; width: 250px; }
+a.btn-orange:hover { text-decoration:none; }
+
+.user_tools {clear:right;padding-top:20px;}
+
+
+#en_header { margin-left: 0px; padding-left: 0px; background-color: #000; height: 603px; /* background-position: initial initial; background-repeat: initial initial;*/ }
+#inside_header { overflow: hidden; }
+#inside_header > .content_row { height: 560px; }
+#event_logo { position: relative; z-index: 1; }
+#tagline_date_location { display: inline-block; vertical-align: top; margin-left: 20px; padding-top: 18px; position: relative; z-index: 1;  letter-spacing: .08em;}
+div.tagline_date_location { font-size: 1.1em; color: #fff; text-transform: uppercase; }
+#inside_header hr { color: #c7c7c7; height: 1px; background-color: #c7c7c7; border: none; margin: 10px 0px 0px; width: 67%; position: relative; z-index: 1; /*background-position: initial initial; background-repeat: initial initial; */ text-align: left; }
+#home_quote {margin: 25px 0 0 -40px;color: #fff; z-index: 1; position: relative; line-height:3em;}
+.headerquote {font-size: 34px; font-weight: 100;}
+#home_quote blockquote {text-indent: -.7em; width: 620px;}
+
+#hero_image {  width: 1302px; height: 458px; position: absolute; z-index: 0; bottom: 0px; left: 50%; margin-left: -780px; /*background-position: 100% 100%; background-repeat: no-repeat no-repeat;*/ background: transparent right bottom url('//cdn.oreillystatic.com/en/assets/1/event/121/velocityeu2014_hero1.jpg') no-repeat; }
+#hero_name {text-transform: uppercase; font-size: .8em; color: #fff; margin: 44px 0 0 670px; z-index: 1; position: relative;}
+.en_notice { display: none; }
+.row { width: 100%; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(181, 181, 181); padding: 0px 0px 20px; }
+#photostrip {position:relative;margin:15px 0 0 -400px; z-index:1;}
+div#home_cta {position: absolute; top: -30px; left: 325px; z-index:100;}
+div#home_cta .btn-orange {-webkit-box-shadow: 0px 5px 5px #000000; -moz-box-shadow: 0px 5px 5px #777; box-shadow: 0px 5px 5px #555;}
+
+#headlining.row { height: 212px; background: #008a96; padding: 0;}
+#headlining.row h1 { text-align: center; padding: 30px 0 0 0; margin-bottom: 10px; color: #eee; font-size: 28px; font-weight: normal; margin-top: 0; }
+#headlining.row p#intro { color: #eee; text-align: center; font-size: 26px; line-height: 1.3em; padding: 45px 55px 0 55px; margin:0; }
+
+/* speakers */
+.negative-margin { margin: 0 -20px;  }
+#speaker_row.row { padding: 20px 0; background-color: #eee; border-bottom: none;}
+#speaker_row h2 { color: #008a96; font-size:2em; font-weight:normal; margin:0; padding: 20px 0; }
+#speaker_row.row a:last-child { font-size: 1.2em; }
+.speaker { display: inline-block; width: 180px; vertical-align: top; padding: 0 20px 15px 20px; text-align: center;   }
+.speaker_name { font-weight: bold; font-size: 1em; color: #008a96; } 
+.speaker_affiliation { font-size: .9em; color: #222; }
+.speaker a:hover { text-decoration: none; }
+.speaker.hide { display: none; }
+.view_speakers { border: 1px solid #ea6820; border-radius: 10px; padding: 10px 0; background: #fff; width: 100%;  max-width: 260px; text-align: center; display:block; color: #ea6820; }
+
+#top_level_nav { color: #eee; padding-bottom: 20px; margin: 0 auto; }
+#top_level_nav ul#nav { margin: 0; padding: 0 0 9px; line-height: 1em; font-size: .90em; letter-spacing: .08em; display: inline-block; float: left; }
+#top_level_nav ul#nav, div#top_level_nav ul#nav * { list-style: none; }
+div#top_level_nav ul#nav li { float: left; position: relative; z-index:20; border-left: 1px solid #eee; font-weight: normal; margin: 12px 0 0 0; padding: 0px 15px; height: 10px; font-size: 13px;}
+div#top_level_nav ul#nav a { display: block; position: relative; text-decoration:none; }
+div#top_level_nav ul#nav li:first-child { border-left: none; }
+div#top_level_nav ul#nav li { float: left; position: relative; z-index: 10; font-weight: bold; margin: 12px 0 0; padding: 0px 15px; height: 10px; font-size: 1em; }
+div#top_level_nav ul#nav li:first-child { border-left-style: none; padding-left: 0px; }
+div#top_level_nav ul#nav a { display: block; position: relative; text-decoration: none; }
+div#top_level_nav ul#nav li a.level_one { text-transform: uppercase; color: inherit; margin: 0px; padding: 0; }
+div#top_level_nav ul#nav ul { position: absolute; top: -999em; width: 12em; }
+div#top_level_nav ul#nav ul li { width: 100%; }
+div#top_level_nav ul#nav ul.level_three { margin: -29px 0 0 182px; width: 18em; }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/javascripts/supersleight-min.js"></script>
+  <![endif]-->
+
+
+
+
+
+<link rel="apple-touch-icon" href="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_iphone_icon.png" type="image/png" />
+<link rel="icon" type="image/png" href="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_favicon.png">
+
+
+
+
+<meta name="description" content="O&#x27;Reilly Velocity Conference focuses on scalable, fast, and reliable websites and services. Hear from web operations and performance experts, share ideas, and join other participants pioneering the next generation of data centers and scalable websites." />
+<meta name="Category" content="Conferences" />
+
+
+<meta name="search_date" content="2014-11-17" />
+
+
+<meta name="search-conf-name" content="Velocity Europe 2014" />
+
+
+  <meta name="search-title" content="Velocity Europe 2014"/>
+
+
+
+
+
+
+
+
+
+<!--for Google Webmaster Tools -->
+<meta name="verify-v1" content = "ejKlkisc2aaHXLk+37fMPNCfcsC5GdJYO2qoBXRRM7g=" />
+
+<!--
+<link rel="image_src" href="http://oreilly.com/images/oreilly/oreilly_large.gif" />
+-->
+
+
+<script type="text/javascript">
+window._umbel = window._umbel || [];
+(function()
+{ var u = document.createElement('script'); u.type = 'text/javascript'; u.async = true; u.src = document.location.protocol + '//tags.api.umbel.com/fnhibijmwrhmldyn/w.js?d=' + new Date().getMonth() + '' + new Date().getDate(); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(u, s); }
+
+)();
+</script>
+
+
+	<!-- L:E content/theme/html_head  (0) -->
+</head>
+<body class='en_c_content en_a_index' id='en_content_index'>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+<div class="visuallyhidden"><a href="#mid">Skip to main content</a></div>
+<div id="en_content" itemscope itemtype="http://data-vocabulary.org/Event"><!-- closed in after_main-->
+<meta itemprop="startDate" datetime="2014-11-17T00:00-00:00" content="November 17, 2014" />
+<meta itemprop="endDate" datetime="2014-11-19T00:00-00:00" content="November 19, 2014"/>
+<meta itemprop="location" content="Barcelona, Spain" />
+<meta itemprop="summary" content="Velocity Europe 2014" />
+
+<div id="en_main_parts"><!-- closed in after_main -->    
+       
+  <div id="en_header">
+     <div class="branding_bar">
+      <div class="content_row">
+        <a href="http://oreilly.com"><img id="logo" src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/orm_branding_bar_transparent_logo.png" alt="O'Reilly Media, Inc" width="129" height="22" border="0" /></a>
+<div id="velocity_links">
+  <div class="inner">
+    <div style="padding-top:5px; text-transform:uppercase;"><span class="static">Velocity Conference:</span>&nbsp;&nbsp;<a href="http://velocityconf.com/sc">Santa Clara</a>&nbsp; &#8226; &nbsp;<a href="http://velocity.oreilly.com.cn/2014/">Beijing</a>&nbsp; &#8226; &nbsp;<a href="http://velocityconf.com/ny">New York</a>&nbsp; &#8226; &nbsp;<span class="current">Barcelona</span>
+    </div>
+  </div>
+</div>
+      </div><!-- div.content_row -->
+     </div><!-- div.branding_bar -->
+
+    <div id="inside_header">
+        <div class="content_row" style="position: relative;">
+        <div id="top_level_nav">
+<ul id="nav" class="superfish">
+                  
+                  <li><a href="https://en.oreilly.com/velocityeu2014/public/register" class="level_one">Register</a>
+  <ul class="level_two">
+    <li><a href="https://en.oreilly.com/velocityeu2014/public/register" class="level_two">Pricing &amp; Registration</a></li>
+	<li><a href="/velocityeu2014/public/content/all-access" class="level_two">Velocity All-Access Pass</a></li>
+	<li><a href="/velocityeu2014/public/content/convince-manager" class="level_two">Convince Your Manager</a></li>
+	<li><a href="/velocityeu2014/public/content/media" class="level_two">Media Registration</a></li>
+	<li><a href="/velocityeu2014/public/content/hotel" class="level_two">Venue, Hotel &amp; Travel</a></li>
+    	
+  </ul>
+</li>
+
+<li><a href="http://velocityconf.com/velocityeu2014/public/schedule/grid/public" class="level_one">Program</a>
+  <ul class="level_two">
+    <li><a href="http://velocityconf.com/velocityeu2014/public/schedule/grid/public" class="level_two">Schedule</a></li>
+    <li><a href="/velocityeu2014/public/schedule/stype/tutorial" class="level_two">Tutorials</a></li>
+	<li><a href="#" class="level_two" style="cursor:default;">Sessions by Track</a>
+		<ul class="level_three">
+        <li><a href="/velocityeu2014/public/schedule/topic/1178" class="level_three">Performance</a></li>
+        <li><a href="/velocityeu2014/public/schedule/topic/1179" class="level_three">Operations</a></li>
+		<li><a href="/velocityeu2014/public/schedule/topic/1180" class="level_three">Mobile</a></li>
+		<li><a href="/velocityeu2014/public/schedule/topic/1181" class="level_three">Culture &amp; Organizational Change</a></li>
+        <!--li><a href="/velocityeu2014/public/schedule/topic/???" class="level_three">Sponsored Sessions</a></li-->
+      </ul>
+	</li>
+	<li><a href="/velocityeu2014/public/schedule/stype/keynote" class="level_two">Keynotes</a></li>
+	<li><a href="/velocityeu2014/public/schedule/speakers" class="level_two">Speakers</a></li>
+    
+    <li><a href="/velocityeu2014/public/schedule/stype/event" class="level_two">Events</a></li>
+    
+    
+    
+  </ul>
+</li>
+
+
+
+<li><a href="/velocityeu2014/public/content/sponsors" class="level_one level_main">Sponsor Pavilion</a>
+  <ul class="level_two">
+    <li><a href="/velocityeu2014/public/content/sponsors" class="level_two">Sponsors</a></li>
+    <li><a href="/velocityeu2014/public/content/exhibitors" class="level_two">Exhibitors</a></li>
+    <li><a href="/velocityeu2014/public/content/media-partners" class="level_two">Media Partners</a></li>
+    
+  </ul>
+</li>
+
+<li><a href="/velocityeu2014/public/content/contact" class="level_one level_main">Connect</a>
+  <ul class="level_two">
+    <li><a href="/velocityeu2014/public/content/contact" class="level_two">Contact Us</a></li>
+    
+    <li><a href="/velocityeu2014/user/account" class="level_two">Your Account</a></li>
+  </ul>
+</li>
+
+<li><a href="/velocityeu2014/public/content/about" class="level_one level_main">About</a>
+  <ul class="level_two">
+    <li><a href="/velocityeu2014/public/content/about" class="level_two">About Velocity</a></li>
+    <li><a href="/velocityeu2013/" class="level_two" target="_blank">Velocity Europe 2013</a></li>
+    <li><a href="http://velocityconf.com" class="level_two" target="_blank">Other Velocity Events</a></li>
+    <li><a href="http://oreilly.com/conferences/diversity.html" class="level_two" target="_blank">Conference Diversity</a></li>
+	<li><a href="http://oreilly.com/conferences/code-of-conduct.html" class="level_two" target="_blank">Code of Conduct</a></li>
+  </ul>
+</li>
+
+
+<li><a href="/velocityeu2014/user/account" class="level_one level_main">Your Account</a>
+<ul class="level_two">
+  <li><a href="/velocityeu2014/user/account" class="level_two">Log in</a></li>
+
+</ul>
+</li>
+
+                  
+</ul>
+</div><!-- #top_level_nav-->
+            <a href="/velocityeu2014" border="0"><img id="event_logo" src="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity14_logo.png" alt="Velocity Conference" width="363" height="99" border="0" /></a>
+                       
+            <div id="tagline_date_location">
+              <div class="tagline_date_location">
+                 <div class="tagline">Building a Faster, Stronger Web</div>
+                 <div class="date_location">17&ndash;19 November, 2014<br /><span class="location">Barcelona, Spain</span></div>
+              </div><!-- tagline_date_location -->
+           </div><!-- #tagline_date_location -->
+          
+           
+           <style>
+.headerquote {font-size: 3.0rem; font-size: 30px; font-weight: 100;}
+</style>
+<div id="home_quote"><blockquote><span class="typewriter headerquote">&#8220;An avalanche of information...more of an incubator of ideas than a conference.&#8221;</span><br />&#8211;Reza Tabibazar, National Science Foundation</blockquote></div>
+          <div id="photostrip"><img src="http://cdn.oreillystatic.com/en/assets/1/event/121/velocityeu2014_photostrip.jpg" alt="Velocity Europe 2014" /></div>
+          <div id="hero_name">Ido Safruti, Velocity Europe 2013</div>
+          <div id="hero_image"></div>  
+           
+         </div><!-- div.content_row -->
+    </div> <!-- inside_header --> 
+  </div><!-- //en_header -->
+  <div id="en_body">
+    <div id="en_main">
+    <div id="mid">
+    
+     
+<div class="en_article">
+	
+	
+  
+
+	<div class="en_article_body">
+	<div><div id="headlining" class="row">
+<div class="content_row" style="position: relative;">
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+<div id="home_cta">
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+<a href="https://en.oreilly.com/velocityeu2014/public/register" class="btn-orange cta" style="line-height:1.7em;"><span style="text-transform: capitalize; font-weight: normal; font-size: 10px; font-size: 1.0rem;">See Pricing &amp; Packages<br />Early Price Ends  2 October</span></a></div>
+<p id="intro">Velocity is about the people and technologies that make the Web fast, scalable, resilient, and highly available. From ecommerce to mobile to the cloud, Velocity is where the future of the Web takes shape.</p>
+</div>
+</div><!--div#headlining--></div>
+<div><div id="speaker_row" class="row">
+<div class="content_row">
+<h2 class="pad">Featured Speakers</h2>
+<div class="pad" style="overflow:hidden;">
+<div class="negative-margin">
+
+<span id="load_cheeses"></span>
+
+
+
+<p class="pad" style="margin-left: 20px; margin-left: 2rem;"><a href="#" id="view_below" class="view_speakers">View more speakers <img src="http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/down-arrow-orange.png" alt="" width="24" height="12" border="0" /></a></p>
+<p class="pad hide" style="margin-left: 20px; margin-left: 2rem;"><a id="view_all_speakers" class="view_speakers" href="/velocityeu2014/public/schedule/speakers">View all speakers &raquo;</a></p>
+</div><!--.negative-margin-->
+</div><!--.pad-->
+
+</div><!--.content_row-->
+</div><!--#speaker_row.row--></div>
+<div><div id="reasons_row" class="row">
+  <div class="content_row">
+    <div class="rightcol"><span class="sidequote typewriter">Feel like I've learned more in 3 days than the last 3 years!"</span><br />
+      <span style="color: #222; font-size: 13px; line-height: 18px;">&#8211;Jason Vaughan, SRE at Fortune 500 Retailer</span></div>
+      <div class="rightcol"><span class="sidequote typewriter" style="margin-top: 15px;">As someone completely new to the industry, I feel I gained a much better understanding of operations and web performance by attending Velocity. I can't wait to incorporate some of the new things I learned into my work."</span><br />
+      <span style="color: #222; font-size: 13px; line-height: 18px;">&#8211;Erik Konecny, Kohler Co.</span> <a class="btn-orange" href="/velocityeu2014/public/schedule" style="margin-top: 50px;">View the Agenda</a> </div>
+    <h1>Velocity is unlike any other technical conference on the planet.</h1>
+    <p>It's an experience that will cause you to look at your work, the technologies you use, and your organization in completely new ways.</p>
+    <p>It's the conference where the big ideas around DevOps, <a href="/velocityeu2014/public/schedule/topic/1179">web operations</a>, <a href="/velocityeu2014/public/schedule/topic/1178">web performance</a>, and <a href="/velocityeu2014/public/schedule/topic/1180">mobile</a> explode into being. You'll hear from the <a href="/velocityeu2014/public/schedule/speakers">best speakers</a> in the industry. You'll take part in sessions that range from highly technical (hardcore math and statistics), to practical (demonstrations of monitoring, clustering, and analytics), to <a href="/velocityeu2014/public/schedule/topic/1181">cultural</a> (let's break down the silos and move ahead). Some will blow your mind.</p>
+    <p>Velocity draws attendees from Fortune 500 companies to the newest, most exciting startups, all joining together for a legendary learning and networking experience.</p>
+    <p>A faster, stronger web is no longer an option; it's an expectation. And that's just the beginning.</p>
+    <p><strong>Join us 17-19 November at the Centre Convencions Internacional de Barcelona in Spain. Take a look at the <a href="/velocityeu2014/public/schedule">schedule</a> and <a href="https://en.oreilly.com/velocityeu2014/public/register">start making your plans today</a>.</strong></p>
+<p>Need help convincing your manager that Velocity is worthwhile? <a href="http://velocityconf.com/velocityeu2014/public/content/convince-manager">Check out our handy guide.</a></p>
+    <h2>Important Dates</h2>
+    <ul>
+      <li>Early Price ends 2 October</li>
+    </ul>
+  </div>
+  <!--div.content_row--> 
+</div>
+<!--div#reasons_row-->
+
+<div id="reasons_row2" class="row">
+  <div class="content_row">
+    <div class="rightcol2"><span class="sidequote typewriter">I would definitely put O'Reilly's Velocity Conferences on a must-see list for my industry segment. I was really blown away by the quality of speakers and attendees."</span><br />
+      <span style="color: #222; font-size: 13px; line-height: 18px;">&#8211;Mark Jaffe, Sr. Build &amp; Release Engineer, Rovi Corporation</span></div>
+      <div class="rightcol2"><span class="sidequote typewriter" style="margin-top: 15px;">Coming back from Velocity is like coming back from summer camp. You're amped up to try and do new things."</span><br />
+      <span style="color: #222; font-size: 13px; line-height: 18px;">&#8211;Dan Cundiff</span></div>
+      <div class="rightcol2"><span class="sidequote typewriter" style="margin-top: 15px;">I come to Velocity conference for ideas and I have never been disappointed. It is like meeting a good friend and asking him for advice. Thank you."</span><br />
+      <span style="color: #222; font-size: 13px; line-height: 18px;">&#8211;Sergei Koren Systems architect, LivePerson Inc.</span></div>
+    <h2>Four reasons to come to Velocity:</h2>
+    <ol>
+      <li><strong>Because a fast and high performing web experience isn't a feature anymore, it's an expectation.</strong><br />
+        If you measure your success in milliseconds, you'll find your time well spent as you immerse yourself in the latest tools, technologies, and expert advice on getting your site to perform at warp speed.</li>
+      <li><strong>Not only do you have to keep operations running but you must act with efficiency and scale.</strong><br />
+        At Velocity, you'll learn what's important to monitor and when, understand which metrics make a difference, see how some of the world's largest sites deal with config management, failover, downtime, best practices, and other key issues in the operations side of the Web.</li>
+      <li><strong>Since mobile is how your users experience the Web. Get your mobile-first strategy in place.</strong><br />
+        As mobile takes center stage with consumers, user expectations have skyrocketed. At Velocity, you won't just get the tools you need to make the mobile web faster, you'll learn how to measure, analyze, and improve mobile performance, learn how UX/UI play an key role in performance, and improve operations and deployment so your apps are never out of date or unavailable.</li>
+      <li><strong>And cultural change is key to your success in all of these areas and others.</strong><br />
+        Are you ready to fully embrace a culture of performance and operations in your organization? To stay resilient, manage complex systems of both the technical and human varieties, in the face of near-impossible odds?  Future-proof the health of your organization with the right skills from Velocity's Culture track.</li>
+    </ol>
+  </div>
+  <!--div.content_row--> 
+</div>
+<!--div#reasons_row2-->
+
+<div id="reasons_row3" class="row">
+  <div class="content_row">
+    <h2>Who Attends Velocity Europe</h2>
+    <p>Representatives from companies and organizations including:</p>
+    <ul style="float:left; width: 27%;">
+      <li>Abcam</li>
+      <li>AIMIA</li>
+      <li>Akamai</li>
+      <li>Altigi GmbH</li>
+      <li>Amazon</li>
+      <li>Automic</li>
+      <li>Basho</li>
+      <li>BBC</li>
+      <li>Betfair</li>
+      <li>Blinkbox</li>
+      <li>Boursorama</li>
+      <li>brightsolid</li>
+      <li>Dell</li>
+      <li>China Cache</li>
+      <li>Cisco</li>
+      <li>Cloud Flare</li>
+      <li>comparethemarket.com</li>
+      <li>Conde Nast</li>
+      <li>Deutsche Telekom</li>
+      <li>ESET</li>
+    </ul>
+    <ul style="float:left; width: 28%; margin-left: 20px;">
+      <li>Esri</li>
+      <li>Eurotunnel</li>
+      <li>Facebook</li>
+      <li>Financial Times</li>
+      <li>Google</li>
+      <li>Government Digital Service</li>
+      <li>Ikea</li>
+      <li>Limelight</li>
+      <li>Nature</li>
+      <li>Neotys</li>
+      <li>Net-a-Porter</li>
+      <li>Opentable</li>
+      <li>Optier</li>
+      <li>Orange</li>
+      <li>Outbrain</li>
+      <li>Pixartprinting</li>
+      <li>Reed Business Information</li>
+      <li>Salesforce</li>
+      <li>Samsung</li>
+      <li>Schibsted Iberica</li>
+    </ul>
+    <ul style="float:left; width: 25%; margin-left: 20px;">
+      <li>Shop Direct Group</li>
+      <li>Silicon Allee</li>
+      <li>Sitecore</li>
+      <li>Sky Betting &amp; Gaming</li>
+      <li>Softvision</li>
+      <li>Soundcloud</li>
+      <li>Spilgames</li>
+      <li>Stepstone</li>
+      <li>TBWA</li>
+      <li>Tesco</li>
+      <li>TestPlant</li>
+      <li>TeliaSonera</li>
+      <li>The Guardian</li>
+      <li>Ticketmaster</li>
+      <li>TomTom International BV</li>
+      <li>Verisign</li>
+      <li>Verisure</li>
+      <li>Virgin Holidays</li>
+      <li>Vodafone</li>
+    </ul>
+    <div style="clear:both;"></div>
+  </div>
+  <!--div.content_row--> 
+</div>
+<!--div#reasons_row3--> 
+
+</div>
+<div><div id="newsletter-popup-overlay">
+	<div id="newsletter-popup" class="popup">
+		<div class="popup-header">
+			<a href="#" class="close">close</a>
+			<h3>Get the Web Ops and <br />Performance Newsletter</h3>
+			<p>Weekly insight from industry insiders. <br />Plus exclusive content and offers.</p>
+		</div>
+		<div class="popup-form">
+			<iframe src="http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/email_signup_popup_widget.htm?conference=velocitynews&locationSource=velocity14_eu_popup" id="newsletter-popup-frame"></iframe>
+		</div>
+	</div>
+</div></div>
+  
+	</div>
+
+  
+
+
+
+	<div class="en_article_metadata">
+		<a href="/velocityeu2014/public/content/home">Link</a>
+	 	| 07/30/2014  7:27pm CEST
+		
+	</div>
+
+	
+
+</div>
+
+
+</div> <!-- /mid -->
+
+<div id="widgets_row" class="row">
+<div style="padding: 0 20px;">
+<div id="blog_promo">
+<h2>Stay Connected</h2>
+<p>Read about the latest in web operations and performance on the O'Reilly Radar Blog</p>
+
+<a href="http://radar.oreilly.com/webops-perf" target="_blank"><img class="lazy" src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" data-img-src="//cdn.oreillystatic.com/en/assets/1/eventseries/11/radar-webops-perf-thumb.jpg" alt="O'Reilly Radar" width="550" height="313" border="0" /></a>
+</div><!--div#blog_promo-->
+
+<div id="stay_informed">
+<h2>Stay Informed</h2>
+<iframe class="lazy" data-img-src="http://oreilly.com/conferences/bulletin_form.html?conference=velocity&amp;locationSource=velocity14_eu_widget&amp;colorLink=e0922f&amp;colorText=eee" src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" frameborder="0" height="100px" width="280px"></iframe>
+
+<div class="stay_connected">
+	<a class="chicklet chicklet-twitter" data-sprite-class="chicklet-twitter" title="Follow Us on Twitter" href ="http://twitter.com/velocityconf" target="_blank"></a>
+	<a class="chicklet chicklet-facebook" data-sprite-class="chicklet-twitter" title="O'Reilly Media Facebook Page" href ="https://www.facebook.com/OReilly" target="_blank"></a>	  
+	<a class="chicklet chicklet-gplus" data-sprite-class="chicklet-twitter" title="Google+" href ="https://plus.google.com/b/108442503368488643007/+oreillymedia/posts" target="_blank"></a>	  
+	<a class="chicklet chicklet-linkedin" data-sprite-class="chicklet-twitter" title="O'Reilly Media on LinkedIn" href ="https://www.linkedin.com/company/o%27reilly-media" target="_blank"></a>
+	
+	
+	
+</div><!-- /stay_connected -->
+
+<div id="photos">
+<h2>2013 Photos &amp; Video</h2>
+<div><div class="flickr_group"><a href="http://www.flickr.com/photos/oreillyconf/10859619405/in/set-72157637657689424" target="_blank"><img class="lazy" src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/101/velocityeu2013_flickr_thumb_1.jpg" alt="Velocity Europe 2013 Photo" width="75" height="75" border="0" /></a></div>
+<div class="flickr_group"><a href="http://www.flickr.com/photos/oreillyconf/10859630515/in/set-72157637657689424" target="_blank"><img class="lazy" src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/101/velocityeu2013_flickr_thumb_2.jpg" alt="Velocity Europe 2013 Photo" width="75" height="75" border="0" /></a></div>
+<div class="flickr_group"><a href="http://www.flickr.com/photos/oreillyconf/10859807394/in/set-72157637657689424" target="_blank"><img class="lazy" src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/101/velocityeu2013_flickr_thumb_3.jpg" alt="Velocity Europe 2013 Photo" width="75" height="75" border="0" /></a></div>
+<div class="more">
+<p style="margin: 0; padding: 5px 0 0;"><a style="color: #eee;" href="http://www.flickr.com/photos/oreillyconf/sets/72157637657689424/" target="_blank">More Photos &raquo;</a></p>
+<p style="margin: 0; padding: 5px 0 0;"><a style="color: #eee;" href="http://www.youtube.com/view_play_list?p=PL055Epbe6d5bfvFqHGHroAAbzHerXNQC4" target="_blank">2013 Video &raquo;</a></p></div></div>
+</div><!-- /photos -->
+
+</div><!--div#stay_informed-->
+</div>
+</div><!--div#widgets-->
+
+<div id="sponsors_contacts" class="row">
+<div id="sponsor_container">
+
+
+<div id="sponsor_title">&nbsp;</div>
+<!--sponsors title image-->
+<div class="spacer">&nbsp;</div>
+<div id="sponsors">
+
+
+<div class="big_sponsor_level">Diamond Sponsor</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.keynote.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/keynote14150.gif" alt="Keynote Systems" width="150" border="0" /><span class="lazy_placeholder">Keynote Systems</span></a></li></ul>
+
+<div class="big_sponsor_level">Elite Sponsor</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.edgecast.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/verizonedgecast.gif" alt="EdgeCast, now part of Verizon" width="150" border="0" /><span class="lazy_placeholder">EdgeCast, now part of Verizon</span></a></li></ul>
+
+<div class="sponsor_list_heading">Platinum Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.compuware.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/compuware_apm.gif" alt="Compuware Corporation" width="120" height="40" border="0" /><span class="lazy_placeholder">Compuware Corporation</span></a></li><li><a href="http://www.limelight.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/limelight.gif" alt="Limelight Networks, Inc." width="120" height="26" border="0" /><span class="lazy_placeholder">Limelight Networks, Inc.</span></a></li></ul>
+
+<div class="sponsor_list_heading">Gold Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.akamai.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/akamai-2.gif" alt="Akamai" width="105" height="44" border="0" /><span class="lazy_placeholder">Akamai</span></a></li><li><a href="http://www.appdynamics.com/free" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/appdynamicsgrey.gif" alt="AppDynamics" width="120" height="12" border="0" /><span class="lazy_placeholder">AppDynamics</span></a></li><li><a href="https://www.pingdom.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/pingdom.gif" alt="Pingdom" width="120" height="63" border="0" /><span class="lazy_placeholder">Pingdom</span></a></li></ul>
+
+<div class="sponsor_list_heading">Silver Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.aerospike.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/aerospike.gif" alt="Aerospike" width="120" height="21" border="0" /><span class="lazy_placeholder">Aerospike</span></a></li><li><a href="http://www.catchpoint.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/catchpoint.gif" alt="Catchpoint" width="120" height="31" border="0" /><span class="lazy_placeholder">Catchpoint</span></a></li><li><a href="http://www.cedexis.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/cedexis.png" alt="Cedexis" width="120" height="37" border="0" /><span class="lazy_placeholder">Cedexis</span></a></li><li><a href="http://www.getchef.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/chef.gif" alt="Chef" width="102" height="100" border="0" /><span class="lazy_placeholder">Chef</span></a></li><li><a href="http://www.dyn.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/dynlogo.gif" alt="Dyn Inc." width="120" height="47" border="0" /><span class="lazy_placeholder">Dyn Inc.</span></a></li><li><a href="http://www.facebook.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/facebook14.gif" alt="Facebook" width="120" height="39" border="0" /><span class="lazy_placeholder">Facebook</span></a></li><li><a href="http://www.fastly.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/fastly.gif" alt="Fastly" width="120" height="46" border="0" /><span class="lazy_placeholder">Fastly</span></a></li><li><a href="http://www.incapsula.com" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/incapsula.gif" alt="Incapsula" width="120" height="24" border="0" /><span class="lazy_placeholder">Incapsula</span></a></li><li><a href="https://www.ruxit.com/?utm_source=velocity_east_website&utm_medium=conference&utm_campaign=velocity_east_fy15" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/ruxit.gif" alt="ruxit" width="120" height="38" border="0" /><span class="lazy_placeholder">ruxit</span></a></li><li><a href="http://smartbear.com/products/web-monitoring/website-monitoring/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/smartbearalertsite_uxm.gif" alt="SmartBear" width="120" height="29" border="0" /><span class="lazy_placeholder">SmartBear</span></a></li><li><a href="http://www.soasta.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/soasta_2.gif" alt="SOASTA" width="120" height="24" border="0" /><span class="lazy_placeholder">SOASTA</span></a></li><li><a href="http://www.thousandeyes.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/thousandeyes.gif" alt="ThousandEyes" width="120" height="85" border="0" /><span class="lazy_placeholder">ThousandEyes</span></a></li></ul>
+
+<div class="sponsor_list_heading">Innovator</div>
+<ul class="plain sponsorList"><li><a href="http://coscale.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/coscalelogo.gif" alt="CoScale" width="120" height="52" border="0" /><span class="lazy_placeholder">CoScale</span></a></li></ul>
+
+<div class="sponsor_list_heading">Media Partners</div>
+<ul class="plain sponsorList"><li><a href="http://barcelonajs.org/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/barcelonajs.gif" alt="BarcelonaJS" width="100" height="100" border="0" /><span class="lazy_placeholder">BarcelonaJS</span></a></li><li><a href="http://sixrevisions.com/" target="_blank"><img src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" class="lazy" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/six_revisions.gif" alt="Six Revisions" width="120" height="48" border="0" /><span class="lazy_placeholder">Six Revisions</span></a></li></ul>
+
+
+</div>
+
+
+<div id="contacts">
+<div>
+<h3>Sponsorship Opportunities</h3>
+<p>For exhibition and sponsorship opportunities, contact Gloria Lombardo at <a href="mailto:glombardo@oreilly.com">glombardo@oreilly.com</a></p>
+</div>
+<div>
+<h3>Partner Opportunities</h3>
+<p>For information on trade opportunities with O'Reilly conferences contact <a href="mailto:partners@oreilly.com">partners@oreilly.com</a></p>
+</div>
+<div>
+<h3>Press and Media</h3>
+<p>For media-related inquiries, contact Maureen Jennings at <a href="mailto:maureen@oreilly.com">maureen@oreilly.com</a></p>
+</div>
+<div>
+<h3>Contact Us</h3>
+<p>View a complete list of <a href="/velocityeu2014/public/content/contact">Velocity contacts</a></p>
+</div>
+</div><!-- /contacts -->
+
+</div><!-- /#sponsor_container -->
+</div><!--div#sponsors_contacts-->
+    </div><!-- en_main -->
+        
+            
+            <div id="en_footerwrap">
+                <div id="en_footer">
+                    <!-- after_main -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+
+
+
+
+<div id="footer_logo">
+    
+	<div class="copyright">
+		&copy;2014, O'Reilly UK Ltd<br />(800) 889-8969 or (707) 827-7019 <br />Monday-Friday 7:30am-5pm PT<br /> All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.<br />
+<a href="mailto:conf-webmaster@oreilly.com" class="webmaster">conf-webmaster@oreilly.com</a>
+	</div>
+</div> <!-- div#footer_logo-->
+<div class="footercol">
+    <ul>
+        <li><strong>Velocity</strong></li>
+        <li><a href="/velocityeu2014/public/content/about">About</a></li>
+
+
+<li><a href="https://en.oreilly.com/velocityeu2014/public/register">Register for Velocity</a></li>
+        <li><a href="/velocityeu2014/public/content/hotel">Venue, Hotel &amp; Travel</a></li>
+
+        <li><a href="http://www.oreilly.com/conferences/diversity.html" target="_blank">Diversity</a></li>
+        <li><a href="http://www.oreilly.com/conferences/code-of-conduct.html" target="_blank">Code of Conduct</a></li>
+        <li><a href="/velocityeu2014/public/content/sitemap">Sitemap</a></li>
+        <li><a href="http://velocityconf.com">More Velocity Events</a></li>
+        <li><a href="http://www.oreilly.com/privacy.html" target="_blank">Privacy Policy</a></li>
+    </ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>Stay Connected</strong></li>
+  <li><a href="/velocityeu2014/public/content/contact">Contact Us</a></li>
+  <li><a href="http://post.oreilly.com/form/oreilly/signup" target="_blank">Velocity Bulletin</a></li>
+  <li><a href="http://post.oreilly.com/form/oreilly/signup" target="_blank">Web Ops &amp; Performance Newsletter</a></li>
+  <li><a href="http://twitter.com/velocityconf" target="_blank">Twitter</a></li>
+  <li><a href="http://www.facebook.com/velocityconf" target="_blank">Facebook</a></li>
+  <li><a href="http://www.linkedin.com/groups?gid=1303037" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>More O'Reilly Sites</strong></li>
+  <li><a href="http://conferences.oreilly.com" target="_blank">O'Reilly Conferences</a></li>
+  <li><a href="http://www.oreilly.com" target="_blank">oreilly.com</a></li>
+  <li><a href="http://radar.oreilly.com" target="_blank">O'Reilly Radar</a></li>
+  <li><a href="http://oreilly.com/videos/" target="_blank">O'Reilly Video</a></li>
+  <li><a href="http://www.oreilly.com/webcasts/" target="_blank">O'Reilly Webcasts</a></li>
+  <li><a href="http://oreillyschool.com/" target="_blank">School of Technology</a></li>
+  <li><a href="http://igniteshow.com" target="_blank">Ignite</a></li>
+</ul>
+</div>
+                </div>
+            </div>
+        </div><!-- div#en_body -->
+    </div><!-- en_main_parts -->
+    
+    
+</div><!-- en_content -->
+
+
+<style>
+#reasons_row.row, #reasons_row3.row { background: #fff; padding: 5px 0 25px 0; border-bottom: none; }
+#reasons_row2.row { background: #f0f0f0; padding: 5px 0 25px 0; border-bottom: none; }
+#reasons_row.row p, #reasons_row2.row p, #reasons_row3.row p, #reasons_row.row li, #reasons_row2.row li, #reasons_row3.row li  { font-size: 18px; line-height: 1.5em; padding: 7px 0; }
+#reasons_row.row h1, #reasons_row2.row h1, #reasons_row3.row h1, #reasons_row.row h2, #reasons_row2.row h2, #reasons_row3.row h2 { font-size: 2em; line-height: 1.5em; padding: 0; font-weight: normal; color: #008a96; margin-bottom: .5em; }
+#reasons_row.row h3, #reasons_row2.row h3, #reasons_row3.row h3 { font-size: 1.6em; margin-bottom: .5em; }
+#reasons_row.row ul, #reasons_row2.row ul, #reasons_row3.row ul{ padding: 0 20px 10px 17px; margin: 0; }
+#reasons_row.row ul li, #reasons_row2.row ul li, #reasons_row3.row ul li { list-style-image: url('//cdn.oreillystatic.com/en/assets/1/event/113/velocity2014_arrow.png'); margin: 0 0 5px 0; padding: 0; }
+#rightcol { background: #fff url('//cdn.oreillystatic.com/en/assets/1/eventprovider/1/background_quote.gif') left top no-repeat; width: 250px; padding: 24px 0 0 10px; margin: 0 20px 17px 20px; color: #ea6820; font-size: 1.8em; line-height: 1.4em; float: right; }
+.rightcol { background: #fff url('//cdn.oreillystatic.com/en/assets/1/eventprovider/1/background_quote.gif') left top no-repeat; width: 250px; padding: 24px 0 0 10px; margin: 0 20px 17px 20px; color: #ea6820; font-size: 1.8em; line-height: 1.4em; float: right; clear: right;}
+.rightcol2 { background: #f0f0f0 url('//cdn.oreillystatic.com/en/assets/1/eventprovider/1/transparent_quotes_background.png') left top no-repeat; width: 250px; padding: 24px 0 0 10px; margin: 0 20px 17px 20px; color: #ea6820; font-size: 1.8em; line-height: 1.4em; float: right; clear: right;}
+.cta_box,.btn_box a:hover { text-decoration: none; }
+.cta_box,.btn_box { width: 300px; text-align: center; font-style: normal; border: 10px solid #eee; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 360px; padding: 0; margin-bottom: 10px; background: rgba(255,255,255,0.2); background: -moz-linear-gradient(top,rgba(255,255,255,0.2) 0,rgba(234,234,234,0.3) 100%); background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,0.2)),color-stop(100%,rgb(234,234,234,0.3))); background: -webkit-linear-gradient(top,rgba(255,255,255,0.2) 0,rgba(234,234,234,0.3) 100%); background: -o-linear-gradient(top,rgba(255,255,255,0.2) 0,rgba(234,234,234,0.3) 100%); background: -ms-linear-gradient(top,rgba(255,255,255,0.2) 0,rgba(234,234,234,0.3) 100%); background: linear-gradient(to bottom,rgba(255,255,255,0.2) 0,rgba(234,234,234,0.3) 100%); }
+#newsletter-popup-overlay { display: none; position: absolute; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); background: none\9; }
+#newsletter-popup-overlay .popup { overflow: hidden; margin: 140px auto 0; background-color: #f9f9f9; text-align: center; width: 740px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); border: 3px solid #ddd; }
+#newsletter-popup-overlay .popup .popup-header { background: #FFF url('//cdn.oreillystatic.com/oreilly/images/velocity-nl-popup-greyhound.jpg') -4px 10px no-repeat; padding: 10px 10px 15px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+#newsletter-popup-overlay .popup .popup-header a.close { font-size: 16px; line-height: 19px; color: #999; display: block; padding-right: 24px; float: right; background: transparent url('http: //cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right 0 no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close:hover { color: #666; text-decoration: none; background: transparent url('http: //cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right -100px no-repeat; }
+#newsletter-popup-overlay .popup .popup-header h3 { margin: 50px 13px 5px 13px; clear: both; padding: 0; font-size: 40px; line-height: 44px; font-weight: normal; }
+#newsletter-popup-overlay .popup .popup-header p { margin: 0 40px; padding: 0; font-size: 20px; line-height: 28px; font-weight: normal; }
+#newsletter-popup-overlay .popup-form { margin: 42px 23px 0; text-align: left; }
+#newsletter-popup-overlay #newsletter-popup-frame { display: block; border: none; padding: 0; margin: 0 auto; width: 450px; height: 90px; text-align: left; }
+</style>
+
+
+
+<link href="//cdn.oreillystatic.com/en/assets/1/event/121/velocityeu2014_btf_css.css" media="screen" rel="Stylesheet" type="text/css" />
+
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 966350787;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/966350787/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+  <script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/yepnope.1.5.4-min.js"></script>
+  <script>
+  yepnope({
+    load: ['//cdn.oreillystatic.com/ajax/libs/jquery/1.7.2/jquery.min.js', '//cdn.oreillystatic.com/en/assets/1/eventprovider/1/superfish_v1.3.1.js', '//cdn.oreillystatic.com/en/assets/1/eventprovider/1/lazyload_min_v2.js', '//cdn.oreillystatic.com/en/assets/1/eventprovider/1/accordion.js'],
+    complete: function () {
+        $(function(){
+          //load large images and BTF images
+           $('#headlining.row').css('background', '#008a96 url(//cdn.oreillystatic.com/en/assets/1/event/117/velocityny2014_bolt.png) center top no-repeat');
+           //$('#stay_informed iframe').attr('src', '//cdn.oreillystatic.com/en/assets/1/eventprovider/1/email_signup_widget.htm?conference=velocity&locationSource=velocity14_eu_widget&colorLink=e0922f&colorText=eee'); 
+           $('div.stay_connected a.chicklet').css({'background-color': '#000', 'background-image': 'url(//cdn.oreillystatic.com/conferences/velocity/assets2012/social-buttons/social.png)', 'background-repeat': 'no-repeat'});
+ //          $('#sponsor_title').css('background', '#cacaca url(//cdn.oreillystatic.com/en/assets/1/eventprovider/1/sponsors_vertical.gif) 97% center no-repeat');   
+
+            /* init nav */
+           $("#top_level_nav #nav").superfish();
+
+           /* accordian mainly used on speaker resources */
+           $(".accordion .module h2").accordion({clickTitle: 'h2', slideTime: '30'});
+
+           /* make links with class=external open up external */
+           $("a.external").click(function (e) {
+              e.preventDefault();
+              window.open($(this).attr("href"));
+           });     
+
+         
+
+         
+
+       
+
+       
+       
+   //load cheeseboard
+    var speaker_list1 = [ 
+{ id: 94006, name: "Tammy Everts", affiliation: "Radware" },
+{ id: 122259, name: "Lyza Gardner", affiliation: "Cloud Four" },
+{ id: 135930, name: "Mandi Walls", affiliation: "Chef" }
+];
+
+var speaker_list2 = [ 
+{ id: 166140, name: "Yavor Atanasov", affiliation: "BBC" },
+{ id: 137186, name: "Andrew Betts", affiliation: "FT Labs" },
+{ id: 3047, name: "Laine Campbell", affiliation: "Blackbird" },
+{ id: 159203, name: "Kent Alstad", affiliation: "Radware Canada" },
+{ id: 125405, name: "Tobias Baldauf", affiliation: "Akamai" },
+{ id: 141120, name: "Artur Bergman", affiliation: "Fastly" },
+{ id: 150588, name: "Buddy Brewer", affiliation: "SOASTA" },
+{ id: 125942, name: "Andy Davies", affiliation: "NCC Group" },
+{ id: 173268, name: "Pamela Fox", affiliation: "Khan Academy" },
+{ id: 88031, name: "Ilya Grigorik", affiliation: "Google" },
+{ id: 109402, name: "Wesley Hales", affiliation: "Shape Security" },
+{ id: 152299, name: "Vanessa Hurst", affiliation: "CodeMontage" },
+{ id: 175437, name: "Stein Inge Morisbak", affiliation: "Bekk Consulting AS" },
+{ id: 4103, name: "Theo Schlossnagle", affiliation: "OmniTI/Circonus" },
+{ id: 56035, name: "Philip Tellis", affiliation: "SOASTA" },
+{ id: 155970, name: "Yoav Weiss", affiliation: "WL Square" },
+{ id: 175833, name: "Mark Zeman", affiliation: "SpeedCurve" }
+];
+var speaker_list = speaker_list2.sort(function() { return 0.5 - Math.random() }),
+	additional_speakers = speaker_list.slice(5, speaker_list.length);
+speaker_list = speaker_list.slice(0, 5)
+speaker_list = speaker_list.concat(speaker_list1).sort(function() { return 0.5 - Math.random() });
+
+
+//var speaker_container = $('#speaker_row .content_row div.negative-margin');
+var speaker_container = $('#load_cheeses');
+for (var i=0; i<speaker_list.length; i++) {
+	var speaker_id = speaker_list[i].id,
+		speaker_name = speaker_list[i].name,
+		speaker_affiliation = speaker_list[i].affiliation, 
+		add_speaker = '<div class="speaker' + ((i>=4) ? ' small-hide' : '') + '"><a href="/velocityeu2014/public/schedule/speaker/' + speaker_id + '"><span class="img_container"><img class="lazy" data-img-src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/speaker_' + speaker_id +'.jpg" src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" width="" alt="'+ speaker_name +'" /></span><div class="speaker_info"><span class="speaker_name">'+ speaker_name +'</span><br /><span class="speaker_affiliation">'+ speaker_affiliation +'</span></div></a></div>';
+	speaker_container.append(add_speaker);
+}
+
+for (var j=0; j<additional_speakers.length; j++) {
+	var speaker_id = additional_speakers[j].id,
+		speaker_name = additional_speakers[j].name,
+		speaker_affiliation = additional_speakers[j].affiliation, 
+		add_speaker = '<div class="speaker hide small-hide"><a href="/velocityeu2014/public/schedule/speaker/' + speaker_id + '"><span class="img_container"><img class="" src="//cdn.oreillystatic.com/oreilly/images/transparent-1px.png" data-img-src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/speaker_' + speaker_id +'.jpg" width="" alt="'+ speaker_name +'" /></span><div class="speaker_info"><span class="speaker_name">'+ speaker_name +'</span><br /><span class="speaker_affiliation">'+ speaker_affiliation +'</span></div></a></div>';
+	speaker_container.append(add_speaker);
+}
+
+
+       //load hidden cheeseboard
+        $('#view_below').on('click', function(e){
+		e.preventDefault();
+                $('.speaker.hide a  span.img_container > img').each( function() {
+                   $(this).addClass('lazy');               
+               });
+		$('.speaker').removeClass('hide').removeClass('small-hide');
+                $(this).remove();
+                $('#view_all_speakers').parent().removeClass('hide');
+                getLazy();
+	});
+            
+         
+             
+        });
+      }
+  });
+  
+     yepnope('//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_newsletter_popup_min.js');  
+  
+
+  
+
+  </script>
+
+
+<!-- js/chartbeat_footer --> 
+<script type="text/javascript">
+	var _sf_async_config={uid:1632,domain:"velocityconf.com"};
+	(function(){
+		function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			(("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			"js/chartbeat.js");
+			document.body.appendChild(e);
+		}
+		
+		var oldonload = window.onload;
+		window.onload = (typeof window.onload != 'function') ?
+		loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+<!-- site catalyst -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var localScAcct = "orvelocityeu"; 
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--//
+ /* Specify the Report Suite ID(s) to track here */ 
+/* localScAcct is specified in content/scripts/sitecatalyst_cfg */
+//var globalScAcct = "ororeillyglobaldev";
+var globalScAcct = "orglobal";
+
+var s_account = localScAcct + "," + globalScAcct;
+/*s_code.js must be called via the current protocol to avoid mixed content warnings */
+var s_code_protocol;
+var s_code_url = "cdn.oreillystatic.com/assets/js/s_code.js";
+if (window.location.protocol == "https:"){
+document.write('<script id="s_code_script" type="text/javascript" src="https://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' + '/script>');
+}else{
+document.write('<script id="s_code_script" type="text/javascript" src="http://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' +'/script>');
+}
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var myChannel, myPageName, myTitle, mySeries, myEvent, myEventTitle, mySection, mySection2, mySection3, myLoggedStatus,myEventPhase,localScAcct,myPubDate,mySystemPageType;
+
+if(typeof(myTitleAppend) == 'undefined')
+var myTitleAppend = "";
+else myTitleAppend = ": " + myTitleAppend;
+
+myChannel = "confs";
+
+myTitle       = "home" + myTitleAppend;
+
+
+mySection   = new Array(myChannel);
+mySeries = "velocity";
+
+mySection.push(mySeries);
+mySection2 = mySection.slice(); 
+
+myEventPhase = "registration"; 
+
+var myEventStartDate = new Date ("November 17, 2014");
+var today            = new Date();
+if (today > myEventStartDate){
+     myEventPhase = "post-conference";
+}
+ myPubDate = "11/17/2014"; 
+myEventTitle = "Velocity Europe 2014";
+myEvent      = "velocityeu2014";
+mySection2.push(myEvent)
+
+mySection3 = mySection2.slice(); 
+mySystemPageType = "home";
+
+
+mySection3.push(mySystemPageType)
+myPageName   = myChannel + ":" + myEvent + " " + myTitle;
+mySection    = mySection.join(":");
+mySection2   = mySection2.join(":");
+mySection3   = mySection3.join(":");
+
+myLoggedStatus = "logged out";
+
+/* You may give each page an identifying name, server, and channel on
+the next lines..... */
+s.pageName = myPageName.toLowerCase(); 
+//s.server   = ""; OK TO DELETE THIS LINE?
+s.channel  = myChannel;
+//s.pageType = "";OK TO DELETE THIS LINE?
+s.prop1  = mySection;
+s.prop2  = mySection2;
+s.prop3  = mySection3;
+s.prop4  = mySystemPageType; //not using this currently
+s.prop5  = myTitle;
+s.prop7  = myPubDate;
+s.prop15 = s.eVar24 = myLoggedStatus;
+s.prop29 = myEventPhase;//this has more work to do.
+s.prop38 = myEventTitle;
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";  // need way to distinguish amongst these
+s.products="";     // only put products on for purchases.
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ororeillyglobaldev.122.2O7.net/b/ss/ororeillyglobaldev/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+<!-- crazy egg heatmap -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script"); var b=document.getElementsByTagName('script')[0]; a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000); a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3144621-21']);
+  _gaq.push(['_setSiteSpeedSampleRate', 100]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>

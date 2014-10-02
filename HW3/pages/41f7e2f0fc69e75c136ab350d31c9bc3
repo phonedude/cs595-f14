@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQ8EUVRACgUEUlVRBg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+    <title>The Future Of The Blockchain - Business Insider</title>
+    <meta name="date" content="2014-04-22" />
+<meta name="sailthru.date" content="2014-04-22" />
+<meta name="news_keywords" content="Bitcoin, Rob Wile, " />
+<meta name="sailthru.tags" content="Bitcoin, Rob Wile, " />
+<meta name="description" content="Satoshi's breakthrough." />
+<meta name="sailthru.description" content="Satoshi's breakthrough." />
+<meta name="title" content="SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" />
+<meta name="sailthru.verticals" content="moneygame,clusterstock,sai" />
+<meta name="sailthru.title" content="SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" />
+<meta name="tbi-image" content="http://static2.businessinsider.com/image/535003d2ecad041b0cf1c955/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg" />
+<meta name="sailthru.image.full" content="http://static2.businessinsider.com/image/535003d2ecad041b0cf1c955/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg" />
+<meta name="sailthru.image.thumb" content="http://static4.businessinsider.com/image/535003d2ecad041b0cf1c955-50-50/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg" />
+<meta name="sailthru.author" content="Rob Wile" />
+<meta property="og:title" content="SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" />
+<meta property="og:description" content="Satoshi's breakthrough." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" />
+<meta property="og:site_name" content="Business Insider" />
+<meta property="fb:app_id" content="155043519637" />
+<meta property="article:publisher" content="businessinsider" />
+<meta property="author" content="Rob Wile" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:url" content="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" />
+<meta property="twitter:title" content="SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" />
+<meta property="twitter:description" content="Satoshi's breakthrough." />
+<meta property="twitter:image" content="http://static2.businessinsider.com/image/535003d2ecad041b0cf1c955/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg" />
+<meta property="twitter:creator" content="rjwile" />
+<meta property="twitter:site" content="themoneygame" />
+<meta property="article:author" content="http://www.businessinsider.com/author/rob-wile" />
+<meta property="og:image" content="http://static2.businessinsider.com/image/535003dd69beddc74ff1c956/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg" />    <link href="http://static2.businessinsider.com/assets/css/min-base.css?1411763854" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://static2.businessinsider.com/assets/css/min-post.css?1411763854" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" rel="canonical" />    <link type="text/css" rel="stylesheet" media="print" href="http://static3.businessinsider.com/assets/css/print.css?1411763854" />   
+    <script type="text/javascript" src="http://static3.businessinsider.com/assets/js/min2.js?1411763854"></script>
+<script type="application/ld+json">
+    //<![CDATA[
+    {"@context":"http:\/\/schema.org","@type":"NewsArticle","headline":"SATOSHI\u0027S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger","url":"http:\/\/www.businessinsider.com\/the-future-of-the-blockchain-2014-4","thumbnailUrl":"http:\/\/static2.businessinsider.com\/image\/535003d2ecad041b0cf1c955\/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg","dateCreated":"2014-04-22T15:50:00Z","articleSection":"moneygame","creator":"Rob Wile","keywords":["Bitcoin"]}    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    BI.post.isSlideshow=false;    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    post = {"id":"5346defc6bb3f77d0e88cdeb","uri":"http:\/\/www.businessinsider.com\/the-future-of-the-blockchain-2014-4","thumb":"http:\/\/static3.businessinsider.com\/image\/535003d2ecad041b0cf1c955-90-90\/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg","author":"Rob Wile","author_ids":"Rob Wile:24","post_type":"post"};    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+        Author = "Rob Wile";
+        Category = "Bitcoin";
+        AuthorType = "Staff";
+        Editor = "Rob Wile";
+        BIISub = "none"
+            //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+        BI.nav_select = "Finance";
+        BI.highTrafficMode = 0;
+        BI.post.isDraft = 0;
+        BI.post.url = "http://www.businessinsider.com/the-future-of-the-blockchain-2014-4";
+        BI.post.name = "the-future-of-the-blockchain-2014-4";
+        BI.comments.currentPage = 0;
+        BI.comments.filterPundits = 1;
+        BI.comments.getAllComments = 1;
+            //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    BI.post.googleplusCount = 220;
+            //]]>
+</script>    <!-- optimizely desktop -->
+        <!-- End optimizely desktop -->
+
+        <meta name="tbi-vertical" content="moneygame" />
+    <meta name="viewport" content="width=1024" />
+
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <link type="text/css" rel="stylesheet" media="all" href="http://static3.businessinsider.com/assets/css/ie7_or_lower.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="http://static2.businessinsider.com/assets/css_vendor/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!--[if IE 8]>
+        <link type="text/css" rel="stylesheet" media="all" href="http://static5.businessinsider.com/assets/css/ie8.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script type="text/javascript" src="http://static3.businessinsider.com/assets/js/vendor/ie8/placeholders.min.js"></script>
+    <![endif]-->
+
+    <!--[if IE 9]>
+        <link type="text/css" rel="stylesheet" media="all" href="http://static4.businessinsider.com/assets/css/ie9.css" />
+        <script type="text/javascript" src="http://static5.businessinsider.com/assets/js/shims/Element.classList.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var vertical = 'moneygame';
+        var PageType = 'post';
+        var post_id = '';
+        var _sf_startpt=(new Date()).getTime();
+    </script>
+
+    <!-- Kissmetrics -->
+    <script type="text/javascript">
+        var _kmq = _kmq || [];
+        var _kmk = _kmk || '999f578acebfab6dd29b540ab4ebbcbaafafa774';
+
+        function _kms(u){
+            setTimeout(function(){
+                var s = document.createElement('script');
+                var f = document.getElementsByTagName('script')[0];
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = u;
+                f.parentNode.insertBefore(s, f);
+            }, 1);
+        }
+            </script>
+    <!-- Kissmetrics -->
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/TheMoneyGame" />
+    <link rel="shortcut icon" href="http://static5.businessinsider.com/assets/images/faviconBI.ico" />
+    <link rel="icon" type="image/ico" href="http://static5.businessinsider.com/assets/images/faviconBI.ico" />
+    <link rel="apple-touch-icon" href="http://static4.businessinsider.com/assets/images/apple-touch-icon.png" />
+    <meta name="linkedin:owner" content="mid:218712">
+
+    <!--[if gte IE 9]>
+        <meta name="application-name" content="Business Insider - moneygame"/>
+        <meta name="msapplication-tooltip" content="Start the page in Site Mode"/>
+        <meta name="msapplication-starturl" content="http://www.businessinsider.com/moneygame"/>
+        <meta name="msapplication-window" content="width=800;height=600"/>
+        <meta name="msapplication-navbutton-color" content="#4C7C8D"/>
+
+        <meta name="msapplication-task" content="name=Tech;action-uri=http://www.businessinsider.com/sai;icon-uri=http://www.businessinsider.com/favicon.ico"/>
+        <meta name="msapplication-task" content="name=Media;action-uri=http://www.businessinsider.com/thewire;icon-uri=http://www.businessinsider.com/favicon.ico"/>
+        <meta name="msapplication-task" content="name=Wall Street;action-uri=http://www.businessinsider.com/clusterstock;icon-uri=http://www.businessinsider.com/favicon.ico"/>
+        <meta name="msapplication-task" content="name=Markets;action-uri=http://www.businessinsider.com/moneygame;icon-uri=http://www.businessinsider.com/favicon.ico"/>
+        <meta name="msapplication-task" content="name=Strategy;action-uri=http://www.businessinsider.com/warroom;icon-uri=http://www.businessinsider.com/favicon.ico"/>
+    <![endif]-->
+
+    <script type="text/javascript">BI.siteURI = 'http://www.businessinsider.com';</script>
+    <script type="text/javascript">BI.secureURI = 'https://www.businessinsider.com';</script>
+    <script type="text/javascript">BI.staticURI = 'http://static1.businessinsider.com';</script>
+    <script type="text/javascript">BI.env.setDomain('http://www.businessinsider.com');</script>
+
+    <script type="text/javascript" src="//platform.linkedin.com/in.js">
+       api_key: x4dbohswv62d
+       authorize: true
+       scope: r_basicprofile r_emailaddress r_network rw_nus
+    </script>
+
+    
+</head>
+
+
+<body class="responsive ">
+
+<!-- print only -->
+<img class="print" src="http://static4.businessinsider.com/assets/images/logos/logo-bi-print.png" width="150" />
+
+<!-- FB Connect -->
+<div id="fb-root" data-bi-facebook-root="155043519637"></div>
+<!-- / FB Connect -->
+
+<!--[if lt IE 8]>
+    <div class="container>
+        <div class="row">
+            <div class="alert alert-error alert-block">
+                <h4>Warning!</h4>
+                You are using an outdated version of Internet Explorer.  For security reasons you should <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank" title="Upgrade IE">upgrade your browser</a>. Please go to Windows Updates and install the latest version.
+            </div>
+        </div>
+    </div>
+<![endif]-->
+
+    <div id="tray">
+        <div class="list-pipes filters container">
+            <ul class="container page">
+                <li><a href="#" class="active" data-view="featured">Featured</a></li>
+                <li><a href="#" data-view="trending">Trending</a></li>
+                <li><a href="#" data-view="latest">Recent</a></li>
+            </ul>
+        </div>
+        <div class="container page">
+            <div class="tray-control right">
+                <i class="fa fa-angle-right"></i>
+            </div>
+            <div class="tray-control left disabled">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="container" style="overflow: hidden">
+                <div class="carousel-items row">
+                    <div class="item-container">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- new masthead -->
+<div class="masthead">
+    <div class="masthead-bottom-gradient"></div>
+    <div class="container">
+        <div class="row">
+
+            <!-- BI Logo -->
+            <div class="span2 logo">
+                <div class="sprites logo-background"></div>
+                <div class="sprites logo-background-oneline"></div>
+                <a class="logo-link" href="/" title="Business Insider"><img src="http://static4.businessinsider.com/assets/images/transparent.gif" alt="Business Insider"></a>
+            </div>
+
+            <div class="span10 navigation">
+                <div class="row">
+
+                    <!-- user_menubar -->
+                    
+<div class="login-social loggedout">
+    <ul class="login">
+        <li class="user-login dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" rel="nofollow">Login <i class="fa fa-chevron-down"></i></a>
+
+            <!-- user login menu -->
+            <ul class="dropdown-menu popover bottom" role="menu">
+                <!-- <div class="arrow-up"><div></div></div> -->
+                <!-- <a class="sprites bi-icon-close bi-icon-login" href="#">&nbsp;</a> -->
+
+                <div class="arrow"></div>
+
+                <form name="login-form" action="https://www.businessinsider.com/login" method="post">
+                    <fieldset>
+                        <!-- <label for="username">Username</label> -->
+                        <input class="text" tabindex="1" name="username" type="text" value="" placeholder="Username or email">
+
+                        <!-- <label for="password">Password</label> -->
+                        <input class="text" type="password" tabindex="2" name="password" value="" placeholder="Password">
+
+                        <label class="checkbox" for="remember">
+                            <input type="checkbox" name="remember" id="remember"> Remember me
+                        </label>
+
+                        <input class="btn submit" value="Login" type="submit" />                        <span class="help-block"><a href="/forgot">I forgot username or password</a></span>
+                </form>
+                <hr>
+
+                <a id="tw_login_link" class="btn btn-social twitter" href="/register?action=twitter&first=twitter" rel="nofollow"><i class="fa fa-twitter"></i> Login with Twitter</a>
+
+                <a class="btn btn-social facebook" href="#" onclick="return BI.FB_Core.login(true)"><i class="fa fa-facebook"></i> Login with Facebook</a>
+
+                <a id="linkedin_login_link" class="btn btn-social linkedin" href="/register?action=linkedin&first=linkedin" rel="nofollow"><i class="fa fa-linkedin"></i> Login with LinkedIn</a>
+
+                <span id="gplus_login_button" class="btn btn-social google-plus" rel="nofollow"><i class="fa fa-google-plus"></i> Login with Google</span>
+
+            </ul>
+            <!-- / user login menu -->
+        </li>
+
+        <li class="ks-menubar-register"><a id="menubar-register" href="https://www.businessinsider.com/register?first=index" rel="nofollow">Register</a></li>
+    </ul>
+
+    <!-- social + share links -->
+    <ul class="sprites social">
+        <li>
+            <a href="//www.facebook.com/businessinsider" title="Like us on Facebook" target="_blank"><i class="fa fa-facebook ks-header-facebook"></i></a>
+        </li>
+        <li>
+            <a href="//twitter.com/businessinsider" title="Follow us on Twitter" target="_blank"><i class="fa fa-twitter ks-header-twitter"></i></a>
+        </li>
+        <li>
+            <a href="//plus.google.com/+BusinessInsider/posts" rel="publisher" title="Follow us on Google+" target="_blank"><i class="fa fa-google-plus ks-header-google-plus"></i></a>
+        </li>
+        <li class="last-social">
+            <a href="//www.linkedin.com/today/businessinsider.com" title="Connect with us on LinkedIn" target="_blank"><i class="fa fa-linkedin ks-header-linkedin"></i></a>
+        </li>
+    </ul>
+</div><!-- login social -->
+
+
+<!-- Kontera -->
+<script type="text/javascript">
+			BI.showKontera = false;
+	</script>
+<!-- / Kontera -->
+
+<script type="text/javascript">
+    BI.displayPunditRequestLinks = "non-logged-in";
+</script>
+
+                    <!-- Non-verticals -->
+                    <div class="non-verticals">
+                        <ul class="sprites">
+                            <li class="sprites"><a href="/events">Events</a></li>
+                            <li class="sprites"><a href="http://intelligence.businessinsider.com">BI Intelligence</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                                <div class="tray-btn">
+                    <span class="open-label"><i class="fa fa-caret-down"></i></span>
+                    <span class="close-label"><i class="fa fa-caret-up"></i></span>
+                </div>
+                
+                <div class="row">
+                    <!-- Search -->
+                    <div class="span4 nav-search">
+                        <form method="get" action="/s" class="search-field">
+                            <input class="sprites" name="q" type="text" placeholder="Search">
+                            <button type="submit" title="Search"></button>
+                        </form>
+                    </div>
+
+                    <!-- Main Nav -->
+                    <div class="main-nav">
+                        <ul>
+                                                                                    <li class="Tech">
+                                <a class="item" data-dropdown-id="dropdown-Tech" href="/sai">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="triangle triangle-right"></div>
+                                    Tech                                </a>
+                            </li>
+                                                                                    <li class="Finance active">
+                                <a class="item" data-dropdown-id="dropdown-Finance" href="/clusterstock">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="triangle triangle-right"></div>
+                                    Finance                                </a>
+                            </li>
+                                                                                    <li class="Politics">
+                                <a class="item" data-dropdown-id="dropdown-Politics" href="/politics">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="triangle triangle-right"></div>
+                                    Politics                                </a>
+                            </li>
+                                                                                    <li class="Strategy">
+                                <a class="item" data-dropdown-id="dropdown-Strategy" href="/warroom">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="triangle triangle-right"></div>
+                                    Strategy                                </a>
+                            </li>
+                                                                                    <li class="Life">
+                                <a class="item" data-dropdown-id="dropdown-Life" href="/thelife">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="triangle triangle-right"></div>
+                                    Life                                </a>
+                            </li>
+                                                                                    <li class="Entertainment">
+                                <a class="item" data-dropdown-id="dropdown-Entertainment" href="/thewire">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="triangle triangle-right"></div>
+                                    Entertainment                                </a>
+                            </li>
+                                                                                    <li class="All">
+                                <a class="item" data-dropdown-id="dropdown-All" href="/">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="triangle triangle-right"></div>
+                                    All                                </a>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Nav Dropdowns -->
+    <div class="main-nav-dropdown ks-nav-dropdown" style="border-color: #185f7c">
+    </div>
+</div>
+<!-- / new masthead -->
+
+<style type="text/css" id="leaderboard_styles">
+.info {
+	float: right;
+	clear: both;
+	margin: 2px 0;
+}
+#interstitial-countdown span {
+	font-weight: bold;
+}
+#main-content, #ft {
+	display: none;
+}
+.interstitial-ad-content {
+	width: 980px;
+	margin: 70px auto;
+}
+.interstitial_body {
+	margin: 1em auto;
+	padding: 1em 0;
+	display: table;
+}
+.leaderboard_hidden {
+	display: none;
+}
+</style>
+
+<script>
+// the rest of the JS is added to the footer, via interstitial.js
+(function() {
+
+	//as soon as it renders, doesnt need jquery. needs the bi lib
+	function onRender() {
+		var inAd = document.getElementById('interstitial-ad-content');
+		var leaderStyles = document.getElementById('leaderboard_styles');
+
+		if (BI.cookies.get('iad') == 1) {
+			//this is to handle when the user uses the back button from a post back to home
+			inAd.parentNode.removeChild(inAd);
+			leaderStyles.parentNode.removeChild(leaderStyles);
+		} else {
+			inAd.style.display = 'block';
+			inAd.setAttribute('data-bi-ad','interstitial');
+			amplify.publish('interstitialAdToBeShown');
+
+			//update link
+			document.getElementById('interstitial-link').href = window.location;
+
+			//set the cookie for them
+			BI.cookies.set('iad',1);
+		}
+	}
+
+	// Do stuff ASAP
+	document.addEventListener('DOMContentLoaded', onRender);
+}())
+</script>
+
+<div class="interstitial-ad-content" id="interstitial-ad-content" style="display: none">
+	<p class="info"><a id="interstitial-link" href="http://www.businessinsider.com">Continue to Business Insider &raquo;</a></p>
+	<p class="info" id="interstitial-countdown">You will be redirected in <span></span> seconds.</p>
+	<div class="interstitial_body" style="clear: both">
+		
+
+<div data-bi-ad class="ad dfp" data-adunit="desktop/finance/moneygame/post" data-authors="rob-wile" data-pagetype="post" data-region="Welcome Ad" data-sizes="640x480,600x480,600x600" data-tag="bitcoin" data-url="/the-future-of-the-blockchain-2014-4" data-views="10001-500000"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		// Notify the DFP code that a new ad has just been rendered
+		amplify.publish('adRender');
+	}());
+</script>
+	</div>
+</div>
+
+<div id="main-content" class="container">
+    <!-- flash messages -->
+    
+        <div class="subnav-container">
+        <div class="subnav-content">
+            
+
+<div data-bi-ad class="ad dfp" data-adunit="desktop/finance/moneygame/post" data-authors="rob-wile" data-pagetype="post" data-pos="atf" data-region="Subnav" data-sizes="728x90,970x250,970x90" data-tag="bitcoin" data-url="/the-future-of-the-blockchain-2014-4" data-views="10001-500000"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		// Notify the DFP code that a new ad has just been rendered
+		amplify.publish('adRender');
+	}());
+</script>
+        </div>
+    </div>
+    
+    
+    <div class="siteskin-dropshadow">
+        <div class="row primary-row">
+                            <div class="breaking-module-rendered" id="breaking-module-rendered">
+                    
+<div class="page-top">	
+</div>                </div>
+                        <div class="span8">
+                <div class="breaking-module-siteskin" id="breaking-module-siteskin"></div>
+    
+<a name="post-top"></a>
+
+
+<div id="share-email-tmpl">
+    <div id="shareEmailModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="shareEmailModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="shareEmailModalLabel"></h3>
+      </div>
+      <div class="modal-body">
+        <div class="share-email-error alert alert-error display-none"></div>
+
+        <div class="share-email-body">
+            <div class="register">
+                <form id="form_form" class="form-horizontal" action="#" method="post">
+                    <div class="control-group">
+                        <label for="mail_from" class="control-label">From</label>
+                        <div class="controls">
+                            <input type="text" name="mail_from" class="mail-from" placeholder="Your Email Address" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="mail_to" class="control-label">To</label>
+                        <div class="controls">
+                            <input type="text" name="mail_to" class="mail-to" placeholder="Friend's Email Address" />
+                        </div>
+                    </div>
+                    <input type="hidden" name="action" value="email" />
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="submit" class="btn submit email-post" value="Send" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="share-email-success" style="display:none">
+            <div class="alert alert-success">
+                You have successfully emailed the post.
+            </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+
+<div  class="content post">
+    <div class="sl-layout-post">
+        
+<!-- Top category tags -->
+    <div class="category-wrapper" data-category-wrapper>
+
+            
+                            <span class="category-link" style="border-color: #cf4e00;">
+                    <a style="color: #cf4e00" href="http://www.businessinsider.com/moneygame">Markets</a>                </span>
+            
+        <span class="tags-top pull-right">
+            More:
+
+                                                        <a href="/category/bitcoin">Bitcoin</a>
+            
+                    </span>
+    </div>
+
+
+<h1>SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger</h1>
+
+<div id="content" class="content">
+    <div class="post-top">
+        <!-- Byline -->
+        
+<div class="flex byline">
+			<div class="flex-auto byline-icon">
+							<a class="author-photo" href="http://www.businessinsider.com/author/rob-wile"><img class="author" src="http://static4.businessinsider.com/image/519f7384eab8ea461b00002f-50-50/rob-wile.jpg"></a>
+					</div>
+	
+	
+	<div class="flex-item">
+		<div class="list-pipes">
+			<ul>
+																		<li class="single-author"><a href="http://www.businessinsider.com/author/rob-wile" rel="author">Rob Wile</a></li>
+		                <li>
+    <div class="contact">
+        
+                    <a href="mailto:rwile@businessinsider.com" data-toggle="tooltip" data-placement="top" title="" data-original-title="rwile@businessinsider.com"><i class="fa fa-envelope-o"></i></a>
+        
+        
+        
+        
+                    <a href="http://twitter.com/rjwile" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter feed"><i class="fa fa-twitter"></i></a>
+        
+                    <a href="https://plus.google.com/u/0/113748169597474937872/?rel=author" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google+"><i class="fa fa-google-plus"></i></a>
+        
+    </div>
+
+    </li>
+													                    </ul>
+                </div>
+                <div class="list-pipes">
+                    <ul>
+                		        			        <li class="date" data-bi-format="date" rel="1398181800">Apr. 22, 2014, 11:50 AM</li>		        			
+		    		        <li class="pageviews"><span class="sprites fire views" title="views">73,119</span></li>
+		    
+		    		        			        <li title="Read comments" class="comments ks-read-comments-top">
+				        <a href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4#comments" class="views sprites comments-icon"></a>
+						<a class="comment_count" href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4#comments">47</a>			        </li>
+		        		    
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+        <!-- Sharing -->
+        <div class="share">
+			
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-top clearfix" style="display:block;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-top clearfix">
+        <li class="facebook ks-byline-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="text">facebook</span>
+            </a>
+        </li>
+        <li class="linkedin ks-byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="text">linkedin</span>
+            </a>
+        </li>
+        <li class="twitter ks-byline-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="text">twitter</span>
+            </a>
+        </li>
+        <li class="googleplus ks-byline-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="text">google+</span>
+            </a>
+        </li>
+                <li class="printbtn ks-byline-print">
+            <a href="javascript:window.print()" title="print">
+                <i class="fa fa-print"></i>
+                <span class="text">print</span>
+            </a>
+        </li>
+                <li class="email button-email ks-byline-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+
+<!-- RRSSB TEST 1 start -->
+<div class="rrssb-test-1 share-container ks-share-top clearfix" style="display:none;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-top clearfix">
+        <li class="facebook ks-byline-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="facebook-count-1 social-count-center"></span>
+            </a>
+        </li>
+        <li class="linkedin ks-byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="linkedin-count-1 social-count-center"></span>
+            </a>
+        </li>
+        <li class="twitter ks-byline-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="twitter-count-1 social-count-center"></span>
+            </a>
+        </li>
+        <li class="googleplus ks-byline-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="googleplus-count-1 social-count-center"></span>
+            </a>
+        </li>
+        <li class="printbtn ks-byline-print">
+            <a href="javascript:window.print()" title="print">
+                <i class="fa fa-print"></i>
+                <span class="text">print</span>
+            </a>
+        </li>
+        <li class="email button-email ks-byline-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB TEST 1 end -->
+
+<!-- RRSSB TEST 2 start -->
+<div class="rrssb-test-2 share-container ks-share-top clearfix" style="display:none;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-top clearfix">
+        <li class="facebook ks-byline-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="text">share <span class="facebook-count"></span></span>
+            </a>
+        </li>
+        <li class="linkedin ks-byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="text">share <span class="linkedin-count"></span></span>
+            </a>
+        </li>
+        <li class="twitter ks-byline-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="text">tweet <span class="twitter-count"></span></span>
+            </a>
+        </li>
+        <li class="googleplus ks-byline-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="text">share <span class="googleplus-count"></span></span>
+            </a>
+        </li>
+        <li class="printbtn ks-byline-print">
+            <a href="javascript:window.print()" title="print">
+                <i class="fa fa-print"></i>
+                <span class="text">print</span>
+            </a>
+        </li>
+        <li class="email button-email ks-byline-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB TEST 2 end -->
+
+<!-- RRSSB TEST 3 start -->
+<div class="rrssb-test-3 share-container ks-share-top clearfix" style="display:none;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-top clearfix">
+        <li class="facebook ks-byline-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="text">Share on Facebook <span class="facebook-count"></span></span>
+            </a>
+        </li>
+        <li class="twitter ks-byline-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="text">Share on Twitter <span class="twitter-count"></span></span>
+            </a>
+        </li>
+        <li class="linkedin ks-byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="text">Share on Linkedin <span class="linkedin-count"></span></span>
+            </a>
+        </li>
+
+        <li class="googleplus ks-byline-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="text">share <span class="googleplus-count"></span></span>
+            </a>
+        </li>
+        <li class="printbtn ks-byline-print">
+            <a href="javascript:window.print()" title="print">
+                <i class="fa fa-print"></i>
+                <span class="text">print</span>
+            </a>
+        </li>
+        <li class="email button-email ks-byline-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB TEST 3 end -->
+        </div>
+    </div>
+
+    <!-- Perfect Market content ad-->
+    
+		 <!-- END Perfect Market content ad-->
+
+    <div class="clear-both">
+		<div class="KonaBody post-content">
+			
+            <p><img src="http://d3j5vwomefv46c.cloudfront.net/photos/large/849526553.gif?1398172091" border="0" alt="" style="width: 800px;" /></p>
+<p><span style="line-height: 1.5em;">We gave our </span><a href="http://www.businessinsider.com/satoshi-nakamoto-person-of-the-year-2013-12">Person of the Year award</a><span style="line-height: 1.5em;">&nbsp;for 2013 to Satoshi Nakamoto, the pseudonymous creator of Bitcoin.&nbsp;</span><span style="font-size: 15px; line-height: 1.5em;">We know some of you laughed.&nbsp;</span></p>
+<p><span style="line-height: 1.5em;"><span>If you did, you may want to read on. It's becoming increasingly clear that Satoshi's creation has the potential to change how much of commerce itself works, and for reasons not even many Bitcoin fans realize.</span></span></p>
+<p><span style="line-height: 1.5em;">By many accounts, Satoshi came up with a real-world solution to a longstanding computer science paradox known as the double-spend problem, or the&nbsp;<strong>Byzantine General's problem</strong> (<a href="http://research.microsoft.com/en-us/um/people/lamport/pubs/pubs.html#byz">the professor who named it explains why he did so here</a>). The challenge is how to send and receive money online without the need for a trusted third party, such as PayPal, ensuring that the same digital credit standing in for the amount being exchanged isn't being spent twice. </span></p>
+<p><span style="line-height: 1.5em;">In the real world, this problem gets avoided with cash, which is quite difficult to counterfeit. In practice, digital counterfeiting is much easier.&nbsp;</span></p>
+<p><span style="line-height: 1.5em;"><span style="line-height: 1.5em;">Satoshi's solution was what has become known as the blockchain: a ledger of all transactions owned and monitored by everyone but ultimately controlled by none. It's like a giant interactive spreadsheet everyone has access to and updates to confirm each digital credit is unique.&nbsp;</span></span></p>
+<p><span style="line-height: 1.5em;"><span style="line-height: 1.5em;">It is this technology that programmers are now working to deploy for uses that go far beyond Bitcoin.&nbsp;</span></span><span style="line-height: 1.5em;">Satoshi does not appear to have been looking to solve this problem when he created Bitcoin. But his design for the blockchain,&nbsp;</span><span style="line-height: 1.5em;"></span><a href="https://bitcoin.org/bitcoin.pdf">which he spelled out in his 2008 Bitcoin spec paper</a><span style="line-height: 1.5em;">&nbsp;(PDF), has profound implications.</span></p>
+<p><span>"For the first time, two people can exchange a piece of digital property, without any prior relationship, and in a secure way, over the Internet,"&nbsp;<span>Jeff Garzik, one of Bitcoin's core developers (now employed by payment processor BitPay) told Business Insider</span></span><span style="color: #000000;">.&nbsp;</span><span style="color: #000000; line-height: 1.5em;">"As a computer scientist, and in computer science in general, when you talked about building distributed systems, there tended to be a purely theoretical view about how computers would talk to each other, how to keep them coordinated.&nbsp;</span><span style="color: #000000; line-height: 1.5em;">Satoshi and the blockchain really solved that problem in an elegant and unexpected way.</span></p>
+<blockquote class="pullquote">I don't think the computer science community has really caught up yet.</blockquote>
+<p><span style="color: #000000; line-height: 1.5em;">"I don't think the computer science community has really caught up yet,"&nbsp;<span>Garzik said.</span></span></p>
+<p><span style="line-height: 1.5em;">The breakthrough means that, theoretically, any act of commerce on the Web can be decentralized and stripped of a controlling authority.&nbsp;</span></p>
+<p><span style="line-height: 1.5em;">Perhaps the most straightforward example of a post-Bitcoin service using Satoshi's blockchain is <a href="http://www.proofofexistence.com">Proof of Existence</a>. Created by&nbsp;</span><span style="line-height: 1.5em;">Manuel Araoz, a 25-year-old developer in Argentina, the site allows you to upload a file to certify that you had custody of it</span><span style="line-height: 1.5em;">&nbsp;at a given time. Neither its contents nor your own personal information are ever revealed &mdash; rather, all the data in the document gets digested into an encrypted number. Proof of Existence is built on top of the Bitcoin blockchain (there's a 0.005 BTC fee), so <a href="https://getaddr.bitnodes.io/">the thousands of computers on that network</a> have now collectively verified your file.</span></p>
+<p><span style="line-height: 1.5em;"><span class="KonaFilter image-container float_right"><span class="image"><img src="http://static1.businessinsider.com/image/534f131b6bb3f7064a32175b-959-642/screen%20shot%202014-04-16%20at%207.30.45%20pm.png" border="0" alt="proof of existence" width="800" /><span class="source"><span>Proof Of Existence</span></span></span><p></span></span></p>
+<p><span style="line-height: 1.5em;">A slightly more politicized application of the blockchain is a project called <a href="https://www.namecoin.org/">Namecoin</a>.&nbsp;</span></p>
+<p><span style="line-height: 1.5em;">Currently, the international nonprofit ICANN governs nearly all top-level Web address domains such as ".com." </span></p>
+<p><span style="line-height: 1.5em;">But three years ago, engineers developed </span><span style="line-height: 1.5em;">Namecoin, which serves as a new domain-name system for registering Web addresses that end in ".bit." In this case, instead of ICANN controlling the domain name system, you and all the other people in the Namecoin system control the domain names. </span></p>
+<p><span style="line-height: 1.5em;">Again, blockchain technology makes it so that something that previously required a centralized authority can now be managed via community.&nbsp;</span></p>
+<p><span>At this point, payment processors like Western Union probably have the most to fear from blockchain competition, according to&nbsp;</span><span>Gil Luria, a managing director at Wedbush Securities&nbsp;covering financial technology. You may have heard this before, but Luria explained why the blockchain is the true threat:&nbsp;</span><span>Most processors use hub-and-spoke models, he said, which are able to charge fees for crossing jurisdictions, and for smaller transaction amounts. Decentralizing and distributing the network gets rid of all that.</span></p>
+<p>"It&rsquo;s a much more competitive business model," Luria told us by phone. "Instead of paying 5% to 10% in fees to Western Union, you're going to be 2% to 3%, possibly even less.</p>
+<p><span class="KonaFilter image-container"><span class="image"><img src="http://static2.businessinsider.com/image/5350424d69bedd18387d0922-800-628/screen%20shot%202014-04-17%20at%204.04.47%20pm-2.png" border="0" alt="bitcoin vs payment processors" width="800" /><span class="source"><span>Rob Wile/Paul Baran</span></span></span><p></span></p>
+<p><span style="font-size: 15px; line-height: 1.5em;">A startup called Ripple represents the most active threat to the mega-processors. (</span><a href="http://www.businessinsider.com/ripple-profile-2014-3">We profiled Ripple, and the group that created it, last month</a><span style="font-size: 15px; line-height: 1.5em;">.)&nbsp;</span><span style="font-size: 15px; line-height: 1.5em;">Computers all familiar with each other on Ripple's network mutually agree on changes to its blockchain (Ripple calls it a "ledger"). This allows transactions to be processed instantly and without a third party. It's even faster than the Bitcoin network, because everyone using the Ripple ledger gets their own copy of the whole ledger, in contrast with the nodes on the Bitcoin network all sharing a single one.&nbsp;</span></p>
+<p><span style="line-height: 1.5em;"><span>The blockchain is even stalking credit-card companies. In an interview in&nbsp;</span><a href="http://www.businessinsider.com/goldman-completely-debunks-all-the-arguments-for-bitcoin-2014-3">Goldman Sachs' note on Bitcoin last March</a><span>, Fred Ehrsam, the CEO of mega-Bitcoin payment processor Coinbase, observed that a Bitcoin-like payment network would solve the problem of having your credit-card info stored with a big-box retailer like Target.&nbsp;Even sending money through Venmo, the app that lets you text your friends for picking up dinner that one time, still takes five days to clear.</span></span></p>
+<p><span style="line-height: 1.5em;"><span><span>Of course, it's possible the existing financial behemoths could adopt their own blockchain technologies. In the same Goldman note,&nbsp;Goldman information technology services analyst Roman Leal writes that, "just as a flurry of new entrants &mdash; such as Square, Groupon, and PayPal &mdash; encouraged payment networks and payment processors to develop a mobile payments strategy, we expect traditional payment players to develop digital currency strategies."&nbsp;</span></span></span></p>
+<p><span style="line-height: 1.5em;">Two groups,&nbsp;</span><span style="line-height: 1.5em;">BitShares and Ethereum, are hoping to blockchain-ify ... everything. <span>BitShares founder and CEO Daniel Larimer has his eye on</span>&nbsp;<a href="http://bitshares.org/exchange/">stock exchanges</a>, <a href="http://bitshares.org/voting/">voting</a>, <a href="http://bitshares.org/music/">music distribution</a>, and so on<span>.</span>&nbsp;He calls such futuristic entities distributed autonomous corporations. To use the music example, Larimer envisions artists having the ability to issue shares in their own songs, encouraging fans to spread the tune far and wide to increase returns.&nbsp;</span></p>
+<p><span style="line-height: 1.5em; font-size: 15px;">"We give power to shareholders without centralizing in any way, because we&rsquo;ve eliminated the barriers to entry for starting a company," Larimer <span>told us at the recent Inside Bitcoins conference.&nbsp;</span></span><span style="font-size: 15px; line-height: 1.5em;">(Incidentally, he said having a conference called Inside Bitcoins was akin to having a conference called Inside AltaVista.)&nbsp;</span></p>
+<p><span style="line-height: 1.5em; font-size: 15px;">There are, of course, loads of technological and regulatory hurdles that must still be overcome for all of this to materialize. And there are plenty of things that could be reset on a blockchain. But investors don't seem too concerned:&nbsp;<span>Marc Andreessen (who invests in Business Insider) and Fred Wilson are betting big in this space.</span></span></p>
+<blockquote class="pullquote float_right">Our 2014 fund will be built during the blockchain cycle. &mdash; Fred Wilson &nbsp;</blockquote>
+<p><span style="line-height: 1.5em;"><span><span>In a recent blog post, Wilson&nbsp;</span><a href="http://avc.com/2014/04/the-mobile-downturn/">equated</a><span>&nbsp;the breakthrough blockchain represents to the Web browser and social media. He refers to this moment as the blockchain cycle:</span></span></span></p>
+<p style="padding-left: 30px;"><span style="line-height: 1.5em;"><span>Our 2004 fund was built during social. Our 2008 fund was built during social and the emergence of mobile. Our 2012 fund was built during the mobile downturn. And our 2014 fund will be built during the blockchain cycle. I am looking forward to it.</span></span></p>
+<p><span style="line-height: 1.5em;">"</span><span style="line-height: 1.5em;">I think we see every week now somewhere between one and three entrepreneurs come in with blockchain ideas," Andreessen Horowitz's Chris Dixon told Business Insider. "There's definitely some momentum behind it."</span></p>
+<p><span style="line-height: 1.5em;">We'll leave you with an extremely futuristic example of how the blockchain could be deployed.&nbsp;</span></p>
+<p><a href="https://www.youtube.com/watch?v=Pu4PAMFPo5Y&amp;feature=youtu.be">In a talk given last fall at the Turing festival</a><span style="line-height: 1.5em;">, Mike Hearn, a former Google employee who quit his job to work full-time on Bitcoin, laid out this scenario: A 20-something Scottish girl named Jen wants to meet up with her friends downtown. She doesn't own a car &mdash; no one does in the future &mdash; so she dials up a cab through a network Hearn calls TradeNet.&nbsp;</span><span style="line-height: 1.5em;">&nbsp;</span></p>
+<p><span style="line-height: 1.5em;"><span class="KonaFilter image-container display-table float_right"><span><span class="image"><img src="http://static1.businessinsider.com/image/534bcee46da8114d1af97347-175-339/screen shot 2014-04-14 at 8.04.07 am.png" border="0" alt="mike hearn" /><span class="source"><span><a href="https://www.youtube.com/watch?v=Pu4PAMFPo5Y&feature=youtu.be">Youtube</a></span></span><span class='caption'>Mike Hearn at the Turing Festival.</span></span><p></span></span>Jen's request acts as a request-for-bid on TradeNet, and all the robot cabs available start automatically posting offers, like on an exchange. Jen's node then ranks the bids and presents them to Jen based on criteria including price but also things like whether she's used that cab before and what other people have said about it. All of this is done on a distributed blockchain system, so no centralized taxi company needs to manage the orders.</span></p>
+<p><span style="line-height: 1.5em;">The blockchain, by the way, will have improved that recommendation process, Hearn says. Currently, many recommendation systems at places like Yelp or Seamless say they use your social network to help you choose services. In practice, they end up producing what amounts to spam reviews, since it's unlikely a friend you trust will have reviewed the same service you're looking into. Hearn says cryptography &mdash; without which Bitcoin couldn't exist &mdash; has helped reduce spam by providing more authoritative, useful authentication.</span></p>
+<p><span style="line-height: 1.5em;">In this future scenario, the roads on which Jen is driving will have also become autonomous actors, doing trades with the car on TradeNet. They can submit bids to the car about how much they're going to charge to use them. If she's in a hurry, Jen can choose a road that's a bit more expensive but which will allow her to get into the city faster.&nbsp;</span><span style="line-height: 1.5em;">&nbsp;</span></p>
+<p><span style="line-height: 1.5em;"><span style="line-height: 1.5em;">Awesome, right?&nbsp;</span></span></p>
+<p><span style="line-height: 1.5em;"><span style="line-height: 1.5em;">"This is possible because of Bitcoin," Hearn says. "B</span><span style="line-height: 1.5em;">itcoin has no intermediaries, therefore there's really nothing to stop a computer from just connecting to the Internet and taking part all by itself. All you need to do to instantiate a Bitcoin wallet is generate a large random number."&nbsp;</span><span style="line-height: 1.5em;">&nbsp;</span></span></p>
+<p><span style="line-height: 1.5em;">Hearn gives other examples of where the TradeNet could be deployed, like buying fruit and vegetables, or units of computation time if you're buying clouds services. Any transactions that are fast, lightweight, and commoditized &mdash; which the current system Hearn says is bad at &mdash; could be done so much better on the Blockchain.</span></p>
+<p><span style="line-height: 1.5em;">The entirety of Hearn's talk is pretty amazing, <a href="https://www.youtube.com/watch?v=Pu4PAMFPo5Y&amp;feature=youtu.be">and we recommend you watch it</a></span><span style="line-height: 1.5em; font-size: 15px;">.</span></p>
+<p><span style="line-height: 1.5em;">With a handful of exceptions, like Proof of Existence, it's too early to see fully functional applications of blockchain technology. Ripple, for instance, is still courting financial institutions that would benefit from using its payment rail. Bitcoin's main developers are </span><a href="http://letstalkbitcoin.com/blockchain-2-0-let-a-thousand-chains-blossom/#.U0vVC-Zg6Go">still figuring out ways to tweak its protocol without bringing down the entire network</a>.<span style="line-height: 1.5em;">&nbsp;And of course there remain a host of outstanding regulatory issues that will need to get sorted out before massive expansion of these proposed services can occur.</span></p>
+<p>The blockchain helps end the debate about what Bitcoin is. There's been discussion about whether Bitcoin is a currency, a commodity, or a technological protocol. There are good arguments for each categorization, but each is unsatisfying in some way.</p>
+<p>Now we know why this debate is so unsatisfying. Bitcoin represents a novel form of organization &mdash; a blockchain-based entity &mdash; that's not quite like anything seen before it.</p>
+<h3><br /><strong>NOW WATCH: The Creator Of One Of The World's Biggest And Most Powerful Websites Is Not Rich</strong></h3>
+<script src="//player.ooyala.com/v3/6e12e8b3387a44daacfb73afba25a76e" type="text/javascript"></script>
+<div id="ooyalaplayer" style="width: 800px; height: 450px;"></div>
+<script type="text/javascript">// <![CDATA[
+OO.ready(function() { OO.Player.create('ooyalaplayer', 'w0MGs1ZDo9DB_LN5AuSy8dQfNh0dznNA'); });
+// ]]></script>
+<noscript>&lt;div&gt;Please enable Javascript to watch this video&lt;/div&gt;</noscript>
+<p>&nbsp;</p>
+                <!-- See Also Text Links -->
+        <div id="see-also-links" class="clearfix clear-both">
+                            <p>
+                    <span>SEE ALSO:&nbsp;</span>
+                    <a href="http://www.businessinsider.com/interview-with-david-andolfatto-2014-4" >An Interview With A St. Louis Fed Economist On Bitcoin</a>
+                </p>
+                            <p>
+                    <span>WATCH ALSO:&nbsp;</span>
+                    <a href="http://www.businessinsider.com/invest-like-warren-buffett-2014-3" >How To Invest Like Warren Buffett</a>
+                </p>
+                    </div>
+    <!--  / See Also Text Links -->
+
+					</div>
+
+            </div>
+</div>
+
+        <div id="social-reader-notification" class="alert clear-both" style="display:none;"></div>
+
+        <div id="facebook-notification" class="alert" style="display:none;"></div>
+
+            </div>
+
+        
+        <div class="bottom-share-module clearfix clear-both">
+            <!-- RRSSB BOTTOM POST CALL -->
+            
+<!-- RRSSB start -->
+<div class="rrssb-baseline share-container ks-share-bottom clearfix " style="display:none;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-bottom clearfix">
+        <li class="facebook ks-sharemodule-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="text">facebook</span>
+            </a>
+        </li>
+        <li class="linkedin ks-sharemodule-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="text">linkedin</span>
+            </a>
+        </li>
+        <li class="twitter ks-sharemodule-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="text">twitter</span>
+            </a>
+        </li>
+        <li class="googleplus ks-sharemodule-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="text">google+</span>
+            </a>
+        </li>
+        <li class="email button-email ks-sharemodule-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB end -->
+
+<!-- RRSSB TEST 1 start -->
+<div class="rrssb-test-1 share-container ks-share-bottom clearfix " style="display:none;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-bottom clearfix">
+        <li class="facebook ks-byline-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="facebook-count-1 social-count-center"></span>
+            </a>
+        </li>
+        <li class="linkedin ks-byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="linkedin-count-1 social-count-center"></span>
+            </a>
+        </li>
+        <li class="twitter ks-byline-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="twitter-count-1 social-count-center"></span>
+            </a>
+        </li>
+        <li class="googleplus ks-byline-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="googleplus-count-1 social-count-center"></span>
+            </a>
+        </li>
+        </li>
+        <li class="email button-email ks-byline-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB TEST 1 end -->
+
+<!-- RRSSB TEST 2 start -->
+<div class="rrssb-test-2 share-container ks-share-bottom clearfix " style="display:none;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-bottom clearfix">
+        <li class="facebook ks-byline-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="text">share <span class="facebook-count"></span></span>
+            </a>
+        </li>
+        <li class="linkedin ks-byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="text">share <span class="linkedin-count"></span></span>
+            </a>
+        </li>
+        <li class="twitter ks-byline-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="text">tweet <span class="twitter-count"></span></span>
+            </a>
+        </li>
+        <li class="googleplus ks-byline-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="text">share <span class="googleplus-count"></span></span>
+            </a>
+        </li>
+        <li class="email button-email ks-byline-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB TEST 2 end -->
+
+<!-- RRSSB TEST 3 start -->
+<div class="rrssb-test-3 share-container ks-share-bottom clearfix " style="display:none;">
+    <!-- buttons start here -->
+    <ul class="rrssb-buttons rrssb-bottom clearfix">
+        <li class="facebook ks-byline-fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="facebook" class="popup">
+                <i class="fa fa-facebook-square"></i>
+                <span class="text">Share on Facebook <span class="facebook-count"></span></span>
+            </a>
+        </li>
+        <li class="twitter ks-byline-tweet">
+            <a href="http://twitter.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;via=themoneygame&amp;text=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger" title="twitter" class="popup">
+                <i class="fa fa-twitter"></i>
+                <span class="text">Share on Twitter <span class="twitter-count"></span></span>
+            </a>
+        </li>
+        <li class="linkedin ks-byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4&amp;title=SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger&amp;summary=Satoshi's breakthrough." title="linkedin" class="popup">
+                <i class="fa fa-linkedin"></i>
+                <span class="text">Share on Linkedin <span class="linkedin-count"></span></span>
+            </a>
+        </li>
+
+        <li class="googleplus ks-byline-gplusone">
+            <a href="https://plus.google.com/share?url=http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" title="google+" class="popup">
+                <i class="fa fa-google-plus"></i>
+                <span class="text">Share on Google Plus <span class="googleplus-count"></span></span>
+            </a>
+        </li>
+        <li class="email button-email ks-byline-email" data-href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4">
+            <a href="#" title="email">
+                <i class="fa fa-envelope-o"></i>
+                <span class="text">email</span>
+            </a>
+        </li>
+    </ul>
+    <!-- buttons end here -->
+</div>
+<!-- RRSSB TEST 3 end -->
+
+<!-- THis Empty div tells sailthru where to fly out the concierge promo. -->
+<div id="bottom-share-links"></div>
+        </div>
+
+                    
+<div class="bottom-recommended clear-fix pull-left ks-recommended">
+    <h3 class="underlined thin">Recommended For You</h3>
+    <!-- Concierge posts -->
+    <ul class="media-list pull-left ">
+        <li class="media concierge-post">
+            <a href=""><div class="seealso-image"><img src="http://static4.businessinsider.com/assets/images/transparent.gif" alt="" /></div></a>
+            <h4 class="related"><a href=""></a></h4>
+        </li>
+        <li class="media concierge-post">
+            <a href=""><div class="seealso-image"><img src="http://static4.businessinsider.com/assets/images/transparent.gif" alt="" /></div></a>
+            <h4 class="related"><a href=""></a></h4>
+        </li>
+        <li class="media concierge-post">
+            <a href=""><div class="seealso-image"><img src="http://static4.businessinsider.com/assets/images/transparent.gif" alt="" /></div></a>
+            <h4 class="related"><a href=""></a></h4>
+        </li>
+        <li class="media concierge-post">
+            <a href=""><div class="seealso-image"><img src="http://static4.businessinsider.com/assets/images/transparent.gif" alt="" /></div></a>
+            <h4 class="related"><a href=""></a></h4>
+        </li>
+                <li class="media concierge-post last-story">
+            <a href=""><div class="seealso-image"><img src="http://static4.businessinsider.com/assets/images/transparent.gif" alt="" /></div></a>
+            <h4 class="related"><a href=""></a></h4>
+        </li>
+    </ul>
+</div>
+            <div class="clearfix"></div>
+        
+                                    <div id='taboola-below-main-column' class='ks-taboola'></div>
+                <script type="text/javascript">                 
+                window._taboola = window._taboola || [];
+                                    _taboola.push({mode:'thumbs-1r', container:'taboola-below-main-column', placement:'below-main-column'});
+                                </script>
+                        <div class="clearfix"></div>
+        
+                <div class="clearfix"></div>
+
+        
+                
+        
+        
+
+<div data-bi-ad class="ad dfp" data-adunit="desktop/finance/moneygame/post" data-authors="rob-wile" data-pagetype="post" data-region="Post Bottom" data-sizes="600x237,600x250" data-tag="bitcoin" data-url="/the-future-of-the-blockchain-2014-4" data-views="10001-500000"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		// Notify the DFP code that a new ad has just been rendered
+		amplify.publish('adRender');
+	}());
+</script>
+
+        
+<!-- Comments -->
+<div id="comments" class="">
+    
+<a name="comments"></a>
+<div class="comments">
+
+    <h3>Comments <a href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4/comments.rss" class="" title="RSS"><i class="fa fa-rss"></i></a></h3>
+
+            <div class="alert">Comments on this post are now closed.</div>
+    
+    <div class="tabs">
+
+	    <div id="pundit-request-success-message"></div>
+
+		<div class="comments-tabs">
+
+			<ul class="comments-tabs nav nav-tabs gradient">
+
+				<li id="comments-1" class="pundit-comments-content-message tab">
+					<a href="#pundits" data-toggle="tab">
+						Insiders
+						<span class="badge badge-info">6</span>
+					</a>
+				</li>
+				<li id="comments-2" class="comments-content-message tab active">
+					<a href="#non-pundits" data-toggle="tab">
+						All Comments
+						<span class="badge badge-info">47</span>
+					</a>
+				</li>
+                <div id="pundit-request-container" class="pundit-request-container pull-right gradient">
+                    <div class="pundit-request" rel="pundit-request-success-message">
+                        <a href="/register?first=index&pundit_request=1">Apply To Be An "Insider" &#187;</a>
+                    </div>
+                </div>
+			</ul>
+
+		</div>
+
+	</div>
+
+    <div id="comments-container">
+        <div id="comments-loading-image">
+            <img src="http://static3.businessinsider.com/assets/images/icons/icon_loading.gif" alt="Loading" /> <span style="color:#dd4725">Loading</span>
+        </div>
+        <div class="comments-content tab-content"></div>
+        <div id="pundit-request-success-message-bottom" class="margin-top"></div>
+
+        <!-- Receive New Comments Alert -->
+        
+    </div>
+</div>
+
+<!-- Bleachers -->
+
+</div>
+<!-- / Comments -->
+
+        <!-- Schema.org/Article metadata -->
+<div style="display:none;" itemscope itemtype="http://schema.org/Article">
+    <h1 itemprop="name">SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger</h1>
+    <a href="http://www.businessinsider.com/the-future-of-the-blockchain-2014-4" itemprop="url">SATOSHI'S REVOLUTION: How The Creator Of Bitcoin May Have Stumbled Onto Something Much, Much Bigger</a>
+    <img src="http://static4.businessinsider.com/image/535003d2ecad041b0cf1c955-100-100/satoshis-revolution-how-the-creator-of-bitcoin-may-have-stumbled-onto-something-much-much-bigger.jpg"  itemprop="image" />
+    <div itemprop="description"><p>We gave our Person of the Year award&nbsp;for...</p></div>
+</div>
+<!-- / Schema.org/Article metadata -->
+        
+    
+</div>
+
+                        </div>
+                                                    <div class="span4">
+                                <div class="main-rail">
+                                                                            
+<div id="right-rail" class="right-rail">
+	<div class="sl-layout-post">
+		<!-- PERFECT MARKET RR -->
+					<!-- Only show at uppermost top if skin is active -->
+			
+			<!-- Vertical Host -->
+													<!-- / Vertical Host -->
+
+			<!-- Countdown Clock  -->
+						<!-- / Countdown Clock  -->
+
+			
+
+<div data-bi-ad class="ad dfp" data-adunit="desktop/finance/moneygame/post" data-authors="rob-wile" data-pagetype="post" data-region="Top Right Rail" data-sizes="300x60,300x168" data-tag="bitcoin" data-url="/the-future-of-the-blockchain-2014-4" data-views="10001-500000"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		// Notify the DFP code that a new ad has just been rendered
+		amplify.publish('adRender');
+	}());
+</script>
+
+			<!-- BI Live Widget (Above Fold Placement) -->
+										
+			<!-- Newsletters -->
+			
+<div class="right-subscribe">
+	<div class="right-news">
+		<h3>Get <span class="news-vert">Markets</span> Emails &amp; Alerts</h3>
+		<div class="alert" id="news-alert"></div>
+		<form class="form" action="/newsletter?source=sidebar" method="post">
+			<div class="input-append">
+				<input id="news-email" name="email" type="text" placeholder="Email Address" data-email="">
+				<button class="btn submit" id="news-signup" type="submit">Sign-Up</button>
+			</div>
+			<a class="pull-right smallest" href="/newsletter">Learn More &#187;</a>
+
+			<div id="newsletter-expand" class="newsletter-preview-links" style="display:none">
+				<ul>
+											<li>
+							<label class="checkbox">
+								<input type="checkbox" name="newsletters[]" value="Markets Select" checked="checked">
+									Markets Select							</label>
+						</li>
+											<li>
+							<label class="checkbox">
+								<input type="checkbox" name="newsletters[]" value="10 Things Before the Opening Bell" checked="checked">
+									10 Things Before the Opening Bell							</label>
+						</li>
+											<li>
+							<label class="checkbox">
+								<input type="checkbox" name="newsletters[]" value="Markets Chart Of The Day" checked="checked">
+									Markets Chart Of The Day							</label>
+						</li>
+											<li>
+							<label class="checkbox">
+								<input type="checkbox" name="newsletters[]" value="Business Insider Select" checked="checked">
+									Business Insider Select							</label>
+						</li>
+											<li>
+							<label class="checkbox">
+								<input type="checkbox" name="newsletters[]" value="Monday Scouting Report" checked="checked">
+									Monday Scouting Report							</label>
+						</li>
+									</ul>
+				<div class="divider">More</div>
+				<div class="accordion" id="news-categories">
+																											<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id1">
+									<i class="fa fa-caret-right"></i><span>Featured</span>
+								</a>
+							</div>
+							<div id="news-category-id1" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Business Insider Select"
+														checked="checked"													/>
+													Business Insider Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Tech Select"
+																											/>
+													Tech Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Tech Chart Of The Day"
+																											/>
+													Tech Chart Of The Day												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Markets Chart Of The Day"
+														checked="checked"													/>
+													Markets Chart Of The Day												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="10 Things Before the Opening Bell"
+														checked="checked"													/>
+													10 Things Before the Opening Bell												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Instant MBA"
+																											/>
+													Instant MBA												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Breaking News"
+																											/>
+													Breaking News												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Master Events List"
+																											/>
+													Business Insider Events												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id2">
+									<i class="fa fa-caret-right"></i><span>Entertainment</span>
+								</a>
+							</div>
+							<div id="news-category-id2" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Entertainment Select"
+																											/>
+													Entertainment Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Sports Select"
+																											/>
+													Sports Select												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id3">
+									<i class="fa fa-caret-right"></i><span>Finance</span>
+								</a>
+							</div>
+							<div id="news-category-id3" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Finance Select"
+																											/>
+													Finance Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Markets Select"
+														checked="checked"													/>
+													Markets Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Monday Scouting Report"
+														checked="checked"													/>
+													Monday Scouting Report												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Your Money Select"
+																											/>
+													Your Money Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Financial Advisor Insights"
+																											/>
+													Financial Advisor Insights												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Smart Investor"
+																											/>
+													Smart Investor												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id4">
+									<i class="fa fa-caret-right"></i><span>Strategy</span>
+								</a>
+							</div>
+							<div id="news-category-id4" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Strategy Select"
+																											/>
+													Strategy Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Advertising Select"
+																											/>
+													Advertising Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Retail Select"
+																											/>
+													Retail Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Careers Select"
+																											/>
+													Careers Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Marketing Mondays"
+																											/>
+													Marketing Mondays												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Advertising: The Brief"
+																											/>
+													Advertising: The Brief												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id5">
+									<i class="fa fa-caret-right"></i><span>Politics</span>
+								</a>
+							</div>
+							<div id="news-category-id5" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Politics Select"
+																											/>
+													Politics Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Military Select"
+																											/>
+													Military Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Law & Order Select"
+																											/>
+													Law & Order Select												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id6">
+									<i class="fa fa-caret-right"></i><span>Life</span>
+								</a>
+							</div>
+							<div id="news-category-id6" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Life Select"
+																											/>
+													Life Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Transportation Select"
+																											/>
+													Transportation Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Education Select"
+																											/>
+													Education Select												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id7">
+									<i class="fa fa-caret-right"></i><span>Tech</span>
+								</a>
+							</div>
+							<div id="news-category-id7" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Enterprise Select"
+																											/>
+													Enterprise Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Science Select"
+																											/>
+													Science Select												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Mobile Chart Of The Day"
+																											/>
+													Mobile Chart Of The Day												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="E-Commerce Chart Of The Day"
+																											/>
+													E-Commerce Chart Of The Day												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Payments Chart Of The Day"
+																											/>
+													Payments Chart Of The Day												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Digital Media Chart Of The Day"
+																											/>
+													Digital Media Chart Of The Day												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id8">
+									<i class="fa fa-caret-right"></i><span>Charts of the Day</span>
+								</a>
+							</div>
+							<div id="news-category-id8" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Sports Chart Of The Day"
+																											/>
+													Sports Chart Of The Day												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+																	<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle collapsed" data-toggle="collapse" href="#news-category-id9">
+									<i class="fa fa-caret-right"></i><span>Top 10 Things</span>
+								</a>
+							</div>
+							<div id="news-category-id9" class="accordion-body collapse">
+								<div class="accordion-inner">
+									<ul>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="10 Things In Tech You Need To Know"
+																											/>
+													10 Things In Tech You Need To Know												</label>
+											</li>
+																																																						<li>
+												<label class="checkbox">
+													<input type="checkbox" name="newsletters[]" value="Closing Bell"
+																											/>
+													Closing Bell												</label>
+											</li>
+																			</ul>
+								</div>
+							</div>
+						</div>
+									</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+			<!-- Show here if skin is not active -->
+												<div class="right-ad">
+						<div class="ad-height-250">
+							<h5 class="text-ad">Advertisement</h5>
+							
+
+<div data-bi-ad class="ad dfp" data-adunit="desktop/finance/moneygame/post" data-authors="rob-wile" data-pagetype="post" data-region="Upper 300" data-sizes="300x250,300x600,300x400,300x1050" data-tag="bitcoin" data-url="/the-future-of-the-blockchain-2014-4" data-views="10001-500000"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		// Notify the DFP code that a new ad has just been rendered
+		amplify.publish('adRender');
+	}());
+</script>
+						</div>
+					</div>
+		        		    
+			<!-- Your Money -->
+							<div class="stock-ticker ks-rr-your-money">
+	<h3 class="underlined">Your Money</h3>
+    <table class="xignite-indices">
+	                <tr>
+                <td>
+                    NASDAQ Composite                </td>
+                <td class="price">4,512</td>
+                <td>
+                                            <span class="xignite-indices-green">
+                            +45.44                        </span>
+                                    </td>
+                <td>
+                                            <span class="xignite-indices-green">
+                            (+1.017%)
+                        </span>
+                                    </td>
+            </tr>
+                    <tr>
+                <td>
+                    S&P 500                </td>
+                <td class="price">1,983</td>
+                <td>
+                                            <span class="xignite-indices-green">
+                            +16.86                        </span>
+                                    </td>
+                <td>
+                                            <span class="xignite-indices-green">
+                            (+0.858%)
+                        </span>
+                                    </td>
+            </tr>
+                    <tr>
+                <td>
+                    NYSE Composite                </td>
+                <td class="price">10,799</td>
+                <td>
+                                            <span class="xignite-indices-green">
+                            +76.67                        </span>
+                                    </td>
+                <td>
+                                            <span class="xignite-indices-green">
+                            (+0.715%)
+                        </span>
+                                    </td>
+            </tr>
+            </table>
+
+            <div class="ad-marketswidget margin-top">
+            <h5 class="text-ad">Sponsored By</h5>
+
+                            <div class="marketswidget-unit">
+                    
+
+<div data-bi-ad class="ad dfp" data-adunit="desktop/finance/moneygame/post" data-authors="rob-wile" data-pagetype="post" data-region="Stock Widget 1" data-sizes="88x31" data-tag="bitcoin" data-url="/the-future-of-the-blockchain-2014-4" data-views="10001-500000"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		// Notify the DFP code that a new ad has just been rendered
+		amplify.publish('adRender');
+	}());
+</script>
+                </div>
+            
+                    </div>
+    </div>			
+			<div id="taboola-right-rail-thumbnails"></div>
+<script type="text/javascript">
+	window._taboola = window._taboola || [];
+	_taboola.push({
+		mode: 'organic-thumbnails-a',
+		container: 'taboola-right-rail-thumbnails',
+		placement: 'Right Rail Thumbnails',
+		target_type: 'video'
+	});
+</script>
+							<!-- Linkedin App -->
+									<div class="linkedin">
+    <div class="header">
+        <a class="logo"><span>LinkedIn</span></a>
+    </div>
+
+    <div class="tabbable ks-rr-linkedin">
+        <div class="tab-content">
+            <div id="selected-listings" class="tab-pane active">
+                                    <ul class="media-list">
+                                                    <li class="media">
+                                <a class="pull-left" href="http://www.businessinsider.com/the-future-of-the-payments-industry-2014-slide-deck-2014-7"><img src="http://static1.businessinsider.com/image/53df96796da8118c2faf27ee--45/the-future-of-payments-2014-slide-deck.jpg" height="45"></a>
+                                <div class="listings">
+                                    <div class="media-body">
+                                        <p>
+                                            <span class="float-right share-button">
+                                                <script type="IN/Share" data-counter="right" data-url="http://www.businessinsider.com/the-future-of-the-payments-industry-2014-slide-deck-2014-7"></script>
+                                            </span>
+
+                                            <a href="http://www.businessinsider.com/the-future-of-the-payments-industry-2014-slide-deck-2014-7">
+                                                THE FUTURE OF PAYMENTS: 2014 [SLIDE DECK]                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="media">
+                                <a class="pull-left" href="http://www.businessinsider.com/social-media-engagement-statistics-2013-12"><img src="http://static1.businessinsider.com/image/52ab8b4b6bb3f73d780aafbd--45/social-media-engagement-the-surprising-facts-about-how-much-time-people-spend-on-the-major-social-networks.jpg" height="45"></a>
+                                <div class="listings">
+                                    <div class="media-body">
+                                        <p>
+                                            <span class="float-right share-button">
+                                                <script type="IN/Share" data-counter="right" data-url="http://www.businessinsider.com/social-media-engagement-statistics-2013-12"></script>
+                                            </span>
+
+                                            <a href="http://www.businessinsider.com/social-media-engagement-statistics-2013-12">
+                                                Social Media Engagement: The Surprising Facts About How Much Time People Spend On The Major Social Networks                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="media">
+                                <a class="pull-left" href="http://www.businessinsider.com/google-asks-applicants-the-same-questions-2014-9"><img src="http://static3.businessinsider.com/image/5425c888ecad045c79e44224--45/why-google-asks-everyone-applying-for-a-job-the-same-exact-questions.jpg" height="45"></a>
+                                <div class="listings">
+                                    <div class="media-body">
+                                        <p>
+                                            <span class="float-right share-button">
+                                                <script type="IN/Share" data-counter="right" data-url="http://www.businessinsider.com/google-asks-applicants-the-same-questions-2014-9"></script>
+                                            </span>
+
+                                            <a href="http://www.businessinsider.com/google-asks-applicants-the-same-questions-2014-9">
+                                                Why Google Asks Everyone Applying For A Job The Same Exact Questions                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                                            </ul>
+                            </div>
+
+            <div id="network-listings" class="tab-pane">
+                <p class="not-logged">
+                    <a class="linkedin_login_link" href="/register?action=linkedin"">Login with LinkedIn</a> to see what your friends are reading on Business Insider. <br />
+                    <a class="btn linkedin" href="/register?action=linkedin"" rel="nofollow"><i class="fa fa-linkedin"></i> Login with LinkedIn</a>
+                </p>
+                <ul>
+                </ul>
+                <p class="no-articles" style="display: none">
+                    No articles have recently been shared in your network.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer border-top-dotted">
+        <p><a href="/trending_on_linkedin">More &#187;</a></p>
+            </div>
+</div>							
+		 	                <div class="right-ad">
+                    <div>
+                        <div class="sponsored-content-widget ks-rr-sponsored-content-widget">
+    <h3 class="underlined">Featured</h3>
+    <ul class="media-list">
+                <li id="id-5425657beab8ea0a1fec5d37" class="media">
+                        <a class="pull-left" href="http://www.businessinsider.com/7-best-viral-drone-videos-in-the-world-2014-9">
+                                    <img src="http://static4.businessinsider.com/image/5425a51f6da811f877ae948f-60/the-7-most-viral-drone-videos-in-the-world.jpg" alt="The 7 Most Viral Drone Videos In The World" />
+                            </a>
+            <div class="media-body">
+                <p><a class="title" href="http://www.businessinsider.com/7-best-viral-drone-videos-in-the-world-2014-9">The 7 Most Viral Drone Videos In The World</a></p>
+            </div>
+            <p class="align-right">
+                <a href="http://www.businessinsider.com/game-changers">More &quot;Game Changers&quot; »</a>            </p>
+        </li>
+                <li id="id-54186bddeab8ea3818f059ec" class="media">
+                        <a class="pull-left" href="http://www.businessinsider.com/how-to-ask-for-prenup-2014-9">
+                                    <img src="http://static1.businessinsider.com/image/541877656da811f33e6816f7-60/how-to-ask-for-a-prenup-without-causing-a-breakup.jpg" alt="How To Ask For A Prenup Without Causing A Breakup" />
+                            </a>
+            <div class="media-body">
+                <p><a class="title" href="http://www.businessinsider.com/how-to-ask-for-prenup-2014-9">How To Ask For A Prenup Without Causing A Breakup</a></p>
+            </div>
+            <p class="align-right">
+                <a href="http://www.businessinsider.com/category/life-plan">More &quot;Life Plan&quot; »</a>            </p>
+        </li>
+                <li id="id-5422bf9eecad048b680c1bfc" class="media">
+                        <a class="pull-left" href="http://www.businessinsider.com/three-products-apple-is-likely-to-make-2014-9">
+                                    <img src="http://static4.businessinsider.com/image/5422bf81eab8eab12a7b33f8-60/here-are-the-next-3-industries-apple-is-likely-to-reinvent.jpg" alt="Here Are The Next 3 Industries Apple Is Likely To Reinvent" />
+                            </a>
+            <div class="media-body">
+                <p><a class="title" href="http://www.businessinsider.com/three-products-apple-is-likely-to-make-2014-9">Here Are The Next 3 Industries Apple Is Likely To Reinvent</a></p>
+            </div>
+            <p class="align-right">
+                <a href="http://www.businessinsider.com/category/tech-360">More &quot;Tech 360&quot; »</a>            </p>
+        </li>
+                <li id="id-541c29ef6bb3f74525f1a55a" class="media">
+                        <a class="pull-left" href="http://www.businessinsider.com/sc/womenlead-ilene-fischer-video-2014-9">
+                                    <img src="http://static3.businessinsider.com/image/542054736bb3f7ac163cdfba-60/this-boston-startup-is-trying-to-close-the-gender-gap-by-matching-women-with-mentors.jpg" alt="This Boston Startup Is Trying To Close The Gender Gap By Matching Women With Mentors" />
+                            </a>
+            <div class="media-body">
+                <p><a class="title" href="http://www.businessinsider.com/sc/womenlead-ilene-fischer-video-2014-9">This Boston Startup Is Trying To Close The Gender Gap By Matching Women With Mentors</a></p>
+            </div>
+            <p class="align-right">
+                <a href="http://www.businessinsider.com/game-changers">More &quot;Game Changers&quot; »</a>            </p>
+        </li>
+            </ul>
+</div>                    </div>
+                </div>
+            
+			<!-- Facebook Promo -->
+			
+			<!-- Facebook App -->
+			<div class="facebook-app-container" style="display:none;">
+	<h3 class="underlined">Welcome, <span id="fb-username"></span>!</h3>
+	<div class="facebook-app media">
+
+		<div class="fb-profile-pic pull-left"></div>
+
+		<div class="media-body">
+
+			<h5>You are logged into Facebook</h5>
+
+			<h5>Social: <a class="switch-off" href=""></a></h5>
+
+			<ul class="clearfix">
+				<li class="bi-popover activity"><a href="">Your Activity</a><span>|</span>
+					<div class="popover bottom">
+						<div class="arrow"></div>
+						<h3 class="popover-title">These articles have been shared on your timeline. You can remove them here:</h3>
+						<div class="popover-content">
+							<div class="fb-remove-articles"></div>
+						</div>
+					</div>
+				</li>
+				<li class="bi-popover options"><a href="">Options</a>
+					<div class="popover bottom">
+						<div class="arrow"></div>
+						<h3 class="popover-title">Notify me when a story is shared.</h3>
+						<div class="popover-content">
+							<div>						
+								<form id="fb-app-form">
+									<label class="radio inline">
+										<input type="radio" name="shared" value="true" id="notify_yes">Yes</label>
+									<label class="radio inline">
+										<input type="radio" name="shared" value="false" id="notify_no">No</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		</div>	
+
+	</div>
+</div>
+
+	        <!-- Google App -->
+	        <div class="google-app-container" style="display:none;">
+    <h3 class="underlined">Welcome, <span id="gp-username"></span>!</h3>
+    <div class="google-app media">
+
+        <div class="gp-profile-pic pull-left"></div>
+
+        <div class="media-body">
+
+            <h5>You are logged in with Google</h5>
+
+            <h5>Social: <a class="switch-off" href=""></a></h5>
+
+            <ul class="clearfix">
+                <li class="bi-popover activity"><a href="">Your Activity</a><span>|</span>
+                    <div class="popover bottom">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title">These articles have been added to your Google activity log. You can remove them here:</h3>
+                        <div class="popover-content">
+                            <div class="gp-remove-articles"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="bi-popover options"><a href="">Options</a>
+                    <div class="popover bottom">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title">Notify me when a story is shared.</h3>
+                        <div class="popover-content">
+                            <div>                       
+                                <form id="gp-app-form">
+                                    <label class="radio inline">
+                                        <input type="radio" name="shared" value="true" id="notify_yes">Yes</label>
+                                    <label class="radio inline">
+                                        <input type="radio" name="shared" value="false" id="notify_no">No</label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>  
+
+    </div>
+</div>
+
+			<!-- Editorial Sidebar -->
+							<!-- editorial sidebar -->
+<div id="editorial" class="ks-rr-editorial" data-bi-heatmap="editorial">
+	<h3 class="underlined">Watch & Learn</h3>
+	<div>
+		<p><a href="http://www.businessinsider.com/why-your-voice-sounds-so-different-2014-9"><img src="http://static3.businessinsider.com/image/54246f716da811106c0a4131-340/hate-voice.png" border="0" alt="hate voice" /></a></p>
+<ul>
+<li><a href="http://www.businessinsider.com/why-your-voice-sounds-so-different-2014-9">Why You Hate The Sound Of Your Own Voice</a></li>
+<li><a href="http://www.businessinsider.com/how-to-be-a-better-dancer-2014-9"><span style="line-height: 1.5em;">Scientists Discovered What Makes Someone A Good Dancer</span></a></li>
+<li><a href="http://www.businessinsider.com/secrets-of-the-samurai-2014-9">How The Secrets Of The Samurai Can Help You Achieve Laser-Focus</a></li>
+</ul>	</div>
+</div>
+<!-- / editorial sidebar -->
+			
+			<!-- Trending -->
+			<div class="trending ks-trending-recirculation">
+				<h3 class="underlined">Trending</h3>
+			</div>
+
+			<!-- Read Me -->
+			
+							<!-- The Hive -->
+				<!--Original Hive Module-->
+<div class="thehive-module ks-rr-hive">
+	<h3 class="underlined clearfix"><a class="pull-right link-rss" href="http://www.businessinsider.com/moneygame/thehive.rss" title="RSS"><i class="fa fa-rss"></i></a>The Hive <a id="info" href="/thehive/whatsthis" data-toggle="tooltip" title="About The Hive"><i class="fa fa-info-circle"></i></a></h3>
+
+	<h4>What Smart People Are Reading</h4>
+
+	<ul>
+					<li id="54282bf15afbd35d298b4590" class="media">
+
+				<span class="pull-left badge badge-info">7</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://thereformedbroker.com/2014/09/28/do-we-need-to-fire-pimco/" target="_blank">"Do we need to fire Pimco?"</a>
+				</div>
+
+			</li>
+					<li id="5427d7aa5afbd390788b4571" class="media">
+
+				<span class="pull-left badge badge-info">4</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://online.wsj.com/articles/hong-kongs-pro-democracy-protesters-face-off-against-police-1411876944" target="_blank">Hong Kong Police Use Tear Gas to Break Up Protests -
+WSJ</a>
+				</div>
+
+			</li>
+					<li id="54284cc95afbd3c54b8b4596" class="media">
+
+				<span class="pull-left badge badge-info">4</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://www.vox.com/2014/9/28/6856621/hong-kong-protests-clashes-china-explainer" target="_blank">Hong Kong's unprecedented protests and police crackdown,
+explained</a>
+				</div>
+
+			</li>
+					<li id="542843635afbd3441e8b4585" class="media display-none"">
+
+				<span class="pull-left badge badge-info">3</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://www.businessinsider.com/manhattan-density-1910-and-2010-2014-9" target="_blank">Manhattan Density 1910 And 2010</a>
+				</div>
+
+			</li>
+					<li id="542801b85afbd3254f8b457c" class="media display-none"">
+
+				<span class="pull-left badge badge-info">3</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://www.wsj.com/video/police-throw-tear-gas-at-hong-kong-protesters/EB195AF2-0836-4156-8E06-71EBD9D14B5B.html" target="_blank">Police Throw Tear Gas at Hong Kong Protesters</a>
+				</div>
+
+			</li>
+					<li id="5428067b5afbd3a4648b4586" class="media display-none"">
+
+				<span class="pull-left badge badge-info">3</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://abnormalreturns.com/sunday-links-clean-slate/" target="_blank">Sunday links: a clean slate</a>
+				</div>
+
+			</li>
+					<li id="5427bb7c5afbd3c8098b4574" class="media display-none"">
+
+				<span class="pull-left badge badge-info">3</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://www.scmp.com/news/hong-kong/article/1602958/live-occupy-central-kicks-hundreds-classroom-boycott-students-leave" target="_blank">LIVE: Police hurt and protesters pepper sprayed as Occupy
+demonstration turns ugly</a>
+				</div>
+
+			</li>
+					<li id="5428c6a45afbd317408b458e" class="media display-none"">
+
+				<span class="pull-left badge badge-info">2</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://southpark.cc.com/full-episodes/s18e01-go-fund-yourself" target="_blank">Go Fund Yourself - Full Episode - Season 18 - Ep 01 Park Studios</a>
+				</div>
+
+			</li>
+					<li id="5428c1f25afbd3eb278b4582" class="media display-none"">
+
+				<span class="pull-left badge badge-info">2</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://www.businessinsider.com/nsa-smiley-face-leak-by-jenny-holzer-2014-9" target="_blank">NSA Smiley Face Leak By Jenny Holzer Insider</a>
+				</div>
+
+			</li>
+					<li id="54289c705afbd358688b4585" class="media display-none"">
+
+				<span class="pull-left badge badge-info">2</span>
+
+				<div class="media-body">
+					<a class="hive-link" href="http://www.valuewalk.com/2014/09/jack-ma-60-minutes/" target="_blank">Alibaba Chairman Jack Ma On 60 Minutes</a>
+				</div>
+
+			</li>
+		
+					</ul>
+			</ul>
+
+	<div class="footer border-top-dotted clearfix">
+					<div class="pull-left">
+				<a id="hive-more" href="#">More</a>
+			</div>
+				<a class="pull-right" href="http://www.businessinsider.com/moneygame/thehive">See All &#187;</a>
+	</div>
+</div>			
+			<!-- Editorial Sidebar 2 -->
+							<!-- editorial sidebar 2 -->
+<div id="editorial2" class="ks-rr-editorial-2" data-bi-heatmap="editorial2">
+	<h3 class="underlined">The Pulse of Digital</h3>
+	<div>
+		<p><a href="http://www.businessinsider.com/faq-beacons-and-apples-ibeacon-system-2014-7?utm_source=House&amp;utm_term=RR&amp;utm_campaign=RR"><img src="http://static1.businessinsider.com/image/53dbc2216da8118f4dc71306/beacons_image.png" border="0" alt="Social Media Disruption" width="340" /></a></p>
+<ul>
+<li><a href="http://www.businessinsider.com/faq-beacons-and-apples-ibeacon-system-2014-7?utm_source=House&amp;utm_term=RR&amp;utm_campaign=RR">BEACONS FAQ: It's Time To Set The Story Straight</a></li>
+<li><a href="http://www.businessinsider.com/the-programmatic-ad-report-2014-7?utm_source=House&amp;utm_term=RR&amp;utm_campaign=RR">THE PROGRAMMATIC ADVERTISING REPORT: Forecasts And Top Trends</a></li>
+<li><a href="http://www.businessinsider.com/the-future-of-the-payments-industry-2014-slide-deck-2014-7?utm_source=House&amp;utm_term=RR&amp;utm_campaign=RR">The Future of Payments [SLIDE DECK]</a><span style="color: #222222; line-height: 1.5em;">&nbsp;<br />&nbsp;</span></li>
+</ul>
+<div style="border-top: 1px solid #ddd; margin-top: 20px; margin-left: -20px; width: 340px;">
+<div style="margin: 30px 20px 0px 20px;">
+<h3 class="underlined">Read Business Insider On The Go</h3>
+<div class="content" style="height: 190px; text-align: center !important; background-image: url('http://static2.businessinsider.com/image/520a3568ecad04d97a000017/greybackground.png'); background-repeat: no-repeat; background-position: bottom center; overflow: hidden;">
+<div style="float: left; margin-top: 21px; display: block; z-index: 1; width: 300px; border-bottom: 1px solid #9d9d9d;"><a href="/about/mobile"><img src="http://static3.businessinsider.com/image/529e59f9ecad046316dfbba8-260/.png" border="0" /></a></div>
+<div style="z-index: 100; margin: 0px 15px 86px 200px; position: absolute; height: 90px; width: 90px; -moz-border-radius: 45px; border-radius: 45px; background-color: #2e79a6; -moz-box-shadow: 3px 3px 4px rgba(0,0,0,0.6); -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.6); box-shadow: -3px 3px 4px rgba(0,0,0,0.6); text-align: center; vertical-align: middle !important;">
+<p style="font-family: Helvetica Neue, Arial, sans-serif; color: white; font-size: 18px; font-weight: 100; line-height: 20px; margin-top: 23px;">FREE App<br />Download</p>
+</div>
+</div>
+<div style="text-align: center !important; width: 100%; display: block;"><a href="https://itunes.apple.com/us/app/business-insider/id554260576?mt=8"><img src="http://static2.businessinsider.com/image/51e9584f69beddbb1d000003-208/appstorebadgeen.png" border="0" style="margin: 20px 0px 10px 0px;" /></a> <br /><a href="http://www.businessinsider.com/about/mobile">Available for iPhone, iPad, Android, BlackBerry and Windows</a> <br /> <a href="http://www.businessinsider.com/about/mobile"><img src="http://static1.businessinsider.com/image/51e95c6aeab8ea3845000009/appleicon.png" border="0" style="margin: 10px 5px;" /></a> <a href="http://www.businessinsider.com/about/mobile"><img src="http://static4.businessinsider.com/image/51e95c6aeab8eab74700000b/androidicon.png" border="0" style="margin: 10px 5px;" /></a><a href="http://www.businessinsider.com/about/mobile"><img src="http://static1.businessinsider.com/image/51e95c6aecad04b45d000002/.png" border="0" style="margin: 10px 5px;" /></a><a href="http://www.businessinsider.com/about/mobile"><img src="http://static5.businessinsider.com/image/5271611eeab8ea5e3bfb295b/windowsicon.png" border="0" style="margin: 10px 5px;" /></a></div>
+</div>
+</div>	</div>
+</div>
+<!-- / editorial sidebar 2 -->
+			
+			<!-- BI Live Widget (Below Fold Placement) -->
+										
+			<!-- Author Sold -->
+							<div class="right-ad">
+					<div>
+						<h5 class="text-ad">Advertisement</h5>
+						
+
+<div data-bi-ad class="ad dfp" data-adunit="desktop/finance/moneygame/post" data-authors="rob-wile" data-pagetype="post" data-region="Lower 300" data-sizes="300x250" data-tag="bitcoin" data-url="/the-future-of-the-blockchain-2014-4" data-views="10001-500000"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		// Notify the DFP code that a new ad has just been rendered
+		amplify.publish('adRender');
+	}());
+</script>
+					</div>
+				</div>
+			
+			<!-- Jobs Widget -->
+			
+<!-- Jobs Module -->
+<div class="jobs ks-rr-jobs">
+	<h5 class="text-ad pull-right"><a href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin026" title="Visit Career Builder"><img src="http://static3.businessinsider.com/assets/images/careerbuilder.png" alt="Career Builder"></a></h5>
+	<h3 class="underlined">Find A Job</h3>
+
+	<div class="row-fluid">
+		<div class="span6">
+			<ul>
+				<li>
+					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=technology&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin020">Tech Jobs</a>
+				</li>
+				<li class="">
+					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=media&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin021">Media Jobs</a>
+				</li>
+				<li class="">
+					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=finance&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin022">Finance Jobs</a>
+				</li>
+			</ul>
+		</div>
+		<div class="span6">
+			<ul>
+				<li>
+					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=c-level&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin023">C-Level Jobs</a>
+				</li>
+				<li>
+					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=design&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin024">Design Jobs</a>
+				</li>
+				<li>
+					<a rel="nofollow" href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=sales&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin025">Sales Jobs</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer border-top-dotted clearfix">
+		<div class="pull-right">
+			<a href="http://www.careerbuilder.com/Jobseeker/Jobs/JobResults.aspx?IPath=QH&qb=1&s_rawwords=&s_freeloc=&s_jobtypes=ALL&lr=cbpar_busiin&siteid=cbpar_busiin026">See All Jobs</a>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+			<!-- Partners -->
+			<div class="right-ad">
+				<div class="partner-thanks clearfix">
+				<h3 class="underlined">Thanks to our partners</h3>
+					<a href="http://hub.am/16BKYF8" title="Visit Datapipe" target="_blank"><img class="pull-left" src="http://static6.businessinsider.com/assets/images/partners/datapipe7.png" alt="Datapipe" /></a>
+					<a href="http://www.catchpoint.com/" title="Visit Catchpoint" target="_blank"><img class="pull-left" src="http://static1.businessinsider.com/assets/images/partners/catchpoint7.png" alt="Catchpoint - Web Performance Monitoring" /></a>
+					<a href="http://www.ooyala.com/?utm_source=BusinessInsider&utm_medium=Sponsor&utm_campaign=Rebranding" title="Visit Ooyala" target="_blank"><img class="pull-left" src="http://static6.businessinsider.com/assets/images/partners/ooyala7.png" alt="Ooyala" /></a>
+				</div>
+			</div>
+
+			<!-- Google Adsense -->
+			            <!-- / Google Adsense -->
+
+			</div>
+</div>
+                                                                    </div>
+                            </div>
+                        
+                    </div>
+                </div>
+
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" data-bi-footer>
+
+            <div class="container border-top">
+
+                <div class="list-pipes">
+                    <ul>
+                    <li>* Copyright &copy; 2014 Business Insider Inc. All rights reserved.<span> Registration on or use of this site constitutes acceptance of our
+                            <a href="/terms">Terms of Service</a>
+                            and
+                            <a href="/privacy-policy">Privacy Policy</a>.</span>
+                        </li>
+                        <li><a href="/disclaimer">Disclaimer</a></li>
+                        <li><a href="/commerce-on-business-insider">Commerce Policy</a></li>
+                    </ul>
+                </div>
+                <div class="list-pipes">
+                    <ul>
+                        <li>
+                            Powered by <a href="http://www.mongodb.org">MongoDB</a>
+                        </li>
+                        <li>
+                            Hosted by <a href="http://hub.am/16BKYF8">Datapipe</a>
+                        </li>
+                        <li>
+                            Stock quotes by <a href="http://ycharts.com">YCharts</a>
+                        </li>
+                        <li>
+                            <a href="http://nytm.org/made">Made in NYC</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="international-links border-top list-pipes">
+                    <ul>International Editions:
+                        <li><a href="http://www.businessinsider.com.au/">AUS</a></li><li><a href="http://www.businessinsider.co.id/">ID</a></li><li><a href="http://www.businessinsider.in/">IN</a></li><li><a href="http://www.businessinsider.my/">MY</a></li><li><a href="http://www.businessinsider.sg/">SG</a></li>                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://static5.businessinsider.com/assets/js/min-foot.js?1411763854"></script>
+<script type="text/javascript" src="http://static6.businessinsider.com/assets/js/app/components/ads/interstitial.js"></script>
+
+<!--[if gte IE 9]>
+<script type="text/javascript">amplify.publish("ie9-pinned-site", {"hid":null,"vertical":"moneygame"});</script><![endif]-->
+
+<!-- Google Tag Manager -->
+<noscript><iframe src=""//www.googletagmanager.com/ns.html?id=GTM-NS64GV""
+height=""0"" width=""0"" style=""display:none;visibility:hidden""></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NS64GV');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Twitter widget.js -->
+<script type="text/javascript">
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src="https://platform.twitter.com/widgets.js";
+        js.async=true;
+        fjs.parentNode.insertBefore(js,fjs);
+    }}(document,"script","twitter-wjs");
+</script>
+<!-- /Twitter widget.js -->
+
+            <!-- Tynt -->
+        <script class="post-loaded" type="text/javascript" data-src="http://tcr.tynt.com/javascripts/Tracer.js?user=a-j2SKmdSr37y5adbiUzgI&amp;s=142"></script>
+        <!-- / Tynt -->
+    
+    <!-- START Nielsen Online SiteCensus V6.0 -->
+    <!-- COPYRIGHT 2010 Nielsen Online -->
+    <script type="text/javascript">
+    (function () {
+        var d = new Image(1, 1);
+        d.onerror = d.onload = function () { d.onerror = d.onload = null; };
+        d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-103525h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+    })();
+    </script>
+    <noscript>
+        <div><img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-103525h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div>
+    </noscript>
+    <!-- END Nielsen Online SiteCensus V6.0 -->
+
+    <!-- Begin comScore Tag -->
+    <script type="text/javascript">
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "9900186" });
+        (function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+    <noscript>
+        <img src="http://b.scorecardresearch.com/p?c1=2&c2=9900186&cv=2.0&cj=1" />
+    </noscript>
+    <!-- End comScore Tag -->
+
+    <!-- Chartbeat -->
+    <script type="text/javascript">
+        // chartbeat wants the vars in global
+
+        window._sf_async_config={uid:14447,domain:"businessinsider.com"};
+        window._sf_async_config.useCanonical = true;
+
+        //only set the following if on a sponsored post
+        
+        (function(){
+          function loadChartbeat() {
+            window._sf_endpt=(new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src',
+               (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+               "static.chartbeat.com/js/chartbeat_pub.js");
+            document.body.appendChild(e);
+          }
+          var oldonload = window.onload;
+          window.onload = (typeof window.onload != 'function') ?
+             loadChartbeat : function() { oldonload(); loadChartbeat(); };
+        })();
+    </script>
+    <!-- / Chartbeat -->
+
+    <!-- BEGIN Krux Control Tag for "businessinsider.com" -->
+<!-- Source: /snippet/controltag?confid=I2I9M2yx&site=businessinsider.com&edit=1 -->
+<script class="kxct" data-id="I2I9M2yx" data-timing="async" data-version="1.9" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+    var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+    k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+      (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=I2I9M2yx"
+  ;
+    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  }());
+</script>
+<!-- END Krux Controltag -->
+            <!-- Sailthru Concierge -->
+        <script type="text/javascript" src="http://ak.sail-horizon.com/horizon/v1.js"></script>
+        <script type="text/javascript" src="http://ak.sail-horizon.com/scout/v1.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            // Sailthru Concierge
+            if (window.Sailthru) {
+                var sailthruOpts = {
+                    domain: 'horizon.businessinsider.com'
+                                            , concierge: { from: 'top', threshold: $('#bottom-share-links') }
+                                    };
+                if (window.outerWidth < 800) { //on small screens we dont want the flyout to appear
+                    delete sailthruOpts.concierge;
+                }
+                Sailthru.setup(sailthruOpts);
+            }
+        });
+        </script>
+        <!-- / Sailthru Concierge -->
+                <!-- Skimlinks -->
+        <script class="post-loaded" type="text/javascript" data-src="http://s.skimresources.com/js/35871X943606.skimlinks.js"></script>
+        <!-- /Skimlinks -->
+
+    
+<!-- Perfect market JS -->
+    <!-- End Perfect market JS-->
+
+<!-- kontera contextual ads -->
+
+<!-- taboola -->
+        
+    <script type="text/javascript">
+        window._taboola = window._taboola || [];
+        _taboola.push({article:'auto'});
+        !function (e, f, u) {
+            e.async = 1;
+            e.src = u;
+            f.parentNode.insertBefore(e, f);
+        }(
+            document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            'http://cdn.taboola.com/libtrc/businessinsider/loader.js'
+        );
+    </script>      
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+</script>
+<!-- End taboola -->
+
+<!--bizio-->
+<script type="text/javascript">
+  _bizo_data_partner_id = "1301";
+</script>
+<script type="text/javascript">
+(function() {
+  var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";
+  b.async = true;
+  b.src = (window.location.protocol === "https:" ? "https://sjs" : "http://js") + ".bizographics.com/insight.min.js";
+  s.parentNode.insertBefore(b, s);
+})();
+</script>
+<noscript>
+  <img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=1301&fmt=gif" />
+</noscript>
+<!--end-->
+
+ 
+    <!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="businessinsider.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"4b4136998e","applicationID":"2646431,2646478,2664978","transactionName":"ZVZVZRBVXEJVVkJRDVwcdEQRQF1cG0VZSxY=","queueTime":0,"applicationTime":424,"ttGuid":"","agentToken":"","atts":"SRFWE1hPT0w=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-460.min.js"}</script></body>
+</html>

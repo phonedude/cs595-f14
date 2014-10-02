@@ -1,0 +1,1032 @@
+status: 200
+x-request-id: v-ce2bbbf0-4731-11e4-8061-12313d191a15
+x-varnish: 2217033853
+content-location: http://bigstory.ap.org/article/surly-2014-electorate-poised-keep-bums-0
+content-language: en
+x-age: 0
+accept-ranges: bytes
+expires: Sun, 28 Sep 2014 17:16:35 GMT
+vary: Accept-Encoding
+x-ah-environment: prod
+content-length: 91478
+server: nginx
+last-modified: Sun, 28 Sep 2014 17:06:36 +0000
+connection: keep-alive
+etag: "1411923996"
+link: </article/surly-2014-electorate-poised-keep-bums-0>;
+ rel="canonical",</node/8823991>;
+ rel="shortlink",</article/surly-2014-electorate-poised-keep-bums-0>;
+ rel="canonical",</node/8823991>; rel="shortlink"
+-varied-accept-encoding: gzip, deflate
+cache-control: no-cache, must-revalidate, post-check=0, pre-check=0
+date: Sun, 28 Sep 2014 17:16:35 GMT
+content-type: text/html; charset=utf-8
+-content-encoding: gzip
+-varied-accept-encoding: gzip, deflate
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> 
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdADQYFU1NT"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<meta property="twitter:title" content="Surly 2014 electorate poised to &#039;keep the bums in&#039;" />
+<meta property="twitter:description" content="WASHINGTON (AP) — A surly electorate that holds Congress in even lower regard than unpopular President Barack Obama is willing to &quot;keep the bums in,&quot; with at least 365 incumbents in the 435-member House and 18 of 28 senators…" />
+<meta property="twitter:image" content="http://binaryapi.ap.org/9b067444fdd94a238cf48314ec1f010f/460x.jpg" />
+<meta property="twitter:site" content="@ap" />
+<meta property="article:publisher" content="https://www.facebook.com/APNews" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="twitter:url" content="http://bigstory.ap.org/article/surly-2014-electorate-poised-keep-bums-0" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta name="twitter:app:name:iphone" content="AP Mobile" />
+<meta name="twitter:app:name:googleplay" content="AP Mobile" />
+<meta name="twitter:app:id:googleplay" content="mnn.Android" />
+<meta name="twitter:app:url:googleplay" content="apmobile://article/d7d605ec87f247c7a2122c1c2ffa7594" />
+<link href="http://bigstory.ap.org/profiles/ap/themes/ap_vertical/touch-icon.png" rel="apple-touch-icon" />
+<meta name="twitter:app:url:ipad" content="apmobile://article/d7d605ec87f247c7a2122c1c2ffa7594" />
+<meta name="twitter:app:id:ipad" content="284901416" />
+<meta name="twitter:app:id:iphone" content="284901416" />
+<meta name="twitter:app:url:iphone" content="apmobile://article/d7d605ec87f247c7a2122c1c2ffa7594" />
+<meta name="twitter:app:name:ipad" content="AP Mobile" />
+<meta property="fb:app_id" content="118162278248556" />
+<meta property="og:image" content="http://binaryapi.ap.org/9b067444fdd94a238cf48314ec1f010f/460x.jpg" />
+<link rel="shortcut icon" href="http://bigstory.ap.org/sites/bigstory/files/AP_Favicon_0_0.png" type="image/png" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta property="al:ios:url" content="apmobile://article/d7d605ec87f247c7a2122c1c2ffa7594" />
+<meta name="copyright" content="2012 Associated Press" />
+<meta name="keywords" content="Mid-term elections, U.S. Republican Party, U.S. Democratic Party, United States House of Representatives, Joe Pitts, Dan Maffei, Dave Loebsack, Scott Perry, Presidential elections, United States Presidential Election, 2012 United States Presidential Election, United States General Election, House elections, Political parties, National elections, Political organizations, General elections" />
+<link rel="canonical" href="http://bigstory.ap.org/article/surly-2014-electorate-poised-keep-bums-0" />
+<link rel="shortlink" href="/node/8823991" />
+<meta name="description" content="WASHINGTON (AP) — A surly electorate that holds Congress in even lower regard than unpopular President Barack Obama is willing to &quot;keep the bums in,&quot; with at least 365 incumbents in the 435-member House and 18 of 28 senators on a glide path to another term when ballots are counted Nov. 4.
+With less than 10 weeks to the elections, Republicans and Democrats who assess this fall&#039;s midterm contests say the power of incumbency — the decennial process of reconfiguring congressional maps and hefty fundraising — trumps the sour public mood and antipathy toward gridlocked Washington.
+&quot;Despite the incredibly low polling, favorable ratings for Congress, it&#039;s still an incumbent&#039;s world,&quot; said Sheila Krumholz, executive director of the nonpartisan Center for Responsive Politics that tracks political money.
+That leaves many voters angry, not only with the political reality but their inability to change it.
+&quot;I can&#039;t get over where they say people are going to be able to keep their seats when they&#039;re not doing their jobs. I just don&#039;t understand it,&quot; said retired teacher Pauline Legendre after voting in Minnesota&#039;s Democratic primary last month.
+The voter disgust is palpable, evident in blistering comments at summertime town halls and middling percentages for incumbents in primaries. Yet no sitting senator has lost and only three congressmen got the primary boot. Come Election Day, only a fraction of the electorate will be motivated enough to vote — if history is any guide.
+Congressional hopefuls are whipsawed by the two dynamics.
+&quot;It&#039;s going to be a challenge for any candidate running for Congress to suggest that they have all the answers or that somehow there&#039;s something about them that&#039;s so inspiring&quot; that voters are going to forget &quot;how disenchanted or disaffected they are with government at the federal level,&quot; said Ryan Costello, a Republican seeking an open House seat in southeast Pennsylvania where just 12 percent of GOP voters turned out in the May primary.
+Still, the candidates press ahead, with Republicans laser-focused on gaining the six seats necessary to grab the Senate majority and control Congress for the remainder of Obama&#039;s presidency. Five Democratic retirements give the GOP a clear shot to capture control. So do races in conservative-leaning states such as Louisiana, North Carolina and Arkansas, where white Southern Democrats are nearly extinct.
+The GOP figures it&#039;s half-way to its goal, with a solid advantage in open contests in South Dakota, West Virginia and Montana. Republicans are optimistic about the open seat in Iowa, less so about Michigan, and energized by their prospects in Colorado and Alaska. If a GOP wave materializes, it could be in the Senate.
+In the House, Republicans are expected to pad their majority — currently 233-199 with three vacancies — with the goal of matching or surpassing the 246 seats the GOP held from 1947-49.
+Fueling the battle is what&#039;s expected to be a record-breaking flow of campaign cash. The parties&#039; campaign committees and their allied outside groups are spending at a rate certain to exceed the $3.6 billion price tag of the 2010 midterm elections.
+House Republicans who saw a wave election in January 2010 — the year Democrats lost 63 seats — don&#039;t expect a comparable sweep in 2014 simply because redistricting reduced the number of opportunities. On that, Democrats agree, though an Obama decision on immigration could change the dynamic.
+On the cusp of the fall election season, fewer than two dozen House Democrats and Republicans are in real jeopardy in November.
+The GOP is counting on opposition to Obama to motivate its core voters. To counter that situation, Democrats have dispatched 444 organizers to 48 districts to get out the vote, with another 250-plus ready for the September-to-November sprint as the party typically faces a drop-off in midterm voting.
+The Democratic Party is employing reminder pledge cards — &quot;1 million votes for 2014&quot; — the number they say decided 65 competitive House races in 2012. Democrats maintain that they had a shot two years ago, but Obama&#039;s miserable performance in his first presidential debate sank the party&#039;s chances.
+It&#039;s an uphill fight as the president&#039;s party typically loses seats in non-presidential election years.
+At a meeting last month with small business owners and workers at a wood fabricating plant in Quarryville, Pennsylvania, Republican Rep. Joe Pitts got an earful from local farmer, Michael Appel, 48, who pressed the nine-term congressman to do more to stop Obama.
+&quot;I&#039;m wondering, especially when it comes to Obamacare, how the House is going to start holding the president accountable for making law out of whole cloth?&quot; Appel asked.
+&quot;It&#039;s not that we wouldn&#039;t like to, it&#039;s a matter of what we can do,&quot; Pitts responded. &quot;You need the House, the Senate and the president. The problem is we don&#039;t have those two.&quot;
+As staff urged the attendees to vote, Appel erupted in frustration: &quot;I voted for Joe Pitts and all he&#039;s told me so far up here is he&#039;s powerless.&quot;
+Pitts said in an interview that it&#039;s up to lawmakers to educate voters about the limits of divided government.
+&quot;I share their frustration,&quot; Pitts said. &quot;I understand they&#039;re not as involved so they don&#039;t understand a lot of it, but they have a responsibility to turn out next time if they&#039;re concerned, because there are real consequences to these elections in public policy.&quot;
+Democratic incumbents have cast themselves as outsiders as they sympathize with hostile voters.
+New York Rep. Dan Maffei says &quot;we gotta hold &#039;em accountable&quot; in his campaign ad. Iowa Rep. Dave Loebsack didn&#039;t mince words when he told constituents, &quot;Congress is an incredibly dysfunctional mess and everyone knows that,&quot; and blamed the lack of compromise.
+In York, Pennsylvania, first-term Republican Rep. Scott Perry insisted that the House had been doing its job by passing bills, but that cooperation was lacking from the Democratic-led Senate and Obama.
+One voter asked him whether, if the Senate goes Republican in November, there might be more hope.
+&quot;If you&#039;re expecting cataclysmic change immediately, I think that&#039;s a bit beyond expectations,&quot; Perry said.
+____
+Associated Press writers Erica Werner in Washington, Tom Beaumont in Iowa and Brian Bakst in Minnesota contributed to this report." />
+<meta property="al:ios:app_store_id" content="284901416" />
+<meta property="al:ios:app_name" content="AP Mobile" />
+<meta property="og:title" content="Surly 2014 electorate poised to &#039;keep the bums in&#039;" />
+<meta property="og:site_name" content="The Big Story" />
+<meta property="og:url" content="http://bigstory.ap.org/article/surly-2014-electorate-poised-keep-bums-0" />
+<meta property="al:web:url" content="http://bigstory.ap.org/article/surly-2014-electorate-poised-keep-bums-0" />
+<meta property="al:android:class" content="com.ap.facebook.FacebookShareActivity" />
+<meta property="al:android:url" content="apmobile://article/d7d605ec87f247c7a2122c1c2ffa7594" />
+<meta property="al:android:app_name" content="AP Mobile" />
+<meta property="al:android:package" content="mnn.Android" />
+<meta property="og:description" content="WASHINGTON (AP) — A surly electorate that holds Congress in even lower regard than unpopular President Barack Obama is willing to &quot;keep the bums in,&quot; with at least 365 incumbents in the 435-member House and 18 of 28 senators…" />
+    <title>Surly 2014 electorate poised to &#039;keep the bums in&#039;</title>  
+  <link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_Wd6pSoewqjam2D4kmxT6m1HirDRqLp5CwoDWDev4Q4g.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_p69lZbWUy3tnxSLKPWqUnUfG0F2tSCrnOkNR4QRch-I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_jI2xa-mb4AyO5H6mMUNw-RV2CxpXHE9XU9JRNbpUsms.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_LSHsoZF7jquocBUwsskOBTpxrHPtiNoy7kfY7C0_24g.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_GDyPfWxLYAGs0EZ7rrEyCcTUwCza-o_8EwsSKvDXab0.css" media="print" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_KCNZ7YudgplVMn0e5YXrEptF8K7nkEFZt5Yrs5EjYM0.css" media="all" />
+<![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/profiles/ap/themes/bigstory_v2/assets/js/responsive_ads.js"></script>
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-2";
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_RC7d2_dhfBsqLAPQvLz26Tw_1pi8VuJA8XTLntJVGuM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_Cyc-lC6ixML6RkS4RmBegmTl-vUp8PtXmSZmSGOtAFQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8823991", [300, 250], "dfp-ad-topic_box_2")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8823991", [728, 90], "dfp-ad-leaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8823991", [[300, 50], [320, 50]], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8823991", [[300, 600], [300, 250]], "dfp-ad-half_page")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8823991", [300, 250], "dfp-ad-mediumrectangle")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _sf_startpt=(new Date()).getTime()
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_wikXwq3fLO6oFthA4Y3w41NkpNfBU36cSQ44ikxXUlA.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+<!--Visual Revenue Reader Response Tracking Script (v6) -->
+    var _vrq = _vrq || [];
+    _vrq.push(["id", 113]);
+    _vrq.push(["automate", false]);
+    _vrq.push(["track", function(){}]);
+    (function(d, a){
+        var s = d.createElement(a),
+        x = d.getElementsByTagName(a)[0];
+        s.async = true;
+        s.src = "http://a.visualrevenue.com/vrs.js";
+        x.parentNode.insertBefore(s, x);
+    })(document, "script");
+<!-- End of VR RR Tracking Script - All rights reserved -->
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://content.zemanta.com/static/custom/bigstory/js/loader.js"></script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_n01iyYgoHd6AmSIjfjIGdb1zDj0Mn5V6I749x9UTF5g.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_IDBX5SzkJ9gGNq7x-qOE_2DZsexqguTJQGMKvi4w-Uw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-27590430-2"]);_gaq.push(['_setCustomVar', 2, "Item ID", "d7d605ec87f247c7a2122c1c2ffa7594", 3]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_8vU6a88TXGUrVK8buVJc2ADAKmxebvkwpTcDvFZvTbA.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var AP_SOCIAL = {"refresh_delay":"60","node_id":"8823991"}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_9LZhWmfkuLP10rmN9X812-PfPgMlX-tgFbabWDLcE_0.js"></script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_diWL3aQY3h6RRBatVIE0RJfaXsBie-hoJ861ArHzvB0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bigstory_v2","theme_token":"HASwpy_CNgH51RQC57fqfiJlYA2grhd1HgXwt6gewjA","js":{"0":1,"profiles\/ap\/modules\/custom\/optional\/ap_social\/js\/ap_social.min.js":1,"1":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"2":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"10":1,"11":1,"http:\/\/content.zemanta.com\/static\/custom\/bigstory\/js\/loader.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/dynamic-carousel.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/jquery.wmuslider.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_carousel.js":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"12":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"13":1,"http:\/\/use.typekit.com\/uta3cck.js":1,"14":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/package-quojs-2.3.6\/quo.js":1,"profiles\/ap\/modules\/contrib\/disqus\/disqus.js":1,"15":1,"profiles\/ap\/themes\/bigstory_v2\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/vendor\/modernizr.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/jquery-scrolltofixed.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/custom.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/jquery.magnific-popup.min.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/core.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/gallery.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/image.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"profiles\/ap\/themes\/bigstory_v2\/css\/siro.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/glyphicon.css":1,"profiles\/ap\/themes\/bigstory_v2\/css\/fonts.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/foundation.min.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/styles-bigStory.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/style.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/magnific-popup.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/bigstory_v2\/css\/print.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"disqus":{"domain":"thebigstory","url":"http:\/\/bigstory.ap.org\/article\/surly-2014-electorate-poised-keep-bums-0","title":"Surly 2014 electorate poised to \u0026#039;keep the bums in\u0026#039;","identifier":"node\/8823991"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" href="/profiles/ap/themes/bigstory_v2/assets/css/fix-ie8.css"><![endif]-->
+  <!--[if lt IE 10]><link rel="stylesheet" href="/profiles/ap/themes/bigstory_v2/assets/css/fix-ie9.css"><![endif]-->
+  <!--[if lt IE 9]><script src="/profiles/ap/themes/bigstory_v2/assets/js/fix-ie8.js"></script><![endif]-->
+  <!--[if IE 9]><script src="/profiles/ap/themes/bigstory_v2/assets/js/fix-ie9.js"></script><![endif]-->
+  <!--[if lt IE 10]><script src="/profiles/ap/themes/bigstory_v2/assets/js/css3-multi-column.js"></script><![endif]-->
+  <script type="text/javascript">
+      $(function(){
+          if( $('body').hasClass("node-type-ap-article") ){
+              var script_quo = document.createElement('script')
+              script_quo.src = '/assets/js/package-quojs-2.3.6/quo.js'
+              document.documentElement.firstChild.appendChild(script_quo);
+          }
+      });
+  </script>
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-8823991 node-type-ap-article context-article">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <header>
+    <nav class="top-bar" data-topbar="">
+        <ul class="title-area">
+            <li class="name">
+                <a class="logo" href="/">
+                    <!--[if gte IE 9]><!-->
+                    <img src="/profiles/ap/themes/bigstory_v2/assets/images/ap_logo_bigstory.svg" width="291" alt="">
+                    <!--<![endif]-->
+                    <!--[if lte IE 8]>
+                      <img class="fix-ie8-logo" src="/profiles/ap/themes/bigstory_v2/assets/images/ap_logo_bigstory.png" width="291" alt="">
+                    <![endif]-->
+                </a>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span><!-- menu --></span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!--<nav id="nav">-->
+            <!--menu dinamico-->
+            <ul class="right medium-3 menuLinks">
+                
+                            <li class="hide-for-medium">
+            
+                            <a href="http://bigstory.ap.org/latest">
+                    Latest News                </a>
+            
+
+                        </li>
+           
+                        <li class="hide-for-small search-li dividerbigstory">
+                    <a id="idsearchform" type="button" data-options="align:left" data-dropdown="headerSearch" data-options="is_hover:false">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                    <div data-dropdown-content="" class="small content searchform drop-left open" id="headerSearch" style="display: none; position: absolute; left: -295px; top: 3px;">
+                        
+                        <form action="/" method="post" id="search-block-form" accept-charset="UTF-8">
+                                
+                                    <!--<div class="container-inline">
+                                    <div class="form-item form-type-textfield form-item-search-block-form">-->
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <div class="row collapse">
+                                    <div class="small-10 colu">
+                                        <input title="Enter the terms you wish to search for." placeholder="Search..." type="text" id="edit-search-block-form--2" name="search_block_form" value=""  maxlength="128" class="form-text">
+                                    </div>
+                                    <div  class="small-2 colu" id="edit-actions">
+                                        <input id="butonsearch" class="button postfix" type="submit" name="op" value="Go" >
+                                    </div>
+                                    <input type="hidden" name="form_id" value="search_block_form">
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="searchForm show-for-small">
+                    <form action="/" method="post" id="search-block-form" accept-charset="UTF-8" >
+                            <!--<div class="container-inline">-->
+                        <div class="">
+                            <div class="small-12 columns">
+                                <div class="row collapse" style="float:left">
+                                    <div class="small-10 columns">
+                                        <input title="Enter the terms you wish to search for." placeholder="Search..." type="text" id="edit-search-block-form--2" name="search_block_form" value=""  maxlength="128" class="form-text"/>
+                                    </div>
+                                    <div  class="small-2 columns" id="edit-actions2">
+                                        <input id="butonsearch" class="button postfix" type="submit" name="op" value="Go" />
+                                    </div>
+                                <input type="hidden" name="form_id" value="search_block_form"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="divider show-for-small"></li>
+                <!--<li class="ad_nav">
+                    <a href="#"><img src="/profiles/ap/themes/bigstory_v2/assets/sample/ad_88x31.png" alt=""></a>
+                </li>-->
+            </ul>
+            <!--</nav>-->
+        </section>
+    </nav>
+</header>
+<div class="block block-boxes block-boxes-responsive-dfp block-responsive-leaderboard block-boxes-responsive-leaderboard odd block-without-title" id="block-boxes-responsive-leaderboard">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id='boxes-box-responsive_leaderboard' class='boxes-box'><div class="boxes-box-content"><div id="responsive_leaderboard-responsive-ad" class="responsive-ad"></div></div></div>    </div>
+  </div>
+
+</div>  </div>
+</div><!--<div>    <div id="whitelabel_header" class="clearfix">
+      </div>
+    <div class="menu-zone-inner-wrapper">
+	  <div>
+	    	  </div>
+  </div>
+</div>--></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+            <div id="section-article-full">
+
+
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                 
+            <div class="tabs clearfix"></div>        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    
+<section class="row article">
+<!-- Main article BEGIN -->
+<article class="large-9 medium-8 columns">
+    <section class="articleHeader">
+        
+        <div class="byline-dateline">
+            <!--
+                        <a href="/tags/us-republican-party">U.S. Republican Party</a>
+                        -->
+        </div>
+
+                          <h1 class="story-heading">Surly 2014 electorate poised to &#039;keep the bums in&#039; <span></span></h1>
+                
+      <div class="story-meta-footer">
+          
+        <div class="byline-dateline"> 
+            <div id="byline"><div class="field field-name-field-byline-original field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">By <a href="/content/donna-cassata">DONNA CASSATA</a></div></div></div></div>
+            <div id="dateline">
+                   <span  class="updated" title="2014-09-01T09:19:57-04:00">Sep. 1, 2014 9:19 AM EDT</span> 
+            </div>
+        </div>
+          
+      </div>
+
+    </section>
+
+    <!-- sticky Tool-bar BEGIN -->
+    <section class="article_toolbar sticky" id="sticky-article-toolbar">
+        <div class="small-12 left">
+            
+<a class="share_bt hide-for-small" id="facebook" href="#"><i></i></a>
+<a class="share_bt hide-for-small" id="twitter" href="#"><i></i></a>
+<a class="share_bt hide-for-small" id="email" href="mailto:?subject=AP Big Story: Surly 2014 electorate poised to &#039;keep the bums in&#039;&body=From AP, %0D%0A %0D%0ASurly 2014 electorate poised to &#039;keep the bums in&#039;. %0D%0A %0D%0AWASHINGTON (AP) &#x2014; A surly electorate that holds Congress in even lower regard than unpopular President Barack Obama is willing to  keep the bums in,  with at least 365 incumbents in the 435-member House and 18 of 28 senators on a glide path to another term when ballots are counted Nov. 4.  %0D%0A %0D%0Ahttp://bigstory.ap.org/article/surly-2014-electorate-poised-keep-bums-0"><i></i></a>
+<a href="#" class="share_bt" id="shareAll" data-dropdown="social-dropdown" onclick="javascript:return false;"><i></i>
+  <span class="share_bt" id="sharesTotal"></span>
+</a>
+
+<div class="right">
+  <a href="#" class="share_bt right" id="commentsAnchor"><i></i><span id="comments-count"></span></a>
+</div>
+
+<div id="social-dropdown-parent">
+  <div id="social-dropdown" class="f-dropdown">
+    <h6>Share article</h6>
+    <ul class="small-block-grid-3">
+      <li><a class="share_bt" id="facebook" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="twitter" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="linkedin" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="googleplus" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="reddit" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="tumblr" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="email" href="mailto:?subject=AP Big Story: Surly 2014 electorate poised to &#039;keep the bums in&#039;&body=From AP, %0D%0A %0D%0ASurly 2014 electorate poised to &#039;keep the bums in&#039;. %0D%0A %0D%0AWASHINGTON (AP) &#x2014; A surly electorate that holds Congress in even lower regard than unpopular President Barack Obama is willing to  keep the bums in,  with at least 365 incumbents in the 435-member House and 18 of 28 senators on a glide path to another term when ballots are counted Nov. 4.  %0D%0A %0D%0Ahttp://bigstory.ap.org/article/surly-2014-electorate-poised-keep-bums-0"><i></i></a></li>
+    </ul>
+  </div>
+</div>
+        </div>
+    </section>
+    
+ <script type="text/javascript">var only_one_photo = 0;</script> 
+<section class="slideshow lead-photo" id="lead-photo-slideshow">
+    <div class="photo-count">
+        20 photos    </div>
+    <script>var total_imgs =20</script>
+
+    <ul class="gallery popup-gallery" id="ul-gallery">
+        
+                                                <li class="visible">
+                            <a class="open_gallery" href="http://binaryapi.ap.org/9b067444fdd94a238cf48314ec1f010f/460x.jpg" title="This Oct. 2, 2013, file photo shows Vicki Maturo, of Culver City, Calif., as she protests against the government shutdown outside the federal building in Los Angeles. The election of 2014 is an election of contradictions. A surly electorate holds President Barack Obama in low regard and gives Congress even worse marks, yet for all their anger, a historic few are motivated enough to vote and those that do are poised to "keep the bums in." (AP Photo/Jae C. Hong, File)"><img src="http://binaryapi.ap.org/9b067444fdd94a238cf48314ec1f010f/460x.jpg" alt="Vicki Maturo" title="Vicki Maturo" /></a>                        </li>                      
+                    
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            </ul>
+    
+    <script type="text/javascript">      
+        var imgArray = new Array();
+         imgArray[1] = '<a class="open_gallery" href="http://binaryapi.ap.org/9f13f3f0437840afb633ae258f5227ea/460x.jpg" title="This Feb. 21, 2014, file photo shows the U.S. Capitol and the Peace Monument in Washington. The election of 2014 is an election of contradictions. A surly electorate holds President Barack Obama in low regard and gives Congress even worse marks, yet for all their anger, a historic few are motivated enough to vote and those that do are poised to "keep the bums in."(AP Photo/J. Scott Applewhite, File)"><img src="http://binaryapi.ap.org/9f13f3f0437840afb633ae258f5227ea/460x.jpg" alt="Midterm Elections " title="Midterm Elections " /></a>'; 
+             imgArray[2] = '<a class="open_gallery" href="http://binaryapi.ap.org/b3e72ebc3a4040d997b3e84874093d8d/460x.jpg" title="This March 25, 2014, file photo shows Rep. Joe Pitts, R-Pa. as he speaks to reporters on Capitol Hill in Washington. The election of 2014 is an election of contradictions. A surly electorate holds President Barack Obama in low regard and gives Congress even worse marks, yet for all their anger, a historic few are motivated enough to vote and those that do are poised to "keep the bums in." (AP Photo/Lauren Victoria Burke, File)"><img src="http://binaryapi.ap.org/b3e72ebc3a4040d997b3e84874093d8d/460x.jpg" alt="Joe Pitts" title="Joe Pitts" /></a>'; 
+             imgArray[3] = '<a class="open_gallery" href="http://binaryapi.ap.org/46e95694d5e14b82b5606a1849690dde/460x.jpg" title="In this this Oct. 24, 2012, file photo in Davenport, Iowa, is U.S. Rep. Dave Loebsack, D-Iowa, who faces Republican John Archer in Iowa&#39s 2nd Congressional District race. The election of 2014 is an election of contradictions. A surly electorate holds President Barack Obama in low regard and gives Congress even worse marks, yet for all their anger, a historic few are motivated enough to vote and those that do are poised to "keep the bums in." (AP Photo/Charlie Neibergall, File)"><img src="http://binaryapi.ap.org/46e95694d5e14b82b5606a1849690dde/460x.jpg" alt="Dave Loebsack" title="Dave Loebsack" /></a>'; 
+             imgArray[4] = '<a class="open_gallery" href="http://binaryapi.ap.org/04d12e313ab64f9d955783b3fd367977/460x.jpg" title="This Jan. 3, 2013, file photo shows House Speaker John Boehner of Ohio, left, performs a mock swearing in for Rep. Dan Maffei, D-N.Y., right, on Capitol Hill in Washington. The election of 2014 is an election of contradictions. A surly electorate holds President Barack Obama in low regard and gives Congress even worse marks, yet for all their anger, a historic few are motivated enough to vote and those that do are poised to "keep the bums in." (AP Photo/Cliff Owen, File)"><img src="http://binaryapi.ap.org/04d12e313ab64f9d955783b3fd367977/460x.jpg" alt="Dan Maffei, John Boehner" title="Dan Maffei, John Boehner" /></a>'; 
+             imgArray[5] = '<a class="open_gallery" href="http://binaryapi.ap.org/5a3401c17da34e6db07d27c761db9c3f/460x.jpg" title="This Aug. 5, 2013, file photo shows U.S. Rep. Scott Perry, R-Pa., talking to reporters after a closed-door fundraiser with U.S. House Speaker John Boehner of Ohio, on City Island in Harrisburg, Pa. The election of 2014 is an election of contradictions. A surly electorate holds President Barack Obama in low regard and gives Congress even worse marks, yet for all their anger, a historic few are motivated enough to vote and those that do are poised to "keep the bums in." (AP Photo/Marc Levy, File)"><img src="http://binaryapi.ap.org/5a3401c17da34e6db07d27c761db9c3f/460x.jpg" alt="Scott Perry" title="Scott Perry" /></a>'; 
+             imgArray[6] = '<a class="open_gallery" href="http://binaryapi.ap.org/ec6a1b97c51c410abbb54a044ca2b5b7/460x.jpg" title="FILE - This Oct. 8, 2013, file photo shows Cornell Woolridge of Windsor Mill, Md., as he demonstration outside the Supreme Court in Washington,  as the court heard arguments on campaign finance. The first midterm elections since both parties embraced a historic change in campaign finance, and with it a sea of campaign cash, will mean for most voters an avalanche of television ads trying to reach the few able to be swayed and willing to vote. In the nation&#39s closest races for U.S. Senate, that translates into "price per vote" that could easily double what was spent in the 2012 presidential election. (AP Photo/Susan Walsh, File)"><img src="http://binaryapi.ap.org/ec6a1b97c51c410abbb54a044ca2b5b7/460x.jpg" alt="Cornell Woolridge" title="Cornell Woolridge" /></a>'; 
+             imgArray[7] = '<a class="open_gallery" href="http://binaryapi.ap.org/d7c63c1c9aa24836a584dc1ba536a60a/460x.jpg" title="This Jan. 8, 2013, file photo shows the Capitol reflected in the windows of the Newseum, on Pennsylvania Avenue in Washington. The first midterm elections since both parties embraced a historic change in campaign finance, and with it a sea of campaign cash, will mean for most voters an avalanche of television ads trying to reach the few able to be swayed and willing to vote. In the nation&#39s closest races for U.S. Senate, that translates into "price per vote" that could easily double what was spent in the 2012 presidential election. (AP Photo/Jacquelyn Martin, File)"><img src="http://binaryapi.ap.org/d7c63c1c9aa24836a584dc1ba536a60a/460x.jpg" alt="Midterm Elections Campaign Cash" title="Midterm Elections Campaign Cash" /></a>'; 
+             imgArray[8] = '<a class="open_gallery" href="http://binaryapi.ap.org/3b206d21e9b94cd59bf5f33561a70d8d/460x.jpg" title="This June 18, 2014 file photo shows Iowa Democratic Senate candidate, Rep. Bruce Braley, D-Iowa, on Capitol Hill in Washington. The first midterm elections since both parties embraced a historic change in campaign finance, and with it a sea of campaign cash, will mean for most voters an avalanche of television ads trying to reach the few able to be swayed and willing to vote. In the nation&#39s closest races for U.S. Senate, that translates into "price per vote" that could easily double what was spent in the 2012 presidential election. (AP Photo/Cliff Owen, File)"><img src="http://binaryapi.ap.org/3b206d21e9b94cd59bf5f33561a70d8d/460x.jpg" alt="Bruce Braley" title="Bruce Braley" /></a>'; 
+             imgArray[9] = '<a class="open_gallery" href="http://binaryapi.ap.org/d73ec0ea44e6480490bc0f0592c96170/460x.jpg" title="This June 3, 2014, file photo shows Iowa Republican Senate candidate Joni Ernst speaking in Des Moines, Iowa. The first midterm elections since both parties embraced a historic change in campaign finance, and with it a sea of campaign cash, will mean for most voters an avalanche of television ads trying to reach the few able to be swayed and willing to vote. In the nation&#39s closest races for U.S. Senate, that translates into "price per vote" that could easily double what was spent in the 2012 presidential election.  (AP Photo/Charlie Neibergall, File)"><img src="http://binaryapi.ap.org/d73ec0ea44e6480490bc0f0592c96170/460x.jpg" alt="Joni Ernst" title="Joni Ernst" /></a>'; 
+             imgArray[10] = '<a class="open_gallery" href="http://binaryapi.ap.org/2aef5b4768884881b53b73a445a3b6c8/460x.jpg" title="This Aug. 20, 2014, file photo shows Senate Minority Leader Mitch McConnell of Ky., joined by his wife Elaine Chao, as he speaks to reporters following a candidates forum at the Kentucky Farm Bureau Insurance headquarters,  in Louisville, Ky.  The first midterm elections since both parties embraced a historic change in campaign finance, and with it a sea of campaign cash, will mean for most voters an avalanche of television ads trying to reach the few able to be swayed and willing to vote. In the nation&#39s closest races for U.S. Senate, that translates into "price per vote" that could easily double what was spent in the 2012 presidential election. (AP Photo/Timothy D. Easley, File)"><img src="http://binaryapi.ap.org/2aef5b4768884881b53b73a445a3b6c8/460x.jpg" alt="Mitch McConnell, Elaine Chao" title="Mitch McConnell, Elaine Chao" /></a>'; 
+             imgArray[11] = '<a class="open_gallery" href="http://binaryapi.ap.org/1d76995fa4f5494683e04c34f9d5fa49/460x.jpg" title="FILE- This Aug. 8, 2014, file photo shows Kentucky Democratic senatorial candidate Alison Lundergan Grimes as she speaks to a group of supporters during a political rally at the Hal Rogers Center in Hazard, Ky. Grimes will face Senate Minority Leader Mitch McConnell in the general election for U.S. Senate.   (AP Photo/Timothy D. Easley, File)"><img src="http://binaryapi.ap.org/1d76995fa4f5494683e04c34f9d5fa49/460x.jpg" alt="Alison Lundergan Grimes" title="Alison Lundergan Grimes" /></a>'; 
+             imgArray[12] = '<a class="open_gallery" href="http://binaryapi.ap.org/3ec5b8e4e345459b9354a271600a1b01/460x.jpg" title="This photo taken Aug. 25, 2014, shows Sen. Kay Hagan, D-N.C., as she speaks to supporters while visiting a campaign field office in Goldsboro, N.C. The first midterm elections since both parties embraced a historic change in campaign finance, and with it a sea of campaign cash, will mean for most voters an avalanche of television ads trying to reach the few able to be swayed and willing to vote. In the nation&#39s closest races for U.S. Senate, that translates into "price per vote" that could easily double what was spent in the 2012 presidential election. (AP Photo/Gerry Broome)"><img src="http://binaryapi.ap.org/3ec5b8e4e345459b9354a271600a1b01/460x.jpg" alt="Kay Hagan" title="Kay Hagan" /></a>'; 
+             imgArray[13] = '<a class="open_gallery" href="http://binaryapi.ap.org/4b5bd37908d944639b121d5fab51dd1b/460x.jpg" title="This Sept. 3, 2013, file photo shows N.C. House Speaker Thom Tillis, center, as he speaks with lawmakers on the House floor in Raleigh, N.C.  Sen. Kay Hagan, D-N.C. is running against Republican rival Tillis. The first midterm elections since both parties embraced a historic change in campaign finance, and with it a sea of campaign cash, will mean for most voters an avalanche of television ads trying to reach the few able to be swayed and willing to vote. In the nation&#39s closest races for U.S. Senate, that translates into "price per vote" that could easily double what was spent in the 2012 presidential election.  (AP Photo/Gerry Broome, File)"><img src="http://binaryapi.ap.org/4b5bd37908d944639b121d5fab51dd1b/460x.jpg" alt="Thom Tillis" title="Thom Tillis" /></a>'; 
+             imgArray[14] = '<a class="open_gallery" href="http://binaryapi.ap.org/1a0482eb3268488dbbc370e13e3bf0d0/460x.jpg" title="FILE - This June 17, 2014, file photo shows President Barack Obama speaking at the Democratic National Committee&#39s (DNC) annual Lesbian, Gay, Bisexual and Transgender (LGBT) fundraiser gala in Gotham Hall, in New York. His name won&#39t be on the ballot, but Obama will shape the midterm elections like no other. For Republicans, he is a punch line who fires up conservatives and reaches dissatisfied independents. And some Democrats won&#39t even mention his name. It&#39s left Obama able to do little more than raise money ahead of an election that will define how he spends his final two years in office. (AP Photo/Pablo Martinez Monsivais, File)"><img src="http://binaryapi.ap.org/1a0482eb3268488dbbc370e13e3bf0d0/460x.jpg" alt="Barack Obama" title="Barack Obama" /></a>'; 
+             imgArray[15] = '<a class="open_gallery" href="http://binaryapi.ap.org/9c26812c1aab4103b4e1d4eee6f506bd/460x.jpg" title="ADVANCE FOR SATURDAY, AUG. 30, AND THEREAFTER - FILE - This July 17, 2014, file photo shows Hillary Rodham Clinton as she arrives to a signing of her book "Hard Choices" in  Ridgewood, N.J. One set of elections ends in early November as another begins when presidential hopefuls cross the unofficial starting line in the 2016 race for the White House. With control of the Senate at stake, the months leading up to the mid-term elections offer a clearer window on a crowd of potential presidential candidates already jockeying for position from Nevada to New Hampshire. (AP Photo/Julio Cortez, File)"><img src="http://binaryapi.ap.org/9c26812c1aab4103b4e1d4eee6f506bd/460x.jpg" alt="Hillary Rodham Clinton" title="Hillary Rodham Clinton" /></a>'; 
+             imgArray[16] = '<a class="open_gallery" href="http://binaryapi.ap.org/b91ac23f1762449181bdc911e8c4b893/460x.jpg" title="ADVANCE FOR SATURDAY, AUG. 30, AND THEREAFTER - FILE - This Aug. 20, 2014, file photo shows Vice President Joe Biden, right, with Connecticut Gov. Dannel P. Malloy, left, at Goodwin College, in East Hartford, Conn. One set of elections ends in early November as another begins when presidential hopefuls cross the unofficial starting line in the 2016 race for the White House. With control of the Senate at stake, the months leading up to the mid-term elections offer a clearer window on a crowd of potential presidential candidates already jockeying for position from Nevada to New Hampshire. (AP Photo/Jessica Hill, File)"><img src="http://binaryapi.ap.org/b91ac23f1762449181bdc911e8c4b893/460x.jpg" alt="Joe Biden, Dannel P. Malloy" title="Joe Biden, Dannel P. Malloy" /></a>'; 
+             imgArray[17] = '<a class="open_gallery" href="http://binaryapi.ap.org/b1eed1cee56a44da89d9fc7192f1a58b/460x.jpg" title="ADVANCE FOR SATURDAY, AUG. 30, AND THEREAFTER - FILE - This April 18, 2013, file photo shows former Fla. Gov. Jeb Bush as he speaks at the Hispanic Leadership Network conference, in Coral Gables, Fla. One set of elections ends in early November as another begins when presidential hopefuls cross the unofficial starting line in the 2016 race for the White House. With control of the Senate at stake, the months leading up to the mid-term elections offer a clearer window on a crowd of potential presidential candidates already jockeying for position from Nevada to New Hampshire. (AP Photo/Wilfredo Lee, File)"><img src="http://binaryapi.ap.org/b1eed1cee56a44da89d9fc7192f1a58b/460x.jpg" alt="Jeb Bush" title="Jeb Bush" /></a>'; 
+             imgArray[18] = '<a class="open_gallery" href="http://binaryapi.ap.org/b9c336dffe834689ad4c648b54339318/460x.jpg" title="ADVANCE FOR SATURDAY, AUG. 30, AND THEREAFTER - FILE - This Aug. 5, 2014, file photo shows Sen. Rand Paul, R-Ky., as he is introduced to speak during a meeting with local Republicans in Hiawatha, Iowa. One set of elections ends in early November as another begins when presidential hopefuls cross the unofficial starting line in the 2016 race for the White House. With control of the Senate at stake, the months leading up to the mid-term elections offer a clearer window on a crowd of potential presidential candidates already jockeying for position from Nevada to New Hampshire. (AP Photo/Charlie Neibergall, File)"><img src="http://binaryapi.ap.org/b9c336dffe834689ad4c648b54339318/460x.jpg" alt="Rand Paul" title="Rand Paul" /></a>'; 
+             imgArray[19] = '<a class="open_gallery" href="http://binaryapi.ap.org/4c16204e366549eb871115249d06d20c/460x.jpg" title="ADVANCE FOR SATURDAY, AUG. 30, AND THEREAFTER - FILE - This Aug. 23, 2014, file photo shows Texas Gov. Rick Perry as he speaks at a GOP picnic in Chichester, N.H. One set of elections ends in early November as another begins when presidential hopefuls cross the unofficial starting line in the 2016 race for the White House. With control of the Senate at stake, the months leading up to the mid-term elections offer a clearer window on a crowd of potential presidential candidates already jockeying for position from Nevada to New Hampshire. (AP Photo/Jim Cole, File)"><img src="http://binaryapi.ap.org/4c16204e366549eb871115249d06d20c/460x.jpg" alt="Rick Perry" title="Rick Perry" /></a>'; 
+             
+    </script> 
+    
+        
+    <div class="field-name-caption"><block><p>This Oct. 2, 2013, file photo shows Vicki Maturo, of Culver City, Calif., as she protests against the government shutdown outside the federal building in Los Angeles. The election of 2014 is an election of contradictions. A surly electorate holds President Barack Obama in low regard and gives Congress even worse marks, yet for all their anger, a historic few are motivated enough to vote and those that do are poised to "keep the bums in." (AP Photo/Jae C. Hong, File)</p></div>    
+
+    <div id="information-small" class="small-12 show-for-small-only">
+	<div class="small-10 columns byline-dateline">
+            	</div>
+        <a id="infoGallery"><span class="caption overlay-caption" data-thumb-index="0">i</span></a>
+    </div>
+</section>
+ 
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        if (total_imgs == 1) {
+            var aImg = $('.popup-gallery li a');
+            
+            var text = aImg.attr('title');
+            
+            $('.field-name-caption').html('<block><p>' + text + '</p></block>');
+        }     
+        
+        var chrMax = 100;
+        
+        var origText = $('.field-name-caption block p').text();
+
+        var charLength = $('.field-name-caption block p').text().length;
+        
+        var screen_width = $( window ).width();
+        var width_mobile = 650;
+        
+        var pAbsoluteShow = 0;
+        
+        if (charLength > chrMax) {
+            var shortText = jQuery.trim(origText).substring(0, chrMax).split(" ").slice(0, -1).join(" ") + "... ";
+            $('.field-name-caption block p').text(shortText);            
+            $('.field-name-caption block p').append('<a id="readMore">Read more</a>');
+        }
+        
+
+        var screen_width = $( window ).width();
+
+        if (screen_width <= width_mobile) {  
+        
+        $$('.mfp-figure figure').tap(function() { 
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {  
+                switchPDescription(); 
+            }
+        }); 
+
+        $$('#p-absolute').unbind('tap').tap(function() { 
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {                      
+                switchPDescription(); 
+            }
+        }); 
+
+        $$('.mfp-figure figure').unbind('swipeLeft').swipeLeft(function() { 
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {                      
+                if (mfp.index == (total_imgs - 1)) {
+                    mfp.index = 0;
+                }
+                else {
+                    mfp.index = mfp.index + 1;
+                }      
+                mfp.updateItemHTML();
+            }
+        });
+
+        $$('.mfp-figure figure').unbind('swipeRight').swipeRight(function() {                
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {                   
+                if (mfp.index == 0) {
+                    mfp.index = total_imgs - 1;
+                }
+                else {
+                    mfp.index = mfp.index -1;
+                }
+                mfp.updateItemHTML();
+            }
+        });    
+        
+        }
+
+       function configMobile() {
+            var screen_width = $( window ).width();
+            
+            if (screen_width <= width_mobile) {        
+                showDescription(pAbsoluteShow);        
+            }
+        }
+
+
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            
+            gallery: {
+              enabled: true,
+              navigateByImgClick: true,
+              preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr('title');
+                }
+            },
+
+            callbacks: {
+                
+                open: function() {
+
+                    $('.mfp-bottom-carrousel').html("");
+
+                    var img_total = 0;
+
+                    $('.popup-gallery li a').each(function(idx,el){
+
+                        img_total = img_total + 1;
+                        var _img = document.createElement('img');
+
+                        $(_img).attr('id', 'thumb-gallery-'+idx );
+                        $(_img).attr('src', $(el).attr('href'));
+                        $(_img).attr('alt', $(el).attr('title'));
+
+
+                        if (idx == 0) $(_img).addClass('select');
+
+                        $(_img).click(function(){
+                            mfp.direction = (idx >= mfp.index);
+                            mfp.index = idx;
+                            mfp.updateItemHTML();
+
+                            updateCarousel(idx);
+                        });
+
+                        if (only_one_photo == 0) {
+                            $('.mfp-bottom-carrousel').append(_img);
+                        }
+
+                    })
+
+                    var width_img_total = (img_total * 120) + 3;
+
+                    $('.mfp-bottom-carrousel').width(width_img_total + 'px');
+                    
+                    configMobile();
+                },
+                close: function() {
+                    $('#p-absolute').hide();
+                    pAbsoluteShow = 0;
+                }
+                // e.t.c.
+            }
+        });
+        
+        $('#readMore').click(function(){
+            $('.open_gallery').click();
+            mfp.index = 0;
+            mfp.updateItemHTML();
+            updateCarousel(0);
+        });  
+        
+        $('#infoGallery').click(function(){
+            pAbsoluteShow = 1;
+            $('.open_gallery').click();
+            mfp.index = 0;
+            mfp.updateItemHTML();
+            updateCarousel(0);
+        });   
+        
+        $('#button_comments').click(function(){
+            if( $('#articleComments').is(":visible") ) {
+                $('#articleComments').css('cssText', 'display: none !important');
+                $('#button_comments').removeClass('comments_visible');
+                $('#button_comments').html('SEE COMMENTS');
+            }
+            else {
+                $('#articleComments').css('cssText', 'display: block !important');
+                $('#button_comments').addClass('comments_visible');
+                $('#button_comments').html('HIDE COMMENTS');                
+            }
+        });
+        
+        
+    });
+    </script>
+
+ 
+
+<div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/donna-cassata" class="fn">DONNA CASSATA</a></span> (<span  class="source-org vcard"><span  class="org fn">AP</span></span>)</div><span  class="dateline">WASHINGTON</span><a  rel="item-license" id="license-314d8e6902c0f15529cabc72fb8b2b80" href="#license-314d8e6902c0f15529cabc72fb8b2b80">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">38.8951</span><span  class="longitude">-77.0364</span></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden entry-content"><div class="field-items"><div class="field-item even"><p><block><p>WASHINGTON (AP) — A surly electorate that holds Congress in even lower regard than unpopular President Barack Obama is willing to "keep the bums in," with at least 365 incumbents in the 435-member House and 18 of 28 senators on a glide path to another term when ballots are counted Nov. 4.</p>
+<p>With less than 10 weeks to the elections, Republicans and Democrats who assess this fall's midterm contests say the power of incumbency — the decennial process of reconfiguring congressional maps and hefty fundraising — trumps the sour public mood and antipathy toward gridlocked Washington.</p>
+<p>"Despite the incredibly low polling, favorable ratings for Congress, it's still an incumbent's world," said Sheila Krumholz, executive director of the nonpartisan Center for Responsive Politics that tracks political money.</p>
+<p>That leaves many voters angry, not only with the political reality but their inability to change it.</p>
+<p>"I can't get over where they say people are going to be able to keep their seats when they're not doing their jobs. I just don't understand it," said retired teacher Pauline Legendre after voting in Minnesota's Democratic primary last month.</p>
+<p>The voter disgust is palpable, evident in blistering comments at summertime town halls and middling percentages for incumbents in primaries. Yet no sitting senator has lost and only three congressmen got the primary boot. Come Election Day, only a fraction of the electorate will be motivated enough to vote — if history is any guide.</p>
+<p>Congressional hopefuls are whipsawed by the two dynamics.</p>
+<p>"It's going to be a challenge for any candidate running for Congress to suggest that they have all the answers or that somehow there's something about them that's so inspiring" that voters are going to forget "how disenchanted or disaffected they are with government at the federal level," said Ryan Costello, a Republican seeking an open House seat in southeast Pennsylvania where just 12 percent of GOP voters turned out in the May primary.</p>
+<p>Still, the candidates press ahead, with Republicans laser-focused on gaining the six seats necessary to grab the Senate majority and control Congress for the remainder of Obama's presidency. Five Democratic retirements give the GOP a clear shot to capture control. So do races in conservative-leaning states such as Louisiana, North Carolina and Arkansas, where white Southern Democrats are nearly extinct.</p>
+<p>The GOP figures it's half-way to its goal, with a solid advantage in open contests in South Dakota, West Virginia and Montana. Republicans are optimistic about the open seat in Iowa, less so about Michigan, and energized by their prospects in Colorado and Alaska. If a GOP wave materializes, it could be in the Senate.</p>
+<p>In the House, Republicans are expected to pad their majority — currently 233-199 with three vacancies — with the goal of matching or surpassing the 246 seats the GOP held from 1947-49.</p>
+<p>Fueling the battle is what's expected to be a record-breaking flow of campaign cash. The parties' campaign committees and their allied outside groups are spending at a rate certain to exceed the $3.6 billion price tag of the 2010 midterm elections.</p>
+<p>House Republicans who saw a wave election in January 2010 — the year Democrats lost 63 seats — don't expect a comparable sweep in 2014 simply because redistricting reduced the number of opportunities. On that, Democrats agree, though an Obama decision on immigration could change the dynamic.</p>
+<p>On the cusp of the fall election season, fewer than two dozen House Democrats and Republicans are in real jeopardy in November.</p>
+<p>The GOP is counting on opposition to Obama to motivate its core voters. To counter that situation, Democrats have dispatched 444 organizers to 48 districts to get out the vote, with another 250-plus ready for the September-to-November sprint as the party typically faces a drop-off in midterm voting.</p>
+<p>The Democratic Party is employing reminder pledge cards — "1 million votes for 2014" — the number they say decided 65 competitive House races in 2012. Democrats maintain that they had a shot two years ago, but Obama's miserable performance in his first presidential debate sank the party's chances.</p>
+<p>It's an uphill fight as the president's party typically loses seats in non-presidential election years.</p>
+<p>At a meeting last month with small business owners and workers at a wood fabricating plant in Quarryville, Pennsylvania, Republican Rep. Joe Pitts got an earful from local farmer, Michael Appel, 48, who pressed the nine-term congressman to do more to stop Obama.</p>
+<p>"I'm wondering, especially when it comes to Obamacare, how the House is going to start holding the president accountable for making law out of whole cloth?" Appel asked.</p>
+<p>"It's not that we wouldn't like to, it's a matter of what we can do," Pitts responded. "You need the House, the Senate and the president. The problem is we don't have those two."</p>
+<p>As staff urged the attendees to vote, Appel erupted in frustration: "I voted for Joe Pitts and all he's told me so far up here is he's powerless."</p>
+<p>Pitts said in an interview that it's up to lawmakers to educate voters about the limits of divided government.</p>
+<p>"I share their frustration," Pitts said. "I understand they're not as involved so they don't understand a lot of it, but they have a responsibility to turn out next time if they're concerned, because there are real consequences to these elections in public policy."</p>
+<p>Democratic incumbents have cast themselves as outsiders as they sympathize with hostile voters.</p>
+<p>New York Rep. Dan Maffei says "we gotta hold 'em accountable" in his campaign ad. Iowa Rep. Dave Loebsack didn't mince words when he told constituents, "Congress is an incredibly dysfunctional mess and everyone knows that," and blamed the lack of compromise.</p>
+<p>In York, Pennsylvania, first-term Republican Rep. Scott Perry insisted that the House had been doing its job by passing bills, but that cooperation was lacking from the Democratic-led Senate and Obama.</p>
+<p>One voter asked him whether, if the Senate goes Republican in November, there might be more hope.</p>
+<p>"If you're expecting cataclysmic change immediately, I think that's a bit beyond expectations," Perry said.</p>
+<p>____</p>
+<p>Associated Press writers Erica Werner in Washington, Tom Beaumont in Iowa and Brian Bakst in Minnesota contributed to this report.</p>
+</block></p></div></div></div>
+</article>
+
+
+
+  <div class="loadMore show-full-article">
+    <section id="articleExpand">
+        <div class="fade"></div>
+	<button>SEE FULL ARTICLE</button>
+
+	<!-- ad -->
+        <section class="columns ad-block">
+            <div class="block block-dfp block-topic-box-2 block-dfp-topic-box-2 odd block-without-title" id="block-dfp-topic-box-2">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-topic_box_2-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-topic_box_2" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-topic_box_2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div>            <!--<img src="/profiles/ap/themes/bigstory_v2/assets/sample/ad_300x250.png" alt="" />-->
+        </section>
+    </section>
+  </div>
+
+<!-- Pagination BEGIN -->
+<!--    <section id="pagination" class="large-8 medium-8 small-12 columns">
+        <a class="article-prev" href="#">
+            <span class="arrow"><img src="assets/images/pagination_arrows_prev.png" alt="" /></span>
+            <div class="title">
+                <span>&#60; Previous</span>
+                Article title Lorem ipsum dolor aner xculis Article title Lorem ipsum dolor
+                long Article title
+            </div>
+        </a>
+
+        <a class="article-next right" href="#">
+            <span class="arrow"><img src="assets/images/pagination_arrows_next.png" alt="" /></span>
+            <div class="title">
+                <span>Next &#62;</span>
+                Article title Lorem ipsum dolor aner xculis Article title Lorem ipsum dolor
+            </div>
+        </a>
+    </section> -->
+    <!-- Pagination END -->
+
+    <div class="loadMore hide-for-medium-up">
+        <button id="button_comments" class="small-12 left">SEE COMMENTS</button>
+    </div>
+    
+    <section id="articleComments" class="large-8 medium-8 left columns hide-for-small">
+	<h4>Comments</h4>
+	<div id="disqus_thread"><noscript><p><a href="http://thebigstory.disqus.com/?url=http%3A%2F%2Fbigstory.ap.org%2Farticle%2Fsurly-2014-electorate-poised-keep-bums-0">View the discussion thread.</a></p></noscript></div>    </section>    
+
+</section>
+
+    </div>
+  </div>
+
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="ap-recent-articles"><section class="block block-ap-misc block-ap-recent-articles block-ap-misc-ap-recent-articles odd" id="block-ap-misc-ap-recent-articles">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Latest News</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Latest News'>
+       <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-9091721">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+            <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden">
+        <div class="field-items" >
+          <div class="field-item even">
+              <a href="/article/1bc9bf6e86aa4254ab2d18b121e1ef6c/7-rescued-32-missing-volcano-erupts-japan"><img src="http://binaryapi.ap.org/444f42a601f34980aee53253a137870e/115x.jpg" alt="APTOPIX Japan Volcano" title="APTOPIX Japan Volcano"></a>
+          </div>
+        </div>
+      </div>
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/1bc9bf6e86aa4254ab2d18b121e1ef6c/7-rescued-32-missing-volcano-erupts-japan" title="At least 31 believed dead at Japanese volcano"><a href="/article/1bc9bf6e86aa4254ab2d18b121e1ef6c/7-rescued-32-missing-volcano-erupts-japan">At least 31 believed dead at Japanese volcano</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:05:05-04:00">Sep. 28, 2014 1:05 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-9095916">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+            <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden">
+        <div class="field-items" >
+          <div class="field-item even">
+              <a href="/article/e6ce8a3ec5df43abb0965cb796e09a99/washingtons-equalizer-debuts-35m"><img src="http://binaryapi.ap.org/e9e85437c134421da542dc2bf05a618d/115x.jpg" alt="Denzel Washington" title="Denzel Washington"></a>
+          </div>
+        </div>
+      </div>
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/e6ce8a3ec5df43abb0965cb796e09a99/washingtons-equalizer-debuts-35m" title="Washington&#039;s &#039;The Equalizer&#039; debuts with $35M"><a href="/article/e6ce8a3ec5df43abb0965cb796e09a99/washingtons-equalizer-debuts-35m">Washington&#039;s &#039;The Equalizer&#039; debuts with $35M</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:04:16-04:00">Sep. 28, 2014 1:04 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-9095441">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+            <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden">
+        <div class="field-items" >
+          <div class="field-item even">
+              <a href="/article/d6c93ceaafd14e89b6a46d3b671aae97/europe-retains-ryder-cup"><img src="http://binaryapi.ap.org/813d98ab365a46319da8f299df8019f3/115x.jpg" alt="APTOPIX Britain Ryder Cup Golf" title="APTOPIX Britain Ryder Cup Golf"></a>
+          </div>
+        </div>
+      </div>
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/d6c93ceaafd14e89b6a46d3b671aae97/europe-retains-ryder-cup" title="Europe wins the Ryder Cup again"><a href="/article/d6c93ceaafd14e89b6a46d3b671aae97/europe-retains-ryder-cup">Europe wins the Ryder Cup again</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:04:01-04:00">Sep. 28, 2014 1:04 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-9096306">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/8e1013ef02194945a82ef66c4fde5839/orders-devon-still-jersey-approaching-10000" title="Orders for Devon Still jersey approaching 10,000"><a href="/article/8e1013ef02194945a82ef66c4fde5839/orders-devon-still-jersey-approaching-10000">Orders for Devon Still jersey approaching 10,000</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:02:43-04:00">Sep. 28, 2014 1:02 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-9096246">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/1fa6e1713f354ad8b1f004a8a48cb5b1/slight-shift-search-trooper-ambush-suspect" title="Slight shift in search for trooper ambush suspect"><a href="/article/1fa6e1713f354ad8b1f004a8a48cb5b1/slight-shift-search-trooper-ambush-suspect">Slight shift in search for trooper ambush suspect</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:57:54-04:00">Sep. 28, 2014 12:57 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+    </div>
+  </div>
+
+</section></div><div class="block block-dfp block-half-page block-dfp-half-page even block-without-title" id="block-dfp-half-page">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-half_page-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-half_page" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-half_page");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div><div class="block block-ap-misc block-ap-tags-detail block-ap-misc-ap-tags-detail odd block-without-title" id="block-ap-misc-ap-tags-detail">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div  class="ap-article-tags categories">
+    
+    
+    
+<h3 class="h3_tags">Topics</h3>
+<div class="tags">
+<a href="/tags/us-republican-party" rel="tag">U.S. Republican Party</a>, <a href="/tags/2012-united-states-presidential-election" rel="tag">2012 United States Presidential Election</a>, <a href="/tags/united-states-presidential-election" rel="tag">United States Presidential Election</a>, <a href="/tags/presidential-elections" rel="tag">Presidential elections</a>, <a href="/tags/national-elections" rel="tag">National elections</a>, <a href="/tags/united-states-house-representatives" rel="tag">United States House of Representatives</a>, <a href="/tags/political-parties" rel="tag">Political parties</a>, <a href="/tags/political-organizations" rel="tag">Political organizations</a>, <a href="/tags/us-democratic-party" rel="tag">U.S. Democratic Party</a>, <a href="/tags/united-states-general-election" rel="tag">United States General Election</a>, <a href="/tags/general-elections" rel="tag">General elections</a>, <a href="/tags/house-elections" rel="tag">House elections</a>, <a href="/tags/dave-loebsack" rel="tag">Dave Loebsack</a>, <a href="/tags/dan-maffei" rel="tag">Dan Maffei</a>, <a href="/tags/scott-perry" rel="tag">Scott Perry</a>, <a href="/tags/joe-pitts" rel="tag">Joe Pitts</a>, <a href="/tags/mid-term-elections" rel="tag">Mid-term elections</a></div>
+</div>    </div>
+  </div>
+
+</div><div class="block block-dfp block-mediumrectangle block-dfp-mediumrectangle even block-without-title" id="block-dfp-mediumrectangle">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-mediumrectangle-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    
+<footer>
+  <div id="siteFooter">
+    <div class="row">
+        <div class="medium-4 columns">
+            <h5>Get the AP Mobile app</h5>
+<a href="http://www.ap.org/apmobile/"><img src="http://bigstory.ap.org/sites/bigstory/files/Mobile%20App%20Download.png"></a>
+        </div>
+        <div class="medium-4 columns">
+            <h5>AP Sites</h5>
+            <ul class="">
+                <li><a href="http://wintergames.ap.org" >Winter Games</a></li>
+                <li><a href="http://collegebasketball.ap.org" >College Basketball</a></li>
+                <li><a href="http://racing.ap.org" >Auto Racing</a></li>
+                <li><a href="http://pro32.ap.org" >Football</a></li>
+            </ul>
+        </div>
+        <div class="medium-4 columns">
+            <h5>Follow AP</h5>
+            <ul class="">
+                <li><a href="https://www.facebook.com/pages/Associated-Press/107751995914945">Facebook</a></li>
+                <li><a href="https://twitter.com/AP">Twitter</a></li>
+                <li><a href="https://plus.google.com/+AP/">Google+</a></li>
+                <li><a href="https://www.linkedin.com/company/associated-press">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+        <div class="medium-12 columns"> 
+            AP News | 
+           &copy; 2014 Associated Press  | 
+            <a href="/content/privacy-policy">Privacy Policy</a>  |  
+            <a href="/content/terms-use">Terms of Use</a>  |  
+            <a href="http://www.apimages.com/">AP Images</a>  |  
+            <a href="http://www.ap.org/">ap.org</a>
+        </div>
+    </div>
+</div></footer>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _sf_async_config={uid:11689,domain:""};(function() {function loadChartbeat() { window._sf_endpt=(new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src', (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js"); document.body.appendChild(e); }var oldonload = window.onload;window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); };})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_1xyxBPtya7Z1kN__YPPS4FSePbVgm5Zajzeth6fz4Ck.js"></script>
+  <script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"560baa128a","applicationID":"555721","transactionName":"MlRTYkFSWkNUU0EKDQsecFVHWlteGl5aBwc6QVBRVmxCWVBH","queueTime":0,"applicationTime":1189,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>

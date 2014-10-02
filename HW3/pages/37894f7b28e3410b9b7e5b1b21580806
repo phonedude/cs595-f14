@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Urban Observatory</title>
+  
+  
+  <!-- Favorite Bookmark Icon -->
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<link rel="icon" type="image/ico" href="/favicon.ico" />
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+<!-- End Favorite Bookmark Icon -->
+
+<!-- Stylesheets -->
+<link href="//fast.fonts.com/cssapi/23855eec-5fdf-4594-9898-0113a04bfef0.css"rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="//www.esri.com/components/responsive/css/centurion-grid_v2.min.css">
+
+<link href="//webapps-cdn.esri.com/tools/FormCreator/css/FormCreatorStyles.css" rel="stylesheet" type="text/css" />
+<link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="//webapps-cdn.esri.com/CDN/forms/form-generator/css/form-renderer.css" rel="stylesheet" type="text/css" />
+
+<link href="css/animation-library.css" rel="stylesheet" type="text/css" />
+<link href="css/scrolling-page.css" rel="stylesheet" type="text/css" />
+
+<!-- End Stylesheets -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel='stylesheet' href='//webapps-cdn.esri.com/CDN/components/responsive/css/centurion-grid-ie.min.css'>
+<![endif]-->
+
+<!-- GA Tracking Code -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-215788-4']);
+  _gaq.push(['_setDomainName', 'esri.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End of GA Tracking Code -->
+
+</head>
+<body>
+  <a name="top"></a>
+  
+  <!-- Navigation -->
+<div id="navigation" class="clearfix animate">
+  <div class="container">
+    <div class="grid-100">
+
+      <span id="home-logo">
+        <a href="#top">Home</a>
+      </span>
+      <ul>
+        <li class="animate"><a href="#about">About</a></li>
+        <li class="animate"><a href="#app">App</a></li>
+        <li class="animate"><a href="#press">In the News</a></li>
+        <li class="animate"><a href="#get-involved">Get Involved</a></li>
+      </ul>
+    
+    </div>
+  </div>
+</div>
+<!-- End of Navigation -->
+  
+  
+  <div id="banner" class="page-section clearfix">
+      <style>
+
+.page-section {
+  position: relative;
+  z-index: 100;
+}
+
+#banner,
+#scene {
+  height: 715px;
+  z-index: 0;
+  background-color: #c5b5a5 !important;    
+}
+#scene ul,
+#scene ul li {
+  margin: 0;
+  padding: 0;
+}
+#scene .layer {
+  /* left: -250px !important; */
+  left: 50% !important;
+  list-style: none;
+  margin-left: -1200px;
+}
+#scene img {
+  margin: 0;
+}
+
+.top {
+  z-index: 20;
+}
+
+
+#scene .birds,
+/* #scene .plane, */
+#scene .cloud-1,
+#scene .cloud-2 {
+  margin-left: 0;
+}
+
+
+/* BIRDS ANIMATION 
+   ================================= */
+#scene .birds {
+  -webkit-animation: birdsFly 20s 1;
+  -moz-animation: birdsFly 20s 1;
+  -o-animation: birdsFly 20s 1;
+  animation: birdsFly 20s 1;
+  margin-left: 0;
+  opacity: 0;
+}
+#scene .birds img {
+  height: auto;
+  width: 100px;
+  z-index: 10;
+}
+@-webkit-keyframes birdsFly {
+  0% {
+    left: 70%;
+    top: 400px;
+    opacity: 1;
+    -webkit-transform:scale3d(0.5,0.5,0);
+  }
+  100% {
+    left: 20%;
+    top: 500px;
+    opacity: 0;
+    -webkit-transform:scale3d(0.5,0.5,0);
+  }
+}
+@keyframes birdsFly {
+  0% {
+    left: 200px;
+    top: 400px;
+    opacity: 1;
+    transform:scale3d(0.5,0.5,1);
+  }
+  100% {
+    left: -200px;
+    top: 400px;
+    opacity: 0;
+    transform:scale3d(0.5,0.5,1);
+  }
+}
+
+
+
+
+/* PLANE ANIMATION 
+   ================================= */
+#scene .plane {
+  -webkit-animation: planeFly 70s 1;
+  -moz-animation: planeFly 70s 1;
+  -o-animation: planeFly 70s 1;
+  animation: planeFly 70s 1;
+}
+#scene .plane img {
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+@-webkit-keyframes planeFly {
+  0% {
+    left: 5%;
+    top: 100px;
+    -webkit-transform:scale3d(0.5,0.5,0);
+  }
+  100% {
+    left: 200%;
+    top: 100px;
+    -webkit-transform:scale3d(1,1,0);    
+  }
+}
+@keyframes planeFly {
+  0% {
+    left: 5%;
+    top: 100px;
+    transform:scale3d(0.5,0.5,1);
+  }
+  100% {
+    left: 200%;
+    top: 100px;
+    transform:scale3d(1,1,1);    
+  }
+}
+
+
+/* CLOUDS ANIMATION 
+   ================================= */
+
+.cloud-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cloud-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#scene .cloud-1 {
+  -webkit-animation: cloudsMove 250s infinite;
+  -moz-animation: cloudsMove 250s infinite;
+  -o-animation: cloudsMove 250s infinite;
+  animation: cloudsMove 250s infinite;
+}
+#scene .cloud-1 img {
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+#scene .clouds {
+  -webkit-animation: cloudsMove2 1000s infinite;
+  -moz-animation: cloudsMove2 1000s infinite;
+  -o-animation: cloudsMove2 1000s infinite;
+  animation: cloudsMove2 1000s infinite;
+}
+#scene .clouds img {
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+@-webkit-keyframes cloudsMove {
+  0% {
+    left: 0%;
+    top: 450px;
+  }
+  100% {
+    left: 150%;
+    top: 450px; 
+  }
+}
+@keyframes cloudsMove {
+  0% {
+    left: 0%;
+    top: 450px;
+  }
+  100% {
+    left: 150%;
+    top: 450px; 
+  }
+}
+
+@-webkit-keyframes cloudsMove2 {
+  0% {
+    left: 0%;
+    top: -450px;
+  }
+  100% {
+    left: 150%;
+    top: -450px; 
+  }
+}
+@keyframes cloudsMove2 {
+  0% {
+    left: 0%;
+    top: -450px;
+  }
+  100% {
+    left: 150%;
+    top: -450px; 
+  }
+}
+
+</style>
+
+<!--[if !lt IE 9]><!-->
+<ul id="scene">
+  <li class="layer clouds" data-depth="1.00"><img src="images/bg_clouds.png"></li>
+
+
+	<li class="layer" data-depth="1.00"><img src="images/bg_layer6.png"></li>  
+	<li class="layer" data-depth="0.80"><img src="images/bg_layer5.png"></li>
+
+  <!-- CLOUDS -->
+  <li class="layer cloud-2 top" data-depth="0.60"><img src="images/bg_cloud2.png"></li>
+  <li class="layer cloud-1 top" data-depth="0.60"><img src="images/bg_cloud1.png"></li>
+
+	<li class="layer top" data-depth="0.60"><img src="images/bg_layer4.png"></li>
+	
+	
+	<li class="layer top" data-depth="0.40"><img src="images/bg_layer3.png"></li>
+	<li class="layer top" data-depth="0.20"><img src="images/bg_layer2.png"></li>
+  <li class="layer top" data-depth="0.00"><img src="images/bg_layer1.png"></li>
+
+
+	
+	<li class="layer birds" data-depth="0.00"><img src="images/birds.gif"></li>
+	<li class="layer plane" data-depth="0.00"><img src="images/plane.png"></li>
+</ul>
+<!--<![endif]-->
+
+
+
+<!--[if lt IE 9]>
+<h2> I am IE 8 or lower </h2>
+<![endif]-->
+
+
+<div id="banner-content">
+    <h1>Understanding Precedes Action</h1>  
+    <a href="#about"><img src="graphics/arrow.png" id="banner-arrow" /></a>
+</div>
+  </div>
+  
+  
+  <div id="about" class="page-section clearfix">
+    <div class="container">
+      <section class="content clearfix">
+        
+        <div class="gradient clearfix">
+
+  <div class="grid-50 tablet-80">
+
+
+
+    <h1>What is the Urban Observatory?</h1>
+    
+    <p>The Urban Observatory is an interactive exhibit that gives you the chance to compare and contrast data from cities around the world–all from one location. It aims to make the world’s data both understandable and useful. Brought to life by <strong>Richard Saul Wurman</strong>, <strong>RadicalMedia</strong>, and <strong>Esri</strong>, it is the first exhibit of its kind.</p>
+    
+      <!--<p>See it at the <a href="http://www.esri.com/uc">Esri User Conference</a><span class="txt-red">.</span></p>-->
+     
+    <!--<p>Experience it early 2015 at the <br /><b> <a href="http://www.si.edu">Smithsonian Institution</a> Smithsonian Institution</b>.</p>-->
+    
+    <p>Coming early 2015 to the Smithsonian Institution. <a href="http://www.urbanobservatory.org/preview" class="txt-red">Get a sneak peek today!</a></p>
+     
+    <h3 class="txt-inline">Intrigued?</h3>
+    <!-- <a href="http://events.esri.com/info/uo/index.cfm" class="button green">Get Involved</a> -->
+    <a class="button ctaButton">Get Involved</a>
+  
+  </div>
+</div>
+      
+      </section>
+    </div>
+  </div>
+
+
+  <div id="app" class="page-section clearfix">
+    <div class="container">
+      <section class="content clearfix">
+        
+        <div class="header">
+  <div class="grid-100">
+    <h1>Meet the <span>Urban Observatory Compare App.</span></h1>
+    
+    <div class="grid-60 alpha">
+    <p>This app brings LIVE maps from tons of cities right to your mobile device. So you can compare cool facts about multiple cities anywhere, anytime. (Caution, it’s addictive.)</p>
+    </div>
+    
+    <div class="grid-20 omega">
+      <p><a href="http://urbanobservatory.org/compare/" class="button red">Launch App</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="grid-33 mobile-50">
+  <div class="webapp">
+    
+    <h2>London / <span>Population Density</span></h2>
+    
+    <div class="webapp-box">
+      <img src="graphics/webapp-1.jpg" class="responsive" alt="London" />
+      <span class="shadow"></span>
+    </div>
+    
+  </div>
+</div>
+
+<div class="grid-33 mobile-50">
+  <div class="webapp">
+    
+    <h2>New York / <span>Population Density</span></h2>
+    
+    <div class="webapp-box">
+      <img src="graphics/webapp-2.jpg" class="responsive" alt="New York" />
+      <span class="shadow"></span>
+    </div>
+    
+  </div>
+</div>
+
+<div class="grid-33 mobile-50">
+  <div class="webapp">
+    
+    <h2>Tokyo / <span>Population Density</span></h2>
+    
+    <div class="webapp-box">
+      <img src="graphics/webapp-3.jpg" class="responsive" alt="Tokyo" />
+      <span class="shadow"></span>
+    </div>
+    
+  </div>
+</div>
+      
+      </section>
+    </div>
+  </div>
+  
+  
+  <div id="press" class="page-section clearfix">
+    <div class="container">
+      <section class="content clearfix">
+        
+        <div class="header">
+  <div class="grid-100">
+    <h1>In the News</h1>
+    <hr class="full" />
+  </div>
+</div>
+
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"A live museum with a data pulse"<br />
+    <a href="http://online.wsj.com/article/PR-CO-20130708-908026.html">
+      <span class="tagline">&ndash; Wall Street Journal</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"A new way to compare cities"<br />
+    <a href="http://www.fastcoexist.com/1682536/the-urban-observatory-a-new-way-to-compare-cities-from-the-creator-of-ted">
+      <span class="tagline">&ndash; Fast Company</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"Prepare to waste your day"<br />
+    <a href="http://www.citylab.com/tech/2013/07/prepare-waste-your-day-playing-fascinating-new-city-comparison-tool/6144/">
+      <span class="tagline">&ndash; CityLab</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"Remarkable to see"<br />
+    <a href="http://www.govloop.com/profiles/blogs/ted-founder-richard-saul-wurman-s-latest-project-the-urban-observ">
+      <span class="tagline">&ndash; GovLoop</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"Imagine putting New York and Paris side-by-side"<br />
+    <a href="http://www.forbes.com/sites/liyanchen/2013/07/08/billionaire-jack-dangermond-launches-urban-observatory-with-big-data-interactive-maps/">
+      <span class="tagline">&ndash; Forbes</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"Smart maps based on powerful data"<br />
+    <a href="https://gigaom.com/2013/07/09/urban-observatory-pledges-to-create-smart-maps-based-on-powerful-data-2/">
+      <span class="tagline">&ndash; Gigaom</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"Map lovers and data geeks are in for a real treat"<br />
+    <a href="http://ny.curbed.com/archives/2013/07/10/new_site_compares_nyc_map_data_with_15_other_cities.php">
+      <span class="tagline">&ndash; Curbed</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"Tranforms digital map-related jargon into information that anyone could understand"<br />
+    <a href="http://www.engadget.com/2014/05/17/ted-founder-richard-saul-wurman-big-data/">
+      <span class="tagline">&ndash; Engadget</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"A level of comparative information not seen before"<br />
+    <a href="http://www.huffingtonpost.com/thomas-fisher/our-gutenberg-moment_b_3636312.html">
+      <span class="tagline">&ndash; Huffington Post</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="grid-33">
+  <div class="press-logo">
+    <p>"Could be a tool for social change"<br />
+    <a href="http://www.wired.com/2013/07/urban-observatory/">
+      <span class="tagline">&ndash; Wired</span>
+    </a></p>
+  </div>
+</div>
+
+      
+      </section>
+    </div>
+  </div>
+  
+  
+  <div id="get-involved" class="page-section clearfix">
+    <div class="container">
+      <section class="content clearfix">
+        
+        <div class="header">
+  <div class="grid-100">
+    <h1>Get Involved</h1>
+  </div>
+</div>
+
+<div class="grid-50">
+  
+<p>Interested in getting your city involved in the Urban Observatory? Have data you’d like to share?</p>
+
+<p><strong>We'd really like to hear from you!</strong></p>
+
+    <p>Beginning February 2015, the Urban Observatory will be on permanent display at the <a href="http://www.si.edu/">Smithsonian Institution</a><span class="txt-red">.</span> This is your chance to get involved in this historic exhibit. (C’mon, we know you’re intrigued.)</p>
+
+<!-- <p><a href="http://events.esri.com/info/uo/index.cfm" class="button green">Get Involved</a></p> -->
+<p><a class="button ctaButton">Get Involved</a></p>
+
+  
+</div>
+      
+      </section>
+    </div>
+  </div>
+  
+  
+  <div id="footer" class="clearfix">
+    <div class="container">
+      <div class="grid-100">
+
+  <p class="copyright">Copyright &copy; 2014 Esri, Richard Saul Wurman &amp; RadicalMedia.</p>
+  
+  <!-- <a href="#" class="feedback">Feedback</a> -->
+
+</div>
+    </div>
+  </div>
+  
+  <div id="hiddenModalForm" >
+<div id="headerDiv" class="header">
+<h2>Yes, tell me more</h2>
+<a id="bannerClose" class="closeDialog" data-getw_action="Page 1 close" data-getw_category="esri.forms" >X</a>
+</div><!--end headerDiv-->
+<div class="errorMessage">
+<span id="errorMessageText">Complete the highlighted item(s) to continue.</span> <!--Styling Updates "Remove the word please from the error message" (Please)-->
+</div>
+<div id="pnlContainer" class="clearfix">
+<div id="pagination"><div id="page1" page="1"><div id="page1phcolumn1" class="form-column first">
+<div id="phColumn1fname" class="set"><span>First Name</span><input name="main_1$content_1$txtfname" type="text" id="txtfname" tabindex="1" validate="True" controlName="first name" apr="fname" isspecial="False" /></div><div id="phColumn1org" class="set"><span>Organization</span><input name="main_1$content_1$company" type="text" id="company" tabindex="3" validate="True" controlName="company" apr="org" isspecial="False" /></div>
+</div><div id="page1phcolumn2" class="form-column last">
+<div id="phColumn2lname" class="set"><span>Last Name</span><input name="main_1$content_1$txtlname" type="text" id="txtlname" tabindex="2" validate="True" controlName="last name" apr="lname" isspecial="False" /></div><div id="phColumn2email" class="set"><span>E-mail</span><input name="main_1$content_1$txtemail" type="text" id="txtemail" tabindex="4" validate="True" controlName="email" apr="email" isspecial="False" /></div>
+</div><div class="clear"></div><div id="page1phbottom" class="pageBottom">
+<div class="set"><input id="btnSubmit" value="Submit" type="button" controlName="submit" class="next buttonBlue btnContinue" tabindex="60" isspecial="False"></input></div>
+</div></div></div><div id="db-form-hidden"></div><div id="actions"><input id="1159" type="hidden" value="Send Data To Aprimo (live)"></input></div><div id="Ecas"></div><div id="AprimoID"><input id="AprimoID" type="hidden" value="222601_Urban Observatory Information Request 2014"></input><input id="AprimoSubject" type="hidden" value="2014 Urban Observatory Information Request"></input></div><div id="TrackingID"><input id="c" type="hidden" value="2014 Urban Observatory Information Request"></input><input id="s" type="hidden" value="Urban Observatory Information Request"></input><input id="_p" type="hidden" value="2014 Urban Observatory Information Request"></input></div>
+</div>
+<div id="loadingTime" style="display: none;">
+<img src="//webapps-cdn.esri.com/tools/FormCreator/images/loading.gif" />
+<div id="loadingSplash">Sending...</div>
+</div>
+<div id="confirmation" style="display:none;">
+<iframe id="ifConfirmation" class="clsIframeConfirmation" src=""></iframe>
+<a id="confirmationClose" class="closeDialog">X</a>
+</div>
+<div id="divTermsAndConditions" style="display:none;">
+<h2>Terms and Conditions</h2>
+<iframe id="main_1_content_1_iTermsAndConditions" class="frame-terms-and-conditions tnc" src=""></iframe><br />
+<input type="button" value="Disagree" id="tncDisagree" class="buttonBlue" />
+<input type="button" value="Agree" id="tncAgree" class="buttonBlue" />
+</div>
+</div>
+<input id="hidThankYou" type="hidden" value='//www.esri.com/home/common/confirmation?messageName=Simple' />
+</div>
+</div>
+  
+  <script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
+<script src="//webapps-cdn.esri.com/tools/FormCreator/js/LA_Form_General.js" type="text/javascript"></script>
+<script src="//webapps-cdn.esri.com/tools/FormCreator/js/DemandBase.js" type="text/javascript"></script>
+<script src="//api.demandbase.com/autocomplete/widget.js" type="text/javascript"></script>
+<script src="//webapps-cdn.esri.com/tools/FormCreator/js/FormGenerator.js" type="text/javascript"></script>
+
+<!-- jQuery Javascript Library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.js" type="text/javascript"></script>
+<!-- End jQuery Javascript Library -->
+
+<script src="//code.jquery.com/ui/1.10.0/jquery-ui.js" type="text/javascript"></script>
+<script src="//webapps-cdn.esri.com/CDN/forms/form-generator/js/form-renderer.js" type="text/javascript"></script>
+
+<script src="js/waypoints.min.js" type="text/javascript"></script>
+<script src="js/waypoints-sticky.min.js" type="text/javascript"></script>
+<script src="js/scrolling-page.js" type="text/javascript"></script>
+
+<!-- Greensock Library -->
+<script src='js/greensock/TweenMax.min.js'></script>
+<script src='js/greensock/jquery.gsap.min.js'></script>
+<!-- end of Greensock Library -->
+
+<script src="js/parallax/jquery.parallax.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#scene').parallax({
+      scalarX: 8,
+      scalarY: 8,
+      frictionX: 0.2,
+      frictionY: 0.8,
+      originX: 1.0,
+      originY: 1.0
+    });
+    
+    
+    if ( $.browser.mozilla ) {
+      //alert( "This is MOZ!" );
+    
+      TweenMax.to('.birds', 15.0, {
+          marginTop: "200px",
+          marginLeft:"-500px"
+      });
+      
+      TweenMax.to('.plane', 50.0, {
+          marginTop: "-200px",
+          marginLeft: "2200px"
+      });
+      
+      TweenMax.to('.clouds', 750.0, {
+          marginLeft: "2200px"
+      });
+      
+      TweenMax.to('.cloud-1', 750.0, {
+          marginLeft: "1600px"
+      });
+    
+    }
+    
+  });
+</script>
+
+<script src='js/modernizr.custom.28468.js'></script>
+
+  <script type="text/javascript" src="js/winResize.js"></script>
+
+</body>
+</html>

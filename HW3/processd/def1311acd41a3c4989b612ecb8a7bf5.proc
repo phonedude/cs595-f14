@@ -1,0 +1,256 @@
+   #Matt Vukas » Feed Matt Vukas » Comments Feed
+
+Matt Vukas
+
+Software engineer, tech enthusiast, and Net Neutrality advocate
+
+Menu
+
+   Skip to content
+     * Home
+     * About Me
+     * Projects
+     * Contact
+
+Comcast is definitely throttling Netflix, and it’s infuriating
+
+First, let’s talk about the worst company in America
+
+   Comcast is one of the most hated companies in America, yet
+   inexplicably, also one of the most successful. Two nationwide surveys
+   done by the American Customer Satisfaction Index in 2004 and 2007
+   showed that “Comcast had the worst customer satisfaction rating of any
+   company or government agency in the country, including the Internal
+   Revenue Service.” Wow, just let that sink in for a second. People would
+   rather get audited by the IRS than call up Comcast to deal with a
+   faulty cable modem. Also, they are consistently given terrible ratings
+   by every consumer advocate organization across the board.
+
+   On the other hand, Comcast is one of the most successful companies in
+   the US. In 2012, Comcast boasted 18.6 million Internet customers and
+   made $12.1 billion. Why is this? Being an Internet Service Provider
+   (ISP) is a natural monopoly. This does not necessarily mean that
+   there’s only one company offering a service in an area, or that this
+   service is essential to life (like a water and sewer service), it just
+   means that it is most efficient for a single firm to provide a service,
+   and one firm usually has a massive cost advantage over the others.
+
+   Comcast boasts all of these customers and makes all of this money
+   because, despite how it shouldn’t be like this in a “free market”
+   system, their customers really don’t have any other choice. In the vast
+   majority of places in America, there are typically four types of
+   Internet service available: Dial-up, Satellite, DSL, and Cable. Dial-up
+   is extremely slow and Satellite has an insane amount of latency, so
+   we’re going to throw those out. If you don’t want to be ripping your
+   hair out in frustration at how slow your Internet is, you have the
+   “choice” between DSL and Cable. DSL is typically delivered over legacy
+   telephone line connections, and has historically been much slower than
+   Cable, with more latency. So unless you are lucky enough to live in one
+   of a few neighborhoods in America with that third path ISP such as
+   Google Fiber, you’re basically forced to opt for Cable.
+
+   Some people say that Internet service is “optional”, so it shouldn’t be
+   regulated like a utility. Yet, the United Nations says that Internet
+   access is a basic human right. You need Internet access to search for
+   jobs, fact-check political candidates, read the news, and learn new
+   things. We should be taking it seriously when companies like Comcast
+   shit all over their customers. Yet, Comcast reports record earnings
+   every quarter, boasts about how many subscribers they have, and remains
+   the only realistic ISP choice in just about every market they’re in,
+   despite terrible service. It would be like dying of thirst and being
+   approached by a slick salesman offering tap water for $20/bottle
+   (Comcast) and a second vendor selling brown, murky water for $10/bottle
+   (DSL). You’re going to pay out the nose for that tap water, but you
+   won’t be happy about it.
+
+OK, now let’s get to the point
+
+   Why am I getting so heated about all of this? I pay about $50/month to
+   Comcast every month for 50 Mbps Internet. For most things, it’s
+   actually pretty fast. Web browsing, online gaming, and torrenting (the
+   legal stuff of course, like Linux ISOs) are all pretty fast. But around
+   the time that a federal court struck down the FCC’s Net Neutrality
+   protections a few weeks ago, my Netflix service seemed to grind to a
+   near halt. This also seems to coincide with Netflix’s Official ISP
+   rankings dropping Comcast’s rating down into the bottom 5 ISPs
+   nationwide.
+
+   Late last year, I was easily getting 720p and 1080p video on all my
+   devices. Now? I can barely get video to stream at the lowest
+   resolution, which doesn’t even give VHS a run for its money. I’ve
+   looked online and many, many others are also raging about the dreaded
+   combination of Comcast and Netflix. Here is a thread on DSLreports that
+   many people have chimed in on. If you Google it, you will see various
+   posts on the topic.
+
+But where’s the proof?
+
+   As a Indiana University student, my school is kind enough to provide
+   every student with VPN access into their network. IU’s network is
+   connected to a regional fiber backbone and provides 100 Mbps access in
+   every dorm on campus. When you connect via VPN, you’re limited in speed
+   by your local Internet connection, as well as the typical issues
+   associated with VPN (increased latency, VPN congestion, etc). I figured
+   I would try watching Netflix over the VPN, though I was skeptical as to
+   if it would really be faster than a direct link from my ISP connection
+   to Netflix’s servers.
+
+   Watching the Netflix test video normally via Comcast:
+   Netflix on Comcast with no VPN
+
+   Netflix throttled by Comcast: It stayed at this pathetic bitrate for
+   about 5 minutes. I gave it plenty of time to buffer.
+   Netflix buffering
+
+   And of course, the Netflix buffering pause becomes a large part of the
+   show you’re watching with Comcast.
+
+   Watching the Netflix test video via Comcast over the IU SSL VPN:
+   Comcast on Netflix via a VPN
+
+   Tunneling all of my traffic through an encrypted VPN, my Netflix is no
+   longer throttled and my bitrate maxes out quickly.
+
+   The IU VPN is SSL encrypted, which means that the details about all
+   traffic sent over it is hidden from Comcast. When I access Netflix over
+   this VPN connection, all Comcast sees is an encrypted stream of data
+   going through their network. They can estimate how much data is moving,
+   but can’t tell that I’m using Netflix, or streaming video for that
+   matter. Therefore, they don’t throttle it. I think that this is pretty
+   conclusive proof that Netflix is being heavily throttled by Comcast,
+   despite Netflix’s good faith effort to offer their OpenConnect CDN
+   service to ISPs and the fact that many Comcast customers pay for a
+   faster bandwidth specifically so that they can watch Netflix HD. If
+   anyone has any qualms with my testing methodology, please let me know
+   your concerns at mattvukas@gmail.com.
+
+But did you try going through tech support about this?
+
+   Well, of course. In addition to doing my own troubleshooting, which
+   involved power cycling all networking equipment, replacing my router,
+   and testing among 4 different devices (PC, Mac, Roku, iPhone) at
+   different times of the day, I went through the official channels. I
+   contacted Netflix and they found no problem on their end and pointed me
+   to my ISP. I contacted Comcast on two separate occasions, they found no
+   problems with my Internet connection, then told me that I would get a
+   followup call from a “Network Engineer”. That call never came.
+
+Conclusion
+
+   Comcast treats their customers like shit, and their Internet service
+   clearly throttles certain kinds of traffic from certain companies.
+   Could this have anything to do with the launch of their new Xfinity
+   Online Streaming service, which doesn’t go against your data caps?
+   Possibly. It’s actually quite likely, if you think about it. If you
+   were an automaker who happened to own a highway, it might make sense to
+   let your brand of car drive in the fast lane for free, while
+   competitor’s cars were forced to sit in the toll booth line for hours.
+   All analogies aside, that’s where I’m afraid we’re headed: having the
+   Internet reduced to a crappy bundle of subscription cable channels
+   where companies like Comcast dictate the content. Since I already send
+   Comcast a $50 check every month for access to the Internet, one of
+   humanity’s greatest technological achievements, I would like to decide
+   what content I consume and have all traffic treated the same by
+   Comcast’s network. As a consumer, I don’t really have a choice between
+   competing companies here, so the FCC needs to step in and ensure that
+   all Internet traffic is treated fairly by ISPs. If we’re not careful,
+   dreaded cable company monopolies may someday extend into cyberspace.
+   Now that is a frightening thought.
+
+   EDIT (2-11-14 5:26pm): This article has received a ton of traffic from
+   social media, as well as other sources, so I’ve received plenty of
+   feedback from people. One common thread appears to be people pointing
+   the finger at the Netflix CDN node in Chicago, which is the one that I
+   connect to based on my geographic location. I’m planning on writing a
+   follow-up piece in the next day or two testing this hypothesis by
+   blocking that node in particular, forcing Netflix to stream through a
+   different CDN node. I will update this article when that happens.
+
+   EDIT (2-11-14 7:26pm): I was interviewed today around 4pm EST for KGO
+   810 AM San Francisco’s “After the Bell” news show. The segment was
+   about Net Neutrality and ISP throttling. Here’s the clip!
+
+   EDIT (2-11-14 11:42pm): I’ve given some thought to my follow-up
+   article, and I came up with a more thorough testing plan that I want to
+   implement sometime in the next week. Here’s what I was thinking:
+    1. Do some packet inspection to find out exactly which Netflix CDN
+       node my stream is hitting, and grab that IP address
+    2. Do a traceroute on that IP address to see what path it’s taking,
+       and where (if any) the high latency jumps are
+    3. Do a traceroute again, but this time through IU’s VPN. Take note of
+       any differences in traffic routing
+    4. Block that CDN node at the IP level, then try streaming again
+       without the VPN. Hopefully, Netflix will reroute my traffic to a
+       different node (Dallas or NY maybe?), and I can see if the problem
+       persists. If Netflix works correctly after that change, it may
+       confirm a regional problem with the Chicago node
+
+   I would like to set this up as soon as possible, but school and work
+   are going to take up my time over the next few days. I’ll update this
+   post when I give it a shot, however. Just tweet at me or shoot me an
+   e-mail if you have any suggestions or concerns.
+
+Share this:
+
+     * Facebook
+     * Google
+     * Twitter
+     * Email
+     *
+
+Google+
+
+   Matt Vukas Matt Vukas
+
+Shortlink:
+
+   http://wp.me/p30jnq-
+   This entry was posted in News and tagged broadband, comcast, ISP, net
+   neutrality, Netflix, worst isp ever on February 10, 2014 8:41 pm by
+   Matt Vukas.
+
+Post navigation
+
+   ← Eclipse System.out.println shortcut for Windows, Mac, and Linux
+   Venturing further down the Comcast Netflix rabbit hole →
+   Search for: ____________________ Search
+
+Like my blog?
+
+    Subscribe to my RSS feed
+   Follow @mattvukas
+
+Subscribe via Email
+
+   If you've enjoyed what you've read so far, please subscribe so you can
+   get updates on future stories!
+
+   Email Address_______
+
+   Subscribe
+
+Tags
+
+   Android Bitcoin canonical CIA CISPA comcast debian eclipse facebook
+   FISA foss free speech Internet iOS ISP IU java keyboard shortcuts level
+   3 linux mac os x microsoft mint linux mobile industry Netflix net
+   neutrality nsa peering Reddit smartphones SOPA steve ballmer Steven
+   Sinofsky surface rt system.out.println ubuntu virtualbox virtualization
+   windows windows 7 windows 8 windows 9 Windows Phone 8 windows vista
+   xbox one
+
+Browse by category
+
+   [Select Category]
+   Oculus Rift, Facebook, and the advent of a real-life Matrix
+   Ads by Google:
+   [INS: :INS]
+   Proudly powered by WordPress - Copyright ©2012-2014 Matt Vukas, All
+   rights reserved
+
+   Send to Email Address ____________________ Your Name
+   ____________________ Your Email Address ____________________ loading
+   Send Email Cancel
+   Post was not sent - check your email addresses!
+   Email check failed, please try again
+   Sorry, your blog cannot share posts by email.

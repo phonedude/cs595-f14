@@ -1,0 +1,269 @@
+   #RSS 2.0
+
+    Emer Coleman
+     * Home
+     * Clients
+     * Blog
+     * Speaking Engagements
+     * DSRPTN
+     * Talks
+     * Journalism
+     * Presentations
+     * Interviews
+     * Academic
+     * Contact
+
+The City as a Platform - Stripping out complexity and Making Things Happen
+
+   02/14/2014
+
+   2 Comments
+
+   The concept of data platforms has garnered a lot of coverage over the
+   past few years and the City as a Platform is one that has wide traction
+   in the “Smart City” space. It’s an idea that has been widely
+   promulgated by service integrators and large consultancy firms. This
+   idea has been adopted into the thinking of many cities in the UK,
+   increasingly by local authorities who have both been forced by central
+   government diktat to open their data and who are also engaging with
+   many of the large private companies who sell infrastructure and
+   capabilities and with whom they may have existing contractual
+   arrangements.
+   Standard interpretations of city as platform usually involve the idea
+   that the city authority will create the platform into which it will
+   release its data. It then seeks the integration of API’s (both external
+   and internal) into the platform so that theoretically the user can
+   access that data via a unified City API on which developers can then
+   create products and services.
+   Picture
+   Some local authorities seek to monetise access to this API while others
+   see it as a mechanism for encouraging the development of new products
+   and services that are of value to the state but which have been
+   developed without direct additional investment by the state thereby
+   generating public good from the public task of collecting and storing
+   data.
+   This concept of city as platform integrated by local authorities
+   appears at first glance to be a logical, linear and achievable goal but
+   in my view completely misunderstands a number of key factors;
+   1. The evolution of the open data/big data market
+   2. Commercial and Technical realities
+   3. Governance and bureaucracy
+   I’ll explore these below.
+   The London Datastore is often referred to as a city platform and it has
+   certainly been recognised as a success in terms of outcomes - the wide
+   deployment of various apps such as travel apps which reduce friction
+   for commuters and are spawning a whole new ecosystem of SME’s in
+   London. The visualisation of data which has assisted the academic and
+   research community. The publication of crime data which allows citizens
+   better understand the challenges facing their areas and the integration
+   of data across different boroughs which gives a London wide
+   perspective. The City Dashboard created by CASA in UCL is a great
+   example of what can be done when a city releases its data.
+   Picture
+   But the London Datastore is not a platform. It is a website to which
+   static datasets can be uploaded. For most authorities and certainly for
+   the GLA itself its largest data asset base are static files (usually
+   CSV) which require little technical resource to publish. It is worth
+   noting that the cost of the London Datastore was circa £16,000 and no
+   additional staff were recruited to the GLA for the scoping, development
+   and deployment of the London Datastore (apart from some developer days
+   which were paid to hire a developer to build the website in Drupal).
+   The code for the website is open source and can be freely reused by
+   anyone who wanted to replicate it in their own city. Nor did this take
+   time once the political commitment had been made. The project started
+   scoping in October 2009 and launched on the 5th January 2010 with 50
+   datasets and a further 150 datasets were published to the website by
+   the end of January 2010.
+   No additional technical training was required for the Data Management
+   Asset Group (GIS and statistical staff) who simply uploaded the
+   datasets as part of business as usual. So the first steps are simple,
+   easily achieved and have no technical barriers. That’s iteration one of
+   open data for a city and that’s achievable in a few short months - not
+   years.
+   Had the London Datastore tried to adopt the platform model (as opposed
+   to the website model) then it would have been impossible to achieve
+   this early start. By the time the London Datastore launched, TfL, for
+   example, were not in a position to confirm how they would release their
+   data, how the API would be configured for data feeds and it took some
+   months for them to open up the access to real time data. When that
+   happened the London Datastore did not seek to integrate their API into
+   the Datastore it simply “pointed” to the real time feeds and timetables
+   which could be downloaded by the developers directly from the TfL
+   developer portal.
+   The advantage to pointing to the real time data feeds for London and
+   for City Hall is that it would be impossible for City Hall to provide
+   service level agreements to the developer community on its API.
+   Integrating different data sources from external bodies is complicated
+   to the degree that different sources can have different licensing
+   models. While open standards and policies are important they are not
+   always clearly worked out. A centralised city API would have put the
+   responsibility for the data delivery at the feet of City Hall and not
+   at the feet of the data providers themselves who have robust monitoring
+   and delivery mechanism with 24/7 service.
+   Put simply if I am a developer or small SME building a product or
+   service on a centralised API and something happens to that city API at
+   11.00 on a Saturday night - will the local authority be able to
+   respond? Will it offer 24/7 services? Does it have the in-house
+   technical capability to act in an agile manner? It’s not been my
+   experience as a former local authority official that this is how local
+   authority technical teams are constructed.
+   Static data sets are rarely updated at the rate of churn of real time
+   data. Most are updated quarterly or even annually in some cases, so the
+   service provision to the technologist is radically different in this
+   context. The wrong number on a spreadsheet of say environmental data is
+   not going to cause the same difficulty to a product or service in terms
+   of time needed to correct - its not likely to knock out an app that
+   over half a million people have downloaded and depend on for their
+   travel information on a daily basis.
+   Picture
+   The London Datastore was and is both a website and a leadership
+   function using the Mayoral authority to bring other public sector
+   providers into the open data space. It’s leadership paved the way and
+   the centralised location for the data (on the surface) makes it LOOK
+   like a platform but the technical and commercial reality is that it is
+   a federation of its own datasets and links which hopefully makes the
+   user journey for the developer a little more easy to navigate. It also
+   acted as a broker between developers and technologists helping them
+   navigate their way through large bureaucratic structures because that
+   is what public officials are good at and technologists shouldn’t have
+   to be.
+   Since the evolution of the London Datastore there are easier ways to do
+   things and a data market is emerging with vastly lower costs often
+   payable on a subscription basis. There are many small SME’s operating
+   in the open data space who operate at vastly lower costs than large
+   system integrators can offer. This is precisely the SME market and
+   economic stimulus that was behind the Mayoral initiative in London and
+   should be happening in cities throughout the UK. Open the data and let
+   1,000 flowers bloom and over time SME’s will emerge into credible and
+   solid open data service providers.
+   I declare an interest here with my startup TransportAPI which has six
+   people but now, as a data aggregator for public transport, is providing
+   all of Heathrow Airports public transport data. It is also providing
+   data to Transport for London and Network Rail. The difference between
+   taking data from a city api and from a transport aggregator like
+   TransportAPI is that we offer data as a service - we clean up and
+   stabilise data, we monitor the service, we have clear and open service
+   level agreements that offer discount on down times and that provide
+   value added services. This is what has evolved in the market through
+   the London Datastore initiative. The city does not need to provide the
+   API itself - it needs to bring its datasets (static and simple) to the
+   market and then let the market evolve new business models.
+   It is the service level that is required that is so completely
+   forgotten in the current debate around City as a Platform. You can
+   build a product or service in an experimental way on the cityAPI you
+   can bring your product to proof of concept - but you cannot scale on an
+   API that does not have ongoing and 24/7 service provision and you have
+   to provide that service at a cost that recognises the price point that
+   the market can bear.
+   If you are hoping to sell an app for £1.69 you have to sell a hell of a
+   lot of them to make a business and every penny spent on a service that
+   a large company or the city could provide is going to kill your route
+   to market.
+   So in a few easy steps here is what local authorities in cities need to
+   do:
+   1. Do it - release what you have in machine readable form on an open
+   source website with clear policies on reuse. If you don’t know what
+   they are then talk to the Open Data Institute.
+   2. Do more - get any public bodies with whom you have a relationship in
+   the public sector to upload their static data in machine readable
+   form.
+   3. Do even more - use your authority as a city leader to encourage
+   anyone in the data market (transport authorities, utility companies) to
+   join your ecosystem. Convince them of the benefit to the city and the
+   citizen and then use your website to point to their open API’s.
+   Familiarise yourself with all of the new providers who have come into
+   the ecosystem and who can provide agile and cost effective products and
+   services.
+   4. Stop using outsourced IT as an excuse. If you have outsourced your
+   IT then make a distinction between digital/data and IT. IT is kit and
+   tin - data is digital and yours. And if that does not work make it
+   clear to your supplier that their intransigence and crippling contracts
+   are a poor offering for your citizens and that when it comes to the
+   next contract negotiation you will be seeking out SME’s who can do this
+   really well and for a fraction of the cost with better results for your
+   citizens.
+   That’s it really. It’s not hard, its not resource intensive and it
+   doesn't cost a lot of money. I’ve seen figures of up to £200,000 for
+   Data Platforms but if you follow the model suggested above you can
+   build a really nice open source website to start and get the ball
+   rolling for a maximum of £20,000 (and that’s being really generous and
+   allowing for some nice design). Probably less because in the end
+   technologists don’t really care what the site looks like they just want
+   the data.
+   Update: Since publishing Tim O'Reilly sums it up very nicely in his
+   response
+
+     @emercoleman Love what you wrote. But I think both are platforms.
+     One is prematurely overspecified, the other is an MVP, and will
+     evolve.
+     — Tim O'Reilly (@timoreilly) February 14, 2014
+
+
+Comments
+
+   Simon Whitehouse link
+   02/14/2014 12:53pm
+
+   Excellent post Emer, thanks for this.
+   In Birmingham a few of us are taking a different approach to the issue
+   you outline in step 4. The intransigence of our local IT service
+   provider has meant a delay of months, if not years, in the release of a
+   Birmingham Datastore.
+   Amongst the activities we have planned for <a href =
+   "http://www.eventbrite.co.uk/e/the-data-day-open-data-day-in-birmingham
+   -registration-10440330309">next Saturday's Open Data Day</a> is the
+   creation of "A Datastore in a Day". By the end of the day we intend to
+   have an instance of Ckan running, with some examples of open data both
+   on it and linked to from it.
+   We'll also be encouraging people to make Freedom of Information
+   requests for the datasets they are most interested in. The responses
+   will be loaded onto the datastore over the following month, further
+   demonstrating that it really isn't all that difficult to do.
+   I doubt that it will be pretty, but it'll be a start....
+   What we might not use is the hashtag you've got in the City Dashboard
+   image in your post!
+   All the best
+   Simon
+   Reply
+   Salvatore Iaconesi link
+   02/14/2014 8:20pm
+
+   great! have you seen what we're doing here?
+   http://www.artisopensource.net/projects/human-ecosystems.html
+   and
+   http://artisopensource.net/projects/trieste-cloud-city.html
+   very relevant to this topic! I'd love to talk more
+   Reply
+   Your comment will be posted after it is approved.
+
+Leave a Reply
+
+   IFRAME:
+   //www.weebly.com/editor/apps/showCommentForm-v2.php?user_id=14241515&bl
+   og_id=283341919107489989&post_id=139723244628150956&parent=http://www.e
+   mercoleman.com/2/post/2014/02/the-city-as-a-platform-stripping-out-comp
+   lexity-and-making-things-happen.html&is_mobile=0&r=3&is_light=1
+
+    Archives
+       August 2014
+       April 2014
+       March 2014
+       February 2014
+       December 2013
+       November 2013
+       October 2013
+       August 2013
+       June 2013
+       April 2013
+       March 2013
+       December 2012
+       November 2012
+       Categories
+       All
+       Government Communications
+       International Womens Day
+       Social Media In Government
+       [bg_feed.gif] RSS Feed
+     __________________________________________________________________
+
+   Quantcast

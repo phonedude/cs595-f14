@@ -1,0 +1,81 @@
+   #publisher
+
+     * Homesearch
+     * Collections
+     * Sign in or create an account
+
+   (BUTTON) Medium site navigation
+   Aaron Landy Aaron Landy on Jul 28
+   2 min
+   (BUTTON)
+     * (BUTTON) Info
+     * (BUTTON) History
+
+   (BUTTON) (BUTTON) Publish
+   Change the title or subtitle to customize how your story is presented
+   across Medium.
+
+   Welcome to the new, more flexible Medium editor
+   Learn about the new editor features
+
+   Don’t write alone
+
+   Copy and send this draft link to anyone. They’ll be able to leave you
+   notes before you publish.
+   ____________________
+   (BUTTON) Set as featured in collection
+     __________________________________________________________________
+
+How to find your Uber passenger rating.
+
+   Edit 4: Uber has removed the passenger rating again.
+
+   Edit 3: After being hidden for over a week, the Uber passenger rating
+   hack is back online.
+   [1*2Elu5TO1uUesOIulivZHWw.png]
+
+   Edit 2: Unfortunately, Uber has removed the public passenger rating.
+   Goodbye 4.6…
+
+   Edit 1: Uber is currently trying to fix it. Hurry to find your rating!
+
+   Uber has a rating system for Drivers and Passengers. Both can rate each
+   other.
+
+   Uber doesn’t give any easy way for users to find their rating.
+
+   Follow steps below to find your rating. Either download the chrome
+   extension or follow instructions manually.
+
+Steps
+
+    1. Go to https://m.uber.com and log in.
+
+   [1*PUfoVJwm9smSbdfZl5XZcA.png]
+
+   2. When page below loads, open console (CMD + option + j on Chrome).
+   [1*E7c8B5zTQP8SlmtXIUIWmg.png]
+
+   3. Paste Javascript code into your console.
+if(window.Uber.pingData === false) { location.reload(); } else { alert("Name : "
+ + window.Uber.pingData.client.firstName + " " + window.Uber.pingData.client.las
+tName + "\nEmail : "+ window.Uber.pingData.client.email + "\nPassenger rating is
+ : "+ window.Uber.pingData.client.rating); }
+
+   4. The first time you paste code, your browser will reload. Keep the
+   console open and once the page loads again, paste code again. If you
+   are successful, popup below will appear.
+   [1*srpJxXjPF8QBJD4tneT1LA.png]
+
+   Feel free to share your rating in the comments.
+
+   https://twitter.com/aalndy
+   Aaron Landy
+
+Aaron Landy
+
+   Thanks to Zach Fogg
+   (BUTTON) Follow author (BUTTON) Share
+
+   Email me when Aaron Landy publishes or recommends stories
+   (BUTTON) Follow

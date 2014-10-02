@@ -1,0 +1,1371 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+<title>The evolving purpose of design - O'Reilly Radar</title>
+<link rel="shortcut icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link  rel="icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/custom.css" />
+<link rel="pingback" href="http://radar.oreilly.com/xmlrpc.php" />
+<link href="https://plus.google.com/105451978536505503907" rel="publisher" />
+	<meta name="search-title" content="The evolving purpose of design"/>
+	<meta property="twitter:account_id" content="10295842" />	
+	
+	<meta name="Category" content="Design"/> 
+	<meta name="subtitle" content="Design is about communication and respect as much as function."/>
+	
+	<meta name="description" content=" For more than a century, design has been determined by its applications to the physical world. As architect Louis Sullivan expressed in an 1896 essay, The Tall Office..." />
+	<meta name="author" content="Glen Martin" />
+	<meta name="search_date" content="2014-04-10" />
+	<meta name="keywords" content="design,Solid" />	
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary"> 
+	<meta name="twitter:url" content="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html"> 
+	<meta name="twitter:title" content="The evolving purpose of design"> 
+	<meta name="twitter:description" content=" For more than a century, design has been determined by its applications to the physical world. As architect Louis Sullivan expressed in an 1896 essay, The Tall Office..."> 
+		<meta name="twitter:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-120.png">
+			<meta name="twitter:creator" content="GlenWM5440"> 
+		<meta name="twitter:site" content="radar">
+			<meta property="og:image" content="http://cdn.oreillystatic.com/radar/images/people/photo_gmartin_m.jpg">
+		<meta property="og:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-200.png" />
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Feed" href="http://radar.oreilly.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Comments Feed" href="http://radar.oreilly.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; The evolving purpose of design Comments Feed" href="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html/feed" />
+<link rel='stylesheet' id='inline-tweet-sharer-style-css'  href='http://radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-css'  href='http://radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-plugin-css'  href='http://radar.oreilly.com/wp-content/plugins/videojs-html5-video-player-for-wordpress/plugin-styles.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-css'  href='//vjs.zencdn.net/4.5/video-js.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=4.0'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/player.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://cdn.oreillystatic.com/search/radar/scripts/jquery-1.10.2.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.6.6","is_admin":"0","ajaxurl":"http:\/\/radar.oreilly.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.6.6'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://radar.oreilly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://radar.oreilly.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Full-stack developers' href='http://radar.oreilly.com/2014/04/full-stack-developers.html' />
+<link rel='next' title='Can we extend the web cleanly?' href='http://radar.oreilly.com/2014/04/can-we-extend-the-web-cleanly.html' />
+<link rel='canonical' href='http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html' />
+<link rel='shortlink' href='http://radar.oreilly.com/?p=60120' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://radar.oreilly.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://radar.oreilly.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+
+		<script type="text/javascript"> document.createElement("video");document.createElement("audio");document.createElement("track"); </script>
+		
+<link rel="stylesheet" type="text/css" href="http://radar.oreilly.com/wp-content/themes/radar/css/lazyYT.css">
+<!-- soasta -->
+<script type='text/javascript'>
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'M8AMH-MB6VT-5NB4A-PU4EW-XKNPQ';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+</script>
+<!-- #soasta -->
+
+</head>
+<body class="single single-post postid-60120 single-format-standard">
+<div id="fixed-top"><span>Menu</span></div>
+<nav id="mobi" class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-48418" class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li id="menu-item-48419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li id="menu-item-48420" class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a></li>
+<li id="menu-item-48422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li id="menu-item-48423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li id="menu-item-48426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></nav><div id="wrapper" class="hfeed ">
+	<div class="navheaderbg">
+		<div>
+			<div id="header">	
+				<div class="header-top">
+					<a href="http://oreilly.com/" title="oreilly.com">oreilly.com</a>
+					<div class="clear"></div>
+				</div>
+			<div class="head-inner">
+				<div class="logo">
+					<a href="http://radar.oreilly.com/" title="O&#039;Reilly Radar" rel="home">O&#039;Reilly Radar</a>
+				</div>
+	
+				<div id="search-box">
+					<div id="header-social-wrap">
+						<div id="header-social-btn">
+							<a class="rss-btn"  href="http://feeds.feedburner.com/oreilly/radar/atom" >RSS Feed</a>
+							<a class="twitter-btn" href="http://twitter.com/radar">Twitter</a>
+							<a class="fb-btn" href="https://www.facebook.com/OReillyRadar">Facebook</a>
+							<a class="gps-btn" href="https://plus.google.com/105451978536505503907" >Google+</a>
+							<a class="yt-btn" href="http://www.youtube.com/user/OreillyMedia" >Youtube</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<script type="text/javascript"> 
+						function checkIfDefault(keyword) {
+							var defaultSearchTerm = "Search";
+							var defaultEmailTerm = "Enter Email";
+								if((keyword == defaultSearchTerm) || (keyword == defaultEmailTerm)) {
+									return '';
+								}
+								else {
+									return keyword;
+								}
+							}
+					</script>
+					<script type="text/javascript"> 
+					jQuery(document).ready(function($) { 
+						$("#search-form").submit(function() { 
+						window.location = " /search#/search/q="+$("#q").val(); 
+						return false; 
+						}); 
+					}); 
+					</script>
+					<div class="yui-skin-sam">
+						<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/">
+							<div class="search">
+								<fieldset>
+									<span id="search-input">
+										<div class="searchInput">
+											<span id="search-field"><input type="text" value="Search" name="q" maxlength="64" id="q" onfocus="this.value=checkIfDefault(this.value);"></span>           
+										</div>
+										<span id="search-button">
+											<input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/sitewide-headers/search_btn.gif" border="0" style="float:left" alt="Search" align="top">
+											<input type="hidden" name="tmpl" value="radar">                                                                    
+										</span>
+									</span>
+								</fieldset>
+							</div>
+						</form>
+					</div>
+                </div>
+				<div class="clear"></div>
+			</div>
+				<div class="clear"></div>
+			</div><!-- #header -->
+			<div id="access" role="navigation">			  
+				<div class="menu-header"><ul id="menu-main-nav-1" class="menu"><li class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a>
+<ul class="sub-menu">
+	<li id="menu-item-67912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-67912"><a href="http://radar.oreilly.com/">Radar</a></li>
+	<li id="menu-item-67913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67913"><a href="http://animals.oreilly.com/">Animals</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></div>				<div class="clear"></div>
+			</div><!-- #access -->
+			<div class="clear"></div>
+			<div id="menu-wrap">			
+					            	            		            		            	<div class="catname"><a href="http://radar.oreilly.com/design">Design</a></div>
+	            		        		        		            <div id="sub">
+		            <div class="nav">
+		            	<div class="name">More Topics <span class="arrow-down"></span></div>
+		                <div class="sub-menu"><ul class="nav-bar"><li><a href="http://radar.oreilly.com/data">Data</a></li><li><a href="http://radar.oreilly.com/design">Design</a></li><li><a href="http://radar.oreilly.com/emerging-tech">Emerging Tech</a></li><li><a href="http://radar.oreilly.com/iot">IoT+</a></li><li><a href="http://radar.oreilly.com/programming">Programming</a></li><li><a href="http://radar.oreilly.com/webops-perf">Web Ops & Performance</a></li><li><a href="http://radar.oreilly.com/web-platform">Web Platform</a></li></ul></div>		            </div>
+	        	</div>
+	        	        	</div>
+            <div class="clear"></div>
+		</div>
+		
+	</div>
+	<div id="sww-content">
+					<div class="textwidget"><!-- Either there are no banners, they are disabled or none qualified for this location! --></div>
+			
+		<div class="clear"></div>
+	</div>
+	<div id="main">	
+		<style type="text/css">
+		  .single .hentry { padding-bottom:20px; }
+		  #content #newsletter { padding:0; margin:0 0 20px; border-bottom:1px solid #888; }
+		  #content #newsletter > h3 { margin:15px 0 0 0; padding:0; font-size:22px; line-height:1.1em; font-weight:bold; }
+		  #content #newsletter > h4 { margin:0 0 5px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		  #content #newsletter > p { margin:0 0 20px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		</style>	<div id="container">
+		<div id="content" class="post_block" role="main">			
+							
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/rs_embhl_v2_en_us.js" type="text/javascript"></script>
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.cookie.js" type="text/javascript"></script>
+
+		<div id="post-60120" class="post-60120 post type-post status-publish format-standard hentry category-design tag-home tag-design-tag tag-solid">					
+
+			 
+
+			<ul class="entry-tools">
+
+			<span class="tool-block">
+
+				<li class="button print">
+
+					
+					<a target="_new" href="#" onclick="window.open('http://radar.oreilly.com/print/?print_bc=60120','print','width=800,height=600,menubar=no,status=no,location=yes,toolbar=yes,scrollbars=yes'); return false;" rel="nofollow">Print</a>
+
+				</li>
+
+				<li class="button listen">
+
+					<div id="readspeaker_button1" class="rs_skip en_us"> <a accesskey="L" href="http://app.readspeaker.com/cgi-bin/rsent?customerid=14&amp;lang=en_us&amp;readid=body-content&amp;url=http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" target="_blank" onclick="readpage(this.href, 'content_start'); return false;">Listen</a> </div>
+
+				</li>		
+
+				
+
+				<div id="content_start" style="display: block; "></div>			
+
+			</span>
+
+			</ul>		
+
+		
+
+			
+			
+				
+					<a href="http://radar.oreilly.com/gmartin">
+
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_gmartin_s.jpg" class="au-photo" alt="" title="Glen Martin" />
+
+					</a>
+
+									
+
+			
+			<!-- RSPEAK_START -->
+
+			<div id="body-content">
+
+			<h1 class="entry-title">The evolving purpose of design</h1>
+
+					
+
+				
+
+				<h2 class="subhead">Design is about communication and respect as much as function.</h2>
+
+			
+			
+
+			<div class="entry-meta">				
+
+				
+					<span class="meta-sep">by</span> 	
+
+					
+						<span class="author vcard"><a class="url fn n" rel="author" href="http://radar.oreilly.com/gmartin" title="View all posts by Glen Martin">
+
+						Glen Martin</a></span> |								
+
+					
+				<!-- RSPEAK_STOP -->
+
+				
+					<a href="http://twitter.com/GlenWM5440"> @GlenWM5440</a> |
+
+				
+				
+					<a href="https://plus.google.com/u/0/114119977885933637441/posts"> +Glen Martin</a> |
+
+				
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html#comments" title="Comment on The evolving purpose of design"><span class="dsq-postid" rel="60120 http://radar.oreilly.com/?p=60120">Comment: 1</span></a></span>
+
+					<span class="meta-sep utility-items"> | </span>
+
+					
+
+				
+				<span class="entry-date">April 10, 2014</span> 				
+
+			</div><!-- .entry-meta -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html#comments" title="Comment on The evolving purpose of design"><span class="dsq-postid" rel="60120 http://radar.oreilly.com/?p=60120">Comment: 1</span></a></span>
+
+					
+
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+
+
+			<div class="entry-content">
+
+				
+			
+
+				
+				
+
+				<!-- RSPEAK_START --><div id="attachment_60161" style="width: 290px" class="wp-caption alignright"><a href="http://www.moma.org/explore/inside_out/2014/01/16/mine-kafon"><img class="size-full wp-image-60161" alt="Mine_Kafon" src="http://s.radar.oreilly.com/wp-files/2/2014/04/Mine_Kafon_sized.jpg" width="280" height="188" /></a><p class="wp-caption-text"><em><a href="http://massoudhassani-aboutme.blogspot.com">Massoud Hassani&#8217;s</a> wind-powered land minesweeper, the Mine Kafon. Photo by Rene van der Hulst, courtesy of The Museum of Modern Art.</em></p></div>
+<p>For more than a century, design has been determined by its applications to the physical world. As architect Louis Sullivan expressed in an 1896 essay, &#8220;<a href="https://archive.org/details/tallofficebuildi00sull">The Tall Office Building Artistically Considered</a>&#8220;:</p>
+<blockquote><p>&#8220;It is the pervading law of all things organic and inorganic, of all things physical and metaphysical, of all things human and all things superhuman, of all true manifestations of the head, of the heart, of the soul, that the life is recognizable in its expression, that form ever follows function. <em>This is the law.</em>&#8220;</p></blockquote>
+<p>But <a href="http://solidcon.com/solid2014/public/schedule/speaker/100561">Paola Antonelli</a>, senior curator of Architecture and Design at the <a href="http://www.moma.org/?gclid=CPz348TYzr0CFVKDfgodh6oAJA">Museum of Modern Art</a> in New York, thinks that&#8217;s a law best consigned to the dustbin of history; she gets exasperated when design is presented as the subservient handmaiden of utility.</p>
+<p>&#8220;There shouldn&#8217;t be any differentiation between form and function,&#8221; she maintained in a recent interview. &#8220;The idea that form must follow function, that&#8217;s out the window; it&#8217;s a tired cliché. A good object, a well-designed object, is encompassing. It is unified, the material embodiment of a strong idea.&#8221;<span id="more-60120"></span></p>
+<p>For Antonelli, design is the highest mode of creative expression, subsuming inspiration, materials, and applied purpose. For too long, she insists, design has been given short shrift.</p>
+<p>&#8220;I&#8217;m not a moralist, but I do think objects deserve respect,&#8221; she said. &#8220;Design is not decoration.&#8221;</p>
+<p>That&#8217;s particularly evident today, when the merging of computer technology and the physical world has made design both more protean and pervasive.</p>
+<p>&#8220;One of the most important and exciting trends we&#8217;re seeing is the evolving purpose of design,&#8221; she said. &#8220;It&#8217;s less and less about function as an end point, and more and more about access to networks. Increasingly, objects are gateways to different ways of doing things, to different ways of living.&#8221;</p>
+<p>Last year, Antonelli observed, &#8220;Older people bought more <a href="http://www.businessweek.com/articles/2013-08-29/in-car-buying-baby-boomers-surpass-the-young">new cars</a> than younger people, reversing a long-established trend. That&#8217;s terribly significant because it&#8217;s pointing to the emergence of a shared economy. Young people want the convenience of a vehicle when they&#8217;re going to certain places or doing certain things, but they don&#8217;t necessarily want to own them. They&#8217;re happy to share cars. That&#8217;s a very different paradigm, and it&#8217;s going to require Detroit to reconfigure their approach to designing cars.&#8221;</p>
+<p>Computer technology has made Antonelli&#8217;s job both richer and more challenging. For example: she has curated objects for MoMA&#8217;s permanent collection that were created by <a href="http://www.media.mit.edu/people/neri">Neri Oxman</a>, leader of <a href="https://www.media.mit.edu/research/groups/mediated-matter">MIT Media Lab&#8217;s Mediated Matter Group</a>. Among Oxman&#8217;s projects are a skirt and cape produced by a <a href="http://www.stratasys.com/3d-printers/design-series/precision/objet-connex500">Stratasys Connex multi-material 3-D printer</a>. They each were printed in a single build, and employ both firm and soft materials, allowing the ease of movement associated with &#8220;regular&#8221; clothes.</p>
+<p>&#8220;They&#8217;re wonderful garments — but from a design perspective, it can be argued that the real significance, the real &#8216;elegance,&#8217; is in the software,&#8221; Antonelli says.</p>
+<p>Antonelli is also curating the emblematic icons of the the computer and Internet revolutions, including the <a href="http://www.moma.org/collection/object.php?object_id=174200">Google map pin</a> and the <a href="http://www.moma.org/explore/inside_out/2010/03/22/at-moma/">@ symbol</a>.</p>
+<p>&#8220;I&#8217;m particularly proud of that,&#8221; she said of her acquisition of @. &#8220;It shows that you don&#8217;t actually have to have physical possession of something to &#8216;acquire&#8217; it.&#8221;</p>
+<p>Because @ is in the public domain, MoMA did not have to pay for using it, thus making it — as Antonelli has described it — &#8220;[Probably] the only truly free, albeit not the only priceless, object in our collection.&#8221; An exhibition devoted to @ is on display on the 3<sup>rd</sup> floor of MoMA&#8217;s architecture and design east gallery.</p>
+<p>In a <a href="http://www.moma.org/explore/inside_out/2010/03/22/at-moma">blog on @</a>, Antonelli noted it was first applied to electronic communications by engineer Ray Tomlinson in the seminal email system he developed in the early 1970s.</p>
+<blockquote><p>&#8220;In January 1971, @ was an underused jargon symbol lingering on the keyboard and marred by a very limited register. By October, Tomlinson had rediscovered and appropriated it, imbuing it with new meaning and elevating it to the defining symbol of the computer age. He chose the @ for his first email because of its strong locative sense — an individual, identified by a username, is @ this institution/computer/server, and also because&#8230;it was already there, on the keyboard, and nobody ever used it. &#8230; Tomlinson performed a powerful act of design that not only forever changed the @ sign&#8217;s significance and function, but which also has become an important part of our identity in relationship and communication with others. His (unintended) role as a designer must be acknowledged and celebrated by the one collection — MoMA&#8217;s — that has always celebrated elegance, economy, intellectual transparency, and a sense of the possible future directions that are embedded in the arts of our time, the essence of modern.&#8221;</p></blockquote>
+<p>If @ is now an iconic symbol, it has also served as a harbinger to the massive impact of computers on design. Advanced technologies have accelerated and compressed design cycles, Antonelli observed. &#8220;Not long ago, if you wanted to design something, you&#8217;d make a non-functioning model of it first and use that as a template for prototype development,&#8221; Antonelli said. &#8220;Now, we&#8217;re able to move directly from concept to prototyping. After all, that&#8217;s one of the greatest applications of 3-D printing, where virtually everything you produce can be considered a prototype.&#8221;</p>
+<p>Streamlined prototyping has, in turn, upended the basic ethos of design. There are no longer real set points, observed Antonelli. Design is now more akin to flowing water than a series of steps carved in stone. And again, that conforms to the nascent &#8220;culture of sharing.&#8221; The same impulses that drove open source software are now driving the design of objects.</p>
+<p>&#8220;Physical objects increasingly exist in a matrix, where they can be modified by different people for their individual purposes,&#8221; Antonelli said. &#8220;Design is thus becoming more collaborative, but at the same time, it&#8217;s more amenable to customization, to addressing individual desires and needs.&#8221;</p>
+<p>This extends beyond objects to entertainment and information, Antonelli observed, citing <a href="https://play.google.com/store/apps/details?id=com.bjork.biophilia"><em>Biophilia</em></a>, the 2011 <a href="http://bjork.com/">Bjork</a> album that was released in a series of apps, allowing people to interact with the music to the point of creating new versions of the songs.</p>
+<p>Antonelli feels some of the strongest designs are coming from the developing world, where poor access to capital and materials drives innovation. Among her acquisitions for MoMA is a wind-powered <a href="http://www.greenprophet.com/2013/01/wind-powered-mine-kafon-massoud-hassani/">minesweeper</a> created from bamboo and biodegradable plastic. Designed by 29-year-old Afghan <a href="http://massoudhassani-aboutme.blogspot.com/">Massoud Hassani</a>, it is a visually arresting object, resembling a gigantic dandelion seed head.</p>
+<p>&#8220;We have a lot to learn from poorer countries,&#8221; said Antonelli. &#8220;Their maker traditions are directly opposite to our consumer culture, and I admire them immensely. They use everything; they hack everything. Recycling is second nature. I understand corporations must make money, but there are better ways to do that than constantly throwing away stuff and wasting resources.&#8221;</p>
+<p><iframe width="620" height="349" src="https://www.youtube.com/embed/SziFg_HYzNY?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p>Conversely (and ironically), Antonelli feels there is a lack of appreciation for the bedrock principles of good design in the area most celebrated for creative engineering: Silicon Valley.</p>
+<p>&#8220;I&#8217;ve had quite a bit of interaction with venture capitalists there, and I must say I was quite disappointed,&#8221; she said. &#8220;I was amazed that they consider design an &#8216;embellishment,&#8217; something superfluous. Yes, I know that Steve Jobs is always cited as a master of design, and that he&#8217;s a symbol for Silicon Valley. But Jobs was only one guy, and his vision was his vision. You can&#8217;t imitate Jobs. And frankly, at this point, his approach is a bit old-fashioned. He was obsessed with beauty and purity above all else. For the strongest designs, you have to be willing to get a little dirty. I have no problem with beautiful objects, but the purpose of design isn&#8217;t to be beautiful — it&#8217;s to communicate, to inform clearly and concisely. Again, it&#8217;s about respect, both for the object and the person who uses it.&#8221;</p>
+<!-- RSPEAK_STOP -->
+
+				
+			</div><!-- .entry-content -->
+
+				
+			</div>
+
+			<div class="entry-utility">				
+
+				tags: <a href='http://radar.oreilly.com/tag/design-tag' title='design Tag' rel='tag'>design</a>, <a href='http://radar.oreilly.com/tag/solid' title='Solid Tag' rel='tag'>Solid</a>
+				
+			</div><!-- .entry-utility -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html" addthis:title="The evolving purpose of design"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html#comments" title="Comment on The evolving purpose of design"><span class="dsq-postid" rel="60120 http://radar.oreilly.com/?p=60120">Comment: 1</span></a></span>
+
+				
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+			<!-- AddThis Button END -->			
+
+			
+
+			
+
+		</div><!-- #post-## -->		
+
+		
+
+		
+		
+
+<a name="comments"></a>
+
+<a name="respond"></a>
+
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-43737">
+        <div id="dsq-comment-header-43737" class="dsq-comment-header">
+            <cite id="dsq-cite-43737">
+                <span id="dsq-author-user-43737">Edy</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-43737" class="dsq-comment-body">
+            <div id="dsq-comment-message-43737" class="dsq-comment-message"><p>&#8220;Last year, Antonelli observed, “Older people bought more new cars than younger people, reversing a long-established trend. That’s terribly significant because it’s pointing to the emergence of a shared economy. Young people want the convenience of a vehicle when they’re going to certain places or doing certain things, but they don’t necessarily want to own them. They’re happy to share cars.&#8221; </p>
+<p>I think it is important to put yourself in the perspective of young people today&#8230;.everything is much more expensive for them than it was for the previous generations&#8230;.they can no longer buy a new car for under $10,000&#8230;..or a home for under $200,000 (in many areas of the country). There is also more pressure on them to live sustainably, consume fewer resources, and enact solutions to the problems of pollution, refuse and waste created by earlier generations. No wonder they are are willing to share! Most young people today wonder if they&#8217;ll ever be able to afford to buy a home, or buy a new car, or have a job to pay for these things, and insurance that goes with them. It is a much different world for them &#8211; and it often has less to do with their choices, and what is realistically possible for them.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://radar.oreilly.com/2014/04/the-evolving-purpose-of-design.html';
+    var disqus_identifier = '60120 http://radar.oreilly.com/?p=60120';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'oreillyradar';
+    var disqus_title = "The evolving purpose of design";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=60120';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/radar.oreilly.com\/2014\/04\/the-evolving-purpose-of-design.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+
+
+		</div><!-- #content -->
+		<div id="sidebar" class="widget-area">
+	<div id="text-60" class="widget-container widget_text"><h3 class="widget-title">Featured Video</h3>			<div class="textwidget"><div class="js-lazyYT" data-youtube-id="aOCLDaUVCm0" data-ratio="16:9"></div>
+<p style="padding-top: 5px; font-size: 12px;  line-height: 1.5; font-weight: normal;"><strong>"Enchanted Objects"</strong> - Google's David Rose talks about his new book, <em>Enchanted Objects</em> and his vision of technology that atomizes, combining itself with the objects that make up the very fabric of daily living.</p>
+</div>
+		<div class="clear"></div></div>		<div id="recent-posts-8" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/python-3-threat-or-menace.html">Python 3: threat or menace?</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/four-short-links-26-september-2014.html">Four short links: 26 September 2014</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/four-short-links-25-september-2014.html">Four short links: 25 September 2014</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/scaling-nosql-databases-5-tips-for-increasing-performance.html">Scaling NoSQL databases: 5 tips for increasing performance</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/in-pursuit-of-universal-iot-standards.html">In pursuit of universal IoT standards</a>
+						</li>
+				</ul>
+		<div class="clear"></div></div><div id="execphp-9" class="widget-container widget_execphp">			<div class="execphpwidget"><a class="twitter-timeline" width="318" data-dnt=true href="https://twitter.com/radar" data-widget-id="251056135732338688">Tweets by @radar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		<div class="clear"></div></div><div id="text-15" class="widget-container widget_text"><h3 class="widget-title">Most Recently Discussed</h3>			<div class="textwidget"><div id="recentcomments" class="dsq-widget"><script type="text/javascript" src="http://oreillyradar.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=100"></script></div></div>
+		<div class="clear"></div></div><div id="text-57" class="widget-container widget_text">			<div class="textwidget"></div>
+		<div class="clear"></div></div><div  class="widget-container radar-archives">	
+	<h3 class="widget-title">Archives</h3>	
+		
+	<ul>
+		<li>
+			<select id="archive_id" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			  <option value="">Archives by Month...</option> 
+			  	<option value='http://radar.oreilly.com/2014/09'> September 2014 </option>
+	<option value='http://radar.oreilly.com/2014/08'> August 2014 </option>
+	<option value='http://radar.oreilly.com/2014/07'> July 2014 </option>
+	<option value='http://radar.oreilly.com/2014/06'> June 2014 </option>
+	<option value='http://radar.oreilly.com/2014/05'> May 2014 </option>
+	<option value='http://radar.oreilly.com/2014/04'> April 2014 </option>
+	<option value='http://radar.oreilly.com/2014/03'> March 2014 </option>
+	<option value='http://radar.oreilly.com/2014/02'> February 2014 </option>
+	<option value='http://radar.oreilly.com/2014/01'> January 2014 </option>
+	<option value='http://radar.oreilly.com/2013/12'> December 2013 </option>
+	<option value='http://radar.oreilly.com/2013/11'> November 2013 </option>
+	<option value='http://radar.oreilly.com/2013/10'> October 2013 </option>
+	<option value='http://radar.oreilly.com/2013/09'> September 2013 </option>
+	<option value='http://radar.oreilly.com/2013/08'> August 2013 </option>
+	<option value='http://radar.oreilly.com/2013/07'> July 2013 </option>
+	<option value='http://radar.oreilly.com/2013/06'> June 2013 </option>
+	<option value='http://radar.oreilly.com/2013/05'> May 2013 </option>
+	<option value='http://radar.oreilly.com/2013/04'> April 2013 </option>
+	<option value='http://radar.oreilly.com/2013/03'> March 2013 </option>
+	<option value='http://radar.oreilly.com/2013/02'> February 2013 </option>
+	<option value='http://radar.oreilly.com/2013/01'> January 2013 </option>
+	<option value='http://radar.oreilly.com/2012/12'> December 2012 </option>
+	<option value='http://radar.oreilly.com/2012/11'> November 2012 </option>
+	<option value='http://radar.oreilly.com/2012/10'> October 2012 </option>
+	<option value='http://radar.oreilly.com/2012/09'> September 2012 </option>
+	<option value='http://radar.oreilly.com/2012/08'> August 2012 </option>
+	<option value='http://radar.oreilly.com/2012/07'> July 2012 </option>
+	<option value='http://radar.oreilly.com/2012/06'> June 2012 </option>
+	<option value='http://radar.oreilly.com/2012/05'> May 2012 </option>
+	<option value='http://radar.oreilly.com/2012/04'> April 2012 </option>
+	<option value='http://radar.oreilly.com/2012/03'> March 2012 </option>
+	<option value='http://radar.oreilly.com/2012/02'> February 2012 </option>
+	<option value='http://radar.oreilly.com/2012/01'> January 2012 </option>
+	<option value='http://radar.oreilly.com/2011/12'> December 2011 </option>
+	<option value='http://radar.oreilly.com/2011/11'> November 2011 </option>
+	<option value='http://radar.oreilly.com/2011/10'> October 2011 </option>
+	<option value='http://radar.oreilly.com/2011/09'> September 2011 </option>
+	<option value='http://radar.oreilly.com/2011/08'> August 2011 </option>
+	<option value='http://radar.oreilly.com/2011/07'> July 2011 </option>
+	<option value='http://radar.oreilly.com/2011/06'> June 2011 </option>
+	<option value='http://radar.oreilly.com/2011/05'> May 2011 </option>
+	<option value='http://radar.oreilly.com/2011/04'> April 2011 </option>
+	<option value='http://radar.oreilly.com/2011/03'> March 2011 </option>
+	<option value='http://radar.oreilly.com/2011/02'> February 2011 </option>
+	<option value='http://radar.oreilly.com/2011/01'> January 2011 </option>
+	<option value='http://radar.oreilly.com/2010/12'> December 2010 </option>
+	<option value='http://radar.oreilly.com/2010/11'> November 2010 </option>
+	<option value='http://radar.oreilly.com/2010/10'> October 2010 </option>
+	<option value='http://radar.oreilly.com/2010/09'> September 2010 </option>
+	<option value='http://radar.oreilly.com/2010/08'> August 2010 </option>
+	<option value='http://radar.oreilly.com/2010/07'> July 2010 </option>
+	<option value='http://radar.oreilly.com/2010/06'> June 2010 </option>
+	<option value='http://radar.oreilly.com/2010/05'> May 2010 </option>
+	<option value='http://radar.oreilly.com/2010/04'> April 2010 </option>
+	<option value='http://radar.oreilly.com/2010/03'> March 2010 </option>
+	<option value='http://radar.oreilly.com/2010/02'> February 2010 </option>
+	<option value='http://radar.oreilly.com/2010/01'> January 2010 </option>
+	<option value='http://radar.oreilly.com/2009/12'> December 2009 </option>
+	<option value='http://radar.oreilly.com/2009/11'> November 2009 </option>
+	<option value='http://radar.oreilly.com/2009/10'> October 2009 </option>
+	<option value='http://radar.oreilly.com/2009/09'> September 2009 </option>
+	<option value='http://radar.oreilly.com/2009/08'> August 2009 </option>
+	<option value='http://radar.oreilly.com/2009/07'> July 2009 </option>
+	<option value='http://radar.oreilly.com/2009/06'> June 2009 </option>
+	<option value='http://radar.oreilly.com/2009/05'> May 2009 </option>
+	<option value='http://radar.oreilly.com/2009/04'> April 2009 </option>
+	<option value='http://radar.oreilly.com/2009/03'> March 2009 </option>
+	<option value='http://radar.oreilly.com/2009/02'> February 2009 </option>
+	<option value='http://radar.oreilly.com/2009/01'> January 2009 </option>
+	<option value='http://radar.oreilly.com/2008/12'> December 2008 </option>
+	<option value='http://radar.oreilly.com/2008/11'> November 2008 </option>
+	<option value='http://radar.oreilly.com/2008/10'> October 2008 </option>
+	<option value='http://radar.oreilly.com/2008/09'> September 2008 </option>
+	<option value='http://radar.oreilly.com/2008/08'> August 2008 </option>
+	<option value='http://radar.oreilly.com/2008/07'> July 2008 </option>
+	<option value='http://radar.oreilly.com/2008/06'> June 2008 </option>
+	<option value='http://radar.oreilly.com/2008/05'> May 2008 </option>
+	<option value='http://radar.oreilly.com/2008/04'> April 2008 </option>
+	<option value='http://radar.oreilly.com/2008/03'> March 2008 </option>
+	<option value='http://radar.oreilly.com/2008/02'> February 2008 </option>
+	<option value='http://radar.oreilly.com/2008/01'> January 2008 </option>
+	<option value='http://radar.oreilly.com/2007/12'> December 2007 </option>
+	<option value='http://radar.oreilly.com/2007/11'> November 2007 </option>
+	<option value='http://radar.oreilly.com/2007/10'> October 2007 </option>
+	<option value='http://radar.oreilly.com/2007/09'> September 2007 </option>
+	<option value='http://radar.oreilly.com/2007/08'> August 2007 </option>
+	<option value='http://radar.oreilly.com/2007/07'> July 2007 </option>
+	<option value='http://radar.oreilly.com/2007/06'> June 2007 </option>
+	<option value='http://radar.oreilly.com/2007/05'> May 2007 </option>
+	<option value='http://radar.oreilly.com/2007/04'> April 2007 </option>
+	<option value='http://radar.oreilly.com/2007/03'> March 2007 </option>
+	<option value='http://radar.oreilly.com/2007/02'> February 2007 </option>
+	<option value='http://radar.oreilly.com/2007/01'> January 2007 </option>
+	<option value='http://radar.oreilly.com/2006/12'> December 2006 </option>
+	<option value='http://radar.oreilly.com/2006/11'> November 2006 </option>
+	<option value='http://radar.oreilly.com/2006/10'> October 2006 </option>
+	<option value='http://radar.oreilly.com/2006/09'> September 2006 </option>
+	<option value='http://radar.oreilly.com/2006/08'> August 2006 </option>
+	<option value='http://radar.oreilly.com/2006/07'> July 2006 </option>
+	<option value='http://radar.oreilly.com/2006/06'> June 2006 </option>
+	<option value='http://radar.oreilly.com/2006/05'> May 2006 </option>
+	<option value='http://radar.oreilly.com/2006/04'> April 2006 </option>
+	<option value='http://radar.oreilly.com/2006/03'> March 2006 </option>
+	<option value='http://radar.oreilly.com/2006/02'> February 2006 </option>
+	<option value='http://radar.oreilly.com/2006/01'> January 2006 </option>
+	<option value='http://radar.oreilly.com/2005/12'> December 2005 </option>
+	<option value='http://radar.oreilly.com/2005/11'> November 2005 </option>
+	<option value='http://radar.oreilly.com/2005/10'> October 2005 </option>
+	<option value='http://radar.oreilly.com/2005/09'> September 2005 </option>
+	<option value='http://radar.oreilly.com/2005/08'> August 2005 </option>
+	<option value='http://radar.oreilly.com/2005/07'> July 2005 </option>
+	<option value='http://radar.oreilly.com/2005/06'> June 2005 </option>
+	<option value='http://radar.oreilly.com/2005/05'> May 2005 </option>
+	<option value='http://radar.oreilly.com/2005/04'> April 2005 </option>
+	<option value='http://radar.oreilly.com/2005/03'> March 2005 </option>
+			</select>
+		</li>
+
+		<li>	
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='cat' id='cat' class='postform'  onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Topic&#8230;</option>
+	<option class="level-0" value="3">Data</option>
+	<option class="level-0" value="5443">Design</option>
+	<option class="level-0" value="5444">Emerging Tech</option>
+	<option class="level-0" value="4871">IoT+</option>
+	<option class="level-0" value="9">Programming</option>
+	<option class="level-0" value="12">Web Ops &amp; Performance</option>
+	<option class="level-0" value="5355">Web Platform</option>
+</select>
+					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+
+		<li id="users">
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='author' id='author' class='' onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Author...</option>
+	<option value='507'>A. Sinan Unur</option>
+	<option value='508'>Aaron Sumner</option>
+	<option value='4'>Adam DuVander</option>
+	<option value='376'>Adam Flaherty</option>
+	<option value='3'>Adam Messinger</option>
+	<option value='5'>Adam Witwer</option>
+	<option value='2'>Alasdair Allan</option>
+	<option value='588'>Alex Bordei</option>
+	<option value='7'>Alex Bowyer</option>
+	<option value='9'>Alex Iskold</option>
+	<option value='6'>Alexander Macgillivray</option>
+	<option value='10'>Alistair Croll</option>
+	<option value='471'>Allen Downey</option>
+	<option value='11'>Allen Noren</option>
+	<option value='12'>Allison Randal</option>
+	<option value='482'>Ally MacDonald</option>
+	<option value='477'>Alois Reitbauer</option>
+	<option value='347'>Alysa Hutnik</option>
+	<option value='358'>Amy Heineike</option>
+	<option value='467'>Amy Jollymore</option>
+	<option value='426'>Amy Unruh</option>
+	<option value='13'>Anant Jhingran</option>
+	<option value='414'>Andreas Antonopoulos</option>
+	<option value='501'>Andrew Collette</option>
+	<option value='15'>Andrew Odewahn</option>
+	<option value='14'>Andrew Savikas</option>
+	<option value='16'>Andrew Shafer</option>
+	<option value='510'>Andy Fitzgerald</option>
+	<option value='18'>Andy Kirk</option>
+	<option value='355'>Andy Konwinski</option>
+	<option value='19'>Andy Oram</option>
+	<option value='309'>Ann Spencer</option>
+	<option value='262'>Ann Waldo</option>
+	<option value='359'>Anna Smith</option>
+	<option value='562'>Anne Gentle</option>
+	<option value='574'>Anni Ylagan</option>
+	<option value='21'>Ari Gesher</option>
+	<option value='20'>Aria Haghighi</option>
+	<option value='410'>Ariya Hidayat</option>
+	<option value='22'>Artur Bergman</option>
+	<option value='23'>Audrey Watters</option>
+	<option value='293'>Avi Bryant</option>
+	<option value='571'>Barb Edson</option>
+	<option value='421'>Barbara Bermes</option>
+	<option value='486'>Baron Schwartz</option>
+	<option value='26'>Barry Devlin</option>
+	<option value='390'>Beau Cronin</option>
+	<option value='419'>Ben Christensen</option>
+	<option value='587'>Ben Evans</option>
+	<option value='27'>Ben Lorica</option>
+	<option value='462'>Bill Higgins</option>
+	<option value='591'>Bill Lubanovic</option>
+	<option value='28'>Bill McCoy</option>
+	<option value='461'>Bonnie Feldman</option>
+	<option value='30'>Bradley Voytek</option>
+	<option value='31'>Brady Forrest</option>
+	<option value='539'>Brandon Satrom</option>
+	<option value='32'>Brett McLaughlin</option>
+	<option value='33'>Brett Sandusky</option>
+	<option value='34'>Brett Sheppard</option>
+	<option value='25'>Brian Ahier</option>
+	<option value='35'>Brian Boyer</option>
+	<option value='533'>brian d foy</option>
+	<option value='494'>Brian d&#039;Alessandro</option>
+	<option value='244'>Brian Jepson</option>
+	<option value='481'>Brian MacDonald</option>
+	<option value='36'>Brian O&#039;Leary</option>
+	<option value='38'>Brian Sawyer</option>
+	<option value='37'>Bruce Stewart</option>
+	<option value='39'>Carl Hewitt</option>
+	<option value='40'>Carl Malamud</option>
+	<option value='328'>Cathy O&#039;Neil</option>
+	<option value='483'>Chao (Ray) Feng</option>
+	<option value='448'>Chiu-ki Chan</option>
+	<option value='516'>Chris Cornutt</option>
+	<option value='41'>Chris Meade</option>
+	<option value='284'>Chris Vander Mey</option>
+	<option value='300'>Chris Wiggins</option>
+	<option value='44'>Christine Perey</option>
+	<option value='42'>Ciara Byrne</option>
+	<option value='43'>Cliff Miller</option>
+	<option value='479'>Colt McAnlis</option>
+	<option value='306'>Courtney Nash</option>
+	<option value='45'>Dale Dougherty</option>
+	<option value='422'>Dan Saffer</option>
+	<option value='577'>Danese Cooper</option>
+	<option value='46'>Darren Barefoot</option>
+	<option value='430'>Dave Himrod</option>
+	<option value='47'>Dave McClure</option>
+	<option value='556'>Dave Zwieback</option>
+	<option value='435'>David Elfi</option>
+	<option value='49'>David Leinweber</option>
+	<option value='50'>David Recordon</option>
+	<option value='48'>David Sims</option>
+	<option value='559'>David Stephenson</option>
+	<option value='51'>DC Denison</option>
+	<option value='242'>Deni Auclair</option>
+	<option value='313'>Derek Jacoby</option>
+	<option value='427'>Dino Esposito</option>
+	<option value='53'>DJ Patil</option>
+	<option value='416'>Doug Finke</option>
+	<option value='52'>Doug Hill</option>
+	<option value='512'>Dr. Venkat Subramaniam</option>
+	<option value='575'>Drew Dara-Abrams</option>
+	<option value='348'>Duncan Ross</option>
+	<option value='491'>Dusty Phillips</option>
+	<option value='569'>DW Wheeler</option>
+	<option value='54'>Dylan Field</option>
+	<option value='55'>E.A. Vander Veer</option>
+	<option value='56'>Edd Dumbill</option>
+	<option value='236'>Edie Freedman</option>
+	<option value='465'>Eli Goodman</option>
+	<option value='392'>Elisabeth Robson</option>
+	<option value='58'>Elizabeth Corcoran</option>
+	<option value='544'>Ellen Friedman</option>
+	<option value='570'>Elliott Hauser</option>
+	<option value='514'>Elliotte Rusty Harold</option>
+	<option value='434'>Emma Jane Westby</option>
+	<option value='59'>Eoin Purcell</option>
+	<option value='451'>Eric Redmond</option>
+	<option value='60'>Eric Ries</option>
+	<option value='500'>Ezra Haber Glenn</option>
+	<option value='541'>Faye Williams</option>
+	<option value='578'>Federico Castanedo</option>
+	<option value='503'>Federico Lucifredi</option>
+	<option value='62'>Fred Trotter</option>
+	<option value='515'>Fred van den Bosch</option>
+	<option value='68'>Gabe Zichermann</option>
+	<option value='63'>Gavin Starks</option>
+	<option value='463'>George Reese</option>
+	<option value='519'>Glen Martin</option>
+	<option value='67'>Greg Whisenant</option>
+	<option value='66'>Gretchen Giles</option>
+	<option value='436'>Gustavo Franco</option>
+	<option value='581'>Hadley Wickham</option>
+	<option value='513'>Hari K Gottipati</option>
+	<option value='69'>Heather McCormack</option>
+	<option value='511'>Hew Wolff</option>
+	<option value='70'>Howard Wen</option>
+	<option value='71'>Hugh McGuire</option>
+	<option value='72'>Imran Ali</option>
+	<option value='470'>J. Paul Reed</option>
+	<option value='73'>James Bridle</option>
+	<option value='74'>James Turner</option>
+	<option value='338'>Janaya Williams</option>
+	<option value='558'>Jane Sarasohn-Kahn</option>
+	<option value='75'>Jason Grigsby</option>
+	<option value='573'>Jay Kreps</option>
+	<option value='529'>Jay McGavren</option>
+	<option value='350'>Jayant Shekar</option>
+	<option value='77'>Jeevan Padiyar</option>
+	<option value='429'>Jeff Gothelf</option>
+	<option value='375'>Jeff Needham</option>
+	<option value='530'>Jeffrey Carr</option>
+	<option value='78'>Jeffrey Carr</option>
+	<option value='80'>Jenn Webb</option>
+	<option value='81'>Jennifer Pahlka</option>
+	<option value='583'>Jeremy Freeman</option>
+	<option value='82'>Jeremy Howard</option>
+	<option value='83'>Jesper Andersen</option>
+	<option value='438'>Jesse Anderson</option>
+	<option value='84'>Jesse Robbins</option>
+	<option value='391'>Jessica McKellar</option>
+	<option value='534'>Jez Humble</option>
+	<option value='88'>Jim Stogdill</option>
+	<option value='87'>Jimmy Guterman</option>
+	<option value='342'>Jo Prichard</option>
+	<option value='89'>Jodee Rich</option>
+	<option value='340'>Joe Procopio</option>
+	<option value='413'>Johan Bergström</option>
+	<option value='92'>John Allspaw</option>
+	<option value='93'>John Battelle</option>
+	<option value='457'>John Boxall</option>
+	<option value='349'>John Feland</option>
+	<option value='351'>John Foreman</option>
+	<option value='86'>John Geraci</option>
+	<option value='85'>John Graham-Cumming</option>
+	<option value='94'>John Labovitz</option>
+	<option value='564'>John Lindquist</option>
+	<option value='495'>John Myles White</option>
+	<option value='95'>John Warren</option>
+	<option value='561'>John Wilbanks</option>
+	<option value='255'>Jon Bruner</option>
+	<option value='498'>Jon Callas</option>
+	<option value='555'>Jon Cowie</option>
+	<option value='444'>Jon Roberts</option>
+	<option value='101'>Jon Spinney</option>
+	<option value='98'>Jon Udell</option>
+	<option value='585'>Jonas Luster</option>
+	<option value='96'>Jonathan Alexander</option>
+	<option value='177'>Jonathan Reichental, Ph.D.</option>
+	<option value='499'>Jonathon Thurman</option>
+	<option value='97'>Jono Bacon</option>
+	<option value='90'>Joseph Hellerstein</option>
+	<option value='99'>Joseph J. Esposito</option>
+	<option value='546'>Josh Lockhart</option>
+	<option value='509'>Josh Simmons</option>
+	<option value='100'>Joshua-Michéle Ross</option>
+	<option value='464'>Joy Beatty</option>
+	<option value='103'>Jud Valeski</option>
+	<option value='104'>Julie Steele</option>
+	<option value='106'>Justin Hall</option>
+	<option value='107'>Justo Hidalgo</option>
+	<option value='117'>Karl Fogel</option>
+	<option value='108'>Kassia Krozser</option>
+	<option value='112'>Kat Meyer</option>
+	<option value='109'>Kate Eltham</option>
+	<option value='110'>Kate Pullinger</option>
+	<option value='453'>Kathryn Barrett</option>
+	<option value='111'>Kathy Walrath</option>
+	<option value='458'>Katie Cunningham</option>
+	<option value='557'>Katie Miller</option>
+	<option value='525'>Keith Comito</option>
+	<option value='113'>Keith Fahlgren</option>
+	<option value='114'>Ken Yarmosh</option>
+	<option value='115'>Kevin Shockey</option>
+	<option value='116'>Kevin Smokler</option>
+	<option value='454'>Khaled El Emam</option>
+	<option value='424'>Kipp Bradford</option>
+	<option value='469'>Kit Seeborg</option>
+	<option value='492'>kmatsudaira</option>
+	<option value='118'>Kurt Cagle</option>
+	<option value='523'>Lara Swanson</option>
+	<option value='121'>Laura Dawson</option>
+	<option value='412'>Laura Klein</option>
+	<option value='339'>Laurel Ruma</option>
+	<option value='122'>Laurie Petrycki</option>
+	<option value='123'>Leigh Dodds</option>
+	<option value='125'>Liliana Bounegru</option>
+	<option value='126'>Linda Stone</option>
+	<option value='127'>Liza Daly</option>
+	<option value='128'>Lucy Gray</option>
+	<option value='129'>Lukas Biewald</option>
+	<option value='151'>Mac Slocum</option>
+	<option value='130'>Madhusudhan Konda</option>
+	<option value='396'>Mandi Walls</option>
+	<option value='489'>Manish Lachwani</option>
+	<option value='132'>Marc Goodman</option>
+	<option value='131'>Marc Hedlund</option>
+	<option value='133'>Marie Bjerede</option>
+	<option value='134'>Mark Drapeau</option>
+	<option value='447'>Mark Grover</option>
+	<option value='431'>Mark Lutz</option>
+	<option value='135'>Mark Nelson</option>
+	<option value='554'>Mark Pacelle</option>
+	<option value='150'>Mark Sigal</option>
+	<option value='136'>Marko Gargenta</option>
+	<option value='291'>Mary Treseler</option>
+	<option value='142'>Matt Garrish</option>
+	<option value='567'>Matt Makai</option>
+	<option value='473'>Matt Neuburg</option>
+	<option value='140'>Matt Wood</option>
+	<option value='137'>Matthew Burton</option>
+	<option value='460'>Matthew Gast</option>
+	<option value='408'>Matthew McCullough</option>
+	<option value='138'>Matthew Russell</option>
+	<option value='468'>Matthew Russell</option>
+	<option value='387'>Max Kanat-Alexander</option>
+	<option value='388'>Max Shron</option>
+	<option value='289'>Meghan Blanchette</option>
+	<option value='579'>Mehdi Daoudi</option>
+	<option value='445'>Michael DeHaan</option>
+	<option value='144'>Michael Driscoll</option>
+	<option value='145'>Michael Ferrari</option>
+	<option value='456'>Michael Gold</option>
+	<option value='450'>Michael Hunger</option>
+	<option value='146'>Michael Jon Jensen</option>
+	<option value='476'>Michael Lopp</option>
+	<option value='532'>Michael McMillan</option>
+	<option value='537'>Michael Scroggins</option>
+	<option value='406'>Mike Amundsen</option>
+	<option value='418'>Mike Barlow</option>
+	<option value='147'>Mike Hendrickson</option>
+	<option value='143'>Mike Honda</option>
+	<option value='148'>Mike Loukides</option>
+	<option value='487'>Mike Petrovich</option>
+	<option value='149'>Mike Shatzkin</option>
+	<option value='493'>Mitchell Hashimoto</option>
+	<option value='352'>Naomi Robbins</option>
+	<option value='152'>Nat Torkington</option>
+	<option value='214'>Nate Osit</option>
+	<option value='308'>Nathan Jepson</option>
+	<option value='155'>Nick Bilton</option>
+	<option value='156'>Nick Farina</option>
+	<option value='420'>Nick Kolegraff</option>
+	<option value='157'>Nick Ruffilo</option>
+	<option value='341'>Nicolas Garcia Belmonte</option>
+	<option value='158'>Nikolaj Nyholm</option>
+	<option value='159'>O&#039;Reilly Radar</option>
+	<option value='354'>O&#039;Reilly Strata</option>
+	<option value='497'>Ohad Samet</option>
+	<option value='160'>Osman Rashid</option>
+	<option value='161'>Pablo Francisco Arrieta Gomez</option>
+	<option value='518'>Paco Nathan</option>
+	<option value='162'>Pamela Samuelson</option>
+	<option value='589'>Paris Buttfield-Addison</option>
+	<option value='549'>Patrick Mulder</option>
+	<option value='553'>Patrick Reynolds</option>
+	<option value='163'>Paul Spinrad</option>
+	<option value='524'>Pete Hodgson</option>
+	<option value='167'>Pete Warden</option>
+	<option value='166'>Peter Bennett</option>
+	<option value='307'>Peter Cooper</option>
+	<option value='371'>Peter Krautzberger</option>
+	<option value='294'>Peter Laflin</option>
+	<option value='590'>Peter Lewis</option>
+	<option value='164'>Peter Meyers</option>
+	<option value='521'>Philip Guo</option>
+	<option value='455'>Philipp Janert</option>
+	<option value='404'>Q Ethan McCallum</option>
+	<option value='169'>Quinn Norton</option>
+	<option value='172'>Rachel Roumeliotis</option>
+	<option value='173'>Rael Dornfest</option>
+	<option value='522'>Rajat Bhargava</option>
+	<option value='174'>Ramez Naam</option>
+	<option value='175'>Randy Bias</option>
+	<option value='176'>Raven Zachary</option>
+	<option value='443'>Ray DiGiacomo, Jr.</option>
+	<option value='263'>Renee DiResta</option>
+	<option value='485'>Richard Cook</option>
+	<option value='439'>Richard Dallaway</option>
+	<option value='423'>Richard Reese</option>
+	<option value='552'>Richard Warburton</option>
+	<option value='183'>Rob Tucker</option>
+	<option value='179'>Robbie Allen</option>
+	<option value='182'>Robert Kaye</option>
+	<option value='181'>Robert Passarella</option>
+	<option value='180'>Roberta Cairney</option>
+	<option value='548'>Roger Chen</option>
+	<option value='184'>Roger Magoulas</option>
+	<option value='287'>Ron Miller</option>
+	<option value='178'>Roseanne Fallin</option>
+	<option value='484'>Ryan Bethencourt</option>
+	<option value='551'>Ryan Neufeld</option>
+	<option value='185'>Ryan Stewart</option>
+	<option value='568'>Sam Newman</option>
+	<option value='540'>Samuel Mullen</option>
+	<option value='186'>Sanders Kleinfeld</option>
+	<option value='191'>Sara Peyton</option>
+	<option value='187'>Sara Winge</option>
+	<option value='189'>Sarah Milstein</option>
+	<option value='190'>Sarah Novotny</option>
+	<option value='531'>Scott Jenson</option>
+	<option value='566'>Scott Murray</option>
+	<option value='563'>Scott Rich</option>
+	<option value='192'>Scott Ruthfield</option>
+	<option value='449'>Sean McGregor</option>
+	<option value='194'>Sébastien Pierre</option>
+	<option value='547'>Semmy Purewal</option>
+	<option value='409'>Seth Ladd</option>
+	<option value='195'>Shahid Shah</option>
+	<option value='504'>Shai Almog</option>
+	<option value='586'>Shyam Seshadri</option>
+	<option value='196'>Silona Bonewald</option>
+	<option value='576'>Simon Chan</option>
+	<option value='215'>Simon Phipps</option>
+	<option value='198'>Simon St. Laurent</option>
+	<option value='197'>Simon Wardley</option>
+	<option value='363'>Stephen O&#039;Grady</option>
+	<option value='475'>Stephen O&#039;Grady</option>
+	<option value='199'>Steve Souders</option>
+	<option value='560'>Steven Citron-Pousty</option>
+	<option value='417'>Stoyan Stefanov</option>
+	<option value='200'>Suzanne Axtell</option>
+	<option value='202'>Tara Hunt</option>
+	<option value='572'>Terrence Dorsey</option>
+	<option value='203'>Terry Jones</option>
+	<option value='201'>Tim Anderson</option>
+	<option value='459'>Tim Darling</option>
+	<option value='204'>Tim O&#039;Reilly</option>
+	<option value='205'>Timothy M. O&#039;Brien</option>
+	<option value='206'>Tish Shute</option>
+	<option value='526'>Toby Inkster</option>
+	<option value='207'>Todd Sattersten</option>
+	<option value='432'>Tom Eisenmann</option>
+	<option value='208'>Tom Steinberg</option>
+	<option value='209'>Tony Quartarolo</option>
+	<option value='502'>Trisha Gee</option>
+	<option value='210'>Troy Topnik</option>
+	<option value='211'>Tyler Bell</option>
+	<option value='538'>Valeri Karpov</option>
+	<option value='474'>Vandad Nahvandipoor</option>
+	<option value='212'>Vanessa Fox</option>
+	<option value='535'>Varun Nagaraj</option>
+	<option value='346'>Will Cukierski</option>
+	<option value='580'>William O&#039;Connor</option>
+	<option value='401'>Zigurd Mednieks</option>
+</select>					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div id="text-39" class="widget-container widget_text"><h3 class="widget-title">CONTACT US</h3>			<div class="textwidget"><p style=" font-size: 12px;  line-height: 1.3; font-weight: bold;">Radar managing editor <br /> 
+<a href="mailto:contactradar@oreilly.com?subject=Contact Radar">Jenn Webb</a></p></div>
+		<div class="clear"></div></div>	<div class="clear"></div>
+</div>	</div><!-- #container -->
+	</div><!-- #main -->
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+			<div id="footer-top">			
+							<div class="execphpwidget"><div class="label">
+Sign up today to receive special discounts,<br> product alerts, and news from O'Reilly.</div>
+<div class="form">
+	<form method="POST" id="emailSignUp" action="http://post.oreilly.com/client/o/oreilly/forms/quicksignup.cgi"> 
+		<input type="hidden" name="client_token" value="oreilly" />
+		<input type="hidden" name="subscribe" value="optin" />
+                 <input type="hidden" name="success_url" value="http://oreilly.com/store/newsletter-thankyou.html" /> 
+                  <input type="hidden" name="error_url" value="http://oreilly.com/store/newsletter-signup-error.html" /> 
+                  <input type="hidden" name="news_oreilly" value="1" />
+		  <input type="text" name="email_addr" value="Enter Email" onblur="if (this.value == '')  {this.value = 'Enter Email';}" onfocus="if (this.value == 'Enter Email') {this.value = '';}" widdit="off" autocomplete="off" maxlength="100" size="12" class="email-box" />
+		 <input border="0" type="image" alt="Submit" src="http://cdn.oreillystatic.com/images/sitewide-headers/emailsignup_btn.gif" name="submit" value="submit">
+		<div class="clear"></div>
+	</form>
+</div>
+<div class="privacy">					
+	<a href="http://oreilly.com/oreilly/privacy.html">Privacy Policy &gt;</a>					
+	<a href="http://oreilly.com/pdf/sample-newsletter.pdf">View Sample Newsletter &gt;</a>		
+</div>
+</div>
+			
+				
+				<div class="menu-social-btm"><ul id="menu-social-btn-bottom" class="menu"><li id="menu-item-48494" class="social twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-48494"><a href="http://twitter.com/oreillymedia">Twitter</a></li>
+<li id="menu-item-48491" class="social youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-48491"><a href="http://youtube.com/oreillymedia">YouTube</a></li>
+<li id="menu-item-48492" class="social slideshare menu-item menu-item-type-custom menu-item-object-custom menu-item-48492"><a href="http://slideshare.net/oreillymedia">Slideshare</a></li>
+<li id="menu-item-48493" class="social facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-48493"><a href="https://www.facebook.com/OReillyRadar">Facebook</a></li>
+<li id="menu-item-48495" class="social googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-48495"><a href="https://plus.google.com/105451978536505503907">Google+</a></li>
+<li id="menu-item-48496" class="social rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48496"><a href="http://feeds.feedburner.com/oreilly/news">RSS</a></li>
+<li id="menu-item-48497" class="all-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48497"><a href="http://oreilly.com/feeds">View All RSS Feeds ></a></li>
+</ul></div>				<div class="clear"></div>
+			</div>
+							<div class="execphpwidget"><div id="multiColumnFooter">	
+<div id="footer-branding">
+		<p class="copyright">&copy; 2014, O'Reilly Media, Inc.</p>
+		<p><span class="phone-number">(707) 827-7019</span><span class="phone-number">(800) 889-8969</span></p>
+		<p class="trademarks">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+	</div>
+	
+	<div class="contentSectionBlock">
+		<!-- style="width:25%;" -->
+		<div class="contentSectionContainer">			
+				<h3>About O'Reilly</h3>
+				<div class="menu-about-oreilly-container"><ul id="menu-about-oreilly" class="menu"><li id="menu-item-50110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50110"><a href="http://radar.oreilly.com/about/">About O&#8217;Reilly Radar</a></li>
+<li id="menu-item-67911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67911"><a href="http://radar.oreilly.com/radar-contributors/">Radar Contributors</a></li>
+<li id="menu-item-48510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48510"><a href="http://oreilly.com/academic/">Academic Solutions</a></li>
+<li id="menu-item-48511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48511"><a href="http://oreilly.com/jobs/">Jobs</a></li>
+<li id="menu-item-48512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48512"><a href="http://oreilly.com/contact.html">Contacts</a></li>
+<li id="menu-item-48513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48513"><a href="http://oreilly.com/about/">Corporate Information</a></li>
+<li id="menu-item-48514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48514"><a href="http://press.oreilly.com/index.html">Press Room</a></li>
+<li id="menu-item-48515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48515"><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+<li id="menu-item-48516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48516"><a href="http://oreilly.com/terms/">Terms of Service</a></li>
+<li id="menu-item-48517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48517"><a href="http://oreilly.com/oreilly/author/intro.csp">Writing for O&#8217;Reilly</a></li>
+<li id="menu-item-68743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68743"><a href="http://www.oreilly.com/about/editorial_independence.html">Editorial Independence</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Community</h3>
+				<div class="menu-community-2-container"><ul id="menu-community-2" class="menu"><li id="menu-item-48518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48518"><a href="http://oreilly.com/authors/">Authors</a></li>
+<li id="menu-item-48519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48519"><a href="http://oreilly.com/community/">Community &#038; Featured Users</a></li>
+<li id="menu-item-48520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48520"><a href="http://forums.oreilly.com/">Forums</a></li>
+<li id="menu-item-48521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48521"><a href="https://members.oreilly.com/">Membership</a></li>
+<li id="menu-item-48522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48522"><a href="http://elists.oreilly.com/">Newsletters</a></li>
+<li id="menu-item-48523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48523"><a href="http://answers.oreilly.com/">O&#8217;Reilly Answers</a></li>
+<li id="menu-item-48524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48524"><a href="http://oreilly.com/feeds/">RSS Feeds</a></li>
+<li id="menu-item-56120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56120"><a href="http://chimera.labs.oreilly.com/">O&#8217;Reilly Chimera (beta)</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">	
+                                <h3>Partner Sites</h3>
+				  <div class="menu-partner-sites-container"><ul id="menu-partner-sites" class="menu"><li id="menu-item-48503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48503"><a target="_blank" href="http://makezine.com/">makezine.com</a></li>
+<li id="menu-item-48504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48504"><a target="_blank" href="http://makerfaire.com/">makerfaire.com</a></li>
+<li id="menu-item-55273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55273"><a target="_blank" href="http://craftzine.com/">craftzine.com</a></li>
+<li id="menu-item-55274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55274"><a target="_blank" href="http://igniteshow.com/">igniteshow.com</a></li>
+<li id="menu-item-55275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55275"><a target="_blank" href="https://developer.paypal.com/">PayPal Developer Zone</a></li>
+<li id="menu-item-55276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55276"><a target="_blank" href="http://blogs.forbes.com/oreillymedia/">O&#8217;Reilly Insights on Forbes.com</a></li>
+</ul></div>			
+		</div>
+			
+
+		<!-- style="width:24%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Shop O'Reilly</h3>
+			<div class="menu-shop-oreilly-container"><ul id="menu-shop-oreilly" class="menu"><li id="menu-item-48505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48505"><a href="http://shop.oreilly.com/category/customer-service.do">Customer Service</a></li>
+<li id="menu-item-48506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48506"><a href="http://shop.oreilly.com/category/customer-service.do">Contact Us</a></li>
+<li id="menu-item-48507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48507"><a href="http://shop.oreilly.com/category/customer-service/shipping-information.do">Shipping Information</a></li>
+<li id="menu-item-48508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48508"><a href="http://shop.oreilly.com/category/customer-service/ordering-payment.do">Ordering &#038; Payment</a></li>
+<li id="menu-item-56665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56665"><a href="http://oreilly.com/affiliates/">Affiliate Program</a></li>
+<li id="menu-item-48509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48509"><a href="http://shop.oreilly.com/category/customer-service/oreilly-guarantee.do">The O&#8217;Reilly Guarantee</a></li>
+</ul></div>		
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+<div class="clear"></div>
+</div></div>
+			
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+</div><!-- #wrapper -->
+<script language="JavaScript" type="text/javascript">
+var s_account="orradar,orglobal" // change report suite ID accordingly
+</script>
+<!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://cdn.oreillystatic.com/assets/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+s.pageName="radar:the evolving purpose of design"
+s.channel= "radar"
+s.prop1="radar:design"
+s.prop2="radar:design:design"
+s.prop3="radar:design:design:design"
+s.prop4="article"
+s.hier1="radar,design,design,design"
+s.prop5="the evolving purpose of design"
+s.prop6="RD60120"
+s.prop7="04/10/2014" // publish date
+//s.prop15=""
+//These props should be set when a blog/article is read, post or reply made.
+s.prop21="glen martin" // author name
+s.prop22="radar" // blog name
+s.prop23="the evolving purpose of design" // entry title
+s.prop24="04/10/2014" // post date
+//s.prop25="" // days since last post
+s.prop26="thursday" // day of week
+s.prop27="" // Level
+/* Conversion Variables */
+s.campaign=""
+s.events=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+<script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"radar.oreilly.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<style type="text/css">
+#newsletter-popup-overlay { display: none; position: absolute; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); background: none\9; }
+#newsletter-popup-overlay .popup { overflow: hidden; margin: 10% auto 0; background-color: #f9f9f9; text-align: center; width: 740px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); border: 2px solid #ddd; }
+#newsletter-popup-overlay .popup .popup-header { background-color: #fff; padding: 10px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+#newsletter-popup-overlay .popup.data .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/data-nl-popup-fish.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.programming .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.solid .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.velocity .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/velocity-nl-popup-greyhound.jpg') -4px bottom no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close { font-size: 16px; line-height: 19px; color: #999; display: block; padding-right: 24px; float: right; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right 0 no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close:hover { color: #666; text-decoration: none; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right -100px no-repeat; }
+#newsletter-popup-overlay .popup .popup-header h3 { max-width: 500px; width: 100%; margin: 20px auto 5px auto; padding: 0; font-size: 40px; line-height: 44px; font-weight: normal; }
+#newsletter-popup-overlay .popup .popup-header p { max-width: 500px; width: 100%; margin: 0 auto 10px; padding: 0; font-size: 20px; line-height: 28px; font-weight: normal; }
+#newsletter-popup-overlay .popup-form { margin: 15px auto 0; padding: 10px 10px 5px 10px; text-align: left; }
+#newsletter-popup-overlay #newsletter-popup-frame { display: block; border: none; padding: 0; margin: 0 auto; width: 100%; max-width: 450px; height: 100px; text-align: left; }
+@media screen and (max-width: 950px) {
+  #newsletter-popup-overlay .popup{ width: 96% !important; }
+}
+@media screen and (max-width:740px) {
+  #newsletter-popup-overlay .popup.data .popup-header, #newsletter-popup-overlay .popup.programming .popup-header, #newsletter-popup-overlay .popup.solid .popup-header, #newsletter-popup-overlay .popup.velocity .popup-header { background: #fff; }
+  #newsletter-popup-overlay .popup .popup-header h3 { font-size:30px; line-height:32px; }
+}
+</style>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/newsletter.js"></script>
+
+
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'oreillyradar';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<!-- MathJax Latex Plugin installed: Disabled as no shortcodes on this page --><script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/comment-reply.min.js?ver=4.0'></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery('.fluid-width-video-wrapper iframe').each(function(){
+    var youtube_url = jQuery(this).attr('src');
+    if(youtube_url.substring(0,2) == "//"){
+      youtube_url = youtube_url.substring(2);
+    }
+    var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+    if(youtube_url.match(p)){
+      var youtube = youtube_url.split('/');
+      var youtube_last_index = youtube[4].split('?');
+      var youtube_id = youtube_last_index[0];
+      var new_div = document.createElement("div");
+      jQuery(new_div).addClass('js-lazyYT');
+      jQuery(new_div).attr('data-youtube-id',youtube_id);
+      jQuery(new_div).attr('data-ratio','16:9');
+      jQuery(this).after(new_div);
+      jQuery(this).parent().css("padding","0");
+      jQuery(this).remove();
+      jQuery('.lazyYT-title').hide();
+    }
+  });
+  jQuery('.js-lazyYT').lazyYT();
+});
+
+</script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/lazyYT.min.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/script.js??ss=1"></script>
+<script> 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() 
+  { (i[r].q=i[r].q||[]).push(arguments)} 
+  ,i[r].l=1*new 
+  Date();a=s.createElement(o), 
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+  ga('create', 'UA-22979035-1', 'auto'); 
+  ga('send', 'pageview'); 
+</script>
+
+
+
+
+</body>
+</html>

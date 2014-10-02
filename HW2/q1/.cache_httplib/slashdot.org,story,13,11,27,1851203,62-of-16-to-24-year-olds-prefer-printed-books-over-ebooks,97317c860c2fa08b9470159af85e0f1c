@@ -1,0 +1,3068 @@
+status: 200
+content-length: 142512
+x-varnish: 1940982116
+content-location: http://slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks
+set-cookie: betagroup=81; path=/;
+ expires=Fri, 23-Sep-2016 22:11:12 GMT, betagroup=81; path=/;
+ domain=.slashdot.org; expires=Fri, 23-Sep-2016 22:11:12 GMT,
+ TS01718c09=016920fe0dc607f8d994f2913cf1e7f347c0ba73b4a17a9f84dd674b80fd068ad70cff10b8e2f9cd2b7f577610b298372684cd1e78;
+ Path=/,
+ TS0142ec7d=016920fe0dc607f8d994f2913cf1e7f347c0ba73b4a17a9f84dd674b80fd068ad70cff10b8e2f9cd2b7f577610b298372684cd1e78;
+ path=/; domain=.slashdot.org
+age: 1
+vary: Accept-Encoding, User-Agent
+connection: keep-alive
+-content-encoding: gzip
+pragma: no-cache
+cache-control: no-cache
+date: Wed, 24 Sep 2014 22:11:13 GMT
+content-type: text/html; charset=utf-8
+x-xrds-location: http://slashdot.org/slashdot.xrds
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.8 (gzip)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+<script id="before-content" type="text/javascript">
+(function () {
+    if (typeof window.sdmedia !== 'object') window.sdmedia = {};
+    if (typeof window.sdmedia.site !== 'object') window.sdmedia.site = {};
+
+    var site = window.sdmedia.site;
+    site.rootdir = "//slashdot.org";
+}());
+
+var pageload = {
+	pagemark: '496923035214265211',
+	before_content: (new Date).getTime()
+};
+function pageload_done( $, console, maybe ){
+	pageload.after_readycode	= (new Date).getTime();
+	pageload.content_ready_time	= pageload.content_ready - pageload.before_content;
+	pageload.script_ready_time	= pageload.after_readycode - pageload.content_ready;
+	pageload.ready_time		= pageload.after_readycode - pageload.before_content;
+	// Only report 1% of cases.
+	maybe || (Math.random()>0.01) || $.ajax({ data: {
+		op: 'page_profile',
+		pagemark: pageload.pagemark,
+		dom: pageload.content_ready_time,
+		js: pageload.script_ready_time
+	} });
+}
+</script>
+
+
+	<title>62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks - Slashdot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<meta name="description" content="assertation writes &#34;According to The Guardian, 62% of readers between the age of 16 and 24 prefer physical copies of books over ebooks.  Reasons given were the feel of 'real books,' a perceived unfairly high cost for eBooks, and the ease of sharing printed books. 'On questions of ebook pricing, 28% ...">
+	<meta itemprop="name" content="62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks - Slashdot">
+	<meta itemprop="description" content="assertation writes &#34;According to The Guardian, 62% of readers between the age of 16 and 24 prefer physical copies of books over ebooks.  Reasons given were the feel of 'real books,' a perceived unfairly high cost for eBooks, and the ease of sharing printed books. 'On questions of ebook pricing, 28% ...">
+
+
+	<meta property="fb:admins" content="100000696822412">
+	<meta property="fb:page_id" content="267995220856">
+
+	<meta name="viewport" content="width=1000, user-scalable=yes, minimum-scale=0, maximum-scale=10.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta property="og:image" content="http://a.fsdn.com/sd/topics/books_64.png">
+
+
+	<link rel="canonical" href="http://news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks">
+
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//a.fsdn.com/sd/classic.css?release_20140903" >
+<!--[if IE 8]><link rel="stylesheet" type="text/css" media="screen, projection" href="//a.fsdn.com/sd/ie8-classic.css?release_20140903" ><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen, projection" href="//a.fsdn.com/sd/ie7-classic.css?release_20140903" ><![endif]-->
+
+
+
+
+
+
+
+<!--  -->
+
+
+
+
+
+
+
+
+<script src="//a.fsdn.com/sd/all-minified.js?release_20140903" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+(function(){
+var regexp=/\s*(?:\d+|many)\s+more\s*/i;
+
+	
+	var auto_more_count = 1;
+
+	function auto_more(){
+		var $more_link = $('#more-experiment a');
+		$more_link.each(function(){
+			var $lastitem = $('#firehoselist>article.fhitem:visible:last');
+			if ( Bounds.intersect(window, $lastitem) ) {
+			
+			
+				!--auto_more_count && (auto_more=undefined);
+				// don't allow a call till the next paginate gets built and |more_possible|
+				$(document).unbind('scroll', call_auto_more);
+			}
+		});
+	};
+
+	function call_auto_more(){ auto_more && auto_more(); }
+	
+
+$('#more-experiment a').
+	live('more-possible', function( event ){
+		var $more_link=$(this);
+		if ( regexp.test($more_link.text()) ) {
+		
+			$(document).bind('scroll', call_auto_more);
+		} else {
+			$(document).unbind('scroll', call_auto_more);
+		
+		}
+	});
+})();
+</script>
+<!--[if lt IE 9]><script src="//a.fsdn.com/sd/html5.js"></script><![endif]-->
+
+
+<script type="text/javascript">
+(function() {
+    if (typeof window.janrain !== 'object') window.janrain = {};
+    if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
+    
+    /* _______________ can edit below this line _______________ */
+
+    janrain.settings.tokenUrl = 'https://slashdot.org/token_callback.pl';
+    janrain.settings.type = 'embed';
+    janrain.settings.appId = 'ggidemlconlmjciiohla';
+    janrain.settings.appUrl = 'https://login.slashdot.org';
+    janrain.settings.providers = ["google","twitter","facebook", "linkedin"];
+    janrain.settings.providersPerPage = '4';
+    janrain.settings.format = 'one column';
+    janrain.settings.actionText = 'Sign in using your account with';
+    janrain.settings.showAttribution = false;
+    janrain.settings.fontColor = '#666666';
+    janrain.settings.fontFamily = 'lucida grande, Helvetica, Verdana, sans-serif';
+    janrain.settings.backgroundColor = '#ffffff';
+    janrain.settings.width = '308';
+    janrain.settings.borderColor = '#C0C0C0';
+    janrain.settings.borderRadius = '5';    janrain.settings.buttonBorderColor = '#CCCCCC';
+    janrain.settings.buttonBorderRadius = '5';
+    janrain.settings.buttonBackgroundStyle = 'gradient';
+    janrain.settings.language = 'en';
+    janrain.settings.linkClass = 'janrainEngage';
+
+    /* _______________ can edit above this line _______________ */
+
+    function isReady() { janrain.ready = true; };
+    if (document.addEventListener) {
+      document.addEventListener("DOMContentLoaded", isReady, false);
+    } else {
+      window.attachEvent('onload', isReady);
+    }
+
+    var e = document.createElement('script');
+    e.type = 'text/javascript';
+    e.id = 'janrainAuthWidget';
+
+    if (document.location.protocol === 'https:') {
+      e.src = 'https://rpxnow.com/js/lib/login.slashdot.org/engage.js';
+    } else {
+      e.src = 'http://widget-cdn.rpxnow.com/js/lib/login.slashdot.org/engage.js';
+    }
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
+})();
+</script>
+
+<script type="text/javascript">
+(function() {
+    if (typeof window.janrain !== 'object') window.janrain = {};
+    if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
+    if (typeof window.janrain.settings.share !== 'object') window.janrain.settings.share = {};
+    if (typeof window.janrain.settings.packages !== 'object') janrain.settings.packages = [];
+    janrain.settings.packages.push('share');
+
+    /* _______________ can edit below this line _______________ */
+
+    janrain.settings.share.providers = ["facebook","twitter","linkedin"];
+    janrain.settings.share.providersEmail = [];
+    janrain.settings.share.modes = ["broadcast","contact"];
+    janrain.settings.share.attributionDisplay = false;
+    janrain.settings.share.message = "";
+    janrain.settings.share.title = "";
+    janrain.settings.share.url = "";
+    janrain.settings.share.description = "";
+
+    // Modal Styles
+    janrain.settings.share.modalBackgroundColor = "#000000";
+    janrain.settings.share.modalBorderRadius = "5";
+    janrain.settings.share.modalOpacity = "0.5";
+    janrain.settings.share.modalWidth = "5";
+
+    // Body Styles
+    janrain.settings.share.bodyBackgroundColor = "#009DDC";
+    janrain.settings.share.bodyBackgroundColorOverride = false;
+    janrain.settings.share.bodyColor = "#333333";
+    janrain.settings.share.bodyContentBackgroundColor = "#ffffff";
+    janrain.settings.share.bodyFontFamily = "Helvetica";
+    janrain.settings.share.bodyTabBackgroundColor = "#f8f8f8";
+    janrain.settings.share.bodyTabColor = "#000000";
+
+    // Element Styles
+    janrain.settings.share.elementBackgroundColor = "#f6f6f6";
+    janrain.settings.share.elementBorderColor = "#cccccc";
+    janrain.settings.share.elementBorderRadius = "3";
+    janrain.settings.share.elementButtonBorderRadius = "6";
+    janrain.settings.share.elementButtonBoxShadow = "3";
+    janrain.settings.share.elementColor = "#333333";
+    janrain.settings.share.elementHoverBackgroundColor = "#eeeeee";
+    janrain.settings.share.elementLinkColor = "#009DDC";
+
+    /* _______________ can edit above this line _______________ */
+
+    function isReady() { janrain.ready = true; };
+    if (document.addEventListener) {
+        document.addEventListener("DOMContentLoaded", isReady, false);
+    } else {
+        window.attachEvent('onload', isReady);
+    }
+
+    var e = document.createElement('script');
+    e.type = 'text/javascript';
+    e.id = 'janrainWidgets';
+
+    if (document.location.protocol === 'https:') {
+      e.src = 'https://rpxnow.com/js/lib/login.slashdot.org/widget.js';
+    } else {
+      e.src = 'http://widget-cdn.rpxnow.com/js/lib/login.slashdot.org/widget.js';
+    }
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
+})();
+
+$(document).ready(function(){
+    if(janrain) {
+        $("a.janrain").live('click', function () {
+
+            var $anchor = $(this);
+            var provider = $anchor.attr("data-provider");
+            var url = $anchor.attr("data-url");
+            var message = $anchor.attr("data-message");
+            var title = $anchor.attr("data-title");
+
+            janrain.engage.share.reset();
+            janrain.engage.share.showProvider(provider);
+            janrain.engage.share.setTitle(title);
+            janrain.engage.share.setMessage(message);
+            janrain.engage.share.setUrl(url);
+            janrain.engage.share.show();
+            return false;
+         });
+    }
+});
+
+
+</script><link rel="top"       title="News for nerds, stuff that matters" href="//slashdot.org/" >
+<link rel="search"    title="Search Slashdot" href="//slashdot.org/search.pl">
+<link rel="alternate" title="Slashdot RSS" href="http://rss.slashdot.org/Slashdot/slashdot" type="application/rss+xml">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!-- load GPT library: asynchronous -->
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+	var gads = document.createElement('script');
+	gads.async = true;
+	gads.type = 'text/javascript';
+	var useSSL = 'https:' == document.location.protocol;
+	gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+
+
+<!-- prep GPT ads -->
+<script type='text/javascript'>
+(function() {
+	function page_type (loc) {
+		/*
+		only four page types:
+		- Story
+		- Poll
+		- Homepage (/ only)
+		- Other (but AdOps wants 'Homepage' again)
+		*/
+		var path = loc.pathname;
+		var just_the_root = /^\/?$/.test(path);
+		var story_or_poll = /^\/(story|submission|poll)\//i.exec(path);
+
+		var page_type = just_the_root ? 'homepage'
+		              : story_or_poll ? story_or_poll[1]
+		              :                 'other'
+
+		// exceptions
+		page_type = page_type.toLowerCase() === 'submission'
+		          ? 'story'  // submissions are like stories, right?
+		          : page_type
+		page_type = page_type.toLowerCase() === 'other'
+		          ? 'homepage'  // this one might move out of here
+		          : page_type;
+
+		return page_type;
+	}
+	function page_section (loc) {
+		var greek = ['alpha', 'beta', 'gamma', 'delta'].join('|');
+		var hostwise = '^([a-z]+)(?:-(?:'+greek+'))?\\.(?:slashdot\\.org|[a-z]+-[0-9]+\\.sb\\.sf\\.net)$';
+		var pathwise = '^/(?:(recent|popular|blog)|stories/([^/]+))';
+		var rootwise = '^\/?$';
+
+		var hostwisely = new RegExp(hostwise,'i').exec(loc.hostname);
+		var pathwisely = new RegExp(pathwise,'i').exec(loc.pathname);
+		var rootwisely = new RegExp(rootwise,'i').exec(loc.pathname);
+
+		var all_greek_to_me = new RegExp( '^(' + greek + ')$' ,'i');
+
+		function no_greek_for_me (barbarian) {
+			return all_greek_to_me.test(barbarian)
+			     ? false
+			     : barbarian
+			     ;
+		}
+
+		var section = (hostwisely && no_greek_for_me(hostwisely[1]))
+		           || (rootwisely && 'homepage')
+		           || (pathwisely && (pathwisely[1] || pathwisely[2]))
+		           || ''
+		            ;
+
+                section.replace(/[^_a-z]/ig, '');
+
+		return section;
+	}
+	function single_size (size) {
+		return '' + size[0] + 'x' + size[1];
+	}
+	function sz_sz (sz) {
+		var str = '';
+		var sizes = [];
+		if (sz[0] instanceof Array) {
+			for (size in sz) {
+				sizes.push(single_size(sz[size]));
+			}
+			return sizes.join(',');
+		} else {
+			return single_size(sz);
+		}
+	}
+
+	function merge_tpc_array_to_str(array1,array2) {
+		var tpc_final = array1.concat(array2);
+		var uniq = tpc_final.reduce(function(a,b){
+		if (a.indexOf(b) < 0 ) a.push(b);
+			return a;
+		},[]);
+  
+		var tpc_str = uniq.join(',');
+		tpc_str = tpc_str.replace(/[^_a-z,]/ig, '');
+		tpc_str = tpc_str.replace(/^,/ig, '');
+		return tpc_str;
+	}
+
+	/* LEGEND: 
+		- 'sz' = "size"
+		- 'npt' = "no page type" in ad unit name
+		- 'oops' = "out-of-page slot" for great justice
+	*/
+	var tags = {
+
+		               '728x90_A': { 'sz': [[728, 90], [970, 90], [970, 250], [980, 66]] }
+
+		,              '728x90_B': { 'sz': [728, 90] }
+		,      'HubIcon_200x90_A': { 'sz': [[200, 90], [220, 90]]}
+		,  'PowerSwitch_980x66_A': { 'sz': [980, 66] }
+		,              'PollPeel': { 'sz': [200, 90] }
+		,   'VideoWidget_300x250': { 'sz': [300, 250], 'npt': 1 }
+		,             '300x250_A': { 'sz': [[300, 250], [300, 600], [300, 1050]] }
+		,             '300x250_B': { 'sz': [[300, 250], [300, 600]] }
+		,             '300x250_C': { 'sz': [[300, 250], [300, 600]] }
+		,             '300x250_D': { 'sz': [[300, 250], [300, 600]] }
+	};
+
+	var network_path = '/4140/ostg.slashdot/';
+	var tag_name_prefix = 'SD';
+	var tag_name_linkage = '_';
+	var tag_name_pagetype = page_type(location);
+	var tag_topic = page_section(location);
+
+	var before_tag_pagetyped    = network_path
+	                            + tag_name_prefix
+	                            + tag_name_linkage
+	                            + tag_name_pagetype
+	                            + tag_name_linkage
+	                            ;
+	var before_tag_pagetypeless = network_path
+	                            + tag_name_prefix
+	                            + tag_name_linkage
+	                         /* + tag_name_pagetype */
+	                         /* + tag_name_linkage */
+	                            ;
+
+
+	googletag.cmd.push(function() {
+		function define_me_a_slot (tag, oops) {
+			var sandbox_regex = /[a-z]+-[0-9]+\.sb\.sf\.net$/i;
+			var beta_regex = /\b(alpha|beta|gamma|delta)\b/i;
+			var full_name = tags[tag].npt  // "no page type"
+			              ? before_tag_pagetypeless + tag
+			              : before_tag_pagetyped    + tag
+			              ;
+			var div_id = 'div-gpt-ad-' + tag.toLowerCase();
+
+			var service;
+			if (oops) {  // out-of-page slot
+				console.log(full_name + ": define out of page slot (" + div_id + "-oops)");
+				service = googletag.defineOutOfPageSlot(
+					  full_name
+					, div_id + '-oops'
+				).addService(googletag.pubads());
+			} else {
+				console.log(full_name + ": define slot (" + div_id + ")");
+				service = googletag.defineSlot(
+					  full_name
+					, tags[tag].sz
+					, div_id
+				).addService(googletag.pubads());
+			}
+			if (!oops) {  // no sizes for out-of-page slots
+				service.setTargeting('sz', tags[tag].sz);
+			}
+
+			
+			var frontend_tpc = tag_topic.split(","); 
+			var backend_tpc = [ "books", "news", "oldschool", "ebooks", "physical", "luddites" ];
+
+			var tpc_final = merge_tpc_array_to_str(frontend_tpc,backend_tpc);
+
+			service.setTargeting('tpc', tpc_final);
+			if (location.hostname.match(sandbox_regex)) {
+				service.setTargeting('test', 'adops');
+			}
+			if (location.hostname.match(beta_regex)) {
+				service.setTargeting('site', 'beta');
+			}
+
+			// this is a little hackish: if slot has oops:1
+			//  then do the same slot one more time,
+			//  but set it up as out-of-page
+			if (tags[tag].oops) {  // "out-of-page slot"
+				tags[tag].oops = 0;  // infinite recursion!
+				define_me_a_slot(tag, true);
+			}
+		}
+
+		for (tag in tags) {
+			define_me_a_slot(tag, false);
+		}
+
+		googletag.pubads().enableAsyncRendering();
+
+		//googletag.pubads().enableSingleRequest();
+		googletag.pubads().collapseEmptyDivs();
+		googletag.enableServices();
+	});
+})();
+</script>
+
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-32013-5";
+
+var _gaq = _gaq || [];
+
+
+
+
+
+  _gaq.push(['_setAccount', 'UA-36136016-1']);
+  _gaq.push(['b._setAccount', 'UA-32013-5']);
+  _gaq.push(['_setDomainName', '.slashdot.org']);
+  _gaq.push(['b._setDomainName', '.slashdot.org']);
+
+	
+		_gaq.push(['_addIgnoredRef', 'slashdot.org']);
+		_gaq.push(['b._addIgnoredRef', 'slashdot.org']);
+	
+
+
+  _gaq.push(['_setCustomVar', 1, 'User Type',  'Anon', 3]);
+  _gaq.push(['b._setCustomVar', 1, 'User Type',  'Anon', 3]);		
+	
+	_gaq.push(['_setCustomVar', 2, 'Page','article2', 3]);
+	_gaq.push(['b._setCustomVar', 2, 'Page','article2', 3]);
+
+	
+
+
+
+// track beta behavior for user
+var betamatches = document.cookie.match(/betagroup=(-?\d+)/);
+
+if(betamatches && betamatches[1]) {
+  if(betamatches[1] == -1) {
+    _gaq.push(['_setCustomVar', 3, 'Beta-Usage','opt-out', 3]);
+  } else {
+    _gaq.push(['_setCustomVar', 3, 'Beta-Usage','unredirected', 3]);
+  }
+}
+
+
+
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['b._trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+  _gaq.push(['b._trackPageLoadTime']);
+
+
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body class="anon firehose ">
+
+
+    <div id="top_parent"></div>
+    <a name="topothepage"></a>
+
+    <!-- <div id="topadspace">
+        <table id="topadtable"><tr><td>
+        <div id='div-gpt-ad-728x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a');});</script></div>
+        <div id='div-gpt-ad-728x90_a-oops'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a-oops');});</script></div>
+        </td>
+        <td>
+        <div id='div-gpt-ad-hubicon_200x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-hubicon_200x90_a');});</script></div>
+        </td></tr></table>
+    </div> -->
+
+    <header class="col_wrapper container clearfix h">
+        <hgroup>
+            <section class="grid_9">
+                <div id="logo" >
+                    <a href="//slashdot.org"><span>Slashdot</span></a>
+                    <div id="jump" class="hide">
+                            <a href="#main-articles">Stories</a><br>
+                            <a href="#blocks">Slash Boxes</a><br>
+                            <a href="#comments">Comments</a>
+                    </div>
+                </div>
+                <a class='data-title' href='/slash-stats/week' id='sg_hof_mvtest_title' onclick="showHof('week'); return false;"><span class='ui-icon medal ico-w'></span></a>
+                
+                
+
+                <form id="search" method="get" action="//slashdot.org/index2.pl">
+                    <input type="text" name="fhfilter" value="" id="searchquery">
+                    <span class="ui-icon search"></span>
+                    <input type="submit" value="Search">
+                    
+                </form>
+                
+                
+            </section>
+            <nav role="top-navigation" class="grid_15">
+                <ul class="dropnav">
+
+	<li >
+		<a href="//slashdot.org/my/newuser"   onclick="getModalPrefs('newUserModal', 'Create Account', 1); $('#modal_box').addClass('join'); return false;">Join</a>
+		
+	</li>
+
+	<li >
+		<a href="//slashdot.org/my/login"   onclick="show_login_box(); return false;">Login</a>
+		
+	</li>
+
+	<li >
+		<a href="//slashdot.org/submission"    title="Submit a Story to Slashdot">Submit</a>
+		
+	</li>
+
+	<li >
+		<a href="http://beta.slashdot.org/newsletter"  target="_blank"  title="Subscribe to Slashdot Newsletter & Emails">Newsletter</a>
+		
+	</li>
+
+	<li >
+		<a href="//slashdot.org/job_board.pl"   >Jobs</a>
+		
+	</li>
+
+	<li >
+		<a href="//tv.slashdot.org" class="btn link slashtvico"  ><span>SlashTV</span></a>
+		
+	</li>
+
+</ul>
+
+
+<!-- dropnavstyle begin -->
+<style type="text/css">
+
+.dropnav{
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font: "Arial, sans-serif;
+	font-size:1em;
+	font-weight:bold;
+	list-style:none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	}
+.dropnav ul{
+	padding-top:10px;
+	background:none;
+	height:25px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	.dropnav li{
+		float:right;
+		padding:0px;
+		}
+	.dropnav li a{
+		background:none bottom right no-repeat;
+		color:#ffffff;
+		display:block;
+		font-weight:normal;
+		line-height:25px;
+		margin:0px;
+		padding:0px 5px;
+		padding-bottom: 6px;
+		text-align:center;
+		text-decoration:none;
+		}
+		.dropnav li a:hover, .dropnav ul li:hover a{
+			 /* background: #005555 bottom center no-repeat; */
+			  color:#FFFFFF;
+			  text-decoration:underline; 
+			}
+	.dropnav li ul{
+		background:#004242;
+		display:none;
+		height:auto;
+		min-width:100px;
+		margin:0px;
+		padding:0px;
+		border:0px;
+		position:absolute;
+		z-index:200;
+		/*top:1em;
+		/*left:0;*/
+		}
+	.dropnav li:hover ul{
+		display:block;
+		
+		}
+	.dropnav li li {
+		display:block;
+		float:none;
+		min-width:100px;
+		margin:0px;
+		padding:0px;
+		}
+	.dropnav li:hover li a{
+		background:none;
+		
+		}
+	.dropnav li ul a{
+		display:block;
+		height:25px;
+		font-size:12px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+		}
+		.dropnav li ul a:hover, .dropnav li ul li:hover a{
+		 	background:#005555 center left no-repeat; 
+			border:0px;
+			color:#ffffff;
+			text-decoration:none;
+			}
+	.dropnav p{
+		clear:left;
+		}
+
+	.dropnav li.droparrowneeded>a:after {
+		content: "\25BE";
+		margin-left: 5px; 
+		text-decoration: none;
+	}
+
+		
+</style>
+<!-- dropnavstyle end -->
+                
+            </nav>
+        </hgroup>
+    </header>
+
+    
+
+
+    <section>
+        
+            <div id='embbeded_login_modal' class="hide">
+<form action="https://slashdot.org/my/login" method="post" onsubmit="if (global_returnto) { this.returnto.value = global_returnto }" class="embedded"><fieldset style="-webkit-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0">
+<div style='height:25px;'>&nbsp;</div>
+    <input type="hidden" name="returnto" value="">
+    <input type="hidden" name="op" value="userlogin">
+    <p>
+        <label class="fleft" for="unickname">Nickname:</label>
+        <input type="text" name="unickname" value="">
+    </p>
+    <p>
+        <label class="fleft" for="upasswd">Password:</label>
+        <input type="password" name="upasswd" placeholder="6-20 characters long">
+    </p>
+    <label class="checkbox"><input type="checkbox" name="login_temp" value="yes"> Public Terminal</label>
+    <br>
+    <hr>
+    <input type="submit" name="userlogin" value="Log In" class="fno"> <a href="//slashdot.org/my/mailpassword" class="btn link" onclick="getModalPrefs('sendPasswdModal', 'Retrieve Password', 1); return false;">Forgot your password?</a>
+</fieldset></form>
+
+<div id="janrainEngageEmbed"></div>
+<div class="actions">
+ <a class="ico close" onclick="hide_login_slider();" href=""><span>Close</span></a>
+</div>
+</div>
+        
+        
+            <style>
+                .adwrap {
+                    min-width: 980px;
+                    max-width:1180px;
+                    margin:0 auto;
+                    padding-top:10px;
+                }
+                .adwrap:before,
+                .adwrap:after {
+                    content: " ";
+                    display: table;
+                }
+
+                .adwrap:after {
+                    clear: both;
+                }
+                .adwrap [id^="div-gpt-ad-"] { float: left; }
+                #div-gpt-ad-hubicon_200x90_a { margin-left: 15px; }
+            </style>
+            <div class="adwrap">
+                
+                <div id='div-gpt-ad-728x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a');});</script></div>
+                <div id='div-gpt-ad-728x90_a-oops'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a-oops');});</script></div>
+                <div id='div-gpt-ad-hubicon_200x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-hubicon_200x90_a');});</script></div>
+            </div>
+        
+        <a name="main-articles"></a><!-- body begin -->
+
+
+
+
+
+
+	
+
+	<style type="text/css">
+menu, menu * {
+	text-decoration:none;
+}
+
+menu[type=context] {
+	display:none;
+	position:absolute;
+	z-index:10000;
+}
+
+menu[type=context]:not(.brief) {
+	background-color:#dfdfdf;
+	margin:0;
+	padding:2px 0.5em;
+	border-style:solid;
+	border-width:1px;
+	border-color:#eeeeee #aaaaaa #aaaaaa #eeeeee;
+	-moz-border-radius-topright:.7em;
+	-webkit-border-top-right-radius: 0.7em 0.7em;
+}
+
+menu.full[type=context] > a.slash-hover:first-child {
+	-moz-border-radius-topright:.6em;
+	-webkit-border-top-right-radius: 0.6em 0.6em;
+}
+
+
+
+menu.brief[type=context] > a {
+	-moz-border-radius:.6em;
+	-webkit-border-radius: 0.6em;
+	color:#ffffff;
+	background-color:#000000;
+}
+
+/*
+span.briefmenu a.tag:not(.datatype) {
+    padding-left:.5em;
+}
+*/
+
+
+
+
+/* #tag-menu a, #feedback-menu a  { */
+menu.tag-menu a {
+	display:list-item;
+	list-style:none;
+	text-align:left;
+	font-weight:bold;
+	color:black;
+	padding:0.1em 0.5em;
+	margin:-0.1em -0.5em;
+	cursor:pointer;
+}
+
+
+.tags .edit-bar { position:relative; }
+article aside .share .addthis_toolbox { display:block; width:60px; float:left; }
+article aside.view_mode .share { min-width:120px; padding-top:.5em; }
+#firehose.list article header h2 {padding-left: 20px; !important}
+.novote .vote { display:none; }
+.vote > a, .votedup > a, .voteddown > a {border-width:1px; border-style:solid; border-color:rgba(0,0,0,0.25); display:block; height:22px; width:22px; margin:-2px 3px 0 0; color:rgb(255,255,255); text-decoration:none; line-height:22px; text-align:center; font-weight:bold; font-size:14px; float:left; border-width:1px; border-style:solid; border-color:rgba(0,0,0,0.5); }
+.vote > a, .votedup > a, .voteddown > a {color:rgb(0,0,0);}
+article.fhitem-submission h2 .vote > a, article.fhitem-submission h2 .votedup > a, article.fhitem-submission h2 .voteddown > a { border-color:rgba(0,0,0,0.15); }
+.vote .up, .vote .down, .votedup .up, .votedup .down, .voteddown .up, .voteddown .down { border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-shadow:0 0 2px #000000; } 
+article:not(.fhitem-story) .vote .up,article:not(.fhitem-story) .vote .down,article:not(.fhitem-story) .votedup .up,article:not(.fhitem-story) .votedup .down,article:not(.fhitem-story) .voteddown .up,article:not(.fhitem-story) .voteddown .down { text-shadow:none !important; }
+.voteddown .down, .votedup .up { text-indent:2px; line-height:24px; }
+article:not(.fhitem-story) .votedup .up,article:not(.fhitem-story) .voteddown .down {background: rgb(174,174,174);background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(174,174,174)), to(rgb(193,193,193)));background-image: -moz-linear-gradient(100% 100% 90deg,rgb(193,193,193), rgb(174,174,174) 100%);color:rgb(0,0,0);}
+article.fhitem-story .votedup .up,article.fhitem-story .voteddown .down {background: rgb(0,66,66);background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(0,53,53)), to(rgb(0,102,102)));background-image: -moz-linear-gradient(100% 100% 90deg,rgb(0,102,102), rgb(0,53,53) 100%);}
+
+
+
+
+
+#tag-menu span.var-tag {
+font-weight:normal;
+color:#444444;
+}
+
+menu.reasons-menu a {
+padding:0 .25em 0 .25em;
+font-size:80%;
+-moz-border-radius:.5em;
+-webkit-border-radius:.5em;
+cursor:pointer;
+}
+
+menu.reasons-menu a:hover {
+background:rgb(153,153,153);
+background:-moz-linear-gradient(100% 100% 90deg, rgb(102,102,102), rgb(153,153,153) 70%) repeat scroll 0 0 rgb(102,102,102);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(153,153,153)), to(rgb(102,102,102)));
+color:#fff;
+text-decoration:none;
+font-weignt:normal;
+}
+
+article.fhitem-story menu.reasons-menu a:hover {
+background:#002323 !important;
+background:-moz-linear-gradient(100% 100% 90deg, #002323, #005353 70%) repeat scroll 0 0 #002323 !important;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#005353), to(#002323)) !important;
+}
+
+
+menu.reasons-menu {
+	display:none;
+	margin:0;
+	padding:0;
+}
+
+div.fhitem h3 menu.reasons-menu {
+margin:0.25em 0 0;
+}
+
+div.fhitem h3 menu.reasons-menu a.tag {
+font-size:.8em;
+}
+
+#tag-menu a.slash-hover,
+#feedback-menu a.slash-hover,
+
+.tag-display span.tag:hover,
+.tag-display span.tag.trigger {
+	color:white;
+	background-color:rgb(0, 85, 85);
+}
+
+#tag-menu a.slash-hover span.var-tag {
+	color:#eee;
+}
+
+.tag-entry.default {
+        color:#ccc;
+}
+
+.brief .nix {
+	margin-top:-1.35em;
+	margin-left:0px;
+	margin-top:-1.15em;
+	text-decoration:none;
+	line-height:1.35em;
+	padding:0 2px;
+	-moz-border-radius:.6em 0 0 .6em;
+	-webkit-border-radius:.6em 0 0 .6em;
+	-o-border-radius:.6em 0 0 .6em;
+	border-radius:.6em 0 0 .6em;
+    color:#fff !important;
+    background:transparent !important;
+}
+
+.brief .nix:hover {
+    background:rgb(153,153,153) !important;
+    background:-moz-linear-gradient(100% 100% 90deg, rgb(102,102,102), rgb(153,153,153) 70%) repeat scroll 0 0 rgb(102,102,102) !important;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(153,153,153)), to(rgb(102,102,102))) !important;
+}
+
+</style>
+
+<menu id="nix-reasons" style="display:none">
+	<a class="tag">binspam</a><a class="tag">dupe</a><a class="tag">notthebest</a><a class="tag">offtopic</a><a class="tag">slownewsday</a><a class="tag">stale</a><a class="tag">stupid</a>
+</menu>
+<menu id="nod-reasons" style="display:none">
+	<a class="tag">fresh</a><a class="tag">funny</a><a class="tag">insightful</a><a class="tag">interesting</a><a class="tag">maybe</a>
+</menu>
+<menu id="comment-nix-reasons" style="display:none">
+	<a class="tag">offtopic</a><a class="tag">flamebait</a><a class="tag">troll</a><a class="tag">redundant</a><a class="tag">overrated</a>
+</menu>
+<menu id="comment-nod-reasons" style="display:none">
+	<a class="tag">insightful</a><a class="tag">interesting</a><a class="tag">informative</a><a class="tag">funny</a><a class="tag">underrated</a>
+</menu>
+
+<menu id="tag-nod-reasons" style="display:none">
+	<a class="tag">descriptive</a>
+</menu>
+<menu id="feedback-menu" class="tag-menu" type="context">
+	<a class="tag">typo</a><a class="tag">dupe</a><a class="tag">error</a>
+</menu>
+<menu id="tag-menu" class="tag-menu none" type="context">
+
+<!--	<a data-op="!" class="nix">!<span class="var-tag hide"></span></a>-->
+
+</menu>
+
+<script type="text/javascript">
+$(function(){
+var $CURRENT_MENU, $TAG_MENU=$('#tag-menu'), NOTNOT=/^!!/, IE7=/^7\.0/, TAG_PREFIX=/^\/tag\//;
+
+function get_tag_name( $tag ){
+	return ($tag.attr('href') || '').replace(TAG_PREFIX, '') || $tag.text().toLowerCase();
+}
+
+function trigger_menu( e, selector, $menu, menu_content ){
+	var $target=$(original_target(e, selector)), in_use=$target.is('.trigger');
+	if ( $CURRENT_MENU ) {
+		$CURRENT_MENU.menu('cancel', e);
+		$CURRENT_MENU = null;
+	}
+
+	if ( !in_use ) {
+		menu_content && $menu.stop(true, true).hide().html(menu_content);
+		($CURRENT_MENU=$menu).menu('context', e);
+	}
+	return !in_use;
+}
+
+function open_menu( trigger, $menu ){
+	var $trigger=$(trigger), $fhitem=$trigger.closest('.fhitem');
+	$fhitem.length && user_intent('interest', $fhitem[0]);
+
+	$menu.appendTo(document.body).css({ opacity:0 }).show();
+
+	var 	right	= $fhitem.offset().left + $fhitem.width(),
+		global	= $trigger.offset(),
+		local	= $menu.offsetParent().offset();
+
+	// Ugly IE position hack required:
+	$.browser.msie && IE7.test($.browser.version) && (local.top = 0);
+
+	// pin the menu (horizontally) on-screen
+	global.left = Math.min(global.left, right-$menu.width());
+
+	$trigger.addClass('trigger');
+	$menu.css({
+		position:	'absolute',
+		top:		global.top - local.top + $trigger.height(),
+		left:		global.left - local.left,
+		opacity:	1
+	});
+}
+
+function close_menu( trigger, $menu ){
+	$menu.hide();
+	$(trigger).removeClass('trigger');
+	($CURRENT_MENU===$menu) && ($CURRENT_MENU=false);
+}
+
+/* T2 tag context-menu */
+var $TAG_MENU=$('#tag-menu'), NOTNOT=/^!!/;
+
+
+    var user_is_admin = 0;
+
+	
+
+$('a[rel=tag]').live('mousedown',function(ea){
+    window.open(this.href);
+    return false;
+})
+
+$('.tag-bar .disagree').live('mousedown',function(ee){
+	var fhitem = $(original_target(ee)).closest('.fhitem')[0],
+		command = ('!' + $(original_target(ee)).attr("data-tag")).replace(NOTNOT, '');
+    try { Tags.submit(fhitem, command); } catch ( err ) {  }
+    return false;
+})
+
+
+
+$('a[rel=tag]').
+	live('mousedown', function( e ){
+        
+            return true;
+        
+
+	}).
+	live('click', function( e ){
+		if ( !logged_in ) {
+			var	target	= original_target(e),
+				tag	= $(target).text();
+			addfhfilter(tag);
+		}
+		e.preventDefault();
+		return false;
+	});
+
+$TAG_MENU.menu({
+	cssNamespace: 'slash',
+	liveTriggers: true,
+	clickDuration: 300,
+
+	start: function( e, ui ){
+		var	$tag	= $(ui.trigger),
+			tag	= get_tag_name($tag),
+			context	= firehose_settings && firehose_settings.viewtitle;
+
+		// Insert the tagname into the menu items where needed.
+		$TAG_MENU.find('span.var-tag').text(tag);
+		$TAG_MENU.find('a.nix').attr('title','not ' + tag);
+		
+
+			// non-admins may only delete their own tags
+		$TAG_MENU.find('a:[data-op="-"]').toggle($tag.is('.my'));
+	
+
+		// *tagname* in *viewtitle*
+		$TAG_MENU.find('a:[data-op="="]').toggle(!!context);
+		context && $TAG_MENU.find('span.var-view').text(context);
+
+		open_menu($tag, $TAG_MENU);
+	},
+
+	select: function( e, ui ){
+		var	$tag	= $(ui.trigger),
+			tag	= get_tag_name($tag),
+			op	= $(ui.select).attr('data-op'),
+			fhitem,
+			command;
+
+		// Global for positioning other things.
+		$related_trigger = $tag;
+
+		switch ( op ) {
+			case '=':
+				addfhfilter(tag);
+				break;
+
+			default:
+				fhitem = $tag.closest('.fhitem')[0];
+				command = (op + tag).replace(NOTNOT, '');
+				try { Tags.submit(fhitem, command); } catch ( err ) {  }
+				break;
+		}
+	},
+
+	stop: function( e, ui ){ close_menu(ui.trigger, $TAG_MENU); }
+});
+
+
+
+
+/* T2 feedback context-menu */
+
+
+
+/* T2 datatype context-menu (admin-only) */
+
+
+
+
+
+
+});
+</script>
+
+	
+
+
+								  <div class="col_1">
+									<nav role="sections" id="links" class="left_menu">
+										 
+										 <ul class="menu" id="fhtablist_new">
+
+			
+				
+				
+				
+
+				
+				
+					
+				
+				
+				<li class="active Stories">
+				
+				
+				
+				<a href="//slashdot.org/stories">Stories</a>
+				<span></span>
+				</li>
+				
+				
+				
+				
+				
+				<li class="Submissions">
+				
+				<a href="//slashdot.org/recent">Submissions</a>
+				
+				</li>
+				
+				
+				
+				
+				
+				<li class="Popular">
+				
+				<a href="//slashdot.org/popular">Popular</a>
+				
+				</li>
+				
+				
+				
+				
+				
+				<li class="Blog">
+				
+				<a href="//slashdot.org/blog">Blog</a>
+				
+				</li>
+
+		
+	</ul>
+										 
+										<h4 class="hide" id="links-sections-title" >
+			
+				<a class="data-title" href="//slashdot.org" >Slashdot</a>
+				
+				
+				<script type="data">{ color: "", viewname: "stories", filter: "", name: "Main", id: 13 }</script>
+
+			
+		</h4>
+	
+	
+	
+	
+		<ul id="firehose-sections" role="sections" class="left_menu">
+	
+
+	<li class="enhancedspacer"></li>
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-build">
+			<a id="fhsectiontitle-38" class="data-title" href="//build.slashdot.org">Build <span class="new-tag">new</span></a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-askslashdot">
+			<a id="fhsectiontitle-4" class="data-title" href="//ask.slashdot.org">Ask Slashdot</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-bookreview">
+			<a id="fhsectiontitle-6" class="data-title" href="//books.slashdot.org">Book Reviews</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-games">
+			<a id="fhsectiontitle-10" class="data-title" href="//games.slashdot.org">Games</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-idle">
+			<a id="fhsectiontitle-28" class="data-title" href="//idle.slashdot.org">Idle</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-yro">
+			<a id="fhsectiontitle-17" class="data-title" href="//yro.slashdot.org">YRO</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="active" id="fhsection-news">
+			<a id="fhsectiontitle-31" class="data-title" href="//news.slashdot.org">News</a>
+			<span></span>
+		</li>
+		
+	
+	<li class="enhancedspacer"></li>
+	 
+				
+
+		
+		
+		
+		<li class="" id="fhsection-cloud">
+			<a id="fhsectiontitle-cloud" class="data-title" href="//slashdot.org/stories/cloud">Cloud</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-hardware">
+			<a id="fhsectiontitle-21" class="data-title" href="//hardware.slashdot.org">Hardware</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-linux">
+			<a id="fhsectiontitle-19" class="data-title" href="//linux.slashdot.org">Linux</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-it">
+			<a id="fhsectiontitle-18" class="data-title" href="//it.slashdot.org">Management</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-mobile">
+			<a id="fhsectiontitle-29" class="data-title" href="//mobile.slashdot.org">Mobile</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-science">
+			<a id="fhsectiontitle-14" class="data-title" href="//science.slashdot.org">Science</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		
+		<li class="" id="fhsection-security">
+			<a id="fhsectiontitle-security" class="data-title" href="//slashdot.org/stories/security">Security</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		
+		<li class="" id="fhsection-storage">
+			<a id="fhsectiontitle-storage" class="data-title" href="//slashdot.org/stories/storage">Storage</a>
+			
+		</li>
+		
+	
+	</ul>
+									</nav>
+								  </div>
+
+								  <div class="col_2">
+								     <section id="content" class="grid_24 a2 ">
+									<section id="firehose" class="nothumbs">
+
+
+									    <div id="firehoselist" class="fhroot fleft  grid_24">
+										 
+										 <article id="firehose-53514693" data-fhid="53514693" data-fhtype="story" class="fhitem fhitem-story article usermode thumbs grid_24">
+<span class="sd-info-block" style="display: none">
+	<span class="sd-key-firehose-id">53514693</span>
+	<span class="type">story</span>
+	
+</span>
+
+	
+	
+	
+						
+						
+
+	<header>
+		
+			
+			<span class="topic" id="topic-53514693">
+				<a href="//news.slashdot.org/index2.pl?fhfilter=books" onclick="return addfhfilter('books');">
+			
+				<img src="//a.fsdn.com/sd/topics/books_64.png" width="64" height="64" alt="Books" title="Books">
+			
+		</a>
+			</span>
+			
+		
+		<h2 class="story">
+				
+				
+				
+			<span id="title-53514693"> <a   href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks">62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks</a></span>
+			
+			
+			<span class="comments commentcnt-53514693" >331</span>
+			
+
+                        
+		</h2>
+		<div class="details" id="details-53514693">
+		
+		Posted
+		by 
+	
+	
+		
+			<a href="mailto:soulskill@slashdot.org" rel="nofollow">Soulskill</a>
+		
+	
+	
+
+	
+	
+	<time id="fhtime-53514693" datetime="on Wednesday November 27, 2013 @03:03PM">on Wednesday November 27, 2013 @03:03PM</time>
+	
+	
+		<br>from the if-i-can't-throw-my-book-at-somebody-what's-the-point-of-owning-it dept.
+	
+	</div>
+	</header>
+
+	<div class="body" id="fhbody-53514693">
+
+		
+
+
+			<div id="text-53514693" class="p">
+			assertation writes <i>"According to The Guardian, <a href="http://www.theguardian.com/books/2013/nov/25/young-adult-readers-prefer-printed-ebooks">62% of readers between the age of 16 and 24 prefer physical copies of books over ebooks</a>.  Reasons given were the feel of 'real books,' a perceived unfairly high cost for eBooks, and the ease of sharing printed books. 'On questions of ebook pricing, 28% think that ebooks should be half their current price, while just 8% say that ebook pricing is right.' The preference for physical copies was in contrast to other forms of media, such as games, movies, and music, where a majority preferred the digital version."</i>
+
+			</div>
+
+			
+
+		
+		
+			
+		
+	</div>
+	<aside class="grid_24 view_mode">
+	
+			<div class="grid_12 cc">
+				<p>
+				
+
+				<span class="sharethisawrp">
+					<span id="sharethis-53514693" class="">
+						
+                     
+
+		  
+
+
+
+	
+		<a class="janrain t" href="#" data-provider="twitter" data-message="62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks @slashdot" data-url="http://news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks" data-title="62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks">twitter</a>
+		<a class="janrain f fb" href="#" data-provider="facebook" data-url="http://news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks" data-message="62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks" data-title="62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks">facebook</a>
+        	<a class="janrain l" href="#" data-provider="linkedin" data-url="http://news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks" data-message="62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks" data-title="62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks">linkedin</a>
+	        <a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	
+
+						
+					</span>
+				</span>
+
+				</p>
+			</div>
+        <div class="grid_24 tright tw">
+			<span class="tright tags">
+						
+			</span>
+        </div>
+
+
+
+
+
+       
+       
+       
+        <section class="grid_24" id="newa2footerv2">
+            <div class="grid_6 pr">
+                <h3><a title="Previous story" href="//yro.slashdot.org/story/13/11/27/1736236/nsa-planned-to-discredit-radicals-based-on-web-browsing-habits?sdsrc=prev">&larr;</a></h3>
+            </div>
+            <div class="grid_12 rl">
+                <h3>You may like to read:</h3>
+            </div>
+            <div class="grid_6 ns">
+                <h3><a title="Next story" href="//mobile.slashdot.org/story/13/11/27/1855217/jollas-first-phone-goes-on-sale?sdsrc=next">&rarr;</a></h3>
+            </div>
+
+
+            <div class="grid_6">
+                <span class="c">
+					<a href="//yro.slashdot.org/story/13/11/27/1736236/nsa-planned-to-discredit-radicals-based-on-web-browsing-habits?sdsrc=prev">NSA Planned To Discredit Radicals Based On Web-Browsing Habits </a>
+				</span>
+            </div>
+            <div class="grid_12">
+                <span class="c">
+					
+                                                
+                                                
+                                                
+						
+
+                                                                                                        <h3><a href="//news.slashdot.org/story/14/09/17/1515258/isis-bans-math-and-social-studies-for-children?sdsrc=popbyskid">ISIS Bans Math and Social Studies For Children</a><br></h3>
+                                                                                                        <h3><a href="//news.slashdot.org/story/14/08/27/1419225/climate-damage-irreversible-according-leaked-climate-report?sdsrc=popbyskid">Climate Damage 'Irreversible' According Leaked Climate Report</a><br></h3>
+                                                                                                        <h3><a href="//news.slashdot.org/story/14/09/15/1158253/extent-of-antarctic-sea-ice-reaches-record-levels?sdsrc=popbyskid">Extent of Antarctic Sea Ice Reaches Record Levels</a><br></h3>
+                                                                                                        <h3><a href="//news.slashdot.org/story/14/08/21/1320251/study-ad-free-internet-would-cost-everyone-230-a-year?sdsrc=popbyskid">Study: Ad-Free Internet Would Cost Everyone $230-a-Year</a><br></h3>
+                                                                                                        <h3><a href="//news.slashdot.org/story/14/08/28/207240/why-women-have-no-time-for-wikipedia?sdsrc=popbyskid">Why Women Have No Time For Wikipedia</a><br></h3>
+                                                
+					
+					
+						<h3><a href="//news.slashdot.org/submission/3148797/62-of-16-to-24-year-olds-prefer-printed-over-ebooks?sdsrc=rel">Submission: 62% of 16 to 24-year-olds prefer printed over eBooks</a></h3>
+					
+				</span>
+            </div>
+            <div class="grid_6">
+                <span class="c">
+					
+						<a href="//mobile.slashdot.org/story/13/11/27/1855217/jollas-first-phone-goes-on-sale?sdsrc=next">Jolla's First Phone Goes On Sale</a>
+					
+				</span>
+            </div>
+        </section>
+
+
+	
+	</aside>
+	
+	
+
+</article>
+									    </div>
+									    
+									</section>
+
+									<aside id="slashboxes">
+									     
+										  <div class="railad">
+<div id='div-gpt-ad-300x250_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-300x250_a');});</script></div>
+</div>
+										  <div id="slashboxesin" class="yui-b">
+										    
+										    
+										    
+										  </div>
+									     
+									</aside>
+
+									<section id="comments" class="a2commentwrap">
+									   <div>
+    									   <a name="comments"></a>
+<div class="commentwrap ">
+<div class="commentBox notice pcna">
+			
+
+		
+			
+				This discussion has been archived.
+			
+			No new comments can be posted.
+		
+	
+</div>
+</div><a name="comments"></a>
+
+	 <section class="d2incommentspl">
+	 <div class="commentwrap" id="commentwrap">
+
+		 
+			 <div class="commentBox">
+				<div class="title hide">	
+					<h4>
+						<span class="escape-link"><a href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks" title="Back to Article - 62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks">62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks</a></span>
+						<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a>
+
+
+
+
+
+	<a class="login"  href="//news.slashdot.org/login.pl" onclick="show_login_box(); return false">Login</a></span>
+					</h4>
+				</div>
+			 </div>
+		 
+
+	 
+
+
+
+<section class="grid_24" id="d2header"><div>
+
+	<h2 class="commentspl test"><a title="Back to Article - 62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks" href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks">62% of 16 To 24-Year-Olds Prefer Printed Books Over eBooks</a></h2>
+
+	<nav class="grid_24">
+		<div class="grid_14 widthauto">
+			
+				<button class="btn" disabled="disabled">Archived Discussion</button>
+			
+			<!-- <a href="//news.slashdot.org/search.pl?op=comments&amp;sid=4493645" class="btn">Search <span class="totalcommentcnt">331</span> Comments</a> -->
+			
+        
+		</div>
+		<div class="grid_10 d1or2">
+		
+
+				 
+					 <div id="d2out" class="horizontal rooted grid_15">
+								 <div id="d2act" class="hide">
+									 <div class="loki" id="gods">
+										 <script type="text/javascript">
+										 $(function(){
+											 D2.slider = new D2.Slider(
+												 D2.user_threshold(),
+												 D2.user_highlightthresh(),
+												 'x'
+											 );
+										 });
+										 </script>
+										 <div id="bones" class="grid_12">
+											 <div class="ccw-count-container grid_24">
+												 <span id="ccw-full-count-text" class="grid_8 ccw-count-text tcenter"><span></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+												 <span id="ccw-abbr-count-text" class="grid_8 ccw-count-text"><span></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+												 <span id="ccw-hide-count-text" class="grid_8 ccw-count-text tleft"><span></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+											 </div>
+											 <div id="ccw">
+												 <div id="ccw-body" class="ccw-core">
+													 <div id="ccw-panel-container" class="ccw-core">
+														 <div id="ccw-full-panel" class="ccw-panel">
+															 /Sea<div class="ccw-panel-border"></div>
+															 <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos"></div>
+														 </div>
+														 <div id="ccw-abbr-panel" class="ccw-panel">
+															 <div class="ccw-panel-border"></div>
+															 <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos"></div>
+														 </div>
+														 <div id="ccw-hide-panel" class="ccw-panel">
+															 <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos"></div>
+														 </div>
+													 </div>								
+													 <div id="ccw-control" class="ccw-core">
+														 <div id="ccw-centering-rail" class="ccw-core">
+															 <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+																 <div id="ccw-hide-bar" class="ccw-bar">
+																	 <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+																	 <div class="ccwa"></div>
+																	 <div class="ccwb"></div>
+																	 <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="D2.slider.stepTHT(HIDE_BAR, +1)"></div>
+																	 <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="D2.slider.stepTHT(HIDE_BAR, -1)"></div>
+																 </div>
+															 </div>
+															 <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+																 <div id="ccw-abbr-bar" class="ccw-bar">
+																	 <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+																	 <div class="ccwa"></div>
+																	 <div class="ccwb"></div>
+																	 <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="D2.slider.stepTHT(ABBR_BAR, +1)"></div>
+																	 <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="D2.slider.stepTHT(ABBR_BAR, -1)"></div>
+																 </div>
+															 </div>
+														 </div>
+													 </div>
+												 </div>
+												 <div class="ccw-score-label grid_24">
+													 <div class="grid_3"><span class="sc">Score:</span></div>
+													 <div class="grid_3">5<span class="lg"></span></div>
+													 <div class="grid_3">4<span class="lg"></span></div>
+													 <div class="grid_3">3<span class="lg"></span></div>
+													 <div class="grid_3">2<span class="lg"></span></div>
+													 <div class="grid_3">1<span class="lg"></span></div>
+													 <div class="grid_3">0<span class="lg"></span></div>
+													 <div class="grid_3">-1<span class="lg"></span></div>
+												 </div>
+											 </div>
+										 </div>
+										 <div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a>
+
+
+
+
+
+	<a class="login"  href="//news.slashdot.org/login.pl" onclick="show_login_box(); return false">Login</a><div id="login_cover" class="hide" onclick="hide_login_box()"></div>
+<div id="login_box" class="hide">
+	<div id="login_box_content">
+		<div id='embbeded_login_modal' class="hide">
+<form action="https://slashdot.org/my/login" method="post" onsubmit="if (global_returnto) { this.returnto.value = global_returnto }" class="embedded"><fieldset style="-webkit-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0">
+<div style='height:25px;'>&nbsp;</div>
+    <input type="hidden" name="returnto" value="//news.slashdot.org/comments.pl?sid=4493645">
+    <input type="hidden" name="op" value="userlogin">
+    <p>
+        <label class="fleft" for="unickname">Nickname:</label>
+        <input type="text" name="unickname" value="">
+    </p>
+    <p>
+        <label class="fleft" for="upasswd">Password:</label>
+        <input type="password" name="upasswd" placeholder="6-20 characters long">
+    </p>
+    <label class="checkbox"><input type="checkbox" name="login_temp" value="yes"> Public Terminal</label>
+    <br>
+    <hr>
+    <input type="submit" name="userlogin" value="Log In" class="fno"> <a href="//slashdot.org/my/mailpassword" class="btn link" onclick="getModalPrefs('sendPasswdModal', 'Retrieve Password', 1); return false;">Forgot your password?</a>
+</fieldset></form>
+
+<div id="janrainEngageEmbed"></div>
+<div class="actions">
+ <a class="ico close" onclick="hide_login_slider();" href=""><span>Close</span></a>
+</div>
+</div>
+		<div class="actions">
+			<a class="ico close" href="#" onclick="hide_login_box(); return false"><span>Close</span></a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">logged_in = 0</script></div>
+										 <div id="commentControlBoxStatus" class="hide"></div>
+									 </div>
+								 </div>
+					 </div>
+				 
+				 
+
+
+
+				  <a href="//news.slashdot.org/search.pl?op=comments&amp;sid=4493645" class="ui-icon search_comments">Search <span class="totalcommentcnt">331</span> Comments</a>
+
+
+
+
+				  <a class="pref ui-icon-w" href="//news.slashdot.org/users.pl" onclick="show_login_box(); $('#modal_box').addClass('login'); return false;">Log In/Create an Account</a>
+				  
+		</div>
+	</nav>
+	<section id="besttabs" class="grid_24">
+	    <span class="legend">Comments Filter:</span>
+	    <ul class="besttabslist">
+	        <li ><a href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks#comments">All</a></li>
+		
+	        <li class="active"><a href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks/insightful-comments#comments">Insightful</a></li>
+		
+	        <li ><a href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks/informative-comments#comments">Informative</a></li>
+		
+	        <li ><a href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks/interesting-comments#comments">Interesting</a></li>
+		
+	        <li ><a href="//news.slashdot.org/story/13/11/27/1851203/62-of-16-to-24-year-olds-prefer-printed-books-over-ebooks/funny-comments#comments">Funny</a></li>
+		
+	    </ul>
+	</section>
+    <aside class="grid_24">
+		<p>
+			<small><strong>The Fine Print:</strong> The following comments are owned by whoever posted them.  We are not responsible for them in any way.</small>
+		</p>
+		<a name="topcomment"></a>
+    </aside>
+
+
+</div></section><script src="//a.fsdn.com/sd/comments-minified.js?release_20140903" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+<!--
+D2.d2_keybindings_disable()[191] = 1;
+D2.boxStatus(1);
+D2.comments({ 45541403: { uid: 25149, pid: 0, read: 0, points: 5, kids: [  ], opid: 45541101 }, 45541229: { uid: 19308, pid: 0, subject: "Re:price", read: 0, points: 5, kids: [  ], opid: 45541089 }, 45541269: { uid: 1685608, pid: 0, read: 0, points: 5, kids: [  ], opid: 0 }, 45541401: { uid: 191822, pid: 0, subject: "Re:price", read: 0, points: 5, kids: [  ], opid: 45541239 }, 45542263: { uid: 1255714, pid: 0, subject: "Re:price and sharability", read: 0, points: 5, kids: [  ], opid: 45542145 }, 45541391: { uid: 14774, pid: 0, subject: "Re:Printed books", read: 0, points: 4, kids: [  ], opid: 45541183 }, 45541909: { uid: 6526, pid: 0, read: 0, points: 4, kids: [  ], opid: 45541401 }, 45542399: { uid: 87712, pid: 0, subject: "Re:price", read: 0, points: 4, kids: [  ], opid: 45541111 }, 45541527: { uid: 1940368, pid: 0, subject: "Re:Burn an Ebook?", read: 0, points: 5, kids: [  ], opid: 45541161 }, 45541549: { uid: 1038732, pid: 0, subject: "Re:This is why Kindle Matchbook is a good idea", read: 0, points: 5, kids: [  ], opid: 45541147 }, 45541491: { uid: 1038732, pid: 0, subject: "Re:Burn an Ebook?", read: 0, points: 5, kids: [  ], opid: 45541151 }, 45541503: { uid: 1600213, pid: 0, subject: "Re:Printed books", read: 0, points: 4, kids: [  ], opid: 45541183 }, 45541661: { uid: 675811, pid: 0, subject: "Re:Anecdote, data, and all that, but...", read: 0, points: 5, kids: [  ], opid: 45541497 }, 45541433: { uid: 686757, pid: 0, read: 0, points: 4, kids: [  ], opid: 45541299 }, 45542005: { uid: 1042386, pid: 0, subject: "Re:price", read: 0, points: 5, kids: [  ], opid: 45541111 }, 45542683: { uid: 2954149, pid: 0, subject: "Re:price", read: 0, points: 5, kids: [  ], opid: 45542005 }, 45541173: { uid: 666, pid: 0, subject: "Re:Burn an Ebook?", read: 0, points: 4, kids: [  ], opid: 45541101 }, 45543457: { uid: 1873388, pid: 0, subject: "Re:price", read: 0, points: 5, kids: [  ], opid: 45541111 }, 45541161: { uid: 176878, pid: 0, subject: "Re:Burn an Ebook?", read: 0, points: 4, kids: [  ], opid: 45541101 }, 45541321: { uid: 550198, pid: 0, read: 0, points: 4, kids: [  ], opid: 0 }, 45541111: { uid: 1255714, pid: 0, subject: "Re:price", read: 0, points: 5, kids: [  ], opid: 45541089 } });
+
+D2.thresh_totals({6:{6:{1:21,3:0,2:0}},4:{6:{1:0,3:13,2:8},4:{1:0,3:21,2:0},5:{1:0,3:21,2:0}},1:{6:{1:0,3:13,2:8},4:{1:0,3:21,2:0},1:{1:0,3:21,2:0},3:{1:0,3:21,2:0},2:{1:0,3:21,2:0},5:{1:0,3:21,2:0}},3:{6:{1:0,3:13,2:8},4:{1:0,3:21,2:0},3:{1:0,3:21,2:0},5:{1:0,3:21,2:0}},0:{6:{1:0,3:13,2:8},4:{1:0,3:21,2:0},1:{1:0,3:21,2:0},3:{1:0,3:21,2:0},0:{1:0,3:21,2:0},2:{1:0,3:21,2:0},5:{1:0,3:21,2:0}},2:{6:{1:0,3:13,2:8},4:{1:0,3:21,2:0},3:{1:0,3:21,2:0},2:{1:0,3:21,2:0},5:{1:0,3:21,2:0}},5:{6:{1:8,3:13,2:0},5:{1:8,3:13,2:0}},"-1":{6:{1:0,3:13,2:8},4:{1:0,3:21,2:0},1:{1:0,3:21,2:0},3:{1:0,3:21,2:0},0:{1:0,3:21,2:0},2:{1:0,3:21,2:0},5:{1:0,3:21,2:0},"-1":{1:0,3:21,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([45541111,45541161,45541173,45541229,45541269,45541321,45541391,45541401,45541403,45541433,45541491,45541503,45541527,45541549,45541661,45541909,45542005,45542263,45542399,45542683,45543457]);
+D2.root_comments_hash({45541229:1,45542263:1,45541391:1,45541549:1,45541503:1,45541491:1,45541433:1,45542683:1,45541269:1,45542399:1,45541527:1,45541661:1,45542005:1,45543457:1,45541403:1,45541401:1,45541909:1,45541173:1,45541161:1,45541321:1,45541111:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(666);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_smallscreen(0);
+D2.user_threshold(1);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(4493645);
+
+D2.d2_seen('45541111,50,12,56,40,52,70,10,2,30,58,12,24,22,112,248,96,258,136,284,774');
+D2.more_comments_num(310);
+
+
+//-->
+</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_45541111" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541111" class="commentstatus"></div>
+<div id="comment_45541111" class="cw">
+	<div id="comment_top_45541111" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541111" name="comment_link_45541111" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541111" onclick="return D2.setFocusComment(45541111)" >Re:price</a>
+
+
+		 	<span id="comment_score_45541111" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541111); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~assertation">assertation</a>  <span class="uid"><a href="//slashdot.org/~assertation">(1255714)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541111">		
+		on Wednesday November 27, 2013 @03:09PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541111">#45541111</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541111"><p>The article was about 16 - 24 year olds.   They probably already know how to pirate.   Ease of sharing was also another issue.  Prices can be reduced, but the business model of eBooks seems to be based on reducing sharing, so that road block isn't going away.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541111">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541089" onclick="return D2.selectParent(45541089)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price by assertation @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541111" data-title="Re:price">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price by assertation" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541111" data-title="Re:price">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price by assertation" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541111" data-title="Re:price">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541111" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541111"></div>
+
+<ul id="group_45541111">
+	<li id="hiddens_45541111" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541161" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541161" class="commentstatus"></div>
+<div id="comment_45541161" class="cw">
+	<div id="comment_top_45541161" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541161" name="comment_link_45541161" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541161" onclick="return D2.setFocusComment(45541161)" >Re:Burn an Ebook?</a>
+
+
+		 	<span id="comment_score_45541161" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541161); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~jbolden">jbolden</a>  <span class="uid"><a href="//slashdot.org/~jbolden">(176878)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541161">		
+		on Wednesday November 27, 2013 @03:13PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541161">#45541161</a>)
+		<small><a href="http://bluelotussidc.com/" title="http://bluelotussidc.com/" class="user_homepage_display">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541161"><p>Humans build morality based on sacramental associations.  Book burning is an activity only bad people do.  Deleting ebooks is an activity both good and bad people do.  Ergo: book burning is likely a bad thing while deleting ebooks morally neutral.</p><p>That seems like a sensible analysis where one is appealing to sociology for the determination of good vs. evil.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541161">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541101" onclick="return D2.selectParent(45541101)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:Burn an Ebook? by jbolden @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541161" data-title="Re:Burn an Ebook?">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:Burn an Ebook? by jbolden" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541161" data-title="Re:Burn an Ebook?">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:Burn an Ebook? by jbolden" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541161" data-title="Re:Burn an Ebook?">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541161" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541161"></div>
+
+<ul id="group_45541161">
+	<li id="hiddens_45541161" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541173" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541173" class="commentstatus"></div>
+<div id="comment_45541173" class="cw">
+	<div id="comment_top_45541173" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541173" name="comment_link_45541173" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541173" onclick="return D2.setFocusComment(45541173)" >Re:Burn an Ebook?</a>
+
+
+		 	<span id="comment_score_45541173" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541173); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span>Anonymous Coward</span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541173">		
+		on Wednesday November 27, 2013 @03:14PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541173">#45541173</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541173"><p>You can easily re-download an ebook. Deleting an ebook is closer to putting a book in a bookshelf than to burning it.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541173">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541101" onclick="return D2.selectParent(45541101)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:Burn an Ebook? by Anonymous Coward @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541173" data-title="Re:Burn an Ebook?">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:Burn an Ebook? by Anonymous Coward" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541173" data-title="Re:Burn an Ebook?">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:Burn an Ebook? by Anonymous Coward" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541173" data-title="Re:Burn an Ebook?">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541173" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541173"></div>
+
+<ul id="group_45541173">
+	<li id="hiddens_45541173" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541229" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541229" class="commentstatus"></div>
+<div id="comment_45541229" class="cw">
+	<div id="comment_top_45541229" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541229" name="comment_link_45541229" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541229" onclick="return D2.setFocusComment(45541229)" >Re:price</a>
+
+
+		 	<span id="comment_score_45541229" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541229); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~Shinobi">Shinobi</a>  <span class="uid"><a href="//slashdot.org/~Shinobi">(19308)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541229">		
+		on Wednesday November 27, 2013 @03:17PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541229">#45541229</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541229"><p>No, it's not only about price. It's about the fact that the book can be read anywhere, without needing a battery charge or anything. Even many kids think about that. It's also less stressful for the eyes than looking at a screen.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541229">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541089" onclick="return D2.selectParent(45541089)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price by Shinobi @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541229" data-title="Re:price">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price by Shinobi" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541229" data-title="Re:price">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price by Shinobi" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541229" data-title="Re:price">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541229" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541229"></div>
+
+<ul id="group_45541229">
+	<li id="hiddens_45541229" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541269" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541269" class="commentstatus"></div>
+<div id="comment_45541269" class="cw">
+	<div id="comment_top_45541269" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541269" name="comment_link_45541269" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541269" onclick="return D2.setFocusComment(45541269)" >Sample Bias</a>
+
+
+		 	<span id="comment_score_45541269" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541269); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~ZombieBraintrust">ZombieBraintrust</a>  <span class="uid"><a href="//slashdot.org/~ZombieBraintrust">(1685608)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541269">		
+		on Wednesday November 27, 2013 @03:20PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541269">#45541269</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541269"><p><div class="quote"><p>Half of the respondents were sourced through student moneysaving website Studentbeans.com, and half through a broader youth research panel.</p></div><p>You ask people at a money saving web site and they will choose the cheeper thing. Used books are way cheaper than ebooks. If you asked Amazon shoppers you would get a different answer.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541269">
+	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Sample Bias by ZombieBraintrust @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541269" data-title="Sample Bias">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Sample Bias by ZombieBraintrust" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541269" data-title="Sample Bias">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Sample Bias by ZombieBraintrust" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541269" data-title="Sample Bias">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541269" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541269"></div>
+
+<ul id="group_45541269">
+	<li id="hiddens_45541269" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541321" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541321" class="commentstatus"></div>
+<div id="comment_45541321" class="cw">
+	<div id="comment_top_45541321" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541321" name="comment_link_45541321" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541321" onclick="return D2.setFocusComment(45541321)" >That's okay</a>
+
+
+		 	<span id="comment_score_45541321" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541321); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~paiute">paiute</a>  <span class="uid"><a href="//slashdot.org/~paiute">(550198)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541321">		
+		on Wednesday November 27, 2013 @03:25PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541321">#45541321</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541321">Look at it from the other side. 38% of a very desirable demographic using a product that has not been around that long. It's been 500 plus years since the Gutenberg Bible and only 6 years since the Kindle came out. I think that 38% is pretty damn good.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541321">
+	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="That's okay by paiute @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541321" data-title="That's okay">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="That's okay by paiute" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541321" data-title="That's okay">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="That's okay by paiute" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541321" data-title="That's okay">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541321" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541321"></div>
+
+<ul id="group_45541321">
+	<li id="hiddens_45541321" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541391" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541391" class="commentstatus"></div>
+<div id="comment_45541391" class="cw">
+	<div id="comment_top_45541391" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541391" name="comment_link_45541391" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541391" onclick="return D2.setFocusComment(45541391)" >Re:Printed books</a>
+
+
+		 	<span id="comment_score_45541391" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541391); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~geekd">geekd</a>  <span class="uid"><a href="//slashdot.org/~geekd">(14774)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541391">		
+		on Wednesday November 27, 2013 @03:29PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541391">#45541391</a>)
+		<small><a href="http://tabletop.magigames.org/" title="http://tabletop.magigames.org/" class="user_homepage_display">Homepage</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541391"><p>I can't fit 500+ printed books in my pocket.  For me, that's the big deal right there.  I have limited physical storage space in my house, and I read about 2 books a week.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541391">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541183" onclick="return D2.selectParent(45541183)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:Printed books by geekd @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541391" data-title="Re:Printed books">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:Printed books by geekd" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541391" data-title="Re:Printed books">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:Printed books by geekd" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541391" data-title="Re:Printed books">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541391" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541391"></div>
+
+<ul id="group_45541391">
+	<li id="hiddens_45541391" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541401" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541401" class="commentstatus"></div>
+<div id="comment_45541401" class="cw">
+	<div id="comment_top_45541401" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541401" name="comment_link_45541401" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541401" onclick="return D2.setFocusComment(45541401)" >Re:price</a>
+
+
+		 	<span id="comment_score_45541401" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541401); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~Chris+Mattern">Chris Mattern</a>  <span class="uid"><a href="//slashdot.org/~Chris+Mattern">(191822)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541401">		
+		on Wednesday November 27, 2013 @03:30PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541401">#45541401</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541401"><blockquote><div><p>The per-unit cost of printing a book and shipping it in bulk to a distributer is a trivial portion of the price of a book.</p></div></blockquote><p>I found <a href="http://ireaderreview.com/2009/05/03/book-cost-analysis-cost-of-physical-book-publishing/" title="ireaderreview.com">one breakdown of printed book cost analysis analysis</a> [ireaderreview.com] that put printing and distribution at 20% of a book's cover price, and retailer's markup at 40%.  A lot of that retailer's markup is inventory cost--what it costs the retailer to store and display copies of the book.  Even though the actual *printing* cost is only 10% of the book's price, you then have to pay for dealing with the physical form and getting it to the customer, which is much tougher than getting a computer file to the customer.  At a guess, I'd say that 30% to 40% of the cost of a physical book is tied to paying for its physical aspects.  Not so trivial.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541401">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541239" onclick="return D2.selectParent(45541239)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price by Chris Mattern @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541401" data-title="Re:price">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price by Chris Mattern" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541401" data-title="Re:price">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price by Chris Mattern" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541401" data-title="Re:price">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541401" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541401"></div>
+
+<ul id="group_45541401">
+	<li id="hiddens_45541401" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541403" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541403" class="commentstatus"></div>
+<div id="comment_45541403" class="cw">
+	<div id="comment_top_45541403" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541403" name="comment_link_45541403" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541403" onclick="return D2.setFocusComment(45541403)" >Wrong question</a>
+
+
+		 	<span id="comment_score_45541403" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541403); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~SuperKendall">SuperKendall</a>  <span class="uid"><a href="//slashdot.org/~SuperKendall">(25149)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541403">		
+		on Wednesday November 27, 2013 @03:30PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541403">#45541403</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541403"><p>Ask them if it's OK to delete the last copy of an eBook and see what response you get.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541403">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541101" onclick="return D2.selectParent(45541101)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Wrong question by SuperKendall @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541403" data-title="Wrong question">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Wrong question by SuperKendall" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541403" data-title="Wrong question">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Wrong question by SuperKendall" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541403" data-title="Wrong question">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541403" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541403"></div>
+
+<ul id="group_45541403">
+	<li id="hiddens_45541403" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541433" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541433" class="commentstatus"></div>
+<div id="comment_45541433" class="cw">
+	<div id="comment_top_45541433" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541433" name="comment_link_45541433" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541433" onclick="return D2.setFocusComment(45541433)" >Anecdote, data, and all that, but...</a>
+
+
+		 	<span id="comment_score_45541433" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541433); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~zooblethorpe">zooblethorpe</a>  <span class="uid"><a href="//slashdot.org/~zooblethorpe">(686757)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541433">		
+		on Wednesday November 27, 2013 @03:31PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541433">#45541433</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541433"><p><div class="quote"><p>citation ?<br>
+I want to see a real study about this supposed eye stress people keep mentioning.</p></div><p>A real study would be good.  At the same time, I haven't run across anyone in my personal life who doesn't prefer reading a dead-tree book over an ebook.  Ebooks are certainly more <i>convenient</i> in many ways, especially once you factor in portability.  But many (most?) ebook readers these days that I see around me are backlit (as they tend to be tablets), which does lead to a certain amount of eyestrain and can cause circadian imbalance.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541433">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541299" onclick="return D2.selectParent(45541299)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Anecdote, data, and all that, but... by zooblethorpe @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541433" data-title="Anecdote, data, and all that, but...">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Anecdote, data, and all that, but... by zooblethorpe" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541433" data-title="Anecdote, data, and all that, but...">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Anecdote, data, and all that, but... by zooblethorpe" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541433" data-title="Anecdote, data, and all that, but...">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541433" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541433"></div>
+
+<ul id="group_45541433">
+	<li id="hiddens_45541433" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541491" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541491" class="commentstatus"></div>
+<div id="comment_45541491" class="cw">
+	<div id="comment_top_45541491" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541491" name="comment_link_45541491" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541491" onclick="return D2.setFocusComment(45541491)" >Re:Burn an Ebook?</a>
+
+
+		 	<span id="comment_score_45541491" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541491); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~mlts">mlts</a>  <span class="uid"><a href="//slashdot.org/~mlts">(1038732)</a></span></a> <a href="/faq/subscriptions.shtml#subscription_other_advantages">*</a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541491">		
+		on Wednesday November 27, 2013 @03:35PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541491">#45541491</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541491"><p>Voluntary payments work in smaller ecosystems.  However as things get bigger, the tragedy of the commons starts happening.  This is why an honor system peach stand in the middle of Maine works, while one near a busy city likely will be relieved of its fruit and cash box... perhaps just removed completely.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541491">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541151" onclick="return D2.selectParent(45541151)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:Burn an Ebook? by mlts @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541491" data-title="Re:Burn an Ebook?">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:Burn an Ebook? by mlts" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541491" data-title="Re:Burn an Ebook?">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:Burn an Ebook? by mlts" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541491" data-title="Re:Burn an Ebook?">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541491" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541491"></div>
+
+<ul id="group_45541491">
+	<li id="hiddens_45541491" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541503" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541503" class="commentstatus"></div>
+<div id="comment_45541503" class="cw">
+	<div id="comment_top_45541503" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541503" name="comment_link_45541503" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541503" onclick="return D2.setFocusComment(45541503)" >Re:Printed books</a>
+
+
+		 	<span id="comment_score_45541503" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541503); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~hawguy">hawguy</a>  <span class="uid"><a href="//slashdot.org/~hawguy">(1600213)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541503">		
+		on Wednesday November 27, 2013 @03:35PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541503">#45541503</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541503"><p><div class="quote"><p>To give some arguments that I don't see:</p></div><p> <i>Printed books don't break when shoved into luggage.</i></p><p>My 4 year old kindle (with keyboard) has been shoved in luggage countless times and hasn't broken. I replaced it with a paperwhite kindle a few months ago because I wanted a backlight, but I still use the old one from time to time. An eBook reader may be more fragile than a paper book, but it can withstand the rigors of daily life just fine.</p><p>The kindle is especially nice for reading at the beach or hot tub -- I just put it in a ziplock baggy to keep out the sand and water, and can read with ease. If I drop it in the water, it floats on the surface -- no need to wait days to dry it before continuing to read (if it's possible at all, and the pages aren't stuck together)</p><p><i>Printed books have infinite "battery life".</i></p><p>I'm still averaging a month of battery life on my kindle, and I can read while charging. It's not infinite, but it may as well be.</p><p><i>Printed books don't get stolen like electronic devices.</i></p><p>Someone broke into my car once and took my backpack with several books (and dirty gym clothes), they rifled through the glove compartment, but they didn't take the kindle that was tucked into a door side pocket. I'm not aware of any anti-theft devices built-in to books, so they can get stolen like everything else. Admittedly if I left the kindle on the seat next to a book, they'd likely have taken the kindle before the book.</p><p><i>I break a book, I just lost that particular book - well, no. I can still read it. I lose it, all I lost is one book - not an electronic device and all the other books on it.</i></p><p>I buy most of my books through sources other than Amazon, and I have a backup copy of all of them, if my kindle breaks or someone steals it, I don't lose any books, not even the one I was currently reading. And Amazon can have a replacement kindle at my door in 2 days.... or I can run the Kindle app on my phone and pick up right where I left off.</p><p><i><br>At least some poor slobs (printers, packagers, truckers, etc<nobr> <wbr></nobr>...) are making a living making these things (at no extra cost to me) as opposed to content creators who knock this off and make an infinite number at no additional cost (put it into the computer and infinite copies without any effort.).</i></p><p>Why do you think that you're not paying to support the entire print industry when you purchase a book? Where do you think the money comes from to pay them if it's not built-in to the price of a book?</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541503">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541183" onclick="return D2.selectParent(45541183)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:Printed books by hawguy @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541503" data-title="Re:Printed books">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:Printed books by hawguy" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541503" data-title="Re:Printed books">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:Printed books by hawguy" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541503" data-title="Re:Printed books">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541503" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541503"></div>
+
+<ul id="group_45541503">
+	<li id="hiddens_45541503" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541527" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541527" class="commentstatus"></div>
+<div id="comment_45541527" class="cw">
+	<div id="comment_top_45541527" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541527" name="comment_link_45541527" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541527" onclick="return D2.setFocusComment(45541527)" >Re:Burn an Ebook?</a>
+
+
+		 	<span id="comment_score_45541527" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541527); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~pr0fessor">pr0fessor</a>  <span class="uid"><a href="//slashdot.org/~pr0fessor">(1940368)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541527">		
+		on Wednesday November 27, 2013 @03:36PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541527">#45541527</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541527"><p>There is a big difference between going to the library and burning books you don't want others to read and deleting a ebook off of your device to make room to download more ebooks from a large repository of ebooks {you've not deleted it from the repository just your device you can still download it again}.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541527">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541161" onclick="return D2.selectParent(45541161)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:Burn an Ebook? by pr0fessor @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541527" data-title="Re:Burn an Ebook?">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:Burn an Ebook? by pr0fessor" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541527" data-title="Re:Burn an Ebook?">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:Burn an Ebook? by pr0fessor" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541527" data-title="Re:Burn an Ebook?">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541527" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541527"></div>
+
+<ul id="group_45541527">
+	<li id="hiddens_45541527" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541549" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541549" class="commentstatus"></div>
+<div id="comment_45541549" class="cw">
+	<div id="comment_top_45541549" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541549" name="comment_link_45541549" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541549" onclick="return D2.setFocusComment(45541549)" >Re:This is why Kindle Matchbook is a good idea</a>
+
+
+		 	<span id="comment_score_45541549" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541549); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~mlts">mlts</a>  <span class="uid"><a href="//slashdot.org/~mlts">(1038732)</a></span></a> <a href="/faq/subscriptions.shtml#subscription_other_advantages">*</a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541549">		
+		on Wednesday November 27, 2013 @03:38PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541549">#45541549</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541549"><p>I wish this was a general practice among book publishers.  Buy the dead tree version, and on the inside is a card one can scratch off, scan a QR code, and download the eBook version.  Best of both worlds -- a paper copy for the bookshelf, and a copy on the E-reader.</p><p>Of course, this means standardizing on a DRM process, rather than iBook/Kindle/Nook/Kobo/Google/etc. having their own systems... or even better, no DRM at all.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541549">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541147" onclick="return D2.selectParent(45541147)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:This is why Kindle Matchbook is a good idea by mlts @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541549" data-title="Re:This is why Kindle Matchbook is a good idea">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:This is why Kindle Matchbook is a good idea by mlts" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541549" data-title="Re:This is why Kindle Matchbook is a good idea">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:This is why Kindle Matchbook is a good idea by mlts" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541549" data-title="Re:This is why Kindle Matchbook is a good idea">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541549" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541549"></div>
+
+<ul id="group_45541549">
+	<li id="hiddens_45541549" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541661" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541661" class="commentstatus"></div>
+<div id="comment_45541661" class="cw">
+	<div id="comment_top_45541661" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541661" name="comment_link_45541661" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541661" onclick="return D2.setFocusComment(45541661)" >Re:Anecdote, data, and all that, but...</a>
+
+
+		 	<span id="comment_score_45541661" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541661); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~MemoryAid">MemoryAid</a>  <span class="uid"><a href="//slashdot.org/~MemoryAid">(675811)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541661">		
+		on Wednesday November 27, 2013 @03:48PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541661">#45541661</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541661"><p><div class="quote"><p>I want to see a proper double blind study done of this.</p></div><p>How do you do a double-blind study on screens?</p><p>"You will be looking at either a back-lit screen or a book--we won't tell you which until after the study--and then we will ask you questions and examine your eyes to determine the effects."</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541661">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541497" onclick="return D2.selectParent(45541497)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:Anecdote, data, and all that, but... by MemoryAid @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541661" data-title="Re:Anecdote, data, and all that, but...">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:Anecdote, data, and all that, but... by MemoryAid" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541661" data-title="Re:Anecdote, data, and all that, but...">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:Anecdote, data, and all that, but... by MemoryAid" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541661" data-title="Re:Anecdote, data, and all that, but...">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541661" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541661"></div>
+
+<ul id="group_45541661">
+	<li id="hiddens_45541661" class="hide"></li>
+</ul>
+
+</li><li id="tree_45541909" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45541909" class="commentstatus"></div>
+<div id="comment_45541909" class="cw">
+	<div id="comment_top_45541909" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45541909" name="comment_link_45541909" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541909" onclick="return D2.setFocusComment(45541909)" >Re:price breakdown</a>
+
+
+		 	<span id="comment_score_45541909" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45541909); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~davecb">davecb</a>  <span class="uid"><a href="//slashdot.org/~davecb">(6526)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45541909">		 &lt;<a href="mailto:davec-b%40rogers.com">davec-b@rogers.com</a>&gt;
+		on Wednesday November 27, 2013 @04:09PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45541909">#45541909</a>)
+		<small><a href="http://broadcast.oreilly.com/david-collier-brown/" title="http://broadcast.oreilly.com/david-collier-brown/" class="user_homepage_display">Homepage</a>
+<a href="//slashdot.org/~davecb/journal/" title="Thursday March 19, 2009 @09:57AM" class="user_journal_display">Journal</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45541909"><p>Yes: one of my customers is a major publisher, and the printing costs, warehousing and transport are indeed a huge part of the cost of a book, certainly on the order of 40%.  Some of this can avoided by the publisher, by having a retailer warehouse the books, but the retailer still has to pay for the warehouse, and therefor adds that cost into the price.
+
+</p><p>There ain't no free lunch (;-))
+
+</p><p>--dave</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45541909">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541401" onclick="return D2.selectParent(45541401)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price breakdown by davecb @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541909" data-title="Re:price breakdown">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price breakdown by davecb" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541909" data-title="Re:price breakdown">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price breakdown by davecb" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45541909" data-title="Re:price breakdown">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45541909" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45541909"></div>
+
+<ul id="group_45541909">
+	<li id="hiddens_45541909" class="hide"></li>
+</ul>
+
+</li><li id="tree_45542005" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45542005" class="commentstatus"></div>
+<div id="comment_45542005" class="cw">
+	<div id="comment_top_45542005" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45542005" name="comment_link_45542005" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542005" onclick="return D2.setFocusComment(45542005)" >Re:price</a>
+
+
+		 	<span id="comment_score_45542005" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45542005); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~AliasMarlowe">AliasMarlowe</a>  <span class="uid"><a href="//slashdot.org/~AliasMarlowe">(1042386)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45542005">		
+		on Wednesday November 27, 2013 @04:16PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542005">#45542005</a>)
+		<small><a href="//slashdot.org/~AliasMarlowe/journal/" title="Saturday January 16, 2010 @04:01PM" class="user_journal_display">Journal</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45542005"><p><div class="quote"><p>
+The article was about 16 - 24 year olds.   They probably already know how to pirate.   Ease of sharing was also another issue.  Prices can be reduced, but the business model of eBooks seems to be based on reducing sharing, so that road block isn't going away.
+</p></div><p>
+My own kids put it differently. It's the feel and smell and convenience of a book that counts. Above all, it's the feel of the paper as the pages are turned.
+</p><p>
+Having to use an ebook reader would probably diminish their liking for books (we're all bookworms). They have little or no interest in ebooks, although we have a good number of PDF books on topics which interest them. So accessing books with file-sharing tools is also not an issue. Also, the cost is irrelevant; we give them books whenever they want, and they also get lots of books based on their marks at school (this turns out a bit pricey, but it's worth it for the motivating effect).
+</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45542005">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541111" onclick="return D2.selectParent(45541111)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price by AliasMarlowe @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542005" data-title="Re:price">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price by AliasMarlowe" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542005" data-title="Re:price">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price by AliasMarlowe" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542005" data-title="Re:price">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45542005" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45542005"></div>
+
+<ul id="group_45542005">
+	<li id="hiddens_45542005" class="hide"></li>
+</ul>
+
+</li><li id="tree_45542263" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45542263" class="commentstatus"></div>
+<div id="comment_45542263" class="cw">
+	<div id="comment_top_45542263" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45542263" name="comment_link_45542263" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542263" onclick="return D2.setFocusComment(45542263)" >Re:price and sharability</a>
+
+
+		 	<span id="comment_score_45542263" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45542263); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~assertation">assertation</a>  <span class="uid"><a href="//slashdot.org/~assertation">(1255714)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45542263">		
+		on Wednesday November 27, 2013 @04:36PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542263">#45542263</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45542263"><p>I think the language you used are why the young people who were polled prefer print.</p><p>They can hand a printed book off to someone without the word "pirate" being potentially used.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45542263">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45542145" onclick="return D2.selectParent(45542145)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price and sharability by assertation @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542263" data-title="Re:price and sharability">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price and sharability by assertation" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542263" data-title="Re:price and sharability">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price and sharability by assertation" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542263" data-title="Re:price and sharability">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45542263" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45542263"></div>
+
+<ul id="group_45542263">
+	<li id="hiddens_45542263" class="hide"></li>
+</ul>
+
+</li><li id="tree_45542399" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45542399" class="commentstatus"></div>
+<div id="comment_45542399" class="cw">
+	<div id="comment_top_45542399" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45542399" name="comment_link_45542399" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542399" onclick="return D2.setFocusComment(45542399)" >Re:price</a>
+
+
+		 	<span id="comment_score_45542399" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45542399); return false"><span class=opt>Score:</span>4</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~Greyfox">Greyfox</a>  <span class="uid"><a href="//slashdot.org/~Greyfox">(87712)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45542399">		
+		on Wednesday November 27, 2013 @04:45PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542399">#45542399</a>)
+		<small><a href="https://github.com/FlyingRhenquest" title="https://github.com/FlyingRhenquest" class="user_homepage_display">Homepage</a>
+<a href="//slashdot.org/~Greyfox/journal/" title="Saturday September 21, 2013 @07:09PM" class="user_journal_display">Journal</a> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45542399">Plus some random exec can't revoke your ability to read your printed book at a moment's notice.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45542399">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541111" onclick="return D2.selectParent(45541111)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price by Greyfox @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542399" data-title="Re:price">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price by Greyfox" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542399" data-title="Re:price">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price by Greyfox" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542399" data-title="Re:price">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45542399" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45542399"></div>
+
+<ul id="group_45542399">
+	<li id="hiddens_45542399" class="hide"></li>
+</ul>
+
+</li><li id="tree_45542683" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45542683" class="commentstatus"></div>
+<div id="comment_45542683" class="cw">
+	<div id="comment_top_45542683" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45542683" name="comment_link_45542683" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542683" onclick="return D2.setFocusComment(45542683)" >Re:price</a>
+
+
+		 	<span id="comment_score_45542683" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45542683); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~DexterIsADog">DexterIsADog</a>  <span class="uid"><a href="//slashdot.org/~DexterIsADog">(2954149)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45542683">		
+		on Wednesday November 27, 2013 @05:04PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45542683">#45542683</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45542683">I've always found this odd - my view is that the content of the book is all that matters, and smell and physical feel of pages is irrelevant.  I read many more books, on a wider range of topics, both fiction, non-fiction, including history, now that I can read on a Kindle, an Android tablet, or even my phone.  If I find myself stuck someplace I didn't expect to have time to kill, I just pull out my phone and read.<br> <br>As for convenient, I find the ability to carry around as many books as I want, browse, sample and buy more in any location at any time, to be much more convenient than paper books.<br> <br>And this from a guy who enjoyed trekking into Manhattan from Queens as a lad to go to the big bookstores, the only place I could find all the s.f. I craved in the 70's.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45542683">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45542005" onclick="return D2.selectParent(45542005)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price by DexterIsADog @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542683" data-title="Re:price">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price by DexterIsADog" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542683" data-title="Re:price">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price by DexterIsADog" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45542683" data-title="Re:price">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45542683" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45542683"></div>
+
+<ul id="group_45542683">
+	<li id="hiddens_45542683" class="hide"></li>
+</ul>
+
+</li><li id="tree_45543457" class="comment full contain"><span class="ind"></span>
+<div id="comment_status_45543457" class="commentstatus"></div>
+<div id="comment_45543457" class="cw">
+	<div id="comment_top_45543457" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_45543457" name="comment_link_45543457" href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45543457" onclick="return D2.setFocusComment(45543457)" >Re:price</a>
+
+
+		 	<span id="comment_score_45543457" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 45543457); return false"><span class=opt>Score:</span>5</a>, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~cheekyjohnson">cheekyjohnson</a>  <span class="uid"><a href="//slashdot.org/~cheekyjohnson">(1873388)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_45543457">		
+		on Wednesday November 27, 2013 @06:22PM (<span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=4493645&amp;cid=45543457">#45543457</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_45543457"><p><div class="quote"><p>They probably already know how to pirate.</p></div><p>I think you'd be surprised at how horrendously incompetent most people are. I'd say young people are nowhere near as 'tech savvy' as some people like to claim they are, to the point where they have difficulty doing much beyond accessing their Facebook pages and using a few specific programs.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_45543457">
+<span class="ind"></span><a class="btn link" href="//news.slashdot.org/comments.pl?sid=4493645&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=45541111" onclick="return D2.selectParent(45541111)">Parent</a> 	<a href="#" class="comment_share_toggle btn link">Share</a>
+	<div class="comment_share sharethis-0 hide"><span class="au"></span>
+		<a class="janrain t" href="#" data-provider="twitter" data-message="Re:price by cheekyjohnson @slashdot" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45543457" data-title="Re:price">twitter</a>
+		<a class="janrain f" href="#" data-provider="facebook" data-message="Re:price by cheekyjohnson" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45543457" data-title="Re:price">facebook</a>
+		<a class="janrain l" href="#" data-provider="linkedin" data-message="Re:price by cheekyjohnson" data-url="http://news.slashdot.org/comments.pl?sid=4493645&cid=45543457" data-title="Re:price">linkedin</a>
+		<a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/comments.pl?sid=4493645%26cid=45543457" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="//www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	</div>
+
+</div>
+</div>
+
+<div id="replyto_45543457"></div>
+
+<ul id="group_45543457">
+	<li id="hiddens_45543457" class="hide"></li>
+</ul>
+
+</li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+<noscript><p><b>There may be more comments in this discussion. Without JavaScript enabled, you might want to <a href="//news.slashdot.org/users.pl?op=editcomm">turn on Classic Discussion System</a> in your preferences instead.</b></p></noscript>
+<div id="discussion_buttons" class="clearfix">
+
+
+
+
+
+
+</div>
+
+
+<div class="newcmnt"><div id="replyto_0"></div></div>
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 0;
+		D2.currents()['full']     = 21;
+		D2.currents()['oneline']  = 0;
+		// D2.currents_total(21);
+
+		D2.abbrev_comments({});
+		D2.noshow_comments([]);
+		D2.pieces_comments([]);
+		D2.init_hiddens([]);
+
+		D2.finishLoading();
+
+
+
+//-->
+	</script>
+
+
+</div>
+
+</section>
+
+<div id="clickgen" class="grid_24 b">
+    <section class="grid_16 f">
+        <div>
+			<h4 class="nobg">
+			    <a href="" class="selected btmrel" onClick="getRelatedStoriesForStory(194899);return false">Related Links</a>
+			    <span class="tops fright">Top of the: <a href="" class="btmday" onClick="getTopStories(1);return false">day</a>, <a class="btmweek" href="" onClick="getTopStories(7); return false">week</a>, <a href="" onClick="getTopStories(30);return false" class="btmmonth">month</a>.</span>
+			</h4>
+			<ul class="nobullets bmrelatedlist">
+
+
+	
+	<li>
+		<span class="cmntcnt"><span class="slant"></span><span>954<span class="hide"> comments</span></span></span><a href="//news.slashdot.org/story/14/09/17/1515258/isis-bans-math-and-social-studies-for-children?sdsrc=popbyskidbtmprev">ISIS Bans Math and Social Studies For Children</a>
+	</li>
+
+	
+	<li>
+		<span class="cmntcnt"><span class="slant"></span><span>708<span class="hide"> comments</span></span></span><a href="//news.slashdot.org/story/14/08/27/1419225/climate-damage-irreversible-according-leaked-climate-report?sdsrc=popbyskidbtmprev">Climate Damage 'Irreversible' According Leaked Climate Report</a>
+	</li>
+
+	
+	<li>
+		<span class="cmntcnt"><span class="slant"></span><span>634<span class="hide"> comments</span></span></span><a href="//news.slashdot.org/story/14/09/15/1158253/extent-of-antarctic-sea-ice-reaches-record-levels?sdsrc=popbyskidbtmprev">Extent of Antarctic Sea Ice Reaches Record Levels</a>
+	</li>
+
+	
+	<li>
+		<span class="cmntcnt"><span class="slant"></span><span>611<span class="hide"> comments</span></span></span><a href="//news.slashdot.org/story/14/08/21/1320251/study-ad-free-internet-would-cost-everyone-230-a-year?sdsrc=popbyskidbtmprev">Study: Ad-Free Internet Would Cost Everyone $230-a-Year</a>
+	</li>
+
+	
+	<li>
+		<span class="cmntcnt"><span class="slant"></span><span>579<span class="hide"> comments</span></span></span><a href="//news.slashdot.org/story/14/08/28/207240/why-women-have-no-time-for-wikipedia?sdsrc=popbyskidbtmprev">Why Women Have No Time For Wikipedia</a>
+	</li>
+
+
+</ul>
+        </div>
+    </section>
+    <aside class="grid_8 st">
+		<section class="grid_24 f">
+			<div>
+				<h5 class="tlnav"><a href="//mobile.slashdot.org/story/13/11/27/1855217/jollas-first-phone-goes-on-sale?sdsrc=nextbtmnext">next</a></h5>
+				<div class="grid_24">
+	    
+	    
+            	 <span class="grid_7 tcenter"><img src="//a.fsdn.com/sd/topics/cellphones_64.png" width="64" height="64" alt="Cellphones"></span>
+	    
+					<p class="grid_12"><a href="//mobile.slashdot.org/story/13/11/27/1855217/jollas-first-phone-goes-on-sale?sdsrc=nextbtmprev">Jolla's First Phone Goes On Sale</a></p>
+					<span class="grid_5 tcenter comments"><span class="cmntcnt_large fleft"><span class="slant"></span><span>307<span class="hide"> comments</span></span></span></span>
+	
+				</div>
+			</div>
+		</section>
+		<section class="grid_24">
+			<div>
+				<h5 class="tlnav"><a href="//yro.slashdot.org/story/13/11/27/1736236/nsa-planned-to-discredit-radicals-based-on-web-browsing-habits?sdsrc=prevbtmprev">previous</a></h5>
+				<div class="grid_24">
+	    
+            	 <span class="grid_7 tcenter"><img src="//a.fsdn.com/sd/topics/privacy_64.png" width="64" height="64" alt="Privacy"></span>
+	    
+					<p class="grid_12"><a href="//yro.slashdot.org/story/13/11/27/1736236/nsa-planned-to-discredit-radicals-based-on-web-browsing-habits?sdsrc=prevbtmprev">NSA Planned To Discredit Radicals Based On Web-Browsing Habits</a></p>
+
+					<span class="grid_5 tcenter comments"><span class="cmntcnt_large fleft"><span class="slant"></span><span>415<span class="hide"> comments</span></span></span></span>
+				</div>
+			</div>
+		</section>
+	</aside>
+</div>
+									   </div>
+									</section>
+                                    <section class="grid_24" style="margin-top:20px;">
+                                        <div class="railad">
+<div id='div-gpt-ad-728x90_b'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_b');});</script></div>
+</div>
+                                    </section>
+<div id="InRead" style="margin: 10px auto 0px; width:  465px; padding-bottom: 30px; clear:both;"></div>
+<script type="text/javascript">
+var zflag_parent="InRead";
+var zflag_vast_domain="http://xp1.zedo.com/";
+var zflag_nid="2340";
+var zflag_cid="219";
+var zflag_sz="85";
+var zflag_sid="76";
+var zflag_width="425";
+var zflag_height="330";
+var zflag_bchan="218";
+var zflag_dimension="1";
+var zflag_breplay="1";
+var zflag_preroll="1";
+var zflag_autoclose="1";
+</script>
+<script type="text/javascript" src="//c5.zedo.com/jsc/c5/frd.js"></script>
+
+								     </section>
+								  </div>
+
+	
+
+<script type="text/javascript">
+$(function(){
+$('#firehose-filter').
+	focus(function(event){
+		gFocusedText = this;
+	}).
+	blur(function(event){
+		if ( gFocusedText === this ) {
+			gFocusedText = null;
+		}
+	});
+
+
+apply_updates_when(		'at-end', true);
+});
+</script>
+
+
+<!-- body end --></section>
+
+
+
+
+
+<footer id="fhft" class="grid_24 nf aoc">
+	<div id="logo_nf" class="fleft">
+		<a href="//slashdot.org"><span>Slashdot</span></a>
+	</div>
+	<nav role="firehose footer">
+			
+				
+				
+				
+				
+
+				
+					<button class="btn" disabled="disabled">Archived Discussion</button>
+				
+				<a class="btn hide" id="footer_moderate_button">Moderate</a>
+				<a class="btn hide" id="footer_moderatorhelp_button">Moderator Help</a>
+				<a class="btn hide" id="footer_delete_button" title="Checked comments will be deleted.">Delete</a>
+				<script>
+					(function($){
+						var old_moderate_btn = $("#discussion_moderate_button");
+						if (old_moderate_btn.length) {
+							var moderate_btn = $("#footer_moderate_button");
+							moderate_btn.click(
+								function(){old_moderate_btn.click()}
+							);
+							moderate_btn.removeClass('hide');
+						}
+
+						var old_moderatorhelp_btn = $("#discussion_moderatorhelp_button");
+						if (old_moderatorhelp_btn.length) {
+							var moderatorhelp_btn = $("#footer_moderatorhelp_button");
+							moderatorhelp_btn.click(
+								function(){old_moderatorhelp_btn.click()}
+							);
+							moderatorhelp_btn.attr(
+								'href', old_moderatorhelp_btn.attr('href')
+							);
+							moderatorhelp_btn.removeClass('hide');
+						}
+
+						var old_delete_btn = $("#discussion_delete_button");
+						if (old_delete_btn.length) {
+							var delete_btn = $("#footer_delete_button");
+							delete_btn.click(
+								function(){old_delete_btn.click()}
+							);
+							delete_btn.removeClass('hide');
+						}
+
+						$('#discussion_buttons').addClass('hide');
+					})(Slash.jQuery); // (function($){
+				</script>
+				<ul class="fleft">
+					
+					<li class="fleft selected">
+   						<span class="nbutton btn hide link reset" id="more_comments_button"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get more comments</span></a></span>
+					</li>
+
+					
+					
+					<li class="fleft"><span class="loadedcommentcnt">100</span> of <span class="totalcommentcnt">331</span> loaded</li>
+					
+				</ul>
+				
+					<script type="text/javascript">D2.finishLoading()</script>
+				
+
+<!-- below markup is for D1
+				<ul class="fleft">
+					<li class="fleft"><a href="">Moderator help</a></li>
+					<li class="fleft"><a href="">Delete</a></li>
+					<li class="fleft"><a href="">?</a></li>
+
+					<li class="fleft"><a href="">__1_of_10_loaded__</a></li>
+
+				</ul>
+-->
+
+			
+
+	    
+        <ul class="fright submitstory">
+            <li class="fright"><a href="/submit">Submit<span class="opt"> Story</span></a></li>
+        </ul>
+	</nav>
+</footer>
+	<section class="bq"><blockquote class="msg grid_24" cite="http://slashdot.org"><p>One man's "magic" is another man's engineering.  "Supernatural" is a null word.
+		-- Robert Heinlein</p><span class="slant"></span></blockquote></section>
+<footer id="ft" class="grid_24">
+		<nav class="grid_10" role="footer">
+		    <ul>
+			<li><a href="//slashdot.org/faq">FAQ</a></li>
+			<li><a href="//slashdot.org/archive.pl">Story Archive</a></li>
+			<li><a href="//slashdot.org/hof.shtml">Hall of Fame</a></li>
+			<li><a href="http://slashdotmedia.com/advertising-and-marketing-services/">Advertising</a></li>
+			<li><a href="http://slashdot.org/job_board.pl">Jobs</a></li>
+			<li><a href="http://slashdotmedia.com/terms-of-use/">Terms</a></li>
+			<li><a href="http://slashdotmedia.com/privacy-statement/">Privacy</a></li>
+			<li id="teconsent"></li>
+			<li><a href="http://slashdotmedia.com/opt-out-choices/">Opt Out Choices</li>
+			<li><a href="//slashdot.org/faq/slashmeta.shtml">About</a></li>
+			<li><a href="mailto:feedback@slashdot.org">Feedback</a></li>
+			<li><a href="http://slashdot.jp">Slashdot Japan</a></li>
+			<li><a href="#" onclick="set_mobile_pref('mobile',1);return false;">Mobile View</a></li>
+			<li><a href="//slashdot.org/?usebeta=1">Slashdot Beta</a></li>
+		    </ul>
+		</nav>
+
+<br>
+                
+	        <div class="grid_14 tright tm">Trademarks property of their respective owners. Comments owned by the poster. <span class="nobr">Copyright &copy; 2014 Dice. All Rights Reserved.</span> <span class="nobr">Slashdot is a <a href="http://www.diceholdingsinc.com/phoenix.zhtml?c=211152&p=irol-landing" title="The Mother Ship">Dice Holdings, Inc.</a> service.</span></div>
+</footer>
+
+ 
+<div class="overlay"></div>
+<div class="modal-box">
+    <a href="#" id="close-modal">Close</a>
+    <article class="modal-content">
+    </article>
+    <footer>
+</div>
+
+
+
+
+<div id="modal_cover" class="hide" onclick="hide_modal_box(); return false;"></div>
+<div id="modal_box" class="hide">
+      <div id="modal_box_content"></div>
+      <header class="n">
+                  <span class="fadeout"></span>
+                  <span class="fadeoutfade"></span>
+		  <span class="pf"><a class="ico close" onclick="hide_modal_box(); return false;" href="#"><span>Close</span></a></span>
+		  <h3 class="pf"><div id="logo"><a href="//slashdot.org">Slashdot</a></div><span id="preference_title"></span></h3>
+      </header>
+</div>
+
+<script type="text/javascript">
+COMSCORE.beacon({
+  c1:2,
+  c2:6035546,
+  c3:"",
+  c4:"",
+  c5:"",
+  c6:"",
+  c15:""
+});
+</script>
+<noscript><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035546&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cj=1" alt="comScore2"></noscript>
+
+
+<!-- Google Remarketing tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1002083962;
+var google_conversion_label = "G_uGCOaBlAQQ-qzq3QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1002083962/?value=0&amp;label=G_uGCOaBlAQQ-qzq3QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script id="after-content" type="text/javascript">
+(function( $, fn, console ){
+	$ && fn && $(function(){ fn($, console); });
+})(window.jQuery, window.pageload_done, window.console);
+</script>
+
+<script type='text/javascript'>
+	if(!document.location.href.match(/source=autorefresh/)) {
+		document.write('<img src="//slashdot.org/images/js.gif?645">');
+	}
+</script>
+<noscript>
+	<img src="//slashdot.org/images/njs.gif?304">
+</noscript>
+<div class="busy genericspinner hide"><span>Working...</span></div>
+<script>
+  if(typeof(Storage)!=="undefined"){
+		window.scrollTo(0,sessionStorage.scrollPos);
+			$(window).scroll(function () { 
+			//You've scrolled this much:
+			sessionStorage.scrollPos = $(window).scrollTop();
+		});
+	}
+	$(function(){
+		$('a').click(function(){
+			delete sessionStorage.scrollPos;
+		})
+	});
+	// window.onbeforeunload = function () {
+	// 	console.log('bakc button clicked');
+	// 	delete sessionStorage.scrollPos;
+	// }
+	window.onpopstate=function() {
+		delete sessionStorage.scrollPos;
+	}
+</script>
+
+</body>
+</html>

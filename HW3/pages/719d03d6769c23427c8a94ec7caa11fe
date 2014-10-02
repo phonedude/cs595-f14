@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="fr" class="ie ie8">  <![endif]-->
+<!--[if IE 9]>    <html lang="fr" class="ie ie9">  <![endif]-->
+<!--[if !IE]><!--><html lang="fr">                 <!--<![endif]-->
+
+    <head>
+
+        <!--[if lte IE 7]>
+			<script src="/js/libs/ie/warning.js" type="text/javascript"></script>
+
+			<script>
+				window.onload=function() {
+					e("/img/ie");
+				}
+			</script>
+		<![endif]-->
+
+		<!--[if lte IE 8]><script src="/js/libs/ie/html5shiv.js"></script><![endif]-->
+
+        <!-- IE10 and Firefox Conditionnal CSS -->
+		<script>
+			if(Function('/*@cc_on return 10===document.documentMode@*/')()){
+				document.documentElement.className='ie ie10';
+			}else if(navigator.userAgent.match(/firefox/i)) {
+			    document.documentElement.className='firefox';
+			};
+		</script>
+
+        <title> Dave Gray presents his book,  &quot;Connected Company &quot; - Deedjoo</title><meta name="description" content="In this short paper Dave Gray presents  his book &quot;The Connected Company&quot;, focussed on:
+
+
+	the Why, the What and the How : Why we need to transform...">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="nZs5Hh6aF_u9qgZWsqNIXOTf9Di4Pgi5sS2v_0dpS-Y">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic,100italic,100'
+              rel='stylesheet'
+              type='text/css'>
+
+        <!-- CSS styles -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link href="/css/bootstrap/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+		
+            <link href='/css/all.min.css' rel='stylesheet' type='text/css' />
+
+		
+    </head>
+
+    
+    <body data-base-url="/"
+    	  data-fb-app-id="153209481542523"
+    	  data-ga-id="UA-42970545-1"
+   		  data-ga-host="deedjoo.com"
+          style="margin: 0 !important;">
+
+        <div id="fb-root"></div>
+
+        <!-- HEADER -->
+        <header>
+
+            <div id="header"
+                 class="wrapper"> <!-- MOBILE => .hidden-phone -->
+
+                <div id="header-content"
+                     class="wrapper-content">
+
+                    <!-- HOME HGROUP -->
+                    <hgroup>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a id="home-link"
+                                       href="/">
+                                        <div class="icon "></div>
+                                        <div class="text">Accueil</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </hgroup>
+
+                    <!-- LINKS HGROUP -->
+                    <hgroup id="links">
+                        <nav>
+                            <ul id="header-links">
+                                <li>
+                                    <a id="authors-link"
+                                       href="/auteurs/rechercher"
+                                       class="menu-link">
+                                        <div class="icon "></div>
+                                        <div class="text">AUTEURS</div>
+                                    </a>
+                                </li>
+                                <li class="separator">
+                                    <div></div>
+                                </li>
+                                <li>
+                                    <a id="books-link"
+                                       href="/livres/rechercher"
+                                       class="menu-link">
+                                        <div class="icon "></div>
+                                        <div class="text">LIVRES</div>
+                                    </a>
+                                </li>
+                                <li class="separator">
+                                    <div></div>
+                                </li>
+                                <li>
+                                    <a id="posts-link"
+                                       href="/articles/rechercher"
+                                       class="menu-link">
+                                        <div class="icon active"></div>
+                                        <div class="text">ACTU</div>
+                                    </a>
+                                </li>
+                                <li class="separator">
+                                    <div></div>
+                                </li>
+                                <li>
+                                    <a id="subjects-link"
+                                       href="/sujets/rechercher"
+                                       class="menu-link">
+                                        <div class="icon "></div>
+                                        <div class="text">TENDANCES</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </hgroup>
+
+                    <!-- SEARCH HGROUP -->
+                    <hgroup id="search" class="stick-right">
+                        <form action="/publications/rechercher"
+                              id="search-form">
+                            <fieldset>
+                                <input id="searchString"
+                                       name="searchString"
+                                       type="text"
+                                       data-placeholder="MA RECHERCHE"
+                                       class="placeholder"
+                                       value="MA RECHERCHE">
+                                <select id="searchType" name="searchType">
+                                    <option                                             value="AUTHOR">AUTEUR</option>
+                                    <option                                             value="BOOK">LIVRE</option>
+                                    <option                                             value="POST">ACTU</option>
+                                    <option                                             value="SUBJECT">TENDANCE</option>
+                                </select>
+                                <button type="submit"></button>
+                            </fieldset>
+                        </form>
+                    </hgroup>
+
+                    <!-- LOGIN HGROUP -->
+                    <hgroup>
+                        
+	<a id="connection-button"
+	   href="/connexion">
+		<div class="icon"></div>
+	    <div class="text">
+	    	CONNEXION
+		</div>
+	</a>
+
+                        <a id="discover-button"
+                           href="/decouvrir"></a>
+                    </hgroup>
+
+                </div> <!-- #header-content -->
+
+            </div> <!-- #header -->
+
+            <div id="sub-header"> <!-- MOBILE => .hidden-phone -->
+
+                <div class="wrapper-content">
+
+                    <div class="row">
+
+                    	<a href="">
+	                        <img id="logo"
+	                             class="span4"
+	                             src="/img/logo-deedjoo.png"
+	                             alt="Logo Deedjoo"></img>
+	                    </a>
+
+						<div id="leitmotiv" class="span5">
+
+							<p>
+								L'actualité des auteurs qui font bouger l'entreprise
+							</p>
+
+						</div>
+
+                        <div id="right"
+                             class="span2 stick-right">
+
+                            <a id="newsletter-button"
+                               class="button"
+                               href="/newsletter/inscription"
+                               style="margin-top: 40px;">
+                               <i class="icon-envelope icon-white"></i>
+                               <div class="text">INSCRIPTION<br>NEWSLETTER</div>
+                            </a>
+
+                            <div id="subscription-button"
+                                 class="button"
+                                 data-toggle="tooltip"
+                                 title="Ouverture des inscriptions très bientôt !"
+                                 data-placement="bottom"
+                                 style="display : none">
+                               <div class="icon"></div>
+                               <div class="text">JE M'INSCRIS</div>
+                            </div>
+
+                            <div id="above-corner"></div>
+                            <div id="corner"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MOBILE -->
+            <!-- div id="header-mobile" class="visible-phone">
+
+                <div class="advertising mobile"></div>
+
+                <table id="top-buttons">
+                    <tr>
+                        <td>
+                            <div id="connection-button" data-toggle="tooltip" title="Ouverture des inscriptions très bientôt !" data-placement="bottom">
+                                <div class="icon"></div>
+                                <div class="text">CONNEXION</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="subscription-button" data-toggle="tooltip" title="Ouverture des inscriptions très bientôt !" data-placement="bottom">
+                                <div class="icon"></div>
+                                <div class="text">JE M'INSCRIS</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <a href="">
+	                <img id="logo"
+	                     src="/img/logo-deedjoo.png"
+	                     alt="Logo Deedjoo"></img>
+	            </a>
+
+                <div id="menu">
+                    <div id="menu-mobile" class="btn-group">
+                        <a class="btn btn-large dropdown-toggle"
+                           data-toggle="dropdown" href="#">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a id="home-link"
+                                   href="/">
+                                    <div class="icon "></div>
+                                    <div class="text">ACCUEIL</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="authors-link"
+                                   href="/auteurs/rechercher"
+                                   class="menu-link">
+                                    <div class="icon "></div>
+                                    <div class="text">AUTEURS</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="books-link"
+                                   href="/livres/rechercher"
+                                   class="menu-link">
+                                    <div class="icon "></div>
+                                    <div class="text">LIVRES</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="posts-link"
+                                   href="/articles/rechercher"
+                                   class="menu-link">
+                                    <div class="icon "></div>
+                                    <div class="text">ACTU</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="subjects-link"
+                                   href="/sujets/rechercher"
+                                   class="menu-link">
+                                    <div class="icon "></div>
+                                    <div class="text">TENDANCES</div>
+                                </a>
+                            </li>
+                         </ul>
+                    </div>
+                </div>
+
+            </div-->
+
+        </header>
+
+        <!-- CENTER -->
+        <div id="center" class="wrapper">
+
+            <div id="center-content" class="wrapper-content">
+
+                
+<div id="post-publicpage"
+     class="page-content">
+
+    <div class="row">
+
+        <div class="span3">
+
+            <div>
+
+                
+
+<div class="author-widget">
+
+	    	<a href="/auteurs/dave-gray">
+    	
+    	<table>
+
+    		<tr>
+
+    			<td>
+    			    
+        				<div class="avatar">
+    			            <img src="https://s3.amazonaws.com/deedjoo/accounts/69/images/deedjoo_account_69_medium.png" />
+    			        </div>
+
+    									</td>
+
+    			<td>
+
+    				 <div class="author-informations">
+
+			            
+			                <div class="title">
+			                    Auteur			                </div>
+
+			            
+			            <div class="name active-author-link">
+			                Dave Gray			            </div>
+			            <div class="role">
+			                			            </div>
+
+			        </div>
+
+    			</td>
+
+    		</tr>
+
+    	</table>
+	    	</a>
+    	
+</div>
+
+            </div>
+
+            <div>
+
+                <div id="last-subjects" class="publication-feed-widget skin2">
+
+    <h3>
+    	Tendances    </h3>
+
+    <div class="content word-cloud ">
+
+    	
+	    	
+	    		<a class="word"
+	    		   href="/sujets/gamification">
+	    		    GAMIFICATION	    		</a>
+
+	        
+    </div>
+
+</div>
+            </div>
+
+            <div class="share-buttons">
+
+	
+    	<h4>Partagez cette page</h4>
+
+    	<hr class="horizontal-line"/>
+
+    
+<div class="social-share-buttons half-width">
+    <div class="social-share-button">
+        <a href="/articles"
+           class="twitter-share-button"
+           data-via="Deedjoo"
+           data-lang="fr">Tweeter</a>
+    </div>
+    <!-- TODO mettre le compte didgeridoo dans data-via -->
+    <div class="social-share-button">
+        <div class="fb-like"
+             data-href=""
+             data-send="false"
+             data-layout="button_count"
+             data-width="450"
+             data-show-faces="true"
+             data-font="verdana"></div>
+    </div>
+    <div class="social-share-button">
+        <div class="g-plusone" data-size="medium"></div>
+    </div>
+    <div class="social-share-button">
+        <script type="IN/Share"
+                data-counter="right"
+                data-showzero="true"></script>
+    </div>
+</div>
+
+
+</div>
+
+        </div>
+
+        <div class="span9">
+
+        	<section>
+
+	            <h1>
+	                 Dave Gray presents his book,  &quot;Connected Company &quot;	            </h1>
+
+	            <div class="add-to-favorite-btn"  data-toggle="tooltip" title="Très bientôt !" data-placement="bottom">
+	<span>AJOUTER AUX FAVORIS</span>
+</div>
+
+            	<article>
+
+		            <div class="catcher justify">
+
+		                <p><a href="http://thehypertextual.com/2013/07/03/the-connected-company-by-dave-gray/">In this short </a>paper Dave Gray presents &nbsp;his book &quot;The Connected Company&quot;, focussed on:</p>
+
+<ul>
+	<li>the&nbsp;<em>Why</em>, the<em>&nbsp;What</em>&nbsp;and the&nbsp;<em>How</em>&nbsp;:&nbsp;<em>Why</em>&nbsp;we need to transform our organizations,</li>
+	<li><em>What</em>&nbsp;we need to transform them into (engaging, dynamic and connected collaborative environments),</li>
+	<li><em>How</em>&nbsp;to succeed in the transformation.</li>
+</ul>
+
+		            </div>
+
+	            </article>
+
+            	<article>
+
+		            <div class="content">
+		                <p>A lot of drawings&nbsp;and visual design (and&nbsp;<a href="http://www.davegrayinfo.com/visual-thinking-school/">visual thinking</a>) abilities of Dave do wonders in explaining great concepts .</p>
+		            </div>
+
+	            </article>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <br />
+
+    <div class="row">
+
+        <div class="span9 offset3">
+            <div class="fb-comments"
+                 data-href="http://www.deedjoo.com/articles/dave-gray-presents-his-book-connected-company"
+                 data-width="100%"
+                 data-num-posts="3"></div>
+        </div>
+
+    </div>
+
+</div>
+
+            </div> <!-- #center-content -->
+
+        </div> <!-- #center -->
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div id="footer" class="wrapper">
+
+                <div id="footer-content" class="wrapper-content">
+
+                    <div class="row">
+
+                    	<div class="span3">
+
+                    		<div id="about-deedjoo">
+
+                    			<a href="/decouvrir">
+									<img alt="" src="/img/footer/about-icon.png"/>
+									<span>&Agrave; PROPOS DE DEEDJOO</span>
+                    			</a>
+
+                    		</div>
+
+                    	</div>
+
+                    	<div class="span2">
+
+                    		<h3 id="social-links-title">
+                    			Suivez-nous !
+                    		</h3>
+
+                    	</div>
+
+                       	<div class="span2">
+
+                       		<div class="social-links">
+
+	                       		<!-- FACEBOOK LINK -->
+	                            <a class="social-link"
+	                                href="https://www.facebook.com/Deedjoo"
+	                                target="_blank">
+	                                <table>
+	                                	<tr>
+	                                		<td>
+	                                 			<div class="social-icon social-icon-facebook"></div>
+	                                 		</td>
+	                                 		<td>
+	                                 			<div class="text">facebook/deedjoo</div>
+	                                 		</td>
+	                                 	</tr>
+	                                 </table>
+	                             </a>
+
+	                             <!-- TWITTER LINK -->
+	                             <a class="social-link"
+	                                href="https://twitter.com/Deedjoo"
+	                                target="_blank">
+	                                <table>
+	                                	<tr>
+	                                		<td>
+	                                 			<div class="social-icon social-icon-twitter"></div>
+	                                 		</td>
+	                                 		<td>
+	                                 			<div class="text">twitter/deedjoo</div>
+	                                 		</td>
+	                                 	</tr>
+	                                 </table>
+	                             </a>
+
+	                         </div>
+
+                    	</div>
+
+                       	<div class="span2">
+
+                       		<div class="social-links">
+
+	                       		<!-- LINKEDIN LINK -->
+	                            <a class="social-link"
+	                                href="http://www.linkedin.com/company/deedjoo"
+	                                target="_blank">
+	                                <table>
+	                                	<tr>
+	                                		<td>
+	                                 			<div class="social-icon social-icon-linkedin"></div>
+	                                 		</td>
+	                                 		<td>
+	                                 			<div class="text">linkedin/deedjoo</div>
+	                                 		</td>
+	                                 	</tr>
+	                                 </table>
+	                            </a>
+
+	                            <!-- GOOGLE PLUS LINK -->
+	                            <a class="social-link"
+	                                href="https://plus.google.com/+Diateino"
+	                                target="_blank">
+	                                <table>
+	                                	<tr>
+	                                		<td>
+	                                			<div class="social-icon social-icon-googleplus"></div>
+	                                		</td>
+	                                		<td>
+	                                			<div class="text">googleplus/deedjoo</div>
+	                                		</td>
+	                                	</tr>
+	                                </table>
+	                            </a>
+
+	                        </div>
+
+                    	</div>
+
+                    	<div class="span3">
+
+							<div id="footer-links">
+
+								<a class="footer-link"
+	                                href="/conditions-d-utilisation">
+	                                 Conditions d'utilisation
+	                            </a>
+
+	                            <div class="footer-link-separator"></div>
+
+	                            <a class="footer-link"
+	                                href="/mentions-legales">
+	                                 Mentions légales
+	                            </a>
+
+	                            <div class="footer-link-separator"></div>
+
+	                            <a class="footer-link"
+	                                href="/signaler-un-abus">
+	                                 Signaler un abus
+	                            </a>
+
+	                            <div class="footer-link-separator"></div>
+
+	                            <a class="footer-link"
+	                                href="/contactez-nous">
+	                                 Contact
+	                            </a>
+
+							</div>
+
+                    	</div>
+
+                    </div> <!-- .row -->
+
+                    <div class="row" style="margin-top: 10px">
+
+                    	<div class="span12">
+
+	                    	<div style="text-align: center; font-size: 0.65em;">
+		                        Copyright © 2013 Diadoo, Tous droits réservés.
+		                        Site Internet développé par <a style="color: #222; text-decoration: underline !important;" class="footer-link" href="http://www.gomoob.com" target="__blank">GoMoob</a>.
+		                    </div>
+
+                    	</div>
+
+                    </div>
+
+                </div> <!-- #footer-content -->
+
+            </div> <!-- #footer -->
+
+        </footer>
+
+        <script>
+        	var requirejs = {
+        		urlArgs: '1.4.8',
+        		googleAnalyticsId : 'UA-42970545-2',
+        		googleAnalyticsHost : '107.20.152.113'
+            };
+        </script>
+
+        
+		
+<!-- 			<script src="http://www.bugsense.com/static/js/global/bugsense.js" type='text/javascript'></script> -->
+			<script type="text/javascript">
+			    //var bugsense = new Bugsense( { apiKey: '33b61d3d' } );
+			</script>
+
+		
+		<script type="text/javascript"
+		        data-main="/js/main-public"
+		        src="/js/libs/require/require.js"></script>
+
+    </body>
+</html>

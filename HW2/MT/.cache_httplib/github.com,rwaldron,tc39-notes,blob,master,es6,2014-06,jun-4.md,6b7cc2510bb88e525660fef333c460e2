@@ -1,0 +1,33 @@
+status: 200
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 15:48:32 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiNDA5Y2UzOWMxNWQ3YmVhN2E1NzYwZjQ0NzM2ZjZmMTMiLCJzcHlfcmVwbyI6InJ3YWxkcm9uL3RjMzktbm90ZXMiLCJzcHlfcmVwb19hdCI6MTQxMTkxOTMxMiwiX2NzcmZfdG9rZW4iOiJDZGFkTjRQZklweFovdE9ldHlxMzB1eDFsNnQ3dkR0am5xakxSbDE2d1JVPSJ9--7af59110a6e1f575c3e16dfe02bad230e6dd5499;
+ path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: X-PJAX, Accept-Encoding
+server: GitHub.com
+cache-control: max-age=0, private, must-revalidate
+content-location: https://github.com/rwaldron/tc39-notes/blob/master/es6/2014-06/jun-4.md#46-reserving-additional-words-yield-async-and-await-in-particular
+x-runtime: 0.170277
+x-served-by: 7cc969f65c7ec8d9db2fa57dcc51d323
+etag: "495f8d86f0a41190251e1d391aea2338"
+x-github-request-id: 47FBB1A2:3B42:10E9CB43:54282DCF
+date: Sun, 28 Sep 2014 15:48:32 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+x-ua-compatible: IE=Edge,chrome=1
+-varied-accept-encoding: gzip, deflate
+

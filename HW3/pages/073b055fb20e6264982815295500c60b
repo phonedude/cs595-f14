@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png" type="image/x-icon">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width">
+<base target="_blank">
+<title>User Research - Preliminary Survey</title>
+<link rel="stylesheet" type="text/css" href="">
+
+<link href='/static/forms/client/css/3858831918-formview_ltr.css' type='text/css' rel='stylesheet'>
+<style type="text/css">
+body.ss-base-body {
+  font-family: Arial,sans-serif;
+}
+div.ss-form-container {
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-color: #0b61a4;
+  border-style: solid;
+  border-width: 1px;
+}
+h1.ss-form-title {
+  background-color: #0b61a4;
+  padding: 15px;
+  margin: -15px -15px 15px;
+  color: #ffffff;
+  text-align: left;
+}
+div.errorbox-bad {
+  background-color: #f7f7f7;
+}
+h2.ss-section-title {
+  background-color: transparent;
+}
+div.ss-submit div.ss-form-entry {
+  background: none;
+  border: none;
+}
+
+</style>
+
+
+<link href='/static/forms/client/css/2217057662-mobile_formview_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+
+<script type="text/javascript">
+          /**
+ * @license
+ *! H5F
+ * https://github.com/ryanseddon/H5F/
+ * Copyright (c) Ryan Seddon | Licensed MIT
+ */
+
+(function(e,t){"function"==typeof define&&define.amd?define(t):e.H5F=t()})(this,function(){var e,t,a,i,n,r,s,l,u,o,c,d,v,f,p,m,h,g,b,y,w,C,N,A,E,$,k=document,x=k.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder"};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var l=0,u=e.length;u>l;l++)s(e[l]);else s(e)},s=function(a){var i,n=a.elements,r=n.length,s=!!a.attributes.novalidate;if(b(a,"invalid",u,!0),b(a,"blur",u,!0),b(a,"input",u,!0),b(a,"keyup",u,!0),b(a,"focus",u,!0),b(a,"change",u,!0),b(a,"click",o,!0),b(a,"submit",function(i){e=!0,t||s||a.checkValidity()||w(i)},!1),!v())for(a.checkValidity=function(){return c(a)};r--;)i=!!n[r].attributes.required,"fieldset"!==n[r].nodeName.toLowerCase()&&l(n[r])},l=function(e){var t=e,a=g(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,s=/^(input|keyup)$/i,l=r.test(n.type)?n.type:n.pattern?n.pattern:!1,u=f(t,l),o=m(t,"step"),v=m(t,"min"),h=m(t,"max"),b=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return c.call(this,t)},t.setCustomValidity=function(e){d.call(t,e)},t.validity={valueMissing:a,patternMismatch:u,rangeUnderflow:v,rangeOverflow:h,stepMismatch:o,customError:b,valid:!(a||u||o||v||h||b)},n.placeholder&&!s.test(i)&&p(t)},u=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,s=/^(checkbox|radio)$/i,o=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||l(t),t.validity.valid&&(""!==t.value||s.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&o&&(y(t.form,"keyup",u,!0),o=!1))},c=function(t){var a,i,n,r,s=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var l=0,o=a.length;o>l;l++)i=a[l],n=!!i.attributes.required,r=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&(n||r&&n)&&(u(i),i.validity.valid||s||(e&&i.focus(),s=!0));return!s}return u(t),t.validity.valid},d=function(e){var t=this;t.validationMessage=e},o=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(x,"validity")&&E(x,"checkValidity")},f=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},p=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,s=/^password$/i,l=!!("placeholder"in x);l||!r.test(e.nodeName)||s.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,b(e.form,"submit",function(){i="submit",p(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),s=(r-a)%n;return g(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==s:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},h=function(e){var t=!!e.attributes.required;return t?g(e):!1},g=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},b=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+        </script>
+<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/oembed?url=https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/viewform&amp;format=xml">
+<meta property="og:title" content="User Research - Preliminary Survey"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/viewform"><meta property="og:image" content="https://ssl.gstatic.com/docs/forms/social/social-forms.png"><meta property="og:image:width" content="90"><meta property="og:image:height" content="90"><meta property="og:description" content="We&#39;re building some amazing new things here at Bitly and need people to help us test them out! If this is something you&#39;d be interested in fill out the form below. If you are a good match for our study, we will be sure to reach out to you.
+
+NOTE: All participants get some fun Bitly swag sent to them!">
+</head>
+<body dir="ltr" class="ss-base-body"><div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="User Research - Preliminary Survey">
+<meta itemprop="description" content="We&#39;re building some amazing new things here at Bitly and need people to help us test them out! If this is something you&#39;d be interested in fill out the form below. If you are a good match for our study, we will be sure to reach out to you.
+
+NOTE: All participants get some fun Bitly swag sent to them!">
+
+<meta itemprop="url" content="https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_jfk2.png">
+
+
+
+
+
+<div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">User Research - Preliminary Survey</h1>
+<div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">We&#39;re building some amazing new things here at Bitly and need people to help us test them out! If this is something you&#39;d be interested in fill out the form below. If you are a good match for our study, we will be sure to reach out to you.<p>NOTE: All participants get some fun Bitly swag sent to them!</p></div>
+
+<div class="ss-required-asterisk" aria-hidden="true">* Required</div></div></div>
+<div class="ss-form"><form action="https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_559145850"><div class="ss-q-title">What is your full name?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.559145850" value="" class="ss-q-short" id="entry_559145850" dir="auto" aria-label="What is your full name?  " aria-required="true" required="" title="">
+<div class="error-message" id="931063486_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_293846479"><div class="ss-q-title">What is your email address?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.293846479" value="" class="ss-q-short" id="entry_293846479" dir="auto" aria-label="What is your email address?  " aria-required="true" required="" title="">
+<div class="error-message" id="588911132_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1456432552"><div class="ss-q-title">How often do you use Bitly?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices" role="radiogroup" aria-label="How often do you use Bitly?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.825158516" value="Basically every second of my life." id="group_825158516_1" role="radio" class="ss-q-radio" aria-label="Basically every second of my life." required="" aria-required="true"></span>
+<span class="ss-choice-label">Basically every second of my life.</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.825158516" value="Multiple times a day." id="group_825158516_2" role="radio" class="ss-q-radio" aria-label="Multiple times a day." required="" aria-required="true"></span>
+<span class="ss-choice-label">Multiple times a day.</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.825158516" value="A few times a week." id="group_825158516_3" role="radio" class="ss-q-radio" aria-label="A few times a week." required="" aria-required="true"></span>
+<span class="ss-choice-label">A few times a week.</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.825158516" value="A few times a month." id="group_825158516_4" role="radio" class="ss-q-radio" aria-label="A few times a month." required="" aria-required="true"></span>
+<span class="ss-choice-label">A few times a month.</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.825158516" value="Almost never, but I am interested in learning more!" id="group_825158516_5" role="radio" class="ss-q-radio" aria-label="Almost never, but I am interested in learning more!" required="" aria-required="true"></span>
+<span class="ss-choice-label">Almost never, but I am interested in learning more!</span>
+</label></li></ul>
+<div class="error-message" id="1456432552_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1489291258"><div class="ss-q-title">Which Bitly products do you use?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Check all the apply</div></label>
+
+<ul class="ss-choices ss-choices-required" role="group" aria-label="Which Bitly products do you use? Check all the apply "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1542570936" value="Chrome Extension" id="group_1542570936_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Chrome Extension</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1542570936" value="Bookmarklet" id="group_1542570936_2" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Bookmarklet</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1542570936" value="Bitly for Feelings" id="group_1542570936_3" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Bitly for Feelings</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1542570936" value="APIs" id="group_1542570936_4" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">APIs</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1542570936" value="iOS App" id="group_1542570936_5" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">iOS App</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1542570936" value="Website" id="group_1542570936_6" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Website</span>
+</label></li></ul>
+<div class="error-message" id="1489291258_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1761861128"><div class="ss-q-title">Do you use bitly for work or for something else?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Can you briefly share how you&#39;re using Bitly.</div></label>
+<textarea name="entry.1761861128" rows="8" cols="0" class="ss-q-long" id="entry_1761861128" dir="auto" aria-label="Do you use bitly for work or for something else? Can you briefly share how you&#39;re using Bitly. " aria-required="true" required=""></textarea>
+<div class="error-message" id="1091552461_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_691764553"><div class="ss-q-title">Which social media accounts are currently linked to your bitly account?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Check all that apply.</div></label>
+
+<ul class="ss-choices ss-choices-required" role="group" aria-label="Which social media accounts are currently linked to your bitly account? Check all that apply. "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1366153587" value="Facebook" id="group_1366153587_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Facebook</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1366153587" value="Twitter" id="group_1366153587_2" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Twitter</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1366153587" value="None" id="group_1366153587_3" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">None</span>
+</label></li></ul>
+<div class="error-message" id="691764553_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_798536659"><div class="ss-q-title">Besides Bitly, what other sharing tools do you use during the course of your day?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Please check all that apply</div></label>
+
+<ul class="ss-choices ss-choices-required" role="group" aria-label="Besides Bitly, what other sharing tools do you use during the course of your day? Please check all that apply "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="Tweetdeck" id="group_1156263704_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Tweetdeck</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="Hootsuite" id="group_1156263704_2" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Hootsuite</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="MailChimp" id="group_1156263704_3" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">MailChimp</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="Buffer" id="group_1156263704_4" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Buffer</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="Radien 6" id="group_1156263704_5" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Radien 6</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="Facebook Sharing" id="group_1156263704_6" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Facebook Sharing</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="None" id="group_1156263704_7" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">None</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1156263704" value="__other_option__" id="group_1156263704_8" role="checkbox" class="ss-q-checkbox ss-q-other-toggle" aria-required="true"></span>
+<span class="ss-choice-label">Other:</span></label>
+<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1156263704.other_option_response" value="" class="ss-q-other" id="entry_1156263704_other_option_response" dir="auto" aria-label="Other"></span>
+</li></ul>
+<div class="error-message" id="798536659_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1577481246"><div class="ss-q-title">Are you available to talk to someone from bitly via skype or a <a href="http://www.google.com/url?q=http%3A%2F%2Fjoin.me&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHe-vR9J324BpHTtz2MMllZgKBQyQ">join.me</a> meeting?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">Please specify ideal dates, times and your timezone in the other field.</div></label>
+
+<ul class="ss-choices ss-choices-required" role="group" aria-label="Are you available to talk to someone from bitly via skype or a join.me meeting? Please specify ideal dates, times and your timezone in the other field. "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1271636135" value="Yes, This week (March 20, 21)" id="group_1271636135_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Yes, This week (March 20, 21)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1271636135" value="Yes, Next week (March 24-28)" id="group_1271636135_2" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Yes, Next week (March 24-28)</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1271636135" value="No" id="group_1271636135_3" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">No</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1271636135" value="__other_option__" id="group_1271636135_4" role="checkbox" class="ss-q-checkbox ss-q-other-toggle" aria-required="true"></span>
+<span class="ss-choice-label">Other:</span></label>
+<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1271636135.other_option_response" value="" class="ss-q-other" id="entry_1271636135_other_option_response" dir="auto" aria-label="Other"></span>
+</li></ul>
+<div class="error-message" id="1577481246_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;1266249695022055183&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<input type="hidden" name="fbzx" value="1266249695022055183">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit">
+<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+</tr></tbody></table></div></ol></form></div>
+<div class="ss-footer"><div class="ss-attribution"></div>
+<div class="ss-legal"><div class="disclaimer-separator"></div>
+<div class="disclaimer" dir="ltr"><div class="powered-by-logo"><span class="powered-by-text">Powered by</span>
+<div class="ss-logo-container ss-logo-css-container"><div class="ss-logo-image"></div>
+<span class="aria-only-help">Google Forms</span></div></div>
+<div class="ss-terms"><span class="disclaimer-msg">This form was created inside of Bitly.</span>
+<br>
+<a href="https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/reportabuse?source=https://docs.google.com/forms/d/1tEA4GmWEDXKRLLeMJ2ytSfmRbkYv0RZCMkq2Uowwxbc/viewform">Report Abuse</a>
+-
+<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
+-
+<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>
+
+<div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic></div></div>
+
+
+<script type='text/javascript' src='/static/forms/client/js/3630863869-formviewer_prd.js'></script>
+<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,\x22#0b61a4\x22,[]\n]\n");</script></div></body></html>

@@ -1,0 +1,264 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » Heartbleed’s lessons Comments Feed Four short links:
+   28 April 2014 Four short links: 29 April 2014
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   Web Ops & Performance
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+Heartbleed’s lessons
+
+All trust is misplaced. And that's probably the way it should be.
+
+   by Mike Loukides | @mikeloukides | +Mike Loukides | Comments: 5 | April
+   28, 2014
+   Comments: 5
+
+   In the wake of Heartbleed, there’s been a chorus of “you can’t trust
+   open source! We knew it all along.”
+
+   It’s amazing how short memories are. They’ve already forgotten
+   Apple’s GOTO FAIL bug, and their sloppy rollout of patches. They’ve
+   also evidently forgotten weaknesses intentionally inserted into
+   commercial security products at the request of certain government
+   agencies. It may be more excusable that they’ve forgotten hundreds, if
+   not thousands, of Microsoft vulnerabilities over the years, many of
+   which continue to do significant harm.
+
+   Yes, we should all be a bit spooked by Heartbleed. I would be the last
+   person to argue that open source software is flawless. As Eric Raymond
+   said, “With enough eyes, all bugs are shallow,” and Heartbleed was
+   certainly shallow enough, once those eyes saw it. Shallow, but hardly
+   inconsequential. And even enough eyes can have trouble finding bugs in
+   a rat’s nest of poorly maintained code. The Core Infrastructure
+   Initiative, which promises to provide better funding (and better
+   scrutiny) for mission-critical projects such as OpenSSL, is a step
+   forward, but it’s not a magic bullet that will make vulnerabilities go
+   away.
+
+   So, what should you trust? I’m not going argue that you should “trust”
+   open source code; it’s unclear to me what that kind of trust even
+   means. But if your response is, “then, we’ll go back to the vendors to
+   get good trustable code that has gone through audits,” well, forget
+   about it. Count me out. Commercial code has failed us before, continues
+   to fail us, and will fail us again. “As a dog returneth to its vomit,
+   so a fool returneth to his folly.”
+
+   The bottom line is that, in the security game, there’s no one to trust.
+   All trust is misplaced, and blind faith in any software provider will
+   end up in misery. And that’s probably the way it should be. It’s like
+   walking through a tough neighborhood on a dark night: be careful, keep
+   your guard up, watch what’s going on. And keep your systems patched.
+   tags: Heartbleed, security
+   Comments: 5
+
+Get the O’Reilly Web Ops and Performance Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=webops&loc=botpost&emtype=nl
+
+     * Karl Fogel
+       +1 on all of that, Mike.
+       To pick one (minor) nit: you write “commercial” but really mean
+       “proprietary”. Open source code is commercial — in principle, since
+       commercial use is always allowed, but also in practice, because
+       widely-used open source code pretty much always has for-profit
+       users, and because those users invest time and money into it and
+       use it for commercial purposes.
+       The reason I bother to mention it is that mis-casting open source
+       software as the opposite of “commercial” software creates a
+       misunderstanding that open source advocates have to constantly push
+       back against. To give one example, it took a while to convince
+       government agencies that open source software is commercial
+       software and thus fits procurement regulations that, reasonably,
+       are biased toward using “COTS” (commercial off-the-shelf) software
+       whenever possible instead of custom-built software.
+       Best,
+       -Karl
+     * http://jason-carter.net/ Jason Carter
+       The main benefit that open source has over proprietary software is
+       the availability to check for these bugs yourself. Vendors present
+       with a ‘trust me’ attitude when selling their black boxes, while
+       open source has a ‘look for yourself’ attitude, and use at your own
+       risk.
+       Who is to blame when all of the vendors that inplemented OpenSSL
+       didn’t take the time to inspect the code themselves to ensure it
+       was bug free and up to their ‘proprietary’ standards? They took the
+       benefit of open source but didn’t take the time to flush out the
+       risk. I don’t feel bad for any vendor who got bit by this bug and
+       and is now yelling ‘not our fault’, as it is truly their fault.
+     * Tim Boudreau
+       IMO we need a “git for code reviews” that involves generating an
+       expensive-to-forge “proof of review” (ala bitcoin’s proof-of-work).
+     * OpenSource
+       Apple’s code was also open source. Your article makes no sense.
+       With many eyes all bugs are shallow. Except GnuTLS. Except OpenSSL.
+       Except Apple’s libsecurity. All open source. All flawed.
+       Maybe what’s really necessary is not many eyes but deep code
+       review.
+       http://opensource.apple.com/source/Security/Security-55471/libsecur
+       ity_ssl/lib/sslKeyExchange.c
+       Or maybe not using c style languages with manual memory management.
+       Maybe humans aren’t good at that, in the end.
+     * Harvey Sugar
+       I think the point of your article is don’t be complacent. For many
+       organizations developing secure software is a new idea. They are
+       just becoming aware of standards and methods for secure code
+       development and have yet to put these practices in place. No one at
+       this point is frightened enough to re-implement critical legacy
+       software.
+       One of the major vulnerabilities will continue to be legacy
+       software that is often “a rat’s nest of poorly maintained code.”
+       Like quality, security must be designed into the software. You
+       can’t patch, inspect, or test security into software that has a
+       flawed design. For some critical infrastructure software such as
+       SSL/TLS implementations, web servers, or other widely used crypto
+       modules, it may be time to start over using a security-aware
+       development process.
+
+Featured Video
+
+   “These problems are fixable, these problems are important, but they
+   require you to choose to work on them” — Mikey Dickerson looks back on
+   what it took to fix HealthCare.gov.
+
+Recent Posts
+
+     * Python 3: threat or menace?
+     * Four short links: 26 September 2014
+     * Four short links: 25 September 2014
+     * Scaling NoSQL databases: 5 tips for increasing performance
+     * In pursuit of universal IoT standards
+
+   Tweets by @radar
+
+Most Recently Discussed
+
+Featured Download
+
+                                  [cat.gif]
+                         Download the free report >
+                             More free reports >
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee
+
+   close
+
+Get the O’Reilly Web Ops and Performance Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=webops&loc=overlay&emtype=nl

@@ -1,0 +1,1187 @@
+<!doctype html>
+<!--[if IE 7]> <html class="no-js oldie ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/NewsArticle"> <!--<![endif]-->
+<head>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFVlRbGwcDV1ZRBwQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<title>Cheap Words - The New Yorker</title>
+
+<meta name="copyright" content="Copyright (c) Conde Nast 2014">
+<meta name="author" content="">
+<meta name="description" itemprop="description" content="">
+
+<meta itemprop="name" content="Cheap Words">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- minimal-ui=1 -->
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="The New Yorker">
+
+<meta name="environment" content="prod">
+<meta name="tny:id" content="2592412">
+<link rel="shortcut icon" href="/wp-content/assets/dist/img/icon/favicon.ico">
+<link rel="apple-touch-icon" href="/wp-content/assets/dist/img/icon/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/wp-content/assets/dist/img/icon/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/wp-content/assets/dist/img/icon/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/assets/dist/img/icon/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/assets/dist/img/icon/apple-touch-icon-144x144-precomposed.png">
+
+<meta property="fb:app_id" content="179662042076731">
+<meta property="fb:admins" content="648235154,789168297,688620285">
+
+<link rel="stylesheet" href="/wp-content/assets/dist/css/core-567.min.css">
+	
+
+<script src="//use.typekit.net/wth6gwt.js"></script>
+<script>try{Typekit.load();}catch(e){};</script>
+
+<script>
+  var CN = CN || {};
+  /* <![CDATA[ */
+  var platformEnvironment = 'production';
+  var sitehost = "http://www.newyorker.com";
+  var omniture_init = [];
+  CN.omniture = CN.omniture || {};CN.omniture.conf = {"s_account":"conde-newyorker","server":"stats2.newyorker.com","secureServer":"sstats.newyorker.com","internalFilters":"javascript:,newyorker.com,advancemags.com"};
+  /* ]]> */
+</script>	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/wp-content/assets/dist/js/head-567.min.js"></script> 
+
+
+
+<link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="//stats2.newyorker.com" /><link rel="dns-prefetch" href="//sstats.newyorker.com" />
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.newyorker.com/magazine/2014/02/17/cheap-words" />
+<link rel="publisher" href="https://plus.google.com/+newyorker"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cheap Words - The New Yorker" />
+<meta property="og:description" content="Amazon is a global superstore, like Walmart. It’s also a hardware manufacturer, like Apple, and a utility, like Con Edison, and a video distributor, like Netflix, and a book publisher, like Random House, and a production studio, like Paramount, and a literary magazine, like The Paris Review, and a grocery deliverer, like FreshDirect, and someday it might be a package service, like U.P.S. Its founder and chief executive, Jeff Bezos, also owns a major newspaper, the Washington Post. All these streams and tributaries make Amazon something radically new in the history of American business. Sam Walton wanted merely to be the world’s biggest retailer. After Apple launched the iPod, Steve Jobs didn’t sign up pop stars for recording contracts. A.T. &amp; T. doesn’t build transmission towers and rent them to smaller phone companies, the way Amazon Web Services provides server infrastructure for startups (not to mention the C.I.A.). Amazon’s identity and goals are never clear and always fluid, which makes the company destabilizing and intimidating." />
+<meta property="og:url" content="http://www.newyorker.com/magazine/2014/02/17/cheap-words" />
+<meta property="og:site_name" content="The New Yorker" />
+<meta property="article:tag" content="Algorithms" />
+<meta property="article:tag" content="Amazon" />
+<meta property="article:tag" content="Bookstores" />
+<meta property="article:tag" content="Brad Stone" />
+<meta property="article:tag" content="Business" />
+<meta property="article:tag" content="Competition" />
+<meta property="article:tag" content="E-books" />
+<meta property="article:tag" content="Editors" />
+<meta property="article:tag" content="Jeff Bezos" />
+<meta property="article:tag" content="Kazuo Ishiguro" />
+<meta property="article:tag" content="Kindle" />
+<meta property="article:tag" content="Monopolies" />
+<meta property="article:tag" content="Online Retailers" />
+<meta property="article:tag" content="Publishing" />
+<meta property="article:tag" content="Rainy Day Books" />
+<meta property="article:tag" content="Roger Doeren" />
+<meta property="article:tag" content="Search Engines" />
+<meta property="article:tag" content="Shipping" />
+<meta property="article:tag" content="Shopping" />
+<meta property="article:tag" content="Vivien Jennings" />
+<meta property="article:tag" content="Writers" />
+<meta property="article:tag" content="“The Everything Store”" />
+<meta property="article:tag" content="“The Remains of the Day”" />
+<meta property="og:image" content="http://www.newyorker.com/wp-content/uploads/2014/02/140217_r24640.jpg" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@newyorker"/>
+<meta name="twitter:domain" content="The New Yorker"/>
+<meta name="twitter:creator" content="@newyorker"/>
+<meta name="twitter:image:src" content="http://www.newyorker.com/wp-content/uploads/2014/02/140217_r24640.jpg"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='shortlink' href='http://www.newyorker.com/?p=2592412' />
+<!-- wp-parsely Plugin Version 1.6 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.6' />
+<meta name='parsely-page' id='parsely-page' content='{"title":"Cheap Words","link":"http:\/\/www.newyorker.com\/magazine\/2014\/02\/17\/cheap-words","image_url":"http:\/\/www.newyorker.com\/wp-content\/uploads\/2014\/02\/140217_r24640-320x240-1406319108.jpg","type":"post","post_id":"2592412","pub_date":"2014-02-10T04:00:00Z","section":"Uncategorized","author":"George Packer","tags":["algorithms","amazon","bookstores","brad stone","business","competition","e-books","editors","jeff bezos","kazuo ishiguro","kindle","monopolies","online retailers","publishing","rainy day books","roger doeren","search engines","shipping","shopping","vivien jennings","writers","\u201cthe everything store\u201d","\u201cthe remains of the day\u201d"]}' />
+
+		<style type="text/css">
+			body.customize-support #hd.collapsed #nav-container {
+				margin-top: 28px;
+			}
+		</style>        <!-- Google Site Speed -->
+        <script type="text/javascript">var _ga_start = (new Date()).getTime();</script>
+                    <script type="text/javascript" class="site_init">
+            //<!--
+                CN.site.init({
+                    code:             'NYR',
+                    title:            'The New Yorker',
+                    name:             'newyorker',
+                    alias:            'newyorker.com',
+                    domain:           'newyorker.com',
+                    tld:              'newyorker.com',
+                    baseUrl:          'http://www.newyorker.com',
+                    mobilecompatible: 'true',
+                    httpStatusCode:    200,
+            userServiceUrl: 'http://user-service.condenast.com',
+userServiceKey: 'TE7pnBDUEVco2vXPPNQVZNFlipc=',
+ecomUrl: 'https://subscribe.newyorker.com/api/circ/xml/Transaction',
+socialRes: 'http://www.newyorker.com/services/livefyre/userToken',
+                    env: 'PROD'  // Put something consistent last so we don't have a trailing comma (appease IE)
+                });
+
+                CN.isMobile = TNY.initIsMobile;
+                CN.isTablet = jQuery.devices.tablet();
+                CN.checkDeviceView = jQuery.devices.checkDeviceView;
+            //-->
+            </script>
+                            <!-- AD INIT: CN.dart.init version 2 -->
+                <script type="text/javascript">
+                //<!--
+                    CN.dartKwsArray = [ "kmurphy","algorithms_tag","amazon_tag","bookstores_tag","brad_stone_tag","business_tag","competition_tag","e_books_tag","editors_tag","jeff_bezos_tag","kazuo_ishiguro_tag","kindle_tag","monopolies_tag","online_retailers_tag","publishing_tag","rainy_day_books_tag","roger_doeren_tag","search_engines_tag","shipping_tag","shopping_tag","vivien_jennings_tag","writers_tag","the_everything_store_tag","the_remains_of_the_day_tag_3","magazine","2014","02","17","cheap_words","article","a_reporter_at_large" ];
+
+                
+    
+    
+    
+
+    
+    
+             
+        
+
+    
+             
+        
+
+    
+             
+        
+
+    
+        
+             
+        
+    
+
+    
+    
+        
+      
+    
+
+    
+      
+    
+ 
+    
+      TNY.meterVar = {
+        'meter_name'   : 'dft',
+        'meter_count'  : '1',
+        'meter_max'    : '10',
+        'meter_viewed' : 'false',
+        'num'          : '6',
+        'pid'          : '',
+        'entitlement'  : ''
+      }
+    
+
+        
+      
+        TNY.meterVar.isBarrierFull = false;
+      
+
+        
+      
+        TNY.meterVar.isBarrierHalf = false;
+      
+            if(TNY.meterVar != undefined){
+
+                if( TNY.meterVar.isBarrierHalf ){
+                    CN.dartKwsArray.push('novideo');
+                }
+
+                if( TNY.meterVar.isBarrierFull ){
+                    CN.dartKwsArray.push('noads');
+                }
+
+            }
+        
+                    CN.dart.init({
+                        adUnits: {
+                            unit1: CN.isMobile ? 'newyorker.mobile.dart' : 'newyorker.dart',
+                            unit2: 'magazine',
+                            unit3: 'channel_none',
+                            unit4: ''
+                        },
+                        kws: CN.dartKwsArray,
+                        charmap : {' ' : '+', '-' : '_'}
+                    });
+                                //-->
+                    </script>
+                            <script type="text/javascript">
+                CN.popups = CN.popups || {};
+                CN.popups.setCookieLife(48);
+                CN.popups.setExiting(false, {
+                    path: '/exit-pop/',
+                    width: 460,
+                    height: 295,
+                }).excludeExitPath( '/wp-admin', '/wp-login.php' ).excludeExitDomain("newyorker.com","www.newyorker.com","origin.www.newyorker.com");
+                CN.popups.setATGArriving(false).setATGLayer(false).setATGExiting(false);
+
+                        CN.popups.setLayer(false).setArriving(false);
+                CN.popups.init();
+                    </script>
+                        <!-- CM: page-ads.js -->
+            <script type="text/javascript">
+            //<!--
+                var _ghearst_vars = (function() {
+                    var commonParams = 'ad_category_prefix=magazine'
+                                        + '&amp;browser_path=%2Fmagazine%2F2014%2F02%2F17%2Fcheap-words?currentPage=all'
+                                        + '&amp;cat_prefixes=%2Cmagazine%2C2014%2C02%2C17%2Ccheap-words?currentPage=all'
+                                        + '&amp;site_prefix=newyorker'
+                                        + '&amp;subdomain=mprod'
+                                        + '&amp;url_name=cheap-words?currentPage=all';
+
+                                var metaKeyWords = (function() {
+                        var
+                            i                  = 0,
+                            metaKeywordContent = '',
+                            nameAttribute      = null,
+                            metaCollection     = document.getElementsByTagName('meta');
+
+                        for (i=0;i<metaCollection.length;i++) {
+                            nameAttribute = metaCollection[i].name.search(/keywords/);
+                            if (nameAttribute!= -1) {
+                                metaKeywordContent = metaCollection[i].content;
+                                metaKeywordContent = metaKeywordContent.replace(/,/g,'%2C'); // to replace ,
+                                metaKeywordContent = metaKeywordContent.replace(/ /g,''); // to replace space
+                            }
+                        }
+                        return encodeURIComponent(metaKeywordContent);
+                    })();
+            
+                    var deviceParams = (function() {
+                                                    if ( CN.checkDeviceView('desktop') ) {
+                                    return 'AMS_NYR_MAGAZINE_TEXTLINK%2CAMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_GLOBAL_HEADER%2CAMS_NYR_GLOBAL_HEADERCALLOUT%2CAMS_NYR_GLOBAL_NAVBAR%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER%2CAMS_NYR_GLOBAL_NAVBAR_STICKY%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY';
+                                }
+                                                                if ( CN.checkDeviceView('tablet') ) {
+                                    return 'AMS_NYR_MAGAZINE_TEXTLINK%2CAMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_TABLET_GLOBAL_SUBNAV';
+                                }
+                                                                if ( CN.checkDeviceView('mobile') ) {
+                                    return 'AMS_NYR_MAGAZINE_TEXTLINK%2CAMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_MOBILE_GLOBAL_SUBNAV';
+                                }
+                                                    })();
+
+                        if(TNY.meterVar != undefined){
+                if(TNY.meterVar.isBarrierHalf) {
+                  TNY.barrierStatus = "half";
+                } else if(TNY.meterVar.isBarrierFull) {
+                  TNY.barrierStatus = "full";
+                }
+                TNY.checkIfBarrierIsShown = function(){
+                
+                  paywallCMU = "%2CAMS_NYR_PAYWALL_FULL_WIDTH_BARRIER%2CAMS_NYR_PAYWALL_BARRIER";
+                  deviceParams = deviceParams + paywallCMU;
+                }
+                TNY.addBarrierState = function(){
+                  deviceParams = deviceParams + "&article_count=" + TNY.barrierStatus;
+                  TNY.deviceParams = deviceParams;
+                }
+                if(TNY.barrierStatus != undefined){
+                  TNY.checkIfBarrierIsShown();
+                  TNY.addBarrierState();
+                }
+            }
+        
+                    return {
+                        'ams_ads_script_src' : 'https://subscribe.newyorker.com/ams/page-ads.js?'
+                                                + commonParams + ''
+                                                + '&amp;keywords=' + metaKeyWords + ''
+                                                + '&amp;position_list=' + deviceParams + ''
+                    };
+                })();
+
+                if (!window.$h) {window.$h = {}}
+                (function(){
+                    if (!$h.util) {
+                        $h.util = {
+                            buildScriptTag: function(src){
+                                if (!!src){ document.write('<scr' + 'ipt src="'+src+'" type="text/javascript"></scr' + 'ipt>');}
+                            }
+                        }
+                    }
+                    $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+                })();
+            //-->
+            </script>
+            <script src="//assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-9cb2a39d627a819b6ca42ab76f651dbfa7b1a535.js"></script>
+
+
+	<meta itemprop="printPage" content="066">
+	</head>
+<body>
+
+	<modal-content id="barrier" aria-hidden="true"> </modal-content>
+
+	<nav role="navigation" class="mobile-nav">
+  <ul class="nav-links" >
+    <li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+	<li id="subscribe">
+		<div id="AMS_NYR_MOBILE_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_MOBILE_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_MOBILE_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div>		<div id="AMS_NYR_TABLET_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_TABLET_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_TABLET_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div>    </li>
+    <li class="menu-item sub-nav mob-sign-in block-list user-ln-status-mobi"><a id="user-sign-in" class="mobi-sign-in-button" title="Sign in to your account">Sign In</a>  
+<span id="mobi-nav-link" class="link-sub-hamnav"> Link your subscription</span></li>
+	<li id="mobi-account-link-1" class="menu-item sub-nav hiddenMobiMenu"></li>
+	<li id="mobi-account-link-2" class="menu-item sub-nav hiddenMobiMenu"></li>
+  </ul>
+</nav>
+  <div class="page-container">
+    <div class="header-ad">
+
+  <div class="advertisement"><div id="header728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="header728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "header", { sz: "728x90", kws: [ "top" ], collapse: true } );
+} 
+}</script></div><div class="advertisement"><div id="header_mobile320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="header_mobile320x50_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "header_mobile", { sz: ( "320x50" ), kws: [ "top" ], collapse: true } );
+} 
+}</script></div></div>
+
+<header id="hd" role="banner">
+	<div id="nav-container">
+		<div id="mobile-nav-container">
+			<div id="mobile-logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<nav role="navigation" id="primary-nav">
+				<ul>
+					<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+					<li id="subscribe">
+					<div id="AMS_NYR_GLOBAL_NAVBAR_STICKY" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>						<div id="subscribe-rollover">
+							<div class="subscribe-links-wrapper">
+								<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0,399,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249,399,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>							</div>
+						</div>
+										</li>
+						<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 					<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle smallnav-search">Search</a></li>
+
+				</ul>
+			</nav>
+		</div>
+		<section class="logo-container">
+			<span title="" id="mobile-nav" class="icon-menu"></span>
+
+					<div class="subscribe-links">
+				<div id="AMS_NYR_GLOBAL_HEADER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="//subscribe.condenet.com/images_covers/cover_newyorker_80.jpg">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).html( pageAds.AMS_NYR_GLOBAL_HEADER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div><div id="AMS_NYR_GLOBAL_HEADERCALLOUT" class="ecom-placement"><img src="/wp-content/assets/dist/img/cn-ecom/failsafe/NYT_global_headercallout_150x110.png" usemap="#GLOBAL_HEADERCALLOUT_MAP" width="150" height="110" border="0"><map id="GLOBAL_HEADERCALLOUT_MAP" name="GLOBAL_HEADERCALLOUT_MAP"><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="1,12,76,107" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="78,12,147,40" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Renew your Subscription" alt="Renew your Subscription to the New Yorker magazine" coords="78,42,147,56" href="https://w1.buysub.com/pubs/N3/NYR/login.jsp?cds_page_id=135517&cds_mag_code=NYR" target="_blank" /><area shape="rect" title="Give a Gift Subscription" alt="Give a Subscription to The New Yorker as a Gift" coords="78,58,147,75" href="http://www.newyorker.com/go/giftfailsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe to The New Yorker outside the USA" coords="78,77,147,107" href="http://www.newyorker.com/go/internationalfailsafe" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).html( pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>			</div>
+		
+			<div id="logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<div class="social-and-user-links">
+				<ul class="user-info">
+
+					<span id="sign_in" class="user-ln-status">
+					<li id="sign-in-list" class="demo-link big plain"><span data-type="sign-in" class="header-nav-link" id="sign-in" title="Sign in to your account"><span id="fallback-signin-link">Sign in</span></span></li>
+					<li class="demo-link big plain"></li>&nbsp;|&nbsp;
+					<li id="link-sub-nav" class="nav-menu">Link your subscription</li>
+					</span>
+					<li class="n-store"><a href="http://www.condenaststore.com/~/new-yorker-store?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=SHOP&amp;AID=1247905545" target="_blank" title="The New Yorker Store">TNY Store</a></li>
+					
+
+					<li class="demo-link big plain"><span id="sign-out-wrapper" class="big plain"></span></li>
+				</ul>
+				<ul class="social-menu">
+					<li class="facebook"><a href="https://facebook.com/newyorker" title="Facebook">F</a></li>
+					<li class="twitter"><a href="https://twitter.com/newyorker" title="Twitter">T</a></li>
+					<li class="google-plus"><a href="https://plus.google.com/+newyorker/posts" title="Google+">G+</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<nav role="navigation" id="primary-nav">
+			<ul>
+				<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+				<li id="subscribe">
+				<div id="AMS_NYR_GLOBAL_NAVBAR" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>					<div id="subscribe-rollover">
+						<div class="subscribe-links-wrapper">
+							<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0,399,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249,399,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>						</div>
+					</div>
+								</li>
+					<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 				<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle bignav-search">Search</a></li>
+
+			</ul>
+			<div id="floatingAd" style="display:none;"><div id="floatingAd_content"><div id="AMS_NYR_POPUP_FLOATINGAD" class="ecom-placement">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    /* AMS_NYR_POPUP_FLOATINGAD not in pageAds for desktop */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for tablet */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div><div id="floatingAd_header"><a href="javascript:void(0)" class="close">Close</a></div></div>
+		</nav>
+	</div>
+
+	
+</header> 
+
+    <div class="content-wrapper">
+	<div id="main" role="main" class="single-post single-article">
+
+			<article itemscope itemtype="http://schema.org/Article" data-details='{"title":"Cheap Words","author":[1271811,"George Packer","http:\/\/www.newyorker.com\/contributors\/george-packer"],"wordCount":12205,"paragraphCount":120}'>
+			<meta itemprop="url" content="http://www.newyorker.com/magazine/2014/02/17/cheap-words" />
+			<meta itemprop="wordCount" content="12152" />
+			<header id="page-header">
+				<hgroup id="masthead">
+					<h4 class="rubric">
+						<a href="http://www.newyorker.com/magazine/a-reporter-at-large" title="A Reporter at Large" itemprop="articleSection printSection">A Reporter at Large</a>
+													<a href="http://www.newyorker.com/magazine/2014/02/17" title="Published in 2014-02-17" itemprop="printEdition">
+								<span class="magazine-date" itemprop="datePublished" content="2014-02-17">February 17, 2014 Issue</span>
+							</a>
+
+											</h4>
+					<h1 itemprop="name headline">Cheap Words</h1>
+					<h2>Amazon is good for customers. But is it good for books?</h2>
+					<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/george-packer" title="George Packer" rel="author" itemprop="name author">George Packer</a></span></h3>
+					<!-- TODO: Add LinkedIn and Pinterest Support [#98] -->
+
+
+
+<nav class="social-buttons">
+	<ul>
+    <li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/magazine/2014/02/17/cheap-words" data-type="button"></div></li>    <li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/magazine/2014/02/17/cheap-words" data-text="Cheap Words" data-via="newyorker" data-dnt="true"></a></li>    <li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/magazine/2014/02/17/cheap-words"></div></li>    	<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: Cheap%20Words&body=Amazon is a global superstore, like Walmart. It’s also a hardware manufacturer, like Apple, and a utility, like Con Edison, and a video distributor, like Netflix, and a book publisher, like Random House, and a production studio, like Paramount, and a literary magazine, like The Paris Review, and...%0A%0AContinue reading at http://www.newyorker.com/magazine/2014/02/17/cheap-words" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png"/></a></li>	<li class="share-print"><a href="javascript:window.print(); return false;"><img src="/wp-content/assets/dist/img/icon/printer.png"/></a></li>	</ul>
+</nav>
+				</hgroup>
+								<div class="issue-info">
+					<figure id="original-issue">
+						<a href="http://www.newyorker.com/magazine/2014/02/17" title="Published in 2014-02-17" itemprop="printEdition">
+							<img width="176" height="240" src="http://www.newyorker.com/wp-content/uploads/2014/02/2014_02_17-200.jpg" class="attachment-thumbnail wp-post-image" alt="2014_02_17" />						</a>
+					</figure>
+
+											<a href="http://www.newyorker.com/magazine/2014/02/17" title="View Table of Contents" class="more-link">Table of Contents <span>&raquo;</span></a>
+									</div>
+							</header>
+
+			<div class="module-container-rail non-solid-rail">
+				<div class="module-container-stacked post-content">
+					<div itemprop="articleBody" class="articleBody" id="articleBody">
+
+
+													<figure itemprop="" class="horizontal attachment-large landscape featured">
+								<a href="http://www.newyorker.com/wp-content/uploads/2014/02/140217_r24640-690.jpg" title="Cheap Words" itemprop="url">
+									<img itemprop="image" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_r24640-690.jpg" class="horizontal attachment-large" alt="In the era of the Kindle, a book costs the same price as a sandwich. Dennis Johnson, an independent publisher, says that “Amazon has successfully fostered the idea that a book is a thing of minimal value—it’s a widget.”">								</a>
+																<figcaption class="caption" itemprop="description">
+									<span class="caption-text">In the era of the Kindle, a book costs the same price as a sandwich. Dennis Johnson, an independent publisher, says that “Amazon has successfully fostered the idea that a book is a thing of minimal value—it’s a widget.”</span>									<span class="credit" itemprop="copyrightHolder">
+										<span class="hideFromView">Credit</span> Construction by Ian Wright.									</span>								</figcaption>
+															</figure>
+												
+					
+
+								
+						
+<span data-attr="1" data-ma="10" data-bt="ALLOW_ACCESS" data-rv="false" data-sub=""></span>
+
+
+
+  
+    
+      <a class="tny-slot" name="/2" total_words="0"></a><a class="tny-page" name="/1" total_words="0"></a><p class="descender" word_count="174">Amazon is a global superstore, like Walmart. It’s also a hardware manufacturer, like Apple, and a utility, like Con Edison, and a video distributor, like Netflix, and a book publisher, like Random House, and a production studio, like Paramount, and a literary magazine, like <em>The Paris Review</em>, and a grocery deliverer, like FreshDirect, and someday it might be a package service, like U.P.S. Its founder and chief executive, Jeff Bezos, also owns a major newspaper, the Washington <em>Post.</em> All these streams and tributaries make Amazon something radically new in the history of American business. Sam Walton wanted merely to be the world’s biggest retailer. After Apple launched the iPod, Steve Jobs didn’t sign up pop stars for recording contracts. A.T. &#038; T. doesn’t build transmission towers and rent them to smaller phone companies, the way Amazon Web Services provides server infrastructure for startups (not to mention the C.I.A.). Amazon’s identity and goals are never clear and always fluid, which makes the company destabilizing and intimidating.</p> <p word_count="120">Bezos originally thought of calling his company Relentless.com—that U.R.L. still takes you to Amazon’s site—before adopting the name of the world’s largest river by volume. (If Bezos were a reader of classic American fiction, he might have hit upon Octopus.com.) Amazon’s shape-shifting, engulfing quality, its tentacles extending in all directions, makes it unusual even in the tech industry, where rapid growth, not profitability, is the measure of success. Amazon is not just the “Everything Store,” to quote the title of Brad Stone’s rich chronicle of Bezos and his company; it’s more like the Everything. What remains constant is ambition, and the search for new things to be ambitious about.</p><div class="content-ad-wrapper first"><div class="advertisement"><div id="yrailTop300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailTop300x250_frame"></div><div id="yrailTop320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailTop300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "top" ], collapse: true } ); } }</script></div></div> <p word_count="166">It seems preposterous now, but Amazon began as a bookstore. In 1994, at the age of thirty, Bezos, a Princeton graduate, quit his job at a Manhattan hedge fund and moved to Seattle to found a company that could ride the exponential growth of the early commercial Internet. (Bezos calculated that, in 1993, usage climbed by two hundred and thirty thousand per cent.) His wife, MacKenzie, is a novelist who studied under Toni Morrison at Princeton; according to Stone, Bezos’s favorite novel is Kazuo Ishiguro’s “The Remains of the Day,” which is on the suggested reading list for Amazon executives. All the other titles, including “Sam Walton, Made in America: My Story,” are business books, and even Ishiguro’s novel—about a self-erasing English butler who realizes that he has missed his chance at happiness in love—offers what Bezos calls a “regret-minimization framework”: how not to end up like the butler. Bezos is, above all things, pragmatic. (He declined to be interviewed for this article.)</p> <p word_count="142">It wasn’t a love of books that led him to start an online bookstore. “It was totally based on the property of books as a product,” Shel Kaphan, Bezos’s former deputy, says. Books are easy to ship and hard to break, and there was a major distribution warehouse in Oregon. Crucially, there are far too many books, in and out of print, to sell even a fraction of them at a physical store. The vast selection made possible by the Internet gave Amazon its initial advantage, and a wedge into selling everything else. For Bezos to have seen a bookstore as a means to world domination at the beginning of the Internet age, when there was already a crisis of confidence in the publishing world, in a country not known for its book-crazy public, was a stroke of business genius.</p> <p word_count="54">In 1995, in Chicago, Bezos manned an Amazon booth at the annual conclave of the publishing industry, which is now called BookExpo America. Roger Doeren, from a Kansas City store called Rainy Day Books, was stopped short by Amazon’s sign: “Earth’s Biggest Bookstore.” Approaching Bezos, he asked, “Where is Earth’s biggest bookstore?”</p> <p word_count="3">“Cyberspace,” Bezos replied.</p> <p word_count="11">“We started a Web site last year. Who are your suppliers?”</p> <p word_count="4">“Ingram, and Baker &#038; Taylor.”</p> <p word_count="6">“Ours, too. What’s your database?”</p> <p word_count="3">“ ‘Books in Print.’ ”</p> <p word_count="9">“Ours, too. So what makes you Earth’s biggest?”</p> <p word_count="11">“We have the most affiliate links”—a form of online advertising.</p> <p word_count="10">Doeren considered this, then asked, “What’s your business model?”</p> <p word_count="63">Bezos said that Amazon intended to sell books as a way of gathering data on affluent, educated shoppers. The books would be priced close to cost, in order to increase sales volume. After collecting data on millions of customers, Amazon could figure out how to sell everything else dirt cheap on the Internet. (Amazon says that its original business plan “contemplated only books.”)</p> <p word_count="29">Afterward, Doeren told his partner at Rainy Day Books, Vivien Jennings, “I just met the world’s biggest snake-oil salesman. It’s going to be really bad for books.”</p> <a class="tny-slot" name="/3" total_words="805"></a><div class="content-ad-wrapper"><div class="advertisement"><div id="yrailBottom300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailBottom300x250_frame"></div><div id="yrailBottom320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailBottom300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "bottom" ], collapse: true } ); } }</script></div></div><a class="tny-page" name="/2" total_words="805"></a><p word_count="115">Before Google, and long before Facebook, Bezos had realized that the greatest value of an online company lay in the consumer data it collected. Two decades later, Amazon sells a bewildering array of products: lawnmowers, iPods, art work, toys, diapers, dildos, shoes, bike racks, gun safes, 3-D printers. Amazon’s code of corporate secrecy is extreme—it won’t confirm how many Seattle employees it has, or how many Kindle e-readers have been sold—so it’s impossible to know for sure, but, according to one publisher’s estimate, book sales in the U.S. now make up no more than seven per cent of the company’s roughly seventy-five billion dollars in annual revenue.</p> <p word_count="158">Origins, though, leave lasting marks, and Amazon remains intimately tangled up in books. Few notice if Amazon prices an electronics store out of business (except its staff); but, in the influential, self-conscious world of people who care about reading, Amazon’s unparalleled power generates endless discussion, along with paranoia, resentment, confusion, and yearning. For its part, Amazon continues to expend considerable effort both to dominate this small, fragile market and to win the hearts and minds of readers. To many book professionals, Amazon is a ruthless predator. The company claims to want a more literate world—and it came along when the book world was in distress, offering a vital new source of sales. But then it started asking a lot of personal questions, and it created dependency and harshly exploited its leverage; eventually, the book world realized that Amazon had its house keys and its bank-account number, and wondered if that had been the intention all along.</p> <p word_count="110">Recently, Amazon even started creating its own “content”—publishing books. The results have been decidedly mixed. A monopoly is dangerous because it concentrates so much economic power, but in the book business the prospect of a single owner of both the means of production and the modes of distribution is especially worrisome: it would give Amazon more control over the exchange of ideas than any company in U.S. history. Even in the iPhone age, books remain central to American intellectual life, and perhaps to democracy. And so the big question is not just whether Amazon is bad for the book industry; it’s whether Amazon is bad for books.</p> <p class="descender" word_count="83">In the nineteen-nineties, a different leviathan held publishers and independent bookstores in its grasp: chain stores, led by Barnes &#038; Noble. When Amazon emerged, publishers in New York suddenly had a new buyer that paid quickly, sold their backlist as well as new titles, and, unlike traditional bookstores, made very few returns. Publishers must buy back unsold inventory from retailers, an archaic and costly practice that one ex-Amazon employee called “an absurdly inefficient model, worse than my uncle sending his laundry home from college.”</p> <p word_count="86">John Sargent, who is the chief executive of Macmillan, first met Bezos in the mid-nineties, at a hotel in Washington, D.C. “He was this incredibly energetic guy,” Sargent said. “I thought it was a really good idea.” Jane Friedman, who was then an associate publisher at Knopf, and subsequently ran HarperCollins, said of Bezos, “I was completely taken with him. He was a skinny kid, he was young, he was excitable, and he was completely serious about what he was doing. I drank the Kool-Aid.”</p> <p word_count="69">Amazon’s revenue multiplied every year. In the late nineties, an Amazon vice-president named Mary Morouse e-mailed her colleagues after a trip to visit publishers in New York. “We are certainly popular with them,” she wrote. “They rave about Amazon.com—both as a store/service and a great way to market books. There were several examples cited where Amazon.com ‘made’ titles. And they love our sales numbers.”</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_a18031-600.jpg"><figcaption><span class="caption">“Well, if you haven’t seen him, do you know a good recipe for puff pastry?”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="101">Publishers weren’t troubled that Amazon sold their books at dramatic discounts. They all wanted to collaborate with the Seattle upstart, and they used Amazon as an information resource; it was a vast improvement over the old green-bound copies of “Books in Print.” A New York marketing executive told me, “When Amazon came into the picture, metadata”—code numbers, Library of Congress categories, search keywords—“became an integral part of books.” A few farsighted publishers wondered if Amazon would eventually control so much of the market that it would stop selling books at cost and raise prices to become more profitable.</p> <p word_count="126">By 1997, when the company went public, Amazon’s book inventory could have filled six football fields. But someone who read Bezos’s year-end letter to shareholders might well have thought that Amazon’s eight-hundred-and-thirty-eight-per-cent sales growth had been in shoes, since he barely mentioned books. In the letter, Bezos noted tersely, “We are planning to add music to our product offering.” (Unlike Jobs, Bezos wasn’t a passionate listener: he once agreed to be interviewed for a program about the Beatles, and when employees, prepping the boss, asked him to name a favorite Beatles tune, Bezos chose “America,” by Simon &#038; Garfunkel.) Soon after music came DVDs and consumer electronics. A New York literary agent told me that books were Amazon’s version of “a gateway drug.”</p> <a class="tny-slot" name="/4" total_words="1653"></a><p word_count="123">Sargent said that Bezos’s ambition was apparent to him from the beginning—“My God, he drives hard.” But he couldn’t see Bezos’s master plan “for shit.” “He was already going to be the Everything Store,” Sargent said when we met in his trapezoidal office, in the narrow wedge of the Flatiron Building. “I thought he was just a bookstore, stupid me. Books were going to be the way to get the names and the data. Books were his customer-acquisition strategy.” As long as Amazon kept growing like mad, investors would pour in money and Wall Street wouldn’t pay much attention to profits. (The company didn’t have a profitable quarter until 2001, and still struggles to stay in the black.)</p> <p word_count="105">In the mid- to late nineties, Bezos hired two dozen writers and editors to produce copy for the Web site. One of them—Amazon employee No. 55—was a cultural critic from New York named James Marcus, who, in turn, brought in his friend Kerry Fried, who edited his pieces at the <em>Village Voice. </em>(She had also worked at several New York publishers and at <em>The New York Review of Books</em>.) For these refugees from New York, where jobs in publishing and journalism were already beginning to thin out, Amazon offered the thrill of working at a rising power, with stock options and an enormous audience.</p> <a class="tny-page" name="/3" total_words="1881"></a><p word_count="119">Marcus edited the home page, which was visited by at least thirty million people a day. Under the rubric “Books Favorites,” he and his staff often promoted novels that needed a push to claim an audience, such as Myla Goldberg’s “Bee Season.” Marcus wrote hundreds of short book reviews and thousands of descriptive blurbs; Fried, who edited the Literature and Fiction section with Marcus, posted interviews with authors, including Penelope Fitzgerald and Stanley Kunitz. In 2004, Marcus, now the executive editor of <em>Harper’s,</em> published a wry, bittersweet memoir of his experience, “Amazonia.” He told me, “It was useful to Amazon, as a business strategy, to convey the feeling of your beloved indie bookstore, full of hip, book-loving people.”</p> <p word_count="71">Readers, especially isolated ones, adored Amazon. “We heard from people all the time,” Marcus said. “ ‘I live in some Podunk town, the nearest bookstore is a hundred miles from my house, and now I can get the most obscure book.’ ” Marcus asked Toni Morrison to do an interview. “I’m happy to talk,” she told him. “I hear you’re selling more books than anyone in the history of the world.”</p> <p word_count="124">In “Amazonia,” Marcus describes Bezos’s “anticharismatic charisma, which would have mortified a Great Man of a century ago but seemed just right for our nerd-driven meritocracy.” In those years, Bezos joined his staff for the round-the-clock work of “picking” and shipping books at warehouses during the holiday season. One day in 1997, Fried went into the company kitchen and found him absorbed in assembling an ant farm. “He had a lot of curiosity,” she said. “I keep hearing about Jeff’s temper, but I have to say I never witnessed it. He was really pleasant and fun.” His ambition sometimes had an idealistic cast: he wanted Amazon to warehouse two copies of every book ever printed, an unrealized dream grandly called the Alexandria Project.</p> <p word_count="150">At Amazon, original writing wasn’t even called “content.” It was known as “verbiage,” simplified to “verbage.” Amazon’s writers and editors formed a counterculture that never fit easily in a company ruled by computer engineers and M.B.A.s, who valued data most and believed only in measurable truths. “The key to understanding Amazon is the hiring process,” one former employee said. “You’re not hired to do a particular job—you’re hired to be an Amazonian. Lots of managers had to take the Myers-Briggs personality tests. Eighty per cent of them came in two or three similar categories, and Bezos is the same: introverted, detail-oriented, engineer-type personality. Not musicians, designers, salesmen. The vast majority fall within the same personality type—people who graduate at the top of their class at M.I.T. and have no idea what to say to a woman in a bar.”</p> <p word_count="68">The humanists at Amazon brought a strain of intellectual irony that set them apart from the company’s cult of relentlessness. Bezos closed annual reports to shareholders with an exhortation to experiment and to fight complacency: “This is still Day 1.” Marcus and Fried joked about writing a novel that would begin, “It was Day 1. Again.” (Amazon recently began publishing a literary magazine for its Kindle device: <em>Day One</em>.)</p> <a class="tny-slot" name="/5" total_words="2413"></a><p word_count="223">One important way that Bezos’s writers and editors differed from the tech and business people was in their gentler attitude toward book publishers. Even when Amazon’s entire business was in books, and its relations with publishers were fairly good, it nurtured a certain impatience with New York houses that supplied the products it sold. Mary Morouse’s account of her trip east in 1999 reported, “I had one S.V.P. of sales tell me, ‘We like any account who is growing faster than we are, but we don’t really forecast that way.’ When I asked him how much they are growing, he said ‘I don’t know. I think we were flat last year.’ That gives you some idea of the level of business focus.” According to Marcus, Amazon executives considered publishing people “antediluvian losers with rotary phones and inventory systems designed in 1968 and warehouses full of crap.” Publishers kept no data on customers, making their bets on books a matter of instinct rather than metrics. They were full of inefficiences, starting with overpriced Manhattan offices. There was “a general feeling that the New York publishing business was just this cloistered, Gilded Age antique just barely getting by in a sort of Colonial Williamsburg of commerce, but when Amazon waded into this they would show publishing how it was done.”</p> <p word_count="108">During the 1999 holiday season, Amazon tried publishing books, leasing the rights to a defunct imprint called Weathervane and putting out a few titles. “These were not incipient best-sellers,” Marcus writes. “They were creatures from the black lagoon of the remainder table”—Christmas recipes and the like, selected with no apparent thought. Employees with publishing experience, like Fried, were not consulted. Weathervane fell into an oblivion so complete that there’s no trace of it on the Internet. (Representatives at the company today claim never to have heard of it.) Nobody at Amazon seemed to absorb any lessons from the failure. A decade later, the company would try again.</p> <p class="descender" word_count="77">Amazon was a megastore, not an indie bookshop, let alone a literary review, and its writers were under pressure to prove that their work produced sales. If a customer clicked on a review or an interview, then left the page without making a purchase, it was logged as a Repel. Marcus was informed that his repulsion rate was too high. “Nobody ever felt safe,” Fried said of her editorial colleagues. “I took home my Rolodex every day.”</p> <a class="tny-page" name="/4" total_words="2821"></a><p word_count="123">Book retailers, such as Barnes &#038; Noble, negotiate “co-op,” or coöperative promotional fees, from publishers in exchange for prominent product placement. It’s a way for a retailer to get a larger discount without violating the 1936 Robinson-Patman Act, which prohibits producers from offering price advantages to favored retailers. Although co-op fees weren’t “dreamed up by Amazon,” Marcus told me, “Amazon proved to be particularly good at squeezing this money out of publishers.” Publishers paid ten thousand dollars for a book to be prominently featured on the home page. They never knew exactly how much these payments helped sales, and negotiations over them became tense. (In a statement, Amazon said, “As a general practice, we don’t discuss our business negotiations with publishers.”)</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_a18045-600.jpg"><figcaption><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="104">Each category within Amazon’s Books division had to collect co-op fees, and revenue targets rose steeply. In 1999, the company received $3,621,250 in co-op fees; the goal for 2000 was set at $9.25 million. When Marcus asked if publishers should be given sales targets in exchange for their payments, Lyn Blake, the executive who had created the co-op program, said no, adding, “Look, it’s the cost of doing business.” The editorial staff was reminded that the money, unlike the receipts on sold books, went straight to Amazon’s bottom line. Judgments about which books should be featured on the site were increasingly driven by promotional fees.</p> <p word_count="133">Around this time, a group called the “personalization team,” or P13N, started to replace editorial suggestions for readers with algorithms that used customers’ history to make recommendations for future purchases. At Amazon, “personalization” meant data analytics and statistical probability. Author interviews became less frequent, and in-house essays were subsumed by customer reviews, which cost the company nothing. Tim Appelo, the entertainment editor at the time, said, “You could be the Platonic ideal of the reviewer, and you would not beat even those rather crude early algorithms.” Amazon’s departments competed with one another almost as fiercely as they did with other companies. According to Brad Stone, a trash-talking sign was hung on a wall in the P13N office: “<small>PEOPLE FORGET THAT JOHN HENRY DIED IN THE END.</small>” Machines defeated human beings.</p> <p word_count="147">In December, 1999, at the height of the dot-com mania, <em>Time</em> named Bezos its Person of the Year. “Amazon isn’t about technology or even commerce,” the breathless cover article announced. “Amazon is, like every other site on the Web, a content play.” Yet this was the moment, Marcus said, when “content” people were “on the way out.” Although the writers and the editors made the site more interesting, and easier to navigate, they didn’t bring more customers. One day, Fried discovered a memo, written by a programmer and accidentally left on a printer, which suggested eliminating the editorial department. Anne Hurley, the editor-in-chief of the DVD and Video section, was viewed dismissively by her boss, Jason Kilar, who went on to run the video-streaming company Hulu. He told her, “I’m sorry, Anne, I just don’t see what value you add.” (Kilar denies saying this.)</p> <a class="tny-slot" name="/6" total_words="3328"></a><p word_count="165">In July, 2000, Bezos sent out a company-wide e-mail with the subject line “Smile, remember it’s Day 1, and let’s kick some butt.” Several months earlier, the bubble had burst, and Amazon’s overcapitalized share price was plunging. For the first time, Wall Street lost faith in the company, and Bezos announced that the next eighteen months would be devoted to making “serious profits.” Marcus and Fried quit before they could be laid off. Tim Appelo took Marcus’s place. “I was the last human editor of the home page,” he told me. “By the time I got there, it was only partly human.” By 2002, the home page was fully automated. (Today, eight editors select titles to be featured on the Books page, and if you scour the site you can find a books blog, Omnivoracious, but its offerings seem marginal to the retail enterprise.) Editorial content had served its purpose, just as selling books had served its purpose, and Amazon’s conquistadores galloped onward.</p> <p class="descender" word_count="180">The fact that Amazon once devoted significant space on its site to editorial judgments—to thinking and writing—would be an obscure footnote if not for certain turns in the company’s more recent history. According to one insider, around 2008—when the company was selling far more than books, and was making twenty billion dollars a year in revenue, more than the combined sales of all other American bookstores—Amazon began thinking of content as central to its business. Authors started to be considered among the company’s most important customers. By then, Amazon had lost much of the market in selling music and videos to Apple and Netflix, and its relations with publishers were deteriorating. These difficulties offended Bezos’s ideal of “seamless” commerce. “The company despises friction in the marketplace,” the Amazon insider said. “It’s easier for us to sell books and make books happen if we do it our way and not deal with others. It’s a tech-industry thing: ‘We think we can do it better.’ ” If you could control the content, you controlled everything.</p> <p word_count="184">Many publishers had come to regard Amazon as a heavy in khakis and oxford shirts. In its drive for profitability, Amazon did not raise retail prices; it simply squeezed its suppliers harder, much as Walmart had done with manufacturers. Amazon demanded ever-larger co-op fees and better shipping terms; publishers knew that they would stop being favored by the site’s recommendation algorithms if they didn’t comply. Eventually, they all did. (Few customers realize that the results generated by Amazon’s search engine are partly determined by promotional fees.) Sales meetings in Seattle were now all about payments, not new books, and the size of orders was predicated on algorithms, rather than on the enthusiasm of the publishers’ sales staff and Amazon’s own buyers, who were rebranded as “inventory managers.” Brad Stone describes one campaign to pressure the most vulnerable publishers for better terms: internally, it was known as the Gazelle Project, after Bezos suggested “that Amazon should approach these small publishers the way a cheetah would pursue a sickly gazelle.” (Company lawyers later changed the name to the Small Publisher Negotiation Program.)</p> <a class="tny-page" name="/5" total_words="3857"></a><p word_count="241">“The Gazelle Project—that was me,” Dennis Johnson, a co-owner of Melville House, a small publisher with offices on the Brooklyn waterfront, said. Melville House puts out quality fiction and nonfiction, including “Debt: The First 5,000 Years,” by the anarchist anthropologist David Graeber; “The Flight of the Intellectuals,” by Paul Berman; and translations of the German novelist Hans Fallada. In 2004, when Melville House was just getting started, Johnson’s distributor called him and described his negotiations with Amazon as being “like dinner with the Godfather.” Amazon wanted a payment without having to reveal how many Melville House books were sold on the site. (Amazon rarely makes its sales figures public, using bar graphs without numbers in presentations.) “ ‘Fuck you’ was my attitude,” Johnson said. “ ‘They’re bluffing—I’m going to call their bluff.’ I’m a working-class kid. I come at this from ‘This is my company, you don’t come in here.’ ” Johnson, who remains one of the few people in publishing willing to criticize Amazon on the record, contacted reporters, and <em>Publishers Weekly</em> ran a story. By the next day, the <small>BUY</small> buttons had disappeared from Melville House’s titles on Amazon.com. Not long afterward, the Book Expo was held at the Javits Center, in Manhattan. Two young men in suits approached Melville House’s booth and pointed fingers at Johnson. “When are you going to get with the program?” they asked. The men were wearing Amazon nametags.</p> <a class="tny-slot" name="/7" total_words="4098"></a><p word_count="38">Before the impasse, Amazon had represented eight per cent of Melville House’s sales, more than Johnson could afford to lose. So he capitulated. “I paid that bribe”—he wouldn’t disclose the amount—“and the books reappeared.”</p> <p word_count="140">The process of paying co-op fees to promote individual titles grew increasingly complex, especially after Amazon began selling different levels of promotion. Without dropping co-op fees entirely, Amazon simplified its system: publishers were asked to hand over a percentage of their previous year’s sales on the site, as “marketing development funds.” Publishers dread the annual negotiation of this payoff; one of them described it as “squeezing our nuts.” The figure keeps rising, though less for the giant pachyderms than for the sickly gazelles. According to the marketing executive, the larger houses, which used to pay two or three per cent of their net sales through Amazon, now relinquish five to seven per cent of gross sales, pushing Amazon’s percentage discount on books into the mid-fifties. Random House currently gives Amazon an effective discount of around fifty-three per cent.</p> <p word_count="150">For a smaller house, Amazon’s total discount can go as high as sixty per cent, which cuts deeply into already slim profit margins. Because Amazon manages its inventory so well, it often buys books from small publishers with the understanding that it can’t return them, for an even deeper discount. Publishers sometimes pass on this cost to authors, by redefining royalties as a percentage of the publisher’s receipts, not of the book’s list price. Recently, publishers say, Amazon began demanding an additional payment, amounting to approximately one per cent of net sales. Once the fee was paid, publishing executives could discuss marketing strategies with Amazon staff; otherwise, they’d have to rely on the company’s algorithms. “There really are rules in play,” a former Amazon executive says. If a publisher resists when Amazon asks for a “bump” in payments, its books “can’t be promoted.”</p> <p class="descender" word_count="65">In 2003, Amazon introduced Search Inside the Book, which allowed customers to hunt for a phrase in a book without having to buy it. Publishers warily allowed Amazon to scan some of their titles and convert the images into searchable text. They didn’t realize that they were giving Amazon a huge head start over potential competitors when it decided to go into the digital-books business.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_a18017-600.jpg"><figcaption><span class="caption">“We found you and raised you as one of us, so we were just wondering, at what point did you learn to shave?”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="239">In the mid-aughts, Bezos, having watched Apple take over the music-selling business with iTunes and the iPod, became determined not to let the same thing happen with books. In 2004, he set up a lab in Silicon Valley that would build Amazon’s first piece of consumer hardware: a device for reading digital books. According to Stone’s book, Bezos told the executive running the project, “Proceed as if your goal is to put everyone selling physical books out of a job.” Meanwhile, Amazon began pushing publishers to digitize and sign retail agreements on as many titles as possible. “Our charter was to launch with a hundred thousand books and ninety per cent of the best-seller list,” Jeff Steele, who worked on the project, said. (Steele left the company because he objected to Amazon’s heavy-handed tactics with publishers.) In late 2007, at a press conference in New York, Bezos unveiled the Kindle, a simple, lightweight device that—in a crucial improvement over previous e-readers—could store as many as two hundred books, downloaded from Amazon’s 3G network. Bezos announced that the price of best-sellers and new titles would be nine-ninety-nine, regardless of length or quality—a figure that Bezos, inspired by Apple’s sale of songs on iTunes for ninety-nine cents, basically pulled out of thin air. Amazon had carefully concealed the number from publishers. “We didn’t want to let that cat out of the bag,” Steele said.</p> <p word_count="78">The price was below wholesale in some cases, and so low that it represented a serious threat to the market in twenty-six-dollar hardcovers. Bookstores that depended on hardcover sales—from Barnes &#038; Noble and Borders (which liquidated its business in 2011) to Rainy Day Books in Kansas City—glimpsed their possible doom. If reading went entirely digital, what purpose would they serve? The next year, 2008, which brought the financial crisis, was disastrous for bookstores and publishers alike, with widespread layoffs.</p> <a class="tny-slot" name="/8" total_words="4808"></a><a class="tny-page" name="/6" total_words="4808"></a><p word_count="111">By 2010, Amazon controlled ninety per cent of the market in digital books—a dominance that almost no company, in any industry, could claim. Its prohibitively low prices warded off competition. The literary agent Andrew Wylie (whose firm represents me) says, “What Bezos wants is to drag the retail price down as low as he can get it—a dollar-ninety-nine, even ninety-nine cents. That’s the Apple play—‘What we want is traffic through our device, and we’ll do anything to get there.’ ” If customers grew used to paying just a few dollars for an e-book, how long before publishers would have to slash the cover price of all their titles?</p> <p word_count="140">Publishers looked around for a competitor to Amazon, and they found one in Apple, which was getting ready to introduce the iPad, and the iBooks Store. Apple wanted a deal with each of the Big Six houses (Hachette, HarperCollins, Macmillan, Penguin, Random House, and Simon &#038; Schuster) that would allow the publishers to set the retail price of titles on iBooks, with Apple taking a thirty-per-cent commission on each sale. This was known as the “agency model,” and, in some ways, it offered the publishers a worse deal than selling wholesale to Amazon. But it gave publishers control over pricing and a way to challenge Amazon’s grip on the market. Apple’s terms included the provision that it could match the price of any rival, which induced the publishers to impose the agency model on all digital retailers, including Amazon.</p> <p word_count="71">Five of the Big Six went along with Apple. (Random House was the holdout.) Most of the executives let Amazon know of the change by phone or e-mail, but John Sargent flew out to Seattle to meet with four Amazon executives, including Russ Grandinetti, the vice-president of Kindle content. In an e-mail to a friend, Sargent wrote, “Am on my way out to Seattle to get my ass kicked by Amazon.”</p> <p word_count="127">Sargent’s gesture didn’t seem to matter much to the Amazon executives, who were used to imposing their own terms. Seated at a table in a small conference room, Sargent said that Macmillan wanted to switch to the agency model for e-books, and that if Amazon refused Macmillan would withhold digital editions until seven months after print publication. The discussion was angry and brief. After twenty minutes, Grandinetti escorted Sargent out of the building. The next day, Amazon removed the <small>BUY</small> buttons from Macmillan’s print and digital titles on its site, only to restore them a week later, under heavy criticism. Amazon unwillingly accepted the agency model, and within a couple of months e-books were selling for as much as fourteen dollars and ninety-nine cents.</p> <p word_count="81">Amazon filed a complaint with the Federal Trade Commission. In April, 2012, the Justice Department sued Apple and the five publishers for conspiring to raise prices and restrain competition. Eventually, all the publishers settled with the government. (Macmillan was the last, after Sargent learned that potential damages could far exceed the equity value of the company.) Macmillan was obliged to pay twenty million dollars, and Penguin seventy-five million—enormous sums in a business that has always struggled to maintain respectable profit margins.</p> <p word_count="90">Apple fought the charges, and the case went to trial last June. Grandinetti, Sargent, and others testified in the federal courthouse in lower Manhattan. As proof of collusion, the government presented evidence of e-mails, phone calls, and dinners among the Big Six publishers during their negotiations with Apple. Sargent and other executives acknowledged that they wanted higher prices for e-books, but they argued that the evidence showed them only to be competitors in an incestuous business, not conspirators. On July 10th, Judge Denise Cote ruled in the government’s favor.</p> <p word_count="238">Apple, facing up to eight hundred and forty million dollars in damages, has appealed. As Apple and the publishers see it, the ruling ignored the context of the case: when the key events occurred, Amazon effectively had a monopoly in digital books and was selling them so cheaply that it resembled predatory pricing—a barrier to entry for potential competitors. Since then, Amazon’s share of the e-book market has dropped, levelling off at about sixty-five per cent, with the rest going largely to Apple and to Barnes &#038; Noble, which sells the Nook e-reader. In other words, before the feds stepped in, the agency model introduced competition to the market. But the court’s decision reflected a trend in legal thinking among liberals and conservatives alike, going back to the seventies, that looks at antitrust cases from the perspective of consumers, not producers: what matters is lowering prices, even if that goal comes at the expense of competition. Barry Lynn, a market-policy expert at the New America Foundation, said, “It’s one of the main factors that’s led to massive consolidation.” Judge Cote’s opinion described Amazon’s business practices in glowing terms, and she argued, “If Apple is suggesting that Amazon was engaging in illegal, monopolistic practices, and that Apple’s combination with the Publisher Defendants to deprive a monopolist of some of its market power is pro-competitive and healthy for our economy, it is wrong.”</p> <a class="tny-slot" name="/9" total_words="5666"></a><p class="descender" word_count="68">Those were sweet words for a company that declares itself to be “Earth’s most customer-centric company.” Even its bitterest critics reluctantly admit to using Amazon, unable to resist its unparalleled selection, price, and convenience. When Bezos talks about serving the customer, it’s as if he were articulating his purpose in life. “The customer is almost theological,” James Marcus said. “Any sacrifice is suitable for the customer.”</p> <p word_count="198">“Jeff is trying to create a machine that assumes the shape of public demand,” Tim Appelo, the former entertainment editor, said. “He resembles a very, very smart shmoo—he only wants to serve, to make you happy.” Appelo was referring to Al Capp’s smiling blob of a cartoon character, which happily provides people with whatever they need: milk, eggs, butter, even its own tasty self. With Amazon’s patented 1-Click shopping, which already knows your address and credit-card information, there’s just you and the <small>BUY</small> button; transactions are as quick and thoughtless as scratching an itch. “It’s sort of a masturbatory culture,” the marketing executive said. If you pay seventy-nine dollars annually to become an Amazon Prime member, a box with the Amazon smile appears at your door two days after you click, with free shipping. Amazon’s next frontier is same-day delivery: first in certain American cities, then throughout the U.S., then the world. In December, the company patented “anticipatory shipping,” which will use your shopping data to put items that you don’t yet know you want to buy, but will soon enough, on a truck or in a warehouse near you.</p> <a class="tny-page" name="/7" total_words="5932"></a><p word_count="75">Until recently, even taxes were airbrushed away. For years, Amazon fought furiously against paying sales taxes in states where it had no warehouses (and even where it did). California and other states, under pressure from retailers complaining about Amazon’s unfair advantage, passed online-sales-tax laws. Amazon, with fulfillment centers across the country, favors a national online-sales-tax policy, perhaps because smaller online rivals would find it overwhelming to navigate all the tax jurisdictions across the country.</p> <p word_count="90">At Amazon.com, all the irritation and wasted time of a shopping expedition are gone—the search for a parking place, the surly floor clerk, the sold-out items, the perversely slow person ahead of you at checkout. You don’t have to think about how much the cashier, with her wrist in a splint, makes per hour. The Internet’s invisibility shields Amazon from some of the criticism directed at its archrival Walmart, with its all-too-human superstores. Online commerce allows even conscientious consumers to forget that other people are involved.</p> <p word_count="132">Amazon employs or subcontracts tens of thousands of warehouse workers, with seasonal variation, often building its fulfillment centers in areas with high unemployment and low wages. Accounts from inside the centers describe the work of picking, boxing, and shipping books and dog food and beard trimmers as a high-tech version of the dehumanized factory floor satirized in Chaplin’s “Modern Times.” Pickers holding computerized handsets are perpetually timed and measured as they fast-walk up to eleven miles per shift around a million-square-foot warehouse, expected to collect orders in as little as thirty-three seconds. After watching footage taken by an undercover BBC reporter, a stress expert said, “The evidence shows increased risk of mental illness and physical illness.” The company says that its warehouse jobs are “similar to jobs in many other industries.”</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_a17860-600.jpg"><figcaption><span class="caption">“It’s a soul patch, but luckily we’ve caught it early.”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="95">Last September, lawyers brought a class-action lawsuit against Amazon, on behalf of a warehouse worker in Pennsylvania named Neal Heimbach, for unpaid wages: employees at the fulfillment center outside Allentown must wait in line to pass through metal detectors, and submit their belongings to be searched, when they leave for lunch and at the end of their shift. The process takes ten to twenty minutes each time. Theft is a common concern in Amazon warehouses—no doubt, a knock-on effect of the absence of bonds between the company and the ever-shifting roster of low-paid employees.</p> <p word_count="136">None of Amazon’s U.S. workers belong to unions, because the customer would suffer. A company executive told the <em>Times</em> that Amazon considers unions to be obstacles that would impede its ability to improve customer service. In 2011, the Allentown <em>Morning Call</em> published an investigative series with accounts of multiple ambulances being parked outside a warehouse during a heat wave, in order to ferry overcome workers to emergency rooms. Afterward, Amazon installed air-conditioners, although their arrival coincided with the expansion of grocery services. In any case, Amazon’s warehouse jobs are gradually being taken over by robots. Bezos recently predicted to a gobsmacked Charlie Rose that, in five years, packages will be delivered by small drones. Then Amazon will have eliminated the human factor from shopping, and we will finally be all alone with our purchases.</p> <a class="tny-slot" name="/10" total_words="6460"></a><p word_count="80">The combination of ceaseless innovation and low-wage drudgery makes Amazon the epitome of a successful New Economy company. It’s hiring as fast as it can—nearly thirty thousand employees last year. But its brand of creative destruction might be killing more jobs than it makes. According to a recent study of U.S. Census data by the Institute for Local Self-Reliance, in Washington, brick-and-mortar retailers employ forty-seven people for every ten million dollars in revenue earned; Amazon employs fourteen.</p> <p word_count="95">In the book industry, many of those formerly employed people staffed independent stores. Two decades ago, there were some four thousand in America, and many of them functioned as cultural centers where people browsed and exchanged ideas. Today, there are fewer than two thousand—although, with Borders dead and Barnes &#038; Noble ailing, the indies are making a small comeback. Vivien Jennings, of Rainy Day Books, has been in business for thirty-eight years. “We know our customers, and the other independents are the same,” she said. “We know what they read better than any recommendation engine.”</p> <p class="descender" word_count="181">After Amazon’s legal triumph, some publishing people were driven to the wild surmise that the company had colluded with the Justice Department, if not micromanaged the entire case. They grasped at the fact that Jamie Gorelick, a deputy attorney general in the Clinton Administration, and a friend of Attorney General Eric Holder, serves on Amazon’s board, and that three weeks after Judge Cote’s decision President Barack Obama appeared at an Amazon warehouse in Chattanooga—where workers earn, on average, eleven dollars an hour—to praise the company’s creation of good jobs. The coup de grâce came last November, when the cash-strapped U.S. Postal Service announced a special partnership to deliver Amazon—and only Amazon—packages on Sundays, with the terms kept under official seal. To some people in the book world, Obama’s embrace of their nemesis felt like a betrayal. One literary agent said, “It’s strange that a President who’s an author, and whose primary income has come from being an author, was siding with a monopoly that wants to undercut publishers.”</p> <a class="tny-page" name="/8" total_words="6816"></a><p word_count="48">Since the arrival of the Kindle, the tension between Amazon and the publishers has become an open battle. The conflict reflects not only business antagonism amid technological change but a division between the two coasts, with different cultural styles and a philosophical disagreement about what techies call “disruption.”</p> <p word_count="92">“Book publishing always has a rhetoric of the fallen age,” a senior editor at a major house told me. “It was always better before you got here. The tech guys—it’s always better if you just get out of my way and give me what I want. It’s always future-perfect.” He went on, “Their whole thing is ‘Let’s take somebody’s face and innovate on it. There’s an old lady—we don’t know we’re innovating unless she’s screaming.’ A lot of it is thoughtless innovation.”</p> <p word_count="116">The senior editor, like most people in publishing, rarely deals directly with Amazon, but in the fall of 2010 he attended a meeting with Russ Grandinetti, the Kindle vice-president, who was visiting the big New York houses. Like Bezos, Grandinetti went to Princeton and worked on Wall Street. He joined Amazon in 1998, as treasurer, then moved on to apparel, before taking the Kindle job. An Amazon colleague described Grandinetti as the smartest guy in the room at a company where everyone believes himself to be just that. Many publishing types consider him a bully. The literary agent, who knows him, said, “When you spend time with Russ, you get the sense that he thinks publishers are idiots.”</p> <p word_count="56">At the meeting, Grandinetti displayed some of Amazon’s number-free bar graphs and encouraged a faster move into digital publishing and online selling. “He gave this whole pitch,” the senior editor said. “ ‘It’s proprietary, I can’t show you, but everything that’s good for us is good for you—just do what we say.’ ”</p> <p word_count="44">Grandinetti took questions, and an editor raised his hand. “I noticed you’ve announced Kindle Singles”—digital works of fiction and nonfiction, sold for a few dollars, that are too long for most magazines but shorter than books. “Which publishers are you working with?”</p> <p word_count="4">“All publishers,” Grandinetti said.</p> <p word_count="9">“All publishers are participating in the Kindle Singles program?”</p> <p word_count="6">“Well, no. Amazon is the publisher.”</p> <p word_count="40">The senior editor found it disturbing that Grandinetti couldn’t even be straight about a piece of public information. It showed contempt for his audience. “It was very practiced in a way that publishing people don’t do,” he said.</p> <a class="tny-slot" name="/11" total_words="7231"></a><p word_count="111">When I spoke with Grandinetti, he expressed sympathy for publishers faced with upheaval. “The move to people reading digitally and buying books digitally is the single biggest change that any of us in the book business will experience in our time,” he said. “Because the change is particularly big in size, and because we happen to be a leader in making it, a lot of that fear gets projected onto us.” Bezos also argues that Amazon’s role is simply to usher in inevitable change. After giving “60 Minutes” a first glimpse of Amazon drone delivery, Bezos told Charlie Rose, “Amazon is not happening to bookselling. The <em>future</em> is happening to bookselling.”</p> <p word_count="101">In Grandinetti’s view, the Kindle “has helped the book business make a more orderly transition to a mixed print and digital world than perhaps any other medium.” Compared with people who work in music, movies, and newspapers, he said, authors are well positioned to thrive. The old print world of scarcity—with a limited number of publishers and editors selecting which manuscripts to publish, and a limited number of bookstores selecting which titles to carry—is yielding to a world of digital abundance. Grandinetti told me that, in these new circumstances, a publisher’s job “is to build a megaphone.”</p> <p word_count="116">After the Kindle came out, the company established Amazon Publishing, which is now a profitable empire of digital works: in addition to Kindle Singles, it has mystery, thriller, romance, and Christian lines; it publishes translations and reprints; it has a self-service fan-fiction platform; and it offers an extremely popular self-publishing platform. Authors become Amazon partners, earning up to seventy per cent in royalties, as opposed to the fifteen per cent that authors typically make on hardcovers. Bezos touts the biggest successes, such as Theresa Ragan, whose self-published thrillers and romances have been downloaded hundreds of thousands of times. But one survey found that half of all self-published authors make less than five hundred dollars a year.</p> <p word_count="160">Grandinetti said that, because an unprecedented number of titles are available in an instant, “it’s never been a better time to be a reader.” At last year’s Frankfurt Book Fair, he warned publishers that they’d keep those readers only if the price of e-books stayed low; otherwise, consumers would switch to playing Angry Birds on their tablets. He told me that the growth of online reader networks, such as GoodReads, which Amazon owns, is a welcome development: “Suddenly, we’re not locked into hearing the opinions of a small number of reviewers in newspapers.” (Professional reviewers are fading out anyway, along with librarians and bookshop owners.) Listening to Grandinetti, I might have thought that Amazon’s role in this transformation was that of a literary nonprofit that existed to make authors happy by delivering their books to as many readers as possible while keeping online gaming at bay—that is, by being a shmoo for book people.</p> <p word_count="105">Amazon has made it possible for hundreds of thousands of writers frustrated with the limits of traditional publishing to have their work read. David Blum, who edits Kindle Singles, cited a twenty-eight-thousand-word memoir, by a journalist named Oliver Broudy, about travelling with a collector of Gandhi memorabilia. It had been turned down by several magazines, but since Blum accepted it, in March, 2011, it has sold forty-five thousand units. More than five hundred Kindle Singles have appeared in less than three years—three or four a week, making it hard for even an experienced editor like Blum to do much more than read and publish them.</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_a18024-600.jpg"><figcaption><span class="caption">“Fifth hand. Pale chartreuse.”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <a class="tny-page" name="/9" total_words="7824"></a><p word_count="125">The business term for all this clear-cutting is “disintermediation”: the elimination of the “gatekeepers,” as Bezos calls the professionals who get in the customer’s way. There’s a populist inflection to Amazon’s propaganda, an argument against élitist institutions and for “the democratization of the means of production”—a common line of thought in the West Coast tech world. Amazon executives speak of the “Rust Belt media,” comparing book publishing to the steel industry in the seventies. “Even well-meaning gatekeepers slow innovation,” Bezos wrote in his 2011 letter to shareholders. “When a platform is self-service, even the improbable ideas can get tried, because there’s no expert gatekeeper ready to say ‘that will never work!’ ” Nevertheless, MacKenzie Bezos published her recent novel, “Traps,” with Knopf.</p> <p class="descender" word_count="57">In May, 2011, Amazon announced that Laurence Kirshbaum, a longtime publisher of mass-market books and the former C.E.O. of Time Warner Books, would run a new trade division of Amazon Publishing, in New York. John Sargent sent Kirshbaum—who was liked, if not widely respected, in the industry—a terse e-mail: “Say it ain’t so.”</p> <a class="tny-slot" name="/12" total_words="8006"></a><p word_count="25">The next day, they ran into each other at BookExpo, in the Javits Center. “John, I love you,” Kirshbaum said. “Be happy for my success.”</p> <p word_count="13">“Larry, let me be clear with you,” Sargent said. “I hope you fail.”</p> <p word_count="202">Amazon Publishing, which had been releasing mysteries and other genres in bulk, hoped that Kirshbaum would attract big-name authors and publish best-sellers. But top writers proved surprisingly loyal to their gatekeepers, and Amazon had to spend a lot of money on two dubious projects: a million dollars for “The 4-Hour Chef,” by the self-help guru Timothy Ferriss, and eight hundred thousand dollars for “My Mother Was Nuts,” a memoir by Penny Marshall, the “Laverne &#038; Shirley” star. In hardcover, Ferriss’s book has sold a fraction of the numbers of his two earlier self-help books; Marshall’s has sold seventeen thousand. Nearly all of Amazon’s other books have fared worse: “Actors Anonymous,” a novel by James Franco, has sold fewer than five thousand. (Amazon claims to have sold many more copies of these titles as e-books.) In the past year, Amazon Publishing has barely been a presence at auctions, and several editors have departed; last month, Kirshbaum left the company, having failed at the task Amazon gave him. The new publisher, Daphne Durham, has spent her entire career at Amazon, and will remain in Seattle. Grandinetti, keeping his game face on, told me, “Amazon Publishing is off to a very good start.”</p> <p word_count="71">There was a practical reason for the failure. Hardcover copies were printed and distributed in a partnership with Houghton Mifflin Harcourt, under an imprint called New Harvest, with Amazon’s name missing from the spine. But bookstores weren’t fooled. Barnes &#038; Noble and nearly all the independents refused to stock its books—why help their mortal enemy?—and none of the titles gained enough momentum to force the stores to relent.</p> <p word_count="86">What’s more, in its hurry to show up New York publishers, Amazon didn’t seem to know what it was doing. “There are certain things it takes to be a publisher,” the head of one New York house said, hardly concealing his Schadenfreude. “You have to have luck, but you also have to have judgment, discernment. I have no sense of the character of their house. . . . We care more than they do. Bezos has moved on to diapers and jewelry—we’re still doing books.”</p> <p word_count="74">A former Amazon employee who worked in the Kindle division said that few of his colleagues in Seattle had a real interest in books: “You never heard people say, ‘Hey, what are you reading?’ Everyone there is so engineering-oriented. They don’t know how to talk to novelists.” The marketing executive pointed out that Amazon is a fast-moving company, but publishing is slow. “It’s like the difference between trolling and fly-fishing,” he said.</p> <p word_count="83">“Book publishing is a very human business, and Amazon is driven by algorithms and scale,” Sargent told me. When a house gets behind a new book, “well over two hundred people are pushing your book all over the place, handing it to people, talking about it. A mass of humans, all in one place, generating tremendous energy—that’s the magic potion of publishing. . . . That’s pretty hard to replicate in Amazon’s publishing world, where they have hundreds of thousands of titles.”</p> <p word_count="226">Amazon’s entry into publishing has created an awkward divide, giving some book people a second or a third chance in an imperilled industry while tainting them in the eyes of others. The literary agent, contemplating the future of the editors currently at Amazon, said, “You’d have to consider the time you spent with Vichy when you’re looking for work after the occupation.” Benjamin Anastas, a novelist who couldn’t find an American publisher for his third book, told a friend that he was going to publish his fourth, a memoir called “Too Good to Be True,” with Amazon. The friend, a novelist who had once worked at Harcourt—the house that distributed Amazon’s hardcover editions—looked stricken. “You do that,” she said, and walked away. Anastas found the reaction hypocritical. “If you’re publishing with Penguin Random House, what’s the difference?” he said. “They’re both these massive entities that have totally changed book publishing. There is nothing more demoralizing for a writer than to go into one of these huge towers to talk about your book amid all this product. You feel like a sperm-oil salesman at the Petroleum Club.” Still, finding no copies of his new book in most stores was akin to watching himself disappear, and Anastas said that he would think twice before publishing with Amazon again.</p> <p word_count="102">Jon Fine, an intellectual-property lawyer, worked as Knopf’s in-house counsel until Amazon hired him, in 2005. Since 2008, he’s been the company’s director of author-and-publisher relations—“trying to get publishers to hate Amazon less,” as an arts manager said. In March, 2009, <em>Slate</em> criticized Amazon for its miserly philanthropy, especially in the Seattle arts world, saying that certain lemonade stands were more generous. Fine showed the article around, and the next day a printed copy came back to him, with “Fix This” scrawled across the page in Bezos’s hand, and a budget of roughly a million dollars attached. (Amazon denies this.)</p> <a class="tny-slot" name="/13" total_words="8888"></a><a class="tny-page" name="/10" total_words="8888"></a><p word_count="179">Every year, Fine distributes grants of twenty-five thousand dollars, on average, to dozens of hard-up literary organizations. Beneficiaries include the <small>PEN</small> American Center, the Loft Literary Center, in Minneapolis, and the magazine <em>Poets &#038; Writers.</em> “For Amazon, it’s the cost of doing business, like criminal penalties for banks,” the arts manager said, suggesting that the money keeps potential critics quiet. Like liberal Democrats taking Wall Street campaign contributions, the nonprofits don’t advertise the grants. When the Best Translated Book Award received money from Amazon, Dennis Johnson, of Melville House, which had received the prize that year, announced that his firm would no longer compete for it. “Every translator in America wrote me saying I was a son of a bitch,” Johnson said. A few nonprofit heads privately told him, “I wanted to speak out, but I might have taken four thousand dollars from them, too.” A year later, at the Associated Writing Programs conference, Fine shook Johnson’s hand, saying, “I just wanted to thank you—that was the best publicity we could have had.” (Fine denies this.)</p> <p word_count="94">Serious publishing is in such a dire state that thoughtful people are defecting to Amazon. There’s a line in Robert Stone’s novel “A Flag for Sunrise” about “a mouse so frightened it went to the cat for love.” The cat can inspire inordinate gratitude when it lets the mouse live. “I feel like, I get to do this!” an editor who has joined Amazon said. “I can’t believe it—I’m still standing! I can’t monitor other people’s feelings, but I can’t see what harm I’m doing.”</p> <p class="descender" word_count="52">By producing its own original work, Amazon can sell more devices and sign up more Prime members—a major source of revenue. While the company was building the Kindle, it started a digital store for streaming music and videos, and, around the same time it launched Amazon Publishing, it created Amazon Studios.</p> <p word_count="165">The division pursued an unusual way of producing television series, using its strength in data collection. Amazon invited writers to submit scripts on its Web site—“an open platform for content creators,” as Bill Carr, the vice-president for digital music and video, put it. Five thousand scripts poured in, and Amazon chose to develop fourteen into pilots. Last spring, Amazon put the pilots on its site, where customers could review them and answer a detailed questionnaire. (“Please rate the following aspects of this show: The humor, the characters . . . ”) More than a million customers watched. Engineers also developed software, called Amazon Storyteller, which scriptwriters can use to create a “storyboard animatic”—a cartoon rendition of a script’s plot—allowing pilots to be visualized without the expense of filming. The difficulty, according to Carr, is to “get the right feedback and the right data, and, of the many, many data points that I can collect from customers, which ones can tell you, ‘This is the one’?”</p> <p word_count="54">Like the publishing venture, Amazon Studios set out to make the old “gatekeepers”—in this case, Hollywood agents and executives—obsolete. “We let the data drive what to put in front of customers,” Carr told the <em>Wall Street Journal</em>. “We don’t have tastemakers deciding what our customers should read, listen to, and watch.”</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_kanin-2013-11-25-600.jpg"><figcaption><span class="pub-date">November 25, 2013</span><span class="caption">“Mom! Dad! Do something!”</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="51">Steve Jobs once remarked that customers don’t know what they want until Apple shows them. Amazon’s view is nearly the opposite, which has made it the world’s largest online store. But determining customers’ desires by analyzing surveys and viewing patterns does not describe a path to artistic excellence.</p> <p word_count="120">When Garry Trudeau, the creator of the “Doonesbury” comic strip, heard from his friend Jonathan Alter, the author and political journalist, that Amazon was interested in a script that Trudeau had written—a comedy, “Alpha House,” about four Republican senators living together on Capitol Hill—he was dubious: “Amazon is a studio?” Trudeau’s skepticism turned to horror when Alter described Amazon’s approach. “Being one of thousands of projects didn’t seem very promising,” Trudeau said. “Hanging it up on the Amazon Prime Web site and letting it be troll bait didn’t appeal at all. I thought it would be a very public humiliation, as opposed to the usual way pilots get shot down—in private with executives.”</p> <a class="tny-slot" name="/14" total_words="9603"></a><p word_count="109">Trudeau went ahead with Amazon, anyway, with Alter as an executive producer. “For me, this was a chance to feel like I had a piece of the dawning digital age,” Alter, whose longtime employer, <em>Newsweek</em>, had been sold for a dollar, said. After the pilot, starring John Goodman, appeared on Amazon, last April, almost four thousand customer reviews came in. Trudeau didn’t read them—“It was not good for my mental health, so instead I looked at the percentages, since I figured that’s what Amazon was looking at.” The ratings were largely positive, and in May Amazon Studios commissioned Trudeau to write ten episodes of “Alpha House.”</p> <p word_count="14">“Now, of course, I’m all for the process,” Trudeau said, smiling. “Yay, democracy!”</p> <p word_count="95">“Alpha House” had a glitzy première, on November 11th, at the Metropolitan Museum of Art, with young women in black checking guests’ names on Kindles. Bezos attended, with his parents seated next to Trudeau. “Alpha House” became popular on Amazon Prime streaming video, but it garnered less critical praise and public interest than “House of Cards,” from Amazon’s rival Netflix. “Betas,” Amazon’s second original series, about four friends with a social-app startup, was a bomb. Many more shows are in the pipeline (including a <em>New Yorker</em> project developed by Condé Nast Entertainment).</p> <a class="tny-page" name="/11" total_words="9821"></a><p word_count="71">For all the emphasis on crowdsourcing, Trudeau said, almost all the shows that Amazon approved were created by professionals. “They may be spinning their wheels with all their data crunching,” he said. “You can easily argue that it stymies experimentation, that it prevents innovation, because the audience is telling you what they want.” But Trudeau was free to ignore the data from “Alpha House”—Amazon kept it confidential even from him.</p> <p class="descender" word_count="97">Last August, Bezos bought the Washington <em>Post</em> from the Graham family, for a quarter of a billion dollars. The purchase didn’t involve Amazon, and Bezos’s decision seems unrelated to his company or to a search for profits. “The core business of Amazon would dictate against buying the <em>Post</em>,” Barry Diller, the media mogul, who sat on the newspaper’s board until it was sold to Bezos, said. “No matter what you do with the <em>Post</em>, it is primarily a print publication. Amazon’s ambitions in content don’t go to news and information at all.”</p> <p word_count="118">Nor has Bezos shown much interest in politics, except as it involves his business. A moderate libertarian, he has donated money to oppose a “millionaires’ tax” in Washington State, and to support gay marriage. Shel Kaphan, Bezos’s former deputy, remembers him repeating Thomas Jefferson’s quote about the best government being the least government, but Kaphan worries more about Bezos applying his “take no prisoners” pragmatism to the <em>Post:</em> “There are conflicts of interest with Amazon’s many contracts with the government, and he’s got so many policy issues going, like sales tax.” One ex-employee who worked closely with Bezos warned, “At Amazon, drawing a distinction between content people and business people is a foreign concept.”</p> <p word_count="74">Perhaps buying the <em>Post</em> was meant to be a good civic deed. Bezos has a family foundation, but he has hardly involved himself in philanthropy. In 2010, Charlie Rose asked him what he thought of Bill Gates’s challenge to other billionaires to give away most of their wealth. Bezos didn’t answer. Instead, he launched into a monologue on the virtue of markets in solving social problems, and somehow ended up touting the Kindle.</p> <p word_count="153">Bezos bought a newspaper for much the same reason that he has invested money in a project for commercial space travel: the intellectual challenge. With the <em>Post</em>, the challenge is to turn around a money-losing enterprise in a damaged industry, and perhaps to show a way for newspapers to thrive again. When Bezos visited the paper in September, he told several hundred staffers what they hoped to hear: that their primary customers were readers (not advertisers), that news should drive business decisions, and that cutting the news budget was suicidal. He mentioned recent articles he’d liked, including one, by the blogger Max Fisher, headlined “<small>9 QUESTIONS ABOUT SYRIA YOU WERE TOO EMBARRASSED TO ASK.</small>” He frequently used the word “bundle,” suggesting that readers should be induced to subscribe to the whole paper instead of finding stray articles through Web searches. “My job is to provide a runway until we take off,” Bezos said.</p> <p word_count="149">On January 16th, Bezos visited the paper again. It was kept secret from everyone at the <em>Post</em> except a few top editors and executives. Bezos is bringing Amazon’s obsession with secrecy to a paper known for its openness. At Amazon’s Seattle headquarters, the floor devoted to the Kindle is known as Area 51, because it’s off limits to everyone not involved in the product. When one Amazon employee attended an orientation meeting several years ago, and another new hire declared that she had just come from the National Security Agency, he wondered how she would fit in. “It took me a few weeks,” the employee said. “She was going to fit in a lot better than I was.” Bezos’s aversion to scrutiny runs so deep that it is bound to create problems for newspaper people whose job is to expose what powerful institutions want to hide.</p> <a class="tny-slot" name="/15" total_words="10483"></a><p word_count="97">On his January visit, Bezos discussed the paper’s design for tablets. He also summoned Henry Blodget, the former securities analyst who, in 2003, was charged with civil fraud and barred from the industry; in 2007, he became the C.E.O. of Business Insider, a Web magazine in which Bezos is a major investor. Blodget spoke to senior staff at the <em>Post</em> about the challenges of publishing news on the Internet. In a recent interview with the <em>Times</em>, he said, “Digital journalism is as different from print and TV journalism as print and TV are from each other.”</p> <p word_count="134">Two weeks after Bezos’s visit, the <em>Post’s</em> editor, Martin Baron, announced that the 2014 budget included funds for a Web-site redesign and provided more money for political reporting, the Sunday magazine, and digital content. It wasn’t enough to prevent the exodus of Ezra Klein, Max Fisher, and other prominent bloggers, who have left for Vox Media. For journalists who remain at the <em>Post</em>, the hope generated by Bezos’s purchase is, in part, a sign of their desperate situation. Bezos must know how to fix the newspaper business, the thinking goes, because he’s a titan of the digital world that helped lay waste to it. “The arrogance level in Silicon Valley is very high,” a former senior editor said. “The reality is they don’t have the beginning of an answer.”</p> <p class="descender" word_count="172">Book publishers’ dependence on Amazon, however unwilling, keeps growing. Amazon constitutes a third of one major house’s retail sales on a given week, with the growth chart pointing toward fifty per cent. By contrast, independents represent under ten per cent, and one New York editor said that only a third of the three thousand brick-and-mortar bookstores still in existence would remain financially healthy if publishers didn’t waive certain terms of payment. Jane Friedman, the former Random House and HarperCollins executive, who now runs a digital publisher called Open Road Integrated Media, told me, “If there wasn’t an Amazon today, there probably wouldn’t <em>be</em> a book business.” The senior editor who met Grandinetti said, “They’re our biggest customer, we want them to succeed. As I recover from being punched in the face by Amazon, I also worry: What if they are a bubble? What if the stock market suddenly says, ‘We want a profit’? You don’t want your father who abuses you physically to lose his job.”</p> <a class="tny-page" name="/12" total_words="10886"></a><p word_count="47">Publishers are less like abused minors and more like financially insecure adults who rely on the support of a bullying uncle. Their dependence breeds bad faith. “Privately, we berate Amazon,” the marketing executive said. “Yet we’re always trying to figure out how to work with them.”</p> <figure class="cartoon-image"><img class="cartoon" src="http://www.newyorker.com/wp-content/uploads/2014/02/140217_katz-2008-01-28-600.jpg"><figcaption><span class="pub-date">January 28, 2008</span><a class="more-link"  target="_blank" href="http://www.cartoonbank.com">Buy or license <span>&raquo;</span></a></figcaption></figure>   <p word_count="151">The Big Six recently became the Big Five, with the merger of Random House and Penguin, which created the largest publishing house in the world. Several industry people told me that it was intended to provide Penguin Random House, as the new company is called, with more bargaining power against Amazon. But book publishers have been consolidating for several decades, under the ownership of media conglomerates like News Corporation, which squeeze them for profits, or holding companies such as Rivergroup, which strip them to service debt. The effect of all this corporatization, as with the replacement of independent booksellers by superstores, has been to privilege the blockbuster. Penguin Random House and Barnes &#038; Noble are hardly Davids to Amazon’s Goliath. “It’s like you turn into your enemy,” the head of one New York house said. “Publishers are in a bad position to be representing themselves as speaking for the artists.”</p> <p word_count="116">Lately, digital titles have levelled off at about thirty per cent of book sales. Whatever the temporary fluctuations in publishers’ profits, the long-term outlook is discouraging. This is partly because Americans don’t read as many books as they used to—they are too busy doing other things with their devices—but also because of the relentless downward pressure on prices that Amazon enforces. The digital market is awash with millions of barely edited titles, most of it dreck, while readers are being conditioned to think that books are worth as little as a sandwich. “Amazon has successfully fostered the idea that a book is a thing of minimal value,” Johnson said. “It’s a widget.”</p> <a class="tny-slot" name="/16" total_words="11200"></a><p word_count="141">There are two ways to think about this. Amazon believes that its approach encourages ever more people to tell their stories to ever more people, and turns writers into entrepreneurs; the price per unit might be cheap, but the higher number of units sold, and the accompanying royalties, will make authors wealthier. Jane Friedman, of Open Road, is unfazed by the prospect that Amazon might destroy the old model of publishing. “They are practicing the American Dream—competition is good!” she told me. Publishers, meanwhile, “have been banks for authors. Advances have been very high.” In Friedman’s view, selling digital books at low prices will democratize reading: “What do you want as an author—to sell books to as few people as possible for as much as possible, or for as little as possible to as many readers as possible?”</p> <p word_count="177">The answer seems self-evident, but there is a more skeptical view. Several editors, agents, and authors told me that the money for serious fiction and nonfiction has eroded dramatically in recent years; advances on mid-list titles—books that are expected to sell modestly but whose quality gives them a strong chance of enduring—have declined by a quarter. These are the kinds of book that particularly benefit from the attention of editors and marketers, and that attract gifted people to publishing, despite the pitiful salaries. Without sufficient advances, many writers will not be able to undertake long, difficult, risky projects. Those who do so anyway will have to expend a lot of effort mastering the art of blowing their own horn. “Writing is being outsourced, because the only people who can afford to write books make money elsewhere—academics, rich people, celebrities,” Colin Robinson, a veteran publisher, said. “The real talent, the people who are writers because they happen to be really good at writing—they aren’t going to be able to afford to do it.”</p> <p word_count="77">Seven-figure bidding wars still break out over potential blockbusters, even though these battles often turn out to be follies. The quest for publishing profits in an economy of scarcity drives the money toward a few big books. So does the gradual disappearance of book reviewers and knowledgeable booksellers, whose enthusiasm might have rescued a book from drowning in obscurity. When consumers are overwhelmed with choices, some experts argue, they all tend to buy the same well-known thing.</p> <p word_count="51">These trends point toward what the literary agent called “the rich getting richer, the poor getting poorer.” A few brand names at the top, a mass of unwashed titles down below, the middle hollowed out: the book business in the age of Amazon mirrors the widening inequality of the broader economy.</p> <p word_count="196">In 2009, after a career at publishers large and small, Robinson was laid off by Scribner, amid downsizing. Faced with his own professional extinction, and perhaps the industry’s, he co-founded a new company, OR Books, with a different business model. Robinson did research and found that fifty to sixty per cent of the list price of a book goes to Amazon or to another retailer. When he was starting out, in the eighties, that figure was more like thirty or forty per cent. A small-to-midsize publisher has to spend between ten and fifteen per cent on sales, warehousing, and shipping. This leaves little more than twenty-five per cent of the book’s price for editorial counsel, production costs, publicity, paying the author, and whatever profit might be left over. A shared sensibility for a certain kind of fiction or nonfiction writing unites everyone along the way: authors, agents, editors, designers, marketers, reviewers, readers. “The only point at which Bezos enters that chain is to take all the money and the e-mail address of the buyer,” Robinson said. “There’s an entire community of people, and Bezos stands in the middle of it and collects the money.”</p> <a class="tny-page" name="/13" total_words="11842"></a><p word_count="44">Instead of going through Amazon, OR Books sells directly to customers, using printers in Minnesota and the U.K. It pays about fifteen per cent to the printer and keeps the rest. “After four years, we’re just profitable,” Robinson told me. “It works.”</p> <p word_count="133">To the Big Five, locked in a death struggle with Amazon and the distracted American reader, this kind of experimentation might seem unrealistic. To survive, they are trying to broaden their distribution channels, not narrow them. But Andrew Wylie thinks that it’s exactly what a giant like Penguin Random House should do. “If they did, in my opinion they would save the industry. They’d lose thirty per cent of their sales, but they would have an additional thirty per cent for every copy they sold, because they’d be selling directly to consumers. The industry thinks of itself as <!--span id="incorrect">Proctor</span>--><span id="corrected">Procter</span> &#038; Gamble<a href="http://#editorsnote">&#42;</a>. What gave publishers the idea that this was some big goddam business? It’s not—it’s a tiny little business, selling to a bunch of odd people who read.”</p> <a class="tny-slot" name="/17" total_words="12019"></a><p word_count="124">At the moment, those people are obsessed with how they read books—whether it’s on a Kindle or an iPad or on printed pages. This conversation, though important, takes place in the shallows and misses the deeper currents that, in the digital age, are pushing American culture under the control of ever fewer and more powerful corporations. Bezos is right: gatekeepers are inherently élitist, and some of them have been weakened, in no small part, because of their complacency and short-term thinking. But gatekeepers are also barriers against the complete commercialization of ideas, allowing new talent the time to develop and learn to tell difficult truths. When the last gatekeeper but one is gone, will Amazon care whether a book is any good? <span class="dingbat">♦</span></p> <p class="no-indent" word_count="9"><a href="http://#correctionasterisk">&#42;</a><span id="editorsnote">An earlier version of this article misspelled Procter &#038; Gamble.</span></p>     
+  
+
+
+						
+						<!-- TODO: Add LinkedIn and Pinterest Support [#98] -->
+
+
+
+<nav class="social-buttons">
+	<ul>
+    <li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/magazine/2014/02/17/cheap-words" data-type="button"></div></li>    <li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/magazine/2014/02/17/cheap-words" data-text="Cheap Words" data-via="newyorker" data-dnt="true"></a></li>    <li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/magazine/2014/02/17/cheap-words"></div></li>    	<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: Cheap%20Words&body=Amazon is a global superstore, like Walmart. It’s also a hardware manufacturer, like Apple, and a utility, like Con Edison, and a video distributor, like Netflix, and a book publisher, like Random House, and a production studio, like Paramount, and a literary magazine, like The Paris Review, and...%0A%0AContinue reading at http://www.newyorker.com/magazine/2014/02/17/cheap-words" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png"/></a></li>	<li class="share-print"><a href="javascript:window.print(); return false;"><img src="/wp-content/assets/dist/img/icon/printer.png"/></a></li>	</ul>
+</nav>
+					</div>
+						<section class="article-contributors">
+						
+<section class="author-details" itemscope itemtype="http://schema.org/Person">
+		<article>
+						<figure>
+			  <a rel="me" itemprop="url" class="author-thumb" href="http://www.newyorker.com/contributors/george-packer" title="George Packer"><img width="320" height="320" src="http://www.newyorker.com/wp-content/uploads/2014/07/packer.png" class="attachment-medium wp-post-image" alt="packer" itemprop="thumbnail" /></a>
+			</figure>
+						<div class="author-masthead">	
+				<p>George Packer became a staff writer in 2003. </p>
+			</div>
+			<ul class="author-links">
+					<li>
+						<a class="light-button" href="http://www.newyorker.com/contributors/george-packer" title="George Packer">Bio</a>
+					</li>
+					<li>
+						<a class="light-button" href="http://www.newyorker.com/contributors/george-packer/all" title="George Packer">All work</a>
+					</li>
+																			</ul>
+		</article>
+</section>
+<div class="author-ampersand">&amp;</div>
+						</section>
+												<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+							<meta itemprop="name" content="The New Yorker">
+						</span>
+					</div>
+					<aside class="container-rail">
+
+    <section id="newsletter-signup">
+    <h5 class="popping">Sign up to get the best of The New Yorker delivered to your inbox every day</h5>
+    	<div class="newsletterContainer">
+	      <form action="/wp-admin/admin-ajax.php" method="post" name="newsletter-form" id="newsletter-form" novalidate="novalidate">
+	      <input type="hidden" name="action" value="newsletter_subscribe">
+	      <input type="hidden" name="formName" value="newsletter-form">
+	      <input type="hidden" name="url" value="http://www.newyorker.com"><input type="hidden" name="source_code" value="footer-unit">    <fieldset>
+	          <legend><h5>Sign up for newsletters</h5></legend>
+	          <label for="newsletter-email" class="replace">E-mail address</label>
+	          <input name="email" id="newsletter-email" type="email" placeholder="E-mail address" required="" class="">
+	          <button type="submit" name="submit-newsletter" id="submit-newsletter-content">Sign up</button>
+	      </fieldset>
+	      <div class="form_response"></div>        
+	          <ul>
+	              <li>
+
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_217" name="newsletterId[]" value="217""">
+	                      <label for="newsletterId_217">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_442" name="newsletterId[]" value="442">
+	                      <label for="newsletterId_442">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5122" name="newsletterId[]" value="5122" checked="checked">
+	                      <label for="newsletterId_5122">
+	                  </fieldset>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5129" name="newsletterId[]" value="5129">
+	                      <label for="newsletterId_5129">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	          </ul>
+	      </form>
+	    <span id="newsletter-message"></span>
+      </div>
+  </section>
+  <div class="recirculation">
+        <div class="tablet-half-wrapper">
+      
+            <div id="most-popular-polar-text"></div>
+      <div class="clearfix"></div>
+    </div> <!-- // div.tablet-left-wrapper -->
+    <div class="tablet-half-wrapper recirc-most-popular-wrapper">
+      <!-- TODO add optional sponsor -->
+      
+<div id="most-popular" class="module most-popular">
+  <h5 class="small">Most Popular</h5>
+  <ol>
+    <li>
+      <p><a href="//www.newyorker.com/books/page-turner/how-chris-mccandless-died?src=mp">How Chris McCandless Died</a></p>
+      <h3>By Jon Krakauer</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/books/double-take/restless-talent?src=mp">Restless Talent</a></p>
+      <h3>By Joshua Rothman and Erin Overbey</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/humor/borowitz-report/republicans-air-early-attack-ad-newborn-clinton?src=mp">Republicans Air Early Attack Ad on Newborn Clinton</a></p>
+      <h3>By Andy Borowitz</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/business/currency/ellos-anti-facebook-moment?src=mp">Ello’s Anti-Facebook Moment</a></p>
+      <h3>By Vauhini Vara</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/magazine/2014/10/06/matters-privacy?src=mp">Matters of Privacy</a></p>
+      <h3>By Margaret Talbot</h3>
+</li>
+  </ol>
+</div>
+<!-- cached -->
+<div id="related-stories-polar"></div><div id="most-popular-polar-logo"></div><div class="post-sponsor clearfix"></div>
+
+      <!-- End TODO of optional sponsor -->
+
+      <div class="clearfix"></div>
+    </div> <!-- // div.tablet-right-wrapper -->
+  </div>
+</aside>
+
+		</article>
+		<section class="module">
+	<div id="you-might-like" class="big-titled-curation" style="display: none;">
+		<h5 class="popping">You Might Like</h5>
+		<div id="yml-list" class="stories"></div>
+	</div>
+</section>
+	</div>
+	<section id="promotions" class="container">
+	<ul>
+		<li>
+			<h5><a href="/jigsaw">Jigsaw<span>&nbsp;</span>Puzzle</a></h5>
+			<figure>
+				<a href="/jigsaw"><img src="/wp-content/assets/img/promotions/jigsaw.png" alt="Jigsaw Puzzle"/></a>
+			</figure>
+		</li>
+		<li id="links-strongbox">
+			<h5><a href="https://projects.newyorker.com/strongbox/">Strongbox<span>&nbsp;</span>Submissions</a></h5>
+			<figure>
+				<a href="https://projects.newyorker.com/strongbox/"><img src="/wp-content/assets/img/promotions/strongbox.png" alt="Strongbox" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" taregt="_blank">Goings On<span>&nbsp;</span>App</a></h5>
+			<figure>
+				<a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" target="_blank"><img src="/wp-content/assets/img/promotions/tny-goat.jpg" alt="Goings On App" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="/about/us">About<span>&nbsp;</span>Us</a></h5>
+			<figure>
+				<a href="/about/us"><img src="/wp-content/assets/img/promotions/tnr-digital.png" alt="About Us" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="http://contest.newyorker.com/">Caption<span>&nbsp;</span>Contest</a></h5>
+			<figure>
+				<a href="http://contest.newyorker.com/"><img src="/wp-content/assets/img/promotions/caption-contest.png" alt="Caption Contest" /></a>
+			</figure>
+		</li>
+		<li class="festival">
+			<h5><a href="/festival/">The New Yorker<span>&nbsp;</span>Festival</a></h5>
+			<figure>
+				<a href="/festival/"><img src="/wp-content/assets/img/promotions/tny-FestIcon.jpg" alt="The New Yorker Festival" /></a>
+			</figure>
+		</li>
+	</ul>
+</section>
+
+<div class="entry-unrelated">
+	<div id="modal-strongbox">
+		<a href="#" id="links-strongbox-close" title="Close">&#10005;</a>
+		<div id="sb-header" role="banner">
+	
+			<h1 class="sb-main">
+				<span>The New Yorker</span> Strongbox
+				<svg width="135" height="135" xmlns="http://www.w3.org/2000/svg">
+					<defs><linearGradient spreadMethod="pad" y2="0.07813" x2="0.88281" y1="0.91797" x1="0.07422" id="svg_14"><stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+					<g>
+					<path d="m6.74918,27.25192l61.0069,-21.50198l60.75703,21.50198l-0.25,81.50894l-60.75703,20.502l-61.2569,-21.502l0.5,-80.50894z" stroke-width="8" stroke="#ffffff" fill="#000000"/>
+					<path d="m68.00609,49.00389l56.506,-19.50197l0,76.25794l-57.006,19.25301l0.5,-76.00897z" stroke-width="0" stroke="#000000" fill="url(#svg_14)"/>
+					<ellipse ry="4.875" rx="4.876" cy="95.634" cx="23.376" stroke-width="0" stroke="#000000" fill="#f70707"/>
+					</g>
+				</svg>
+			</h1><br/>
+	
+			<div class="sb-contain">
+				<p>Strongbox is a new way for you to share information, messages, and files with our writers and editors and is designed to provide you with a greater degree of anonymity and security than afforded by conventional e-mail.</p>
+				<p>To help protect your anonymity, Strongbox is only accessible using the Tor network (<strong>https://www.torproject.org</strong>). When using Strongbox, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+				<p>You can read our full privacy promise <a href="#strongbox-privacy-promise" alt="privacy promise">here</a>.</p>
+				<p><em>The New Yorker</em> Strongbox is powered by <a href="https://pressfreedomfoundation.org/securedrop" title="SecureDrop" id="sb-securedrop-logo">SecureDrop</a>.</p>
+			</div>
+		</div>
+		<div id="sb-main" role="main">
+			<div id="sb-points">
+				<div class="sb-contain">
+					<h2>To get to Strongbox and begin using it to contact writers and editors at <em>The New Yorker</em>, just follow <strong>these&nbsp;two&nbsp;steps</strong>:</h2>
+					<ol>
+						<li><i>1</i>Download and install software to access the Tor Project: <strong>https://www.torproject.org</strong>. This should only take a few minutes. </li>
+						<li><i>2</i>Once you have access to the Tor network, go to Strongbox at <strong>http://strngbxhwyuu37a3.onion</strong>, where you will find further instructions on how to submit files and messages to <em>The New Yorker</em>.</li>
+					</ol>
+					<p class="sb-instructions">You will be assigned a randomly generated and unique code name as part of the process. If a writer or editor at <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> wants to contact you about the information you have submitted, he or she will leave a message for you in Strongbox. These messages are the only way we will be able to reach you, and this message can only be accessed using your code name.</p>
+				</div>
+			</div>
+			<div id="sb-privacy">
+				<div class="sb-contain">
+					<h3 id="strongbox-privacy-promise">Our privacy promise</h3>
+					<p><a name="strongbox-privacy-promise" href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker's</em></a> Strongbox is designed to let you communicate with our writers and editors with greater anonymity and security than afforded by conventional e-mail.</p>
+					<p>When you visit or use our public Strongbox server at <i>http://strngbxhwyuu37a3.onion</i>, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and our parent company, Cond&#233; Nast, will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+					<p>Strongbox servers are under the physical control of <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and Cond&#233; Nast.</p>
+					<p>Strongbox is designed to be accessed only through a &ldquo;hidden service&rdquo; on the Tor anonymity network, which is set up to conceal both your online and physical location from us and to offer full end-to-end encryption for your communications with us. This provides a higher level of security and anonymity in your communication with us than afforded by standard e-mail or unencrypted Web forms. Strongbox does not provide perfect security. Among other risks, if you share your unique code name, or if your computer is compromised, any activities, including communications through Strongbox, should be considered compromised as well.</p>
+					<p>The system is provided on an &ldquo;as is&rdquo; basis, with no warranties or representations, and any use of it is at the user's own risk.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<aside id="footer-ad">
+			<!-- Need to have mobile ad sizes reevaluated -->
+		  <div class="advertisement"><div id="footerMobile320x51_frame" class="displayAd displayAd320x51Js" data-cb-ad-id="footerMobile320x51_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "footerMobile", { sz: ( "320x51" ), kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div>		  <div class="advertisement"><div id="footer728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="footer728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "footer", { sz: "728x90", kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div>		</aside>
+
+		<div id="digital-editions"><div id="AMS_NYR_GLOBAL_FOOTER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" data-mobile="http://www.newyorker.com/go/mobilefailsafe" target="_blank"><img class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_Desktop_1020x180.jpg" data-src-tablet="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_TabletRedesign_728x128.jpg" data-src-mobile="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Mobile_300x50.NavyTote.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div></div>
+		<footer>
+			<nav id="tny-footer">
+			  <ul>
+				<li><a href="/about/us/?src=tny-footer" title="About Us">About Us</a></li>
+				<li><a href="/about/faq/?src=tny-footer" title="Frequently Asked Questions">FAQ</a></li>
+				<li><a href="http://w1.buysub.com/servlet/CSGateway?cds_mag_code=NYR" title="Customer Care">Customer Care</a></li>
+				<li><a href="http://www.condenaststore.com/-se/cartoonbank.htm?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=tny-footer&amp;AID=1247905545" title="">Cartoon Bank</a></li>
+				<li><a href="http://www.newyorkeronthetown.com/?src=tny-footer" title="">On The Town</a></li>
+				<li><a href="/about/feeds/?src=tny-footer" title="">RSS</a></li>
+				<li><a href="/about/contact/?src=tny-footer" title="">Contact Us</a></li>
+			  </ul>
+			  <ul>
+		    	<li><a href="http://www.condenaststore.com/-se/newyorkerstore.htm?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=tny-footer&amp;AID=1247905545" title="">The New Yorker Store</a></li>
+			    <li><a href="http://www.condenast.com/careers?src=tny-footer" title="">Careers</a></li>
+			    <li><a href="http://www.condenast.com/reprints-permissions?src=tny-footer" title="">Reprints/Permissions</a></li>
+			    <li><a href="/about/press/?src=tny-footer" title="Press Center">Press</a></li>
+			    <li><a href="http://www.condenast.com/brands/new-yorker/media-kit/?src=tny-footer" title="">The New Yorker Media Kit</a></li>
+			  </ul>
+			</nav>
+			<div id="conde-footer">
+  <div class="global-footer-logo">
+    <a href="http://www.condenast.com?src=tny-footer" title="Cond&eacute; Nast Digital">Cond&eacute; Nast Digital</a>
+  </div>
+  <div class="global-footer-subscriptions">
+      <form action="/" name="sub_dropmenus" id="sub_dropmenus">
+        <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="sub_list" id="sub_list" size="1">
+            <option selected="selected" value="">Subscribe to a magazine</option>
+            <option value="">
+            </option><option value="http://www.magazinestoresubscriptions.com?src=univdropdown">View All Titles</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?src=tny-footer">Allure</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?src=tny-footer">Architectural Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?src=tny-footer">Brides</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?src=tny-footer">Details</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?src=tny-footer">Glamour</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?src=tny-footer">Golf Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?src=tny-footer">Golf World</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?src=tny-footer">GQ</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?src=tny-footer">Lucky</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?src=tny-footer">Self</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?src=tny-footer">Teen Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?src=tny-footer">The New Yorker</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?src=tny-footer">Vanity Fair</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?src=tny-footer">Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?src=tny-footer">W</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div class="global-footer-sister-sites">
+      <form action="/" name="mag_dropmenus" id="mag_dropmenus">
+          <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="mag_list" id="mag_list">
+            <option selected="selected" value="">Other Cond&eacute; Nast sites</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="http://www.allure.com?src=tny-footer">Allure</option>
+            <option value="http://www.architecturaldigest.com?src=tny-footer">Architectural Digest</option>
+            <option value="http://www.arstechnica.com?src=tny-footer">Ars Technica</option>
+            <option value="http://www.bonappetit.com?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="http://www.brides.com?src=tny-footer">Brides.com</option>
+            <option value="http://www.concierge.com/cntraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="http://www.concierge.com?src=tny-footer">Concierge</option>
+            <option value="http://www.details.com?src=tny-footer">Details</option>
+            <option value="http://www.epicurious.com?src=tny-footer">Epicurious</option>
+            <option value="http://www.glamour.com?src=tny-footer">Glamour</option>
+            <option value="http://www.golfdigest.com?src=tny-footer">Golf Digest</option>
+            <option value="http://www.golfworld.com?src=tny-footer">Golf World</option>
+            <option value="http://www.gq.com?src=tny-footer">GQ</option>
+            <option value="http://www.hotelchatter.com?src=tny-footer">Hotel Chatter</option>
+            <option value="http://www.jaunted.com?src=tny-footer">Jaunted</option>
+            <option value="http://www.luckymag.com?src=tny-footer">Lucky</option>
+            <option value="http://www.nutritiondata.com?src=tny-footer">NutritionData</option>
+            <option value="http://www.reddit.com?src=tny-footer">Reddit</option>
+            <option value="http://thescene.com?src=tny-footer">The Scene</option>
+            <option value="http://www.self.com?src=tny-footer">Self</option>
+            <option value="http://www.style.com?src=tny-footer">Style</option>
+            <option value="http://www.teenvogue.com?src=tny-footer">Teen Vogue</option>
+            <option value="http://www.vanityfair.com?src=tny-footer">Vanity Fair</option>
+            <option value="http://www.vegaschatter.com?src=tny-footer">Vegas Chatter</option>
+            <option value="http://www.vogue.com?src=tny-footer">Vogue</option>
+            <option value="http://www.wmagazine.com?src=tny-footer">W</option>
+            <option value="http://www.wired.com?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div id="copy">
+  	<p><small>Use of this site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy">User Agreement</a> (effective January 1, 2014) and <a href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (effective January 1, 2014). <a href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a> The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Cond&eacute; Nast. <a href="http://www.condenast.com/privacy-policy#privacypolicy-optout">Ad Choices&nbsp;<img width="10" height="10" src="/wp-content/assets/dist/img/icon/ad_choices_arrow.png" alt="Ad Choices"></a></small></p>
+  </div>
+</div>
+		</footer>
+	</div> <!-- end .content-wrapper -->
+</div> <!-- end .page-container -->
+            <script type="text/javascript">
+            //<!--
+                CN.config.set({
+                    title        : document.title,
+                                    facebook     : {pageid: "9258148868"},
+                                    isiFrame     : true
+                });
+            //-->
+            </script>
+            
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="newyorker.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+            <script type="text/javascript" class="omniture_block">
+            //<!--
+                CN.stats.omniture.init();
+                CN.stats.omniture.setStatus( CN.site.httpStatusCode );
+
+            var mobile_view = jQuery.devices.getDeviceView();
+CN.stats.omniture.setMobileView( mobile_view );
+
+                if ( CN.cookie.get('amg_user_partner') != '' ) {
+                    CN.stats.omniture.setCustomProp( "52", CN.cookie.get('amg_user_partner') );
+                }
+
+                CN.stats.omniture.setContentType( "Article" );
+
+                if ( CN.stats.omniture.setReferrer !== undefined && document.referrer.match( CN.site.tld ) ) {
+                    var referrer = document.referrer;
+                    referrer=referrer.split("?")[0];
+                    CN.stats.omniture.setReferrer( referrer );
+                }
+
+                if ( CN.stats.omniture.setKeywords !== undefined ) {
+                    CN.stats.omniture.setKeywords( "algorithms-tag|amazon-tag|bookstores-tag|brad-stone-tag|business-tag|competition-tag|e-books-tag|editors-tag|jeff-bezos-tag|kazuo-ishiguro-tag|kindle-tag|monopolies-tag|online-retailers-tag|publishing-tag|rainy-day-books-tag|roger-doeren-tag|search-engines-tag|shipping-tag|shopping-tag|vivien-jennings-tag|writers-tag|the-everything-store-tag|the-remains-of-the-day-tag-3|article|a-reporter-at-large" );
+                }
+
+            CN.stats.omniture.setAuthorName( "kmurphy" );
+CN.stats.omniture.setContentId( "2592412" );
+if ( CN.url.params('event') == 'loginsuccess' ) {
+ CN.stats.omniture.trackAction( 'login', document, { events: 'event21' } );
+}
+if(CN.isMobile){ CN.stats.omniture.setCustomProp('51', 'mobile') };
+var lastViewedSession = localStorage.getItem("lastViewedSession");
+var previousMeterName = localStorage.getItem("previousMeterName");
+if ( !(lastViewedSession == s.prop17) &&  TNY.meterVar != undefined){
+  lastViewedSession = s.prop17;
+  if (previousMeterName == undefined ){
+    if(TNY.meterVar.meter_name != undefined){
+      previousMeterName = TNY.meterVar.meter_name;
+    }
+  } else {
+    if(TNY.meterVar.meter_name != undefined){
+      previousMeterName = previousMeterName + "|" + TNY.meterVar.meter_name;
+    }
+  } 
+  CN.stats.omniture.setCustomProp('29', previousMeterName);
+}
+localStorage.setItem("lastViewedSession", lastViewedSession);
+localStorage.setItem("previousMeterName", previousMeterName);
+if(TNY.meterVar != undefined && TNY.meterVar.meter_max != undefined){
+  CN.stats.omniture.setCustomProp('43', TNY.meterVar.meter_max);
+}
+CN.stats.omniture.setCustomProp('62', '2014-02-10 00:00:00');
+CN.stats.omniture.setCustomProp('61', '5547h|231d');
+(function(){ var page_count = (document.querySelectorAll(".tny-page").length + 1); CN.stats.omniture.setCustomProp( "60", page_count ); })();
+(function($){var currentDate,currentMonth,visitedCount,storedVisitedArticles,visitedArticles=[],uniquePathName,isCurrentNew,lastVisitedMonth,$mainEl;currentDate=new Date;currentMonth=currentDate.getMonth();lastVisitedMonth=localStorage.getItem("lastVisitMonth")||-1;if(currentMonth==lastVisitedMonth){visitedCount=localStorage.getItem("visitedCount")||0;storedVisitedArticles=localStorage.getItem("visitedArticles");if(storedVisitedArticles!==null){storedVisitedArticles=storedVisitedArticles.split(",")}visitedArticles=visitedArticles.concat(storedVisitedArticles)}else{visitedCount=0}uniquePathName=location.pathname;isCurrentNew=$.inArray(uniquePathName,visitedArticles)==-1;$mainEl=$("#main");if($mainEl.hasClass("single-article")||$mainEl.hasClass("single-blog")||$mainEl.hasClass("single-post")){if(isCurrentNew){visitedCount=++visitedCount;visitedArticles.push(uniquePathName)}}localStorage.setItem("visitedCount",visitedCount);localStorage.setItem("visitedArticles",visitedArticles);localStorage.setItem("lastVisitMonth",currentMonth);CN.stats.omniture.setCustomProp("44",visitedCount)})(jQuery);
+CN.stats.omniture.setCustomProp('8', '');
+CN.stats.omniture.setCustomProp('9', '');
+CN.stats.omniture.setCustomProp('55', 'George Packer');
+CN.stats.omniture.setCustomProp('6', 'channel_none');
+CN.stats.omniture.setCustomProp('7', 'channel_none/rubric-A Reporter at Large');
+var page_count = document.getElementsByClassName("tny-page").length + 1; if(page_count == 1) { CN.stats.omniture.setPaginationValue( "page_single" );} else { CN.stats.omniture.setPaginationValue( "page_1" ); }
+                // Run page tracking (also calls .init() again )
+                if ( CN.preventAutoTrack != true ) {
+                    CN.stats.omniture.doPageTracking();
+                }
+            //-->
+            </script>
+            <noscript>
+                <a href="http://www.omniture.com" title="Web Analytics">
+                    <img src="http://condenast.112.2o7.net/b/ss/conde-newyorker/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" />
+                </a>
+            </noscript>
+                    <script type="text/javascript">
+        //<!--
+            var _gaq = _gaq || [];
+            var _ga_end = (new Date()).getTime();
+            var _ga_total = parseInt(_ga_end - _ga_start);
+            var _ga_sample_percent = 50;
+        _gaq.push(['a._setAccount', 'UA-8293713-14']);
+_gaq.push(['a._trackPageview']);
+if (0 < _ga_total && _ga_total < 1000*60*60) {
+_gaq.push(['a._trackTiming', 'Page', 'Load Time', _ga_total, 'Page Load Time', 100]);
+}
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        //-->
+        </script>
+        <div id="fancyModal" class="fancy modal" aria-hidden="true"></div>
+
+<div id="CM-notification" class="fancy modal barrier-type" aria-hidden="false">
+    <div id="close-b-modal" class="modal-close notification-b"></div>
+    <div id="CM-nofication-home-link"></div>
+    <div id="CM-nofication-home-line"></div>
+    <div id="PAYWALL_BARRIER_wrapper"></div>
+    <div class="bottom-barrier-divide">
+        <div class="notification-pipe-spacer"></div>
+        <div class="mobile-bottom-barrier-divide-left"><a id="linksub-from-external" href="javascript:void(0)">Link your <br/> subscription</a> 
+        </div>
+        <div class="bottom-barrier-divide-left"><a id="linksub-from-external-promo" href="javascript:void(0)">Link your subscription</a>
+        </div>
+    </div>
+    <div class="mobile-barrier-divide-right begin-notification-msg">Have a login?
+        <br/>
+        <span><a id="sign-in-from-notfication-mob" href="javascript:void(0)">Sign In</a></span>
+    </div>
+    <div class="bottom-barrier-divide-right">Already have a login?
+        <span><a id="sign-in-from-notfication" href="javascript:void(0)">Sign In</a></span>
+    </div>
+    <div class="mob-notification-container">
+                <div class="mob-notification-item"><a class="linksub-from-external-mobi" href="javascript:void(0)"style="text-decoration:underline">Link Your<br/>Subscription</a></div>
+                <div class="mob-notification-item pipe-spacer-image"></div>
+                <div class="mob-notification-item">Have a login?
+                    <br/><a class="signin-from-external-mobi" id="sign-in-from-notfication-mobilink" href="javascript:void(0)" style="text-decoration:underline">Sign In</a></div>
+            </div>
+</div>
+	<div id="CMU_RIGHTRAIL_CONTAINER">
+  <div id="AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Search_Tablet_300x250.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div></div>	
+<script>
+window.jQuery || document.write('<script src="/wp-content/assets/dist/js/vendors/jquery/jquery.min.js"><\/script>');
+_satellite.pageBottom();
+</script>
+
+	<script src="/wp-content/assets/dist/js/core-567.min.js"></script> 
+  <script>!function(d,s,id){ var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><script>(function() { var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;po.src = "//apis.google.com/js/plusone.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);})();</script>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"2907deeb56","applicationID":"4337305","transactionName":"YlIEZhNSXxEAABYNW1sYJ1EVWl4MThALClNZUktTE0dYAQ0G","queueTime":0,"applicationTime":1623,"ttGuid":"","agentToken":"","atts":"ThUHEFtITB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>

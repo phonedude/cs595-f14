@@ -1,0 +1,1906 @@
+status: 200
+content-length: 174181
+content-location: http://m.sfgate.com/bayarea/article/A-push-to-abolish-ridiculous-S-F-laws-5119134.php#src=fb
+x-powered-by: PHP/5.2.12
+set-cookie: SSLB=0; path=/; domain=.sfgate.com
+expires: Wed, 24 Sep 2014 22:03:56 GMT
+vary: Accept-Encoding
+connection: keep-alive
+-content-encoding: gzip
+x-block-status: stale
+cache-control: max-age=300
+date: Wed, 24 Sep 2014 21:58:56 GMT
+x-gen-mode: full
+server: Apache/2.2.3 (Red Hat)
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+    <!DOCTYPE html>
+<html class="ui-mobile" data-hearst-useragent="">
+  <head><!-- eid:article.5119134 -->    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHUF9ACQcHVVRV"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:17,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:17,2:18,ee:"QJf3ax"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:18,2:17,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:18,2:17,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:18,2:17,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:18,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:11,2:14,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],14:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],17:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],18:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:17,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta content="telephone=no" name="format-detection">
+    <script type="text/javascript">
+    document.documentElement.setAttribute('data-hearst-useragent',  navigator.userAgent);
+    var HDN = HDN || {};
+    HDN.t_firstbyte = Number(new Date());
+    </script>
+    <script type="text/javascript" src="/js/hdn/utils/modernizr-2.6.2.min.js?r5.22.0.23"></script>
+    <!-- generated at 2014-09-24 16:11:09 on prodwcm7 running vr5.22.0.23 -->
+    <link media="all" href="/css/hdn/mobile/jquery.mobile-1.3.2.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/external/css/global.sharedmain.r5.22.0.23.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sitemain.r5.22.0.23.css" media="all" />
+        <script type="text/javascript" src="/js/hdn/mobile/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript" src="/external/js/global.header.r5.22.0.23.js"></script>
+
+        <title>A push to abolish &#039;ridiculous&#039; S.F. laws - SFGate</title>
+
+            <script type="text/javascript">
+            var requestTime = new Date(1411593069 * 1000);
+            var bizobject_identifier = "article_5119134";
+
+                                                    
+                            
+            
+            // bizobject variables
+            var omni_channelPath = "News :: Bay Area & State";
+            var omni_title = "A push to abolish 'ridiculous' S.F. laws";
+            var omni_bizObjectId = "5119134";
+            var omni_className = "article";
+            var omni_publicationDate = "2014-01-07 01:36:52";
+            var omni_sourceSite="sfgate";
+
+            // article specific variables
+            var omni_authorName = "MARISA LAGOS";
+            var omni_authorTitle = "";
+            var omni_pageNumber = "0";
+            var omni_breakingNewsFlag = "0";
+            var omni_localNewsFlag = "0";
+
+                            var omni_premiumStatus = "free";
+                var omni_premiumEndDate = "";
+                var omni_originalSource = "SF";
+            
+        </script>
+
+        <link rel="canonical" href="http://www.sfgate.com/bayarea/article/A-push-to-abolish-ridiculous-S-F-laws-5119134.php" />
+
+                    <meta name="description" content="The couple, along with probably thousands of other San Franciscans, are scofflaws because of a little-known section of code that bars people from using garages to store anything but automobiles.  Farrell wants suggestions from any interested citizen and also is co-sponsoring a scholarship opportunity for local college students who have their own ideas.  Eventually, said its executive director, Seamus Kraft, the foundation wants &quot;every law and every piece of legislation in the country&quot; to be accessible online in a &quot;modern, restriction-free and user-friendly format.&quot;  All three websites use an open data format that makes it easy for people outside government to search through and comment on them - or, for the more technologically advanced, to build applications that can be used in civic life.  $1,000 scholarshipsThe foundation is also co-sponsoring Farrell's Civic Engagement Challenge Scholarship, which will award $1,000 scholarships to five graduate and undergraduate students in March.  The proposed change, he said, is just one example of how, as the technology sector takes off in San Francisco, its citizens - and government - can be reaping the benefits." />
+        
+                    <meta name="author.name" content="Marisa Lagos" />
+            <meta name="author.title" content="" />
+            <meta name="date.release" content="2014/06/01" />
+            <meta name="time.release" content="17:36" />
+            <meta name="publisher" content="San Francisco Chronicle" />
+            <meta name="sections" content="News,Bay Area & State" />
+            <meta name="subject" content="laws,technology (general),accomplishment,students,non government organizations (NGO),lawyer,internet,literature" />
+                            <meta name="ICBM" content="37.7793176, -122.4191405" />
+            
+        
+        
+                    <!-- hearst/home/header_sailthru.tpl -->
+<meta property="sailthru.title" content="A push to abolish 'ridiculous' S.F. laws" />
+<meta name="sailthru.date" content="2014-01-06 17:36:00 -0800" />
+<meta name="sailthru.author" content="Marisa Lagos" />
+                    <meta property="sailthru.location" content="37.7793176, -122.4191405" />
+            <meta name="sailthru.tags" content="section-news,section-bay-area-state,opengov-foundation,san-francisco-california,mission-district,mark-farrell,kimberly-conley,gary-rabkin,amandeep-jawa,seamus-kraft,technology,city-government,government-information,garage-law,law,city-laws,open-data-format,government,college-students,garage-code,garage,push-centers,code-section,website,scholarship-opportunity,students,technology-benefits,technology-sector,bars-people,co-sponsoring,staff-writer,farrell,board-meeting,scholarshipsthe-foundation,opportunity,undergraduate-students,books" />
+    
+<meta name="sailthru.image.thumb" content="http://ww4.hdnux.com/photos/25/54/44/5687591/5/sailthruImage.jpg" />
+<!-- e hearst/home/header_sailthru.tpl -->
+                
+    <meta property="og:title" content="A push to abolish 'ridiculous' S.F. laws" />
+            <meta property="og:description" content="The couple, along with probably thousands of other San Franciscans, are scofflaws because of a little-known section of code that bars people from using garages to store anything but automobiles.  Farrell wants suggestions from any interested citizen and also is co-sponsoring a scholarship opportunity for local college students who have their own ideas.  Eventually, said its executive director, Seamus Kraft, the foundation wants &quot;every law and every piece of legislation in the country&quot; to be accessible online in a &quot;modern, restriction-free and user-friendly format.&quot;  All three websites use an open data format that makes it easy for people outside government to search through and comment on them - or, for the more technologically advanced, to build applications that can be used in civic life.  $1,000 scholarshipsThe foundation is also co-sponsoring Farrell's Civic Engagement Challenge Scholarship, which will award $1,000 scholarships to five graduate and undergraduate students in March.  The proposed change, he said, is just one example of how, as the technology sector takes off in San Francisco, its citizens - and government - can be reaping the benefits." />
+        <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.sfgate.com/bayarea/article/A-push-to-abolish-ridiculous-S-F-laws-5119134.php" />
+    <meta property="og:image" content="http://ww4.hdnux.com/photos/25/54/44/5687591/5/200x200.jpg" />
+    <meta property="og:site_name" content="SFGate" />
+                                <meta property="og:latitude" content="37.7793176"/>
+                            <meta property="og:longitude" content="-122.4191405"/>
+                            <meta property="og:street-address" content="San Francisco City Hall, 1 Dr Carlton B Goodlett Place, San Francisco, CA 94102, USA"/>
+                            <meta property="og:locality" content="San Francisco"/>
+                            <meta property="og:region" content="CA"/>
+                            <meta property="og:postal-code" content="94102"/>
+                            <meta property="og:country-name" content="US"/>
+            
+        <!-- business/templates/hearst/home/header_parsely.tpl -->
+
+
+<meta name='parsely-page' content='{"title":"A push to abolish &#39;ridiculous&#39; S.F. laws","link":"http:\/\/www.sfgate.com\/bayarea\/article\/A-push-to-abolish-ridiculous-S-F-laws-5119134.php#src=pl","image_url":"http:\/\/ww4.hdnux.com\/photos\/25\/54\/44\/5687591\/5\/200x200.jpg","post_id":"article_5119134","pub_date":"2014-01-07T01:36:52Z","section":"bayarea","type":"post","author":"Marisa Lagos"}'>
+
+<!-- business/templates/hearst/home/header_parsely.tpl -->
+        <!-- /business/templates/hearst/home/header_fbpage.tpl-->
+
+
+            <meta property="fb:page_id" content="105702905593" />
+        <meta property="fb:admins" content="1609422252616351"/>
+                <meta property="fb:app_id" content="1609422252616351"/>
+    
+<!-- e /business/templates/hearst/home/header_fbpage.tpl-->
+                  <script type="text/javascript"> var hdnIsViafouraOn = 1; </script>
+          <!-- templates/hearst/home/viafouraHeadMeta.tpl -->
+<meta property="vf:unique_id" content="sfgate-article-5119134" />
+<!-- e templates/hearst/home/viafouraHeadMeta.tpl -->        
+        <script type="text/javascript">
+      // Subnav selection
+      var channelId = '5119134';
+      var parentId = '9461';
+      var channelName = 'bayarea';
+    </script>
+
+    <script type="text/javascript" async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+
+    <script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+            
+        <script type="text/javascript" id="adPositionManagerScriptTag" src="http://aps.hearstnp.com/Scripts/loadAds.js"></script>
+    
+                        
+    <!-- CSS/JS Hotfix freeform -->
+    
+    <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.24472 -->
+<style>
+#desktop {display:none;}
+#slides {height: 67px !important;}
+#slides .active {height: 67px !important;}
+.ui-mobile-viewport .galleria-next{margin-right:0px !important;}
+.galleria-popout {display:none;}
+.galleria-bar .galleria-s4 {display:none;}
+#tagLine {color: #9b0000;display: inline;font-family: 'Helvetica Neue',Helvetica,sans-serif;font-size: 10px;font-weight: bold;left: 80px;position: relative;top: -20px;text-transform: uppercase;
+</style>
+
+<script>
+HDN.skipGalleryFreeformObjects = true;
+HDN.skipGalleryMediaObjects = true;
+</script>
+
+<!-- Bing Webmaster Tools verification -->
+<meta name="msvalidate.01" content="9451CA04ABC9D1D5C6419C73B4C4F7B7" />
+<script>
+	$(document).ready(function(){
+		if(channelId ==='5481780'){
+			$("#showMore #hst-mediumrectangle1").remove();
+			$(".article-text p script").remove();
+		}
+	});
+</script>
+  </head>
+  <body class="news ui-mobile-viewport ui-overlay-c">
+    <div class="ui-page ui-body-c ui-page-panel ui-page-active" tabindex="0" data-url="/" data-role="page">
+
+                <!-- ux/mobilesfgate/tmpl/bizobject_omniture.php -->
+<script type="text/javascript">//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtaGVhcnN0LTMwNzctMzU1Ny0=/amc.js\"></sc"+"ript>");
+//]]></script>
+<!-- e ux/mobilesfgate/tmpl/bizobject_omniture.php -->
+	<!-- hearst/article/article_main.tpl (this comment appears below 'hearst/home/header.tpl' so that it is not before the DOCTYPE) -->
+<!-- hearst/home/navigation.tpl -->
+	<!-- hearst/home/mobile/navigation_main.tpl -->
+<!-- Slide-out menu panel -->
+<div id="menuPanel" class="menu-wrap ui-panel ui-panel-position-right ui-panel-display-push ui-body-c ui-panel-animate ui-panel-close" data-role="panel" data-position="right" data-display="push" data-position-fixed="false">
+  <!-- Search & Admin forms -->
+  <div class="ui-panel-inner">
+    <div class="menu-forms">
+      <!-- Search Input - Do we need a submit button or use the keyboard? -->
+      <div class="search-wrap">
+        <form id="searchForm" data-ajax="false" method="get" action="/search/?">
+          <input type="hidden" value="search" name="action">
+          <input type="hidden" value="1" name="search">
+          <input type="hidden" value="1" name="firstRequest">
+          <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini"><input class="ui-input-text ui-body-c" type="text" name="query" id="search-input" data-mini="true" data-icon="none" value="" /></div>
+          <div aria-disabled="false" class="ui-submit ui-btn ui-btn-icon-notext ui-btn-up-c" title="Search" data-disabled="false" data-theme="c" data-iconpos="notext" data-icon="search" data-wrapperels="span" data-iconshadow="true" data-shadow="false" data-corners="false"><span class="ui-btn-inner"><span class="ui-btn-text">Search</span><span class="ui-icon ui-icon-search ui-icon-shadow">&nbsp;</span></span><input data-disabled="false" class="ui-btn-hidden" value="Search" data-shadow="false" data-icon="search" data-iconpos="notext" data-corners="false" type="submit" name="search"></div>
+        </form>
+      </div>
+      <div class="menu-date"><span>Wed Sep 24 2014</span></div>
+      <div style="height:49px;" id="mobile_signin_data" class="login ui-collapsible ui-collapsible-inset ui-collapsible-collapsed" data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="" data-expanded-icon="" data-iconpos="">
+        <h2 style="height:44px;" class="nav-header-link ui-collapsible-heading ui-btn ui-fullsize ui-btn-up-a">
+          <span class="ui-btn-inner">
+            <span class="ui-btn-text">
+              <a id="mobile_signout_link" href="logout" class="nav-header-link first ui-link">Sign-out <span id="mobile_signin_data_span"></span></a>
+            </span>
+          </span>
+        </h2>
+      </div>
+      <div id="mobile_signinreg_div" class="login ui-collapsible ui-collapsible-inset ui-collapsible-collapsed" data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right">
+        <h2 class="ui-collapsible-heading">
+          <div class="nav-header-link  ui-collapsible-heading-toggle ui-btn ui-fullsize ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a" data-mini="false">
+            <span class="ui-btn-inner">
+              <span class="ui-btn-text">
+                <a id="mobile_signin_link" href="Sign-in" class="first ui-link">Sign In<span class="pipe">|</span></a>
+                <a id="mobile_reg_link" href="Register" class="ui-link">Register</a>
+                <span class="ui-collapsible-heading-status"> click to collapse contents</span>
+              </span>
+              <a href="expand_collapse_sign_in_reg" class="nav-list-toggle" id="hdn-click-reg-toggle">
+                <span class="ui-icon ui-icon-arrow-d">&nbsp;</span>
+              </a>
+            </span>
+          </div>
+        </h2>
+        <div id="mobile_signinreg_div_collapsible_content" class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="false">  
+          <div id="mobile_signin_div" class="signin">
+            <div id="mobile_signin_error_div" style="display:none;"></div>
+                    <!-- ux/mobilesfgate/templates/hearst/home/signin_form.tpl -->
+        <form data-ajax="false" id="mobile_signin_form" action="http://www.sfgate.com/cgi-bin/sso/action/mobile_login">
+          <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini">
+            <input type="text" id="mobile_signin_user" name="user" selected autocapitalize="off" value="" data-mini="true" placeholder="USERNAME" class="ui-input-text ui-body-c" />
+          </div>
+          <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini">
+            <input type="password" id="mobile_signin_password" name="password" selected autocapitalize="off" value="" data-mini="true" placeholder="PASSWORD"  class="ui-input-text ui-body-c" />
+          </div>
+          <div class="ui-checkbox">
+            <input type="checkbox" id="mobile_signin_rememberme" name="rememberme" value="1" class="custom-check" />
+            <label for="mobile_signin_rememberme" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="checkbox-off" data-theme="c" data-mini="false" class="ui-checkbox-off ui-btn ui-fullsize ui-btn-icon-left ui-btn-up-c">
+              <span class="ui-btn-inner">
+                <span class="ui-btn-text">Remember Me</span>
+                <span class="ui-icon ui-icon-checkbox-off ui-icon-shadow">&nbsp;</span>
+              </span>
+            </label>
+          </div>
+          <div data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-mini="true" data-disabled="false" class="ui-submit ui-btn ui-btn-up-c ui-shadow ui-mini" aria-disabled="false">
+            <span class="ui-btn-inner">
+              <span class="ui-btn-text">Sign-in</span>
+            </span>
+            <input type="hidden" name="Submit" value="Update">
+            <input type="submit" value="Sign-in" data-mini="true" data-corners="false" class="submit-btn ui-btn-hidden" data-disabled="false">
+          </div>
+          <p></p>
+          <a href="http://www.sfgate.com/cgi-bin/webreg/user/reset_init" class="form-link">Forgot your password?</a>
+        </form>
+        <!-- e ux/mobilesfgate/templates/hearst/home/signin_form.tpl -->
+          </div>
+
+          <div id="mobile_reg_div" class="register">
+            <div id="mobile_reg_message" style="display:none;"></div>
+            <div id="mobile_reg_form_div">
+                        <!-- ux/mobilesfgate/templates/hearst/home/reg_form.tpl -->
+          <p>Registration will allow you to post comments on SFGate.com and subscribe to newsletters.</p>
+          <form data-ajax="false" id="mobile_reg_form" action="http://www.sfgate.com/cgi-bin/webreg/user/mobile_reg">
+            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini">
+              <input type="text" name="User" value="" size="80%" maxlength="15" id="mobile_reg_user" selected autocapitalize="off" data-mini="true" placeholder="USERNAME" class="ui-input-text ui-body-c" />
+            </div>
+            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini">
+              <input type="text" name="email1" value="" size="80%" maxlength="60" id="mobile_reg_email1" selected autocapitalize="off" data-mini="true" placeholder="EMAIL" class="ui-input-text ui-body-c" />
+            </div>
+            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini">
+              <input type="text" name="email2" value="" size="80%" maxlength="60" id="mobile_reg_email2" selected autocapitalize="off" data-mini="true" placeholder="CONFIRM EMAIL" class="ui-input-text ui-body-c" />
+            </div>
+            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini">
+              <input type="password" name="pwd1" value="" size="80%" maxlength="20" id="mobile_reg_pwd1" selected autocapitalize="off" data-mini="true" placeholder="PASSWORD" class="ui-input-text ui-body-c" />
+            </div>
+            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini">
+              <input type="password" name="pwd2" value="" size="80%" maxlength="20" id="mobile_reg_pwd2" selected autocapitalize="off" data-mini="true" placeholder="CONFIRM PASSWORD" class="ui-input-text ui-body-c" />
+            </div>
+            <div data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-mini="true" data-disabled="false" class="ui-submit ui-btn ui-btn-up-c ui-shadow ui-mini" aria-disabled="false">
+              <span class="ui-btn-inner">
+                <span class="ui-btn-text">Register</span>
+              </span>
+              <input type="hidden" name="Submit" value="Update">
+              <input type="submit" value="Register Now" id="regsubmit" data-mini="true" data-corners="false" class="submit-btn ui-btn-hidden" data-disabled="false">
+              <a href="cancel" id="mobile_reg_cancel" class="form-link reg-cancel ui-link">Cancel</a>
+            </div>
+          </form>
+          <!-- e ux/mobilesfgate/templates/hearst/home/reg_form.tpl -->
+            </div><!-- mobile_reg_form_div -->
+          </div><!-- mobile_reg_div -->
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- hearst/sitemenu/mobile_dynamic.tpl -->
+
+<!-- Navigation -->
+<div class="navigation ui-collapsible-set" data-role="collapsible-set" data-corners="false" data-shadow="false">
+                        
+                            <div class="l-1-item home-btn">
+                    <!-- Home Link - Button -->
+                    <h2>
+                       <a class="hdn-analytics-nav ui-btn ui-btn-up-a ui-shadow ui-btn-icon-left" data-wrapperels="span" data-shadow="true" data-ajax="false" data-role="button" data-theme="a" data-icon="home" data-iconshadow="false" data-corners="false" href="/">
+                          <span class="hdn-analytics-data">visit|Home|navigation|1</span>
+                          <span class="ui-btn-inner">
+                             <span class="ui-btn-text">Home</span>
+                             <span class="ui-icon ui-icon-home">&nbsp;</span>
+                          </span>
+                       </a>
+                    </h2>
+                </div>
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="/news/">News<span class="hdn-analytics-data">visit|News|navigation|2</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|News|navigation|2</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/bayarea/" class="hdn-analytics-nav ui-link-inherit">Bay Area & State<span class="hdn-analytics-data">visit|News-Bay Area & State|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/nation/" class="hdn-analytics-nav ui-link-inherit">Nation<span class="hdn-analytics-data">visit|News-Nation|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/world/" class="hdn-analytics-nav ui-link-inherit">World<span class="hdn-analytics-data">visit|News-World|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/politics/" class="hdn-analytics-nav ui-link-inherit">Politics<span class="hdn-analytics-data">visit|News-Politics|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/crime/" class="hdn-analytics-nav ui-link-inherit">Crime<span class="hdn-analytics-data">visit|News-Crime|navigation|5</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.legacy.com/obituaries/sfgate/" class="hdn-analytics-nav ui-link-inherit">Obituaries<span class="hdn-analytics-data">visit|News-Obituaries|navigation|6</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/opinion/" class="hdn-analytics-nav ui-link-inherit">Opinion<span class="hdn-analytics-data">visit|News-Opinion|navigation|7</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/green/" class="hdn-analytics-nav ui-link-inherit">Green<span class="hdn-analytics-data">visit|News-Green|navigation|8</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/science/" class="hdn-analytics-nav ui-link-inherit">Science<span class="hdn-analytics-data">visit|News-Science|navigation|9</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/health/" class="hdn-analytics-nav ui-link-inherit">Health<span class="hdn-analytics-data">visit|News-Health|navigation|10</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/education/" class="hdn-analytics-nav ui-link-inherit">Education<span class="hdn-analytics-data">visit|News-Education|navigation|11</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/weird/" class="hdn-analytics-nav ui-link-inherit">Weird<span class="hdn-analytics-data">visit|News-Weird|navigation|12</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="/sports/">Sports<span class="hdn-analytics-data">visit|Sports|navigation|3</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Sports|navigation|3</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/49ers" class="hdn-analytics-nav ui-link-inherit">49ers<span class="hdn-analytics-data">visit|Sports-49ers|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/raiders/" class="hdn-analytics-nav ui-link-inherit">Raiders<span class="hdn-analytics-data">visit|Sports-Raiders|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/giants/" class="hdn-analytics-nav ui-link-inherit">Giants<span class="hdn-analytics-data">visit|Sports-Giants|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.sfgate.com/sports/giantsfandom/?btype=web" class="hdn-analytics-nav ui-link-inherit">Giants Fandom<span class="hdn-analytics-data">visit|Sports-Giants Fandom|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/athletics/" class="hdn-analytics-nav ui-link-inherit">A's<span class="hdn-analytics-data">visit|Sports-A's|navigation|5</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/warriors/" class="hdn-analytics-nav ui-link-inherit">Warriors<span class="hdn-analytics-data">visit|Sports-Warriors|navigation|6</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/sharks/" class="hdn-analytics-nav ui-link-inherit">Sharks<span class="hdn-analytics-data">visit|Sports-Sharks|navigation|7</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=nfl/indexpic.htm" class="hdn-analytics-nav ui-link-inherit">NFL<span class="hdn-analytics-data">visit|Sports-NFL|navigation|8</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=mlb/indexpic.htm" class="hdn-analytics-nav ui-link-inherit">MLB<span class="hdn-analytics-data">visit|Sports-MLB|navigation|9</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=nba/indexpic.htm" class="hdn-analytics-nav ui-link-inherit">NBA<span class="hdn-analytics-data">visit|Sports-NBA|navigation|10</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=nhl/indexpic.htm" class="hdn-analytics-nav ui-link-inherit">NHL<span class="hdn-analytics-data">visit|Sports-NHL|navigation|11</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/collegesports/" class="hdn-analytics-nav ui-link-inherit">College<span class="hdn-analytics-data">visit|Sports-College|navigation|12</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/preps/" class="hdn-analytics-nav ui-link-inherit">Preps<span class="hdn-analytics-data">visit|Sports-Preps|navigation|13</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://sports.sfgate.com/merge/tsnform.aspx?c=sfgate&page=golf-m/indexpic.htm" class="hdn-analytics-nav ui-link-inherit">Golf<span class="hdn-analytics-data">visit|Sports-Golf|navigation|14</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/outdoors/" class="hdn-analytics-nav ui-link-inherit">Outdoors<span class="hdn-analytics-data">visit|Sports-Outdoors|navigation|15</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/other/" class="hdn-analytics-nav ui-link-inherit">Other<span class="hdn-analytics-data">visit|Sports-Other|navigation|16</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/sports/tv/" class="hdn-analytics-nav ui-link-inherit">On TV<span class="hdn-analytics-data">visit|Sports-On TV|navigation|17</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://seatgeek.com/san-francisco-california-sports-tickets" class="hdn-analytics-nav ui-link-inherit">Tickets<span class="hdn-analytics-data">visit|Sports-Tickets|navigation|18</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://fanshop.sfgate.com/?sourceid=navlink" class="hdn-analytics-nav ui-link-inherit">Shop<span class="hdn-analytics-data">visit|Sports-Shop|navigation|19</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="/business/">Business<span class="hdn-analytics-data">visit|Business|navigation|4</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Business|navigation|4</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/technology/" class="hdn-analytics-nav ui-link-inherit">Technology<span class="hdn-analytics-data">visit|Business-Technology|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://finance.sfgate.com" class="hdn-analytics-nav ui-link-inherit">Finance<span class="hdn-analytics-data">visit|Business-Finance|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://markets.sfgate.com/" class="hdn-analytics-nav ui-link-inherit">Markets<span class="hdn-analytics-data">visit|Business-Markets|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/realestate/" class="hdn-analytics-nav ui-link-inherit">Real Estate<span class="hdn-analytics-data">visit|Business-Real Estate|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://homeguides.sfgate.com/" class="hdn-analytics-nav ui-link-inherit">Home Guides<span class="hdn-analytics-data">visit|Business-Home Guides|navigation|5</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/mortgagerates/" class="hdn-analytics-nav ui-link-inherit">Mortgage Rates<span class="hdn-analytics-data">visit|Business-Mortgage Rates|navigation|6</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/technology/" class="hdn-analytics-nav ui-link-inherit">Tech<span class="hdn-analytics-data">visit|Business-Tech|navigation|7</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.legalnotice.org/pl/SFGate/landing1.aspx" class="hdn-analytics-nav ui-link-inherit">Public Notices<span class="hdn-analytics-data">visit|Business-Public Notices|navigation|8</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/business/press-releases/" class="hdn-analytics-nav ui-link-inherit">Press Releases<span class="hdn-analytics-data">visit|Business-Press Releases|navigation|9</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/sponsoredarticles/business/" class="hdn-analytics-nav ui-link-inherit">Sponsored Content<span class="hdn-analytics-data">visit|Business-Sponsored Content|navigation|10</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="/entertainment/">Entertainment<span class="hdn-analytics-data">visit|Entertainment|navigation|5</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Entertainment|navigation|5</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/movies/" class="hdn-analytics-nav ui-link-inherit">Movies<span class="hdn-analytics-data">visit|Entertainment-Movies|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.sfgate.com/cgi-bin/movies/listings/search?term=&go=GO?btype=web" class="hdn-analytics-nav ui-link-inherit">Movie Showtimes<span class="hdn-analytics-data">visit|Entertainment-Movie Showtimes|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/music/" class="hdn-analytics-nav ui-link-inherit">Music & Nightlife<span class="hdn-analytics-data">visit|Entertainment-Music & Nightlife|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/performance/" class="hdn-analytics-nav ui-link-inherit">Performance<span class="hdn-analytics-data">visit|Entertainment-Performance|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/art/" class="hdn-analytics-nav ui-link-inherit">Art<span class="hdn-analytics-data">visit|Entertainment-Art|navigation|5</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://events.sfgate.com/" class="hdn-analytics-nav ui-link-inherit">Events<span class="hdn-analytics-data">visit|Entertainment-Events|navigation|6</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/books/" class="hdn-analytics-nav ui-link-inherit">Books<span class="hdn-analytics-data">visit|Entertainment-Books|navigation|7</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/tv/" class="hdn-analytics-nav ui-link-inherit">TV & Radio<span class="hdn-analytics-data">visit|Entertainment-TV & Radio|navigation|8</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/horoscope/" class="hdn-analytics-nav ui-link-inherit">Horoscope<span class="hdn-analytics-data">visit|Entertainment-Horoscope|navigation|9</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/comics/" class="hdn-analytics-nav ui-link-inherit">Comics<span class="hdn-analytics-data">visit|Entertainment-Comics|navigation|10</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/games/" class="hdn-analytics-nav ui-link-inherit">Games<span class="hdn-analytics-data">visit|Entertainment-Games|navigation|11</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/thingstodo/" class="hdn-analytics-nav ui-link-inherit">Things To Do<span class="hdn-analytics-data">visit|Entertainment-Things To Do|navigation|12</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="/food/">Food<span class="hdn-analytics-data">visit|Food|navigation|6</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Food|navigation|6</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/restaurants/" class="hdn-analytics-nav ui-link-inherit">Restaurants<span class="hdn-analytics-data">visit|Food-Restaurants|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.sfgate.com/cgi-bin/listings/restaurants/basic?btype=web&cuisine=&loc=&Submit=1&Search=1&term=" class="hdn-analytics-nav ui-link-inherit">Find Restaurants<span class="hdn-analytics-data">visit|Food-Find Restaurants|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/recipes/" class="hdn-analytics-nav ui-link-inherit">Recipes<span class="hdn-analytics-data">visit|Food-Recipes|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/wine/" class="hdn-analytics-nav ui-link-inherit">Wine<span class="hdn-analytics-data">visit|Food-Wine|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/food/top100/2014/" class="hdn-analytics-nav ui-link-inherit">Top 100 Restaurants<span class="hdn-analytics-data">visit|Food-Top 100 Restaurants|navigation|5</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/wine/top100/2012/intro/" class="hdn-analytics-nav ui-link-inherit">Top 100 Wines<span class="hdn-analytics-data">visit|Food-Top 100 Wines|navigation|6</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/food/bargainbites/2012/" class="hdn-analytics-nav ui-link-inherit">Bargain Bites<span class="hdn-analytics-data">visit|Food-Bargain Bites|navigation|7</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.opentable.com/start.aspx?m=4&ref=7801" class="hdn-analytics-nav ui-link-inherit">Reservations<span class="hdn-analytics-data">visit|Food-Reservations|navigation|8</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://insidescoopsf.sfgate.com/" class="hdn-analytics-nav ui-link-inherit">Inside Scoop SF<span class="hdn-analytics-data">visit|Food-Inside Scoop SF|navigation|9</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://healthyeating.sfgate.com/" class="hdn-analytics-nav ui-link-inherit">Healthy Eating<span class="hdn-analytics-data">visit|Food-Healthy Eating|navigation|10</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="/living/">Living<span class="hdn-analytics-data">visit|Living|navigation|7</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Living|navigation|7</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/homeandgarden/" class="hdn-analytics-nav ui-link-inherit">Home & Garden<span class="hdn-analytics-data">visit|Living-Home & Garden|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/style/" class="hdn-analytics-nav ui-link-inherit">Style<span class="hdn-analytics-data">visit|Living-Style|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/sfsocial/" class="hdn-analytics-nav ui-link-inherit">Parties<span class="hdn-analytics-data">visit|Living-Parties|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.sfgate.com/lust/?btype=web" class="hdn-analytics-nav ui-link-inherit">Lust<span class="hdn-analytics-data">visit|Living-Lust|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.sfgate.com/homerx/?btype=web" class="hdn-analytics-nav ui-link-inherit">Home RX<span class="hdn-analytics-data">visit|Living-Home RX|navigation|5</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/skiing/" class="hdn-analytics-nav ui-link-inherit">Ski<span class="hdn-analytics-data">visit|Living-Ski|navigation|6</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/lgbt/" class="hdn-analytics-nav ui-link-inherit">LGBT<span class="hdn-analytics-data">visit|Living-LGBT|navigation|7</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://remodeling.sfgate.com/" class="hdn-analytics-nav ui-link-inherit">Houzz<span class="hdn-analytics-data">visit|Living-Houzz|navigation|8</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/moms/" class="hdn-analytics-nav ui-link-inherit">Moms<span class="hdn-analytics-data">visit|Living-Moms|navigation|9</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/pets/" class="hdn-analytics-nav ui-link-inherit">Pets<span class="hdn-analytics-data">visit|Living-Pets|navigation|10</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/sponsoredarticles/lifestyle/" class="hdn-analytics-nav ui-link-inherit">Sponsored Content<span class="hdn-analytics-data">visit|Living-Sponsored Content|navigation|11</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="/travel/">Travel<span class="hdn-analytics-data">visit|Travel|navigation|8</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Travel|navigation|8</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/getaways/" class="hdn-analytics-nav ui-link-inherit">Weekend Getaways<span class="hdn-analytics-data">visit|Travel-Weekend Getaways|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/sfguide/" class="hdn-analytics-nav ui-link-inherit">SF Guide<span class="hdn-analytics-data">visit|Travel-SF Guide|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/neighborhoods/" class="hdn-analytics-nav ui-link-inherit">Neighborhoods<span class="hdn-analytics-data">visit|Travel-Neighborhoods|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/winecountry/" class="hdn-analytics-nav ui-link-inherit">Wine Country<span class="hdn-analytics-data">visit|Travel-Wine Country|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/monterey-carmel/" class="hdn-analytics-nav ui-link-inherit">Monterey-Carmel<span class="hdn-analytics-data">visit|Travel-Monterey-Carmel|navigation|5</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/renotahoe/" class="hdn-analytics-nav ui-link-inherit">Reno-Tahoe<span class="hdn-analytics-data">visit|Travel-Reno-Tahoe|navigation|6</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/hawaii/" class="hdn-analytics-nav ui-link-inherit">Hawaii<span class="hdn-analytics-data">visit|Travel-Hawaii|navigation|7</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/mexico/" class="hdn-analytics-nav ui-link-inherit">Mexico<span class="hdn-analytics-data">visit|Travel-Mexico|navigation|8</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="/vegas/" class="hdn-analytics-nav ui-link-inherit">Vegas<span class="hdn-analytics-data">visit|Travel-Vegas|navigation|9</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="l-1-item childless">
+                        <h2>
+                           <a class="hdn-analytics-nav ui-btn ui-btn-up-a ui-shadow ui-btn-icon-left" data-wrapperels="span" data-shadow="true" data-ajax="false" data-role="button" data-theme="a" data-icon="home" data-iconshadow="false" data-corners="false" href="/realestate/">
+                               <span class="hdn-analytics-data">visit|Real Estate|navigation|9</span>
+                               <span class="ui-btn-inner">
+                                  <span class="ui-btn-text">Real Estate</span>
+                               </span>
+                           </a>
+                        </h2>
+                    </div>
+                                <!-- /Section Link -->
+                                            
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="l-1-item childless">
+                        <h2>
+                           <a class="hdn-analytics-nav ui-btn ui-btn-up-a ui-shadow ui-btn-icon-left" data-wrapperels="span" data-shadow="true" data-ajax="false" data-role="button" data-theme="a" data-icon="home" data-iconshadow="false" data-corners="false" href="/cars/">
+                               <span class="hdn-analytics-data">visit|Cars|navigation|1</span>
+                               <span class="ui-btn-inner">
+                                  <span class="ui-btn-text">Cars</span>
+                               </span>
+                           </a>
+                        </h2>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="http://hearst.imomentous.com/job/home/SFGAA000A">Jobs<span class="hdn-analytics-data">visit|Jobs|navigation|2</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Jobs|navigation|2</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://www.bizbuysell.com/partner/san-francisco-businesses-for-sale" class="hdn-analytics-nav ui-link-inherit">Be Your Own Boss<span class="hdn-analytics-data">visit|Jobs-Be Your Own Boss|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://events.sfgate.com/search?acat=&new=n&sort=0&srad=50&srss=10&ssrss=5&st=event&svt=text&swhat=&swhen=&swhere=San+Francisco%2CCA&trim=1&cat=1111" class="hdn-analytics-nav ui-link-inherit">Job Events<span class="hdn-analytics-data">visit|Jobs-Job Events|navigation|2</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://hearst.imomentous.com/job/home/SFGAA000A" class="hdn-analytics-nav ui-link-inherit">Job Search<span class="hdn-analytics-data">visit|Jobs-Job Search|navigation|3</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-last-child}">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://bayarea.salary.com/SalaryWizard/LayoutScripts/Swzl_NewSearch.aspx" class="hdn-analytics-nav ui-link-inherit">Salary Wizard<span class="hdn-analytics-data">visit|Jobs-Salary Wizard|navigation|4</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                                
+                            <!-- Sections - Collapsible content expands to reveal subsection list -->
+                                                    <div class="hdn-collapsible-nav l-1-item ui-collapsible ui-collapsible-inset ui-first-child ui-collapsible-collapsed"
+                        data-role="collapsible" data-theme="a" data-corners="false" data-collapsed-icon="arrow-d"
+                        data-expanded-icon="arrow-u" data-iconpos="right">
+                        <h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                           <div class="nav-header-link ui-link ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-up-a" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="a">
+                             <span class="ui-btn-inner">
+                               <span class="ui-btn-text">
+                                 <a class="hdn-analytics-nav" href="http://findnsave.sfgate.com/">Shopping<span class="hdn-analytics-data">visit|Shopping|navigation|3</span></a>
+                               </span>
+                               <!-- control nav expand collapse -->
+                               <a href="toggle_nav" class="nav-list-toggle hdn-click-nav-list-toggle">
+                                 <span class="hdn-analytics-data">|Shopping|navigation|3</span>
+                                 <span class="ui-icon ui-icon-shadow ui-icon-arrow-d">&nbsp;</span>
+                               </a>
+                             </span>
+                           </div> 
+                        </h2>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                           <ul data-role="listview" data-theme="c" class="ui-listview">
+                                                                  <li data-icon="false" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-first-child">
+                                      <div class="ui-btn-inner ui-li">
+                                         <div class="ui-btn-text">
+                                            <a href="http://sfgate.kaango.com/" class="hdn-analytics-nav ui-link-inherit">Classifieds<span class="hdn-analytics-data">visit|Shopping-Classifieds|navigation|1</span></a>
+                                         </div>
+                                      </div>
+                                   </li>
+                                                          </ul>
+                        </div>
+                    </div>
+                                <!-- /Section Link -->
+                        </div>
+<!-- /Navigation -->
+<!-- e mobile_dynamic.tpl -->    <!-- Navigation -->
+  </div><!-- /ui-panel-inner -->
+</div><!-- /Slide-out menu panel -->
+
+<div class="ui-panel-content-wrap ui-body-c ui-panel-animate ui-panel-content-wrap-closed">
+  <!-- hearst/home/mobile_page_header.tpl -->
+	<!-- hearst/common/mobile_page_header_main.tpl -->
+  <div id="siteheader" role="banner" data-role="header" data-theme="a" class="siteheader ui-header">
+    <a title="" data-theme="a" data-wrapperels="span" data-iconshadow="true" data-shadow="true" data-corners="true" class="back-section ui-btn-left ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-icon-notext" onclick="javascript: window.history.go(-1);"><span class="ui-btn-inner"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-back ui-icon-shadow">&nbsp;</span></span></a>
+    <a data-theme="a" data-wrapperels="span" data-iconshadow="true" data-shadow="true" data-corners="true" class="logo-link ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all" href="/"><span class="ui-btn-inner"><span class="ui-btn-text"></span></span></a>
+    <a data-theme="a" data-wrapperels="span" data-corners="true" class="menu-btn ui-btn-right weather-btn ui-btn ui-btn-corner-all ui-btn-up-a" data-role="button" data-icon="" data-iconshadow="false" data-shadow="false" href="#weatherPanel"><span class="ui-btn-inner"><span class="icon"></span><span class="ui-btn-text"></span></span></a>
+    <a id="hdnHambMenu" title="Menu" data-theme="a" data-wrapperels="span" data-corners="true" class="menu-btn ui-btn-right ui-btn ui-btn-corner-all ui-btn-icon-notext ui-btn-up-a" data-role="button" data-icon="bars" data-iconshadow="false" data-iconpos="notext" data-shadow="false" href="#menuPanel"><span class="ui-btn-inner"><span class="ui-btn-text">Menu</span><span class="ui-icon ui-icon-bars">&nbsp;</span></span></a>
+  </div>
+  <!-- hearst/common/mobile_weather.tpl -->
+<div id="weatherBackground" class="below"></div>
+<div id="weatherPanel" class="weather below">
+<div class="weather__alerts"></div>
+<div class="weather__internal-wrapper">
+    <h2 class="weather__city text-shadow"></h2>
+    <div class="weather__current-forecast">
+    <div class="weather__current-forecast-condition text-shadow clearfix">
+        <span class="icon"></span>
+        <span></span>
+    </div>
+    <div class="clearfix weather-block">
+        <div class="temp text-shadow">&deg;</div>
+        <div class="weather__high-low text-shadow">
+        <div class="high">High: <span>&deg;</span></div>
+        <div class="low">Low: <span>&deg;</span></div>
+        </div>
+    </div>
+    <div class="wind">
+        <span class="icon"></span>
+        Wind: <span></span>
+    </div>
+    <div class="precip">
+        <span class="icon"></span>
+        Chance of precipitation: <span></span>
+    </div>
+    </div>
+    
+    
+<!-- noGen: item_mobile_ad_weather -->
+    <h2 class="weather__forecast-title">Forecast</h2>
+    <div class="weather__forecast">
+        <div class="weather__hourly-forecast clearfix">
+            <article id="weatherSlider">
+            <input checked="checked" type="radio" name="slider" id="slide1" />
+            <input type="radio" name="slider" id="slide2" />
+            <input type="radio" name="slider" id="slide3" />
+            <input type="radio" name="slider" id="slide4" />
+            <input type="radio" name="slider" id="slide5" />
+            <div id="slides">
+                <div id="overflow"></div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+            </article>
+        </div>
+        <div class="weather__weekly-forecast clearfix"></div>
+    </div>
+    <div class="logo">powered by <img src="/img/hdn/mobile/wundergroundLogo.png" alt="Wunderground Logo" /></div>
+</div>
+<a href="#" id="weatherClose">
+    <div class="close">
+        <span class="rule left"></span>close<span class="icon"></span><span class="rule right"></span>
+    </div>
+</a>
+</div>
+<script type="text/javascript">
+var mobilechron = 6;
+var mobilenewmilfordspectrum = 10;
+var mobilectpost = 10;
+var mobilemysa = 6;
+var mobilenewcanaannewsonline = 10;
+var mobilefairfieldcitizenonline = 10;
+var mobilenewstimes = 10;
+var mobileseattlepi = 4;
+var mobilesfgate = 5;
+var mobilebeaumontenterprise = 11;
+var mobiletimesunion = 5;
+var mobilegreenwichcitizen = 10;
+var mobilestamfordadvocate = 10;
+var mobilewestportnews = 10;
+var mobiledariennewsonline = 10;
+var mobilegreenwichtime = 10;
+var site = mobilesfgate;
+var site = site-1;
+
+jQuery(function(){
+    jQuery(".weather__city").text(HDN.city);
+    var random = Math.floor(Math.random()*site)+1;
+    imageURL = '/img/weather/backgrounds/weather_backgrounds_'+random+'.jpg';
+    jQuery('#weatherPanel .weather__internal-wrapper').css({"background-image":"url('"+imageURL+"')",
+        "background-size":"cover","background-position":"top center"});
+});
+</script>
+<!-- e hearst/common/mobile_weather.tpl -->  <!-- THIRDPARTY HEADER MARKER --><!-- DONT REMOVE -->
+<!-- e mobile_page_header_main.tpl --><!-- e hearst/home/mobile_page_header.tpl -->
+<!-- e hearst/home/mobile/navigation_main.tpl -->
+<!-- e hearst/home/navigation.tpl -->
+<div data-role="content" class="article-page">
+	  <div class="content-top content-top-light"><span><a class="section-link">Bay Area & State</a></span></div>
+    <div class="article-wrap">
+    <div class="article-top">
+      <h1 class="headline">A push to abolish 'ridiculous' S.F. laws</h1>
+      <h2 class="subhead"></h2>
+      <div class="byline">
+           	<span class="auth-name">
+            Marisa Lagos
+        </span>
+        <span class="pipe">|</span>
+                   <span class="time">January 6, 2014</span>
+      </div>
+    </div><!-- /.article-top -->    
+    <div class="article-share">
+      <!-- ux hearst/article/mobile_share.tpl -->
+
+<div class="social-links " social-url="http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3D" social-hashId="" social-blurb="The%20couple%2C%20along%20with%20probably%20thousands%20of%20other%20San%20Franciscans%2C%20are%20scofflaws%20because%20of%20a%20little-known%20section%20of%20code%20that%20bars%20people%20from%20using%20garages%20to%20store%20anything%20but%20automobiles.%0A%0AFarrell%20wants%20suggestions%20from%20any%20interested%20citizen%20and%20also%20is%20co-sponsoring%20a%20scholarship%20opportunity%20for%20local%20college%20students%20who%20have%20their%20own%20ideas.%0A%0AEventually%2C%20said%20its%20executive%20director%2C%20Seamus%20Kraft%2C%20the%20foundation%20wants%20%22every%20law%20and%20every%20piece%20of%20legislation%20in%20the%20country%22%20to%20be%20accessible%20online%20in%20a%20%22modern%2C%20restriction-free%20and%20user-friendly%20format.%22%0A%0AAll%20three%20websites%20use%20an%20open%20data%20format%20that%20makes%20it%20easy%20for%20people%20outside%20government%20to%20search%20through%20and%20comment%20on%20them%20-%20or%2C%20for%20the%20more%20technologically%20advanced%2C%20to%20build%20applications%20that%20can%20be%20used%20in%20civic%20life.%0A%0A%241%2C000%20scholarshipsThe%20foundation%20is%20also%20co-sponsoring%20Farrell%27s%20Civic%20Engagement%20Challenge%20Scholarship%2C%20which%20will%20award%20%241%2C000%20scholarships%20to%20five%20graduate%20and%20undergraduate%20students%20in%20March.%0A%0AThe%20proposed%20change%2C%20he%20said%2C%20is%20just%20one%20example%20of%20how%2C%20as%20the%20technology%20sector%20takes%20off%20in%20San%20Francisco%2C%20its%20citizens%20-%20and%20government%20-%20can%20be%20reaping%20the%20benefits." media-url="http%3A%2F%2Fww4.hdnux.com%2Fphotos%2F25%2F54%2F44%2F5687591%2F5%2FrawImage.jpg" social-title="A%20push%20to%20abolish%20%27ridiculous%27%20S.F.%20laws">
+    <ul class="right">
+		        <li class="socialIcon comments">
+                        <div class="viafoura">
+                <span class="vf-counter vf-widget" data-widget="counter"></span>
+            </div>
+            <a class="hdn-analytics" href="#comments">
+                <span class="hdn-analytics-data">comments_jump|article-5119134|article-page-top|1</span>
+                <span class="icon"></span>
+            </a>
+                    </li>
+					<li class="socialIcon shareLess">
+				<a class="hdn-share-more shareLessA hdn-analytics" href="#shareLess">
+					<span class="hdn-analytics-data">show_less_share|article-5119134|article-page-top|1</span>
+					<span class="icon"></span>
+				</a>
+			</li>
+		    </ul>
+    <ul class="left">
+        <li class="socialIcon email" share-id="email">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="mailto:?body=Check out this image I found on SFGate.com: http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Demail-mobile{currentImageId}%0A{caption}&amp;subject=Check out this image from SFGate.com"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">email_share|article-5119134|article-page-top|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon facebook" share-id="facebook">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="http://www.facebook.com/dialog/feed?app_id=1609422252616351&amp;link=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dfb-mobile{currentImageId}&amp;display=popup&amp;redirect_uri=http%3A%2F%2Fm.sfgate.com%2Fwclose.html&amp;description={caption}&amp;picture={image}&amp;name=A%20push%20to%20abolish%20%27ridiculous%27%20S.F.%20laws"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">facebook_share|article-5119134|article-page-top|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon twitter" share-id="twitter">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="https://twitter.com/intent/tweet?via=&amp;url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dtwitter-mobile{currentImageId}&amp;text={caption}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">twitter_share|article-5119134|article-page-top|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon pinterest more" share-id="pinterest">
+            <a class="hdn-analytics"
+                href=""
+                                    data-pin-do="none" data-pin-config="none"
+                                            data-hearst-galleria-social-uri-template="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dpinterest-mobile{currentImageId}&amp;media={image}&amp;description={caption}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">pinterest_share|article-5119134|article-page-top|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon reddit more" share-id="reddit">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dreddit-mobile{currentImageId}&amp;title={caption}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">reddit_share|article-5119134|article-page-top|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon google more" share-id="google">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="https://plus.google.com/share?hl=en&amp;url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dgplus-mobile{currentImageId}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">google_share|article-5119134|article-page-top|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+					<li class="socialIcon shareMore">
+				<a class="hdn-share-more shareMoreA" href="#shareMore">
+					<span class="hdn-analytics-data">show_more_share|article-5119134|article-page-top|1</span>
+					<span class="icon"></span>
+				</a>
+			</li>
+		    </ul>
+</div>
+<!-- e ux hearst/article/mobile_share.tpl -->
+    </div><!-- /.article-share -->    
+                              <div class="article-media">
+              <div class="media">
+                    
+                    
+          <script type="text/javascript">var hstrot = function(){};  hstrot.prototype.showid = '';</script> 
+          <script type="text/javascript" src="/js/hdn/slideshow/refresh.js?r5.22.0.23"></script>
+          
+                    
+          <script>HDN.doRefresh = 1;</script>
+          <script type="text/javascript">
+            function newPortraitImage(image, width, height)
+            {
+                var pieces = image.split(/[\s\/]+/);
+                pieces.pop(pieces.length - 1);
+                pieces[0] = pieces[0] + '/';
+                var newpopImg = width + 'x' + height + '.jpg';
+                pieces.push(newpopImg)
+                return pieces.join("/");
+            }
+            function galleriaNewIframe(iframeHTML)
+            {
+                var tempEl = document.createElement('div');
+                tempEl.innerHTML = iframeHTML;
+                var iframeEls = tempEl.getElementsByTagName('iframe');
+                var newIframe = document.createElement('iframe');
+                newIframe.setAttribute('src', iframeEls[0].getAttribute('src'));
+                tempEl.remove();
+                newIframe.setAttribute('scrolling', 'no');
+                newIframe.setAttribute('frameborder', 0);
+                newIframe.setAttribute('marginwidth', 0);
+                newIframe.setAttribute('marginheight', 0);
+                newIframe.setAttribute('width', 0);
+                newIframe.setAttribute('height', 0);
+                iframeHTML = newIframe.outerHTML;
+                return iframeHTML;
+            }
+            function galleriaResizeIframe(iframeHTML, width, height)
+            {
+                iframeHTML = iframeHTML.replace(/(&|&amp;|\?)width=\d+/i,"$1" + 'width=' + width);
+                iframeHTML = iframeHTML.replace(/(&|&amp;|\?)height=\d+/gi,"$1" + 'height=' + height);
+                iframeHTML = iframeHTML.replace(/ width=(["']?)\d+(["']?)/i,' width=' + "$1" + width + "$2");
+                iframeHTML = iframeHTML.replace(/ height=(["']?)\d+(["']?)/i,' height=' + "$1" + height + "$2");
+                return iframeHTML;
+            }
+            function galleriaResizeObject(objectHTML, width, height)
+            {
+                var tempEl = document.createElement('div');
+                tempEl.innerHTML = objectHTML;
+                var objectEls = tempEl.getElementsByTagName('object');
+                var paramEls = objectEls[0].getElementsByTagName('param');
+                for (var i = 0; i < paramEls.length; i++) {
+                    if (paramEls[i].getAttribute('name') == 'width') {
+                        paramEls[i].setAttribute('value', width);
+                    } else if (paramEls[i].getAttribute('name') == 'height') {
+                        paramEls[i].setAttribute('value', height);
+                    }
+                }
+                objectHTML = objectEls[0].outerHTML;
+                tempEl.remove();
+                return objectHTML;
+            }
+
+            var articleGalleryData=[{"id":5687591,"revisionNumber":5,"width":2048,"height":1368,"caption":"Kimberly Conley puts a bicycle into her garage where she and her husband keep their bicycles and other items rather than cars, Monday January 6, 2014, in San Francisco, Calif. They have turned their driveway into a parklet for public uses. Photo: Lacy Atkins, The Chronicle","title":"Kimberly Conley puts a bicycle into her garage where she and her husband keep their bicycles and oth","displayTitle":"","credit":"Lacy Atkins\/The Chronicle","related":"<a href=\"\/opinion\/letterstoeditor\/article\/Park-cars-in-the-garage-5143588.php\">Related Article: Park cars in the garage<\/a>","bizClass":"photo","url":"www.google.com","thumb":"http:\/\/ww4.hdnux.com\/photos\/25\/54\/44\/5687591\/5\/headline_list_illus2.jpg","thumbHTM":"","text":"","idx":0,"orderIndex":0,"landscape":"http:\/\/ww4.hdnux.com\/photos\/25\/54\/44\/5687591\/5\/premium_gallery_landscape.jpg","portrait":"http:\/\/ww4.hdnux.com\/photos\/25\/54\/44\/5687591\/5\/premium_gallery_landscape.jpg"},{"id":5689660,"revisionNumber":3,"width":1024,"height":684,"caption":"Kimberly Conley stands at her garage where she and her husband keep bicycles and other items other than cars, Monday January 6, 2014, in San Francisco, Calif. They have turned their driveway into a parklet for public uses. Photo: Lacy Atkins, The Chronicle","title":"Kimberly Conley stands at her garage where she and her husband keep bicycles and other items other t","displayTitle":"","credit":"Lacy Atkins\/The Chronicle","related":"<a href=\"\/bayarea\/article\/A-push-to-abolish-ridiculous-S-F-laws-5119134.php\">Related Article: A push to abolish 'ridiculous' S.F. laws<\/a>","bizClass":"photo","url":"www.google.com","thumb":"http:\/\/ww1.hdnux.com\/photos\/25\/55\/04\/5689660\/3\/headline_list_illus2.jpg","thumbHTM":"","text":"","idx":1,"orderIndex":1,"landscape":"http:\/\/ww1.hdnux.com\/photos\/25\/55\/04\/5689660\/3\/premium_gallery_landscape.jpg","portrait":"http:\/\/ww1.hdnux.com\/photos\/25\/55\/04\/5689660\/3\/premium_gallery_landscape.jpg"},{"id":5689738,"revisionNumber":3,"width":858,"height":606,"caption":"San Francisco Supervisor Mark Farrell has resolved to use a website  www.sanfranciscocode.org, to clear any unnecessary laws from San Francisco's books and to tweak laws that need updating. Photo: Http:\/\/www.sanfranciscocode.org\/","title":"San Francisco Supervisor Mark Farrell has resolved to use a website  www.sanfranciscocode.org, to cl","displayTitle":"","credit":"http:\/\/www.sanfranciscocode.org\/","related":"<a href=\"\/bayarea\/article\/A-push-to-abolish-ridiculous-S-F-laws-5119134.php\">Related Article: A push to abolish 'ridiculous' S.F. laws<\/a>","bizClass":"photo","url":"www.google.com","thumb":"http:\/\/ww3.hdnux.com\/photos\/25\/55\/06\/5689738\/3\/headline_list_illus2.jpg","thumbHTM":"","text":"","idx":2,"orderIndex":2,"landscape":"http:\/\/ww3.hdnux.com\/photos\/25\/55\/06\/5689738\/3\/premium_gallery_landscape.jpg","portrait":"http:\/\/ww3.hdnux.com\/photos\/25\/55\/06\/5689738\/3\/premium_gallery_landscape.jpg"},{"id":5108191,"revisionNumber":3,"width":1024,"height":684,"caption":"Supervisor Mark Farrell wants suggestions from any interested citizen and also is \r\nco-sponsoring a scholarship opportunity for local college students who \r\nhave their own&nbsp;ideas. Photo: Katie Meek, The Chronicle","title":"Supervisor Mark Farrell wants suggestions from any interested citizen and also is \r\nco-sponsoring a ","displayTitle":"","credit":"Katie Meek\/The Chronicle","related":"<a href=\"\/bayarea\/article\/Supervisors-wrap-up-budget-negotiations-early-5582031.php\">Related Article: Supervisors wrap up budget negotiations early<\/a>","bizClass":"photo","url":"www.google.com","thumb":"http:\/\/ww4.hdnux.com\/photos\/23\/37\/07\/5108191\/3\/headline_list_illus2.jpg","thumbHTM":"","text":"","idx":3,"orderIndex":3,"landscape":"http:\/\/ww4.hdnux.com\/photos\/23\/37\/07\/5108191\/3\/premium_gallery_landscape.jpg","portrait":"http:\/\/ww4.hdnux.com\/photos\/23\/37\/07\/5108191\/3\/premium_gallery_landscape.jpg"},{"id":5689662,"revisionNumber":3,"width":1024,"height":684,"caption":"Kimberly Conley puts a bicycle into her garage where she and her husband keep their bicycles and other items rather than cars, Monday January 6, 2014, in San Francisco, Calif. They have turned their driveway into a parklet for public uses. Photo: Lacy Atkins, The Chronicle","title":"Kimberly Conley puts a bicycle into her garage where she and her husband keep their bicycles and oth","displayTitle":"","credit":"Lacy Atkins\/The Chronicle","related":"<a href=\"\/bayarea\/article\/A-push-to-abolish-ridiculous-S-F-laws-5119134.php\">Related Article: A push to abolish 'ridiculous' S.F. laws<\/a>","bizClass":"photo","url":"www.google.com","thumb":"http:\/\/ww3.hdnux.com\/photos\/25\/55\/04\/5689662\/3\/headline_list_illus2.jpg","thumbHTM":"","text":"","idx":4,"orderIndex":4,"landscape":"http:\/\/ww3.hdnux.com\/photos\/25\/55\/04\/5689662\/3\/premium_gallery_landscape.jpg","portrait":"http:\/\/ww3.hdnux.com\/photos\/25\/55\/04\/5689662\/3\/premium_gallery_landscape.jpg"},{"id":5689663,"revisionNumber":3,"width":1024,"height":684,"caption":"Kimberly Conley stands at her garage where she and her husband keep bicycles and other items other than cars, Monday January 6, 2014, in San Francisco, Calif. They have turned their driveway into a parklet for public uses. Photo: Lacy Atkins, The Chronicle","title":"Kimberly Conley stands at her garage where she and her husband keep bicycles and other items other t","displayTitle":"","credit":"Lacy Atkins\/The Chronicle","related":"<a href=\"\/bayarea\/article\/A-push-to-abolish-ridiculous-S-F-laws-5119134.php\">Related Article: A push to abolish 'ridiculous' S.F. laws<\/a>","bizClass":"photo","url":"www.google.com","thumb":"http:\/\/ww4.hdnux.com\/photos\/25\/55\/04\/5689663\/3\/headline_list_illus2.jpg","thumbHTM":"","text":"","idx":5,"orderIndex":5,"landscape":"http:\/\/ww4.hdnux.com\/photos\/25\/55\/04\/5689663\/3\/premium_gallery_landscape.jpg","portrait":"http:\/\/ww4.hdnux.com\/photos\/25\/55\/04\/5689663\/3\/premium_gallery_landscape.jpg"}];
+            var galleria_data = new Array();
+
+            // THIS ABSOLUTELY NEEDS TO BE GLOBAL
+            var GALLERIA_IMAGE_LOAD_COUNT = 0;
+
+            var imageData = new Array();
+            var winWidth = window.innerWidth;
+            var winHeight = window.innerHeight;
+            var popImgSize = '832'
+            var defaultPortrait = 'http://ww4.dev.hdnux.com/photos/23/75/51/5233243/4/premium_gallery_portrait.png';
+            var defaultLandscape = 'http://ww4.dev.hdnux.com/photos/23/75/51/5233243/4/premium_gallery_landscape.png';
+            if (winHeight >= winWidth){
+				popImgSize = winHeight;
+			}else{
+				popImgSize = winWidth;
+			}
+			if(popImgSize > 2000){
+				popImgSize = 2000;
+			}
+            
+            
+            var numImages = articleGalleryData.length;
+            for (var i = 0; i < numImages; i++) {
+                var thumb =  articleGalleryData[i]['thumb'] || '';
+                var description = articleGalleryData[i]['caption'] || '';
+                var title = articleGalleryData[i]['displayTitle'] || '';
+                var credit = articleGalleryData[i]['credit'] || '' ;
+                var portrait_photo = '';
+                var landscape_photo = '';
+                var layerHtml = '';
+                var isBCV = false;
+                var isIframe = false;
+                var vidLayer = '';
+                var iframeSrc = '';
+                portrait_photo = (articleGalleryData[i]['portrait'])
+                    ? articleGalleryData[i]['portrait'] : defaultPortrait;
+                var output = newPortraitImage(portrait_photo, popImgSize, popImgSize);
+                landscape_photo = (articleGalleryData[i]['landscape'])
+                    ? articleGalleryData[i]['landscape'] : (defaultLandscape + '#' + i);
+                if (articleGalleryData[i]['mediaContent']) {
+                    if (HDN.skipGalleryMediaObjects) {
+                        continue;
+                    }
+                    if (articleGalleryData[i]['mediaContent'].match(/<iframe /i)) {
+                        vidLayer = galleriaNewIframe(articleGalleryData[i]['mediaContent']);
+                        isIframe = true;
+                    } else {
+                        vidLayer = articleGalleryData[i]['mediaContent'];
+                        isBCV = true;
+                    }
+                } else if (articleGalleryData[i]['item']) {
+                    layerHtml = articleGalleryData[i]['item'];
+                } else if (articleGalleryData[i]['text']) {
+                    if (HDN.skipGalleryFreeformObjects) {
+                        continue;
+                    }
+                    if (articleGalleryData[i]['text'].match(/<iframe /i)) {
+                        vidLayer = galleriaNewIframe(articleGalleryData[i]['text']);
+                        isIframe = true;
+                    } else {
+                        LayerHtml = articleGalleryData[i]['text'];
+                    }
+                } else if (articleGalleryData[i]['Iframe']){
+                    iframeSrc = articleGalleryData[i]['Iframe'];
+                }
+                var temp = {'thumb': thumb, 'image': output, 'big': output, 'description': description,
+                    'title' : title, 'credit': credit, 'bizClass': articleGalleryData[i]['bizClass'],
+                    'id': articleGalleryData[i]['id']};
+                if (layerHtml) {
+                    temp.layer = layer_html;
+                }
+                if (vidLayer) {
+                    temp.vidLayer = vidLayer;
+                    temp.isBCV = isBCV;
+                    temp.isIframe = isIframe;
+                }
+                if (iframeSrc) {
+                    temp.iframe = iframeSrc;
+                }
+                imageData.push(temp);
+            }
+            galleria_data = imageData;
+          </script>
+          
+        </div>
+            </div><!-- /.article-media -->
+        <div class="article-body">
+      <div class="article-text">
+                                         <p><strong>(01-07) 09:58 PST SAN FRANCISCO</strong> -- Kimberly Conley and Amandeep Jawa don't have a car, so they use their Mission District garage to store their bicycles - in direct violation of San Francisco law.
+                          <!-- hearst/ads/medium_rectangle_ad_first.tpl -->
+
+<div id="hst-mediumrectangle1" class="hst-mediumrectangle">
+<div id="A300" class="A300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("A300"); /*]]>*/ </script></div>
+</div>
+<!-- e medium_rectangle_ad_first.tpl -->                                                               <p>The couple, along with probably thousands of other San Franciscans, are scofflaws because of a little-known section of code that bars people from using garages to store anything but automobiles. The law went unnoticed until three months ago, when San Francisco attorney Gary Rabkin commented on its ridiculousness on a website dedicated to presenting city laws to the public in an easy-to-navigate format. 
+                                                               <p>On Tuesday, Supervisor Mark Farrell will propose a measure to scrap the garage code - but he's not stopping there. This new year, Farrell has resolved to use that website, <a href="http://www.sanfranciscocode.org">www.sanfranciscocode.org</a>, to clear any unnecessary laws from San Francisco's books and to tweak laws that need updating.
+                                                               <p> He won't be doing it alone: Farrell wants suggestions from any interested citizen and also is co-sponsoring a scholarship opportunity for local college students who have their own ideas.
+                                                               <p>Civic engagement, said Farrell, "doesn't have to mean coming to a board meeting to testify at 3 p.m. in person." 
+                                                               <h3 class="subhead" style="subhead">Opportunity to engage</h3><p>"We want to make sure that as technology evolves, people's lives evolve with that technology," he said. "We are presenting an opportunity for people to engage with city government in a way that works for them."
+                                                               <p>His push centers on the website, part of an effort by the nonprofit OpenGov Foundation, which focuses on using technology to allow people to access and use government information. 
+                                                               <p>Eventually, said its executive director, Seamus Kraft, the foundation wants "every law and every piece of legislation in the country" to be accessible online in a "modern, restriction-free and user-friendly format."
+                                                               <p>In addition to the San Francisco work, the nonprofit<strong> </strong>has placed all of the laws in the state of Maryland and the city of Baltimore online. All three websites use an open data format that makes it easy for people outside government to search through and comment on them - or, for the more technologically advanced, to build applications that can be used in civic life. 
+                                                               <p>"Having open-law data allows you to do almost anything with it," said Kraft. "We have a firm tradition of citizen-led change and citizen-led government in this country, and what does it look like in 2014? This is what it looks like."
+                                                               <h3 class="subhead" style="subhead">$1,000 scholarships</h3><p>The foundation is also co-sponsoring Farrell's Civic Engagement Challenge Scholarship, which will award $1,000 scholarships to five graduate and undergraduate students in March. Applicants will be asked to use <a href="http://www.sanfrancisocode.org">www.sanfrancisocode.org</a> to suggest changes to outdated laws or suggest new policies. 
+                                                               <p>Outdated is exactly what the garage law is, said Conley, the Mission District resident. She expressed surprise that the law is still on the books, but admitted she hasn't read a lot of San Francisco code in the past.
+                                                               <p>"It's absolutely ridiculous, especially in San Francisco, where storage space is at a premium - you expect to be able to do with your garage whatever you need to do with it," she said. "If you're not going to use your garage for a car, it should be your space to do as you please."
+                                                               <p>Rabkin went looking for the code section after a friend of his was told by her landlord that she needed to remove some items from a garage because it was required by law. A bicyclist, he was shocked to find that a bike-friendly city such as San Francisco would bar their storage in garages. The website - especially its user-commenting feature - is a great resource, Rabkin said. 
+                                                                             <a data-role="button" data-icon="refresh" data-iconpos="right" class="more-btn ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-right ui-btn-up-c" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c"><span class="ui-btn-inner"><span class="ui-btn-text">Read Full Article</span><span class="ui-icon ui-icon-refresh ui-icon-shadow">&nbsp;</span></span></a>
+              <!-- Temporary direct to DFP Ad call -->
+              
+                <script type="text/javascript">
+                  var urlReq = "http://extras.sfgate.com/ads/mobile/googletag.js"
+                  var urlAd = "http://extras.sfgate.com/ads/mobile/mobilesfgate/X300.js";
+                  $( ".more-btn" ).click(function() {
+                    googletag = false;
+                    $.getScript( urlReq, function() {
+                      $.getScript( urlAd, function() {});
+                    });
+                  });
+                </script>
+              
+              <!-- e Temporary direct to DFP Ad call -->
+              <div id="showMore" class="article-text">
+                <div id="hst-mediumrectangle1"><div id="X300" class="ad_deferrable"></div></div>
+                        <p>"I appreciate when things are more accessible," he said. "Laws are kind of like the operating system of society, and if citizens can't access them, it's crazy."
+                                                                          <h3 class="subhead" style="subhead">Reaping tech's benefits</h3><p>Farrell agreed with both Conley and Rabkin, saying he imagines that basically anyone with a garage in San Francisco is technically violating the law. The proposed change, he said, is just one example of how, as the technology sector takes off in San Francisco, its citizens - and government - can be reaping the benefits. 
+                                                                          <p>"I believe City Hall needs to make sure that technology benefits residents' everyday lives ... but also make sure that we foster technology to create new ways for residents to interact with city government," he said. "I hope everyday San Franciscans, students, anybody interested in city government will look and help find solutions. One thousand eyes on a law are better than one."
+                                                                          <p class="dtlcomment">Marisa Lagos is a San Francisco Chronicle staff writer. E-mail: <a href="mailto:mlagos@sfchronicle.com">mlagos@sfchronicle.com</a> Twitter: <a href="http://twitter.com/mlagos">@mlagos</a>
+                                                                          
+                                    </div>
+    </div><!-- /.article-body -->
+        <div class="article-share">
+      <!-- ux hearst/article/mobile_share.tpl -->
+
+<div class="social-links " social-url="http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3D" social-hashId="" social-blurb="The%20couple%2C%20along%20with%20probably%20thousands%20of%20other%20San%20Franciscans%2C%20are%20scofflaws%20because%20of%20a%20little-known%20section%20of%20code%20that%20bars%20people%20from%20using%20garages%20to%20store%20anything%20but%20automobiles.%0A%0AFarrell%20wants%20suggestions%20from%20any%20interested%20citizen%20and%20also%20is%20co-sponsoring%20a%20scholarship%20opportunity%20for%20local%20college%20students%20who%20have%20their%20own%20ideas.%0A%0AEventually%2C%20said%20its%20executive%20director%2C%20Seamus%20Kraft%2C%20the%20foundation%20wants%20%22every%20law%20and%20every%20piece%20of%20legislation%20in%20the%20country%22%20to%20be%20accessible%20online%20in%20a%20%22modern%2C%20restriction-free%20and%20user-friendly%20format.%22%0A%0AAll%20three%20websites%20use%20an%20open%20data%20format%20that%20makes%20it%20easy%20for%20people%20outside%20government%20to%20search%20through%20and%20comment%20on%20them%20-%20or%2C%20for%20the%20more%20technologically%20advanced%2C%20to%20build%20applications%20that%20can%20be%20used%20in%20civic%20life.%0A%0A%241%2C000%20scholarshipsThe%20foundation%20is%20also%20co-sponsoring%20Farrell%27s%20Civic%20Engagement%20Challenge%20Scholarship%2C%20which%20will%20award%20%241%2C000%20scholarships%20to%20five%20graduate%20and%20undergraduate%20students%20in%20March.%0A%0AThe%20proposed%20change%2C%20he%20said%2C%20is%20just%20one%20example%20of%20how%2C%20as%20the%20technology%20sector%20takes%20off%20in%20San%20Francisco%2C%20its%20citizens%20-%20and%20government%20-%20can%20be%20reaping%20the%20benefits." media-url="http%3A%2F%2Fww4.hdnux.com%2Fphotos%2F25%2F54%2F44%2F5687591%2F5%2FrawImage.jpg" social-title="A%20push%20to%20abolish%20%27ridiculous%27%20S.F.%20laws">
+    <ul class="right">
+		        <li class="socialIcon comments">
+                        <div class="viafoura">
+                <span class="vf-counter vf-widget" data-widget="counter"></span>
+            </div>
+            <a class="hdn-analytics" href="#comments">
+                <span class="hdn-analytics-data">comments_jump|article-5119134|article-page-bottom|1</span>
+                <span class="icon"></span>
+            </a>
+                    </li>
+					<li class="socialIcon shareLess">
+				<a class="hdn-share-more shareLessA hdn-analytics" href="#shareLess">
+					<span class="hdn-analytics-data">show_less_share|article-5119134|article-page-bottom|1</span>
+					<span class="icon"></span>
+				</a>
+			</li>
+		    </ul>
+    <ul class="left">
+        <li class="socialIcon email" share-id="email">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="mailto:?body=Check out this image I found on SFGate.com: http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Demail-mobile{currentImageId}%0A{caption}&amp;subject=Check out this image from SFGate.com"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">email_share|article-5119134|article-page-bottom|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon facebook" share-id="facebook">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="http://www.facebook.com/dialog/feed?app_id=1609422252616351&amp;link=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dfb-mobile{currentImageId}&amp;display=popup&amp;redirect_uri=http%3A%2F%2Fm.sfgate.com%2Fwclose.html&amp;description={caption}&amp;picture={image}&amp;name=A%20push%20to%20abolish%20%27ridiculous%27%20S.F.%20laws"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">facebook_share|article-5119134|article-page-bottom|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon twitter" share-id="twitter">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="https://twitter.com/intent/tweet?via=&amp;url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dtwitter-mobile{currentImageId}&amp;text={caption}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">twitter_share|article-5119134|article-page-bottom|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon pinterest more" share-id="pinterest">
+            <a class="hdn-analytics"
+                href=""
+                                    data-pin-do="none" data-pin-config="none"
+                                            data-hearst-galleria-social-uri-template="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dpinterest-mobile{currentImageId}&amp;media={image}&amp;description={caption}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">pinterest_share|article-5119134|article-page-bottom|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon reddit more" share-id="reddit">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dreddit-mobile{currentImageId}&amp;title={caption}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">reddit_share|article-5119134|article-page-bottom|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon google more" share-id="google">
+            <a class="hdn-analytics"
+                href=""
+                                                            data-hearst-galleria-social-uri-template="https://plus.google.com/share?hl=en&amp;url=http%3A%2F%2Fwww.sfgate.com%2Fbayarea%2Farticle%2FA-push-to-abolish-ridiculous-S-F-laws-5119134.php%3Fcmpid%3Dgplus-mobile{currentImageId}"
+                                                    onclick="return false;">
+                <span class="hdn-analytics-data">google_share|article-5119134|article-page-bottom|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+					<li class="socialIcon shareMore">
+				<a class="hdn-share-more shareMoreA" href="#shareMore">
+					<span class="hdn-analytics-data">show_more_share|article-5119134|article-page-bottom|1</span>
+					<span class="icon"></span>
+				</a>
+			</li>
+		    </ul>
+</div>
+<!-- e ux hearst/article/mobile_share.tpl -->
+    </div>
+    <!-- src/business/templates/hearst/article/author_module.tpl -->
+
+	<div class="auth-wrap">
+					<!-- src/business/templates/hearst/article/author_module_info.tpl -->
+<div class="auth-connect last">
+	<div class="auth-in">
+		<div class="auth-head">
+			<span class="auth-name">Marisa Lagos</span>|<span class="auth-title">Politics reporter</span>
+		</div>
+		<div class="auth-links">
+			<a href="mailto:mlagos@sfchronicle.com?subject=Response to article: A push to abolish 'ridiculous' S.F. laws&body=http://m.sfgate.com/bayarea/article/A-push-to-abolish-ridiculous-S-F-laws-5119134.php" data-role="button" data-icon="email" data-iconpos="notext" class="auth-link"><span class="ui-icon ui-icon-email">&nbsp;</span></a>
+						<a href="http://twitter.com/mlagos" data-role="button" data-icon="twitter" data-iconpos="notext" class="auth-link"><span class="ui-icon ui-icon-twitter">&nbsp;</span></a>									<a href="/default/authorRss/marisa-lagos-174.php" data-role="button" data-icon="rss" data-iconpos="notext" class="auth-link"><span class="ui-icon ui-icon-rss">&nbsp;</span></a>
+		</div>
+	</div><!-- /.auth-in -->
+</div><!-- /.auth-connect -->	
+<!-- e src/business/templates/hearst/article/author_module_info.tpl -->			<!-- e src/business/templates/hearst/article/author_module.tpl -->            
+    <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.24218 -->
+<div class="OUTBRAIN" data-widget-id="MB_1" data-ob-template="sfgate" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+        <div id="comments" name="comments" class="article-comments">
+      <div class="comments-in">
+                              <!-- comments get dynamically inserted here -->
+
+<div id="comments" class="hdn-comments">
+    <div id="hdn-vf-comments"></div>
+</div>                        </div>
+    </div>
+  </div><!-- /.article-wrap -->
+</div><!-- /.article-page -->
+
+  <script type="text/javascript" src="/js/hdn/premium/utils/galleria-1.3.3/galleria-1.3.3.js?r5.22.0.23"></script>
+  <script type="text/javascript" src="/js/hdn/premium/utils/galleria-1.3.3/themes/hdn_responsive/galleria.hdn_responsive.min.js?r5.22.0.23"></script>
+  <link id="galleria-theme" rel="stylesheet" href="/js/hdn/premium/utils/galleria-1.3.3/themes/hdn_responsive/galleria.hdn_responsive.css?r5.22.0.23">
+  <link id="galleria-theme" rel="stylesheet" href="/js/hdn/premium/utils/galleria-1.3.3/themes/hdn_responsive/galleria.hdn_sfgate_responsive.css?r5.22.0.23">
+
+  <script type="text/javascript">
+    // Test for omniture functions  --- That are only defined for some premium sites 
+    if (typeof window.premiumSlideshowImageEvent === 'undefined') {
+        premiumSlideshowImageEvent = function(){};
+    }
+    if (typeof window.premiumSlideshowAction === 'undefined') {
+        premiumSlideshowAction = function(){};
+    }
+    var GALLERIA_MODE_PLAYING = false;
+    var GALLERIA_LIGHTBOX_OPEN_OMNI = false;
+
+    if (window['galleria_data'] !== undefined) {
+        Galleria.run('.media', {dataSource: galleria_data, responsive: true, height: 0.5625});
+    }
+    function galleriaFindChild() {
+        if ($('.galleria-stage .galleria-images .galleria-image:nth-child(1)').css('z-index') == 1) {
+            return 1;
+        }
+        return 2;
+    }
+    function galleriaDoVid(gData) {
+        var imgChild = galleriaFindChild();
+        var gI = '.galleria-stage .galleria-images .galleria-image:nth-child(' + imgChild + ')';
+        var gIL = gI + ' .galleria-layer';
+        $(gIL).show();
+        $(gIL).width($(gI).width());
+        $(gIL).height($('.galleria-container .galleria-stage').height()
+            - $('.galleria-container .galleria-bar').height());
+        if (gData.isIframe) {
+            $(gIL).html(galleriaResizeIframe(gData.vidLayer, $(gIL).width(), $(gIL).height()));
+        } else if (gData.isBCV) {
+            $(gIL).html(galleriaResizeObject(gData.vidLayer, $(gIL).width(), $(gIL).height()));
+            brightcove.createExperiences();
+        }
+    }
+    Galleria.on('image', function(e) {
+        premiumSlideshowImageEvent((this.getIndex() + 1),'inline', '24');
+        if (GALLERIA_MODE_PLAYING === true){
+            premiumSlideshowAction('29');
+        }
+        $('.galleria-stage .galleria-image .galleria-layer').hide();
+        $('.galleria-stage .galleria-image .galleria-layer').empty();
+        if (!GALLERIA_LIGHTBOX_OPEN_OMNI && e.galleriaData.vidLayer) {
+            galleriaDoVid(e.galleriaData);
+        }
+    });
+    Galleria.on('loadstart', function(e) {});
+    function galleriaCreateLBL() {
+        var gBCII = '.galleria-lightbox-box .galleria-lightbox-content .galleria-lightbox-image .galleria-image';
+        if (!$(gBCII + ' .galleria-layer').length) {
+            $(gBCII).prepend('<div class=\'galleria-layer\'></div>');
+            $(gBCII + ' .galleria-layer').css({
+                'z-index':'99999',
+                'position':'relative',
+                'top':$('.galleria-lightbox-box .galleria-lightbox-content .galleria-lightbox-image').css('top'),
+                'height':$('.galleria-lightbox-box .galleria-lightbox-content .galleria-lightbox-image').height(),
+                'width':$('.galleria-lightbox-box .galleria-lightbox-content .galleria-lightbox-image').width(),
+            });
+        }
+        $(gBCII + ' .galleria-layer').hide();
+    }
+    Galleria.on('lightbox_image', function(e) {
+        premiumSlideshowImageEvent((this.getIndex() + 1),'overlay', '23');
+        var gData = e.scope._data[e.scope._active];
+        var lData = e.scope._data[this._lightbox.active];
+        $('.galleria-stage .galleria-image .galleria-layer').hide();
+        $('.galleria-stage .galleria-image .galleria-layer').empty();
+        if (lData.vidLayer) {
+            galleriaCreateLBL();
+            var gBCI = '.galleria-lightbox-box .galleria-lightbox-content .galleria-lightbox-image';
+            var gBCIIL = gBCI + ' .galleria-image .galleria-layer';
+            $(gBCIIL).show();
+            if (lData.isIframe) {
+                $(gBCIIL).html(galleriaResizeIframe(lData.vidLayer, $(gBCI).width(), $(gBCI).height()));
+            } else if (lData.isBCV) {
+                $(gBCIIL).html(galleriaResizeObject(lData.vidLayer, $(gBCI).width(), $(gBCI).height()));
+                brightcove.createExperiences();
+            }
+        }
+    });
+    Galleria.on('lightbox_open', function(e) {
+        premiumSlideshowAction('21');
+        GALLERIA_LIGHTBOX_OPEN_OMNI = true;
+        var gData = e.scope._data[e.scope._active];
+        if (gData.vidLayer) {
+            galleriaCreateLBL();
+            $('.galleria-stage .galleria-image .galleria-layer').hide();
+            $('.galleria-stage .galleria-image .galleria-layer').empty();
+        }
+    });
+    Galleria.on('lightbox_close', function(e) {
+        premiumSlideshowAction('22');
+        GALLERIA_LIGHTBOX_OPEN_OMNI = false;
+        var gData = e.scope._data[e.scope._active];
+        $('.galleria-lightbox-box .galleria-lightbox-content .galleria-lightbox-image .galleria-image'
+            + ' .galleria-layer').hide();
+        if (gData.vidLayer) {
+            galleriaDoVid(gData);
+        }
+    });
+    Galleria.on('play', function(e) {
+      premiumSlideshowAction('27');
+      GALLERIA_MODE_PLAYING = true;    
+    });
+  </script>
+
+
+<!-- hearst/common/mobile_site_footer.tpl -->
+<!-- THIRDPARTY FOOTER MARKER --><!-- DONT REMOVE -->
+                  <!-- templates/hearst/home/viafouraFooterJS.tpl -->
+<script>
+    
+    
+    (function (v, s) {
+        v.type = 'text/javascript';
+        v.async = !0;
+        v.src = location.protocol !== 'https:' ? '//cdn.viafoura.net/vf.js' : '//api.viafoura.com/app/js/vf.js';
+        s.parentNode.insertBefore(v, s)
+    }(document.createElement('script'), document.getElementsByTagName('script')[0]));
+
+
+    $(document).ready(function () {
+        if ($('#hdn-vf-comments').length) {HDN.authOnReady('mobile',false)}
+        HDN.getBlogCommentCount();
+    });
+    
+</script>
+<!-- e templates/hearst/home/viafouraFooterJS.tpl -->
+                <script type="text/javascript" src="/external/js/global.bottom.r5.22.0.23.js"></script>   
+        <!--<script type="text/javascript" async src="//launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>-->   
+        <!-- hearst/ads/medium_rectangle_ad_second.tpl -->
+
+<div id="hst-mediumrectangle2" class="hst-mediumrectangle">
+<div id="B300" class="B300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("B300"); /*]]>*/ </script></div>
+</div>
+<!-- e medium_rectangle_ad_second.tpl -->        <div id="footer" data-role="footer" class="bottom">
+          
+          <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.24469 -->
+<div id="footer" data-role="footer" class="sitefooter ui-footer ui-bar-a" role="contentinfo">
+	<a class="logo-link ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a" href="#" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"><span class="ui-btn-inner"><span class="ui-btn-text"></span></span></a>
+	<a href="#" onclick="scrollTo(0,0);" class="top-link ui-btn ui-btn-up-a ui-btn-corner-all ui-btn-icon-right" data-icon="top" data-iconpos="right" data-shadow="false" data-corners="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"><span class="ui-btn-inner"><span class="ui-btn-text">Top</span><span class="ui-icon ui-icon-top ui-icon-shadow">&nbsp;</span></span></a>
+	<ul class="footer-links">
+		 <li class="site-toggle"><a class="ui-link" href ="" onclick="hdnToggleMobile(); return  false;">SFGate.com Full Site</a></li>
+                 <li><a href="http://hearst.com/newspapers/san-francisco-chronicle.php" class="ui-link">About Us</a></li>
+		<li><a href="http://sfchronicle.com" class="ui-link">SFChronicle.com</a></li>
+		<li><a href="/about/contacts/" class="ui-link">Contact Us</a></li>
+                <li><a href="/about/staff/" class="ui-link">SFGate staff</a></li>
+		<li><a href="http://extras.sfgate.com/chronicle/adsite/index.html" class="ui-link">Advertising</a></li>
+		<li><a href="/about/termsandconditions/" class="ui-link">Terms of Use</a></li>
+		<li><a href="http://myaccount.sfchronicle.com" class="ui-link">Subscriber Services</a></li>
+		<li><a href="/about/privacypolicy/" class="ui-link">Privacy Policy</a></li>
+		<!--California:
+		<li><a href="http://www.sfgate.com/privacy-policy/#caprivacyrights">Your California Privacy Rights</a></li>
+		-->
+		<li><a href="http://aboutads.info/choices/" class="ui-link">Ad Choices</a></li>
+		<li><a href="/about/commentpolicy/" class="ui-link">Commenting Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<p class="copy-top">A Hearst Newspapers Company</p>
+		<div class="hnp-logo"></div>
+		<p class="copy-text">© Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> Hearst Communications, Inc.</p>
+	</div>
+</div>
+
+<script type="text/javascript"> 
+var GALLERIA_IMAGE_LOAD_COUNT = 0; 
+</script>
+<script type="text/javascript"> 
+var GALLERIA_IMAGE_LOAD_COUNT = 0; 
+</script>
+        </div>
+        <div style="display:block;height:50px;width:100%;float:left;"></div>
+      </div><!-- /.ui-panel-content-wrap - /hearst/home/mobile/navigation_main.tpl --> 
+
+      <div class="ui-panel-dismiss" data-panelid="menuPanel"></div>
+    </div><!-- /ui-page -->
+    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+      <span class="ui-icon ui-icon-loading"></span><h1>loading</h1>
+    </div>
+    <!-- hearst/ads/mobile_ad_MAD.tpl -->
+<div id="hst-adhesion" class="hst-adhesion clearfix">
+<div id="MAD" class="ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("MAD"); /*]]>*/ </script></div>
+</div>
+<!-- e mobile_ad_MAD.tpl -->    <div id="hst-richmedia" class="hst-richmedia">
+<div id="MRM" class="ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("MRM"); /*]]>*/ </script></div>
+</div>    <!-- hearst/common/sailthruJS.tpl -->
+
+<script type="text/javascript" src="http://ak.sail-horizon.com/horizon/v1.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // Sailthru Concierge
+        if (window.Sailthru) {
+            Sailthru.setup({
+                domain: 'horizon.sfgate.com',
+                spider: false
+            });
+        }
+    });
+</script>
+
+<!-- e hearst/common/sailthruJS.tpl -->
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"3fd06eaac1","applicationID":"147157","transactionName":"MwQBZ0RXV0NTVhBdDgpONkFfGVBeVlAcGhEMEQ==","queueTime":0,"applicationTime":63,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-460.min.js"}</script></body>
+</html><!-- e mobile_site_footer.tpl --><!-- e hearst/article/article_main.tpl -->

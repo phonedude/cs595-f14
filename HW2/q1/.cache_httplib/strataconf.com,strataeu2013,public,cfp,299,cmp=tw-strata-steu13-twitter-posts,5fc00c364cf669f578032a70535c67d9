@@ -1,0 +1,922 @@
+status: 200
+x-request-id: 0bd38e54233b8795186440356539b7d8
+content-location: http://strataconf.com/strataeu2013/public/cfp/299?cmp=tw-strata-steu13-twitter-posts
+set-cookie: oreilly_enation_session=2131acc9a1c050c7b9586a9ce5d7436f; path=/;
+ HttpOnly
+x-powered-by: Phusion Passenger 4.0.45
+vary: Accept-Encoding
+content-length: 48587
+server: Apache/2.2.14 (Ubuntu)
+x-runtime: 0.404102
+-content-encoding: gzip
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Wed, 24 Sep 2014 22:14:52 GMT
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"61e2f91637","applicationID":"349946","transactionName":"dAxbFxYNWlpXRBxEEFUPXABLAVlYRlNdQEpUBUU=","queueTime":0,"applicationTime":358,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAIPV15ACwcJXVVU"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+	<!-- L:S content/theme/html_system_head  (0) -->
+	<!-- load web fonts -->
+
+<script type="text/javascript">
+  (function() {
+    document.getElementsByTagName("html")[0].setAttribute("class","wf-loading")
+    document.getElementsByTagName("html")[0].setAttribute("className","wf-loading") // for IE
+    var config = {
+      kitId: 'bmj2nsh',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//fonts.oreillystatic.com/'+config.kitId+'.js';tk.type="text/javascript";tk.async="false";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+<style>
+.wf-loading .typewriter {
+  font-family: Courier New;
+  color: rgba(0, 0, 0, 0); 
+}
+
+.wf-loading body, p, ol, ul, td { 
+  font-family: Arial, Verdana, Helvetica, sans-serif; 
+}
+ 
+.wf-active .typewriter {
+  font-family: 'oreilly-urw-typewriter-narro', Courier New;
+}
+
+.wf-active body, p, ol, ul, td { 
+  font-family: 'open-sans', Arial, Verdana, Helvetica, sans-serif;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<link href="/stylesheets/general.css?1411419338" media="screen" rel="stylesheet" type="text/css" />
+
+	<!-- controller_js -->
+	<script src="//cdn.oreillystatic.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="/javascripts/application.js?1411419338" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery_star_rating_pack.js?03" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.form.min.js" type="text/javascript"></script>
+	<!-- extra_external_javascript -->
+	
+	<!-- extra_styles -->
+  <link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.rating-3.14.css" media="screen" rel="stylesheet" type="text/css" />
+	<!-- extra_javascript -->
+		
+		<link href="/strataeu2013/public/template/css/290/1383072668"
+		 	media="screen" rel="Stylesheet" type="text/css" />
+	<!-- theme_external_javascript -->
+	<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/2011v1_common.js" type="text/javascript"></script>
+
+
+
+
+
+<style>
+.en_eval_link { vertical-align:top; }
+</style>
+	<!-- L:E content/theme/html_system_head  (0) -->
+	<!-- L:S content/theme/html_head  (0) -->
+	<title>
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+Ignite at Strata Conference and Velocity Europe: Strata in London 2013 - O&#x27;Reilly Conferences, November 11 - 13, 2013, London, England
+
+</title>
+
+
+  <!-- content/head_extra -->
+<!--VWO-->
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+var _vwo_code=(function(){
+var account_id=27304,
+settings_tolerance=2000,
+library_tolerance=1500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+<meta property="og:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_og200x200.png" />
+<meta name="twitter:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_og120x120.png?01" />
+<meta name="twitter:site" content="@strataconf" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" /> 
+
+
+
+
+<link rel="canonical" href="http://strataconf.com/strataeu2013/public/cfp/299" />
+<meta property="og:url" name="twitter:url" content="http://strataconf.com/strataeu2013/public/cfp/299" /> 
+<meta property="og:title" name="twitter:title" content="Ignite at Strata Conference and Velocity Europe" />
+
+
+<meta property="og:description" name="twitter:description" content="
+Ignite happens Tuesday, 12 November, at the Hilton Metropole, following the day&#8217;s sessions for the Strata Conference in London and the day before the start of Velocity Europe. It&#8217;s a j..." />
+<meta name="description" content="
+Ignite happens Tuesday, 12 November, at the Hilton Metropole, following the day&#8217;s sessions for the Strata Conference in London and the day before the start of Velocity Europe. It&#8217;s a j..." /> 
+
+
+
+
+
+
+
+
+<link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/2013v1_css.css" media="screen" rel="Stylesheet" type="text/css" />
+<link href="//cdn.oreillystatic.com/en/assets/1/event/102/strataeu2013_css.css?12" media="screen" rel="Stylesheet" type="text/css" />
+
+
+<script type="text/javascript">
+<!--
+// js/charbeat_head
+var _sf_startpt=(new Date()).getTime()
+-->
+</script>
+
+
+
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/javascripts/supersleight-min.js"></script>
+  <![endif]-->
+
+
+
+
+
+<link rel="apple-touch-icon" href="//cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_iphone_icon.png" type="image/png" />
+<link rel="icon" type="image/png" href="//cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_favicon.png">
+
+
+
+
+
+<meta name="Category" content="Conferences" />
+
+
+<meta name="search_date" content="2013-11-11" />
+
+
+<meta name="search-conf-name" content="Strata in London 2013" />
+
+
+
+
+
+
+
+
+
+
+<!--for Google Webmaster Tools -->
+<meta name="verify-v1" content = "ejKlkisc2aaHXLk+37fMPNCfcsC5GdJYO2qoBXRRM7g=" />
+
+<!--
+<link rel="image_src" href="http://oreilly.com/images/oreilly/oreilly_large.gif" />
+-->
+
+
+<script type="text/javascript">
+window._umbel = window._umbel || [];
+(function()
+{ var u = document.createElement('script'); u.type = 'text/javascript'; u.async = true; u.src = document.location.protocol + '//tags.api.umbel.com/fnhibijmwrhmldyn/w.js?d=' + new Date().getMonth() + '' + new Date().getDate(); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(u, s); }
+
+)();
+</script>
+
+
+	<!-- L:E content/theme/html_head  (0) -->
+</head>
+<body class='en_c_content en_a_cfp' id='en_content_cfp'>
+
+
+
+
+
+
+
+
+
+
+
+<div id="en_content" itemscope itemtype="http://data-vocabulary.org/Event">
+<meta itemprop="startDate" datetime="2013-11-11T00:00-00:00" content="November 11, 2013" />
+<meta itemprop="endDate" datetime="2013-11-13T00:00-00:00" content="November 13, 2013"/>
+<meta itemprop="location" content="London, England" />
+<meta itemprop="summary" content="Ignite at Strata Conference and Velocity Europe - Strata in London 2013" />
+
+
+    <div id="en_main_parts">
+     <div class="visuallyhidden"><a href="#en_main">Skip to main content</a></div>
+        <div id="en_header" class="">
+            <!-- system/theme/before_main -->
+            <div id="header_box">
+			
+			<a href="/strataeu2013/"><div style="width: 155px; height: 112px; margin: 45px 0 0 20px; position: absolute;"></div></a>
+			
+            <div id="logo-main"><img src="//cdn.oreillystatic.com/en/assets/1/event/102/strataeu2013_logo.png" width="183" height="135" alt="O'Reilly Strata Conference" border="0" />
+                     <div id="date_place">
+                    <!--a href="/strataeu2013/public/schedule/grid"--><img class="header_date" src="//cdn.oreillystatic.com/en/assets/1/event/102/strataeu2013_date.png" width="181" height="17" alt="11-3 November 2013" border="0" /><!--/a--><!--a href="/strataeu2013/public/content/hotel"--><img class="header_loc" src="//cdn.oreillystatic.com/en/assets/1/event/102/strataeu2013_location.png" width="181" height="18" alt="London, England" border="0" /><!--/a-->
+                    </div><!-- div#date_place -->
+
+                </div><!-- div#logo-main -->
+                     <div id="header_photo"></div>
+                     
+            </div><!--div#header-box-->
+            <div id="top_level_nav">
+                <div id="nav-cap-left"></div>
+                <div id="nav-wrapper">
+                    <ul id="nav">
+       
+            
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="first"><a href="/strataeu2013/public/schedule" class="level_one first">Program</a>
+  <ul class="level_two">
+	<li><a href="/strataeu2013/public/schedule" class="level_two">Schedule</a></li>
+    <li><a href="/strataeu2013/public/schedule/stype/tutorial" class="level_two">Tutorials</a></li>
+	<li><a href="/strataeu2013/public/schedule" class="level_two">Sessions by Track</a>
+        <ul class="level_three">
+            <li><a href="/strataeu2013/public/schedule/topic/1018" class="level_three">Business &amp; Industry</a></li>
+            <li><a href="/strataeu2013/public/schedule/topic/1019" class="level_three">Data Science</a></li>
+            <li><a href="/strataeu2013/public/schedule/topic/1020" class="level_three">Design</a></li>
+			<li><a href="/strataeu2013/public/schedule/topic/1021" class="level_three">Ethics, Policy &amp; Privacy</a></li>
+			<li><a href="/strataeu2013/public/schedule/topic/1023" class="level_three">Open Data</a></li>
+            <li><a href="/strataeu2013/public/schedule/topic/1024" class="level_three">Tools &amp; Technology</a></li>
+        </ul>
+    </li>
+	<li><a href="/strataeu2013/public/schedule/stype/keynote" class="level_two">Keynote Speakers</a></li>
+	<li><a href="/strataeu2013/public/schedule/speakers" class="level_two">Speakers</a></li>
+	<li><a href="/strataeu2013/public/schedule/proceedings" class="level_two">Speaker Slides</a></li>
+	<li><a href="/strataeu2013/public/schedule/stype/event" class="level_two">Events</a>
+    		<ul class="level_three">
+            	<li><a href="/strataeu2013/public/schedule/stype/event" class="level_three">All Events</a>
+                <li><a href="/strataeu2013/public/schedule/detail/31858" class="level_three">Startup Showcase</a></li>
+        		<li><a href="/strataeu2013/public/schedule/detail/31876" class="level_three">Ignite Strata + Velocity</a></li>
+        		<li><a href="/strataeu2013/public/content/office-hours" class="level_three">Office Hours</a></li>
+        		<li><a href="/strataeu2013/public/content/author-signings" class="level_three">Author Signings</a></li>
+            </ul>
+    </li>
+  </ul>
+</li>
+
+<li><a href="/strataeu2013/public/content/video" class="level_one">Video</a></li>
+
+<li><a href="/strataeu2013/public/content/sponsors" class="level_one">Sponsors</a>
+  <ul class="level_two">
+    <li><a href="/strataeu2013/public/content/sponsors" class="level_two">Sponsors</a></li>
+    <li><a href="/strataeu2013/public/content/exhibitors" class="level_two">Exhibitors</a></li>
+    <li><a href="/strataeu2013/public/content/media-partners" class="level_two">Media Partners</a></li>
+    <li><a href="/strataeu2013/public/content/exhibitor-resource-center" class="level_two">Exhibitor Resource Center</a></li>
+  </ul>
+</li>
+
+<li><a href="/strataeu2013/public/content/contact" class="level_one">Connect</a>
+  <ul class="level_two">
+    <li><a href="/strataeu2013/public/content/contact" class="level_two">Contact Us</a></li>
+    <li><a href="/strataeu2013/public/content/see-do" class="level_two">See &amp; Do in London</a></li>
+    <li class="title"><a class="level_two title">External Links</a></li>
+    <li><a href="http://strata.oreilly.com/?intcmp=il-strata-steu13-homepage-link" class="level_two" target="_blank">Strata Blog</a></li>
+	<li><a href="http://oreilly.com/webcasts/data/index.html?intcmp=il-strata-steu13-homepage-link" class="level_two" target="_blank">Strata Data Webcasts</a></li>
+  </ul>
+</li>
+
+<li><a href="/strataeu2013/public/content/about" class="level_one level_main">About</a>
+  <ul class="level_two">
+    <li><a href="/strataeu2013/public/content/about" class="level_two">About Strata</a></li>
+    <li class="title"><a class="level_two title">External Links</a></li>
+	<li><a href="/strataeu/" class="level_two" target="_blank">Strata: London 2012</a></li>
+    <li><a href="http://oreilly.com/conferences/diversity.html" class="level_two" target="_blank">Conference Diversity</a></li>
+	<li><a href="http://oreilly.com/conferences/code-of-conduct.html" class="level_two" target="_blank">Code of Conduct</a></li>
+  </ul>
+</li>
+
+
+<li><a href="/strataeu2013/user/account" class="level_one">Your Account</a>
+    <ul class="level_two">
+        <li><a href="/strataeu2013/user/account" class="level_two">Log in</a></li>
+		
+        <li><a href="/strataeu2013/public/content/attendee-directory" class="level_two">Attendee Directory</a></li>
+		
+    </ul>
+</li>
+
+
+                    
+                    </ul><!-- ul#nav -->
+                </div>
+                <div id="nav-cap-right"></div>
+            </div><!-- div#top_level_nav -->
+        </div><!-- div#en_header -->
+        
+        
+        <div id="en_menubar">
+
+
+</div><!-- en_menubar -->
+
+        
+         
+        
+        
+        <div id="en_body">
+            <div id="en_main">
+            <div id="mid">
+            
+            
+<h1>Ignite at Strata Conference and Velocity Europe</h1>
+
+
+<p><b>Call 
+	closed
+	23:59 31/10/2013 GMT.
+
+	
+	
+</b></p>
+
+
+<p><img src="http://assets.en.oreilly.com/1/eventprovider/1/ignite_logo_white_bg.gif" alt="Ignite" style="border: 0 none; margin: 0 0 20px 20px; float: right;" /></p>
+<p><strong>Ignite happens Tuesday, 12 November</strong>, at the Hilton Metropole, following the day&#8217;s sessions for the Strata Conference in London and the day before the start of Velocity Europe. It&#8217;s a joint Ignite for both Strata and Velocity, which are co-located at the Hilton, and attendees of both events are invited for a fun evening of high-energy speed presentations.</p>
+<p style="font-weight: bold;">Ignite will be hosted by Nicola Hughes and Duncan Ross.</p>
+<div style="float: left; margin: 0 35px 20px 20px; width: 250px;">
+<p><img src="http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/_@user_107765.jpg" alt="Duncan Ross" style="float: left; margin-right: 8px; vertical-align: text-bottom; border: 1px #000 solid;" /><br />
+<p style="font-size: .9em;"><strong>Duncan Ross</strong><br />
+Director Data Science, <span class="caps">EMEA</span><br />
+Teradata</p></p>
+</div>
+<div style="float: left; width: 250px; margin-bottom: 20px;">
+<p><img src="http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/_@user_155609.jpg" alt="Nicola Hughes" style="float: left; margin-right: 8px; vertical-align: text-bottom; border: 1px #000 solid;" /><br />
+<p style="font-size: .9em;"><strong>Nicola Hughes</strong><br />
+Data Journalist<br />
+The Times of London</p></p>
+</div>
+<div style="clear: both;"></div>
+<p>We&#8217;re interested in any topic as long as it&#8217;s interesting, from technology to culture to business to science. We&#8217;re always looking for new speakers, but please no product demos. Instead, present a how-to, a travelogue, something inspirational, lessons learned, or an interesting story. Speakers are limited to 20 slides, which automatically advance after 15 seconds&#8212;that&#8217;s the fun of Ignite!</p>
+<p>If you&#8217;re interested in speaking at Ignite, submit your proposal for a chance to present. <strong>All submissions are due by midnight <span class="caps">BST</span>, 31 October, 2013</strong>. Selected presenters will be notified by 1 November and they must be available to present in London on 11 November. Presenters will receive a Tuesday day pass for Strata.</p>
+<p>A few tips, pointers and examples to help you get a better idea of what to expect:</p>
+<ul>
+<li>Watch Scott Berkun&#8217;s <a href="http://oreil.ly/cxtE3B" class="external">&#8220;Why and How to Give an Ignite Talk&#8221;</a></li>
+<li>Read Jason Grigsby&#8217;s <a href="http://bit.ly/wfBoG" class="external">&#8220;How to Give a Successful Ignite Presentation&#8221;</a></li>
+<li>Peruse the 1500+ videos (5 minutes each, of course) <a href="http://igniteshow.com" class="external">from Ignites around the world</a></li>
+</ul>
+<p><br>
+<div style="margin: 0; padding: 0; text-align: center;"><br />
+<img src="//cdn.oreillystatic.com/en/assets/1/event/100/stratany_2013_ignite_strip.jpg?01" alt="" width="700" height="107" /></div></p>
+
+
+</div><!-- #mid -->
+
+</div><!-- en_main -->
+
+
+
+          
+          
+            <div id="right_col">
+            
+<style>
+div#sponsors h2 { margin-left: 0;font-weight:normal;padding-top: 0;}
+</style>
+
+<div id="sponsors" class="nodisplay">
+
+    <h2>Sponsors</h2>
+
+
+
+
+<div class="sponsor_list_heading">Elite Sponsor</div>
+
+<ul class="plain sponsorList"><li><a href="http://www.teradata.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/teradata.gif" data-img-alt="Teradata" data-img-width="120" data-img-height="26">Teradata</a></li></ul><div class="sponsor_list_heading">Exabyte Sponsors</div>
+
+<ul class="plain sponsorList"><li><a href="http://www.cloudera.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/cloudera_10_12_2012.gif" data-img-alt="Cloudera" data-img-width="120" data-img-height="23">Cloudera</a></li><li><a href="http://www.splunk.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/splunk-1.gif" data-img-alt="Splunk" data-img-width="120" data-img-height="36">Splunk</a></li><li><a href="http://www.syncsort.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/syncsort_new.gif" data-img-alt="Syncsort" data-img-width="120" data-img-height="35">Syncsort</a></li></ul><div class="sponsor_list_heading">Supporters</div>
+
+<ul class="plain sponsorList"><li><a href="http://www.facebook.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/facebook.gif" data-img-alt="Facebook" data-img-width="120" data-img-height="45">Facebook</a></li><li><a href="http://www.mammothdb.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/mammothdb.gif" data-img-alt="MammothDB" data-img-width="83" data-img-height="100">MammothDB</a></li></ul><div class="sponsor_list_heading">Premier Exhibitors</div>
+
+<ul class="plain sponsorList"><li><a href="http://28.io" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/28msec.gif" data-img-alt="28msec" data-img-width="120" data-img-height="58">28msec</a></li><li><a href="http://www.actian.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/actian.gif" data-img-alt="Actian" data-img-width="120" data-img-height="40">Actian</a></li><li><a href="http://www.ddn.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/datadirectnetwork.gif" data-img-alt="Data Direct Networks" data-img-width="120" data-img-height="21">Data Direct Networks</a></li><li><a href="http://www.datameer.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/datameer.gif" data-img-alt="Datameer" data-img-width="120" data-img-height="19">Datameer</a></li><li><a href="http://www.kapowsoftware.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/kapow_nu.gif" data-img-alt="Kapow Software, A Kofax Company" data-img-width="120" data-img-height="55">Kapow Software, A Kofax Company</a></li><li><a href="http://www.lucidworks.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/lucidworks.gif" data-img-alt="LucidWorks" data-img-width="120" data-img-height="86">LucidWorks</a></li><li><a href="http://www.mapr.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/maprtechnologies.gif" data-img-alt="MapR Technologies" data-img-width="120" data-img-height="29">MapR Technologies</a></li><li><a href="http://www.sisense.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/sisense-1.gif" data-img-alt="SiSense" data-img-width="120" data-img-height="35">SiSense</a></li><li><a href="http://www.softlayer.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/softlayer-ibm.gif" data-img-alt="SoftLayer, an IBM Company" data-img-width="120" data-img-height="21">SoftLayer, an IBM Company</a></li><li><a href="http://www.synergicpartners.com/php/apps.php?&language=es" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/synergic-partners.gif" data-img-alt="Synergic Partners" data-img-width="120" data-img-height="21">Synergic Partners</a></li><li><a href="http://www.tableausoftware.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/tableau-software.gif" data-img-alt="Tableau Software" data-img-width="120" data-img-height="24">Tableau Software</a></li><li><a href="http://www.talksum.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/talksum.gif" data-img-alt="Talksum, Inc." data-img-width="120" data-img-height="90">Talksum, Inc.</a></li><li><a href="http://www.wandisco.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/wandisco_2.gif" data-img-alt="WANdisco" data-img-width="120" data-img-height="13">WANdisco</a></li></ul><div class="sponsor_list_heading">Innovator</div>
+
+<ul class="plain sponsorList"><li><a href="http://www.elasticsearch.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/elasticsearch.gif" data-img-alt="Elasticsearch" data-img-width="120" data-img-height="18">Elasticsearch</a></li></ul>
+
+
+    
+<script type="text/javascript" charset="utf-8">
+	( function( $ ) {
+		if ( typeof $.proxy == 'undefined' ) {
+			$.proxy = function( callback, context ) {
+				var proxy = function() {
+					callback.apply( context, arguments );
+				}
+			
+				return proxy;
+			};
+		}
+		
+		var vController = function() {
+			this.init();
+		};
+		
+		vController.prototype = {
+			init: function() {
+				var that = this;
+				var s = $( '[data-defer="view"]' );
+			
+				s.each( function() {
+					var t = $( this ), p = t.parent(), w = Number( t.attr( "data-img-width" ) ), h = Number( t.attr( "data-img-height" ) );
+					p.css( { width: w, height: h } );
+				});
+			
+				this.objs = [];
+				var w = $( window ), top = w.scrollTop(), bottom = top + w.height(), i;
+				
+				s.each( function() {
+					var t = $( this ), p = t.parent(), off = p.offset();
+					var o = {
+						a: t,
+						p: p,
+						top: off.top,
+						bottom: off.top + p.innerHeight()
+					};
+					
+					if ( o.top < bottom && o.bottom > top ) {
+						that.load( o );
+					}
+					else {
+						that.objs.push( o );
+					}
+				});
+				
+				$( window ).scroll( $.proxy( this.scroll, this ) );
+			},
+			
+			scroll: function() {
+				var w = $( window ), top = w.scrollTop(), bottom = top + w.height(), i;
+				
+				for ( i = this.objs.length - 1; i >= 0; i-- ) {
+					if ( this.objs[i].top < bottom ) {
+						this.load( this.objs[i] );
+					}
+				}
+			},
+			
+			load: function( o ) {
+				var t = o.a;
+				var c = $( "<img />" );
+				var f = function() { t.html( c ); };
+			
+				c.load( f );
+				c.attr( "src", t.attr( "data-img-src" ) );
+				c.attr( "alt", t.attr( "data-img-alt" ) );
+				c.attr( "border", 0 );
+			}
+		};
+		
+		$( function() {
+			var vC = new vController();
+			
+		})
+	}) ( jQuery );
+</script>
+        
+    <div class="nonsponsor_list_heading">Sponsorship Opportunities</div>
+    <p>For exhibition and sponsorship opportunities, contact Susan Stewart at <a href="mailto:sstewart@oreilly.com">sstewart@oreilly.com</a></p>
+    
+    <div class="nonsponsor_list_heading">Media Partner Opportunities</div>
+    <p>For information on trade opportunities with O'Reilly conferences email <a href="mailto:mediapartners@oreilly.com">mediapartners<br />@oreilly.com</a></p>
+   
+    <div class="nonsponsor_list_heading">Press &amp; Media</div>
+<p>For media-related inquiries, contact Maureen Jennings at <a href="mailto:maureen@oreilly.com">maureen@oreilly.com</a></p>
+    
+    <div class="nonsponsor_list_heading">Contact Us</div>
+    <p>View a complete list of <a href="/strataeu2013/public/content/contact">Strata contacts</a></p>
+
+</div><!-- #sponsors -->
+            </div><!-- div#right_col -->
+          
+
+<div id="en_footerwrap">
+<div id="en_footer"><!-- after_main -->
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+	div.banner_ad a[data-defer="random"] { display: none; }
+</style>  
+         <div class="banner_ad" id="banner_location_24">
+
+	
+<div class="banners">
+<a href="http://oreilly.com/data/newsletter.html?intcmp=il-strata-steu13-homepage-link" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_newsletter_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="Newsletter - Strata London 2013">Newsletter - Strata London 2013</a>
+<a href="http://strataconf.com/go/strataeu2013_syncsort" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/102/strataeu2013_syncsort_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Syncsort - Strata London 2013">Syncsort - Strata London 2013</a>
+<a href="http://www.teradata.com/events/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/102/strataeu2013_teradata_banner.gif" data-img-width="728" data-img-height="90" data-img-alt="Teradata - Strata London 2013">Teradata - Strata London 2013</a>
+</div>
+
+
+</div> <!-- .banner_ad -->
+
+<script language="javascript" type="text/javascript">
+<!--
+	// Initialize Banners
+	$( function () {
+			$( "div.banner_ad" ).each( function ( i, e ) {
+					var banners = new Array();
+					$( e ).find( 'a[data-defer="random"]' ).each( function( i0, e0 ) {
+							banners.push( $( e0 ) );
+						});
+					
+					var b = banners[ Math.floor( Math.random() * banners.length ) ];
+					var i = $( "<img />" );
+					i.load( function() { b.html( i ); b.fadeIn( 1000 ); } );
+					i.attr( "src", b.attr( "data-img-src" ) );
+					i.attr( "alt", b.attr( "data-img-alt" ) );
+				});
+		});
+//-->
+</script>
+
+
+<div id="footer_logo">
+    
+    &copy;2013, O'Reilly UK Ltd<br />(800) 889-8969 or (707) 827-7019 <br />Monday-Friday 7:30am-5pm PT<br /> All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.<br />
+<a href="mailto:conf-webmaster@oreilly.com" class="webmaster">conf-webmaster@oreilly.com</a>
+</div> 
+
+<div class="footercol">
+    <ul>
+        <li><strong>Strata Conference</strong></li>
+        <li><a href="/strataeu2013/public/content/about">About</a></li>
+        
+        
+        <li><a href="/strataeu2013/public/content/sitemap">Sitemap</a></li>
+        <li><a href="http://strataconf.com">More Strata Events</a></li>
+        <li><a href="http://oreilly.com/conferences/diversity.html" target="_blank">Diversity</a></li>
+        <li><a href="http://oreilly.com/conferences/code-of-conduct.html" target="_blank">Code of Conduct</a></li>
+        <li><a href="http://oreilly.com/oreilly/privacy.html" target="_blank">Privacy Policy</a></li>
+    </ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>Stay Connected</strong></li>
+  <li><a href="/strataeu2013/public/content/contact">Contact Us</a></li>
+  <li><a href="http://oreilly.com/data/newsletter.html" target="_blank">Strata Newsletter</a></li>
+  <li><a href="http://oreilly.com/webcasts/data/index.html?intcmp=il-strata-steu13-homepage-link" target="_blank">Strata Data Webcasts</a></li>
+  <li><a href="http://twitter.com/strataconf" target="_blank">Twitter</a></li>
+  <li><a href="http://strataconf.com/go/strata_fb" target="_blank">Facebook</a></li>
+  <li><a href="https://plus.google.com/u/0/108539139864366919600/posts" target="_blank">Google+</a></li>
+  <li><a href="http://strataconf.com/go/strata_li" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>More O'Reilly Sites</strong></li>
+  <li><a href="http://oreilly.com" target="_blank">oreilly.com</a></li>
+  <li><a href="http://conferences.oreilly.com" target="_blank">O'Reilly Conferences</a></li>
+  <li><a href="http://radar.oreilly.com" target="_blank">O'Reilly Radar</a></li>
+  <li><a href="http://oreilly.com/videos/" target="_blank">O'Reilly Video</a></li>
+  <li><a href="http://answers.oreilly.com/" target="_blank">O'Reilly Answers</a></li>
+  <li><a href="http://oreilly.com/webcasts/" target="_blank">O'Reilly Webcasts</a></li>
+  <li><a href="http://oreillyschool.com/" target="_blank">School of Technology</a></li>
+  <li><a href="http://igniteshow.com" target="_blank">Ignite</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</div><!-- en_main_parts -->
+
+
+
+<div id="en_extra"><div id="strata_links">
+  <div class="inner">
+    <div style="padding-top:5px; text-transform:uppercase;">Strata Conference:&nbsp;&nbsp;<a href="http://strataconf.com/ca">California</a>&nbsp; &#8226; &nbsp;<a href="http://strataconf.com/ny">New York</a>&nbsp; &#8226; &nbsp;<span class="current">Europe</span></div>
+  </div>
+</div><!-- content/franchise_links called in after_main --></div>
+</div><!-- en_content -->
+
+<!-- included in later in the scripts_functions.js in after_main --> 
+
+
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+
+  /* On click */
+  $("#stay_connected .title").toggle(function() {
+    var title = $(this);
+    title.siblings(".content").slideDown(50, function() {title.addClass("active");});
+  }, function() {
+    var title = $(this);
+    $(this).siblings(".content").slideUp(50, function() {title.removeClass("active");});
+  });
+
+
+$('#mid').find('p:eq(1)').children('a').addClass('btn-blue').css('width','260px');
+ console.log($('#mid').find('p:eq(1)').children('a'));
+
+$("a.external").each(function()
+ {
+  $(this).attr("target","_blank");
+  $(this).attr("title","Link opens a new browser window.");
+  });
+
+
+
+
+  
+
+
+
+
+
+
+
+});
+
+
+-->
+</script>
+
+
+
+
+
+
+
+
+<!-- Google Code for Remarketing Tag -->
+
+<!--------------------------------------------------
+
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+
+--------------------------------------------------->
+
+<script type="text/javascript">
+
+/* <![CDATA[ */
+
+var google_conversion_id = 1065103245;
+
+var google_custom_params = window.google_tag_params;
+
+var google_remarketing_only = true;
+
+/* ]]> */
+
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+
+</script>
+
+<noscript>
+
+<div style="display:inline;">
+
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1065103245/?value=0&amp;guid=ON&amp;script=0"/>
+
+</div>
+
+</noscript>
+
+
+<!-- effects -->
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/scripts_functions2013.js?01" type="text/javascript"></script>
+
+
+<!-- site catalyst -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var localScAcct = "orstrataeu"; 
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--//
+ /* Specify the Report Suite ID(s) to track here */ 
+/* localScAcct is specified in content/scripts/sitecatalyst_cfg */
+//var globalScAcct = "ororeillyglobaldev";
+var globalScAcct = "orglobal";
+
+var s_account = localScAcct + "," + globalScAcct;
+/*s_code.js must be called via the current protocol to avoid mixed content warnings */
+var s_code_protocol;
+var s_code_url = "cdn.oreillystatic.com/assets/js/s_code.js";
+if (window.location.protocol == "https:"){
+document.write('<script id="s_code_script" type="text/javascript" src="https://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' + '/script>');
+}else{
+document.write('<script id="s_code_script" type="text/javascript" src="http://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' +'/script>');
+}
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var myChannel, myPageName, myTitle, mySeries, myEvent, myEventTitle, mySection, mySection2, mySection3, myLoggedStatus,myEventPhase,localScAcct,myPubDate,mySystemPageType;
+
+if(typeof(myTitleAppend) == 'undefined')
+var myTitleAppend = "";
+else myTitleAppend = ": " + myTitleAppend;
+
+myChannel = "confs";
+
+myTitle       = "ignite at strata conference and velocity europe" + myTitleAppend;
+
+
+mySection   = new Array(myChannel);
+mySeries = "strata";
+
+mySection.push(mySeries);
+mySection2 = mySection.slice(); 
+
+
+
+var myEventStartDate = new Date ("November 11, 2013");
+var today            = new Date();
+if (today > myEventStartDate){
+     myEventPhase = "post-conference";
+}
+ myPubDate = "11/11/2013"; 
+myEventTitle = "Strata in London 2013";
+myEvent      = "strataeu2013";
+mySection2.push(myEvent)
+
+mySection3 = mySection2.slice(); 
+mySystemPageType = "cfp";
+
+
+mySection3.push(mySystemPageType)
+myPageName   = myChannel + ":" + myEvent + " " + myTitle;
+mySection    = mySection.join(":");
+mySection2   = mySection2.join(":");
+mySection3   = mySection3.join(":");
+
+myLoggedStatus = "logged out";
+
+/* You may give each page an identifying name, server, and channel on
+the next lines..... */
+s.pageName = myPageName.toLowerCase(); 
+//s.server   = ""; OK TO DELETE THIS LINE?
+s.channel  = myChannel;
+//s.pageType = "";OK TO DELETE THIS LINE?
+s.prop1  = mySection;
+s.prop2  = mySection2;
+s.prop3  = mySection3;
+s.prop4  = mySystemPageType; //not using this currently
+s.prop5  = myTitle;
+s.prop7  = myPubDate;
+s.prop15 = s.eVar24 = myLoggedStatus;
+s.prop29 = myEventPhase;//this has more work to do.
+s.prop38 = myEventTitle;
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";  // need way to distinguish amongst these
+s.products="";     // only put products on for purchases.
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ororeillyglobaldev.122.2O7.net/b/ss/ororeillyglobaldev/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+
+
+<!-- crazy egg heatmap -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script"); var b=document.getElementsByTagName('script')[0]; a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000); a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3144621-33']);
+_gaq.push(['_setSiteSpeedSampleRate', 50]);
+_gaq.push(['_trackPageview']);
+
+(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+
+</script>
+<!-- js/chartbeat_footer --> 
+<script type="text/javascript">
+	var _sf_async_config={uid:1632,domain:"strataconf.com"};
+	(function(){
+		function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			(("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			"js/chartbeat.js");
+			document.body.appendChild(e);
+		}
+		
+		var oldonload = window.onload;
+		window.onload = (typeof window.onload != 'function') ?
+		loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+
+</body>
+</html>

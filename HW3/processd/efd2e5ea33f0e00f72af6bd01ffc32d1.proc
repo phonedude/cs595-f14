@@ -1,0 +1,344 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » Toward an open Internet of Things Comments Feed 5 ways
+   developers win with PaaS Ag+Data
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   IoT+
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+Toward an open Internet of Things
+
+Vendors, take note: we will not build the Internet of Things without open
+standards.
+
+   by Mike Loukides | @mikeloukides | +Mike Loukides | Comments: 6 | April
+   21, 2014
+   Comments: 6
+
+   Open_19 In a couple of posts and articles, we’ve nibbled around the
+   notion of standards, interoperability, and the Internet of Things (or
+   the Internet of Everything, or the Industrial Internet, or whatever you
+   want to call it). It’s time to say it loud and clear: we won’t build
+   the Internet of Things without open standards.
+
+   What’s important about the IoT typically isn’t what any single device
+   can do. The magic happens when multiple devices start interacting with
+   each other. Nicholas Negroponte rightly criticizes the flood of boring
+   Internet-enabled devices: an oven that can be controlled by your phone,
+   a washing machines that texts you when it’s done, and so on. An oven
+   gets interesting when it detects the chicken you put in it, and sets
+   itself accordingly. A washing machine gets interesting if it can detect
+   the clothes you’re putting into it and automatically determine what
+   cycle to run. That requires standards for how the washer communicates
+   with the washed. It’s meaningless if every clothing manufacturer
+   implements a different, proprietary standard for NFC-enabled tags.
+
+   We’re already seeing this in lighting: there are several manufacturers
+   of smart network-enabled light bulbs, but as far as I can tell, each
+   one is controlled by a vendor-specific app. And I can think of nothing
+   worse for the future of home lighting than having to remember whether
+   the lights in the bedroom were made by Sylvania or Philips before I can
+   turn them off. Philips’ API for their Hue light bulbs is a great start,
+   particularly in the way they encourage interoperability between third
+   party applications: “You are free to develop any kind of application
+   you can imagine. … We want all your apps to work with our API to form a
+   rich ecosystem of interoperable applications.” But that only gets us
+   part of the way there. What about other vendors? After reading
+   their terms of use, I suspect strongly that Philips would not be
+   pleased by other light bulb manufacturers using the Hue API for their
+   bulbs. Can an API be copyrighted or patented? That question is working
+   its way through the appellate courts now, in the notorious Oracle v.
+   Google case.
+
+   A light bulb, even a high-tech smart LED light bulb, is a simple
+   device. What do proprietary apps mean for larger, more complex devices,
+   like cars? It’s all very well that one can use the Tesla app to
+   communicate with a Tesla automobile, but for a real automotive Internet
+   of Things, you want cars from different manufacturers to share
+   information like traffic, road conditions, etc. Now, you might say this
+   isn’t really the IoT — it’s just the Internet — since apps like Google
+   Maps and Waze already do that on our smartphones, and they just ought
+   to do it for our cars. And that’s exactly right. Those same apps from
+   our phones ought to work in our cars, from car to car and from phone to
+   car. According to Tim O’Reilly, the worst feature of his Tesla Model S
+   is its non-standard software. Its licensed version of Google Maps has
+   such a bad implementation of real-time traffic that you have to use
+   maps on your phone (and this in a car with a full-featured web browser,
+   in which access to Google Maps is disabled so they can sell you an
+   “enhanced” electronics “upgrade” that includes their own broken version
+   of Google Maps!) And while he loves being able to track the location of
+   the car via the Tesla app, it is slow and buggy. How much better would
+   it be if our cars and phones could share location data transparently
+   with friends and family, with the information showing up in the mapping
+   applications we already use.
+
+   One of the defining events of the early Internet was Interop, where
+   device makers got together to make sure their devices could
+   interoperate. (Interop is now largely marketing, a giant shadow of its
+   former self.) We didn’t want a Cisco Internet and a Wellfleet Internet
+   and a Bay Networks Internet, none of which could talk to each other.
+   But now that we’re talking about “Things,” we’re about to build the
+   mess that we avoided in the late 80s.
+
+   One reason the Internet works is that vendors weren’t allowed to
+   implement protocols in a vacuum. The IETF would not standardize a
+   protocol without “multiple, independent, and interoperable
+   implementations.” And in practice, many of these implementations were
+   based on publicly available code: for example, the BSD UNIX
+   implementation of TCP/IP. That’s a good practice to remember. If the
+   code isn’t visible, there are bound to be corner cases, gotchas, and
+   maybe even secretive “embrace and extend” features to compromise
+   interoperability.
+
+   The robustness principle is another of the Internet’s defining
+   features: an implementation must “be conservative in what you do, be
+   liberal in what you accept from others.” That is, participants should
+   send data that obeys the specifications, but they should be willing to
+   accept data that doesn’t. Again, this is about interoperability. If
+   devices can only interact if they both interpret and implement
+   protocols identically, we aren’t going anywhere. You might achieve
+   interoperability between products from a single vendor (though even
+   that seems doubtful), but you’ll never get frictionless interactions
+   between products from different vendors. My Maytag washer might
+   understand the tags on my Levis, but not on my shirts. A Tesla might be
+   able to exchange information about road conditions with a Lexus, but
+   not a Ford.
+
+   An Internet of standalone devices that don’t interoperate, whose only
+   interaction is with a proprietary app that only runs on one brand of
+   mobile phone: that’s just not interesting. That’s not a future. It
+   might make a few geeks happy, and it might make an even smaller number
+   of geeks wealthy, but I can’t imagine it ever becoming more than a
+   curiosity. The engineers who designed the Internet — the Cerfs, the
+   Kahns, the Postels — were wiser than that and developed a culture of
+   interoperability from which everyone benefitted. Can a similar culture
+   arise among the makers of Things? I hope so, but it’s not a sure thing.
+
+   Unfortunately, we’re still in a world where a manufacturer’s first
+   reaction is to lock things down, to make devices incompatible, in an
+   attempt to extract as much profit as possible from the system. If this
+   is your mindset, you’re not going to release an API (as Philips did),
+   let alone encourage your competition to build on the same API (as
+   Philips hasn’t). And if you’re the competition, you’re more likely to
+   develop your own API than to support your competitors’, even if doing
+   so would provide a better market for all parties..
+
+   With the Internet, everyone won because nobody won. In the 80s, each
+   computer vendor had a proprietary network: IBM, DEC, even startups
+   like Apollo. The thinking was that if you made it hard to integrate
+   equipment with other vendors, you could capture a client for yourself.
+   The problem with that vision was simple: it was horrible for the
+   customers. The assumption behind any “lock-in” strategy is ultimately
+   that your product is poor and that customers will gladly switch vendors
+   if given a chance. And customers did switch when they realized that
+   they had a chance: away from the proprietary networks and toward the
+   open TCP/IP protocols. By 1990, it was clear that the proprietary
+   networks were disappearing and that we were converging on the open
+   Internet standards. The rising tide did indeed float all the boats. The
+   few vendors who tried to “differentiate” themselves with features that
+   didn’t interoperate failed; Microsoft ultimately gave up on the desire
+   to “embrace, extend, and extinguish” the web.
+
+   With the Internet of Things, it’s deja vu all over again. The vendors
+   who provide public APIs and support open standards will succeed in the
+   long run. Likewise, the vendors who try to trap consumers behind
+   proprietary software and non-interoperable products will eventually
+   fail, to everyone’s detriment. If you win the IoT, you lose it.
+
+   Cropped image on article and category pages by Rupert Ganzer on Flickr,
+   used under a Creative Commons license.
+   tags: Industrial Internet, Internet of Things, Solid
+   Comments: 6
+
+Get the O’Reilly IoT+ Newsletter
+
+Software / Hardware / Everywhere
+
+   The programmable world is creating disruptive innovation as profound as
+   the Internet itself. Be among the first to learn about the latest news,
+   trends, and opportunities.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=iot&loc=botpost&emtype=nl
+
+     * Nevermark
+       As long as another manufacturer’s LED bulb API is kept simple and
+       flexible, it will be easy to support along side HUE. They don’t
+       need to clone the HUE API down to message names. I wouldn’t want to
+       support 1000 different LED light API’s, but a few popular well
+       designed API’s would be easy to abstract and support.
+     * http://skypejournal.com Phil Wolff
+       We need face-to-face interop discussions among vendors, the way the
+       Internet Identity Workshop brought security, banking, Internet, IT,
+       and other groups together to reinvent authorization with OpenID and
+       OAuth. Facilitated unconferences, open, unscripted, inviting those
+       who see a future in having things talk to each other across vendor
+       lines. Pretty sure Google, Samsung, IBM, and others would line up.
+     * Andrea Reginato
+       Very nice article. I share different points of view and I think lot
+       of work needs to be done to reach the desired point. That is the
+       interesting part of this new sector.
+     * http://www.donttouchme.com/ shoobe01
+       Happy to see more of these articles. I did one with someone else a
+       few months back
+       (http://uxmatters.com/mt/archives/2014/01/people-ubiquity-and-the-i
+       nternet-of-things-the-new-mobile-context.php) and have been seeing
+       more notice this is an issue. A technical issue, a user issue and a
+       business issue.
+       But do we think it’ll change? We don’t have mobile payments, and a
+       quite crazy music and streaming-video ecosystems because no one
+       will play nicely together. They all assume (some surmised, some
+       from people saying this out loud) they can pull off some master
+       stroke to win the big prize, so there’s no benefit to openness or
+       cooperation.
+     * notionovus
+       I dub anything not IoT, PNoT or Proprietary Network of Things.
+       Great article. Thank you for standing on principles.
+     * Watt Song
+       We definitely need specific profile (like Proximity profile, Heart
+       Rate profile) for each of general purpose smart controlled devices,
+       say it “Bulb Control Profile”?
+
+Featured Video
+
+   "Everything is going to change" — Max Firtman, founder of ITMaster,
+   discusses the HTML5 landscape, the misuse of responsive design, and the
+   role of mobile in the Internet of Things.
+
+Recent Posts
+
+     * Python 3: threat or menace?
+     * Four short links: 26 September 2014
+     * Four short links: 25 September 2014
+     * Scaling NoSQL databases: 5 tips for increasing performance
+     * In pursuit of universal IoT standards
+
+   Tweets by @radar
+
+Most Recently Discussed
+
+Featured Download
+
+                                  [cat.gif]
+                         Download the free report >
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee
+
+   close
+
+Get the O’Reilly IoT+ Newsletter
+
+   The programmable world is creating disruptive innovation as profound as
+   the Internet itself. Be among the first to learn about the latest news,
+   trends, and opportunities.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=iot&loc=overlay&emtype=nl

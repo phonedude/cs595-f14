@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+<title>Operations: The secret sauce revisited - O'Reilly Radar</title>
+<link rel="shortcut icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link  rel="icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/custom.css" />
+<link rel="pingback" href="http://radar.oreilly.com/xmlrpc.php" />
+<link href="https://plus.google.com/105451978536505503907" rel="publisher" />
+	<meta name="search-title" content="Operations: The secret sauce revisited"/>
+	<meta property="twitter:account_id" content="10295842" />	
+	
+	<meta name="Category" content="Uncategorized"/> 
+	<meta name="subtitle" content="The forces of technical debt apply to computational infrastructure."/>
+	
+	<meta name="description" content="An investment in web operations can yield big returns, both financially and competitively. But a lack of understanding prevents many companies from taking appropriate steps. Guest blogger Andrew Clay Shafer makes a case for web ops as the secret sauce by examining the forces of technical debt." />
+	<meta name="author" content="Andrew Shafer" />
+	<meta name="search_date" content="2010-08-02" />
+	<meta name="keywords" content="business,operations,ops,speed" />	
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary"> 
+	<meta name="twitter:url" content="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html"> 
+	<meta name="twitter:title" content="Operations: The secret sauce revisited"> 
+	<meta name="twitter:description" content="An investment in web operations can yield big returns, both financially and competitively. But a lack of understanding prevents many companies from taking appropriate steps. Guest blogger Andrew Clay Shafer makes a case for web ops as the secret sauce by examining the forces of technical debt."> 
+		
+	<meta name="twitter:image" content="http://s.radar.oreilly.com/2010/08/02/web-operations.jpg"> 
+			<meta name="twitter:creator" content="littleidea"> 
+		<meta name="twitter:site" content="radar">
+		
+	<meta property="og:image" content="http://s.radar.oreilly.com/2010/08/02/web-operations.jpg"> 
+			<meta property="og:image" content="http://cdn.oreillystatic.com/radar/images/people/photo_andrewsh_m.jpg">
+		<meta property="og:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-200.png" />
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Feed" href="http://radar.oreilly.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Comments Feed" href="http://radar.oreilly.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Operations: The secret sauce revisited Comments Feed" href="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html/feed" />
+<link rel='stylesheet' id='inline-tweet-sharer-style-css'  href='http://radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-css'  href='http://radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-plugin-css'  href='http://radar.oreilly.com/wp-content/plugins/videojs-html5-video-player-for-wordpress/plugin-styles.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-css'  href='//vjs.zencdn.net/4.5/video-js.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=4.0'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/player.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://cdn.oreillystatic.com/search/radar/scripts/jquery-1.10.2.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.6.6","is_admin":"0","ajaxurl":"http:\/\/radar.oreilly.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.6.6'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://radar.oreilly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://radar.oreilly.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Four short links: 2 August 2010' href='http://radar.oreilly.com/2010/08/four-short-links-2-august-2010.html' />
+<link rel='next' title='On Covers' href='http://radar.oreilly.com/2010/08/on-covers.html' />
+<link rel='canonical' href='http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html' />
+<link rel='shortlink' href='http://radar.oreilly.com/?p=40362' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://radar.oreilly.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://radar.oreilly.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+
+		<script type="text/javascript"> document.createElement("video");document.createElement("audio");document.createElement("track"); </script>
+		
+<link rel="stylesheet" type="text/css" href="http://radar.oreilly.com/wp-content/themes/radar/css/lazyYT.css">
+<!-- soasta -->
+<script type='text/javascript'>
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'M8AMH-MB6VT-5NB4A-PU4EW-XKNPQ';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+</script>
+<!-- #soasta -->
+
+</head>
+<body class="single single-post postid-40362 single-format-standard">
+<div id="fixed-top"><span>Menu</span></div>
+<nav id="mobi" class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-48418" class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li id="menu-item-48419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li id="menu-item-48420" class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a></li>
+<li id="menu-item-48422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li id="menu-item-48423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li id="menu-item-48426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></nav><div id="wrapper" class="hfeed ">
+	<div class="navheaderbg">
+		<div>
+			<div id="header">	
+				<div class="header-top">
+					<a href="http://oreilly.com/" title="oreilly.com">oreilly.com</a>
+					<div class="clear"></div>
+				</div>
+			<div class="head-inner">
+				<div class="logo">
+					<a href="http://radar.oreilly.com/" title="O&#039;Reilly Radar" rel="home">O&#039;Reilly Radar</a>
+				</div>
+	
+				<div id="search-box">
+					<div id="header-social-wrap">
+						<div id="header-social-btn">
+							<a class="rss-btn"  href="http://feeds.feedburner.com/oreilly/radar/atom" >RSS Feed</a>
+							<a class="twitter-btn" href="http://twitter.com/radar">Twitter</a>
+							<a class="fb-btn" href="https://www.facebook.com/OReillyRadar">Facebook</a>
+							<a class="gps-btn" href="https://plus.google.com/105451978536505503907" >Google+</a>
+							<a class="yt-btn" href="http://www.youtube.com/user/OreillyMedia" >Youtube</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<script type="text/javascript"> 
+						function checkIfDefault(keyword) {
+							var defaultSearchTerm = "Search";
+							var defaultEmailTerm = "Enter Email";
+								if((keyword == defaultSearchTerm) || (keyword == defaultEmailTerm)) {
+									return '';
+								}
+								else {
+									return keyword;
+								}
+							}
+					</script>
+					<script type="text/javascript"> 
+					jQuery(document).ready(function($) { 
+						$("#search-form").submit(function() { 
+						window.location = " /search#/search/q="+$("#q").val(); 
+						return false; 
+						}); 
+					}); 
+					</script>
+					<div class="yui-skin-sam">
+						<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/">
+							<div class="search">
+								<fieldset>
+									<span id="search-input">
+										<div class="searchInput">
+											<span id="search-field"><input type="text" value="Search" name="q" maxlength="64" id="q" onfocus="this.value=checkIfDefault(this.value);"></span>           
+										</div>
+										<span id="search-button">
+											<input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/sitewide-headers/search_btn.gif" border="0" style="float:left" alt="Search" align="top">
+											<input type="hidden" name="tmpl" value="radar">                                                                    
+										</span>
+									</span>
+								</fieldset>
+							</div>
+						</form>
+					</div>
+                </div>
+				<div class="clear"></div>
+			</div>
+				<div class="clear"></div>
+			</div><!-- #header -->
+			<div id="access" role="navigation">			  
+				<div class="menu-header"><ul id="menu-main-nav-1" class="menu"><li class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a>
+<ul class="sub-menu">
+	<li id="menu-item-67912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-67912"><a href="http://radar.oreilly.com/">Radar</a></li>
+	<li id="menu-item-67913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67913"><a href="http://animals.oreilly.com/">Animals</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></div>				<div class="clear"></div>
+			</div><!-- #access -->
+			<div class="clear"></div>
+			<div id="menu-wrap">			
+					            	            		            		        		        		            <div id="sub">
+		            <div class="nav">
+		            	<div class="name">More Topics <span class="arrow-down"></span></div>
+		                <div class="sub-menu"><ul class="nav-bar"><li><a href="http://radar.oreilly.com/data">Data</a></li><li><a href="http://radar.oreilly.com/design">Design</a></li><li><a href="http://radar.oreilly.com/emerging-tech">Emerging Tech</a></li><li><a href="http://radar.oreilly.com/iot">IoT+</a></li><li><a href="http://radar.oreilly.com/programming">Programming</a></li><li><a href="http://radar.oreilly.com/webops-perf">Web Ops & Performance</a></li><li><a href="http://radar.oreilly.com/web-platform">Web Platform</a></li></ul></div>		            </div>
+	        	</div>
+	        	        	</div>
+            <div class="clear"></div>
+		</div>
+		
+	</div>
+	<div id="sww-content">
+					<div class="textwidget"><!-- Either there are no banners, they are disabled or none qualified for this location! --></div>
+			
+		<div class="clear"></div>
+	</div>
+	<div id="main">	
+		<style type="text/css">
+		  .single .hentry { padding-bottom:20px; }
+		  #content #newsletter { padding:0; margin:0 0 20px; border-bottom:1px solid #888; }
+		  #content #newsletter > h3 { margin:15px 0 0 0; padding:0; font-size:22px; line-height:1.1em; font-weight:bold; }
+		  #content #newsletter > h4 { margin:0 0 5px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		  #content #newsletter > p { margin:0 0 20px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		</style>	<div id="container">
+		<div id="content" class="post_block" role="main">			
+							
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/rs_embhl_v2_en_us.js" type="text/javascript"></script>
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.cookie.js" type="text/javascript"></script>
+
+		<div id="post-40362" class="post-40362 post type-post status-publish format-standard hentry category-uncategorized tag-business tag-operations tag-ops tag-speed">					
+
+			 
+
+			<ul class="entry-tools">
+
+			<span class="tool-block">
+
+				<li class="button print">
+
+					
+					<a target="_new" href="#" onclick="window.open('http://radar.oreilly.com/print/?print_bc=40362','print','width=800,height=600,menubar=no,status=no,location=yes,toolbar=yes,scrollbars=yes'); return false;" rel="nofollow">Print</a>
+
+				</li>
+
+				<li class="button listen">
+
+					<div id="readspeaker_button1" class="rs_skip en_us"> <a accesskey="L" href="http://app.readspeaker.com/cgi-bin/rsent?customerid=14&amp;lang=en_us&amp;readid=body-content&amp;url=http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" target="_blank" onclick="readpage(this.href, 'content_start'); return false;">Listen</a> </div>
+
+				</li>		
+
+				
+
+				<div id="content_start" style="display: block; "></div>			
+
+			</span>
+
+			</ul>		
+
+		
+
+			
+			
+				
+					<a href="http://radar.oreilly.com/andrewsh">
+
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_andrewsh_s.jpg" class="au-photo" alt="" title="Andrew Shafer" />
+
+					</a>
+
+									
+
+			
+			<!-- RSPEAK_START -->
+
+			<div id="body-content">
+
+			<h1 class="entry-title">Operations: The secret sauce revisited</h1>
+
+					
+
+				
+
+				<h2 class="subhead">The forces of "technical debt" apply to computational infrastructure.</h2>
+
+			
+			
+
+			<div class="entry-meta">				
+
+				
+					<span class="meta-sep">by</span> 	
+
+					
+						<span class="author vcard"><a class="url fn n" rel="author" href="http://radar.oreilly.com/andrewsh" title="View all posts by Andrew Shafer">
+
+						Andrew Shafer</a></span> |								
+
+					
+				<!-- RSPEAK_STOP -->
+
+				
+					<a href="http://twitter.com/littleidea"> @littleidea</a> |
+
+				
+				
+				
+				<span class="entry-date">August 2, 2010</span> 				
+
+			</div><!-- .entry-meta -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+
+
+			<div class="entry-content">
+
+				
+			
+
+				
+				
+
+				<!-- RSPEAK_START --><p><em>Guest blogger Andrew Clay Shafer is helping telcos and hosting providers implement cloud services at <a href="http://cloudscaling.com/">Cloudscaling</a>. He co-founded <a href="http://www.puppetlabs.com/">Reductive Labs</a>, creators of Puppet, the configuration management framework. Andrew preaches the &#8220;infrastructure is code&#8221; gospel, and he supports approaches for applying agile methods to infrastructure and operations. Some of those perspectives were captured in his chapter in the O&#8217;Reilly book &#8220;<a href="http://oreilly.com/catalog/0636920000136">Web Operations</a>.&#8221;</em></p>
+<hr />
+<p>&#8220;<a href="http://en.wikipedia.org/wiki/Technical_debt">Technical debt</a>&#8221; is used two ways in the analysis of software systems. The phrase was first introduced in 1992 by <a href="http://en.wikipedia.org/wiki/Ward_Cunningham">Ward Cunningham</a> to describe the premise that increased speed of delivery provides other advantages, and that the debt leveraged to gain those advantages should be strategically paid back.</p>
+<p>Somewhere along the way, technical debt also became synonymous with poor implementation; reflecting the difference between the current state of a code base and an idealized one. I have used the term both ways, and I think they both have merit. </p>
+<p>Technical debt can be extended and discussed along several additional axes: process debt, personnel debt, experience debt, user experience debt, security debt, documentation debt, etc. For this discussion, I won&#8217;t quibble about the nuances of categorization. Instead, I want to take a high-level look at operations and infrastructure choices people make and the impact of those choices.</p>
+<p><span id="more-40362"></span>
+</p>
+<h2>The technical debt metaphor</h2>
+</p>
+<p>Debts are created by some combination of choice and circumstance. Modern economies are predicated on the flow of debt as much as anything else, but not all debt is created equal. There is a qualitative difference between a mortgage and carrying significant debt on maxed-out credit cards. The point being that there are a variety of ways to incur debt, and the quality of debts have different consequences. </p>
+<p>Jesse Robbins&#8217;  Radar post about <a href="http://radar.oreilly.com/2007/10/operations-is-a-competitive-ad.html">operations as the secret sauce</a> talked about boot strapping web startups in 80 hours. It included the following infographic showing the time cost of traditional versus special sauce operations: </p>
+<p align="center"><img src="http://cdn.oreillystatic.com/radar/images/2007/10/Ops-ROI-jesserobbins-thumb-600x285.png" border="0"></p>
+<p>I contend that the <strong>ongoing difference in time cost between the two solutions is the interest being paid on technical debt</strong>. </p>
+<p>Understanding is really the crux of the matter. No one who really understands compound interest would intentionally make frivolous purchases on a credit card and not make every effort to pay down high interest debt. Just as no one who really understands web operations would create infrastructure with an exponentially increasing cost of maintenance. Yet, people do both of these things. </p>
+<p>As the graph is projected out, the ongoing cost of maintenance in both projects reflects the maxim of &#8220;the rich get richer.&#8221; One project can focus on adding value and differentiating itself in the market while the other will eventually be crushed under the weight of its own maintenance.</p>
+</p>
+<h2>Technical debt and the Big Ball of Mud</h2>
+</p>
+<p>Without a counterbalancing investment, system and software architectures succumb to entropy and become more difficult to understand. The classic &#8220;<a href="http://www.laputan.org/mud/">Big Ball of Mud</a>&#8221; by Brian Foote and Joseph Yoder catalogs forces that contribute to the creation of haphazard and undifferentiated software architectures. They are:</p>
+<ul>
+<li> Time</li>
+<li> Cost</li>
+<li> Experience</li>
+<li> Skill</li>
+<li> Visibility</li>
+<li> Complexity</li>
+<li> Change</li>
+<li> Scale</li>
+</ul>
+<p>These same forces apply just as much to infrastructure and operations, especially if you understand the &#8220;<a href="http://en.oreilly.com/velocity2010/public/schedule/detail/14432">infrastructure is code</a>&#8221; mantra. If you look at the <a href="http://cdn.oreillystatic.com/radar/images/2007/10/Ops-ROI-jesserobbins.png">original &#8220;Tale of Two Ops Teams&#8221; graphic</a>, both teams spent almost the same amount of time before the launch. If we assume that these are representative, then the difference between the two approaches is essentially experience and skill, which is likely to be highly correlated with cost. As the project moves forward, the difference in experience and skill reflects itself in how the teams spend time, provide visibility and handle complexity, change and scale.</p>
+<p>Using this list, and the assumption that balls of mud are synonymous with high technical debt, combating technical debt becomes an exercise in minimizing the impact of these forces.</p>
+<ul>
+<li> Time and cost are what they are, and often have an inverse relationship. From a management perspective, I would like everything now and for free, so everything else is a compromise. Undue time pressure will always result in something else being compromised. That compromise will often start charging interest immediately.</li>
+<li> Experience is invaluable, but sometimes hard to measure and overvalued in technology. Doing the same thing over and over with a technology is not 10 years of experience, it is the first year of experience 10 times. Intangible experience should not be measured in time, and experience in this sense is related to skill.</li>
+<li> Visibility has two facets in ops work: Visibility into the design and responsibilities of the systems, and real-time metrics and alerting on the state of the system. The first allows us to take action, the second informs us that we should.</li>
+<li> Complex problems can require complex solutions. Scale and change add complexity. Complexity obscures visibility and understanding.</li>
+</ul>
+<p>Each of these forces and specific examples of how they impact infrastructure would fill a book, but hopefully that is enough to get people thinking and frame a discussion.</p>
+<p>There is a force that may be missing from the &#8220;Big Ball of Mud&#8221;: <strong>tools</strong> (which might be an oversight, might be an attempt to remain tool-agnostic, or might be considered a cross-cutting aspect of cost, experience and skill). That&#8217;s not to say that tools don&#8217;t add some complexity and the potential for technical debt as well. But done well, tools provide ongoing insight into how and why systems are configured the way they are, illumination of the complexity and connections of the systems, and a mechanism to rapidly implement changes. That is just an example. Every tool choice, from the operating system, to the web server, to the database, to the monitoring and more, has an impact on the complexity, visibility and flexibility of the systems, and therefore impacts operations effectiveness.</p>
+<p>Many parallels can be drawn between operations and fire departments. One big difference is most fire departments don&#8217;t spend much time actually putting out fires. If operations is reacting all the time, that indicates considerable technical debt. Furthermore, in reactive environments, the probability is high that the solutions of today are contributing to the technical debt and the fires of tomorrow.</p>
+<p>Focus must be directed toward getting the fires under control in a way that doesn&#8217;t contribute to future fires. The coarse metric of time spent reactively responding to incidents versus the time spent proactively completing ops-related projects is a great starting point for understanding the situation. One way to insure operations is always a cost center is to keep treating it like one. When the flow of technical debt is understood and well managed, operations is certainly a competitive advantage.</p>
+<p><strong>Related:</strong></p>
+<ul>
+<li> <a href="http://radar.oreilly.com/2007/10/operations-is-a-competitive-ad.html">Operations is a competitive advantage &#8230; (Secret Sauce for Startups!)</li>
+<li> <a href="http://radar.oreilly.com/2010/04/web-operators-are-brain-surgeo.html">Web operators are brain surgeons</a></li>
+<li> <a href="http://radar.oreilly.com/2009/10/watching-websites.html">More on how web performance impacts revenue</a></li>
+<li> <a href="http://answers.oreilly.com/topic/1686-how-seo-and-site-speed-are-related/">How SEO and site speed are related</a></li>
+<li> <a href="http://www.youtube.com/watch?v=MStKwEff_kY">Google&#8217;s Urs Holzle on speed and optimization</a></li>
+</ul>
+<!-- RSPEAK_STOP -->
+
+				
+			</div><!-- .entry-content -->
+
+				
+			</div>
+
+			<div class="entry-utility">				
+
+				tags: <a href='http://radar.oreilly.com/tag/business' title='business Tag' rel='tag'>business</a>, <a href='http://radar.oreilly.com/tag/operations' title='operations Tag' rel='tag'>operations</a>, <a href='http://radar.oreilly.com/tag/ops' title='ops Tag' rel='tag'>ops</a>, <a href='http://radar.oreilly.com/tag/speed' title='speed Tag' rel='tag'>speed</a>
+				
+			</div><!-- .entry-utility -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html" addthis:title="Operations: The secret sauce revisited"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+			<!-- AddThis Button END -->			
+
+			
+
+			
+
+		</div><!-- #post-## -->		
+
+		
+
+		
+		
+
+<a name="comments"></a>
+
+<a name="respond"></a>
+
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-33312">
+        <div id="dsq-comment-header-33312" class="dsq-comment-header">
+            <cite id="dsq-cite-33312">
+                <span id="dsq-author-user-33312">Patrick Debois</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-33312" class="dsq-comment-body">
+            <div id="dsq-comment-message-33312" class="dsq-comment-message"><p>Hi Andrew, </p>
+<p>great post. Indeed technical debts is something often lives in a lot of operational aspects: people don&#8217;t install patches, avoid major upgrades of software, have these legacy systems nobody wants to touch. Software development has learned us that reproduceability of things greatly help in becoming more confident to change things. Also doing things in smaller changes makes more sense. All this requires a good testing strategy to see if things don&#8217;t break. If you live in a world that avoid these kind of changes, technical debt will creep in. </p>
+<p>You mention the loan and morgage. I&#8217;ve experienced sometimes that the they don&#8217;t care about technical debt because they know the systems only has live for X more years. They think that there will be no cost associated with not changing things. I&#8217;ve they are lucky and things keep working and customers are happy, they are right and might get away with it. Something you don&#8217;t have to try with a bank :)</p>
+<p>In the original article by Jesse, he talks a lot of tools. Good tools will help you doing your job more efficient but they are now less vulnerable from technical debt too. Often once you have chosen your tools and your architecture that is very difficult to change. We need to be aware of what we choose that these things can change too. Switching from php to rails or chef to puppet. </p>
+<p>Someone once said to me that for every new thing you introduce you should look for something that you can remove. This keeps things simple, and might help you get over changes more easily to remove technical debt.</p>
+<p>Thanks for your insights! </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-33313">
+        <div id="dsq-comment-header-33313" class="dsq-comment-header">
+            <cite id="dsq-cite-33313">
+                <span id="dsq-author-user-33313">Steve Conover</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-33313" class="dsq-comment-body">
+            <div id="dsq-comment-message-33313" class="dsq-comment-message"><p>&#8220;Somewhere along the way, technical debt also became synonymous with poor implementation; reflecting the difference between the current state of a code base and an idealized one.&#8221;</p>
+<p>Another way I like to express this &#8220;problem&#8221; (in scare quotes because it&#8217;s a pretty natural/normal situation) is in terms of a fitness landscape:</p>
+<p>&#8220;A fitness landscape, first conceptualized by Sewall Wright, is a way of visualising fitness in terms of a three-dimensional surface on which peaks correspond to local fitness maxima; it is often said that natural selection always progresses uphill but can only do so locally. This can result in suboptimal local maxima becoming stable, because natural selection cannot return to the less-fit &#8220;valleys&#8221; of the landscape on the way to reach higher peaks.&#8221;</p>
+<p><a href="http://en.wikipedia.org/wiki/Fitness_(biology)" rel="nofollow">http://en.wikipedia.org/wiki/Fitness_(biology)</a></p>
+<p>You&#8217;re likely at a local maximum &#8211; It&#8217;s the moment the fog clears around a higher peak that this kind of technical debt comes into being.  IOW it has to do with a team&#8217;s awareness at a given point in time.</p>
+<p>It ought to be emphasized that one can rationally choose to stay at a local maximum, if the cost of climbing the hill to the better maximum is too high relative to the payoff&#8230;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-33314">
+        <div id="dsq-comment-header-33314" class="dsq-comment-header">
+            <cite id="dsq-cite-33314">
+                <span id="dsq-author-user-33314">Andrew Clay Shafer</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-33314" class="dsq-comment-body">
+            <div id="dsq-comment-message-33314" class="dsq-comment-message"><p>@Patrick<br />
+Thanks for the kinds words.</p>
+<p>In another context I&#8217;ve made the comment that &#8216;Technical Debt is vendor lock-in with your own past&#8217;.</p>
+<p>There are times you might not need to fully repay technical debt. This is especially true in startups, where you are exploring hypothesis about what people are even interested in and even if the market likes something, to scale effectively might require a total re-architecting of the infrastructure. Again, I think there are different kinds of debt.</p>
+<p>You can open up a lot of options with the prudent use of student loans, but carrying a significant balance on high interest credit card tends to curtail options.</p>
+<p>I&#8217;m not saying anyone can or should avoid all debt, just that we can be aware of it and manage debt strategically.</p>
+<p>@Steve<br />
+Thanks for your comments. I&#8217;m not convinced debt maps to fitness 100% and I believe you are mixing metaphors a bit when you add in the notion of &#8216;rational choice&#8217;, but let&#8217;s explore the idea.</p>
+<p>The part I do think makes sense in the fitness context is that the difference contributes to natural select due to Darwinian pressure. That&#8217;s the nature of a competitive advantage.</p>
+<p>I personally think the fitness landscape is upside down and the stable equilibrium should be at the bottom, but that is just my sensibility about how natural forces should be modeled, but I digress.</p>
+<p>The part that doesn&#8217;t make sense in the context of a biological fitness is the notion of choice and the ability to change the &#8216;phenotype&#8217;.</p>
+<p>The technical debt doesn&#8217;t come into being because the fog cleared around some other option. The time being spent maintaining the infrastructure doesn&#8217;t suddenly increase because you are aware of a better way to do it. What does change is the understanding of what is possible and raising of the expectations.</p>
+<p>I also don&#8217;t believe the transitions are best modeled by a fitness landscape surface for a variety of other reasons. The transitions tend to be much more discontinuous and there are real forces that push away from the local maxima.</p>
+<p>I do believe that this space is rapidly advancing and that what we consider best practice today will probably be considered quaint debt ridden legacy approaches in a few years. There will still be technical debt but what we consider cutting edge state of the art today will be table stakes or even outmoded tomorrow.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://radar.oreilly.com/2010/08/operations-as-the-secret-sauce.html';
+    var disqus_identifier = '40362 http://blogs.oreilly.com/radar/2010/08/operations-as-the-secret-sauce.html';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'oreillyradar';
+    var disqus_title = "Operations: The secret sauce revisited";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=40362';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/radar.oreilly.com\/2010\/08\/operations-as-the-secret-sauce.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+
+
+		</div><!-- #content -->
+		<div id="sidebar" class="widget-area">
+	<div id="text-51" class="widget-container widget_text"><h3 class="widget-title">Featured Video</h3>			<div class="textwidget"><div class="js-lazyYT" data-youtube-id="7_xRxeTxvas" data-ratio="16:9"></div>
+<p style="padding-top: 5px; font-size: 12px;  line-height: 1.5; font-weight: normal;"><strong>By People, For People</strong>: Tim O'Reilly on the human side of DevOps and the connection between DevOps and user experience design.</p></div>
+		<div class="clear"></div></div><div id="execphp-5" class="widget-container widget_execphp">			<div class="execphpwidget"><a class="twitter-timeline" width="318" data-dnt=true href="https://twitter.com/radar" data-widget-id="251056135732338688">Tweets by @radar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		<div class="clear"></div></div><div id="text-5" class="widget-container widget_text"><h3 class="widget-title">Most Recently Discussed</h3>			<div class="textwidget"><div id="recentcomments" class="dsq-widget"><script type="text/javascript" src="http://oreillyradar.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=100"></script></div></div>
+		<div class="clear"></div></div><div  class="widget-container radar-archives">	
+	<h3 class="widget-title">Archives</h3>	
+		
+	<ul>
+		<li>
+			<select id="archive_id" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			  <option value="">Archives by Month...</option> 
+			  	<option value='http://radar.oreilly.com/2014/09'> September 2014 </option>
+	<option value='http://radar.oreilly.com/2014/08'> August 2014 </option>
+	<option value='http://radar.oreilly.com/2014/07'> July 2014 </option>
+	<option value='http://radar.oreilly.com/2014/06'> June 2014 </option>
+	<option value='http://radar.oreilly.com/2014/05'> May 2014 </option>
+	<option value='http://radar.oreilly.com/2014/04'> April 2014 </option>
+	<option value='http://radar.oreilly.com/2014/03'> March 2014 </option>
+	<option value='http://radar.oreilly.com/2014/02'> February 2014 </option>
+	<option value='http://radar.oreilly.com/2014/01'> January 2014 </option>
+	<option value='http://radar.oreilly.com/2013/12'> December 2013 </option>
+	<option value='http://radar.oreilly.com/2013/11'> November 2013 </option>
+	<option value='http://radar.oreilly.com/2013/10'> October 2013 </option>
+	<option value='http://radar.oreilly.com/2013/09'> September 2013 </option>
+	<option value='http://radar.oreilly.com/2013/08'> August 2013 </option>
+	<option value='http://radar.oreilly.com/2013/07'> July 2013 </option>
+	<option value='http://radar.oreilly.com/2013/06'> June 2013 </option>
+	<option value='http://radar.oreilly.com/2013/05'> May 2013 </option>
+	<option value='http://radar.oreilly.com/2013/04'> April 2013 </option>
+	<option value='http://radar.oreilly.com/2013/03'> March 2013 </option>
+	<option value='http://radar.oreilly.com/2013/02'> February 2013 </option>
+	<option value='http://radar.oreilly.com/2013/01'> January 2013 </option>
+	<option value='http://radar.oreilly.com/2012/12'> December 2012 </option>
+	<option value='http://radar.oreilly.com/2012/11'> November 2012 </option>
+	<option value='http://radar.oreilly.com/2012/10'> October 2012 </option>
+	<option value='http://radar.oreilly.com/2012/09'> September 2012 </option>
+	<option value='http://radar.oreilly.com/2012/08'> August 2012 </option>
+	<option value='http://radar.oreilly.com/2012/07'> July 2012 </option>
+	<option value='http://radar.oreilly.com/2012/06'> June 2012 </option>
+	<option value='http://radar.oreilly.com/2012/05'> May 2012 </option>
+	<option value='http://radar.oreilly.com/2012/04'> April 2012 </option>
+	<option value='http://radar.oreilly.com/2012/03'> March 2012 </option>
+	<option value='http://radar.oreilly.com/2012/02'> February 2012 </option>
+	<option value='http://radar.oreilly.com/2012/01'> January 2012 </option>
+	<option value='http://radar.oreilly.com/2011/12'> December 2011 </option>
+	<option value='http://radar.oreilly.com/2011/11'> November 2011 </option>
+	<option value='http://radar.oreilly.com/2011/10'> October 2011 </option>
+	<option value='http://radar.oreilly.com/2011/09'> September 2011 </option>
+	<option value='http://radar.oreilly.com/2011/08'> August 2011 </option>
+	<option value='http://radar.oreilly.com/2011/07'> July 2011 </option>
+	<option value='http://radar.oreilly.com/2011/06'> June 2011 </option>
+	<option value='http://radar.oreilly.com/2011/05'> May 2011 </option>
+	<option value='http://radar.oreilly.com/2011/04'> April 2011 </option>
+	<option value='http://radar.oreilly.com/2011/03'> March 2011 </option>
+	<option value='http://radar.oreilly.com/2011/02'> February 2011 </option>
+	<option value='http://radar.oreilly.com/2011/01'> January 2011 </option>
+	<option value='http://radar.oreilly.com/2010/12'> December 2010 </option>
+	<option value='http://radar.oreilly.com/2010/11'> November 2010 </option>
+	<option value='http://radar.oreilly.com/2010/10'> October 2010 </option>
+	<option value='http://radar.oreilly.com/2010/09'> September 2010 </option>
+	<option value='http://radar.oreilly.com/2010/08'> August 2010 </option>
+	<option value='http://radar.oreilly.com/2010/07'> July 2010 </option>
+	<option value='http://radar.oreilly.com/2010/06'> June 2010 </option>
+	<option value='http://radar.oreilly.com/2010/05'> May 2010 </option>
+	<option value='http://radar.oreilly.com/2010/04'> April 2010 </option>
+	<option value='http://radar.oreilly.com/2010/03'> March 2010 </option>
+	<option value='http://radar.oreilly.com/2010/02'> February 2010 </option>
+	<option value='http://radar.oreilly.com/2010/01'> January 2010 </option>
+	<option value='http://radar.oreilly.com/2009/12'> December 2009 </option>
+	<option value='http://radar.oreilly.com/2009/11'> November 2009 </option>
+	<option value='http://radar.oreilly.com/2009/10'> October 2009 </option>
+	<option value='http://radar.oreilly.com/2009/09'> September 2009 </option>
+	<option value='http://radar.oreilly.com/2009/08'> August 2009 </option>
+	<option value='http://radar.oreilly.com/2009/07'> July 2009 </option>
+	<option value='http://radar.oreilly.com/2009/06'> June 2009 </option>
+	<option value='http://radar.oreilly.com/2009/05'> May 2009 </option>
+	<option value='http://radar.oreilly.com/2009/04'> April 2009 </option>
+	<option value='http://radar.oreilly.com/2009/03'> March 2009 </option>
+	<option value='http://radar.oreilly.com/2009/02'> February 2009 </option>
+	<option value='http://radar.oreilly.com/2009/01'> January 2009 </option>
+	<option value='http://radar.oreilly.com/2008/12'> December 2008 </option>
+	<option value='http://radar.oreilly.com/2008/11'> November 2008 </option>
+	<option value='http://radar.oreilly.com/2008/10'> October 2008 </option>
+	<option value='http://radar.oreilly.com/2008/09'> September 2008 </option>
+	<option value='http://radar.oreilly.com/2008/08'> August 2008 </option>
+	<option value='http://radar.oreilly.com/2008/07'> July 2008 </option>
+	<option value='http://radar.oreilly.com/2008/06'> June 2008 </option>
+	<option value='http://radar.oreilly.com/2008/05'> May 2008 </option>
+	<option value='http://radar.oreilly.com/2008/04'> April 2008 </option>
+	<option value='http://radar.oreilly.com/2008/03'> March 2008 </option>
+	<option value='http://radar.oreilly.com/2008/02'> February 2008 </option>
+	<option value='http://radar.oreilly.com/2008/01'> January 2008 </option>
+	<option value='http://radar.oreilly.com/2007/12'> December 2007 </option>
+	<option value='http://radar.oreilly.com/2007/11'> November 2007 </option>
+	<option value='http://radar.oreilly.com/2007/10'> October 2007 </option>
+	<option value='http://radar.oreilly.com/2007/09'> September 2007 </option>
+	<option value='http://radar.oreilly.com/2007/08'> August 2007 </option>
+	<option value='http://radar.oreilly.com/2007/07'> July 2007 </option>
+	<option value='http://radar.oreilly.com/2007/06'> June 2007 </option>
+	<option value='http://radar.oreilly.com/2007/05'> May 2007 </option>
+	<option value='http://radar.oreilly.com/2007/04'> April 2007 </option>
+	<option value='http://radar.oreilly.com/2007/03'> March 2007 </option>
+	<option value='http://radar.oreilly.com/2007/02'> February 2007 </option>
+	<option value='http://radar.oreilly.com/2007/01'> January 2007 </option>
+	<option value='http://radar.oreilly.com/2006/12'> December 2006 </option>
+	<option value='http://radar.oreilly.com/2006/11'> November 2006 </option>
+	<option value='http://radar.oreilly.com/2006/10'> October 2006 </option>
+	<option value='http://radar.oreilly.com/2006/09'> September 2006 </option>
+	<option value='http://radar.oreilly.com/2006/08'> August 2006 </option>
+	<option value='http://radar.oreilly.com/2006/07'> July 2006 </option>
+	<option value='http://radar.oreilly.com/2006/06'> June 2006 </option>
+	<option value='http://radar.oreilly.com/2006/05'> May 2006 </option>
+	<option value='http://radar.oreilly.com/2006/04'> April 2006 </option>
+	<option value='http://radar.oreilly.com/2006/03'> March 2006 </option>
+	<option value='http://radar.oreilly.com/2006/02'> February 2006 </option>
+	<option value='http://radar.oreilly.com/2006/01'> January 2006 </option>
+	<option value='http://radar.oreilly.com/2005/12'> December 2005 </option>
+	<option value='http://radar.oreilly.com/2005/11'> November 2005 </option>
+	<option value='http://radar.oreilly.com/2005/10'> October 2005 </option>
+	<option value='http://radar.oreilly.com/2005/09'> September 2005 </option>
+	<option value='http://radar.oreilly.com/2005/08'> August 2005 </option>
+	<option value='http://radar.oreilly.com/2005/07'> July 2005 </option>
+	<option value='http://radar.oreilly.com/2005/06'> June 2005 </option>
+	<option value='http://radar.oreilly.com/2005/05'> May 2005 </option>
+	<option value='http://radar.oreilly.com/2005/04'> April 2005 </option>
+	<option value='http://radar.oreilly.com/2005/03'> March 2005 </option>
+			</select>
+		</li>
+
+		<li>	
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='cat' id='cat' class='postform'  onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Topic&#8230;</option>
+	<option class="level-0" value="3">Data</option>
+	<option class="level-0" value="5443">Design</option>
+	<option class="level-0" value="5444">Emerging Tech</option>
+	<option class="level-0" value="4871">IoT+</option>
+	<option class="level-0" value="9">Programming</option>
+	<option class="level-0" value="12">Web Ops &amp; Performance</option>
+	<option class="level-0" value="5355">Web Platform</option>
+</select>
+					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+
+		<li id="users">
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='author' id='author' class='' onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Author...</option>
+	<option value='507'>A. Sinan Unur</option>
+	<option value='508'>Aaron Sumner</option>
+	<option value='4'>Adam DuVander</option>
+	<option value='376'>Adam Flaherty</option>
+	<option value='3'>Adam Messinger</option>
+	<option value='5'>Adam Witwer</option>
+	<option value='2'>Alasdair Allan</option>
+	<option value='588'>Alex Bordei</option>
+	<option value='7'>Alex Bowyer</option>
+	<option value='9'>Alex Iskold</option>
+	<option value='6'>Alexander Macgillivray</option>
+	<option value='10'>Alistair Croll</option>
+	<option value='471'>Allen Downey</option>
+	<option value='11'>Allen Noren</option>
+	<option value='12'>Allison Randal</option>
+	<option value='482'>Ally MacDonald</option>
+	<option value='477'>Alois Reitbauer</option>
+	<option value='347'>Alysa Hutnik</option>
+	<option value='358'>Amy Heineike</option>
+	<option value='467'>Amy Jollymore</option>
+	<option value='426'>Amy Unruh</option>
+	<option value='13'>Anant Jhingran</option>
+	<option value='414'>Andreas Antonopoulos</option>
+	<option value='501'>Andrew Collette</option>
+	<option value='15'>Andrew Odewahn</option>
+	<option value='14'>Andrew Savikas</option>
+	<option value='16'>Andrew Shafer</option>
+	<option value='510'>Andy Fitzgerald</option>
+	<option value='18'>Andy Kirk</option>
+	<option value='355'>Andy Konwinski</option>
+	<option value='19'>Andy Oram</option>
+	<option value='309'>Ann Spencer</option>
+	<option value='262'>Ann Waldo</option>
+	<option value='359'>Anna Smith</option>
+	<option value='562'>Anne Gentle</option>
+	<option value='574'>Anni Ylagan</option>
+	<option value='21'>Ari Gesher</option>
+	<option value='20'>Aria Haghighi</option>
+	<option value='410'>Ariya Hidayat</option>
+	<option value='22'>Artur Bergman</option>
+	<option value='23'>Audrey Watters</option>
+	<option value='293'>Avi Bryant</option>
+	<option value='571'>Barb Edson</option>
+	<option value='421'>Barbara Bermes</option>
+	<option value='486'>Baron Schwartz</option>
+	<option value='26'>Barry Devlin</option>
+	<option value='390'>Beau Cronin</option>
+	<option value='419'>Ben Christensen</option>
+	<option value='587'>Ben Evans</option>
+	<option value='27'>Ben Lorica</option>
+	<option value='462'>Bill Higgins</option>
+	<option value='591'>Bill Lubanovic</option>
+	<option value='28'>Bill McCoy</option>
+	<option value='461'>Bonnie Feldman</option>
+	<option value='30'>Bradley Voytek</option>
+	<option value='31'>Brady Forrest</option>
+	<option value='539'>Brandon Satrom</option>
+	<option value='32'>Brett McLaughlin</option>
+	<option value='33'>Brett Sandusky</option>
+	<option value='34'>Brett Sheppard</option>
+	<option value='25'>Brian Ahier</option>
+	<option value='35'>Brian Boyer</option>
+	<option value='533'>brian d foy</option>
+	<option value='494'>Brian d&#039;Alessandro</option>
+	<option value='244'>Brian Jepson</option>
+	<option value='481'>Brian MacDonald</option>
+	<option value='36'>Brian O&#039;Leary</option>
+	<option value='38'>Brian Sawyer</option>
+	<option value='37'>Bruce Stewart</option>
+	<option value='39'>Carl Hewitt</option>
+	<option value='40'>Carl Malamud</option>
+	<option value='328'>Cathy O&#039;Neil</option>
+	<option value='483'>Chao (Ray) Feng</option>
+	<option value='448'>Chiu-ki Chan</option>
+	<option value='516'>Chris Cornutt</option>
+	<option value='41'>Chris Meade</option>
+	<option value='284'>Chris Vander Mey</option>
+	<option value='300'>Chris Wiggins</option>
+	<option value='44'>Christine Perey</option>
+	<option value='42'>Ciara Byrne</option>
+	<option value='43'>Cliff Miller</option>
+	<option value='479'>Colt McAnlis</option>
+	<option value='306'>Courtney Nash</option>
+	<option value='45'>Dale Dougherty</option>
+	<option value='422'>Dan Saffer</option>
+	<option value='577'>Danese Cooper</option>
+	<option value='46'>Darren Barefoot</option>
+	<option value='430'>Dave Himrod</option>
+	<option value='47'>Dave McClure</option>
+	<option value='556'>Dave Zwieback</option>
+	<option value='435'>David Elfi</option>
+	<option value='49'>David Leinweber</option>
+	<option value='50'>David Recordon</option>
+	<option value='48'>David Sims</option>
+	<option value='559'>David Stephenson</option>
+	<option value='51'>DC Denison</option>
+	<option value='242'>Deni Auclair</option>
+	<option value='313'>Derek Jacoby</option>
+	<option value='427'>Dino Esposito</option>
+	<option value='53'>DJ Patil</option>
+	<option value='416'>Doug Finke</option>
+	<option value='52'>Doug Hill</option>
+	<option value='512'>Dr. Venkat Subramaniam</option>
+	<option value='575'>Drew Dara-Abrams</option>
+	<option value='348'>Duncan Ross</option>
+	<option value='491'>Dusty Phillips</option>
+	<option value='569'>DW Wheeler</option>
+	<option value='54'>Dylan Field</option>
+	<option value='55'>E.A. Vander Veer</option>
+	<option value='56'>Edd Dumbill</option>
+	<option value='236'>Edie Freedman</option>
+	<option value='465'>Eli Goodman</option>
+	<option value='392'>Elisabeth Robson</option>
+	<option value='58'>Elizabeth Corcoran</option>
+	<option value='544'>Ellen Friedman</option>
+	<option value='570'>Elliott Hauser</option>
+	<option value='514'>Elliotte Rusty Harold</option>
+	<option value='434'>Emma Jane Westby</option>
+	<option value='59'>Eoin Purcell</option>
+	<option value='451'>Eric Redmond</option>
+	<option value='60'>Eric Ries</option>
+	<option value='500'>Ezra Haber Glenn</option>
+	<option value='541'>Faye Williams</option>
+	<option value='578'>Federico Castanedo</option>
+	<option value='503'>Federico Lucifredi</option>
+	<option value='62'>Fred Trotter</option>
+	<option value='515'>Fred van den Bosch</option>
+	<option value='68'>Gabe Zichermann</option>
+	<option value='63'>Gavin Starks</option>
+	<option value='463'>George Reese</option>
+	<option value='519'>Glen Martin</option>
+	<option value='67'>Greg Whisenant</option>
+	<option value='66'>Gretchen Giles</option>
+	<option value='436'>Gustavo Franco</option>
+	<option value='581'>Hadley Wickham</option>
+	<option value='513'>Hari K Gottipati</option>
+	<option value='69'>Heather McCormack</option>
+	<option value='511'>Hew Wolff</option>
+	<option value='70'>Howard Wen</option>
+	<option value='71'>Hugh McGuire</option>
+	<option value='72'>Imran Ali</option>
+	<option value='470'>J. Paul Reed</option>
+	<option value='73'>James Bridle</option>
+	<option value='74'>James Turner</option>
+	<option value='338'>Janaya Williams</option>
+	<option value='558'>Jane Sarasohn-Kahn</option>
+	<option value='75'>Jason Grigsby</option>
+	<option value='573'>Jay Kreps</option>
+	<option value='529'>Jay McGavren</option>
+	<option value='350'>Jayant Shekar</option>
+	<option value='77'>Jeevan Padiyar</option>
+	<option value='429'>Jeff Gothelf</option>
+	<option value='375'>Jeff Needham</option>
+	<option value='530'>Jeffrey Carr</option>
+	<option value='78'>Jeffrey Carr</option>
+	<option value='80'>Jenn Webb</option>
+	<option value='81'>Jennifer Pahlka</option>
+	<option value='583'>Jeremy Freeman</option>
+	<option value='82'>Jeremy Howard</option>
+	<option value='83'>Jesper Andersen</option>
+	<option value='438'>Jesse Anderson</option>
+	<option value='84'>Jesse Robbins</option>
+	<option value='391'>Jessica McKellar</option>
+	<option value='534'>Jez Humble</option>
+	<option value='88'>Jim Stogdill</option>
+	<option value='87'>Jimmy Guterman</option>
+	<option value='342'>Jo Prichard</option>
+	<option value='89'>Jodee Rich</option>
+	<option value='340'>Joe Procopio</option>
+	<option value='413'>Johan Bergström</option>
+	<option value='92'>John Allspaw</option>
+	<option value='93'>John Battelle</option>
+	<option value='457'>John Boxall</option>
+	<option value='349'>John Feland</option>
+	<option value='351'>John Foreman</option>
+	<option value='86'>John Geraci</option>
+	<option value='85'>John Graham-Cumming</option>
+	<option value='94'>John Labovitz</option>
+	<option value='564'>John Lindquist</option>
+	<option value='495'>John Myles White</option>
+	<option value='95'>John Warren</option>
+	<option value='561'>John Wilbanks</option>
+	<option value='255'>Jon Bruner</option>
+	<option value='498'>Jon Callas</option>
+	<option value='555'>Jon Cowie</option>
+	<option value='444'>Jon Roberts</option>
+	<option value='101'>Jon Spinney</option>
+	<option value='98'>Jon Udell</option>
+	<option value='585'>Jonas Luster</option>
+	<option value='96'>Jonathan Alexander</option>
+	<option value='177'>Jonathan Reichental, Ph.D.</option>
+	<option value='499'>Jonathon Thurman</option>
+	<option value='97'>Jono Bacon</option>
+	<option value='90'>Joseph Hellerstein</option>
+	<option value='99'>Joseph J. Esposito</option>
+	<option value='546'>Josh Lockhart</option>
+	<option value='509'>Josh Simmons</option>
+	<option value='100'>Joshua-Michéle Ross</option>
+	<option value='464'>Joy Beatty</option>
+	<option value='103'>Jud Valeski</option>
+	<option value='104'>Julie Steele</option>
+	<option value='106'>Justin Hall</option>
+	<option value='107'>Justo Hidalgo</option>
+	<option value='117'>Karl Fogel</option>
+	<option value='108'>Kassia Krozser</option>
+	<option value='112'>Kat Meyer</option>
+	<option value='109'>Kate Eltham</option>
+	<option value='110'>Kate Pullinger</option>
+	<option value='453'>Kathryn Barrett</option>
+	<option value='111'>Kathy Walrath</option>
+	<option value='458'>Katie Cunningham</option>
+	<option value='557'>Katie Miller</option>
+	<option value='525'>Keith Comito</option>
+	<option value='113'>Keith Fahlgren</option>
+	<option value='114'>Ken Yarmosh</option>
+	<option value='115'>Kevin Shockey</option>
+	<option value='116'>Kevin Smokler</option>
+	<option value='454'>Khaled El Emam</option>
+	<option value='424'>Kipp Bradford</option>
+	<option value='469'>Kit Seeborg</option>
+	<option value='492'>kmatsudaira</option>
+	<option value='118'>Kurt Cagle</option>
+	<option value='523'>Lara Swanson</option>
+	<option value='121'>Laura Dawson</option>
+	<option value='412'>Laura Klein</option>
+	<option value='339'>Laurel Ruma</option>
+	<option value='122'>Laurie Petrycki</option>
+	<option value='123'>Leigh Dodds</option>
+	<option value='125'>Liliana Bounegru</option>
+	<option value='126'>Linda Stone</option>
+	<option value='127'>Liza Daly</option>
+	<option value='128'>Lucy Gray</option>
+	<option value='129'>Lukas Biewald</option>
+	<option value='151'>Mac Slocum</option>
+	<option value='130'>Madhusudhan Konda</option>
+	<option value='396'>Mandi Walls</option>
+	<option value='489'>Manish Lachwani</option>
+	<option value='132'>Marc Goodman</option>
+	<option value='131'>Marc Hedlund</option>
+	<option value='133'>Marie Bjerede</option>
+	<option value='134'>Mark Drapeau</option>
+	<option value='447'>Mark Grover</option>
+	<option value='431'>Mark Lutz</option>
+	<option value='135'>Mark Nelson</option>
+	<option value='554'>Mark Pacelle</option>
+	<option value='150'>Mark Sigal</option>
+	<option value='136'>Marko Gargenta</option>
+	<option value='291'>Mary Treseler</option>
+	<option value='142'>Matt Garrish</option>
+	<option value='567'>Matt Makai</option>
+	<option value='473'>Matt Neuburg</option>
+	<option value='140'>Matt Wood</option>
+	<option value='137'>Matthew Burton</option>
+	<option value='460'>Matthew Gast</option>
+	<option value='408'>Matthew McCullough</option>
+	<option value='138'>Matthew Russell</option>
+	<option value='468'>Matthew Russell</option>
+	<option value='387'>Max Kanat-Alexander</option>
+	<option value='388'>Max Shron</option>
+	<option value='289'>Meghan Blanchette</option>
+	<option value='579'>Mehdi Daoudi</option>
+	<option value='445'>Michael DeHaan</option>
+	<option value='144'>Michael Driscoll</option>
+	<option value='145'>Michael Ferrari</option>
+	<option value='456'>Michael Gold</option>
+	<option value='450'>Michael Hunger</option>
+	<option value='146'>Michael Jon Jensen</option>
+	<option value='476'>Michael Lopp</option>
+	<option value='532'>Michael McMillan</option>
+	<option value='537'>Michael Scroggins</option>
+	<option value='406'>Mike Amundsen</option>
+	<option value='418'>Mike Barlow</option>
+	<option value='147'>Mike Hendrickson</option>
+	<option value='143'>Mike Honda</option>
+	<option value='148'>Mike Loukides</option>
+	<option value='487'>Mike Petrovich</option>
+	<option value='149'>Mike Shatzkin</option>
+	<option value='493'>Mitchell Hashimoto</option>
+	<option value='352'>Naomi Robbins</option>
+	<option value='152'>Nat Torkington</option>
+	<option value='214'>Nate Osit</option>
+	<option value='308'>Nathan Jepson</option>
+	<option value='155'>Nick Bilton</option>
+	<option value='156'>Nick Farina</option>
+	<option value='420'>Nick Kolegraff</option>
+	<option value='157'>Nick Ruffilo</option>
+	<option value='341'>Nicolas Garcia Belmonte</option>
+	<option value='158'>Nikolaj Nyholm</option>
+	<option value='159'>O&#039;Reilly Radar</option>
+	<option value='354'>O&#039;Reilly Strata</option>
+	<option value='497'>Ohad Samet</option>
+	<option value='160'>Osman Rashid</option>
+	<option value='161'>Pablo Francisco Arrieta Gomez</option>
+	<option value='518'>Paco Nathan</option>
+	<option value='162'>Pamela Samuelson</option>
+	<option value='589'>Paris Buttfield-Addison</option>
+	<option value='549'>Patrick Mulder</option>
+	<option value='553'>Patrick Reynolds</option>
+	<option value='163'>Paul Spinrad</option>
+	<option value='524'>Pete Hodgson</option>
+	<option value='167'>Pete Warden</option>
+	<option value='166'>Peter Bennett</option>
+	<option value='307'>Peter Cooper</option>
+	<option value='371'>Peter Krautzberger</option>
+	<option value='294'>Peter Laflin</option>
+	<option value='590'>Peter Lewis</option>
+	<option value='164'>Peter Meyers</option>
+	<option value='521'>Philip Guo</option>
+	<option value='455'>Philipp Janert</option>
+	<option value='404'>Q Ethan McCallum</option>
+	<option value='169'>Quinn Norton</option>
+	<option value='172'>Rachel Roumeliotis</option>
+	<option value='173'>Rael Dornfest</option>
+	<option value='522'>Rajat Bhargava</option>
+	<option value='174'>Ramez Naam</option>
+	<option value='175'>Randy Bias</option>
+	<option value='176'>Raven Zachary</option>
+	<option value='443'>Ray DiGiacomo, Jr.</option>
+	<option value='263'>Renee DiResta</option>
+	<option value='485'>Richard Cook</option>
+	<option value='439'>Richard Dallaway</option>
+	<option value='423'>Richard Reese</option>
+	<option value='552'>Richard Warburton</option>
+	<option value='183'>Rob Tucker</option>
+	<option value='179'>Robbie Allen</option>
+	<option value='182'>Robert Kaye</option>
+	<option value='181'>Robert Passarella</option>
+	<option value='180'>Roberta Cairney</option>
+	<option value='548'>Roger Chen</option>
+	<option value='184'>Roger Magoulas</option>
+	<option value='287'>Ron Miller</option>
+	<option value='178'>Roseanne Fallin</option>
+	<option value='484'>Ryan Bethencourt</option>
+	<option value='551'>Ryan Neufeld</option>
+	<option value='185'>Ryan Stewart</option>
+	<option value='568'>Sam Newman</option>
+	<option value='540'>Samuel Mullen</option>
+	<option value='186'>Sanders Kleinfeld</option>
+	<option value='191'>Sara Peyton</option>
+	<option value='187'>Sara Winge</option>
+	<option value='189'>Sarah Milstein</option>
+	<option value='190'>Sarah Novotny</option>
+	<option value='531'>Scott Jenson</option>
+	<option value='566'>Scott Murray</option>
+	<option value='563'>Scott Rich</option>
+	<option value='192'>Scott Ruthfield</option>
+	<option value='449'>Sean McGregor</option>
+	<option value='194'>Sébastien Pierre</option>
+	<option value='547'>Semmy Purewal</option>
+	<option value='409'>Seth Ladd</option>
+	<option value='195'>Shahid Shah</option>
+	<option value='504'>Shai Almog</option>
+	<option value='586'>Shyam Seshadri</option>
+	<option value='196'>Silona Bonewald</option>
+	<option value='576'>Simon Chan</option>
+	<option value='215'>Simon Phipps</option>
+	<option value='198'>Simon St. Laurent</option>
+	<option value='197'>Simon Wardley</option>
+	<option value='363'>Stephen O&#039;Grady</option>
+	<option value='475'>Stephen O&#039;Grady</option>
+	<option value='199'>Steve Souders</option>
+	<option value='560'>Steven Citron-Pousty</option>
+	<option value='417'>Stoyan Stefanov</option>
+	<option value='200'>Suzanne Axtell</option>
+	<option value='202'>Tara Hunt</option>
+	<option value='572'>Terrence Dorsey</option>
+	<option value='203'>Terry Jones</option>
+	<option value='201'>Tim Anderson</option>
+	<option value='459'>Tim Darling</option>
+	<option value='204'>Tim O&#039;Reilly</option>
+	<option value='205'>Timothy M. O&#039;Brien</option>
+	<option value='206'>Tish Shute</option>
+	<option value='526'>Toby Inkster</option>
+	<option value='207'>Todd Sattersten</option>
+	<option value='432'>Tom Eisenmann</option>
+	<option value='208'>Tom Steinberg</option>
+	<option value='209'>Tony Quartarolo</option>
+	<option value='502'>Trisha Gee</option>
+	<option value='210'>Troy Topnik</option>
+	<option value='211'>Tyler Bell</option>
+	<option value='538'>Valeri Karpov</option>
+	<option value='474'>Vandad Nahvandipoor</option>
+	<option value='212'>Vanessa Fox</option>
+	<option value='535'>Varun Nagaraj</option>
+	<option value='346'>Will Cukierski</option>
+	<option value='580'>William O&#039;Connor</option>
+	<option value='401'>Zigurd Mednieks</option>
+</select>					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div id="text-10" class="widget-container widget_text"><h3 class="widget-title">CONTACT US</h3>			<div class="textwidget"><p style=" font-size: 12px;  line-height: 1.3; font-weight: bold;">Radar managing editor <br /> 
+<a href="mailto:contactradar@oreilly.com?subject=Contact Radar">Jenn Webb</a></p></div>
+		<div class="clear"></div></div>	<div class="clear"></div>
+</div>	</div><!-- #container -->
+	</div><!-- #main -->
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+			<div id="footer-top">			
+							<div class="execphpwidget"><div class="label">
+Sign up today to receive special discounts,<br> product alerts, and news from O'Reilly.</div>
+<div class="form">
+	<form method="POST" id="emailSignUp" action="http://post.oreilly.com/client/o/oreilly/forms/quicksignup.cgi"> 
+		<input type="hidden" name="client_token" value="oreilly" />
+		<input type="hidden" name="subscribe" value="optin" />
+                 <input type="hidden" name="success_url" value="http://oreilly.com/store/newsletter-thankyou.html" /> 
+                  <input type="hidden" name="error_url" value="http://oreilly.com/store/newsletter-signup-error.html" /> 
+                  <input type="hidden" name="news_oreilly" value="1" />
+		  <input type="text" name="email_addr" value="Enter Email" onblur="if (this.value == '')  {this.value = 'Enter Email';}" onfocus="if (this.value == 'Enter Email') {this.value = '';}" widdit="off" autocomplete="off" maxlength="100" size="12" class="email-box" />
+		 <input border="0" type="image" alt="Submit" src="http://cdn.oreillystatic.com/images/sitewide-headers/emailsignup_btn.gif" name="submit" value="submit">
+		<div class="clear"></div>
+	</form>
+</div>
+<div class="privacy">					
+	<a href="http://oreilly.com/oreilly/privacy.html">Privacy Policy &gt;</a>					
+	<a href="http://oreilly.com/pdf/sample-newsletter.pdf">View Sample Newsletter &gt;</a>		
+</div>
+</div>
+			
+				
+				<div class="menu-social-btm"><ul id="menu-social-btn-bottom" class="menu"><li id="menu-item-48494" class="social twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-48494"><a href="http://twitter.com/oreillymedia">Twitter</a></li>
+<li id="menu-item-48491" class="social youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-48491"><a href="http://youtube.com/oreillymedia">YouTube</a></li>
+<li id="menu-item-48492" class="social slideshare menu-item menu-item-type-custom menu-item-object-custom menu-item-48492"><a href="http://slideshare.net/oreillymedia">Slideshare</a></li>
+<li id="menu-item-48493" class="social facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-48493"><a href="https://www.facebook.com/OReillyRadar">Facebook</a></li>
+<li id="menu-item-48495" class="social googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-48495"><a href="https://plus.google.com/105451978536505503907">Google+</a></li>
+<li id="menu-item-48496" class="social rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48496"><a href="http://feeds.feedburner.com/oreilly/news">RSS</a></li>
+<li id="menu-item-48497" class="all-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48497"><a href="http://oreilly.com/feeds">View All RSS Feeds ></a></li>
+</ul></div>				<div class="clear"></div>
+			</div>
+							<div class="execphpwidget"><div id="multiColumnFooter">	
+<div id="footer-branding">
+		<p class="copyright">&copy; 2014, O'Reilly Media, Inc.</p>
+		<p><span class="phone-number">(707) 827-7019</span><span class="phone-number">(800) 889-8969</span></p>
+		<p class="trademarks">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+	</div>
+	
+	<div class="contentSectionBlock">
+		<!-- style="width:25%;" -->
+		<div class="contentSectionContainer">			
+				<h3>About O'Reilly</h3>
+				<div class="menu-about-oreilly-container"><ul id="menu-about-oreilly" class="menu"><li id="menu-item-50110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50110"><a href="http://radar.oreilly.com/about/">About O&#8217;Reilly Radar</a></li>
+<li id="menu-item-67911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67911"><a href="http://radar.oreilly.com/radar-contributors/">Radar Contributors</a></li>
+<li id="menu-item-48510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48510"><a href="http://oreilly.com/academic/">Academic Solutions</a></li>
+<li id="menu-item-48511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48511"><a href="http://oreilly.com/jobs/">Jobs</a></li>
+<li id="menu-item-48512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48512"><a href="http://oreilly.com/contact.html">Contacts</a></li>
+<li id="menu-item-48513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48513"><a href="http://oreilly.com/about/">Corporate Information</a></li>
+<li id="menu-item-48514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48514"><a href="http://press.oreilly.com/index.html">Press Room</a></li>
+<li id="menu-item-48515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48515"><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+<li id="menu-item-48516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48516"><a href="http://oreilly.com/terms/">Terms of Service</a></li>
+<li id="menu-item-48517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48517"><a href="http://oreilly.com/oreilly/author/intro.csp">Writing for O&#8217;Reilly</a></li>
+<li id="menu-item-68743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68743"><a href="http://www.oreilly.com/about/editorial_independence.html">Editorial Independence</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Community</h3>
+				<div class="menu-community-2-container"><ul id="menu-community-2" class="menu"><li id="menu-item-48518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48518"><a href="http://oreilly.com/authors/">Authors</a></li>
+<li id="menu-item-48519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48519"><a href="http://oreilly.com/community/">Community &#038; Featured Users</a></li>
+<li id="menu-item-48520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48520"><a href="http://forums.oreilly.com/">Forums</a></li>
+<li id="menu-item-48521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48521"><a href="https://members.oreilly.com/">Membership</a></li>
+<li id="menu-item-48522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48522"><a href="http://elists.oreilly.com/">Newsletters</a></li>
+<li id="menu-item-48523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48523"><a href="http://answers.oreilly.com/">O&#8217;Reilly Answers</a></li>
+<li id="menu-item-48524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48524"><a href="http://oreilly.com/feeds/">RSS Feeds</a></li>
+<li id="menu-item-56120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56120"><a href="http://chimera.labs.oreilly.com/">O&#8217;Reilly Chimera (beta)</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">	
+                                <h3>Partner Sites</h3>
+				  <div class="menu-partner-sites-container"><ul id="menu-partner-sites" class="menu"><li id="menu-item-48503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48503"><a target="_blank" href="http://makezine.com/">makezine.com</a></li>
+<li id="menu-item-48504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48504"><a target="_blank" href="http://makerfaire.com/">makerfaire.com</a></li>
+<li id="menu-item-55273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55273"><a target="_blank" href="http://craftzine.com/">craftzine.com</a></li>
+<li id="menu-item-55274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55274"><a target="_blank" href="http://igniteshow.com/">igniteshow.com</a></li>
+<li id="menu-item-55275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55275"><a target="_blank" href="https://developer.paypal.com/">PayPal Developer Zone</a></li>
+<li id="menu-item-55276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55276"><a target="_blank" href="http://blogs.forbes.com/oreillymedia/">O&#8217;Reilly Insights on Forbes.com</a></li>
+</ul></div>			
+		</div>
+			
+
+		<!-- style="width:24%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Shop O'Reilly</h3>
+			<div class="menu-shop-oreilly-container"><ul id="menu-shop-oreilly" class="menu"><li id="menu-item-48505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48505"><a href="http://shop.oreilly.com/category/customer-service.do">Customer Service</a></li>
+<li id="menu-item-48506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48506"><a href="http://shop.oreilly.com/category/customer-service.do">Contact Us</a></li>
+<li id="menu-item-48507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48507"><a href="http://shop.oreilly.com/category/customer-service/shipping-information.do">Shipping Information</a></li>
+<li id="menu-item-48508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48508"><a href="http://shop.oreilly.com/category/customer-service/ordering-payment.do">Ordering &#038; Payment</a></li>
+<li id="menu-item-56665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56665"><a href="http://oreilly.com/affiliates/">Affiliate Program</a></li>
+<li id="menu-item-48509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48509"><a href="http://shop.oreilly.com/category/customer-service/oreilly-guarantee.do">The O&#8217;Reilly Guarantee</a></li>
+</ul></div>		
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+<div class="clear"></div>
+</div></div>
+			
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+</div><!-- #wrapper -->
+<script language="JavaScript" type="text/javascript">
+var s_account="orradar,orglobal" // change report suite ID accordingly
+</script>
+<!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://cdn.oreillystatic.com/assets/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+s.pageName="radar:operations the secret sauce revisited"
+s.channel= "radar"
+s.prop1="radar:radar"
+s.prop2="radar:radar:radar"
+s.prop3="radar:radar:radar:radar"
+s.prop4="article"
+s.hier1="radar,radar,radar,radar"
+s.prop5="operations the secret sauce revisited"
+s.prop6="RD40362"
+s.prop7="08/02/2010" // publish date
+//s.prop15=""
+//These props should be set when a blog/article is read, post or reply made.
+s.prop21="andrew shafer" // author name
+s.prop22="radar" // blog name
+s.prop23="operations the secret sauce revisited" // entry title
+s.prop24="08/02/2010" // post date
+//s.prop25="" // days since last post
+s.prop26="monday" // day of week
+s.prop27="" // Level
+/* Conversion Variables */
+s.campaign=""
+s.events=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+<script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"radar.oreilly.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<style type="text/css">
+#newsletter-popup-overlay { display: none; position: absolute; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); background: none\9; }
+#newsletter-popup-overlay .popup { overflow: hidden; margin: 10% auto 0; background-color: #f9f9f9; text-align: center; width: 740px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); border: 2px solid #ddd; }
+#newsletter-popup-overlay .popup .popup-header { background-color: #fff; padding: 10px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+#newsletter-popup-overlay .popup.data .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/data-nl-popup-fish.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.programming .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.solid .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.velocity .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/velocity-nl-popup-greyhound.jpg') -4px bottom no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close { font-size: 16px; line-height: 19px; color: #999; display: block; padding-right: 24px; float: right; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right 0 no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close:hover { color: #666; text-decoration: none; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right -100px no-repeat; }
+#newsletter-popup-overlay .popup .popup-header h3 { max-width: 500px; width: 100%; margin: 20px auto 5px auto; padding: 0; font-size: 40px; line-height: 44px; font-weight: normal; }
+#newsletter-popup-overlay .popup .popup-header p { max-width: 500px; width: 100%; margin: 0 auto 10px; padding: 0; font-size: 20px; line-height: 28px; font-weight: normal; }
+#newsletter-popup-overlay .popup-form { margin: 15px auto 0; padding: 10px 10px 5px 10px; text-align: left; }
+#newsletter-popup-overlay #newsletter-popup-frame { display: block; border: none; padding: 0; margin: 0 auto; width: 100%; max-width: 450px; height: 100px; text-align: left; }
+@media screen and (max-width: 950px) {
+  #newsletter-popup-overlay .popup{ width: 96% !important; }
+}
+@media screen and (max-width:740px) {
+  #newsletter-popup-overlay .popup.data .popup-header, #newsletter-popup-overlay .popup.programming .popup-header, #newsletter-popup-overlay .popup.solid .popup-header, #newsletter-popup-overlay .popup.velocity .popup-header { background: #fff; }
+  #newsletter-popup-overlay .popup .popup-header h3 { font-size:30px; line-height:32px; }
+}
+</style>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/newsletter.js"></script>
+
+
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'oreillyradar';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<!-- MathJax Latex Plugin installed: Disabled as no shortcodes on this page --><script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/comment-reply.min.js?ver=4.0'></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery('.fluid-width-video-wrapper iframe').each(function(){
+    var youtube_url = jQuery(this).attr('src');
+    if(youtube_url.substring(0,2) == "//"){
+      youtube_url = youtube_url.substring(2);
+    }
+    var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+    if(youtube_url.match(p)){
+      var youtube = youtube_url.split('/');
+      var youtube_last_index = youtube[4].split('?');
+      var youtube_id = youtube_last_index[0];
+      var new_div = document.createElement("div");
+      jQuery(new_div).addClass('js-lazyYT');
+      jQuery(new_div).attr('data-youtube-id',youtube_id);
+      jQuery(new_div).attr('data-ratio','16:9');
+      jQuery(this).after(new_div);
+      jQuery(this).parent().css("padding","0");
+      jQuery(this).remove();
+      jQuery('.lazyYT-title').hide();
+    }
+  });
+  jQuery('.js-lazyYT').lazyYT();
+});
+
+</script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/lazyYT.min.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/script.js??ss=1"></script>
+<script> 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() 
+  { (i[r].q=i[r].q||[]).push(arguments)} 
+  ,i[r].l=1*new 
+  Date();a=s.createElement(o), 
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+  ga('create', 'UA-22979035-1', 'auto'); 
+  ga('send', 'pageview'); 
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+status: 301
+content-length: 304
+content-location: http://artistdata.com/a/dbo1
+set-cookie: BALANCEID=balancer.as0; path=/; domain=.artistdata.com
+vary: Accept-Encoding
+server: Apache
+-content-encoding: gzip
+location: http://www.artistdata.com/a/dbo1
+date: Sun, 28 Sep 2014 17:02:43 GMT
+-x-permanent-redirect-url: http://www.artistdata.com/a/dbo1
+content-type: text/html; charset=iso-8859-1
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.artistdata.com/a/dbo1">here</a>.</p>
+<hr>
+<address>Apache Server at artistdata.com Port 80</address>
+</body></html>

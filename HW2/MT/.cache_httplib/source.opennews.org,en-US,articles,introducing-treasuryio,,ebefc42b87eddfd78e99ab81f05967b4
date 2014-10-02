@@ -1,0 +1,294 @@
+status: 200
+content-length: 28137
+content-location: https://source.opennews.org/en-US/articles/introducing-treasuryio/
+set-cookie: anoncsrf=LT4ya2AnWqAwCsDnplhtKzO71VnGKGqR;
+ expires=Sun, 28-Sep-2014 19:04:32 GMT; httponly; Max-Age=7200; Path=/; secure
+expires: Sun, 28 Sep 2014 17:19:32 GMT
+vary: Cookie,Accept-Encoding
+server: Apache
+last-modified: Sun, 28 Sep 2014 17:04:32 GMT
+connection: keep-alive
+-content-encoding: gzip
+cache-control: max-age=900
+date: Sun, 28 Sep 2014 17:04:32 GMT
+x-frame-options: DENY
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html LANG="en-US" dir="ltr">
+    <head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title> Introducing Treasury.IO - Features - Source: An OpenNews project</title>
+        <meta name="description" content="Source - Journalism Code, Context & Community">
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/static/CACHE/css/7e52061398e4.css" type="text/css" />        <!--[if IE 7]>
+        <link href="/static/base/css/font-awesome-ie7.min.css" rel="stylesheet">
+        <![endif]-->
+                        <link rel="shortcut icon" href="/static/base/img/favicon.ico" />
+        <script type="text/javascript" src="/static/CACHE/js/6d682fd53666.js"></script>                                    <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-35433268-15']);
+                    _gaq.push(['_setDomainName', 'opennews.org']);
+                    _gaq.push(['_trackPageview']);
+
+                    (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+                </script>
+                                </head>
+
+        <body>
+        <div id="snap-content-wrapper" class="snap-content overthrow">
+            <header id="topbar">
+                                <div class="container">
+                    <form class="search-form" method="get" action="/en-US/search/">
+                        <input type="text" name="q" id="id_q" />
+                        <input class="btn" type="submit" value="Search">
+                    </form>
+                
+                    <ul id="navigation">
+                                                                                        <li class="active" id="nav-articles"><a href="/articles/">Features</a></li>                                            <li id="nav-learning"><a href="/learning/">Learning</a></li>                                            <li id="nav-guides"><a href="/guides/">Guides</a></li>                                            <li id="nav-community"><a href="/people/">Community</a></li>                                            <li id="nav-code"><a href="/code/">Code</a></li>                                            <li id="nav-jobs"><a href="/jobs/">Jobs</a></li>                                            <li id="nav-search"><a href="/search/">Search</a></li>                                        </ul>
+                    <a class="toggle-navigation" href="#"><i class="icon-reorder"></i></a>
+
+                    <a href="/en-US/"><img src="/static/base/img/source_retina_top.png" alt="Source" class="sourcelogomin"></a>
+                </div>
+            </header>
+            <div class="content">
+                <div class="container page-block">
+                                        <a href="/en-US/"><img id="main-logo" src="/static/base/img/source_retina.png" alt="Source"></a>
+                                    </div>
+        
+                <div class="container">
+                                        <article class="article-detail">    
+    <h2><span class="category"><a href="/en-US/category/project/">Project</a> <span class="tags"><a href="/en-US/articles/tags/sqlite3/">SQLite3</a> <a href="/en-US/articles/tags/treasury/">Treasury</a> <a href="/en-US/articles/tags/python/">Python</a> <a href="/en-US/articles/tags/data/">data</a></span></span>
+
+Introducing&nbsp;Treasury.<span class="caps">IO</span></h2>
+    <h4 class="subhead">How we made a daily data feed for the U.S.&nbsp;Treasury</h4>
+    
+    <aside>
+        <div class="byline">
+            
+                        
+            <h6 class="date">January 7,&nbsp;2014</h6>
+            <h6 class="byline-name">By <a href="/people/michael-keller/">Michael Keller</a>, <a href="/people/cezary-podkul/">Cezary Podkul</a></h6>
+            <ul class="link-list">
+                <li><i class="icon-comments"></i> <a href="https://source.opennews.org/articles/introducing-treasuryio/#disqus_thread" data-disqus-identifier="article_detail_221">Comments</a></li>
+            </ul>
+        </div>
+
+        <div class="article-people">
+                        
+                            <h3 class="subhead list-header">People</h3>    <ul class="link-list">        <li><i class="icon-user"></i> <a href="/people/brian-abelson/">Brian Abelson</a></li>
+                <li><i class="icon-user"></i> <a href="/people/jake-bialer/">Jake Bialer</a></li>
+                <li><i class="icon-user"></i> <a href="/people/burton-dewilde/">Burton DeWilde</a></li>
+                <li><i class="icon-user"></i> <a href="/people/michael-keller/">Michael Keller</a></li>
+                <li><i class="icon-user"></i> <a href="/people/thomas-levine/">Thomas Levine</a></li>
+                <li><i class="icon-user"></i> <a href="/people/ashley-williams/">Ashley Williams</a></li>
+    </ul>
+                                </div>
+    </aside>
+    
+    <p>If there’s been one recent theme in Washington it’s the deep disagreements over how federal money should be spent and how we fund the spending: taxes or borrowing. Yet, public access to data on these subjects is extremely difficult to find. You have two&nbsp;choices:</p>
+<ol><li><p>You can get some figures from the <a href="http://www.cbo.gov/publication/44552">Congressional Budget Office</a> or <a href="http://www.whitehouse.gov/omb/budget/Historicals">Office of Management and Budget</a> but you’ll only get bits and pieces of programs aggregated in the <span class="caps">CBO</span>’s monthly reports or <span class="caps">OMB</span>’s annual summaries of various&nbsp;statistics.</p></li>
+<li><p>You can get more timely and granular data from the <span class="caps">U.S.</span> Treasury. The Treasury&#8217;s <a href="http://www.fms.treas.gov/dts/index.html">Daily Treasury Statement</a> lists actual cash spending down to the million on everything the government spent money on each day, as well as how it funded the spending. But, the Treasury only releases these files in <span class="caps">PDF</span> or <a href="https://fms.treas.gov/fmsweb/viewDTSFiles?dir=a&fname=13101000.txt">fixed-width text files like this one</a>, making any analysis very&nbsp;difficult.</p></li></ol>
+<p>It’s a shame that the data is released in this format because each file provides a comprehensive daily summary of the cash position of the <span class="caps">U.S.</span> Treasury. One table provides cash withdrawals from the Treasury, by program, another breaks down deposits, while a third summarizes debt issuances and repayments. A fourth table summarizes tax income, and so&nbsp;on.</p>
+<p>To liberate the data and make it easy to analyze federal money flows across time, we created <a href="http://treasury.io/">Treasury.<span class="caps">IO</span></a>. The system we built downloads and parses the fixed-width files into a standard schema, creating a SQLite database that can be directly queried via a <span class="caps">URL</span> endpoint. The <span class="caps">URL</span> format&nbsp;is:</p>
+<pre><code>http://api.treasury.io/cc7znvq/47d80ae900e04f2/sql/?q=<span style="color:blue;">YOUR_QUERY</span></code></pre>
+<p>Where <code><span style="color:blue;">YOUR_QUERY</span></code> is a <span class="caps">SQL</span> query of the data (more on that in sample query section&nbsp;below).</p>
+    
+        <div class="article-block">
+        <h3 id="what-you-can-do-data">What You Can Do with the&nbsp;Data</h3>
+                
+        <p>Treasury.<span class="caps">IO</span> has opened the door for various visualizations and&nbsp;analyses:</p>
+<ul>
+<li>Time used the data to power a <a href="http://swampland.time.com/2013/10/15/see-for-yourself-uncle-sams-bank-account-running-low/">tracker of daily government cash holdings</a> during the shutdown and debt ceiling&nbsp;crisis.</li>
+<li>Reuters used Treasury.<span class="caps">IO</span> to <a href="http://www.reuters.com/article/2013/10/16/usa-fiscal-workers-idUSL1N0I523I20131016">analyze federal payroll data</a> for a story on the effect of the shutdown on federal employees’&nbsp;wallets.</li>
+<li>Al Jazeera America tapped Sunlight Foundation’s Capitol Words <span class="caps">API</span> and Treasury.<span class="caps">IO</span> <a href="http://america.aljazeera.com/content/ajam/articles/multimedia/graphic-the-politicizationofthedebtceilinginonegraph.html">to make a chart</a> which matches up mentions of the “debt ceiling” in Congress with shifts in the debt ceiling to show the issue’s politicization over&nbsp;time.</li>
+<li>On our <a href="https://github.com/csvsoundsystem/federal-treasury-api/wiki/Sample-Treasury.IO-queries">sample queries page</a>, we provide information on how to write the queries to produce these and other&nbsp;analyses.</li>
+</ul>
+        
+            </div>
+        <div class="article-block">
+        <h3 id="how-access-data">How to Access the&nbsp;Data</h3>
+                
+        <p>The data can be accessed in four different&nbsp;ways:</p>
+<ol>
+<li>A user-friendly query builder which lets you select, graph, and download data from each table at <a href="http://treasury.io">Treasury.<span class="caps">IO</span></a>.</li>
+<li><a href="http://treasury.io/#libraries">Convenience libraries</a> to query the database and return a <span class="caps">CSV</span>, data.frame, or <span class="caps">JSON</span> in Python, R, JavaScript, Node.js, Ruby, or Google&nbsp;Docs.</li>
+<li>A SQLite database, updated daily that <a href="http://api.treasury.io/cc7znvq/47d80ae900e04f2/http/treasury_data.db">you can&nbsp;download.</a></li>
+<li>A <a href="https://github.com/csvsoundsystem/federal-treasury-api/tree/just-the-api">stripped-down repository</a> on GitHub which can be cloned to set-up a stand-alone instance of the&nbsp;<span class="caps">API</span>.</li>
+</ol>
+<p>Figuring how to use the data is easy. We’ve created an extensive data dictionary, FAQs, and sample queries <a href="https://github.com/csvsoundsystem/federal-treasury-api/wiki">on our Wiki page</a>, which we are updating with detailed field&nbsp;definitions.</p>
+<h4>Sample&nbsp;Queries</h4>
+<p>Here are a few sample queries to help you get started with the&nbsp;data:</p>
+<p><strong>Question:</strong> How much in salary payments has the Treasury paid out to federal workers during the start of the government&nbsp;shutdown?</p>
+
+<pre><code>http://api.treasury.io/cc7znvq/47d80ae900e04f2/sql/?q=<span style="color:blue;"><span class="caps">SELECT</span> sum(today) <span class="caps">AS</span> SUM_SALARIES <span class="caps">FROM</span> t2 <span class="caps">WHERE</span> ("date" &gt; '2013-09-30' <span class="caps">AND</span> "date" &gt; '2013-10-17') <span class="caps">AND</span> ("transaction_type" = 'withdrawal') <span class="caps">AND</span>  ("item" = 'Federal Salaries ( <span class="caps">EFT</span> )')</span></code></pre>
+
+<p>Or you can run the below query to pull out the salary payments by&nbsp;day:</p>
+
+<pre><code>http://api.treasury.io/cc7znvq/47d80ae900e04f2/sql/?q=<span style="color:blue;"><span class="caps">SELECT</span> "date", "transaction_type", "account", "item", "today" <span class="caps">FROM</span> t2 <span class="caps">WHERE</span> ("date" > '2013-09-30' <span class="caps">AND</span> "date" < '2013-10-17') AND ("transaction_type" = 'withdrawal') AND ("item" = 'Federal Salaries ( EFT )')</span></code></pre>
+
+<p><strong>Answer:</strong> Federal salaries totaled about $6.2 billion during the shutdown. (Per our field definitions, this excludes military active duty&nbsp;pay.)</p>
+
+<p><strong>Question:</strong> How does that compare against a year&nbsp;earlier?</p>
+
+<pre><code>http://api.treasury.io/cc7znvq/47d80ae900e04f2/sql/?q=<span style="color:blue;"><span class="caps">SELECT</span> sum(today) <span class="caps">AS</span> SUM_SALARIES <span class="caps">FROM</span> t2 <span class="caps">WHERE</span> ("date" > '2012-09-30' <span class="caps">AND</span> "date" < '2012-10-17') AND ("transaction_type" = 'withdrawal') AND  ("item" = 'Federal Salaries ( EFT )')</span></code></pre>
+
+<p><strong>Answer:</strong> A year earlier, when there was no shutdown, federal salaries totaled $8.7 billion during the same&nbsp;period.</p>
+
+<p><strong>Question:</strong> How do I get data for visualizing the government’s debt ceiling and debt on a daily&nbsp;basis?</p>
+
+
+<pre><code>http://api.treasury.io/cc7znvq/47d80ae900e04f2/sql/?q=<span style="color:blue;"><span class="caps">SELECT</span> &quot;date&quot;, &quot;item&quot;, &quot;close_today&quot; <span class="caps">FROM</span> t3c</span></code></pre>
+<p><strong>Answer:</strong> Running this query in the query builder on Treasury.<span class="caps">IO</span> will give you this&nbsp;chart:</p>
+
+<div class="image-full-width-wrapper">
+          <img src="/media/img/uploads/article_images/debt_ceiling.JPG" alt="debt ceiling chart">
+ </div>
+
+<p><strong>Question:</strong> What are some quirky things the government spends my tax money on that I might not know&nbsp;about?</p>
+
+
+<pre><code>http://api.treasury.io/cc7znvq/47d80ae900e04f2/sql/?q=<span style="color:blue;"><span class="caps">SELECT</span> * <span class="caps">FROM</span> t2 <span class="caps">WHERE</span> (&quot;transaction_type&quot; = 'withdrawal') <span class="caps">AND</span> (&quot;parent_item&quot; = 'Other Withdrawals') <span class="caps">AND</span> (&quot;is_total&quot; = 0)</span></code></pre>
+<p><strong>Answer:</strong> Run this query to get a list of spending on unusual or non-recurring items, such as Foreign Military Sales, the <span class="caps">TARP</span> bailout program, payments to the Corporation for Public Broadcasting, and&nbsp;more.</p>
+<p>To see more sample queries and story ideas, check out <a href="https://github.com/csvsoundsystem/federal-treasury-api/wiki/Sample-Treasury.IO-queries">the sample query page on our Wiki</a>.</p>
+
+        
+            </div>
+        <div class="article-block">
+        <h3 id="how-it-works">How It&nbsp;Works</h3>
+                                <div class="image-full-width-wrapper">
+                <img src="/media/cache/6f/fd/6ffd640cde4fceacaf53fcc02ce4edfb.png" alt="How It Works">
+                <p class="caption">How the systems interact to make Treasury.<span class="caps">IO</span>&nbsp;work</p>            </div>
+                
+        <p>Each day at 4pm, the Treasury updates its website with the latest Daily Treasury Statement which contains information about daily spending, revenues, and borrowing. Shortly after, TreasuryIO downloads the file and places it in a directory on a cloud server run by <a href="https://scraperwiki.com/">ScraperWiki</a>, a data hosting&nbsp;service.</p>
+<p>Once the file is saved, <a href="https://github.com/csvsoundsystem/federal-treasury-api/blob/master/parser/download_and_parse_fms_fixies.py">our parsing program</a> runs through the directory, detecting any new files that have been added. When it finds a new file, it parses the individual line items, <a href="https://github.com/csvsoundsystem/federal-treasury-api/blob/master/parser/normalize_field_table.json">standardizes names</a>, and inserts data from each section of the Treasury Statement file into the appropriate <a href="http://treasury.io/#documentation">table in our database</a>. Table I shows the daily cash balance, for instance. Table <span class="caps">II</span> lists cash deposits and withdrawals by&nbsp;program.</p>
+<p>The parser stores all of the tables for a given day as a <span class="caps">CSV</span>, which later gets concatenated with the rest of the day and stored in our master SQLite3&nbsp;database.</p>
+<p>The data from the SQLite3 database is served out using <span class="caps">GET</span> requests. To prevent the occasional bottleneck when a lot of requests come in all at once, we use <a href="http://aws.amazon.com/cloudfront/">Amazon CloudFront</a> as a proxy. We also get nice server logs to study how people are using the&nbsp;data.</p>
+<p>We have also created a Twitter bot which tweets out analyses of the data each date. This works by submitting specific queries to our <span class="caps">API</span> and formatting the results as text (<a href="https://raw.github.com/csvsoundsystem/federal-treasury-api/master/twitter/tweetbot.py">see the code here</a>). You can follow <a href="https://twitter.com/TreasuryIO">@TreasuryIO</a> on Twitter to get daily mini-analyses, such as&nbsp;this:</p>
+<blockquote class="twitter-tweet"><p>
+The <span class="caps">US</span> Gov has spent 105% more on food stamps than on <span class="caps">NASA</span> this fiscal year - <a href="http://t.co/qg8EeI1Nvl">http://t.co/qg8EeI1Nvl</a>
+</p>
+— TreasuryIO (<span class="citation">@TreasuryIO</span>) <a href="https://twitter.com/TreasuryIO/statuses/389518506523631617">October 13, 2013</a>
+</blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+        
+            </div>
+        <div class="article-block">
+        <h3 id="data-limitations">Data&nbsp;Limitations</h3>
+                
+        <p>Aggregating or netting the daily spending and revenue data for a government agency or program may not provide a complete snapshot of its finances over time. That’s because the Daily Treasury Statement is a daily snapshot of the government’s finances and does not reflect adjustments the Treasury makes when it reports agencies’ aggregate totals in its <a href="https://www.fms.treas.gov/mts/index.html">Monthly Treasury Statements</a>. So while the daily totals are more timely and granular, aggregating them will not line up exactly with the Treasury’s monthly reporting for each&nbsp;agency.</p>
+
+<p>You might also notice that the data aggregated from Daily Treasury Statements sometimes differs from figures that agencies might report for their spending or budgets. That’s because the data represents the government’s cash spending and borrowing from the Treasury’s perspective. So for example, Treasury breaks out federal salaries as a separate line item in the Daily Treasury Statement, instead of including them in each each agency’s line&nbsp;item. </p>
+
+<p>Because the information can be complicated, even if the format is now easier to use, checking your methodology with experts—as in every piece of data analysis—is always&nbsp;advisable.</p>
+
+<p>Data integrity was one of our major concerns with this project. We run daily sanity checks on the data coming out of the <span class="caps">API</span>. You might also call these “integration tests.” Every day, our tests query the <span class="caps">API</span> and make sure that the data is clean and up-to-date. If data appears to be missing or malformed, we get an&nbsp;email.</p>
+        
+            </div>
+        <div class="article-block">
+        <h3 id="we-made">We Made&nbsp;This</h3>
+                
+        <p>If you notice any quirks, have any questions or have features suggestions, let us know at <a href="mailto:csvsoundsystem@gmail.com">csvsoundsystem@gmail.com</a> or <a href="https://twitter.com/TreasuryIO">@TreasuryIO</a>.</p>
+<p>csv soundsystem (<a href="https://twitter.com/csvsoundsystem">@csvsoundsystem</a>) is a New York City-based journalist-hacker collective. The members who contributed to this project are Brian Abelson (<a href="https://twitter.com/brianabelson">@brianabelson</a>), Jake Bialer (<a href="https://twitter.com/jbialer">@jbialer</a>), Burton DeWilde (<a href="https://twitter.com/bjdewilde">@bjdewilde</a>), Michael Keller (<a href="https://twitter.com/mhkeller">@mhkeller</a>), Thomas Levine (<a href="https://twitter.com/thomaslevine">@thomaslevine</a>), and Cezary Podkul (<a href="https://twitter.com/Cezary">@Cezary</a>), with an assist from Ashley Williams (<a href="https://twitter.com/ag_dubs">@ag_dubs</a>).</p>
+
+        
+            </div>
+    
+        
+            <div class="page-block article-block author-box">
+                <h3 id="about-michael-keller">About <a href="/people/michael-keller/">Michael Keller</a></h3>
+        <p class="twitter-bio">
+            <img src="https://pbs.twimg.com/profile_images/378800000764096628/6614779011ffbbc013531e10f15eb448_normal.jpeg">
+            <p>Michael Keller is a reporter and developer on the <a href="https://twitter.com/ajamviz">Al Jazeera America Interactive Multimedia Team</a> where he alternates between the phone and Sublime Text 2. He is also the co-founder of <a href="https://twitter.com/csvsoundsystem">csv soundsystem</a>, a New York City-based hacker collective and datathon&nbsp;dreamteam.</p>
+        </p>
+            </div>    
+    <aside class="article-people">
+                
+                    <h3 class="subhead list-header">People</h3>    <ul class="link-list">        <li><i class="icon-user"></i> <a href="/people/brian-abelson/">Brian Abelson</a></li>
+                <li><i class="icon-user"></i> <a href="/people/jake-bialer/">Jake Bialer</a></li>
+                <li><i class="icon-user"></i> <a href="/people/burton-dewilde/">Burton DeWilde</a></li>
+                <li><i class="icon-user"></i> <a href="/people/michael-keller/">Michael Keller</a></li>
+                <li><i class="icon-user"></i> <a href="/people/thomas-levine/">Thomas Levine</a></li>
+                <li><i class="icon-user"></i> <a href="/people/ashley-williams/">Ashley Williams</a></li>
+    </ul>
+                    </aside>
+    
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = "source-opennews";
+        //var disqus_developer = 1; // developer mode is on
+        var disqus_identifier = "article_detail_221";
+        var disqus_url = "https://source.opennews.org/articles/introducing-treasuryio/";
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+                                                        </div>
+            </div>
+            <footer class="container">                <section class="external">
+                    <div class="col">
+                        <h2>Connect with Source</h2>
+                        <ul>
+                                                                                    <li><i class="icon-envelope-alt"></i><a href="mailto:opennews@mozillafoundation.org">Contact us</a></li>
+                            <li><a href="/contribute/">Contribute code and articles</a></li>
+                            <li><a href="/subscribe/">Subscribe to our email update</a></li>
+                            <li>Connect on Twitter <a href="http://twitter.com/source" class="twitter-follow-button" data-show-count="false">@source</a></li>
+                            <li><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/80x15.png" /></a> <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"> CC Attribution 3.0</a>
+                        </ul>
+                                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                            </div>
+                    <div class="col">
+                        <h2>About Source</h2>
+                        <p>Source is a <a href="http://www.opennews.org">Knight-Mozilla OpenNews</a> project designed to amplify the impact of journalism code and the community of developers, designers, journalists, and editors who make it. Learn more <a href="/about/">about the project</a> or <a href="/contribute/">contribute your work</a>.</p>
+                    </div>
+                    <div class="col">
+                        <h2>About OpenNews</h2>
+                        <p>A multi-year partnership between <a href="http://www.mozilla.org/foundation/">Mozilla</a> and the <a href="http://www.knightfoundation.org/">Knight Foundation</a>, Knight-Mozilla OpenNews is dedicated to creating an ecosystem to help strengthen and build community around journalism on the web. More at <a href="http://opennews.org">opennews.org</a>.</p>
+                    </div>
+                </section>
+            </footer>
+        </div>
+        <div class="snap-drawers hidden">
+            <div class="snap-drawer snap-drawer-right">
+                <a href="/"><img class="drawer-logo" src="/static/base/img/source_retina_top_invert.png" alt="Source"></a>
+                <ul>
+                                    <li class="" id="nav-home"><a href="/">Home</a></li>
+                                    <li class="indent" id="nav-articles"><a href="/articles/">Features</a></li>
+                                    <li class="indent" id="nav-learning"><a href="/learning/">Learning</a></li>
+                                    <li class="indent" id="nav-guides"><a href="/guides/">Guides</a></li>
+                                    <li class="indent" id="nav-community"><a href="/people/">Community</a></li>
+                                    <li class="indent" id="nav-code"><a href="/code/">Code</a></li>
+                                    <li class="indent" id="nav-jobs"><a href="/jobs/">Jobs</a></li>
+                                    <li class="" id="nav-search"><a href="/search/">Search</a></li>
+                                </ul>
+            </div>
+        </div>
+        
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write("<script src=\"/static/base/js/libs/jquery-1.7.2.min.js\"><\/script>")</script>
+        <script type="text/javascript" src="/static/CACHE/js/f3a8fd27ea3d.js"></script>                <script type="text/javascript">
+    </script>
+        <!-- Page generated: 2014-09-28 10:04:32.551398 -->
+    <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-5.newrelic.com","8159d9620e","3410468","M1JWNxYFWEAFVhdbDgoYchYKB0JaC1tMQQ4RRVcGSgVERw1WD1cSSkFdBhMXDHIWQQpRDQFzURcFDVo=",0,201,new Date().getTime(),"","","","",""]);</script></body>
+</html>

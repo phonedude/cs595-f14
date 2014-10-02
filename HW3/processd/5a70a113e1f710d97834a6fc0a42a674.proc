@@ -1,0 +1,326 @@
+   #MAKE » Feed MAKE » Comments Feed MAKE » First Look at the new Arduino
+   Zero Comments Feed You Wouldn’t 3D Print A Car — Until Now littleBits
+   Arduino Module Unveiled alternate alternate MAKE WordPress.com
+
+   IFRAME: //www.googletagmanager.com/ns.html?id=GTM-WR8NLB
+
+Tech-savvy DIY Enthusiasts Innovative Projects and Ideas
+
+     * Electronics
+          + Arduino
+          + Computers & Mobile
+          + Raspberry Pi
+          + Robotics
+     * Workshop
+          + 3D Printing
+          + Machining
+          + Woodworking
+     * Craft
+          + Crochet
+          + Knitting
+          + Paper Crafts
+          + Sewing
+     * Science
+          + Energy
+          + Health
+     * Home
+          + Food & Beverage
+          + Fun & Games
+          + Gardening
+          + Hacks
+          + Kids & Family
+     * Art & Design
+          + Music
+          + Photography & Video
+
+   ____________________ Submit
+
+     * Maker Shed Store
+     * Projects
+     * Blog
+     * Videos
+     * Maker Faire
+     * Events
+          + Maker Camp
+          + Maker Impact Summit
+          + MakerCon 2014
+          + Hardware Innovation Workshop
+          + Hardware Innovation Workshop Videos
+     * Education
+          + Maker Camp for Teens
+          + Makerspace
+          + Maker Education Initiative
+     * Maker Pro
+          + Crowdfunding
+          + Makerspaces
+          + Open Source Hardware
+          + Maker Pro Newsletter
+     * Contribute
+     * Magazine
+          + Read the Digital Edition
+          + MAKE 41: Tinkering Toys
+          + MAKE 40: Makerspaces
+          + MAKE 39: Robotics
+          + MAKE 38: High-Tech DIY
+          + Make: Ultimate Guide to 3D Printing 2014
+          + View all Back Issues
+
+   Find all your DIY electronics in the MakerShed. 3D Printing, Kits,
+   Arduino, Raspberry Pi, Books & more!
+
+First Look at the new Arduino Zero
+
+     * By Alasdair Allan
+     * Posted May 15th, 2014 6:39 am
+     * Category Arduino
+     * View Comments
+
+Share this:
+
+     *
+
+       IFRAME:
+       http://www.stumbleupon.com/badge/embed/1/?url=http%3A%2F%2Fmakezine
+       .com%2F2014%2F05%2F15%2Ffirst-look-at-the-new-arduino-zero%2F&title
+       =First%20Look%20at%20the%20new%20Arduino%20Zero
+
+     *
+     *
+
+       IFRAME:
+       http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2
+       F%2Fwp.me%2Fp22K2I-1FLg&counturl=http%3A%2F%2Fmakezine.com%2F2014%2
+       F05%2F15%2Ffirst-look-at-the-new-arduino-zero%2F&count=horizontal&t
+       ext=First%20Look%20at%20the%20new%20Arduino%20Zero%3A&via=make&rela
+       ted=wordpressdotcom
+
+     *
+
+       IFRAME:
+       http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmakezine
+       .com%2F2014%2F05%2F15%2Ffirst-look-at-the-new-arduino-zero%2F&layou
+       t=button_count&show_faces=false&action=like&colorscheme=light&heigh
+       t=21&locale=en_US&width=90
+
+     * [pinit_fg_en_rect_gray_20.png]
+     *
+
+       IFRAME:
+       http://www.reddit.com/static/button/button1.html?width=120&url=http
+       %3A%2F%2Fmakezine.com%2F2014%2F05%2F15%2Ffirst-look-at-the-new-ardu
+       ino-zero%2F&title=First%20Look%20at%20the%20new%20Arduino%20Zero
+
+     * Email
+     *
+
+   Top view of the new Arduino Zero
+
+   Top view of the new Arduino Zero
+   Rear view of the new Arduino Zero
+
+   Rear view of the new Arduino Zero
+   ‹ ›
+
+   View All
+
+   Hinted at yesterday by Massimo Banzi during his keynote speech at
+   MakerCon, Arduino has just officially announced their latest board—the
+   Arduino Zero.
+
+   On the surface the board may look very similar to the Arduino Leonardo,
+   but there are big differences. Powered by a 32-bit ARM Cortex M0+ core,
+   the Atmel SAMD21, the new board is significantly faster than the
+   traditional 8-bit Arduino boards, running at 48MHz, and is much more
+   capable.
+
+   While it shares the same form factor as the Arduino Leonardo—with 14
+   digital and 5 analog pins—all of the digital pins except the Rx/Tx pins
+   can act as PWM pins, and the analog pins have a 12-bit ADC instead of
+   the Leonardo’s 10-bit ADC, giving significantly better analog
+   resolution.
+
+   maker-faire-bay-area-logo-2014 The new board comes with 256KB of Flash
+   memory, and 32KB of SRAM. In comparison the 8-bit Leonardo which uses
+   the Atmel ATmega32u4 comes with just 32KB of Flash memory and 2.5KB of
+   SRAM. While the new board doesn’t have EEPROM, it does support 16KB by
+   emulation, so Arduino sketches relying on this feature will still run
+   without issue.
+
+   Like the Arduino Due, the first Arduino micro-controller to be based on
+   an ARM core, the new Zero runs at 3.3V while there is a 5V power pin on
+   the board in the usual place, it looks like the voltage of the rest of
+   the digital and analog pins is 3.3V rather than the normal 5V—so any
+   shields you use with the board will have to be 3.3V compatible.
+
+   One of the interesting differences about board layout of the Zero is
+   the addition of an extra micro-USB port. While information is pretty
+   thin on the ground at the moment, the SAMD21 supports both USB Host and
+   Device mode, so it’s possible that that extra port is to support that
+   functionality. Although its also possible that this USB port could be
+   dedicated to support Atmel’s Embedded Debugger (EDBG) as this is the
+   first Arduino board to support this feature. EDBG is an interesting
+   addition—it provides a full debug interface without the need for
+   additional hardware.
+
+   The first prototypes of the new board will be on display at the Arduino
+   (#204), Atmel (#205) and ARM (#405) booths at Maker Faire Bay Area,
+   which kicks off in just two days time. So see you at the faire, the
+   greatest show (and tell) on Earth!
+
+Alasdair Allan
+
+   Alasdair Allan is a scientist, author, hacker, tinkerer and co-founder
+   of a startup working on fixing the Internet of Things. He spends much
+   of his time probing current trends in an attempt to determine which
+   technologies are going to define our future.
+     __________________________________________________________________
+
+   Related
+
+Share this:
+
+     *
+
+       IFRAME:
+       http://www.stumbleupon.com/badge/embed/1/?url=http%3A%2F%2Fmakezine
+       .com%2F2014%2F05%2F15%2Ffirst-look-at-the-new-arduino-zero%2F&title
+       =First%20Look%20at%20the%20new%20Arduino%20Zero
+
+     *
+     *
+
+       IFRAME:
+       http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2
+       F%2Fwp.me%2Fp22K2I-1FLg&counturl=http%3A%2F%2Fmakezine.com%2F2014%2
+       F05%2F15%2Ffirst-look-at-the-new-arduino-zero%2F&count=horizontal&t
+       ext=First%20Look%20at%20the%20new%20Arduino%20Zero%3A&via=make&rela
+       ted=wordpressdotcom
+
+     *
+
+       IFRAME:
+       http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmakezine
+       .com%2F2014%2F05%2F15%2Ffirst-look-at-the-new-arduino-zero%2F&layou
+       t=button_count&show_faces=false&action=like&colorscheme=light&heigh
+       t=21&locale=en_US&width=90
+
+     * [pinit_fg_en_rect_gray_20.png]
+     *
+
+       IFRAME:
+       http://www.reddit.com/static/button/button1.html?width=120&url=http
+       %3A%2F%2Fmakezine.com%2F2014%2F05%2F15%2Ffirst-look-at-the-new-ardu
+       ino-zero%2F&title=First%20Look%20at%20the%20new%20Arduino%20Zero
+
+     * Email
+     *
+
+Like this:
+
+   Like Loading...
+
+   blog comments powered by Disqus
+
+Featured Products from the MakerShed
+
+   Battery Booster Shield for Arduino
+
+Battery Booster Shield for Arduino
+
+   The Battery Booster Shield is an add-on for the Arduino that
+   efficiently boosts a lower...
+   Make: magazine, Volume 31
+
+Make: magazine, Volume 31
+
+   Why are so many kids (and adults) like you bored by science? Simple:
+   you've had...
+   Membrane Matrix Keypad + Extras - 3x4
+
+Membrane Matrix Keypad + Extras - 3x4
+
+   Punch your secret key into this Numeric Membrane Matrix Keypad. This
+   keypad has 12 buttons,...
+   6-in-1 Educational Solar Robotic Kit
+
+6-in-1 Educational Solar Robotic Kit
+
+   The 6-in-1 Educational Solar Robotic Kit is a great beginner building
+   kit designed to teach...
+   23 3D printers reviewed, get your copy today
+
+   MAKE Logo
+
+Read Digital Edition
+
+Shop Maker Shed
+
+Trending Topics
+
+     * Arduino
+     * 3D Printing
+     * Raspberry Pi
+     * Craft
+     * Maker Pro
+     * Kids & Family
+
+Get our Newsletters
+
+   Sign up to receive exclusive content and offers.
+   [ ] MAKE Newsletter [ ] Maker Faire Newsletter [ ] Maker Shed [ ] Maker
+   Pro Newsletter
+   ____________________ (Subscribe) JOIN
+
+About Maker Media
+
+     * Help
+     * Contact
+     * Subscribe
+     * Advertise
+     * Privacy
+
+     * About Us
+     * FAQ
+     * Forums
+     * Contribute to MAKE
+     * Become an Affiliate
+
+   MAKE Magazine Robotics
+
+Subscribe
+to MAKE!
+
+   Get the print and digital versions when you subscribe
+     __________________________________________________________________
+
+   Make: and Maker Faire are registered trademarks of Maker Media, Inc.
+
+   Copyright © 2004-2014 Maker Media, Inc. All rights reserved
+
+   Powered by WordPress.com VIP
+
+   Quantcast
+
+   Follow
+
+Follow “MAKE”
+
+   Get every new post delivered to your Inbox.
+
+   Join 25,868 other followers
+
+   Enter your email add
+
+   Sign me up
+   Powered by WordPress.com
+
+   Send to Email Address ____________________ Your Name
+   ____________________ Your Email Address ____________________
+   loading Send Email Cancel
+   Post was not sent - check your email addresses!
+   Email check failed, please try again
+   Sorry, your blog cannot share posts by email.
+
+   IFRAME: likes-master
+
+   %d bloggers like this:

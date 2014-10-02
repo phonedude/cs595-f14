@@ -1,0 +1,1286 @@
+   #copyrighteous » Feed copyrighteous » Comments Feed copyrighteous »
+   Google Has Most of My Email Because It Has All of Yours Comments Feed
+   Community Data Science Workshops in Seattle Installing GNU/Linux on a
+   2014 Lenovo Thinkpad X1 Carbon
+
+copyrighteous
+
+   Search
+   (BUTTON) Primary Menu Skip to content
+   Search for: ____________________ Search
+
+Google Has Most of My Email Because It Has All of Yours
+
+   May 11, 2014 Benjamin Mako Hill 180 Comments
+
+   Republished by Slate. Translations available in French (Français),
+   Spanish (Español), Chinese (中文)
+
+   For almost 15 years, I have run my own email server which I use for all
+   of my non-work correspondence. I do so to keep autonomy, control, and
+   privacy over my email and so that no big company has copies of all of
+   my personal email.
+
+   A few years ago, I was surprised to find out that my friend Peter
+   Eckersley — a very privacy conscious person who is Technology Projects
+   Director at the EFF — used Gmail. I asked him why he would willingly
+   give Google copies of all his email. Peter pointed out that if all of
+   your friends use Gmail, Google has your email anyway. Any time I email
+   somebody who uses Gmail — and anytime they email me — Google has that
+   email.
+
+   Since our conversation, I have often wondered just how much of my email
+   Google really has. This weekend, I wrote a small program to go through
+   all the email I have kept in my personal inbox since April 2004 (when
+   Gmail was started) to find out.
+
+   One challenge with answering the question is that many people, like
+   Peter, use Gmail to read, compose, and send email but they configure
+   Gmail to send email from a non-gmail.com “From” address. To catch
+   these, my program looks through each message’s headers that record
+   which computers handled the message on its way to my server and to pick
+   out messages that have traveled through google.com, gmail.com, or
+   googlemail.com. Although I usually filter them, my personal mailbox
+   contains emails sent through a number of mailing lists. Since these
+   mailing lists often “hide” the true provenance of a message, I exclude
+   all messages that are marked as coming from lists using the (usually
+   invisible) “Precedence” header.
+
+   The following graph shows the numbers of emails in my personal inbox
+   each week in red and the subset from Google in blue. Because the number
+   of emails I receive week-to-week tends to vary quite a bit, I’ve
+   included a LOESS “smoother” which shows a moving average over several
+   weeks.
+
+   Emails, total and from GMail, over time From eyeballing the graph, the
+   answer to seems to be that, although it varies, about a third of the
+   email in my inbox comes from Google!
+
+   Keep in mind that this is all of my personal email and includes
+   automatic and computer generated mail from banks and retailers, etc.
+   Although it is true that Google doesn’t have these messages, it
+   suggests that the proportion of my truly “personal” email that comes
+   via Google is probably much higher.
+
+   I would also like to know how much of the email I send goes to Google.
+   I can do this by looking at emails in my inbox that I have replied to.
+   This works if I am willing to assume that if I reply to an email sent
+   from Google, it ends up back at Google. In some ways, doing this
+   addresses the problem with the emails from retailers and banks since I
+   am very unlikely to reply to those emails. In this sense, it also
+   reflects a measure of more truly personal email.
+
+   I’ve broken down the proportions of emails I received that come from
+   Google in the graph below for all email (top) and for emails I have
+   replied to (bottom). In the graphs, the size of the dots represents the
+   total number of emails counted to make that proportion. Once again,
+   I’ve included the LOESS moving average.
+
+   Proportion of emails from GMail over time The answer is surprisingly
+   large. Despite the fact that I spend hundreds of dollars a year and
+   hours of work to host my own email server, Google has about half of my
+   personal email! Last year, Google delivered 57% of the emails in my
+   inbox that I replied to. They have delivered more than a third of all
+   the email I’ve replied to every year since 2006 and more than half
+   since 2010. On the upside, there is some indication that the proportion
+   is going down. So far this year, only 51% of the emails I’ve replied to
+   arrived from Google.
+
+   The numbers are higher than I imagined and reflect somewhat depressing
+   news. They show how it’s complicated to think about privacy and
+   autonomy for communication between parties. I’m not sure what to do
+   except encourage others to consider, in the wake of the Snowden
+   revelations and everything else, whether you really want Google to have
+   all your email. And half of mine.
+
+   If you want to run the analysis on your own, you’re welcome to the
+   Python and R code I used to produce the numbers and graphs.
+   # tags reflections
+
+Post navigation
+
+   Previous PostCommunity Data Science Workshops in SeattleNext
+   PostInstalling GNU/Linux on a 2014 Lenovo Thinkpad X1 Carbon
+
+180 thoughts on “Google Has Most of My Email Because It Has All of Yours”
+
+    1. John Holland says:
+       May 11, 2014 at 20:24
+       I am in a similiar situation. The thing that frustrates me in
+       addition to this is the total lack of adoption of PGP/GPG. Better
+       privacy is so close and hardly anyone will make the effort.
+       Reply
+         1. Anonymous says:
+            May 11, 2014 at 21:35
+            Make it easier for the end “non-technical” users to adopt
+            GPG/other technology in a seamless way, and things will flow
+            automatically.
+            Reply
+              1. The kinko team says:
+                 May 12, 2014 at 01:20
+                 Adopting GnuPG to help “non-technical” users to adopt
+                 email crypto is exactly what we are working on at
+                 kinko.me. Check that out!
+                 Reply
+                   1. Gerhard M. says:
+                      May 12, 2014 at 08:46
+                      nice project!
+                      Reply
+                   2. Grimpen says:
+                      May 12, 2014 at 16:12
+                      Interesting idea! Will be following Kinko’s
+                      development!
+                      Reply
+              2. Yoda Morganstern says:
+                 May 12, 2014 at 13:01
+                 Bullfeathers! Using GPG is no more difficult than
+                 learning how to play Angry Birds, and a lot simpler than
+                 configuring Facebook privacy settings.
+                 The people who complain about the difficulty of GPG seem
+                 to be people who have never tried to use it.
+                 Can you log onto a website? You can use gpg.
+                 Reply
+                   1. Benjamin Mako Hill says:
+                      May 12, 2014 at 13:44
+                      Using encryption is not just about pushing the
+                      buttons but really requires understanding the
+                      concepts. I’ve seen people using OTR and GPG, and
+                      that don’t really understand them, do things like
+                      send me their private keys! There are attempts to
+                      make encryption easier to use. One I have been
+                      excited about recently in regards to email is the
+                      LEAP project.
+                      Reply
+                   2. Dennis Wilson says:
+                      May 12, 2014 at 21:10
+                      “Bullfeathers”?? Such a nice, arrogant attitude. And
+                      comparing it to Facebook only makes your case WORSE!
+                      Maybe YOU have time to struggle thru confusing
+                      software, but *I* do not.
+                      I use PGP but it is clumsy, requiring a significant
+                      amount of extra time and work for every email that I
+                      read or write that is encrypted.
+                      So I tried adding GPG to my Thunderbird–and it
+                      FAILED. I was NOT impressed–and I damn well don’t
+                      want to spend MORE time debugging bad code written
+                      by someone else.
+                      I am impressed with Bitmessage, but it is also
+                      lacking simple, rational installation procedures.
+                      However, it is currently Beta, so there is hope that
+                      the developers will have a better attitude about
+                      “User Friendly” installation.
+                      Reply
+                   3. Daniel Aleksandersen says:
+                      May 13, 2014 at 08:47
+                      Well, generating the keys and keeping them synced
+                      between your devices is difficult.
+                      If you loose the keys or access your email from a
+                      device where you don’t have the keys (your new
+                      phone, laptop, a friend’s computer) you are not
+                      going to find GPG user-friendly. People have more
+                      than one computer and expect to be able to access
+                      their emails everywhere.
+                      Reply
+                        1. Gail Gardner says:
+                           May 20, 2014 at 15:49
+                           People who are true geeks find some things easy
+                           that may as well be written in Chinese for the
+                           rest of us. Because it is easy FOR THEM they
+                           refuse to listen to honest feedback from people
+                           like me.
+                           It is the same reason so few use Linux. All
+                           they need is for commonly used programs to have
+                           autoinstallers – but geeks don’t need them so
+                           they refuse to be bothered. They don’t
+                           understand that without them only a very small
+                           percentage can use Linux.
+                           And that is the same reason most people don’t
+                           encrypt anything or us proxies.
+              3. Phunky says:
+                 May 13, 2014 at 04:00
+                 http://keybase.io is trying to solve this, but it will
+                 stil boil down to the fact that most users don’t care or
+                 understand about the reasons why you would want to
+                 encypt.
+                 Reply
+              4. Anne Onymous says:
+                 May 13, 2014 at 08:41
+                 I’m a “technical” user… and I’ve tried several time to
+                 use GPG and S/MIME… it’s horrible to use.
+                 No nice and easy to use plugins available for most mail
+                 client. Bad gpg tools which prevent to use a long and
+                 strong password in softwares like keepass.
+                 No real standard on how to send crypted attachments with
+                 emails… so no usable with differents people using
+                 different mail client.
+                 …
+                 Reply
+                   1. kljkl says:
+                      May 27, 2014 at 19:57
+                      just use OTR. pidgin, jitsi and plenty of other
+                      clients support it and it requires zero technical
+                      knowledge.
+                      wtf man.
+                      Reply
+         2. Justinas says:
+            May 12, 2014 at 00:54
+            But gmail can also hadle PGP/GPG through extensions if I’m not
+            mistaken. If so, maybe encryption doesn’t help for hiding
+            emails from google?
+            Reply
+              1. Wojtek says:
+                 May 12, 2014 at 06:56
+                 Doesn’t matter if gmail has PGP extensions. By the way, I
+                 think it was possible but was ditched recently (I can
+                 guess why:)). Anyhow, whether they can use PGP or not is
+                 totally irrelevant as long as they don’t compromise your
+                 private key. So one can easily and safely send email over
+                 google servers with PGP. Also, there is a solution which
+                 I find quite neat – if you write to non-pgp-concious
+                 people, you can divide your message to parts which you
+                 don’t give much about (non-private) and that “private
+                 parts” (hehe), and encrypt just “private parts”. This
+                 way, if they want to decrypt, they can. If they have a
+                 key of course.
+                 One more thing: unencrypted email is like a postcard. So
+                 the question whether or not google has it is less
+                 pressing than whether or not ANYONE has it, because, if
+                 PRISM is connected to internet hubs… well, how to put it.
+                 Guess yourselves:)
+                 Reply
+         3. gabyu says:
+            May 12, 2014 at 01:30
+            About privacy, you should also check where your blog fonts are
+            served from: Google!
+            Read this:
+            http://fontfeed.com/archives/google-webfonts-the-spy-inside/
+            Reply
+              1. karl says:
+                 May 12, 2014 at 19:19
+                 As it has been mentioned, your blog served fonts from
+                 Google.
+                 http://www.la-grange.net/2014/05/13/google-tracking.png
+                 Not to point fingers. Just illustrating something which
+                 is about the friction and the efforts. In between two
+                 parties interacting, communicating, there is a way to
+                 understand the cost of participating for knowing where is
+                 the power. Right now, when we want to be privacy
+                 conscious, it takes each of us, individuals, a lot of
+                 efforts to do so. And that is the issue, the cost of
+                 non-interacting has become higher than the cost of
+                 interacting, and it’s why many people are engaged to do
+                 things even against their own beliefs.
+                 Reply
+                   1. Benjamin Mako Hill says:
+                      May 12, 2014 at 20:09
+                      First, thanks for pointing out the font thing. It
+                      seems to have come in with a theme I installed
+                      recently and I did not realize it. Removing the font
+                      from the theme causes it render incorrectly so I’ll
+                      need to look into a better solution.
+                      That said, the situation is a little different. For
+                      one, I am under the impression that Google claims
+                      they do not store or monitor traffic to their API
+                      servers for more than a very short period of time
+                      and they do not correlate it with your Google
+                      account. It uses a different domain (not google.com)
+                      unassociated with your Google cookie .
+                      Second, you can view my blog without loading the
+                      font from GoogleAPIs. It will be a little uglier
+                      without the web fonts but it will work find
+                      otherwise. In this way, I unilaterally block many
+                      advertising and tracking networks (including several
+                      from Google) and I can visit websites just fine. On
+                      the other hand, I can’t send or receive email from a
+                      Gmail user without Google having a copy of that
+                      mail.
+                      Third, and most importantly, for me I don’t care
+                      nearly as much about privacy in my web viewing data
+                      as I do about my email. I do care some, but less.
+                      In at least one sense though, the situation is
+                      worse. There’s no reason for you all to know that
+                      you were visiting Google when you visited my site.
+                      Except, as others have pointed out, that most
+                      webpages send your data there, — usually in ways not
+                      nearly as benign as a web font.
+                      Reply
+         4. Huhster says:
+            May 13, 2014 at 05:58
+            The reason nobody bothers with increased security is because
+            it has no impact on their lives, it might creep people out
+            that Gmail uses a bot to read emails for keywords but again it
+            has no impact on their lives or security.
+            Reply
+              1. pmdr says:
+                 May 13, 2014 at 09:50
+                 Agreed. Whether Google has or does not have some/all of
+                 my email is related to what they plan to do with it, and
+                 we already know it’s to serve ads. Which is relatively
+                 benign. And mostly only applies to email in and out of
+                 Google.
+                 Much more of a concern are the government-level packet
+                 captures running on ALL email traffic and ALL web
+                 traffic, and those agencies aren’t interested in serving
+                 up ads. Whatever goal that have in mind is likely to be
+                 far more at odds with your privacy and security than
+                 anything Google has in mind. Running your own mail server
+                 won’t help. Running Python scripts won’t matter. They
+                 have it all.
+                 So I don’t worry so much about Google. Privacy is an
+                 illusion.
+                 Reply
+    2. none says:
+       May 11, 2014 at 21:09
+       “dig -t mx somedomain.com” will tell you whether a given domain
+       gets its email handled by google. If you do that with the addresses
+       you send messages to, the results are not nice. You might try
+       running a script with this test over any outbound messages that you
+       have archived.
+       Reply
+         1. Pattaya Joe says:
+            May 12, 2014 at 06:45
+            This will only tell you the mail server the domain currently
+            uses, not the one it used at the point in time when the mail
+            was handled.
+            @Ben:
+            I like the people best that hand over their entire mail to
+            some random webservice provider by giving them their login
+            credentials just so that the webservice provider can connect
+            one to/or invite other people one knows.
+            Reply
+              1. Benjamin Mako Hill says:
+                 May 12, 2014 at 08:13
+                 Well, I looked at the “Received” headers so I will see
+                 any server that is touched it in a way that is recorded
+                 in those headers. I understand that my method will not
+                 catch everything but I think that makes it a conservative
+                 measure.
+                 Reply
+              2. Maurice Meyer says:
+                 May 27, 2014 at 14:55
+                 Yeah, “I like the people best that hand over their entire
+                 mail to some random webservice provider”, those people
+                 really are the best.
+                 And that’s why I decided to set up my own server with all
+                 the necessary tools. I even thought about only allowing
+                 encrypted server-to-server-communication, but that would
+                 deny about 80% of all messages of being sent/received.
+                 Reply
+    3. Nick Whiu says:
+       May 11, 2014 at 21:41
+       Verifying a suspicion with actual data, kudos!
+       I agree with John, sending emails to/from Gmail with PGP/GPG would
+       be the best outcome, even if using Gmail.
+       I propose we encourage widespread PGP/GPG adoption by competitions
+       to win prizes, simply email in asking to win with PGP/GPG and
+       you’re in the chance to win.
+       Or perhaps make mobile phone apps that allows you to exchange naked
+       photos safely using GPG/PGP.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 00:39
+            I use GPG often. That said, the number of emails I send to GPG
+            is a tiny fraction of the total because most of the people I
+            correspond with don’t use it. The number of GMail users I
+            correspond to that use GPG? Perhaps none at all.
+            Reply
+              1. Nikete says:
+                 May 12, 2014 at 00:55
+                 I can say with confidence and shame it is not 0.
+                 Reply
+         2. Dominik says:
+            May 12, 2014 at 01:59
+            We are developing a OpenPGP key management tool for Android,
+            it is called OpenKeychain.
+            If you like you can join development under
+            https://github.com/open-keychain/open-keychain
+            We also have a nice API currently used by the XMPP app
+            “Conversations” that can allow exchange of naked photos ;)
+            Reply
+         3. Mark says:
+            May 12, 2014 at 02:09
+            This would do nothing about the metadata issue.
+            Thank you for this analysis, Mako!
+            P.S. I am in the same situation as your friend. Gmail because
+            they have my email anyway…
+            Reply
+    4. Rob says:
+       May 11, 2014 at 23:30
+       Out of curiosity, have you tried repeating your analysis on the
+       other major webmail providers run by US companies? Hotmail, Yahoo,
+       etc.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 00:38
+            Not yet. I only did this with GMail so far. My intuition is
+            that this will be the biggest one.
+            Reply
+              1. Rob says:
+                 May 12, 2014 at 04:35
+                 So, you might consider changing the title of your
+                 article. This is not a Google issue but an email issue.
+                 Of course, Microsoft and Yahoo and every other such
+                 service has your email, too.
+                 Reply
+                   1. Benjamin Mako Hill says:
+                      May 12, 2014 at 08:18
+                      Well, having one company with most of my email
+                      worries me because of its particular potential for
+                      abuse — even if other companies have a lot of the
+                      rest. Since in my case, Google has the most of any
+                      single company, they are the biggest problem in this
+                      sense.
+                      Reply
+                        1. guest says:
+                           May 13, 2014 at 22:24
+                           Isn’t the key then to treat email like a public
+                           Facebook wall and watch what you say? No more
+                           sharing information via email you wouldn’t
+                           otherwise shout out from the public square.
+    5. Seth says:
+       May 12, 2014 at 00:13
+       This is why I plan on configuring my mail server to bounce all
+       email coming from corporate surveillance whore sources.
+       If my friends want to use email to communicate with me, they’ll
+       have to get with the program and ditch the PRISM providers.
+       Reply
+         1. Jan says:
+            May 12, 2014 at 03:56
+            Radical solution. Do you still get emails or did your friends
+            decide it wasn’t worth the effort to mail you any longer?
+            Reply
+              1. Seth says:
+                 May 12, 2014 at 10:07
+                 I haven’t implemented it just yet. I’m going to custom
+                 tailer the bounce message to communicate my reasons as
+                 well as include links to more dignified providers and
+                 solutions.
+                 But if it’s 2014 and they still don’t want to give up
+                 these services, which I believe are harmful, then too bad
+                 for everyone I guess.
+                 Reply
+                   1. Khürt Williams says:
+                      May 12, 2014 at 17:20
+                      I have a feeling you will have an empty mailbox.
+                      Reply
+         2. Alex says:
+            May 24, 2014 at 01:30
+            Yeah, my guess is that you won’t end up with many friends.
+            Reply
+    6. Riccardo Padovani says:
+       May 12, 2014 at 00:25
+       And this is only about Google. If you add also Microsoft and
+       american providers I’m afraid that the percentage is >80%
+       Reply
+    7. Moellus says:
+       May 12, 2014 at 01:08
+       Google is our friend.
+       Reply
+         1. deep says:
+            May 12, 2014 at 06:57
+            said no one ever..
+            Reply
+    8. Bill Dietrich says:
+       May 12, 2014 at 01:29
+       I wish some large email provider, such as GMail or Yahoo Mail,
+       would start using end-to-end encryption routinely, and
+       transparently. When you click the Send button, software (maybe an
+       open-source browser plug-in) looks to see if your recipient has a
+       preferred encryption method and public key registered anywhere (or
+       if one is cached locally, via prior key-exchange). If recipient
+       does, the message gets encrypted (by open-source browser plug-in)
+       via that method before sending. If recipient is not registered
+       anywhere, message goes unencrypted, as usual. Simple ! And now the
+       email provider itself can’t read or decrypt your messages.
+       This would be transparent to the sender, and could be transparent
+       to the recipient. Recipient just registers a public key and method
+       in a public registry somewhere. Private key is on their machine.
+       It is perfectly feasible, technically, for Google, Yahoo etc to do
+       end-to-end encrypted email AND still do targeted advertising. Do
+       encryption via browser plug-in (maybe open-source), and have the
+       plug-in extract a few keywords before encrypting. Send the keywords
+       along to server with the encrypted message, so server can do
+       advertising.
+       Reply
+         1. dhardy says:
+            May 12, 2014 at 09:52
+            Doing that would mostly kill webmail. (Even if the key is
+            stored locally, it means you can no longer access your email
+            from another device.) Unless the email provider has the secret
+            key, in which case there’s very little point (since the
+            providers at both ends can read the email contents, and
+            assuming the point-to-point encryption works correctly no one
+            else can anyway).
+            Reply
+    9. richard vowles says:
+       May 12, 2014 at 02:16
+       You anthropomorphise Google, that’s not healthy.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 08:23
+            Why do you think this?
+            Reply
+   10. Martin says:
+       May 12, 2014 at 02:44
+       Strange reasoning: “Google has our email anyway, so I use GMail as
+       well.” It’s like suicide for fear of death. Please, everybody, use
+       decentral, local email providers! I do :~)
+       Reply
+         1. Ralf says:
+            May 14, 2014 at 10:39
+            Exactly me first thinking. I mean, that’s really a ridiculous
+            argument:
+            “Peter pointed out that if all of your friends use Gmail,
+            Google has your email anyway. Any time I email somebody who
+            uses Gmail — and anytime they email me — Google has that
+            email.”
+            Eh, and for that reason you add “+1″ to the number and make
+            sure everybody who emails you also emails Google? Effectively,
+            you are agreeing that it’s good that everybody uses Google.
+            The state of EFF is poorer than I expected…
+            Reply
+              1. Benjamin Mako Hill says:
+                 May 14, 2014 at 11:40
+                 I don’t want to put words into Peters mouth but it’s easy
+                 for me to see his reasoning and I don’t think it is
+                 ridiculous. There are lots of positives to using Gmail.
+                 It is also cheaper and easier than running your own
+                 server and perhaps it has features or an interface he
+                 likes. The fact that Google has his email anyway simply
+                 weakens the privacy objection that is weighing on the
+                 other side of the scale.
+                 Reply
+   11. Martin says:
+       May 12, 2014 at 02:47
+       Btw. GnuPG is not a sufficient answer to the privacy problem: It
+       does not hide the meta data (who is writing to whom, when, how
+       often, how much), which is in most cases more important then the
+       actual content.
+       Reply
+         1. Kevin says:
+            May 12, 2014 at 16:33
+            Use –throw-keyids
+            Reply
+         2. Dennis Wilson says:
+            May 12, 2014 at 21:28
+            @Martin
+            “It does not hide the meta data (who is writing to whom, when,
+            how often, how much), which is in most cases more important
+            then the actual content.”
+            Keep watching BitMessage. They are working on just those
+            issues.
+            I have collected some info at “BITMAIL anyone?”
+            https://tinyurl.com/Bitmail-Anyone
+            Reply
+   12. Laurentiu Roman says:
+       May 12, 2014 at 03:08
+       Your isp has all of your unencrypted (they are such if either you
+       or the recipient do not support encryption, so pretty much most of
+       them, regardless if google has ever touched them) emails.
+       Reply
+         1. sn0wden says:
+            May 12, 2014 at 11:48
+            Not true if you communicate with your email provider with
+            SSL/STARTLS/some other encrypted means. Your emails, if
+            unencrypted with pgp/gpg, will be accessible by your provider,
+            but NOT your ISP (or any other man in the middle for that
+            matter, unless they’re using SSLSNiff, Dsniff, or some other
+            tool to intercept the key exchange).
+            Reply
+   13. Pingback: Google has most of my email because it has all of yours |
+       NYC Startup News
+   14. Anders Jackson says:
+       May 12, 2014 at 03:46
+       Great data analysis, thanks!
+       It would also be great if others with such a long data series would
+       like to check and publish their findings if they have the same
+       trends.
+       Would also be very interesting and educational to check Hotmail,
+       Yahoo etc. It will probalbly show the propotions between the major
+       mail service providers, esp. since you have such a nice long data
+       serie to work with.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 08:27
+            If you do run the scripts, post a comment here with a link to
+            your analysis. I’m interested in seeing how my numbers stack
+            up to other peoples. I am helping somebody fix some issues as
+            they try to run the scripts right now and improving the
+            documentation a little bit for people who don’t know R.
+            Reply
+   15. Peter Fisher says:
+       May 12, 2014 at 04:21
+       Does this include people that use Google Apps? It might be even
+       higher.
+       If your email correspondence is sensitive encrypt it. If you need
+       to protect metadata then maybe email isn’t the best communication
+       method.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 08:19
+            I do encrypt my email but only to other people that use
+            PGP/GPG. That’s a small proportion of the people I communicate
+            with. And because I know lots of people use that crypto, I am
+            probably in a better situation in this regards than most
+            others!
+            Reply
+   16. Jorge says:
+       May 12, 2014 at 05:15
+       What if we send our messages in a harder to read format, like in
+       images? An email could contain one large image or an image for
+       about each word. If done correctly -no white on yellow for example
+       – almost anyone will be able to read the message without special
+       software to decode it. You can make the message more visually
+       appealing, or at least interesting, than text or a web page and
+       bypass any email text processing programs. I am assuming that all
+       images aren’t OCRed by default already.
+       Reply
+   17. Jaap van Wingerde says:
+       May 12, 2014 at 06:10
+       Most mailinglists shall have one or more subscribers with a
+       Gmail-address. So Google has most of the malinglists-posts.
+       Reply
+   18. mirabilos says:
+       May 12, 2014 at 06:48
+       “Peter pointed out that if all of your friends use GMail, Google
+       has your email anyway”
+       ARRRRRRGH! This is absolutely *no* reason to do it yourself too!
+       I’m hosting my eMail within my own appartement, TYVM!
+       Thanks mako for your insightful writings.
+       Reply
+   19. Israel says:
+       May 12, 2014 at 07:13
+       The worst part of it is that your e-mails to everyone (non-gmail)
+       else use servers, and are on the internet.
+       Your ISP has access to everything else, since you are connecting to
+       the internet through them.
+       And now with facial recognition being so advanced when you go to
+       London, or Chicago, they can follow your face in a crowd and say
+       “Hey, that is the guy that was e-mailing Youtube videos of Nyan Cat
+       and Obiwan Kenobi!”
+       Reply
+   20. Pingback: ¿No usas Gmail? Da igual, Google tiene muchos de tus
+       emails | recolector.de {tecnologia}
+   21. Tim says:
+       May 12, 2014 at 08:18
+       Also, a high proportion of email consists of contributions to long
+       conversation threads, with most of the thread preserved but hidden
+       in clients by default, and that gets smashed all over the Internet
+       because every participant has a copy.
+       Which makes the proportion that’s out of your control even higher.
+       Sigh.
+       BTW, people who are interested in making PGP/GPG more usable by
+       ordinary people might want to check out keybase.io
+       Reply
+   22. Abhishek says:
+       May 12, 2014 at 08:22
+       Mako, being the extremely smart social scientist that you are, you
+       should point out the selection issue — your friends are likely to
+       be at least half as anal as you are (well, the ones not in business
+       school, anyway) and are therefore *less* likely to be using Gmail.
+       I should send you metadata from *my* email (or run your scripts
+       myself) — I’m quite sure for the “average” person, the numbers
+       would much higher — closer to 90%. I think the one thing that saves
+       people is “work” email, when you communicate with official email
+       addresses, but there the challenge is knowing if the email is
+       hosted on Google Apps.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 08:36
+            This a very good point, Abhishek. Thanks for making it here!
+            This analysis is about my email and there are many, many,
+            reasons to believe it’s not other peoples email. I would
+            expect, among my group of friends, that you’re right and that
+            my numbers are actually quite low relative to most people I
+            know. I suspect a large majority of my friends email never
+            leaves the Google network.
+            If you are comfortable with python and R and can get your data
+            into a Maildir or modify a Mython program, go ahead and run
+            the analysis! I would love to see the results to see how your
+            experience stacks up.
+            I did not include my “work” email in this (i.e., my email from
+            MIT or UW or Canonical which barely overlapped with the
+            beginning of this period). I am quite sure that the proportion
+            of Google messages in my work email is much lower. That said,
+            I don’t get choose my work email provider. This article is
+            about my (somewhat futile) attempt to control my own email by
+            running my own server. As a result, I only included the inbox
+            that is impacted by that decision.
+            Reply
+   23. Not so anon says:
+       May 12, 2014 at 08:44
+       I will continue to run my own mail server and I have been teaching
+       my friends how to run one as well. Also, if you run a mail server
+       on a rental server or vps, be sure to set up encrypted partitions
+       for your mail, your certs and other config files.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 08:47
+            I will also continue to run my own server. Nobody should
+            interpret my post as trying to talk people out of running
+            their own server. It’s just that, today, I’m feeling a little
+            futile about the whole thing.
+            Reply
+              1. Adrien says:
+                 May 13, 2014 at 03:02
+                 It’s not futile. Having a server is not only for you, but
+                 for the other people too:
+                 If some of you friends wants to improve his privacy, then
+                 he can rely on you if you’re using GPG, your own server,
+                 etc.
+                 With you script, I got 25% of all my email that goes to
+                 google, but 75% for the email with replies…
+                 Reply
+   24. Dana Nutter says:
+       May 12, 2014 at 08:45
+       “Don’t be evil!”
+       Yeah, and I love you. The check’s in the mail. ….
+       Reply
+   25. Herb says:
+       May 12, 2014 at 10:45
+       Even though GMail may have a significant portion of my emails, they
+       don’t have it in one place. If presented with a request for all of
+       my emails, they couldn’t supply anyone with my inbox. It is
+       doubtful, that they would be forced to scan everyone’s email box
+       for messages that include me.
+       Google may have more information about me than I like, but I can do
+       my part to keep that to a minimum.
+       Great article. I never thought about it before.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 13:47
+            You think so? I would guess that they do in fact store all the
+            emails in on place and that separate inboxes are really just a
+            fiction in the user-facing code.
+            As in, do you really think that if I send an email to 1000
+            GMail users that Google creates 1000 copies of that email? I
+            guess they just store one copy and 1000 references to it in
+            their database. That should be much faster and more efficient
+            and Google has lots of reasons to care about those things. Why
+            wouldn’t they do it this way?
+            Reply
+   26. Frank Ch. Eigler says:
+       May 12, 2014 at 12:18
+       Email that you send out to another person is no longer your private
+       email. It’s more theirs than yours.
+       Reply
+   27. Fulano says:
+       May 12, 2014 at 14:04
+       People who cann’t maintain a mail server, can use services like
+       https://riseup.net/ or https://mayfirst.org/. I think is about to
+       know that this exist.
+       Reply
+         1. Dios Padre says:
+            May 14, 2014 at 16:48
+            That is exactly the same problem as having your email under
+            GMail… it’s not under your control.
+            I would say is worse since probably neither riseup.net or
+            mayfirst.org hire first-class hackers to keep their sites
+            safe.
+            Reply
+   28. George Scott Hollingsworth says:
+       May 12, 2014 at 17:49
+       Email privacy is an oxymoron. I still laugh when I see fax era
+       confidentiality notices appended to emails.
+       Reply
+   29. Jeremy Foote says:
+       May 12, 2014 at 18:47
+       I think that encryption is an important, but only partial solution,
+       as others have noted.
+       I think that making visible that this is the way email works (like
+       this post does) is also important; that helps to build up norms
+       (which already exist) and laws (which, as usual, lag behind) about
+       what people and companies can/should do with our data.
+       Reply
+   30. Ean Schuessler says:
+       May 12, 2014 at 20:10
+       Nice looking graphs you’ve got there.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 12, 2014 at 20:15
+            They are ggplot2 and transparently obviously so (almost
+            embarrassingly so) to anybody that does data visualization in
+            R. :)
+            Reply
+   31. Pingback: Google拥有我的大部分邮件，因为它拥有你的全部邮件 | 腊八粥
+   32. Pingback: Anonymous
+   33. Pingback: OTR Links 05/13/2014 | doug --- off the record
+   34. Pingback: Benjamin Mako Hill: Google Has Most of My Email Because
+       It Has All of Yours | Hi-tech news
+   35. Pingback: ¿No usas Gmail? Da igual, Google tiene muchos de tus
+       emails | enREDada, amb els embolics de la WEB 2.0
+   36. Pingback: Google拥有我的大部分邮件，因为它拥有你的全部邮件 | 我爱互联网
+   37. Pingback: Boot up: Android's redesign, GS5 in the US, iPhone 6 in
+       August?, and more | Digital News Daily CA
+   38. Eddie Bates says:
+       May 13, 2014 at 04:15
+       As increasing infringements on our Email and online privacy rises,
+       we see great demand for a solution. The threats against your
+       personal Internet privacy is increasing everyday as “free” Email
+       providers, hackers, NSA’s PRISM program, and the amended US Patriot
+       Act are just a few of a growing list that are compromising our
+       freedoms. As we stand at a crossroads, it may appear hopeless to
+       protect our God given rights to privacy but rest assured, there are
+       real solutions to this serious problem!
+       http://www.americansrighttoprivacy.com offers 100% guaranteed
+       online privacy because our servers are located in Switzerland, a
+       safe-haven for secure digital communications. As a law abiding
+       citizen, you can be sure your digital data is safe from any agency,
+       business, or anyone at all wanting to retrieve your information.
+       Access to your online data communications by any authority requires
+       an official warrant issued by a federal judge of Switzerland while
+       most countries surrender your data without consent.
+       To further protect your privacy, we delete the ‘Received’-Header
+       that contains the customers IP & All incoming emails are scanned
+       for viruses and drop all infected emails.
+       Our VPN service changes your IP address every 10 minutes and our
+       DigitalSafe is a “Swiss Bank” for your data! DigitalSafe has a
+       feature whereas you may send a secure note that requires a PIN
+       (password) in order to view it. It routes the unsecured email user
+       to a secure site to read the encrypted message. They may not
+       respond as they have read only rights. Visit my site and feel free
+       to contact me with any and all questions you may have!
+       There is secure email, and then there is Swiss Secure E-Mail…
+       http://www.americansrighttoprivacy.com
+       Reply
+   39. Pingback: Even if you host your own email server, Google will end
+       up capturing about half of your emails (Benjamin Mako
+       Hill/copyrighteous) | NYC Startup News
+         1. Benjamin Mako Hill says:
+            May 13, 2014 at 06:41
+            This headline is a bit misleading. My analysis is only about
+            my email. Your numbers might be higher or lower.
+            Reply
+   40. Pingback: ¿No usas Gmail? Da igual, Google tiene muchos de tus
+       emails | Blog actuales.es
+   41. Daniel Aleksandersen says:
+       May 13, 2014 at 05:15
+       This is not encouraging.
+       Reply
+   42. Karsten Gerloff says:
+       May 13, 2014 at 05:15
+       Great post! This inspired me to run a similar analysis on my own
+       mail archives. Here are the results:
+       http://blogs.fsfe.org/gerloff/2014/05/13/were-all-gmail-users-now/
+       The percentage of Google-handled mail that I found was much lower –
+       only around 11%. I wonder whether that’s down to methodology
+       (didn’t have time to use Mako’s scripts, went with Mutt’s limit
+       patterns instead), or because Mako and I talk to different people.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 13, 2014 at 06:55
+            Thanks for doing this. I’ve replied in some detail over on
+            your blog.
+            Reply
+   43. Narg says:
+       May 13, 2014 at 06:14
+       Don your tin foil hats gents and let the doody fly!
+       Reply
+   44. Pingback: Por mucho que no quieras, si usas correo eres usuario de
+       Gmail | Error 500
+   45. Pingback: Por mucho que no quieras, si usas correo eres usuario de
+       Gmail - TecNoticiero
+   46. Pingback: Por mucho que no quieras, si usas correo eres usuario de
+       Gmail | recolector.de {tecnologia}
+   47. Pingback: resistere a Google è ormai inutile ? | kOoLiNuS ☞ il blog
+   48. tapirul says:
+       May 13, 2014 at 10:43
+       …. and there’s probably a bunch of “forwards” and “reply-to-all’s”
+       of your original emails from within your friends’ gmail accounts
+       Reply
+   49. Pingback: You are a Gmail user | Rob's Personal Aggregator
+   50. John Doe says:
+       May 13, 2014 at 15:41
+       You can frustrate google’s automated analysis of your email by
+       using a custom address for each person you correspond with. For
+       example, my mom thinks my email address is:
+       mom2JohnDoe@example.com
+       It would be possible for google to cross-reference all addresses at
+       a domain, but they are unlikely to because determining what is a
+       single-user private domain and what is a multi-user domain takes a
+       human to get right.
+       Reply
+   51. Pingback: You Too Are A Gmail User | CURATIO Magazine
+   52. Pingback: Por mucho que no quieras, si usas correo eres usuario de
+       Gmail | Blog actuales.es
+   53. Pingback: Recorte de 14/05/2014
+   54. Pingback: we’ve been all (already) assimilated | /home/kOoLiNuS
+   55. the shizmo says:
+       May 14, 2014 at 07:34
+       Mako, don’t take this personal, but I blame you programmer types.
+       “sheeple” out there use Gmail because you programmers haven’t come
+       up with something better. It is possible to create mail, social
+       networks, instant messaging, VOIP apps, that all communicate peer
+       to peer without a central hub. The coming IPv6 switch-over will
+       make this more feasible than ever.
+       If you build it, WE, the Alpha nerds of our friends and communities
+       will make sure our flocks will use it.
+       So stop telling us what we already know, and DO something about it
+       already! :)
+       Reply
+         1. Benjamin Mako Hill says:
+            May 14, 2014 at 11:45
+            Well, my current project is not around building systems
+            either. I want to understand and communicate about problems
+            we’re facing and do everything I can to more people learn how
+            to program and change their technology infrastructure.
+            I think that that the problem is that there aren’t enough
+            programming types out there out there who are interested in
+            solving this problem! Perhaps you want to start learning to
+            program and to join the effort?
+            The burden falls on all of us that care to do whatever we can.
+            Reply
+   56. GDR! says:
+       May 14, 2014 at 08:36
+       I’ve had similar insight after writing an extension for Thunderbird
+       which presents Received: headers in a graphical form. It’s scary.
+       https://addons.mozilla.org/en-US/thunderbird/addon/paranoia/
+       Reply
+         1. Benjamin Mako Hill says:
+            May 14, 2014 at 11:41
+            Cool extension!
+            Reply
+   57. Kapil Paranjape says:
+       May 14, 2014 at 10:24
+       A while ago I had made the suggestion that one solution would be
+       for the sender to not send the mail but only send a link to the
+       mail. The mail would actually be stored by the sender on a secure
+       server. Most modern (web)mail readers would automatically open the
+       link. Authentication for the server could be provided using a
+       number of mechanisms including Google. This way mail is kept
+       private.
+       Reply
+   58. Pingback: Gmail. Resistance is futile. › mkln.org
+   59. fjs says:
+       May 14, 2014 at 12:47
+       The first problem is not that people don’t use gpg or some kind of
+       other encryption like otr when chatting or use their own mail
+       server. The problem is in the education of privacy and the
+       problems/implications of losing privacy or having no privacy.
+       Most (non technical minded) people don’t see it as a problem when
+       losing privacy. People want to share and communicate with other
+       people and don’t see the danger when privacy is compromised by a
+       government or some company. Otherwise facebook and google would be
+       out of business.
+       And I think this is where the discussion has to start. For example
+       the whole Snowden revelations has sparked a discussion in certain
+       circles, but at the end most people don’t see the danger or don’t
+       care, because their lives revolve around other things then privacy
+       and all it’s implications. This is where it has to start and it’s a
+       really hard problem to tackle. And I don’t say that an easy to use
+       implementation of encryption which is transparent to the end user
+       won’t work, because it will start to make a difference, but it’s
+       only one aspect of the whole picture. And of-course blog post like
+       this also help. But there has to be a ‘easy’ way to start people
+       educating about privacy and the danger of having none.
+       Reply
+   60. Pingback: Gmail: Resistance is futile | Bill Bennett
+   61. Pingback: Unabhängige Kommunikation ist schwerer als gedacht -
+       Netzpiloten.de
+   62. Pingback: El correo como obstáculo para la privacidad |
+       Incognitosis
+   63. Pingback: Michael Tsai - Blog - You Can’t Escape Gmail
+   64. Anonymous says:
+       May 15, 2014 at 11:11
+       I personally recommend openmailbox for regular mail, they run on
+       free software exclusively. Hosting a personal mailserver is also an
+       alternative, virtual servers are really cheap nowadays if your ISP
+       doesn’t allow mail servers. However, we should really try to adopt
+       Bitmessage or some other, more secure way of communication.
+       Reply
+   65. Pingback: Somewhere else, part 135 | Freakonometrics
+   66. Pingback: Lohnt sich ein eigener Email Server? - Apps N Coffee
+   67. Pingback: Google ha le mie email perché ha le tue | Bicycle Mind
+   68. Pingback: Joint custody of data | Jon Udell
+   69. Pingback: The Pointlessness of Email Servers | Notes from Mere O
+   70. Pingback: Google detém boa parte do seu e-mail, mesmo se você não
+       usa o Gmail - Notícia da Cidade
+   71. Pingback: Google detém boa parte do seu e-mail, mesmo se você não
+       usa o Gmail - TabeladeCarros.net
+   72. Pingback: How Many of Your Emails Does Google Have? | TheBlaze.com
+   73. Pingback: How Many of Your Emails Does Google Have?
+   74. Pingback: Google detém boa parte do seu e-mail, mesmo se você não
+       usa o Gmail | Tech News
+   75. Pingback: Denton Texas Radio – Where Denton Comes To Listen! – How
+       Many of Your Emails Does Google Have?
+   76. Pingback: The software week in review for May 16 - AndroTab-
+       AndroTab
+   77. Pingback: Incognitosis de fin de semana (XIV) | Incognitosis
+   78. Richard G. Clegg says:
+       May 17, 2014 at 06:52
+       Surely this is an underestimate. Many people with their own domain
+       name redirect to/from gmail. I run my own domain and email server
+       but I back everything up to gmail so when you email me my server
+       transparently sends a copy to gmail so that I have an easily
+       searchable back up. There’s no way you could know that or tell that
+       from any headers you see.
+       Reply
+         1. Benjamin Mako Hill says:
+            May 17, 2014 at 09:23
+            I am only looking at the headers of emails that I receive
+            only. If you forward email to Gmail and respond using Gmail, I
+            see that and will count you as using Gmail. If you use Gmail
+            as a pure backup — i.e., sending and receiving mail from your
+            own mail server but forwarding an additional copy to Google’s
+            server — I will not be able to count that as Gmail. My sense
+            is that this is not extremely common.
+            Much more common I think, and also missed by my scripts, is
+            CCing. If somebody sends an email from a non-Gmail address but
+            CC or BCC’s a single person who uses Google as their
+            mailserver, Google has a copy of the email and I have no way
+            to tell.
+            You are right. For these and other reasons, my estimates are a
+            lower bound. The real answer must be at least a little higher.
+            Reply
+   79. MaX says:
+       May 17, 2014 at 11:15
+       Obviously. May I suggest yet another obvious article about two plus
+       two equals four? What a waste!
+       Reply
+         1. Benjamin Mako Hill says:
+            May 17, 2014 at 11:26
+            It was obvious to you that I receive 57% of my email last year
+            from Google and that after nearly a decade of steady increase
+            it now seems to be going down? Was it also obvious to you that
+            others who have run the scripts have values as low as 15% but
+            (so far) usually higher than mine and as high as 80%?
+            Reply
+   80. Anonymous says:
+       May 17, 2014 at 16:37
+       Encourage your contacts to communicate via a secured self-hosted
+       [web] forum, or an anonymous P2P Protocol. Anonymous remailers
+       still work. Obviously my dear friends stay in our IRC servers
+       communicating via OTR. But nothing deters them from using any of
+       the following:
+       https://en.wikipedia.org/wiki/Anonymous_P2P#Public_P2P_clients
+       Reply
+   81. Pingback: Google has my mail
+   82. Pingback: Links 18/5/2014: GNU/Linux on the Rise, Privacy in the
+       News | Techrights
+   83. Pingback: How Many of Your Emails Does Google Have? | Global
+       Geopolitics
+   84. Pingback: Google detém boa parte do seu e-mail, mesmo se você não
+       usa o Gmail | RemoveWAT SP1
+   85. Pingback: Au Courant || WNBTv - will not be televised
+   86. Pingback: Who Knew Herpes Could Be Good for Something? | Zedalza
+       Entertainment Network
+   87. Pingback: Goodbye Google (part 2) | World Of Pancakes
+   88. Pingback: nouveaux modèles | Google Has Most of My Email Because It
+       Has All of Yours | copyrighteous
+   89. Pingback: Manovra a tenaglia – Life In Low-Fi
+   90. Pingback: Wir sind alle Gmail-Nutzer: Datenschutz als Umweltproblem
+   91. Anonymous says:
+       May 27, 2014 at 13:43
+       Nice trivia, that i have to enter a valid E-Mail to be able to
+       reply to this entry. Anyway:
+       I have to accounts on a private server: I checked
+       All Mails: 576.819 – with 72.698 Hits = 12,60%
+       —
+       Private Mails: 419.172 – with 13.112 Hits = 3,13%
+       Mails as a member of Pirateparty standing for privacy
+       : 157.647 Mails – with 59.586 Hits = 37,80%
+       Trash-Folder: 112.315 – with 18 Hits = 0,02%
+       Well, i conclude my Trashmail is almost private. ;-)
+       Thanx for the article.
+       Reply
+         1. Anonaswell says:
+            June 3, 2014 at 21:57
+            As a test, this this comment was made with a mailinator
+            address.
+            Reply
+   92. Dennis Richter says:
+       May 27, 2014 at 14:47
+       Hi,
+       is there a way to make this statistic with a thunderbird-profile
+       with its stored mails?
+       Reply
+         1. Benjamin Mako Hill says:
+            May 29, 2014 at 17:10
+            Yes. I think you would need export from Thunderbird into
+            Maildir first. There are addons for Thunderbird that should
+            help you do this.
+            Reply
+   93. Pingback: 26.05.2014 – News | ATTRAPPENJAEGER
+   94. Pingback: Alles da. Alles dort. Lalalaaa. › Journal Emanuel-S
+   95. Pingback: Mailen ohne Google | Quantenmeinung
+   96. Anonymous says:
+       May 30, 2014 at 09:54
+       Isn’t it still a difference whether you have allowed Google to use
+       your data versus not having allowed that if only your correspondent
+       has a Google account?
+       Reply
+   97. Michael says:
+       May 30, 2014 at 15:44
+       This is the point: To have your own server, you spend +100bucks and
+       a ton of work. Thats the whole thing why everyone uses gmail. I
+       hope for a day when someone simplifies the process of obtaining a
+       tiny dedicated server (like a raspberry) and setting up a stable
+       mailserver on it. Simplyfies that much so the instructions are
+       ready to casual computer users. That will be gmails dead end :)
+       Reply
+   98. Pingback: IT-Security-Links – Week 22/23 | SWITCH Security-Blog
+   99. Pingback: Google Has Most of My Email Because It Has All of Yours -
+       Paul Ciano
+   100. Pingback: Edward Snowden: 1 año despues | CMI Guatemala
+   101. Pingback: You are a Gmail user - Puffin Computers
+   102. Steven says:
+       June 8, 2014 at 07:33
+       …the fact that I spend hundreds of dollars a year and hours of work
+       to host my own email server, …
+       What makes this so expensive? Doesn’t seem very compatible with
+       ideas of easily/cheaply hosting for yourself, like Freedombox…
+       Reply
+         1. Benjamin Mako Hill says:
+            June 8, 2014 at 17:47
+            If you want to host a server on a reliable Internet connection
+            (i.e., at an ISP and not at your home), it will cost hundreds.
+            Well, $200/year is under $17/month. That’s about the price of
+            a reasonably slow virtual server. I had to upgrade to a more
+            expensive virtual server in order to spam check all of the
+            email I receive.
+            Reply
+              1. Joshua Mitchell says:
+                 June 28, 2014 at 17:00
+                 May I ask where did you host your server for $17/month ?
+                 Reply
+                   1. Benjamin Mako Hill says:
+                      June 30, 2014 at 09:22
+                      It’s a virtual server, not hosting for a physical
+                      server. I use Rimuhosting but there are many other
+                      places online that will host a VPS for about that
+                      much.
+                      Reply
+                        1. Julian says:
+                           July 4, 2014 at 22:54
+                           Here is a VPS for $10/month
+                           I run 2 of them with this company and they are
+                           great! Fast support, super nice connection.
+                           http://www.exigent.com.au/servers/vps-starter-p
+                           ricing.php
+                        2. Berten VDB says:
+                           July 14, 2014 at 07:02
+                           Aaron Swartz on RimuHosting.
+                           It’s an article from 2009, but I thought you
+                           should read it.
+
+                        3. Benjamin Mako Hill says:
+                           August 23, 2014 at 16:38
+                           I read Aaron’s article when he wrote it. I was
+                           probably even one of the people who he
+                           described recommending Rimuhosting to him! I’ve
+                           been using Rimuhosting for decades and I have
+                           only had wonderful experiences. I’m not sure
+                           why Aaron seemed to have a such a rough but I
+                           can say that my partner Mika and I both use
+                           them and have only had great experiences.
+                           Despite Aaron’s experience, I would strongly
+                           recommend Rimuhosting to anybody.
+   103. Pingback: What We Are Reading | Quantified SelfQuantified Self
+   104. Pingback: “Google Has Most of My Email Because It Has All of Yours
+       | copyrighteous” | Rufo's Work and Personal Blog
+   105. Pingback: Google veut renforcer le chiffrement des messages sur
+       Gmail | yayakon9blog
+   106. Ben Steinberg says:
+       July 1, 2014 at 08:22
+       Thanks very much for this — this is a great tool. I finally got
+       around to running this on a series of mailboxes. For those who
+       don’t keep all their mail in a single mailbox, you can do something
+       like this:
+       $ for MAILBOX in ~/Maildir/.people* ; do python count_gmail.py
+       $MAILBOX >> mail_metadata.tsv ; done
+       I’m seeing a continuous increase of email coming from Google, just
+       over 50% overall, and just under 50% of email with replies.
+       Reply
+         1. Benjamin Mako Hill says:
+            July 4, 2014 at 09:32
+            Awesome! Thanks for posting the hint!
+            Reply
+   107. Pingback: Google Has Most of My Email Because It Has All of Yours
+       | copyrighteous » Quality and security of information systems
+   108. Pingback: BECAUSE IT HAS ALL OF YOURS
+   109. Pingback: Fefes Blog
+   110. Pingback: Sofs
+   111. Pingback: The way to Disappear (virtually) Utterly: a sensible
+       information | Global Quest Services
+   112. Pingback: How to Disappear (almost) Completely: a practical guide
+       | Belajar Blog
+   113. Pingback: How to Disappear (almost) Completely: a practical guide
+       | Video Marketing Group Organization
+   114. Pingback: How to Disappear (almost) Completely: a practical guide
+       | UxTouch
+   115. Pingback: Goodbye, Google Mail! | Windows Security
+       UnSicherheitsBlog.de - Sicherheit Blog
+
+Leave a Reply Cancel reply
+
+   Your email address will not be published. Required fields are marked *
+
+   Name * ______________________________
+
+   Email * ______________________________
+
+   Website ______________________________
+
+   Comment
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+
+   You may use these HTML tags and attributes: <a href="" title=""> <abbr
+   title=""> <acronym title=""> <b> <blockquote cite=""> <cite> <code>
+   <del datetime=""> <em> <i> <q cite=""> <strike> <strong>
+
+   Post Comment
+
+   [ ] Notify me of follow-up comments by email.
+
+   [ ] Notify me of new posts by email.
+
+Your Host
+
+   I'm Benjamin Mako Hill and I'm a rebel with rather too many causes. You
+   can follow me here, on identi.ca/StatusNet or, if you really must, on
+   Twitter.
+
+Syndication Feed
+
+   Atom Feed
+
+Search Blog
+
+   Search for: ____________________ Search
+
+Tags
+
+   # tags reflections academic books freesoftware ip lookalikes
+   planetwikimedia projects reflections talks
+
+Recent Posts
+
+     * Community Data Science Workshops Post-Mortem
+     * Installing GNU/Linux on a 2014 Lenovo Thinkpad X1 Carbon
+     * Google Has Most of My Email Because It Has All of Yours
+     * Community Data Science Workshops in Seattle
+     * V-Day
+
+Recent Comments
+
+     * Community Data Science Workshop Report | Network Collectives on
+       Community Data Science Workshops Post-Mortem
+     * James Mason on Tribute to the Seiko Messagewatch
+     * Ian Beardslee on Installing GNU/Linux on a 2014 Lenovo Thinkpad X1
+       Carbon
+     * Peter Eckersley on Installing GNU/Linux on a 2014 Lenovo Thinkpad
+       X1 Carbon
+     * Benjamin Mako Hill on Installing GNU/Linux on a 2014 Lenovo
+       Thinkpad X1 Carbon
+
+   Unless otherwise noted, all content is copyright Benjamin Mako Hill and
+   distributed as free cultural work under the Creative Commons
+   Attribution-ShareAlike license.
+   Proudly powered by WordPress

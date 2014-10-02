@@ -1,0 +1,1107 @@
+status: 200
+content-length: 87529
+via: 1.1 varnish
+vary: Accept-Encoding, Cookie, Cookie
+x-styx-version: StyxGo
+x-styx-req-id: styx-c13a83f4634064239ce593309b03d4a4
+content-language: en
+x-styx-build-num: 680
+x-styx-build-date: Mon Sep 22 12:12:17 UTC 2014
+x-pantheon-styx-hostname: styx3870f4dd
+cache-control: public, max-age=900
+x-varnish: 790707581
+accept-ranges: bytes
+expires: Sun, 19 Nov 1978 05:00:00 GMT
+last-modified: Mon, 22 Sep 2014 16:39:16 +0000
+-content-encoding: gzip
+link: <http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why>;
+ rel="canonical"
+date: Mon, 22 Sep 2014 16:39:16 GMT
+x-styx-build-sha: 3fe69b9549bb04cefbb5e455d6fc2dc51e39d71b
+x-drupal-cache: MISS
+content-location: http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why
+age: 0
+x-powered-by: PHP/5.3.17
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=utf-8
+x-pantheon-endpoint: c203eeef-aba4-45f9-ba31-c176764af9da
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQAVVVQGwEHV1RTBAU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){try{u?u-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(d){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(c){"stack"in c&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,c="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,d=e(c);if(d&&(r.rxSize=d),this.sameOrigin){var f=t.getResponseHeader("X-NewRelic-App-Data");f&&(n.cat=f.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,c=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var c=e(o);c&&(r.txSize=c)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var d=0;u>d;d++)n.addEventListener(s[d],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+c(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+c(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,c="addEventListener",d="attachEvent",f=(""+location).split("?")[0],p=e.exports={offset:i(),origin:f,features:[]};u[c]?(u[c]("DOMContentLoaded",o,!1),s[c]("load",n,!1)):(u[d]("onreadystatechange",r),s[d]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),c=this,d=r&&r(a,c)||{}}catch(f){i([f,"",[a,c,s],d])}o(e+"start",[a,c,s],d);try{return n=t.apply(c,a)}catch(p){throw o(e+"err",[a,c,p],d),p}finally{o(e+"end",[a,c,n],d)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,c="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,c?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+
+  <!-- Site Properities -->
+  <title>AIDS Hit the United States Harder Than Other Developed Countries: Why? | New Republic</title>
+
+  
+  <!-- Mobile Properities -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/tnr/assets/images/apple/apple-icon-144x144.png" />
+
+  <meta name="apple-mobile-web-app-title" content="New Republic">
+  <meta name="google-site-verification" content="yjAiUZ-nXs91TSe9Er7xAnQBp2C8V2gg-mpTF7aZh20" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Social Properities -->
+  <meta property="twitter:account_id" content="82689705" />
+  <meta property="fb:app_id" content="219642118178156" />
+  <meta property="fb:admins" content="100001770781440" />
+  <meta property="fb:admins" content="19000185" />
+  <meta property="fb:admins" content="2400669" />
+  <meta property="fb:admins" content="600931" />
+  <meta property="fb:admins" content="5" />
+  <link href="https://plus.google.com/+thenewrepublic/" rel="publisher" />
+
+  <meta name="parsely-page" content='{"title":"Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?","link":"http:\/\/www.newrepublic.com\/article\/117691\/aids-hit-united-states-harder-other-developed-countries-why","section":"Health","pub_date":"2014-05-12T20:00:00-04:00","post_id":"117691","author":"Michael Hobbes","type":"post","tags":["Health","Politics","Culture","AIDS"]}' />
+  <link rel="canonical" href="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why" />
+<meta property="og:image" content="http://www.newrepublic.com/sites/default/files/philadelphia.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="twitter:image:src" content="http://www.newrepublic.com/sites/default/files/styles/large/public/u184683/lede_art_hobbes_0.jpg?itok=xyyoD3-o" />
+<meta content="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?" about="/article/117691/aids-hit-united-states-harder-other-developed-countries-why" property="dc:title" />
+<link rel="shortcut icon" href="http://www.newrepublic.com/sites/default/files/newrepublic-icon.ico" type="image/vnd.microsoft.icon" />
+<meta name="parsely-metadata" content='{"thumb_image":"http:\/\/www.newrepublic.com\/sites\/default\/files\/styles\/homepage_bottom_feature\/public\/u184683\/lede_art_hobbes_0.jpg?itok=NdtR61L7"}' /><link rel="alternate" type="application/rss+xml" title="The New Republic | The Plank" href="http://www.newrepublic.com/plank-rss.xml" />
+<meta about="/article/117691/aids-hit-united-states-harder-other-developed-countries-why" property="sioc:num_replies" content="0" datatype="xsd:integer" />
+<link rel="alternate" type="application/rss+xml" title="The New Republic" href="http://www.newrepublic.com/rss.xml" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="keywords" content="Health, Politics, Culture, AIDS" />
+<meta property="article:section" content="Politics" />
+<meta property="sailthru.rubric" content="Health" />
+<meta name="twitter:title" content="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?" />
+<meta name="sailthru.articleID" content="117691" />
+<meta property="article:published_time" content="2014-05-12T20:00:00-04:00" />
+<meta property="sailthru.date" content="2014-05-12 20:00:00" />
+<meta property="article:tag" content="Health" />
+<meta name="twitter:site" content="@tnr" />
+<meta property="sailthru.author" content="Michael Hobbes" />
+<meta property="dcterms.creator" content="Michael Hobbes" />
+<meta property="author" content="Michael Hobbes" />
+<meta name="twitter:description" content="The answer is a lot more complicated than saying we&#039;re less enlightened than Europe. Solving an epidemiological mystery.&amp;nbsp;" />
+<meta name="description" content="The answer is a lot more complicated than saying we&#039;re less enlightened than Europe. Solving an epidemiological mystery." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<meta property="og:site_name" content="New Republic" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why" />
+<meta property="og:title" content="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?" />
+<meta property="og:description" content="The answer is a lot more complicated than saying we&#039;re less enlightened than Europe. Solving an epidemiological mystery." />
+<meta name="dcterms.date" content="2014-05-12T20:00-04:00" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why" />
+  <link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_4hPmAO_Nvj6jiRjsl7yjW6iGzgIXcDYAzsF_zjCZPRU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_tMu85oxBwJeA0ft2jJBpmbx9QUljMx-rJlqB5RG-kRg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.newrepublic.com/sites/default/files/css/css_e6NSrz0eAtXd6XIybK4UIc7su1S1lr86zr5Zpcjhfb0.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/sites/all/themes/tnr/build/devices/print.css" media="print">
+  <!-- Reset JS before Page Load !-->
+<script src="/sites/all/themes/tnr/javascript/reset.js"></script>
+  <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-10465183-1']);
+  _gaq.push(['_setDomainName', 'newrepublic.com']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- comScore -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "15230262" });
+(function() {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+</script>  
+<!-- Google Ads -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+// pusher
+window.googletag     = window.googletag || {}
+window.googletag.cmd = window.googletag.cmd || [];
+
+// loader
+(function() {
+  var
+    gads   = document.createElement('script'),
+    useSSL = 'https:' == document.location.protocol,
+    node
+  ;
+  gads.async = true;
+  gads.type  = 'text/javascript';
+  gads.src   = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+  node       = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+//--><!]]>
+</script>
+
+<!-- Google Ad Leaderboards -->
+<script type="text/javascript">
+// push ads available on all pages onready without jquery (not available till end of page)
+document.onreadystatechange = function () {
+  var
+    state = document.readyState
+  ;
+  if (state === 'interactive' && window.site !== undefined) {
+    site.utilities.load.ads([
+      {
+        name  : '/25738720/Web-LB0',
+        id    : 'leaderboard-ad',
+        sizes : [
+          [970, 90],
+          [728, 90]
+        ]
+      },
+      {
+        name  : '/25738720/Mobile-LB1',
+        id    : 'mobile-leaderboard-ad',
+        sizes : [
+          [320, 50]
+        ]
+      }
+    ]);
+  }
+};
+</script>
+
+</head>
+<body id="article" >
+    <!-- Header !-->
+
+
+  <div class="ui page navigation container">
+    <div class="leaderboard advertisement" id="leaderboard-ad"></div>
+<div class="mobile advertisement" id="mobile-leaderboard-ad"></div>    <div class="ui relaxed fitted grid">
+      <div class="left column">
+                <h2>New Republic</h2>
+                <span itemscope itemtype="http://schema.org/Organization">
+          <a class="logo ui image" itemprop="url" href="/" >
+            <img itemprop="logo" src="/sites/all/themes/tnr/assets/images/logo-100-slim.png">
+          </a>
+        </span>
+        <div class="ui compact basic large mobile button">
+          <i class="list layout icon"></i> Menu
+        </div>
+        <nav class="ui divided horizontal category list">
+          <a href="/tags/politics" class="item">Politics</a>
+          <a href="/tags/culture" class="item">Culture</a>
+          <a href="/current-issue" class="item">Magazine</a>
+        </nav>
+        <nav class="ui horizontal sub category list">
+          <a href="/latest" class="item">The Latest</a>
+          <a href="/qed" class="item">Q.E.D.</a>
+          <a href="/tags/books" class="item">Books</a>
+          <a href="/climate" class="item">Climate</a>
+          <a href="/tags/isis" class="item">ISIS</a>
+          <a href="/tags/future-work" class="sponsored item">
+            Next Republic
+            <i class="triangle down icon"></i>
+          </a>
+        </nav>
+        <div class="ui sponsored wide popup">
+          <div class="ui four column fitted grid">
+            <div class="column">
+              <a href="/project/next-republic">
+                <img class="ui image" src="/sites/all/themes/tnr/assets/images/suisse/next-republic-navcallout.jpg" alt="Next Republic">
+              </a>
+            </div>
+              <div class="column">
+    <div class="ui headline">
+      <h3 class="ui rubric header">
+        <a href="/tags/interview" class="title">Interview</a>      </h3>
+      <a class="ui image" href="/article/119493/interview-jeffrey-tambor-playing-transgender-transparent">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/u184683/jeffrey-tambor-in-transparent.jpg?itok=cmJD5AFU" />
+              </a>
+      <h3 class="ui header">
+        <a href="/article/119493/interview-jeffrey-tambor-playing-transgender-transparent">
+          Jeffrey Tambor’s New Role Made Him “Throw-Up Nervous”        </a>
+        <div class="sub header">
+                  </div>
+      </h3>
+      <div class="author">
+        <a href="/authors/esther-breger">Esther Breger</a>      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui headline">
+      <h3 class="ui rubric header">
+        <a href="/tags/millennialology" class="title">Millennialology</a>      </h3>
+      <a class="ui image" href="/article/119443/roommate-break-ups-are-most-bittersweet-kind">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/lede_art_friends_0.jpg?itok=bJRt2r6I" />
+              </a>
+      <h3 class="ui header">
+        <a href="/article/119443/roommate-break-ups-are-most-bittersweet-kind">
+          How (and How Not) to Break Up With a Roommate         </a>
+        <div class="sub header">
+                  </div>
+      </h3>
+      <div class="author">
+        <a href="/authors/libby-copeland">Libby Copeland</a>      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui headline">
+      <h3 class="ui rubric header">
+        <a href="/tags/psychology" class="title">Psychology</a>      </h3>
+      <a class="ui image" href="/article/119378/hijab-can-improve-body-image">
+                <img src="http://www.newrepublic.com/sites/default/files/styles/latest/public/u184683/hijabi.jpg?itok=bal26sSW" />
+              </a>
+      <h3 class="ui header">
+        <a href="/article/119378/hijab-can-improve-body-image">
+          Women Who Wear Hijab Can Have a Better Body Image, Study Says        </a>
+        <div class="sub header">
+                  </div>
+      </h3>
+      <div class="author">
+        <a href="/authors/alice-robb">Alice Robb</a>      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+      <div class="right column">
+        <div class="ui right floated red subscribe buttons">
+          <div class="ui dropdown button">
+            <a target="_blank" href="/subscription/self/header">Subscribe Now</a>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item" href="/subscription/self/dropdown">Order a Subscription</a>
+              <a class="item" href="/subscription/gift/header">Give a Gift</a>
+              <a class="item" href="/subscription/international/header">International Orders</a>
+              <a class="item" href="/subscription/canada/header">Canadian Orders</a>
+              <a class="item" href="/subscription/digital/header">Digital Subscription</a>
+            </div>
+          </div>
+        </div>
+        <div class="ui small secondary user menu">
+                  <a class="login item" href="/page/account-information">Sign In</a>
+                </div>
+        <div class="ui search">
+          <div class="ui small icon input">
+            <input class="prompt" type="text" name="q" autocomplete="off" placeholder="Search...">
+            <i class="search icon"></i>
+          </div>
+          <div class="results"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ui fluid inverted vertical logged-out mobile menu">
+      <a class="item" href="/page/account-information">Sign In</a>
+      <a class="item" href="/subscription/self/header">Subscribe</a>
+      <div class="header item">Sections</div>
+      <a href="/latest" class="item">The Latest</a>
+      <a href="/qed" class="item">QED</a>
+      <a href="/tags/politics" class="item">Politics</a>
+      <a href="/tags/culture" class="item">Culture</a>
+      <a href="/current-issue" class="item">The Magazine</a>
+      <a href="/tags/future-work" class="item">Next Republic</a>
+    </div>
+  </div>
+
+<div class="page body">
+    <script type="text/javascript">
+site.page.config = {
+  enablePaywall: false,
+  adInterval : 30,
+    ads        : [
+    {
+      name  : '/25738720/Web-LR1',
+      id    : 'rail-ad',
+      sizes : [
+        [300, 250],
+        [300, 600],
+        [300, 1050]
+      ]
+    },
+    {
+      name  : '/25738720/Web-LR2',
+      id    : 'sticky-rail-ad',
+      sizes : [
+        [300, 250],
+        [300, 600]
+      ]
+    },
+    {
+      name  : '/25738720/Web-SR1',
+      id    : 'house-small-rectangle',
+      sizes : [
+        [300, 100]
+      ]
+    },
+    {
+      name  : '/25738720/Mobile-WS1',
+      id    : 'tablet-sticky-rail-ad',
+      sizes : [
+        [160, 600]
+      ]
+    },
+    {
+      name  : '/25738720/Mobile-LR1',
+      id    : 'mobile-article-bottom-ad',
+      sizes : [
+        [300, 250],
+        [300, 600]
+      ]
+    }
+  ]
+  };
+</script>
+
+<div class="ui page content container">
+    <div class="story image"
+    data-image="http://www.newrepublic.com/sites/default/files/u184683/lede_art_hobbes_0.jpg"
+      >
+    <div class="ui active flipping loader">
+      <div class="shape"></div>
+    </div>
+        <span class="attribution">
+      Photo:   Illustration by Álvaro Domínguez    </span>
+      </div>
+  <img src="http://www.newrepublic.com/sites/default/files/styles/static_cover_img_500/public/u184683/lede_art_hobbes_0.jpg?itok=afM1_FWi" class="ui fluid inline image" alt="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?">
+  
+  <div class="article container" itemscope itemtype="http://schema.org/Article">
+
+    <div class="header">
+      <div class="story title">
+                  <a href="/tags/health" itemprop="articleSection" class="category">Health</a>                <h5 class="date" itemprop="datePublished"><span property="dc:date dc:created" content="2014-05-12T20:00:00-04:00" datatype="xsd:dateTime">May 12, 2014</span></h5>
+        <h1 class="title">
+          <span class="headline" itemprop="name">Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?</span>
+                    <span class="caption">
+            Solving an epidemiological mystery          </span>
+                  </h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="story">
+        <div class="inline tools">
+          <div class="share module">
+            <div class="twitter slim"
+              data-url="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why"
+              data-text="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?"
+              data-title="Tweet">
+            </div>
+            <div class="facebook slim"
+              data-url="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why"
+              data-text="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?"
+              data-title="Share">
+            </div>
+          </div>
+        </div>
+        <div class="tracking">
+          <div class="body text">
+                        <h5 class="ui author dividing header">
+              By <a href="/authors/michael-hobbes" itemprop="author" rel="author">Michael Hobbes</a>                              <span class="attribution">
+                  Photo:   Illustration by Álvaro Domínguez                </span>
+                          </h5>
+                        
+                                    <div class="body" itemprop="articleBody" >
+              <p class="TEXT-JUSTIFIED-INDENT"><span class="char-style-override-1"><span class="dropcap">S</span>o I’m getting AIDS tested the other day in Berlin. I’m sitting in the waiting room and feeling like a Bad Gay, because I’ve lived here for three years and this is my first time getting tested. </span>I’m surrounded by all these scared-straight brochures about HIV and AIDS in Germany. Prevalence rates, treatment options, prevention methods, names and addresses of support groups. “Since the start of the epidemic,” one of them says, “more than 27,000 people have died of AIDS in Germany.”</p><p class="TEXT-JUSTIFIED-INDENT">Wait, that sounds triumphantly low for a country of 80 million people. I pull out my phone and check the Centers for Disease Control and Prevention (CDC) website, which tells me that, in the United States, 636,000 people have <a href="http://aids.gov/hiv-aids-basics/hiv-aids-101/statistics/"><span class="HYPERLINK">died</span></a> since the epidemic began. That’s 23 times higher than Germany, for a country with four times the population.</p><p class="TEXT-JUSTIFIED-INDENT">This makes no sense. Germany has big cities, it has gay men and sex workers and drug users, it has all the same temptations for them to be uncareful that the United States does. How could so many fewer people have died?</p><p class="TEXT-JUSTIFIED-INDENT">Maybe it’s a fluke. I visit the Public Health England website and it says 21,000 people have died of AIDS there in total. If the rates were the same as the United States, it would be 128,000.</p><p class="TEXT-JUSTIFIED-INDENT">The further down the Google-hole I go, the more mind-boggling the numbers get. Since the beginning of the epidemic, AIDS has claimed more people in New York City than in Spain, Italy, the Netherlands, and Switzerland <em><span class="ITALIC-PUBLICO">combined</span></em>.</p><div class="pull-right-wide"><img src="/sites/default/files/u184683/article_inset_hobbs_514.jpg" /><br /><div class="caption"><div class="credit">  Illustration by Álvaro Domínguez</div></div></div><p class="TEXT-JUSTIFIED-INDENT">The next day I start asking epidemiologists about this divergence. The first thing they tell me is that it is real, even accounting for differences in methodology.<span class="char-style-override-2"><a id="footnote-1-reference" class="footnote-reference" href="#footnote-1"><sup>1</sup></a></span> Scan the columns on the stats sheets<span class="em">&mdash;</span>incidence, prevalence, deaths<span class="em">&mdash;</span>and you find the United States with a two-digit lead going right back to the start of the epidemic. Still now, no matter how much we’ve learned about how to prevent and treat AIDS, the United States loses more than 15,000 people to it each year. Germany and the United Kingdom lose fewer than 800.<span class="char-style-override-2"><a id="footnote-2-reference" class="footnote-reference" href="#footnote-2"><sup>2</sup></a></span></p><p class="TEXT-JUSTIFIED-INDENT"><a href="http://www.newrepublic.com/article/117740/charts-startling-scary-statistics-about-hiv-aids-united-states"><span class="char-style-override-2">(Five Startling Statistics About America's Dreaful Record on HIV/AIDS)</span></a></p><p class="TEXT-JUSTIFIED-INDENT">The second thing they tell me is why. AIDS is the same virus no matter what country you’re in. But when it arrived in the United States, how it spread, who got it, and why<span class="em">&mdash;</span>that’s more complicated, and not entirely flattering.</p><p class="TEXT-JUSTIFIED-INDENT"> </p><p class="TEXT-JUSTIFIED-NOINDENT"><span class="dropcap">L</span>ooking at the data on AIDS deaths, you see that the virus hit the United States early<span class="em">&mdash;</span>and hard. In 1982, the first year of nationwide CDC surveillance, 451 people died of AIDS in America. Just five died in Britain. In 1985, when Germany started reporting, it had 170 AIDS deaths. The United States had almost 7,000.</p><p class="TEXT-JUSTIFIED-NOINDENT para-style-override-1">Jonathan Engel, the author of <em><span class="ITALIC-PUBLICO">The Epidemic: A Global History of </span><span class="ITALIC-PUBLICO char-style-override-5">AIDS</span></em>, walks me through the timeline: AIDS first appears in humans in central Africa in the 1950s. A few isolated cases make it from there to the United States and Western Europe, but it fails to catch fire. The virus finally finds a host country in Haiti, ferried to and fro in the veins of guest workers in Africa. By the mid-’70s, Port-au-Prince is a popular tourist and cruise-ship destination<span class="em">&mdash;</span>“a gay Bangkok” is how Engel’s book puts it<span class="em">&mdash;</span>and the virus jumps from male prostitutes to gay American vacationers, to their friends and lovers back home.</p><p class="TEXT-JUSTIFIED-INDENT">Or abroad. One of the first U.K. surveillance reports, from 1983, announces 14 cases of AIDS, then adds: “seven of the cases were known to have had contact with US nationals, suggesting that the present UK situation is simply part of the American epidemic.”</p><p class="TEXT-JUSTIFIED-INDENT">But it isn’t just that the virus arrived in the United States earlier. As Dr. James Curran, dean of the Rollins School of Public Health at Emory University, points out, Belgium and France had significant central African and Haitian populations; Haiti was a destination for them, too. “But the disease wasn’t able to spread through them like it went through American gays,” he says.</p><p class="TEXT-JUSTIFIED-INDENT">Which leads to the next factor explaining the larger scale of the HIV epidemic in the United States: the clustering of our high-risk populations. The United States has more people than any Western European country, as well as more mobility, giving rise to larger numbers of and more tightly grouped gay men and intravenous-drug users. Engel’s book quotes Frances FitzGerald, writing in <em><span class="ITALIC-PUBLICO">The New Yorker</span></em> in 1986, saying “the sheer concentration of gay people in San Francisco may have had no parallel in history.”</p><p class="TEXT-JUSTIFIED-INDENT">These clusters were also engaged in riskier behavior. The United States had higher rates of STDs and intravenous-drug use (epidemiologists used to call shooting up “the American disease”) before AIDS arrived. All of this, combined with the virus’s devious characteristic of being maximally spreadable right after infection, laid the infrastructure for the disease to maraud through one population and jump to others.</p><p class="TEXT-JUSTIFIED-INDENT">The closest thing to a natural experiment on this clustering phenomenon is right in my own backyard. East and West Berlin had the same language, history, and culture<span class="em">&mdash;</span>everything but the political and economic structures that allowed gay men to find each other and addicts to find drugs.</p><p class="TEXT-JUSTIFIED-INDENT">“Before the Berlin Wall came down, East Berlin had two gay cafés and two gay bars, for a population of 1.3 million people,” says Michael Bochow, a sociologist in Berlin who has been researching HIV in Germany since the beginning of the epidemic. “East Berlin had no bathhouse, no bar with a back room.”</p><p class="TEXT-JUSTIFIED-INDENT">Guys in East Berlin were still hooking up with each other<span class="em">&mdash;</span>of course they were<span class="em">&mdash;</span>but the low labor mobility, combined with the logistical barriers to participating in gay life and getting intravenous drugs, kept clusters from forming.</p><p class="TEXT-JUSTIFIED-INDENT">In 1989, when the Berlin Wall came down, West Germany had about 35,000 people infected with HIV. East Germany had fewer than 500.</p><p class="TEXT-JUSTIFIED-INDENT">I don’t want to overstate the case here. This clustering effect is almost inherently un-measurable (drug use and gayness weren’t exactly on the census), and there’s no way to know if San Francisco and New York really had higher proportions of gay people than London, Paris, or Berlin. We do know that the virus spread faster through U.S. cities than European ones, but we don’t know, may never know, precisely why.</p><p class="TEXT-JUSTIFIED-INDENT">The third explanation for how the HIV epidemic in the United States got so severe so early has to do with intravenous-drug use<span class="em">&mdash;</span>and the policies that tried to prevent it. One of the most staggering numbers I came across was that, from the beginning of the epidemic until HIV treatment became widely available in 1996, 124,800 intravenous-drug users were diagnosed with HIV in the United States. In the United Kingdom, it was just 3,400.</p><p class="TEXT-JUSTIFIED-INDENT">Don Des Jarlais, research director of the de Rothschild Chemical Dependency Institute in New York, says HIV in drug users followed a similar trajectory as HIV in gay men. It arrived earlier than in Europe, and it had a more fertile spreading ground thanks to the higher prevalence of drug use.</p><p class="TEXT-JUSTIFIED-INDENT">No one knew how severe the epidemic was among drug users until 1984, when the still-under-development antibody test found that 50 percent of drug users in New York City and Edinburgh and 30 percent in Amsterdam were already infected. (Des Jarlais says genetic tests have since shown that the epidemic in Amsterdam originated in New York.)</p><p class="TEXT-JUSTIFIED-INDENT">Here’s where the differences come in. Almost immediately after those first tests, Western European countries installed needle-exchange programs, gave out free syringes, and established opiate-substitution treatment. Germany even got needle vending machines. By 1997, England and Wales were giving out 25 million free syringes per year. Anything to keep the virus from spreading, even if it meant making it a little easier to be a heroin addict that day.</p><p class="TEXT-JUSTIFIED-INDENT">The United States, on the other hand, refused to provide federal funds for needle exchanges or even fund research into whether they were effective. Exchanges were established in some cities<span class="em">&mdash;</span>by 1990, New York City was distributing 250,000 syringes a year<span class="em">&mdash;</span>but they never achieved the coverage of the countrywide programs in Western Europe.</p><p class="TEXT-JUSTIFIED-INDENT">This sounds like just another episode to file under “Western Europe enlightened, U.S. myopic,” but remember how different the context was. The mid-’80s was America’s heyday of stigmatizing drug users. This was the era of “Just Say No,” Nancy Reagan on “Diff’rent Strokes,” McGruff the Crime Dog. America was in the middle of a crack epidemic. All of the negative impacts of that epidemic<span class="em">&mdash;</span>the gang violence to prolong it, the War on Drugs to end it<span class="em">&mdash;</span>were concentrated in poor, mostly African American communities. Just possessing syringes was illegal in most states. Handing them out in the millions, facilitating one epidemic to end another, seemed like a cruel joke.</p><p class="TEXT-JUSTIFIED-INDENT">“They were saying, ‘Why don’t you just get rid of drug use from our communities?’ ” Des Jarlais says. “ ‘You’re letting these drugs come in because you don’t care about our communities, and now you want to make things worse by giving out syringes.’ ” This gave national politicians the excuse they needed. The ban on federal funding for needle exchanges wasn’t <a href="http://www.npr.org/templates/story/story.php?storyId=121511681"><span class="HYPERLINK">lifted</span></a> until 2009<span class="em">&mdash;</span>and then got banned again in 2011.</p><p class="TEXT-JUSTIFIED-INDENT">As I’m calling up epidemiologists, hearing these explanations, it feels like something’s missing: What about all those public-information campaigns I remember from growing up? After-school specials, PSAs, the time my Seattle public middle school gave us all a stack of condoms and told us to put them on fruit at home? Did Western European countries implement different, more effective kinds of programs?</p><p class="TEXT-JUSTIFIED-INDENT">Prevention efforts did indeed differ among countries. Germany threw funding at gay community NGOs and gave them carte blanche to devise their own prevention projects. Britain put a John Hurt voice-over on top of Mordor imagery, called it “AIDS: Don’t Die of Ignorance,” and beamed it to the whole country.</p><p class="TEXT-JUSTIFIED-INDENT">Engel points out that, in the United States, despite Ronald Reagan’s sloth-like funding of HIV research and the government’s stinginess in supporting NGOs, gay activists were on the streets and in the bathhouses from the earliest stages of the epidemic, condoms in hand, telling people how to protect themselves. At the national level, C. Everett Koop sent a pamphlet to every household in America (literally!), telling them about the disease and achieving the goal, like the British mass campaigns, of scaring us all shitless.</p><p class="TEXT-JUSTIFIED-INDENT">The efforts of gay community groups during this time have been (rightly) lionized in movies like <em><span class="ITALIC-PUBLICO">We Were Here</span></em> and <em><span class="ITALIC-PUBLICO">How to Survive a Plague</span></em>. Less well known is that intravenous-drug users were also educating each other about how to reduce risks. Drug users started sharing needles with fewer partners, even setting up their own needle exchanges, pilfering clean needles from hospitals, or importing them from Canada. Des Jarlais told me about doctors who used to place boxes of clean syringes around emergency rooms, knowing they’d be taken by drug users and sold or given onward.</p><p class="TEXT-JUSTIFIED-INDENT">The messages and methodologies of these efforts may have differed among the United States, the United Kingdom, and Germany, but their effect appears to be equally decisive. By the mid-’80s, gay men and drug users knew about HIV, they knew about their risks, and they were making changes to reduce them. In all three countries, HIV incidence<span class="em">&mdash;</span>the number of people contracting HIV each year<span class="em">&mdash;</span>peaked in the mid-’80s, then started to drop as people de-risked their sex and drug use.</p><p class="TEXT-JUSTIFIED-INDENT">But for those already infected, none of that mattered; the number of deaths rose steadily through the late ’80s and early ’90s. The avalanche had been loosed, and there was little anyone<span class="em">&mdash;</span>NGOs, doctors, politicians<span class="em">&mdash;</span>could do to stop it.</p><p class="TEXT-JUSTIFIED-INDENT"> </p><div class="pull-center"><img src="/sites/default/files/u184683/article_inset_hobbes_graph_645_0.jpg" /></div><p class="TEXT-JUSTIFIED-NOINDENT"><span class="dropcap">G</span>raphs of AIDS deaths in almost every developed country look like a wave about to break on the shore. Starting from zero, deaths rise steadily through the ’80s, a bit faster in the ’90s, then suddenly, around 1995 or 1996, plummet downward.</p><p class="TEXT-JUSTIFIED-INDENT">“That’s the beginning of the HAART era,” says Caroline Sabin, a professor of medical statistics and epidemiology at University College London. She’s talking about highly active anti-retroviral therapy, the cocktail of medications that, 15 years after the virus appeared, marked the first truly effective rampart against it.</p><p class="TEXT-JUSTIFIED-INDENT">The next thing you notice about those graphs is that death rates in the United States didn’t fall to the same lows as the rest of the developed world. (Check out how great the discrepancy is in the chart above.) Sabin points me to a 2013 study that found the United States with four-year HIV mortality rates roughly equal to those in South Africa.</p><p class="TEXT-JUSTIFIED-INDENT">And it’s not just the death rates that stayed high. In 2010, the United States had 47,500 new HIV infections. The entire European Union<span class="em">&mdash;</span>with a population more than one and a half times that of the United States<span class="em">&mdash;</span>had just 31,400.</p><p class="TEXT-JUSTIFIED-INDENT">So what gives? “Keeping people alive is about getting them diagnosed, getting them into care, then making sure they stay in care and on HAART,” Sabin says. “And that, unfortunately, is where the U.S. differs from the U.K.” It turns out that, just as the AIDS virus seems almost designed to perfectly exploit the weaknesses of the human immune system, treating it seems designed to exploit the weaknesses of our national health care system.</p><p class="TEXT-JUSTIFIED-INDENT">Let’s start with diagnosis, the first stage of what epidemiologists call the “cascade of care.” An undiagnosed HIV infection is a ticking time bomb for the people carrying it. Each day that goes by, the virus chips away at their immune systems, reducing life expectancies and increasing the cost and chances of complications once they finally get on treatment. They also, crucially, remain more infectious. Up to <a href="http://content.healthaffairs.org/content/33/3/378"><span class="HYPERLINK">50 percent </span></a>of new HIV infections are transmitted by people who don’t know they have it.</p><p class="TEXT-JUSTIFIED-INDENT">Getting an HIV test is, logistically speaking, pretty easy in all three countries. The next stage of the cascade, getting linked to another round of tests and into treatment, is more challenging. In the United Kingdom and Germany, if you test positive for HIV, you’ll immediately be referred to an HIV clinic for tests to measure how much of the virus is in your blood and how well your immune system is holding up.</p><p class="TEXT-JUSTIFIED-INDENT">Three-quarters of Brits diagnosed with HIV get to this next stage of care within two weeks, and 97 percent make it within three months. This is not just some nationwide codification of English politeness. Clinics that provide testing are required to get HIV-positive people to the next round of tests or they don’t get fully reimbursed. If you screen positive and skip your viral-load test, you’ll get a call from the clinic asking why you didn’t show up. Some testing centers will walk you straight to the hospital to make an appointment.</p><p class="TEXT-JUSTIFIED-INDENT">In the United States, only 65 percent of people with HIV get linked to a hospital or clinic within three months. A survey in Philadelphia published in 2010 found that the <em><span class="ITALIC-PUBLICO">median</span></em> time between diagnosis and treatment was eight months. The effect of the wait can be devastating. A 2008 study found that gay men who had full-blown AIDS before they were diagnosed were 75 percent more likely to die within three years, even if they got on treatment. For people whose viral load is high and T-cell count is low, getting on HAART is like putting on sunscreen after they’ve already been at the beach for two hours.</p><p class="TEXT-JUSTIFIED-INDENT">The next stage of HIV care is receiving HAART pills and staying on them. People who get medication rapidly and take it consistently aren’t just less likely to die of the virus; they’re less likely to pass it on. The epidemio-speak term for this is having a “suppressed viral load”: The levels of the virus in your blood are so low that tests can’t pick them up anymore<span class="em">&mdash;</span>and your sex and drug partners are also a lot less likely to.</p><p class="TEXT-JUSTIFIED-INDENT">This is the holy grail of HIV treatment, and arriving there requires at least 90 percent adherence to the pill regimen. If you stop taking the pills then start again, or forget to take them more than once in awhile, the virus could spike or you could develop resistance to the drugs.</p><p class="TEXT-JUSTIFIED-INDENT">In Britain and Germany, two-thirds of people with HIV have a prescription for HAART. In America? Only one-third. Forty-eight percent of Brits with HIV have a suppressed viral load. In the United States, only 25 percent of them do.</p><p class="TEXT-JUSTIFIED-INDENT">The most obvious reason for this gap is cost. In the United Kingdom, HIV treatment is completely free. Some clinics even reimburse you for your bus fare. In Germany, drugs might cost you a co-pay of 5 euros ($7.50), but that’s subsidized if you’re unemployed or below an income threshold.</p><p class="TEXT-JUSTIFIED-INDENT">Neither the CDC nor the National Institutes of Health tracks the out-of-pocket costs of anti-retrovirals, but Stephanie Cohen of the San Francisco Department of Public Health tells me that someone without insurance and earning too much to qualify for Medicaid could pay as much as $2,000 a month. And that’s just the pills. Clinic visits, infections, hospitalizations: The costs of treatment multiply as fast as the virus does without it.</p><p class="TEXT-JUSTIFIED-INDENT">But before we all rush to Twitter to make easy political points about how America is the land of the nothing-is-free, again consider the context. The United States has put tremendous effort and resources ($14 billion per year now) into HIV treatment and has considerable achievements to show for it. Medicaid covers HAART for the poor. The Ryan White Program, with $2.4 billion in annual federal funding, provides it for the less poor. Some cities, including San Francisco, have better treatment stats than the United Kingdom or Germany.</p><p class="TEXT-JUSTIFIED-INDENT">Consider, too, the scale of the epidemic in the United States. When HAART first became available in 1995, the United Kingdom had around 30,000 people diagnosed with HIV. Germany had 38,000. The United States had 759,000 and more new infections every year than the United Kingdom or Germany had in total. Providing testing, treatment, and follow-up to all those people would have been a Hoover Dam–size investment. One we were not, as a country, willing to make.</p><p class="TEXT-JUSTIFIED-INDENT">It’s not just a question of money or political will. In the last two decades, as the United States has put so much effort into filling the cracks in HIV care, the virus has moved into the populations most likely to fall into them.</p><p class="TEXT-JUSTIFIED-INDENT">From its origins as a concentrated, urban epidemic, HIV has migrated resolutely outward and southward. “People test positive and they just go home. Then they come and get tested again,” says Susan Reif of Duke University’s Center for Health Policy and Inequality Research.</p><p class="TEXT-JUSTIFIED-INDENT">I didn’t know it was possible to get a lump in your throat from lists of two-digit numbers, but then Reif shows me the data on HIV in the Deep South versus the rest of the country. HIV prevalence: 2.3 cases per 100,000 people in Vermont; 36.6 in Louisiana. Death rates: 9.6 per 1,000 person-years in Idaho; 32.9 in Mississippi. In 2011, nine of the top ten cities for new HIV infections were in the South. In Louisiana, only <a href="http://new.dhh.louisiana.gov/assets/oph/HIVSTD/hiv-aids/2013/2011STDHIVPROGRAMREPORT.pdf"><span class="HYPERLINK">68 percent</span></a> of people with HIV <span class="ITALIC-PUBLICO">saw a doctor</span> that year.</p><p class="TEXT-JUSTIFIED-INDENT">Meanwhile, in 2012, AIDS <a href="http://www.nydailynews.com/blogs/dailypolitics/2014/03/aids-no-longer-among-top-ten-causes-of-death-in-nyc"><span class="HYPERLINK">dropped off</span></a><span class="HYPERLINK"> the list of</span> New York City’s top ten causes of death for the first time since 1983.</p><p class="TEXT-JUSTIFIED-INDENT">As the geography of HIV has shifted, so have its demographics. Ethnic minorities, rural drug users, impoverished heterosexuals: The virus has found the people least likely to seek<span class="em">&mdash;</span>and have access to<span class="em">&mdash;</span>health insurance and specialized clinics.</p><p class="TEXT-JUSTIFIED-INDENT">You could drown in the numbers on this if you wanted to, but a study that stuck out to me was one from 2012 that found uneducated black men had an AIDS mortality rate 30 times higher than educated white men. Among uneducated black women, it found that the introduction of HAART barely dropped mortality rates at all. In 2011, AIDS was the ninth-highest cause of death for blacks and twenty-fourth for whites.</p><p class="TEXT-JUSTIFIED-INDENT">Higher levels of stigma, poor infrastructure for treatment in rural areas, abstinence-only education<span class="em">&mdash;</span>Reif says they all contribute to the higher rates of diagnoses and deaths. Syringe exchanges are still illegal in almost every Southern state. An estimated 60,000 uninsured or low-income people with HIV live in states that have rejected the Medicaid expansion under Obamacare.</p><p class="TEXT-JUSTIFIED-INDENT">“Each state has a different Medicaid program in terms of whether you’re eligible and what your co-pays are,” she says. “Some Medicaid programs will only cover a certain number of drugs. So you get five. And you have to pick which five.”</p><p class="TEXT-JUSTIFIED-INDENT">Just as explaining the differences between Europe and America requires accounting for the weight of their histories and social structures, so does explaining the differences between the South and the rest of the United States. “The disease burden in the South is high for other diseases, too,” Reif says. “A lot of it goes back to institutionalized racism, poverty, the legacy of Tuskegee. There’s a lack of trust in health care. The states say they don’t have the money [to expand Medicaid]<span class="em">&mdash;</span>and there’s some truth to that.”</p><p class="TEXT-JUSTIFIED-INDENT">No health care system in the world has solved the problem of AIDS. The United Kingdom and Germany have gaps in their cascades, too. They struggle to control costs and reach marginalized populations the same as the States. They just have less margin to reach.</p><p class="TEXT-JUSTIFIED-INDENT">But in trying to explain these numbers, I don’t want to excuse them. Some of the reasons the AIDS epidemic has been so devastating in the United States were chosen for us by history. Others we have chosen ourselves.</p><p class="TEXT-JUSTIFIED-INDENT">“At the end of the day, it’s best understood as a function of health disparities writ large,” says Chris Beyrer, the director of the Johns Hopkins Fogarty AIDS International Training and Research Program. The core difference between the United States and Western Europe, he says, is that “we’re a much bigger, much more complex, and much more unjust country.” </p><p class="TEXT-JUSTIFIED-INDENT"><em>Clarification: This piece has been updated to note that federal funding for needle exchange, permitted after 2009, was banned again in 2011.</em></p>
+              
+                            <div class="foot-notes">
+                            <div class="foot-note">
+                <sup>1</sup>
+                <div id="footnote-1">
+                <p class="bio">Each country has a slightly different system for reporting HIV cases and&nbsp;AIDS&nbsp;deaths, and epidemiologists are often reluctant to make apples-to-apples comparisons: “It’s more like Red Delicious to Granny Smith,” one of them told me.</p><p class="FOOTNOTE-TEXT para-style-override-2">It’s better to think of the surveillance numbers as a range, subject to updates and back-calculations as more data comes in. But still, the differences in measurement are nowhere near enough to account for the gaps among countries. Measuring my income against, say, Oprah Winfrey’s would be subject to methodological fuzziness, too—she has capital gains, real estate appreciation, tax acrobatics—but it’s still fair to say she makes more money than I do</p>                </div>
+              </div>
+                            <div class="foot-note">
+                <sup>2</sup>
+                <div id="footnote-2">
+                <p>I’m comparing the United States with these two countries for the sake of simplicity and because I speak the languages and have access to epidemiologists there. The United Kingdom and Germany are on the high and low side, respectively, of the severity of the&nbsp;AIDS&nbsp;epidemic in Western Europe, but they’re not outliers by any means. You could compare the United States with France, the Netherlands, Italy, wherever, and you’d come up with basically the same story.</p>                </div>
+              </div>
+                            </div>
+              
+                              <div class="ui tertiary biography segment">
+                  <p><em><a href="http://rottenindenmark.wordpress.com/">Michael Hobbes</a> is a human rights consultant in Berlin. He has written for </em>Slate, Pacific Standard, <em>and </em>The Billfold. Follow him on Twitter @<a href="https://twitter.com/rottenindenmark">rottenindenmark</a>.</p>                </div>
+              
+              
+            </div>
+          </div>
+          <div class="apostrophe"></div>
+          <div class="variable advertisement" id="mobile-article-bottom-ad"></div>
+          <div class="taboola">
+            <div class="ui active flipping loader">
+              <div class="shape"></div>
+              Loading Related Articles...
+            </div>
+            <div id="taboola-main"></div>
+            <div id="taboola-text"></div>
+          </div>
+
+                    <div class="inline category">
+            <a href="/tags/politics"><img typeof="foaf:Image" src="/sites/all/themes/tnr/assets/images/tags/tnr-politics-187x80.gif" alt="Politics" /></a>          </div>
+          
+                    <div class="ui basic vertical inline tag segment">
+            <h4 class="ui header">More articles tagged as</h4>
+            <div class="ui labels">
+              <a href="/tags/health" class="ui label">Health</a><a href="/tags/politics" class="ui label">politics</a><a href="/tags/culture" class="ui label">culture</a><a href="/tags/aids" class="ui label">aids</a>            </div>
+          </div>
+          
+          <div class="inline recirculation">
+            <div id="bottomCenter" class="recirculation module">
+  <div class="ui two item tabular top attached menu">
+        <a class="active item" data-tab="related">Related</a>
+        <a class="item" data-tab="trending">Trending</a>
+      </div>
+    <div class="ui active bottom attached piled tab segment" data-tab="related">
+    <div class="filter">More Articles in <a Href="/tags/health" Itemprop="articleSection" Class="category">Health</a></div>
+    <div class="ui relaxed bulleted list">
+            <div href="/article/119376/ebola-drug-zmapp-darpa-program-could-get-it-africa" class="article item">
+  <a href="/article/119376/ebola-drug-zmapp-darpa-program-could-get-it-africa">
+    DARPA May Have a Way to Stop Ebola in Its Tracks  </a>
+</div>
+<div href="/article/119265/alzheimers-disease-statistics-show-illness-will-define-our-times" class="article item">
+  <a href="/article/119265/alzheimers-disease-statistics-show-illness-will-define-our-times">
+    We Are Entering the Age of Alzheimer's  </a>
+</div>
+<div href="/article/119041/ebola-outbreak-africa-expert-epidemics-answers-your-questions" class="article item">
+  <a href="/article/119041/ebola-outbreak-africa-expert-epidemics-answers-your-questions">
+    How Scary Is This Ebola Outbreak?  </a>
+</div>
+<div href="/article/118904/surgeon-general-office-releases-call-action-skin-cancer-report" class="article item">
+  <a href="/article/118904/surgeon-general-office-releases-call-action-skin-cancer-report">
+    Skin Cancer Is Skyrocketing in America—and Men Have It Worse  </a>
+</div>
+<div href="/article/117568/e-cigarette-data-why-everyone-asking-wrong-questions" class="article item">
+  <a href="/article/117568/e-cigarette-data-why-everyone-asking-wrong-questions">
+    Everyone Is Asking the Wrong Questions About E-Cigarettes  </a>
+</div>
+    </div>
+  </div>
+    <div class="ui bottom attached piled tab segment" data-tab="trending">
+    <div class="filter">Popular Articles
+      <div class="inline ui dropdown">
+          <span class="text">Now</span>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="active item" data-value="now">Now</div>
+            <div class="item" data-value="week">This Week</div>
+            <div class="item" data-value="month">This Month</div>
+        </div>
+      </div>
+    </div>
+    <div class="ui relaxed ordered list">
+            <div href="/article/119514/kris-kobach-race-americas-worst-republican-may-lose-his-office" class="article item">
+  <a href="/article/119514/kris-kobach-race-americas-worst-republican-may-lose-his-office">
+    America's Worst Republican Could Soon Lose His Office  </a>
+</div>
+<div href="/article/119357/altered-pasts-reviewed-cass-r-sunstein" class="article item">
+  <a href="/article/119357/altered-pasts-reviewed-cass-r-sunstein">
+    What If Counterfactuals Never Existed?  </a>
+</div>
+<div href="/article/119404/duck-penis-paradox-plos-ones-mission-democratize-science" class="article item">
+  <a href="/article/119404/duck-penis-paradox-plos-ones-mission-democratize-science">
+    The Duck Penis Paradox  </a>
+</div>
+<div href="/article/119478/ken-burns-roosevelt-documentary-reviewed" class="article item">
+  <a href="/article/119478/ken-burns-roosevelt-documentary-reviewed">
+    What Ken Burns Doesn't Understand about the Roosevelts  </a>
+</div>
+<div href="/article/119494/george-orwell-lambasts-american-fashion-magazines" class="article item">
+  <a href="/article/119494/george-orwell-lambasts-american-fashion-magazines">
+    George Orwell Wrote One of the Most Incensed Takedowns of American Fashion Magazines  </a>
+</div>
+    </div>
+  </div>
+  </div>          </div>
+        </div>
+
+        <div class="left article rail">
+          <div class="ui sticky">
+            <div class="share module">
+  <div class="social">
+    <div class="vertical facebook"
+      data-url="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why"
+      data-text="George Orwell Wrote One of the Most Incensed Takedowns of American Fashion Magazines"
+      data-title="Share">
+    </div>
+    <div class="vertical twitter"
+      data-url="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why"
+      data-text="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?"
+      data-title="Tweet"></div>
+  </div>
+</div>            <div class="tools module">
+  <div class="ui vertical icon menu">
+    <div class="link email item" data-position="right center"  data-content="E-mail this article">
+      <i class="mail icon"></i>
+    </div>
+    <div class="link save ui dropdown item" data-position="right center"  data-content="Save for Later">
+      <i class="bookmark icon"></i>
+      <div class="vertical menu">
+        <div class="header item">
+          Choose Service
+        </div>
+        <a class="item" target="_blank" href="http://www.instapaper.com/hello2?url=http%3A%2F%2Fwww.newrepublic.com%2Farticle%2F117691%2Faids-hit-united-states-harder-other-developed-countries-why&amp;title=Why+Did+AIDS+Ravage+the+U.S.+More+Than+Any+Other+Developed+Country%3F&amp;description=The+answer+is+a+lot+more+complicated+than+saying+we%27re+less+enlightened+than+Europe.+Solving+an+epidemiological+mystery.%A0">
+          Save to Instapaper
+        </a>
+        <a class="item" target="_blank" href="http://readability.com/save?url=http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why">
+          Save to Readability
+        </a>
+        <div class="item">
+          <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+          <script type="text/javascript">
+          !function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="ui font dropdown link item" data-position="right center" data-content="Font Size">
+      <i class="font icon"></i>
+      <div class="menu">
+        <div class="small item" data-value="1/1.8">Small</div>
+        <div class="active medium item" data-value="">Medium</div>
+        <div class="large item" data-value="1.4/1.6">Large</div>
+        <div class="x-large item" data-value="1.5/1.65">Extra Large</div>
+      </div>
+    </div>
+    <div class="link print item" data-position="right center" data-content="Print">
+      <i class="print icon"></i>
+    </div>
+  </div>
+</div>          </div>
+        </div>
+
+        <div class="right article rail">
+
+
+          
+<!-- Ad LR1 -->
+            <div class="variable advertisement module" id="rail-ad"></div>
+
+<!-- Recirc Top -->
+                          <div id="trending" class="trending module">
+  <div class="selection">
+        Most Popular
+        <div class="inline ui dropdown"  >
+      <span class="text">Now</span>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <div class="active item" data-value="now">Now</div>
+        <div class="item" data-value="week">This Week</div>
+        <div class="item" data-value="month">This Month</div>
+      </div>
+    </div>
+  </div>
+  <div class="ui headlines">
+    <div class="article headline">
+  <div class="image">
+    <a href="/article/119503/guantanamo-bay-costs-mindboggling-expenses-running-prison"><img src="/sites/default/files/styles/static_cover_img_500/public/guantanamo_1.jpg"></a>
+  </div>
+  <h4 class="header">
+    <a href="/article/119503/guantanamo-bay-costs-mindboggling-expenses-running-prison">
+      Guantánamo Bay Is Crumbling Into Ruins    </a>
+  </h4>
+</div>
+<div class="article headline">
+  <div class="image">
+    <a href="/article/119500/chinese-astrology-surprising-prominence-horoscopes"><img src="/sites/default/files/styles/static_cover_img_500/public/horoscope.jpg"></a>
+  </div>
+  <h4 class="header">
+    <a href="/article/119500/chinese-astrology-surprising-prominence-horoscopes">
+      Virgos Need Not Apply    </a>
+  </h4>
+</div>
+<div class="article headline">
+  <div class="image">
+    <a href="/article/119477/science-generosity-why-giving-makes-you-happy"><img src="/sites/default/files/styles/static_cover_img_500/public/volunteers-shutterstock-091714-lede.jpg"></a>
+  </div>
+  <h4 class="header">
+    <a href="/article/119477/science-generosity-why-giving-makes-you-happy">
+      Want to Be Happy? Stop Being So Cheap!    </a>
+  </h4>
+</div>
+<div class="ui active flipping loader">
+  <div class="shape"></div>
+  Loading
+</div>    <div class="ui active flipping loader">
+      <div class="shape"></div>
+      Loading
+    </div>
+  </div>
+</div>            
+<!-- Email Newsletter -->
+                            <div class="newsletter module">
+  <h5 class="ui dividing header">Sign Up For The New Republic Daily</h5>
+  <p>Sign up now to get your dose of politics, culture, and big ideas with our free daily newsletter.</p>
+
+  <form class="ui form" method="post" action="http://link.newrepublic.com/s/TNR">
+    <input type="hidden" name="list[Master List]" value="1" />
+    <input type="hidden" name="vars[marketing]" value="TRUE" />
+    <input type="hidden" name="vars[source]" value="daily_article" />
+    <input type="hidden" name="vars[tnr_daily]" value="TRUE" />
+    <div class="field">
+      <div class="ui fluid left labeled icon input">
+        <input type="text" name="email" placeholder="Enter e-mail" data-validate="email"  />
+        <i class="mail icon"></i>
+      </div>
+    </div>
+    <div class="ui blue submit button" type="submit">Sign Up</div>
+    <div class="ui success message">
+      <i class="checkmark icon"></i>
+      Signed up!
+    </div>
+  </form>
+</div>              
+
+
+
+                          <div class="variable advertisement module" id="rail-ad"></div>                      
+                          <div class="variable advertisement module" id="house-small-rectangle"></div>            
+          <div class="ui sticky">
+            <div class="share module">
+  <div class="social">
+    <div class="inline facebook"
+      data-url="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why"
+      data-text="Want to Be Happy? Stop Being So Cheap!"
+      data-title="Share">
+    </div>
+    <div class="inline twitter"
+      data-url="http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why"
+      data-text="Why Did AIDS Ravage the U.S. More Than Any Other Developed Country?"
+      data-title="Tweet"></div>
+  </div>
+</div>            <div class="variable advertisement module">
+  <div id="sticky-rail-ad"></div>
+  <div id="tablet-sticky-rail-ad"></div>
+</div>
+            <div class="ui clearing section expand divider"></div>
+            <div class="ui fluid expand button">
+              <i class="list layout icon"></i> Article Tools
+            </div>
+          </div>
+        </div>
+              </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui very thin inverted vertical icon mobile sidebar tools module menu">
+  <div class="email link item" title="E-mail Story">
+    <i class="mail icon"></i>
+  </div>
+  <div class="link save ui dropdown item" data-position="right center"  data-content="Save for Later">
+    <i class="bookmark icon"></i>
+    <div class="vertical menu">
+      <div class="header item">
+        Choose Service
+      </div>
+      <a class="item" target="_blank" href="http://www.instapaper.com/hello2?url=http%3A%2F%2Fwww.newrepublic.com%2Farticle%2F117691%2Faids-hit-united-states-harder-other-developed-countries-why&amp;title=Why+Did+AIDS+Ravage+the+U.S.+More+Than+Any+Other+Developed+Country%3F&amp;description=The+answer+is+a+lot+more+complicated+than+saying+we%27re+less+enlightened+than+Europe.+Solving+an+epidemiological+mystery.%A0">
+        Save to Instapaper
+      </a>
+      <a class="item" target="_blank" href="http://readability.com/save?url=http://www.newrepublic.com/article/117691/aids-hit-united-states-harder-other-developed-countries-why">
+        Save to Readability
+      </a>
+      <!--div class="item">
+        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+        <script type="text/javascript">
+        !function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");
+        </script>
+      </div!-->
+    </div>
+  </div>
+  <div class="ui font dropdown link item" title="Font Size"><i class="font icon"></i>
+    <div class="menu">
+      <div class="small item" data-value="1/1.8">Small</div>
+      <div class="active medium item" data-value="">Medium</div>
+      <div class="large item" data-value="1.4/1.6">Large</div>
+      <div class="x-large item" data-value="1.5/1.65">Extra Large</div>
+    </div>
+  </div>
+  <div class="print link item" title="Print"><i class="print icon"></i></div>>
+</div><div class="ui email modal">
+  <i class="close icon"></i>
+  <div class="header">
+    <img src="/sites/all/themes/tnr/assets/images/logo-white.png" class="ui small left floated image">
+    Share by e-mail
+  </div>
+  <div class="content">
+    <form class="ui form">
+      <input type="hidden" name="form_id" value="tnr_article_email_form">
+      <input type="hidden" name="form_build_id" value="LLPBV71tlEw3stFET5sUStzH5AdsyanyRAIlvnSoPls">
+      <input type="hidden" name="js" value="true">
+      <div class="required field">
+        <label>Friend's e-mails (separated by comma)</label>
+        <div class="ui input">
+          <input type="email" name="email_to">
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="two required fields">
+        <div class="field">
+          <label>Your name</label>
+          <div class="ui input">
+            <input type="text" name="sender_name">
+          </div>
+        </div>
+        <div class="field">
+          <label>Your e-mail</label>
+          <div class="ui input">
+            <input type="email" name="sender_email">
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" id="send_copy" name="send_copy" checked>
+          <label for="send_copy">Send yourself a copy</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Personal message</label>
+        <textarea name="opt_msg"></textarea>
+      </div>
+    </form>
+  </div>
+  <div class="actions">
+    <div class="ui cancel button">Cancel</div>
+    <div class="ui right green labeled icon approve button">
+      <i class="mail icon"></i>
+      Send E-mail
+    </div>
+  </div>
+</div></div>
+<!-- Without the following, metatags are not rendered properly -->
+
+<div class="ui page footer container">
+  <div class="ui relaxed stackable fitted grid">
+    <div class="sixteen wide mobile only center aligned column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted sitemap icon"></i>
+      </div>
+      <h5 class="ui inverted header">Sections</h5>
+      <div class="ui relaxed inverted fitted selection list">
+        <a href="/latest" class="item">The Latest</a>
+        <a href="/tags/politics" class="item">Politics</a>
+        <a href="/tags/culture" class="item">Culture</a>
+        <a href="/current-issue" class="item">The Magazine</a>
+      </div>
+      <select name="section" class="sections">
+        <option value="">More</option>
+        <optgroup label="Categories">
+          <option value="/tags/books/">Books</option>
+          <option value="/tags/economy/">Economy</option>
+          <option value="/tags/film/">Film</option>
+          <option value="/tags/plank/">The Plank</option>
+          <option value="/tags/politics/">Politics</option>
+          <option value="/tags/technology/">Technology</option>
+          <option value="/tags/world/">World</option>
+        </optgroup>
+        <optgroup label="New Republic">
+          <option value="/current-issue">Current Issue</option>
+          <option value="/page/about-new-republic">About</option>
+          <option value="/page/advertise-new-republic">Advertise</option>
+          <option value="/page/contact-us">Contact Us</option>
+          <option value="/page/jobs-and-internships">Jobs &amp; Internships</option>
+          <option value="/page/privacy-policy" rel="nofollow">Privacy Policy</option>
+          <option value="/tags/home-news">Home News</option>
+          <option value="/tags/events">Events</option>
+          <option value="/ebsco">Archives</option>
+          <option value="/page/rss-feeds">RSS</option>
+        </optgroup>
+      </select>
+    </div>
+    <div class="ten wide sitemap column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted sitemap icon"></i>
+      </div>
+      <div class="ui three column grid">
+        <div class="column">
+          <h5 class="ui inverted header">Sections</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/tags/books/">Books</a>
+            <a class="item" href="/tags/economy/">Economy</a>
+            <a class="item" href="/tags/film/">Film</a>
+            <a class="item" href="/tags/plank/">The Plank</a>
+            <a class="item" href="/tags/politics/">Politics</a>
+            <a class="item" href="/tags/technology/">Technology</a>
+            <a class="item" href="/tags/world/">World</a>
+            <a class="item" href="/tags/events/">Events</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">The Magazine</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/latest">Our Latest</a>
+            <a class="item" href="/current-issue">Current Issue</a>
+          </div>
+          <h5 class="ui inverted header">Subscriptions</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/subscription/self/footer/textlink">Order a Subscription</a>
+            <a class="item" href="/subscription/gift/footer/textlink">Give a Gift</a>
+            <a class="item" href="/page/subscriber-services">Subscriber Services</a>
+            <a class="item" href="/ebsco">Archives</a>
+            <a class="item" href="/page/frequently-asked-questions">FAQ</a>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="ui inverted header">The New Republic</h5>
+          <div class="ui small relaxed inverted fitted selection list">
+            <a class="item" href="/page/about-new-republic">About</a>
+            <a class="item" href="/page/advertise-new-republic">Advertise</a>
+            <a class="item" href="/newsletter">Newsletter</a>
+            <a class="item" href="/page/contact-us">Contact Us</a>
+            <a class="item" href="/page/jobs-and-internships">Jobs &amp; Internships</a>
+            <a class="item" href="/page/privacy-policy" rel="nofollow">Privacy Policy</a>
+            <a class="item" href="/tags/home-news">Home News</a>
+            <a class="item" href="/page/rss-feeds">RSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six wide signup column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted bullhorn icon"></i>
+      </div>
+      <h4 class="ui red header">Sign Up For The New Republic Daily</h4>
+      <p>Sign up now to get your dose of politics, culture, and big ideas with our free daily newsletter.</p>
+      <form class="ui form" method="post" action="http://link.newrepublic.com/s/TNR">
+  <input type="hidden" name="list[Master List]" value="1" />
+  <input type="hidden" name="vars[marketing]" value="TRUE" />
+  <input type="hidden" name="vars[source]" value="daily_footer" />
+  <input type="hidden" name="vars[tnr_daily]" value="TRUE" />
+  <div class="field">
+    <div class="ui fluid left labeled icon input">
+      <input type="text" name="email" placeholder="Enter e-mail" data-validate="email"  />
+      <i class="mail icon"></i>
+    </div>
+  </div>
+  <div class="ui blue submit button" type="submit">Sign Up</div>
+  <div class="ui success message">
+    <i class="checkmark icon"></i>
+    Signed up!
+  </div>
+</form>    </div>
+    <div class="six wide promo column">
+      <div class="ui horizontal inverted icon divider">
+        <i class="circular inverted bullhorn icon"></i>
+      </div>
+      <h4 class="ui header">
+        <a href="/subscription/self/footer/callout">Subscribe Now</a>
+      </h4>
+      <h5 class="ui inverted header">
+        Get The New Republic for <b>$19.97/year</b>
+      </h5>
+      <a class="ui left floated image" href="/subscription/self/footer/callout">
+        <img typeof="foaf:Image" src="http://www.newrepublic.com/sites/default/files/styles/curr_issue_cover_footer/public/u184683/092914_cover.online.jpg?itok=ZeKELmYP" alt="" />      </a>
+      <div class="ui small inverted fitted selection list">
+        <a class="item" href="/subscription/self/footer/callout">
+          <i class="book icon"></i>
+          Subscribe Now
+        </a>
+        <a class="item" href="/subscription/gift/footer">
+          <i class="gift icon"></i>
+          Give a Gift
+        </a>
+        <a class="item" href="/subscription/international/footer">
+          <i class="globe icon"></i>
+          International Orders
+        </a>
+        <a class="item" href="/subscription/digital/footer">
+          <i class="tablet icon" ></i>
+          Digital Subscription
+        </a>
+      </div>
+    </div>
+  </div>
+  <a class="ui centered small logo image" href="/">
+    <img src="/sites/all/themes/tnr/assets/images/logo-white.png">
+  </a>
+  <div class="social">
+<!--     <div class="slim twitter sharrre"
+      data-user="tnr"
+      data-url="http://www.newrepublic.com"
+      data-title="Follow"
+    ></div> -->
+    <div class="slim facebook sharrre"
+      data-url="http://www.facebook.com/thenewrepublic"
+      data-title="Like">
+    </div>
+    <div class="slim google sharrre"
+      data-url="http://www.newrepublic.com"
+      data-title="Plus">
+    </div>
+  </div>
+  <div class="ui mini centered divided inverted horizontal copyright link list">
+    <a class="item" href="/page/masthead">Masthead</a>
+    <div class="item">
+      Copyright 2014 &copy; The New Republic.
+      All Rights Reserved.
+    </div>
+  </div>
+</div>    <div class="ui modal" id="overlay"></div>  <div class="script">
+  <!--[if lt IE 9]>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <![endif]-->
+  <!--[if (gte IE 9) | (!IE)]><!-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <!--<![endif]-->
+<script type="text/javascript" src="http://www.newrepublic.com/sites/default/files/js/js_bYu3NJYPuBJM5poe8mzfA2KHHjA4ui-bvdVhtq6_YBA.js"></script>
+
+  <!-- Site Config !-->
+  <script src="/sites/all/themes/tnr/dist/minified/ui/definitions/globals/site.min.js"></script>
+
+  <!-- Site Overlay !-->
+  <script type="text/javascript">
+  $.extend(true, site.config, $.parseJSON('{"loggedIn":false,"node":{"id":"117691"},"overlay":{"force_display_nodes":[],"targeted_overlay_nodes":[],"tnr_overlay_nodes":[{"nid":"118384","show_for_all":true,"force_display":false,"is_targeted":true,"targeted_content_types":["article","project"],"targeted_nodes":false,"targeted_paths":false,"duration":"14","targeted_tags":["65822"],"is_sticky":true,"show_on":"finish","closable":true}],"tnr_paywall_nodes":[],"visit_times_targeted":["1"],"visit_times_general":["1"],"visit_times_paywall":false},"staging":false,"subsection":false,"tag":{"ids":["17538","37661","19573"]},"topTerm":"PolCul"}'));
+  // global debug settings
+  $.site('disable debug');
+    $.site('disable console');
+    </script>
+
+  <script type="text/javascript" src="http://www.newrepublic.com/sites/default/files/js/js_B6_6pPZmPuIn7sHbUHpZhb0g9gCuv5G3v1s35c1_8EI.js"></script>
+
+    <!-- Ebuzzing -->
+  <script type="text/javascript" src="http://as.ebz.io/api/choixPubJS.htm?pid=721108&screenLayer=1&mode=NONE&home=http://www.newrepublic.com"></script>
+  
+</div>  <div class="tracking">
+
+  <!-- Google Remarketing -->
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var
+    google_conversion_id = 993343767,
+    google_conversion_label = 'gzoeCIDN0QMQkLP42wM',
+    google_custom_params = window.google_tag_params,
+    google_remarketing_only = true
+  ;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+
+  <!-- Quantcast Script -->
+  <script type="text/javascript">
+  _qoptions={
+    qacct : 'p-abwxcJNao5fsc'
+  };
+  </script>
+  <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+
+  <!-- Parse.ly -->
+  <div id="parsely-root" style="display: none">
+    <div id="parsely-cfg" data-parsely-site="tnr.com"></div>
+  </div>
+  <script>
+  (function(s, p, d) {
+    var h=d.location.protocol, i=p+"-"+s,
+        e=d.getElementById(i), r=d.getElementById(p+"-root"),
+        u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+        :"static."+p+".com";
+    if (e) return;
+    e = d.createElement(s); e.id = i; e.async = true;
+    e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+  })("script", "parsely", document);
+  </script>
+ 
+    <!-- START horizon sailthru -->
+  <script type="text/javascript">
+    (function() {
+      function loadHorizon() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      loadHorizon();
+      var oldOnLoad = window.onload;
+      window.onload = function() {
+        if (typeof oldOnLoad === 'function') {
+          oldOnLoad();
+        }
+        Sailthru.setup({
+          domain: 'horizon.newrepublic.com'
+        });
+      };
+    })();
+  </script>
+  
+  <!-- Nielsen Online SiteCensus V6.0 -->
+  <script type="text/javascript">
+    (function () {
+      var image = new Image(1, 1);
+      image.onerror = image.onload = function () {
+        image.onerror = image.onload = null;
+      };
+      image.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-106312h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+    })();
+  </script>
+
+  <!-- AdRoll -->
+  <script type="text/javascript">
+  adroll_adv_id = "SIJVU24MGJE47PAYLLPPOJ";
+  adroll_pix_id = "6WNJ733UAJGY3LIFHE43PT";
+  (function () {
+  var oldonload = window.onload;
+  window.onload = function(){
+     __adroll_loaded=true;
+     var scr = document.createElement("script");
+     var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+     scr.setAttribute('async', 'true');
+     scr.type = "text/javascript";
+     scr.src = host + "/j/roundtrip.js";
+     ((document.getElementsByTagName('head') || [null])[0] ||
+      document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+     if(oldonload){oldonload()}};
+  }());
+  </script>
+
+  <!-- ChartBeat -->
+  <script type="text/javascript">
+  var _sf_async_config={uid:34517,domain:"tnr.com"};
+  _sf_async_config.useCanonical = true;
+  (function(){
+    function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+  </script>
+
+  <!-- Optimizely -->
+  <script src="//cdn.optimizely.com/js/113744585.js"></script>
+
+  <div class="pixels">
+    <!-- Collective Media pixel -->
+    <img src="http://b.collective-media.net/seg/cm/l1dd" width="1" height="1" />
+    <noscript>
+      <!-- Quantcast Pixel -->
+      <img src="http://pixel.quantserve.com/pixel/p-abwxcJNao5fsc.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+      <!-- Google Re-marketing Pixel -->
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/993343767/?value=0&amp;label=gzoeCIDN0QMQkLP42wM&amp;guid=ON&amp;script=0"/>
+      <!-- Neilsen Census Pixel -->
+      <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-106312h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+      width="1" height="1" alt="" />
+      <!-- ComScore -->
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=15230262&cv=2.0&cj=1" />
+    </noscript>
+  </div>
+</div><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"71240f55fe","applicationID":"2735134","transactionName":"YFRUZkcECEcHV0ZaXFked1FBDAlaSVpdV1ZoQVdVUDoQXQND","queueTime":0,"applicationTime":294,"ttGuid":"","agentToken":"","atts":"TBNXEA8eG0k=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-412.min.js"}</script></body>
+</html>

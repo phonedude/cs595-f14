@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html id="ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" lang="en">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) | !(IE9) ]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Writing code is not most programmers&#8217; primary task &laquo; Pete Warden&#039;s blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://petewarden.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://s0.wp.com/wp-content/themes/premium/elemin/js/html5.js?m=1370453185g" type="text/javascript"></script>
+<![endif]-->
+		<script src='//r-login.wordpress.com/remote-login.php?action=js&amp;host=petewarden.com&amp;id=55065938&amp;t=1411962660&amp;back=http%3A%2F%2Fpetewarden.com%2F2014%2F02%2F24%2Fwriting-code-is-not-most-programmers-primary-task%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="Pete Warden&#039;s blog &raquo; Feed" href="http://petewarden.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Pete Warden&#039;s blog &raquo; Comments Feed" href="http://petewarden.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Pete Warden&#039;s blog &raquo; Writing code is not most programmers&#8217; primary&nbsp;task Comments Feed" href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s0.wp.com/_static/??-eJx9j90OgjAMRl/IWQ3+4IXxWXCrY9DShXUhvL1gYoxiuOvXnPM1hSEaK51ip8DZRMo+dAkSB8Ix9tKg1e+0tSlt4L9GocUEDWqsbGteaYHfSfxHEO/RSVbzECIZYAjO4+qNHqlSdCZK0p+0plnpcdpzrHQmGF2okJAnbE3jeHpb81hPfy3PaD31JIg9csgMc23oIOlIOLM3vu4Pu/JclJfi2DwBrJ+LFg==' type='text/css' media='all' />
+<link rel='stylesheet' id='sorts-mill-goudy-css'  href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy%3Aregular%2Citalic&#038;ver=20120821' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='http://s2.wp.com/_static/??-eJx9j9EKwjAMRX/ImomF7UX8lm7EtpI2pcnw9+2YiKL0KefCPSGBCJk1LpzlDcdF5ACPYlpQzAppNYVWH1vHIxvixWnk/BXMjVysPbXiTOwbemitj9iTCovuq0GCq5v8mv0rM9b9qb/442rAhALBgieeHW2Fa7qc7DCe7TgN0/0JjsFu1Q==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-2' href='http://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1387483371g' type='text/css' media='print' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyFj90OwiAMhV9IZFs08cb4LNvoSBEoUpDo08sSNTpNdtW/7/S0sgQxkk/gkzQsHQ1oQWSG2OvaE+gn2hreyMqhH21WwDNoLhni7RlWAeFQxz7B1qF/wR+ugTg5YK6Wf6bfVuivCGUVM5BCP55FBMb7z9bBkhbBZo2eZc01KMpJTGQtFVlQaUhLjctvRQRbn1FivntRVdXJHdtd0+wPbdd05gFmiIRF'></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://petewarden.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Five short links' href='http://petewarden.com/2014/02/21/five-short-links-64/' />
+<link rel='next' title='Five short links' href='http://petewarden.com/2014/02/25/five-short-links-65/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/' />
+<link rel='shortlink' href='http://wp.me/p3J3ai-1sz' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fpetewarden.com%2F2014%2F02%2F24%2Fwriting-code-is-not-most-programmers-primary-task%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fpetewarden.com%2F2014%2F02%2F24%2Fwriting-code-is-not-most-programmers-primary-task%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Writing code is not most programmers&#039; primary task" />
+<meta property="og:url" content="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/" />
+<meta property="og:description" content="Photo by Brecht Soenen I just read Nathan Marz&#039;s argument against open plan offices, and this sentence leapt out at me as almost always wrong: &quot;The primary task of a programmer is writing code, whi..." />
+<meta property="article:published_time" content="2014-02-24T22:30:18+00:00" />
+<meta property="article:modified_time" content="2014-02-24T22:30:18+00:00" />
+<meta property="article:author" content="http://petewarden.com/author/petewarden/" />
+<meta property="og:site_name" content="Pete Warden&#039;s blog" />
+<meta property="og:image" content="http://petewarden.files.wordpress.com/2014/02/lonelychair.png" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:image" content="http://petewarden.files.wordpress.com/2014/02/lonelychair.png?w=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/e77445cc56791209fe2e4bf971830686?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/e77445cc56791209fe2e4bf971830686?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://0.gravatar.com/blavatar/2a5ea0aa5e124914d42d11730ea93ab8?s=114" />
+<link rel='openid.server' href='http://petewarden.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://petewarden.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://petewarden.com/osd.xml" title="Pete Warden&#039;s blog" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Pete Warden&#039;s blog" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better." /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://petewarden.com/feed/;icon-uri=http://0.gravatar.com/blavatar/e77445cc56791209fe2e4bf971830686?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="Writing code is not most programmers&#8217; primary&nbsp;task | Pete Warden&#039;s blog on WordPress.com" />
+<meta name="description" content="Photo by Brecht Soenen I just read Nathan Marz&#039;s argument against open plan offices, and this sentence leapt out at me as almost always wrong: &quot;The primary task of a programmer is writing code, which involves sitting at a desk and thinking and typing&quot;. I&#039;ve been a big fan of Nathan&#039;s since his Backtype days, but&hellip;" />
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://s0.wp.com/?custom-css=1&#038;csblog=3J3ai&#038;cscache=6&#038;csrev=2" />
+		</head>
+
+<body class="single single-post postid-5615 single-format-standard mp6 typekit-enabled content-sidebar elemin-columns-one highlander-enabled highlander-light">
+
+
+<div id="page" class="hfeed one-col-posts">
+		<header id="branding" role="banner">
+
+		<div class="header-search-form">	<form method="get" id="searchform" action="http://petewarden.com/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+</div>
+
+		<hgroup>
+			<h1 id="site-title"><a href="http://petewarden.com/" title="Pete Warden&#039;s blog" rel="home">Pete Warden&#039;s blog</a></h1>
+			<h2 id="site-description">Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.</h2>
+		</hgroup>
+
+		<nav id="access" class="clearfix" role="navigation">
+			<h1 class="assistive-text section-heading">Main menu</h1>
+			<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+			<div class="menu"><ul><li ><a href="http://petewarden.com/">Home</a></li><li class="page_item page-item-1"><a href="http://petewarden.com/about/">About</a></li></ul></div>
+		</nav><!-- #access -->
+	</header><!-- #branding -->
+
+	<div id="main" class="clearfix">
+		<div id="primary">
+			<div id="content" role="main">
+
+			
+				
+<article id="post-5615" class="post-5615 post type-post status-publish format-standard hentry category-uncategorized clearfix">
+
+	<header class="entry-header">
+		<div class="post-format-icon"><a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/" title="Permalink to Writing code is not most programmers&#8217; primary&nbsp;task" rel="bookmark"></a></div>
+					<h1 class="entry-title">Writing code is not most programmers&#8217; primary&nbsp;task</h1>
+			</header><!-- .entry-header -->
+
+	<div class="entry-meta">
+		<span class="entry-date"><a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/" title="February 24, 2014" rel="bookmark">February 24, 2014</a></span> <span class="byline"> <span class="sep"> By </span> <span class="author vcard"><a class="url fn n" href="http://petewarden.com/author/petewarden/" title="View all posts by Pete Warden" rel="author">Pete Warden</a></span></span> <span class="entry-categories">in <a href="http://petewarden.com/category/uncategorized/" rel="category tag">Uncategorized</a></span>				<span class="comments-link"><a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/#comments" title="Comment on Writing code is not most programmers&#8217; primary&nbsp;task">10 Comments</a></span>
+					</div><!-- #entry-meta -->
+
+	<div class="post-content">
+		<div class="entry-content">
+						<p><a href="http://www.flickr.com/photos/57449818@N00/465264055/in/photolist-H7AN4-HGejK-JtFLo-KXicp-LQtsv-QKyq6-2Qc71Q-38ccTS-3UoTQc-3Utc2Q-4gsdnc-4igvKb-4m2kK6-4qcK2h-4yfFv9-4BNSep-4FzADV-4NYRcb-4PcbXc-4Q78Vd-4QpcDY-4U4Yqx-5ks4co-5ASgTj-5JrLPK-5Jw2b9-5LDsRZ-5QyGCF-5RoyVU-5XXaP3-5YdzWC-62w7af-66c5dL-66FDrw-66J6es-67bbNA-68w8Xh-6h5XGY-6hdpQA-6zfN3U-6PBa7m-715s8F-79hVRm-79kkha-7acMEF-7fByWj-7ho1GP-8dpjSW-7Tpscz-cj5Mvo-aEo6pD"><img class="alignnone size-large wp-image-5616" alt="lonelychair" src="http://petewarden.files.wordpress.com/2014/02/lonelychair.png?w=550&#038;h=323"   /></a></p>
+<p><a href="http://www.flickr.com/photos/57449818@N00/465264055/in/photolist-H7AN4-HGejK-JtFLo-KXicp-LQtsv-QKyq6-2Qc71Q-38ccTS-3UoTQc-3Utc2Q-4gsdnc-4igvKb-4m2kK6-4qcK2h-4yfFv9-4BNSep-4FzADV-4NYRcb-4PcbXc-4Q78Vd-4QpcDY-4U4Yqx-5ks4co-5ASgTj-5JrLPK-5Jw2b9-5LDsRZ-5QyGCF-5RoyVU-5XXaP3-5YdzWC-62w7af-66c5dL-66FDrw-66J6es-67bbNA-68w8Xh-6h5XGY-6hdpQA-6zfN3U-6PBa7m-715s8F-79hVRm-79kkha-7acMEF-7fByWj-7ho1GP-8dpjSW-7Tpscz-cj5Mvo-aEo6pD"><em>Photo by Brecht Soenen</em></a></p>
+<p>I just read <a href="http://nathanmarz.com/blog/the-inexplicable-rise-of-open-floor-plans-in-tech-companies.html">Nathan Marz&#8217;s argument against open plan offices</a>, and this sentence leapt out at me as almost always wrong: &#8220;<em>The primary task of a programmer is writing code, which involves sitting at a desk and thinking and typing</em>&#8220;. I&#8217;ve been <a href="http://readwrite.com/2011/01/12/secrets-of-backtypes-data-engineers">a big fan of Nathan&#8217;s since his Backtype days</a>, but while his prescriptions make a lot of sense if you really are spending most of your time typing out new code based on clear requirements, I&#8217;ve found that a very rare position to be in. In my experience writing the code takes way less time than integrating and debugging it, let alone the open-ended process of figuring out what the requirements are. Most of my time goes on all those squishy bits. I look forward to the uninterrupted intervals when I get to just write code, but they&#8217;re not all that frequent.</p>
+<p>When I started in games people who could write 3D software renderers were rare and highly-paid, but libraries and books came along that made their skills obsolete. Then it was folks who could program the fiendish DMA controllers on the Playstation 2, but soon enough they were sidelined too, followed by the game physics gurus, the shader hackers, and everyone else who brought only coding skills to the table. It turns out that we&#8217;re doing a pretty good job of making the mechanical process of writing code easier, with higher-level languages, better frameworks (<a href="https://github.com/nathanmarz/storm">something Nathan knows a lot about</a>), and training that&#8217;s creating far more people who can produce programs. What I saw in games was that coding was the ticket that got me in the door, but improving all the other skills I needed as an engineer was what really helped me do a better job.</p>
+<p>I learned to write a software renderer, but chatting with the artists who were building the models made me realize that I could make the game look far better and run much faster by building a tool in 3DS Max they could use to preview their work in-game. It reduced their iteration time from days to minutes, which meant they could try a lot more ways to reduce the polygon count without compromising the look. I would never have made this leap if I hadn&#8217;t been sitting in an open plan office where I could hear them cursing!</p>
+<p>Since then I&#8217;ve seen the cycle repeat itself in every new industry I&#8217;ve joined. When the technology is new and hard to use, just knowing how to operate it gives you a high status position, but the tide of Moore&#8217;s Law and the spread of knowledge makes that a very temporary throne. The technical impediments always disappear, and graduates come out of college knowing what used to be elite skills. What keeps you in a job is the ability to be the interface between the precise requirements of software and the rest of the world filled with messy, contradictory and incompletely understood problems.</p>
+<p>In passing Nathan mentions measuring productivity, but that&#8217;s one of the stickiest problems in software, with an inglorious history from <a href="http://stackoverflow.com/questions/184071/when-if-ever-is-number-of-lines-of-code-a-useful-metric">counting lines of code</a> to <a href="http://online.wsj.com/news/articles/SB10001424052702303460004579193951987616572">stack ranking</a>. Most of my most useful contributions at the companies I&#8217;ve worked at have been when I&#8217;ve avoided producing what someone has asked me for, and instead given them what they need, which meant a lot of conversations to really understand the background. I also spend a lot of time passing on what I know to other people who are hitting problems, which hits my individual productivity but helps the team&#8217;s. The only meaningful level at which you can measure productivity is for the whole group tackling the problem, including the designers, QA, marketers, translators, and everyone else outside of coding who&#8217;s needed for almost any product you&#8217;re building. In almost every place I&#8217;ve worked, they would be able to make far more progress if they could interrupt the programmers a lot more, even though I&#8217;d hate it as an engineer!</p>
+<p>I am actually ambivalent about open plan offices myself. Having my own room often seems like a delicious dream, and headphones are a poor alternative when I&#8217;m really diving deep into the code. What stops me from pushing for that is the knowledge that my job is all about collaboration, and an open arrangement truly does enable that. The interruptions aren&#8217;t getting in the way of my primary work, the interruptions <em>are</em> my primary work.</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-5615"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/?share=facebook" title="Share on Facebook" id="sharing-facebook-5615"><span>Facebook</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/?share=google-plus-1" title="Click to share on Google+" id="sharing-google-5615"><span>Google</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-55065938-5615-5428d7246b759' data-src='//widgets.wp.com/likes/#blog_id=55065938&amp;post_id=5615&amp;origin=petewarden.wordpress.com&amp;obj_id=55065938-5615-5428d7246b759' data-name='like-post-frame-55065938-5615-5428d7246b759'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>					</div><!-- .entry-content -->
+	</div><!-- .post-content -->
+
+</article><!-- #post-5615 -->
+					<nav id="nav-below" class="clearfix">
+		<h1 class="assistive-text section-heading">Post navigation</h1>
+
+	
+		<div class="nav-previous"><a href="http://petewarden.com/2014/02/21/five-short-links-64/" rel="prev"><span class="meta-nav">&laquo;</span> Five short links</a></div>		<div class="nav-next"><a href="http://petewarden.com/2014/02/25/five-short-links-65/" rel="next">Five short links <span class="meta-nav">&raquo;</span></a></div>
+	
+	</nav><!-- #nav-below -->
+	
+					<div id="comments">
+	
+	
+			<h3 id="comments-title">
+			10 responses		</h3>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-27589">
+		<article id="comment-27589" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/dcb940360e18d06ae54ad76f972c6b7f?s=60&#038;d=identicon&#038;r=G' class='avatar avatar-60' height='60' width='60' />					<cite class="fn"><a href='http://nathanmarz.com' rel='external nofollow' class='url'>Nathan Marz</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/comment-page-1/#comment-27589"><time pubdate datetime="2014-02-25T07:36:02+00:00">
+					February 25, 2014 at 7:36 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Thanks for the great counterpoint. I certainly agree 100% on the value of tight feedback loops and collaboration. I think where we disagree is on whether an open floor plan really promotes that collaboration in a way that wouldn&#8217;t be possible without the open floor plan. Just because you have a non-open floor plan does not mean you can&#8217;t have exactly the collaboration you describe – you can still easily gather the programmers and designers into the same room and have them work together for an afternoon. The key is that the working environment should be dictated by those who will work in it. So if you need the focus and concentration you can have it, and if you need the tight collaboration you can have that instead. The problem with open floor plans is that environment for focus and concentration is never available to you. My current thinking around the ideal office layout is small 2-4 person offices with large &#8220;collaboration areas&#8221; where people can work together in bigger groups and be louder. </p>
+<p>Now in terms of quantifying where programmers spend their time, I think that&#8217;s hard to say. As is clear from your post and mine we have very different backgrounds in that regard. But regardless of that I still think that we can do better than open floor plans. As I alluded to above I think a more flexible office environment would allow the best of all worlds. It would be a more expensive office, of course, but I think it would be well worth it.</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2014/02/24/writing-code-is-not-most-programmers-primary-task/?replytocom=27589#respond' onclick='return addComment.moveForm("comment-27589", "27589", "respond", "5615")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-27590">
+		<article id="comment-27590" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/42d818f8b67164821b9b4a615d22aac1?s=60&#038;d=identicon&#038;r=G' class='avatar avatar-60' height='60' width='60' />					<cite class="fn"><a href='http://gravatar.com/slpsys' rel='external nofollow' class='url'>Marc</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/comment-page-1/#comment-27590"><time pubdate datetime="2014-02-25T07:44:09+00:00">
+					February 25, 2014 at 7:44 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>This non-argument seems, to me, to be summed up best by the two statements: “Writing code is not most programmers’ primary task,” and, “The key is that the working environment should be dictated by those who will work in it.” Feelin’ it.</p>
+<p>Also, get better headphones, Pete.</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2014/02/24/writing-code-is-not-most-programmers-primary-task/?replytocom=27590#respond' onclick='return addComment.moveForm("comment-27590", "27590", "respond", "5615")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-27614">
+		<article id="comment-27614" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://i2.wp.com/pbs.twimg.com/profile_images/1440722763/me_normal.png?resize=60%2C60' class='avatar avatar-60' height='60' width='60' />					<cite class="fn"><a href='http://twitter.com/alanklement' rel='external nofollow' class='url'>Alan Klement (@alanklement)</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/comment-page-1/#comment-27614"><time pubdate datetime="2014-02-25T12:44:01+00:00">
+					February 25, 2014 at 12:44 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>&#8220;In my experience writing the code takes way less time than integrating and debugging it&#8221;</p>
+<p>Maybe if you had better working conditions (privacy for engineers), you&#8217;d write less buggy code and your engineer team would be forced to (gasp) plan how to integrate and organize every engineer&#8217;s code. <span class='wp-smiley emoji emoji-wink' title=';)'>;)</span></p>
+<p>&#8230;joking aside, this argument has logical errors. First, it infers that collaboration and private / quiet working conditions are mutually exclusive &#8211; they are not. You can have both. Take the NYC Google office for example. There are numerous big and small rooms. The team may be assigned a bullpen area, but you can get up and walk to a private / semi private room to work as well.</p>
+<p>Guys, this topic has been talked to death (well over 10 years ago) and it&#8217;s decided: Engineers and creatives *need* quiet working conditions *available* to them. You guys are all arguing past each other b/c you&#8217;re talking in absolutes.</p>
+<p>Here are better arguments done 10+ years ago.</p>
+<p><a href="http://www.joelonsoftware.com/articles/fog0000000043.html" rel="nofollow">http://www.joelonsoftware.com/articles/fog0000000043.html</a></p>
+<p><a href="http://www.joelonsoftware.com/articles/FieldGuidetoDevelopers.html" rel="nofollow">http://www.joelonsoftware.com/articles/FieldGuidetoDevelopers.html</a></p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2014/02/24/writing-code-is-not-most-programmers-primary-task/?replytocom=27614#respond' onclick='return addComment.moveForm("comment-27614", "27614", "respond", "5615")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="pingback">
+		<p>Pingback: <a href='http://ebeab.com/2014/02/25/edition-eight/' rel='external nofollow' class='url'>Preventing Errors in Code | ebeab</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-27658">
+		<article id="comment-27658" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://i0.wp.com/pbs.twimg.com/profile_images/558980710/chris_photo_2009_viggo_hair_jae_hand_normal.jpg?resize=60%2C60' class='avatar avatar-60' height='60' width='60' />					<cite class="fn"><a href='http://twitter.com/chris_mahan' rel='external nofollow' class='url'>Christopher Mahan (@chris_mahan)</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/comment-page-1/#comment-27658"><time pubdate datetime="2014-02-25T22:14:00+00:00">
+					February 25, 2014 at 10:14 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Programming is only one function of a greater job, which is to allow other people to do their job more effectively, both by automating the boring parts and by allowing new insight.</p>
+<p>Management thinks it does the second part well, and for some companies that may be true. In my experience, however, I&#8217;ve always seen myself as a helper of others who happens to be able to do it with programming.</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2014/02/24/writing-code-is-not-most-programmers-primary-task/?replytocom=27658#respond' onclick='return addComment.moveForm("comment-27658", "27658", "respond", "5615")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="pingback">
+		<p>Pingback: <a href='http://petewarden.com/2014/02/25/five-short-links-65/' rel='external nofollow' class='url'>Five short links &laquo; Pete Warden&#039;s blog</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-28230">
+		<article id="comment-28230" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/05b8b8a29698ac9ab5c0e712da9d0aa9?s=60&#038;d=identicon&#038;r=G' class='avatar avatar-60' height='60' width='60' />					<cite class="fn"><a href='http://www.treasalynch.com' rel='external nofollow' class='url'>Treasa Lynch</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/comment-page-1/#comment-28230"><time pubdate datetime="2014-03-02T10:16:56+00:00">
+					March 2, 2014 at 10:16 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>I just wanted to comment on this briefly. The extent to which open offices are beneficial depend &#8211; very much &#8211; on a) how they are designed and b) what the work done in them is. I&#8217;ve done the same kind of work in two very different open offices. One worked very effectively, one was absolute hell. If the objective of an open office is to cram as many people into the floorspace as possible, you&#8217;re on a loser from day one. If you give people space, and an environment which is engineered to reduce noise clutter, then possibly you wind up with a workable system. But the either/or debate on open offices has to be coloured by the implementation of same.</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2014/02/24/writing-code-is-not-most-programmers-primary-task/?replytocom=28230#respond' onclick='return addComment.moveForm("comment-28230", "28230", "respond", "5615")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-28627">
+		<article id="comment-28627" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/30dc5a68b210d8538ed55238eaf63727?s=60&#038;d=identicon&#038;r=G' class='avatar avatar-60' height='60' width='60' />					<cite class="fn">KeithA</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/comment-page-1/#comment-28627"><time pubdate datetime="2014-03-05T18:13:14+00:00">
+					March 5, 2014 at 6:13 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>&#8220;In my experience &#8230; let alone the open-ended process of figuring out what the requirements are.&#8221;<br />
+From what I have seen that last part is the real killer. Ever worked on a project that seriously changed direction after the coding cycle had started? Or, should I say, ever not worked on one?</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2014/02/24/writing-code-is-not-most-programmers-primary-task/?replytocom=28627#respond' onclick='return addComment.moveForm("comment-28627", "28627", "respond", "5615")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="pingback">
+		<p>Pingback: <a href='http://www.oliviertravers.com/archives/2014/05/12/web-development-factory-floor-supply-chain/' rel='external nofollow' class='url'>How to Make the Best of Website Development Trends, Circa 2014 - Olivier Travers</a></p>
+	</li><!-- #comment-## -->
+	<li class="pingback">
+		<p>Pingback: <a href='http://mkaz.com/2014/02/25/edition-eight/' rel='external nofollow' class='url'>Preventing Errors in Code | mkaz.com</a></p>
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/02/24/writing-code-is-not-most-programmers-primary-task/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://petewarden.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="0c507c30aa" /><input type="hidden" name="_wp_http_referer" value="/2014/02/24/writing-code-is-not-most-programmers-primary-task/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1391188133g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog"  style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='5615' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a7abc95393" /></p>
+<input type="hidden" name="genseq" value="1411962660" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="84"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+</div><!-- #comments -->
+
+			
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+						<aside id="twitter_timeline-2" class="widget widget_twitter_timeline"><h1 class="widget-title">Follow @petewarden on Twitter</h1><a class="twitter-timeline" data-widget-id="355757972368007168" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" width="225" height="400" lang="EN">My Tweets</a></aside><aside id="rss_links-2" class="widget widget_rss_links"><ul><li><a href="http://petewarden.com/feed/" title="Subscribe to Posts">RSS - Posts</a></li></ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="http://petewarden.com/2014/09/21/untethered-by-jinky-de-rivera/">Untethered, by Jinky de&nbsp;Rivera</a>
+						</li>
+					<li>
+				<a href="http://petewarden.com/2014/09/06/five-short-links-74/">Five short links</a>
+						</li>
+					<li>
+				<a href="http://petewarden.com/2014/08/07/how-to-optimize-raspberry-pi-code-using-its-gpu/">How to optimize Raspberry Pi code using its&nbsp;GPU</a>
+						</li>
+					<li>
+				<a href="http://petewarden.com/2014/07/31/how-to-get-computer-vision-out-of-the-unimpressive-valley/">How to get computer vision out of the unimpressive&nbsp;valley</a>
+						</li>
+					<li>
+				<a href="http://petewarden.com/2014/07/25/setting-up-caffe-on-ubuntu-14-04/">Setting up Caffe on Ubuntu&nbsp;14.04</a>
+						</li>
+				</ul>
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent Comments</h1>				<table class="recentcommentsavatar" cellspacing="0" cellpadding="0" border="0">
+					<tr><td title="wachsen" class="recentcommentsavatartop" style="height:48px; width:48px;"><a href="http://wachstumshormon.blogspot.com/" rel="nofollow"><img alt='' src='http://2.gravatar.com/avatar/241d1724d6a584e48210d42ea5ccc319?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstexttop" style=""><a href="http://wachstumshormon.blogspot.com/" rel="nofollow">wachsen</a> on <a href="http://petewarden.com/2008/08/08/a-tag-cloud-for/comment-page-1/#comment-50560">Using your browser history to&hellip;</a></td></tr><tr><td title="Handy trotz schufa" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://www.nie-wieder-schufa.de/" rel="nofollow"><img alt='' src='http://0.gravatar.com/avatar/0d7ce97da2b0c622c13dbdb62cd010f6?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://www.nie-wieder-schufa.de/" rel="nofollow">Handy trotz schufa</a> on <a href="http://petewarden.com/2007/12/14/how-to-access-t/comment-page-1/#comment-50553">How to access the Enron data&hellip;</a></td></tr><tr><td title="lonelyplate.org" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://lonelyplate.org/?p=43" rel="nofollow"><img alt='' src='http://1.gravatar.com/avatar/7bd9eff2c6915368b7927de5ed24ecc8?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://lonelyplate.org/?p=43" rel="nofollow">lonelyplate.org</a> on <a href="http://petewarden.com/2010/02/24/social-network-data-and-research/comment-page-1/#comment-50523">Social network data and&nbsp;r&hellip;</a></td></tr><tr><td title="Buttlift" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://forum.keepflowers.ru/member.php?u=84945-LJrr" rel="nofollow"><img alt='' src='http://1.gravatar.com/avatar/d70ae72a4f91e749114566ca17f57cd4?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://forum.keepflowers.ru/member.php?u=84945-LJrr" rel="nofollow">Buttlift</a> on <a href="http://petewarden.com/2007/05/12/added_a_close_b/comment-page-1/#comment-50496">Added a close button, dug some&hellip;</a></td></tr><tr><td title="Vancouver Roofing Company" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://www.youtube.com/watch?v=I-8AaUJN5AE" rel="nofollow"><img alt='' src='http://1.gravatar.com/avatar/a22690897ea613ba07f133664a1a1107?s=48&#038;d=identicon&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="https://www.youtube.com/watch?v=I-8AaUJN5AE" rel="nofollow">Vancouver Roofing Co&hellip;</a> on <a href="http://petewarden.com/2008/08/08/a-tag-cloud-for/comment-page-1/#comment-50480">Using your browser history to&hellip;</a></td></tr>				</table>
+				</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+	<li><a href='http://petewarden.com/2014/09/'>September 2014</a></li>
+	<li><a href='http://petewarden.com/2014/08/'>August 2014</a></li>
+	<li><a href='http://petewarden.com/2014/07/'>July 2014</a></li>
+	<li><a href='http://petewarden.com/2014/06/'>June 2014</a></li>
+	<li><a href='http://petewarden.com/2014/05/'>May 2014</a></li>
+	<li><a href='http://petewarden.com/2014/04/'>April 2014</a></li>
+	<li><a href='http://petewarden.com/2014/03/'>March 2014</a></li>
+	<li><a href='http://petewarden.com/2014/02/'>February 2014</a></li>
+	<li><a href='http://petewarden.com/2014/01/'>January 2014</a></li>
+	<li><a href='http://petewarden.com/2013/12/'>December 2013</a></li>
+	<li><a href='http://petewarden.com/2013/11/'>November 2013</a></li>
+	<li><a href='http://petewarden.com/2013/10/'>October 2013</a></li>
+	<li><a href='http://petewarden.com/2013/09/'>September 2013</a></li>
+	<li><a href='http://petewarden.com/2013/08/'>August 2013</a></li>
+	<li><a href='http://petewarden.com/2013/07/'>July 2013</a></li>
+	<li><a href='http://petewarden.com/2013/06/'>June 2013</a></li>
+	<li><a href='http://petewarden.com/2013/05/'>May 2013</a></li>
+	<li><a href='http://petewarden.com/2013/04/'>April 2013</a></li>
+	<li><a href='http://petewarden.com/2013/03/'>March 2013</a></li>
+	<li><a href='http://petewarden.com/2013/02/'>February 2013</a></li>
+	<li><a href='http://petewarden.com/2013/01/'>January 2013</a></li>
+	<li><a href='http://petewarden.com/2012/11/'>November 2012</a></li>
+	<li><a href='http://petewarden.com/2012/10/'>October 2012</a></li>
+	<li><a href='http://petewarden.com/2012/08/'>August 2012</a></li>
+	<li><a href='http://petewarden.com/2012/07/'>July 2012</a></li>
+	<li><a href='http://petewarden.com/2012/06/'>June 2012</a></li>
+	<li><a href='http://petewarden.com/2012/05/'>May 2012</a></li>
+	<li><a href='http://petewarden.com/2012/04/'>April 2012</a></li>
+	<li><a href='http://petewarden.com/2012/03/'>March 2012</a></li>
+	<li><a href='http://petewarden.com/2012/02/'>February 2012</a></li>
+	<li><a href='http://petewarden.com/2012/01/'>January 2012</a></li>
+	<li><a href='http://petewarden.com/2011/12/'>December 2011</a></li>
+	<li><a href='http://petewarden.com/2011/11/'>November 2011</a></li>
+	<li><a href='http://petewarden.com/2011/10/'>October 2011</a></li>
+	<li><a href='http://petewarden.com/2011/09/'>September 2011</a></li>
+	<li><a href='http://petewarden.com/2011/08/'>August 2011</a></li>
+	<li><a href='http://petewarden.com/2011/07/'>July 2011</a></li>
+	<li><a href='http://petewarden.com/2011/06/'>June 2011</a></li>
+	<li><a href='http://petewarden.com/2011/05/'>May 2011</a></li>
+	<li><a href='http://petewarden.com/2011/04/'>April 2011</a></li>
+	<li><a href='http://petewarden.com/2011/03/'>March 2011</a></li>
+	<li><a href='http://petewarden.com/2011/02/'>February 2011</a></li>
+	<li><a href='http://petewarden.com/2011/01/'>January 2011</a></li>
+	<li><a href='http://petewarden.com/2010/12/'>December 2010</a></li>
+	<li><a href='http://petewarden.com/2010/11/'>November 2010</a></li>
+	<li><a href='http://petewarden.com/2010/10/'>October 2010</a></li>
+	<li><a href='http://petewarden.com/2010/09/'>September 2010</a></li>
+	<li><a href='http://petewarden.com/2010/08/'>August 2010</a></li>
+	<li><a href='http://petewarden.com/2010/07/'>July 2010</a></li>
+	<li><a href='http://petewarden.com/2010/06/'>June 2010</a></li>
+	<li><a href='http://petewarden.com/2010/05/'>May 2010</a></li>
+	<li><a href='http://petewarden.com/2010/04/'>April 2010</a></li>
+	<li><a href='http://petewarden.com/2010/03/'>March 2010</a></li>
+	<li><a href='http://petewarden.com/2010/02/'>February 2010</a></li>
+	<li><a href='http://petewarden.com/2010/01/'>January 2010</a></li>
+	<li><a href='http://petewarden.com/2009/12/'>December 2009</a></li>
+	<li><a href='http://petewarden.com/2009/11/'>November 2009</a></li>
+	<li><a href='http://petewarden.com/2009/10/'>October 2009</a></li>
+	<li><a href='http://petewarden.com/2009/09/'>September 2009</a></li>
+	<li><a href='http://petewarden.com/2009/08/'>August 2009</a></li>
+	<li><a href='http://petewarden.com/2009/07/'>July 2009</a></li>
+	<li><a href='http://petewarden.com/2009/06/'>June 2009</a></li>
+	<li><a href='http://petewarden.com/2009/05/'>May 2009</a></li>
+	<li><a href='http://petewarden.com/2009/04/'>April 2009</a></li>
+	<li><a href='http://petewarden.com/2009/03/'>March 2009</a></li>
+	<li><a href='http://petewarden.com/2009/02/'>February 2009</a></li>
+	<li><a href='http://petewarden.com/2009/01/'>January 2009</a></li>
+	<li><a href='http://petewarden.com/2008/12/'>December 2008</a></li>
+	<li><a href='http://petewarden.com/2008/11/'>November 2008</a></li>
+	<li><a href='http://petewarden.com/2008/10/'>October 2008</a></li>
+	<li><a href='http://petewarden.com/2008/09/'>September 2008</a></li>
+	<li><a href='http://petewarden.com/2008/08/'>August 2008</a></li>
+	<li><a href='http://petewarden.com/2008/07/'>July 2008</a></li>
+	<li><a href='http://petewarden.com/2008/06/'>June 2008</a></li>
+	<li><a href='http://petewarden.com/2008/05/'>May 2008</a></li>
+	<li><a href='http://petewarden.com/2008/04/'>April 2008</a></li>
+	<li><a href='http://petewarden.com/2008/03/'>March 2008</a></li>
+	<li><a href='http://petewarden.com/2008/02/'>February 2008</a></li>
+	<li><a href='http://petewarden.com/2008/01/'>January 2008</a></li>
+	<li><a href='http://petewarden.com/2007/12/'>December 2007</a></li>
+	<li><a href='http://petewarden.com/2007/11/'>November 2007</a></li>
+	<li><a href='http://petewarden.com/2007/10/'>October 2007</a></li>
+	<li><a href='http://petewarden.com/2007/09/'>September 2007</a></li>
+	<li><a href='http://petewarden.com/2007/08/'>August 2007</a></li>
+	<li><a href='http://petewarden.com/2007/07/'>July 2007</a></li>
+	<li><a href='http://petewarden.com/2007/06/'>June 2007</a></li>
+	<li><a href='http://petewarden.com/2007/05/'>May 2007</a></li>
+	<li><a href='http://petewarden.com/2007/04/'>April 2007</a></li>
+	<li><a href='http://petewarden.com/2007/03/'>March 2007</a></li>
+	<li><a href='http://petewarden.com/2006/12/'>December 2006</a></li>
+	<li><a href='http://petewarden.com/2006/11/'>November 2006</a></li>
+	<li><a href='http://petewarden.com/2006/10/'>October 2006</a></li>
+	<li><a href='http://petewarden.com/2006/09/'>September 2006</a></li>
+	<li><a href='http://petewarden.com/2006/08/'>August 2006</a></li>
+		</ul>
+</aside>		</div><!-- #secondary .widget-area -->
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+		
+		<div id="footer-info">
+			<h3 id="footer-title">
+				<a href="http://petewarden.com/" title="Pete Warden&#039;s blog" rel="home">Pete Warden&#039;s blog</a>
+			</h3>
+
+			<nav id="access-footer" class="clearfix" role="navigation">
+				<h1 class="assistive-text section-heading">Footer menu</h1>
+				<div class="menu"><ul><li ><a href="http://petewarden.com/">Home</a></li><li class="page_item page-item-1"><a href="http://petewarden.com/about/">About</a></li></ul></div>
+			</nav><!-- #access -->
+		</div><!-- #footer-info -->
+
+		<div id="site-generator">
+			<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com</a>.<span class="sep"> | </span><a href="https://wordpress.com/themes/elemin/" title="Learn more about this theme">The Elemin Theme</a>. Design by <a href="http://themify.me/" rel="designer">Themify</a>.		</div>
+
+		<div id="top-link">
+			<a href="#page">&uarr;</a>
+		</div><!-- .top-link -->
+
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+                <script type="text/javascript">
+                        !function(d,s,id){
+                                var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                                if(!d.getElementById(id)){
+                                        js=d.createElement(s);
+                                        js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                                        fjs.parentNode.insertBefore(js,fjs);
+                                }
+                        }
+                        (document,"script","twitter-wjs");
+                </script>
+        <script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201440x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-dcb940360e18d06ae54ad76f972c6b7f">
+	</div>
+	<div class="grofile-hash-map-42d818f8b67164821b9b4a615d22aac1">
+	</div>
+	<div class="grofile-hash-map-24c75a4732796a3e69267badfe036b3d">
+	</div>
+	<div class="grofile-hash-map-3eae8d0d3b4c5a15969106c04e220398">
+	</div>
+	<div class="grofile-hash-map-05b8b8a29698ac9ab5c0e712da9d0aa9">
+	</div>
+	<div class="grofile-hash-map-30dc5a68b210d8538ed55238eaf63727">
+	</div>
+	<div class="grofile-hash-map-241d1724d6a584e48210d42ea5ccc319">
+	</div>
+	<div class="grofile-hash-map-0d7ce97da2b0c622c13dbdb62cd010f6">
+	</div>
+	<div class="grofile-hash-map-7bd9eff2c6915368b7927de5ed24ecc8">
+	</div>
+	<div class="grofile-hash-map-d70ae72a4f91e749114566ca17f57cd4">
+	</div>
+	<div class="grofile-hash-map-a22690897ea613ba07f133664a1a1107">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/petewarden.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/petewarden.wordpress.com\/wp-login.php?action=logout&_wpnonce=6c2cb838b9","homeURL":"http:\/\/petewarden.com\/","postID":"5615","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1409006146j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;Pete Warden&#039;s blog&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 95 other followers</p>
+			<p><input type="email" name="email" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="55065938"/>
+			<input type="hidden" name="source" value="http://petewarden.com/2014/02/24/writing-code-is-not-most-programmers-primary-task/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="ce03fe420f" /><input type="hidden" name="_wp_http_referer" value="/2014/02/24/writing-code-is-not-most-programmers-primary-task/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="https://wordpress.com/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/petewarden.com\/2014\/02\/24\/writing-code-is-not-most-programmers-primary-task\/":5615}	</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='http://widgets.wp.com/likes/master.html?ver=20140922#ver=20140922&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1404442431g'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-includes/js/comment-reply.min.js,/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1399919068j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?23" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'55065938','v':'wpcom','tz':'0','user_id':'0','post':'5615','subd':'petewarden'});
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGRVYVNrSFguN3FwSmQ5RGtNX3VQcj1yVzhiflM1THQtLGFdQ2toOXYlNU1DQ1YxbDBNdGUzaTliUEZ+bGgrW216VGVkJkRqLmxnXU9MU2txM3V0UFd+P1htRjJxJlB3LV1wL0Z5S2pKWTVoT09JWko3RkpvdmpnZltPT2dGPWc/TTlXTltpJVFXQ344VEhYL1taZ25lQ2p3OGJNaDQwOGp6XzcueSxTVF9tLVo/ZVZKQWVBNkVJVUdHUWErKz9NK20xTGQ9YkUyLjU4Nj13K2JtWFIxUnlXVitlNFZRb090aCw0TFAycDAreHVwdS9LZi9FfC9MLjldPVBXUkUuOEY3SExMLXo3dzR5aVcwNTVMckhuSk1GaUlKVTcuUzdmNDdWWGMvQjBtM2ctLXdKTi5JM1Bn'});
+addLoadEvent(function(){linktracker_init('55065938',5615);});
+	</script>
+<noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>

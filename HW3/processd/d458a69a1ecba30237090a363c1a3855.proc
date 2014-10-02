@@ -1,0 +1,823 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » Does net neutrality really matter? Comments Feed
+   Smarter buildings through data tracking Four short links: 15 August
+   2014
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   Emerging Tech
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+Does net neutrality really matter?
+
+Competition, access to bandwidth, and other issues muddy the net neutrality
+waters.
+
+   by Andy Oram | @praxagora | +Andy Oram | Comments: 32 | August 15, 2014
+   Comments: 32
+   NetNeutralityPetitionSignatures
+
+   Screen shot of signatures from a “Common Carrier” petition to the White
+   House.
+
+   It was the million comments filed at the FCC that dragged me out of the
+   silence I’ve maintained for several years on the slippery controversy
+   known as “network neutrality.” The issue even came up during President
+   Obama’s address to the recent U.S.-Africa Business forum.
+
+   Most people who latch on to the term “network neutrality” (which was
+   never favored by the experts I’ve worked with over the years to promote
+   competitive Internet service) don’t know the history that brought the
+   Internet to its current state. Without this background, proposed policy
+   changes will be ineffective. So, I’ll try to fill in some pieces that
+   help explain the complex cans of worms opened by the idea of network
+   neutrality.
+
+From dial-up to fiber
+
+   Throughout the 1980s and 1990s, the chief concerns of Internet policy
+   makers were, first, to bring basic network access to masses of people,
+   and second, to achieve enough bandwidth for dazzling advances such as
+   Voice over IP (and occasionally we even managed interactive video).
+   Bandwidth constraints were a constant concern, and a good deal of
+   advances in compression and protocols made the most of limited access.
+   Many applications, such as FTP and rsync, also included restart options
+   so that a file transfer could pick up where it left off when the
+   dial-up line failed and then came up again.
+
+   Because there were always more ways to use the network than the
+   available bandwidth allowed (in other words, networks were
+   oversubscribed), we all understood that network administrators at every
+   level, from the local campus to the Tier 1 provider, would throttle
+   traffic to make the network fair to all users. After all, what is the
+   purpose of TCP window scaling, which lies at the center of the main
+   protocol that carries traffic on the Internet?
+
+   There’s nothing new about complaints from Internet services about
+   uneven access. When Tier 1 Internet providers stopped peering and
+   started charging smaller providers for access, the outcry was long and
+   loud (I wrote about it in December 2005) — but the Internet survived.
+
+   The hope that more competition would lead to more bandwidth at
+   reasonable prices drove the Telecommunications Act of 1996. And in
+   places with robust telecom competition — economically advanced
+   countries in Europe and East Asia — people get much faster speeds than
+   U.S. residents, at decent prices, with few worries about discrimination
+   against content providers. A long history of obstruction and legal
+   maneuvering has kept the U.S. down to one high-speed networking carrier
+   in most markets.
+
+   Many people got complacent when they obtained always-on, high-speed
+   connections. But new network capabilities always lead to more user
+   demand, just as widening highways tends to lead to more congestion.
+   Soon the peer-to-peer file sharing phenomenon pumped up the energy of
+   Internet policy discussions again.
+
+Moral outrage gets injected into Internet policy debates
+
+   I remember a sense of pessimism setting in among Internet public policy
+   advocates around the year 2000, as the cable and telephone companies
+   carved up the Internet market and effectively excluded most of their
+   competitors. But thanks to the competition between these two
+   industries, at least, most Americans had always-on connections, even if
+   many of them were ADSL. And that led to the next set of Internet
+   infrastructure wars.
+
+   A lot of the new always-on Internet users, who had been making cassette
+   tapes for friends and sharing music offline, decided they wanted music
+   on their computers and started using the Internet to exchange files.
+   The growth of peer-to-peer services can be attributed partly to the
+   desire to evade copyright holders, but it had solid technical
+   motivations as well.
+
+   Millions of downloads would put a great strain on servers. (Nobody
+   outside Google knows how much it invests in YouTube servers, but the
+   cost must be huge.) When a hot new item hits the Internet, the only way
+   to efficiently disseminate it is to make each user share some upload
+   bandwidth along with download bandwidth. The overhead of peer-to-peer
+   systems like BitTorrent requires a modest amount more bandwidth usage
+   than using central servers to distribute the same content, but it
+   allows small Internet users to provide popular material without being
+   overwhelmed by downloads.
+
+   Prices have always been different for different Internet users.And
+   peer-to-peer has substantial non-infringing uses, generally ignored by
+   vigilante bandwidth throttlers. On old networks, software developers
+   had to undergo a complicated protocol requiring technical mastery in
+   order to work on free software. A developer fixing a bug or adding an
+   enhancement would isolate the lines of code he or she changed in a
+   file. Other developers would download that tiny file, update their
+   versions of the source code using the patch program, recompile, and
+   reinstall. Peer-to-peer services made it convenient to just download a
+   whole new binary and compare checksums to make sure it had not become
+   corrupted.
+
+   I don’t have to go over the agonizing history of the sudden worldwide
+   mania for peer-to-peer file sharing or the alarmed reactions of music
+   and movie studios. Suffice it to say that traffic shaping, which had
+   always been key to fair network service, got buffeted from all
+   directions by an unpropitious moral zeal. Some network neutrality
+   advocates distrust all application-specific discrimination, and turgid
+   debates arise over what is “legitimate.” Many in the network neutrality
+   movement were even angry at the FCC in 2010 when it created different
+   rules for mobile and fiber networks, even though the bandwidth
+   restraints on mobile networks are obvious.
+
+   Still, given that the music and movie industries have started to
+   respond to consumer demand and offer legal streaming, peer-to-peer file
+   sharing may no longer be a significant percentage of traffic that
+   carriers have to worry about. Instead of Napster, they argue over
+   Netflix. But the histrionic appeals that characterized both sides of
+   the peer-to-peer debates — those who defended peer-to-peer, and those
+   who deplored it — continued into the network neutrality controversy.
+
+All other things being unequal
+
+   Many advocates who’ve latched onto the network neutrality idea suggest
+   that up to now we’ve enjoyed some kind of golden age where anyone in a
+   garage can compete with Internet giants. Things aren’t so simple.
+
+   Prices have always been different for different Internet users because
+   some places have fewer competitors, some places are more difficult to
+   string wires through, and so on. Different service is also available
+   for cold cash, so large users have routinely leased their own lines
+   over the years or paid extra for routing over faster lines. Software
+   traffic shaping is a simple technological extension, similar to the use
+   of virtual circuits and software-defined networking technologies
+   elsewhere, to discriminate among customers willing to pay.
+
+   Michael Powell, as chair of the FCC, famously cited different levels of
+   access when he was asked about the digital divide and pointed out that
+   he was on the wrong side of a Mercedes divide. It might not have been
+   smart for an FCC chair to compare the information highway — which was
+   already clearly becoming an economic, educational, and democratic
+   necessity — with a luxury consumer item, but his essential point was
+   correct.
+
+   Network access is only one of many resources innovators need in any
+   case. Suppose I cooked up a service that could out-Google Google — one
+   that could instantly deliver the exact information for which people
+   were searching in a privacy-preserving manner — but dang it, I just
+   lacked 18 million CPUs to run it on. Where’s the neutrality?
+
+   The fact is that innovators — particularly in developing regions of the
+   world, where more and more innovation is likely to arise — have always,
+   always suffered from resource constraints that don’t bedevil large
+   incumbents. The key trick of innovation is to handle resource
+   constraints and turn them into positives, as the early Internet users I
+   mentioned at the beginning of this article did. I don’t see why network
+   speed and cost should face policy decisions any different from physical
+   resources, access to technical and marketing expertise, geographical
+   location, and other distinctions between people.
+
+One proposed fix: common carrier status
+
+   Net neutrality advocates have also seized on what they consider a
+   simple fix: applying the legal regime known as Title II (PDF) (because
+   of its place in the law) so that Internet carriers are regulated like
+   letter carriers or railroads. One attraction of this solution is that
+   it requires action only by the FCC, not by Congress.
+
+   As I have pointed out, the evolution of the current regime followed a
+   historical logic that would be hard to unravel. If 99% of those one
+   million comments (plus even more that are certain to roll in before the
+   deadline) ask the FCC to reverse itself, they may do so. Congress could
+   well reverse the reversal. But Title II contains booby traps as well:
+   because networks can’t treat all packets the same way, mandating them
+   to do so will lead to endless technical arguments.
+
+Freedom? Or just economics?
+
+   Telephone and cable company managers are not blind to what’s going on.
+   They have seen their services reduced to a commodity, while on the one
+   side content producers continue to charge high fees and on the other
+   side a handful of prominent Internet companies make headlines over
+   stunning deals. (Of course, few companies can be WhatsApp.) The
+   telephone companies spend days and nights plotting how to bring some of
+   that luscious revenue into their own coffers.
+
+   Their answer, of course, is through oligopoly market power rather than
+   through real innovation. That’s why I focused this article on
+   competition back at the start. The telephone companies want a direct
+   line into those who build successful businesses on top of telco
+   services, and they want those companies to cough up a higher share of
+   the revenues. It’s the same strategy pursued by Walmart when it forces
+   down prices among its suppliers or by Amazon.com when it demands a
+   higher share of publisher profits.
+
+   Tim O’Reilly, with whom I discussed this article, points out that the
+   public is unable to determine what fair compensation is for the
+   carriers because we aren’t privy to the actual costs of providing
+   service. And those costs are not just the costs for providing Internet
+   infrastructure.
+
+   O’Reilly asks, “What are the costs, for example, of providing Netflix
+   versus television? Which one is driving subscriber growth and ARPU?
+   What is the real cost of the incremental infrastructure investment
+   needed to provide high bandwidth services versus the prior cost of
+   paying for content? How does this show up in the returns the telcos and
+   cable companies are already getting?”
+
+   There are many forms of centralization I’d worry about before traffic
+   shaping.While we are not privy to these cost numbers, he indicates that
+   a quick look at the public financial reports of Comcast and Netflix
+   provides some useful insight. If you look at the annual view of the
+   data, you’ll see that in the four years between 2010 and 2013,
+   Netflix’s revenues doubled (and with them, presumably their demands on
+   the network doubled as well — perhaps even more, as a much larger
+   proportion of Netflix revenue is likely driven by streaming today than
+   it was in 2010). In that period, Netflix’s pre-tax income dropped from
+   about 12% of revenue to about 4%. In the same time period, Comcast’s
+   revenue also more than doubled (partly as a result of acquisition), and
+   their profit margin rose from 16% to 17%.  It’s pretty clear that the
+   rise of Netflix streaming has not had a negative impact on Comcast
+   profits!
+
+   In short, is being a commodity provider really such a bad deal? Do
+   Internet infrastructure providers really need to squeeze Internet
+   content companies in order to fund their investments? While this level
+   of analysis is at best indicative, and should not be applied naively to
+   policy decisions, it suggests a productive avenue for further research.
+
+   O’Reilly also points out that customers are paying the carriers to
+   provide Internet service — and to them, that service consists of access
+   to sites like Facebook, YouTube, and, yes, Netflix. When the carriers
+   ask the content providers to pay them as well, not only are they
+   double-dipping, but they are conveniently forgetting to mention that in
+   the “good old days,” cable companies actually paid for the content they
+   delivered to customers. Aren’t they actually getting a free-ride when
+   people spend their Internet time watching YouTube or Netflix instead?
+
+   So, at bottom, the moral rallying cry behind network neutrality offers
+   a muddled way to discuss an economic battle between big companies as to
+   how they will allocate profits between themselves.
+
+Taking the middle road
+
+   Some net neutrality experts make no secret of their desire to drive the
+   telephone companies and cable companies out of business or reduce them
+   to regulated utilities. The problem with abandoning infrastructure to
+   the status of a given is that innovation in wires and cell towers is by
+   no means finished. I looked at the economic aspects of telecom
+   infrastructure in my article “Who will upgrade the telecom foundation
+   of the Internet?”
+
+   We still have recourse to preserve the open Internet without network
+   neutrality:
+     * The FCC and FTC can still intervene in anti-competitive or
+       discriminatory behavior — especially during mergers, but also in
+       the daily course of activity. The FCC showed its willingness to
+       play cop when Comcast was caught throttling BitTorrent traffic.
+     * The government can sponsor initiatives to overcome the digital
+       divide. Foremost among these are municipal networks, which have
+       worked well in many communities (and are under constant political
+       attack by private carriers). There is certainly no reason that
+       Internet service needs to be provided by the purveyors of voice or
+       video applications, just because those companies had lines strung
+       first. On the other hand, Google can’t fund universal access. And
+       even municipalities can’t create all the long-haul lines that
+       connect them, so they are not a complete solution.
+     * Innovators could be trained and encouraged in economically
+       underdeveloped areas where adaptive solutions to low bandwidth and
+       unreliable connections are crucial. We will all be better off as
+       clever ways are found to use our resources more efficiently. For
+       instance, we can’t expect the wireless spectrum to support all the
+       uses we want to make of it if we’re wasteful.
+
+   I feel that network neutrality as a (vague) concept took hold of an
+   important ongoing technical, social, and economic discussion and
+   rechanneled it along ineffective lines. As this article has shown,
+   technology as well as popular usage has continuously changed at the
+   content or application level, and there are many forms of
+   centralization I’d worry about before traffic shaping.
+
+   Furthermore, we should not give up on hopes for more competition in
+   infrastructure. At that time, we could all have the equivalent of a
+   Mercedes on the information highway.
+
+   Coax photo on home page by Michael Mol, used under a Creative Commons
+   license.
+   tags: broadband, broadcasting, cable, comcast, competition, fcc,
+   incumbent telephone companies, ISP, network neutrality, telecom
+   Comments: 32
+     * http://www.lowpan.com Jon Smirl
+       If I’m paying Verizon $100/mth for 75Mb service, shouldn’t they
+       honor that sale and deliver Netflix at the full 3Mb/s? I get about
+       500Kb-700Kb with lots of drop outs.
+       If they are not going to honor that sale and hide behind “upto” I
+       think the FTC should make them advertise the true rate – 0.6Mb as
+       what you get for the $100/mth.
+          + Mine
+            Exactly. They are getting paid on both ends and then
+            complaining about the deals they themselves have made? What
+            the heck do they think people are doing with 50+mb
+            connections, solitaire?
+               o http://www.lowpan.com Jon Smirl
+                 Using Verizon’s logic – cars should be advertised as
+                 getting ‘upto’ a million MPG. It doesn’t take any gas to
+                 coast down a mountain. In the city it gets 0.6MPG but you
+                 won’t find that in any documentation from Verizon.
+          + http://www.video-game-chat.com/forum/ Video Game Chat
+            You are getting ripped off. We have a 25MB plan and it
+            normally tops out at 3.6Mb without any hiccups or dropouts.
+               o Carl Leitz
+                 don’t tolerate that, write paper mail to state
+                 regulators, ceo of the isp, and fcc, etc., state & fed
+                 regulators.
+                 also, get your refund.
+                 mail letters certified w/ return receipt.
+          + floatingbones
+            You could try re-directing your connections through a VPN and
+            see what happens to your service. This is very easy to do with
+            a laptop but rather difficult with a set-top box. Services
+            like ProXPN offer free trial service through their Dallas
+            server. If you’re able to get a higher bandwidth through a
+            VPN, it’s a smoking gun for throttling by your ISP.
+               o Derek Balling
+                 Not at all. It can easily be demonstrating that “the path
+                 between YourISP and Netflix is saturated” whereas “the
+                 path between your proxy service’s ISP and Netflix is
+                 not”.
+                    # floatingbones
+                      That’s just a question of having sufficient
+                      bandwidth at the Internet Exchange points. A manager
+                      from Level3 has spelled out, in detail and with
+                      graphs, what is happening. From the article
+                      http://blog.level3.com/global-connectivity/observati
+                      ons-internet-middleman/ :
+                      “The average utilization across all those
+                      interconnected ports is 36 percent. So you might be
+                      asking – what is all the fuss about with peering?
+                      And why did we write the Chicken post? Well, our
+                      peers fall into two broad categories; global or
+                      regional Internet Services providers like Level 3
+                      (those “middlemen” listed in the Renesys report),
+                      and Broadband consumer networks like AT&T. If I use
+                      that distinction as a filter to look at congested
+                      ports, the story looks very different.”
+                      “A port that is on average utilised at 90 percent
+                      will be saturated, dropping packets, for several
+                      hours a day. We have congested ports saturated to
+                      those levels with 12 of our 51 peers. Six of those
+                      12 have a single congested port, and we are both
+                      (Level 3 and our peer) in the process of making
+                      upgrades – this is business as usual and happens
+                      occasionally as traffic swings around the Internet
+                      as customers change providers.”
+                      “That leaves the remaining six peers with congestion
+                      on almost all of the interconnect ports between us.
+                      Congestion that is permanent, has been in place for
+                      well over a year and where our peer refuses to
+                      augment capacity. They are deliberately harming the
+                      service they deliver to their paying customers. They
+                      are not allowing us to fulfil the requests their
+                      customers make for content.”
+                      One final note: given that Moore’s Law — and not the
+                      physics of the backbone lines — limit what can be
+                      passed through these Internet Exchange Points, it
+                      should be easy for providers to be regularly
+                      expanding their capacities at these computer
+                      centers. Actually, it should be fairly easy to
+                      predict when more capacity is needed and schedule
+                      the deployment of upgraded hardware accordingly.
+                      Comcast and other ISPs are clearly not doing this.
+                         @ Derek Balling
+                           First off, the hardware to handle these types
+                           of peering points is NOT cheap. It’s a
+                           significant expense (both in terms of outlay,
+                           but in terms of maintenance) to upgrade the
+                           peering point interconnect.
+                           Second – why on earth should Verizon (or any
+                           ISP) invest to upgrade their infrastructure
+                           specifically designed to help their competitor
+                           take away their business? That’s like demanding
+                           that your local Ford dealer upgrade their
+                           service department to also be able to easily
+                           service Toyota vehicles. Yeah, it’s “good
+                           customer service” to be able to (service
+                           multiple vendors, handle Netflix traffic), but
+                           it also facilitates the loss of business
+                           (auto-sales, video-channel revenue) to a
+                           competitor. No business in their right mind
+                           would do that.
+                           If your argument is “they should be forced to
+                           do that, they’re a monopoly” (as is the usual
+                           response), then the better answer is *fix the
+                           monopoly*. Net neutrality is a symptom of a
+                           statutory monopoly. Get a competitive
+                           marketplace for ISPs and let them compete for
+                           your dollars.
+     * floatingbones
+       At 11am on Monday of this week, I ordered two items from Amazon.
+       Both were listed as “In Stock” and the vendor was listed as Amazon
+       itself. I selected Amazon’s free shipping service. For the next 101
+       hours, my order was being “prepared for delivery.” Even though the
+       items were available for overnight delivery (for a premium delivery
+       charge), they had to be “processed” instead — for four nights in a
+       row! My item were finally shipped on Friday night.
+       Amazon’s delivery practices provide a clear analogy of the flaws
+       with “premium” network services. In order to create value for their
+       2-day paid delivery service, they must deliberately throttle their
+       “free” delivery program. The program is obfuscated: nowhere on
+       Amazon’s page can one find a policy when they go out of their way
+       to manually delay shipping product. “In stock” should mean that the
+       product is ready for shipping — but they might lose orders to local
+       merchants who will give you a product without delay when they have
+       it in stock. Amazon’s policies are deceptive and manipulative. We
+       should have the equivalent of “Net Neutrality” for order
+       fulfillment from Internet vendors. At the very least, Amazon should
+       honestly state — before committing to the order — when “in stock”
+       items will actually be shipped.
+          + Carl Leitz
+            right, like I posted, Practiced at the Art of Deception.
+     * “Prof”
+       Your discussion is clear as mud to me, but from what I can gleam
+       from it leads to the following question:
+       Suppose the FCC made–with ongoing enforcement–a requirement that
+       any internet provider (at whatever level?) cannot ‘throttle’ any of
+       their users if that provider has control of 50% or over of the
+       internet connections, i.e., provider market share, available for
+       purchase to that user at that time.
+       Would forcing competition in that way solve a lot of the problems
+       that you mention?
+       Sincerely (really),
+       Prof. R. Jewell
+          + Andy Oram
+            Prof offers an interesting policy that would either allow a
+            monopoly that doesn’t discriminate or force competition. As
+            I’ve pointed out, giving different amounts of bandwidth to
+            different connections is deeply embedded in network
+            connectivity and would be hard to regulate. Furthermore, some
+            rural areas might not support enough network connections to
+            support robust competition, and two providers does not
+            constitute much competition. But it could be an educational
+            experiment.
+               o Mike Keilty
+                 This is a great idea, but from a technical viewpoint, it
+                 would be very hard to prove that an ISP is throttling or
+                 simply load balancing.
+     * ChronoFish
+       Net-neutrality should be this simple rule: You get what you pay
+       for. If your service claims 25mb service then your ISP should
+       expect to provide you with 25mb service 24 hours a day regardless
+       of which sites you are going to. Likewise if you are a content
+       provider, and you’ve paid for 100mbs pipe, then their ISP should
+       expect them to upload 100mbs 24 hours a day.
+       Why is this so hard?
+          + Carl Leitz
+            hard bc w/o deception, profits would drop drastically, hence
+            industries’ dependence on the bait n switch of blaring
+            headlines offering “GREAT DEAL!” and the fine print saying
+            but, if, extra fees, charges, assessments….
+            Like Sprint’s ‘UNLIMITED!” and fine print saying ‘restrictions
+            apply.”
+          + BRBP
+            Yes! This is really this simple.. just trying to get the edge
+            is where the Gordian Knot is created!
+          + http://radar.oreilly.com timoreilly
+            I totally agree. I think that reframing the argument in terms
+            of economics would get a lot more attention from regulators.
+            This should probably be an FTC issue, not (or not just) an FCC
+            one. The cable companies sell one thing, and deliver another.
+               o Derek Balling
+                 That’s simply not the case, Tim, and you know it.
+                 What a person has for “last mile” bandwidth has bupkus to
+                 do with what connectivity the site they’re visiting has.
+                 We’ve both been around long enough to remember when we
+                 were at sites which had ‘blazing-fast’ T-1 lines, but
+                 where the sites we were visiting were connected to the
+                 net on a paltry fractional-T frame-relay circuit, or
+                 worse. Our ISPs weren’t ‘failing to deliver’ the T-1
+                 speeds we had paid for, just because a particular remote
+                 site had a bottleneck between themselves and us.
+                 Which is exactly the situation here: customers have a
+                 super-fast bandwidth in the last-mile, but their
+                 “fractional share” of the Verizon/Level3 interconnect is
+                 less than what could theoretically be delivered to them
+                 on their last mile (much like our fractional-relay web in
+                 the other example).
+                 Verizon has no – and should have no – obligation to
+                 upgrade infrastructure whose main beneficiary is its
+                 direct competitor. That’s an insane requirement, and is
+                 akin to forcing Ford dealers to train their repair techs
+                 to be certified to service Toyotas. The main people who
+                 benefit from that are their competitors and their
+                 competitors’ customer-base.
+          + Derek Balling
+            Your ISP *is* providing you with 25Mbps service.
+            But providing you with 25Mbps service does you no good if the
+            content you’re requesting is on the end of a 1.44Mbps T1
+            circuit, for example.
+            Which is the perfect analogy for the situation: Your LOCAL
+            pipe is capable of a certain amount of bandwidth, but that’s
+            no guarantee that the path between you and the content you
+            want can saturate your 25Mbps, and everyone else’s who is
+            requesting from that content source.
+            THAT link, between your ISP and the content provider (or in
+            this case, the content provider’s ISP), is paid for and
+            maintained through a completely different economic model.
+            Expecting that “because I’ve got 25Mbps I should be able to
+            get 25Mbps from wherever I want to request data from”
+            demonstrates a fundamental lack of understanding of how
+            internet traffic works.
+               o Borderlord
+                 Sorry, but that is not what the argument is about. It is
+                 about ISPs throttling the provider’s content to less than
+                 what he can provide(and you can receive) unless he coughs
+                 up additional money.
+                 The legal term for this is extortion.
+                    # Derek Balling
+                      Riiiight, because asking the content provider to
+                      “pay for the bandwidth you use” isn’t a normal
+                      customer/provider relationship, it’s extortion.
+                      Pull the other one.
+                         @ Borderlord
+                           The content PROVIDER isn’t using the bandwidth,
+                           the customer is, and it is already paid for.
+                           If the governor of NJ tells an out-of -state
+                           spring water supplier that it has to pay an
+                           extra fee to be able to use the fast lane on
+                           the turnpike, whereas the Jersey spring water
+                           company doesn’t, wouldn’t he be in big trouble?
+                           How many do you have?
+                         @ Derek Balling
+                           First off, comparing something paid for
+                           completely with tax dollars to infrastructure
+                           paid for by a private entity is comparing
+                           apples and legos.
+                           And the fact is that the content-provider *is*
+                           using bandwidth. It is sending traffic onto
+                           Verizon’s network, the same as I am doing right
+                           now (albeit onto Time Warner’s network). There
+                           is no logical reason why they should have the
+                           ability to send traffic and consume Verizon’s
+                           network resources for free, whereas I have to
+                           pay to consume those resources.
+                           So I’ll turn your question around: how many do
+                           YOU have? I can do this all week. :-)
+                         @ Borderlord
+                           The turnpike is paid for by user fees.
+                           Wired and wireless internet uses public
+                           resources. In the case of wired services, they
+                           are usually monopolies in their service area,
+                           which is why they are regulated.
+                           If content providers didn’t have the ability to
+                           send traffic, what resources would you be
+                           paying to consume?
+                           You may be able to do this all week, but I’m
+                           done.
+                         @ Derek Balling
+                           *SOME* turnpikes are paid for by user fees,
+                           others are paid for completely with tax
+                           dollars.
+                           Just because content providers have enjoyed the
+                           ability to “pay just their local provider and
+                           hope the peering arrangements would get their
+                           traffic to the other end” in the past is no
+                           reason why it must always be so. To your
+                           question, the answer would be that it might be
+                           a walled-garden (a la late 20th century AOL),
+                           or it might be a balkanized environment (a la
+                           China today), or the few content providers who
+                           find themselves “net isolated” will pony up and
+                           pay their fair share instead of free-riding.
+                           If your argument is “oh, the ISPs are a
+                           monopoly, so we get to tell them what to do”,
+                           the *better* answer is “end the monopoly”.
+                           There is no good reason for broadband internet
+                           to be a monopoly. NONE. Undo the monopoly
+                           (which will – itself – require a decade or two
+                           of pro-competition regulations to undo the
+                           damage the gov’t has already caused). Then net
+                           neutrality becomes a value-add for ISPs to use
+                           as a differentiator.
+     * Borderlord
+       As users, we already pay ISPs variable rates for bandwidth and (in
+       most cases) data caps. How we use it, should be up to us,
+       particularly since we also pay subscription fees to the providers.
+          + http://radar.oreilly.com timoreilly
+            My point exactly. Why should comcast et al get paid twice for
+            the same service, once by consumers and the second time by
+            internet data suppliers?
+     * DownWithComcast
+       Gosh! Seriously yet another paid advertisement by comcast. Internet
+       is a utility. The creativity is from companies that create the
+       content. You are already getting paid for delivery. So, no you do
+       not deserve part of the pie that whatsapp made (however unjustified
+       that price of whatsapp might have been).
+       Stop being Greedy and enough with this arm twisting!
+       US is one of the most expensive markets for internet service and
+       probably with the worst service. Have been to so many developing
+       countries with better service. It is time to breakdown these
+       powerful service providers and regulate them further, not give them
+       more powers and money for no deserving work.
+     * Mike Loukides
+       A couple of points here:
+       We live under an unfortunate myth that the regulated monopoly
+       regime of US telecommunications was a “bad thing.” We probably
+       think it’s bad because of the rise of Reaganism, the idea that any
+       regulation was bad, etc. But under the regulated monopoly, the US
+       really did have the best telecommunications in the world. That is
+       far from the case now. And one of the reasons that the US had the
+       best telecommunications in the world was that profits above a
+       certain amount (10%, I believe) were required to be reinvested, and
+       that reinvestment took the form of better infrastructure and Bell
+       Labs. If you’ve watched the 21st century non-regulated telecom
+       monopolies at all, the one thing that is clear is that they are not
+       terribly interested in investing in infrastructure. And the decline
+       of Bell Labs is one of the tragedies of the late 20th century. It
+       still exists, but it’s a very thin, wispy shadow of its former
+       self. (And when I Google Bell Laboratories, the top item is a
+       company that makes insecticides.)
+       We also live under the unfortunate myth that being a common carrier
+       is about traffic shaping. That’s only true indirectly, and really
+       isn’t the bargain at all. Dan Geer does an excellent job of framing
+       this issue in his recent Black Hat keynote
+       (http://geer.tinho.net/geer.blackhat.6viii14.txt). Common carrier
+       is about not being liable for abuses of the system. It is about
+       traffic inspection. If someone plans a murder (hey, let’s go for
+       broke: a terrorist act) over the telephone, you can’t prosecute (or
+       sue in civil court) the phone company for carrying the traffic,
+       because they are just plain not allowed to listen to the call. And
+       Dan proposes a strikingly similar (and, IMO, brilliant) choice for
+       Internet providers: you can either be common carriers, and immune
+       from prosecution for anything based on the content of the traffic
+       you carry; or you can not be common carriers, and subject to
+       prosecution and civil damages for the content of the traffic you
+       carry. I’d go for that. If you can’t inspect traffic, you also
+       can’t do traffic shaping, except on the lowest levels of the
+       protocol stack. The problem we’re facing now is that the providers
+       can inspect traffic (and prefer some traffic sources over others),
+       but they’re immune to prosecution. They have the best of both
+       worlds, and they shouldn’t.
+       Finally, on municipal networks: I think the biggest roadblock for
+       municipal networks is the unfortunate connection between corporate
+       lobbyists and government. A number of states have regulations
+       against (or severe restrictions on) municipal broadband services. I
+       suspect that you will see further regulation wherever municipal
+       broadband is likely to become a serious threat to the entrenched
+       providers.
+       Having said that, I have to admit that municipal broadband makes me
+       think of the adage “be careful what you wish for, because you may
+       get it.” I would love to buy gigabit service from my town (or, more
+       likely, a consortium of local towns)–I’d love to buy it from anyone
+       willing to sell it to me. But would I be as happy in 2024, when the
+       latest generation of apps requires 10 gigabits to be happy? Would I
+       be happy with municipal employees trying to deal with DDoS attacks
+       and the like? Will some cities do a wonderful job, while others
+       screw it up?
+       Granted, the current entrenched providers (including my own) are
+       fairly clueless at running a network. Comcast gives me a pretty
+       consistent 35 Mb/s down, 8 Mb up/s, but I don’t get even two 9s of
+       reliability–which is pretty tough when that missing 9 happens to
+       occur during a videoconference. (Contrast with the regulated analog
+       telephone service standard of 1 minute/40 years. And AT&T didn’t go
+       down for a second during Hurricane Sandy, while Comcast’s Internet
+       service was out for days.) And I don’t forsee Comcast sending a
+       truck out to run fiber to my house any time in the near future.
+       And, while AT&T runs a very reliable network, they can’t deliver
+       more than 1.5 Mb/s, and (as far as I can tell) have no plans to
+       upgrade. So maybe I don’t care about the possibility that a
+       municipal network wouldn’t keep its infrastructure up to date in
+       the 2020s: Comcast, AT&T and Verizon won’t, either.
+       Regardless of the solution, we are poorly served by the current
+       monopolies, and that will be an increasingly important issue, both
+       for individuals and for the economy as a whole. A curse on all your
+       houses.
+          + Andy Oram
+            Thanks, Mike. It would be interesting to say that congestion
+            control is OK but fiddling around at higher levels would not.
+            Would this stop discrimination against Internet services, or
+            just lead to another round of evasion?
+     * Andy Oram
+       Reed Hastings, CEO of Netflix, contributed this predictable opinion
+       piece to Wired:
+       http://www.wired.com/2014/08/save-the-net-reed-hastings/
+       The arguments, which underline points in my article, say less about
+       network neutrality at the application layer than about competition
+       in infrastructure.
+
+Featured Video
+
+   "One Year After healthcare.gov..." - Mikey Dickerson describes his
+   journey from Google to the West Wing, and emphasizes that it's time for
+   a “commitment escalation.”
+
+Recent Posts
+
+     * Python 3: threat or menace?
+     * Four short links: 26 September 2014
+     * Four short links: 25 September 2014
+     * Scaling NoSQL databases: 5 tips for increasing performance
+     * In pursuit of universal IoT standards
+
+   Tweets by @radar
+
+Most Recently Discussed
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee

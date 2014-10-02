@@ -1,0 +1,1712 @@
+status: 200
+x-request-id: 5b5a13b7b420f1908dc6d0e4201a8f79
+content-location: http://velocityconf.com/velocityny2014/public/schedule/detail/37891?cmp=tw-velocity-confsched-info-vlny14_events
+set-cookie: oreilly_enation_session=6618a1e86bd3db5464f7cb5ebe8e9c2a; path=/;
+ HttpOnly
+x-powered-by: Phusion Passenger 4.0.45
+vary: Accept-Encoding
+content-length: 94793
+server: Apache/2.2.14 (Ubuntu)
+x-runtime: 0.595070
+-content-encoding: gzip
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Sun, 28 Sep 2014 15:42:06 GMT
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://www.w3.org/2002/12/cal/hcal http://www.w3.org/2006/03/hcard">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"61e2f91637","applicationID":"349946","transactionName":"dAxbFxYNWlpXRBxEEFUPXABLEVVeV1JGWAAYB1AXBQta","queueTime":0,"applicationTime":563,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAIPV15ACwcJXVVU"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+	<!-- L:S content/theme/html_system_head  (0) -->
+	<!-- load web fonts -->
+
+<script type="text/javascript">
+  (function() {
+    document.getElementsByTagName("html")[0].setAttribute("class","wf-loading")
+    document.getElementsByTagName("html")[0].setAttribute("className","wf-loading") // for IE
+    var config = {
+      kitId: 'bmj2nsh',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//fonts.oreillystatic.com/'+config.kitId+'.js';tk.type="text/javascript";tk.async="false";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+<style>
+.wf-loading .typewriter {
+  font-family: Courier New;
+  color: rgba(0, 0, 0, 0); 
+}
+
+.wf-loading body, p, ol, ul, td { 
+  font-family: Arial, Verdana, Helvetica, sans-serif; 
+}
+ 
+.wf-active .typewriter {
+  font-family: 'oreilly-urw-typewriter-narro', Courier New;
+}
+
+.wf-active body, p, ol, ul, td { 
+  font-family: 'open-sans', Arial, Verdana, Helvetica, sans-serif;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  	<link href="/stylesheets/general.css?1411597258" media="screen" rel="stylesheet" type="text/css" />
+
+	<!-- controller_js -->
+	<script src="//cdn.oreillystatic.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="/javascripts/application.js?1411597258" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery_star_rating_pack.js?03" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.form.min.js" type="text/javascript"></script>
+	<!-- extra_external_javascript -->
+	
+	<!-- extra_styles -->
+  <link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.rating-3.14.css" media="screen" rel="stylesheet" type="text/css" />
+	<!-- extra_javascript -->
+	<script type="text/javascript">
+<!--
+
+      function survey_select_show_hide(what) {
+        var tid = $(what).attr("id") + "_other";
+        if ($(what).val() == "Other (please specify)") {
+          $("input#"+tid).show();
+          $("input#"+tid).focus();
+        } else {
+          $("input#"+tid).hide();
+        }
+      };
+      $(document).ready(function() {
+              $("div.en_rating_wrapper").each(function() {
+          $(this).find("input.en_rating").rating({
+            cancel: 'Remove rating'
+          });
+        });
+      $("input.en_other").each(function() {
+        $(this).keypress(function() {
+          var tid = $(this).attr("id").replace("_other", "");
+          var that = $("input#"+tid);
+          if (that.length > 0) {
+            $(that).attr("checked", "checked");
+          }
+        });
+      });
+      $("select.en_select_other").each(function () {
+        $(this).change(function() {
+          survey_select_show_hide(this);
+        });
+        survey_select_show_hide(this);
+      });
+
+      });
+      function init_eval_js() {
+              $("div.en_grade_buttons").each(function() {
+        $(this).find('input[name="evaluation[grade]"]').rating({
+          captionEl: $(this).parent().find("span.en_grade_label"),
+          cancelValue: ""
+        });
+        $(this).find("label").css("display", "none");
+      });
+
+              $("div.en_rating_wrapper").each(function() {
+          $(this).find("input.en_rating").rating({
+            cancel: 'Remove rating'
+          });
+        });
+      $("input.en_other").each(function() {
+        $(this).keypress(function() {
+          var tid = $(this).attr("id").replace("_other", "");
+          var that = $("input#"+tid);
+          if (that.length > 0) {
+            $(that).attr("checked", "checked");
+          }
+        });
+      });
+      $("select.en_select_other").each(function () {
+        $(this).change(function() {
+          survey_select_show_hide(this);
+        });
+        survey_select_show_hide(this);
+      });
+
+      }
+      
+      function loaded_eval_form(d, thelink) {
+        init_eval_js();
+        d.find('form').submit(function (){
+          $(this).ajaxSubmit({
+            success: function(data){
+              if (/en_eval_dialog_contents/.test(data)) {
+                d.html(data);
+                loaded_eval_form(d, thelink);
+              } else {
+                thelink.parent("div.en_detail_eval").
+                  html(data).
+                  find("a.en_eval_link").each(function() {
+                    
+    activate_reviewing_link($(this));
+                  });
+}
+var propid = thelink.attr('href').match(/\d+$/g); //get proposal ID
+$('div#en_grade_block_'+propid).hide();
+
+            }
+          });
+          $(this).find('input.en_eval_save').attr("disabled", "disabled").
+            after(' <img src="/images/loading.gif" alt="Saving" />');
+          return false;
+        });
+      }
+      
+      function run_eval_dialog(thelink) {
+        
+        var d = $('<div id="en_eval_dialog" class="en_eval_dialog" title="Evaluate session"></div>');
+        d.appendTo(thelink.parent()).load(thelink.attr("href"), function() {
+          loaded_eval_form(d, thelink);
+        });
+       thelink.css('display', 'none');
+
+      }
+      
+      function activate_reviewing_link(thelink) {
+        thelink.click(function() {
+          run_eval_dialog($(this));
+          return false;
+        });
+      }
+      
+      function activate_login_link(thelink) {
+        thelink.attr("href", thelink.attr("href")+"?eval="+thelink.attr('id').
+          replace('en_eval_link_', ''));
+      }
+      
+      $(document).ready(function (){
+        $('a.en_eval_link').each(function() {
+          activate_login_link($(this));
+        });
+      });
+        $(document).ready(function() {
+          $("form.en_comment_form").each(function() {
+            var theform=$(this);
+            $(this).submit(function (){
+              var contents = $('textarea#comment_body').val();
+              if (contents.match( /^[\n\r\s]*$/ )) {
+                alert("Please enter text in the comment box before posting!");
+                return false;
+              }
+              $(theform).find("input.en_comment_form_submit").attr("disabled", "disabled");
+              var ov = $(theform).find("input.en_comment_form_submit").attr("value");
+              $(theform).find("input.en_comment_form_submit").attr("value", "Posting...");
+              if (false) {
+                // if we're not on page 1, don't bother with fanciness
+                return true;
+              }
+              $(this).ajaxSubmit({
+                success: function(data){
+                  if (data != 'FAIL') {
+                    $('div#comments').find('div.en_comments_all').prepend(data);
+                    $(theform)[0].reset();
+                    $(theform).find("input.en_comment_form_submit").attr("disabled", "");
+                    $(theform).find("input.en_comment_form_submit").attr("value", ov);
+                    $('div#comments').find('div.en_comment').eq(0).effect("highlight", {}, 2000);
+                  } else {
+                    alert("Sorry, your comment could not be posted.");
+                    window.location.reload(true);
+                  }
+                }
+              });
+              return false;
+            });
+          });
+        });
+
+//-->
+</script>	
+	<!-- theme_external_javascript -->
+	
+
+
+
+  <style>
+  .en_eval_link { vertical-align:top; }
+  </style>
+
+	<!-- L:E content/theme/html_system_head  (0) -->
+	<!-- L:S content/theme/html_head  (0) -->
+	<title>
+  
+  
+  
+  
+
+Special Office Hour: Tim O&#x27;Reilly and Mikey Dickerson in Conversation About How the New USDS Playbook Uses Velocity Principles.: Velocity New York 2014 - O&#x27;Reilly Conferences, September 15 - 17, 2014, New York, NY
+</title>
+
+
+  <!-- content/head_extra -->
+
+
+
+
+
+<!--metadata-->
+<meta property="og:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_og200x200.gif" />
+<meta name="twitter:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_og_twitter120x120.gif" />
+<meta name="twitter:site" content="@velocityconf" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" /> 
+
+
+
+  <link rel="canonical" href="http://velocityconf.com/velocityny2014/event/117/public/schedule/detail/37891" />
+  <meta property="og:url" name="twitter:url" content="http://velocityconf.com/velocityny2014/event/117/public/schedule/detail/37891" />
+  <meta property="og:title" name="twitter:title" content="Special Office Hour: Tim O&#x27;Reilly and Mikey Dickerson in Conversation About How the New USDS Playbook Uses Velocity Principles. - Velocity New York 2014" /> 
+  <meta property="og:description" name="twitter:description" content="Join Tim and Mikey for a special Office Hours discussion. They’ll answer your questions on IT in government—particularly the new US Digital Services Playbook, Healthcare.gov, and other government p..." /> 
+
+
+
+
+
+
+
+
+<meta property="twitter:account_id" content="10295842" />
+
+<!-- Chartbeat Head -->
+<script type="text/javascript">
+<!--
+// js/charbeat_head
+var _sf_startpt=(new Date()).getTime()
+-->
+</script>
+        
+        
+        <link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/2014v1_min_css.css" media="screen" rel="Stylesheet" type="text/css" />
+<style>
+/* for skip to main content link (seen by screen readers) */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* add top padding to speaker pages */
+div#en_main #mid > div.vcard { padding-top: 10px; }
+
+body { background:#fff; color:#000; margin:0; font-size: 80%; }
+/* body, p, ol, ul, td {font-family: 'Open Sans', Arial, Verdana, Helvetica, sans-serif; }*/
+
+div#en_main_parts { width: 100%; }
+div#en_content, div#en_main { width: 100%; margin: 0; padding: 0; min-width: 910px; }
+a { text-decoration: none; color: #1010dd; }
+a:hover { text-decoration: underline; }
+.content_row { width: 870px; margin: 0 auto; padding: 0 20px; }
+
+/* for Franchise links at top of page */
+div#velocity_links { font-weight: bold; float: right; }
+div#velocity_links .inner { padding: 7px 0; font-size: 11px; letter-spacing:.03em; color: #004e55;}
+div#velocity_links a {color: #004e55;text-decoration:none;}
+div#velocity_links .current {color: #7fd3da;}
+div#velocity_links .current a {color: #7fd3da;text-decoration: none;}
+div#velocity_links .static {color: #004e55;}
+
+/* Header (div#en_header) */
+.branding_bar { background-color: #008a96; width: 100%; height: 40px;-webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -o-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); -ms-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);}
+#logo { padding-top: 9px; float: left;}
+#event_logo { }
+img.shadow { -moz-box-shadow: 10px 10px 5px rgba(0,0,0,.6); -webkit-box-shadow: 10px 10px 5px rgba(0,0,0,.6); box-shadow: 10px 10px 5px rgba(0,0,0,.6); }
+.row { width: 100%; border-bottom: 2px solid #b5b5b5; padding: 0 0 20px 0; }
+.spacer { height:20px;}
+
+div#en_header { margin-left: 0; padding-left: 0; height: 220px;}
+
+
+#inside_header hr { color: #c7c7c7; height: 1px; background-color: #c7c7c7; border: none; margin: 10px 0px 0px; width: 100%; position: relative; z-index: 1; text-align: left; }
+
+#tagline_date_location {display: inline-block; vertical-align: top; margin-left: 20px; padding-top: 18px; letter-spacing: .08em;}
+div.tagline_date_location {  font-size: 1.1em; color: #333; text-transform: uppercase; }
+div.tagline { color: #ea6820; text-transform: uppercase;  font-weight: bold; padding-bottom: 3px; }
+div.tagline_date_location .location { text-transform: uppercase; }
+
+/* div#en_body {  margin: 0 auto; width: 910px; overflow: hidden; padding: 0; background: #fff;  } old width */
+
+/* Widgets Column */
+div#widget-column { float: right; margin: 5px 0 20px 20px; padding: 0; width: 300px; }
+div#widget-column .foot { display: none; }
+div#widget-column .widgets { margin-top: 10px; }
+
+#widget-column .content a { color: #1010dd; }
+#widget-column .content li { margin-left:-15px; font-size: 13px; }
+    
+div.widget { background: #E7ECED none; margin: 0; padding: 0; }
+div.widget .toggle { background: transparent url('//cdn.oreillystatic.com/en/assets/1/event/111/solid2014_widget_bar.png') left -27px no-repeat; color: #FFF; cursor: pointer; display: block; font-size: 14px; font-weight: normal; text-transform: uppercase; line-height: 27px; margin: 0; padding: 0 30px 0 10px; text-decoration: none; height: 27px; }
+div.widget .toggle .sub { float: right; font-size: 12px; }
+div.widget .content { display: none; margin: 0; padding: 10px; }
+
+div.widget.open .toggle { background-position: left top; }
+div.widget.open .content { display: block; }
+
+div.widget p { margin: 0; padding: 0 0 10px; font-size: 13px; }
+
+/* Widget Row */
+#stay_informed { width: 250px; padding: 40px 0px 0 17px;}
+#stay_informed h2 {font-size: 2em;margin-bottom:10px;}
+
+#widgets_row.row { background: #000; border-bottom: none; padding: 40px 0; border-top: 2px solid #B5B5B5; }
+#widgets_row.row h2 { color: #008a96; font-size: 2em; line-height: 1.2em; font-weight: normal; margin: 0 0 10px 0; }
+#widgets_row p { color: #eee; margin: 0 0 10px 0; font-size: 1em;}
+#widgets_row.row > div {  width: 870px; margin: 0 auto; }
+#widgets_row.row > div > div { /* border-right: 4px solid #433d3f; */  height: 100%; padding: 0; display: inline-block; vertical-align: top; }
+#widgets_row.row > div > div:first-child { padding-right: 20px; padding-left: 0; border-right: 2px solid #433d3f;  }
+#widgets_row.row > div > div:last-child { border-right: none; padding-left: 20px; }
+
+#widgets_row.row div#stay_informed div#photos { width: 100%; border-top: 2px solid #433d3f; margin-top: 10px; padding-top:15px}
+#widgets_row.row div#stay_informed div#photos > div { width: 100%;  }
+#widgets_row.row div#stay_informed div#photos div.flickr_group {float:left;margin:0 0 10px 6px;padding:1px;border:1px solid #aaa; width: 75px;}
+#widgets_row.row div#stay_informed div#photos > div > div:first-child { margin-left: 0;}
+#widgets_row.row div#stay_informed div#photos div.flickr_group a {text-decoration:none;}
+
+#stay_connected .label { display: none; }
+body#bulletin { background-color: #E7ECED; background-image: none; }
+/* Stay Connected Chicklets */
+div.stay_connected a.chicklet { background: transparent url('//cdn.oreillystatic.com/conferences/velocity/assets2012/social-buttons/social.png') left top no-repeat; border: 0 none; display: inline-block; width: 29px; height: 18px; }
+div.stay_connected a.chicklet-twitter { background-position: 0 0; }
+div.stay_connected a.chicklet-facebook { background-position: 0 -20px; }
+div.stay_connected a.chicklet-gplus { background-position: 0 -40px; }
+div.stay_connected a.chicklet-linkedin { background-position: 0 -60px; }
+div.stay_connected a.chicklet-bliptv { background-position: 0 -80px; }
+div.stay_connected a.chicklet-lanyrd { background-position: 0 -100px; }
+div.stay_connected a.chicklet-slideshare { background-position: 0 -120px; }
+div.stay_connected a.chicklet-schedule { background-position: 0 -140px; }
+div.stay_connected a.chicklet-directory { background-position: 0 -160px; }
+
+/* Call for Participation */
+
+div#en_main div.code_of_conduct { border-width: 1px 0; margin: 20px 0; }
+div#en_main div.code_of_conduct h2 { margin-left: 0; font-size: 2em; }
+div#en_main div.code_of_conduct p { margin-left: 0; }
+
+body#en_proposal_propose div#en_main form p { margin-left: 0; }
+
+/* Main Styles (#en_main) */
+/* div#en_main { padding: 0 0 10px 0; width: 759px;background-color: #fff;} old width */
+div#en_main #mid {line-height: 1.5em; padding-bottom: 20px; }
+div#en_main #mid h1 { margin: 0px 0 10px 0; }
+#mid { width: 870px; margin: 0 auto; }
+#mid p, #mid li { margin-left: 0; font-size: 1.3em; line-height: 1.5em; }
+#mid ul { padding-left: 0; }
+
+div.en_article_body p, div.en_article_body li { font-size: 1.3em; line-height: 1.2em; /* font-size: 15px; line-height: 20px; */ }
+div.en_article_body { padding-bottom: 20px; }
+
+#en_schedule_detail div#en_main .en_session h1 { padding-top: 0; }
+
+div#en_main h1 { color: #008a96; font-size: 2.7em; font-weight: normal; margin-left: 0; }
+div#en_main #mid h2 {padding-top: 30px; color: #008a96; font-size: 2.2em; font-weight: normal; margin-left: 0;}
+div#en_main h3 { color: #008a96; font-size: 1.8em; font-weight: normal; margin-left: 0; padding-bottom: 10px; }
+div#en_main h4 { color: #000; font-size: 1.4em; margin-left: 0; padding-bottom: 10px; }
+
+/* div#en_main div.en_article_body h1 { font-weight: bold; } */
+ul li { list-style-image: url('//cdn.oreillystatic.com/en/assets/1/event/113/velocity2014_arrow.png'); margin: 0 0 5px 0; }
+
+div#en_main ul.video_list li {margin: 0;padding: 10px 0 0px 0;list-style: none;list-style-image: none;clear: both;line-height: 1.2em}
+
+ul.video_list li a:hover {color: #003399;text-decoration: none}
+ul.video_list li img {float: left;border: 1px solid #aaa;margin:2px 8px 8px 0;padding:2px;}
+ul.video_list li .time {color: #666;font-weight: normal}
+img.quote {margin: 10px 0}
+
+div#en_footerwrap { background: #000; width: 100%; min-height: 250px; margin:0; overflow: auto; }
+div#en_footer { padding: 5px 0 22px;font-weight:normal;font-size:1em;line-height:1.3em;color:#fff; width: 870px; margin: 0 auto;}
+div#en_footer a { color: #fff; text-decoration: none; line-height: 1.4em;}
+div#en_footer a:hover { text-decoration: underline;}
+div#en_footer .copyright { font-size: .95em; }
+div#en_footer .banner_ad {padding: 15px 0 0 0;}
+div#en_footer p {margin: 0;font-size: .9em;padding: 0 22px;}
+div#en_footer #footer_logo { float:left;width:188px;margin:20px 20px 20px 0; }
+div#en_footer .footercol { float:left;width:188px; }
+div#en_footer .footercol:first-child { margin-left: 10px; }
+div#en_footer .footercol ul li:first-child { color: #008a96;}
+div#en_footer ul {margin:0;padding:20px 0;list-style:none;}
+div#en_footer ul:first-child { margin-left: 25px; }
+div#en_footer ul li {list-style:none; padding:0; margin: 0; font-size:.9em; line-height:1.3em;}
+
+
+div#en_footer div.banner_ad { padding: 15px 0; }
+div.banner_ad .banners { height: 90px; margin: 0 auto; padding: 0; position: relative; width: 728px; }
+div.banner_ad .banners .banner { display: none; left: 0; position: absolute; top: 0; }
+
+div.sponsor-blurb img {float:left;padding-right:15px;}
+
+div#right_col {width: 150px;background-color:#fff; margin-top: 10px; }
+
+#wtooltip {background-color:#fff;border:1px solid #6290c3;color:#333;display:none;margin-left:0;margin-top:15px;padding:2px 5px;position:absolute;}
+
+div.get_flickr {margin-left:15px; } 
+div.flickr_group {border:1px solid #AAAAAA; float:left; margin:0 5px 5px 0; padding:2px; }
+
+/*div#en_content:after, div#en_main_parts:after, ul#nav:after { content: "."; display: block; clear: both; visibility: hidden; }*/
+ul#nav:after { content: "."; display: block; clear: both; visibility: hidden; }
+div.slot_detail {line-height:1.1em;}
+
+/* for the meet the team page */
+div.container {float:left;width:375px;}
+div.conf_team {margin:5px 0;/*border-bottom:1px dotted #e4e4e4;*/min-height:140px;}
+div.conf_team img.conf_team {/*float:left;*/margin:5px 10px 5px 20px;border:1px solid #777;padding:2px;}
+div#mid div.conf_team p {margin:1em 20px 1em 105px;min-height:110px;}
+div.conf_team p:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+div.conf_team .fn {font-weight:bold;color:#333;}
+
+
+/* for sitemap page */
+ul#sitemap li {font-size: 18px;}
+ul#sitemap a.title {cursor:default;color:#333;}
+ul#sitemap a.title:hover {text-decoration:none;}
+ul#sitemap li {list-style: none;}
+ul#sitemap a.level_one { color:#333;font-size: 1.2em; font-weight: bold;}
+ul#sitemap ul.level_two li {list-style-image: url('//cdn.oreillystatic.com/en/assets/1/event/113/velocity2014_arrow.png'); margin: 0 0 5px 40px;}
+ul#sitemap ul.level_two li.title {list-style: none; margin-left: 15px;}
+ul#sitemap ul.level_two a.title { color:#333333;text-decoration:none; text-transform: uppercase;}
+ul#sitemap ul.level_two a.title:hover {text-decoration:none;}
+
+/* for sponsor/exhibitor pages */
+div.sponsor-listing {margin-top:30px;}
+div.sponsor-listing img {float:left;padding-right:10px;}
+
+/* Register */
+table#package td {font-size:.95em;}
+#mid .package > p.ptitle {margin: 6px 20px;}
+.package > p.ptitle > strong {cursor:pointer;}
+.package .package_description {display:none; padding: 10px 20px; margin: 0pt 20px;}
+.package .package_description ul {margin:0;}
+
+.package > p.closed:before, .package > p.open:before {margin-right:4px;font-weight:bold;}
+.package > p.closed:before {content:"+";}
+.package > p.open:before {content:"-";}
+
+#see_discounts, #hide_discounts { font-size: 1.5em; line-height: 2em; }
+#survey_response_area { background-color: #E7E7E7; padding: 10px; margin-bottom: 10px; }
+
+/* Bulletin iFrame */
+iframe#bulletin { border:none;padding:0; }
+div#signup { margin:0px 10px 10px -10px; }
+
+.clearBoth { clear: both; }
+
+/* For schedule at a glance */
+
+table.schedule {width:100%;padding:10px;}
+table.schedule td {padding:15px 10px;font-weight:bold;width:25%;text-align:center;}
+table.schedule td.plenary {padding:10px;}
+table.schedule td.title {background-color:#ddeedd;padding:2px 10px;}
+
+/* All-Access Pass Page */
+#books {margin:20px auto;}
+
+#books .subset {position:absolute;top:0;left:0;}
+#books .item img {border:0;display:block;margin:auto;}
+#books .item .info {display:none;}
+#books .item a {text-decoration:none;}
+#books .gallery {margin:0;width:795px;position:relative;padding:10px 0;background-color:#fff;overflow:hidden;border:1px solid #e9e9e9;height:130px;}
+
+#books .gallery .set {width:795px;position:absolute;top:10px;left:20px;overflow:hidden;height:130px;}
+#books .subset:after {display:block;content:".";clear:both;visibility:hidden;}
+#books .gallery .item {position:relative;float:left;padding:6px;}
+
+#books .gallery .prev, .gallery .next {position:absolute;top:0;width:20px;z-index:10;cursor:pointer;}
+#books .gallery .prev span, .gallery .next span  {display:block;width:12px;height:10px;}
+#books .gallery .prev {left:0;background:transparent url('//cdn.oreillystatic.com/en/assets/1/event/51/webexny2010_restricted_content_btn_prev_bg.gif') top left repeat-y;}
+#books .gallery .next {right:0;background:transparent url('//cdn.oreillystatic.com/en/assets/1/event/51/webexny2010_restricted_content_btn_next_bg.gif') top left repeat-y;}
+#books .gallery .prev, .gallery .deactive {cursor:default;}
+#books .gallery .set {width:795px;position:absolute;top:10px;left:20px;overflow:hidden;}
+#books .gallery .item {position:relative;float:left;padding:6px;}
+
+#item_info {position: absolute; z-index: 100; background-color: #fffbeb; border: 1px solid #ccc;width:250px;padding:4px 14px;-moz-border-radius:8px;border-radius:8px;-webkit-border-radius:8px;}
+#item_info h4.title {margin:4px 2px 0; font-size: 1.2em;font-weight:normal;color:#414140;}
+#item_info h4.title span.small {font-size:.75em;line-height:1.3em;}
+#item_info .author {color: #666; font-size:0.85em; margin: 0 2px;}
+#item_info .description {margin: 4px 2px; font-size: 0.85em;color:#414140;line-height:1.4em;}
+#item_info .description p {font-size: 1em;margin:6px 0;}
+
+div#page_bot { clear: both; }
+
+.bulletin body { background-color: #D7DDE5; }
+.bulletin h3 { margin-top: 10px; }
+
+div#mid img.left { float:left; }
+div#mid img.right { float:right; }
+
+div#mid address {padding-bottom:15px; font-weight:bold; }
+
+/* Landing Call to Action */
+a.landing_cta_link { text-decoration: none; }
+a.landing_cta_link:hover { text-decoration: none; }
+span.landing_cta { background: url('//cdn.oreillystatic.com/en/assets/1/event/75/strata2012_landing_cta_back.png') top left no-repeat; display: block; height: 90px; margin: 10px auto; position: relative; width: 300px; }
+span.landing_cta .discount_text { display: block; height: 90px; overflow: hidden; text-indent: -9999px; width: 300px; }
+span.landing_cta .discount_code { bottom: 33px; color: #000; font-family: Courier, monospace; font-size: 20px; display: block; left: 164px; position: absolute; text-indent: 0; }
+
+/* Primary Navigation */
+/* Menus (#top_level_nav) */
+#top_level_nav { color: #333333; padding-bottom: 8px; margin:0 auto; }
+#top_level_nav ul#nav { margin: 0; padding: 7px 0 9px; line-height: 1em; font-size: .90em; letter-spacing: .08em; display: inline-block; }
+#top_level_nav ul#nav, div#top_level_nav ul#nav * { list-style: none; }
+
+div#top_level_nav ul#nav ul {position: absolute;top: -999em; width: 12em; /* left offset of submenus need to match (see below) */ }
+div#top_level_nav ul#nav ul li { width: 100%; }
+div#top_level_nav ul#nav li { float: left; position: relative; z-index:10; font-weight: bold; margin: 5px 0 0 0; padding: 0px 15px; height: 10px; font-size: 1em; border-left: 1px solid #333;font-family: 'open-sans', Arial, Verdana, Helvetica, sans-serif;}
+
+div#top_level_nav ul#nav a { display: block; position: relative; text-decoration:none; }
+div#top_level_nav ul#nav li:first-child { border-left: none; padding-left: 0; }
+
+div#top_level_nav ul#nav li a.level_one { text-transform: uppercase; color: inherit; margin: 0; padding: 0; }
+
+div#top_level_nav ul#nav li:hover, div#top_level_nav ul#nav li.sfHover, div#top_level_nav ul#nav a:focus, div#top_level_nav ul#nav a:hover, div#top_level_nav ul#nav a:active {outline: 0;}
+div#top_level_nav ul#nav li:hover ul, div#top_level_nav ul#nav li.sfHover ul { top: 100%; } 
+div#top_level_nav ul#nav li ul.level_two { margin: 12px 0 0 0; padding: 0; width: 16em; font-size: 1.2em;  }
+
+div#top_level_nav ul#nav ul.level_three { margin: -29px 0 0 205px; width: 20em; }
+div#top_level_nav ul#nav li ul li, div#top_level_nav ul#nav li ul li li { border: 0 none; background-color: #CFCFCF; border-top: 1px solid #fff; color: #333; margin: 0; padding: 0; height: 28px; }
+div#top_level_nav ul#nav li li, div#top_level_nav ul#nav li li li { font-size: 1em; } 
+div#top_level_nav ul#nav li ul li a:hover, div#top_level_nav ul#nav li ul li li a:hover { background-color: #008a96; color: #fff; }
+div#top_level_nav ul#nav ul li a { font-weight:normal; display:block;}
+div#top_level_nav ul#nav li ul li a, div#top_level_nav ul#nav li ul li li a { color: inherit; line-height: 28px; margin: 0; padding: 0 10px; } 
+div#top_level_nav ul#nav li li.title {background-color: #aaa; color: #333; } 
+div#top_level_nav ul#nav li li.title a:hover { background-color:#aaa;color:#333;cursor:default; }
+div#top_level_nav:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* CTA Buttons */
+.btn-orange { display:block; width: 260px; text-decoration:none; text-transform: uppercase; font-size: 13px; font-weight: bold; letter-spacing: .07em; line-height: 1.3em; color:#fff; padding: 12px 0; text-align:center; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; background: #e5814b; /* Old browsers */
+background: -moz-linear-gradient(top,  #e5814b 0%, #eb6820 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5814b), color-stop(100%,#eb6820)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e5814b 0%,#eb6820 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e5814b 0%,#eb6820 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e5814b 0%,#eb6820 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e5814b 0%,#eb6820 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5814b', endColorstr='#eb6820',GradientType=0 ); /* IE6-9 */
+}
+a.btn-orange:hover { text-decoration:none; }
+
+div.quote { padding: 17px 0 0 10px; color: #008a96; font-weight: bold; font-style: italic; font-size: 16px; line-height: 20px; background: white url('//cdn.oreillystatic.com/en/assets/1/eventprovider/1/background_quote.gif')left top no-repeat; margin: 22px 10px 10px 17px; }
+.quote .attribution { color: #000; font-size: 13px; line-height: 16px; font-style: normal; }
+
+/* Livestream  */
+div#livestream { text-align: center; }
+.accordion {margin-bottom:30px;}
+.accordion h4 {cursor:pointer;font-size:1.4em;padding-top:5px;}
+.accordion .content {font-size:1.1em; line-height: 1.5em; margin:0 20px; display:none;}
+.accordion h4.closed:before, .accordion h4.open:before {margin-right:4px;}
+.accordion h4.closed:before {content:"+";}
+.accordion h4.open:before {content:"-";}
+
+/* onsite page  */
+.en_article dl { margin: 5px 20px 10px 40px; }
+.en_article dl dt { float: left; background: url('//cdn.oreillystatic.com/en/assets/1/event/55/strata2011_m_li_arrow.png') left center no-repeat; margin-left: 0; padding-left: 20px; width: 100px; }
+.en_article dl dd { margin-left: 130px; padding-left: 0; }
+
+.en_article dl.social dt { background-image: none; width: 120px; }
+.en_article dl.social dt img { margin-bottom: -4px; }
+.en_article dl.social dd { margin-bottom: 5px; margin-left: 150px; }
+
+/* Slides and Videos Page */
+/* proceedings page */
+div#en_proceedings div.en_session { padding-bottom:15px;border-bottom:1px dashed #ccc; }
+div#en_proceedings div.en_session:last-child { border-bottom: none; }
+
+/* Speaker Listings */
+#speakerSearch {background-color: #F4F4F4; margin: 5px 0; padding: 1em; width: 50%;}
+#speakerSearch h4 {display:inline;margin-left: 0;}
+#speakerSearchResultsCount {display:none;}
+#en_speakerlist .en_speaker_bio {padding-top:5px;}
+#en_speakerlist .en_session_title:before {
+   content: "• ";
+}
+
+/* CFP Styles */
+.bullet_column { display: inline-block; width: 420px; padding: 0; vertical-align: top; }
+span.topic_description { display: none; font-weight: normal; font-size: 0.8em; font-style: italic; }
+
+/* Sponsor Contacts Row */
+#sponsors { width: inherit; color: inherit; font-size: inherit; }
+#sponsors_contacts.row { background: #f6f6f6; border-bottom: none; padding: 0; /* need to adjust padding when have sponsors */ }
+#sponsor_container { background: #fff; width: 870px; margin: auto;}
+#sponsor_title { background: #cacaca url('//cdn.oreillystatic.com/en/assets/1/eventprovider/1/sponsors_vertical.gif') 97% center no-repeat; width: 50%; height: 400px; float: left; margin-left: -50%; position: absolute; }
+#headlining.fixed { padding-top:36px; }
+#sponsors_contacts.row div.big_sponsor_level { background: #b0b0b0; /* Old browsers */
+background: -moz-linear-gradient(left,  #ffffff 0%, #b0b0b0 50%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#b0b0b0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to right,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0b0b0', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */ padding: 5px; margin: 25px 20px; color: #fff; text-align: center; font-weight: bold; font-size: 1.1em; width: 820px;}
+ul.sponsor_listings { list-style: none; margin: 20px 0; padding: 0; text-align: center; }
+ul.sponsor_listings li { display: inline-block; vertical-align: middle; margin: 0 20px 20px 20px;}
+
+#contacts { width: 830px; margin: 0 auto; border-top: 1px solid #bcbcbc; padding: 20px 0; color: #888;}
+#contacts > div { display: inline-block; padding-right: 20px; width: 188px; vertical-align: top; }
+#contacts > div:last-child { display: inline-block; padding-right: 0;}
+div#en_main #contacts h3, div#en_main #contacts p { font-size: 1em; padding:0; margin:0; line-height: 1.3em; }
+div#en_main #contacts h3 { color: #888; font-weight: bold; }
+#contacts a { color: #888; }
+ 
+/* automated sponsor listing */
+#sponsors ul { overflow:hidden; }
+/* #sponsors li:nth-child(even) { text-align:right; }
+#sponsors li:nth-child(odd) { text-align:left; }*/
+#sponsors li:only-child { text-align:center; }
+#sponsors li:last-child:nth-child(odd) { text-align:center; }
+ul.sponsorList { text-align: center; margin: 0; padding: 0;}
+#sponsors ul li { width:130px; display: inline-block; margin: auto; padding: 10px 15px; vertical-align: middle; }
+#sponsors h2 { color: #9A9A9A; text-align: center; margin-right: 0; font-weight: normal; padding-bottom: 4px;}
+#sponsors .sponsor_list_heading { background: #b0b0b0; /* Old browsers */
+background: -moz-linear-gradient(left,  #ffffff 0%, #b0b0b0 50%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#b0b0b0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to right,  #ffffff 0%,#b0b0b0 50%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0b0b0', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */ padding: 5px; margin: 25px 20px; color: #fff; width: 870px; text-align: center; font-weight: bold; font-size: 1em; width: 820px; }
+div#sponsors .heading { color: #5f5f5f; margin: 5px 0; padding: 0; font-size: 13px; font-weight: bold; line-height: 1.2em;}
+div.en_article_metadata { display: none; }
+
+/* YouTube Video Overlay */
+#yt-popup-overlay { display:none; position:absolute; z-index:200;
+    top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); background:none\9;
+    /* IE8 and below */ } #yt-popup-overlay .popup { overflow:hidden;
+    margin:140px auto 0; background-color:#f9f9f9; text-align:center; width:620px;
+    -webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px; -webkit-box-shadow:0px
+    0px 15px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 0px 15px rgba(0, 0, 0,
+    0.3); box-shadow:0px 0px 15px rgba(0, 0, 0, 0.3); border:3px solid #ddd\9;
+    /* IE8 and below */ } #yt-popup-overlay .popup .popup-header {
+    font-weight: bold; font-size: 20px; padding:10px 10px 15px; } #yt-popup-overlay .popup .popup-header
+    a.close { font-size:16px; line-height:19px; color:#999; display:block;
+    padding-right:24px; float:right; background:transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png')
+    right 0 no-repeat; } #yt-popup-overlay .popup .popup-header a.close:hover
+    { color:#666; text-decoration:none; background:transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png')
+    right -100px no-repeat; }  #yt-popup-overlay .popup
+    .popup-header p { margin:0 40px; padding:0; font-size:20px; line-height:28px;
+    font-weight:normal; } #yt-popup-overlay .popup-window { margin:10px; text-align:left;} #yt-popup-overlay #yt-popup-frame {display:block; border:none; padding:0; margin:0 auto; width:600px; height:335px;
+    text-align:left;}
+
+/* Form */
+body#en_proposal_propose div#en_main form { margin-left: 0; }
+body#en_proposal_propose div#en_main form p { font-size: 1.2em; }
+div.en_field label, div.en_field textarea { font-size: 1.2em; }
+div.en_field input[type="text"] { height: 20px; font-size: 1.2em; }
+div.en_field select { font-size: 1.3em; }
+
+/* User Dashboard */
+#mid div.en_dashboard_panel p, #mid div.en_dashboard_panel p { font-size: 1em; }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/javascripts/supersleight-min.js"></script>
+  <![endif]-->
+
+
+
+
+
+<link rel="apple-touch-icon" href="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_iphone_icon.png" type="image/png" />
+<link rel="icon" type="image/png" href="//cdn.oreillystatic.com/en/assets/1/eventseries/11/velocity_favicon.png">
+
+
+
+
+<meta name="description" content="Join Tim and Mikey for a special Office Hours discussion. They’ll answer your questions on IT in government—particularly the new US Digital Services Playbook, Healthcare.gov, and other government projects you can become involved with. They’ll tell you how you can apply these lessons learned to your current work." />
+<meta name="Category" content="Conferences" />
+
+
+<meta name="search_date" content="2014-09-15" />
+
+
+<meta name="search-conf-name" content="Velocity New York 2014" />
+
+
+
+
+  <meta name="search-title" content="Special Office Hour: Tim O&#x27;Reilly and Mikey Dickerson in Conversation About How the New USDS Playbook Uses Velocity Principles. - Velocity New York 2014"/>
+
+
+
+
+
+<meta name="author" content="Tim O&#x27;Reilly, Mikey Dickerson" />
+
+
+<meta name="Program" content="Office Hours" />
+
+
+
+<!--for Google Webmaster Tools -->
+<meta name="verify-v1" content = "ejKlkisc2aaHXLk+37fMPNCfcsC5GdJYO2qoBXRRM7g=" />
+
+<!--
+<link rel="image_src" href="http://oreilly.com/images/oreilly/oreilly_large.gif" />
+-->
+
+
+<script type="text/javascript">
+window._umbel = window._umbel || [];
+(function()
+{ var u = document.createElement('script'); u.type = 'text/javascript'; u.async = true; u.src = document.location.protocol + '//tags.api.umbel.com/fnhibijmwrhmldyn/w.js?d=' + new Date().getMonth() + '' + new Date().getDate(); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(u, s); }
+
+)();
+</script>
+
+
+	<!-- L:E content/theme/html_head  (0) -->
+</head>
+<body class='en_c_schedule en_a_detail' id='en_schedule_detail'>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visuallyhidden"><a href="#mid">Skip to main content</a></div>
+<div id="en_content" itemscope itemtype="http://data-vocabulary.org/Event"><!-- closed in after_main-->
+<meta itemprop="startDate" datetime="2014-09-15T00:00-00:00" content="September 15, 2014" />
+<meta itemprop="endDate" datetime="2014-09-17T00:00-00:00" content="September 17, 2014"/>
+<meta itemprop="location" content="New York, NY" />
+<meta itemprop="summary" content="Special Office Hour: Tim O&#x27;Reilly and Mikey Dickerson in Conversation About How the New USDS Playbook Uses Velocity Principles. - Velocity New York 2014" />
+
+<div id="en_main_parts"><!-- closed in after_main -->      
+       
+  <div id="en_header">
+     <div class="branding_bar">
+      <div class="content_row">
+        <a href="http://oreilly.com"><img id="logo" src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/orm_branding_bar_transparent_logo.png" alt="O'Reilly Media, Inc" width="129" height="22" border="0" /></a>
+<div id="velocity_links">
+  <div class="inner">
+    <div style="padding-top:5px; text-transform:uppercase;"><span class="static">Velocity Conference:</span>&nbsp;&nbsp;<a href="http://velocityconf.com/sc">Santa Clara</a>&nbsp; &#8226; &nbsp;<a href="http://velocity.oreilly.com.cn/2014/">Beijing</a>&nbsp; &#8226; &nbsp;<span class="current">New York</span>&nbsp; &#8226; &nbsp;<a href="http://velocityconf.com/eu">Barcelona</a>
+    </div>
+  </div>
+</div>
+      </div><!-- div.content_row -->
+     </div><!-- div.branding_bar -->
+
+    <div id="inside_header">
+        <div class="content_row" style="position: relative;">
+        <div id="top_level_nav">
+<ul id="nav" class="superfish">
+                  
+
+<li><a href="/velocityny2014/public/schedule/grid/public" class="level_one">Program</a>
+  <ul class="level_two">
+    <li><a href="/velocityny2014/public/schedule/grid/public" class="level_two">Schedule</a></li>
+    <li><a href="/velocityny2014/public/schedule/stype/tutorial" class="level_two">Tutorials</a></li>
+	<li><a href="#" class="level_two" style="cursor:default;">Sessions by Track</a>
+		<ul class="level_three">
+        <li><a href="/velocityny2014/public/schedule/topic/1138" class="level_three">Performance</a></li>
+        <li><a href="/velocityny2014/public/schedule/topic/1139" class="level_three">Operations</a></li>
+		<li><a href="/velocityny2014/public/schedule/topic/1140" class="level_three">Mobile</a></li>
+		<li><a href="/velocityny2014/public/schedule/topic/1141" class="level_three">Culture &amp; Organizational Change</a></li>
+                <li><a href="/velocityny2014/public/schedule/topic/1218" class="level_three">Sponsored Sessions</a></li>
+      </ul>
+	</li>
+	<li><a href="/velocityny2014/public/schedule/stype/keynote" class="level_two">Keynotes</a></li>
+	<li><a href="/velocityny2014/public/schedule/speakers" class="level_two">Speakers</a></li>
+    <li><a href="/velocityny2014/public/schedule/proceedings" class="level_two">Speaker Slides &amp; Videos</a></li>
+	<li><a href="/velocityny2014/public/schedule/stype/event" class="level_two">Events</a></li>
+        <li><a href="/velocityny2014/public/schedule/detail/37660" class="level_two">Ignite Velocity</a></li>
+        <li><a href="/velocityny2014/public/schedule/topic/1225" class="level_two">Office Hours</a></li>
+    
+    
+  </ul>
+</li>
+
+<li><a href="/velocityny2014/public/content/video" class="level_one level_main">Video</a></li>
+
+<li><a href="/velocityny2014/public/content/sponsors" class="level_one level_main">Sponsor Pavilion</a>
+  <ul class="level_two">
+    <li><a href="/velocityny2014/public/content/sponsors" class="level_two">Sponsors</a></li>
+    <li><a href="/velocityny2014/public/content/exhibitors" class="level_two">Exhibitors</a></li>
+    <li><a href="/velocityny2014/public/content/media-partners" class="level_two">Media Partners</a></li>
+    <li><a href="/velocityny2014/public/content/exhibitor-resource-center" class="level_two">Exhibitor Resource Center</a></li>
+  </ul>
+</li>
+
+<li><a href="/velocityny2014/public/content/contact" class="level_one level_main">Connect</a>
+  <ul class="level_two">
+    <li><a href="/velocityny2014/public/content/contact" class="level_two">Contact Us</a></li>
+    
+    <li><a href="/velocityny2014/user/account" class="level_two">Your Account</a></li>
+  </ul>
+</li>
+
+<li><a href="/velocityny2014/public/content/about" class="level_one level_main">About</a>
+  <ul class="level_two">
+    <li><a href="/velocityny2014/public/content/about" class="level_two">About Velocity</a></li>
+    <li><a href="/velocityny2013/" class="level_two" target="_blank">Velocity New York 2013</a></li>
+    <li><a href="http://velocityconf.com" class="level_two" target="_blank">Other Velocity Events</a></li>
+    <li><a href="http://oreilly.com/conferences/diversity.html" class="level_two" target="_blank">Conference Diversity</a></li>
+	<li><a href="http://oreilly.com/conferences/code-of-conduct.html" class="level_two" target="_blank">Code of Conduct</a></li>
+  </ul>
+</li>
+
+
+<li><a href="/velocityny2014/user/account" class="level_one level_main">Your Account</a>
+<ul class="level_two">
+  <li><a href="/velocityny2014/user/account" class="level_two">Log in</a></li>
+<li><a href="/velocityny2014/public/content/attendee-directory" class="level_two">Attendee Directory</a></li>
+</ul>
+</li>
+
+</ul>
+</div><!-- #top_level_nav-->
+            <a href="/velocityny2014" border="0"><img id="event_logo" src="//cdn.oreillystatic.com/en/assets/1/event/117/velocityny2014_logo.gif" alt="Velocity Conference" width="363" height="99" border="0" /></a>
+                       
+            <div id="tagline_date_location">
+              <div class="tagline_date_location">
+                 <div class="tagline">Building a Faster, Stronger Web</div>
+                 <div class="date_location">September 15&ndash;17, 2014<br /><span class="location">New York, New York</span></div>
+              </div><!-- tagline_date_location -->
+           </div><!-- #tagline_date_location -->
+          
+           
+         </div><!-- div.content_row -->
+    </div> <!-- inside_header -->
+  
+  </div><!-- //en_header -->
+
+  <div id="en_body">
+    <div id="en_main">
+    <div id="mid">
+    
+     
+<div class="vevent en_session">
+	<div class="user_tools" style="padding-bottom:0;margin-bottom:0;">
+          <div class="en_detail_tools">
+	
+	<div class="en_network_invite">
+	<img src="/images/network_icon.png" width="17" height="14" alt="Network" />
+	<div class="en_network_invite_label">
+		<a href="http://velocityconf.com/velocityny2014/user/network">Join Attendee Network</a>
+	</div>
+	&nbsp;
+</div>
+	
+	
+	<div class="en_session_psched" id="psched37891">
+
+		<a href="/velocityny2014/public/schedule/add/37891" class="en_psched_add" title="Add to your personal schedule"><img src="/images/personal-schedule-icon.png" width="17" height="18" alt="Add to your personal schedule" /></a>
+	<div class="en_psched_add_label"><a href="/velocityny2014/public/schedule/add/37891" class="en_psched_add">Add to Your Schedule</a></div>&nbsp;
+
+
+</div>
+
+	
+			
+	<div id="jump_to_comment"><img src="http://assets.en.oreilly.com/1/eventprovider/1/comment_icon.png" width="17" height="13" alt="comment_icon" /><a href="#new_comment">Add Comment or Question
+</a></div>
+    
+	
+	<!--br /-->
+</div>
+
+        </div>
+	<h1 class="summary">Special Office Hour: Tim O&#x27;Reilly and Mikey Dickerson in Conversation About How the New USDS Playbook Uses Velocity Principles.</h1>
+	<div id="schedule_detail">
+		
+		<div class="en_session_speakers">
+    
+	    
+	
+
+		<a href="/velocityny2014/public/schedule/speaker/251">Tim O&#x27;Reilly</a> (O&#x27;Reilly Media, Inc.), 
+	    
+	
+
+		<a href="/velocityny2014/public/schedule/speaker/57828">Mikey Dickerson</a> (Federal Government | United States Digital Services Team)
+	
+
+
+
+    
+
+</div>
+		
+			<div class="session_time">
+	
+	<a href="/velocityny2014/public/schedule/full#s2014-09-17-12:30">12:30pm</a>
+	<a href="/velocityny2014/public/schedule/grid/2014-09-17">Wednesday, 09/17/2014</a>
+	
+</div>
+
+			
+
+<div class="en_session_roominfo">
+	
+		
+			<span class="en_session_topics category">
+				
+					<a href="/velocityny2014/public/schedule/topic/Office%20Hours">Office Hours</a>
+				
+			</span><br />
+		
+	
+
+	<span class="en_session_room location">Table 2 (Sponsor Pavilion)</span>
+	<span class="uf_timing">
+		<abbr class="dtstart dtstamp" title="20140917T1230"></abbr>
+		<abbr class="dtend" title="20140917T1300"></abbr>
+	</span>
+
+	
+		
+	
+
+	
+	
+	
+</div>
+		
+
+
+<div class="en_grade_block" id="en_grade_block_37891" style="border:none;padding:10px 0 0 0;float:none;margin:0;width:100%;clear:none;">
+
+<div class="en_grade_average" style="padding:0;display:inline;float:none;margin:0;vertical-align:top;">Average rating: 
+<img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" />
+<div class="en_grade_average_detail" style="display:inline;vertical-align:top;">(5.00, 2 ratings)</div>
+</div>
+<script>
+var rounded_grade = Math.round(5.00);
+var num_stars = $('div#en_grade_block_37891 img.en_rating_on').length;
+if (rounded_grade !== num_stars) { //find last filled star and fill the next one
+  var star_to_fill = $('div#en_grade_block_37891 img.en_rating_off').first();
+  star_to_fill.attr('src', '/images/rating-on.gif');
+  star_to_fill.addClass('en_rating_on').removeClass('en_rating_off');
+  star_to_fill.attr('alt', '*');
+}
+</script>
+
+
+
+	
+
+</div>
+		
+			<div class="en_detail_eval" id="en_detail_eval_37891" style="vertical-align:top;">
+			
+	<a id="en_eval_link_37891" href="/velocityny2014/public/schedule/evaluate/37891" class="en_eval_link" title="Rate This Session">Rate This Session</a>
+	<span id="en_current_grade_37891" class="en_current_grade"></span>
+
+
+			</div>
+		
+
+
+
+
+
+		
+		
+
+                
+
+                
+
+
+
+		<div class="en_session_description description">
+		  <p>Join Tim O&#8217;Reilly and Mikey Dickerson for a special Office Hours discussion. They&#8217;ll answer your questions on IT in government, or anything about web operations, performance, and DevOps. In particular, they&#8217;d like to talk about:</p>
+<ul>
+	<li>The new US Digital Services Playbook</li>
+	<li>Healthcare.gov, other government projects, and how you can become involved</li>
+	<li>Applying these lessons learned to your current work</li>
+</ul>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+	<div class="vcard en_schedule_session_speaker">
+	
+		<div class="en_user_photo">
+			<img src="http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/_@user_251.jpg"
+				width="75"
+				height="100"
+				alt="Photo of Tim O&#x27;Reilly"
+				/>
+		</div>
+	
+		<h2 class="fn">Tim O&#x27;Reilly</h2>
+
+		<div id="en_schedule_speaker">
+        
+			
+				<h4 class="org">O&#x27;Reilly Media, Inc.</h4>
+			
+        
+
+			<div class="en_speaker_bio note">
+				<p>Tim O&#8217;Reilly is the founder and <span class="caps">CEO</span> of <a href="http://www.oreilly.com/">O&#8217;Reilly Media</a>. His original business plan was &#8220;interesting work for interesting people,&#8221; and that&#8217;s worked out pretty well.  He publishes books, runs conferences, invests in early-stage startups, urges companies to create more value than they capture, and tries to change the world by spreading and amplifying the knowledge of innovators.</p>
+<p>Tim is also a partner at O&#8217;Reilly AlphaTech Ventures, a founder and board member of Safari Books Online and Maker Media, and on the boards of Code for America and PeerJ.</p>
+				
+				<ul>
+				<li><a href="http://www.oreilly.com/" class="url">Web site</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="vcard en_schedule_session_speaker">
+	
+		<div class="en_user_photo">
+			<img src="http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/_@user_57828.jpg"
+				width="75"
+				height="100"
+				alt="Photo of Mikey Dickerson"
+				/>
+		</div>
+	
+		<h2 class="fn">Mikey Dickerson</h2>
+
+		<div id="en_schedule_speaker">
+        
+			
+				<h4 class="org">Federal Government | United States Digital Services Team</h4>
+			
+        
+
+			<div class="en_speaker_bio note">
+				<p>Mikey Dickerson worked in Site Reliability Engineering at Google from 2006 to 2014, modulo side trips to work on the Obama campaigns in 2008 and 2012.  In 2013 he took one more leave of absence to join what<br />
+became known as the &#8220;ad hoc&#8221; team that rescued healthcare.gov after its disastrous launch on October 1. He has been on a baffling through-the-looking-glass adventure ever since, including a move in<br />
+August 2014 to become the Administrator of the newly created United States Digital Service.</p>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="en_comment_block">
+	
+		
+<h3>Leave a Comment or Question</h3>
+			
+		
+        <p>Help us make this conference the best it can be <em>for you</em>. Have questions you'd like this speaker to address? Suggestions for issues that deserve extra attention? Feedback that you'd like to share with the speaker and other attendees?
+	    
+	    
+		<br /><br /><b><a href="http://velocityconf.com/velocityny2014/public/schedule/add_proposal_comment/37891" name="new_comment" id="new_comment">Join the conversation here</a></b>
+				(requires login)
+		</p>
+	
+	
+	
+		<div id="comments" class="en_comments">
+	
+	
+	<div class="en_comments_all">
+		
+	</div>
+	
+</div>
+
+	
+</div>
+
+
+
+<!--117-->
+
+
+
+<div id="en_grid_dates">
+	<h3>Schedule views</h3>
+<ul>
+	<li><a href="/velocityny2014/public/schedule/grid/2014-09-15">Mon 15 Sep</a></li><li><a href="/velocityny2014/public/schedule/grid/2014-09-16">Tue 16 Sep</a></li><li><a href="/velocityny2014/public/schedule/grid/2014-09-17">Wed 17 Sep</a></li><li><a href="/velocityny2014/public/schedule/full" id="en_in_full_link">Full listing</a></li><li><a href="/velocityny2014/public/schedule/personal" id="en_in_personal_link">Personal schedule</a></li>
+</ul>
+</div>
+
+
+
+
+</div><!-- #mid -->
+
+
+<style>#sponsors_contacts.row { border-top: 2px solid #B5B5B5; }</style>
+<div id="sponsors_contacts" class="row">
+<div id="sponsor_container">
+
+
+<div id="sponsor_title">&nbsp;</div>
+<!--sponsors title image-->
+<div class="spacer">&nbsp;</div>
+<div id="sponsors">
+
+
+
+<div class="big_sponsor_level">Elite Sponsors</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.compuware.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/compuwareAPM150.gif" data-img-alt="Compuware Corporation" data-img-width="150">Compuware Corporation</a></li><li><a href="http://www.edgecast.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/verizonedgecast.gif" data-img-alt="EdgeCast, now part of Verizon" data-img-width="150">EdgeCast, now part of Verizon</a></li></ul>
+
+<div class="sponsor_list_heading">Platinum Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.catchpoint.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/catchpoint.gif" data-img-alt="Catchpoint" data-img-width="120" data-img-height="31">Catchpoint</a></li><li><a href="http://www8.hp.com/us/en/software/enterprise-software.html" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/hp-4.gif" data-img-alt="HP" data-img-width="100" data-img-height="100">HP</a></li><li><a href="http://www.rackspace.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/rackspace_2014.gif" data-img-alt="Rackspace Hosting" data-img-width="120" data-img-height="36">Rackspace Hosting</a></li></ul>
+
+<div class="sponsor_list_heading">Gold Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.amazon.com/gp/jobs/ref=j_sq_btn?jobSearchKeywords=248686&category=*&location=*&x=0&y=0" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/amazon-1.gif" data-img-alt="Amazon" data-img-width="120" data-img-height="37">Amazon</a></li><li><a href="http://www.riverbed.com/us/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/riverbed_1.gif" data-img-alt="Riverbed Technology" data-img-width="120" data-img-height="35">Riverbed Technology</a></li><li><a href="https://www.ruxit.com/?utm_source=velocity_east_website&utm_medium=conference&utm_campaign=velocity_east_fy15" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/ruxit.gif" data-img-alt="ruxit" data-img-width="120" data-img-height="38">ruxit</a></li><li><a href="http://www.softlayer.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/softlayer-ibm.gif" data-img-alt="SoftLayer, an IBM Company" data-img-width="120" data-img-height="21">SoftLayer, an IBM Company</a></li></ul>
+
+<div class="sponsor_list_heading">Silver Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.aerospike.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/aerospike.gif" data-img-alt="Aerospike" data-img-width="120" data-img-height="21">Aerospike</a></li><li><a href="http://ansible.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/ansible.gif" data-img-alt="Ansible " data-img-width="120" data-img-height="86">Ansible </a></li><li><a href="http://www.appdynamics.com/free" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/appdynamics_black.gif" data-img-alt="AppDynamics" data-img-width="120" data-img-height="12">AppDynamics</a></li><li><a href="http://www.appneta.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/appneta-1.gif" data-img-alt="AppNeta" data-img-width="120" data-img-height="25">AppNeta</a></li><li><a href="http://www.getchef.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/chef.gif" data-img-alt="Chef" data-img-width="102" data-img-height="100">Chef</a></li><li><a href="http://www.correlsense.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/correlsense.gif" data-img-alt="Correlsense" data-img-width="120" data-img-height="32">Correlsense</a></li><li><a href="https://www.crittercism.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/crittercism-1.gif" data-img-alt="Crittercism" data-img-width="120" data-img-height="23">Crittercism</a></li><li><a href="http://www.datadoghq.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/datadog-1.gif" data-img-alt="Datadog" data-img-width="99" data-img-height="100">Datadog</a></li><li><a href="http://software.dell.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/dell_software.gif" data-img-alt="Dell Software" data-img-width="120" data-img-height="49">Dell Software</a></li><li><a href="http://www.fastly.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/fastly.gif" data-img-alt="Fastly" data-img-width="120" data-img-height="46">Fastly</a></li><li><a href="https://www.ghosteryenterprise.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/ghostery.gif" data-img-alt="Ghostery Enterprise" data-img-width="120" data-img-height="36">Ghostery Enterprise</a></li><li><a href="https://github.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/github-1.gif" data-img-alt="GitHub" data-img-width="120" data-img-height="32">GitHub</a></li><li><a href="http://www.incapsula.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/incapsula.gif" data-img-alt="Incapsula" data-img-width="120" data-img-height="24">Incapsula</a></li><li><a href="http://instartlogic.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/instart-logic.gif" data-img-alt="Instart Logic" data-img-width="120" data-img-height="29">Instart Logic</a></li><li><a href="http://www.limelight.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/limelight.gif" data-img-alt="Limelight Networks, Inc." data-img-width="120" data-img-height="26">Limelight Networks, Inc.</a></li><li><a href="http://www.netscout.com/Pages/default.aspx" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/netscout.gif" data-img-alt="NetScout" data-img-width="120" data-img-height="20">NetScout</a></li><li><a href="http://nginx.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/nginx.gif" data-img-alt="Nginx, Inc." data-img-width="120" data-img-height="26">Nginx, Inc.</a></li><li><a href="http://opsmatic.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/opsmatic.gif" data-img-alt="Opsmatic" data-img-width="120" data-img-height="98">Opsmatic</a></li><li><a href="http://www.pagerduty.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/pager_duty.gif" data-img-alt="PagerDuty" data-img-width="120" data-img-height="23">PagerDuty</a></li><li><a href="Http://www.puppetlabs.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/puppetlabs.gif" data-img-alt="Puppet Labs" data-img-width="120" data-img-height="35">Puppet Labs</a></li><li><a href="http://www.radware.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/radware2.gif" data-img-alt="Radware" data-img-width="120" data-img-height="20">Radware</a></li><li><a href="http://smartbear.com/products/web-monitoring/website-monitoring/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/smartbearalertsite_uxm.gif" data-img-alt="SmartBear" data-img-width="120" data-img-height="29">SmartBear</a></li><li><a href="http://www.soasta.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/soasta_2.gif" data-img-alt="SOASTA" data-img-width="120" data-img-height="24">SOASTA</a></li><li><a href="http://www.thousandeyes.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/thousandeyes.gif" data-img-alt="ThousandEyes" data-img-width="120" data-img-height="85">ThousandEyes</a></li><li><a href="http://victorops.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/victorops.gif" data-img-alt="VictorOps" data-img-width="120" data-img-height="34">VictorOps</a></li></ul>
+
+<div class="sponsor_list_heading">Innovators</div>
+<ul class="plain sponsorList"><li><a href="http://www.avinetworks.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/avinetworks.gif" data-img-alt="Avi Networks" data-img-width="120" data-img-height="68">Avi Networks</a></li><li><a href="http://www.cedexis.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/cedexis.png" data-img-alt="Cedexis" data-img-width="120" data-img-height="37">Cedexis</a></li><li><a href="http://cumulusnetworks.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/cumulus.gif" data-img-alt="Cumulus Networks" data-img-width="100" data-img-height="100">Cumulus Networks</a></li><li><a href="http://www.highwinds.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/highwinds.gif" data-img-alt="Highwinds" data-img-width="120" data-img-height="65">Highwinds</a></li><li><a href="http://www.maxcdn.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/maxcdn.gif" data-img-alt="MaxCDN" data-img-width="120" data-img-height="19">MaxCDN</a></li><li><a href="https://vividcortex.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/vivid_cortex.gif" data-img-alt="VividCortex" data-img-width="103" data-img-height="100">VividCortex</a></li></ul>
+
+<div class="sponsor_list_heading">Registration Sponsor</div>
+<ul class="plain sponsorList"><li><a href="http://www.keynote.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/keynote14.gif" data-img-alt="Keynote Systems" data-img-width="120" data-img-height="28">Keynote Systems</a></li></ul>
+
+<div class="sponsor_list_heading">Supporters</div>
+<ul class="plain sponsorList"><li><a href="http://developer.att.com/developer/forward.jsp?passedItemId=100006" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/at_and_t.gif" data-img-alt="AT&T" data-img-width="100" data-img-height="100">AT&T</a></li><li><a href="http://carpathia.com/hero" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/carpathiaHeroes.gif" data-img-alt="Carpathia " data-img-width="120" data-img-height="54">Carpathia </a></li><li><a href="http://www.cloudant.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/cloudant+ibm.gif" data-img-alt="Cloudant, an IBM Company" data-img-width="120" data-img-height="35">Cloudant, an IBM Company</a></li><li><a href="https://modern.ie/en-us" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/modernie.gif" data-img-alt="Microsoft Modern.IE" data-img-width="150" data-img-height="30">Microsoft Modern.IE</a></li><li><a href="http://saucelabs.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/saucelabs.gif" data-img-alt="Sauce Labs" data-img-width="120" data-img-height="45">Sauce Labs</a></li><li><a href="http://www.signalfuse.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/signalfuse.gif" data-img-alt="SignalFuse" data-img-width="120" data-img-height="24">SignalFuse</a></li></ul>
+
+<div class="sponsor_list_heading">Media Partners</div>
+<ul class="plain sponsorList"><li><a href="http://www.arresteddevops.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/arresteddevops.gif" data-img-alt="Arrested DevOps" data-img-width="120" data-img-height="120">Arrested DevOps</a></li><li><a href="http://www.awwwards.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/awwwards.gif" data-img-alt="Awwwards" data-img-width="120" data-img-height="42">Awwwards</a></li><li><a href="http://theshipshow.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/theshipshow.gif" data-img-alt="The Ship Show" data-img-width="100" data-img-height="100">The Ship Show</a></li><li><a href="http://technologyadvice.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/technologyadvice.gif" data-img-alt="TechnologyAdvice" data-img-width="120" data-img-height="20">TechnologyAdvice</a></li></ul>
+
+
+</div>
+
+
+<div id="contacts">
+<div>
+<h3>Sponsorship Opportunities</h3>
+<p>For exhibition and sponsorship opportunities, contact Gloria Lombardo at <a href="mailto:glombardo@oreilly.com">glombardo@oreilly.com</a></p>
+</div>
+<div>
+<h3>Partner Opportunities</h3>
+<p>For information on trade opportunities with O'Reilly conferences contact <a href="mailto:partners@oreilly.com">partners@oreilly.com</a></p>
+</div>
+<div>
+<h3>Press and Media</h3>
+<p>For media-related inquiries, contact Maureen Jennings at <a href="mailto:maureen@oreilly.com">maureen@oreilly.com</a></p>
+</div>
+<div>
+<h3>Contact Us</h3>
+<p>View a complete list of <a href="/velocityny2014/public/content/contact">Velocity contacts</a></p>
+</div>
+</div><!-- /contacts -->
+
+</div><!-- /#sponsor_container -->
+</div><!--div#sponsors_contacts-->
+    </div><!-- en_main -->
+        
+            
+            <div id="en_footerwrap">
+                <div id="en_footer">
+                    <!-- after_main -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+    div.banner_ad a[data-defer="random"] { display: none; }
+</style>
+<div class="banner_ad">
+    
+<div class="banners">
+<a href="http://www.rackspace.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/117/velocityny2014_rackspace_banner.gif" data-img-width="728" data-img-height="90" data-img-alt="Rackspace Hosting">Rackspace Hosting</a>
+<a href="http://www.compuware.com/en_us/application-performance-management/products/dynatrace-free-trial.html" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/117/velocityny2014_compuware_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="Compuware Corporation">Compuware Corporation</a>
+<a href="http://www.edgecast.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/113/velocity2014_verizon_edgecast_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="EdgeCast, now part of Verizon">EdgeCast, now part of Verizon</a>
+<a href="http://www.jsdelivr.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/117/velocityny2014_jsdelivr_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="jsDelivr">jsDelivr</a>
+</div>
+
+
+</div> <!-- .banner_ad -->
+
+
+<div id="footer_logo">
+    
+	<div class="copyright">
+		&copy;2014, O'Reilly Media, Inc.<br />(800) 889-8969 or (707) 827-7019 <br />Monday-Friday 7:30am-5pm PT<br /> All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.<br />
+<a href="mailto:conf-webmaster@oreilly.com" class="webmaster">conf-webmaster@oreilly.com</a>
+	</div>
+</div> <!-- div#footer_logo-->
+<div class="footercol">
+    <ul>
+        <li><strong>Velocity</strong></li>
+        <li><a href="/velocityny2014/public/content/about">About</a></li>
+
+
+        <li><a href="http://www.oreilly.com/conferences/diversity.html" target="_blank">Diversity</a></li>
+        <li><a href="http://www.oreilly.com/conferences/code-of-conduct.html" target="_blank">Code of Conduct</a></li>
+        <li><a href="/velocityny2014/public/content/sitemap">Sitemap</a></li>
+        <li><a href="http://velocityconf.com">More Velocity Events</a></li>
+        <li><a href="http://www.oreilly.com/privacy.html" target="_blank">Privacy Policy</a></li>
+    </ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>Stay Connected</strong></li>
+  <li><a href="/velocityny2014/public/content/contact">Contact Us</a></li>
+  <li><a href="http://post.oreilly.com/form/oreilly/signup" target="_blank">Velocity Bulletin</a></li>
+  <li><a href="http://post.oreilly.com/form/oreilly/signup" target="_blank">Web Ops &amp; Performance Newsletter</a></li>
+  <li><a href="http://twitter.com/velocityconf" target="_blank">Twitter</a></li>
+  <li><a href="http://www.facebook.com/velocityconf" target="_blank">Facebook</a></li>
+  <li><a href="http://www.linkedin.com/groups?gid=1303037" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>More O'Reilly Sites</strong></li>
+  <li><a href="http://conferences.oreilly.com" target="_blank">O'Reilly Conferences</a></li>
+  <li><a href="http://www.oreilly.com" target="_blank">oreilly.com</a></li>
+  <li><a href="http://radar.oreilly.com" target="_blank">O'Reilly Radar</a></li>
+  <li><a href="http://oreilly.com/videos/" target="_blank">O'Reilly Video</a></li>
+  <li><a href="http://www.oreilly.com/webcasts/" target="_blank">O'Reilly Webcasts</a></li>
+  <li><a href="http://oreillyschool.com/" target="_blank">School of Technology</a></li>
+  <li><a href="http://igniteshow.com" target="_blank">Ignite</a></li>
+</ul>
+</div>
+                </div>
+            </div>
+        </div><!-- div#en_body -->
+    </div><!-- en_main_parts -->
+    
+    
+</div><!-- en_content -->
+
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 966350787;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/966350787/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+  <script type="text/javascript">
+  $(function() {
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+
+
+  });
+  </script>
+
+  
+
+  
+  <script>
+  $(document).ready(function () {
+
+    /* init nav */
+    $("#top_level_nav #nav").superfish();
+
+    
+
+    /* make links with class=external open up external */
+    $("a.external").click(function (e) {
+      e.preventDefault();
+      window.open($(this).attr("href"));
+    });
+
+  });
+  </script>
+
+  
+  
+  <style>
+#yt-popup-overlay { display:none; position:absolute; z-index:200;
+    top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); background:none\9;
+    /* IE8 and below */ } #yt-popup-overlay .popup { overflow:hidden;
+    margin:140px auto 0; background-color:#f9f9f9; text-align:center; width:620px;
+    -webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px; -webkit-box-shadow:0px
+    0px 15px rgba(0, 0, 0, 0.3); -moz-box-shadow:0px 0px 15px rgba(0, 0, 0,
+    0.3); box-shadow:0px 0px 15px rgba(0, 0, 0, 0.3); border:3px solid #ddd\9;
+    /* IE8 and below */ } #yt-popup-overlay .popup .popup-header {
+    font-weight: bold; font-size: 20px; padding:10px 10px 15px; } #yt-popup-overlay .popup .popup-header
+    a.close { font-size:16px; line-height:19px; color:#999; display:block;
+    padding-right:24px; float:right; background:transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png')
+    right 0 no-repeat; } #yt-popup-overlay .popup .popup-header a.close:hover
+    { color:#666; text-decoration:none; background:transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png')
+    right -100px no-repeat; }  #yt-popup-overlay .popup
+    .popup-header p { margin:0 40px; padding:0; font-size:20px; line-height:28px;
+    font-weight:normal; } #yt-popup-overlay .popup-window { margin:10px; text-align:left;} #yt-popup-overlay #yt-popup-frame {display:block; border:none; padding:0; margin:0 auto; width:600px; height:335px;
+    text-align:left;}
+</style>
+<div id="yt-popup-overlay">
+<div id="yt-popup" class="popup">
+<div class="popup-header"><a class="close" href="#">close</a></div>
+<div class="popup-window">&nbsp;</div>
+</div>
+</div>
+<script type="text/javascript">
+$(function() {
+    var ytPopupOverlay = $('#yt-popup-overlay'),
+        ytPopup = $('#yt-popup'),
+        ytPopupClose = ytPopup.find('a.close'),
+        ytPopupLoad = 0;
+
+    ytPopupOverlay.prependTo('body');
+
+    $('#yt-popup-frame').load(function() {
+        if (ytPopupLoad < 2) {
+            ytPopupLoad++;
+        } else {
+            $('#yt-popup-frame').css('opacity', 0);
+            //$('#yt-popup-overlay').animate({ opacity: 0 }, 200);
+            ytClosePopup();
+        }
+        //console.log(ytPopupLoad);
+    });
+
+    function startYTPopup(conf) {
+        var ytPopup = $('#yt-popup');
+        ytShowPopup(); 
+    } //startYTPopup()
+
+    function ytClosePopup() {
+        ytPopupOverlay.animate({
+            'opacity': 0
+        }, 300, function() {
+            ytPopupOverlay.css('display', 'none');
+            $('#yt-popup-frame').remove();
+        });
+        ytPopupLoad = 1;
+    } //ytClosePopup()
+    ytPopupOverlay.click(function() {
+        ytClosePopup();
+    });
+
+    ytPopupClose.click(function(e) {
+        e.preventDefault();
+        ytClosePopup();
+    });
+
+    $(document).keydown(function(e) {
+        if (e.which == 27) { //escape key
+            ytClosePopup();
+        }
+    });
+
+    ytPopup.click(function(event) {
+        event.stopPropagation();
+    });
+
+    function ytShowPopup() {
+        ytPopup.css('margin-top', ($(window).scrollTop() + 140) + "px");
+        ytPopupOverlay.css({
+            'opacity': 0,
+            'display': 'block',
+            'height': jQuery('html').height()
+        }).animate({
+            'opacity': 1
+        }, 200);
+        $('#yt-popup-frame').css({"opacity": 1, "background": "white url('http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/loading-hex999_120x40.gif') center center no-repeat"});
+    } //ytShowPopup()
+    $('a.yt_link').on('click', function(evt) {
+        var conf_video = $(this).data('url'),
+            selected_div = $('#popup_content');
+        evt.preventDefault();
+        startYTPopup();
+        $('.popup-window').append('<iframe src="'+ conf_video +'" id="yt-popup-frame" frameborder="0" height="335" width="600"></iframe>') 
+        
+    });
+});
+</script>
+   
+
+  <!--lazy load images -->
+  <script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/lazyload_min.js" type="text/javascript"></script>
+
+  <!-- effects -->
+  <script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/superfish_v1.3.1.js" type="text/javascript"></script>
+
+  <script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/accordion.js" type="text/javascript"></script>
+
+  
+  <script language="javascript" type="text/javascript">
+  <!--
+      // Initialize Banners
+      $( function () {
+           if ($('div.banners').length) {
+              $( "div.banner_ad" ).each( function ( i, e ) {
+                      var banners = new Array();
+                      $( e ).find( 'a[data-defer="random"]' ).each( function( i0, e0 ) {
+                              banners.push( $( e0 ) );
+                          });
+                      
+                      var b = banners[ Math.floor( Math.random() * banners.length ) ];
+                      var i = $( "<img />" );
+                      i.load( function() { b.html( i ); b.fadeIn( 1000 ); } );
+                      i.attr( "src", b.attr( "data-img-src" ) );
+                      i.attr( "alt", b.attr( "data-img-alt" ) );
+                  });
+             }
+          });
+  //-->
+  </script>
+
+
+
+<!-- js/chartbeat_footer --> 
+<script type="text/javascript">
+	var _sf_async_config={uid:1632,domain:"velocityconf.com"};
+	(function(){
+		function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			(("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			"js/chartbeat.js");
+			document.body.appendChild(e);
+		}
+		
+		var oldonload = window.onload;
+		window.onload = (typeof window.onload != 'function') ?
+		loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+<!-- site catalyst -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var localScAcct = "orvelocityny"; 
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--//
+ /* Specify the Report Suite ID(s) to track here */ 
+/* localScAcct is specified in content/scripts/sitecatalyst_cfg */
+//var globalScAcct = "ororeillyglobaldev";
+var globalScAcct = "orglobal";
+
+var s_account = localScAcct + "," + globalScAcct;
+/*s_code.js must be called via the current protocol to avoid mixed content warnings */
+var s_code_protocol;
+var s_code_url = "cdn.oreillystatic.com/assets/js/s_code.js";
+if (window.location.protocol == "https:"){
+document.write('<script id="s_code_script" type="text/javascript" src="https://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' + '/script>');
+}else{
+document.write('<script id="s_code_script" type="text/javascript" src="http://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' +'/script>');
+}
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var myChannel, myPageName, myTitle, mySeries, myEvent, myEventTitle, mySection, mySection2, mySection3, myLoggedStatus,myEventPhase,localScAcct,myPubDate,mySystemPageType;
+
+if(typeof(myTitleAppend) == 'undefined')
+var myTitleAppend = "";
+else myTitleAppend = ": " + myTitleAppend;
+
+myChannel = "confs";
+
+myTitle       = "special office hour: tim o&#x27;reilly and mikey dickerson in conversation about how the new usds playbook uses velocity principles." + myTitleAppend;
+
+
+mySection   = new Array(myChannel);
+mySeries = "velocity";
+
+mySection.push(mySeries);
+mySection2 = mySection.slice(); 
+
+
+
+var myEventStartDate = new Date ("September 15, 2014");
+var today            = new Date();
+if (today > myEventStartDate){
+     myEventPhase = "post-conference";
+}
+
+myPubDate = "09/17/2014";
+myEventTitle = "Velocity New York 2014";
+myEvent      = "velocityny2014";
+mySection2.push(myEvent)
+
+mySection3 = mySection2.slice(); 
+mySystemPageType = "schedule";
+
+
+mySection3.push(mySystemPageType)
+myPageName   = myChannel + ":" + myEvent + " " + myTitle;
+mySection    = mySection.join(":");
+mySection2   = mySection2.join(":");
+mySection3   = mySection3.join(":");
+
+myLoggedStatus = "logged out";
+
+/* You may give each page an identifying name, server, and channel on
+the next lines..... */
+s.pageName = myPageName.toLowerCase(); 
+//s.server   = ""; OK TO DELETE THIS LINE?
+s.channel  = myChannel;
+//s.pageType = "";OK TO DELETE THIS LINE?
+s.prop1  = mySection;
+s.prop2  = mySection2;
+s.prop3  = mySection3;
+s.prop4  = mySystemPageType; //not using this currently
+s.prop5  = myTitle;
+s.prop7  = myPubDate;
+s.prop15 = s.eVar24 = myLoggedStatus;
+s.prop29 = myEventPhase;//this has more work to do.
+s.prop38 = myEventTitle;
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";  // need way to distinguish amongst these
+s.products="";     // only put products on for purchases.
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ororeillyglobaldev.122.2O7.net/b/ss/ororeillyglobaldev/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+<!-- crazy egg heatmap -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script"); var b=document.getElementsByTagName('script')[0]; a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000); a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3144621-21']);
+  _gaq.push(['_setSiteSpeedSampleRate', 100]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>

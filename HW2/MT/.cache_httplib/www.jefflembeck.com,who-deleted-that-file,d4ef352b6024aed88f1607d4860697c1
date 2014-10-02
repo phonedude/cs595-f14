@@ -1,0 +1,136 @@
+status: 200
+content-length: 5886
+via: 1.1 vegur
+content-location: http://www.jefflembeck.com/who-deleted-that-file
+set-cookie: _session_id=bb72729af3021faaa1aee4533903f40a; path=/; HttpOnly
+x-request-id: 28542d06-b855-41ec-b0ea-ca32ee9f0860
+server: Cowboy
+connection: keep-alive
+etag: "2ea45eab04eb8d5edd571d4302dbcf58"
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Sun, 28 Sep 2014 16:57:33 GMT
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+x-runtime: 0.026480
+
+<!doctype html>
+<html lang="en-US">
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"8eac5c17d3","applicationID":"1524833","transactionName":"Jl5dTEUOXF5QQhYTWxZFQBdECV9F","queueTime":5,"applicationTime":15,"agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({QJf3ax:[function(t,n){function e(t){function n(n,e,o){t&&t(n,e,o),o||(o={});for(var a=i(n),u=a.length,c=o[r]||(o[r]={}),f=0;u>f;f++)a[f].apply(c,e);return c}function o(t,n){u[t]=i(t).concat(n)}function i(t){return u[t]||[]}function a(){return e(n)}var u={};return{on:o,emit:n,create:a,listeners:i,_events:u}}var r="nr@context";n.exports=e()},{}],ee:[function(t,n){n.exports=t("QJf3ax")},{}],D5DuLP:[function(t,n){function e(t,n,e){return r.listeners(t).length?r.emit(t,n,e):(o[t]||(o[t]=[]),void o[t].push(n))}var r=t("ee").create(),o={};n.exports=e,e.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var n=c.createElement("script");n.src=l.proto+t.agent,c.body.appendChild(n)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=n.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",e,!1)):(c[s]("onreadystatechange",r),u[s]("onload",e)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+  <title>WHO DELETED THAT FILE? - Jeff Lembeck learns a code or two</title>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="h15/5cFgB0L+xIN4AxJ7j1628Osy7iTjyvci6voG9Hs=" name="csrf-token" />
+  <link href="/assets/application-a1762a8c3873ab2bfd30120df9d27ef2.css" media="screen" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Jeff Lembeck">
+  <link href="/posts.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css' />
+</head>
+
+<body class="posts show">
+  <header>
+    <h1><a href="http://www.jefflembeck.com/">Jeff Lembeck learns a code or two</a></h1>
+    <span>Serious code business!</span>
+    <ul>
+        <li><a href="http://twitter.com/jefflembeck">@jefflembeck</a></li>
+        <li><a href="https://github.com/jlembeck">github</a></li>
+        <li><a href="mailto:jlembeck@gmail.com?subject:whats up!">say hi</a></li>
+      <li><a href="/resume.pdf">download resume</a></li>
+      <li><a href="/posts.rss">rss feed</a></li>
+    </ul>
+    <span class="powered-by">
+      
+  </span>
+
+  </header>
+
+  <div id="container">
+      <time>Posted October 10, 2013</time>
+    <div id="content">
+      
+      
+<section id="post-19">
+  <div class="post contain">
+      <h1>WHO DELETED THAT FILE?</h1>
+
+    <p>So, there you are, working on a huge project that has 50+ devs on it because #enterprise and you realize that some files are missing. How long have they been missing? WHO DELETED THAT? WHY (most important question here, really)?Crap.</p>
+
+<p>TO THE GIT-MOBILE</p>
+
+<p><code>
+$ git log --diff-filter=D --summary
+</code></p>
+
+<p>That will give you every commit where a file was deleted, but you don&#39;t have time to look through these, and you remember where these files were, right? So you go to use grep, that&#39;s a handy thing.</p>
+
+<p><code>
+$ git log --diff-filter=D --summary | grep DeletedFile.js
+</code></p>
+
+<p>Huh, but it gives you a print out that is useless. Let&#39;s see if we can&#39;t make our initial output a little better.</p>
+
+<p><code>
+$ git log --diff-filter=D --pretty=format:&quot;%h: %ae %an&quot; --name-only
+</code></p>
+
+<p>Well now we have all of our deletion commits coming out as</p>
+
+<p><code>
+CommitHash: AuthorEmail AuthorName</p>
+
+<p>file deleted</p>
+
+<p>file deleted</p>
+
+<p>...
+</code></p>
+
+<p>We&#39;re closer, but not quite there.</p>
+
+<p>Let&#39;s go back to using some grep; did you know that grep can also search backwards from your line? Oh, you didn&#39;t? We hereeee we go</p>
+
+<p><code>
+$ git log --diff-filter=D --pretty=format:&quot;%h: %ae %an&quot; --name-only | grep -B 1 DeletedFile.js
+</code></p>
+
+<p>Output looks like this now</p>
+
+<p><code>
+CommitHash: AuthorEmail AuthorName</p>
+
+<p>file deleted
+</code></p>
+
+<p>For your specific file!</p>
+
+<p>Woo!</p>
+
+<p>Now, before you go asking questions, it&#39;s probably best to run a git show on that commit hash.</p>
+
+
+  </div>
+
+  <a class="button space-top" href="http://www.jefflembeck.com/">Back to Blog</a>
+</section>
+
+    </div>
+  </div>
+
+  <script src="/assets/application-35fc851527cb9f9ed38c6de1e510083c.js" type="text/javascript"></script>
+
+    <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46298043-1', 'jefflembeck.com');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
+

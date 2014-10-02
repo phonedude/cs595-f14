@@ -1,0 +1,127 @@
+   (BUTTON) Toggle navigation [logo.png] Plenar.ioalpha
+     * Home
+     * API
+     * Explore
+     * About
+     * Login
+
+Examples
+
+   These editable sample queries demonstrate some of the capabilities of
+   Plenario.
+   /api/timeseries Tell me the story of 700 Howard Street in San
+   Francisco.
+
+   Returns a time series for every dataset with observations located in
+   the two blocks around 700 Howard Street for the past five years,
+   aggregated by week.
+
+   API documentation: /v1/api/timeseries
+   [view-in-explorer.png]
+
+   You can edit the query below.
+   Run query
+   http://plenar.io/v1/api/timeseries/?obs_date__ge=2009-09-23_
+   &obs_date__le=2014-09-23&location_geom__within=%7B"type":"Fe
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   White space such as spaces and new lines will be ignored.
+   /api/timeseries Give me weekly counts of 311 requests for every city in
+   the country.
+
+   Returns a time series for every dataset with "311" in the name,
+   aggregated by week, since January 1, 2014.
+
+   API documentation: /v1/api/timeseries
+   [view-in-explorer.png]
+
+   You can edit the query below.
+   Run query
+   http://plenar.io/v1/api/timeseries/?obs_date__ge=2014-01-01&
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   White space such as spaces and new lines will be ignored.
+   /api/detail What recent traffic accidents in Manhattan resulted in a
+   fatality—and what was the weather like?
+
+   Returns a record for every motor vehicle incident in Manhattan, New
+   York City in the past six months that resulted in at least one
+   fatality, along with the weather attributes recorded at the nearest
+   weather station to the incident and on the day of the incident.
+
+   API documentation: /v1/api/detail
+   [view-in-explorer.png]
+
+   You can edit the query below.
+   Run query
+   http://plenar.io/v1/api/detail/?dataset_name=nypd_motor_vehi
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   White space such as spaces and new lines will be ignored.
+   /api/detail Let me download all pothole reports from the census tract
+   containing the Sears Tower.
+
+   Returns all records in the Chicago 311 Potholes Reported dataset
+   located in Cook County Census Tract 8391, from the past six months.
+
+   API documentation: /v1/api/detail
+   [view-in-explorer.png]
+
+   You can edit the query below.
+   Run query
+   http://plenar.io/v1/api/detail/?dataset_name=311_service_req
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   White space such as spaces and new lines will be ignored.
+   /api/detail Show me snow-related calls in Boston during the
+   Snowpocalypse (Winter Storm Nemo, Feb 2013).
+
+   Returns all snow-related "Mayor's 24-hour hotline" calls made in Boston
+   during the Snowpocalypse (Winter Storm Nemo), between 2/8/13 and
+   2/10/13, along with the weather reported at that hour by the nearest
+   weather station to the caller's location.
+
+   API documentation: /v1/api/detail
+   [view-in-explorer.png]
+
+   You can edit the query below.
+   Run query
+   http://plenar.io/v1/api/detail/?dataset_name=mayors_24_hour_
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   White space such as spaces and new lines will be ignored.
+   /api/detail-aggregate Let me see all homicides in Chicago since 2001
+   where an arrest was made.
+
+   Returns a time series of all observations since 2001 where the IUCR
+   code is 0110 (homicide) and a related arrest was made, aggregated by
+   month.
+
+   API documentation: /v1/api/detail-aggregate
+   [view-in-explorer.png]
+
+   You can edit the query below.
+   Run query
+   http://plenar.io/v1/api/detail-aggregate/?dataset_name=crime
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   White space such as spaces and new lines will be ignored.
+   For more examples specific to the API endpoints, see the API
+   documentation.
+
+     * Terms
+     * Built by UrbanCCD/University of Chicago and DataMade

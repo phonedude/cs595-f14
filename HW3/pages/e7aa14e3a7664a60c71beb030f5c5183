@@ -1,0 +1,1515 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/themes/mitnews/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/2014/algorithm-recovers-speech-from-vibrations-0804" />
+<meta content="Extracting audio from visual information" about="/2014/algorithm-recovers-speech-from-vibrations-0804" property="dc:title" />
+<meta name="description" content="Algorithm recovers speech from the vibrations of a potato-chip bag filmed through soundproof glass." />
+<meta name="keywords" content="Computer vision, Imaging, School of Engineering, Electrical Engineering &amp; Computer Science (eecs), Computer Science and Artificial Intelligence Laboratory (CSAIL), Research" />
+<meta name="news_keywords" content="Computer vision, Imaging, School of Engineering, Electrical Engineering &amp; Computer Science (eecs), Computer Science and Artificial Intelligence Laboratory (CSAIL), Research" />
+<link rel="image_src" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/article_cover_image_small/public/images/2014/MIT-Visual-Microphone_0.jpg" />
+<meta name="apple-itunes-app" content="app-id=353590319" />
+<meta name="twitter:site" content="@mitnews" />
+<meta property="twitter:site:id" content="1380107316" />
+<meta name="twitter:card" content="summary" />
+<meta property="og:author" content="Larry Hardesty | MIT News Office" />
+<meta property="og:description" content="Algorithm recovers speech from the vibrations of a potato-chip bag filmed through soundproof glass." />
+<meta property="og:image" content="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/og/public/images/2014/MIT-Visual-Microphone_0.jpg" />
+<meta property="og:title" content="Extracting audio from visual information" />
+<meta property="og:url" content="http://newsoffice.mit.edu/2014/algorithm-recovers-speech-from-vibrations-0804" />
+<meta property="fb:page_id" content="126533127390327" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="MIT News" />
+        <title>Extracting audio from visual information | MIT News Office</title>
+        <link type="text/css" rel="stylesheet" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/css/css_ogjvJnfni1_P_WxvXAHlUOgCs860b3ip9DNMapcIGeM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/css/css_u9Cn6xFPfn6NvRqMGUV6k10stVTR4AGT7eontS75hX4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/css/css_Zo1r09piXtl5JhJOMD7hQCiB0jhDpHLlkhIEB61cQvE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/css/css_dAMI0y8gWs1W0ytEvkENwoOvbjiqUkKpdN6SsS_QFuU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/css/css_zNjEyTXCUgBk3ONK7sNDw6HXxFbc1qFGL2hJ9UXp9Nw.css" media="print" />
+    <script type="text/javascript" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/js/js_BAhqE0nsQns6shJD8cBPNaX58HANh3tzWfxSlYIKGGs.js"></script>
+<script type="text/javascript" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/js/js__IcoQ9F6ifX3glQE3dtvV4JVbMZPnbgCs0nBN8aYnCU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-1592615-17", "auto");ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/js/js_tzEGTRyjbSNo4GS4Eh6_ZJb5BgaDvQF9UshkdxwThp0.js"></script>
+<script type="text/javascript" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/js/js_2acK0SHVKma5vUhwYRtkyVkxDGATlkef7QZySaePYYg.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mitnews","theme_token":"cGhH7w9EQxgjMUcaaknTXMx0SUSMiW3LK1wRAzJqFc0","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contri\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/contri\/disqus\/disqus.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/flexslider\/jquery.flexslider-min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/fancybox\/source\/jquery.fancybox.pack.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/waypoints\/waypoints.min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/waypoints\/waypoints-sticky.min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/modernizr-2.6.2.min.js":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/main.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/contri\/date\/date_api\/date.css":1,"sites\/all\/modules\/contri\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contri\/views\/css\/views.css":1,"sites\/all\/modules\/contri\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contri\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/custom\/shib_auth\/shib_auth.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/flexslider\/flexslider.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/js\/vendor\/fancybox\/source\/jquery.fancybox.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/main.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/normalize.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/site.css":1,"sites\/mit.edu.newsoffice\/themes\/mitnews\/css\/print.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"disqus":{"domain":"mitnews","url":"http:\/\/newsoffice.mit.edu\/2014\/algorithm-recovers-speech-from-vibrations-0804","title":"Extracting audio from visual information","identifier":"node\/29528"}});
+//--><!]]>
+</script>
+    <script type="text/javascript" src="//use.typekit.net/tzb4pde.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+        
+
+
+<div itemscope itemtype="http://schema.org/Article" id="site-wrapper">
+        <header>
+    <div id="site-header-nav-wrapper">
+        <div id="site-header-nav" class="clearfix">
+            <ul id="top-menu-bar" class="clearfix">
+                <li class="logo-mit">
+                    <a href="http://web.mit.edu" target="_blank">
+                        <span class="logo"></span>
+                        Massachusetts Institute of Technology
+                    </a>
+                </li>
+                            </ul> 
+            <div id="follow-social-menu" class="clearfix">
+                
+                <ul id="top-menu-items">
+                    <li><a href="/">News</a></li>
+                    <li><a href="http://video.mit.edu" target="_blank">Video</a></li>
+                    <li><a href="http://connect.mit.edu" target="_blank">Social</a></li>
+                </ul>
+                
+                <div class="label">Follow MIT</div>
+                <ul id="follow-social-items">
+                    <li><a class="rss" href="/rss"><span>MIT News RSS</span></a></li>
+                    <li><a class="twitter" target="_blank" href="https://twitter.com/mit"><span>Follow MIT on Twitter</span></a></li>
+                    <li><a class="facebook" target="_blank" href="https://www.facebook.com/MITnews"><span>Follow MIT on Facebook</span></a></li>
+                    <li><a class="googleplus" target="_blank" href="https://plus.google.com/+mit?rel=author"><span>Follow MIT on Google+</span></a></li>
+                    <li><a class="instagram" target="_blank" href="http://instagram.com/mitpics"><span>Follow MIT on Instagram</span></a></li>
+                    <li><a class="flickr" target="_blank" href="http://www.flickr.com/photos/cpsphotolibrary"><span>Follow MIT on Flickr</span></a></li>
+                    <li><a class="youtube" target="_blank" href="http://www.youtube.com/MIT"><span>Follow MIT on YouTube</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+    <nav>
+    <div id="site-header-area-wrapper">
+        <div id="site-header-area" class="clearfix">
+            <div id="site-header">
+                <a class="mit-logo-button" href="http://web.mit.edu" target="_blank"></a>
+                <img alt="MIT News Office" id="logo-mit-news-img" src="/sites/mit.edu.newsoffice/themes/mitnews/img/logo-mit-news-b.png" />
+                <a id="logo-mit-news" href="/">
+                                            <h2>MIT News Office</h2>
+                                    </a>
+                <a id="header-browse-button" href="#site-browse-area"></a>
+                <a id="search-button" href="#site-search-area"></a> 
+            </div>
+            
+            <div id="options-wrapper" class="clearfix">
+                <div id="site-browse-button-area">
+                    <a id="browse-button" href="#site-browse-area">Browse</a>
+                    <span class="text">or</span>
+                </div>
+                <div id="site-search-area">
+                    <div class="wrapper clearfix">
+                        <form action="/search" method="get" id="form-search" accept-charset="UTF-8">
+                            <input title="Enter the keyword you wish to search for." type="text" id="keyword" name="keyword" placeholder="Search"  />
+                            <input type="submit" id="submit-search" name="" value="Submit" />
+                        </form>                        
+                    </div>
+                </div>
+            </div>
+            <div id="site-browse-area">
+                <h2 class="title">Browse</h2>
+                <ul id="browse-options" class="clearfix">
+                    <li class="clearfix">
+                        <a class="browse-option" href="#"><h3>Most Popular</h3></a>
+                        <div class="browse-content">
+                        <div class="view view-browse-news-by-popularity view-id-browse_news_by_popularity view-display-id-block_browse_news_by_popularity view-dom-id-c71742bbfbd8e31f93b350d94da4d845">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-popular">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/study-shows-online-courses-effective-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-MOOCs-Learning-01_0.jpg?itok=jYi1Ygar" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/study-shows-online-courses-effective-0924">Study: Online classes really do work</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/cancer-drug-delivery-by-anthrax-0925"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Anthrax-Drug-01.jpg?itok=7xQzTM0j" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/cancer-drug-delivery-by-anthrax-0925">Chemists recruit anthrax to deliver cancer drugs</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/student-profile-sofia-essayan-perez-0925"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Essayan-A1.jpg?itok=pN24sJZD" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/student-profile-sofia-essayan-perez-0925">Using science for service</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even clearfix">  
+          <a href="/2014/importance-of-science-writing-0923"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Knight-Fellows-01.jpg?itok=xN7f1_g5" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/importance-of-science-writing-0923">Q&amp;A: Science journalism and public engagement</a></span>  </li>
+          <li class="views-row views-row-5 views-row-odd clearfix">  
+          <a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/visual-scene-algorithm.png?itok=v-tRTjzt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924">Can you out-race a computer? </a></span>  </li>
+          <li class="views-row views-row-6 views-row-even clearfix">  
+          <a href="/2014/schmidt-ruiz-letter-design-firm-selection-0923"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/mit_seal_SIZED_18.jpg?itok=7v84Zvhm" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/schmidt-ruiz-letter-design-firm-selection-0923">Letter to the community on East Campus/Kendall Square design firm selection</a></span>  </li>
+          <li class="views-row views-row-7 views-row-odd clearfix">  
+          <a href="/2014/community-picnic-honors-mary-rowe-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/20130513DR9227.jpg?itok=6J9t7PpW" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/community-picnic-honors-mary-rowe-0924">Community picnic to honor former ombudsperson Mary Rowe</a></span>  </li>
+          <li class="views-row views-row-8 views-row-even views-row-last clearfix">  
+          <a href="/2014/economic-growth-in-africa-symposium-0923"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-3Q-Africa-Calestous-Juma.jpg?itok=ZlXXNjTt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_popularity_item"><a href="/2014/economic-growth-in-africa-symposium-0923">3 Questions: Calestous Juma on African development</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a class="browse-option" href="/topics"><h3>By Topic</h3></a>
+                        <div class="browse-content">
+                            <div class="view view-browse-news-by-topics view-id-browse_news_by_topics view-display-id-block_browse_news_by_topics view-dom-id-93accb1f8d8a681922e2e4dd342f9c0e">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-by-terms">          <li class="views-row views-row-1 views-row-odd views-row-first">  
+          <span class="browse-news-term"><a href="/topic/computer-science-and-artificial-intelligence-laboratory-csail">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-644efa41f4703dc1010253f2f15a0e61">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/visual-scene-algorithm.png?itok=v-tRTjzt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924">Can you out-race a computer? </a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/mit-professional-education-two-new-online-x-professional-big-data-courses-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/taking-challenges-of-big-data-mit-online-x-professional.jpg?itok=LxcGldCc" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/mit-professional-education-two-new-online-x-professional-big-data-courses-0919">MIT Professional Education announces new offerings of Online X professional course on big data</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/fingertip-sensor-gives-robot-dexterity-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-GelSight-01.jpg?itok=O7u73uVX" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/fingertip-sensor-gives-robot-dexterity-0919">Fingertip sensor gives robot unprecedented dexterity</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/snakelike-robotic-arm-0915"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/drl_arm_002.jpg?itok=5MjHIc46" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/snakelike-robotic-arm-0915">Will tomorrow’s robots move like snakes? </a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-2 views-row-even">  
+          <span class="browse-news-term"><a href="/topic/computer-vision">Computer vision</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-9abc74eda3ee7241a4892e6b7ef05c14">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/visual-scene-algorithm.png?itok=v-tRTjzt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924">Can you out-race a computer? </a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/fingertip-sensor-gives-robot-dexterity-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-GelSight-01.jpg?itok=O7u73uVX" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/fingertip-sensor-gives-robot-dexterity-0919">Fingertip sensor gives robot unprecedented dexterity</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/algorithm-spinning-space-debris-0910"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Spinning-In-Space-01_0.jpg?itok=uvGJ45Oy" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/algorithm-spinning-space-debris-0910">Where to grab space debris</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/startup-stops-drug-errors-0828"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Mint-Solutions-01_0.jpg?itok=B0FSaC6Z" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/startup-stops-drug-errors-0828">An end to drug errors?</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-3 views-row-odd">  
+          <span class="browse-news-term"><a href="/topic/electrical-engineering-computer-science-eecs">Electrical Engineering &amp; Computer Science (eecs)</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-ad06389c2ecfbc36c64e08a7701bbfb4">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/visual-scene-algorithm.png?itok=v-tRTjzt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924">Can you out-race a computer? </a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/fighting-drug-resistant-bacteria-0921"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-AntiBiotic-Resistance-01_0.jpg?itok=oNfyQmAC" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/fighting-drug-resistant-bacteria-0921">Battling superbugs</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/new-adhesives-stick-in-water-0921"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Underwater-Adhesives-01.jpg?itok=GrJgc4Ji" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/new-adhesives-stick-in-water-0921">Engineered proteins stick like glue — even in water</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/avoiding-exciton-traps%E2%80%93solar-cell-efficiency-0921"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Excitons-Thin-Films-01.jpg?itok=-M4lTgET" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/avoiding-exciton-traps%E2%80%93solar-cell-efficiency-0921">Magnetic fields make the excitons go ’round</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-4 views-row-even">  
+          <span class="browse-news-term"><a href="/topic/imaging">Imaging</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-ab8474216f8bdc09f3920aaa12e28d76">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/algorithm-recovers-speech-from-vibrations-0804" class="active"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Visual-Microphone_0.jpg?itok=ByF3ye8S" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/algorithm-recovers-speech-from-vibrations-0804" class="active">Extracting audio from visual information</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2013/mcgovern-institute-gets-new-brain-scanner"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2013/20130729121753-0.jpg?itok=y06kSlOK" width="90" height="60" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2013/mcgovern-institute-gets-new-brain-scanner">McGovern Institute gets new brain scanner</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2013/multiview-3d-photography-made-simple-0619"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2013/20130618162715-0.jpg?itok=WGaOXKuZ" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2013/multiview-3d-photography-made-simple-0619">Multiview 3-D photography made simple</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2013/tiny-tools-help-advance-medical-discoveries-0108"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2013/20130104145954-3.jpg?itok=yGDImtpd" width="90" height="60" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2013/tiny-tools-help-advance-medical-discoveries-0108">Tiny tools help advance medical discoveries</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+          <span class="browse-news-term"><a href="/topic/research">Research</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-8e0a58fdf733562d8a42202197ee9535">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/perfect-solar-cell-0929"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Ideal-Solar-Absorber-MIT.jpg?itok=luDUxxIa" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/perfect-solar-cell-0929">How to make a “perfect” solar absorber</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/banking-relationships-reduce-default-0929"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Relationship-Banking.jpg?itok=uyJ3H9HY" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/banking-relationships-reduce-default-0929">Know thy banker — it could keep you solvent</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/early-sign-pancreatic-cancer-0928"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Pancreatic-Cancer.jpg?itok=XeA5Psor" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/early-sign-pancreatic-cancer-0928">Biologists find an early sign of cancer</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/underwater-robot-for-port-security-0926"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Underwater-Robot-01.jpg?itok=CmS6AS5I" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/underwater-robot-for-port-security-0926">Underwater robot for port security</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>                            <div class="link-more">
+                            <a href="/topics">See All Topics</a>                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a class="browse-option" href="#"><h3>By School</h3></a>
+                        <div class="browse-content">
+                        <div class="view view-browse-news-by-schools view-id-browse_news_by_schools view-display-id-block_browse_news_by_schools view-dom-id-60a1c3c24b224d6143cbd48d9bcd1ac6">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-by-terms">          <li class="views-row views-row-1 views-row-odd views-row-first">  
+          <span class="browse-news-term"><a href="/architecture-and-planning">School of Architecture + Planning</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-afa53475b8f68538259f1f535f21bb98">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/soft-design-sustainable-world-sheila-kennedy-0923"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/sheila-kennedy-A1.jpg?itok=iU3njDHZ" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/soft-design-sustainable-world-sheila-kennedy-0923">Soft design for a sustainable world</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/economic-growth-in-africa-symposium-0923"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-3Q-Africa-Calestous-Juma.jpg?itok=ZlXXNjTt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/economic-growth-in-africa-symposium-0923">3 Questions: Calestous Juma on African development</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/macarthur-confers-genius-awards-jacob-lurie-rick-lowe-ai-jen-poo-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/macarthur2014_web.jpg?itok=WwC-3lS7" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/macarthur-confers-genius-awards-jacob-lurie-rick-lowe-ai-jen-poo-0919">MacArthur confers “genius” awards for playful math and practical art</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/sheila-kennedy-awarded-100k-berkeley-rupp-prize-0916"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/sheila-kennedy-D.%20Sella.jpg?itok=4aH3qNla" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/sheila-kennedy-awarded-100k-berkeley-rupp-prize-0916">Sheila Kennedy awarded $100K Berkeley-Rupp Prize</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-2 views-row-even">  
+          <span class="browse-news-term"><a href="/engineering">School of Engineering</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-5025295fc3197d531b238be00db4b1bd">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/perfect-solar-cell-0929"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Ideal-Solar-Absorber-MIT.jpg?itok=luDUxxIa" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/perfect-solar-cell-0929">How to make a “perfect” solar absorber</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/underwater-robot-for-port-security-0926"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Underwater-Robot-01.jpg?itok=CmS6AS5I" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/underwater-robot-for-port-security-0926">Underwater robot for port security</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/stronger-greener-cement-0925"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Better-Cement-01.jpg?itok=UBSu6uQt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/stronger-greener-cement-0925">How to make stronger, “greener” cement</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/visual-scene-algorithm.png?itok=v-tRTjzt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924">Can you out-race a computer? </a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-3 views-row-odd">  
+          <span class="browse-news-term"><a href="/humanities-arts-and-social-sciences">School of Humanities, Arts, and Social Sciences</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-99d147fd6d3cb21e35f7813efdb8024e">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/mit-presents-new-music-series-mit-sounding-0926"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Terry%20Riley%20performs%20at%20LIFEM%2C%202010%20%283%29%20copy.jpg?itok=2B8OMpoH" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/mit-presents-new-music-series-mit-sounding-0926">MIT presents new music series: MIT Sounding</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/evan-lieberman-southern-africa-lens-ethnicity-governance-and-citizenship-0925"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Evan-Lieberman-MIT-A1.jpg?itok=S51IjOgT" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/evan-lieberman-southern-africa-lens-ethnicity-governance-and-citizenship-0925">Evan Lieberman: Southern Africa as a lens on ethnicity, governance, and citizenship</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/student-profile-sofia-essayan-perez-0925"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Essayan-A1.jpg?itok=pN24sJZD" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/student-profile-sofia-essayan-perez-0925">Using science for service</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/tom-ogrady-scottish-referendum-what-it-means-0923"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/tom-ogrady-mit-political-science.jpg?itok=Y1IitL5o" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/tom-ogrady-scottish-referendum-what-it-means-0923">The Scottish referendum: What it means</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-4 views-row-even">  
+          <span class="browse-news-term"><a href="/management">Sloan School of Management</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-7e9a87ff1783e039edca979aff3e958f">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/banking-relationships-reduce-default-0929"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Relationship-Banking.jpg?itok=uyJ3H9HY" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/banking-relationships-reduce-default-0929">Know thy banker — it could keep you solvent</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/kressy-director-integrated-design-management-0912"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT%20Matt%20Head%20Shot%20LR_0.jpeg?itok=K-HalBj-" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/kressy-director-integrated-design-management-0912">New master&#039;s track established integrating design and management </a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/mit-student-maxime-cohen-profile-0909"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Cohen-A1.jpg?itok=MAscmRl_" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/mit-student-maxime-cohen-profile-0909">Paradigm shifter</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/us-news-ranking-0909"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/NewsImage_dome-trees_0.jpg?itok=2Xiz7L7Y" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/us-news-ranking-0909">MIT ranked as nation’s No. 7 university by U.S. News</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+          <span class="browse-news-term"><a href="/science">School of Science</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-59e2abd222e8411247ece7df32f5b946">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/early-sign-pancreatic-cancer-0928"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Pancreatic-Cancer.jpg?itok=XeA5Psor" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/early-sign-pancreatic-cancer-0928">Biologists find an early sign of cancer</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/voices-of-mit-at-peoples-climate-march-0926"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/mit-peoples-climate-march-2014.jpg?itok=jJw5xRwU" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/voices-of-mit-at-peoples-climate-march-0926">Voices of MIT at the People’s Climate March</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/tania-baker-honored-arthur-kornberg-and-paul-berg-lifetime-achievement-award-0926"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/tania-baker-MIT.jpg?itok=nMkM5jKs" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/tania-baker-honored-arthur-kornberg-and-paul-berg-lifetime-achievement-award-0926">Tania Baker to be honored with Arthur Kornberg and Paul Berg Lifetime Achievement Award</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/new-mouse-model-crispr-cas9-0925"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Platt_and_Zhang_Cover_4.jpg?itok=vYE5_3tV" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/new-mouse-model-crispr-cas9-0925">Researchers engineer new mouse model to study disease</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>                        <!--<a href="/schools">See All Schools</a> -->
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a class="browse-option" href="/departments"><h3>By Department</h3></a>
+                        <div class="browse-content">
+                            <div class="view view-browse-news-by-departments view-id-browse_news_by_departments view-display-id-block_browse_news_by_departments view-dom-id-1d182226e583e1a05b63d84ee9ad44b4">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-by-terms">          <li class="views-row views-row-1 views-row-odd views-row-first">  
+          <span class="browse-news-term"><a href="/department/history">History</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-ccfca49e14a99729512399c8be46492e">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/said-and-done-summer-2014"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/1800_SHASS-emblem_Pantheon_Oculus.jpeg?itok=CtpyfT_H" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/said-and-done-summer-2014">Said and Done for Summer 2014</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2013/anthropologist-manduhai-buyandelger-wins-the-2013-levitan-prize-in-the-humanities"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/20131229084159-1_1.jpg?itok=cLnFjT-9" width="90" height="60" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2013/anthropologist-manduhai-buyandelger-wins-the-2013-levitan-prize-in-the-humanities">Anthropologist Manduhai Buyandelger wins the 2013 Levitan Prize in the Humanities</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2013/the-surprising-story-of-mongolian-shamanism-1216"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2013/20131213180343-0.jpg?itok=ILMgDLvS" width="90" height="60" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2013/the-surprising-story-of-mongolian-shamanism-1216">The surprising story of Mongolian shamanism</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2013/dower-granted-major-%E2%80%98lifetime-achievement%E2%80%99-award-history"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2013/20131105143220-0_1.jpg?itok=1W6eEVA1" width="90" height="60" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2013/dower-granted-major-%E2%80%98lifetime-achievement%E2%80%99-award-history">Dower granted major ‘lifetime achievement’ award in history</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-2 views-row-even">  
+          <span class="browse-news-term"><a href="/department/physical-education">Physical Education</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-8420e44eea4ba4bcc391a5d5bdf12d0a">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+              
+          <span class="browse_news_by_term_item"><a href="/2014/sports-shorts-for-march-17-a-weekly-wrap-up-of-varsity-athletics">Sports Shorts for March 17: A weekly wrap-up of MIT varsity athletics</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even views-row-last clearfix">  
+              
+          <span class="browse_news_by_term_item"><a href="/2014/sports-shorts-for-march-10-a-weekly-wrap-up-of-mit-varsity-athletics">Sports Shorts for March 10: A weekly wrap-up of MIT varsity athletics</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-3 views-row-odd">  
+          <span class="browse-news-term"><a href="/department/and-recreation">and Recreation</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-475b2a8e11f850c1acbb93083b220071">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last clearfix">  
+              
+          <span class="browse_news_by_term_item"><a href="/2014/sports-shorts-for-march-17-a-weekly-wrap-up-of-varsity-athletics">Sports Shorts for March 17: A weekly wrap-up of MIT varsity athletics</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-4 views-row-even">  
+          <span class="browse-news-term"><a href="/department/civil-and-environmental-engineering">Civil and Environmental Engineering</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-a5c503e9dcc1552a44f28e870a72cee4">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/stronger-greener-cement-0925"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Better-Cement-01.jpg?itok=UBSu6uQt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/stronger-greener-cement-0925">How to make stronger, “greener” cement</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/material-changes-color-texture-octopus-0916"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Responsive-Elastomers.jpg?itok=sAU_aRx2" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/material-changes-color-texture-octopus-0916">How to hide like an octopus</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/saurabh-amin-protecting-infrastructure-0915"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/amin.jpg?itok=JL4azNZU" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/saurabh-amin-protecting-infrastructure-0915">Protecting infrastructure with smarter CPS</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/summer-scholars-deepen-research-skills"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/Alyssa_Johnson_Sideview_DP.png?itok=zjPgB6M2" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/summer-scholars-deepen-research-skills">Summer scholars deepen research skills</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+          <span class="browse-news-term"><a href="/department/linguistics-and-philosophy">Linguistics and Philosophy</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-2ff6a0539e71c798a96a38c3c4fcf583">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/said-and-done-summer-2014"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/1800_SHASS-emblem_Pantheon_Oculus.jpeg?itok=CtpyfT_H" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/said-and-done-summer-2014">Said and Done for Summer 2014</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/new-leadership-model-new-haiti"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/haiti-sloan-mit-2014.jpg?itok=zFsRv0Fs" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/new-leadership-model-new-haiti">A new leadership model for a new Haiti</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/human-language-deep-origins-0611"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MITnews_language-origins_CDaniloff.jpg?itok=pGsXzgw0" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/human-language-deep-origins-0611">From contemporary syntax to human language’s deep origins</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/philosopher-sally-haslanger-receives-ford-chair"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/800_Haslanger_Jon-Sachs-photo-2-13-13-38.jpg?itok=1fcalmEt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/philosopher-sally-haslanger-receives-ford-chair">Philosopher Sally Haslanger receives Ford Chair</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>                            <div class="link-more">
+                            <a href="/departments">See All Departments</a>                            </div>                        
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <a class="browse-option" href="/research-centers"><h3>By Center, Lab, & Program</h3></a>
+                        <div class="browse-content">
+                            <div class="view view-browse-news-by-research-centers view-id-browse_news_by_research_centers view-display-id-block_browse_news_by_research_centers view-dom-id-75c1b58ab57ccfd63da18bcea1cf06ec">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-by-terms">          <li class="views-row views-row-1 views-row-odd views-row-first">  
+          <span class="browse-news-term"><a href="/topic/csail">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-38ab14d9d876cbae0881510812d0752d">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/visual-scene-algorithm.png?itok=v-tRTjzt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924">Can you out-race a computer? </a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/mit-professional-education-two-new-online-x-professional-big-data-courses-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/taking-challenges-of-big-data-mit-online-x-professional.jpg?itok=LxcGldCc" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/mit-professional-education-two-new-online-x-professional-big-data-courses-0919">MIT Professional Education announces new offerings of Online X professional course on big data</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/fingertip-sensor-gives-robot-dexterity-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-GelSight-01.jpg?itok=O7u73uVX" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/fingertip-sensor-gives-robot-dexterity-0919">Fingertip sensor gives robot unprecedented dexterity</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/snakelike-robotic-arm-0915"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/drl_arm_002.jpg?itok=5MjHIc46" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/snakelike-robotic-arm-0915">Will tomorrow’s robots move like snakes? </a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-2 views-row-even">  
+          <span class="browse-news-term"><a href="/topic/research-laboratory-electronics">Research Laboratory of Electronics</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-7e119ed0ff3323e9ecb4a0453e5ca48b">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/study-shows-online-courses-effective-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-MOOCs-Learning-01_0.jpg?itok=jYi1Ygar" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/study-shows-online-courses-effective-0924">Study: Online classes really do work</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/new-adhesives-stick-in-water-0921"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Underwater-Adhesives-01.jpg?itok=GrJgc4Ji" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/new-adhesives-stick-in-water-0921">Engineered proteins stick like glue — even in water</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/avoiding-exciton-traps%E2%80%93solar-cell-efficiency-0921"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Excitons-Thin-Films-01.jpg?itok=-M4lTgET" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/avoiding-exciton-traps%E2%80%93solar-cell-efficiency-0921">Magnetic fields make the excitons go ’round</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/optical-chips-tunable-light-source-0917"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Optical-Chips-01.jpg?itok=MgR0aXW0" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/optical-chips-tunable-light-source-0917">Toward optical chips</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-3 views-row-odd">  
+          <span class="browse-news-term"><a href="/centers-labs-programs/biomimetics-robotics-lab">Biomimetics Robotics Lab</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-dc7f80edd175feffcf16b3d4a724376b">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first views-row-last clearfix">  
+          <a href="/2014/mit-cheetah-robot-runs-jumps-0915"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Cheetah-A1.jpg?itok=8ApGeKR1" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/mit-cheetah-robot-runs-jumps-0915">Bound for robotic glory</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-4 views-row-even">  
+          <span class="browse-news-term"><a href="/topic/csail">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-fdd26f7a329cdafcf0ee0cf7d9af5c75">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/visual-scene-algorithm.png?itok=v-tRTjzt" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/deep-learning-algorithm-can-outperform-humans-weighing-neighborhoods-0924">Can you out-race a computer? </a></span>  </li>
+          <li class="views-row views-row-2 views-row-even clearfix">  
+          <a href="/2014/mit-professional-education-two-new-online-x-professional-big-data-courses-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/taking-challenges-of-big-data-mit-online-x-professional.jpg?itok=LxcGldCc" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/mit-professional-education-two-new-online-x-professional-big-data-courses-0919">MIT Professional Education announces new offerings of Online X professional course on big data</a></span>  </li>
+          <li class="views-row views-row-3 views-row-odd clearfix">  
+          <a href="/2014/fingertip-sensor-gives-robot-dexterity-0919"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-GelSight-01.jpg?itok=O7u73uVX" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/fingertip-sensor-gives-robot-dexterity-0919">Fingertip sensor gives robot unprecedented dexterity</a></span>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last clearfix">  
+          <a href="/2014/snakelike-robotic-arm-0915"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/drl_arm_002.jpg?itok=5MjHIc46" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/snakelike-robotic-arm-0915">Will tomorrow’s robots move like snakes? </a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+          <span class="browse-news-term"><a href="/centers-labs-programs/technology-and-policy-program">Technology and Policy Program</a></span>    
+          <div class="view view-browse-news-by-term view-id-browse_news_by_term view-display-id-default view-dom-id-46c1dc769da238e4e3d87a29b47e4154">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+          <ul class="browse-news-items">          <li class="views-row views-row-1 views-row-odd views-row-first clearfix">  
+          <a href="/2014/second-skin-spacesuits-0918"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/MIT-Compression-Suit-01.jpg?itok=oG78l_45" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/second-skin-spacesuits-0918">Shrink-wrapping spacesuits</a></span>  </li>
+          <li class="views-row views-row-2 views-row-even views-row-last clearfix">  
+          <a href="/2014/special-event-on-stem-education"><img typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/browse_news_image/public/images/2014/bush1.jpg?itok=rShIRfLs" width="90" height="60" alt="" /></a>    
+          <span class="browse_news_by_term_item"><a href="/2014/special-event-on-stem-education">True Diversity: A Multiplier in Global STEM Innovation</a></span>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>                            <div class="link-more">
+                            <a href="/research-centers">See All Centers, Labs, &amp; Programs</a>                            </div>                        
+                        </div>
+                    </li>                    
+                </ul>    
+                <p class="other-options">
+                                            <a href="/user/login">Login</a> 
+                                        <span class="text">or</span>
+                    <a href="/subscribe-newsletter">Subscribe Newsletter</a>
+                </p>    
+                
+            </div>     
+        </div> 
+    </div> 
+    </nav>     
+    
+   
+<article>
+
+<div id="site-content-area-wrapper">
+    <div id="site-content-area">
+
+
+        
+        <div class="view view-news-article-top-slideshow-flexslider view-id-news_article_top_slideshow_flexslider view-display-id-block article-top-slideshow-flexslider view-dom-id-64a4463ad0512f4aa4e6affd679a3f3b">
+
+    <div class="view-header-section">
+        <div class="view-header-section-wrapper">
+    
+        
+  
+    
+
+
+
+
+    
+        </div>
+    </div> <!-- end of view-header-section -->
+    
+    <div class="view-main-section">
+    
+      <div class="view-content">
+      <div class="flexslider">    <ul class="slides">          <li class="">  
+          <div class="slide-wrapper">    
+          <div class="image"><img src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/news_article_image_top_slideshow/public/images/2014/MIT-Visual-Microphone.jpg?itok=mYHdwPM_" title="" alt="" /></div>    
+          <div class="descr"><div class="text"><p class="credits">Image: Christine Daniloff/MIT</p></div><a class="top-slideshow-full" rel="top-slideshow" href="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/images/2014/MIT-Visual-Microphone.jpg">Full Screen</a></div>    
+          </div>  </li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+      </div>
+</div>
+        
+        <header>
+        <div class="content-sides-padding">
+
+            <div class="article-header">
+
+                                    <h1 itemprop="name" class="article-heading">Extracting audio from visual information</h1>
+                
+                <img class="article-cover-image" itemprop="image" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/article_cover_image_small/public/images/2014/MIT-Visual-Microphone_0.jpg?itok=qhukbH4a" width="228" height="152" alt="" title="" />
+                <p id="article-summary"><span itemprop="description">Algorithm recovers speech from the vibrations of a potato-chip bag filmed through soundproof glass.</span>
+
+                                    <a class="article-video-hint" href="#news-video-block">Watch Video</a>
+                                </p>
+            </div>
+        </div>
+        </header>
+
+        <div class="columns-container-1 clearfix">
+
+            <div class="column-1">
+
+                <div id="info-section" class="clearfix content-sides-padding">
+                <div class="left">
+                    <p>
+                        <span itemprop="author">Larry Hardesty | MIT News Office</span>
+                        <br />
+                        <span itemprop="datePublished" content="2014-08-04">August 4, 2014</span>
+                    </p>
+                </div>
+
+                <div class="right">
+                    <div class="options">
+                                        <a id="button-press-inquiry" href="#press-inquiry-section">Press Inquiries</a>
+                                        <a id="button-share" href="#share-choices"><span>Share</span></a>
+                    </div>
+                </div>
+                </div>
+
+                                <div id="press-inquiry-section" class="clearfix">
+                                        <div class="column">
+                        <h3>Press Contact</h3>
+                        <p><strong>Abby Abazorius</strong><br />Email: <a href="mailto:abbya@mit.edu">abbya@mit.edu</a><br />Phone: 617-253-2709<br />MIT News Office<br /><br /></p>
+                    </div>
+                                                            <div class="column">
+                        <h3>Media Resources</h3>
+                        <p>1 images for download<p>
+                        <p><a id="show-media-download" href="/media-download?article=29528">Access Media</a></p>
+                        <p class="note">
+                            Media can only be downloaded from the desktop version of this website.
+                        </p>
+                    </div>
+                                                        </div>
+                
+                <div class="share-article">
+                    <h3>Share</h3>
+
+                    <div id="share-choices" class="clearfix">
+
+                    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                    <a class="addthis_button_facebook"></a>
+                    <a class="addthis_button_twitter"></a>
+                    <a class="addthis_button_google_plusone_share"></a>
+                    <a class="addthis_button_reddit"></a>
+                    <a class="addthis_button_stumbleupon"></a>
+                    <a class="addthis_button_linkedin"></a>
+                    <a class="addthis_button_email"></a>
+                    <a class="addthis_button_print"></a>
+                    <a class="addthis_button_compact"></a>
+                    </div>
+                    <h3 class="label comment">Comment</h3>
+                    <a class="button_commment" href="#separator-comments"><span>Leave a comment</span></a>
+
+                    </div>
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43d5194319780c"></script>
+                </div>
+
+                <div itemprop="articleBody" id="article-body-main" class="content-sides-padding">
+                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+
+<div class="field field-name-field-article-content field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Researchers at MIT, Microsoft, and Adobe have developed an algorithm that can reconstruct an audio signal by analyzing minute vibrations of objects depicted in video. In one set of experiments, they were able to recover intelligible speech from the vibrations of a potato-chip bag photographed from 15 feet away through soundproof glass.</p>
+
+<p>In other experiments, they extracted useful audio signals from videos of aluminum foil, the surface of a glass of water, and even the leaves of a potted plant. The researchers will present their findings in a paper at this year’s Siggraph, the premier computer graphics conference.</p>
+
+<p>“When sound hits an object, it causes the object to vibrate,” says Abe Davis, a graduate student in electrical engineering and computer science at MIT and first author on the new paper. “The motion of this vibration creates a very subtle visual signal that’s usually invisible to the naked eye. People didn’t realize that this information was there.”</p>
+
+<p>Joining Davis on the Siggraph paper are Frédo Durand and Bill Freeman, both MIT professors of computer science and engineering; Neal Wadhwa, a graduate student in Freeman’s group; Michael Rubinstein of Microsoft Research, who did his PhD with Freeman; and Gautham Mysore of Adobe Research.</p>
+
+<p>Reconstructing audio from video requires that the frequency of the video samples — the number of frames of video captured per second — be higher than the frequency of the audio signal. In some of their experiments, the researchers used a high-speed camera that captured 2,000 to 6,000 frames per second. That’s much faster than the 60 frames per second possible with some smartphones, but well below the frame rates of the best commercial high-speed cameras, which can top 100,000 frames per second.</p>
+
+<p><strong>Commodity hardware</strong></p>
+
+<p>In other experiments, however, they used an ordinary digital camera. Because of a quirk in the design of most cameras’ sensors, the researchers were able to infer information about high-frequency vibrations even from video recorded at a standard 60 frames per second. While this audio reconstruction wasn’t as faithful as that with the<br />
+high-speed camera, it may still be good enough to identify the gender of a speaker in a room; the number of speakers; and even, given accurate enough information about the acoustic properties of speakers’ voices, their identities.</p>
+
+<p>The researchers’ technique has obvious applications in law enforcement and forensics, but Davis is more enthusiastic about the possibility of what he describes as a “new kind of imaging.”</p>
+
+<p>“We’re recovering sounds from objects,” he says. “That gives us a lot of information about the sound that’s going on around the object, but it also gives us a lot of information about the object itself, because different objects are going to respond to sound in different ways.” In ongoing work, the researchers have begun trying to determine material and structural properties of objects from their visible response to short bursts of sound.</p>
+<div id="news-video-block"></div><div class="view view-news-article-videos-within-content view-id-news_article_videos_within_content view-display-id-block view-dom-id-09a597100fbd8bb8278f68a81dfe3a4f">
+        
+  
+  
+      <div class="article-content-video wrapped">
+        <div class="wrapper clearfix">
+      
+          <div class="video-wrapper wrapped"><div class="video-container"><iframe width="560" height="315" src="//www.youtube.com/embed/FKXOucXB4a8" frameborder="0"></iframe></div></div>    
+          <div class="caption"><div class="text"><p class="descr">Watch how MIT researchers extract audio from the vibrations of a plant, potato-chip bag, and other objects. </p><p class="credits">Video courtesy of the researchers</p></div></div>    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+<p>In the experiments reported in the Siggraph paper, the researchers also measured the mechanical properties of the objects they were filming and determined that the motions they were measuring were about a tenth of micrometer. That corresponds to five thousandths of a pixel in a close-up image, but from the change of a single pixel’s color value over time, it’s possible to infer motions smaller than a pixel.</p>
+
+<p>Suppose, for instance, that an image has a clear boundary between two regions: Everything on one side of the boundary is blue; everything on the other is red. But at the boundary itself, the camera’s sensor receives both red and blue light, so it averages them out to produce purple. If, over successive frames of video, the blue region encroaches into the red region — even less than the width of a pixel — the purple will grow slightly bluer. That color shift contains information about the degree of encroachment.</p>
+
+<p><strong>Putting it together</strong></p>
+
+<p>Some boundaries in an image are fuzzier than a single pixel in width, however. So the researchers borrowed a technique from <a href="http://newsoffice.mit.edu/2012/amplifying-invisible-video-0622">earlier work</a> on algorithms that amplify minuscule variations in video, making visible previously undetectable motions: the breathing of an infant in the neonatal ward of a hospital, or the pulse in a subject’s wrist.</p>
+
+<p>That technique passes successive frames of video through a battery of image filters, which are used to measure fluctuations, such as the changing color values at boundaries, at several different orientations — say, horizontal, vertical, and diagonal — and several different scales.</p>
+
+<p>The researchers developed an algorithm that combines the output of the filters to infer the motions of an object as a whole when it’s struck by sound waves. Different edges of the object may be moving in different directions, so the algorithm first aligns all the measurements so that they won’t cancel each other out. And it gives greater weight to measurements made at very distinct edges — clear boundaries between different color values.</p>
+
+<p>The researchers also produced a variation on the algorithm for analyzing conventional video. The sensor of a digital camera consists of an array of photodetectors — millions of them, even in commodity devices. As it turns out, it’s less expensive to design the sensor hardware so that it reads off the measurements of one row of photodetectors at a time. Ordinarily, that’s not a problem, but with fast-moving objects, it can lead to odd visual artifacts. An object — say, the <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jamtlands_Flyg_EC120B_Colibri.JPG/1024px-Jamtlands_Flyg_EC120B_Colibri.JPG">rotor of a helicopter</a> — may actually move detectably between the reading of one row and the reading of the next.</p>
+
+<p>For Davis and his colleagues, this bug is a feature. Slight distortions of the edges of objects in conventional video, though invisible to the naked eye, contain information about the objects’ high-frequency vibration. And that information is enough to yield a murky but potentially useful audio signal.</p>
+<p>“This is new and refreshing. It’s the kind of stuff that no other group would do right now,” says Alexei Efros, an associate professor of electrical engineering and computer science at the University of California at Berkeley. “We’re scientists, and sometimes we watch these movies, like James Bond, and we think, ‘This is Hollywood theatrics. It’s not possible to do that. This is ridiculous.’ And suddenly, there you have it. This is totally out of some Hollywood thriller. You know that the killer has admitted his guilt because there’s surveillance footage of his potato chip bag vibrating.”</p>
+<p>Efros agrees that the characterization of material properties could be a fruitful application of the technology. But, he adds, “I’m sure there will be applications that nobody will expect. I think the hallmark of good science is when you do something just because it’s cool and then somebody turns around and uses it for something you never imagined. It’s really nice to have this type of creative stuff.”</p>
+</div></div></div>
+<hr id="separator-comments" />
+
+<section>
+    <div id="article-tags">
+        <p><strong class="label">Topics:</strong> <span class="tags"><a href="/topic/computer-vision">Computer vision</a><span class="comma">, </span><a href="/topic/imaging">Imaging</a><span class="comma">, </span><a href="/topic/school-engineering">School of Engineering</a><span class="comma">, </span><a href="/topic/electrical-engineering-computer-science-eecs">Electrical Engineering &amp; Computer Science (eecs)</a><span class="comma">, </span><a href="/topic/computer-science-and-artificial-intelligence-laboratory-csail">Computer Science and Artificial Intelligence Laboratory (CSAIL)</a><span class="comma">, </span><a href="/topic/research">Research</a></span></p>
+    </div>
+</section>
+
+<section>
+<div id="article-comments" />
+
+<h2>Comments</h2>
+<div id="block-disqus-disqus-comments" class="block block-disqus">
+
+    
+  <div class="content">
+    <div id="disqus_thread"><noscript><p><a href="http://mitnews.disqus.com/?url=http%3A%2F%2Fnewsoffice.mit.edu%2F2014%2Falgorithm-recovers-speech-from-vibrations-0804">View the discussion thread.</a></p></noscript></div>  </div>
+</div>
+
+</div>
+
+</section>
+  </div>
+</div>
+  </div>
+                </div>
+            </div>
+
+            <div class="column-2">
+
+
+                                <section>
+                <div class="related-news-clips">
+                    <h3>Press Mentions</h3>
+                    <ul id="news-clips" class="clearfix"><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.cnn.com/2014/08/06/tech/innovation/visual-microphone-research/index.html " target="_blank"><span class="descr"><p>Heather Kelly of <em>CNN </em>reports on how MIT researchers have developed a new technique to recreate audio from silent video. "We showed that we can determine pretty reliably the gender of a speaker from low-quality sound we managed to recover from a tissue box," says Dr. Michael Rubinstein.&nbsp;</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/logo-CNN-b.png?itok=4hKITgvD" alt="CNN" title="CNN" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.pbs.org/newshour/rundown/scientists-recover-audio/ " target="_blank"><span class="descr"><p>Colleen Shalby reports for the <em>PBS</em> <em>NewHour</em> on the “visual microphone” developed by MIT researchers that can detect and reconstruct audio by analyzing the sound waves traveling through objects.&nbsp;</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/Logo_PBSNewsHour-b.png?itok=-muhoySb" alt="PBS NewsHour" title="PBS NewsHour" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.businessweek.com/articles/2014-08-05/mit-researchers-create-an-all-seeing-ear " target="_blank"><span class="descr"><p><em>Bloomberg Businessweek</em> reporter Drake Bennett writes about how MIT researchers have developed a technique for extracting audio by analyzing the sound vibrations traveling through objects. Bennett reports that the researchers found that sound waves could be detected even when using cell phone camera sensors.&nbsp;</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/bloomber-businessweek-b.png?itok=dxVDXECb" alt="Bloomberg Businessweek" title="Bloomberg Businessweek" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://abcnews.go.com/Technology/mit-researchers-show-reconstruct-speech-watching-bag-chips/story?id=24847498 " target="_blank"><span class="descr"><p>Alyssa Newcomb of <em>ABC News</em> reports on how MIT researchers have developed a new method that can uncover intelligible&nbsp;audio by videotaping everyday objects and translating the sound vibrations back into intelligible sound.&nbsp;</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/abcnews-b_0.png?itok=1-d-PvvW" alt="ABC News" title="ABC News" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.wbur.org/npr/338099752/how-to-turn-sight-into-sound-its-all-in-the-vibrations" target="_blank"><span class="descr"><p>NPR’s Melissa Block examines the new MIT algorithm that can translate visual information into sound. Abe Davis explains that by analyzing sound waves traveling through an object, “you can start to filter out some of that noise and you can actually recover the sound that produced that motion.”&nbsp;</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/NPR-k.png?itok=oYv2isW9" alt="NPR" title="NPR" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2014/08/04/mit-researchers-can-listen-to-your-conversation-by-watching-your-potato-chip-bag/?tid=pm_pop " target="_blank"><span class="descr"><p>Rachel Feltman of <em>The Washington Post</em> examines the new MIT algorithm that can reconstruct sound by examining the visual vibrations of sound waves. “This is a new dimension to how you can image objects,” explains graduate student Abe Davis.&nbsp;</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/Washington-Post-b_8.png?itok=pNXd8fe6" alt="The Washington Post" title="The Washington Post" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.popsci.com/article/science/do-your-potato-chips-have-security-flaw " target="_blank"><span class="descr"><p>In a piece for <em>Popular Science</em>, Douglas Main writes on the new technique developed by MIT researchers that can reconstruct speech from visual information. The researchers showed that, “an impressive amount of information about the audio (although not its content) could also be recorded with a regular DSLR that films at 60 frames per second.”</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/popular-science-b.png?itok=TYkAOK6V" alt="Popular Science" title="Popular Science" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.slate.com/blogs/the_slatest/2014/08/04/using_cameras_and_bag_of_chips_mit_researchers_recreate_sound.html " target="_blank"><span class="descr"><p>Writing for <em>Slate</em>, Elliot Hannon reports on the new technology developed by MIT researchers that allows audio to be extracted from visual information by processing the vibrations of sound waves as they move through objects.</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/Slate-k.png?itok=FQKDG_XM" alt="Slate" title="Slate" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://time.com/3080126/mit-potato-chip-bag-spying/ " target="_blank"><span class="descr"><p><em>Time</em> reporter Nolan Feeney writes about how researchers from MIT have developed a new technique to extract intelligible audio of speech by “videotaping and analyzing the tiny vibrations of objects.”</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/logo-Time-b_6.png?itok=nwvz7Kwn" alt="Time Magazine" title="Time Magazine" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.newscientist.com/article/dn25999-caught-on-tape-cameras-turn-video-into-sound.html#.U-DhFYBdWs1 " target="_blank"><span class="descr"><p>Hal Hodson of <em>New Scientist</em> reports on the new algorithm developed by MIT researchers that can turn visual images into sound. "We were able to recover intelligible speech from maybe 15 feet away, from a bag of chips behind soundproof glass," explains Abe Davis, a graduate student at MIT.&nbsp;</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/newscientist-b.png?itok=DUYo6wG3" alt="New Scientist" title="New Scientist" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://betaboston.com/news/2014/08/04/watch-who-watches-what-you-say-mit-researchers-can-recreate-sound-based-on-video-of-nearby-items/" target="_blank"><span class="descr"><p>Michael Morisy writes for <em>BetaBoston</em> about an algorithm developed by MIT researchers that can recreate speech by analyzing material vibrations. “The sound re-creation technique typically required cameras shooting at thousands of frames per second,” writes Morisy.</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/Logo_BetaBoston_b_1.png?itok=9BUs23lF" alt="BetaBoston" title="BetaBoston" /></span></a>
+                                          </div>
+                                          </li><li class="news-clip">
+                                          <div class="wrapper">
+                                          <a href="http://www.wired.co.uk/news/archive/2014-08/05/extracting-audio-from-video" target="_blank"><span class="descr"><p>“Researchers have developed an algorithm that can use visual signals from videos to reconstruct sound and have used it to recover intelligible speech from a video,” writes Katie Collins for <em>Wired</em> about an algorithm developed by a team of MIT researchers that can derive speech from material vibrations.</p>
+</span><span class="source-logo clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/media_logo_small/public/media-images/Wired_1.png?itok=MzsmOriJ" alt="Wired" title="Wired" /></span></a>
+                                          </div>
+                                          </li></ul>                </div>
+                </section>
+                
+                                <section>
+                <div class="additional-info">
+                    <h3>Related</h3>
+                    <ul><li><a target="_blank" class="external" href="http://dl.acm.org/citation.cfm?id=2601119">Paper: “The Visual Microphone: Passive Recovery of Sound from Video”</a></li><li><a target="_blank" class="external" href="http://people.csail.mit.edu/mrub/VisualMic/">The Visual Microphone</a></li><li><a target="_blank" class="external" href="http://people.csail.mit.edu/abedavis/">Abe Davis</a></li><li><a target="_blank" class="external" href="http://graphics.csail.mit.edu/">Computer Graphics Group</a></li><li><a target="_blank" class="external" href="csail.mit.edu">Computer Science and Artificial Intelligence Laboratory</a></li><li><a target="_blank" class="external" href="http://engineering.mit.edu/">School of Engineering</a></li></ul>                </div>
+                </section>
+                
+                                <section>
+                <div class="additional-info">
+                    <h3>Archives</h3>
+                    <ul><li class="archive-item">
+                                          <a href="/2013/seeing-the-human-pulse-0620" class="clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/article_cover_image_small/public/images/2013/20130619163632-0.jpg?itok=0cXAGyGG" width="228" height="152" alt="" title="" /><span>Seeing the human pulse</span></a>
+                                          </li><li class="archive-item">
+                                          <a href="/2012/amplifying-invisible-video-0622" class="clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/article_cover_image_small/public/images/2012/20120621151524-0.jpg?itok=_ZkB-Yav" width="228" height="152" alt="In these frames of video, a new algorithm amplifies the almost imperceptible change in skin color caused by the pumping of the blood." title="" /><span>Researchers amplify variations in video, making the invisible visible</span></a>
+                                          </li><li class="archive-item">
+                                          <a href="/2011/faster-graphics-0610" class="clearfix"><img class="" typeof="foaf:Image" src="http://newsoffice.mit.edu/sites/mit.edu.newsoffice/files/styles/article_cover_image_small/public/images/2011/20110609141747-0.jpg?itok=iyIkA8DT" width="228" height="152" alt="" title="" /><span>Faster computer graphics</span></a>
+                                          </li></ul>                </div>
+                </section>
+                            </div>
+        </div>
+
+    </div>
+</div>
+
+</article>
+
+  <div class="region region-content-footer">
+    <div id="block-mitnews-news-collection-block-latest-news-for-article" class="block block-mitnews-news-collection">
+
+    
+  <div class="content">
+    <div id="latest-news-content-block"></div>  </div>
+</div>
+  </div>
+
+    <footer>
+    
+    
+
+    <div id="site-footer-area-wrapper">
+    
+        <div id="site-footer-area">
+            
+            <div class="container clearfix">
+                <div id="site-footer-about">
+                    <h2>About This Website</h2>
+            
+                    <p>This Website is maintained by the MIT News Office.</p>
+                    
+                    <div class="clearfix">
+                    <ul class="column">
+                        <li><a href="/about">About the MIT News Office</a></li>
+                        <li><a href="/press">MIT News Press Center</a></li>
+                        <li><a href="/press/inquries">Press Inquries</a></li>
+                        <li><a href="/press/filming-guidelines">Filming Guidelines</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/terms-of-use">Terms of Use</a></li>
+                    </ul>
+            
+                    <ul class="column">
+                        <li><a href="/rss">RSS</a></li>
+                        <li><a href="https://twitter.com/mit" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/MITnews" target="_blank">Facebook</a></li>
+                        <li><a href="https://plus.google.com/+mit/posts" target="_blank">Google+</a></li>
+                        <li><a href="http://instagram.com/mitpics" target="_blank">Instagram</a></li>
+                        <li><a href="http://www.flickr.com/photos/cpsphotolibrary" target="_blank">Flickr</a></li>
+                        <li><a href="http://www.youtube.com/MIT" target="_blank">YouTube</a></li>
+                    </ul>
+            
+                    <ul class="column">
+                        <li><a href="http://web.mit.edu/" target="_blank">MIT Homepage</a></li>
+                        <li><a href="http://video.mit.edu/" target="_blank">MIT Video</a></li>
+                        <li><a href="http://connect.mit.edu/" target="_blank">MIT Connect</a></li>
+                        <li><a href="http://resources.mit.edu/" target="_blank">MIT Resources</a></li>
+                        <li><a href="http://events.mit.edu/" target="_blank">Events Calendar</a></li>
+                    </ul>  
+            
+                    <ul class="column">
+                        <li><a href="http://web.mit.edu/aboutmit/" target="_blank">About MIT</a></li>
+                        <li><a href="http://web.mit.edu/admissions/" target="_blank">Admissions</a></li>
+                        <li><a href="http://alum.mit.edu" target="_blank">Alumni</a></li>
+                        <li><a href="http://web.mit.edu/education/" target="_blank">Education</a></li>
+                        <li><a href="http://web.mit.edu/research/" target="_blank">Labs and Centers</a></li>                     
+                    </ul>
+                    </div>
+                </div>
+            
+                <div id="site-footer-resources">
+                    <h2>Resources</h2>
+                    <ul class="buttons">
+                        <li><a href="/user/login?destination=user/campus-news/submit">Submit Campus News</a></li>
+                        <li><a href="/user/login?destination=user/pitch-story/submit">Pitch a Story</a></li>
+                        <li><a href="/subscribe-newsletter">Sign Up for Newsletter</a></li>
+                        <li><a href="/press/subscribe-to-press-releases">Subscribe to Press Releases</a></li>
+                        <li><a href="/terms-of-use">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container clearfix">
+                <div class="right">
+                    <a id="button-give-to-mit" href="/give-to-mit" target="_blank">GIVE TO MIT</a>
+                </div>            
+                <div class="left clearfix">
+                    <a class="footer-logo" href="http://web.mit.edu" target="_blank">Massachusetts Institute of Technology</a>
+                    <div class="footer-logo-text">
+                    <p>
+                    <a href="/about">MIT News Office</a> 
+                    &bull; 
+                    <a href="http://whereis.mit.edu/?go=11" target="_blank">Building 11-400</a><br />
+                    <a href="http://web.mit.edu" target="_blank">Massachusetts Institute of Technology</a> 
+                    &bull; 
+                    Cambridge, MA 02139-4307
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+    
+    </footer>
+
+</div>
+
+<div class="back-to-top"><a href="#"><span>Back to the top</span></a></div>
+    
+</body>
+</html>

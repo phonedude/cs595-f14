@@ -1,0 +1,617 @@
+status: 200
+x-ah-environment: prod
+vary: Accept-Encoding
+content-length: 59812
+x-request-id: v-1bc9d20c-4732-11e4-a2d7-12313d191a15
+content-language: en
+x-age: 0
+etag: "1411924126"
+cache-control: no-cache, must-revalidate, post-check=0, pre-check=0
+x-varnish: 2217042425
+accept-ranges: bytes
+expires: Sun, 28 Sep 2014 17:08:48 GMT
+last-modified: Sun, 28 Sep 2014 17:08:46 +0000
+-content-encoding: gzip
+link: <http://pro32.ap.org/article/nfl-union-agree-new-drug-policy-hgh-testing>;
+ rel="canonical",<http://pro32.ap.org/node/442001>;
+ rel="shortlink",<http://pro32.ap.org/node/442001>;
+ rel="shortlink",<http://pro32.ap.org/article/nfl-union-agree-new-drug-policy-hgh-testing>;
+ rel="canonical"
+date: Sun, 28 Sep 2014 17:08:48 GMT
+content-location: http://pro32.ap.org/article/nfl-union-agree-new-drug-policy-hgh-testing
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=utf-8
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdADQYFU1NT"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<meta property="og:site_name" content="Pro32: Head to Head" />
+<meta property="og:url" content="http://pro32.ap.org/article/nfl-union-agree-new-drug-policy-hgh-testing" />
+<link rel="shortcut icon" href="http://pro32.ap.org/profiles/ap/themes/ap_pro32/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="http://pro32.ap.org/profiles/ap/themes/ap_pro32/touch-icon.png" rel="apple-touch-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta property="og:type" content="article" />
+<link rel="shortlink" href="http://pro32.ap.org/node/442001" />
+<meta name="description" content="NEW YORK (AP) — The NFL finally will have HGH testing, perhaps as early as the end of this month." />
+<meta property="og:title" content="NFL, union agree to new drug policy, HGH testing" />
+<meta property="og:description" content="NEW YORK (AP) — The NFL finally will have HGH testing, perhaps as early as the end of this month." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://pro32.ap.org/article/nfl-union-agree-new-drug-policy-hgh-testing" />
+  <title>NFL, union agree to new drug policy, HGH testing | Pro32: Head to Head</title>
+    <style type="text/css" media="all">@import url("http://pro32.ap.org/modules/system/system.base.css?ncmblj");
+@import url("http://pro32.ap.org/modules/system/system.menus.css?ncmblj");
+@import url("http://pro32.ap.org/modules/system/system.messages.css?ncmblj");
+@import url("http://pro32.ap.org/modules/system/system.theme.css?ncmblj");</style>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/css/flyout.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/contrib/date/date_api/date.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/contrib/date/date_popup/themes/datepicker.1.7.css?ncmblj");
+@import url("http://pro32.ap.org/modules/field/theme/field.css?ncmblj");
+@import url("http://pro32.ap.org/modules/node/node.css?ncmblj");
+@import url("http://pro32.ap.org/modules/search/search.css?ncmblj");
+@import url("http://pro32.ap.org/modules/user/user.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/contrib/views/css/views.css?ncmblj");</style>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/modules/contrib/ctools/css/ctools.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/custom/core/ap_microformats/ap_microformats.css?ncmblj");</style>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/alpha-reset.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/alpha-mobile.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/alpha-alpha.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-text.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-branding.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-menu.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-visuals.css?ncmblj");</style>
+<style type="text/css" media="screen">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/global.css?ncmblj");</style>
+<style type="text/css" media="print">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/print.css?ncmblj");</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default-normal.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?ncmblj");</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default-narrow.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-12.css?ncmblj");</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default-normal.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?ncmblj");</style>
+<!--<![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-5";
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/drupal.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/node/442001", [728, 90], "dfp-ad-leaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/node/442001", [300, 50], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/node/442001", [[300, 600], [300, 250]], "dfp-ad-half_page")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/node/442001", [300, 250], "dfp-ad-mediumrectangle2")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.hoverIntent.minified.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.masonry.min.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_masonry.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_flyout.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_article/js/dynamic-carousel.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_article/js/jquery.wmuslider.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_article/js/ap_carousel.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/optional/responsive_dfp_box/js/responsive_dfp.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/contrib/google_analytics/googleanalytics.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-27590430-5"]);_gaq.push(['_setCustomVar', 1, "customer", "Rankings, highlights and photos", 3]);_gaq.push(['_setCustomVar', 2, "Item ID", "89075b4aa21b4320924c095431ceb429", 3]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/contrib/disqus/disqus.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/themes/ap_pro32/js/mondernizr.custom.min.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/themes/omega/omega/js/omega-mediaqueries.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ap_pro32","theme_token":"NhzWIO91OG71YslEuHn8KSN6yIWb4TBGiF7oWSUfC_0","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"1":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"2":1,"3":1,"4":1,"5":1,"6":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"7":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/dynamic-carousel.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/jquery.wmuslider.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_carousel.js":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"8":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"9":1,"http:\/\/use.typekit.com\/uta3cck.js":1,"10":1,"profiles\/ap\/modules\/contrib\/disqus\/disqus.js":1,"profiles\/ap\/themes\/ap_pro32\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-text.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/ap_pro32\/css\/global.css":1,"profiles\/ap\/themes\/ap_pro32\/css\/print.css":1,"ie::normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"ie::normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-normal.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"narrow::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-narrow.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-normal.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"disqus":{"domain":"appro32headtohead","url":"http:\/\/www.pro32.ap.org\/article\/nfl-union-agree-new-drug-policy-hgh-testing","title":"NFL, union agree to new drug policy, HGH testing","identifier":"node\/442001"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-442001 node-type-ap-article context-article">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>  
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+    <div class="clearfix logo-ad">
+                <div class="logo-img">
+                  <img border="0" src="http://pro32.ap.org/sites/pro32/files/aplogo_png.png" alt="Pro32: Head to Head" title="Pro32: Head to Head" />              </div>
+              <div class="block block-boxes block-boxes-responsive-dfp block-responsive-leaderboard block-boxes-responsive-leaderboard odd block-without-title" id="block-boxes-responsive-leaderboard">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id='boxes-box-responsive_leaderboard' class='boxes-box'><div class="boxes-box-content"><div id="responsive_leaderboard-responsive-ad" class="responsive-ad"></div></div></div>    </div>
+  </div>
+</div>    </div>
+  </div>
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-vertical-branding" id="region-vertical-branding">
+  <div class="region-inner region-vertical-branding-inner">
+    
+        <div class="branding-data clearfix">
+                        <hgroup class="site-name-slogan">        
+                        <h1 class="site-name"><a href="/" rel="home" title="Home">Pro32: Head to Head</a></h1>
+              </hgroup>
+          </div>
+        
+      </div>
+</div>
+  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">    <div class="menu-zone-inner-wrapper">
+	  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+	    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav class="navigation">
+      <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <form action="/article/nfl-union-agree-new-drug-policy-hgh-testing" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search " type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-LdFtXnTNsEehzqXO5_xUPNVBDKTGRX_5-SepeFWFZgI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div><h4 class="sections-menu"><a href="#">Sections</a></h4><ul class="menu"><li class="first leaf"><a href="/" title="">Home</a></li>
+<li class="leaf"><a href="/matchups" title="">Matchups</a><div class="matchup-flyout clearfix"><a href="/matchups/week-2-dolphins-1-0-bills-1-0">Week 2: Dolphins (1-0) at Bills (1-0)</a><a href="/matchups/week-2-jets-1-0-packers-0-1">Week 2: Jets (1-0) at Packers (0-1)</a><a href="/matchups/week-2-falcons-1-0-bengals-1-0">Week 2: Falcons (1-0) at Bengals (1-0)</a><a href="/matchups/week-2-patriots-0-1-vikings-1-0">Week 2: Patriots (0-1) at Vikings (1-0)</a><a href="/matchups/week-2-eagles-1-0-colts-0-1-monday">Week 2: Eagles (1-0) at Colts (0-1), Monday</a><a href="/matchups/week-3-redskins-1-1-eagles-2-0">Week 3: Redskins (1-1) at Eagles (2-0)</a><a href="/matchups/week-3-ravens-1-1-browns-1-1">Week 3: Ravens (1-1) at Browns (1-1)</a><a href="/matchups/week-3-broncos-2-0-seahawks-1-1">Week 3: Broncos (2-0) at Seahawks (1-1)</a><a href="/matchups/week-3-bears-1-1-jets-1-1-monday">Week 3: Bears (1-1) at Jets (1-1), Monday</a><a href="/matchups/week-4-giants-1-2-redskins-1-2">Week 4: Giants (1-2) at Redskins (1-2)</a><a href="/matchups/week-4-eagles-3-0-49ers-1-2">Week 4: Eagles (3-0) at 49ers (1-2)</a><a href="/matchups/week-4-packers-1-2-bears-2-1">Week 4: Packers (1-2) at Bears (2-1)</a><a href="/matchups/week-4-bills-2-1-texans-2-1">Week 4: Bills (2-1) at Texans (2-1)</a><a href="/matchups/week-4-patriots-2-1-chiefs-1-2-monday-night">Week 4: Patriots (2-1) at Chiefs (1-2), Monday night</a><div></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Pro32</a></li>
+<li class="leaf"><a href="/divisions" title="">Divisions</a><div class="conference-flyout clearfix">
+      <a href="/conferences/afc-east">AFC East</a>      <a href="/conferences/afc-north">AFC North</a>      <a href="/conferences/afc-south">AFC South</a>      <a href="/conferences/afc-west">AFC West</a>      <a href="/conferences/nfc-east">NFC East</a>      <a href="/conferences/nfc-north">NFC North</a>      <a href="/conferences/nfc-south">NFC South</a>      <a href="/conferences/nfc-west">NFC West</a>  </div></li>
+<li class="last leaf"><a href="/galleries">Photos</a></li>
+</ul>    </nav>
+  </div>
+</div>
+	  </div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-8 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                <div class="tabs clearfix"></div>        <div class="block block-system block-main block-system-main even block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-442001" rel="wicked dude">
+  <header>
+        <h1 class="entry-title node-title title" rel="bookmark" id="page-title">NFL, union agree to new drug policy, HGH testing</h1>
+      <div class="article-data">
+        <span  class="updated" title="2014-09-17T16:58:33-04:00">Sep. 17, 2014 4:58 PM EDT</span>  </div>
+  </header>
+  <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a> &raquo; <a href="/tags/wes-welker">Wes Welker</a> &raquo; NFL, union agree to new drug policy, HGH testing</div>  <div class="node-body clearfix">
+	  <div class="block block-ap-misc block-ap-social-media block-ap-misc-ap-social-media odd block-without-title" id="block-ap-misc-ap-social-media">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="ap-article-social clearfix">
+	<h3>Share</h3>
+	<div class="social-widgets clearfix">
+				<div class="social-fbook social-share">
+		<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>    </div>
+  </div>
+</div>	  <div class="node-content">
+		  		  
+        
+        <div class="slideshow">
+          <div class="clearfix">
+            <ul id="article-slider" class="photo-slideshow clearfix">
+                          <li class="photo-item">
+                							    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="http://binaryapi.ap.org/add4ebe3eef646b3a341fd4dfd9dfc1c/460x.jpg" alt="Wes Welker" title="Wes Welker" /></div></div>
+							    <span class="photo-credit">&nbsp;</span>
+							    							    <div class="photo-caption">
+							      <div class="inner">
+						  	      <div class="field-name-caption"><block><p>FILE - In this Aug. 28, 2014, file photo, Denver Broncos wide receiver Wes Welker (83) watches the action from the sideline in the second half of a NFL preseason football game against the Dallas Cowboys in Arlington, Texas. The NFL reached an agreement with the players association on changes to its performance-enhancing drug policy, including the addition of human growth hormone testing, which will allow the Welker and two other previously suspended players to return to their teams this week. Under the new rules announced Wednesday, Sept. 17, 2014, players who test positive for banned stimulants in the offseason will no longer be suspended. Instead, they will be referred to the substance abuse program. (AP Photo/LM Otero, File)</p></div>							      </div>
+							    </div>
+							    							                </li>
+                          <li class="photo-item">
+                							    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="http://binaryapi.ap.org/f667282ac8b74e0d99d4e1dcf48a65bf/460x.jpg" alt="DeMaurice Smith, Roger Goodell" title="DeMaurice Smith, Roger Goodell" /></div></div>
+							    <span class="photo-credit">&nbsp;</span>
+							    							    <div class="photo-caption">
+							      <div class="inner">
+						  	      <div class="field-name-caption"><block><p>FILE - In tis July 25, 2011, file photo, NFL Commissioner Roger Goodell, right, accompanied by NFLPA Executive Director DeMaurice Smith, left, speaks during a news conference at the NFL Players Association in Washington. The NFL reached an agreement with the players association on changes to its performance-enhancing drug policy, including the addition of human growth hormone testing, which will allow the Broncos' Wes Welker and two other previously suspended players to return to their teams this week. Under the new rules announced Wednesday, Sept. 17, 2014, players who test positive for banned stimulants in the offseason will no longer be suspended. Instead, they will be referred to the substance abuse program. (AP Photo/Carolyn Kaster, File)</p></div>							      </div>
+							    </div>
+							    							                </li>
+                        </ul>
+          </div>
+					<div class="slider-controls clearfix">
+            <ul class="slidecontrols">
+							<li><a href="#article-slider" class="prev">Prev</a></li>
+							<li class="slider-position"></li>
+							<li><a href="#article-slider" class="next">Next</a></li>
+						</ul>
+					</div>
+        </div>
+      		  
+		  
+		  <div class="content clearfix article-body">
+		    <div  class="hnews-hidden"><span  class="dateline">NEW YORK</span><a  rel="item-license" id="license-37415b1ac8ca4635e3973599b4ee94f1" href="#license-37415b1ac8ca4635e3973599b4ee94f1">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.7143</span><span  class="longitude">-74.006</span></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden entry-content"><div class="field-items"><div class="field-item even"><p><block><p>NEW YORK (AP) — The NFL finally will have HGH testing, perhaps as early as the end of this month.</p>
+<p>And of more immediate impact — this weekend — the new performance-enhancing drug policy the league and players' union agreed to Wednesday will allow the Broncos' Wes Welker and two other suspended players to return to the field.</p>
+<p>Welker, Dallas Cowboys defensive back Orlando Scandrick and St. Louis Rams wide receiver Stedman Bailey had been suspended for four games. All can return Sunday under the new rules in which players who test positive for banned stimulants in the offseason will no longer be suspended. Instead, they will be referred to the substance abuse program.</p>
+<p>Players who test positive for banned stimulants during the season will continue to get four-game suspensions.</p>
+<p>"I said it was flawed and we got it fixed," said Welker, who tested positive for amphetamines in the offseason. "I think you know that just kind of goes to show it was flawed and it's fixed now and we can move on from it."</p>
+<p>The league and union are also nearing an agreement on changes to the substance abuse policy. That could reduce Cleveland Browns receiver Josh Gordon's season-long ban.</p>
+<p>Testing for HGH was agreed upon in 2011 when a new collective bargaining agreement ended the lockout of the players. But the players had balked at the science in the testing and the appeals process for positive tests. Under the new deal, appeals of positive tests in the PED program will be heard by third-party arbitrators jointly selected and paid for by the NFL and union. Appeals will be processed more expeditiously under altered procedures.</p>
+<p>The new rules also change the length of suspensions. Previously, all first-time violations of the performance-enhancing drug policy resulted in at least a four-game suspension.</p>
+<p>Now, use of a diuretic or masking agent will result in a two-game suspension. The punishment for steroids, in-season use of stimulants, HGH or other banned substances is four games. Evidence of an attempt to manipulate a test is a six-game suspension.</p>
+<p>A second violation will result in a 10-game ban, up from a minimum of eight games. A third violation is at least a two-year suspension. Before, the ban was at least a year.</p>
+<p>"We are talking about cleaning up our game and keeping a clean game," Scandrick said Wednesday. "We are not cleaning up our game if we are suspending guys for stimulants and not testing guys for human growth hormones."</p>
+<p>Rams coach Jeff Fisher said he will use Bailey on special teams and probably as a wideout.</p>
+<p>"It feels extremely good to be back here," Bailey said. "The first two weeks it was a dreadful feeling for me and I'm just happy it's all over now."</p>
+<p>Reps. Darrell E. Issa and Elijah E. Cummings, the chairman and ranking member of the House Committee on Oversight and Government Reform, chipped in with their approval of the HGH testing:</p>
+<p>"This new HGH policy sends a clear message to NFL players, as well as student-athletes at the collegiate, high school, and youth levels, that HGH and other performance-enhancing drugs are highly dangerous and will not be tolerated in athletic competition," they said in a statement.</p>
+<p>___</p>
+<p>AP NFL website: <a href="http://www.pro32.ap.org">www.pro32.ap.org</a> and <a href="http://www.twitter.com/AP_NFL">www.twitter.com/AP_NFL</a></p>
+</block></p></div></div></div>		    		  </div>
+		  
+		  
+
+		  <div class="clearfix share-block">
+		    <div class="ap-article-social clearfix">
+	<h3>Share</h3>
+	<div class="social-widgets clearfix">
+				<div class="social-fbook social-share">
+		<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>		  </div>
+		  
+		  <div class="clearfix tags-block">
+		    <div  class="ap-article-tags categories">
+    
+    
+    
+<h3 class="h3_tags">Tags</h3>
+<div class="tags">
+<a href="/tags/jason-garrett" rel="tag">Jason Garrett</a>, <a href="/tags/jeff-fisher" rel="tag">Jeff Fisher</a>, <a href="/tags/general-news" rel="tag">General news</a>, <a href="/tags/personnel" rel="tag">Personnel</a>, <a href="/tags/business" rel="tag">Business</a>, <a href="/tags/sports-business" rel="tag">Sports business</a>, <a href="/tags/sports-governance" rel="tag">Sports governance</a>, <a href="/tags/health" rel="tag">Health</a>, <a href="/tags/sports-transactions" rel="tag">Sports transactions</a>, <a href="/teams/cleveland-browns" rel="tag">Cleveland Browns</a>, <a href="/teams/denver-broncos" rel="tag">Denver Broncos</a>, <a href="/teams/dallas-cowboys" rel="tag">Dallas Cowboys</a>, <a href="/teams/st-louis-rams" rel="tag">St. Louis Rams</a>, <a href="/tags/wes-welker" rel="tag">Wes Welker</a>, <a href="/conferences/nfc-east" rel="tag">NFC East</a>, <a href="/tags/stedman-bailey" rel="tag">Stedman Bailey</a>, <a href="/tags/labor-negotiations" rel="tag">Labor negotiations</a>, <a href="/tags/orlando-scandrick" rel="tag">Orlando Scandrick</a>, <a href="/tags/josh-gordon" rel="tag">Josh Gordon</a>, <a href="/tags/doping" rel="tag">Doping</a>, <a href="/tags/darrell-issa" rel="tag">Darrell Issa</a>, <a href="/tags/doping-regulations" rel="tag">Doping regulations</a></div>
+</div>		  </div>  
+		  <a name="comments"></a>
+		  <div class="clearfix comment-block">
+		    <h2 class="block-title">Comments</h2>
+		    <div id="disqus_thread"><noscript><p><a href="http://appro32headtohead.disqus.com/?url=http%3A%2F%2Fwww.pro32.ap.org%2Farticle%2Fnfl-union-agree-new-drug-policy-hgh-testing">View the discussion thread.</a></p></noscript></div>		  </div>
+	  </div> 
+  </div>
+</article>    </div>
+  </div>
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="ap-recent-articles"><section class="block block-ap-misc block-ap-recent-articles block-ap-misc-ap-recent-articles odd" id="block-ap-misc-ap-recent-articles">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Latest News</h2>
+            
+    <div class="content clearfix">
+      
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-454476">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/orders-devon-still-jersey-approaching-10000" title="Orders for Devon Still jersey approaching 10,000"><a href="/article/orders-devon-still-jersey-approaching-10000">Orders for Devon Still jersey approaching 10,000</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">CINCINNATI</span><a  rel="item-license" id="license-e09159e997e2aa362fd4e42e1b18edc2" href="#license-e09159e997e2aa362fd4e42e1b18edc2">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">39.162</span><span  class="longitude">-84.4569</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:02:43-04:00">Sep. 28, 2014 1:02 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-454441">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/mccown-inactive-bucs-foster-out-steelers" title="McCown inactive for Bucs, Foster out for Steelers"><a href="/article/mccown-inactive-bucs-foster-out-steelers">McCown inactive for Bucs, Foster out for Steelers</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PITTSBURGH</span><a  rel="item-license" id="license-f18baec514c72429d15bbfae30c94d35" href="#license-f18baec514c72429d15bbfae30c94d35">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.4406</span><span  class="longitude">-79.9959</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:43:10-04:00">Sep. 28, 2014 12:43 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-454416">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/belichick-reid-have-history-franchise-qbs"><img src="http://binaryapi.ap.org/a257fc8601b64ed89d2ea4f1d9932be3/60x.jpg" alt="Bill Belichick, Josh McDaniels, Tom Brady" title="Bill Belichick, Josh McDaniels, Tom Brady" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/belichick-reid-have-history-franchise-qbs" title="Belichick, Reid have history with franchise QBs"><a href="/article/belichick-reid-have-history-franchise-qbs">Belichick, Reid have history with franchise QBs</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">KANSAS CITY, Mo.</span><a  rel="item-license" id="license-1aacd378ffec115f84a53f21635b6ecc" href="#license-1aacd378ffec115f84a53f21635b6ecc">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">39.0997</span><span  class="longitude">-94.5786</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:31:55-04:00">Sep. 28, 2014 12:31 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-454396">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/illness-sidelines-bears-allen-packers-game" title="Illness sidelines Bears&#039; Allen for Packers game"><a href="/article/illness-sidelines-bears-allen-packers-game">Illness sidelines Bears&#039; Allen for Packers game</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">CHICAGO</span><a  rel="item-license" id="license-fdc071a3b3a59f84207fcd8c70252113" href="#license-fdc071a3b3a59f84207fcd8c70252113">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">41.85</span><span  class="longitude">-87.65</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:10:41-04:00">Sep. 28, 2014 12:10 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-454391">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/foster-and-lechler-active-texans-against-bills" title="Foster and Lechler active for Texans against Bills"><a href="/article/foster-and-lechler-active-texans-against-bills">Foster and Lechler active for Texans against Bills</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">HOUSTON</span><a  rel="item-license" id="license-4b00ecf6234142fdfad2292fadb2fdb5" href="#license-4b00ecf6234142fdfad2292fadb2fdb5">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">29.7633</span><span  class="longitude">-95.3633</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:09:18-04:00">Sep. 28, 2014 12:09 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>    </div>
+  </div>
+</section></div><div class="block block-dfp block-half-page block-dfp-half-page even block-without-title" id="block-dfp-half-page">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-half_page-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-half_page" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-half_page");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div><div class="block block-block block-6 block-block-6 odd block-without-title" id="block-block-6">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p></p><center><br /><h2 class="block-title"><a href="/ap-now-pro32-sundays" target="_blank">AP Now: Pro32 Sundays</a></h2>
+<p><a href="/ap-now-pro32-sundays" target="_blank"><img alt="" src="http://binaryapiqa.ap.org/1ccc3f31f995425295033c7867260fda/460x.jpg" style="width: 300px; height: 185px;" /></a></p>
+<p></p></center>
+<p>Check out live content each Sunday from AP reporters and photographers at every game, including updates, fantasy information, statistics, injury news and behind-the-scenes images and notes.</p>
+<h2><a href="/ap-now-pro32-sundays" target="_blank">AP Now: Pro32 Sundays</a></h2>
+    </div>
+  </div>
+</div><div class="block block-ap-poll block-top-25-right-rail block-ap-poll-top-25-right-rail even block-without-title" id="block-ap-poll-top-25-right-rail">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <h2 class="block-title">The AP Pro32</h2>  <div class="poll-header-info clearfix">
+    Poll Released: Sep 23  </div>
+  <table>
+<caption></caption>
+ <thead><tr><th class="trank">Rank</th><th class="tname">team</th><th class="tprev">PV Rank</th> </tr></thead>
+<tbody>
+ <tr class="1 seattle-seahawks odd"><td class="trank">1</td><td class="tname"><a href="/teams/seattle-seahawks">Seattle Seahawks</a> (9)</td><td class="tprev">2</td> </tr>
+ <tr class="2 cincinnati-bengals even"><td class="trank">2</td><td class="tname"><a href="/teams/cincinnati-bengals">Cincinnati Bengals</a> (3)</td><td class="tprev">3</td> </tr>
+ <tr class="3 denver-broncos odd"><td class="trank">3</td><td class="tname"><a href="/teams/denver-broncos">Denver Broncos</a></td><td class="tprev">1</td> </tr>
+ <tr class="4 philadelphia-eagles even"><td class="trank">4</td><td class="tname"><a href="/teams/philadelphia-eagles">Philadelphia Eagles</a></td><td class="tprev">4</td> </tr>
+ <tr class="5 arizona-cardinals odd"><td class="trank">5</td><td class="tname"><a href="/teams/arizona-cardinals">Arizona Cardinals</a></td><td class="tprev">6</td> </tr>
+ <tr class="6 san-diego-chargers even"><td class="trank">6</td><td class="tname"><a href="/teams/san-diego-chargers">San Diego Chargers</a></td><td class="tprev">9</td> </tr>
+ <tr class="7 new-england-patriots odd"><td class="trank">7</td><td class="tname"><a href="/teams/new-england-patriots">New England Patriots</a></td><td class="tprev">7</td> </tr>
+ <tr class="8 chicago-bears even"><td class="trank">8</td><td class="tname"><a href="/teams/chicago-bears">Chicago Bears</a></td><td class="tprev">12</td> </tr>
+ <tr class="9 baltimore-ravens odd"><td class="trank">9</td><td class="tname"><a href="/teams/baltimore-ravens">Baltimore Ravens</a></td><td class="tprev">14</td> </tr>
+ <tr class="10 detroit-lions even"><td class="trank">10</td><td class="tname"><a href="/teams/detroit-lions">Detroit Lions</a></td><td class="tprev">16</td> </tr>
+</tbody>
+</table>
+<div class="poll-footer-info clearfix"><h4><a href="/poll">View Full Poll</a></h4></div>    </div>
+  </div>
+</div><div class="block block-dfp block-mediumrectangle2 block-dfp-mediumrectangle2 odd block-without-title" id="block-dfp-mediumrectangle2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-mediumrectangle2-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle2" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <h4 class="sections-menu"><a href="#">Sections</a></h4><div class="bottom-menu-frame"><ul class="menu"><li class="first leaf"><a href="/" title="">Home</a></li>
+<li class="leaf"><a href="/matchups" title="">Matchups</a></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Pro32</a></li>
+<li class="leaf"><a href="/divisions" title="">Divisions</a></li>
+<li class="last leaf"><a href="/galleries">Photos</a></li>
+</ul></div>  </div>
+</div><div class="grid-12 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div id="copyright">AP Sports <span class="pipe">|</span> &#169; 2014 Associated Press</div><ul class="menu"><li class="leaf"><a href="/privacy-policy" title="">Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-use" title="">Terms of Use</a></li>
+<li class="leaf"><a href="http://www.apimages.com">AP Images</a></li>
+<li class="last leaf"><a href="http://www.ap.org" title="">ap.org</a></li>
+</ul>  </div>
+</div>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div>  <script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"560baa128a","applicationID":"555721","transactionName":"MlRTYkFSWkNUU0EKDQsecFVHWlteGl5aBwc6QVBRVmxCWVBH","queueTime":0,"applicationTime":1290,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>

@@ -1,0 +1,442 @@
+
+<!DOCTYPE HTML>
+<html><head><script src="/apply/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/apply/jslibrary/1409259192000/sfdc/SfdcCore.js" type="text/javascript"></script><script src="/apply/resource/1395783749000/pifa/pifa/jquery.min.js" type="text/javascript"></script><script src="/apply/resource/1395783749000/pifa/pifa/simple-expand.min.js" type="text/javascript"></script><script src="/apply/static/111213/js/picklist.js" type="text/javascript"></script><script src="/apply/jslibrary/1406927496000/sfdc/VFState.js" type="text/javascript"></script><link class="user" href="/apply/resource/1395783749000/pifa/pifa/baseline.css" rel="stylesheet" type="text/css" /><link class="user" href="/apply/resource/1395783749000/pifa/pifa/style.css" rel="stylesheet" type="text/css" /></head><body>
+
+
+<head>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    <meta charset="UTF-8" />
+    <title>Apply for Round 3 - Presidential Innovation Fellows</title>
+    <meta content="General Services Administration - http://gsa.gov/" name="DC.creator" />
+    <meta content="en" name="DC.language" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="//whitehouse.gov/sites/default/themes/whitehouse/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+        <style type="text/css">
+            #divTimer {
+                color: red;
+                font-size: 12pt;
+            }
+        </style>
+
+    
+<script type="text/javascript">
+
+    var humanAnswerNum = -1;
+    var humanAnswerWord = '';
+
+    function nameValidation() {
+    
+        var nametxt = document.getElementById('frmFullName').value;
+        var emailtxt = document.getElementById('frmEmailAddress').value;
+        var vbranchtxt = document.getElementById('frmvet-branch').value;
+        var vdatetxt = document.getElementById('frmvet-date').value;
+        var vURL1 = (document.getElementById('frmLink1').value).replace(/\s/g,'');
+        var vURL2 = (document.getElementById('frmLink2').value).replace(/\s/g,'');
+        var vURL3 = (document.getElementById('frmLink3').value).replace(/\s/g,'');
+        document.getElementById('frmLink1').value = vURL1;
+        document.getElementById('frmLink2').value = vURL2;
+        document.getElementById('frmLink3').value = vURL3;
+        var ifrResume = document.getElementById('appPage:appForm:frmResume_frame');
+        var ifrResumeHTML = $(ifrResume).contents().find('html:first').find('body:first').html();                                   
+        var formvalid = true;
+        var checkHumanResult = checkAnswer();
+        
+        if (nametxt == null || nametxt.length == 0 || nametxt.trim()=="") {
+            alert('Name is required.');
+            document.getElementById('frmFullName').focus();
+            return false;
+        }
+        else if (emailtxt == null || emailtxt.length == 0 || emailtxt.trim() =="") {
+            alert('Email Address is required.');
+            document.getElementById('frmEmailAddress').focus();
+            return false;
+        }
+        else if((document.getElementsByName('frmVetStatus')[1].checked || 
+                 document.getElementsByName('frmVetStatus')[2].checked) &&
+                 vbranchtxt == "--select--" ) {
+            alert('Branch of Service is required.');
+            document.getElementById('frmvet-branch').focus();
+            return false;
+        }
+        else if((document.getElementsByName('frmVetStatus')[1].checked || 
+                 document.getElementsByName('frmVetStatus')[2].checked) &&
+                 (vdatetxt == null || vdatetxt.length == 0 || vdatetxt.trim() =="") ) {
+            alert('Date Entered Active Duty is required.');
+            document.getElementById('frmvet-date').focus();
+            return false;
+        }
+        else if (emailtxt.length > 0) {
+            var reg = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!reg.test(emailtxt)){
+                alert("Not a valid Email address.");
+                document.getElementById('frmEmailAddress').focus();
+                return false;
+            } else if ((vURL1 != null) && (vURL1.length > 0) && (! isValidURL(vURL1)) )  {
+                alert("Not a valid URL.");
+                document.getElementById('frmLink1').value="";
+                document.getElementById('frmLink1').focus();
+                return false;
+            } else if ((vURL2 != null) && (vURL2.length > 0) && (! isValidURL(vURL2)) )  {
+                alert("Not a valid URL.");
+                document.getElementById('frmLink2').value="";
+                document.getElementById('frmLink2').focus(); 
+                return false;
+            } else if ((vURL3 != null) && (vURL3.length > 0) && (! isValidURL(vURL3)) )  {
+                alert("Not a valid URL.");
+                document.getElementById('frmLink3').value="";
+                document.getElementById('frmLink3').focus(); 
+                return false;
+            } else if (checkHumanResult == 0 ) {
+                alert("Please check your math.");
+                document.getElementById('inptHuman').focus();
+                return false;
+            } else if (ifrResumeHTML.length > 32000) {
+                alert('Your résumé is longer than the 32,000 character limit.'); 
+                document.getElementById('appPage:appForm:frmResume').focus();
+                return false;
+            } else { 
+                return true;
+            }
+        } 
+    } 
+    
+    function showWordCount(myTA, maxSize, SizeLabel) {
+        if(myTA.value.length == 0) {
+            document.getElementById(SizeLabel).innerHTML = ' '+maxSize;
+            $(myTA).prev().prev().find('.check').removeAttr('checked');
+        }    
+        if(myTA.value.length > 0) {
+            var regex = /\s+/gi;
+            var wordCount = myTA.value.trim().replace(regex, ' ').split(' ').length;
+            document.getElementById(SizeLabel).innerHTML = ' '+(maxSize - wordCount);
+            $(myTA).prev().prev().find('.check').attr('checked','checked');
+        }
+
+    }
+    
+    //verify user calculation
+    function checkAnswer() {
+                var returnResult = 0;
+                var curAnswer = $('#inptHuman').val();
+                if ((curAnswer == humanAnswerNum) || (curAnswer == humanAnswerWord)) {returnResult = 1;}
+                return returnResult;
+    }
+
+    function isValidURL(url){
+        var userURL = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+        if(userURL.test(url)){
+           return true;
+        } else {
+           return false;
+        }
+    }
+            
+    function decrementTimer() {
+         $curTime = $('#divTimer').html();
+         if ($curTime>0) {
+             $curTime = $curTime - 1;
+             $('#divTimer').html($curTime);
+         }
+         var timeout = setTimeout('decrementTimer()', 60000);
+    }
+
+$('#appPage:appForm:frmResume_frame').load(function(){
+    alert('frame has (re)loaded');
+});   
+   
+$(document).ready(function () {
+    
+            var errorLiHTML = $('.message').find('li').html();
+            if (errorLiHTML) {
+                if (errorLiHTML.indexOf('Resume: Resume: data value too large')>-1) {
+                    $('.message').remove();
+                    alert('Your résumé is longer than the 32,000 character limit. Please resubmit your application with a smaller résumé.'); 
+                }
+            }
+            
+            var timeout = setTimeout('decrementTimer()', 60000);
+
+            addHumanCheck();
+            //insert human verification formula
+            function addHumanCheck() {
+                var arrVerifyNums = genRandNums();
+                $('#lblInptHuman').text('Confirm that you are human: What is ' + arrVerifyNums[0] + ' plus ' + arrVerifyNums[1] + '?');
+            }
+
+            //generate random numbers and result for human verification
+            function genRandNums() {
+                var randNum1 = Math.floor(Math.random()*11);
+                var randNum2 = Math.floor(Math.random()*11);
+                var randNumSum = randNum1 + randNum2;
+
+                //humanAnswer = randNum1 + randNum2;
+                var arrRandNums = [randNum1,randNum2,randNumSum];
+
+                var arrRandNumsEng = getNumWords(arrRandNums);
+                humanAnswerNum = randNumSum;
+                humanAnswerWord = arrRandNumsEng[2];
+
+                return arrRandNumsEng;
+            }
+
+            //convert numbers to words
+            function getNumWords(arrRandNumsNums) {
+                var allNumWords = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'];
+                return [allNumWords[arrRandNumsNums[0]],allNumWords[arrRandNumsNums[1]],allNumWords[arrRandNumsNums[2]]];
+            }
+                       
+    // Begin Other Opportunities
+    // Assign value of Additional Opportunities radio buttons to hidden apex field
+    function populateAOpp(){
+        vals = $('input[id*="frmAddOpps"]:checked').map(function() {
+        return this.value;
+        }).get().join(';');
+        $('input[id*="hiddenAddOpps"]').val(vals);
+    }
+    
+    // Run populateAOpp function to build out hidden field value for Other_opportunities__c
+    $('input[id*="frmAddOpps"]').on('change', function() {
+        populateAOpp()
+    }).change();
+        
+    // End Other Opportunities
+    
+    // Assign value of Veteran's Status radio buttons to hidden apex field
+    $('input[id*="frmVetStatus"]').click(function() {
+        $('[id*=hiddenVeteranStatus]').val(this.value);
+    });        
+    
+    // Assign value of US Citizen radio buttons to hidden apex field
+    $('input[id*="frmUSCitizen"]').click(function() {
+        $('[id*=hiddenUSCitizen]').val(this.value);
+    });
+    
+    // Assign full name
+    $('input[id="frmFullName"]').change(function() {
+        $('[id*=hiddenFullName]').val(this.value);                
+    });
+    
+    // Assign email address
+    $('input[id="frmEmailAddress"]').change(function() {
+        $('[id*=hiddenEmailAddress]').val(this.value);        
+    });
+    
+    // Assign phone number
+    $('input[id="frmPhoneNumber"]').change(function() {
+        $('[id*=hiddenPhoneNumber]').val(this.value);        
+    });
+    
+    // Assign city
+    $('input[id="frmCity"]').change(function() {
+        $('[id*=hiddenCity]').val(this.value);        
+    });
+    
+    // Assign current employer
+    $('input[id="frmCurrentEmployer"]').change(function() {
+        $('[id*=hiddenCurrentEmployer]').val(this.value);        
+    });
+    
+    // Assign Link1
+    $('input[id="frmLink1"]').change(function() {
+        $('[id*=hiddenLink1]').val(this.value);        
+    });
+    
+    // Assign Link2
+    $('input[id="frmLink2"]').change(function() {
+        $('[id*=hiddenLink2]').val(this.value);        
+    });
+    
+    // Assign Link3
+    $('input[id="frmLink3"]').change(function() {
+        $('[id*=hiddenLink3]').val(this.value);        
+    });
+    
+    // Assign Veteran status date
+    $('input[id*="frmvet-date"]').change(function() {
+        $('[id*=hiddenvet-date]').val(this.value);  
+        //alert(this.value);      
+    });
+    
+    // Assign Veteran status service
+    $('select[id*="frmvet-branch"]').change(function() {
+        $('[id*=hiddenvet-branch]').val(this.value); 
+        //alert(this.value);       
+    });
+    
+    // Begin Skills
+    
+    // Assign values of selected Skills to hidden apex field //
+    function populateSkills(){
+        vals = $('input[id*="frmSkills"]:checked').map(function() {
+        return this.value;
+        }).get().join(';');
+        $('input[id*="hiddenSkills"]').val(vals);
+    }
+    
+    // Run populateSkills function to build out hidden field value for Skills__c
+    $('input[id*="frmSkills"]').on('change', function() {
+        populateSkills()
+    }).change();
+    
+    // End Skills
+    
+    // Begin Experiences
+    
+    // Assign values of selected Experience to hidden apex field //
+    
+    function populateExp(){
+        vals = $('input[id*="frmExp"]:checked').map(function() {
+        return this.value;
+        }).get().join(';');
+        $('input[id*="hiddenExperience"]').val(vals);
+    }
+    
+    // Run populateExp function to build out hidden field value for Experience__c
+    
+    $('input[id*="frmExp"]').on('change', function() {
+        populateExp()
+    }).change();
+    
+    // End Experiences
+    
+    // Begin Projects details
+    // Assign the project 1, 2 , 3 values
+    $('input[id*="hiddenProject1Name"]').val($('input[id*="frmProject1Apply"]').val());
+    $('input[id*="hiddenProject2Name"]').val($('input[id*="frmProject2Apply"]').val());
+    $('input[id*="hiddenProject3Name"]').val($('input[id*="frmProject3Apply"]').val());
+          
+    //End Projects details
+    
+    // checkboxes validation
+    
+       
+    // Begin Work Location
+    
+    // Assign values of selected Work Locations to hidden apex field //
+    
+    function populateWL(){
+        vals = $('input[id*="frmWorkLoc"]:checked').map(function() {
+        return this.value;
+        }).get().join(';');
+        $('input[id*="hiddenWorkLocation"]').val(vals);
+    }
+    
+    // Run populateWL function to build out hidden field value for Work_Location__c
+    
+    $('input[id*="frmWorkLoc"]').on('change', function() {
+        populateWL()
+    }).change();
+    
+    // End Work Location
+    
+    // Begin Work Duration
+    
+    // Assign values of selected Work Durations to hidden apex field //
+    
+    function populateWD(){
+        vals = $('input[id*="frmWorkDur"]:checked').map(function() {
+        return this.value;
+        }).get().join(';');
+        $('input[id*="hiddenWorkDuration"]').val(vals);
+    }
+    
+    // Run populateWD function to build out hidden field value for Work_Duration__c
+    
+    $('input[id*="frmWorkDur"]').on('change', function() {
+        populateWD()
+    }).change();
+    
+    // End Work Duration
+    
+    // Begin Work Amount
+    
+    // Assign values of selected Work Amounts - Full/Part Time to hidden apex field //
+    
+    // function populateWA(){
+    //    vals = $('input[id*="frmWorkAmt"]:checked').map(function() {
+    //    return this.value;
+    //    }).get().join(';');
+    //    $('input[id*="hiddenWorkAmount"]').val(vals);
+    // }
+    
+    // Run populateWA function to build out hidden field value for Full_Part_Time__c
+    
+    // $('input[id*="frmWorkAmt"]').on('change', function() {
+    //    populateWA()
+    // }).change();
+    
+    // End Work Amount
+    
+    // display appropriate Veterans' Preference text and options
+    $('[name="frmVetStatus"]').on('click', function() {
+        $('#vet-status-upload-header, #vet-status-text-2, #vet-status-text-3, #vet-status-details').hide('fast');
+        $('#frmvet-branch').val('');
+        $('#frmvet-date').val('');
+        $('[id*=hiddenvet-date]').val('');
+        $('[id*=hiddenvet-branch]').val('');        
+    });
+    $('#frmVetStatus2').on('click', function() {
+        $('#vet-status-upload-header, #vet-status-text-2, #vet-status-details').show('fast');
+        $('#frmvet-branch').val('');
+        $('#frmvet-date').val(''); 
+        $('[id*=hiddenvet-date]').val('');
+        $('[id*=hiddenvet-branch]').val('');        
+    });
+    $('#frmVetStatus3').on('click', function() {
+        $('#vet-status-upload-header, #vet-status-text-3, #vet-status-details').show('fast');
+        $('#frmvet-branch').val('');
+        $('#frmvet-date').val('');
+        $('[id*=hiddenvet-date]').val('');
+        $('[id*=hiddenvet-branch]').val(''); 
+    });
+        
+    // expanding the project details
+    $('.expander').simpleexpand();
+    
+    // prepend http:
+    var inputval = "http://";
+    $('input[id*="frmLink"]').focusin(function() {
+        // if textbox is empty or got the default value
+        if ($(this).val().indexOf("http://") == -1 && $(this).val().indexOf("https://") == -1) {
+            $(this).val(inputval + $(this).val());
+        }
+    }).blur(function() {
+        // if textbox is empty or just contains your value
+        if ($(this).val() == "" || $(this).val() == "http://") {
+            $(this).val('');
+        }
+    });
+    
+});
+</script>
+</head>
+
+<div class="container clearfix">
+    <div id="header"><img src="/apply/resource/1395783749000/pifa/pifa/pif-logo.png" alt="Presidential Innovation Fellows seal" height="315" width="315" />
+        <h1>Presidential Innovation Fellows</h1>
+        <h2>2014 Application</h2>
+        
+        <p class="highlight alert">
+         <strong>The application period for the 2014 Application is now closed.</strong><br />
+         <br />
+         For more information or to be notified of future program announcements, <br />
+         please <a href="http://18f.github.io/pif-interest/">sign up for our mailing list.</a></p>
+
+
+        <p class="highlight">The Presidential Innovation Fellows program brings the principles, values, and practices of the innovation economy into government through the most effective agents of change we know: our people. This highly competitive program pairs talented, diverse individuals from the innovation community with top civil servants to tackle many of our Nation&#8217;s biggest challenges, and to achieve a profound and lasting social impact. These teams of government experts and private-sector doers are using approaches like design thinking and lean startup to achieve results for the American people in months, not years.</p>
+        
+    </div>
+    
+    <div id="content">
+<form id="appPage:appForm" name="appPage:appForm" method="post" action="/apply/PIF_Apply" enctype="multipart/form-data">
+<input type="hidden" name="appPage:appForm" value="appPage:appForm" />
+<div id="appPage:appForm:j_id8"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201409261802170036" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="ADyxa9K3iAQHohUFkbxr7kBaHOcq" /></span></span>
+    </div>
+</div><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["appPage:appForm"]);
+
+});</script></body></html>

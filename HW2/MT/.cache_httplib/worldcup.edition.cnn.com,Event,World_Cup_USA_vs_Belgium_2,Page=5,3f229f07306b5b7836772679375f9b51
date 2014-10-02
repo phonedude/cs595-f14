@@ -1,0 +1,2130 @@
+status: 200
+content-length: 150928
+x-varnish: 947009234
+content-location: http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=5
+x-cache: Miss from cloudfront
+content-type: text/html; charset=utf-8
+age: 0
+connection: keep-alive
+server: nginx
+x-maxage: 30s
+via: 1.1 fcf747e6712b2d21f10f9d9ddb1ff980.cloudfront.net (CloudFront)
+x-nginx-origin: 10.153.203.158:8080
+cache-control: max-age=30
+date: Sun, 28 Sep 2014 15:44:12 GMT
+x-amz-cf-id: 3Dlbv1AP_OxE66vMLHFMFrlXhuwNeJhh3U1Arnswbx5kTbLBq225og==
+x-nginx-node: 10.225.174.77
+-content-encoding: gzip
+
+<!DOCTYPE HTML>
+<html itemscope="" itemtype="http://schema.org/NewsArticle" lang="en-US">
+    <head>
+    
+            <script type="text/javascript">
+
+                var MobileUserAgentMatches = navigator.userAgent.match(/(Android|webOS|iPhone|iPod|BlackBerry|BB|IEMobile|Opera Mini)/ig);
+
+                if (MobileUserAgentMatches != null ) {
+
+                    var MobileKeywordMatches = navigator.userAgent.match(/(Mobile)/ig);
+                    var TabletKeywordMatches = navigator.userAgent.match(/(Tablet)/ig);
+
+                    if (MobileUserAgentMatches.indexOf("Android") !== -1 && MobileKeywordMatches != null && MobileKeywordMatches.indexOf("Mobile") !== -1) {
+                        document.location = decodeURIComponent("http%3a%2f%2fworldcup.edition.cnn.com%2fEvent%2fWorld_Cup_USA_vs_Belgium_2%2fmobile%26Page%3d5%26Theme%3d21079");
+                    }
+                    else if (MobileKeywordMatches != null && (TabletKeywordMatches == null || TabletKeywordMatches.indexOf("Tablet") == -1 || TabletKeywordMatches.indexOf("tablet") == -1)) {
+
+                        document.location = decodeURIComponent("http%3a%2f%2fworldcup.edition.cnn.com%2fEvent%2fWorld_Cup_USA_vs_Belgium_2%2fmobile%26Page%3d5%26Theme%3d21079");
+                    }
+                }
+            
+            </script>
+                
+    <link rel="stylesheet" media="screen" type="text/css" href="//cdn.scribblelive.com/Style/pages/Thread.aspx?SiteId=2314&v=v44n_1.0.5381.23309&amp;lang=en&amp;IncludeDiscussion=1"> 
+
+    
+
+<script type="text/javascript">
+    var MixPanelKey = 'cf6d9a3a862b7601189f7c970a2d095f';
+    var UseMixPanel = 'false'.toLowerCase() === 'true';
+</script>
+
+
+    
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" media="screen" type="text/css" href="//cdn.scribblelive.com/Style/IE/WhiteLabelIE7.css?v=v44n_1.0.5381.23309">
+    <![endif]-->
+
+    
+
+        <script type="text/x-handlebars-template" id="discussion-tmpl">
+            <div class="discussion-wrap">
+            
+                <div class="{{prev_class}}">
+                    {{prev_links}}
+                    <div class="paging-pos hidden">
+                        <span class="count"></span><span>&nbsp;{{lbl_of}}&nbsp;</span><span class="total"></span><em>&nbsp;{{lbl_comments}}</em>
+                    </div>
+                </div>
+            
+                <ul class="comments"></ul>
+                <div class="media make-a-comment">
+                    <div class="img anon">
+                        <img src="{{avatar}}" height="30" width="30" />
+                    </div>
+                    <div class="bd">
+                        <div class="comment-input">
+                            <input maxlength="500" type="text" name="" value="" placeholder="{{lbl_make_comment}}" />
+                        </div>
+                    </div>
+                </div>
+                {{#if isPermalinkPage}}
+                <div class="LiveIndicator">{{lbl_liveindicator}} <img src="{{indicator}}" /></div>
+                <div class="paging-pos bottom hidden">
+                    <span class="count"></span> 
+                    <span>{{lbl_of}}</span> 
+                    <span class="total"></span>
+                    <em> {{lbl_comments}}</em>
+                </div>                
+                {{/if}}
+            </div>
+        </script>
+        <script type="text/x-handlebars-template" id="postactions-tmpl">
+            <div class="post-actions">
+                <a href="#" class="add-comment">{{lbl_comment}} <span class="counter no-comments">(<span class="total">0</span>)</span></a>
+            </div>
+        </script>
+        <script type="text/x-handlebars-template" id="comment-tmpl">
+            <li>
+                <div class="media comment" data-commentid="{{id}}" data-uid="{{userId}}">
+                    <div class="img"><img src="{{avatar}}" height="30" width="30" /></div>
+                    <div class="bd">
+                        <em class="commenter">{{username}}</em>
+                        <p>{{{comment}}}</p>
+                        <p class="meta">
+                            <span class="DisplayPostTime">{{#relativeTime time}}{{Date}}{{/relativeTime}}</span>
+                        </p>
+                    </div>
+                </div> 
+            </li>
+        </script>
+        <script type="text/x-handlebars-template" id="commenterror-tmpl">
+            <p class="msg">{{lbl_unable_to_post}} <a href="#" class="try-again">{{lbl_try_again}}</a></p>
+        </script>    
+        <script type="text/x-handlebars-template" id="commentban-tmpl">
+            <p class="msg">{{lbl_unable_to_post}} <strong>{{lbl_user_banned}}</strong>.</p>
+        </script>  
+        <script type="text/x-handlebars-template" id="commentmoderated-tmpl">
+            <p class="msg"><span>{{lbl_in_moderation}}</span></p>
+        </script>   
+        <script type="text/x-handlebars-template" id="sociallogin-tmpl">
+            <div>
+                <h2>{{lbl_title}}</h2>
+                
+                    <iframe src="//embed.scribblelive.com/User/SocialLogins.aspx?Redirect=http%3a%2f%2fworldcup.edition.cnn.com%2f&Crossdomain=1&Discussions=1" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+                
+            </div>
+        </script>
+        <script type="text/x-handlebars-template" id="dialog-tmpl">
+            <div id="{{id}}" class="sl-dialog sl-dialog-modal">
+                <div class="close">&times;</div>
+                <div class="dialog-wrap">
+                    <div class="hd"></div>
+                    <div class="bd"></div>
+                    <div class="ft"></div>
+                </div>
+            </div>
+        </script>     
+        
+        
+    
+   
+    <link rel="canonical" href="http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=5"> 
+    <link rel="prev" href="http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=4">
+
+    <script type="text/javascript" src="//cdn.scribblelive.com/js/pages/Thread.aspx?SiteId=2314&v=v44n_1.0.5381.23309&amp;lang=en&amp;IncludeDiscussion=1"></script> 
+
+
+
+     <script type="text/javascript">
+        var Time = "9/4/2014 12:19:38 PM";
+        var ThreadId = "694519";
+        var ClientId = "3551";
+        var IsLive = false;
+        var WebsiteId = 2314;
+        
+        var UserId = "";
+        var UserThumbnail = "";
+        var AllowedToEdit = false;
+        var UserType = 4;
+        
+        NewestAtBottom = false;
+        
+        var IsMostRecentPage = true;
+        
+        var CommentBox_FadeStart = "#333333";
+        var CommentBox_FadeEnd = "#ececec";     
+        
+        var BannedUsers = new Array();  
+        
+        var BannedWebsiteUsers = new Array();
+
+        var HideAvatars = [0, 0, 0, 0, 0, 0, 0];
+
+        var IsWhitelabel = true;
+
+        var DiscussionsEnabled = true;
+
+		var UseCustomMeta = false;
+		var UseCustomCommentMeta = false;
+		var CustomMetaPostLocation = "Below";
+		var CustomMetaCommentLocation = "Below";
+        var UseCustomPostMetaFormat = false;
+        var UseCustomCommentMetaFormat = false;
+
+			
+		
+        var IsArticlePage = false;
+        soundManager.url = "/js/soundmanager/swf/";  
+        soundManager.debugMode = false;		
+
+        var PromotionalUrl = "";
+        var SLClient = "CNN";
+
+    </script>
+    
+    
+    <meta name="ICBM" content="33.749000000000002, -84.388000000000005">        
+    
+    <meta name="generator" content="ScribbleLive">
+    <meta name="twitter:card" content="summary">
+    
+    <!-- Open Graph Protocol http://opengraphprotocol.org/ -->
+    <meta property="og:title" content="World Cup: USA 1 Belgium 2">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=5">
+    <meta property="og:image" content="http://avatars.scribblelive.com/2014/2/7/ba02fa48-6414-48a5-9bec-00fbdcdcf36a.jpg">
+    <meta property="og:description" content="What a game, just not quite enough for Team USA. At the end they gave it everything.  Well played, but the World Cup dream is over -- until 2018. ">
+    <meta property="og:site_name" content="World Cup 2014">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="What a game, just not quite enough for Team USA. At the end they gave it everything.  Well played, but the World Cup dream is over -- until 2018. ">
+    <meta name="keywords" content="">
+
+    <!-- Google Plus Meta Tags -->
+    <meta itemprop="name" content="World Cup: USA 1 Belgium 2">
+    <meta itemprop="description" content="What a game, just not quite enough for Team USA. At the end they gave it everything.  Well played, but the World Cup dream is over -- until 2018. ">
+    <meta itemprop="image" content="http://avatars.scribblelive.com/2014/2/7/ba02fa48-6414-48a5-9bec-00fbdcdcf36a_300.jpg">
+
+    <link rel="Alternate" type="application/rss+xml" title="World Cup: USA 1 Belgium 2" href="/Event/rss.aspx?id=694519">
+
+    
+
+
+        <title>World Cup: USA 1 Belgium 2</title>
+        <meta charset="UTF-8">
+        <meta content="index,follow" name="robots">
+        <meta content="noarchive" name="googlebot">
+        <meta content="width=1024" name="viewport">
+        <meta content="news" itemprop="genre" name="medium">
+        <meta content="en-US" itemprop="inLanguage">
+        <meta content="" itemprop="keywords" name="keywords">
+        <meta content="" itemprop="author" name="author">
+        <meta content="sport" itemprop="articleSection" name="section">
+        <meta content="CNN" itemprop="sourceOrganization" name="source">
+        <meta content="" name="subsection">
+        <meta content="" itemprop="contentLocation">
+        <meta content="Brazil 2014: Live Blog" itemprop="headline">
+        
+        
+        
+        <meta content="http://olympics.edition.cnn.com/" itemprop="url">
+        
+        
+        <meta content="690014395" property="fb:admins">
+        <meta content="80401312489" property="fb:app_id">
+        <meta content="129343697106537" property="fb:page_id">
+        <meta property="article:publisher" content="https://www.facebook.com/cnninternational">
+        <meta property="vr:canonical" content="http://worldcup.edition.cnn.com/">
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:site" content="@CNNI">
+        <meta property="twitter:site:id" content="2097571">
+        <meta property="twitter:creator" content="@worldsportcnn">
+        <meta property="twitter:creator:id" content="34992644">
+        <meta property="twitter:image" content="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/share.jpg">
+        <link href="http://worldcup.edition.cnn.com/" rel="canonical">
+        <link href="http://edition.cnn.com/" rel="Start">
+        <link href="http://i.cdn.turner.com/cnn/.e/img/3.0/global/misc/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+        <link href="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/share.jpg" itemprop="image" rel="image_src" type="image/jpg">
+        <link href="http://edition.cnn.com/tools/search/cnncom.xml" rel="search" title="CNN.com" type="application/opensearchdescription+xml">
+        <link href="http://edition.cnn.com/tools/search/cnncomvideo.xml" rel="search" title="CNN.com Video" type="application/opensearchdescription+xml">
+        <link href="http://rss.cnn.com/rss/edition_sport.rss" rel="alternate" title="CNN International - World Sport [RSS]" type="application/rss+xml">
+        <link href="http://z.cdn.turner.com/cnn/tmpl_asset/static/www_article/1876/css/artlib-min.css" rel="stylesheet" type="text/css">
+        <link href="http://mediacdn.disqus.com/1296789715/styles/dtpl/defaults.css" rel="stylesheet" type="text/css">
+        <link href="http://disqus.com/forums/cnn/styles.css" rel="stylesheet" type="text/css">
+        <link href="http://widgets.outbrain.com/mu/css/outbrainWidget.css?v=33961" id="cssLinkID" rel="stylesheet" type="text/css">
+        <link href="https://plus.google.com/u/0/b/117515799321987910349/117515799321987910349/posts" rel="publisher">
+
+        <script language="JavaScript" type="text/javascript">var cnnCurrTime = new Date(1410288904596); var cnnCurrHour = 14; var cnnCurrMin = 55; var cnnCurrDay='Tue';</script>
+        <script>
+            var cnnIsIntl = false,
+                clickID = 211911,
+                cnn_cvpAdpre = "",
+                cnn_cvpAdpre = "edition.",
+                cnnCVPAdSectionT1 = "edition.cnn.com_specialreports_brazil2014_t1",
+                cnnCVPAdSectionInPage = "edition.cnn.com_specialreports_brazil2014_inpage",
+                cnnShareUrl = "%2FSPORT%2Fworld-cup-2014%2F",
+                cnnShareTitle = "Brazil%202014:%20Live%20Blog",
+                cnnShareDesc = "",
+                cnnFirstPub = new Date('Thursday June 12 05:36:59 EST 2014'),
+                cnnSectionName = "iSport",
+                cnnSubSectionName = "spr: brazil 2014",
+                cnnPageType = "Story",
+                cnnBrandingValue = "intl.brazil.2014",
+                cnnPartnerValue = "",
+                cnnOmniBranding = "Brazil 2014",
+                cnnAuthor = "",
+                cnn_edtnswtchver = "edition",
+                cnnIsStoryPage = true,
+                cnn_metadata = {};
+            cnn_metadata = {
+                section: ["iSport", ""],
+                friendly_name: "Sochi 2014: Live Blog",
+                template_type: "content",
+                template_type_content: "",
+                business: {
+                    cnn: {
+                        page: {
+                            author: "",
+                            broadcast_franchise: "",
+                            video_embed_count: "3",
+                            publish_date: "2014/06/12",
+                            photo_gallery: ""
+                        },
+                        video: {
+                            video_player: ""
+                        }
+                    }
+                },
+                user: {
+                    authenticated: "",
+                    segment: {
+                        age: "",
+                        zip: "",
+                        gender: ""
+                    }
+                }
+            };
+            if (typeof(cnnOmniPartner) !== "undefined") {
+                if (cnn_metadata.template_type_content === "") {
+                    cnn_metadata.template_type_content = "partner";
+                }
+            }
+            var photo_gallery = "";
+        </script>
+        <script src="http://z.cdn.turner.com/cnn/tmpl_asset/static/www_article/1876/js/artlib-min.js"></script>
+        <script src="http://z.cdn.turner.com/cnn/tmpl_asset/static/www_global/858/js/cnnsociallib-min.js"></script>
+        <script>
+            if (typeof CNN === 'undefined') { var CNN = Class.create(); }
+            CNN.expandableMap = [''];
+            function _loginOptions() {};
+            var disqus_url=(typeof disqus_identifier!=='undefined') ? 'http://worldcup.edition.cnn.com/' : 'http://www.cnn.com'+location.pathname;
+            cnnad_newTileIDGroup(['970x66_top', '300x250_rgt', '300x250_rgt2', '336x280_rgt', '336x850_rgt', '300x150_rgt', '728x90_top', '728x90_bot', 'BG_Skin', '120x90_bot1', '120x90_bot2', '120x90_bot3']);
+            cnnad_newTileIDGroup(['607x95_adlinks', '336x280_adlinks']);
+        </script>
+        <script src="http://cache-02.cleanprint.net/cpf/cleanprint?key=cnn" name="cleanprintloader"></script>
+        <!--adType:bst-->
+    <style type="text/css">/* Event Title ========== */
+
+h2#ThreadTitle {
+
+}
+
+/* "Live" In Event Title ========== */
+
+h2#ThreadTitle em {
+
+}
+
+/* Description Under Event Title ========== */
+
+h3.Description {
+
+}
+
+/* Post Content ========== */
+
+.Posts li .Content {
+font-size: 12px;
+
+}
+
+.Posts li .Content em {
+font-style: italic;
+
+}
+
+
+/* Pagination Hover Colour ========== */
+
+ul.Pagination  li a:hover {
+   color: #e90000;
+   border-color: #e90000;
+}
+
+.cnn_storyarea p {
+padding-left:0; !important
+}</style></head>
+    <body>
+        <div class="mboxDefault"></div>
+        <script> mboxCreate('cnn_storypage_links'); </script>
+        <a name="top_of_page"></a><a href="#ContentArea"><img src="http://i.cdn.turner.com/cnn/images/1.gif" align="right" alt="Skip to main content" border="0" height="1" hspace="0" style="display:none;" vspace="0" width="10"></a>
+        <!-- EU cookie consent bar --> <div id="teconsent" style="display: none;"></div> <div id="consent_blackbar"></div> <!-- /EU cookie consent bar -->
+<!-- begin default international header -->
+<!-- TODO: unobtrusive js refactor -->
+<div id="cnn_hdr">
+	<div id="cnn_hdr-prompt" style="display:none;">
+		<div class="hdr-wrap" id="cnn_hdr-promptcntnt">
+		</div>
+	</div>
+	<div id="cnn_hdr-main">
+		<div class="hdr-wrap">
+			<div id="hdr-banner">
+
+
+					<a id="hdr-banner-title" href="http://edition.cnn.com/" title="">
+						<img src="http://i.cdn.turner.com/cnn/.element/img/3.0/global/header/intl/hdr-no-globe.gif" width="190" height="82" alt="CNN">
+					</a>
+
+			</div>
+		<div id="hdr-editions">
+				<ul>
+					<li class="no-pad-left"><span>EDITION: &nbsp;INTERNATIONAL</span></li>
+					<li><a id="cnn_switchEdition_us" href="http://us.cnn.com/?hpt=ed_US" title="CNN US">U.S.</a></li>
+					<li><a href="http://www.cnnmexico.com/hpt=ed_Mexico" title="CNN M&Eacute;XICO">M&Eacute;XICO</a></li>
+					<li class="no-border"><a href="http://arabic.cnn.com/?hpt=ed_Arabic" title="CNN ARABIC">ARABIC</a></li>
+				</ul>
+				<div class="cnn_clear"></div>
+				<div style="padding-top:2px">
+					<ul>
+						<li class="no-pad-left no-border no-pad-right"><span><a href="http://edition.cnn.com/CNN/Programs" class="cnn_hdr-editionlnk">TV</a>: &nbsp;</span></li>
+						<li><a href="http://edition.cnn.com/cnni/">CNNi</a></li>
+						<li class="no-border"><a href="http://cnnespanol.cnn.com/">CNN en EspaÃ±ol</a></li>
+					</ul>
+				</div>
+					<div id="cnn_hdr-editionS"><a href="javascript:cnn_initeditionhtml(3);">Set edition preference</a></div>
+			</div>
+			<div id="hdr-auth">
+				<ul>
+					<li><a href="javascript:void(0)" onclick="showOverlay('profile_signup_overlay');return false;" title="">Sign up</a></li>
+					<li class="no-border no-pad-right"><a href="javascript:void(0)" onclick="showOverlay('profile_signin_overlay');return false;" title="">Log in</a></li>
+				</ul>
+			</div>
+			<div id="hdr-search">
+				<form method="get" action="http://edition.cnn.com/search/" onsubmit="return cnnSearch(this);">
+					<div class="ftr-search-datacntr">
+<div class="ftr-search-tfield"><input type="text" name="query" size="12" maxlength="40" value="" id="hdr-search-box"></div>
+<div class="ftr-search-sicon"><input type="image" src="http://i.cdn.turner.com/cnn/.element/img/3.0/search/btn_search_hp_text.gif" width="55" height="21" alt=""></div>
+</div>
+					<input type="hidden" name="primaryType" id="cnnHeadSrchType" value="mixed">
+				</form>
+
+<script>
+
+//Event.observe(window, 'load', function() {
+		//$('hdr-search-box').focus();
+	//});	
+	
+</script>
+
+<style>
+
+#hdr-editions a { text-decoration:none; }
+#cnn_hdr-editionS { text-align:left;clear:both; }
+#cnn_hdr-editionS a { text-decoration:none;font-size:10px;top:7px;line-height:12px;font-weight:bold; }
+#hdr-prompt-text b { display:inline-block;margin:0 0 0 20px; }
+#hdr-editions li { padding:0 10px; }
+
+#hdr-editions ul li.no-pad-left span { font-size:12px; }
+.hdr-arrow-intl, .hdr-arrow-us, .hdr-arrow-us2 { left:148px; }
+.hdr-arrow-us2 { left:180px; }
+
+</style>
+
+			</div>
+		</div>
+	</div>
+	<div id="cnn_hdr-nav">
+		<ul id="intl-menu">
+			<li class="no-border"><a id="nav-home" class="nav-media no-border" href="http://edition.cnn.com/" title="Breaking, World, Business, Sports, Entertainment and Video News from CNN.com International">Home</a></li>
+			<li class="no-border"><a id="nav-video" class="nav-media no-border" href="http://edition.cnn.com/video/" title="Breaking News Videos from CNN.com International">Video</a></li>
+			<li><a id="nav-world" href="http://edition.cnn.com/WORLD/" title="World News Headlines and Video from CNN.com International">World</a></li>
+			<li><a id="nav-us" href="http://edition.cnn.com/US/" title="U.S. News Headlines and Video from CNN.com International">U.S.</a></li>
+			<li><a id="nav-africa" href="http://edition.cnn.com/AFRICA/" title="Africa News Headlines and Video from CNN.com International">Africa</a></li>
+			<li><a id="nav-asia" href="http://edition.cnn.com/ASIA/" title="Asia News Headlines and Video from CNN.com International">Asia</a></li>
+			<li><a id="nav-europe" href="http://edition.cnn.com/EUROPE/" title="Europe News Headlines and Video from CNN.com International">Europe</a></li>
+			<li><a id="nav-latin-america" href="http://edition.cnn.com/LATINAMERICA/" title="Latin America News Headlines and Video from CNN.com International">Latin America</a></li>
+			<li><a id="nav-middle-east" href="http://edition.cnn.com/MIDDLEEAST/" title="Middle East News Headlines and Video from CNN.com International">Middle East</a></li>
+			<li><a id="nav-business" href="http://edition.cnn.com/BUSINESS/" title="World Business News Headlines and Video from CNN.com International">Business</a></li>
+			<li><a id="nav-world-sport" class="nav-on" href="http://edition.cnn.com/SPORT/" title="World Sport News Headlines and Video from CNN.com International">World Sport</a></li>
+			<li><a id="nav-entertainment" href="http://edition.cnn.com/SHOWBIZ/" title="Entertainment News Headlines and Video from CNN.com International">Entertainment</a></li>
+			<li><a id="nav-tech" href="http://edition.cnn.com/TECH/" title="Technology News Headlines and Video from CNN.com International">Tech</a></li>
+			<li><a id="nav-travel" href="http://travel.cnn.com/" title="Travel News Headlines and Video from CNN.com International">Travel</a></li>
+			<li><a id="nav-ireport" href="http://www.ireport.com/" title="CNN iReport &ndash; Share your story, discuss the issues with CNN.com International">iReport</a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+
+</script>
+<!-- end header -->
+
+        <div align="center"> <div class="cnn_contentarea"> <div id="cnn_hdr-subnav-ad"></div> <div id="cnn_hdr-subnav"> <ul id="submenu"> <li class="nav-first"><a href="http://edition.cnn.com/SPORT/football/?hpt=isp_topnav" title="Football News Headlines and Video from CNN.com International">Football</a></li> <li class=""><a href="http://edition.cnn.com/SPORT/golf/?hpt=isp_topnav" title="Golf News Headlines and Video from CNN.com International">Golf</a></li> <li class=""><a href="http://edition.cnn.com/SPORT/tennis/?hpt=isp_topnav" title="Tennis News Headlines and Video from CNN.com International">Tennis</a></li> <li class=""><a href="http://edition.cnn.com/SPORT/motorsport/?hpt=isp_topnav" title="Motorsport News Headlines and Video from CNN.com International">Motorsport</a></li> <li class=""><a href="http://edition.cnn.com/SPORT/rugby-sevens?hpt=isp_topnav" title="Rugby News Headlines and Video from CNN.com International">Rugby</a></li> <li class=""><a href="http://edition.cnn.com/SPORT/horse-racing/?hpt=isp_topnav" title="Horse Racing News Headlines and Video from CNN.com International">Horse Racing</a></li> <li class=""><a href="http://edition.cnn.com/CNNI/Programs/main.sail/?hpt=isp_topnav" title="Sailing News Headlines and Video from CNN.com International">Sailing</a></li> <li class=""><a href="http://worldsport.blogs.cnn.com/?hpt=isp_topnav" title="World Sport Blog from CNN.com International">Analysis</a></li> <li class="nav-on"><a href="http://edition.cnn.com/SPORT/world-cup-2014/?hpt=isp_topnav" title="News Headlines, Video and build up to Brazil 2014">Brazil 2014</a></li> </ul> </div> </div> </div>
+        <div align="center" id="cnnContainer"><div class="cnn_maincntnr"><div class="cnn_contentarea">
+            <div class="cnn_adcntr728x90t">
+                <div><!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=bst&cnn_intl_position=728x90_top&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs|CALLOUT -->
+<!-- ADSPACE: special_reports/brazil_2014/bst/top.728x90 -->
+<div id="ad-299ec8d1d866eb68" align="center" style="padding: 0; margin: 0; border: 0;"></div>
+<script type="text/javascript">
+cnnad_createAd("299ec8d1d866eb68","http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=bst&cnn_intl_position=728x90_top&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs","90","728", null, "");
+cnnad_registerSpace("299ec8d1d866eb68","728","90");
+</script>
+<!-- ADSPACE-END --></div>
+                <div class="cnn_adtitle"></div>
+            </div>
+            <div class="cnn_storyarea" id="cnnContentContainer">
+                <style type="text/css">
+                    /* STORY PAGE SPECIFIC CSS */
+                    .cnn_stryspccvrgehdr { background:#fff url('http://i.cdn.turner.com/cnn/.e/img/3.0/mosaic/bg_speccov_hdr.gif') 0px 0px repeat-x; }
+                    .cnn_stryspcvh1 { position:relative; height:74px;background:transparent url('http://i.cdn.turner.com/cnn/.element/ssi/story/3.0/banner/intl.brazil.2014.inc/brazil.2014.jpg') 50% 0px no-repeat;overflow:hidden; }
+                    .cnn_stryspcvh2 { font:bold 10px/12px arial;color:#666;padding:0 0 2px 0; }
+                    .cnn_stryspcvh3 { font-family:arial, helvetica, sans-serif; font-weight:bold; font-size:18px; line-height:21px; }
+                    .cnn_stryspcvh4 { position:absolute; z-index:1000; float:left;margin:30px 0 0 10px;display:inline; }
+                    .cnn_stryspcvh5 { float:right;margin:30px 10px 0 0;display:inline;text-align:right; }
+                    .cnn_stryspcvh20 { padding:0 0 2px 0; }
+                    .cnn_stryspccvrgebot { height:3px; background:#e6e6e6; }
+                    .cnn_stryspccvh6 { width:100%; height:74px; text-align:center; left:0; }
+                    .cnn_stryspccvh6 a { display:block; margin:0 auto; width:223px; height:74px; }
+                </style>
+                <!--[if lte IE 7]>
+                <style type="text/css">
+                    .cnn_stryspcvh4 { position:static; }
+                    .cnn_stryspccvh6 { position:static; float:left; width:172px; font-size:10px; margin-left:130px; top:0; }
+                    .cnn_stryspccvrgebot { font-size:3px; overflow:hidden;}
+                    /*.cnn_stryspccvrgehdr { width:980px; } */
+                    /*.cnn_stryspccvh6 { background:red; }*/
+                </style>
+                <![endif]-->
+                <div class="cnn_stryspccvrgehdr">
+                    <div class="cnn_stryspcvh1">
+                        <div class="cnn_stryspcvh5">
+                            <div class="cnn_stryspcvh2">
+                                <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=bst&cnn_intl_position=88x31_spon_brazil2014&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs|CALLOUT -->
+<!-- ADSPACE: special_reports/brazil_2014/bst/spon1.143x31 -->
+<div id="ad-59e78d61f715beda" align="center" style="padding: 0; margin: 0; border: 0;"></div>
+<script type="text/javascript">
+cnnad_createAd("59e78d61f715beda","http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=bst&cnn_intl_position=88x31_spon_brazil2014&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs","31","88", null, "");
+cnnad_registerSpace("59e78d61f715beda","88","31");
+</script>
+<!-- ADSPACE-END -->
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvh4">
+                            <div class="cnn_stryspcvh2">Part of complete coverage on</div>
+                            <div class="cnn_stryspcvh3"><a href="http://edition.cnn.com/brazil2014/">Brazil 2014</a></div>
+                        </div>
+                        <div class="cnn_stryspccvh6"><a href="http://edition.cnn.com/brazil2014/" style="width:223px;"></a></div>
+                        <div class="cnn_clear"></div>
+                    </div>
+                </div>
+                <div class="cnn_stryspccvrgebot"></div>
+                <div class="cnn_strybtntools">
+                    <div id="cnn_sharebar1">
+                        <div class="c_sharebar_cntr c_sharebar_loading">
+                            <div class="c_sharelftcol">
+                                <div class="c_sharetitle">SHARE THIS</div>
+                                <div class="c_sharebtns">
+                                    <ul>
+                                        <li class="c_sharebtn c_sharebtnfb"><a href="javascript:void(0);" onclick="cnnsocial.share.click('cnn_sharebar1', 'facebook');"></a></li>
+                                        <li class="c_sharebtn c_sharebtntwtr"><a href="javascript:void(0);" onclick="cnnsocial.share.click('cnn_sharebar1', 'twitter');"></a></li>
+                                        <li class="c_sharebtn c_sharebtngplus"><a href="javascript:void(0);" onclick="cnnsocial.share.click('cnn_sharebar1', 'googleplus');"></a></li>
+                                        <li class="c_sharebtn c_sharebtnlnkn"><a href="javascript:void(0);" onclick="cnnsocial.share.click('cnn_sharebar1', 'linkedin');"></a></li>
+                                    </ul>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                                <div class="fb-like" data-href="http://worldcup.edition.cnn.com/" data-width="150" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="false"></div>
+                            </div>
+                            <!-- /c_sharelftcol -->
+                            <div class="c_sharedivcol"></div>
+                            <div class="c_shareweb c_sharergtcol">
+                                <ul>
+                                    <li class="cnn_sswdgtweb1"><a href="#" onclick="if(typeof CleanPrintPrintHtml!='undefined' && CleanPrintPrintHtml) CleanPrintPrintHtml(); else window.print(); return false;">Print</a></li>
+                                    <li class="cnn_sswdgtweb2"><a href="#" onclick="return(ET());">Email</a></li>
+                                    <li class="cnn_sswdgtweb3"><a href="javascript:void(0);" onclick="$j('#cnn_sharebarmore1').toggle();">More sharing</a>
+                                        <div id="cnn_sharebarmore1" class="sharebar_othersites sharebar_othersitesl" style="display:none;">
+                                            <div class="shareProp">
+                                                <div class="sharebutton_reddit" title="Reddit"><a href="javascript:void(0);" onclick="cnnsocial.share.click('cnn_sharebar1', 'reddit');">Reddit</a></div>
+                                            </div>
+                                            <div class="shareProp">
+                                                <div class="sharebutton_stumbleupon" title="StumbleUpon"><a href="javascript:void(0);" onclick="cnnsocial.share.click('cnn_sharebar1', 'stumbleupon');">StumbleUpon</a></div>
+                                            </div>
+                                            <div class="shareProp">
+                                                <div class="sharebutton_delicious" title="Delicious"><a href="javascript:void(0);" onclick="cnnsocial.share.click('cnn_sharebar1', 'delicious');">Delicious</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /c_sharergtcol -->
+                            <div class="cnn_clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--google_ad_section_start--><!--startclickprintinclude-->
+                <!--endclickprintinclude--><!--startclickprintexclude-->
+                <!--no partner-->
+                <!--google_ad_section_end-->
+                <!-- Left Rail -->
+                <div class="cnn_strycntntlft">
+                    <!--startclickprintexclude-->
+                    <a name="em0"></a>
+                    <!--endclickprintinclude-->
+                    <!--no partner-->
+                    <div id="scribblelive" style="margin-top:-125px;">
+    
+
+<h2 id="ThreadTitle">World Cup: USA 1 Belgium 2</h2>
+
+<h3 class='Description'>What a game, just not quite enough for Team USA. At the end they gave it everything.  Well played, but the World Cup dream is over -- until 2018. </h3>
+
+	<div id="scrbbl-holder-notifications"> 
+		
+	</div>
+
+
+    
+    
+<div id='Column1'>
+<div id="Column1Area_SyndicatedTopHtmlForBasicTemplate_Holder">
+    </div>
+<div id="Column1Area_ArticleArea">
+	
+<div id="Column1Area_ArticleHolder" class="LiveArticle"><br class="SL_C_31778467_50_66655919"><br class="SL_C_31778467_73"><br class="SL_C_31778467_101"><div class="SL_C_31778467_102   Media SL_Top Over ui-draggable" contenteditable="false"><img src="http://images.scribblelive.com/2014/7/1/d3db0554-d9c4-4bf0-9dd7-004ce5b63862.jpg" class="SL_C_31778467_103" contenteditable="false"></div><br class="SL_C_31778467_106"><br class="SL_C_31778467_78"><span class="SL_C_31778467_52_66655919"></span><br class="SL_C_31778467_53_66655919"><div class="SL_C_31778467_46_66655919"><span class="SL_C_31778467_67">We were so happy to be with you and Team USA today! Your CNN team was Rachel Clarke (defender, Arsenal fan,) Dorrine Mendoza (6th grade goalie</span><span class="SL_C_31778467_68">) and the amazing knowledge and heart of Eliott McLaughlin -- speediest typing fingers in the West.&nbsp;</span></div><div class="SL_C_31778467_47_66655919"><br class="SL_C_31778467_48_66655919"></div><div class="SL_C_31778467_7_46230409">For those new to our coverage, we'll bring you all we can but we're going to be unashamedly partisan. Go USA! WE BELIEVE :-)&nbsp;</div></div>
+
+
+</div>
+
+<div>
+<div id="TopPagination"><ul class='Pagination'><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=5' class='Current'>&lt; Newest</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=5' class='Current'>1</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=4'>2</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=3'>3</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=2'>4</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=1'>5</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=0'>6</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=0'>Oldest &gt;</a></li></ul></div>
+
+
+ <script type="text/javascript">
+    
+    ( new LiveArticle_Viewer( 647842, ".LiveArticle" ) ).AnimateEdits();
+    
+</script>
+
+    
+
+        <script type="text/x-handlebars-template" id="slideshow-container-tmpl">
+            <div class="SL_SlideShow" contenteditable="false" unselectable="on">
+                <div class="SlideContainer" contenteditable="false" unselectable="on"></div>
+                <div class="SlideShowPrev SlideShowNav" contenteditable="false" unselectable="on" title="Previous"> &nbsp; </div>
+                <div class="SlideShowNext SlideShowNav" contenteditable="false" unselectable="on" title="Next"> &nbsp; </div>
+                <div class="SL_SlideShow_Counter" contenteditable="false" unselectable="on">
+                    <p unselectable="on">
+                        <span class="SL_SlideShow_Current" contenteditable="false" unselectable="on">{{current}}</span> {{slideOf}} <span class="SL_SlideShow_Total" contenteditable="false" unselectable="on">{{total}}</span>
+                    </p>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="slideshow-slide-tmpl">
+            <div class="SL_SlideShow_Slide" contenteditable="false" unselectable="on">
+                <div class="Slide-Inner" contenteditable="false" unselectable="on">
+                    <div class="MediaWrap" contenteditable="false" unselectable="on">
+                        <div class="Media" contenteditable="false" unselectable="on">
+                            {{#if imagePost }}
+                                <img src="{{imagePost}}" contenteditable="false" unselectable="on" />
+                                <div class="MetaWrap" contenteditable="false" unselectable="on">
+                                    <div class="Caption" contenteditable="true">
+                                        <span>{{{caption}}}</span>
+                                    </div>
+                                    <div class="Meta" contenteditable="false" unselectable="on">
+                                        <span unselectable="on">{{{metaby}}}</span>
+                                        <em unselectable="on">{{{metaname}}}</em>
+                                        <span unselectable="on">{{{metatime}}}</span>
+                                    </div>
+                                </div>
+                            {{/if}}
+                            {{#if content}}
+                                {{{content}}}
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>   
+
+        <script type="text/x-handlebars-template" id="slideshow-reorder-tmpl">
+            <div class="SlideShowReorderContainer">
+                <a href="#" class="Ignore ReorderSaveButton Edit Button Compact" style="position: relative;">Save</a>
+                <a href="#" class="Ignore ReorderCancelButton Edit Button Compact" style="position: relative;">Cancel</a>
+                <ul class="SlideShowReorder">
+                {{#reorder_images images}}
+                    <li><img src="{{src}}" class="{{className}}" /></li>
+                {{/reorder_images}}
+                </ul>
+            </div>
+        </script>
+    
+      
+    <script type="text/javascript">
+        var SlideShow = (typeof SCRIBBLE == 'undefined' ? SlideShow : SCRIBBLE.ui.SlideShow);
+    </script>
+
+    
+
+<div id="Discussion" class=" Discussions-On">
+
+
+
+
+<ul id="StickyPostHolder" class="Posts Descending Empty not-live">
+
+	
+
+</ul>
+
+<script type="text/javascript">
+    jQuerySL(document).ready(function () {
+        SCRBBL.go();
+    });
+</script>
+
+
+
+
+
+
+
+<ul id="Posts" class="Posts Descending not-live">
+
+	
+            
+			<li id="LiveBlog_Post120392615" class="First PostType_10" data-postid="120392615">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/2/7/ba02fa48-6414-48a5-9bec-00fbdcdcf36a.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><span class="SL_C_31778467_39_58228294"><strong>Heartbreaking loss</strong></span><div class="SL_C_31778467_41_58228294"><strong><br></strong></div><div class="SL_C_31778467_48_58228294"><span class="SL_C_31778467_49_58228294"><span class="SL_C_31778467_16">We made it out of the Group of Death.</span><span class="SL_C_31778467_17"> Few thought we would.</span><span class="SL_C_31778467_18">&nbsp;</span></span></div><div class="SL_C_31778467_51_58228294"><span class="SL_C_31778467_50_58228294"><br></span></div><div class="SL_C_31778467_53_58228294"><span class="SL_C_31778467_54_58228294">That's something to celebrate.</span></div><div class="SL_C_31778467_56_58228294"><span class="SL_C_31778467_55_58228294"><br></span></div><div class="SL_C_31778467_58_58228294"><span class="SL_C_31778467_59_58228294"><span class="SL_C_31778467_19">We have stars young and old.</span><span class="SL_C_31778467_20"> DeAndre Yedlin, Julian Green and John Brooks were all amazing and have great futures.</span><span class="SL_C_31778467_21"> Jermaine Jones, we salute you.</span><span class="SL_C_31778467_22"> Clint Dempsey, you're our captain.</span><span class="SL_C_31778467_23"> Tim Howard, you're our hero.</span><span class="SL_C_31778467_24">&nbsp;</span></span></div><div class="SL_C_31778467_61_58228294"><span class="SL_C_31778467_60_58228294"><br></span></div><div class="SL_C_31778467_64_58228294"><span class="SL_C_31778467_65_58228294">And we'll be back.&nbsp;</span></div><div class="SL_C_31778467_67_58228294"><span class="SL_C_31778467_66_58228294"><br></span></div><div class="SL_C_31778467_69_58228294"><span class="SL_C_31778467_70_58228294">So be a little sad tonight.&nbsp;</span></div><div class="SL_C_31778467_72_58228294"><span class="SL_C_31778467_71_58228294"><br></span></div><div class="SL_C_31778467_74_58228294"><span class="SL_C_31778467_75_58228294">But guys, this World Cup is gripping -- look at Costa Rica, love the hosts Brazil, and boy, those Dutch are on fire!&nbsp;</span></div><div class="SL_C_31778467_77_58228294"><span class="SL_C_31778467_76_58228294"><br></span></div><div class="SL_C_31778467_44_58228294"><span class="SL_C_31778467_45_58228294">A lot of games to go -- enjoy! (But for now, good night.)&nbsp;</span></div><div class="SL_C_31778467_46_58228294"><strong><br></strong><div class="sltc-twitter SL_Top Over ui-draggable SL_C_31778467_3_58228294" contenteditable="false"><a href="http://www.twitter.com/" class="SL_C_31778467_4_58228294"><div class="sltc-logo SL_C_31778467_5_58228294" contenteditable="false">&nbsp;</div></a><div class="sltc-author SL_C_31778467_6_58228294" contenteditable="false"><div class="sltc-avatar SL_C_31778467_7_58228294" contenteditable="false"><a href="http://www.twitter.com/ussoccer" class="SL_C_31778467_8_58228294"><img src="http://images.scribblelive.com/2014/7/1/f0743e0e-2ce8-4c7f-a309-da69eeb7dae7_500.jpg"></a></div><div class="sltc-info SL_C_31778467_10_58228294" contenteditable="false"><div class="sltc-name SL_C_31778467_11_58228294" contenteditable="false"><a href="http://www.twitter.com/ussoccer" class="SL_C_31778467_12_58228294"><span class="SL_C_31778467_25">U.</span><span class="SL_C_31778467_26">S.</span><span class="SL_C_31778467_27"> Soccer</span></a></div><div class="sltc-username SL_C_31778467_13_58228294" contenteditable="false"><a href="http://www.twitter.com/ussoccer" class="SL_C_31778467_14_58228294">@ussoccer</a></div></div></div><div class="sltc-text SL_C_31778467_15_58228294" contenteditable="false"><a href="https://twitter.com/#!/search?q=%23USMNT" title="#USMNT" class="tweet-url hashtag SL_C_31778467_16_58228294">#USMNT</a><span class="SL_C_31778467_35_58228294"> Fans: </span><a href="https://twitter.com/#!/search?q=%23ThankYou" title="#ThankYou" class="tweet-url hashtag SL_C_31778467_18_58228294">#ThankYou</a><span class="SL_C_31778467_36_58228294"> for your support, passion &amp; pride the whole </span><a href="https://twitter.com/#!/search?q=%23WorldCup" title="#WorldCup" class="tweet-url hashtag SL_C_31778467_20_58228294">#WorldCup</a><span class="SL_C_31778467_37_58228294">. We stand together as </span><a href="https://twitter.com/#!/search?q=%23OneNationOneTeam" title="#OneNationOneTeam" class="tweet-url hashtag SL_C_31778467_22_58228294">#OneNationOneTeam</a><span class="SL_C_31778467_38_58228294">. </span><a href="http://t.co/SaGZqte69p" class="SL_C_31778467_24_58228294">http://t.co/SaGZqte69p</a><div class="sltc-tweetimage SL_C_31778467_25_58228294"><img src="http://images.scribblelive.com/2014/7/1/fbea9af1-823a-429e-9d68-e064822b86c2_500.png"></div></div><div class="sltc-lower SL_C_31778467_27_58228294" contenteditable="false"><a href="https://twitter.com/7563792/status/484105385348182016" class="SL_C_31778467_28_58228294">Jul. 1, 2014</a><ul class="sltc-actions SL_C_31778467_29_58228294"><li class="reply SL_C_31778467_30_58228294" title="Reply" onclick="window.open('https://twitter.com/intent/tweet?in_reply_to=484105385348182016', 'ScribbleLiveTwitterWindow', 'width=575,height=400' );">Reply</li><li class="retweet SL_C_31778467_31_58228294" title="Retweet" onclick="window.open('https://twitter.com/intent/retweet?tweet_id=484105385348182016', 'ScribbleLiveTwitterWindow', 'width=575,height=400' );">Retweet</li><li class="favorite SL_C_31778467_32_58228294" title="Favorite" onclick="window.open('https://twitter.com/intent/favorite?tweet_id=484105385348182016', 'ScribbleLiveTwitterWindow', 'width=575,height=400' );">Favorite</li></ul></div></div><br></div></div> <div class="Meta">by <em class="Creator31778467">Rachel Clarke</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:54:57 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120392615, true );" onclick="return GoToSinglePostPermalink(120392615); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:54:57 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120386855" class=" PostType_10 Odd" data-postid="120386855">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_17398442"><span class="SL_C_19541155_18">Respect Team USA.</span><span class="SL_C_19541155_19"> Your Team made an incredible Job.</span><span class="SL_C_19541155_20"> Don't give up, Team and Fans!!! See you next World Championship.</span></span><span class="Meta SL_C_19541155_5_17398442"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_17398442">Jana Schröder</span></em><span class="SL_C_19541155_14_17398442">at 6:38 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:38:54 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120386855, true );" onclick="return GoToSinglePostPermalink(120386855); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:38:54 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120386741" class=" PostType_10" data-postid="120386741">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_16_43728398"><span class="SL_C_19541155_23">I'm an Englishman and that was by a country mile, the best game of football I've seen in this competition.</span><span class="SL_C_19541155_24"> USA were brilliant, brave and never gave up.</span><span class="SL_C_19541155_25"> </span></span><br><br><span class="SL_C_19541155_17_43728398">You may have lost the game but you won everyones heart!</span><span class="Meta SL_C_19541155_8_43728398"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_18_43728398">Michael A Hall</span></em><span class="SL_C_19541155_19_43728398">at 6:37 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:38:35 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120386741, true );" onclick="return GoToSinglePostPermalink(120386741); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:38:35 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120386714" class=" PostType_10 Odd" data-postid="120386714">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong>The only silver lining</strong><br><br><span class="SL_C_31927918_5_28716035"><span class="SL_C_31927918_12">We know it's tough to find any joy in today's result, USA fans, but if there is anything at all to look forward to, it's Argentina-Belgium.</span><span class="SL_C_31927918_13"> There's going to be, like, a billion dollars worth of soccer player on that field.</span><span class="SL_C_31927918_14"> It's going to be a monster of a match.</span><span class="SL_C_31927918_15"> Yeah, it'd still be better if USA advanced.</span><span class="SL_C_31927918_16"> </span></span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:38:29 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120386714, true );" onclick="return GoToSinglePostPermalink(120386714); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:38:29 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120386366" class=" PostType_10" data-postid="120386366">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_50676293">One of the best games I have watched - thank you team USA, thank you Howard, thank you guys!!!</span><span class="Meta SL_C_19541155_5_50676293"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_50676293">Maxim</span></em><span class="SL_C_19541155_14_50676293">at 6:37 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:37:16 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120386366, true );" onclick="return GoToSinglePostPermalink(120386366); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:37:16 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120386273" class=" PostType_10 Odd" data-postid="120386273">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_79004881"><span class="SL_C_19541155_19">lets support our soccer leagues with 1/10 of the support displayed today.</span><span class="SL_C_19541155_20"> We will win without any doubts the next world cup.</span><span class="SL_C_19541155_21"> We have an extraordinary team and nation.</span><span class="SL_C_19541155_22"> We can be champions.</span></span><span class="Meta SL_C_19541155_5_79004881"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_79004881">usafrever</span></em><span class="SL_C_19541155_14_79004881">at 6:36 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:37:01 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120386273, true );" onclick="return GoToSinglePostPermalink(120386273); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:37:01 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120386246" class=" PostType_10" data-postid="120386246">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><br><blockquote><span class="SL_C_19541155_14_24524000"><span class="SL_C_19541155_20">I need to say that the US Team in this game, although defeated, exits the field "walking tall" and having played an awesome game, clean soccer, fun to watch and both teams gave it all, without holding back anything.</span><span class="SL_C_19541155_21"> I have seen not a single display of meanness, to the contrary, sportsmanship for the entire game.</span><span class="SL_C_19541155_22"> Well done everyone, and be proud, Team USA, it was a very good fight !</span></span><span class="Meta SL_C_19541155_5_24524000"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_15_24524000">Roberto</span></em><span class="SL_C_19541155_16_24524000">at 6:25 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:36:53 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120386246, true );" onclick="return GoToSinglePostPermalink(120386246); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:36:53 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120385973" class=" PostType_10 Odd" data-postid="120385973">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong><span class="SL_C_31927918_2">They gave their all </span></strong><br><br><span class="SL_C_31927918_5"><span class="SL_C_31927918_20">Not to knock my boys, but if they'd played the entire game with the ferocity that they displayed in the last 15 minutes, they might've won 9-0.</span><span class="SL_C_31927918_21"> That was a fine performance against a young, star-studded Belgium team.</span><span class="SL_C_31927918_22"> I know I've been rooting against them for the past two-plus hours, but Belgium played a stellar match.</span><span class="SL_C_31927918_23"> </span></span></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:35:56 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120385973, true );" onclick="return GoToSinglePostPermalink(120385973); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:35:56 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120385948" class=" PostType_10" data-postid="120385948">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_96494707">Sad USA didn't win, but I'm very proud of their effort!</span><span class="Meta SL_C_19541155_5_96494707"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_96494707">KathyB</span></em><span class="SL_C_19541155_14_96494707">at 6:35 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:35:51 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120385948, true );" onclick="return GoToSinglePostPermalink(120385948); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:35:51 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120385873" class=" PostType_10 Odd" data-postid="120385873">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_55163925"><span class="SL_C_19541155_20">WORLD CUP CHAMPIONSHIP is just a matter of time for USA.</span><span class="SL_C_19541155_21">.</span><span class="SL_C_19541155_22">.</span><span class="SL_C_19541155_23">.</span><span class="SL_C_19541155_24">hope I live to see it.</span></span><span class="Meta SL_C_19541155_5_55163925"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_55163925">GRIDIRON GREG from GREEN BAY</span></em><span class="SL_C_19541155_14_55163925">at 6:33 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:35:31 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120385873, true );" onclick="return GoToSinglePostPermalink(120385873); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:35:31 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120385722" class=" PostType_10" data-postid="120385722">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_49753089">Valiant last gasp effort by the US but sloppy defending confined them to this result.</span><span class="Meta SL_C_19541155_5_49753089"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_49753089">Ashton Petkau </span></em><span class="SL_C_19541155_14_49753089">at 6:35 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:35:15 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120385722, true );" onclick="return GoToSinglePostPermalink(120385722); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:35:15 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120385663" class=" PostType_10 Odd" data-postid="120385663">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_30703851">Respect for Team USA from The Netherlands! You guys put up a fight all the way, respect!!!</span><span class="Meta SL_C_19541155_5_30703851"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_30703851">Rodney (Netherlands)</span></em><span class="SL_C_19541155_14_30703851">at 6:34 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:35:00 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120385663, true );" onclick="return GoToSinglePostPermalink(120385663); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:35:00 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120384781" class=" PostType_10" data-postid="120384781">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong><span class="SL_C_31927918_6_61958099">Belgium 2-USA 1</span></strong><br><br><span class="SL_C_31927918_7_61958099">That was a fine 15 minutes of soccer, Team USA, but it wasn't quite enough. </span><br><br><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:32:47 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120384781, true );" onclick="return GoToSinglePostPermalink(120384781); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:32:47 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120384624" class=" PostType_10 Odd" data-postid="120384624">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/2/7/ba02fa48-6414-48a5-9bec-00fbdcdcf36a.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><span class="SL_C_31778467_3_29972947"><strong>Belgium win</strong></span><div class="SL_C_31778467_7_29972947"><span class="SL_C_31778467_6_29972947"><span class="SL_C_31778467_5_29972947"><br></span></span></div><div class="SL_C_31778467_9_29972947"><span class="SL_C_31778467_1_29972947"><span class="SL_C_31778467_2_29972947">So much effort at the end for the US, just not quite enough.&nbsp;</span></span></div></div> <div class="Meta">by <em class="Creator31778467">Rachel Clarke</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:32:32 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120384624, true );" onclick="return GoToSinglePostPermalink(120384624); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:32:32 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120384143" class=" PostType_10" data-postid="120384143">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong><span class="SL_C_31927918_2_88894072">Last c</span><span class="SL_C_31927918_8_88894072">hance</span></strong><span class="SL_C_31927918_9_88894072">?</span><br><br><span class="SL_C_31927918_7_88894072"><span class="SL_C_31927918_14">Green gets a cross into the box, but Yedlin can't bring it down.</span><span class="SL_C_31927918_15"> One minute of stoppage time.</span><span class="SL_C_31927918_16"> Is there time for one more? Klinsmann ticked Belgium is wasting time.</span><span class="SL_C_31927918_17"> </span></span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:31:39 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120384143, true );" onclick="return GoToSinglePostPermalink(120384143); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:31:39 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120384044" class=" PostType_10 Odd" data-postid="120384044">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_27712080"><span class="SL_C_19541155_17">Team USA will have four years to hit the weight room.</span><span class="SL_C_19541155_18"> It is like a grown man pushing around a nine-year-old all game long.</span></span><span class="Meta SL_C_19541155_5_27712080"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_27712080">Sam smith</span></em><span class="SL_C_19541155_14_27712080">at 6:30 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:31:32 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120384044, true );" onclick="return GoToSinglePostPermalink(120384044); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:31:32 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120383841" class=" PostType_10" data-postid="120383841">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_90117518">too many goose bumps, holding breath! Come on boys, y'all can do it.</span><span class="Meta SL_C_19541155_5_90117518"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_90117518">Army Specialist</span></em><span class="SL_C_19541155_14_90117518">at 6:30 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:31:12 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120383841, true );" onclick="return GoToSinglePostPermalink(120383841); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:31:12 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120383588" class=" PostType_10 Odd" data-postid="120383588">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong>Belgium trying to run clock out</strong><br><br><span class="SL_C_31927918_5_51642707"><span class="SL_C_31927918_10">They're on the U.</span><span class="SL_C_31927918_11">S.</span><span class="SL_C_31927918_12"> side of the field, and they're in no hurry to go anywhere.</span><span class="SL_C_31927918_13"> </span></span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:30:40 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120383588, true );" onclick="return GoToSinglePostPermalink(120383588); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:30:40 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120383570" class=" PostType_1 Tweet" data-postid="120383570">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/7/1/3b1f645e-0fce-4d91-9387-d7ae10299ca3.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content">Into the last 90 seconds...Belgium have everybody back in the box. Bradley fouled. Could be the last chance here...</div> <div class="Meta">by <em class="Creator1168089">U.S. Soccer</em> <span class="Source">via <a href='http://twitter.com/ussoccer/status/484101597652590592'>twitter</a></span>  <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:30:34 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120383570, true );" onclick="return GoToSinglePostPermalink(120383570); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:30:34 PM') )</script></a></span></span> </div>						
+						 
+						
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120383425" class=" PostType_10 Odd" data-postid="120383425">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_27862439">I hate soccer and yet here I find myself hanging on every post about the game.</span><span class="Meta SL_C_19541155_5_27862439"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_27862439">Randolph</span></em><span class="SL_C_19541155_14_27862439">at 6:29 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:30:24 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120383425, true );" onclick="return GoToSinglePostPermalink(120383425); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:30:24 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120383068" class=" PostType_10" data-postid="120383068">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong><span class="SL_C_31927918_7_17301587">Threatening</span><br></strong><br><span class="SL_C_31927918_6_17301587">USA passing the ball just outside the Belgian box. </span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:29:49 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120383068, true );" onclick="return GoToSinglePostPermalink(120383068); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:29:49 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382740" class=" PostType_10 Odd" data-postid="120382740">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong><span class="SL_C_31927918_6_15710708">US</span><span class="SL_C_31927918_7_15710708">A</span><span class="SL_C_31927918_8_15710708"> gets ball back</span></strong><br><br><span class="SL_C_31927918_5_15710708">They're in their own half, but they have it with two minutes</span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:29:14 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382740, true );" onclick="return GoToSinglePostPermalink(120382740); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:29:14 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382712" class=" PostType_10" data-postid="120382712">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_99794964"><span class="SL_C_19541155_25">Wow, the US offense showed up for a few minutes.</span><span class="SL_C_19541155_26"> Too bad, this is a 120 minute game.</span><span class="SL_C_19541155_27"> Too little, too late.</span><span class="SL_C_19541155_28"> If LD had been out there, it would have been settled in regulation.</span><span class="SL_C_19541155_29"> The stronger players, better quality talent have won out.</span><span class="SL_C_19541155_30"> Over.</span><span class="SL_C_19541155_31"> The US just does not have the quality to put it through.</span><span class="SL_C_19541155_32"> Too many missed chances due to lack of quality on offense.</span><span class="SL_C_19541155_33"> If it was not for Bradley, it would have ended in regulation 3-0.</span></span><span class="Meta SL_C_19541155_5_99794964"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_99794964">Sam smith</span></em><span class="SL_C_19541155_14_99794964">at 6:28 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:29:04 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382712, true );" onclick="return GoToSinglePostPermalink(120382712); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:29:04 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382499" class=" PostType_10 Odd" data-postid="120382499">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_86371561">My kids commandeered the TV for a movie--can't dash the sibling bonding, so I am missing this! Keep up the reporting!! GO USA!!</span><span class="Meta SL_C_19541155_5_86371561"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_86371561">ErikaM</span></em><span class="SL_C_19541155_14_86371561">at 6:28 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:28:50 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382499, true );" onclick="return GoToSinglePostPermalink(120382499); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:28:50 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382346" class=" PostType_10" data-postid="120382346">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_24822617">GO USA!!!!!  ALL THE WAY!!!!</span><span class="Meta SL_C_19541155_5_24822617"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_24822617">Chicago</span></em><span class="SL_C_19541155_14_24822617">at 6:28 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:28:34 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382346, true );" onclick="return GoToSinglePostPermalink(120382346); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:28:34 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382293" class=" PostType_10 Odd" data-postid="120382293">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_93102633">Let's go USA!!!!</span><span class="Meta SL_C_19541155_5_93102633"><img src="https://s3.amazonaws.com/avatars.scribblelive.com/2014/7/1/2aa09eff-ca8e-462d-ad75-658514b8a2cb.jpg"><em><span class="SL_C_19541155_13_93102633">AldennMota</span></em><span class="SL_C_19541155_14_93102633">at 6:28 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:28:24 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382293, true );" onclick="return GoToSinglePostPermalink(120382293); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:28:24 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382256" class=" PostType_10" data-postid="120382256">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_87227428">Team USA needs to hurry up and send that ball to the back of the net!</span><span class="Meta SL_C_19541155_5_87227428"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_87227428">Ouch</span></em><span class="SL_C_19541155_14_87227428">at 6:27 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:28:14 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382256, true );" onclick="return GoToSinglePostPermalink(120382256); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:28:14 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382203" class=" PostType_10 Odd" data-postid="120382203">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong>Argh!!</strong><br><br><span class="SL_C_31927918_6_75326497">Another Yedlin cross poses real danger for Belgium but it's cleared away. </span><br><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:27:58 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382203, true );" onclick="return GoToSinglePostPermalink(120382203); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:27:58 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120382085" class=" PostType_10" data-postid="120382085">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><br><blockquote><span class="SL_C_19541155_13_80799695">I'm dyin over 'ere</span><span class="Meta SL_C_19541155_5_80799695"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_14_80799695"><span class="SL_C_19541155_19">Keep updating! Stuck at.</span><span class="SL_C_19541155_20">.</span><span class="SL_C_19541155_21">.</span></span></em><span class="SL_C_19541155_15_80799695">at 6:27 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:27:42 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120382085, true );" onclick="return GoToSinglePostPermalink(120382085); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:27:42 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381653" class=" PostType_10 Odd" data-postid="120381653">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_26_62264623">I can't get any work done : )</span><span class="Meta SL_C_19541155_18_62264623"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_27_62264623">Chris1222</span></em><span class="SL_C_19541155_28_62264623">at 6:26 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:27:00 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381653, true );" onclick="return GoToSinglePostPermalink(120381653); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:27:00 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381640" class=" PostType_10" data-postid="120381640">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_62264623">Go usa!! Indiana is behind you!</span><span class="Meta SL_C_19541155_5_62264623"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_62264623">stateofindiana</span></em><span class="SL_C_19541155_14_62264623">at 6:26 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:26:55 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381640, true );" onclick="return GoToSinglePostPermalink(120381640); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:26:55 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381587" class=" PostType_10 Odd" data-postid="120381587">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_13_28097016">Keep updating! Stuck at work!! ARGHLogout</span><span class="Meta SL_C_19541155_5_28097016"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_14_28097016"><span class="SL_C_19541155_19">Keep updating! Stuck at.</span><span class="SL_C_19541155_20">.</span><span class="SL_C_19541155_21">.</span></span></em><span class="SL_C_19541155_15_28097016">at 6:26 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:26:38 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381587, true );" onclick="return GoToSinglePostPermalink(120381587); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:26:38 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381527" class=" PostType_10" data-postid="120381527">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><br><blockquote><span class="SL_C_19541155_13_5697697">IF the USA pulls this off we USA team fans think Ted Turner should buy all you behind this sports cast a few drinks  ;)</span><span class="Meta SL_C_19541155_5_5697697"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_14_5697697">Lothar_of_the_Hill_People</span></em><span class="SL_C_19541155_15_5697697">at 6:26 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:26:30 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381527, true );" onclick="return GoToSinglePostPermalink(120381527); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:26:30 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381497" class=" PostType_10 Odd" data-postid="120381497">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong>Five minutes to go!</strong><br><br><span class="SL_C_31927918_5_56068081"><span class="SL_C_31927918_11">U.</span><span class="SL_C_31927918_12">S.</span><span class="SL_C_31927918_13"> is looking for that equalizer and has the time to do it.</span><span class="SL_C_31927918_14"> </span></span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:26:27 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381497, true );" onclick="return GoToSinglePostPermalink(120381497); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:26:27 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381304" class="Comment PostType_1 Tweet" data-postid="120381304">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/7/1/3b1f645e-0fce-4d91-9387-d7ae10299ca3.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content">The <a href="https://twitter.com/#!/search?q=%23USMNT" title="#USMNT" class="tweet-url hashtag">#USMNT</a> pouring on the pressure here. Six minutes to grab the tying goal...</div> <div class="Meta">by <em class="Creator1168089">U.S. Soccer</em> <span class="Source">via <a href='http://twitter.com/ussoccer/status/484100491194818560'>twitter</a></span>  <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:26:11 PM</span><span class="Posted Comment">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381304, true );" onclick="return GoToSinglePostPermalink(120381304); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:26:11 PM') )</script></a></span></span> </div>						
+						 
+						
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381251" class=" PostType_10 Odd" data-postid="120381251">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong>Weak cross from Green</strong><br><br><span class="SL_C_31927918_5_83929923"><span class="SL_C_31927918_10">U.</span><span class="SL_C_31927918_11">S.</span><span class="SL_C_31927918_12"> ends dangerous spell with a Julian Green cross that goes straight to the keeper.</span><span class="SL_C_31927918_13"> </span></span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:25:52 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381251, true );" onclick="return GoToSinglePostPermalink(120381251); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:25:52 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120381233" class=" PostType_10" data-postid="120381233">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_58003849">greets from germany, usa playing an amazing match!</span><span class="Meta SL_C_19541155_5_58003849"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_58003849">manuelgermany</span></em><span class="SL_C_19541155_14_58003849">at 6:24 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:25:44 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120381233, true );" onclick="return GoToSinglePostPermalink(120381233); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:25:44 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380797" class=" PostType_10 Odd" data-postid="120380797">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong><span class="SL_C_31927918_7_45223116">USA threatening big time!</span><br></strong><br><span class="SL_C_31927918_6_45223116">They're not giving up!</span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:24:53 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380797, true );" onclick="return GoToSinglePostPermalink(120380797); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:24:53 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380442" class=" PostType_10" data-postid="120380442">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong>So close!!!!!!</strong><br><br><span class="SL_C_31927918_5_59742249">Dempsey finds a ball trickling through the box but can't get it into the net!</span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:24:24 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380442, true );" onclick="return GoToSinglePostPermalink(120380442); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:24:24 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380299" class=" PostType_10 Odd" data-postid="120380299">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><span class="SL_C_31927918_4_17955792">Kick coming</span><br><br><span class="SL_C_31927918_5_17955792">About 30 yards out. </span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:23:55 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380299, true );" onclick="return GoToSinglePostPermalink(120380299); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:23:55 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380249" class=" PostType_1 Tweet" data-postid="120380249">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2010/2/18/3cfd6179-c474-4d3b-bdde-50ab8a5e3105.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content">Whatever outcome of this game hard to think of a gutsier performance at World Cup. Klinsmann extracting heroics from <a href='http://twitter.com/search?q=%23USA&src=hash'>&#35;USA</a>  team vs. <a href='http://twitter.com/search?q=%23BEL&src=hash'>&#35;BEL</a> </div> <div class="Meta">by <em class="Creator773832">John Sinnott</em> <span class="Source">via <a href='http://twitter.com/JohnSinnott/status/484089823201075200'>twitter</a> <span class='retweet'>retweeted by <a href='http://twitter.com/CNNFC/status/484092217792147457'>CNNFC</a></span></span>  <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:23:50 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380249, true );" onclick="return GoToSinglePostPermalink(120380249); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:23:50 PM') )</script></a></span></span> </div>						
+						 
+						
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380114" class=" PostType_10 Odd" data-postid="120380114">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong><span class="SL_C_31927918_4_13675910">Free kick, USA</span></strong><br><br><span class="SL_C_31927918_5_13675910">Breath being held!!</span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:23:35 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380114, true );" onclick="return GoToSinglePostPermalink(120380114); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:23:35 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380084" class=" PostType_10" data-postid="120380084">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_65514893"><span class="SL_C_19541155_20">This is why I hate soccer.</span><span class="SL_C_19541155_21">.</span><span class="SL_C_19541155_22">.</span><span class="SL_C_19541155_23"> too hard on the fingernails.</span><span class="SL_C_19541155_24"> ;-)</span></span><span class="Meta SL_C_19541155_5_65514893"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_65514893">padma</span></em><span class="SL_C_19541155_14_65514893">at 6:22 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:23:30 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380084, true );" onclick="return GoToSinglePostPermalink(120380084); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:23:30 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380071" class=" PostType_10 Odd" data-postid="120380071">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2014/9/24/2a467b16-79fd-4e80-88bb-208d206a3cd1.jpg" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><strong>Bad foul on Green</strong><br><br><span class="SL_C_31927918_5_74102571"><span class="SL_C_31927918_9">Nice little counter by the U.</span><span class="SL_C_31927918_10">S.</span><span class="SL_C_31927918_11"> Belgium has no choice but to snuff it out by knocking down Julian Green.</span></span><br></div> <div class="Meta">by <em class="Creator31927918">eliott.mclaughlin</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:23:25 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380071, true );" onclick="return GoToSinglePostPermalink(120380071); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:23:25 PM') )</script></a></span></span> </div>	
+						 					
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+            
+			<li id="LiveBlog_Post120380029" class=" PostType_10" data-postid="120380029">
+					 
+					<div class="avatar-area"><img src="http://avatars.scribblelive.com/2012/10/11/21a2ff64-0845-4cfc-9163-4d31714da336.png" class="avatar" alt=""></div>
+					<div class="content-area">
+						<div class="Content"><br><blockquote><span class="SL_C_19541155_12_81917888">That's football! All it takes is one moment of brilliance and you're right back in it!</span><span class="Meta SL_C_19541155_5_81917888"><img src="//cdn.scribblelive.com/Style/Images/Admin/avatar_25x25.png"><em><span class="SL_C_19541155_13_81917888">Ashton Petkau </span></em><span class="SL_C_19541155_14_81917888">at 6:20 PM</span></span></blockquote><br></div> <div class="Meta">by <em class="Creator19541155">Dorrine Mendoza</em> <span class="DisplayPostTime"><span class="ServerTime">7/1/2014 10:23:17 PM</span><span class="Posted">  <a class="SinglePostLink" href="javascript:void(0)" onmouseover="this.href=GetSinglePostPermalink(120380029, true );" onclick="return GoToSinglePostPermalink(120380029); return false;"><script type="text/javascript">document.write( LiveBlog.ConvertServerTimeToLocalTimeFriendlyString('7/1/2014 10:23:17 PM') )</script></a></span></span> </div>						
+						 
+						<div class="post-actions">
+									
+										<a href="#" class="add-comment">Comment <span class="counter no-comments">(<span class="total"></span>)</span></a>                       
+									</div>
+					</div>
+                   
+			</li>
+		
+
+</ul>
+
+<script type="text/javascript">
+    jQuerySL(document).ready(function () {
+        SCRBBL.go();
+    });
+</script>
+
+
+</div>
+
+
+<div id="BottomPagination"><ul class='Pagination'><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=5' class='Current'>&lt; Newest</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=5' class='Current'>1</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=4'>2</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=3'>3</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=2'>4</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=1'>5</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=0'>6</a></li><li><a target='_self' href='http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2?Page=0'>Oldest &gt;</a></li></ul></div>
+
+</div>
+
+
+
+<script type="text/javascript">
+    var ThreadLiveBlog = new LiveBlog( ThreadId, NewestAtBottom, Time, UserId, AllowedToEdit, null, null, 500, 1, null, null, null, true );
+
+
+
+ThreadLiveBlog.NewPostSound = "http://media.scribblelive.com/Sounds/1.mp3";
+ThreadLiveBlog.IsModerated = true;
+ThreadLiveBlog.PreviewImage = "http://avatars.scribblelive.com/2014/2/7/ba02fa48-6414-48a5-9bec-00fbdcdcf36a_300.jpg";
+ThreadLiveBlog.Title = "World Cup: USA 1 Belgium 2";
+ThreadLiveBlog.Description = "What a game, just not quite enough for Team USA. At the end they gave it everything.  Well played, but the World Cup dream is over -- until 2018. "; 
+ThreadLiveBlog.URL = "http://worldcup.edition.cnn.com/Event/World_Cup_USA_vs_Belgium_2";
+ThreadLiveBlog.UserName = "";
+ThreadLiveBlog.Language = "en";
+ThreadLiveBlog.isPollHidden = false;
+
+
+ThreadLiveBlog.PollForNew();
+
+
+(new PostUI()).Setup();
+
+try {
+    if( ( document.location + "" ).match( /[\?&]translate=/i ) )
+    {
+        var PassedLanguage = ( document.location + "" ).match( /[\?&]translate=([a-z]+)/i )[1];
+        ThreadLiveBlog.TranslateAllPosts( PassedLanguage );
+    
+    }
+} catch(ex) {}
+</script>
+
+<a href="http://www.scribblelive.com" title="ScribbleLive liveblog liveblogging" class="PoweredByImg" target="_blank">Powered by ScribbleLive</a></div></div>
+                    <div class="cnn_clear"></div>
+                </div>
+                <!-- Right Rail -->
+                <div class="cnn_strycntntrgt">
+                    <div style="text-align:center;padding:10px 0;display:none;"><iframe src="http://bleacherreport.com/2014-fifa-world-cup/standings?mini=true" height="280" width="300"></iframe></div>
+
+                    <div>
+                        <span id="medium_rectangle" class="_fwph">
+                        <form id="_fw_form_medium_rectangle" style="display:none">
+                            <input type="hidden" name="_fw_input_medium_rectangle" id="_fw_input_medium_rectangle" value="w=336&h=280&envp=g_js&sflg=-nrpl&cd=336,280|300,250;">
+                        </form>
+                        <span id="_fw_container_medium_rectangle" class="_fwac">
+                        <div><!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=bst&cnn_intl_position=336x850_rgt&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs|CALLOUT -->
+<!-- ADSPACE: special_reports/brazil_2014/bst/rgt.336x850 -->
+<div id="ad-1a5cf546313dad4d" align="center" style="padding: 0; margin: 0; border: 0;"></div>
+<script type="text/javascript">
+cnnad_createAd("1a5cf546313dad4d","http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=bst&cnn_intl_position=336x850_rgt&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs","850","336", null, "");
+cnnad_registerSpace("1a5cf546313dad4d","336","850");
+</script>
+<!-- ADSPACE-END --></div>
+                        <div class="cnn_adtitle"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/misc/advertisement.gif" alt="ADVERTISEMENT" border="0" height="5" width="58"></div>
+                        </span>
+                        </span>
+                    </div>
+                    <div class="cnn_clear"></div>
+                    <div class="cnn_divline cnn_divlscrct"></div>
+                    <div class="cnn_strycrcntr">
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://edition.cnn.com/brazil2014/">Brazil 2014</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://edition.cnn.com/brazil2014/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/tz.brazil.small.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">CNN takes you inside football's biggest tournament with big-name interviews, news, features and analysis.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://edition.cnn.com/facebookpulse/">World Cup Pulse</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://edition.cnn.com/facebookpulse/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/tz.pulse.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">The CNN Facebook Pulse is a unique digital dashboard to present the global debate around the World Cup.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://edition.cnn.com/SPORT/football/">Football</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://edition.cnn.com/SPORT/football/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/tz.football.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">Everything you need to know about the world's favourite sport from CNN's team of reporters and producers.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://edition.cnn.com/SPECIALS/human-to-hero/">Human to Hero</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://edition.cnn.com/SPECIALS/human-to-hero/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/tz.h2h.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">Human to Hero gets to the heart of what it takes to be a sporting star.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://worldsport.blogs.cnn.com/">World Sport Analysis</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://worldsport.blogs.cnn.com/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/tz.world.sport.blog.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">The inside track to the major issues and stories making news in the world of sports.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://edition.cnn.com/SPORT/">World Sport</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://edition.cnn.com/SPORT/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/worldsport.tz.small.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">Stay across the biggest stories, in sport as they break with World Sport.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://www.facebook.com/worldsportcnn/">World Sport Facebook</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://www.facebook.com/worldsportcnn/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/tz.facebook.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">Connect with the CNN World Sport community on Facebook during the World Cup.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnn_stryspcvbx">
+                            <div class="cnn_stryspcvbxcntr">
+                                <div class="cnn_stryscbx1">
+                                    <div><a href="http://ireport.cnn.com/">iReport</a></div>
+                                    <div class="cnn_stryscbx3"><a href="http://ireport.cnn.com/"><img src="http://i.cdn.turner.com/cnn/.element/interactive/2014/world.cup.blog/img/tz.ireport.jpg" alt="" border="0" height="68" width="120"></a></div>
+                                    <div class="cnn_stryscbx4">Send your fun, spectacular and dramatic images of Brazil 2014 to the iReport team.</div>
+                                    <div class="cnn_clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align:center;padding-top:10px;">
+                        <!-- CALLOUT|http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=special_report_main&cnn_intl_position=336x280_rgt&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs|CALLOUT -->
+<!-- ADSPACE: special_reports/brazil_2014/special_report_main/rgt.336x280 -->
+<div id="ad-40f3438a548b052d" align="center" style="padding: 0; margin: 0; border: 0;"></div>
+<script type="text/javascript">
+cnnad_createAd("40f3438a548b052d","http://ads.cnn.com/html.ng/site=cnn_international&cnn_intl_pagetype=special_report_main&cnn_intl_position=336x280_rgt&cnn_intl_rollup=special_reports&cnn_intl_section=brazil_2014&page.allowcompete=no&params.styles=fs","280","336", null, "");
+cnnad_registerSpace("40f3438a548b052d","336","280");
+</script>
+<!-- ADSPACE-END -->
+                        <div class="cnn_adtitle"><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/misc/advertisement.gif" alt="ADVERTISEMENT" border="0" height="5" width="58"></div>
+                    </div>
+                    <!-- /cnn_strycrcntr -->
+                </div>
+                <div class="cnn_clear"></div>
+            </div>
+        </div>
+    </div>
+    <div id="cnn_ftrcntnt">
+<div id="cnn_ftrcntntinner" class="clearfix">
+<div class="cnn_ftrdivl1"></div>
+<div id="cnnLWPWeather" style="visibility: hidden">
+	<p><b>Loading weather data ...</b></p>
+</div>
+
+<div id="ftr-search">
+	<form method="get" action="http://edition.cnn.com/search/" onsubmit="return cnnFootSearch(this);">
+
+
+	<div class="ftr-search-datacntr">
+<div class="ftr-search-tfield"><input type="text" name="query" size="12" maxlength="100" value="" id="ftr-search-box"></div>
+<div class="ftr-search-sicon"><input type="image" src="http://i.cdn.turner.com/cnn/.element/img/3.0/search/search_btn_footer.gif" width="55" height="21" alt=""></div>
+</div>
+
+
+		<input type="hidden" name="cnnFtrSrchType" id="cnnFtrSrchType" value="mixed">
+
+<div class="cnn_ftrggle"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/global/footer/pngs/footer_google.png" width="88" height="13" alt="" border="0" class="cnn_ie6png"></div>
+
+	</form>
+</div>
+
+<div class="cnn_clear"></div>
+
+<div class="cnn_divline" style="background-color:#EBEBEB; margin-top:3px"></div>
+
+<div class="cnn_ftrnvlnks">
+
+<div><a href="http://edition.cnn.com/">Home</a> | <a href="http://edition.cnn.com/video/">Video</a> | <a href="http://edition.cnn.com/WORLD/">World</a> | <a href="http://edition.cnn.com/US/">U.S.</a> | <a href="http://edition.cnn.com/AFRICA/">Africa</a> | <a href="http://edition.cnn.com/ASIA/">Asia</a> | <a href="http://edition.cnn.com/EUROPE/">Europe</a> | <a href="http://edition.cnn.com/LATINAMERICA/">Latin America</a> | <a href="http://edition.cnn.com/MIDDLEEAST/">Middle East</a> | <a href="http://edition.cnn.com/BUSINESS/">Business</a> | <a href="http://edition.cnn.com/SPORT/">World Sport</a> | <a href="http://edition.cnn.com/SHOWBIZ/">Entertainment</a> | <a href="http://edition.cnn.com/TECH/">Tech</a> | <a href="http://travel.cnn.com/">Travel</a> | <a href="http://www.ireport.com/?cnn=yes">iReport</a></div>
+
+<div><a href="http://edition.cnn.com/tools/index.html">Tools &amp; Widgets</a> | <a href="http://edition.cnn.com/services/rss/">RSS</a> | <a href="http://edition.cnn.com/services/podcasting/">Podcasts</a> | <a href="http://edition.cnn.com/exchange/blogs/index.html">Blogs</a> | <a href="http://edition.cnn.com/mobile/">CNN Mobile</a> | <a href="http://edition.cnn.com/profile/">My Profile</a> | <a href="http://edition.cnn.com/profile/">E-mail Alerts</a> | <a href="http://edition.cnn.com/audio/radio/winmedia.html">CNN Radio</a> | <a href="http://www.turnerstoreonline.com/">CNN Shop</a> | <a href="http://edition.cnn.com/sitemap/">Site map</a> | <a href="http://partners.cnn.com/">CNN Partner Hotels</a></div>
+
+</div>
+
+<div class="cnn_ftrdivl2"></div>
+
+<div class="cnn_ftrlnggcntr">
+<div><a href="http://edition.cnn.com/espanol/">CNN en ESPA&Ntilde;OL</a> | <a href="http://www.cnnchile.com">CNN Chile</a> | <a href="http://www.cnnmexico.com">CNN M&eacute;xico</a> | <span class="cnn_ftrlarabic"><a href="http://arabic.cnn.com/" class="cnn_ie6png"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/1px.gif" width="32" height="11" alt="" border="0"></a></span> | <span class="cnn_ftrlkorean"><a href="http://cnn.joins.com/" class="cnn_ie6png"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/1px.gif" width="32" height="11" alt="" border="0"></a></span> | <span class="cnn_ftrljapan"><a href="http://www.cnn.co.jp/" class="cnn_ie6png"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/1px.gif" width="32" height="11" alt="" border="0"></a></span> | <span class="cnn_ftrlturkish"><a href="http://www.cnnturk.com/" class="cnn_ie6png"><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/1px.gif" width="32" height="11" alt="" border="0"></a></span></div>
+
+</div>
+
+<div class="cnn_ftrlgcpy">
+<div><img src="http://i.cdn.turner.com/cnn/.element/img/3.0/global/footer/pngs/footer_cnn_logo.png" width="23" height="11" alt="" border="0" class="cnn_ie6png">&copy; 2014 Cable News Network. <a href="http://www.turner.com/" class="cnn_ftrtbslink">Turner Broadcasting System, Inc.</a> All Rights Reserved.</div>
+</div>
+
+<div class="cnn_ftrlgcpyBot"><a href="http://edition.cnn.com/interactive_legal.html" rel="nofollow">Terms of service</a> | <a href="http://edition.cnn.com/privacy.html" rel="nofollow">Privacy guidelines</a> |  <a onclick="(function(){var s=document.createElement('script');s.src='//preferences.truste.com/webservices/js?domain=turner.com&type=turner&js=2';s.onreadystatechange=function(){if(this.readyState=='loaded'||this.readyState=='complete'){view(trusteId);}};s.onload=function(){view(trusteId);};document.getElementsByTagName('head')[0].appendChild(s);})()" style="cursor:pointer;" target="_blank">AdChoices</a><img src="http://i.cdn.turner.com/cnn/.e/img/3.0/global/misc/logo_ad_choices_footer.png" width="12" height="12" alt="" border="0" style="margin:0 0 0 4px;" class="cnn_ie6png"> <div id="footerCookie" style="display: none;display: inline;"></div> | <a href="http://www.cnnmediainfo.com/" rel="nofollow">Advertise with us</a> | <a href="http://edition.cnn.com/intlsyndication/">License our content</a> | <a href="http://edition.cnn.com/about/">About us</a> | <a href="http://edition.cnn.com/feedback/" rel="nofollow">Contact us</a> | <a href="http://www.turner.com/careers/" rel="nofollow">Work for us</a> | <a href="http://edition.cnn.com/help/" rel="nofollow">Help</a></div>
+<div class="cnn_ftrlnggcntrBot"><a href="http://edition.cnn.com/CNNI/">CNN TV</a> | <a href="http://edition.cnn.com/HLN/">HLN</a> | <a href="http://transcripts.cnn.com/TRANSCRIPTS/">Transcripts</a></div>
+
+
+<div class="cnn_clear"></div>
+</div><!-- /cnn_ftrcntntinner -->
+</div><!-- /cnn_ftrcntnt -->
+<script type="text/javascript" src="http://i.cdn.turner.com/cnn/.element/js/3.0/weather.footer.js"></script>
+<script>
+	var cnn_edtnswtchver = "edition";
+</script>
+<script type="text/javascript" src="http://i.cdn.turner.com/cnn/.element/js/3.0/edition.vars.js"></script>
+<script type="text/javascript">
+	msQueueManager.init('requestFrame', ms_blankURL);
+</script>
+<script type="text/javascript" src="http://z.cdn.turner.com/cnn/.element/js/3.0/intl/edition_footer.js"></script>
+<script type="text/javascript" src="http://z.cdn.turner.com/analytics/cnn/ais_cnnintl.js"></script>
+<script type="text/javascript">
+if(ms_isLoggedIn()) {
+	CNN_setCookie('CNN_member', true, 854400, '/', document.domain);
+}
+</script>
+
+	
+
+<!--include virtual="/.element/ssi/intl/misc/3.0/omni/omniture.exe.html" -->
+<script src="http://z.cdn.turner.com/cnn/.e/js/libs/jsmd-65.min.js"></script>
+
+
+<script language="JavaScript">
+   var jsmd;
+        jsmd = _jsmd.init();
+        var pageURL = location.href.toLowerCase(); 
+        if (pageURL.indexOf("/.element/ssi/ads.iframes/") == -1 && pageURL.indexOf("/doubleclick/dartiframe.html") == -1 && pageURL.indexOf("/search/") == -1) { 
+         if(_jsmd.plugin.gQuery("refresh")){jsmd.trackMetrics("dynamic-autoRefresh","autorefresh","cnn-autorefresh"); }
+         else if(_jsmd.plugin.gQuery("is_LR"))
+         {
+            //do nothing
+         }
+         else if(cnn_metadata.template_type_content !="gallery"){  
+			jsmd.send();
+          }
+        }
+
+</script>
+
+
+
+
+
+<script>
+// removes a cookie that grows too large and causes a 400 error
+// CNN-17021
+try {
+	setTimeout(function(){try {document.cookie = "mrvPages=http://www.cnn.com; expires=Fri, 13-Apr-1970 00:00:00 GMT; path=/; domain=" + document.domain;} catch(e) {}},5000);
+}
+catch(e) {}
+</script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            loadChartbeat("football", "");
+
+            var cnn_shareconfig = [{
+                'id' : 'cnn_sharebar1',
+                'url' : 'http://worldcup.edition.cnn.com/',
+                'title' : 'Brazil 2014 - Live Blog'
+            }];
+            cnnsocial.setapiconfig([{
+                'site': 'facebook',
+                'success': function() {
+                    /* trigger connect-cnnsocial.js calls */
+                    window.cnn_fbAsyncInit();
+                }
+            }, {
+                'site': 'twitter'
+            }]);
+            cnnsocial.share.setconfig(cnn_shareconfig);
+            cnnsocial.init();
+        });
+    </script>
+</div>
+    
+    
+    
+
+    <script type="text/javascript">ActivateSidebarAccordion();</script>
+	
+    <script type="text/javascript">
+        
+
+        var LeadCapFront;
+        
+        
+
+        
+
+        jQuerySL( document ).ready(function() {	
+
+			
+
+            if ( LiveBlog.IsjQueryAvailable == true && typeof SlideShow !== "undefined" )
+            {
+                SlideShow.Configure( false );
+                
+                if (SCRIBBLE.ui.SlideShow.Metrics ){
+                    SCRIBBLE.ui.SlideShow.Metrics.init( {
+                        endpoint: "http://cdnlove.scribblelive.com/slideshow/",
+                        threadId: 694519,
+                        articleId: 647842,
+                        postContainer: "#Discussion #Posts",
+                        sl_class: ".SL_SlideShow",
+                        la_class: ".LiveArticle",
+                        post_class: "LiveBlog_Post"
+                    } );
+                }
+            }
+
+            
+
+				if ( SCRIBBLE.Discussion && SCRIBBLE.Discussion.DiscussionEngine ){
+					SCRIBBLE.Discussion.DiscussionEngine.init( {
+
+						containerSelector: '#Discussion .Posts',
+						itemsSelector: '> li',
+                        totalMsgsToDisplay: 5,
+						threadId: 694519,
+						interval: 1000,
+						throttleTimeout: 1000,
+						inlinePermalink: false,
+                        isLive: false,
+						defaultThumbnail: 'http://avatars.scribblelive.com/default.png',
+                        loadPosts: [120392615,120386855,120386741,120386714,120386366,120386273,120386246,120385973,120385948,120385873,120385722,120385663,120384781,120384624,120384143,120384044,120383841,120383588,120383570,120383425,120383068,120382740,120382712,120382499,120382346,120382293,120382256,120382203,120382085,120381653,120381640,120381587,120381527,120381497,120381304,120381251,120381233,120380797,120380442,120380299,120380249,120380114,120380084,120380071,120380029]                        
+					} );
+				}
+            
+
+           var opts = {
+                PostShareText: "",
+                EventShareText: "",
+				GigyaSendTweetUrl: '/User/Gigya_SendTweet.aspx',
+                onShareComplete: function(shareType, providerType){
+                    var tracker = new SCRIBBLE.event.Tracking();
+                    tracker.gaTrackEvent("Social_Share", shareType + "_" + providerType, "Whitelabel");
+                },
+                CurrentLanguage: "en",
+               googleAPIKey: "AIzaSyBri61P0SIFI1KK-IpA4F_VMYWj83hq-Uk"
+            };
+
+			new SCRIBBLE.social.Sharing(opts);
+
+            
+
+            var $M;
+          	if (typeof SCRIBBLE.metrics !== 'undefined') {
+          		$M = SCRIBBLE.metrics.Lib;
+          	}
+
+            if ( typeof LikesInstance !== "undefined" )
+            {
+                LikesInstance.LoadLikes();
+            }
+
+            jQuerySL('.scrbbl-fb-action-like').on('click', function () {
+                jQuerySL(this).toggleClass('scrbbl-fb-action-liking');
+                var FBURL = jQuerySL(this).parents().eq(1).find('.scrbbl-fb-date a').attr('href');
+                var FBURLRegex = /.+?facebook\.com\/(\d+)\/posts\/(\d+)/i;
+                var Matches = FBURLRegex.exec(FBURL);
+                var that = this;
+
+                if(Matches != null && Matches.length > 2) {
+                    GigyaSL.CurrentFBPost = Matches[1] + '_' + Matches[2];
+                    GigyaSL.CurrentFBCallback = function() {                        
+                        jQuerySL(that).toggleClass('scrbbl-fb-action-liked');
+                    };
+
+                    var LikeLink = jQuerySL(that);
+
+                    if(LikeLink.hasClass('scrbbl-fb-action-liked')) {
+                        GigyaSL.UnLikeFBPost();
+                    } else {
+                        GigyaSL.LikeFBPost();       
+                    }
+                }
+            });
+    
+        } );        
+        
+        if (typeof gigya === 'undefined') {
+            var GigyaJsHost = (("https:" == document.location.protocol) ? "https://cdns." : "http://cdn.");
+            document.write(unescape("%3Cscript src='" + GigyaJsHost + "gigya.com/js/socialize.js?services=socialize&apiKey=2_8nkPycJKm7ldFV5QUt1wRg0qQ7XghIJASqQ3VLM10AGUPeP5K-TGhqtkXbwU7RdA' type='text/javascript'%3E%3C/script%3E"));
+        }
+        
+
+        jQuerySL('.scrbbl-fb-post').each(function() {
+            var fbid = jQuerySL(this).find('.scrbbl-fb-date a').attr('href').match(/[0-9][0-9]*/g)[0],
+                postid = jQuerySL(this).parents('[id^="LiveBlog_Post"]').data('postid'),
+                success = function(resp){
+                if(resp.likes && resp.category){
+                    var lang = 'en';
+                    jQuerySL('#LiveBlog_Post' + postid + ' .scrbbl-fb-page-info').html(resp.category + ' - ' + resp.likes.toString().replace(/.(?=(?:.{3})+$)/g, lang === 'en' ? '$&,' : '$& ') + ' likes');
+                    jQuerySL('#LiveBlog_Post' + postid + ' .scrbbl-fb-fan-page-like').addClass('scrbbl-fb-nologo').html( '<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F' + fbid + '&width&layout=button&action=like&show_faces=false&share=false&height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;float:right;width:50px;" allowTransparency="true"></iframe>');
+                }
+            };
+        
+            jQuerySL.ajax({
+                url: '//graph.facebook.com/' + fbid,
+                type: 'GET',
+                dataType: 'jsonp',
+                success: function( resp ) {
+                    success(resp);
+                }
+            });
+                               
+        });
+    </script>
+    <script async="" src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+ 
+
+
+<!-- ScribbleLive Site Metrics -->
+<script type="text/javascript">
+    var IsGAInstalled = false;
+    try
+    {
+        if (gaJsHost != null)
+        {
+            IsGAInstalled = true;
+        }
+    }
+    catch (Error)
+    {
+    }
+
+    if (!IsGAInstalled)
+    {
+        gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        (function ()
+        {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = gaJsHost + 'google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    }
+</script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-289507-7']);
+    _gaq.push(['_trackPageview']);
+</script>
+
+<div id="SiteMetricsControl_StatCounterCodeBlock">
+	
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+        var sc_project = 3505602;
+        var sc_invisible = 1;
+        var sc_partition = 33;
+        var sc_security = "dc7adfa0";
+        var issitemetrics = true;
+    </script>
+
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+    <!-- End of StatCounter Code -->
+
+</div>
+
+
+
+
+
+<!-- ScribbleLive Internal Metrics -->
+
+<div id="ScribbleMetriscControl_ScribbleLiveCounterBlock">
+	
+
+<script type="text/javascript">
+    
+
+if(typeof IsSLBackend == 'undefined' || IsSLBackend == null || IsSLBackend===false){
+    (function ()
+    {
+        var CounterImage = null;
+        var CookiesEnabled = true;
+        var StatsUserId = null;
+        var UniquesList = null;
+        var SourceType = GetSourceType();
+
+        function HitCounter(pIsPageView)
+        {
+            try
+            {
+                if (StatsUserId == null)
+                {
+                    StatsUserId = getCookie("SLStatUid");
+
+                    if (StatsUserId == null)
+                    {
+                        // Generate a unique ID for the user
+                        StatsUserId = (document.domain + "").hashCode() + "_" + (new Date()).getTime() + "_" + Math.floor((Math.random() * 10000000) + 1);
+                        setCookie("SLStatUid", StatsUserId);
+
+                        CookiesEnabled = (getCookie("SLStatUid") != null);
+                    }
+                }
+
+                var ItemKey = null;
+
+                if ( typeof SCRIBBLE !== "undefined" && typeof SCRIBBLE.globals !== 'undefined' )
+                {
+                    ItemKey = SCRIBBLE.globals.thread.id;
+                }
+                else if (typeof ThreadId != "undefined")
+                {
+                    ItemKey = ThreadId;
+                }
+                else if (typeof ScribbleLive_TopPostsWidget != "undefined")
+                {
+                    ItemKey = ScribbleLive_TopPostsWidget.ThreadId;
+                }
+                else if ( typeof LiveArticleEmbed != "undefined" && LiveArticleEmbed.GetInstance() != "undefined" && LiveArticleEmbed.GetInstance() != null )
+                {
+                    ItemKey = LiveArticleEmbed.GetInstance().ThreadId;
+                }
+
+                if ( typeof ItemKey !== "undefined" && ItemKey !== null )
+                {
+                    ItemKey = ( ItemKey + "" ).replace(/\s/ig, "");
+                    var IsFirstView = pIsPageView;
+                    var Client = -1;
+
+                    if ( typeof SCRIBBLE !== "undefined" && typeof SCRIBBLE.globals !== 'undefined' )
+                    {
+                        Client = SCRIBBLE.globals.website.client.id;
+                    }else if(typeof ClientId !== "undefined")
+                    {
+                        Client = ClientId;
+                    }
+                    if (pIsPageView)
+                    {
+                        if (UniquesList == null)
+                        {
+                            UniquesList = getCookie("SLStatHist");
+                        }
+
+                        if (UniquesList == null) { UniquesList = ""; }
+
+                        // If we've already seen that item
+                        if (UniquesList.match(new RegExp("(^|\|)" + ItemKey)))
+                        {
+                            IsFirstView = false;
+                        }
+                        else
+                        {
+                            var MAXCOOKIELENGTH = 3500;
+                            var MAXVARLENGTH = 20000;
+
+                            IsFirstView = true;
+                            UniquesList += "|" + ItemKey;
+
+                            if (UniquesList.length > MAXVARLENGTH)
+                            {
+                                UniquesList = UniquesList.substring(UniquesList.length - MAXVARLENGTH);
+                                UniquesList = UniquesList.substring(UniquesList.indexOf("|"));
+                            }
+
+                            var CookieUniquesList = UniquesList;
+
+                            if (CookieUniquesList.length > MAXCOOKIELENGTH)
+                            {
+                                CookieUniquesList = CookieUniquesList.substring(CookieUniquesList.length - MAXCOOKIELENGTH);
+                                CookieUniquesList = CookieUniquesList.substring(CookieUniquesList.indexOf("|"));
+                            }
+
+                            setCookie("SLStatHist", CookieUniquesList);
+                        }
+
+                        //document.title = UniquesList;
+                    }
+
+                    CounterImage = new Image();
+                    CounterImage.src = "//counter.scribblelive.com/?page=" + ItemKey
+                            + (pIsPageView ? "&pageview=1" : "")
+                            + (IsFirstView ? "&first=1" : "")
+                    //+ (CookiesEnabled ? "" : "&nocookies=1")
+                            + (StatsUserId ? "&uid=" + StatsUserId : "")
+                            + "&rand=" + Math.round(100000000 * Math.random())
+                            + "&Source=" + encodeURIComponent( GetSourceUrl( SourceType ) )
+                            + "&SourceType=" + SourceType
+                            + (Client != -1 ? "&Client=" + Client : "");
+
+                    setTimeout(function ()
+                    {
+                        HitCounter();
+                    }, getRandomInt(45000, 57000));
+                }
+            }
+            catch (err) { }
+        }
+
+        function GetSourceUrl( pSourceType )
+        {
+            var Source = "";
+
+            // Embed
+            if ( pSourceType == 3 )
+            {
+                Source = document.referrer !== "" ? document.referrer : document.location.href;
+            }
+            else
+            {
+                Source = document.location.href;
+            }
+
+            return Source;
+        }
+
+        function GetSourceType()
+        {
+            // default source type is API unless we determine otherwise
+            var $SourceType = 1;
+
+            // Whitelabel
+            if ( typeof IsWhitelabel !== "undefined" && IsWhitelabel === true )
+            {
+                $SourceType = 2;
+            }
+            // Embed
+            else if ( typeof EmbedWidth !== "undefined" || (typeof SCRIBBLE !== "undefined" && typeof SCRIBBLE.globals !== "undefined" && SCRIBBLE.globals.embed === true) )
+            {
+                $SourceType = 3;
+            }
+            //  Article
+            else if ( typeof IsArticlePage !== "undefined" && IsArticlePage === true )
+            {
+                $SourceType = 4;
+            }
+            // ScribbleLive.mobi Mobile Template
+            else if ( (typeof IsMobileSite !== "undefined" && IsMobileSite === true) || (typeof SCRIBBLE !== "undefined" && typeof SCRIBBLE.globals !== "undefined" && SCRIBBLE.globals.mobile === true) )
+            {
+                $SourceType = 5;
+            }
+            // LiveArticle Embed
+            else if ( typeof LiveArticleEmbed != "undefined" && LiveArticleEmbed.GetInstance() != "undefined" && LiveArticleEmbed.GetInstance() != null )
+            {
+                $SourceType = 6;
+            }
+            // Recent Posts Embed
+            else if ( typeof RecentPosts !== "undefined" && typeof ScribbleLiveInstance !== "undefined" )
+            {
+                $SourceType = 7;
+            }
+            // Single Post Page
+            else if ( typeof IsSinglePost !== "undefined" && IsSinglePost === true )
+            {
+                $SourceType = 8;
+            }
+            // Top Posts Widget
+            else if (typeof ScribbleLive_TopPostsWidget != "undefined")
+            {
+                $SourceType = 9;
+            }
+
+            return $SourceType;
+        }
+
+        function getRandomInt(min, max)
+        {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function getCookie(name)
+        {
+            var start = document.cookie.indexOf(name + "=");
+            var len = start + name.length + 1;
+            if ((!start) && (name != document.cookie.substring(0, name.length)))
+            {
+                return null;
+            }
+            if (start == -1) return null;
+            var end = document.cookie.indexOf(';', len);
+            if (end == -1) end = document.cookie.length;
+            return unescape(document.cookie.substring(len, end));
+        }
+
+        function setCookie(name, value, expires, path, domain, secure)
+        {
+            var today = new Date();
+            today.setTime(today.getTime());
+            if (expires)
+            {
+                expires = expires * 1000 * 60 * 60 * 24;
+            }
+            var expires_date = new Date(today.getTime() + (expires));
+            document.cookie = name + '=' + escape(value) +
+		            ((expires) ? ';expires=' + expires_date.toGMTString() : '') + //expires.toGMTString()
+		            ((path) ? ';path=' + path : '') +
+		            ((domain) ? ';domain=' + domain : '') +
+		            ((secure) ? ';secure' : '');
+        }
+
+        String.prototype.hashCode = function ()
+        {
+            var hash = 0;
+            var char2;
+            if (this.length == 0) return hash;
+            for (i = 0; i < this.length; i++)
+            {
+                char2 = this.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char2;
+                hash = hash & hash; // Convert to 32bit integer
+            }
+            return hash;
+        }
+
+        HitCounter(true);
+    })();
+
+}
+
+
+</script>
+
+
+</div>
+</body>
+</html>

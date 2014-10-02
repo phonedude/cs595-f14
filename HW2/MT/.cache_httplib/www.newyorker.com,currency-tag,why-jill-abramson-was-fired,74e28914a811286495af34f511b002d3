@@ -1,0 +1,1221 @@
+status: 200
+content-length: 112090
+vary: Accept-Encoding
+x-cacheable: YES
+x-author: ken auletta
+varnish-x-cache: MISS
+x-type: post
+x-access: n
+x-developers: Conde Nast is hiring. http://www.condenast.com/careers
+cache-control: must-revalidate, max-age=60
+x-varnish: 1734570062
+accept-ranges: bytes
+expires: Sun, 28 Sep 2014 15:47:17 GMT
+last-modified: Sun, 28 Sep 2014 15:46:16 GMT
+x-id: 1626681
+-content-encoding: gzip
+link: <http://www.newyorker.com/?p=1626681>; rel=shortlink
+date: Sun, 28 Sep 2014 15:46:17 GMT
+access-control-allow-origin: *
+x-format: 
+content-location: http://www.newyorker.com/currency-tag/why-jill-abramson-was-fired
+x-section: currency
+server: Apache
+connection: keep-alive
+content-type: text/html; charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!doctype html>
+<!--[if IE 7]> <html class="no-js oldie ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/BlogPosting"> <!--<![endif]-->
+<head>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFVlRbGwcDV1ZRBwQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){try{u?u-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(d){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(c){"stack"in c&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,c="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,d=e(c);if(d&&(r.rxSize=d),this.sameOrigin){var f=t.getResponseHeader("X-NewRelic-App-Data");f&&(n.cat=f.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,c=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var c=e(o);c&&(r.txSize=c)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var d=0;u>d;d++)n.addEventListener(s[d],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+c(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+c(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,c="addEventListener",d="attachEvent",f=(""+location).split("?")[0],p=e.exports={offset:i(),origin:f,features:[]};u[c]?(u[c]("DOMContentLoaded",o,!1),s[c]("load",n,!1)):(u[d]("onreadystatechange",r),s[d]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),c=this,d=r&&r(a,c)||{}}catch(f){i([f,"",[a,c,s],d])}o(e+"start",[a,c,s],d);try{return n=t.apply(c,a)}catch(p){throw o(e+"err",[a,c,p],d),p}finally{o(e+"end",[a,c,n],d)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,c="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,c?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<title>Why Jill Abramson Was Fired - The New Yorker</title>
+
+<meta name="copyright" content="Copyright (c) Conde Nast 2014">
+<meta name="author" content="">
+<meta name="description" itemprop="description" content="">
+
+<meta itemprop="name" content="Why Jill Abramson Was Fired">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- minimal-ui=1 -->
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="The New Yorker">
+
+<meta name="environment" content="prod">
+<meta name="tny:id" content="1626681">
+<link rel="shortcut icon" href="/wp-content/assets/dist/img/icon/favicon.ico">
+<link rel="apple-touch-icon" href="/wp-content/assets/dist/img/icon/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/wp-content/assets/dist/img/icon/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/wp-content/assets/dist/img/icon/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/assets/dist/img/icon/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/assets/dist/img/icon/apple-touch-icon-144x144-precomposed.png">
+
+<meta property="fb:app_id" content="179662042076731">
+<meta property="fb:admins" content="648235154,789168297,688620285">
+
+<link rel="stylesheet" href="/wp-content/assets/dist/css/core-567.min.css">
+	
+
+<script src="//use.typekit.net/wth6gwt.js"></script>
+<script>try{Typekit.load();}catch(e){};</script>
+
+<script>
+  var CN = CN || {};
+  /* <![CDATA[ */
+  var platformEnvironment = 'production';
+  var sitehost = "http://www.newyorker.com";
+  var omniture_init = [];
+  CN.omniture = CN.omniture || {};CN.omniture.conf = {"s_account":"conde-newyorker","server":"stats2.newyorker.com","secureServer":"sstats.newyorker.com","internalFilters":"javascript:,newyorker.com,advancemags.com"};
+  /* ]]> */
+</script>	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/wp-content/assets/dist/js/head-567.min.js"></script> 
+
+
+
+<link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="//stats2.newyorker.com" /><link rel="dns-prefetch" href="//sstats.newyorker.com" />
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" />
+<link rel="publisher" href="https://plus.google.com/+newyorker"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Why Jill Abramson Was Fired - The New Yorker" />
+<meta property="og:description" content="This post was updated at 10 P.M. At the annual City University Journalism School dinner, on Monday, Dean Baquet, the managing editor of the New York Times, was seated with Arthur Sulzberger, Jr., the paper&#8217;s publisher. At the time, I did not give a moment&#8217;s thought to why Jill Abramson, the paper&#8217;s executive editor, was not at their table. Then, at 2:36 P.M. on Wednesday, an announcement from the Times hit my e-mail, saying that Baquet would replace Abramson, less than three years after she was appointed the first woman in the top job. Baquet will be the first African-American to lead the Times. Fellow-journalists and others scrambled to find out what had happened. Sulzberger had fired Abramson, and he did not try to hide that. In a speech to the newsroom on Wednesday afternoon, he said, &#8220;I chose to appoint a new leader of our newsroom because I believe that new leadership will improve some aspects&#160;&#8230;&#8221; Abramson chose not to attend the announcement, and not to pretend that she had volunteered to step down.       " />
+<meta property="og:url" content="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" />
+<meta property="og:site_name" content="The New Yorker" />
+<meta property="article:tag" content="bizpages" />
+<meta property="article:tag" content="Business" />
+<meta property="article:tag" content="Currency" />
+<meta property="article:tag" content="Media" />
+<meta property="article:section" content="Currency" />
+<meta property="article:published_time" content="2014-05-14T17:05:46+00:00" />
+<meta property="article:modified_time" content="2014-07-19T23:55:25+00:00" />
+<meta property="og:updated_time" content="2014-07-19T23:55:25+00:00" />
+<meta property="og:image" content="http://www.newyorker.com/wp-content/uploads/2014/05/h_8.01228299-580.jpg" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@newyorker"/>
+<meta name="twitter:domain" content="The New Yorker"/>
+<meta name="twitter:creator" content="@newyorker"/>
+<meta name="twitter:image:src" content="http://www.newyorker.com/wp-content/uploads/2014/05/h_8.01228299-580.jpg"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='shortlink' href='http://www.newyorker.com/?p=1626681' />
+<!-- wp-parsely Plugin Version 1.6 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.6' />
+<meta name='parsely-page' id='parsely-page' content='{"title":"Why Jill Abramson Was Fired","link":"http:\/\/www.newyorker.com\/business\/currency\/why-jill-abramson-was-fired","image_url":"http:\/\/www.newyorker.com\/wp-content\/uploads\/2014\/05\/h_8.01228299-580-320-240.jpg","type":"post","post_id":"1626681","pub_date":"2014-05-14T17:05:46Z","section":"Currency","author":"Ken Auletta","tags":["bizpages","business","currency","media"]}' />
+
+		<style type="text/css">
+			body.customize-support #hd.collapsed #nav-container {
+				margin-top: 28px;
+			}
+		</style>        <!-- Google Site Speed -->
+        <script type="text/javascript">var _ga_start = (new Date()).getTime();</script>
+                    <script type="text/javascript" class="site_init">
+            //<!--
+                CN.site.init({
+                    code:             'NYR',
+                    title:            'The New Yorker',
+                    name:             'newyorker',
+                    alias:            'newyorker.com',
+                    domain:           'newyorker.com',
+                    tld:              'newyorker.com',
+                    baseUrl:          'http://www.newyorker.com',
+                    mobilecompatible: 'true',
+                    httpStatusCode:    200,
+            userServiceUrl: 'http://user-service.condenast.com',
+userServiceKey: 'TE7pnBDUEVco2vXPPNQVZNFlipc=',
+ecomUrl: 'https://subscribe.newyorker.com/api/circ/xml/Transaction',
+socialRes: 'http://www.newyorker.com/services/livefyre/userToken',
+                    env: 'PROD'  // Put something consistent last so we don't have a trailing comma (appease IE)
+                });
+
+                CN.isMobile = TNY.initIsMobile;
+                CN.isTablet = jQuery.devices.tablet();
+                CN.checkDeviceView = jQuery.devices.checkDeviceView;
+            //-->
+            </script>
+                            <!-- AD INIT: CN.dart.init version 2 -->
+                <script type="text/javascript">
+                //<!--
+                    CN.dartKwsArray = [ "dphiffer","currency","bizpages_tag","business_tag","media_tag","currency_tag","why_jill_abramson_was_fired","article","channel_" ];
+
+                <!--esi
+    <esi:comment text="ESI stream initiated"/>
+    <esi:assign name="query_str" value="newyorker"/>
+    <esi:comment text="End ESI stream initiated"/>
+
+    <esi:comment text="Browser response header passed to Evolok"/>
+    <esi:choose>
+        <esi:when test="$(HTTP_X_ACCESS)">
+             <esi:assign name="query_str" value="$(query_str) + '&X-Access=' + $(HTTP_X_ACCESS)"/>
+        </esi:when>
+    </esi:choose>
+
+    <esi:choose>
+        <esi:when test="$(HTTP_X_TYPE)">
+             <esi:assign name="query_str" value="$(query_str) + '&X-Type=' + $(HTTP_X_TYPE)"/>
+        </esi:when>
+    </esi:choose>
+
+    <esi:choose>
+        <esi:when test="$(HTTP_X_ID)">
+             <esi:assign name="query_str" value="$(query_str) + '&X-Id=' + $(HTTP_X_ID)"/>
+        </esi:when>
+    </esi:choose>
+
+    <esi:choose>
+        <esi:when test="$(HTTP_HOST) has 'stg'">
+             <esi:assign name="evolok_url" value="'http://conde.ad.uat.evolok.net/evolok-ad-web/api/3.0/authorize/esi?' + $(query_str)"/>
+        </esi:when>
+        <esi:otherwise>
+             <esi:assign name="evolok_url" value="'http://conde.ad.evolok.net/evolok-ad-web/api/3.0/authorize/esi?' + $(query_str)"/>
+        </esi:otherwise>
+    </esi:choose>
+    <esi:comment text="End Browser response header passed to Evolok"/>
+
+    <esi:comment text="Evolok call is made"/>
+    <esi:try>
+      <esi:attempt>
+        <esi:eval src="$(evolok_url)" dca="none" maxwait="5000" onerror="continue"/>
+      </esi:attempt>
+    </esi:try>
+    <esi:comment text="End Evolok call is made"/>
+
+    <esi:comment text="Num is assigned"/>
+      <esi:assign name="num" value="$int($(activeMeter{'max'}))/2+1"/>
+    <esi:comment text="End Num is assigned"/>
+ -->
+<!--esi
+    <esi:vars>
+      TNY.meterVar = {
+        'meter_name'   : '$(activeMeter{'name'})',
+        'meter_count'  : '$(activeMeter{'count'})',
+        'meter_max'    : '$(activeMeter{'max'})',
+        'meter_viewed' : '$(activeMeter{'viewed'})',
+        'num'          : '$(num)',
+        'pid'          : '$(pid)',
+        'entitlement'  : '$(requireEntitlement)'
+      }
+    </esi:vars>
+
+        <esi:choose>
+      <esi:when test="$(result)!='ALLOW_ACCESS' && !$is_empty($(result))">
+        TNY.meterVar.isBarrierFull = true;
+      </esi:when>
+      <esi:otherwise>
+        TNY.meterVar.isBarrierFull = false;
+      </esi:otherwise>
+    </esi:choose>
+
+        <esi:choose>
+      <esi:when test="$(activeMeter{'count'})==$(num) && $(activeMeter{'viewed'})=='false' && $(cnee{'subscriptionStatus'})!='Active'">
+        TNY.meterVar.isBarrierHalf = true;
+      </esi:when>
+      <esi:otherwise>
+        TNY.meterVar.isBarrierHalf = false;
+      </esi:otherwise>
+    </esi:choose>
+-->
+            if(TNY.meterVar != undefined){
+
+                if( TNY.meterVar.isBarrierHalf ){
+                    CN.dartKwsArray.push('novideo');
+                }
+
+                if( TNY.meterVar.isBarrierFull ){
+                    CN.dartKwsArray.push('noads');
+                }
+
+            }
+        
+                    CN.dart.init({
+                        adUnits: {
+                            unit1: CN.isMobile ? 'newyorker.mobile.dart' : 'newyorker.dart',
+                            unit2: 'business',
+                            unit3: 'currency',
+                            unit4: ''
+                        },
+                        kws: CN.dartKwsArray,
+                        charmap : {' ' : '+', '-' : '_'}
+                    });
+                                //-->
+                    </script>
+                            <script type="text/javascript">
+                CN.popups = CN.popups || {};
+                CN.popups.setCookieLife(48);
+                CN.popups.setExiting(false, {
+                    path: '/exit-pop/',
+                    width: 460,
+                    height: 295,
+                }).excludeExitPath( '/wp-admin', '/wp-login.php' ).excludeExitDomain("newyorker.com","www.newyorker.com","origin.www.newyorker.com");
+                CN.popups.setATGArriving(false).setATGLayer(false).setATGExiting(false);
+
+                        CN.popups.setLayer(false).setArriving(false);
+                CN.popups.init();
+                    </script>
+                        <!-- CM: page-ads.js -->
+            <script type="text/javascript">
+            //<!--
+                var _ghearst_vars = (function() {
+                    var commonParams = 'ad_category_prefix=currency-tag'
+                                        + '&amp;browser_path=%2Fcurrency-tag%2Fwhy-jill-abramson-was-fired'
+                                        + '&amp;cat_prefixes=%2Ccurrency-tag%2Cwhy-jill-abramson-was-fired'
+                                        + '&amp;site_prefix=newyorker'
+                                        + '&amp;subdomain=mprod'
+                                        + '&amp;url_name=why-jill-abramson-was-fired';
+
+                                var metaKeyWords = (function() {
+                        var
+                            i                  = 0,
+                            metaKeywordContent = '',
+                            nameAttribute      = null,
+                            metaCollection     = document.getElementsByTagName('meta');
+
+                        for (i=0;i<metaCollection.length;i++) {
+                            nameAttribute = metaCollection[i].name.search(/keywords/);
+                            if (nameAttribute!= -1) {
+                                metaKeywordContent = metaCollection[i].content;
+                                metaKeywordContent = metaKeywordContent.replace(/,/g,'%2C'); // to replace ,
+                                metaKeywordContent = metaKeywordContent.replace(/ /g,''); // to replace space
+                            }
+                        }
+                        return encodeURIComponent(metaKeywordContent);
+                    })();
+            
+                    var deviceParams = (function() {
+                                                    if ( CN.checkDeviceView('desktop') ) {
+                                    return 'AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_GLOBAL_HEADER%2CAMS_NYR_GLOBAL_HEADERCALLOUT%2CAMS_NYR_GLOBAL_NAVBAR%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER%2CAMS_NYR_GLOBAL_NAVBAR_STICKY%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY';
+                                }
+                                                                if ( CN.checkDeviceView('tablet') ) {
+                                    return 'AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_TABLET_GLOBAL_SUBNAV';
+                                }
+                                                                if ( CN.checkDeviceView('mobile') ) {
+                                    return 'AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_MOBILE_GLOBAL_SUBNAV';
+                                }
+                                                    })();
+
+                        if(TNY.meterVar != undefined){
+                if(TNY.meterVar.isBarrierHalf) {
+                  TNY.barrierStatus = "half";
+                } else if(TNY.meterVar.isBarrierFull) {
+                  TNY.barrierStatus = "full";
+                }
+                TNY.checkIfBarrierIsShown = function(){
+                
+                  paywallCMU = "%2CAMS_NYR_PAYWALL_FULL_WIDTH_BARRIER%2CAMS_NYR_PAYWALL_BARRIER";
+                  deviceParams = deviceParams + paywallCMU;
+                }
+                TNY.addBarrierState = function(){
+                  deviceParams = deviceParams + "&article_count=" + TNY.barrierStatus;
+                  TNY.deviceParams = deviceParams;
+                }
+                if(TNY.barrierStatus != undefined){
+                  TNY.checkIfBarrierIsShown();
+                  TNY.addBarrierState();
+                }
+            }
+        
+                    return {
+                        'ams_ads_script_src' : 'https://subscribe.newyorker.com/ams/page-ads.js?'
+                                                + commonParams + ''
+                                                + '&amp;keywords=' + metaKeyWords + ''
+                                                + '&amp;position_list=' + deviceParams + ''
+                    };
+                })();
+
+                if (!window.$h) {window.$h = {}}
+                (function(){
+                    if (!$h.util) {
+                        $h.util = {
+                            buildScriptTag: function(src){
+                                if (!!src){ document.write('<scr' + 'ipt src="'+src+'" type="text/javascript"></scr' + 'ipt>');}
+                            }
+                        }
+                    }
+                    $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+                })();
+            //-->
+            </script>
+            <script src="//assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-9cb2a39d627a819b6ca42ab76f651dbfa7b1a535.js"></script>
+
+
+	</head>
+<body>
+	<nav role="navigation" class="mobile-nav">
+  <ul class="nav-links" >
+    <li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+	<li id="subscribe">
+		<div id="AMS_NYR_MOBILE_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_MOBILE_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_MOBILE_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div>		<div id="AMS_NYR_TABLET_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_TABLET_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_TABLET_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div>    </li>
+    <li class="menu-item sub-nav mob-sign-in block-list user-ln-status-mobi"><a id="user-sign-in" class="mobi-sign-in-button" title="Sign in to your account">Sign In</a>  
+<span id="mobi-nav-link" class="link-sub-hamnav"> Link your subscription</span></li>
+	<li id="mobi-account-link-1" class="menu-item sub-nav hiddenMobiMenu"></li>
+	<li id="mobi-account-link-2" class="menu-item sub-nav hiddenMobiMenu"></li>
+  </ul>
+</nav>
+  <div class="page-container">
+    <div class="header-ad">
+
+  <div class="advertisement"><div id="header728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="header728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "header", { sz: "728x90", kws: [ "top" ], collapse: true } );
+} 
+}</script></div><div class="advertisement"><div id="header_mobile320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="header_mobile320x50_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "header_mobile", { sz: ( "320x50" ), kws: [ "top" ], collapse: true } );
+} 
+}</script></div></div>
+
+<header id="hd" role="banner">
+	<div id="nav-container">
+		<div id="mobile-nav-container">
+			<div id="mobile-logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<nav role="navigation" id="primary-nav">
+				<ul>
+					<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+					<li id="subscribe">
+					<div id="AMS_NYR_GLOBAL_NAVBAR_STICKY" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_STICKY" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_STICKY not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>						<div id="subscribe-rollover">
+							<div class="subscribe-links-wrapper">
+								<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0,399,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249,399,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>							</div>
+						</div>
+										</li>
+						<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 					<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle smallnav-search">Search</a></li>
+
+				</ul>
+			</nav>
+		</div>
+		<section class="logo-container">
+			<span title="" id="mobile-nav" class="icon-menu"></span>
+
+					<div class="subscribe-links">
+				<div id="AMS_NYR_GLOBAL_HEADER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="//subscribe.condenet.com/images_covers/cover_newyorker_80.jpg">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).html( pageAds.AMS_NYR_GLOBAL_HEADER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div><div id="AMS_NYR_GLOBAL_HEADERCALLOUT" class="ecom-placement"><img src="/wp-content/assets/dist/img/cn-ecom/failsafe/NYT_global_headercallout_150x110.png" usemap="#GLOBAL_HEADERCALLOUT_MAP" width="150" height="110" border="0"><map id="GLOBAL_HEADERCALLOUT_MAP" name="GLOBAL_HEADERCALLOUT_MAP"><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="1,12,76,107" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="78,12,147,40" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Renew your Subscription" alt="Renew your Subscription to the New Yorker magazine" coords="78,42,147,56" href="https://w1.buysub.com/pubs/N3/NYR/login.jsp?cds_page_id=135517&cds_mag_code=NYR" target="_blank" /><area shape="rect" title="Give a Gift Subscription" alt="Give a Subscription to The New Yorker as a Gift" coords="78,58,147,75" href="http://www.newyorker.com/go/giftfailsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe to The New Yorker outside the USA" coords="78,77,147,107" href="http://www.newyorker.com/go/internationalfailsafe" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).html( pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>			</div>
+		
+			<div id="logo">
+				<a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+			</div>
+			<div class="social-and-user-links">
+				<ul class="user-info">
+
+					<span id="sign_in" class="user-ln-status">
+					<li id="sign-in-list" class="demo-link big plain"><span data-type="sign-in" class="header-nav-link" id="sign-in" title="Sign in to your account"><span id="fallback-signin-link">Sign in</span></span></li>
+					<li class="demo-link big plain"></li>&nbsp;|&nbsp;
+					<li id="link-sub-nav" class="nav-menu">Link your subscription</li>
+					</span>
+					<li class="n-store"><a href="http://www.condenaststore.com/~/new-yorker-store?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=SHOP&amp;AID=1247905545" target="_blank" title="The New Yorker Store">TNY Store</a></li>
+					
+
+					<li class="demo-link big plain"><span id="sign-out-wrapper" class="big plain"></span></li>
+				</ul>
+				<ul class="social-menu">
+					<li class="facebook"><a href="https://facebook.com/newyorker" title="Facebook">F</a></li>
+					<li class="twitter"><a href="https://twitter.com/newyorker" title="Twitter">T</a></li>
+					<li class="google-plus"><a href="https://plus.google.com/+newyorker/posts" title="Google+">G+</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<nav role="navigation" id="primary-nav">
+			<ul>
+				<li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="tny-nav-business menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+				<li id="subscribe">
+				<div id="AMS_NYR_GLOBAL_NAVBAR" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>					<div id="subscribe-rollover">
+						<div class="subscribe-links-wrapper">
+							<div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement"><img rel="nofollow" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0,399,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249,399,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div>						</div>
+					</div>
+								</li>
+					<div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div> 				<li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle bignav-search">Search</a></li>
+
+			</ul>
+			<div id="floatingAd" style="display:none;"><div id="floatingAd_content"><div id="AMS_NYR_POPUP_FLOATINGAD" class="ecom-placement">            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    /* AMS_NYR_POPUP_FLOATINGAD not in pageAds for desktop */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for tablet */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+            </div><div id="floatingAd_header"><a href="javascript:void(0)" class="close">Close</a></div></div>
+		</nav>
+	</div>
+
+	
+</header> 
+
+    <div class="content-wrapper">
+		<div id="main" role="main" class="single-post single-blog post- tax-currency tax-Currency tax-http://www.newyorker.com/business/currency ">
+	
+		<article itemscope itemtype="http://schema.org/BlogPosting" data-details='{"title":"Why Jill Abramson Was Fired","author":[985111,"Ken Auletta","http:\/\/www.newyorker.com\/contributors\/ken-auletta"],"wordCount":1113,"paragraphCount":11}'>
+			<meta itemprop="url" content="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" />
+			<meta itemprop="wordCount" content="1055" />
+			<header id="page-header">
+				<div class="section-info">
+											<figure>
+							<a href="http://www.newyorker.com/business/currency" title="Currency" itemprop="articleSection">
+								<img src="/wp-content/assets/dist/img/header_graphics/blog/currency.png" alt="Currency" />
+							</a>
+						</figure>
+										<h4><a href="http://www.newyorker.com/business/currency" title="Currency" itemprop="articleSection">Currency</a></h4>
+				</div>		
+				
+				<hgroup id="masthead">
+					<span class="timestamp "> <time datetime="20140514" itemprop="datePublished" content="">May 14, 2014</time></span>
+
+					<h1 itemprop="name">Why Jill Abramson Was Fired</h1>
+
+					<h3>By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="http://www.newyorker.com/contributors/ken-auletta" title="Ken Auletta" rel="author" itemprop="name author">Ken Auletta</a></span></h3>
+					<!-- TODO: Add LinkedIn and Pinterest Support [#98] -->
+
+
+
+<nav class="social-buttons">
+	<ul>
+    <li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" data-type="button"></div></li>    <li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" data-text="Why Jill Abramson Was Fired " data-via="newyorker" data-dnt="true"></a></li>    <li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired"></div></li>    	<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: Why%20Jill%20Abramson%20Was%20Fired%20&body=  This post was updated at 10 P.M.  At the annual City University Journalism School dinner, on Monday, Dean Baquet, the managing editor of the New York Times, was seated with Arthur Sulzberger, Jr., the paper&#8217;s publisher. At the time, I did not give a moment&#8217;s thought...%0A%0AContinue reading at http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png"/></a></li>	<li class="share-print"><a href="javascript:window.print(); return false;"><img src="/wp-content/assets/dist/img/icon/printer.png"/></a></li>	</ul>
+</nav>
+				</hgroup>
+			</header>
+
+			<div class="module-container-rail non-solid-rail">
+				<div class="module-container-stacked post-content">
+					<div itemprop="articleBody" class="articleBody" id="articleBody">
+						
+												<figure itemprop="" class="horizontal attachment-large landscape featured">
+							<a href="http://www.newyorker.com/wp-content/uploads/2014/05/h_8.01228299-580.jpg" title="Why Jill Abramson Was Fired" itemprop="url">
+								<img itemprop="image" src="http://www.newyorker.com/wp-content/uploads/2014/05/h_8.01228299-580.jpg" class="horizontal attachment-large" alt="">							</a>
+													</figure>
+						
+                                                <!--esi
+<span data-attr="$(activeMeter{'count'})" data-ma="$(activeMeter{'max'})" data-bt="$(result)" data-rv="$(activeMeter{'viewed'})" data-sub="$(cnee{'subscriptionStatus'})"></span>
+-->
+<!--esi
+<esi:choose>
+  <esi:when test="$(activeMeter{'count'})==$(num) && $(activeMeter{'viewed'})=='false' && $(result)=='ALLOW_ACCESS' && $(cnee{'subscriptionStatus'})!='Active'">
+    <esi:text>
+        </esi:text>
+  </esi:when>
+</esi:choose>
+-->
+
+<!--esi
+<esi:choose>
+  <esi:when test="$(result)!='ALLOW_ACCESS' && !$is_empty($(result))">
+       <esi:text>
+      <a class="tny-slot" name="/2" total_words="0"></a><a class="tny-page" name="/1" total_words="0"></a><p word_count="7"><em>This post was updated at 10 <small>P.M.</small></em></p> <p word_count="100">At the annual City University Journalism School dinner, on Monday, Dean Baquet, the managing editor of the New York <i>Times</i>, was seated with Arthur Sulzberger, Jr., the paper&#8217;s publisher. At the time, I did not give a moment&#8217;s thought to why Jill Abramson, the paper&#8217;s executive editor, was not at their table. Then, at 2:36 <small>P.M.</small> on Wednesday, an announcement from the <i>Times</i> hit my e-mail, saying that Baquet would replace Abramson, less than three years after she was appointed the first woman in the top job. Baquet will be the first African-American to lead the <i>Times</i>.</p><div class="content-ad-wrapper first"><div class="advertisement"><div id="yrailTop300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailTop300x250_frame"></div><div id="yrailTop320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailTop300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "top" ], collapse: true } ); } }</script></div></div> <p word_count="71">Fellow-journalists and others scrambled to find out what had happened. Sulzberger had fired Abramson, and he did not try to hide that. In a speech to the newsroom on Wednesday afternoon, he said, &#8220;I chose to appoint a new leader of our newsroom because I believe that new leadership will improve some aspects&#160;&#8230;&#8221; Abramson chose not to attend the announcement, and not to pretend that she had volunteered to step down.</p> <p word_count="0">      <span id="more-1626681"></span> <p word_count="339">As with any such upheaval, there&#8217;s a history behind it. Several weeks ago, I&#8217;m told, Abramson discovered that her pay and her pension benefits as both executive editor and, before that, as managing editor were considerably less than the pay and pension benefits of Bill Keller, the male editor whom she replaced in both jobs. &#8220;She confronted the top brass,&#8221; one close associate said, and this may have fed into the management&#8217;s narrative that she was &#8220;pushy,&#8221; a characterization that, for many, has an inescapably gendered aspect. Sulzberger is known to believe that the <i>Times</i>, as a financially beleaguered newspaper, needed to retreat on some of its generous pay and pension benefits; Abramson, who spent much of her career at the <i>Wall Street Journal</i>, had been at the <i>Times</i> for far fewer years than Keller, which accounted for some of the pension disparity. Eileen Murphy, a spokeswoman for the <i>Times</i>, said that Jill Abramson&#8217;s total compensation as executive editor &#8220;was directly comparable to Bill Keller&#8217;s&#8221;&#8212;though it was not actually the same. I was also told by another friend of Abramson&#8217;s that the pay gap with Keller was only closed after she complained. But, to women at an institution that was once sued by its female employees for discriminatory practices, the question brings up ugly memories. [Update: On Thursday, Sulzberger <a href="http://www.nytimes.com/2014/05/16/business/media/times-issues-response-on-abramson-pay.html" target="_blank">gave his staff a memo</a> on what he said was &#8220;misinformation&#8221; on the pay question. &#8220;It is simply not true that Jill&#8217;s compensation was significantly less than her predecessors,&#8221; he wrote. &#8220;Her pay is comparable to that of earlier executive editors.&#8221;] Whether Abramson was right or wrong, both sides were left unhappy. A third associate told me, &#8220;She found out that a former deputy managing editor&#8221;&#8212;a man&#8212;&#8220;made more money than she did&#8221; while she was managing editor. [Update: The man in question, John Geddes, was in fact the managing editor of news operations.] &#8220;She had a lawyer make polite inquiries about the pay and pension disparities, which set them off.&#8221;</p> <p word_count="87">Sulzberger&#8217;s frustration with Abramson was growing. She had already clashed with the company&#8217;s C.E.O., Mark Thompson, over native advertising and the perceived intrusion of the business side into the newsroom. Publicly, Thompson and Abramson denied that there was any tension between them, as Sulzberger today declared that there was no church-state&#8212;that is, business-editorial&#8212;conflict at the <i>Times</i>. A politician who made such implausible claims might merit a front-page story in the <i>Times</i>. The two men and Abramson clearly did not get along. </p> <p word_count="155">A third issue surfaced, too: Abramson was pushing to hire a deputy managing editor to oversee the digital side of the <i>Times</i>. She believed that she had the support of Sulzberger and Thompson to recruit this deputy, and her supporters say that the plan was for the person in this position to report to Baquet. Baquet is a popular and respected figure in the newsroom, and he had appeared, for the most part, to get along with Abramson. (I was told, however, that, at a recent dinner with Sulzberger, Baquet said he found her hard to work with.) He is also someone whom Sulzberger passed over when he chose Abramson. But Baquet apparently felt that he hadn&#8217;t been consulted, and, according to two sources, expressed his concerns to Sulzberger. He had also reportedly been approached by Bloomberg about a job there. (Baquet has not yet responded to a request for comment; neither has Abramson.)</p> <p word_count="62">In a reflection of the fractious relationship that Baquet and others had with Abramson, the <em>Times</em> <a href="http://www.nytimes.com/2014/05/15/business/media/jill-abramson-being-replaced-as-top-editor-at-times.html?hp">reported</a> that Baquet, speaking to the newsroom after his appointment, &#8220;praised Ms. Abramson for teaching him &#8216;the value of great ambition&#8217; and then added that John Carroll, whom he worked for at The Los Angeles Times, &#8216;told me that great editors can also be humane editors.&#8217;&#8221;</p> <a class="tny-slot" name="/3" total_words="821"></a><div class="content-ad-wrapper"><div class="advertisement"><div id="yrailBottom300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailBottom300x250_frame"></div><div id="yrailBottom320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailBottom300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "bottom" ], collapse: true } ); } }</script></div></div><a class="tny-page" name="/2" total_words="821"></a><p word_count="206">These issues seemed to coalesce for Sulzberger and Thompson. The reason Sulzberger originally hesitated to appoint Abramson as executive editor was a worry about her sometimes brusque manner. As I wrote in my <a href="http://www.newyorker.com/reporting/2011/10/24/111024fa_fact_auletta?currentPage=all">Profile of Abramson</a>, others in the newsroom, including some women, had the same concern. But, although there are always complaints about the <i>Times</i>&#8217; supposed &#8220;liberal&#8221; bias, or its preoccupation with certain stories, Abramson got high marks for the investigative stories that she championed. At a time when Bloomberg News pulled the plug on an investigation of corruption and the princelings in China, Abramson pushed the <i>Times</i> to do more, even after her reporters came under pressure in China. [Update: Bloomberg <a href="http://www.nytimes.com/2014/03/25/business/media/editor-leaves-bloomberg-citing-china-coverage.html">maintains</a> that the investigation is still active and that it has published other stories on princelings. The story in question has been held since last fall, however, prompting the resignation of three journalists.] Even though she thought she was politely asking about the pay discrepancy and about the role of the business side, and that she had a green light from management to hire a deputy to Baquet, the decision to terminate her was made. Sulzberger met with her last Friday, and reportedly told her that it was time to make &#8220;a change.&#8221;</p> <p word_count="22"><em>Read Ken Auletta&#8217;s <a href="http://www.newyorker.com/reporting/2011/10/24/111024fa_fact_auletta">Profile of Abramson</a>, from 2011, and <a href="http://www.newyorker.com/video?video-id=2724354183001">watch a video of their conversation at last year&#8217;s New Yorker Festival</a>.</em></p> <p word_count="6"><em>Photograph by Tim Knox/Eyevine/Redux.</em></p>        </esi:text>
+  </esi:when>
+  <esi:otherwise>
+    <esi:text>
+      <a class="tny-slot" name="/2" total_words="0"></a><a class="tny-page" name="/1" total_words="0"></a><p word_count="7"><em>This post was updated at 10 <small>P.M.</small></em></p> <p word_count="100">At the annual City University Journalism School dinner, on Monday, Dean Baquet, the managing editor of the New York <i>Times</i>, was seated with Arthur Sulzberger, Jr., the paper&#8217;s publisher. At the time, I did not give a moment&#8217;s thought to why Jill Abramson, the paper&#8217;s executive editor, was not at their table. Then, at 2:36 <small>P.M.</small> on Wednesday, an announcement from the <i>Times</i> hit my e-mail, saying that Baquet would replace Abramson, less than three years after she was appointed the first woman in the top job. Baquet will be the first African-American to lead the <i>Times</i>.</p><div class="content-ad-wrapper first"><div class="advertisement"><div id="yrailTop300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailTop300x250_frame"></div><div id="yrailTop320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailTop300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "top" ], collapse: true } ); } }</script></div></div> <p word_count="71">Fellow-journalists and others scrambled to find out what had happened. Sulzberger had fired Abramson, and he did not try to hide that. In a speech to the newsroom on Wednesday afternoon, he said, &#8220;I chose to appoint a new leader of our newsroom because I believe that new leadership will improve some aspects&#160;&#8230;&#8221; Abramson chose not to attend the announcement, and not to pretend that she had volunteered to step down.</p> <p word_count="0">      <span id="more-1626681"></span> <p word_count="339">As with any such upheaval, there&#8217;s a history behind it. Several weeks ago, I&#8217;m told, Abramson discovered that her pay and her pension benefits as both executive editor and, before that, as managing editor were considerably less than the pay and pension benefits of Bill Keller, the male editor whom she replaced in both jobs. &#8220;She confronted the top brass,&#8221; one close associate said, and this may have fed into the management&#8217;s narrative that she was &#8220;pushy,&#8221; a characterization that, for many, has an inescapably gendered aspect. Sulzberger is known to believe that the <i>Times</i>, as a financially beleaguered newspaper, needed to retreat on some of its generous pay and pension benefits; Abramson, who spent much of her career at the <i>Wall Street Journal</i>, had been at the <i>Times</i> for far fewer years than Keller, which accounted for some of the pension disparity. Eileen Murphy, a spokeswoman for the <i>Times</i>, said that Jill Abramson&#8217;s total compensation as executive editor &#8220;was directly comparable to Bill Keller&#8217;s&#8221;&#8212;though it was not actually the same. I was also told by another friend of Abramson&#8217;s that the pay gap with Keller was only closed after she complained. But, to women at an institution that was once sued by its female employees for discriminatory practices, the question brings up ugly memories. [Update: On Thursday, Sulzberger <a href="http://www.nytimes.com/2014/05/16/business/media/times-issues-response-on-abramson-pay.html" target="_blank">gave his staff a memo</a> on what he said was &#8220;misinformation&#8221; on the pay question. &#8220;It is simply not true that Jill&#8217;s compensation was significantly less than her predecessors,&#8221; he wrote. &#8220;Her pay is comparable to that of earlier executive editors.&#8221;] Whether Abramson was right or wrong, both sides were left unhappy. A third associate told me, &#8220;She found out that a former deputy managing editor&#8221;&#8212;a man&#8212;&#8220;made more money than she did&#8221; while she was managing editor. [Update: The man in question, John Geddes, was in fact the managing editor of news operations.] &#8220;She had a lawyer make polite inquiries about the pay and pension disparities, which set them off.&#8221;</p> <p word_count="87">Sulzberger&#8217;s frustration with Abramson was growing. She had already clashed with the company&#8217;s C.E.O., Mark Thompson, over native advertising and the perceived intrusion of the business side into the newsroom. Publicly, Thompson and Abramson denied that there was any tension between them, as Sulzberger today declared that there was no church-state&#8212;that is, business-editorial&#8212;conflict at the <i>Times</i>. A politician who made such implausible claims might merit a front-page story in the <i>Times</i>. The two men and Abramson clearly did not get along. </p> <p word_count="155">A third issue surfaced, too: Abramson was pushing to hire a deputy managing editor to oversee the digital side of the <i>Times</i>. She believed that she had the support of Sulzberger and Thompson to recruit this deputy, and her supporters say that the plan was for the person in this position to report to Baquet. Baquet is a popular and respected figure in the newsroom, and he had appeared, for the most part, to get along with Abramson. (I was told, however, that, at a recent dinner with Sulzberger, Baquet said he found her hard to work with.) He is also someone whom Sulzberger passed over when he chose Abramson. But Baquet apparently felt that he hadn&#8217;t been consulted, and, according to two sources, expressed his concerns to Sulzberger. He had also reportedly been approached by Bloomberg about a job there. (Baquet has not yet responded to a request for comment; neither has Abramson.)</p> <p word_count="62">In a reflection of the fractious relationship that Baquet and others had with Abramson, the <em>Times</em> <a href="http://www.nytimes.com/2014/05/15/business/media/jill-abramson-being-replaced-as-top-editor-at-times.html?hp">reported</a> that Baquet, speaking to the newsroom after his appointment, &#8220;praised Ms. Abramson for teaching him &#8216;the value of great ambition&#8217; and then added that John Carroll, whom he worked for at The Los Angeles Times, &#8216;told me that great editors can also be humane editors.&#8217;&#8221;</p> <a class="tny-slot" name="/3" total_words="821"></a><div class="content-ad-wrapper"><div class="advertisement"><div id="yrailBottom300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailBottom300x250_frame"></div><div id="yrailBottom320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailBottom300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "bottom" ], collapse: true } ); } }</script></div></div><a class="tny-page" name="/2" total_words="821"></a><p word_count="206">These issues seemed to coalesce for Sulzberger and Thompson. The reason Sulzberger originally hesitated to appoint Abramson as executive editor was a worry about her sometimes brusque manner. As I wrote in my <a href="http://www.newyorker.com/reporting/2011/10/24/111024fa_fact_auletta?currentPage=all">Profile of Abramson</a>, others in the newsroom, including some women, had the same concern. But, although there are always complaints about the <i>Times</i>&#8217; supposed &#8220;liberal&#8221; bias, or its preoccupation with certain stories, Abramson got high marks for the investigative stories that she championed. At a time when Bloomberg News pulled the plug on an investigation of corruption and the princelings in China, Abramson pushed the <i>Times</i> to do more, even after her reporters came under pressure in China. [Update: Bloomberg <a href="http://www.nytimes.com/2014/03/25/business/media/editor-leaves-bloomberg-citing-china-coverage.html">maintains</a> that the investigation is still active and that it has published other stories on princelings. The story in question has been held since last fall, however, prompting the resignation of three journalists.] Even though she thought she was politely asking about the pay discrepancy and about the role of the business side, and that she had a green light from management to hire a deputy to Baquet, the decision to terminate her was made. Sulzberger met with her last Friday, and reportedly told her that it was time to make &#8220;a change.&#8221;</p> <p word_count="22"><em>Read Ken Auletta&#8217;s <a href="http://www.newyorker.com/reporting/2011/10/24/111024fa_fact_auletta">Profile of Abramson</a>, from 2011, and <a href="http://www.newyorker.com/video?video-id=2724354183001">watch a video of their conversation at last year&#8217;s New Yorker Festival</a>.</em></p> <p word_count="6"><em>Photograph by Tim Knox/Eyevine/Redux.</em></p>     </esi:text>
+  </esi:otherwise>
+</esi:choose>
+-->
+
+<esi:remove>
+    <a class="tny-slot" name="/2" total_words="0"></a><a class="tny-page" name="/1" total_words="0"></a><p word_count="7"><em>This post was updated at 10 <small>P.M.</small></em></p> <p word_count="100">At the annual City University Journalism School dinner, on Monday, Dean Baquet, the managing editor of the New York <i>Times</i>, was seated with Arthur Sulzberger, Jr., the paper&#8217;s publisher. At the time, I did not give a moment&#8217;s thought to why Jill Abramson, the paper&#8217;s executive editor, was not at their table. Then, at 2:36 <small>P.M.</small> on Wednesday, an announcement from the <i>Times</i> hit my e-mail, saying that Baquet would replace Abramson, less than three years after she was appointed the first woman in the top job. Baquet will be the first African-American to lead the <i>Times</i>.</p><div class="content-ad-wrapper first"><div class="advertisement"><div id="yrailTop300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailTop300x250_frame"></div><div id="yrailTop320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailTop300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "top" ], collapse: true } ); } }</script></div></div> <p word_count="71">Fellow-journalists and others scrambled to find out what had happened. Sulzberger had fired Abramson, and he did not try to hide that. In a speech to the newsroom on Wednesday afternoon, he said, &#8220;I chose to appoint a new leader of our newsroom because I believe that new leadership will improve some aspects&#160;&#8230;&#8221; Abramson chose not to attend the announcement, and not to pretend that she had volunteered to step down.</p> <p word_count="0">      <span id="more-1626681"></span> <p word_count="339">As with any such upheaval, there&#8217;s a history behind it. Several weeks ago, I&#8217;m told, Abramson discovered that her pay and her pension benefits as both executive editor and, before that, as managing editor were considerably less than the pay and pension benefits of Bill Keller, the male editor whom she replaced in both jobs. &#8220;She confronted the top brass,&#8221; one close associate said, and this may have fed into the management&#8217;s narrative that she was &#8220;pushy,&#8221; a characterization that, for many, has an inescapably gendered aspect. Sulzberger is known to believe that the <i>Times</i>, as a financially beleaguered newspaper, needed to retreat on some of its generous pay and pension benefits; Abramson, who spent much of her career at the <i>Wall Street Journal</i>, had been at the <i>Times</i> for far fewer years than Keller, which accounted for some of the pension disparity. Eileen Murphy, a spokeswoman for the <i>Times</i>, said that Jill Abramson&#8217;s total compensation as executive editor &#8220;was directly comparable to Bill Keller&#8217;s&#8221;&#8212;though it was not actually the same. I was also told by another friend of Abramson&#8217;s that the pay gap with Keller was only closed after she complained. But, to women at an institution that was once sued by its female employees for discriminatory practices, the question brings up ugly memories. [Update: On Thursday, Sulzberger <a href="http://www.nytimes.com/2014/05/16/business/media/times-issues-response-on-abramson-pay.html" target="_blank">gave his staff a memo</a> on what he said was &#8220;misinformation&#8221; on the pay question. &#8220;It is simply not true that Jill&#8217;s compensation was significantly less than her predecessors,&#8221; he wrote. &#8220;Her pay is comparable to that of earlier executive editors.&#8221;] Whether Abramson was right or wrong, both sides were left unhappy. A third associate told me, &#8220;She found out that a former deputy managing editor&#8221;&#8212;a man&#8212;&#8220;made more money than she did&#8221; while she was managing editor. [Update: The man in question, John Geddes, was in fact the managing editor of news operations.] &#8220;She had a lawyer make polite inquiries about the pay and pension disparities, which set them off.&#8221;</p> <p word_count="87">Sulzberger&#8217;s frustration with Abramson was growing. She had already clashed with the company&#8217;s C.E.O., Mark Thompson, over native advertising and the perceived intrusion of the business side into the newsroom. Publicly, Thompson and Abramson denied that there was any tension between them, as Sulzberger today declared that there was no church-state&#8212;that is, business-editorial&#8212;conflict at the <i>Times</i>. A politician who made such implausible claims might merit a front-page story in the <i>Times</i>. The two men and Abramson clearly did not get along. </p> <p word_count="155">A third issue surfaced, too: Abramson was pushing to hire a deputy managing editor to oversee the digital side of the <i>Times</i>. She believed that she had the support of Sulzberger and Thompson to recruit this deputy, and her supporters say that the plan was for the person in this position to report to Baquet. Baquet is a popular and respected figure in the newsroom, and he had appeared, for the most part, to get along with Abramson. (I was told, however, that, at a recent dinner with Sulzberger, Baquet said he found her hard to work with.) He is also someone whom Sulzberger passed over when he chose Abramson. But Baquet apparently felt that he hadn&#8217;t been consulted, and, according to two sources, expressed his concerns to Sulzberger. He had also reportedly been approached by Bloomberg about a job there. (Baquet has not yet responded to a request for comment; neither has Abramson.)</p> <p word_count="62">In a reflection of the fractious relationship that Baquet and others had with Abramson, the <em>Times</em> <a href="http://www.nytimes.com/2014/05/15/business/media/jill-abramson-being-replaced-as-top-editor-at-times.html?hp">reported</a> that Baquet, speaking to the newsroom after his appointment, &#8220;praised Ms. Abramson for teaching him &#8216;the value of great ambition&#8217; and then added that John Carroll, whom he worked for at The Los Angeles Times, &#8216;told me that great editors can also be humane editors.&#8217;&#8221;</p> <a class="tny-slot" name="/3" total_words="821"></a><div class="content-ad-wrapper"><div class="advertisement"><div id="yrailBottom300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailBottom300x250_frame"></div><div id="yrailBottom320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="yrailBottom300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) { if ( CN.dart ) {  CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x50" : "300x250" ), kws: [ "bottom" ], collapse: true } ); } }</script></div></div><a class="tny-page" name="/2" total_words="821"></a><p word_count="206">These issues seemed to coalesce for Sulzberger and Thompson. The reason Sulzberger originally hesitated to appoint Abramson as executive editor was a worry about her sometimes brusque manner. As I wrote in my <a href="http://www.newyorker.com/reporting/2011/10/24/111024fa_fact_auletta?currentPage=all">Profile of Abramson</a>, others in the newsroom, including some women, had the same concern. But, although there are always complaints about the <i>Times</i>&#8217; supposed &#8220;liberal&#8221; bias, or its preoccupation with certain stories, Abramson got high marks for the investigative stories that she championed. At a time when Bloomberg News pulled the plug on an investigation of corruption and the princelings in China, Abramson pushed the <i>Times</i> to do more, even after her reporters came under pressure in China. [Update: Bloomberg <a href="http://www.nytimes.com/2014/03/25/business/media/editor-leaves-bloomberg-citing-china-coverage.html">maintains</a> that the investigation is still active and that it has published other stories on princelings. The story in question has been held since last fall, however, prompting the resignation of three journalists.] Even though she thought she was politely asking about the pay discrepancy and about the role of the business side, and that she had a green light from management to hire a deputy to Baquet, the decision to terminate her was made. Sulzberger met with her last Friday, and reportedly told her that it was time to make &#8220;a change.&#8221;</p> <p word_count="22"><em>Read Ken Auletta&#8217;s <a href="http://www.newyorker.com/reporting/2011/10/24/111024fa_fact_auletta">Profile of Abramson</a>, from 2011, and <a href="http://www.newyorker.com/video?video-id=2724354183001">watch a video of their conversation at last year&#8217;s New Yorker Festival</a>.</em></p> <p word_count="6"><em>Photograph by Tim Knox/Eyevine/Redux.</em></p> </esi:remove>
+
+						<!-- TODO: Add LinkedIn and Pinterest Support [#98] -->
+
+
+
+<nav class="social-buttons">
+	<ul>
+    <li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" data-type="button"></div></li>    <li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" data-text="Why Jill Abramson Was Fired " data-via="newyorker" data-dnt="true"></a></li>    <li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/business/currency/why-jill-abramson-was-fired"></div></li>    	<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: Why%20Jill%20Abramson%20Was%20Fired%20&body=  This post was updated at 10 P.M.  At the annual City University Journalism School dinner, on Monday, Dean Baquet, the managing editor of the New York Times, was seated with Arthur Sulzberger, Jr., the paper&#8217;s publisher. At the time, I did not give a moment&#8217;s thought...%0A%0AContinue reading at http://www.newyorker.com/business/currency/why-jill-abramson-was-fired" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png"/></a></li>	<li class="share-print"><a href="javascript:window.print(); return false;"><img src="/wp-content/assets/dist/img/icon/printer.png"/></a></li>	</ul>
+</nav>
+					</div>
+					<section class="article-contributors">
+						
+<section class="author-details" itemscope itemtype="http://schema.org/Person">
+		<article>
+						<figure>
+			  <a rel="me" itemprop="url" class="author-thumb" href="http://www.newyorker.com/contributors/ken-auletta" title="Ken Auletta"><img width="320" height="320" src="http://www.newyorker.com/wp-content/uploads/2014/07/auletta.png" class="attachment-medium wp-post-image" alt="ken auletta" itemprop="thumbnail" /></a>
+			</figure>
+						<div class="author-masthead">	
+				<p>Ken Auletta began contributing to <em>The New Yorker</em> in 1977 and has written the Annals of Communications column since 1993. </p>
+			</div>
+			<ul class="author-links">
+					<li>
+						<a class="light-button" href="http://www.newyorker.com/contributors/ken-auletta" title="Ken Auletta">Bio</a>
+					</li>
+					<li>
+						<a class="light-button" href="http://www.newyorker.com/contributors/ken-auletta/all" title="Ken Auletta">All work</a>
+					</li>
+										<li class="twitter">
+						<a rel="me" itemprop="url" href="https://twitter.com/kenauletta"><i></i></a>
+					</li>
+																			</ul>
+		</article>
+</section>
+<div class="author-ampersand">&amp;</div>
+					</section>
+					<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+						<meta itemprop="name" content="The New Yorker">
+					</span>
+				</div>
+				<aside class="container-rail">
+
+    <section id="newsletter-signup">
+    <h5 class="popping">Sign up to get the best of The New Yorker delivered to your inbox every day</h5>
+    	<div class="newsletterContainer">
+	      <form action="/wp-admin/admin-ajax.php" method="post" name="newsletter-form" id="newsletter-form" novalidate="novalidate">
+	      <input type="hidden" name="action" value="newsletter_subscribe">
+	      <input type="hidden" name="formName" value="newsletter-form">
+	      <input type="hidden" name="url" value="http://www.newyorker.com"><input type="hidden" name="source_code" value="footer-unit">    <fieldset>
+	          <legend><h5>Sign up for newsletters</h5></legend>
+	          <label for="newsletter-email" class="replace">E-mail address</label>
+	          <input name="email" id="newsletter-email" type="email" placeholder="E-mail address" required="" class="">
+	          <button type="submit" name="submit-newsletter" id="submit-newsletter-content">Sign up</button>
+	      </fieldset>
+	      <div class="form_response"></div>        
+	          <ul>
+	              <li>
+
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_217" name="newsletterId[]" value="217""">
+	                      <label for="newsletterId_217">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_442" name="newsletterId[]" value="442">
+	                      <label for="newsletterId_442">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5122" name="newsletterId[]" value="5122" checked="checked">
+	                      <label for="newsletterId_5122">
+	                  </fieldset>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5129" name="newsletterId[]" value="5129">
+	                      <label for="newsletterId_5129">
+	                      </label>
+	                  </fieldset>
+	              </li>
+	          </ul>
+	      </form>
+	    <span id="newsletter-message"></span>
+      </div>
+  </section>
+  <div class="recirculation">
+        <div class="tablet-half-wrapper">
+      
+            <div id="most-popular-polar-text"></div>
+      <div class="clearfix"></div>
+    </div> <!-- // div.tablet-left-wrapper -->
+    <div class="tablet-half-wrapper recirc-most-popular-wrapper">
+      <!-- TODO add optional sponsor -->
+      
+<div id="most-popular" class="module most-popular">
+  <h5 class="small">Most Popular</h5>
+  <ol>
+    <li>
+      <p><a href="//www.newyorker.com/books/page-turner/how-chris-mccandless-died?src=mp">How Chris McCandless Died</a></p>
+      <h3>By Jon Krakauer</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/business/currency/ellos-anti-facebook-moment?src=mp">Ello’s Anti-Facebook Moment</a></p>
+      <h3>By Vauhini Vara</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/humor/borowitz-report/republicans-air-early-attack-ad-newborn-clinton?src=mp">Republicans Air Early Attack Ad on Newborn Clinton</a></p>
+      <h3>By Andy Borowitz</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/magazine/2014/10/06/matters-privacy?src=mp">Matters of Privacy</a></p>
+      <h3>By Margaret Talbot</h3>
+</li>
+    <li>
+      <p><a href="//www.newyorker.com/culture/cultural-comment/communal-dressing-room?src=mp">Caring About Clothes</a></p>
+      <h3>By Judith Thurman</h3>
+</li>
+  </ol>
+</div>
+<!-- cached -->
+<div id="related-stories-polar"></div><div id="most-popular-polar-logo"></div><div class="post-sponsor clearfix"></div>
+
+      <!-- End TODO of optional sponsor -->
+
+      <div class="clearfix"></div>
+    </div> <!-- // div.tablet-right-wrapper -->
+  </div>
+</aside>
+			</div>
+		</article>
+		<section class="module">
+	<div id="you-might-like" class="big-titled-curation" style="display: none;">
+		<h5 class="popping">You Might Like</h5>
+		<div id="yml-list" class="stories"></div>
+	</div>
+</section>
+	</div>
+	<section id="promotions" class="container">
+	<ul>
+		<li>
+			<h5><a href="/jigsaw">Jigsaw<span>&nbsp;</span>Puzzle</a></h5>
+			<figure>
+				<a href="/jigsaw"><img src="/wp-content/assets/img/promotions/jigsaw.png" alt="Jigsaw Puzzle"/></a>
+			</figure>
+		</li>
+		<li id="links-strongbox">
+			<h5><a href="https://projects.newyorker.com/strongbox/">Strongbox<span>&nbsp;</span>Submissions</a></h5>
+			<figure>
+				<a href="https://projects.newyorker.com/strongbox/"><img src="/wp-content/assets/img/promotions/strongbox.png" alt="Strongbox" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" taregt="_blank">Goings On<span>&nbsp;</span>App</a></h5>
+			<figure>
+				<a href="https://itunes.apple.com/us/app/goings-on-the-new-yorker/id452137683?mt=8" target="_blank"><img src="/wp-content/assets/img/promotions/tny-goat.jpg" alt="Goings On App" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="/about/us">About<span>&nbsp;</span>Us</a></h5>
+			<figure>
+				<a href="/about/us"><img src="/wp-content/assets/img/promotions/tnr-digital.png" alt="About Us" /></a>
+			</figure>
+		</li>
+		<li>
+			<h5><a href="http://contest.newyorker.com/">Caption<span>&nbsp;</span>Contest</a></h5>
+			<figure>
+				<a href="http://contest.newyorker.com/"><img src="/wp-content/assets/img/promotions/caption-contest.png" alt="Caption Contest" /></a>
+			</figure>
+		</li>
+		<li class="festival">
+			<h5><a href="/festival/">The New Yorker<span>&nbsp;</span>Festival</a></h5>
+			<figure>
+				<a href="/festival/"><img src="/wp-content/assets/img/promotions/tny-FestIcon.jpg" alt="The New Yorker Festival" /></a>
+			</figure>
+		</li>
+	</ul>
+</section>
+
+<div class="entry-unrelated">
+	<div id="modal-strongbox">
+		<a href="#" id="links-strongbox-close" title="Close">&#10005;</a>
+		<div id="sb-header" role="banner">
+	
+			<h1 class="sb-main">
+				<span>The New Yorker</span> Strongbox
+				<svg width="135" height="135" xmlns="http://www.w3.org/2000/svg">
+					<defs><linearGradient spreadMethod="pad" y2="0.07813" x2="0.88281" y1="0.91797" x1="0.07422" id="svg_14"><stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+					<g>
+					<path d="m6.74918,27.25192l61.0069,-21.50198l60.75703,21.50198l-0.25,81.50894l-60.75703,20.502l-61.2569,-21.502l0.5,-80.50894z" stroke-width="8" stroke="#ffffff" fill="#000000"/>
+					<path d="m68.00609,49.00389l56.506,-19.50197l0,76.25794l-57.006,19.25301l0.5,-76.00897z" stroke-width="0" stroke="#000000" fill="url(#svg_14)"/>
+					<ellipse ry="4.875" rx="4.876" cy="95.634" cx="23.376" stroke-width="0" stroke="#000000" fill="#f70707"/>
+					</g>
+				</svg>
+			</h1><br/>
+	
+			<div class="sb-contain">
+				<p>Strongbox is a new way for you to share information, messages, and files with our writers and editors and is designed to provide you with a greater degree of anonymity and security than afforded by conventional e-mail.</p>
+				<p>To help protect your anonymity, Strongbox is only accessible using the Tor network (<strong>https://www.torproject.org</strong>). When using Strongbox, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+				<p>You can read our full privacy promise <a href="#strongbox-privacy-promise" alt="privacy promise">here</a>.</p>
+				<p><em>The New Yorker</em> Strongbox is powered by <a href="https://pressfreedomfoundation.org/securedrop" title="SecureDrop" id="sb-securedrop-logo">SecureDrop</a>.</p>
+			</div>
+		</div>
+		<div id="sb-main" role="main">
+			<div id="sb-points">
+				<div class="sb-contain">
+					<h2>To get to Strongbox and begin using it to contact writers and editors at <em>The New Yorker</em>, just follow <strong>these&nbsp;two&nbsp;steps</strong>:</h2>
+					<ol>
+						<li><i>1</i>Download and install software to access the Tor Project: <strong>https://www.torproject.org</strong>. This should only take a few minutes. </li>
+						<li><i>2</i>Once you have access to the Tor network, go to Strongbox at <strong>http://strngbxhwyuu37a3.onion</strong>, where you will find further instructions on how to submit files and messages to <em>The New Yorker</em>.</li>
+					</ol>
+					<p class="sb-instructions">You will be assigned a randomly generated and unique code name as part of the process. If a writer or editor at <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> wants to contact you about the information you have submitted, he or she will leave a message for you in Strongbox. These messages are the only way we will be able to reach you, and this message can only be accessed using your code name.</p>
+				</div>
+			</div>
+			<div id="sb-privacy">
+				<div class="sb-contain">
+					<h3 id="strongbox-privacy-promise">Our privacy promise</h3>
+					<p><a name="strongbox-privacy-promise" href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker's</em></a> Strongbox is designed to let you communicate with our writers and editors with greater anonymity and security than afforded by conventional e-mail.</p>
+					<p>When you visit or use our public Strongbox server at <i>http://strngbxhwyuu37a3.onion</i>, <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and our parent company, Cond&#233; Nast, will not record your I.P. address or information about your browser, computer, or operating system, nor will we embed third-party content or deliver cookies to your browser.</p>
+					<p>Strongbox servers are under the physical control of <a href="http://www.newyorker.com" title="The New Yorker"><em>The New Yorker</em></a> and Cond&#233; Nast.</p>
+					<p>Strongbox is designed to be accessed only through a &ldquo;hidden service&rdquo; on the Tor anonymity network, which is set up to conceal both your online and physical location from us and to offer full end-to-end encryption for your communications with us. This provides a higher level of security and anonymity in your communication with us than afforded by standard e-mail or unencrypted Web forms. Strongbox does not provide perfect security. Among other risks, if you share your unique code name, or if your computer is compromised, any activities, including communications through Strongbox, should be considered compromised as well.</p>
+					<p>The system is provided on an &ldquo;as is&rdquo; basis, with no warranties or representations, and any use of it is at the user's own risk.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<aside id="footer-ad">
+			<!-- Need to have mobile ad sizes reevaluated -->
+		  <div class="advertisement"><div id="footerMobile320x51_frame" class="displayAd displayAd320x51Js" data-cb-ad-id="footerMobile320x51_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "footerMobile", { sz: ( "320x51" ), kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div>		  <div class="advertisement"><div id="footer728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="footer728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "footer", { sz: "728x90", kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div>		</aside>
+
+		<div id="digital-editions"><div id="AMS_NYR_GLOBAL_FOOTER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" data-mobile="http://www.newyorker.com/go/mobilefailsafe" target="_blank"><img class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_Desktop_1020x180.jpg" data-src-tablet="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_TabletRedesign_728x128.jpg" data-src-mobile="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Mobile_300x50.NavyTote.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div></div>
+		<footer>
+			<nav id="tny-footer">
+			  <ul>
+				<li><a href="/about/us/?src=tny-footer" title="About Us">About Us</a></li>
+				<li><a href="/about/faq/?src=tny-footer" title="Frequently Asked Questions">FAQ</a></li>
+				<li><a href="http://w1.buysub.com/servlet/CSGateway?cds_mag_code=NYR" title="Customer Care">Customer Care</a></li>
+				<li><a href="http://www.condenaststore.com/-se/cartoonbank.htm?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=tny-footer&amp;AID=1247905545" title="">Cartoon Bank</a></li>
+				<li><a href="http://www.newyorkeronthetown.com/?src=tny-footer" title="">On The Town</a></li>
+				<li><a href="/about/feeds/?src=tny-footer" title="">RSS</a></li>
+				<li><a href="/about/contact/?src=tny-footer" title="">Contact Us</a></li>
+			  </ul>
+			  <ul>
+		    	<li><a href="http://www.condenaststore.com/-se/newyorkerstore.htm?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=tny-footer&amp;AID=1247905545" title="">The New Yorker Store</a></li>
+			    <li><a href="http://www.condenast.com/careers?src=tny-footer" title="">Careers</a></li>
+			    <li><a href="http://www.condenast.com/reprints-permissions?src=tny-footer" title="">Reprints/Permissions</a></li>
+			    <li><a href="/about/press/?src=tny-footer" title="Press Center">Press</a></li>
+			    <li><a href="http://www.condenast.com/brands/new-yorker/media-kit/?src=tny-footer" title="">The New Yorker Media Kit</a></li>
+			  </ul>
+			</nav>
+			<div id="conde-footer">
+  <div class="global-footer-logo">
+    <a href="http://www.condenast.com?src=tny-footer" title="Cond&eacute; Nast Digital">Cond&eacute; Nast Digital</a>
+  </div>
+  <div class="global-footer-subscriptions">
+      <form action="/" name="sub_dropmenus" id="sub_dropmenus">
+        <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="sub_list" id="sub_list" size="1">
+            <option selected="selected" value="">Subscribe to a magazine</option>
+            <option value="">
+            </option><option value="http://www.magazinestoresubscriptions.com?src=univdropdown">View All Titles</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?src=tny-footer">Allure</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?src=tny-footer">Architectural Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?src=tny-footer">Brides</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?src=tny-footer">Details</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?src=tny-footer">Glamour</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?src=tny-footer">Golf Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?src=tny-footer">Golf World</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?src=tny-footer">GQ</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?src=tny-footer">Lucky</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?src=tny-footer">Self</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?src=tny-footer">Teen Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?src=tny-footer">The New Yorker</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?src=tny-footer">Vanity Fair</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?src=tny-footer">Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?src=tny-footer">W</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div class="global-footer-sister-sites">
+      <form action="/" name="mag_dropmenus" id="mag_dropmenus">
+          <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="mag_list" id="mag_list">
+            <option selected="selected" value="">Other Cond&eacute; Nast sites</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="http://www.allure.com?src=tny-footer">Allure</option>
+            <option value="http://www.architecturaldigest.com?src=tny-footer">Architectural Digest</option>
+            <option value="http://www.arstechnica.com?src=tny-footer">Ars Technica</option>
+            <option value="http://www.bonappetit.com?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="http://www.brides.com?src=tny-footer">Brides.com</option>
+            <option value="http://www.concierge.com/cntraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="http://www.concierge.com?src=tny-footer">Concierge</option>
+            <option value="http://www.details.com?src=tny-footer">Details</option>
+            <option value="http://www.epicurious.com?src=tny-footer">Epicurious</option>
+            <option value="http://www.glamour.com?src=tny-footer">Glamour</option>
+            <option value="http://www.golfdigest.com?src=tny-footer">Golf Digest</option>
+            <option value="http://www.golfworld.com?src=tny-footer">Golf World</option>
+            <option value="http://www.gq.com?src=tny-footer">GQ</option>
+            <option value="http://www.hotelchatter.com?src=tny-footer">Hotel Chatter</option>
+            <option value="http://www.jaunted.com?src=tny-footer">Jaunted</option>
+            <option value="http://www.luckymag.com?src=tny-footer">Lucky</option>
+            <option value="http://www.nutritiondata.com?src=tny-footer">NutritionData</option>
+            <option value="http://www.reddit.com?src=tny-footer">Reddit</option>
+            <option value="http://thescene.com?src=tny-footer">The Scene</option>
+            <option value="http://www.self.com?src=tny-footer">Self</option>
+            <option value="http://www.style.com?src=tny-footer">Style</option>
+            <option value="http://www.teenvogue.com?src=tny-footer">Teen Vogue</option>
+            <option value="http://www.vanityfair.com?src=tny-footer">Vanity Fair</option>
+            <option value="http://www.vegaschatter.com?src=tny-footer">Vegas Chatter</option>
+            <option value="http://www.vogue.com?src=tny-footer">Vogue</option>
+            <option value="http://www.wmagazine.com?src=tny-footer">W</option>
+            <option value="http://www.wired.com?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div id="copy">
+  	<p><small>Use of this site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy">User Agreement</a> (effective January 1, 2014) and <a href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (effective January 1, 2014). <a href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a> The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Cond&eacute; Nast. <a href="http://www.condenast.com/privacy-policy#privacypolicy-optout">Ad Choices&nbsp;<img width="10" height="10" src="/wp-content/assets/dist/img/icon/ad_choices_arrow.png" alt="Ad Choices"></a></small></p>
+  </div>
+</div>
+		</footer>
+	</div> <!-- end .content-wrapper -->
+</div> <!-- end .page-container -->
+            <script type="text/javascript">
+            //<!--
+                CN.config.set({
+                    title        : document.title,
+                                    facebook     : {pageid: "9258148868"},
+                                    isiFrame     : true
+                });
+            //-->
+            </script>
+            
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="newyorker.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+            <script type="text/javascript" class="omniture_block">
+            //<!--
+                CN.stats.omniture.init();
+                CN.stats.omniture.setStatus( CN.site.httpStatusCode );
+
+            var mobile_view = jQuery.devices.getDeviceView();
+CN.stats.omniture.setMobileView( mobile_view );
+
+                if ( CN.cookie.get('amg_user_partner') != '' ) {
+                    CN.stats.omniture.setCustomProp( "52", CN.cookie.get('amg_user_partner') );
+                }
+
+                CN.stats.omniture.setContentType( "Article" );
+
+                if ( CN.stats.omniture.setReferrer !== undefined && document.referrer.match( CN.site.tld ) ) {
+                    var referrer = document.referrer;
+                    referrer=referrer.split("?")[0];
+                    CN.stats.omniture.setReferrer( referrer );
+                }
+
+                if ( CN.stats.omniture.setKeywords !== undefined ) {
+                    CN.stats.omniture.setKeywords( "currency|bizpages-tag|business-tag|media-tag|article|channel_" );
+                }
+
+            CN.stats.omniture.setAuthorName( "dphiffer" );
+CN.stats.omniture.setContentId( "1626681" );
+if ( CN.url.params('event') == 'loginsuccess' ) {
+ CN.stats.omniture.trackAction( 'login', document, { events: 'event21' } );
+}
+if(CN.isMobile){ CN.stats.omniture.setCustomProp('51', 'mobile') };
+var lastViewedSession = localStorage.getItem("lastViewedSession");
+var previousMeterName = localStorage.getItem("previousMeterName");
+if ( !(lastViewedSession == s.prop17) &&  TNY.meterVar != undefined){
+  lastViewedSession = s.prop17;
+  if (previousMeterName == undefined ){
+    if(TNY.meterVar.meter_name != undefined){
+      previousMeterName = TNY.meterVar.meter_name;
+    }
+  } else {
+    if(TNY.meterVar.meter_name != undefined){
+      previousMeterName = previousMeterName + "|" + TNY.meterVar.meter_name;
+    }
+  } 
+  CN.stats.omniture.setCustomProp('29', previousMeterName);
+}
+localStorage.setItem("lastViewedSession", lastViewedSession);
+localStorage.setItem("previousMeterName", previousMeterName);
+if(TNY.meterVar != undefined && TNY.meterVar.meter_max != undefined){
+  CN.stats.omniture.setCustomProp('43', TNY.meterVar.meter_max);
+}
+CN.stats.omniture.setCustomProp('62', '2014-05-14 17:05:46');
+CN.stats.omniture.setCustomProp('61', '3286h|136d');
+(function(){ var page_count = (document.querySelectorAll(".tny-page").length + 1); CN.stats.omniture.setCustomProp( "60", page_count ); })();
+(function($){var currentDate,currentMonth,visitedCount,storedVisitedArticles,visitedArticles=[],uniquePathName,isCurrentNew,lastVisitedMonth,$mainEl;currentDate=new Date;currentMonth=currentDate.getMonth();lastVisitedMonth=localStorage.getItem("lastVisitMonth")||-1;if(currentMonth==lastVisitedMonth){visitedCount=localStorage.getItem("visitedCount")||0;storedVisitedArticles=localStorage.getItem("visitedArticles");if(storedVisitedArticles!==null){storedVisitedArticles=storedVisitedArticles.split(",")}visitedArticles=visitedArticles.concat(storedVisitedArticles)}else{visitedCount=0}uniquePathName=location.pathname;isCurrentNew=$.inArray(uniquePathName,visitedArticles)==-1;$mainEl=$("#main");if($mainEl.hasClass("single-article")||$mainEl.hasClass("single-blog")||$mainEl.hasClass("single-post")){if(isCurrentNew){visitedCount=++visitedCount;visitedArticles.push(uniquePathName)}}localStorage.setItem("visitedCount",visitedCount);localStorage.setItem("visitedArticles",visitedArticles);localStorage.setItem("lastVisitMonth",currentMonth);CN.stats.omniture.setCustomProp("44",visitedCount)})(jQuery);
+CN.stats.omniture.setCustomProp('8', '');
+CN.stats.omniture.setCustomProp('9', '');
+CN.stats.omniture.setCustomProp('55', 'Ken Auletta');
+CN.stats.omniture.setCustomProp('5', 'Post');
+                // Run page tracking (also calls .init() again )
+                if ( CN.preventAutoTrack != true ) {
+                    CN.stats.omniture.doPageTracking();
+                }
+            //-->
+            </script>
+            <noscript>
+                <a href="http://www.omniture.com" title="Web Analytics">
+                    <img src="http://condenast.112.2o7.net/b/ss/conde-newyorker/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" />
+                </a>
+            </noscript>
+                    <script type="text/javascript">
+        //<!--
+            var _gaq = _gaq || [];
+            var _ga_end = (new Date()).getTime();
+            var _ga_total = parseInt(_ga_end - _ga_start);
+            var _ga_sample_percent = 50;
+        _gaq.push(['a._setAccount', 'UA-8293713-14']);
+_gaq.push(['a._trackPageview']);
+if (0 < _ga_total && _ga_total < 1000*60*60) {
+_gaq.push(['a._trackTiming', 'Page', 'Load Time', _ga_total, 'Page Load Time', 100]);
+}
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        //-->
+        </script>
+        <div id="fancyModal" class="fancy modal" aria-hidden="true"></div>
+
+<div id="CM-notification" class="fancy modal barrier-type" aria-hidden="false">
+    <div id="close-b-modal" class="modal-close notification-b"></div>
+    <div id="CM-nofication-home-link"></div>
+    <div id="CM-nofication-home-line"></div>
+    <div id="PAYWALL_BARRIER_wrapper"></div>
+    <div class="bottom-barrier-divide">
+        <div class="notification-pipe-spacer"></div>
+        <div class="mobile-bottom-barrier-divide-left"><a id="linksub-from-external" href="javascript:void(0)">Link your <br/> subscription</a> 
+        </div>
+        <div class="bottom-barrier-divide-left"><a id="linksub-from-external-promo" href="javascript:void(0)">Link your subscription</a>
+        </div>
+    </div>
+    <div class="mobile-barrier-divide-right begin-notification-msg">Have a login?
+        <br/>
+        <span><a id="sign-in-from-notfication-mob" href="javascript:void(0)">Sign In</a></span>
+    </div>
+    <div class="bottom-barrier-divide-right">Already have a login?
+        <span><a id="sign-in-from-notfication" href="javascript:void(0)">Sign In</a></span>
+    </div>
+    <div class="mob-notification-container">
+                <div class="mob-notification-item"><a class="linksub-from-external-mobi" href="javascript:void(0)"style="text-decoration:underline">Link Your<br/>Subscription</a></div>
+                <div class="mob-notification-item pipe-spacer-image"></div>
+                <div class="mob-notification-item">Have a login?
+                    <br/><a class="signin-from-external-mobi" id="sign-in-from-notfication-mobilink" href="javascript:void(0)" style="text-decoration:underline">Sign In</a></div>
+            </div>
+</div>
+	<div id="CMU_RIGHTRAIL_CONTAINER">
+  <div id="AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Search_Tablet_300x250.jpg" alt="Subscribe to The New Yorker" /></a>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+            </div></div>	
+<script>
+window.jQuery || document.write('<script src="/wp-content/assets/dist/js/vendors/jquery/jquery.min.js"><\/script>');
+_satellite.pageBottom();
+</script>
+
+	<script src="/wp-content/assets/dist/js/core-567.min.js"></script> 
+  <script>!function(d,s,id){ var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><script>(function() { var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;po.src = "//apis.google.com/js/plusone.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);})();</script>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"2907deeb56","applicationID":"4337305","transactionName":"YlIEZhNSXxEAABYNW1sYJ1EVWl4MThALClNZUktCDkBF","queueTime":0,"applicationTime":788,"ttGuid":"","agentToken":"","atts":"ThUHEFtITB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-412.min.js"}</script></body>
+</html>

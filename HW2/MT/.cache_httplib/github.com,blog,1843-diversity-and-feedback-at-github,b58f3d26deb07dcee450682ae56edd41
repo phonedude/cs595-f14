@@ -1,0 +1,33 @@
+status: 200
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 15:43:20 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiMTcwODAyMzkzYjU5OTRkMTQyMjYxMzE1ZDNiNWMwN2MiLCJfY3NyZl90b2tlbiI6ImM4aGNVdVR0TlBTYVNWWGdhMGE5ZzBmaUtiajc0TWdvNjllM2JJaU1mbnc9In0%3D--9777dd6ecaf8d34fe330ac55753ad66906202f4a;
+ path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: X-PJAX, Accept-Encoding
+server: GitHub.com
+cache-control: max-age=0, private, must-revalidate
+content-location: https://github.com/blog/1843-diversity-and-feedback-at-github
+x-runtime: 0.015327
+x-served-by: 44f77bef9757b092723b0a6870733b02
+etag: "ebb3f8bef16ef21d030f47ec6ca03ccc"
+x-github-request-id: 47FBB1A2:3B45:2551683B:54282C98
+date: Sun, 28 Sep 2014 15:43:20 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+x-ua-compatible: IE=Edge,chrome=1
+-varied-accept-encoding: gzip, deflate
+

@@ -1,0 +1,333 @@
+status: 200
+content-length: 12741
+date: Sun, 28 Sep 2014 08:42:26 GMT
+content-location: https://mayday.us/newpledge/
+set-cookie: __cfduid=d6573a09dc9c33ca5606b5403d14d1a5f1411893746748;
+ expires=Mon, 23-Dec-2019 23:50:00 GMT; path=/; domain=.mayday.us; HttpOnly
+expires: Sun, 28 Sep 2014 08:52:26 GMT
+vary: Accept-Encoding
+server: cloudflare-nginx
+last-modified: Fri, 26 Sep 2014 21:16:20 GMT
+connection: keep-alive
+-content-encoding: gzip
+cache-control: max-age=600
+-varied-accept-encoding: gzip, deflate
+cf-ray: 170ea5cd284b0856-IAD
+content-type: application/octet-stream
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>MAYDAY.US - A Crowdfunded, Kickstarted SuperPAC to end all SuperPACs</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="google-site-verification" content="eotfmNVR-r4qTL0MAFLUR0XVumvKeC2i87xYg102u7I" />
+  
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" id="googlefonts-css" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Lato:400,700&amp;subset=latin" />
+
+  <link rel="stylesheet" href="/css/common.css">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/sidebar.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial" />
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/v9green.css">
+
+  
+  <meta property="og:url" content="https://mayday.us/newpledge/"/>
+  <meta property="og:image" content="
+https://mayday.us/images/ProfilePic.jpg"/>
+  <meta property="og:title" content="MAYDAY: Democracy needs an upgrade. Act now."/>
+  <meta property="og:description" content="Money has corrupted politics. We’re kickstarting a political experiment big enough to win a Congress committed to fundamental reform -- Join us!"/>
+  
+  
+
+  
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="//c.shpg.org/220/sp.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdn.optimizely.com/js/210578001.js"></script>
+    <script async src="/js/v8.js?6"></script>
+    <script  src="/js/plugins.js?7"></script>
+
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-50367295-1', 'mayday.us');
+ ga('require', 'displayfeatures');
+ window.optimizely = window.optimizely || [];
+ window.optimizely.push("activateUniversalAnalytics");
+ ga('send', 'pageview');
+</script>
+
+  <script src="https://www.google.com/moderator/static/moderator-embed-api.js" type="text/javascript"></script>
+</head>
+
+  <link rel="stylesheet" href="/css/newpledge.css?4" />
+  <script src="//cdn.optimizely.com/js/210578001.js"></script>
+  <body id="newpledge">
+           <div id="pledgeTopBar">
+          <h3>MAYDAY<span>.US</span></h3>
+       </div>
+       <div class="jumbotron">
+         <div id="pledgeBox">
+            <div class="info">
+              <h2>Help End Big Money Politics</h2>
+              <p>Help us reduce the influence of money in politics and elect a Congress committed to fundamental reform by 2016</p>
+            </div>
+            <script src="//fgnass.github.io/spin.js/spin.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script src="https://pledge.mayday.us/static/pledge.js"></script>
+
+<link rel="stylesheet" href="/css/newpledge.css?4" />
+
+
+<script>
+/*
+
+Copyright 2014 Mayday PAC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+*/
+
+    PLEDGE_URL = "//pledge.mayday.us";
+
+    function step2(amount){
+	$(".step-1-container").hide("slow");
+	$("#step-1").removeClass("active");
+	$("#step-2").addClass("active");
+	//$("#pledgeBox").animate({height: "auto"}, 500);
+	if( amount > 0 ) {
+		$("#amount_input").val(amount);
+		$("#amount_input").parent().hide();
+	}
+	$(".step-2-container").show("slow");
+    }
+
+    function step3(){
+	$("#step-2").removeClass("active");
+	$("#step-3").addClass("active");
+    }
+
+    function addCommas(nStr) {
+      nStr += '';
+      x = nStr.split('.');
+      x1 = x[0];
+      x2 = x.length > 1 ? '.' + x[1] : '';
+      var rgx = /(\d+)(\d{3})/;
+      while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+      }
+      return x1 + x2;
+    }
+    var ALREADY_BANKED = 1000000;
+    var GOAL_DOLLARS = 5000000;
+    $(function() {
+      var date = new Date();
+      date.setTime(date.getTime()+(24*60*60*1000));
+      document.cookie = ("last_team_key=;" +
+                         "expires=" + date.toGMTString() +
+                         ";domain=.mayday.us;path=/");
+
+     if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+       var verStr = $.browser.version;
+       var ffVersion = verStr.split('.')[0];
+       console.log("detected version: " + ffVersion);
+       if (ffVersion < 17) {
+         $('#pledgeBox .info').after('<div class="alert-danger row">Sorry, we are not supporting older Firefox versions at the moment.  Working on a fix.  Please try another browser for now.</div>');
+       } else {
+         console.log('Firefox version was OK: ' + ffVersion);
+       }
+     }
+    });
+  </script>
+
+
+
+
+  	<div class="stepContainer">
+		<h3>Donate In Two Minutes Or Less</h3>
+		<ul class="steps">
+			<li id="step-1" class="step active">Amount<span>1</span></li>
+			<li id="step-2" class="step">Info<span>2</span></li>
+			<li id="step-3" class="step">Payment<span>3</span></li>
+		</ul>
+	</div>
+
+	<div class="step-1-container">
+		<div class="ammount-button" onclick="step2(10);">$10</div>
+		<div class="ammount-button" onclick="step2(25);">$25</div>
+		<div class="ammount-button" onclick="step2(50);">$50</div>
+
+		<div class="ammount-button" onclick="step2(250);">$250</div>
+		<div class="ammount-button" onclick="step2(500);">$500</div>
+		<div class="ammount-button" onclick="step2(1000);">$1000</div>
+		<div class="ammount-button" onclick="step2(2500);">$2500</div>
+
+		<div class="ammount-button" onclick="step2(-1);">Other</div>
+		<div style="clear:both;"></div>
+
+		<HR />
+		<div style="margin:10px 0px;"><strong>Or:</strong><a href="https://mayday.us/bitcoin/"><img width="150px" src="/images/donate-with-bitcoin.png"></a></div>
+
+	</div>
+
+	<div class="step-2-container">
+		  <form id="pledgeForm" role="form" method="POST" onsubmit="step3();" action="javascript:;">
+
+
+
+	        <div class="form-group col-sm-6"><label class="control-label">Email</label><input type="email" required placeholder="smith@example.com" class="form-control input-lg" id="email_input" /></div>
+	        <div class="form-group col-sm-6"><label class="control-label">Phone Number <span class="label label-default">Optional</span></label><input type="tel" placeholder="(212) 867-5309" class="form-control input-lg" id="phone_input" /></div>
+	        <div class="form-group col-sm-6"><label class="control-label">Occupation</label><input type="text" required placeholder="Gardener, Railroad Worker, etc"  class="form-control input-lg" id="occupation_input"/></div>
+	        <div class="form-group col-sm-6"><label class="control-label">Employer</label><input type="text" required placeholder="Nintendo, UPS, Self, etc" class="form-control input-lg" id="employer_input" /></div>
+	        <div class="form-group col-sm-6">
+	          <label class="control-label">Who to Fund?</label>
+	          <select  class="form-control input-lg" id="targeting_input">
+	            <option>Whatever Helps</option>
+	            <option>Democrats Only</option>
+	            <option>Republicans Only</option>
+	          </select>
+	        </div>
+	        
+	        <div class="form-group col-sm-6">
+	          <label class="control-label">How Much to Donate ($)?</label>
+	          <input type="number" required min="1" placeholder="25, 100, 5000" class="form-control input-lg" id="amount_input">
+	        </div>
+	        <div id="donation-type" class="form-group col-sm-6">
+	          <div class="checkbox" style="display:none"><label><input type="checkbox" id="directDonate_input" checked> I want my donation to be used to support MAYDAY.US, even if the goal has not been met by July 4th.</label></div>
+	          <div class="checkbox"><label><input type="checkbox" id="emailSignupInput" checked> Want to know how we're using the money? Sign up for emails from us.</label></div>
+
+	        </div>
+	        <div id="formError" class="alert alert-danger" style="display:none">
+	        </div>
+
+
+
+	        <div class="form-group col-sm-6">
+
+	          <button id="pledgeButton" style="width:100%;" class="btn ammount-button">
+
+	            <div style="display:none" class="spinner"></div>
+	            <span class='pledgeText'>Donate Now</span>
+	          </button>
+	        </div>
+
+	        <div class="form-group col-sm-12" id="paypalArea">
+	          <p>We also accept PayPal:</p>
+	          <a href="javascript:;" id='paypalButton'><img alt="Donate with Paypal" src="/images/paypal.png"/></a>
+	        </div>
+
+      </form>
+
+	</div>
+
+
+
+
+         </div>
+         <div id="mainrules" class="well rules">
+              <div id="rules" class="rules row">
+	<h2>Contribution Rules:</h2>
+	<p>In order to contribute, all of the following statements must be true:</p>
+	<ul>
+		<li>I am a United States citizen or a permanent resident alien.</li>
+		<li>This contribution is made from my own funds, and funds are not being provided to me by another person or entity for the purpose of making this contribution.</li>
+		<li>I am making this contribution with my own personal credit card and not with a corporate or business credit card or a card issued to another person.</li>
+		<li>I am at least eighteen years old.</li>
+		<li>I am not a foreign national (permanent resident aliens excepted), federal contractor, national bank, or corporation chartered by an act of Congress</li>
+	</ul>
+	<p>Per FEC requirements, Mayday PAC must use its best efforts to obtain and report the name, address, occupation, and employer of individual contributors.</p>
+	<p>Contributions are not tax deductible.</p>
+	<p><a href="//mayday.us/privacy-policy">Our Privacy Policy</a></p>
+  </div>
+  
+
+
+         </div>
+
+       </div>
+
+<footer>
+  <div class="donate-wrap">
+    <hr/>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="/newpledge/" title="" class="ir">Donate to Mayday PAC</a>
+        </div>
+      </div>
+    </div>
+    <hr/>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="safeharbor">
+          <p>
+            Paid for by Mayday PAC. <br/>
+            Not authorized by any candidate or candidate's committee.<br/>
+            MAYDAY.US
+          </p>
+        </div>
+        <p class="copyright">&copy; 2014 Mayday PAC, Some rights reserved. <a href="http://creativecommons.org/licenses/by-sa/4.0">
+			<img src="/images/80x15.png"></p>
+      </div>
+      <div class="col-md-4">
+        <!-- <a href="#" class="ir social-link youtube" title="Youtube Page">Youtube Page</a> -->
+        <a href="https://twitter.com/MAYDAYUS" class="ir social-link twitter" title="Twitter Page">Twitter Page</a>
+        <a href="https://www.facebook.com/groups/282646648577039/" class="ir social-link facebook" title="Facebook Page">Facebook Page</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div style="display: none">
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 968755289;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+  </script>
+
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+
+  <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/968755289/?value=0&amp;guid=ON&amp;script=0"/>
+  </noscript>
+</div>
+
+
+
+  </body>
+</html>

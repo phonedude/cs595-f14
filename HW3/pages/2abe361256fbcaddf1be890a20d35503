@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>thinking about thinking &raquo; Announcing psiTurk 2.0!</title>
+
+<link rel="stylesheet" href="http://gureckislab.org/blog/wp-content/themes/advisory/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://gureckislab.org/blog/wp-content/themes/advisory/bubbles.css" type="text/css" media="screen" />
+
+<link rel="alternate" type="application/rss+xml" title="thinking about thinking RSS Feed" href="http://gureckislab.org/blog/?feed=rss2" />
+<link rel="alternate" type="application/atom+xml" title="thinking about thinking Atom Feed" href="http://gureckislab.org/blog/?feed=atom" />
+<link rel="pingback" href="http://gureckislab.org/blog/xmlrpc.php" />
+
+
+<link rel="alternate" type="application/rss+xml" title="thinking about thinking &raquo; Announcing psiTurk 2.0! Comments Feed" href="http://gureckislab.org/blog/?feed=rss2&#038;p=4318" />
+<link rel='stylesheet' id='crayon-style-css'  href='http://gureckislab.org/blog/wp-content/plugins/crayon-syntax-highlighter/css/style.css?ver=1.7.30-fix' type='text/css' media='all' />
+<script type='text/javascript' src='http://gureckislab.org/blog/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://gureckislab.org/blog/wp-content/plugins/crayon-syntax-highlighter/js/crayon.js?ver=1.7.30-fix'></script>
+<script type='text/javascript' src='http://gureckislab.org/blog/wp-content/plugins/crayon-syntax-highlighter/js/jquery.popup.js?ver=1.7.30-fix'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://gureckislab.org/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://gureckislab.org/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Postdoc at the intersection of cognitive development and computational cognitive science' href='http://gureckislab.org/blog/?p=4133' />
+<link rel='next' title='Online data collection survey results' href='http://gureckislab.org/blog/?p=4098' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='http://gureckislab.org/blog/?p=4318' />
+		<style type="text/css">
+						ol.footnotes li {list-style-type:decimal;}
+						ol.footnotes{font-size:0.8em; color:#666666;}		</style>
+		<style type='text/css'>
+<!--#header { background: url('http://gureckislab.org/blog/wp-content/themes/advisory/images/header-img.php?upper=69aee7&lower=FF9933') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: #3F3F3F; }
+--></style>
+<style type="text/css">
+/* <![CDATA[ */
+img.latex { vertical-align: middle; border: none; }
+/* ]]> */
+</style>
+<script src="http://gureckislab.org/mint/?js" type="text/javascript"></script>
+</head>
+<body>
+<br><br><br>
+<br><br><br>
+<div id="page">
+
+<br><br>
+
+	<div id="content" class="narrowcolumn">
+
+	
+		<!--
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://gureckislab.org/blog/?p=4133" rel="prev">Postdoc at the intersection of cognitive development and computational cognitive science</a></div>
+			<div class="alignright"><a href="http://gureckislab.org/blog/?p=4098" rel="next">Online data collection survey results</a> &raquo;</div>
+		</div>
+		-->
+
+		<div class="post" id="post-4318">
+		
+		
+			<div class="blackbox"></div>
+		    			<a href="http://gureckislab.org/blog/?cat=29"><img src="http://gureckislab.org/blog/wp-content/themes/advisory/images/longformpoststitle.png"  width="500" border="0"></a><br><br>
+			<h4 class="title">Announcing psiTurk 2.0!</h4>
+			<h5 class="byline">by <a href="http://gureckislab.org/blog/?author=1" title="Posts by Todd Gureckis">Todd Gureckis</a>, <a href="http://gureckislab.org/blog/?author=5" title="Posts by Jay Martin">Jay Martin</a>, <a href="http://gureckislab.org/blog/?author=2" title="Posts by John McDonnell">John McDonnell</a>, <a href="http://gureckislab.org/blog/?author=634" title="Posts by Alex Rich">Alex Rich</a>, <a href="http://gureckislab.org/blog/?author=229" title="Posts by David Halpern">David Halpern</a>, <a href="http://gureckislab.org/blog/?author=16" title="Posts by Anna Coenen">Anna Coenen</a>, <a href="http://gureckislab.org/blog/?author=3" title="Posts by Doug Markant">Doug Markant</a>,  and <a href="http://gureckislab.org/blog/?author=15" title="Posts by Patricia Chan">Patricia Chan</a></h5>
+		    			
+			
+			<div class="entry">
+				<p><img src="http://dev.psiturk.org/static/images/psiturk_logo_README.png"></p>
+<p>The lab is proud to announce the release <b>psiTurk 2.0</b>, the latest version of our open framework for running experiments online using Amazon Mechanical Turk.  This represents a large effort in the lab featuring nearly 1000 commits on <a href="https://github.com/NYUCCL/psiTurk">github</a> from 9 contributors, and feedback from over 35 early beta testers.</p>
+<p>Along with the release of the software we have launched <a href="https://psiturk.org">psiturk.org</a>, a web service that facilitates online data collection.  The website is home to <a href="https://psiturk.org/docs/">extensive documentation</a> of the <b>psiTurk</b> code as well as a new &#8220;<a href="https://psiturk.org/ee">experiment exchange</a>&#8221; where you can find psiTurk-compatible experiments, download their code, replicate them, or extend them for your own research purposes.  </p>
+<p><b>psiTurk</b> enables entirely new ways of developing complex scientific experiments online.  At the same time, it aims to significantly reduce the wasted effort across academic labs and those in industry when programmers must re-implement the same designs over and over.  By enabling a unified interface and new ways to exchange code, <b>psiTurk</b> helps students and researchers leverage very best software ideas in their own science projects.</p>
+<p>Major features in <b>psiTurk 2.0</b> include:</p>
+<ul>
+<li><b>Interactive command-line.</b>  Provides a simple way to interact with Amazon Mechanical Turk to pay participants, check your balance, create HITs, etc&#8230;  In addition to making it much easier to use AMT, the new command line exposes features not present on the Amazon website including the ability to &#8220;unreject&#8221; workers who are accidentally rejected.</li>
+<li><b>Prevent repeat workers.</b> Prevents Mechanical Turk workers from doing your task more than once (even across multiple HITs).</li>
+<li><b>Block particular browsers.</b> It is easy to configure psiTurk to block users using particular types of browsers with a known incompatibility with your experiment code.</li>
+<li><b>Automatically record info about browser state.</b> psiTurk automatically (i.e., no coding required) records information about the browser state of people in your experiment including if people are switching between windows on their computer during a task.</li>
+<li><b>Experiment Exchange.</b>  The psiturk.org <a href="https://psiturk.org/ee">Experiment Exchange</a> provides a searchable public index of open-sourced psiTurk-compatible experiments.  Use these to replicate someone else&#8217;s design and to learn from their code.  Via your psiturk.org account you can share you experiment with others and get credit for your contributions (via github).</li>
+<li><b>Secure Ad Hosting.</b>  Due to new security restrictions in modern browsers if you aren&#8217;t using an officially signed-SSL certificate to display your web experiment, many workers on Amazon Mechanical Turk will not be able to see your task in the HIT search page.  psiturk.org provides a free, <a href="https://psiturk.org/ad_server">Secure Ad Hosting</a> service which you can use to host an &#8220;ad&#8221; for your experiment which is properly signed.</li>
+<li><b>High availability, zero-config databases.</b>  psiTurk allows you to easily spin up MySQL databases on Amazon&#8217;s cloud using the same account credentials you use to connect to Mechanical Turk.  No need to install and manage a database on your university or company network.</li>
+</ul>
+<p>These are really just a subset of the new features and bug fixes which appear in version 2.0.  We are still limiting enrollment on psiturk.org to ensure the system can scale with more users.  If you would like to request to be a part of our initial roll out please visit <a href="https://psiturk.org/invite">https://psiturk.org/invite</a> and we will let you know as slots become available.</p>
+<p>The psiturk tool is always freely available via the python package manager, pip:</p>
+<p><code>pip install psiturk<br />
+</code></p>
+<p>Further instruction, documentation, hands-on videos, and guides are available <a href="https://psiturk.org">here</a>.</p>
+
+								
+
+
+			</div>
+		</div>
+
+			<div class="social-media">
+<ul>
+<li  id="digg"><script type="text/javascript">
+				(function() {
+				var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'http://widgets.digg.com/buttons.js';
+				s1.parentNode.insertBefore(s, s1);
+				})();
+			</script>
+			<a class="DiggThisButton DiggCompact"></a>
+</li>
+<li id="twitter">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="todd_gureckis">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</li>
+<li id="facebook"><iframe src="http://www.facebook.com/plugins/like.php?href=http://gureckislab.org/blog/?p=4318&layout=standard&show_faces=false&width=450&action=like&colorscheme=light" scrolling="no" frameborder="0"
+allTransparency="true" style="border:none; overflow:hidden; width:530px; height:60px"></iframe>
+</li>
+
+</ul>
+</div>
+
+			
+	
+<!-- You can start editing here. -->
+
+	<br><br><br><br><br>
+	<img src="http://gureckislab.org/blog/wp-content/themes/advisory/images/commentstitles.png"><br>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-2060">
+			
+						<div class="triangle-border"><p>[...] preparation for the release of psiTurk 2.0, we sent out a short survey to gauge behavioral researchers&#8217; interest in online data [...]</p>
+</div>
+						
+			<cite><a href='http://gureckislab.org/blog/?p=4098' rel='external nofollow' class='url'>thinking about thinking &raquo; Online data collection survey results</a></cite>						<br />
+
+			<small class="commentmetadata"><a href="#comment-2060" title="">April 28th, 2014 at 5:23 pm</a> </small>
+
+
+			
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<br><br>
+	<img src="http://gureckislab.org/blog/wp-content/themes/advisory/images/leaveareply.png"><br>
+
+
+<form action="http://gureckislab.org/blog/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p>
+<input name="submit" src="http://gureckislab.org/blog/wp-content/themes/advisory/images/submitcommentbutton.png" type="image" id="submit" tabindex="5" value="Submit Comment" border="0" width="200" />
+<input type="hidden" name="comment_post_ID" value="4318" />
+</p>
+<br><br><br><br>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="00c40cc09d" /></p>
+</form>
+<br><br><br>
+
+
+
+	
+	</div>
+
+	<div id="sidebar">
+		<ul>
+								
+					<center><a href="http://gureckislab.org/blog"><img src="http://gureckislab.org/blog/wp-content/themes/advisory/images/tatlogo.png"  border="0"></a></center><br>
+					
+
+			<!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it. -->
+<p align="justify">This is a blog about the field of cognitive science and the study of thinking.  Our goal is to figure out why people do the things that they do.  The blog is published by the members of the <a href="http://gureckislab.org/">Computation and Cognition Lab</a> @ New York University (<a href="http://gureckislab.org/blog/?page_id=2">more...</a>)</b>
+			
+			<!-- 
+			<li>
+			<a href="http://gureckislab.org/blog/?feed=rss2">RSS</a>			</li>
+             -->
+			
+			
+
+			<br><br><br><br>
+			<div id="content_sec">
+				<h3>Contributors</h3>
+					<ul>
+					<li><a href="http://gureckislab.org/blog/?author=1">Todd Gureckis</li><li><a href="http://gureckislab.org/blog/?author=634">Alex Rich</li><li><a href="http://gureckislab.org/blog/?author=16">Anna Coenen</li><li><a href="http://gureckislab.org/blog/?author=13">Devin Domingo</li><li><a href="http://gureckislab.org/blog/?author=229">David Halpern</li><li><a href="http://gureckislab.org/blog/?author=3">Doug Markant</li><li><a href="http://gureckislab.org/blog/?author=5">Jay Martin</li><li><a href="http://gureckislab.org/blog/?author=2">John McDonnell</li><li><a href="http://gureckislab.org/blog/?author=8">Mordechai Juni</li><li><a href="http://gureckislab.org/blog/?author=4">Nathaniel Blanco</li><li><a href="http://gureckislab.org/blog/?author=15">Patricia Chan</li><li><a href="http://gureckislab.org/blog/?author=22">Sachith Cheruvatur</li><li><a href="http://gureckislab.org/blog/?author=586">Stephanie Chen</li>					</ul>
+			</div>
+			
+			<br><br>
+			<div id="content_sec">
+				<h3>Categories</h3>
+					<ul>
+					<li><a href="http://gureckislab.org/blog/?cat=30">Lab News</a> (38)</li><li><a href="http://gureckislab.org/blog/?cat=29">Posts</a> (22)</li><li><a href="http://gureckislab.org/blog/?cat=25">Random Particles</a> (34)</li><li><a href="http://gureckislab.org/blog/?cat=17">Reviews</a> (1)</li><li><a href="http://gureckislab.org/blog/?cat=31">Technical Notes</a> (7)</li>					</ul>
+			</div>
+
+			<br><br>
+			<div id="content_sec">
+				<h3>Recent Favorites</h3>
+					<ul>
+						<li><a href="http://gureckislab.org/blog/?p=4318">Announcing psiTurk 2.0!</a></li>
+						<li><a href="http://gureckislab.org/blog/?p=3121">Teaching human psychology using open-source robotics</a></li>
+						<li><a href="http://gureckislab.org/blog/?p=1297">Is Mechanical Turk the future of cognitive science research?</a></li>
+						<li><a href="http://gureckislab.org/blog/?p=3710">When does a rational model "fit"?</a></li>
+
+					</ul>
+			</div>
+			
+			
+
+			
+			<li>
+				<form method="get" id="searchform" action="http://gureckislab.org/blog/">
+<label class="hidden" for="s">Search for:</label>
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+			</li>
+			
+
+					</ul>
+	</div>
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<center>
+		<font color="#bbb">
+            This material is based (in part) upon work supported by the 
+            National Science Foundation under Grant Number BCS-1255538.
+	    Any opinions, findings, and conclusions or recommendations expressed 
+            in this material are those of the author(s) and do not necessarily reflect the 
+            views of the National Science Foundation nor any other the funding agency.<br>
+		thinking about thinking is powered by <a href="http://wordpress.org/">WordPress</a> | <a href="http://gureckislab.org/blog/?feed=rss2">RSS</a>.		<!-- 32 queries. 0.196 seconds. -->
+		</font>
+	</center>
+</div>
+</div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		</body>
+</html>

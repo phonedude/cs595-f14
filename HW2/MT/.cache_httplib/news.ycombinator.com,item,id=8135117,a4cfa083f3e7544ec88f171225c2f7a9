@@ -1,0 +1,44 @@
+status: 200
+content-length: 4005
+content-location: https://news.ycombinator.com/item?id=8135117
+set-cookie: __cfduid=d0d2abccd9056af6e10d67b40c84c004a1411924590053;
+ expires=Mon, 23-Dec-2019 23:50:00 GMT; path=/; domain=.ycombinator.com;
+ HttpOnly
+strict-transport-security: max-age=31556900; includeSubDomains
+vary: Accept-Encoding
+server: cloudflare-nginx
+connection: keep-alive
+-content-encoding: gzip
+cache-control: private, max-age=0
+date: Sun, 28 Sep 2014 17:16:30 GMT
+x-frame-options: DENY
+content-type: text/html; charset=utf-8
+cf-ray: 171196cfdbe702ba-IAD
+-varied-accept-encoding: gzip, deflate
+
+<html><head><meta name="referrer" content="origin"></meta><link rel="stylesheet" type="text/css" href="news.css?mRbcS0gjcQlTWXOJPBG0"></link><link rel="shortcut icon" href="favicon.ico"></link><script type="text/javascript">
+function byId(id) {
+  return document.getElementById(id);
+}
+
+function vote(node) {
+  var v = node.id.split(/_/);   // {'up', '123'}
+  var item = v[1];
+
+  // hide arrows
+  byId('up_'   + item).style.visibility = 'hidden';
+  byId('down_' + item).style.visibility = 'hidden';
+
+  // ping server
+  var ping = new Image();
+  ping.src = node.href;
+
+  return false; // cancel browser nav
+} </script><title>What&#x27;s Sarah&#x27;s last name. How do we know she&#x27;s not a fiction? | Hacker News</title></head><body><center><table border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef"><tr><td bgcolor="#ff6600"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://www.ycombinator.com"><img src="y18.gif" width="18" height="18" style="border:1px #ffffff solid;"></img></a></td><td style="line-height:12pt; height:10px;"><span class="pagetop"><b><a href="news">Hacker News</a></b><img src="s.gif" height="1" width="10"><a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="show">show</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a></span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop"><a href="login?whence=%69%74%65%6d%3f%69%64%3d%38%31%33%35%31%31%37">login</a></span></td></tr></table></td></tr><tr style="height:10px"></tr><tr><td><table border="0"><tr><td valign="top"><center><a id="up_8135117" href="vote?for=8135117&amp;dir=up&amp;whence=%69%74%65%6d%3f%69%64%3d%38%31%33%35%31%31%37"><div class="votearrow" title="upvote"></div></a><span id="down_8135117"></span></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead"><a href="user?id=AwesomeTogether">AwesomeTogether</a> 54 days ago  | <a href="item?id=8135117">link</a> | <a href="item?id=8134984">parent</a></span></div><br>
+<span class="comment"><font color="#888888">What&#x27;s Sarah&#x27;s last name. How do we know she&#x27;s not a fiction?</font></span></td></tr></table><br><br>
+<table border="0"><tr><td><table border="0"><tr><td><img src="s.gif" height="1" width="0"></td><td valign="top"><center><a id="up_8135172" href="vote?for=8135172&amp;dir=up&amp;whence=%69%74%65%6d%3f%69%64%3d%38%31%33%35%31%31%37"><div class="votearrow" title="upvote"></div></a><span id="down_8135172"></span></center></td><td class="default"><div style="margin-top:2px; margin-bottom:-10px; "><span class="comhead"><a href="user?id=shepbook">shepbook</a> 54 days ago  | <a href="item?id=8135172">link</a></span></div><br>
+<span class="comment"><font color="#000000">Have you ever read the E-Myth books? A fictional character can convey truth just as clearly as any other.</font></span><p><font size="1"><font color="#f6f6ef">-----</font></font></td></tr></table></td></tr></table><br><br>
+</td></tr><tr><td><img src="s.gif" height="10" width="0"><table width="100%" cellspacing="0" cellpadding="1"><tr><td bgcolor="#ff6600"></td></tr></table><br>
+<center><span class="yclinks"><a href="newsguidelines.html">Guidelines</a> | <a href="newsfaq.html">FAQ</a> | <a href="lists">Lists</a> | <a href="bookmarklet.html">Bookmarklet</a> | <a href="dmca.html">DMCA</a> | <a href="newsnews.html">News News</a> | <a href="https://github.com/HackerNews/HN/issues">Bugs and Feature Requests</a> | <a href="http://www.ycombinator.com/">Y Combinator</a> | <a href="http://www.ycombinator.com/apply/">Apply</a> | <a href="http://www.ycombinator.com/resources/">Library</a> | <a href="http://www.ycombinator.com/contact/">Contact</a></span><br><br>
+<form method="get" action="//hn.algolia.com/">Search: <input type="text" name="q" value="" size="17"></form><br>
+</center></td></tr></table></center></body></html>

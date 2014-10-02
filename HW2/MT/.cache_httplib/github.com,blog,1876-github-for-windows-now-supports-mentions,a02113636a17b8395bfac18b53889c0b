@@ -1,0 +1,301 @@
+status: 200
+content-length: 13726
+vary: X-PJAX, Accept-Encoding
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-runtime: 0.015162
+etag: "cc1a8c391e12e911124aa22830df4314"
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+x-served-by: 63914e33d55e1647962cf498030a7c16
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 17:05:46 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiMzc1MDVkNTY3MTYyNTE1YjExZGZhZmY1ZmZmODFkOTQiLCJfY3NyZl90b2tlbiI6IkJvL1hVWiswU3ZtN2MwNGdlWWVZbmJpWWJKdkRocW1YOEw2SURGUWdObVU9In0%3D--eed2af0b1468c07e976e0e7e5a5a375e822ed942;
+ path=/; secure; HttpOnly
+-content-encoding: gzip
+x-github-request-id: 60E19123:13AF:1F47420A:54283FEA
+date: Sun, 28 Sep 2014 17:05:46 GMT
+content-location: https://github.com/blog/1876-github-for-windows-now-supports-mentions
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+server: GitHub.com
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>GitHub for Windows now supports @mentions · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="GitHub for Windows now supports @mentions" name="twitter:title" /><meta content="Sometimes, you just want to grab someone&#39;s attention when you&#39;re finished with some cool code. That&#39;s why we&#39;ve added support for GitHub&#39;s @mention feature inside GitHub for Windows. You can now @ment" name="twitter:description" />
+<meta content="GitHub" property="og:site_name" /><meta content="article" property="og:type" /><meta content="https://github.com/apple-touch-icon-144.png" property="og:image" /><meta content="GitHub for Windows now supports @mentions" property="og:title" /><meta content="https://github.com/blog/1876-github-for-windows-now-supports-mentions" property="og:url" /><meta content="Sometimes, you just want to grab someone&#39;s attention when you&#39;re finished with some cool code. That&#39;s why we&#39;ve added support for GitHub&#39;s @mention feature inside GitHub for Windows. You can now @mention repository collaborators, and when you publish your changes they&#39;ll be notified that you&#39;d like them to have a look.
+
+
+
+If you already have GitHub for Windows installed, you can update by selecting &#39;About GitHub for Windows&#39; in the gear menu on the top right. Otherwise, download the latest version from the GitHub for Windows website." property="og:description" /><meta content="262588213843476" property="article:author" /><meta content="262588213843476" property="article:publisher" /><meta content="blog/engineering" property="article:section" /><meta content="2014-08-17 22:30:56 -0700" property="article:published_time" />
+
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+    <meta name="pjax-timeout" content="1000">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="engineering" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="60E19123:13AF:1F47420A:54283FEA" name="octolytics-dimension-request_id" />
+    <meta content="Rails, view, posts#show" name="analytics-event" />
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="AMn0VqOQ0JyKPUJoguL9hbnLPX/0hRwDG6yDjs46GoOjfWnmDvzHE2A9UpVUlIlx1FSUDmWnCj4PyGkXEGsP2A==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-aac267329edcf91101f8b8afc0575e8e882615cc.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-359fc347dc18b67ad5ddc10dadeb3d11b3a62a7b.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="546ca4c7178760a7b62d7eb3d0866f56">
+
+      <meta name="description" content="Build software better, together.">
+  </head>
+
+
+  <body class="logged_out  env-production">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" ga-data-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Fblog%2F1876-github-for-windows-now-supports-mentions" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search  js-site-search">
+      <form accept-charset="UTF-8" action="/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class=""
+    data-hotkey="s"
+    name="q"
+    placeholder="Search GitHub"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+        <div class="site clearfix">
+          <div id="site-container" class="context-loader-container" data-pjax-container>
+            
+            
+
+
+
+  <div id="blog-main" data-pjax-container>
+      <div class="pagehead separation">
+    <div class="container">
+      <form action="/blog/search" class="blog-search" data-pjax>
+        <span class="octicon octicon-search"></span>
+        <input class="blog-search-input" type="text" name="q" id="blog-search" value="" tabindex="2">
+      </form>
+
+      <h1>
+          <a href="/blog" id="blog-home"><span class="octicon octicon-home"></span></a><a href="/blog/1876-github-for-windows-now-supports-mentions" class=" blog-title">GitHub for Windows now supports @mentions</a>
+      </h1>
+    </div>
+  </div><!-- /.pagehead -->
+
+  <div class="container" id="blog-main">
+    
+<div class="blog-aside">
+
+  <div class="menu-container" data-pjax>
+    <ul class="menu">
+      <li><a href="/blog" class="js-selected-navigation-item " data-selected-links=" /blog">Featured</a></li>
+      <li><a href="/blog/category/all" class="js-selected-navigation-item " data-selected-links="all /blog/category/all">All Posts</a></li>
+      <li><a href="/blog/category/ship" class="js-selected-navigation-item " data-selected-links="ship /blog/category/ship">New Features</a></li>
+      <li><a href="/blog/category/engineering" class="js-selected-navigation-item selected" data-selected-links="engineering /blog/category/engineering">Engineering</a></li>
+      <li><a href="/blog/category/enterprise" class="js-selected-navigation-item " data-selected-links="enterprise /blog/category/enterprise">Enterprise</a></li>
+      <li><a href="/blog/category/meetup" class="js-selected-navigation-item " data-selected-links="meetup /blog/category/meetup">Meetups</a></li>
+      <li><a href="/blog/category/hire" class="js-selected-navigation-item " data-selected-links="hire /blog/category/hire">New Hires</a></li>
+      <li><a href="/blog/category/watercooler" class="js-selected-navigation-item " data-selected-links="watercooler /blog/category/watercooler">Watercooler</a></li>
+    </ul>
+  </div>
+
+  <a class="rss" href="/blog/subscribe" data-pjax>
+    <span class="octicon octicon-rss"></span>
+    Subscribe
+  </a>
+</div>
+
+    <div class="blog-content">
+        <ul class="blog-post-meta">
+    <li class="meta-item">
+      <span class="octicon octicon-calendar"></span>
+      August 17, 2014
+    </li>
+
+  <li class="vcard fn meta-item">
+    <img alt="Amy Palamountain" class="author-avatar" data-user="1024672" height="18" src="https://avatars0.githubusercontent.com/u/1024672?v=2&amp;s=36" width="18" /> <a href="/ammeep">ammeep</a>
+  </li>
+
+    <li class="meta-item">
+      <span class="octicon octicon-file-directory"></span>
+      <a href="/blog/category/engineering">Engineering</a>
+    </li>
+
+</ul>
+
+
+  <div class="blog-post-body markdown-body">
+    <p>Sometimes, you just want to grab someone's attention when you're finished with some cool code. That's why we've added support for <a href="https://github.com/blog/821-mention-somebody-they-re-notified">GitHub's @mention feature</a> inside GitHub for Windows. You can now <a href="https://github.com/blog/821" class="user-mention">@mention</a> repository collaborators, and when you publish your changes they'll be notified that you'd like them to have a look.</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/1024672/3947862/d4708592-2696-11e4-930d-e957dabb6bb3.gif" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1024672/3947862/d4708592-2696-11e4-930d-e957dabb6bb3.gif" alt="mentions" style="max-width:100%;"></a></p>
+
+<p>If you already have GitHub for Windows installed, you can update by selecting 'About GitHub for Windows' in the gear menu on the top right. Otherwise, download the latest version from the <a href="https://windows.github.com/">GitHub for Windows website</a>.</p>
+  </div>
+
+  <div class="blog-feedback">
+    <h2 class="blog-feedback-header with-twitter">
+      Have feedback on this post? Let <a href="https://twitter.com/intent/tweet?text=@github%20&amp;related=github&amp;url=https://github.com/blog/1876-github-for-windows-now-supports-mentions" target="blank">@github</a> know on Twitter.
+    </h2>
+    <p class="blog-feedback-description">
+      Need help or found a bug? <a href="/contact">Contact us</a>.
+    </p>
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+          </div>
+          <div class="modal-backdrop"></div>
+        </div>
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.01443s from github-fe122-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents js-suggester-field" placeholder=""></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ba50a1ca41995f0b006425c6db96c5669d18fd98.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-718b950d0761c12e31c63a23c232695de9d66fc4.js" type="text/javascript"></script>
+      
+      
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>

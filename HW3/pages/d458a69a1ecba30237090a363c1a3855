@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+<title>Does net neutrality really matter? - O'Reilly Radar</title>
+<link rel="shortcut icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link  rel="icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/custom.css" />
+<link rel="pingback" href="http://radar.oreilly.com/xmlrpc.php" />
+<link href="https://plus.google.com/105451978536505503907" rel="publisher" />
+	<meta name="search-title" content="Does net neutrality really matter?"/>
+	<meta property="twitter:account_id" content="10295842" />	
+	
+	<meta name="Category" content="Emerging Tech"/> 
+	<meta name="subtitle" content="Competition, access to bandwidth, and other issues muddy the net neutrality waters."/>
+	
+	<meta name="description" content=" It was the million comments filed at the FCC that dragged me out of the silence I've maintained for several years on the slippery controversy known as network..." />
+	<meta name="author" content="Andy Oram" />
+	<meta name="search_date" content="2014-08-15" />
+	<meta name="keywords" content="broadband,broadcasting,cable,comcast,competition,fcc,incumbent telephone companies,ISP,network neutrality,telecom" />	
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary"> 
+	<meta name="twitter:url" content="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html"> 
+	<meta name="twitter:title" content="Does net neutrality really matter?"> 
+	<meta name="twitter:description" content=" It was the million comments filed at the FCC that dragged me out of the silence I've maintained for several years on the slippery controversy known as network..."> 
+		<meta name="twitter:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-120.png">
+			<meta name="twitter:creator" content="praxagora"> 
+		<meta name="twitter:site" content="radar">
+			<meta property="og:image" content="http://cdn.oreillystatic.com/radar/images/people/photo_andyo_m.jpg">
+		<meta property="og:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-200.png" />
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Feed" href="http://radar.oreilly.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Comments Feed" href="http://radar.oreilly.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Does net neutrality really matter? Comments Feed" href="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html/feed" />
+<link rel='stylesheet' id='inline-tweet-sharer-style-css'  href='http://radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-css'  href='http://radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-plugin-css'  href='http://radar.oreilly.com/wp-content/plugins/videojs-html5-video-player-for-wordpress/plugin-styles.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-css'  href='//vjs.zencdn.net/4.5/video-js.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=4.0'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/player.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://cdn.oreillystatic.com/search/radar/scripts/jquery-1.10.2.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.6.6","is_admin":"0","ajaxurl":"http:\/\/radar.oreilly.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.6.6'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://radar.oreilly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://radar.oreilly.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Smarter buildings through data tracking' href='http://radar.oreilly.com/2014/08/smarter-buildings-through-data-tracking.html' />
+<link rel='next' title='Four short links: 15 August 2014' href='http://radar.oreilly.com/2014/08/four-short-links-15-august-2014.html' />
+<link rel='canonical' href='http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html' />
+<link rel='shortlink' href='http://radar.oreilly.com/?p=70161' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://radar.oreilly.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://radar.oreilly.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+
+		<script type="text/javascript"> document.createElement("video");document.createElement("audio");document.createElement("track"); </script>
+		
+<link rel="stylesheet" type="text/css" href="http://radar.oreilly.com/wp-content/themes/radar/css/lazyYT.css">
+<!-- soasta -->
+<script type='text/javascript'>
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'M8AMH-MB6VT-5NB4A-PU4EW-XKNPQ';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+</script>
+<!-- #soasta -->
+
+</head>
+<body class="single single-post postid-70161 single-format-standard">
+<div id="fixed-top"><span>Menu</span></div>
+<nav id="mobi" class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-48418" class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li id="menu-item-48419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li id="menu-item-48420" class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a></li>
+<li id="menu-item-48422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li id="menu-item-48423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li id="menu-item-48426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></nav><div id="wrapper" class="hfeed ">
+	<div class="navheaderbg">
+		<div>
+			<div id="header">	
+				<div class="header-top">
+					<a href="http://oreilly.com/" title="oreilly.com">oreilly.com</a>
+					<div class="clear"></div>
+				</div>
+			<div class="head-inner">
+				<div class="logo">
+					<a href="http://radar.oreilly.com/" title="O&#039;Reilly Radar" rel="home">O&#039;Reilly Radar</a>
+				</div>
+	
+				<div id="search-box">
+					<div id="header-social-wrap">
+						<div id="header-social-btn">
+							<a class="rss-btn"  href="http://feeds.feedburner.com/oreilly/radar/atom" >RSS Feed</a>
+							<a class="twitter-btn" href="http://twitter.com/radar">Twitter</a>
+							<a class="fb-btn" href="https://www.facebook.com/OReillyRadar">Facebook</a>
+							<a class="gps-btn" href="https://plus.google.com/105451978536505503907" >Google+</a>
+							<a class="yt-btn" href="http://www.youtube.com/user/OreillyMedia" >Youtube</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<script type="text/javascript"> 
+						function checkIfDefault(keyword) {
+							var defaultSearchTerm = "Search";
+							var defaultEmailTerm = "Enter Email";
+								if((keyword == defaultSearchTerm) || (keyword == defaultEmailTerm)) {
+									return '';
+								}
+								else {
+									return keyword;
+								}
+							}
+					</script>
+					<script type="text/javascript"> 
+					jQuery(document).ready(function($) { 
+						$("#search-form").submit(function() { 
+						window.location = " /search#/search/q="+$("#q").val(); 
+						return false; 
+						}); 
+					}); 
+					</script>
+					<div class="yui-skin-sam">
+						<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/">
+							<div class="search">
+								<fieldset>
+									<span id="search-input">
+										<div class="searchInput">
+											<span id="search-field"><input type="text" value="Search" name="q" maxlength="64" id="q" onfocus="this.value=checkIfDefault(this.value);"></span>           
+										</div>
+										<span id="search-button">
+											<input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/sitewide-headers/search_btn.gif" border="0" style="float:left" alt="Search" align="top">
+											<input type="hidden" name="tmpl" value="radar">                                                                    
+										</span>
+									</span>
+								</fieldset>
+							</div>
+						</form>
+					</div>
+                </div>
+				<div class="clear"></div>
+			</div>
+				<div class="clear"></div>
+			</div><!-- #header -->
+			<div id="access" role="navigation">			  
+				<div class="menu-header"><ul id="menu-main-nav-1" class="menu"><li class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a>
+<ul class="sub-menu">
+	<li id="menu-item-67912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-67912"><a href="http://radar.oreilly.com/">Radar</a></li>
+	<li id="menu-item-67913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67913"><a href="http://animals.oreilly.com/">Animals</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></div>				<div class="clear"></div>
+			</div><!-- #access -->
+			<div class="clear"></div>
+			<div id="menu-wrap">			
+					            	            		            		            	<div class="catname"><a href="http://radar.oreilly.com/emerging-tech">Emerging Tech</a></div>
+	            		        		        		            <div id="sub">
+		            <div class="nav">
+		            	<div class="name">More Topics <span class="arrow-down"></span></div>
+		                <div class="sub-menu"><ul class="nav-bar"><li><a href="http://radar.oreilly.com/data">Data</a></li><li><a href="http://radar.oreilly.com/design">Design</a></li><li><a href="http://radar.oreilly.com/emerging-tech">Emerging Tech</a></li><li><a href="http://radar.oreilly.com/iot">IoT+</a></li><li><a href="http://radar.oreilly.com/programming">Programming</a></li><li><a href="http://radar.oreilly.com/webops-perf">Web Ops & Performance</a></li><li><a href="http://radar.oreilly.com/web-platform">Web Platform</a></li></ul></div>		            </div>
+	        	</div>
+	        	        	</div>
+            <div class="clear"></div>
+		</div>
+		
+	</div>
+	<div id="sww-content">
+					<div class="textwidget"><!-- Either there are no banners, they are disabled or none qualified for this location! --></div>
+			
+		<div class="clear"></div>
+	</div>
+	<div id="main">	
+		<style type="text/css">
+		  .single .hentry { padding-bottom:20px; }
+		  #content #newsletter { padding:0; margin:0 0 20px; border-bottom:1px solid #888; }
+		  #content #newsletter > h3 { margin:15px 0 0 0; padding:0; font-size:22px; line-height:1.1em; font-weight:bold; }
+		  #content #newsletter > h4 { margin:0 0 5px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		  #content #newsletter > p { margin:0 0 20px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		</style>	<div id="container">
+		<div id="content" class="post_block" role="main">			
+							
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/rs_embhl_v2_en_us.js" type="text/javascript"></script>
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.cookie.js" type="text/javascript"></script>
+
+		<div id="post-70161" class="post-70161 post type-post status-publish format-standard hentry category-emerging-tech tag-home tag-broadband tag-broadcasting tag-cable tag-comcast tag-competition tag-fcc tag-incumbent-telephone-companies tag-isp tag-network-neutrality tag-telecom">					
+
+			 
+
+			<ul class="entry-tools">
+
+			<span class="tool-block">
+
+				<li class="button print">
+
+					
+					<a target="_new" href="#" onclick="window.open('http://radar.oreilly.com/print/?print_bc=70161','print','width=800,height=600,menubar=no,status=no,location=yes,toolbar=yes,scrollbars=yes'); return false;" rel="nofollow">Print</a>
+
+				</li>
+
+				<li class="button listen">
+
+					<div id="readspeaker_button1" class="rs_skip en_us"> <a accesskey="L" href="http://app.readspeaker.com/cgi-bin/rsent?customerid=14&amp;lang=en_us&amp;readid=body-content&amp;url=http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" target="_blank" onclick="readpage(this.href, 'content_start'); return false;">Listen</a> </div>
+
+				</li>		
+
+				
+
+				<div id="content_start" style="display: block; "></div>			
+
+			</span>
+
+			</ul>		
+
+		
+
+			
+			
+				
+					<a href="http://radar.oreilly.com/andyo">
+
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_andyo_s.jpg" class="au-photo" alt="" title="Andy Oram" />
+
+					</a>
+
+									
+
+			
+			<!-- RSPEAK_START -->
+
+			<div id="body-content">
+
+			<h1 class="entry-title">Does net neutrality really matter?</h1>
+
+					
+
+				
+
+				<h2 class="subhead">Competition, access to bandwidth, and other issues muddy the net neutrality waters.</h2>
+
+			
+			
+
+			<div class="entry-meta">				
+
+				
+					<span class="meta-sep">by</span> 	
+
+					
+						<span class="author vcard"><a class="url fn n" rel="author" href="http://radar.oreilly.com/andyo" title="View all posts by Andy Oram">
+
+						Andy Oram</a></span> |								
+
+					
+				<!-- RSPEAK_STOP -->
+
+				
+					<a href="http://twitter.com/praxagora"> @praxagora</a> |
+
+				
+				
+					<a href="https://plus.google.com/#111030861447662731288/posts"> +Andy Oram</a> |
+
+				
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html#comments" title="Comment on Does net neutrality really matter?"><span class="dsq-postid" rel="70161 http://radar.oreilly.com/?p=70161">Comments: 32</span></a></span>
+
+					<span class="meta-sep utility-items"> | </span>
+
+					
+
+				
+				<span class="entry-date">August 15, 2014</span> 				
+
+			</div><!-- .entry-meta -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html#comments" title="Comment on Does net neutrality really matter?"><span class="dsq-postid" rel="70161 http://radar.oreilly.com/?p=70161">Comments: 32</span></a></span>
+
+					
+
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+
+
+			<div class="entry-content">
+
+				
+			
+
+				
+				
+
+				<!-- RSPEAK_START --><div id="attachment_70186" style="width: 600px" class="wp-caption aligncenter"><a href="https://petitions.whitehouse.gov/petition/restore-net-neutrality-directing-fcc-classify-internet-providers-common-carriers/5CWS1M4P"><img class="size-full wp-image-70186" src="http://s.radar.oreilly.com/wp-files/2/2014/08/NetNeutralityPetitionSignatures.jpg" alt="NetNeutralityPetitionSignatures" width="590" height="239" /></a><p class="wp-caption-text"><em>Screen shot of signatures from a &#8220;<a href="https://petitions.whitehouse.gov/petition/restore-net-neutrality-directing-fcc-classify-internet-providers-common-carriers/5CWS1M4P">Common Carrier</a>&#8221; petition to the White House.</em></p></div>
+<p>It was the <a href="http://www.npr.org/blogs/alltechconsidered/2014/07/21/332678802/one-million-net-neutrality-comments-filed-but-will-they-matter">million comments filed at the FCC</a> that dragged me out of the silence I&#8217;ve maintained for several years on the slippery controversy known as &#8220;network neutrality.&#8221; The issue even came up during <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2014/08/05/obama-strikes-a-populist-tone-on-net-neutrality/">President Obama&#8217;s address to the recent U.S.-Africa Business forum</a>.</p>
+<p>Most people who latch on to the term &#8220;network neutrality&#8221; (which was never favored by the experts I&#8217;ve worked with over the years to promote competitive Internet service) don&#8217;t know the history that brought the Internet to its current state. Without this background, proposed policy changes will be ineffective. So, I&#8217;ll try to fill in some pieces that help explain the complex cans of worms opened by the idea of network neutrality.<br />
+<span id="more-70161"></span></p>
+<h2>From dial-up to fiber</h2>
+<p>Throughout the 1980s and 1990s, the chief concerns of Internet policy makers were, first, to bring basic network access to masses of people, and second, to achieve enough bandwidth for dazzling advances such as Voice over IP (and occasionally we even managed interactive video). Bandwidth constraints were a constant concern, and a good deal of advances in compression and protocols made the most of limited access. Many applications, such as FTP and rsync, also included restart options so that a file transfer could pick up where it left off when the dial-up line failed and then came up again.</p>
+<p>Because there were always more ways to use the network than the available bandwidth allowed (in other words, networks were oversubscribed), we all understood that network administrators at every level, from the local campus to the Tier 1 provider, would throttle traffic to make the network fair to all users. After all, what is the purpose of TCP window scaling, which lies at the center of the main protocol that carries traffic on the Internet?</p>
+<p>There&#8217;s nothing new about complaints from Internet services about uneven access. When Tier 1 Internet providers stopped peering and started charging smaller providers for access, the outcry was long and loud (I <a href="http://archive.oreilly.com/pub/post/can_we_still_say_that_nobody_o.html">wrote about it in December 2005</a>) — but the Internet survived.</p>
+<p>The hope that more competition would lead to more bandwidth at reasonable prices drove the Telecommunications Act of 1996. And in places with robust telecom competition — economically advanced countries in Europe and East Asia — people get much faster speeds than U.S. residents, at decent prices, with few worries about discrimination against content providers. <a href="http://archive.oreilly.com/pub/post/strangled_telecom_how_a_natura.html">A long history of obstruction and legal maneuvering</a> has kept the U.S. down to one high-speed networking carrier in most markets.</p>
+<p>Many people got complacent when they obtained always-on, high-speed connections. But new network capabilities always lead to more user demand, just as widening highways tends to lead to more congestion. Soon the peer-to-peer file sharing phenomenon pumped up the energy of Internet policy discussions again.</p>
+<h2>Moral outrage gets injected into Internet policy debates</h2>
+<p>I remember a sense of pessimism setting in among Internet public policy advocates around the year 2000, as the cable and telephone companies carved up the Internet market and effectively excluded most of their competitors. But thanks to the competition between these two industries, at least, most Americans had always-on connections, even if many of them were ADSL. And that led to the next set of Internet infrastructure wars.</p>
+<p>A lot of the new always-on Internet users, who had been making cassette tapes for friends and sharing music offline, decided they wanted music on their computers and started using the Internet to exchange files. The growth of peer-to-peer services can be attributed partly to the desire to evade copyright holders, but it had solid technical motivations as well.</p>
+<p>Millions of downloads would put a great strain on servers. (Nobody outside Google knows how much it invests in YouTube servers, but the cost must be huge.) When a hot new item hits the Internet, the only way to efficiently disseminate it is to make each user share some upload bandwidth along with download bandwidth. The overhead of peer-to-peer systems like BitTorrent requires a modest amount more bandwidth usage than using central servers to distribute the same content, but it allows small Internet users to provide popular material without being overwhelmed by downloads.</p>
+<p><span class="pullquote-left">Prices have always been different for different Internet users.</span>And peer-to-peer has substantial non-infringing uses, generally ignored by vigilante bandwidth throttlers. On old networks, software developers had to undergo a complicated protocol requiring technical mastery in order to work on free software. A developer fixing a bug or adding an enhancement would isolate the lines of code he or she changed in a file. Other developers would download that tiny file, update their versions of the source code using the patch program, recompile, and reinstall. Peer-to-peer services made it convenient to just download a whole new binary and compare checksums to make sure it had not become corrupted.</p>
+<p>I don&#8217;t have to go over the agonizing history of the sudden worldwide mania for peer-to-peer file sharing or the alarmed reactions of music and movie studios. Suffice it to say that traffic shaping, which had always been key to fair network service, got buffeted from all directions by an unpropitious moral zeal. Some network neutrality advocates distrust all application-specific discrimination, and turgid debates arise over what is &#8220;legitimate.&#8221; Many in the network neutrality movement were even angry at the FCC in 2010 when it created different rules for mobile and fiber networks, even though the bandwidth restraints on mobile networks are obvious.</p>
+<p>Still, given that the music and movie industries have started to respond to consumer demand and offer legal streaming, peer-to-peer file sharing may no longer be a significant percentage of traffic that carriers have to worry about. Instead of Napster, they argue over Netflix. But the histrionic appeals that characterized both sides of the peer-to-peer debates — those who defended peer-to-peer, and those who deplored it — continued into the network neutrality controversy.</p>
+<h2>All other things being unequal</h2>
+<p>Many advocates who&#8217;ve latched onto the network neutrality idea suggest that up to now we&#8217;ve enjoyed some kind of golden age where anyone in a garage can compete with Internet giants. Things aren&#8217;t so simple.</p>
+<p>Prices have always been different for different Internet users because some places have fewer competitors, some places are more difficult to string wires through, and so on. Different service is also available for cold cash, so large users have routinely leased their own lines over the years or paid extra for routing over faster lines. Software traffic shaping is a simple technological extension, similar to the use of virtual circuits and software-defined networking technologies elsewhere, to discriminate among customers willing to pay.</p>
+<p>Michael Powell, as chair of the FCC, famously cited different levels of access when he was asked about the digital divide and pointed out that he was on the wrong side of a <a href="http://arstechnica.com/tech-policy/2011/03/what-did-he-mean-by-that-mercedes-divide-fcc-chief-now-top-cable-lobbyist/">Mercedes divide</a>. It might not have been smart for an FCC chair to compare the information highway — which was already clearly becoming an economic, educational, and democratic necessity — with a luxury consumer item, but his essential point was correct.</p>
+<p>Network access is only one of many resources innovators need in any case. Suppose I cooked up a service that could out-Google Google — one that could instantly deliver the exact information for which people were searching in a privacy-preserving manner — but dang it, I just lacked 18 million CPUs to run it on. Where&#8217;s the neutrality?</p>
+<p>The fact is that innovators — particularly in developing regions of the world, where more and more innovation is likely to arise — have always, <em>always</em> suffered from resource constraints that don&#8217;t bedevil large incumbents. The key trick of innovation is to handle resource constraints and turn them into positives, as the early Internet users I mentioned at the beginning of this article did. I don&#8217;t see why network speed and cost should face policy decisions any different from physical resources, access to technical and marketing expertise, geographical location, and other distinctions between people.</p>
+<h2>One proposed fix: common carrier status</h2>
+<p>Net neutrality advocates have also seized on what they consider a simple fix: applying the legal regime known as <a href="http://transition.fcc.gov/Reports/1934new.pdf">Title II (PDF)</a> (because of its place in the law) so that Internet carriers are regulated like letter carriers or railroads. One attraction of this solution is that it requires action only by the FCC, not by Congress.</p>
+<p>As I have <a href="http://radar.oreilly.com/2014/01/court-prods-fcc-in-unexpected-direction-in-this-weeks-verizon-ruling.html">pointed out</a>, the evolution of the current regime followed a historical logic that would be hard to unravel. If 99% of those one million comments (plus even more that are certain to roll in before the deadline) ask the FCC to reverse itself, they may do so. Congress could well reverse the reversal. But Title II contains booby traps as well: because networks can&#8217;t treat all packets the same way, mandating them to do so will lead to endless technical arguments.</p>
+<h2>Freedom? Or just economics?</h2>
+<p>Telephone and cable company managers are not blind to what&#8217;s going on. They have seen their services reduced to a commodity, while on the one side content producers continue to charge high fees and on the other side a handful of prominent Internet companies make headlines over stunning deals. (Of course, few companies can be <a href="http://www.whatsapp.com/">WhatsApp</a>.) The telephone companies spend days and nights plotting how to bring some of that luscious revenue into their own coffers.</p>
+<p>Their answer, of course, is through oligopoly market power rather than through real innovation. That&#8217;s why I focused this article on competition back at the start. The telephone companies want a direct line into those who build successful businesses on top of telco services, and they want those companies to cough up a higher share of the revenues. It&#8217;s the same strategy pursued by Walmart when it <a href="http://www.reuters.com/article/2012/03/06/us-usa-consumer-walmart-idUSTRE8250GM20120306">forces down prices among its suppliers</a> or by Amazon.com when it <a href="http://www.theguardian.com/business/2014/may/27/amazon-hachette-ebooks-profits-jk-rowling-james-patterson">demands a higher share of publisher profits</a>.</p>
+<p>Tim O&#8217;Reilly, with whom I discussed this article, points out that the public is unable to determine what fair compensation is for the carriers because we aren&#8217;t privy to the actual costs of providing service. And those costs are not just the costs for providing Internet infrastructure.</p>
+<p>O&#8217;Reilly asks, &#8220;What are the costs, for example, of providing Netflix versus television? Which one is driving subscriber growth and <a href="http://en.wikipedia.org/wiki/Average_revenue_per_user">ARPU</a>? What is the real cost of the incremental infrastructure investment needed to provide high bandwidth services versus the prior cost of paying for content? How does this show up in the returns the telcos and cable companies are already getting?&#8221;</p>
+<p><span class="pullquote-left">There are many forms of centralization I’d worry about before traffic shaping.</span>While we are not privy to these cost numbers, he indicates that a quick look at the public financial reports of <a href="https://www.google.com/finance?q=NASDAQ%3ACMCSA&amp;fstype=ii&amp;ei=PsDsU6D4DIG58gbBuIGABw">Comcast</a> and <a href="https://www.google.com/finance?q=NASDAQ%3ANFLX&amp;fstype=ii&amp;ei=V8HsU5DFA4-08gbcroHIBQ">Netflix</a> provides some useful insight. If you look at the annual view of the data, you&#8217;ll see that in the four years between 2010 and 2013, Netflix&#8217;s revenues doubled (and with them, presumably their demands on the network doubled as well — perhaps even more, as a much larger proportion of Netflix revenue is likely driven by streaming today than it was in 2010). In that period, Netflix&#8217;s pre-tax income dropped from about 12% of revenue to about 4%. In the same time period, Comcast&#8217;s revenue also more than doubled (partly as a result of acquisition), and their profit margin rose from 16% to 17%.  It&#8217;s pretty clear that the rise of Netflix streaming has not had a negative impact on Comcast profits!</p>
+<p>In short, is being a commodity provider really such a bad deal? Do Internet infrastructure providers really need to squeeze Internet content companies in order to fund their investments? While this level of analysis is at best indicative, and should not be applied naively to policy decisions, it suggests a productive avenue for further research.</p>
+<p>O&#8217;Reilly also points out that customers are paying the carriers to provide Internet service — and to them, that service consists of access to sites like Facebook, YouTube, and, yes, Netflix. When the carriers ask the content providers to pay them as well, not only are they double-dipping, but they are conveniently forgetting to mention that in the &#8220;good old days,&#8221; cable companies actually paid for the content they delivered to customers. Aren&#8217;t they actually getting a free-ride when people spend their Internet time watching YouTube or Netflix instead?</p>
+<p>So, at bottom, the moral rallying cry behind network neutrality offers a muddled way to discuss an economic battle between big companies as to how they will allocate profits between themselves.</p>
+<h2>Taking the middle road</h2>
+<p>Some net neutrality experts make no secret of their desire to drive the telephone companies and cable companies out of business or reduce them to regulated utilities. The problem with abandoning infrastructure to the status of a given is that innovation in wires and cell towers is by no means finished. I looked at the economic aspects of telecom infrastructure in my article &#8220;<a href="http://radar.oreilly.com/2013/12/who-will-upgrade-the-telecom-foundation-of-the-internet.html">Who will upgrade the telecom foundation of the Internet?</a>&#8221;</p>
+<p>We still have recourse to preserve the open Internet without network neutrality:</p>
+<ul>
+<li>The FCC and FTC can still intervene in anti-competitive or discriminatory behavior — especially during mergers, but also in the <a href="https://gigaom2.files.wordpress.com/2014/07/vzw-letter-07_30_14.pdf">daily course of activity</a>. The FCC showed its willingness to play cop when <a href="http://www.geek.com/news/bittorrent-throttling-report-reveals-comcast-is-keeping-its-word-1432935/">Comcast was caught throttling BitTorrent traffic</a>.</li>
+<li>The government can sponsor initiatives to overcome the digital divide. Foremost among these are municipal networks, which have worked well in many communities (and are under constant political attack by private carriers). There is certainly no reason that Internet service needs to be provided by the purveyors of voice or video applications, just because those companies had lines strung first. On the other hand, Google can&#8217;t fund universal access. And even municipalities can&#8217;t create all the long-haul lines that connect them, so they are not a complete solution.</li>
+<li>Innovators could be trained and encouraged in economically underdeveloped areas where adaptive solutions to low bandwidth and unreliable connections are crucial. We will all be better off as clever ways are found to use our resources more efficiently. For instance, we can&#8217;t expect the wireless spectrum to support all the uses we want to make of it if we&#8217;re wasteful.</li>
+</ul>
+<p>I feel that network neutrality as a (vague) concept took hold of an important ongoing technical, social, and economic discussion and rechanneled it along ineffective lines. As this article has shown, technology as well as popular usage has continuously changed at the content or application level, and there are <a href="http://radar.oreilly.com/2014/01/how-did-we-end-up-with-a-centralized-internet-for-the-nsa-to-mine.html">many forms of centralization I&#8217;d worry about before traffic shaping</a>.</p>
+<p>Furthermore, we should not give up on hopes for more competition in infrastructure. At that time, we could all have the equivalent of a Mercedes on the information highway.</p>
+<p><em>Coax photo on home page by <a href="https://flic.kr/p/7naNrG">Michael Mol</a>, used under a <a href="https://creativecommons.org/licenses/by/2.0/">Creative Commons license</a>.</em></p>
+<!-- RSPEAK_STOP -->
+
+				
+			</div><!-- .entry-content -->
+
+				
+			</div>
+
+			<div class="entry-utility">				
+
+				tags: <a href='http://radar.oreilly.com/tag/broadband' title='broadband Tag' rel='tag'>broadband</a>, <a href='http://radar.oreilly.com/tag/broadcasting' title='broadcasting Tag' rel='tag'>broadcasting</a>, <a href='http://radar.oreilly.com/tag/cable' title='cable Tag' rel='tag'>cable</a>, <a href='http://radar.oreilly.com/tag/comcast' title='comcast Tag' rel='tag'>comcast</a>, <a href='http://radar.oreilly.com/tag/competition' title='competition Tag' rel='tag'>competition</a>, <a href='http://radar.oreilly.com/tag/fcc' title='fcc Tag' rel='tag'>fcc</a>, <a href='http://radar.oreilly.com/tag/incumbent-telephone-companies' title='incumbent telephone companies Tag' rel='tag'>incumbent telephone companies</a>, <a href='http://radar.oreilly.com/tag/isp' title='ISP Tag' rel='tag'>ISP</a>, <a href='http://radar.oreilly.com/tag/network-neutrality' title='network neutrality Tag' rel='tag'>network neutrality</a>, <a href='http://radar.oreilly.com/tag/telecom' title='telecom Tag' rel='tag'>telecom</a>
+				
+			</div><!-- .entry-utility -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html" addthis:title="Does net neutrality really matter?"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html#comments" title="Comment on Does net neutrality really matter?"><span class="dsq-postid" rel="70161 http://radar.oreilly.com/?p=70161">Comments: 32</span></a></span>
+
+				
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+			<!-- AddThis Button END -->			
+
+			
+
+			
+
+		</div><!-- #post-## -->		
+
+		
+
+		
+		
+
+<a name="comments"></a>
+
+<a name="respond"></a>
+
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-44166">
+        <div id="dsq-comment-header-44166" class="dsq-comment-header">
+            <cite id="dsq-cite-44166">
+http://www.lowpan.com                <span id="dsq-author-user-44166">Jon Smirl</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44166" class="dsq-comment-body">
+            <div id="dsq-comment-message-44166" class="dsq-comment-message"><p>If I&#8217;m paying Verizon $100/mth for 75Mb service, shouldn&#8217;t they honor that sale and deliver Netflix at the full 3Mb/s?  I get about 500Kb-700Kb with lots of drop outs.</p>
+<p>If they are not going to honor that sale and hide behind &#8220;upto&#8221; I think the FTC should make them advertise the true rate &#8211; 0.6Mb as what you get for the $100/mth.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-44167">
+        <div id="dsq-comment-header-44167" class="dsq-comment-header">
+            <cite id="dsq-cite-44167">
+                <span id="dsq-author-user-44167">Mine</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44167" class="dsq-comment-body">
+            <div id="dsq-comment-message-44167" class="dsq-comment-message"><p>Exactly. They are getting paid on both ends and then complaining about the deals they themselves have made?  What the heck do they think people are doing with 50+mb connections, solitaire? </p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-44168">
+        <div id="dsq-comment-header-44168" class="dsq-comment-header">
+            <cite id="dsq-cite-44168">
+http://www.lowpan.com                <span id="dsq-author-user-44168">Jon Smirl</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44168" class="dsq-comment-body">
+            <div id="dsq-comment-message-44168" class="dsq-comment-message"><p>Using Verizon&#8217;s logic &#8211; cars should be advertised as getting &#8216;upto&#8217; a million MPG. It doesn&#8217;t take any gas to coast down a mountain. In the city it gets 0.6MPG but you won&#8217;t find that in any documentation from Verizon.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt depth-2" id="dsq-comment-44169">
+        <div id="dsq-comment-header-44169" class="dsq-comment-header">
+            <cite id="dsq-cite-44169">
+http://www.video-game-chat.com/forum/                <span id="dsq-author-user-44169">Video Game Chat</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44169" class="dsq-comment-body">
+            <div id="dsq-comment-message-44169" class="dsq-comment-message"><p>You are getting ripped off.  We have a 25MB plan and it normally tops out at 3.6Mb without any hiccups or dropouts.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-44180">
+        <div id="dsq-comment-header-44180" class="dsq-comment-header">
+            <cite id="dsq-cite-44180">
+                <span id="dsq-author-user-44180">Carl Leitz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44180" class="dsq-comment-body">
+            <div id="dsq-comment-message-44180" class="dsq-comment-message"><p>don&#8217;t tolerate that, write paper mail to  state regulators,  ceo of the isp, and  fcc, etc., state &amp; fed  regulators.<br />
+also, get your refund.<br />
+mail letters  certified w/ return receipt.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt depth-2" id="dsq-comment-44171">
+        <div id="dsq-comment-header-44171" class="dsq-comment-header">
+            <cite id="dsq-cite-44171">
+                <span id="dsq-author-user-44171">floatingbones</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44171" class="dsq-comment-body">
+            <div id="dsq-comment-message-44171" class="dsq-comment-message"><p>You could try re-directing your connections through a VPN and see what happens to your service. This is very easy to do with a laptop but rather difficult with a set-top box. Services like ProXPN offer free trial service through their Dallas server. If you&#8217;re able to get a higher bandwidth through a VPN, it&#8217;s a smoking gun for throttling by your ISP.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-44184">
+        <div id="dsq-comment-header-44184" class="dsq-comment-header">
+            <cite id="dsq-cite-44184">
+                <span id="dsq-author-user-44184">Derek Balling</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44184" class="dsq-comment-body">
+            <div id="dsq-comment-message-44184" class="dsq-comment-message"><p>Not at all. It can easily be demonstrating that &#8220;the path between YourISP and Netflix is saturated&#8221; whereas &#8220;the path between your proxy service&#8217;s ISP and Netflix is not&#8221;.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-4" id="dsq-comment-44194">
+        <div id="dsq-comment-header-44194" class="dsq-comment-header">
+            <cite id="dsq-cite-44194">
+                <span id="dsq-author-user-44194">floatingbones</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44194" class="dsq-comment-body">
+            <div id="dsq-comment-message-44194" class="dsq-comment-message"><p>That&#8217;s just a question of having sufficient bandwidth at the Internet Exchange points. A manager from Level3 has spelled out, in detail and with graphs, what is happening. From the article <a href="http://blog.level3.com/global-connectivity/observations-internet-middleman/" rel="nofollow">http://blog.level3.com/global-connectivity/observations-internet-middleman/</a> :</p>
+<p>&#8220;The average utilization across all those interconnected ports is 36 percent. So you might be asking – what is all the fuss about with peering? And why did we write the Chicken post? Well, our peers fall into two broad categories; global or regional Internet Services providers like Level 3 (those “middlemen” listed in the Renesys report), and Broadband consumer networks like AT&amp;T. If I use that distinction as a filter to look at congested ports, the story looks very different.&#8221;</p>
+<p>&#8220;A port that is on average utilised at 90 percent will be saturated, dropping packets, for several hours a day. We have congested ports saturated to those levels with 12 of our 51 peers. Six of those 12 have a single congested port, and we are both (Level 3 and our peer) in the process of making upgrades – this is business as usual and happens occasionally as traffic swings around the Internet as customers change providers.&#8221;</p>
+<p>&#8220;That leaves the remaining six peers with congestion on almost all of the interconnect ports between us. Congestion that is permanent, has been in place for well over a year and where our peer refuses to augment capacity. They are deliberately harming the service they deliver to their paying customers. They are not allowing us to fulfil the requests their customers make for content.&#8221;</p>
+<p>One final note: given that Moore&#8217;s Law &#8212; and not the physics of the backbone lines &#8212; limit what can be passed through these Internet Exchange Points, it should be easy for providers to be regularly expanding their capacities at these computer centers. Actually, it should be fairly easy to predict when more capacity is needed and schedule the deployment of upgraded hardware accordingly. Comcast and other ISPs are clearly not doing this.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-5" id="dsq-comment-44195">
+        <div id="dsq-comment-header-44195" class="dsq-comment-header">
+            <cite id="dsq-cite-44195">
+                <span id="dsq-author-user-44195">Derek Balling</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44195" class="dsq-comment-body">
+            <div id="dsq-comment-message-44195" class="dsq-comment-message"><p>First off, the hardware to handle these types of peering points is NOT cheap. It&#8217;s a significant expense (both in terms of outlay, but in terms of maintenance) to upgrade the peering point interconnect. </p>
+<p>Second &#8211; why on earth should Verizon (or any ISP) invest to upgrade their infrastructure specifically designed to help their competitor take away their business?  That&#8217;s like demanding that your local Ford dealer upgrade their service department to also be able to easily service Toyota vehicles. Yeah, it&#8217;s &#8220;good customer service&#8221; to be able to (service multiple vendors, handle Netflix traffic), but it also facilitates the loss of business (auto-sales, video-channel revenue) to a competitor. No business in their right mind would do that.</p>
+<p>If your argument is &#8220;they should be forced to do that, they&#8217;re a monopoly&#8221; (as is the usual response), then the better answer is *fix the monopoly*. Net neutrality is a symptom of a statutory monopoly. Get a competitive marketplace for ISPs and let them compete for your dollars.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-44170">
+        <div id="dsq-comment-header-44170" class="dsq-comment-header">
+            <cite id="dsq-cite-44170">
+                <span id="dsq-author-user-44170">floatingbones</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44170" class="dsq-comment-body">
+            <div id="dsq-comment-message-44170" class="dsq-comment-message"><p>At 11am on Monday of this week, I ordered two items from Amazon. Both were listed as &#8220;In Stock&#8221; and the vendor was listed as Amazon itself. I selected Amazon&#8217;s free shipping service. For the next 101 hours, my order was being &#8220;prepared for delivery.&#8221;  Even though the items were available for overnight delivery (for a premium delivery charge), they had to be &#8220;processed&#8221; instead &#8212; for four nights in a row! My item were finally shipped on Friday night.</p>
+<p>Amazon&#8217;s delivery practices provide a clear analogy of the flaws with &#8220;premium&#8221; network services. In order to create value for their 2-day paid delivery service, they must deliberately throttle their &#8220;free&#8221; delivery program. The program is obfuscated: nowhere on Amazon&#8217;s page can one find a policy when they go out of their way to manually delay shipping product. &#8220;In stock&#8221; should mean that the product is ready for shipping &#8212; but they might lose orders to local merchants who will give you a product without delay when they have it in stock. Amazon&#8217;s policies are deceptive and manipulative. We should have the equivalent of &#8220;Net Neutrality&#8221; for order fulfillment from Internet vendors. At the very least, Amazon should honestly state &#8212; before committing to the order &#8212; when &#8220;in stock&#8221; items will actually be shipped.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-2" id="dsq-comment-44178">
+        <div id="dsq-comment-header-44178" class="dsq-comment-header">
+            <cite id="dsq-cite-44178">
+                <span id="dsq-author-user-44178">Carl Leitz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44178" class="dsq-comment-body">
+            <div id="dsq-comment-message-44178" class="dsq-comment-message"><p>right, like I posted, Practiced at the Art of  Deception.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-44172">
+        <div id="dsq-comment-header-44172" class="dsq-comment-header">
+            <cite id="dsq-cite-44172">
+                <span id="dsq-author-user-44172">&#8220;Prof&#8221;</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44172" class="dsq-comment-body">
+            <div id="dsq-comment-message-44172" class="dsq-comment-message"><p>Your discussion is clear as mud to me, but from what I can gleam from it leads to the following question:</p>
+<p>Suppose the FCC made&#8211;with ongoing enforcement&#8211;a requirement that any internet provider (at whatever level?) cannot &#8216;throttle&#8217; any of their users if that provider has control of 50% or over of the internet connections, i.e., provider market share, available for purchase to that user at that time.</p>
+<p>Would forcing competition in that way solve a lot of the problems that you mention?</p>
+<p>Sincerely (really),<br />
+Prof. R. Jewell</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-2" id="dsq-comment-44173">
+        <div id="dsq-comment-header-44173" class="dsq-comment-header">
+            <cite id="dsq-cite-44173">
+                <span id="dsq-author-user-44173">Andy Oram</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44173" class="dsq-comment-body">
+            <div id="dsq-comment-message-44173" class="dsq-comment-message"><p>Prof offers an interesting policy that would either allow a monopoly that doesn&#8217;t discriminate or force competition. As I&#8217;ve pointed out, giving different amounts of bandwidth to different connections is deeply embedded in network connectivity and would be hard to regulate. Furthermore, some rural areas might not support enough network connections to support robust competition, and two providers does not constitute much competition. But it could be an educational experiment.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-3" id="dsq-comment-44179">
+        <div id="dsq-comment-header-44179" class="dsq-comment-header">
+            <cite id="dsq-cite-44179">
+                <span id="dsq-author-user-44179">Mike Keilty</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44179" class="dsq-comment-body">
+            <div id="dsq-comment-message-44179" class="dsq-comment-message"><p>This is a great idea, but from a technical viewpoint, it would be very hard to prove that an ISP is throttling or simply load balancing.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-44174">
+        <div id="dsq-comment-header-44174" class="dsq-comment-header">
+            <cite id="dsq-cite-44174">
+                <span id="dsq-author-user-44174">ChronoFish</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44174" class="dsq-comment-body">
+            <div id="dsq-comment-message-44174" class="dsq-comment-message"><p>Net-neutrality should be this simple rule:  You get what you pay for.  If your service claims 25mb service then your ISP should expect to provide you with 25mb service 24 hours a day regardless of which sites you are going to.  Likewise if you are a content provider, and you&#8217;ve paid for 100mbs pipe, then their ISP should expect them to upload 100mbs 24 hours a day.  </p>
+<p>Why is this so hard?</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-44177">
+        <div id="dsq-comment-header-44177" class="dsq-comment-header">
+            <cite id="dsq-cite-44177">
+                <span id="dsq-author-user-44177">Carl Leitz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44177" class="dsq-comment-body">
+            <div id="dsq-comment-message-44177" class="dsq-comment-message"><p>hard bc w/o deception, profits would drop drastically, hence industries&#8217; dependence on the bait n switch of  blaring headlines offering &#8220;GREAT  DEAL!&#8221; and the fine print saying but, if, extra fees, charges, assessments&#8230;.<br />
+Like Sprint&#8217;s &#8216;UNLIMITED!&#8221; and fine print saying &#8216;restrictions apply.&#8221;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even depth-2" id="dsq-comment-44181">
+        <div id="dsq-comment-header-44181" class="dsq-comment-header">
+            <cite id="dsq-cite-44181">
+                <span id="dsq-author-user-44181">BRBP</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44181" class="dsq-comment-body">
+            <div id="dsq-comment-message-44181" class="dsq-comment-message"><p>Yes!  This is really this simple..   just trying to get the edge  is where the Gordian Knot is created!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt depth-2" id="dsq-comment-44182">
+        <div id="dsq-comment-header-44182" class="dsq-comment-header">
+            <cite id="dsq-cite-44182">
+http://radar.oreilly.com                <span id="dsq-author-user-44182">timoreilly</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44182" class="dsq-comment-body">
+            <div id="dsq-comment-message-44182" class="dsq-comment-message"><p>I totally agree. I think that reframing the argument in terms of economics would get a lot more attention from regulators.  This should probably be an FTC issue, not (or not just) an FCC one.  The cable companies sell one thing, and deliver another.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-44199">
+        <div id="dsq-comment-header-44199" class="dsq-comment-header">
+            <cite id="dsq-cite-44199">
+                <span id="dsq-author-user-44199">Derek Balling</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44199" class="dsq-comment-body">
+            <div id="dsq-comment-message-44199" class="dsq-comment-message"><p>That&#8217;s simply not the case, Tim, and you know it.</p>
+<p>What a person has for &#8220;last mile&#8221; bandwidth has bupkus to do with what connectivity the site they&#8217;re visiting has. </p>
+<p>We&#8217;ve both been around long enough to remember when we were at sites which had &#8216;blazing-fast&#8217; T-1 lines, but where the sites we were visiting were connected to the net on a paltry fractional-T frame-relay circuit, or worse.   Our ISPs weren&#8217;t &#8216;failing to deliver&#8217; the T-1 speeds we had paid for, just because a particular remote site had a bottleneck between themselves and us.</p>
+<p>Which is exactly the situation here: customers have a super-fast bandwidth in the last-mile, but their &#8220;fractional share&#8221; of the Verizon/Level3 interconnect is less than what could theoretically be delivered to them on their last mile (much like our fractional-relay web in the other example). </p>
+<p>Verizon has no &#8211; and should have no &#8211; obligation to upgrade infrastructure whose main beneficiary is its direct competitor. That&#8217;s an insane requirement, and is akin to forcing Ford dealers to train their repair techs to be certified to service Toyotas. The main people who benefit from that are their competitors and their competitors&#8217; customer-base.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt depth-2" id="dsq-comment-44183">
+        <div id="dsq-comment-header-44183" class="dsq-comment-header">
+            <cite id="dsq-cite-44183">
+                <span id="dsq-author-user-44183">Derek Balling</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44183" class="dsq-comment-body">
+            <div id="dsq-comment-message-44183" class="dsq-comment-message"><p>Your ISP *is* providing you with 25Mbps service.</p>
+<p>But providing you with 25Mbps service does you no good if the content you&#8217;re requesting is on the end of a 1.44Mbps T1 circuit, for example.</p>
+<p>Which is the perfect analogy for the situation: Your LOCAL pipe is capable of a certain amount of bandwidth, but that&#8217;s no guarantee that the path between you and the content you want can saturate your 25Mbps, and everyone else&#8217;s who is requesting from that content source.</p>
+<p>THAT link, between your ISP and the content provider (or in this case, the content provider&#8217;s ISP), is paid for and maintained through a completely different economic model.</p>
+<p>Expecting that &#8220;because I&#8217;ve got 25Mbps I should be able to get 25Mbps from wherever I want to request data from&#8221; demonstrates a fundamental lack of understanding of how internet traffic works.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-44197">
+        <div id="dsq-comment-header-44197" class="dsq-comment-header">
+            <cite id="dsq-cite-44197">
+                <span id="dsq-author-user-44197">Borderlord</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44197" class="dsq-comment-body">
+            <div id="dsq-comment-message-44197" class="dsq-comment-message"><p>Sorry, but that is not what the argument is about. It is about ISPs throttling the provider&#8217;s content to less than what he can provide(and you can receive) unless he coughs up additional money.<br />
+The legal term for this is extortion.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-4" id="dsq-comment-44198">
+        <div id="dsq-comment-header-44198" class="dsq-comment-header">
+            <cite id="dsq-cite-44198">
+                <span id="dsq-author-user-44198">Derek Balling</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44198" class="dsq-comment-body">
+            <div id="dsq-comment-message-44198" class="dsq-comment-message"><p>Riiiight, because asking the content provider to &#8220;pay for the bandwidth you use&#8221; isn&#8217;t a normal customer/provider relationship, it&#8217;s extortion.</p>
+<p>Pull the other one.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-5" id="dsq-comment-44200">
+        <div id="dsq-comment-header-44200" class="dsq-comment-header">
+            <cite id="dsq-cite-44200">
+                <span id="dsq-author-user-44200">Borderlord</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44200" class="dsq-comment-body">
+            <div id="dsq-comment-message-44200" class="dsq-comment-message"><p>The content PROVIDER isn&#8217;t using the bandwidth, the customer is, and it is already paid for.<br />
+ If the governor of NJ tells an out-of -state spring water supplier that it has to pay an extra fee to be able to use the fast lane on the turnpike, whereas the Jersey spring water company doesn&#8217;t, wouldn&#8217;t he be in big trouble? </p>
+<p>How many do you have?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt depth-5" id="dsq-comment-44201">
+        <div id="dsq-comment-header-44201" class="dsq-comment-header">
+            <cite id="dsq-cite-44201">
+                <span id="dsq-author-user-44201">Derek Balling</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44201" class="dsq-comment-body">
+            <div id="dsq-comment-message-44201" class="dsq-comment-message"><p>First off, comparing something paid for completely with tax dollars to infrastructure paid for by a private entity is comparing apples and legos.</p>
+<p>And the fact is that the content-provider *is* using bandwidth. It is sending traffic onto Verizon&#8217;s network, the same as I am doing right now (albeit onto Time Warner&#8217;s network). There is no logical reason why they should have the ability to send traffic and consume Verizon&#8217;s network resources for free, whereas I have to pay to consume those resources. </p>
+<p>So I&#8217;ll turn your question around: how many do YOU have? I can do this all week. :-)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even depth-5" id="dsq-comment-44202">
+        <div id="dsq-comment-header-44202" class="dsq-comment-header">
+            <cite id="dsq-cite-44202">
+                <span id="dsq-author-user-44202">Borderlord</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44202" class="dsq-comment-body">
+            <div id="dsq-comment-message-44202" class="dsq-comment-message"><p>The turnpike is paid for by user fees.<br />
+ Wired and wireless internet uses public resources. In the case of wired services, they are usually monopolies in their service area, which is why they are regulated.<br />
+ If content providers didn&#8217;t have the ability to send traffic, what resources would you be paying to consume? </p>
+<p>You may be able to do this all week, but I&#8217;m done.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt depth-5" id="dsq-comment-44203">
+        <div id="dsq-comment-header-44203" class="dsq-comment-header">
+            <cite id="dsq-cite-44203">
+                <span id="dsq-author-user-44203">Derek Balling</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44203" class="dsq-comment-body">
+            <div id="dsq-comment-message-44203" class="dsq-comment-message"><p>*SOME* turnpikes are paid for by user fees, others are paid for completely with tax dollars.</p>
+<p>Just because content providers have enjoyed the ability to &#8220;pay just their local provider and hope the peering arrangements would get their traffic to the other end&#8221; in the past is no reason why it must always be so. To your question, the answer would be that it might be a walled-garden (a la late 20th century AOL), or it might be a balkanized environment (a la China today), or the few content providers who find themselves &#8220;net isolated&#8221; will pony up and pay their fair share instead of free-riding. </p>
+<p>If your argument is &#8220;oh, the ISPs are a monopoly, so we get to tell them what to do&#8221;, the *better* answer is &#8220;end the monopoly&#8221;.  There is no good reason for broadband internet to be a monopoly. NONE. Undo the monopoly (which will &#8211; itself &#8211; require a decade or two of pro-competition regulations to undo the damage the gov&#8217;t has already caused). Then net neutrality becomes a value-add for ISPs to use as a differentiator.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-44175">
+        <div id="dsq-comment-header-44175" class="dsq-comment-header">
+            <cite id="dsq-cite-44175">
+                <span id="dsq-author-user-44175">Borderlord</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44175" class="dsq-comment-body">
+            <div id="dsq-comment-message-44175" class="dsq-comment-message"><p>As users, we already pay ISPs variable rates for bandwidth and (in most cases) data caps. How we use it, should be up to us, particularly since we also pay subscription fees to the providers.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-44196">
+        <div id="dsq-comment-header-44196" class="dsq-comment-header">
+            <cite id="dsq-cite-44196">
+http://radar.oreilly.com                <span id="dsq-author-user-44196">timoreilly</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44196" class="dsq-comment-body">
+            <div id="dsq-comment-message-44196" class="dsq-comment-message"><p>My point exactly. Why should comcast et al get paid twice for the same service, once by consumers and the second time by internet data suppliers?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-44176">
+        <div id="dsq-comment-header-44176" class="dsq-comment-header">
+            <cite id="dsq-cite-44176">
+                <span id="dsq-author-user-44176">DownWithComcast</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44176" class="dsq-comment-body">
+            <div id="dsq-comment-message-44176" class="dsq-comment-message"><p>Gosh! Seriously yet another paid advertisement by comcast. Internet is a utility. The creativity is from companies that create the content. You are already getting paid for delivery. So, no you do not deserve part of the pie that whatsapp made (however unjustified that price of whatsapp might have been). </p>
+<p>Stop being Greedy and enough with this arm twisting!</p>
+<p>US is one of the most expensive markets for internet service and probably with the worst service. Have been to so many developing countries with better service. It is time to breakdown these powerful service providers and regulate them further, not give them more powers and money for no deserving work.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-44185">
+        <div id="dsq-comment-header-44185" class="dsq-comment-header">
+            <cite id="dsq-cite-44185">
+                <span id="dsq-author-user-44185">Mike Loukides</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44185" class="dsq-comment-body">
+            <div id="dsq-comment-message-44185" class="dsq-comment-message"><p>A couple of points here:</p>
+<p>We live under an unfortunate myth that the regulated monopoly regime of US telecommunications was a &#8220;bad thing.&#8221;  We probably think it&#8217;s bad because of the rise of Reaganism, the idea that any regulation was bad, etc.  But under the regulated monopoly, the US really did have the best telecommunications in the world.  That is far from the case now.  And one of the reasons that the US had the best telecommunications in the world was that profits above a certain amount (10%, I believe) were required to be reinvested, and that reinvestment took the form of better infrastructure and Bell Labs.  If you&#8217;ve watched the 21st century non-regulated telecom monopolies at all, the one thing that is clear is that they are not terribly interested in investing in infrastructure.  And the decline of Bell Labs is one of the tragedies of the late 20th century.  It still exists, but it&#8217;s a very thin, wispy shadow of its former self.  (And when I Google Bell Laboratories, the top item is a company that makes insecticides.)</p>
+<p>We also live under the unfortunate myth that being a common carrier is about traffic shaping.  That&#8217;s only true indirectly, and really isn&#8217;t the bargain at all.  Dan Geer does an excellent job of framing this issue in his recent Black Hat keynote (<a href="http://geer.tinho.net/geer.blackhat.6viii14.txt" rel="nofollow">http://geer.tinho.net/geer.blackhat.6viii14.txt</a>).  Common carrier is about not being liable for abuses of the system.  It is about traffic inspection. If someone plans a murder (hey, let&#8217;s go for broke: a terrorist act) over the telephone, you can&#8217;t prosecute (or sue in civil court) the phone company for carrying the traffic, because they are just plain not allowed to listen to the call. And Dan proposes a strikingly similar (and, IMO, brilliant) choice for Internet providers: you can either be common carriers, and immune from prosecution for anything based on the content of the traffic you carry; or you can not be common carriers, and subject to prosecution and civil damages for the content of the traffic you carry.  I&#8217;d go for that.  If you can&#8217;t inspect traffic, you also can&#8217;t do traffic shaping, except on the lowest levels of the protocol stack.  The problem we&#8217;re facing now is that the providers can inspect traffic (and prefer some traffic sources over others), but they&#8217;re immune to prosecution.  They have the best of both worlds, and they shouldn&#8217;t.  </p>
+<p>Finally, on municipal networks: I think the biggest roadblock for municipal networks is the unfortunate connection between corporate lobbyists and government.  A number of states have regulations against (or severe restrictions on) municipal broadband services.  I suspect that you will see further regulation wherever municipal broadband is likely to become a serious threat to the entrenched providers.  </p>
+<p>Having said that, I have to admit that municipal broadband makes me think of the adage &#8220;be careful what you wish for, because you may get it.&#8221;  I would love to buy gigabit service from my town (or, more likely, a consortium of local towns)&#8211;I&#8217;d love to buy it from anyone willing to sell it to me.  But would I be as happy in 2024, when the latest generation of apps requires 10 gigabits to be happy?  Would I be happy with municipal employees trying to deal with DDoS attacks and the like?  Will some cities do a wonderful job, while others screw it up?  </p>
+<p>Granted, the current entrenched providers (including my own) are fairly clueless at running a network.  Comcast gives me a pretty consistent 35 Mb/s down, 8 Mb up/s, but I don&#8217;t get even two 9s of reliability&#8211;which is pretty tough when that missing 9 happens to occur during a videoconference. (Contrast with the regulated analog telephone service standard of 1 minute/40 years.  And AT&amp;T didn&#8217;t go down for a second during Hurricane Sandy, while Comcast&#8217;s Internet service was out for days.)  And I don&#8217;t forsee Comcast sending a truck out to run fiber to my house any time in the near future.  And, while AT&amp;T runs a very reliable network, they can&#8217;t deliver more than 1.5 Mb/s, and (as far as I can tell) have no plans to upgrade. So maybe I don&#8217;t care about the possibility that a municipal network wouldn&#8217;t keep its infrastructure up to date in the 2020s: Comcast, AT&amp;T and Verizon won&#8217;t, either.</p>
+<p>Regardless of the solution, we are poorly served by the current monopolies, and that will be an increasingly important issue, both for individuals and for the economy as a whole.  A curse on all your houses.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-2" id="dsq-comment-44187">
+        <div id="dsq-comment-header-44187" class="dsq-comment-header">
+            <cite id="dsq-cite-44187">
+                <span id="dsq-author-user-44187">Andy Oram</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44187" class="dsq-comment-body">
+            <div id="dsq-comment-message-44187" class="dsq-comment-message"><p>Thanks, Mike. It would be interesting to say that congestion control is OK but fiddling around at higher levels would not. Would this stop discrimination against Internet services, or just lead to another round of evasion?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-44204">
+        <div id="dsq-comment-header-44204" class="dsq-comment-header">
+            <cite id="dsq-cite-44204">
+                <span id="dsq-author-user-44204">Andy Oram</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44204" class="dsq-comment-body">
+            <div id="dsq-comment-message-44204" class="dsq-comment-message"><p>Reed Hastings, CEO of Netflix, contributed this predictable opinion piece to Wired:</p>
+<p><a href="http://www.wired.com/2014/08/save-the-net-reed-hastings/" rel="nofollow">http://www.wired.com/2014/08/save-the-net-reed-hastings/</a></p>
+<p>The arguments, which underline points in my article, say less about network neutrality at the application layer than about competition in infrastructure.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://radar.oreilly.com/2014/08/does-net-neutrality-really-matter.html';
+    var disqus_identifier = '70161 http://radar.oreilly.com/?p=70161';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'oreillyradar';
+    var disqus_title = "Does net neutrality really matter?";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=70161';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/radar.oreilly.com\/2014\/08\/does-net-neutrality-really-matter.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+
+
+		</div><!-- #content -->
+		<div id="sidebar" class="widget-area">
+	<div id="text-52" class="widget-container widget_text"><h3 class="widget-title">Featured Video</h3>			<div class="textwidget"><div class="js-lazyYT" data-youtube-id="7Vc8sxhy2I4" data-ratio="16:9"></div>
+<p style="padding-top: 5px; font-size: 12px;  line-height: 1.5; font-weight: normal;"><strong>"One Year After healthcare.gov..."</strong> - Mikey Dickerson describes his journey from Google to the West Wing, and emphasizes that it's time for a “commitment escalation.”</p></div>
+		<div class="clear"></div></div>		<div id="recent-posts-7" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/python-3-threat-or-menace.html">Python 3: threat or menace?</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/four-short-links-26-september-2014.html">Four short links: 26 September 2014</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/four-short-links-25-september-2014.html">Four short links: 25 September 2014</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/scaling-nosql-databases-5-tips-for-increasing-performance.html">Scaling NoSQL databases: 5 tips for increasing performance</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/in-pursuit-of-universal-iot-standards.html">In pursuit of universal IoT standards</a>
+						</li>
+				</ul>
+		<div class="clear"></div></div><div id="execphp-11" class="widget-container widget_execphp">			<div class="execphpwidget"><a class="twitter-timeline" width="318" data-dnt=true href="https://twitter.com/radar" data-widget-id="251056135732338688">Tweets by @radar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		<div class="clear"></div></div><div id="text-17" class="widget-container widget_text"><h3 class="widget-title">Most Recently Discussed</h3>			<div class="textwidget"><div id="recentcomments" class="dsq-widget"><script type="text/javascript" src="http://oreillyradar.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=100"></script></div></div>
+		<div class="clear"></div></div><div  class="widget-container radar-archives">	
+	<h3 class="widget-title">Archives</h3>	
+		
+	<ul>
+		<li>
+			<select id="archive_id" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			  <option value="">Archives by Month...</option> 
+			  	<option value='http://radar.oreilly.com/2014/09'> September 2014 </option>
+	<option value='http://radar.oreilly.com/2014/08'> August 2014 </option>
+	<option value='http://radar.oreilly.com/2014/07'> July 2014 </option>
+	<option value='http://radar.oreilly.com/2014/06'> June 2014 </option>
+	<option value='http://radar.oreilly.com/2014/05'> May 2014 </option>
+	<option value='http://radar.oreilly.com/2014/04'> April 2014 </option>
+	<option value='http://radar.oreilly.com/2014/03'> March 2014 </option>
+	<option value='http://radar.oreilly.com/2014/02'> February 2014 </option>
+	<option value='http://radar.oreilly.com/2014/01'> January 2014 </option>
+	<option value='http://radar.oreilly.com/2013/12'> December 2013 </option>
+	<option value='http://radar.oreilly.com/2013/11'> November 2013 </option>
+	<option value='http://radar.oreilly.com/2013/10'> October 2013 </option>
+	<option value='http://radar.oreilly.com/2013/09'> September 2013 </option>
+	<option value='http://radar.oreilly.com/2013/08'> August 2013 </option>
+	<option value='http://radar.oreilly.com/2013/07'> July 2013 </option>
+	<option value='http://radar.oreilly.com/2013/06'> June 2013 </option>
+	<option value='http://radar.oreilly.com/2013/05'> May 2013 </option>
+	<option value='http://radar.oreilly.com/2013/04'> April 2013 </option>
+	<option value='http://radar.oreilly.com/2013/03'> March 2013 </option>
+	<option value='http://radar.oreilly.com/2013/02'> February 2013 </option>
+	<option value='http://radar.oreilly.com/2013/01'> January 2013 </option>
+	<option value='http://radar.oreilly.com/2012/12'> December 2012 </option>
+	<option value='http://radar.oreilly.com/2012/11'> November 2012 </option>
+	<option value='http://radar.oreilly.com/2012/10'> October 2012 </option>
+	<option value='http://radar.oreilly.com/2012/09'> September 2012 </option>
+	<option value='http://radar.oreilly.com/2012/08'> August 2012 </option>
+	<option value='http://radar.oreilly.com/2012/07'> July 2012 </option>
+	<option value='http://radar.oreilly.com/2012/06'> June 2012 </option>
+	<option value='http://radar.oreilly.com/2012/05'> May 2012 </option>
+	<option value='http://radar.oreilly.com/2012/04'> April 2012 </option>
+	<option value='http://radar.oreilly.com/2012/03'> March 2012 </option>
+	<option value='http://radar.oreilly.com/2012/02'> February 2012 </option>
+	<option value='http://radar.oreilly.com/2012/01'> January 2012 </option>
+	<option value='http://radar.oreilly.com/2011/12'> December 2011 </option>
+	<option value='http://radar.oreilly.com/2011/11'> November 2011 </option>
+	<option value='http://radar.oreilly.com/2011/10'> October 2011 </option>
+	<option value='http://radar.oreilly.com/2011/09'> September 2011 </option>
+	<option value='http://radar.oreilly.com/2011/08'> August 2011 </option>
+	<option value='http://radar.oreilly.com/2011/07'> July 2011 </option>
+	<option value='http://radar.oreilly.com/2011/06'> June 2011 </option>
+	<option value='http://radar.oreilly.com/2011/05'> May 2011 </option>
+	<option value='http://radar.oreilly.com/2011/04'> April 2011 </option>
+	<option value='http://radar.oreilly.com/2011/03'> March 2011 </option>
+	<option value='http://radar.oreilly.com/2011/02'> February 2011 </option>
+	<option value='http://radar.oreilly.com/2011/01'> January 2011 </option>
+	<option value='http://radar.oreilly.com/2010/12'> December 2010 </option>
+	<option value='http://radar.oreilly.com/2010/11'> November 2010 </option>
+	<option value='http://radar.oreilly.com/2010/10'> October 2010 </option>
+	<option value='http://radar.oreilly.com/2010/09'> September 2010 </option>
+	<option value='http://radar.oreilly.com/2010/08'> August 2010 </option>
+	<option value='http://radar.oreilly.com/2010/07'> July 2010 </option>
+	<option value='http://radar.oreilly.com/2010/06'> June 2010 </option>
+	<option value='http://radar.oreilly.com/2010/05'> May 2010 </option>
+	<option value='http://radar.oreilly.com/2010/04'> April 2010 </option>
+	<option value='http://radar.oreilly.com/2010/03'> March 2010 </option>
+	<option value='http://radar.oreilly.com/2010/02'> February 2010 </option>
+	<option value='http://radar.oreilly.com/2010/01'> January 2010 </option>
+	<option value='http://radar.oreilly.com/2009/12'> December 2009 </option>
+	<option value='http://radar.oreilly.com/2009/11'> November 2009 </option>
+	<option value='http://radar.oreilly.com/2009/10'> October 2009 </option>
+	<option value='http://radar.oreilly.com/2009/09'> September 2009 </option>
+	<option value='http://radar.oreilly.com/2009/08'> August 2009 </option>
+	<option value='http://radar.oreilly.com/2009/07'> July 2009 </option>
+	<option value='http://radar.oreilly.com/2009/06'> June 2009 </option>
+	<option value='http://radar.oreilly.com/2009/05'> May 2009 </option>
+	<option value='http://radar.oreilly.com/2009/04'> April 2009 </option>
+	<option value='http://radar.oreilly.com/2009/03'> March 2009 </option>
+	<option value='http://radar.oreilly.com/2009/02'> February 2009 </option>
+	<option value='http://radar.oreilly.com/2009/01'> January 2009 </option>
+	<option value='http://radar.oreilly.com/2008/12'> December 2008 </option>
+	<option value='http://radar.oreilly.com/2008/11'> November 2008 </option>
+	<option value='http://radar.oreilly.com/2008/10'> October 2008 </option>
+	<option value='http://radar.oreilly.com/2008/09'> September 2008 </option>
+	<option value='http://radar.oreilly.com/2008/08'> August 2008 </option>
+	<option value='http://radar.oreilly.com/2008/07'> July 2008 </option>
+	<option value='http://radar.oreilly.com/2008/06'> June 2008 </option>
+	<option value='http://radar.oreilly.com/2008/05'> May 2008 </option>
+	<option value='http://radar.oreilly.com/2008/04'> April 2008 </option>
+	<option value='http://radar.oreilly.com/2008/03'> March 2008 </option>
+	<option value='http://radar.oreilly.com/2008/02'> February 2008 </option>
+	<option value='http://radar.oreilly.com/2008/01'> January 2008 </option>
+	<option value='http://radar.oreilly.com/2007/12'> December 2007 </option>
+	<option value='http://radar.oreilly.com/2007/11'> November 2007 </option>
+	<option value='http://radar.oreilly.com/2007/10'> October 2007 </option>
+	<option value='http://radar.oreilly.com/2007/09'> September 2007 </option>
+	<option value='http://radar.oreilly.com/2007/08'> August 2007 </option>
+	<option value='http://radar.oreilly.com/2007/07'> July 2007 </option>
+	<option value='http://radar.oreilly.com/2007/06'> June 2007 </option>
+	<option value='http://radar.oreilly.com/2007/05'> May 2007 </option>
+	<option value='http://radar.oreilly.com/2007/04'> April 2007 </option>
+	<option value='http://radar.oreilly.com/2007/03'> March 2007 </option>
+	<option value='http://radar.oreilly.com/2007/02'> February 2007 </option>
+	<option value='http://radar.oreilly.com/2007/01'> January 2007 </option>
+	<option value='http://radar.oreilly.com/2006/12'> December 2006 </option>
+	<option value='http://radar.oreilly.com/2006/11'> November 2006 </option>
+	<option value='http://radar.oreilly.com/2006/10'> October 2006 </option>
+	<option value='http://radar.oreilly.com/2006/09'> September 2006 </option>
+	<option value='http://radar.oreilly.com/2006/08'> August 2006 </option>
+	<option value='http://radar.oreilly.com/2006/07'> July 2006 </option>
+	<option value='http://radar.oreilly.com/2006/06'> June 2006 </option>
+	<option value='http://radar.oreilly.com/2006/05'> May 2006 </option>
+	<option value='http://radar.oreilly.com/2006/04'> April 2006 </option>
+	<option value='http://radar.oreilly.com/2006/03'> March 2006 </option>
+	<option value='http://radar.oreilly.com/2006/02'> February 2006 </option>
+	<option value='http://radar.oreilly.com/2006/01'> January 2006 </option>
+	<option value='http://radar.oreilly.com/2005/12'> December 2005 </option>
+	<option value='http://radar.oreilly.com/2005/11'> November 2005 </option>
+	<option value='http://radar.oreilly.com/2005/10'> October 2005 </option>
+	<option value='http://radar.oreilly.com/2005/09'> September 2005 </option>
+	<option value='http://radar.oreilly.com/2005/08'> August 2005 </option>
+	<option value='http://radar.oreilly.com/2005/07'> July 2005 </option>
+	<option value='http://radar.oreilly.com/2005/06'> June 2005 </option>
+	<option value='http://radar.oreilly.com/2005/05'> May 2005 </option>
+	<option value='http://radar.oreilly.com/2005/04'> April 2005 </option>
+	<option value='http://radar.oreilly.com/2005/03'> March 2005 </option>
+			</select>
+		</li>
+
+		<li>	
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='cat' id='cat' class='postform'  onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Topic&#8230;</option>
+	<option class="level-0" value="3">Data</option>
+	<option class="level-0" value="5443">Design</option>
+	<option class="level-0" value="5444">Emerging Tech</option>
+	<option class="level-0" value="4871">IoT+</option>
+	<option class="level-0" value="9">Programming</option>
+	<option class="level-0" value="12">Web Ops &amp; Performance</option>
+	<option class="level-0" value="5355">Web Platform</option>
+</select>
+					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+
+		<li id="users">
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='author' id='author' class='' onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Author...</option>
+	<option value='507'>A. Sinan Unur</option>
+	<option value='508'>Aaron Sumner</option>
+	<option value='4'>Adam DuVander</option>
+	<option value='376'>Adam Flaherty</option>
+	<option value='3'>Adam Messinger</option>
+	<option value='5'>Adam Witwer</option>
+	<option value='2'>Alasdair Allan</option>
+	<option value='588'>Alex Bordei</option>
+	<option value='7'>Alex Bowyer</option>
+	<option value='9'>Alex Iskold</option>
+	<option value='6'>Alexander Macgillivray</option>
+	<option value='10'>Alistair Croll</option>
+	<option value='471'>Allen Downey</option>
+	<option value='11'>Allen Noren</option>
+	<option value='12'>Allison Randal</option>
+	<option value='482'>Ally MacDonald</option>
+	<option value='477'>Alois Reitbauer</option>
+	<option value='347'>Alysa Hutnik</option>
+	<option value='358'>Amy Heineike</option>
+	<option value='467'>Amy Jollymore</option>
+	<option value='426'>Amy Unruh</option>
+	<option value='13'>Anant Jhingran</option>
+	<option value='414'>Andreas Antonopoulos</option>
+	<option value='501'>Andrew Collette</option>
+	<option value='15'>Andrew Odewahn</option>
+	<option value='14'>Andrew Savikas</option>
+	<option value='16'>Andrew Shafer</option>
+	<option value='510'>Andy Fitzgerald</option>
+	<option value='18'>Andy Kirk</option>
+	<option value='355'>Andy Konwinski</option>
+	<option value='19'>Andy Oram</option>
+	<option value='309'>Ann Spencer</option>
+	<option value='262'>Ann Waldo</option>
+	<option value='359'>Anna Smith</option>
+	<option value='562'>Anne Gentle</option>
+	<option value='574'>Anni Ylagan</option>
+	<option value='21'>Ari Gesher</option>
+	<option value='20'>Aria Haghighi</option>
+	<option value='410'>Ariya Hidayat</option>
+	<option value='22'>Artur Bergman</option>
+	<option value='23'>Audrey Watters</option>
+	<option value='293'>Avi Bryant</option>
+	<option value='571'>Barb Edson</option>
+	<option value='421'>Barbara Bermes</option>
+	<option value='486'>Baron Schwartz</option>
+	<option value='26'>Barry Devlin</option>
+	<option value='390'>Beau Cronin</option>
+	<option value='419'>Ben Christensen</option>
+	<option value='587'>Ben Evans</option>
+	<option value='27'>Ben Lorica</option>
+	<option value='462'>Bill Higgins</option>
+	<option value='591'>Bill Lubanovic</option>
+	<option value='28'>Bill McCoy</option>
+	<option value='461'>Bonnie Feldman</option>
+	<option value='30'>Bradley Voytek</option>
+	<option value='31'>Brady Forrest</option>
+	<option value='539'>Brandon Satrom</option>
+	<option value='32'>Brett McLaughlin</option>
+	<option value='33'>Brett Sandusky</option>
+	<option value='34'>Brett Sheppard</option>
+	<option value='25'>Brian Ahier</option>
+	<option value='35'>Brian Boyer</option>
+	<option value='533'>brian d foy</option>
+	<option value='494'>Brian d&#039;Alessandro</option>
+	<option value='244'>Brian Jepson</option>
+	<option value='481'>Brian MacDonald</option>
+	<option value='36'>Brian O&#039;Leary</option>
+	<option value='38'>Brian Sawyer</option>
+	<option value='37'>Bruce Stewart</option>
+	<option value='39'>Carl Hewitt</option>
+	<option value='40'>Carl Malamud</option>
+	<option value='328'>Cathy O&#039;Neil</option>
+	<option value='483'>Chao (Ray) Feng</option>
+	<option value='448'>Chiu-ki Chan</option>
+	<option value='516'>Chris Cornutt</option>
+	<option value='41'>Chris Meade</option>
+	<option value='284'>Chris Vander Mey</option>
+	<option value='300'>Chris Wiggins</option>
+	<option value='44'>Christine Perey</option>
+	<option value='42'>Ciara Byrne</option>
+	<option value='43'>Cliff Miller</option>
+	<option value='479'>Colt McAnlis</option>
+	<option value='306'>Courtney Nash</option>
+	<option value='45'>Dale Dougherty</option>
+	<option value='422'>Dan Saffer</option>
+	<option value='577'>Danese Cooper</option>
+	<option value='46'>Darren Barefoot</option>
+	<option value='430'>Dave Himrod</option>
+	<option value='47'>Dave McClure</option>
+	<option value='556'>Dave Zwieback</option>
+	<option value='435'>David Elfi</option>
+	<option value='49'>David Leinweber</option>
+	<option value='50'>David Recordon</option>
+	<option value='48'>David Sims</option>
+	<option value='559'>David Stephenson</option>
+	<option value='51'>DC Denison</option>
+	<option value='242'>Deni Auclair</option>
+	<option value='313'>Derek Jacoby</option>
+	<option value='427'>Dino Esposito</option>
+	<option value='53'>DJ Patil</option>
+	<option value='416'>Doug Finke</option>
+	<option value='52'>Doug Hill</option>
+	<option value='512'>Dr. Venkat Subramaniam</option>
+	<option value='575'>Drew Dara-Abrams</option>
+	<option value='348'>Duncan Ross</option>
+	<option value='491'>Dusty Phillips</option>
+	<option value='569'>DW Wheeler</option>
+	<option value='54'>Dylan Field</option>
+	<option value='55'>E.A. Vander Veer</option>
+	<option value='56'>Edd Dumbill</option>
+	<option value='236'>Edie Freedman</option>
+	<option value='465'>Eli Goodman</option>
+	<option value='392'>Elisabeth Robson</option>
+	<option value='58'>Elizabeth Corcoran</option>
+	<option value='544'>Ellen Friedman</option>
+	<option value='570'>Elliott Hauser</option>
+	<option value='514'>Elliotte Rusty Harold</option>
+	<option value='434'>Emma Jane Westby</option>
+	<option value='59'>Eoin Purcell</option>
+	<option value='451'>Eric Redmond</option>
+	<option value='60'>Eric Ries</option>
+	<option value='500'>Ezra Haber Glenn</option>
+	<option value='541'>Faye Williams</option>
+	<option value='578'>Federico Castanedo</option>
+	<option value='503'>Federico Lucifredi</option>
+	<option value='62'>Fred Trotter</option>
+	<option value='515'>Fred van den Bosch</option>
+	<option value='68'>Gabe Zichermann</option>
+	<option value='63'>Gavin Starks</option>
+	<option value='463'>George Reese</option>
+	<option value='519'>Glen Martin</option>
+	<option value='67'>Greg Whisenant</option>
+	<option value='66'>Gretchen Giles</option>
+	<option value='436'>Gustavo Franco</option>
+	<option value='581'>Hadley Wickham</option>
+	<option value='513'>Hari K Gottipati</option>
+	<option value='69'>Heather McCormack</option>
+	<option value='511'>Hew Wolff</option>
+	<option value='70'>Howard Wen</option>
+	<option value='71'>Hugh McGuire</option>
+	<option value='72'>Imran Ali</option>
+	<option value='470'>J. Paul Reed</option>
+	<option value='73'>James Bridle</option>
+	<option value='74'>James Turner</option>
+	<option value='338'>Janaya Williams</option>
+	<option value='558'>Jane Sarasohn-Kahn</option>
+	<option value='75'>Jason Grigsby</option>
+	<option value='573'>Jay Kreps</option>
+	<option value='529'>Jay McGavren</option>
+	<option value='350'>Jayant Shekar</option>
+	<option value='77'>Jeevan Padiyar</option>
+	<option value='429'>Jeff Gothelf</option>
+	<option value='375'>Jeff Needham</option>
+	<option value='530'>Jeffrey Carr</option>
+	<option value='78'>Jeffrey Carr</option>
+	<option value='80'>Jenn Webb</option>
+	<option value='81'>Jennifer Pahlka</option>
+	<option value='583'>Jeremy Freeman</option>
+	<option value='82'>Jeremy Howard</option>
+	<option value='83'>Jesper Andersen</option>
+	<option value='438'>Jesse Anderson</option>
+	<option value='84'>Jesse Robbins</option>
+	<option value='391'>Jessica McKellar</option>
+	<option value='534'>Jez Humble</option>
+	<option value='88'>Jim Stogdill</option>
+	<option value='87'>Jimmy Guterman</option>
+	<option value='342'>Jo Prichard</option>
+	<option value='89'>Jodee Rich</option>
+	<option value='340'>Joe Procopio</option>
+	<option value='413'>Johan Bergström</option>
+	<option value='92'>John Allspaw</option>
+	<option value='93'>John Battelle</option>
+	<option value='457'>John Boxall</option>
+	<option value='349'>John Feland</option>
+	<option value='351'>John Foreman</option>
+	<option value='86'>John Geraci</option>
+	<option value='85'>John Graham-Cumming</option>
+	<option value='94'>John Labovitz</option>
+	<option value='564'>John Lindquist</option>
+	<option value='495'>John Myles White</option>
+	<option value='95'>John Warren</option>
+	<option value='561'>John Wilbanks</option>
+	<option value='255'>Jon Bruner</option>
+	<option value='498'>Jon Callas</option>
+	<option value='555'>Jon Cowie</option>
+	<option value='444'>Jon Roberts</option>
+	<option value='101'>Jon Spinney</option>
+	<option value='98'>Jon Udell</option>
+	<option value='585'>Jonas Luster</option>
+	<option value='96'>Jonathan Alexander</option>
+	<option value='177'>Jonathan Reichental, Ph.D.</option>
+	<option value='499'>Jonathon Thurman</option>
+	<option value='97'>Jono Bacon</option>
+	<option value='90'>Joseph Hellerstein</option>
+	<option value='99'>Joseph J. Esposito</option>
+	<option value='546'>Josh Lockhart</option>
+	<option value='509'>Josh Simmons</option>
+	<option value='100'>Joshua-Michéle Ross</option>
+	<option value='464'>Joy Beatty</option>
+	<option value='103'>Jud Valeski</option>
+	<option value='104'>Julie Steele</option>
+	<option value='106'>Justin Hall</option>
+	<option value='107'>Justo Hidalgo</option>
+	<option value='117'>Karl Fogel</option>
+	<option value='108'>Kassia Krozser</option>
+	<option value='112'>Kat Meyer</option>
+	<option value='109'>Kate Eltham</option>
+	<option value='110'>Kate Pullinger</option>
+	<option value='453'>Kathryn Barrett</option>
+	<option value='111'>Kathy Walrath</option>
+	<option value='458'>Katie Cunningham</option>
+	<option value='557'>Katie Miller</option>
+	<option value='525'>Keith Comito</option>
+	<option value='113'>Keith Fahlgren</option>
+	<option value='114'>Ken Yarmosh</option>
+	<option value='115'>Kevin Shockey</option>
+	<option value='116'>Kevin Smokler</option>
+	<option value='454'>Khaled El Emam</option>
+	<option value='424'>Kipp Bradford</option>
+	<option value='469'>Kit Seeborg</option>
+	<option value='492'>kmatsudaira</option>
+	<option value='118'>Kurt Cagle</option>
+	<option value='523'>Lara Swanson</option>
+	<option value='121'>Laura Dawson</option>
+	<option value='412'>Laura Klein</option>
+	<option value='339'>Laurel Ruma</option>
+	<option value='122'>Laurie Petrycki</option>
+	<option value='123'>Leigh Dodds</option>
+	<option value='125'>Liliana Bounegru</option>
+	<option value='126'>Linda Stone</option>
+	<option value='127'>Liza Daly</option>
+	<option value='128'>Lucy Gray</option>
+	<option value='129'>Lukas Biewald</option>
+	<option value='151'>Mac Slocum</option>
+	<option value='130'>Madhusudhan Konda</option>
+	<option value='396'>Mandi Walls</option>
+	<option value='489'>Manish Lachwani</option>
+	<option value='132'>Marc Goodman</option>
+	<option value='131'>Marc Hedlund</option>
+	<option value='133'>Marie Bjerede</option>
+	<option value='134'>Mark Drapeau</option>
+	<option value='447'>Mark Grover</option>
+	<option value='431'>Mark Lutz</option>
+	<option value='135'>Mark Nelson</option>
+	<option value='554'>Mark Pacelle</option>
+	<option value='150'>Mark Sigal</option>
+	<option value='136'>Marko Gargenta</option>
+	<option value='291'>Mary Treseler</option>
+	<option value='142'>Matt Garrish</option>
+	<option value='567'>Matt Makai</option>
+	<option value='473'>Matt Neuburg</option>
+	<option value='140'>Matt Wood</option>
+	<option value='137'>Matthew Burton</option>
+	<option value='460'>Matthew Gast</option>
+	<option value='408'>Matthew McCullough</option>
+	<option value='138'>Matthew Russell</option>
+	<option value='468'>Matthew Russell</option>
+	<option value='387'>Max Kanat-Alexander</option>
+	<option value='388'>Max Shron</option>
+	<option value='289'>Meghan Blanchette</option>
+	<option value='579'>Mehdi Daoudi</option>
+	<option value='445'>Michael DeHaan</option>
+	<option value='144'>Michael Driscoll</option>
+	<option value='145'>Michael Ferrari</option>
+	<option value='456'>Michael Gold</option>
+	<option value='450'>Michael Hunger</option>
+	<option value='146'>Michael Jon Jensen</option>
+	<option value='476'>Michael Lopp</option>
+	<option value='532'>Michael McMillan</option>
+	<option value='537'>Michael Scroggins</option>
+	<option value='406'>Mike Amundsen</option>
+	<option value='418'>Mike Barlow</option>
+	<option value='147'>Mike Hendrickson</option>
+	<option value='143'>Mike Honda</option>
+	<option value='148'>Mike Loukides</option>
+	<option value='487'>Mike Petrovich</option>
+	<option value='149'>Mike Shatzkin</option>
+	<option value='493'>Mitchell Hashimoto</option>
+	<option value='352'>Naomi Robbins</option>
+	<option value='152'>Nat Torkington</option>
+	<option value='214'>Nate Osit</option>
+	<option value='308'>Nathan Jepson</option>
+	<option value='155'>Nick Bilton</option>
+	<option value='156'>Nick Farina</option>
+	<option value='420'>Nick Kolegraff</option>
+	<option value='157'>Nick Ruffilo</option>
+	<option value='341'>Nicolas Garcia Belmonte</option>
+	<option value='158'>Nikolaj Nyholm</option>
+	<option value='159'>O&#039;Reilly Radar</option>
+	<option value='354'>O&#039;Reilly Strata</option>
+	<option value='497'>Ohad Samet</option>
+	<option value='160'>Osman Rashid</option>
+	<option value='161'>Pablo Francisco Arrieta Gomez</option>
+	<option value='518'>Paco Nathan</option>
+	<option value='162'>Pamela Samuelson</option>
+	<option value='589'>Paris Buttfield-Addison</option>
+	<option value='549'>Patrick Mulder</option>
+	<option value='553'>Patrick Reynolds</option>
+	<option value='163'>Paul Spinrad</option>
+	<option value='524'>Pete Hodgson</option>
+	<option value='167'>Pete Warden</option>
+	<option value='166'>Peter Bennett</option>
+	<option value='307'>Peter Cooper</option>
+	<option value='371'>Peter Krautzberger</option>
+	<option value='294'>Peter Laflin</option>
+	<option value='590'>Peter Lewis</option>
+	<option value='164'>Peter Meyers</option>
+	<option value='521'>Philip Guo</option>
+	<option value='455'>Philipp Janert</option>
+	<option value='404'>Q Ethan McCallum</option>
+	<option value='169'>Quinn Norton</option>
+	<option value='172'>Rachel Roumeliotis</option>
+	<option value='173'>Rael Dornfest</option>
+	<option value='522'>Rajat Bhargava</option>
+	<option value='174'>Ramez Naam</option>
+	<option value='175'>Randy Bias</option>
+	<option value='176'>Raven Zachary</option>
+	<option value='443'>Ray DiGiacomo, Jr.</option>
+	<option value='263'>Renee DiResta</option>
+	<option value='485'>Richard Cook</option>
+	<option value='439'>Richard Dallaway</option>
+	<option value='423'>Richard Reese</option>
+	<option value='552'>Richard Warburton</option>
+	<option value='183'>Rob Tucker</option>
+	<option value='179'>Robbie Allen</option>
+	<option value='182'>Robert Kaye</option>
+	<option value='181'>Robert Passarella</option>
+	<option value='180'>Roberta Cairney</option>
+	<option value='548'>Roger Chen</option>
+	<option value='184'>Roger Magoulas</option>
+	<option value='287'>Ron Miller</option>
+	<option value='178'>Roseanne Fallin</option>
+	<option value='484'>Ryan Bethencourt</option>
+	<option value='551'>Ryan Neufeld</option>
+	<option value='185'>Ryan Stewart</option>
+	<option value='568'>Sam Newman</option>
+	<option value='540'>Samuel Mullen</option>
+	<option value='186'>Sanders Kleinfeld</option>
+	<option value='191'>Sara Peyton</option>
+	<option value='187'>Sara Winge</option>
+	<option value='189'>Sarah Milstein</option>
+	<option value='190'>Sarah Novotny</option>
+	<option value='531'>Scott Jenson</option>
+	<option value='566'>Scott Murray</option>
+	<option value='563'>Scott Rich</option>
+	<option value='192'>Scott Ruthfield</option>
+	<option value='449'>Sean McGregor</option>
+	<option value='194'>Sébastien Pierre</option>
+	<option value='547'>Semmy Purewal</option>
+	<option value='409'>Seth Ladd</option>
+	<option value='195'>Shahid Shah</option>
+	<option value='504'>Shai Almog</option>
+	<option value='586'>Shyam Seshadri</option>
+	<option value='196'>Silona Bonewald</option>
+	<option value='576'>Simon Chan</option>
+	<option value='215'>Simon Phipps</option>
+	<option value='198'>Simon St. Laurent</option>
+	<option value='197'>Simon Wardley</option>
+	<option value='363'>Stephen O&#039;Grady</option>
+	<option value='475'>Stephen O&#039;Grady</option>
+	<option value='199'>Steve Souders</option>
+	<option value='560'>Steven Citron-Pousty</option>
+	<option value='417'>Stoyan Stefanov</option>
+	<option value='200'>Suzanne Axtell</option>
+	<option value='202'>Tara Hunt</option>
+	<option value='572'>Terrence Dorsey</option>
+	<option value='203'>Terry Jones</option>
+	<option value='201'>Tim Anderson</option>
+	<option value='459'>Tim Darling</option>
+	<option value='204'>Tim O&#039;Reilly</option>
+	<option value='205'>Timothy M. O&#039;Brien</option>
+	<option value='206'>Tish Shute</option>
+	<option value='526'>Toby Inkster</option>
+	<option value='207'>Todd Sattersten</option>
+	<option value='432'>Tom Eisenmann</option>
+	<option value='208'>Tom Steinberg</option>
+	<option value='209'>Tony Quartarolo</option>
+	<option value='502'>Trisha Gee</option>
+	<option value='210'>Troy Topnik</option>
+	<option value='211'>Tyler Bell</option>
+	<option value='538'>Valeri Karpov</option>
+	<option value='474'>Vandad Nahvandipoor</option>
+	<option value='212'>Vanessa Fox</option>
+	<option value='535'>Varun Nagaraj</option>
+	<option value='346'>Will Cukierski</option>
+	<option value='580'>William O&#039;Connor</option>
+	<option value='401'>Zigurd Mednieks</option>
+</select>					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div id="text-38" class="widget-container widget_text"><h3 class="widget-title">CONTACT US</h3>			<div class="textwidget"><p style=" font-size: 12px;  line-height: 1.3; font-weight: bold;">Radar managing editor <br /> 
+<a href="mailto:contactradar@oreilly.com?subject=Contact Radar">Jenn Webb</a></p></div>
+		<div class="clear"></div></div>	<div class="clear"></div>
+</div>	</div><!-- #container -->
+	</div><!-- #main -->
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+			<div id="footer-top">			
+							<div class="execphpwidget"><div class="label">
+Sign up today to receive special discounts,<br> product alerts, and news from O'Reilly.</div>
+<div class="form">
+	<form method="POST" id="emailSignUp" action="http://post.oreilly.com/client/o/oreilly/forms/quicksignup.cgi"> 
+		<input type="hidden" name="client_token" value="oreilly" />
+		<input type="hidden" name="subscribe" value="optin" />
+                 <input type="hidden" name="success_url" value="http://oreilly.com/store/newsletter-thankyou.html" /> 
+                  <input type="hidden" name="error_url" value="http://oreilly.com/store/newsletter-signup-error.html" /> 
+                  <input type="hidden" name="news_oreilly" value="1" />
+		  <input type="text" name="email_addr" value="Enter Email" onblur="if (this.value == '')  {this.value = 'Enter Email';}" onfocus="if (this.value == 'Enter Email') {this.value = '';}" widdit="off" autocomplete="off" maxlength="100" size="12" class="email-box" />
+		 <input border="0" type="image" alt="Submit" src="http://cdn.oreillystatic.com/images/sitewide-headers/emailsignup_btn.gif" name="submit" value="submit">
+		<div class="clear"></div>
+	</form>
+</div>
+<div class="privacy">					
+	<a href="http://oreilly.com/oreilly/privacy.html">Privacy Policy &gt;</a>					
+	<a href="http://oreilly.com/pdf/sample-newsletter.pdf">View Sample Newsletter &gt;</a>		
+</div>
+</div>
+			
+				
+				<div class="menu-social-btm"><ul id="menu-social-btn-bottom" class="menu"><li id="menu-item-48494" class="social twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-48494"><a href="http://twitter.com/oreillymedia">Twitter</a></li>
+<li id="menu-item-48491" class="social youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-48491"><a href="http://youtube.com/oreillymedia">YouTube</a></li>
+<li id="menu-item-48492" class="social slideshare menu-item menu-item-type-custom menu-item-object-custom menu-item-48492"><a href="http://slideshare.net/oreillymedia">Slideshare</a></li>
+<li id="menu-item-48493" class="social facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-48493"><a href="https://www.facebook.com/OReillyRadar">Facebook</a></li>
+<li id="menu-item-48495" class="social googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-48495"><a href="https://plus.google.com/105451978536505503907">Google+</a></li>
+<li id="menu-item-48496" class="social rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48496"><a href="http://feeds.feedburner.com/oreilly/news">RSS</a></li>
+<li id="menu-item-48497" class="all-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48497"><a href="http://oreilly.com/feeds">View All RSS Feeds ></a></li>
+</ul></div>				<div class="clear"></div>
+			</div>
+							<div class="execphpwidget"><div id="multiColumnFooter">	
+<div id="footer-branding">
+		<p class="copyright">&copy; 2014, O'Reilly Media, Inc.</p>
+		<p><span class="phone-number">(707) 827-7019</span><span class="phone-number">(800) 889-8969</span></p>
+		<p class="trademarks">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+	</div>
+	
+	<div class="contentSectionBlock">
+		<!-- style="width:25%;" -->
+		<div class="contentSectionContainer">			
+				<h3>About O'Reilly</h3>
+				<div class="menu-about-oreilly-container"><ul id="menu-about-oreilly" class="menu"><li id="menu-item-50110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50110"><a href="http://radar.oreilly.com/about/">About O&#8217;Reilly Radar</a></li>
+<li id="menu-item-67911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67911"><a href="http://radar.oreilly.com/radar-contributors/">Radar Contributors</a></li>
+<li id="menu-item-48510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48510"><a href="http://oreilly.com/academic/">Academic Solutions</a></li>
+<li id="menu-item-48511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48511"><a href="http://oreilly.com/jobs/">Jobs</a></li>
+<li id="menu-item-48512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48512"><a href="http://oreilly.com/contact.html">Contacts</a></li>
+<li id="menu-item-48513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48513"><a href="http://oreilly.com/about/">Corporate Information</a></li>
+<li id="menu-item-48514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48514"><a href="http://press.oreilly.com/index.html">Press Room</a></li>
+<li id="menu-item-48515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48515"><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+<li id="menu-item-48516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48516"><a href="http://oreilly.com/terms/">Terms of Service</a></li>
+<li id="menu-item-48517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48517"><a href="http://oreilly.com/oreilly/author/intro.csp">Writing for O&#8217;Reilly</a></li>
+<li id="menu-item-68743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68743"><a href="http://www.oreilly.com/about/editorial_independence.html">Editorial Independence</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Community</h3>
+				<div class="menu-community-2-container"><ul id="menu-community-2" class="menu"><li id="menu-item-48518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48518"><a href="http://oreilly.com/authors/">Authors</a></li>
+<li id="menu-item-48519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48519"><a href="http://oreilly.com/community/">Community &#038; Featured Users</a></li>
+<li id="menu-item-48520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48520"><a href="http://forums.oreilly.com/">Forums</a></li>
+<li id="menu-item-48521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48521"><a href="https://members.oreilly.com/">Membership</a></li>
+<li id="menu-item-48522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48522"><a href="http://elists.oreilly.com/">Newsletters</a></li>
+<li id="menu-item-48523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48523"><a href="http://answers.oreilly.com/">O&#8217;Reilly Answers</a></li>
+<li id="menu-item-48524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48524"><a href="http://oreilly.com/feeds/">RSS Feeds</a></li>
+<li id="menu-item-56120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56120"><a href="http://chimera.labs.oreilly.com/">O&#8217;Reilly Chimera (beta)</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">	
+                                <h3>Partner Sites</h3>
+				  <div class="menu-partner-sites-container"><ul id="menu-partner-sites" class="menu"><li id="menu-item-48503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48503"><a target="_blank" href="http://makezine.com/">makezine.com</a></li>
+<li id="menu-item-48504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48504"><a target="_blank" href="http://makerfaire.com/">makerfaire.com</a></li>
+<li id="menu-item-55273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55273"><a target="_blank" href="http://craftzine.com/">craftzine.com</a></li>
+<li id="menu-item-55274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55274"><a target="_blank" href="http://igniteshow.com/">igniteshow.com</a></li>
+<li id="menu-item-55275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55275"><a target="_blank" href="https://developer.paypal.com/">PayPal Developer Zone</a></li>
+<li id="menu-item-55276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55276"><a target="_blank" href="http://blogs.forbes.com/oreillymedia/">O&#8217;Reilly Insights on Forbes.com</a></li>
+</ul></div>			
+		</div>
+			
+
+		<!-- style="width:24%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Shop O'Reilly</h3>
+			<div class="menu-shop-oreilly-container"><ul id="menu-shop-oreilly" class="menu"><li id="menu-item-48505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48505"><a href="http://shop.oreilly.com/category/customer-service.do">Customer Service</a></li>
+<li id="menu-item-48506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48506"><a href="http://shop.oreilly.com/category/customer-service.do">Contact Us</a></li>
+<li id="menu-item-48507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48507"><a href="http://shop.oreilly.com/category/customer-service/shipping-information.do">Shipping Information</a></li>
+<li id="menu-item-48508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48508"><a href="http://shop.oreilly.com/category/customer-service/ordering-payment.do">Ordering &#038; Payment</a></li>
+<li id="menu-item-56665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56665"><a href="http://oreilly.com/affiliates/">Affiliate Program</a></li>
+<li id="menu-item-48509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48509"><a href="http://shop.oreilly.com/category/customer-service/oreilly-guarantee.do">The O&#8217;Reilly Guarantee</a></li>
+</ul></div>		
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+<div class="clear"></div>
+</div></div>
+			
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+</div><!-- #wrapper -->
+<script language="JavaScript" type="text/javascript">
+var s_account="orradar,orglobal" // change report suite ID accordingly
+</script>
+<!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://cdn.oreillystatic.com/assets/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+s.pageName="radar:does net neutrality really matter"
+s.channel= "radar"
+s.prop1="radar:emerging-tech"
+s.prop2="radar:emerging-tech:emerging-tech"
+s.prop3="radar:emerging-tech:emerging-tech:emerging-tech"
+s.prop4="article"
+s.hier1="radar,emerging-tech,emerging-tech,emerging-tech"
+s.prop5="does net neutrality really matter"
+s.prop6="RD70161"
+s.prop7="08/15/2014" // publish date
+//s.prop15=""
+//These props should be set when a blog/article is read, post or reply made.
+s.prop21="andy oram" // author name
+s.prop22="radar" // blog name
+s.prop23="does net neutrality really matter" // entry title
+s.prop24="08/15/2014" // post date
+//s.prop25="" // days since last post
+s.prop26="friday" // day of week
+s.prop27="intermediate" // Level
+/* Conversion Variables */
+s.campaign=""
+s.events=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+<script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"radar.oreilly.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<style type="text/css">
+#newsletter-popup-overlay { display: none; position: absolute; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); background: none\9; }
+#newsletter-popup-overlay .popup { overflow: hidden; margin: 10% auto 0; background-color: #f9f9f9; text-align: center; width: 740px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); border: 2px solid #ddd; }
+#newsletter-popup-overlay .popup .popup-header { background-color: #fff; padding: 10px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+#newsletter-popup-overlay .popup.data .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/data-nl-popup-fish.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.programming .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.solid .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.velocity .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/velocity-nl-popup-greyhound.jpg') -4px bottom no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close { font-size: 16px; line-height: 19px; color: #999; display: block; padding-right: 24px; float: right; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right 0 no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close:hover { color: #666; text-decoration: none; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right -100px no-repeat; }
+#newsletter-popup-overlay .popup .popup-header h3 { max-width: 500px; width: 100%; margin: 20px auto 5px auto; padding: 0; font-size: 40px; line-height: 44px; font-weight: normal; }
+#newsletter-popup-overlay .popup .popup-header p { max-width: 500px; width: 100%; margin: 0 auto 10px; padding: 0; font-size: 20px; line-height: 28px; font-weight: normal; }
+#newsletter-popup-overlay .popup-form { margin: 15px auto 0; padding: 10px 10px 5px 10px; text-align: left; }
+#newsletter-popup-overlay #newsletter-popup-frame { display: block; border: none; padding: 0; margin: 0 auto; width: 100%; max-width: 450px; height: 100px; text-align: left; }
+@media screen and (max-width: 950px) {
+  #newsletter-popup-overlay .popup{ width: 96% !important; }
+}
+@media screen and (max-width:740px) {
+  #newsletter-popup-overlay .popup.data .popup-header, #newsletter-popup-overlay .popup.programming .popup-header, #newsletter-popup-overlay .popup.solid .popup-header, #newsletter-popup-overlay .popup.velocity .popup-header { background: #fff; }
+  #newsletter-popup-overlay .popup .popup-header h3 { font-size:30px; line-height:32px; }
+}
+</style>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/newsletter.js"></script>
+
+
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'oreillyradar';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<!-- MathJax Latex Plugin installed: Disabled as no shortcodes on this page --><script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/comment-reply.min.js?ver=4.0'></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery('.fluid-width-video-wrapper iframe').each(function(){
+    var youtube_url = jQuery(this).attr('src');
+    if(youtube_url.substring(0,2) == "//"){
+      youtube_url = youtube_url.substring(2);
+    }
+    var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+    if(youtube_url.match(p)){
+      var youtube = youtube_url.split('/');
+      var youtube_last_index = youtube[4].split('?');
+      var youtube_id = youtube_last_index[0];
+      var new_div = document.createElement("div");
+      jQuery(new_div).addClass('js-lazyYT');
+      jQuery(new_div).attr('data-youtube-id',youtube_id);
+      jQuery(new_div).attr('data-ratio','16:9');
+      jQuery(this).after(new_div);
+      jQuery(this).parent().css("padding","0");
+      jQuery(this).remove();
+      jQuery('.lazyYT-title').hide();
+    }
+  });
+  jQuery('.js-lazyYT').lazyYT();
+});
+
+</script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/lazyYT.min.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/script.js??ss=1"></script>
+<script> 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() 
+  { (i[r].q=i[r].q||[]).push(arguments)} 
+  ,i[r].l=1*new 
+  Date();a=s.createElement(o), 
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+  ga('create', 'UA-22979035-1', 'auto'); 
+  ga('send', 'pageview'); 
+</script>
+
+
+
+
+</body>
+</html>
