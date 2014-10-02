@@ -11,7 +11,8 @@ urls=$(grep internet ./processd/* |awk -F: '{print $1}' |uniq -c |  awk -F/ '{pr
 
 paste term.txt dwc.txt urls.txt > 5.txt
 
-size=40000000
+size=40000000000
+
 idf=$(echo ";l($size/$cnt)/l(2)"| bc -l)
 #echo $size $cnt $idf
 
@@ -25,9 +26,9 @@ do
 	echo $num $res $idf $c >> table
 done <5.txt
 
-head -n 10 table | sort -r -k1 | xargs printf "%.8f, %.8f, %.8f, %s\n"
+head -n 10 table | sort -r -k1 | xargs printf "%.8f, %.8f, %.8f, %s\n"  >tfidf
 
 
-head -n 10 table | sort -r -k1 | awk '{print $4}' | awk -F/ '{print $3}' | >  urlsRes
+head -n 10 table | sort -r -k1 | awk '{print $4}' | awk -F/ '{print $3}' >  urlsRes
  
 
