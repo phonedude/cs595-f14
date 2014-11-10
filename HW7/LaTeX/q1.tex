@@ -16,6 +16,57 @@ click.
 \end{flushleft}
 \subsection{The Answer}
 
+This assignment was an opportunity for using the departments server to host a webpage. In the back of my mind I have wanted to devote some time into a small project that I can host on the server and make user of my student account. There is no bettter motivation than a deadline to force a proper work ethic to be born. The main challenge was finding out all the little details that are required to get a simple ``hello world'' page running. Once the general html file format was established teh example for the tutorials were useful in establishing some familiarity with the bizarre syntax and mechanics of D3. It resembles the written form of a series of mouse click, if one would ever be compelled to take notes on how to use a GUI and then make that into a programming language. 
+
+The main advance between the tutorial examples and the final product was learning how to load data files. The approach I used stores graphs in json files. These files contain lists of the nodes and edges as well as their respective attributes. These items can be then used to within the script to read data and dynamically produce items in the webpage, such as nodes and edges. 
+
+In order to generate the json formatted graph files I had to revisit assignment 6 again and reimplement some of the logic in python, rather than R which was the original approach. The networkx package has functions that generate json files of the graph. The following script meets this requirement by reading in the weighted graph gml and producting the correspoding json. 
+
+
+\lstset{
+    language=python,
+    label=code:q1,
+    caption={Python script to make JSON files}
+}
+\lstinputlisting{../nx.py}
+
+
+The HTML standard provides node and link objects that serve the purpose of creating graphs. These items can be dynamically created and populated based on the data with D3. The foloowing code segments illustrate the procedure to creating new nodes and new links. 
+
+
+
+\lstset{
+    language=javascript,
+    label=code:q1,
+    caption={Generating nodes based on data}
+}
+\lstinputlisting{../node.js}
+
+
+\lstset{
+    language=javascript,
+    label=code:q1,
+    caption={Generating links based on data}
+}
+\lstinputlisting{../link.js}
+
+
+
+These code segments are enclosed in a function. The function is called when the page is laoded, but also when a mouse click is registered. Based on the mouse click that function creates the nodes and links with different color schemes to indicate the before and after split graph. 
+
+The full HTML file follows:
+
+\lstset{
+    language=javascript,
+    label=code:q1,
+    caption={HTML file of the karate club graph}
+}
+\lstinputlisting{../index.html}
+
+
+
+The resulting webiste can be viewed at:
+
 \url{http://www.cs.odu.edu/~gmicros/karate/}
 
 
