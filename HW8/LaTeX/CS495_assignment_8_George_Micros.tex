@@ -1,0 +1,295 @@
+
+\documentclass[]{svmono}
+
+\usepackage{fancybox}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage[margin=1in, vmargin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{caption}
+
+\usepackage{subcaption}
+
+
+\usepackage{enumerate}
+
+\usepackage{bashful}
+
+\usepackage{multicol}
+
+
+\usepackage{textcomp}
+\usepackage{hyperref}
+%\usepackage[hyphenbreaks]{breakurl}
+%\usepackage[hyphens]{url}
+
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{20pt}
+
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  firstline=2,% Supress the first line that begins with `%`
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+\lstdefinestyle{BashOutputStyle}{
+  basicstyle=\small\ttfamily,
+  numbers=none,
+  frame=tblr,
+  columns=fullflexible,
+  backgroundcolor=\color{blue!10},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+
+% settings for listings
+\lstset{
+    basicstyle=\scriptsize,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false, % don't show spaces by adding underscores
+    showstringspaces=false, % don't underline spaces in strings
+    showtabs=false, % don't show tabs with underscores
+    frame=shadowbox,
+    tabsize=4,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    keywordstyle=\color{blue!70},
+    commentstyle=\color{red!50!green!50!blue!50},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    numberbychapter=false,
+    stringstyle=\ttfamily %typewriter type for strings
+}
+
+
+
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+\setlength{\parindent}{10pt}
+
+
+\begin{document}
+
+
+
+
+\begin{titlepage}    
+\begin{center}
+\vspace*{0in}
+\huge{\sc  Old Dominion Univeristy\\  }
+
+
+
+\vspace{1in}
+\Large{\sc CS 495: Introduction to Web Science \\ Instructor: Michael L. Nelson, Ph.D \\ Fall 2014 4:20pm - 7:10pm R, ECSB 2120\\}
+
+\vspace{1in}
+\Large{Assignment \# 8\\}
+
+\vspace{.5cm}
+\Large{ \sc George C.  Micros  UIN: 00757376\\ }
+
+
+
+\vspace {7cm}
+
+{\large \bf {Honor Pledge}}\\
+{I pledge to support the Honor System of Old Dominion University. I will refrain from any form of academic dishonesty or deception, such as cheating or plagIiarism. I am aware that as a member of the academic community it is my responsibility to turn in all suspected violations of the Honor Code. I will report to a hearing if summoned. }\\
+\vspace {.5cm}
+
+{Signed \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+
+
+\today
+\end{center}
+\end{titlepage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{George C. Micros}
+\title{Written Assignment 8}
+\subtitle{Fall 2014 \newline  CS 495: Introduction to Web Science\newline Dr. Michael Nelson}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+
+\chapter{Written Assignment 8}
+
+\noindent
+
+
+The goal of this project is to use the basic recommendation principles
+we have learned for user-collected data. You will modify the code
+given to you which performs movie recommendations from the MovieLense
+data sets.The MovieLense data sets were collected by the GroupLens Research
+Project at the University of Minnesota during the seven-month period
+from September 19th, 1997 through April 22nd, 1998. It is available
+for download from \url{http://www.grouplens.org/node/73}
+
+There are three files which we will use:
+
+
+\begin{itemize}
+
+\item  u.data: 100,000 ratings by 943 users on 1,682 movies. Each
+user has rated at least 20 movies. Users and items are numbered
+consecutively from 1. The data is randomly ordered. This is a tab
+separated list of 
+
+user id | item id | rating | timestamp
+
+The time stamps are unix seconds since 1/1/1970 UTC.
+
+Example:
+
+196	242	3	881250949
+
+186	302	3 	891717742
+
+22	377	1 	878887116
+
+244	51	2 	880606923
+
+166	346	1 	886397596
+
+298	474	4 	884182806
+
+115	265	2	881171488
+
+\item  u.item: Information about the 1,682 movies. This is a tab separated list of
+
+movie id | movie title | release date | video release date | IMDb URL | unknown | Action | Adventure | Animation |Children's | Comedy | Crime | Documentary | Drama | Fantasy | Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi | Thriller | War | Western |
+
+The last 19 fields are the genres, a 1 indicates the movie is of that genre, a 0 indicates it is not; movies can be in several genres at once. The movie ids are the ones used in the u.data data set.
+
+Example:
+
+161|Top Gun (1986)|01-Jan-1986||http://us.imdb.com/M/title-exact?Top%20Gun%20(1986)|0|1|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0 
+162|On Golden Pond (1981)|01-Jan-1981||http://us.imdb.com/M/title-exact?On%20Golden%20Pond%20(1981)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0 
+163|Return of the Pink Panther, The (1974)|01-Jan-1974||http://us.imdb.com/M/title-exact?Return%20of%20the%20Pink%20Panther,%20The%20(1974)|0|0|0|0|0|1|0|0|0|0|0|0|0|0| 0|0|0|0|0
+
+\item   u.user: Demographic information about the users. This is a tab
+separated list of:
+
+user id | age | gender | occupation | zip code
+
+The user ids are the ones used in the u.data data set.
+
+Example:
+
+1|24|M|technician|85711 
+2|53|F|other|94043 
+3|23|M|writer|32067 
+4|24|M|technician|43537 
+5|33|F|other|15213
+
+\end{itemize}
+
+The code for reading from the u.data and u.item files and creating
+recommendations is described in the book Programming Collective
+Intelligence (check email for more details). You are to modify
+recommendations.py to answer the following questions. Each question your
+program answers correctly will award you 1 point.
+
+\include{q1}
+
+\include{q2}
+\include{q3}
+\include{q4}
+\include{q5}
+\include{q6}
+\include{q9}
+\include{q10}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\nocite{*}
+%\bibliography{sources}
+%\bibliographystyle{unsrt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{document}
+
+
