@@ -10,12 +10,38 @@ the movies and their ratings sorted by ratings.
 \end{flushleft}
 \subsection{The Answer}
 
+The reviews were read line by line and before hey were appeneded to the respective movie there reviewer was checked to determine if she met the criterion of being a female. 
+
+
+\begin{lstlisting}[caption={Python code for question 3}]
+def q3(movies, reviews, users):
+	clearScore(movies)
+
+	for i in reviews:
+		if users[i.user-1].sex == "F":
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+
+	for i in movies:
+		i.avgr(); 
+	wmn = sorted(movies,key=lambda x:(x.avg, x.title), reverse=True)
+
+	f = open("q3.txt", "w")
+	print "\n\tQ3: Highest Average by women"
+	for i in range(0,20):
+		print  '%.4f'%wmn[i].avg, wmn[i].title
+		f.write("%.4f,  \"%s\"\n" % (wmn[i].avg, wmn[i].title))
+	f.close()
+\end{lstlisting}
+
 
 \begin{flushleft}
 
 \begin{table}[h]
+\setlength{\tabcolsep}{12pt}
 \centering
-\begin{tabular}{ll}
+\begin{tabular}{|ll|}
+\hline
 5.0000 & Year of the Horse (1997)                                \\
 5.0000 & Visitors The (Visiteurs Les) (1993)                     \\
 5.0000 & Telling Lies in America (1997)                          \\
@@ -30,7 +56,7 @@ the movies and their ratings sorted by ratings.
 4.6329 & Schindler's List (1993)                                 \\ \hline
 4.6316 & Close Shave A (1995)                                    \\ \hline 
 4.5625 & Shawshank Redemption The (1994)                         \\ \hline
-4.5333 & Wallace \& Gromit: The Best of Aardman Animation (1996) \\
+4.5333 & Wallace \& Gromit: The Best of Aardman Animation (1996) \\ \hline
    
 \end{tabular}
 \caption{Highest Average Rating by Women}

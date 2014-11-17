@@ -68,7 +68,8 @@ def sim_distance(prefs, p1, p2):
     # Add up the squares of all the differences
     sum_of_squares = sum([pow(prefs[p1][item] - prefs[p2][item], 2) for item in
                          prefs[p1] if item in prefs[p2]])
-    return 1 / (1 + sum_of_squares)
+    #return 1 / (1 + sum_of_squares)
+    return sum_of_squares
 
 
 def sim_pearson(prefs, p1, p2):
@@ -173,7 +174,7 @@ def transformPrefs(prefs):
     return result
 
 
-def calculateSimilarItems(prefs, n=10):
+def calculateSimilarItems(prefs, n=5):
     '''
     Create a dictionary of items showing which other items they are
     most similar to.
@@ -185,7 +186,7 @@ def calculateSimilarItems(prefs, n=10):
     itemPrefs = prefs
     c = 0
     for item in itemPrefs:
-        # Status updates for large datasets
+        # Status updates for large datasetsa
         c += 1
         if c % 100 == 0:
             print '%d / %d' % (c, len(itemPrefs))
@@ -236,35 +237,106 @@ def loadMovieLens(path='./ml-100k'):
     return prefs
 
 
-def greedy(pref):
-    c = []
+def greedy(prefs, best):
+    c = [[]]*(len(prefs))
     for i in prefs:
         e = []
         for j in prefs:
             d = []
-            num = sim_distance(prefs,i,j);
+            num = sim_pearson(prefs,i,j);
             d.append(num)
             d.append(i)
             d.append(j)
             if (i != j):
                 e.append(d)
-        e.sort(key=lambda x:x[:][0], reverse=True)
-        c.append(e[0])
+        e.sort(key=lambda x:x[:][0], reverse=best)
+        #print int(e[0][1])
+        c[int(e[0][1])-1] = e[0]
         
     return c     
 
-def dist(preferences):
+def dist(prefs):
     c = []
 
     for i in prefs:
-        c.append(topMatches(prefs, i, 5, sim_pearson))
+        c.append(topMatches(prefs, i, 1, sim_pearson))
     
-    for i in c:
-        i.append(sum(pair[0] for pair in i))
+    # for i in c:
+    #     i.append(sum(pair[0] for pair in i))
 
     c.sort(key=lambda x:x[5], reverse=True)
 
     return c
-    
-c = dist(prefs)
-print c
+def maths(c, prefs):
+    d = []
+    for i in c:
+        e = []
+        e.append(i[1])
+        e.append(i[2])
+        for j in range(2,5):
+            e.append(c[int(e[j-1])-1][2])
+        
+
+        tSum = 0
+        for j in range (0,5):
+            for k in range (0,5):
+                tSum +=  sim_pearson(prefs, e[j], e[k])
+        e.append(tSum)
+        d.append(e)
+    return d
+
+
+def q7():
+    prefs =  loadMovieLens(path='./ml-100k')   
+    c = greedy(prefs, True)
+    x = maths(c, prefs)
+
+    x.sort(key=lambda x:x[5], reverse=True)
+    y = []
+    for i in x:
+        if len(i) == len(set(i)):
+            y.append(i)
+
+    print "Most Agreed Reviewers"
+    for i in range(0,5):
+        print y[i]
+
+
+def q8():
+    prefs =  loadMovieLens(path='./ml-100k')
+    c = greedy(prefs, False)
+    x = maths(c, prefs)
+
+    x.sort(key=lambda x:x[5], reverse=False)
+    y = []
+    for i in x:
+        if len(i) == len(set(i)):
+            y.append(i)
+    print "Least Agreed Reviewers"
+    for i in range(0,5):
+        print y[i]
+
+prefs =  loadMovieLens(path='./ml-100k')
+# a =  calculateSimilarItems(prefs, 4)
+# d = []
+# for pps in a:
+#     temp = 0
+#     e = []
+#     ps = a[str(pps)]
+#     for i in ps:
+#         for j in ps:
+#             temp += sim_pearson(prefs, i[1], j[1]) 
+#     e.append(pps)
+#     for i in ps:
+#         e.append(i[1])        
+#     e.append(temp)
+#     d.append(e)
+# greedy(prefs)
+# #print c
+# d = maths(c, prefs)
+# d.sort(key=lambda x:x[5])
+# for i in d: 
+#     if len(i) == len(set(i)):   
+#         print i
+
+

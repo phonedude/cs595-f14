@@ -2,6 +2,7 @@
 
 from scipy.stats.stats import pearsonr
 import math
+import recomm as rc
 
 class movie:
 	def __init__(self, data):
@@ -327,6 +328,14 @@ def corrR(users):
 
 	for i in range(0,20):
 		print raters[i]
+
+def q7():	
+	rc.q7();
+
+def q8():	
+	rc.q8();
+
+
 
 # DOING STUFF
 #q1(movies)

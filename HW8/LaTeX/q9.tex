@@ -9,13 +9,52 @@ under 40?
 
 \end{flushleft}
 \subsection{The Answer}
-
-
 \begin{flushleft}
+This quesion is similar to question 4 where the highst rated movies by men were requested. This question adds the additional condition for age of the reviewer. The reviews were appened to each movie based on the conditions and then avergaed. 
+
+
+\begin{lstlisting}[caption={Python code to for men over 40}]
+def q9a(movies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if (users[i.user-1].sex == "M") and (users[i.user-1].age > 40):
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	m40 = sorted(movies,key=lambda x:(x.avg, x.title), reverse=True)
+	f = open("q9a.txt", "w")
+	print "\n\tQ9a: Highest Average by men over 40"
+	for i in range(0,30):
+		print  '%.4f'%m40[i].avg, m40[i].title
+		f.write("%.4f,  \"%s\"\n" % (m40[i].avg, m40[i].title))
+	f.close()
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Python code to for men under 40}]
+def q9b(movies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if (users[i.user-1].sex == "M") and (users[i.user-1].age < 40):
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	m30 = sorted(movies,key=lambda x:(x.avg, x.title), reverse=True)
+	f = open("q9b.txt", "w")
+	print "\n\tQ9b: Highest Average by men under 40"
+	for i in range(0,40):
+		print  '%.4f'%m30[i].avg, m30[i].title 	
+		f.write("%.4f,  \"%s\"\n" % (m30[i].avg, m30[i].title ))
+	f.close()
+\end{lstlisting}
 
 \begin{table}[h]
 \centering
-\begin{tabular}{ll}
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{|ll|}
+\hline
 5.0000 & World of Apu The (Apur Sansar) (1959)                 \\
 5.0000 & Unstrung Heroes (1995)                                \\
 5.0000 & Two or Three Things I Know About Her (1966)           \\
@@ -45,15 +84,16 @@ under 40?
 4.6667 & Whole Wide World The (1996)                           \\
 4.6667 & A Chef in Love (1996)                                 \\ \hline
 4.6471 & Close Shave A (1995)                                  \\ \hline
-4.6000 & Shanghai Triad (Yao a yao yao dao waipo qiao) (1995) 
+4.6000 & Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)  \\ \hline
 \end{tabular}
 \caption{Highest Average Rating by Men over 40}
 \end{table}
 
 \begin{table}[h]
 \centering
-\begin{tabular}{ll}
-5.0000 & Star Kid (1997)                                         \\
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{|ll|} \hline
+5.0000 & Star Kid (1997)                                         \\ 
 5.0000 & Santa with Muscles (1996)                               \\
 5.0000 & Saint of Fort Washington The (1993)                     \\
 5.0000 & Quiet Room The (1996)                                   \\
@@ -84,7 +124,7 @@ under 40?
 4.5000 & Anna (1996)                                             \\  \hline
 4.4762 & Wallace \& Gromit: The Best of Aardman Animation (1996) \\ \hline
 4.4754 & Casablanca (1942)                                       \\ \hline
-4.4706 & Paths of Glory (1957)                                   \\
+4.4706 & Paths of Glory (1957)                                   \\ \hline
 
 \end{tabular}
 \caption{Highest Average Rating by Men under 40}

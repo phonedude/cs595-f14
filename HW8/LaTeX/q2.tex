@@ -10,19 +10,46 @@ the number of ratings sorted by number of ratings.
 \end{flushleft}
 \subsection{The Answer}
 
+There review infromation is read in and appeneded to each movie. There is a counter that counter the number of reviews for each movie. This could also be determined by checking the length of the review list for each movie. 
+
+
+\begin{lstlisting}[caption={Python code for question 2}]
+
+def q2(movies):
+	clearScore(movies)
+	for i in reviews:
+		movies[i.item-1].scores.append(float(i.score))
+		movies[i.item-1].cnt +=1
+
+	for i in movies:
+		i.avgr();
+
+	# MOST RATING
+	mRate = sorted(movies, key=lambda x:x.cnt, reverse=True)
+	f = open("q2.txt", "w")
+	print "\n\tQ2: Most Ratings"
+	for i in range(0,5):
+		print  mRate[i].cnt, mRate[i].title
+		f.write("% d,  \"%s\"\n" % (mRate[i].cnt, mRate[i].title))
+	f.close()
+
+\end{lstlisting}
 
 \begin{flushleft}
 
 \begin{table}[h]
 \centering
-\begin{tabular}{ll}
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{|ll|}
+
+\hline
 583 & Star Wars (1977)          \\ \hline
 509 & Contact (1997)            \\ \hline
 508 & Fargo (1996)              \\ \hline
 507 & Return of the Jedi (1983) \\ \hline
-485 & Liar Liar (1997)         
+485 & Liar Liar (1997)         \\ \hline
 \end{tabular}
-\caption{Most Ratings}
+\caption{Movies with Most Ratings}
 \end{table}
 \end{flushleft}
 

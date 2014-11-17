@@ -9,13 +9,35 @@ the movies and their ratings sorted by ratings.
 
 \end{flushleft}
 \subsection{The Answer}
-
-
 \begin{flushleft}
 
+The reviews were read line by line and before hey were appeneded to the respective movie there reviewer was checked to determine if he met the criterion of being a male. 
+
+
+\begin{lstlisting}[caption={Python code for question 4}]
+def q4(movies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if users[i.user-1].sex == "M":
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	men = sorted(movies, key=lambda x:x.avg, reverse=True)
+	f = open("q4.txt", "w")
+	print "\n\tQ4: Highest Average by men"
+	for i in range(0,30):
+		print  '%.4f'%men[i].avg, men[i].title
+		f.write("%.4f,  \"%s\"\n" % (men[i].avg, men[i].title))
+	f.close()
+\end{lstlisting}
+
+
 \begin{table}[h]
+\setlength{\tabcolsep}{12pt}
 \centering
-\begin{tabular}{ll}
+\begin{tabular}{|ll|}
+\hline
 5.0000 & Great Day in Harlem A (1994)                            \\
 5.0000 & They Made Me a Criminal (1939)                          \\
 5.0000 & Quiet Room The (1996)                                   \\
@@ -40,7 +62,7 @@ the movies and their ratings sorted by ratings.
 4.5000 & Sliding Doors (1998)                                    \\
 4.5000 & Grosse Fatigue (1994)                                   \\
 4.5000 & Bitter Sugar (Azucar Amargo) (1996)                     \\ \hline
-4.4734 & Casablanca (1942)                                       \\   
+4.4734 & Casablanca (1942)                                       \\    \hline
 
 \end{tabular}
 \caption{Highest Average Rating by Men}
