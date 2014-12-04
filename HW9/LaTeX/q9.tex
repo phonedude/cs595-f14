@@ -1,0 +1,138 @@
+\section{Question 9}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+What movie was rated highest on average by men over 40? By men
+under 40?
+
+\end{flushleft}
+\subsection{The Answer}
+\begin{flushleft}
+This quesion is similar to question 4 where the highst rated movies by men were requested. This question adds the additional condition for age of the reviewer. The reviews were appened to each movie based on the conditions and then avergaed. 
+
+
+\begin{lstlisting}[caption={Python code to for men over 40}]
+def q9a(movies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if (users[i.user-1].sex == "M") and (users[i.user-1].age > 40):
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	m40 = sorted(movies,key=lambda x:(x.avg, x.title), reverse=True)
+	f = open("q9a.txt", "w")
+	print "\n\tQ9a: Highest Average by men over 40"
+	for i in range(0,30):
+		print  '%.4f'%m40[i].avg, m40[i].title
+		f.write("%.4f,  \"%s\"\n" % (m40[i].avg, m40[i].title))
+	f.close()
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Python code to for men under 40}]
+def q9b(movies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if (users[i.user-1].sex == "M") and (users[i.user-1].age < 40):
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	m30 = sorted(movies,key=lambda x:(x.avg, x.title), reverse=True)
+	f = open("q9b.txt", "w")
+	print "\n\tQ9b: Highest Average by men under 40"
+	for i in range(0,40):
+		print  '%.4f'%m30[i].avg, m30[i].title 	
+		f.write("%.4f,  \"%s\"\n" % (m30[i].avg, m30[i].title ))
+	f.close()
+\end{lstlisting}
+
+\begin{table}[h]
+\centering
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{|ll|}
+\hline
+5.0000 & World of Apu The (Apur Sansar) (1959)                 \\
+5.0000 & Unstrung Heroes (1995)                                \\
+5.0000 & Two or Three Things I Know About Her (1966)           \\
+5.0000 & They Made Me a Criminal (1939)                        \\
+5.0000 & Strawberry and Chocolate (Fresa y chocolate) (1993)   \\
+5.0000 & Star Kid (1997)                                       \\
+5.0000 & Spice World (1997)                                    \\
+5.0000 & Solo (1996)                                           \\
+5.0000 & Rendezvous in Paris (Rendez-vous de Paris Les) (1995) \\
+5.0000 & Prefontaine (1997)                                    \\
+5.0000 & Poison Ivy II (1995)                                  \\
+5.0000 & Marlene Dietrich: Shadow and Light (1996)             \\
+5.0000 & Little Princess The (1939)                            \\
+5.0000 & Little City (1998)                                    \\
+5.0000 & Leading Man The (1996)                                \\
+5.0000 & Late Bloomers (1996)                                  \\
+5.0000 & Indian Summer (1996)                                  \\
+5.0000 & Hearts and Minds (1996)                               \\
+5.0000 & Great Day in Harlem A (1994)                          \\
+5.0000 & Grateful Dead (1995)                                  \\
+5.0000 & Faithful (1996)                                       \\
+5.0000 & Double Happiness (1994)                               \\
+5.0000 & Boxing Helena (1993)                                  \\
+5.0000 & Aparajito (1956)                                      \\
+5.0000 & Ace Ventura: When Nature Calls (1995)                 \\ \hline
+4.8000 & Pather Panchali (1955)                                \\ \hline
+4.6667 & Whole Wide World The (1996)                           \\
+4.6667 & A Chef in Love (1996)                                 \\ \hline
+4.6471 & Close Shave A (1995)                                  \\ \hline
+4.6000 & Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)  \\ \hline
+\end{tabular}
+\caption{Highest Average Rating by Men over 40}
+\end{table}
+
+\begin{table}[h]
+\centering
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{|ll|} \hline
+5.0000 & Star Kid (1997)                                         \\ 
+5.0000 & Santa with Muscles (1996)                               \\
+5.0000 & Saint of Fort Washington The (1993)                     \\
+5.0000 & Quiet Room The (1996)                                   \\
+5.0000 & Prefontaine (1997)                                      \\
+5.0000 & Perfect Candidate A (1996)                              \\
+5.0000 & Maya Lin: A Strong Clear Vision (1994)                  \\
+5.0000 & Magic Hour The (1998)                                   \\
+5.0000 & Love in the Afternoon (1957)                            \\
+5.0000 & Love Serenade (1996)                                    \\
+5.0000 & Letter From Death Row A (1998)                          \\
+5.0000 & Leading Man The (1996)                                  \\
+5.0000 & Hugo Pool (1997)                                        \\
+5.0000 & Entertaining Angels: The Dorothy Day Story (1996)       \\
+5.0000 & Delta of Venus (1994)                                   \\
+5.0000 & Crossfire (1947)                                        \\
+5.0000 & Angel Baby (1995)                                       \\
+5.0000 & Aiqing wansui (1994)                                    \\ \hline
+4.5000 & Winter Guest The (1997)                                 \\
+4.5000 & Two or Three Things I Know About Her (1966)             \\
+4.5000 & Sum of Us The (1994)                                    \\
+4.5000 & Sliding Doors (1998)                                    \\
+4.5000 & Man of No Importance A (1994)                           \\
+4.5000 & Little Princess The (1939)                              \\
+4.5000 & Innocents The (1961)                                    \\
+4.5000 & Grosse Fatigue (1994)                                   \\
+4.5000 & Fille seule La (A Single Girl) (1995)                   \\
+4.5000 & Boy's Life 2 (1997)                                     \\
+4.5000 & Anna (1996)                                             \\  \hline
+4.4762 & Wallace \& Gromit: The Best of Aardman Animation (1996) \\ \hline
+4.4754 & Casablanca (1942)                                       \\ \hline
+4.4706 & Paths of Glory (1957)                                   \\ \hline
+
+\end{tabular}
+\caption{Highest Average Rating by Men under 40}
+\end{table}
+
+
+\end{flushleft}
+
+
+
+

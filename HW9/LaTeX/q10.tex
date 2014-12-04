@@ -1,0 +1,136 @@
+\section{Question 10}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+What movie was rated highest on average by women over 40? By
+women under 40?
+
+\end{flushleft}
+\subsection{The Answer}
+
+
+\begin{flushleft}
+
+This quesion is similar to question 3 where the highst rated movies by women were requested. This question adds the additional condition for age of the reviewer. The reviews were appened to each movie based on the conditions and then avergaed. 
+
+
+\begin{lstlisting}[caption={Python code to for women over 40}]
+def q10a(movies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if (users[i.user-1].sex == "F") and (users[i.user-1].age > 40):
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	w40 = sorted(movies,key=lambda x:(x.avg, x.title), reverse=True)
+	f = open("q10a.txt", "w")
+	print "\n\tQ10a: Highest Average by women over 40"
+	for i in range(0,40):
+		print  '%.4f'%w40[i].avg, w40[i].title
+		f.write("%.4f,  \"%s\"\n" % (w40[i].avg, w40[i].title))
+	f.close()
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Python code to for women under 40}]
+def q10b(rmovies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if (users[i.user-1].sex == "F") and (users[i.user-1].age < 40):
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	w30 = sorted(movies,key=lambda x:(x.avg, x.title), reverse=True)
+	f = open("q10b.txt", "w")
+	print "\n\tQ10b: Highest Average by women under 40"
+	for i in range(0,40):
+		print  '%.4f'%w30[i].avg, w30[i].title	
+		f.write("%.4f,  \"%s\"\n" % (w30[i].avg, w30[i].title))
+	f.close()
+\end{lstlisting}
+
+
+
+\begin{table}[h]
+\centering
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{|ll|}
+\hline
+5.0000 & Wrong Trousers The (1993)                        \\
+5.0000 & Visitors The (Visiteurs Les) (1993)              \\
+5.0000 & Top Hat (1935)                                   \\
+5.0000 & Tombstone (1993)                                 \\
+5.0000 & Swept from the Sea (1997)                        \\
+5.0000 & Shallow Grave (1994)                             \\
+5.0000 & Shall We Dance? (1937)                           \\
+5.0000 & Safe (1995)                                      \\
+5.0000 & Quest The (1996)                                 \\
+5.0000 & Pocahontas (1995)                                \\
+5.0000 & Nightmare Before Christmas The (1993)            \\
+5.0000 & Mina Tannenbaum (1994)                           \\
+5.0000 & Mary Shelley's Frankenstein (1994)               \\
+5.0000 & Ma vie en rose (My Life in Pink) (1997)          \\
+5.0000 & Letter From Death Row A (1998)                   \\
+5.0000 & In the Bleak Midwinter (1995)                    \\
+5.0000 & Great Dictator The (1940)                        \\
+5.0000 & Grand Day Out A (1992)                           \\
+5.0000 & Gold Diggers: The Secret of Bear Mountain (1995) \\
+5.0000 & Funny Face (1957)                                \\
+5.0000 & Foreign Correspondent (1940)                     \\
+5.0000 & Bride of Frankenstein (1935)                     \\
+5.0000 & Best Men (1997)                                  \\
+5.0000 & Band Wagon The (1953)                            \\
+5.0000 & Balto (1995)                                     \\
+5.0000 & Angel Baby (1995)                                \\ \hline
+4.8000 & Once Were Warriors (1994)                        \\ \hline
+4.7000 & Fantasia (1940)                                  \\ \hline
+4.6667 & Last of the Mohicans The (1992)                  \\ \hline
+4.5714 & Christmas Carol A (1938)                         \\ \hline
+
+\end{tabular}
+\caption{Highest Average Rating by Women over 40}
+\end{table}
+
+
+
+\begin{table}[h]
+\centering
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{|ll|}
+\hline
+5.0000 & Year of the Horse (1997)                                                        \\
+5.0000 & Wedding Gift The (1994)                                                         \\
+5.0000 & Umbrellas of Cherbourg The (Parapluies de Cherbourg Les) (1964)                 \\
+5.0000 & Telling Lies in America (1997)                                                  \\
+5.0000 & Stripes (1981)                                                                  \\
+5.0000 & Someone Else's America (1995)                                                   \\
+5.0000 & Prefontaine (1997)                                                              \\
+5.0000 & Nico Icon (1995)                                                                \\
+5.0000 & Mina Tannenbaum (1994)                                                          \\
+5.0000 & Maya Lin: A Strong Clear Vision (1994)                                          \\
+5.0000 & Horseman on the Roof The (Hussard sur le toit Le) (1995)                        \\
+5.0000 & Heaven's Prisoners (1996)                                                       \\
+5.0000 & Grace of My Heart (1996)                                                        \\
+5.0000 & Faster Pussycat! Kill! Kill! (1965)                                             \\
+5.0000 & Everest (1998)                                                                  \\
+5.0000 & Don't Be a Menace to South Central While Drinking Your Juice in the Hood (1996) \\
+5.0000 & Backbeat (1993)                                                                 \\ \hline
+4.8182 & Wallace \& Gromit: The Best of Aardman Animation (1996)                         \\ \hline
+4.8000 & Paradise Lost: The Child Murders at Robin Hood Hills (1996)                     \\ \hline
+4.8000 & Anne Frank Remembered (1995)                                                    \\
+4.7021 & Shawshank Redemption The (1994)                                                 \\ \hline
+4.7000 & Shall We Dance? (1996)                                                          \\ \hline
+
+\end{tabular}
+\caption{Highest Average Rating by Women under 40}
+\end{table}
+
+\end{flushleft}
+
+
+
+
