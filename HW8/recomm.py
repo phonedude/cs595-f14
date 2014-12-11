@@ -250,20 +250,13 @@ def greedy(prefs, best):
             if (i != j):
                 e.append(d)
         e.sort(key=lambda x:x[:][0], reverse=best)
-        #print int(e[0][1])
-        c[int(e[0][1])-1] = e[0]
-        
+        c[int(e[0][1])-1] = e[0]       
     return c     
 
 def dist(prefs):
     c = []
-
     for i in prefs:
         c.append(topMatches(prefs, i, 1, sim_pearson))
-    
-    # for i in c:
-    #     i.append(sum(pair[0] for pair in i))
-
     c.sort(key=lambda x:x[5], reverse=True)
 
     return c
@@ -275,8 +268,6 @@ def maths(c, prefs):
         e.append(i[2])
         for j in range(2,5):
             e.append(c[int(e[j-1])-1][2])
-        
-
         tSum = 0
         for j in range (0,5):
             for k in range (0,5):

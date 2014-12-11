@@ -71,25 +71,17 @@ def main():
                 tf[term] += blogs[blog][term]/float(len(blogs[blog])) 
             else:
                 tf[term] = blogs[blog][term]/float(len(blogs[blog])) 
-
-
     corp = float(len(blogs))
     idf = {}
     for i in apcount:
         idf[i] = log(corp/apcount[i])/log(2)
-
     tfidf = {}
     for i in tf:
         tfidf[i] = tf[i]*idf[i]
-
-    
-
     new = []
     for i in tfidf:
         new.append((i, tfidf[i]))
-
     new.sort(key=lambda tup:tup[1], reverse=True)
-
     wordlist = []
     for i in range(500):
         print new[i][0]
