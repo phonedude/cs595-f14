@@ -17,19 +17,38 @@ over your baseline?  Why do you think that is?
 
 \subsection{The Answer}
 
-Training off 90 entries
+Applying the same classifier that was trained on 90 entries and tested on 10 produced the following results.
+
+Training off 90 entries:
 \begin{center}
 Precision = 0.6, Recall =  0.75
 
 F-measure =0.666666666667
 \end{center}
 
+The ``entry features'' function returned a list of terms, these terms were then made into a string and passed to the classifier for testing. 
 
-Using 50 entries and entryfeatures() vector
+\begin{lstlisting}[caption=Python code using entry features]
+a = feedfilter.entryfeatures(entry)
+	    b = random.randint(0,len(a)-1)
+	    c = ' '.join(a)
+	    #print a
+	    fulltext='%s\n%s' % (entry['title'],entry['summary'][0])
+	    # cls = classifier.classify(a.items()[b][0])
+	    # cls = classifier.classify(fulltext)
+	    cls = classifier.classify(fulltext)
+\end{lstlisting}
+
+
+
+
+Using 50 entries and entryfeatures() vector:
 \begin{center}
 Precision = 0.9, Recall =  0.957446808511
 
 F-measure =0.927835051546
 \end{center}
 
+
+It is clear from the results that using better features yield higher accuracy than more training. A large training set is important for a model to generalize well and perform accurately with other data. However, increasing the training data does not necessarily correlate with performance, because the training set may contain noisy data with redundant information and the classifier is trained on insufficient information. Howerver, carefully selecting features that are good predictors of the class will increase performance and allow a model to generalize better. An analogy is spending hours studying the same type of math problem and neglecting other types of problems, rather than looking a small sample of different problems. 
 

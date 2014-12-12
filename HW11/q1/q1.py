@@ -2,17 +2,13 @@
 
 import math
 
-
-
 def cos_sim(v1, v2):
-  sumxx, sumyy, sumxy = 0 ,0 ,0
-  
+  sumxx, sumyy, sumxy = 0 ,0 ,0 
   for i in range(len(v1)):
     x = v1[i]; y = v2[i]
     sumxx += float(x)*float(x)
     sumyy += float(y)*float(y)
     sumxy += float(x)*float(y)
-    # print sumxx, sumyy, sumxy
   return sumxy/math.sqrt(sumxx*sumyy)
 
 def getdistances(data,vec1):
@@ -21,8 +17,7 @@ def getdistances(data,vec1):
   # Loop over every item in the dataset
   for i in range(len(data)):
     vec2=data[i]
-    # print i
-    # Add the distance and the index
+
     try:
       distancelist.append((cos_sim(vec1,vec2),i))
     except:
@@ -37,14 +32,6 @@ def knnestimate(data,vec1,k=5):
   dlist=getdistances(data,vec1)
   avg=0.0
   return dlist
-  # Take the average of the top k results
-  # for i in range(k):
-  #   idx=dlist[i][1]
-  #   print data[idx]
-  #   avg+=data[idx]
-  # avg=avg/k
-  return av
-
 vecs = {}
 
 f = open("blogdata2.txt", "r")
