@@ -1,0 +1,56 @@
+\section{Question 6}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+Which 5 raters rated the most films? Show the raters' IDs and
+the number of films each rated.
+
+\end{flushleft}
+\subsection{The Answer}
+
+The reviews were read line by line and appened to each user. The users were then sorted based on number of reviews. The top five were taken from the sorted list. 
+
+
+\begin{lstlisting}[caption={Python code for question 6}]
+def q6(users):
+	for i in reviews:
+		users[i.user-1].cnt += 1
+
+	usr = sorted(users,key=lambda x:x.cnt, reverse=True)
+
+	# 
+	f = open("q6.txt", "w")
+	print "\n\tQ6: Rated most pics"
+	print  "cnt, id"
+	for i in range(0,5):
+		print  usr[i].cnt, usr[i].id
+		f.write("%d,  %d\n" % (usr[i].cnt, usr[i].id))
+	f.close()
+\end{lstlisting}
+
+
+\begin{flushleft}
+
+
+\begin{table}[h]
+\setlength{\tabcolsep}{12pt}
+\centering
+\begin{tabular}{|ll|}
+\hline
+737 & 405 \\ \hline
+685 & 655 \\ \hline
+636 & 13  \\ \hline
+540 & 450 \\ \hline
+518 & 276 \\ \hline
+\end{tabular}
+\caption{Raters with the Most Reviews}
+\end{table}
+
+
+\end{flushleft}
+
+
+
+

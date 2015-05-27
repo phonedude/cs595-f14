@@ -1,0 +1,304 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » Oobleck security Comments Feed Prefer goals over
+   controls The case for continuous delivery
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   IoT+
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+Oobleck security
+
+What is the security model for a world filled with sensors?
+
+   by Matthew Gast | @MatthewSGast | Comments: 3 | February 21, 2014
+   Comments: 3
+
+   I’ve been thinking (and writing) a lot lately about the intersection of
+   hardware and software, and how standing at that crossroads does not fit
+   neatly into our mental models of how to approach the world. Previously,
+   there was hardware and there was software, and the two didn’t really
+   mix. When trying to describe my thinking to a colleague at work, the
+   best way to describe the world was that it’s becoming “oobleck,” the
+   mixture of cornstarch and water that isn’t quite a solid but isn’t
+   quite a liquid, named after the Dr. Seuss book Bartholomew and the
+   Oobleck.  (If you want to know how to make it, check out this video.)
+
+   One of the reasons I liked the metaphor of oobleck for the melding of
+   hardware and software is that it can rapidly change on you when you’re
+   not looking. It pours like a liquid, but it can “snap” like a solid. If
+   you place the material under stress, as might happen if you set it on a
+   speaker cone, it changes state and acts much more like a weird solid.
+
+   This “phase change” effect may also occur as we connect highly
+   specialized embedded computers (really, “sensors”) to the Internet. As
+   Bruce Schneier recently observed, patching embedded systems is hard. As
+   if on cue, a security software company published a report that
+   thousands of TVs and refrigerators may have been compromised to send
+   spam. Embedded systems are easy to overlook from a security perspective
+   because at the dawn of the Internet, security was relatively easy:
+   install a firewall to sit between your network and the Internet, and
+   carefully monitor all connections in and out of the network. Security
+   was spliced into the protocol stack at the network layer. One of my
+   earliest projects in understanding the network layer was working with
+   early versions of Linux to configure a firewall with the then-new
+   technology of address translation. As a result, my early career took
+   place in and around network firewalls.
+
+   Most firewalls at the time worked at the network and transport layers
+   of the protocol stack, and would operate on IP addresses and ports. A
+   single firewall could shield an entire network of unpatched machines
+   from attack, and in some ways, made it safe to use Windows on
+   Internet-connected machines. Firewalls worked well in their heyday of
+   the 1990s. Technology innovation took place inside the firewall, so the
+   strict perimeter controls they imposed did not interfere with the use
+   of technology.
+
+   By the mid-2000s, though, services like Skype and Google apps contended
+   with firewalls as an obstacle to be traversed. (2001 even saw the
+   publication of RFC 3093, a firewall “enhancement” protocol to allow
+   routed IP packets through the firewall. Read it, but note the date
+   before you dive into the details.) Staff inside the firewall needed to
+   access services outside the firewall, and these services now included
+   critical applications like Salesforce.com. Applications became firewall
+   aware and started working around them. Had applications not evolved, it
+   is likely the firewall would have throttled much of the innovation of
+   the last decade.
+
+   To bring this back to embedded systems: what is the security model for
+   a world with loads of sensors? (After all, remember that Bartholomew
+   almost drowned in the Oobleck, and we’d like to avoid that fate.) As
+   Kipp Bradford recently pointed out, when every HVAC compressor is
+   connected to the Internet, that’s a lot of devices. By definition,
+   real-time automation models assume continuous connectivity to gather
+   data, and more importantly, send commands down to the infrastructure.
+
+   Many of these systems have proven to have poor security; for a recent
+   example, consider this report from last fall about vulnerabilities in
+   electrical and water systems. How do we add security to a sensor
+   network, especially a network that is built around me as a person?Do I
+   need to wear a firewall device to keep my sensors secure? Is the
+   firewall an app that runs on my phone? (Oops, maybe I don’t want it
+   running on my phone, given the architecture of most phone software…)
+   Operating just at the network transport layer probably isn’t enough.
+   Real-time data is typically transmitted using UDP, so many of the
+   unwritten rules we have for TCP-based networking won’t apply. Besides,
+   the firewall probably needs to operate at the API level to guard
+   against any action I don’t want to be taken. What kind of security
+   needs to be put around the data set? A strong firewall and cryptography
+   that prevents my data in flight is no good if it’s easy to tap into the
+   data store they all report to.
+
+   Finally, there’s the matter of user interface. Simply saying that users
+   will have to figure it out won’t cut it. Default passwords — or even
+   passwords as a concept — are insufficient. Does authentication have to
+   become biometric? If so, what does that mean for registering devices
+   the first time? As is probably apparent, I don’t have many answers yet.
+
+   Considering security with these types of deployments is like trying to
+   deal with oobleck. It’s almost concrete, but just when you think it is
+   solid enough to grasp, it turns into a liquid and runs through your
+   fingers. With apologies to Shakespeare, this brave new world that has
+   such machines in it needs a new security model. We need to defend
+   against the classic network-based attacks of the past as well as new
+   data-driven attacks or subversions of a distributed command-and-control
+   system.
+     __________________________________________________________________
+
+   If you are interested in the collision of hardware and software, and
+   other aspects of the convergence of physical and digital worlds,
+   subscribe to the free Solid Newsletter.
+   tags: embedded systems, Industrial Internet, Internet of Things,
+   security, Solid
+   Comments: 3
+
+Get the O’Reilly IoT+ Newsletter
+
+Software / Hardware / Everywhere
+
+   The programmable world is creating disruptive innovation as profound as
+   the Internet itself. Be among the first to learn about the latest news,
+   trends, and opportunities.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=iot&loc=botpost&emtype=nl
+
+     * carpetbomberz
+       This I see as one of the more realistic downsides to the tidal wave
+       of articles touting the Internet of Things (IoT). With great power
+       comes great responsibility and if desktop computers are insecure,
+       smartphones are insecure so too will be the IoT. No free lunch
+       here, you have to do the heavy lifting NOW.
+     * Nope
+       Give it up. Never has really been any security and these is no
+       reason to believe there will every be any. Too hard, too expensive.
+       Too late to go back and start over. Your only hope is to figure out
+       how to respond to incidents. Not “if” they will happen, They will
+       happen. But, this too, is a lost cause. Too hard, too expensive. We
+       are merely doomed.
+     * mitch696969
+       H2H communication and M2M communication will need to be integrated,
+       separated in future business networks. It is absurd to put M2M
+       information in the current TCP/IP and allow free access for any
+       willing hackers. The opportunity to change this is NOW. Separating
+       M traffic from H traffic is necessary for machines to communicate
+       faster and provide more for us. Nobody saw this coming but Software
+       defined networking will soon loose a flood. I don’t want sensor
+       networks available in what many insist is the ‘proven’ current
+       internet framework. We owe the machines a different plug. I concede
+       they will communicate faster than us. Hopefully we keep an off
+       switch ready. Imagine a world where your taxes are already figured
+       before you have to file, that’s great. You didn’t have to sign up
+       for health care because the government did it for you ahead of
+       time. The H2H framework built was necessary, has proven that over
+       time all information will be breached and acted upon. This was by
+       design, will continue to be fine for H2H but WILL NOT DO for M2M so
+       we need to vocalize this. I don’t want to be hunted by robots on
+       online. I’m Ok with the FBI sniffing social traffic in the H2H
+       domain for bad guys. Machines can chirp in their own space and do
+       their job, while i may not have mine anyway. In their own capsule
+       we can take the BLUR out of man and machine do some seriously great
+       stuff.
+
+Featured Video
+
+   "Everything is going to change" — Max Firtman, founder of ITMaster,
+   discusses the HTML5 landscape, the misuse of responsive design, and the
+   role of mobile in the Internet of Things.
+
+Recent Posts
+
+     * Python 3: threat or menace?
+     * Four short links: 26 September 2014
+     * Four short links: 25 September 2014
+     * Scaling NoSQL databases: 5 tips for increasing performance
+     * In pursuit of universal IoT standards
+
+   Tweets by @radar
+
+Most Recently Discussed
+
+Featured Download
+
+                                  [cat.gif]
+                         Download the free report >
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee
+
+   close
+
+Get the O’Reilly IoT+ Newsletter
+
+   The programmable world is creating disruptive innovation as profound as
+   the Internet itself. Be among the first to learn about the latest news,
+   trends, and opportunities.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=iot&loc=overlay&emtype=nl

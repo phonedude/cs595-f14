@@ -1,0 +1,78 @@
+\section{Question 4}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+What 5 movies were rated the highest on average by men? Show
+the movies and their ratings sorted by ratings.
+
+\end{flushleft}
+\subsection{The Answer}
+\begin{flushleft}
+
+The reviews were read line by line and before hey were appeneded to the respective movie there reviewer was checked to determine if he met the criterion of being a male. 
+
+
+\begin{lstlisting}[caption={Python code for question 4}]
+def q4(movies, reviews, users):
+	clearScore(movies)
+	for i in reviews:
+		if users[i.user-1].sex == "M":
+			movies[i.item-1].scores.append(float(i.score))
+			movies[i.item-1].cnt +=1
+	for i in movies:
+		i.avgr(); 
+	men = sorted(movies, key=lambda x:x.avg, reverse=True)
+	f = open("q4.txt", "w")
+	print "\n\tQ4: Highest Average by men"
+	for i in range(0,30):
+		print  '%.4f'%men[i].avg, men[i].title
+		f.write("%.4f,  \"%s\"\n" % (men[i].avg, men[i].title))
+	f.close()
+\end{lstlisting}
+
+
+\begin{table}[h]
+\setlength{\tabcolsep}{12pt}
+\centering
+\begin{tabular}{|ll|}
+\hline
+5.0000 & Great Day in Harlem A (1994)                            \\
+5.0000 & They Made Me a Criminal (1939)                          \\
+5.0000 & Quiet Room The (1996)                                   \\
+5.0000 & Hugo Pool (1997)                                        \\
+5.0000 & Prefontaine (1997)                                      \\
+5.0000 & Letter From Death Row A (1998)                          \\
+5.0000 & Marlene Dietrich: Shadow and Light (1996)               \\
+5.0000 & Star Kid (1997)                                         \\
+5.0000 & Delta of Venus (1994)                                   \\
+5.0000 & Saint of Fort Washington The (1993)                     \\
+5.0000 & Santa with Muscles (1996)                               \\
+5.0000 & Aiqing wansui (1994)                                    \\
+5.0000 & Love Serenade (1996)                                    \\
+5.0000 & Leading Man The (1996)                                  \\
+5.0000 & Entertaining Angels: The Dorothy Day Story (1996)       \\
+5.0000 & Little City (1998)                                      \\ \hline
+4.6667 & Two or Three Things I Know About Her (1966)             \\
+4.6667 & Little Princess The (1939)                              \\ \hline
+4.6250 & Pather Panchali (1955)                                  \\ \hline
+4.5000 & A Chef in Love (1996)                                   \\  
+4.5000 & Anna (1996)                                             \\
+4.5000 & Sliding Doors (1998)                                    \\
+4.5000 & Grosse Fatigue (1994)                                   \\
+4.5000 & Bitter Sugar (Azucar Amargo) (1996)                     \\ \hline
+4.4734 & Casablanca (1942)                                       \\    \hline
+
+\end{tabular}
+\caption{Highest Average Rating by Men}
+\end{table}
+
+
+
+
+\end{flushleft}
+
+
+
+

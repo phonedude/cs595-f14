@@ -1,0 +1,1318 @@
+status: 200
+x-request-id: 238673e5ffd5d8728dd0b7632499a54f
+content-location: https://www.indiegogo.com/projects/equality-ftw-2014/contributions/new?perk_amt=20&perk_id=2337056
+set-cookie: romref=ORG_www_US_0019_dir-XXXX_00945106_0000_; path=/;
+ expires=Mon, 28-Sep-2015 15:46:47 GMT,
+ visitor_id=8fdee68a4b95ad1bdbb79381c9ef8529e11b4ce84d679449ae01c65b0677dc61;
+ path=/; expires=Thu, 28-Sep-2034 15:46:47 GMT,
+ analytics_session_id=5552d772982e1a906084a4d409216366;
+ path=/, _session_id=5552d772982e1a906084a4d409216366; path=/;
+ expires=Wed, 01-Oct-2014 15:46:48 GMT; secure; HttpOnly, widget_945106=;
+ path=/; expires=Thu, 01-Jan-1970 00:00:00 GMT
+vary: Accept-Encoding
+content-length: 118608
+server: nginx/1.3.11
+connection: keep-alive
+-content-encoding: gzip
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Sun, 28 Sep 2014 15:46:48 GMT
+x-frame-options: SAMEORIGIN
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+x-runtime: 0.567130
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# indiegogo: http://ogp.me/ns/fb/indiegogo#" >
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"52ee8e3327","applicationID":"265213","transactionName":"J1gLEkINVVQDRUkAVwpDFw9SF01RCVkVTFYBQA==","queueTime":6,"applicationTime":561,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQEDVFdACgUFVlBR"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+  <meta charset="utf-8" />
+  <title>Equality FTW 2014 | Indiegogo</title>
+
+
+<link href="https://g0.iggcdn.com/assets/favicon/favicon-32-0f9aeeb53db5c05c25bf147307b8a645.png" rel="icon" sizes="32x32" type="image/png" />
+<link href="https://g1.iggcdn.com/assets/favicon/favicon-48-12afd0627a5bad90511bf38e610b59ff.png" rel="icon" sizes="48x48" type="image/png" />
+<link href="https://g2.iggcdn.com/assets/favicon/favicon-64-576ba72ca961be940512874017de67c1.png" rel="icon" sizes="64x64" type="image/png" />
+
+<!--[if IE]>
+<link href="https://g1.iggcdn.com/assets/favicon/favicon-323b560de785a16fb23e357407739095.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="https://g2.iggcdn.com/assets/favicon/apple-touch-icon-144x144-precomposed-3530edc5ab6af2e26d1ba2719906f178.png">
+<![endif]-->
+
+
+<meta name="language" content="en" />
+<meta name="title" content="Equality FTW 2014 | Indiegogo" />
+<meta name="description" content="The Harry Potter Alliance turns fans into heroes." />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="XBGS/CDd4UCQw83bz8NrSbAmajT0gDNchRzgSTK4oVM=" name="csrf-token" />
+<meta property="fb:app_id" content="2392863781"/>
+<meta property="og:site_name" content="Indiegogo"/>
+<meta property="og:type" content="indiegogo:campaign"/>
+<meta property="og:title" content="Equality FTW 2014"/>
+<meta content="The Harry Potter Alliance turns fans into heroes." property="og:description" />
+<meta property="og:image" content="https://res.cloudinary.com/indiegogo-media-prod-cld/image/upload/c_fill,h_413,w_620/v1411702201/f1sxlxwiohadxpkbzekk.jpg"/>
+<meta property="og:url" content="http://www.indiegogo.com/projects/945106/fblk"/>
+<meta property="indiegogo:by" content="https://www.indiegogo.com/individuals/973027"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@indiegogo">
+<meta name="twitter:domain" content="https://www.indiegogo.com/">
+<meta name="twitter:title" content="Equality FTW 2014">
+<meta content="The Harry Potter Alliance turns fans into heroes." name="twitter:description" />
+<meta name="twitter:image:src" content="https://res.cloudinary.com/indiegogo-media-prod-cld/image/upload/c_fill,h_413,w_620/v1411702201/f1sxlxwiohadxpkbzekk.jpg">
+<meta name="twitter:creator" content="@TheHPAlliance">
+
+<link rel="canonical" href="https://www.indiegogo.com/projects/equality-ftw-2014"/>
+
+    <meta name="keywords" content="The Harry Potter Alliance turns fans into heroes." />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss/announcements/equality-ftw-2014?agent_type=Project" />
+
+  <script type="text/javascript">
+    var utag_data = {"site_name":"www.indiegogo.com","site_country":"us","page_type":"contribute","logged_in_state":"signed_out","site_currency":"USD","campaign_id":"945106","campaign_city":"Hogwarts","campaign_country":"United States","campaign_goal_amount":"100000","campaign_raised_amount":"26634","campaign_percent_of_goal":"0.26634","campaign_days_left":27,"campaign_category":"Education","campaign_featured_perk":{"perk":{"agent_id":945106,"agent_type":"Project","amount":40,"amount_in_usd":null,"choices":null,"created_at":"2014-09-22T17:32:10-07:00","description":"ONE WEEK ONLY: In honor of (Azka)Banned Books Week, we\u2019ve created this super-limited t-shirt. Over the past decade, many of our favorite books (Harry Potter, the Hunger Games, Looking for Alaska) have been banned or challenged, so it\u2019s important that we fight back and remain strong advocates for these important works. Show your support with this shirt. Only available until September 28th.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2342717,"label":"Azkabanned Books Club Shirt","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":true,"updated_at":"2014-09-25T08:28:34-07:00"}},"campaign_start_date":"2014-09-20T15:23:21-07:00","campaign_end_date":"2014-10-25T23:59:59-07:00","campaign_name":"Equality FTW 2014","campaign_description":"The Harry Potter Alliance turns fans into heroes.","campaign_funders":"621","campaign_type":"flexible_funding","campaign_image_url":null,"campaign_partnership":null,"contribution_value":"20","perks_selected":"Maureen Johnson Fanfic: Part 2","page_name":"Equality FTW 2014 | Indiegogo"};
+  </script>
+  <!-- Loading script asynchronously -->
+  <script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/indiegogo/main/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+  </script>
+
+  <link href="https://g3.iggcdn.com/assets/select2/select2-7f31d764925a0a1483809ebc7160e956.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://g3.iggcdn.com/assets/site/common-8a64bcb8cfef99c0d54aa5b4e769b5fb.css" media="screen" rel="stylesheet" type="text/css" />
+      <link href="https://g1.iggcdn.com/assets/site/contribution_flow-74ae570c95861e5c1bfb8021446fc53f.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+  <script type="text/javascript">
+//<![CDATA[
+window.gon = {};gon.pageview_data={"new_url":"/projects/education/equality-ftw-2014/contributions/new?perk_amt=20&perk_id=2337056"};gon.currency={"example":"$9,999","iso_code":"USD","delimiter":",","separator":".","symbol":"$"};gon.tracking_info={"google_analytics_id":"UA-6117171-6","fb_pixel_id":null,"amount":20,"currency_iso_code":"USD"};gon.pledge={"id":null,"pledge_type":null,"account_id":null,"perk_id":2337056,"txn_id":null,"amt_gross":20,"status":"STPG_UNVR","pp_status":null,"appearance":"STAP_VSBL","created_at":null,"updated_at":null,"agent_type":"Project","agent_id":945106,"payment_status":"STPY_UNPD","firstname":null,"lastname":null,"referrer_id":null,"address":null,"city":null,"state":null,"zipcode":null,"country":null,"request_remote_ip":"71.251.177.162","request_remote_country":"CTRY_US","disbursement_id":null,"cohort":"||","shipping_name":null,"shipping_address":null,"shipping_city":null,"shipping_state":null,"shipping_zipcode":null,"shipping_country":null,"request_http_user_agent":" Python-httplib2 0.8","follow_up_at":null,"pledge_name":null,"ancestry":null,"matching_fund_id":null,"choices":null,"added_at":null,"removed_at":null,"amt_gross_in_usd":0.0,"email":null,"adyen_notification_flags":0,"adyen_payment_method":null,"adyen_merchant_account":null,"pp_status_reason":null,"pp_status_date":null,"address_line_two":null,"shipping_address_line_two":null,"fulfilled_at":null,"current_history_id":null,"promotion_code":null,"currency_iso_num":840,"primary_funds_owed_dec4":null,"platform_fee_dec4":null,"platform_fee_discount_dec4":null,"completion_bonus_dec4":null,"completion_bonus_discount_dec4":null,"transaction_fee_dec4":null,"transaction_fee_discount_dec4":null,"buckets_filledin_on":null,"bucket_flags":0,"code_version":null,"amount":"0.0","amount_before_shipping":"0.0","forever_funding":false,"platform_fee_config_id":961659,"tracking_info":{"google_analytics_id":"UA-6117171-6","fb_pixel_id":null,"amount":20,"currency_iso_code":"USD"},"shipping_address_lines":[],"continue_as_guest_email":null};gon.perks=[{"agent_id":945106,"agent_type":"Project","amount":40,"amount_in_usd":null,"choices":null,"created_at":"2014-09-22T17:32:10-07:00","description":"ONE WEEK ONLY: In honor of (Azka)Banned Books Week, we\u2019ve created this super-limited t-shirt. Over the past decade, many of our favorite books (Harry Potter, the Hunger Games, Looking for Alaska) have been banned or challenged, so it\u2019s important that we fight back and remain strong advocates for these important works. Show your support with this shirt. Only available until September 28th.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2342717,"label":"Azkabanned Books Club Shirt","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":true,"updated_at":"2014-09-25T08:28:34-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":7,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:17:22-07:00","description":"We also accept donations in the amounts of $77, $777, $7,777, etc. Thanks!","estimated_delivery_date":null,"id":2337074,"label":"Most Powerfully Magic Donation","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T06:17:22-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":7,"amount_in_usd":null,"choices":null,"created_at":"2014-09-25T15:09:51-07:00","description":"Kristina Horner, Lauren Fairweather, and Matt Maggiacomo have a new band and they\u2019re donating their first single, Taking It Back, to Equality FTW! This new collaboration will feature upbeat songs about being happy, trying your hardest, and making a difference in the world! You can do it! :D","estimated_delivery_date":"2014-11-15T00:00:00-08:00","id":2350467,"label":"With Flying Colors Debut Song","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-25T15:09:51-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":20,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T05:42:00-07:00","description":"Last year JK Rowling donated 7 signed Harry Potter books to our Equality FTW fundraiser. If you donate $20 to the HPA, we\u2019ll enter you in a contest to win the final book from that seven volume set - a signed hardcover of the Bloomsbury edition of Harry Potter and the Prisoner of Azkaban. When our campaign ends, you\u2019ll be sent a short contest entry form and we\u2019ll choose our favorite as the winner of this incredible book! Multiple entires are permitted. Go for it!","estimated_delivery_date":null,"id":2337033,"label":"JK Rowling Signed Book Contest","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T14:25:44-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":20,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:00:24-07:00","description":"Last year we had some incredible perks in our fundraiser, but the Internet agrees that  the most amazing prize was Maureen Johnson\u2019s \u201cA Study In Sink,\u201d her Green Brothers/Sherlock fanfic where John and Hank must help a confused, Dorito-obsessed Benedict Cumberbatch return to England to save the popular BBC show \u201cSherlock.\u201d This year, Maureen brings us the sequel. You\u2019ll get a PDF of her new story, along with a digital copy of \u201cA Study In Sink\u201d in case you missed it last year.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337056,"label":"Maureen Johnson Fanfic: Part 2","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T14:41:41-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":20,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:11:23-07:00","description":"Tired of all those \u201ceveryday bookmarks\u201d that adequately mark your reading progress but fail to offer any commentary on the work itself? The HPA has got your back. We\u2019ve created this set of five book-specific bookmarks for use with the following books or series: Harry Potter, The Hunger Games, The Fault in Our Stars, A Song of Ice and Fire, and Moby Dick. It\u2019s truly an innovation in bookmarking technology. Note: bookmarks are not approved for use with other books or series.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337069,"label":"Book-Specific Bookmarks","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T10:16:16-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":30,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T05:56:21-07:00","description":"Finally a calendar representing the Puppets of YouTube! This calendar features all 12 months of the year, each accompanied by a different photo of the Potter Puppet Pals. These photos are so cool that you won\u2019t be BOTHERED at all when it comes time to turn the page on another month. The calendar is fully equipped to remind you of all your important wizard dates: Victory Day, Aber4th of July, and the birthdays of your favorite witches and wizards. Please add $10 for shipping outside the US.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337051,"label":"Puppets of YouTube Calendar","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T14:43:53-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":30,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:05:12-07:00","description":"Yes. Seriously. You know her work as headmistress of the Leaky Cauldron, host of Pottercast, author of \u201cHarry, A History,\u201d  and director of all things Leaky and GeekyCon. Needless to say, there are few who can step to Melissa\u2019s deep knowledge of the HP canon and we are psyched to see what she brings to the fanfic table. We\u2019re presenting her special fanfic in audiobook format so donors will receive an MP3 download of this story narrated by EVANNA LYNCH!","estimated_delivery_date":null,"id":2337062,"label":"Melissa Anelli's HP fanfic","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T14:37:35-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":30,"amount_in_usd":null,"choices":null,"created_at":"2014-09-23T15:41:50-07:00","description":"In a recent Vlogbrothers video we saw Hank Green combing through years of high school papers and notes. He\u2019s agreed to assemble the a best of (worst of?) collection for Equality FTW. You'll get a rare look into Hank's teenage mind in the form of this glorious, photocopied black-and-white zine. Foreword by present day Hank Green. We\u2019ll mail you a copy by owl post.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2345263,"label":"Hank Green High School Zine","non_tax_deductible_amount":null,"number_available":200,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-23T15:41:50-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":40,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T05:48:20-07:00","description":"By popular demand, we\u2019ve finally created a Books Turn Muggles Into Wizards tote bag. It\u2019s perfect for transporting books of all shapes and sizes. It\u2019s possible that this bag may be useful in transporting non-literary goods and objects, but so far, we\u2019ve only used it for books. That\u2019s currently the only use we\u2019re comfortable advertising. This Equality FTW exclusive won\u2019t be available in our online store. 18\" x 13\" x 6\" canvas bag with 25\u201d handles. Please add $10 for shipping outside the US.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337038,"label":"Books Turn Muggles Tote","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T12:32:21-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":40,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:01:28-07:00","description":"All of our favorite characters were both wizards and activists: Harry Potter, Hermione Granger, Albus Dumbledore, Remus Lupin, Minerva McGonagall, Neville Longbottom, Luna Lovegood, and pretty much anyone named Weasley (except maybe Percy). Now\u2019s your chance to join the club. This shirt is exclusive to the HPA\u2019s 2014 Equality FTW campaign. We\u2019ll be printing these on American Apparel t-shirts. Please add $10 for shipping outside the US.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337059,"label":"Wizard Activist Shirt","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":false,"updated_at":"2014-09-20T18:21:07-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":40,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:12:05-07:00","description":"Earlier this year we started publishing our own quarterly magazine, the W.A.N.D. (Wizard Activist News Dispatch). This is the first time we\u2019ve offered subscriptions to the magazine. A $40 donation gets you four issues, delivered directly to your door (by owls). Please add $10 for shipping outside the US.","estimated_delivery_date":null,"id":2337070,"label":"Subscription to the W.A.N.D.","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T12:25:16-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":50,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T05:39:35-07:00","description":"During our fundraiser last year, John Green gave us an excerpt from Augustus Waters' favorite book: The Price of Dawn. We held a cover design contest and the winner was Risa Rodil. This year, we\u2019re printing posters of Risa\u2019s winning book cover and John Green will be signing a very limited number . This poster is only available during Equality FTW and will never be reprinted! Please add $10 for shipping outside the US.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337029,"label":"John Green Signed Poster","non_tax_deductible_amount":null,"number_available":50,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-25T10:50:49-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":50,"amount_in_usd":null,"choices":null,"created_at":"2014-09-25T10:52:29-07:00","description":"SPECIAL PRICE: These posters come to us from Hank Green\u2019s recent summer tour with Harry and the Potters, Driftless Pony Club, Andrew Huang and Rob Scallon. The posters  SOLD OUT during the tour, but we managed to put a few aside for this fundraiser. These posters are screenprinted on 100 lb. French Paper and signed by Hank and all the other bands from the tour. Dimensions are 18\u201d x 24.\u201d Please add $10 for shipping outside the US.","estimated_delivery_date":"2014-11-15T00:00:00-08:00","id":2349793,"label":"Hank Green Signed Tour Poster","non_tax_deductible_amount":null,"number_available":20,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-25T10:52:29-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":60,"amount_in_usd":null,"choices":null,"created_at":"2014-09-23T15:35:05-07:00","description":"EARLY BIRD SPECIAL: Evanna Lynch knows better than anyone that Books Turn Muggles Into Wizards. We\u2019re sure you already know that Evanna was an enormous Harry Potter fan before she was cast in the role of Luna Lovegood for the Harry Potter films. She\u2019s lived the dream and that\u2019s why we\u2019re psyched that she\u2019ll be signing our awesome Books Turn Muggles Into Wizards posters. Only 20 available at this price!","estimated_delivery_date":"2014-11-15T00:00:00-08:00","id":2345243,"label":"Evanna Lynch Signed Poster","non_tax_deductible_amount":null,"number_available":20,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-23T15:35:05-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":75,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:08:54-07:00","description":"While we were at LeakyCon, we had a bunch of StarKids sign a handful of our Books Turn Muggles Into Wizards posters. We have a super-limited quantity of these. The posters are signed by Brian Holden, Nick Lang, Meredith Stepien, Joe Moses, Dylan Saunders, Brian Rosenthal, Tessa Netting and more. Please add $10 for shipping outside the US.","estimated_delivery_date":"2014-11-15T00:00:00-08:00","id":2337065,"label":"Team StarKid Signed Poster","non_tax_deductible_amount":null,"number_available":15,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T12:24:40-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":75,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:16:59-07:00","description":"Equality FTW EXCLUSIVE: GeekyCon has become renowned for their epic opening ceremonies. Now you have a chance to get a behind-the-scenes look at how they make the magic happen. Witness the madness of putting together this epic spectacle with less than a day of rehearsal. This is only available through the Equality FTW campaign and does not include admission to GeekyCon 2015.","estimated_delivery_date":"2015-07-15T00:00:00-07:00","id":2337073,"label":"GeekyCon Rehearsal Ticket","non_tax_deductible_amount":null,"number_available":50,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T14:49:02-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":80,"amount_in_usd":null,"choices":null,"created_at":"2014-09-23T15:49:03-07:00","description":"Donating to the HPA is a great way to help decrease worldsuck. This package includes the Hank Green High School zine, Maureen Johnson\u2019s sensuous fanfic sequel, our Book-specific Bookmarks and an unsigned copy of the Price of Dawn poster (only available in this bundle!). Get \u2018em while you can!","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2345274,"label":"Nerdfighter Bundle","non_tax_deductible_amount":null,"number_available":100,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-23T15:49:03-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":100,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T06:22:07-07:00","description":"Do you want Luna Lovegood\u2019s ethereal voice as your outgoing voicemail message? Evanna Lynch has agreed to record personalized greetings to let your friends know that you can\u2019t answer their calls because you\u2019re either out hunting crumple-horned snorkacks or you\u2019ve been detained by nargles. SUPER LIMITED!","estimated_delivery_date":"2015-01-15T00:00:00-08:00","id":2337077,"label":"Evanna Lynch Voicemails","non_tax_deductible_amount":null,"number_available":20,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T11:12:48-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":125,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T13:34:40-07:00","description":"This package has all you need to get started as a wizard activist. It includes our Books Turn Muggles Into Wizards tote, a one-year subscription to the W.A.N.D., the Wizard Activist t-shirt and our book-specific bookmarks. We\u2019ll save you some galleons because this is $140 in perks for $125. Please add $20 for shipping outside the US.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337710,"label":"Wizard Activist Starter Kit","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T14:40:12-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":125,"amount_in_usd":null,"choices":null,"created_at":"2014-09-21T15:34:23-07:00","description":"EARLY BIRD SPECIAL: Get a $25 discount if you\u2019re one of the first 25 people to snag this perk! Harry Potter Actor Evanna Lynch (Luna Lovegood) has always been an amazing friend to the HPA. She\u2019s helping our campaign this year by autographing hardcover copies of Harry Potter and the Prisoner of Azkaban. Donate now because this one is super-limited!","estimated_delivery_date":"2015-01-15T00:00:00-08:00","id":2339878,"label":"Evanna Lynch Signed HP Books","non_tax_deductible_amount":null,"number_available":25,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-21T15:34:23-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":150,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T05:43:09-07:00","description":"Chapters! Make the most of your IRL appearances with this exclusive tabling kit. You\u2019ll have everything you need to attract a crowd and get them signed on to your mission, including a 2\u2019 x 6\u2019 HPA logo banner, two HPA logo t-shirts, a Books Turn Muggles Into Wizards journal for record keeping, branded email lists, Dumbledore cards, HPA Chapters logo buttons, and DFTBA shop cards. Your next campaign is sure to be a huge success! Please add $30 for shipping outside the US.","estimated_delivery_date":null,"id":2337034,"label":"Tabling Kit for HPA Chapters","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T12:20:45-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":175,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T13:47:30-07:00","description":"While we understand the desire to transfigure yourself into Hermione, we advise against attempting such magic without McGonagall\u2019s permission. In the meantime, this perk helps ensure you\u2019re as well-outfitted as Hermione. You get our Wizard Activist t-shirt, the Books Turn Muggles Into Wizards tote, a subscription to the W.A.N.D., our book-specific bookmarks, a classy Books Turn Muggles Into Wizards Journal and a Hang In There, Baby Crookshanks poster. Please add $25 for shipping outside the US.","estimated_delivery_date":"2014-12-15T00:00:00-08:00","id":2337737,"label":"Ultimate Hermione Pack","non_tax_deductible_amount":null,"number_available":null,"shipping_address_required":true,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T13:47:30-07:00","available":true},{"agent_id":945106,"agent_type":"Project","amount":250,"amount_in_usd":null,"choices":null,"created_at":"2014-09-20T17:08:17-07:00","description":"Secure your registration for the biggest, nerdiest, most-awesome fandom celebration of the year and feel good about giving to charity while you do it. Taking place from July 30th to August 2nd in Orlando, FL, GeekyCon is a multi-fandom conference like you\u2019ve never seen before. This perk comes bundled with new friends, amazing memories, and one of the best experiences of your life. This is a general registration to GeekyCon 2015.","estimated_delivery_date":null,"id":2338155,"label":"GeekyCon 2015 Registration","non_tax_deductible_amount":null,"number_available":5,"shipping_address_required":false,"status":"STPK_VSBL","top_perk":null,"updated_at":"2014-09-20T17:08:17-07:00","available":true}];gon.contributor_name=null;gon.thank_you_tx_data={"id":null,"affiliation":"Equality FTW 2014","coupon":"Maureen Johnson Fanfic: Part 2","revenue":20,"list":"Hogwarts, Massachusetts, United States","option":"N/A"};gon.ga_product_data={"id":"945106","name":"Equality FTW 2014","brand":"Us Nonprofit","category":"Education","list":"Hogwarts, Massachusetts, United States","variant":"Flexible"};gon.project_info={"firstgiving":true,"frac":false,"adyen":true,"paypal":false};
+//]]>
+</script>
+
+  <script type="text/javascript">
+  try {
+    var acct = 'UA-2250010-1';
+
+    var ft_acct = 'UA-2250010-11';
+
+    var _gaq = _gaq || [];
+
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', acct]);
+
+
+    _gaq.push(['_trackPageview']);
+
+    setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
+
+    _gaq.push(['funnel._setAccount', ft_acct]);
+    _gaq.push(['funnel._trackPageview', '/funnel_actions/contribute_new_page']);
+  } catch(err) {}
+</script>
+
+  <script type='text/javascript'>
+    try {
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    } catch(err) {}
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  </script>
+
+  <script>ga('create', 'UA-53458201-2', 'auto', { 'userId': 0 });</script>
+
+<script>ga('require', 'ec', 'ec.js');</script>
+
+
+<!-- Google Analytics End -->
+
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="https://g3.iggcdn.com/assets/igg/ie8/common-6dc0bb18cdfa5e727e367037aab3c8b7.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+  <link href="https://g1.iggcdn.com/assets/site/ie8-8625262de67422a53efab0d1c03c9124.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]-->
+  <!--[if IE 9]>
+  <script src="https://g2.iggcdn.com/assets/css3-multi-column.1.02-d7a5d3595848312057aff90790e34245.js" type="text/javascript"></script>
+  <![endif]-->
+
+</head>
+<body class="nonresponsive">
+  <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2392863781',
+      channelUrl: 'http://www.indiegogo.com//channel.html', // Channel File for x-domain communication
+      status: true, // check the login status upon init?
+      cookie: true, // set sessions cookies to allow your server to access the session?
+      xfbml: true
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    var fbLocale = {'en': 'en_US', 'fr': 'fr_FR', 'de': 'de_DE', 'es': 'es_ES'}['en'];
+    js.src = "//connect.facebook.net/" + fbLocale + "/all.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+    
+
+    
+<div class="i-page-header">
+  <div class="hidden">
+    <a class="i-search-button js-search-button"><span class="i-icon i-glyph-icon-30-search"></span></a>
+
+    <div class="i-header-bar js-header-bar">
+      <span class="i-site-logo">INDIEGOGO</span>
+      <span class="i-icon i-glyph-icon-30-downcarrot"></span>
+    </div>
+    <div class="dropdown-menu i-linklist-dropdown i-capitalize">
+      <a href="/">Home</a>
+      <a href="/explore">Explore</a>
+      <a href="/learn-how-to-raise-money-for-a-campaign">How It Works</a>
+      <a href="/campaigns/new">Start your campaign</a>
+        <a href="https://www.indiegogo.com/accounts/sign_up?return_to=https%3A%2F%2Fwww.indiegogo.com%2Fprojects%2Fequality-ftw-2014%2Fcontributions%2Fnew%3Fperk_amt%3D20%26perk_id%3D2337056">Log in or Sign up</a>
+    </div>
+  </div>
+  <div class="">
+    <div class="container">
+
+      <a href="/" class="i-site-logo">
+          <img alt="Igg_windowlogo_iiearphones" src="https://images.indiegogo.com/logos/29/image/original/igg_windowlogo_iiearphones.png?1396385009" />
+</a>    </div>
+  </div>
+
+  <div class="container i-mobile-fullwidth">
+    <div class="i-search-dropdown js-search-dropdown ">
+      <div class="i-search-box">
+        <div class="i-search-cell">
+          <form accept-charset="UTF-8" action="/explore" class="js-search-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+            <div class="i-search-close js-search-close">
+              <span class="i-icon i-glyph-icon-30-close"></span>
+            </div>
+            <input class="js-search-input" id="filter_title" maxlength="300" name="filter_title" type="text" />
+</form>        </div>
+        <div class="i-go-cell">
+          <div class="i-search-go js-search-go">
+            <a href="#">go</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="session_modal" class="modal i-modal">
+  <div class="modal-dialog">
+    <div class="modal-content auth-modal">
+      <a class="close i-icon i-glyph-icon-30-close" data-dismiss="modal" aria-hidden="true"></a>
+
+       <div class="fb-auth">
+         <a href="https://www.indiegogo.com/accounts/auth/facebook" class="i-cta-1 i-cta-1-facebook">Continue with Facebook</a>
+         <p class="center-text">No automatic posts, ever.</p>
+       </div>
+
+
+      <div class="auth-fields">
+        <div id="loginSession">
+          <p class="sign-up-with-email divider"><span class="divider-line">Or log in with email</span></p>
+          <form accept-charset="UTF-8" action="https://www.indiegogo.com/accounts/sign_in" class="validated_form" id="login_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XBGS/CDd4UCQw83bz8NrSbAmajT0gDNchRzgSTK4oVM=" /></div>
+    <label class="hide i-error signup"></label>
+    <input class="i-text-field email required nc-email" id="account_email" name="account[email]" placeholder="Email" size="30" type="text" />
+    <input autocomplete="off" class="i-text-field password-input required password nc-password" data-typetoggle="#form_login_show_password" id="account_password" name="account[password]" placeholder="Password" size="30" type="password" />
+    <div class="i-field-row">
+      <div class="col-sm-6 i-checkbox-with-label">
+        <input name="account[rememberme]" type="hidden" value="0" /><input checked="checked" id="account_rememberme" name="account[rememberme]" type="checkbox" value="1" />
+        <label for="account_rememberme">Remember Me</label>
+      </div>
+      <div class="col-sm-6 i-forgot">
+        <a href="https://www.indiegogo.com/accounts/password/new" class="i-aqua-link">Forgot Password?</a>
+      </div>
+    </div>
+    <input class="i-cta-1 js-submit-session login" name="commit" type="submit" value="Log in" />
+</form>
+          <div class="topborder">
+            New to Indiegogo?  <a href="#" class="toggler">Sign up</a>
+          </div>
+        </div>
+
+        <div id="signUpSession">
+          <p class="sign-up-with-email divider"><span class="divider-line">Or sign up with email</span></p>
+          <form accept-charset="UTF-8" action="https://www.indiegogo.com/accounts" class="validated_form" id="signup_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XBGS/CDd4UCQw83bz8NrSbAmajT0gDNchRzgSTK4oVM=" /></div>
+  <input id="timestamp" name="timestamp" type="hidden" value="1411919207" /><input id="spinner" name="spinner" type="hidden" value="bd60f59960044c464d088d57774a2205" />
+  <input class="i-text-field" id="account_firstname" name="account[firstname]" placeholder="First Name" size="30" type="text" />
+  <input class="i-text-field" id="account_lastname" name="account[lastname]" placeholder="Last Name" size="30" type="text" />
+  <input class="i-text-field nc-email" id="83c845d92758b278ac3082dcd7795fea" name="83c845d92758b278ac3082dcd7795fea" placeholder="Email" type="text" /><div style="position: absolute; left: -2000px;"><input autocomplete="off" id="email" name="email" tabindex="999" type="text" value="" /></div>
+  <input autocomplete="off" class="i-text-field nc-password" id="c14a4e5ae459228b5d15d78a4d460944" minlength="6" name="c14a4e5ae459228b5d15d78a4d460944" placeholder="Password" type="password" /><div style="position: absolute; left: -2000px;"><input autocomplete="off" id="password" name="password" tabindex="999" type="password" value="" /></div>
+
+  <div class="i-field-row i-checkbox-with-label">
+    <input name="account[general_opt_in]" type="hidden" value="0" /><input checked="checked" id="account_general_opt_in" name="account[general_opt_in]" type="checkbox" value="1" />
+    <label for="account_general_opt_in">Sign me up for the weekly newsletter</label>
+  </div>
+
+  <input class="i-cta-1 js-submit-session" name="commit" type="submit" value="Create an Account" />
+</form>
+          <div class="topborder">
+            Already have an account? <a href="#" class="toggler">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="container js-flash-container">
+</div>
+
+
+    <div style="position:absolute; top: -200px; left: -200px;">
+<p style="background:url(https://h.online-metrix.net/fp/clear.png?org_id=0gjvgg2p&amp;session_id=5552d772982e1a906084a4d409216366&amp;m=1)">
+</p>
+
+<img src="https://h.online-metrix.net/fp/clear.png?org_id=0gjvgg2p&amp;session_id=5552d772982e1a906084a4d409216366&amp;m=2" />
+
+<script src="https://h.online-metrix.net/fp/check.js?org_id=0gjvgg2p&amp;session_id=5552d772982e1a906084a4d409216366&amp;pageid=1">
+</script>
+
+<object type="application/x-shockwave-flash" data="https://h.online-metrix.net/fp/fp.swf?org_id=0gjvgg2p&amp;session_id=5552d772982e1a906084a4d409216366" width="1" height="1">
+      <param name="movie" value="https://h.online-metrix.net/fp/fp.swf?org_id=0gjvgg2p&amp;session_id=5552d772982e1a906084a4d409216366" />
+      <param name="wmode" value="transparent" />
+<div></div>
+
+</object>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="i-contribution-container i-padded-top-20">
+    <div class="i-contribution-notice">
+        <span class="i-icon i-glyph-icon-22-nonprofit"></span>
+      <span><b>Hp Alliance Inc</b> receives the funds contributed to this campaign.</span>
+    </div>
+  <ul class="list-unstyled i-contribution-breadcrumb js-flow-nav">
+      <li class="i-selected">
+            <span>1. Contribute</span>
+      </li>
+      <li class="">
+            <span>2. Pay</span>
+      </li>
+      <li class="">
+            <span>3. Share</span>
+      </li>
+  </ul>
+  </div>
+</div>
+
+<div class="container"><div class="i-contribution-container">
+  <div id="error_loc">
+    
+  </div>
+
+  <form accept-charset="UTF-8" action="/projects/equality-ftw-2014/contributions" class="new_pledge" data-adyen="false" id="pledge_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XBGS/CDd4UCQw83bz8NrSbAmajT0gDNchRzgSTK4oVM=" /></div>
+    <input id="current_page" name="current_page" type="hidden" value="new" />
+    <input id="pledge_pledge_type" name="pledge[pledge_type]" type="hidden" />
+    <input id="pledge_process" name="pledge[process]" type="hidden" value="true" />
+    
+
+      <div class="i-musty-background i-perk-select">
+        <h2 class="js-perk-title-text">Which perk would you like?</h2>
+        <input class="js-pledge-perk" id="pledge_perk_id" name="pledge[perk_id]" type="hidden" value="2337056" />
+
+<div id="perk-menu" class="group perks-selection"><!--graybox -->
+  <div class='perk-item selected' id='no-perk'>
+    <span class="i-cta-1 i-contribute-button js-contribute-button">Continue</span>
+    <div class="contributewrap">
+      <div class="perk_title">
+        <div>
+          No perk, I just want to contribute. 
+          <span class="js-change-perk-button" style="display: none;">Add Perk</span>
+          <span class="js-selected-text" style="display: none;">Selected</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="js-contribution-input-container-no-perk" class="i-noperk-contribute-box"></div>
+<div class="perk-item  " id="2342717" data-name="Azkabanned Books Club Shirt">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$40</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Azkabanned Books Club Shirt
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>ONE WEEK ONLY: In honor of (Azka)Banned Books Week, we’ve created this super-limited t-shirt. Over the past decade, many of our favorite books (Harry Potter, the Hunger Games, Looking for Alaska) have been banned or challenged, so it’s important that we fight back and remain strong advocates for these important works. Show your support with this shirt. Only available until September 28th.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>213</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337074" data-name="Most Powerfully Magic Donation">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$7</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Most Powerfully Magic Donation
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>We also accept donations in the amounts of $77, $777, $7,777, etc. Thanks!</span></div>
+    <div class="i-note">
+        <b>6</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2350467" data-name="With Flying Colors Debut Song">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$7</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">With Flying Colors Debut Song
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Kristina Horner, Lauren Fairweather, and Matt Maggiacomo have a new band and they’re donating their first single, Taking It Back, to Equality FTW! This new collaboration will feature upbeat songs about being happy, trying your hardest, and making a difference in the world! You can do it! :D</span></div>
+      <div class="i-note">Estimated delivery: <b>November 2014</b></div>
+    <div class="i-note">
+        <b>30</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337033" data-name="JK Rowling Signed Book Contest">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$20</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">JK Rowling Signed Book Contest
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Last year JK Rowling donated 7 signed Harry Potter books to our Equality FTW fundraiser. If you donate $20 to the HPA, we’ll enter you in a contest to win the final book from that seven volume set - a signed hardcover of the Bloomsbury edition of Harry Potter and the Prisoner of Azkaban. When our campaign ends, you’ll be sent a short contest entry form and we’ll choose our favorite as the winner of this incredible book! Multiple entires are permitted. Go for it!</span></div>
+    <div class="i-note">
+        <b>32</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  selected" id="2337056" data-name="Maureen Johnson Fanfic: Part 2">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$20</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Maureen Johnson Fanfic: Part 2
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Last year we had some incredible perks in our fundraiser, but the Internet agrees that  the most amazing prize was Maureen Johnson’s “A Study In Sink,” her Green Brothers/Sherlock fanfic where John and Hank must help a confused, Dorito-obsessed Benedict Cumberbatch return to England to save the popular BBC show “Sherlock.” This year, Maureen brings us the sequel. You’ll get a PDF of her new story, along with a digital copy of “A Study In Sink” in case you missed it last year.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>44</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337069" data-name="Book-Specific Bookmarks">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$20</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Book-Specific Bookmarks
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Tired of all those “everyday bookmarks” that adequately mark your reading progress but fail to offer any commentary on the work itself? The HPA has got your back. We’ve created this set of five book-specific bookmarks for use with the following books or series: Harry Potter, The Hunger Games, The Fault in Our Stars, A Song of Ice and Fire, and Moby Dick. It’s truly an innovation in bookmarking technology. Note: bookmarks are not approved for use with other books or series.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>24</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337051" data-name="Puppets of YouTube Calendar">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$30</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Puppets of YouTube Calendar
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Finally a calendar representing the Puppets of YouTube! This calendar features all 12 months of the year, each accompanied by a different photo of the Potter Puppet Pals. These photos are so cool that you won’t be BOTHERED at all when it comes time to turn the page on another month. The calendar is fully equipped to remind you of all your important wizard dates: Victory Day, Aber4th of July, and the birthdays of your favorite witches and wizards. Please add $10 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>19</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337062" data-name="Melissa Anelli&#x27;s HP fanfic">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$30</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Melissa Anelli&#x27;s HP fanfic
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Yes. Seriously. You know her work as headmistress of the Leaky Cauldron, host of Pottercast, author of “Harry, A History,”  and director of all things Leaky and GeekyCon. Needless to say, there are few who can step to Melissa’s deep knowledge of the HP canon and we are psyched to see what she brings to the fanfic table. We’re presenting her special fanfic in audiobook format so donors will receive an MP3 download of this story narrated by EVANNA LYNCH!</span></div>
+    <div class="i-note">
+        <b>13</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2345263" data-name="Hank Green High School Zine">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$30</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Hank Green High School Zine
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>In a recent Vlogbrothers video we saw Hank Green combing through years of high school papers and notes. He’s agreed to assemble the a best of (worst of?) collection for Equality FTW. You'll get a rare look into Hank's teenage mind in the form of this glorious, photocopied black-and-white zine. Foreword by present day Hank Green. We’ll mail you a copy by owl post.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>16</b> out of <b>200</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337038" data-name="Books Turn Muggles Tote">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$40</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Books Turn Muggles Tote
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>By popular demand, we’ve finally created a Books Turn Muggles Into Wizards tote bag. It’s perfect for transporting books of all shapes and sizes. It’s possible that this bag may be useful in transporting non-literary goods and objects, but so far, we’ve only used it for books. That’s currently the only use we’re comfortable advertising. This Equality FTW exclusive won’t be available in our online store. 18" x 13" x 6" canvas bag with 25” handles. Please add $10 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>35</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337059" data-name="Wizard Activist Shirt">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$40</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Wizard Activist Shirt
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>All of our favorite characters were both wizards and activists: Harry Potter, Hermione Granger, Albus Dumbledore, Remus Lupin, Minerva McGonagall, Neville Longbottom, Luna Lovegood, and pretty much anyone named Weasley (except maybe Percy). Now’s your chance to join the club. This shirt is exclusive to the HPA’s 2014 Equality FTW campaign. We’ll be printing these on American Apparel t-shirts. Please add $10 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>62</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337070" data-name="Subscription to the W.A.N.D.">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$40</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Subscription to the W.A.N.D.
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Earlier this year we started publishing our own quarterly magazine, the W.A.N.D. (Wizard Activist News Dispatch). This is the first time we’ve offered subscriptions to the magazine. A $40 donation gets you four issues, delivered directly to your door (by owls). Please add $10 for shipping outside the US.</span></div>
+    <div class="i-note">
+        <b>7</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337029" data-name="John Green Signed Poster">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$50</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">John Green Signed Poster
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>During our fundraiser last year, John Green gave us an excerpt from Augustus Waters' favorite book: The Price of Dawn. We held a cover design contest and the winner was Risa Rodil. This year, we’re printing posters of Risa’s winning book cover and John Green will be signing a very limited number . This poster is only available during Equality FTW and will never be reprinted! Please add $10 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>0</b> out of <b>50</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2349793" data-name="Hank Green Signed Tour Poster">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$50</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Hank Green Signed Tour Poster
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>SPECIAL PRICE: These posters come to us from Hank Green’s recent summer tour with Harry and the Potters, Driftless Pony Club, Andrew Huang and Rob Scallon. The posters  SOLD OUT during the tour, but we managed to put a few aside for this fundraiser. These posters are screenprinted on 100 lb. French Paper and signed by Hank and all the other bands from the tour. Dimensions are 18” x 24.” Please add $10 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>November 2014</b></div>
+    <div class="i-note">
+        <b>1</b> out of <b>20</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2345243" data-name="Evanna Lynch Signed Poster">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$60</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Evanna Lynch Signed Poster
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>EARLY BIRD SPECIAL: Evanna Lynch knows better than anyone that Books Turn Muggles Into Wizards. We’re sure you already know that Evanna was an enormous Harry Potter fan before she was cast in the role of Luna Lovegood for the Harry Potter films. She’s lived the dream and that’s why we’re psyched that she’ll be signing our awesome Books Turn Muggles Into Wizards posters. Only 20 available at this price!</span></div>
+      <div class="i-note">Estimated delivery: <b>November 2014</b></div>
+    <div class="i-note">
+        <b>6</b> out of <b>20</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337065" data-name="Team StarKid Signed Poster">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$75</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Team StarKid Signed Poster
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>While we were at LeakyCon, we had a bunch of StarKids sign a handful of our Books Turn Muggles Into Wizards posters. We have a super-limited quantity of these. The posters are signed by Brian Holden, Nick Lang, Meredith Stepien, Joe Moses, Dylan Saunders, Brian Rosenthal, Tessa Netting and more. Please add $10 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>November 2014</b></div>
+    <div class="i-note">
+        <b>5</b> out of <b>15</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337073" data-name="GeekyCon Rehearsal Ticket">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$75</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">GeekyCon Rehearsal Ticket
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Equality FTW EXCLUSIVE: GeekyCon has become renowned for their epic opening ceremonies. Now you have a chance to get a behind-the-scenes look at how they make the magic happen. Witness the madness of putting together this epic spectacle with less than a day of rehearsal. This is only available through the Equality FTW campaign and does not include admission to GeekyCon 2015.</span></div>
+      <div class="i-note">Estimated delivery: <b>July 2015</b></div>
+    <div class="i-note">
+        <b>10</b> out of <b>50</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2345274" data-name="Nerdfighter Bundle">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$80</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Nerdfighter Bundle
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Donating to the HPA is a great way to help decrease worldsuck. This package includes the Hank Green High School zine, Maureen Johnson’s sensuous fanfic sequel, our Book-specific Bookmarks and an unsigned copy of the Price of Dawn poster (only available in this bundle!). Get ‘em while you can!</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>9</b> out of <b>100</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337077" data-name="Evanna Lynch Voicemails">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$100</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Evanna Lynch Voicemails
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Do you want Luna Lovegood’s ethereal voice as your outgoing voicemail message? Evanna Lynch has agreed to record personalized greetings to let your friends know that you can’t answer their calls because you’re either out hunting crumple-horned snorkacks or you’ve been detained by nargles. SUPER LIMITED!</span></div>
+      <div class="i-note">Estimated delivery: <b>January 2015</b></div>
+    <div class="i-note">
+        <b>2</b> out of <b>20</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337710" data-name="Wizard Activist Starter Kit">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$125</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Wizard Activist Starter Kit
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>This package has all you need to get started as a wizard activist. It includes our Books Turn Muggles Into Wizards tote, a one-year subscription to the W.A.N.D., the Wizard Activist t-shirt and our book-specific bookmarks. We’ll save you some galleons because this is $140 in perks for $125. Please add $20 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>11</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2339878" data-name="Evanna Lynch Signed HP Books">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$125</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Evanna Lynch Signed HP Books
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>EARLY BIRD SPECIAL: Get a $25 discount if you’re one of the first 25 people to snag this perk! Harry Potter Actor Evanna Lynch (Luna Lovegood) has always been an amazing friend to the HPA. She’s helping our campaign this year by autographing hardcover copies of Harry Potter and the Prisoner of Azkaban. Donate now because this one is super-limited!</span></div>
+      <div class="i-note">Estimated delivery: <b>January 2015</b></div>
+    <div class="i-note">
+        <b>11</b> out of <b>25</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337034" data-name="Tabling Kit for HPA Chapters">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$150</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Tabling Kit for HPA Chapters
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Chapters! Make the most of your IRL appearances with this exclusive tabling kit. You’ll have everything you need to attract a crowd and get them signed on to your mission, including a 2’ x 6’ HPA logo banner, two HPA logo t-shirts, a Books Turn Muggles Into Wizards journal for record keeping, branded email lists, Dumbledore cards, HPA Chapters logo buttons, and DFTBA shop cards. Your next campaign is sure to be a huge success! Please add $30 for shipping outside the US.</span></div>
+    <div class="i-note">
+        <b>2</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2337737" data-name="Ultimate Hermione Pack">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$175</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">Ultimate Hermione Pack
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>While we understand the desire to transfigure yourself into Hermione, we advise against attempting such magic without McGonagall’s permission. In the meantime, this perk helps ensure you’re as well-outfitted as Hermione. You get our Wizard Activist t-shirt, the Books Turn Muggles Into Wizards tote, a subscription to the W.A.N.D., our book-specific bookmarks, a classy Books Turn Muggles Into Wizards Journal and a Hang In There, Baby Crookshanks poster. Please add $25 for shipping outside the US.</span></div>
+      <div class="i-note">Estimated delivery: <b>December 2014</b></div>
+    <div class="i-note">
+        <b>9</b> claimed
+    </div>
+  </div>
+</div>
+<div class="perk-item  " id="2338155" data-name="GeekyCon 2015 Registration">
+  <div class="amount-column">
+    <label><span class="currency currency-medium"><span>$250</span><em>USD</em></span></label>
+  </div>
+
+  <div class="contributewrap clearfix">
+    <div class="perk_title">GeekyCon 2015 Registration
+      <span class="js-change-perk-button" style="display: none;">Change</span>
+      <span class="js-selected-text" style="display: none;">Selected</span>
+    </div>
+    <div class="perk_descrip"><span>Secure your registration for the biggest, nerdiest, most-awesome fandom celebration of the year and feel good about giving to charity while you do it. Taking place from July 30th to August 2nd in Orlando, FL, GeekyCon is a multi-fandom conference like you’ve never seen before. This perk comes bundled with new friends, amazing memories, and one of the best experiences of your life. This is a general registration to GeekyCon 2015.</span></div>
+    <div class="i-note">
+        <b>0</b> out of <b>5</b> claimed
+    </div>
+  </div>
+</div>
+</div>
+
+      </div>
+    
+    <div class="contribute-step-2 i-musty-background i-contribute-box js-contribute-box" 
+      data-variant="">
+      
+
+        <h2 class="js-contribute-menu-header">How much would you like to contribute?</h2>
+        <div id="js-contribute-standard-location">
+          <div class="js-contribute-box-wrapper" id="js-contribute-menu">
+            <div class="i-currency-field js-currency-field">
+              <input class="i-text-field" id="pledge_amt_gross" name="pledge[amt_gross]" size="30" type="text" value="20" />
+              <label for="pledge_amt_gross">$</label>
+              <span>USD</span>
+            </div>
+            <div class="i-appearance">
+              <input name="pledge[appearance]" type="hidden" value="STAP_VSBL" /><input class="js-anonymous-box" id="pledge_appearance" name="pledge[appearance]" type="checkbox" value="STAP_AMNT" />
+              <label for="pledge_appearance">Don&#x27;t display my name on the campaign page.</label>
+              <p class="js-anonymous-info" style="display:none;">If checked, only the campaigner will see your name. You will have more options to adjust your contribution&#x27;s visibility after you make your contribution.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="contribute-step-2" style="">
+        <div class="i-musty-background i-contact-info group">
+          <h2>Contact Information
+            <span class="i-note">(for your receipt)</span>
+          </h2>
+            <div class="row i-field-row">
+              <div class="col-sm-2">
+                <label for="pledge_email">Email</label>
+              </div>
+              <div class="col-sm-8">
+                <input class="i-text-field" id="pledge_email" name="pledge[email]" size="30" type="email" />
+              </div>
+            </div>
+            <div class="row i-field-row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <input checked="checked" id="soft_account_opt_in" name="soft_account_opt_in" type="checkbox" value="1" />
+                <label for="soft_account_opt_in">I&#x27;d like to receive Indiegogo&#x27;s weekly newsletter</label>
+              </div>
+            </div>
+        </div>
+        
+<div class="i-musty-background i-shipping-info group js-shipping-address">
+  <h2>Shipping Information
+    <span class="i-note">(Just for the campaigner to send your perk to you!)</span>
+  </h2>
+  <div class="row i-field-row">
+    <div class="col-sm-4">
+      <label class="i-block-label" for="pledge_shipping_name">Name</label>
+      <input class="i-text-field" id="pledge_shipping_name" name="pledge[shipping_name]" size="30" type="text" />
+    </div>
+  </div>
+  <div class="row i-field-row">
+    <div class="col-sm-4">
+      <label class="i-block-label" for="pledge_shipping_country">Country</label>
+      <select id="pledge_shipping_country" name="pledge[shipping_country]"><option value="" class="placeholder"></option>
+<option value="CTRY_US" data-alternative-spellings="US USA United States of America" data-relevancy-booster="3.0">United States</option>
+<option value="CTRY_AU" data-alternative-spellings="AU" data-relevancy-booster="1.5">Australia</option>
+<option value="CTRY_CA" data-alternative-spellings="CA" data-relevancy-booster="2.0">Canada</option>
+<option value="CTRY_DE" data-alternative-spellings="DE Bundesrepublik Deutschland" data-relevancy-booster="3.0">Germany</option>
+<option value="CTRY_GB" data-alternative-spellings="GB Great Britain England UK Wales Scotland Northern Ireland" data-relevancy-booster="2.5">United Kingdom</option>
+<option value="">----</option>
+<option value="CTRY_AF" data-alternative-spellings="AF" data-relevancy-booster="">Afghanistan</option>
+<option value="CTRY_AX" data-alternative-spellings="AX Aaland Aland" data-relevancy-booster="0.5">Aland Islands</option>
+<option value="CTRY_AL" data-alternative-spellings="AL" data-relevancy-booster="">Albania</option>
+<option value="CTRY_DZ" data-alternative-spellings="DZ" data-relevancy-booster="">Algeria</option>
+<option value="CTRY_AS" data-alternative-spellings="AS" data-relevancy-booster="0.5">American Samoa</option>
+<option value="CTRY_AD" data-alternative-spellings="AD" data-relevancy-booster="0.5">Andorra</option>
+<option value="CTRY_AO" data-alternative-spellings="AO" data-relevancy-booster="">Angola</option>
+<option value="CTRY_AI" data-alternative-spellings="AI" data-relevancy-booster="0.5">Anguilla</option>
+<option value="CTRY_AQ" data-alternative-spellings="AQ" data-relevancy-booster="0.5">Antarctica</option>
+<option value="CTRY_AG" data-alternative-spellings="AG" data-relevancy-booster="0.5">Antigua and Barbuda</option>
+<option value="CTRY_AR" data-alternative-spellings="AR" data-relevancy-booster="">Argentina</option>
+<option value="CTRY_AM" data-alternative-spellings="AM" data-relevancy-booster="">Armenia</option>
+<option value="CTRY_AW" data-alternative-spellings="AW" data-relevancy-booster="0.5">Aruba</option>
+<option value="CTRY_AT" data-alternative-spellings="AT Österreich Osterreich Oesterreich" data-relevancy-booster="">Austria</option>
+<option value="CTRY_AZ" data-alternative-spellings="AZ" data-relevancy-booster="">Azerbaijan</option>
+<option value="CTRY_BS" data-alternative-spellings="BS" data-relevancy-booster="">Bahamas</option>
+<option value="CTRY_BH" data-alternative-spellings="BH" data-relevancy-booster="">Bahrain</option>
+<option value="CTRY_BD" data-alternative-spellings="BD" data-relevancy-booster="2.0">Bangladesh</option>
+<option value="CTRY_BB" data-alternative-spellings="BB" data-relevancy-booster="">Barbados</option>
+<option value="CTRY_BY" data-alternative-spellings="BY" data-relevancy-booster="">Belarus</option>
+<option value="CTRY_BE" data-alternative-spellings="BE België Belgie Belgien Belgique" data-relevancy-booster="1.5">Belgium</option>
+<option value="CTRY_BZ" data-alternative-spellings="BZ" data-relevancy-booster="">Belize</option>
+<option value="CTRY_BJ" data-alternative-spellings="BJ" data-relevancy-booster="">Benin</option>
+<option value="CTRY_BM" data-alternative-spellings="BM" data-relevancy-booster="0.5">Bermuda</option>
+<option value="CTRY_BT" data-alternative-spellings="BT" data-relevancy-booster="">Bhutan</option>
+<option value="CTRY_BO" data-alternative-spellings="BO" data-relevancy-booster="">Bolivia</option>
+<option value="CTRY_BA" data-alternative-spellings="BA" data-relevancy-booster="">Bosnia and Herzegovina</option>
+<option value="CTRY_BW" data-alternative-spellings="BW" data-relevancy-booster="">Botswana</option>
+<option value="CTRY_BV" data-alternative-spellings="BV" data-relevancy-booster="">Bouvet Island</option>
+<option value="CTRY_BR" data-alternative-spellings="BR Brasil" data-relevancy-booster="2.0">Brazil</option>
+<option value="CTRY_IO" data-alternative-spellings="IO" data-relevancy-booster="">British Indian Ocean Territory</option>
+<option value="CTRY_BN" data-alternative-spellings="BN" data-relevancy-booster="">Brunei Darussalam</option>
+<option value="CTRY_BG" data-alternative-spellings="BG" data-relevancy-booster="">Bulgaria</option>
+<option value="CTRY_BF" data-alternative-spellings="BF" data-relevancy-booster="">Burkina Faso</option>
+<option value="CTRY_BI" data-alternative-spellings="BI" data-relevancy-booster="">Burundi</option>
+<option value="CTRY_KH" data-alternative-spellings="KH" data-relevancy-booster="">Cambodia</option>
+<option value="CTRY_CM" data-alternative-spellings="CM" data-relevancy-booster="">Cameroon</option>
+<option value="CTRY_CV" data-alternative-spellings="CV" data-relevancy-booster="">Cape Verde</option>
+<option value="CTRY_KY" data-alternative-spellings="KY" data-relevancy-booster="0.5">Cayman Islands</option>
+<option value="CTRY_CF" data-alternative-spellings="CF" data-relevancy-booster="">Central African Republic</option>
+<option value="CTRY_TD" data-alternative-spellings="TD" data-relevancy-booster="">Chad</option>
+<option value="CTRY_CL" data-alternative-spellings="CL" data-relevancy-booster="">Chile</option>
+<option value="CTRY_CN" data-alternative-spellings="CN Zhongguo Zhonghua Peoples Republic" data-relevancy-booster="">China</option>
+<option value="CTRY_CX" data-alternative-spellings="CX" data-relevancy-booster="0.5">Christmas Island</option>
+<option value="CTRY_CC" data-alternative-spellings="CC" data-relevancy-booster="0.5">Cocos (Keeling) Islands</option>
+<option value="CTRY_CO" data-alternative-spellings="CO" data-relevancy-booster="">Colombia</option>
+<option value="CTRY_KM" data-alternative-spellings="KM" data-relevancy-booster="">Comoros</option>
+<option value="CTRY_CG" data-alternative-spellings="CG" data-relevancy-booster="">Congo</option>
+<option value="CTRY_CD" data-alternative-spellings="CD" data-relevancy-booster="">Congo, the Democratic Republic of the</option>
+<option value="CTRY_CK" data-alternative-spellings="CK" data-relevancy-booster="0.5">Cook Islands</option>
+<option value="CTRY_CR" data-alternative-spellings="CR" data-relevancy-booster="">Costa Rica</option>
+<option value="CTRY_HR" data-alternative-spellings="HR Hrvatska" data-relevancy-booster="">Croatia</option>
+<option value="CTRY_CY" data-alternative-spellings="CY" data-relevancy-booster="">Cyprus</option>
+<option value="CTRY_CZ" data-alternative-spellings="CZ Česká Ceska" data-relevancy-booster="">Czech Republic</option>
+<option value="CTRY_DK" data-alternative-spellings="DK Danmark" data-relevancy-booster="1.5">Denmark</option>
+<option value="CTRY_DJ" data-alternative-spellings="DJ" data-relevancy-booster="">Djibouti</option>
+<option value="CTRY_DM" data-alternative-spellings="DM" data-relevancy-booster="0.5">Dominica</option>
+<option value="CTRY_DO" data-alternative-spellings="DO" data-relevancy-booster="">Dominican Republic</option>
+<option value="CTRY_EC" data-alternative-spellings="EC" data-relevancy-booster="">Ecuador</option>
+<option value="CTRY_EG" data-alternative-spellings="EG" data-relevancy-booster="1.5">Egypt</option>
+<option value="CTRY_SV" data-alternative-spellings="SV" data-relevancy-booster="">El Salvador</option>
+<option value="CTRY_GQ" data-alternative-spellings="GQ" data-relevancy-booster="">Equatorial Guinea</option>
+<option value="CTRY_ER" data-alternative-spellings="ER" data-relevancy-booster="">Eritrea</option>
+<option value="CTRY_EE" data-alternative-spellings="EE Eesti" data-relevancy-booster="">Estonia</option>
+<option value="CTRY_ET" data-alternative-spellings="ET" data-relevancy-booster="">Ethiopia</option>
+<option value="CTRY_FK" data-alternative-spellings="FK" data-relevancy-booster="0.5">Falkland Islands (Malvinas)</option>
+<option value="CTRY_FO" data-alternative-spellings="FO Føroyar Færøerne" data-relevancy-booster="0.5">Faroe Islands</option>
+<option value="CTRY_FJ" data-alternative-spellings="FJ" data-relevancy-booster="">Fiji</option>
+<option value="CTRY_FI" data-alternative-spellings="FI Suomi" data-relevancy-booster="">Finland</option>
+<option value="CTRY_FR" data-alternative-spellings="FR République Française" data-relevancy-booster="2.5">France</option>
+<option value="CTRY_GF" data-alternative-spellings="GF" data-relevancy-booster="">French Guiana</option>
+<option value="CTRY_PF" data-alternative-spellings="PF" data-relevancy-booster="">French Polynesia</option>
+<option value="CTRY_TF" data-alternative-spellings="TF" data-relevancy-booster="">French Southern Territories</option>
+<option value="CTRY_GA" data-alternative-spellings="GA" data-relevancy-booster="">Gabon</option>
+<option value="CTRY_GM" data-alternative-spellings="GM" data-relevancy-booster="">Gambia</option>
+<option value="CTRY_GE" data-alternative-spellings="GE" data-relevancy-booster="">Georgia</option>
+<option value="CTRY_GH" data-alternative-spellings="GH" data-relevancy-booster="">Ghana</option>
+<option value="CTRY_GI" data-alternative-spellings="GI" data-relevancy-booster="0.5">Gibraltar</option>
+<option value="CTRY_GR" data-alternative-spellings="GR" data-relevancy-booster="1.5">Greece</option>
+<option value="CTRY_GL" data-alternative-spellings="GL Grønland" data-relevancy-booster="0.5">Greenland</option>
+<option value="CTRY_GD" data-alternative-spellings="GD" data-relevancy-booster="">Grenada</option>
+<option value="CTRY_GP" data-alternative-spellings="GP" data-relevancy-booster="">Guadeloupe</option>
+<option value="CTRY_GU" data-alternative-spellings="GU" data-relevancy-booster="">Guam</option>
+<option value="CTRY_GT" data-alternative-spellings="GT" data-relevancy-booster="">Guatemala</option>
+<option value="CTRY_GN" data-alternative-spellings="GN" data-relevancy-booster="">Guinea</option>
+<option value="CTRY_GW" data-alternative-spellings="GW" data-relevancy-booster="">Guinea-Bissau</option>
+<option value="CTRY_GY" data-alternative-spellings="GY" data-relevancy-booster="">Guyana</option>
+<option value="CTRY_HT" data-alternative-spellings="HT" data-relevancy-booster="">Haiti</option>
+<option value="CTRY_HM" data-alternative-spellings="HM" data-relevancy-booster="">Heard Island and McDonald Islands</option>
+<option value="CTRY_VA" data-alternative-spellings="VA" data-relevancy-booster="0.5">Holy See (Vatican City State)</option>
+<option value="CTRY_HN" data-alternative-spellings="HN" data-relevancy-booster="">Honduras</option>
+<option value="CTRY_HK" data-alternative-spellings="HK" data-relevancy-booster="">Hong Kong</option>
+<option value="CTRY_HU" data-alternative-spellings="HU" data-relevancy-booster="">Hungary</option>
+<option value="CTRY_IS" data-alternative-spellings="IS Island" data-relevancy-booster="">Iceland</option>
+<option value="CTRY_IN" data-alternative-spellings="IN" data-relevancy-booster="3.0">India</option>
+<option value="CTRY_ID" data-alternative-spellings="ID" data-relevancy-booster="2.0">Indonesia</option>
+<option value="CTRY_IQ" data-alternative-spellings="IQ" data-relevancy-booster="">Iraq</option>
+<option value="CTRY_IE" data-alternative-spellings="IE Éire" data-relevancy-booster="1.2">Ireland</option>
+<option value="CTRY_IL" data-alternative-spellings="IL" data-relevancy-booster="">Israel</option>
+<option value="CTRY_IT" data-alternative-spellings="IT Italia" data-relevancy-booster="2.0">Italy</option>
+<option value="CTRY_CI" data-alternative-spellings="CI Cote dIvoire Ivory Coast" data-relevancy-booster="">Ivory Coast</option>
+<option value="CTRY_JM" data-alternative-spellings="JM" data-relevancy-booster="">Jamaica</option>
+<option value="CTRY_JP" data-alternative-spellings="JP Nippon Nihon" data-relevancy-booster="2.5">Japan</option>
+<option value="CTRY_JO" data-alternative-spellings="JO" data-relevancy-booster="">Jordan</option>
+<option value="CTRY_KZ" data-alternative-spellings="KZ" data-relevancy-booster="">Kazakhstan</option>
+<option value="CTRY_KE" data-alternative-spellings="KE" data-relevancy-booster="">Kenya</option>
+<option value="CTRY_KI" data-alternative-spellings="KI" data-relevancy-booster="">Kiribati</option>
+<option value="CTRY_KR" data-alternative-spellings="KR South Korea" data-relevancy-booster="1.5">Korea, Republic of</option>
+<option value="CTRY_KW" data-alternative-spellings="KW" data-relevancy-booster="">Kuwait</option>
+<option value="CTRY_KG" data-alternative-spellings="KG" data-relevancy-booster="">Kyrgyzstan</option>
+<option value="CTRY_LA" data-alternative-spellings="LA" data-relevancy-booster="">Lao People&#x27;s Democratic Republic</option>
+<option value="CTRY_LV" data-alternative-spellings="LV" data-relevancy-booster="">Latvia</option>
+<option value="CTRY_LB" data-alternative-spellings="LB" data-relevancy-booster="">Lebanon</option>
+<option value="CTRY_LS" data-alternative-spellings="LS" data-relevancy-booster="">Lesotho</option>
+<option value="CTRY_LR" data-alternative-spellings="LR" data-relevancy-booster="">Liberia</option>
+<option value="CTRY_LY" data-alternative-spellings="LY" data-relevancy-booster="">Libya</option>
+<option value="CTRY_LI" data-alternative-spellings="LI" data-relevancy-booster="">Liechtenstein</option>
+<option value="CTRY_LT" data-alternative-spellings="LT" data-relevancy-booster="">Lithuania</option>
+<option value="CTRY_LU" data-alternative-spellings="LU" data-relevancy-booster="">Luxembourg</option>
+<option value="CTRY_MO" data-alternative-spellings="MO" data-relevancy-booster="">Macao</option>
+<option value="CTRY_MK" data-alternative-spellings="MK" data-relevancy-booster="">Macedonia</option>
+<option value="CTRY_MG" data-alternative-spellings="MG" data-relevancy-booster="">Madagascar</option>
+<option value="CTRY_MW" data-alternative-spellings="MW" data-relevancy-booster="">Malawi</option>
+<option value="CTRY_MY" data-alternative-spellings="MY" data-relevancy-booster="">Malaysia</option>
+<option value="CTRY_MV" data-alternative-spellings="MV" data-relevancy-booster="">Maldives</option>
+<option value="CTRY_ML" data-alternative-spellings="ML" data-relevancy-booster="">Mali</option>
+<option value="CTRY_MT" data-alternative-spellings="MT" data-relevancy-booster="">Malta</option>
+<option value="CTRY_MH" data-alternative-spellings="MH" data-relevancy-booster="0.5">Marshall Islands</option>
+<option value="CTRY_MQ" data-alternative-spellings="MQ" data-relevancy-booster="">Martinique</option>
+<option value="CTRY_MR" data-alternative-spellings="MR" data-relevancy-booster="">Mauritania</option>
+<option value="CTRY_MU" data-alternative-spellings="MU" data-relevancy-booster="">Mauritius</option>
+<option value="CTRY_YT" data-alternative-spellings="YT" data-relevancy-booster="">Mayotte</option>
+<option value="CTRY_MX" data-alternative-spellings="MX Mexicanos" data-relevancy-booster="1.5">Mexico</option>
+<option value="CTRY_FM" data-alternative-spellings="FM" data-relevancy-booster="">Micronesia, Federated States of</option>
+<option value="CTRY_MD" data-alternative-spellings="MD" data-relevancy-booster="">Moldova, Republic of</option>
+<option value="CTRY_MC" data-alternative-spellings="MC" data-relevancy-booster="">Monaco</option>
+<option value="CTRY_MN" data-alternative-spellings="MN" data-relevancy-booster="">Mongolia</option>
+<option value="CTRY_ME" data-alternative-spellings="ME" data-relevancy-booster="">Montenegro</option>
+<option value="CTRY_MS" data-alternative-spellings="MS" data-relevancy-booster="0.5">Montserrat</option>
+<option value="CTRY_MA" data-alternative-spellings="MA" data-relevancy-booster="">Morocco</option>
+<option value="CTRY_MZ" data-alternative-spellings="MZ" data-relevancy-booster="">Mozambique</option>
+<option value="CTRY_MM" data-alternative-spellings="MM Burma Myanmar" data-relevancy-booster="">Myanmar</option>
+<option value="CTRY_NA" data-alternative-spellings="NA" data-relevancy-booster="">Namibia</option>
+<option value="CTRY_NR" data-alternative-spellings="NR" data-relevancy-booster="0.5">Nauru</option>
+<option value="CTRY_NP" data-alternative-spellings="NP" data-relevancy-booster="">Nepal</option>
+<option value="CTRY_NL" data-alternative-spellings="NL Holland Nederland" data-relevancy-booster="1.5">Netherlands</option>
+<option value="CTRY_AN" data-alternative-spellings="AN" data-relevancy-booster="">Netherlands Antilles</option>
+<option value="CTRY_NC" data-alternative-spellings="NC" data-relevancy-booster="0.5">New Caledonia</option>
+<option value="CTRY_NZ" data-alternative-spellings="NZ" data-relevancy-booster="">New Zealand</option>
+<option value="CTRY_NI" data-alternative-spellings="NI" data-relevancy-booster="">Nicaragua</option>
+<option value="CTRY_NE" data-alternative-spellings="NE" data-relevancy-booster="">Niger</option>
+<option value="CTRY_NG" data-alternative-spellings="NG" data-relevancy-booster="1.5">Nigeria</option>
+<option value="CTRY_NU" data-alternative-spellings="NU" data-relevancy-booster="0.5">Niue</option>
+<option value="CTRY_NF" data-alternative-spellings="NF" data-relevancy-booster="0.5">Norfolk Island</option>
+<option value="CTRY_MP" data-alternative-spellings="MP" data-relevancy-booster="0.5">Northern Mariana Islands</option>
+<option value="CTRY_NO" data-alternative-spellings="NO Norge Noreg" data-relevancy-booster="1.5">Norway</option>
+<option value="CTRY_OM" data-alternative-spellings="OM" data-relevancy-booster="">Oman</option>
+<option value="CTRY_PK" data-alternative-spellings="PK" data-relevancy-booster="2.0">Pakistan</option>
+<option value="CTRY_PW" data-alternative-spellings="PW" data-relevancy-booster="0.5">Palau</option>
+<option value="CTRY_PS" data-alternative-spellings="PS Palestinian Territory, Occupied" data-relevancy-booster="">Palestinian Territory, Occupied</option>
+<option value="CTRY_PA" data-alternative-spellings="PA" data-relevancy-booster="">Panama</option>
+<option value="CTRY_PG" data-alternative-spellings="PG" data-relevancy-booster="">Papua New Guinea</option>
+<option value="CTRY_PY" data-alternative-spellings="PY" data-relevancy-booster="">Paraguay</option>
+<option value="CTRY_PE" data-alternative-spellings="PE" data-relevancy-booster="">Peru</option>
+<option value="CTRY_PH" data-alternative-spellings="PH" data-relevancy-booster="1.5">Philippines</option>
+<option value="CTRY_PN" data-alternative-spellings="PN" data-relevancy-booster="0.5">Pitcairn</option>
+<option value="CTRY_PL" data-alternative-spellings="PL" data-relevancy-booster="1.25">Poland</option>
+<option value="CTRY_PT" data-alternative-spellings="PT" data-relevancy-booster="1.5">Portugal</option>
+<option value="CTRY_PR" data-alternative-spellings="PR" data-relevancy-booster="">Puerto Rico</option>
+<option value="CTRY_QA" data-alternative-spellings="QA" data-relevancy-booster="">Qatar</option>
+<option value="CTRY_RO" data-alternative-spellings="RO" data-relevancy-booster="">Romania</option>
+<option value="CTRY_RU" data-alternative-spellings="RU Russia Rossiya" data-relevancy-booster="2.5">Russian Federation</option>
+<option value="CTRY_RW" data-alternative-spellings="RW" data-relevancy-booster="">Rwanda</option>
+<option value="CTRY_RE" data-alternative-spellings="RE Reunion" data-relevancy-booster="">Réunion</option>
+<option value="CTRY_SH" data-alternative-spellings="SH" data-relevancy-booster="0.5">Saint Helena</option>
+<option value="CTRY_KN" data-alternative-spellings="KN" data-relevancy-booster="0.5">Saint Kitts and Nevis</option>
+<option value="CTRY_LC" data-alternative-spellings="LC" data-relevancy-booster="0.5">Saint Lucia</option>
+<option value="CTRY_PM" data-alternative-spellings="PM" data-relevancy-booster="0.5">Saint Pierre and Miquelon</option>
+<option value="CTRY_VC" data-alternative-spellings="VC" data-relevancy-booster="0.5">Saint Vincent and the Grenadines</option>
+<option value="CTRY_WS" data-alternative-spellings="WS" data-relevancy-booster="">Samoa</option>
+<option value="CTRY_SM" data-alternative-spellings="SM" data-relevancy-booster="">San Marino</option>
+<option value="CTRY_ST" data-alternative-spellings="ST" data-relevancy-booster="">Sao Tome and Principe</option>
+<option value="CTRY_SA" data-alternative-spellings="SA" data-relevancy-booster="">Saudi Arabia</option>
+<option value="CTRY_SN" data-alternative-spellings="SN" data-relevancy-booster="">Senegal</option>
+<option value="CTRY_RS" data-alternative-spellings="RS" data-relevancy-booster="">Serbia</option>
+<option value="CTRY_SC" data-alternative-spellings="SC" data-relevancy-booster="0.5">Seychelles</option>
+<option value="CTRY_SL" data-alternative-spellings="SL" data-relevancy-booster="">Sierra Leone</option>
+<option value="CTRY_SG" data-alternative-spellings="SG" data-relevancy-booster="">Singapore</option>
+<option value="CTRY_SK" data-alternative-spellings="SK" data-relevancy-booster="">Slovakia</option>
+<option value="CTRY_SI" data-alternative-spellings="SI" data-relevancy-booster="">Slovenia</option>
+<option value="CTRY_SB" data-alternative-spellings="SB" data-relevancy-booster="">Solomon Islands</option>
+<option value="CTRY_SO" data-alternative-spellings="SO" data-relevancy-booster="">Somalia</option>
+<option value="CTRY_ZA" data-alternative-spellings="ZA" data-relevancy-booster="">South Africa</option>
+<option value="CTRY_GS" data-alternative-spellings="GS" data-relevancy-booster="">South Georgia and the South Sandwich Islands</option>
+<option value="CTRY_ES" data-alternative-spellings="ES España Espana" data-relevancy-booster="2.0">Spain</option>
+<option value="CTRY_LK" data-alternative-spellings="LK" data-relevancy-booster="">Sri Lanka</option>
+<option value="CTRY_SR" data-alternative-spellings="SR" data-relevancy-booster="">Suriname</option>
+<option value="CTRY_SJ" data-alternative-spellings="SJ" data-relevancy-booster="0.5">Svalbard and Jan Mayen</option>
+<option value="CTRY_SZ" data-alternative-spellings="SZ" data-relevancy-booster="">Swaziland</option>
+<option value="CTRY_SE" data-alternative-spellings="SE Sverige" data-relevancy-booster="1.5">Sweden</option>
+<option value="CTRY_CH" data-alternative-spellings="CH Swiss Confederation Schweiz Suisse Svizzera Svizra" data-relevancy-booster="1.5">Switzerland</option>
+<option value="CTRY_TW" data-alternative-spellings="TW" data-relevancy-booster="">Taiwan</option>
+<option value="CTRY_TJ" data-alternative-spellings="TJ" data-relevancy-booster="">Tajikistan</option>
+<option value="CTRY_TZ" data-alternative-spellings="TZ" data-relevancy-booster="">Tanzania, United Republic of</option>
+<option value="CTRY_TH" data-alternative-spellings="TH" data-relevancy-booster="">Thailand</option>
+<option value="CTRY_TL" data-alternative-spellings="TL" data-relevancy-booster="">Timor-Leste</option>
+<option value="CTRY_TG" data-alternative-spellings="TG" data-relevancy-booster="">Togo</option>
+<option value="CTRY_TK" data-alternative-spellings="TK" data-relevancy-booster="0.5">Tokelau</option>
+<option value="CTRY_TO" data-alternative-spellings="TO" data-relevancy-booster="">Tonga</option>
+<option value="CTRY_TT" data-alternative-spellings="TT" data-relevancy-booster="">Trinidad and Tobago</option>
+<option value="CTRY_TN" data-alternative-spellings="TN" data-relevancy-booster="">Tunisia</option>
+<option value="CTRY_TR" data-alternative-spellings="TR Türkiye Turkiye" data-relevancy-booster="">Turkey</option>
+<option value="CTRY_TM" data-alternative-spellings="TM" data-relevancy-booster="">Turkmenistan</option>
+<option value="CTRY_TC" data-alternative-spellings="TC" data-relevancy-booster="0.5">Turks and Caicos Islands</option>
+<option value="CTRY_TV" data-alternative-spellings="TV" data-relevancy-booster="0.5">Tuvalu</option>
+<option value="CTRY_UG" data-alternative-spellings="UG" data-relevancy-booster="">Uganda</option>
+<option value="CTRY_UA" data-alternative-spellings="UA Ukrayina" data-relevancy-booster="">Ukraine</option>
+<option value="CTRY_AE" data-alternative-spellings="AE UAE Emirates" data-relevancy-booster="">United Arab Emirates</option>
+<option value="CTRY_UM" data-alternative-spellings="UM" data-relevancy-booster="">United States Minor Outlying Islands</option>
+<option value="CTRY_UY" data-alternative-spellings="UY" data-relevancy-booster="">Uruguay</option>
+<option value="CTRY_UZ" data-alternative-spellings="UZ" data-relevancy-booster="">Uzbekistan</option>
+<option value="CTRY_VU" data-alternative-spellings="VU" data-relevancy-booster="">Vanuatu</option>
+<option value="CTRY_VE" data-alternative-spellings="VE" data-relevancy-booster="">Venezuela</option>
+<option value="CTRY_VN" data-alternative-spellings="VN" data-relevancy-booster="1.5">Vietnam</option>
+<option value="CTRY_VG" data-alternative-spellings="VG" data-relevancy-booster="">Virgin Islands, British</option>
+<option value="CTRY_VI" data-alternative-spellings="VG" data-relevancy-booster="0.5">Virgin Islands, U.S.</option>
+<option value="CTRY_WF" data-alternative-spellings="VI" data-relevancy-booster="0.5">Wallis and Futuna</option>
+<option value="CTRY_EH" data-alternative-spellings="EH" data-relevancy-booster="">Western Sahara</option>
+<option value="CTRY_YE" data-alternative-spellings="YE" data-relevancy-booster="">Yemen</option>
+<option value="CTRY_ZM" data-alternative-spellings="ZM" data-relevancy-booster="">Zambia</option>
+<option value="CTRY_ZW" data-alternative-spellings="ZW" data-relevancy-booster="">Zimbabwe</option></select>
+    </div>
+  </div>
+  <div class="row i-field-row">
+    <div class="col-sm-4">
+      <label class="i-block-label" for="pledge_shipping_address" id="label_shipping_address">Address Line 1 (House number or name)</label>
+      <input class="i-text-field" id="pledge_shipping_address" name="pledge[shipping_address]" size="30" type="text" />
+    </div>
+    <div class="col-sm-4">
+      <label class="i-block-label" for="pledge_shipping_address_line_two" id="label_shipping_address_line_two">Address Line 2 (Street name, apt, suite, floor, etc)</label>
+      <input class="i-text-field" id="pledge_shipping_address_line_two" name="pledge[shipping_address_line_two]" size="30" type="text" />
+    </div>
+  </div>
+  <div class="row i-field-row">
+    <div class="col-sm-4">
+      <label class="i-block-label" for="pledge_shipping_city">City</label>
+      <input class="i-text-field" id="pledge_shipping_city" name="pledge[shipping_city]" size="30" type="text" />
+    </div>
+    <div class="col-sm-4" id="shipping_state_div">
+      <label class="i-block-label" for="pledge_shipping_state" id="label_shipping_state">State</label>
+      <select id="pledge_shipping_state" name="pledge[shipping_state]"></select>
+    </div>
+    <div class="col-sm-2">
+      <label class="i-block-label" for="pledge_shipping_zipcode" id="label_shipping_zipcode">ZIP Code</label>
+      <input class="i-text-field" id="pledge_shipping_zipcode" name="pledge[shipping_zipcode]" size="30" type="text" />
+    </div>
+  </div>
+</div>
+<div style="display: none;">
+  <select id="shipping_province" name="shipping_province"><option value="" class="placeholder"></option>
+<option value="STTE_CAAB" data-alternative-spellings="AB" data-relevancy-booster="">Alberta</option>
+<option value="STTE_CABC" data-alternative-spellings="BC" data-relevancy-booster="">British Columbia</option>
+<option value="STTE_CAMB" data-alternative-spellings="MB" data-relevancy-booster="">Manitoba</option>
+<option value="STTE_CANB" data-alternative-spellings="NB" data-relevancy-booster="">New Brunswick</option>
+<option value="STTE_CANL" data-alternative-spellings="NL" data-relevancy-booster="">Newfoundland and Labrador</option>
+<option value="STTE_CANT" data-alternative-spellings="NT" data-relevancy-booster="">Northwest Territories</option>
+<option value="STTE_CANS" data-alternative-spellings="NS" data-relevancy-booster="">Nova Scotia</option>
+<option value="STTE_CANU" data-alternative-spellings="NU" data-relevancy-booster="">Nunavut</option>
+<option value="STTE_CAON" data-alternative-spellings="ON" data-relevancy-booster="">Ontario</option>
+<option value="STTE_CAPE" data-alternative-spellings="PE" data-relevancy-booster="">Prince Edward Island</option>
+<option value="STTE_CAQC" data-alternative-spellings="QC" data-relevancy-booster="">Quebec</option>
+<option value="STTE_CASK" data-alternative-spellings="SK" data-relevancy-booster="">Saskatchewan</option>
+<option value="STTE_CAYT" data-alternative-spellings="YT" data-relevancy-booster="">Yukon</option></select>
+  <select id="shipping_state" name="shipping_state"><option value="" class="placeholder"></option>
+<option value="STTE_USAL" data-alternative-spellings="AL" data-relevancy-booster="">Alabama</option>
+<option value="STTE_USAK" data-alternative-spellings="AK" data-relevancy-booster="">Alaska</option>
+<option value="STTE_USAZ" data-alternative-spellings="AZ" data-relevancy-booster="">Arizona</option>
+<option value="STTE_USAR" data-alternative-spellings="AR" data-relevancy-booster="">Arkansas</option>
+<option value="STTE_USAA" data-alternative-spellings="AA" data-relevancy-booster="">Armed Forces Americas</option>
+<option value="STTE_USAE" data-alternative-spellings="AE" data-relevancy-booster="">Armed Forces Europe</option>
+<option value="STTE_USAP" data-alternative-spellings="AP" data-relevancy-booster="">Armed Forces Pacific</option>
+<option value="STTE_USCA" data-alternative-spellings="CA" data-relevancy-booster="">California</option>
+<option value="STTE_USCO" data-alternative-spellings="CO" data-relevancy-booster="">Colorado</option>
+<option value="STTE_USCT" data-alternative-spellings="CT" data-relevancy-booster="">Connecticut</option>
+<option value="STTE_USDE" data-alternative-spellings="DE" data-relevancy-booster="">Delaware</option>
+<option value="STTE_USDC" data-alternative-spellings="DC" data-relevancy-booster="">District of Columbia</option>
+<option value="STTE_USFL" data-alternative-spellings="FL" data-relevancy-booster="">Florida</option>
+<option value="STTE_USGA" data-alternative-spellings="GA" data-relevancy-booster="">Georgia</option>
+<option value="STTE_USHI" data-alternative-spellings="HI" data-relevancy-booster="">Hawaii</option>
+<option value="STTE_USID" data-alternative-spellings="ID" data-relevancy-booster="">Idaho</option>
+<option value="STTE_USIL" data-alternative-spellings="IL" data-relevancy-booster="">Illinois</option>
+<option value="STTE_USIN" data-alternative-spellings="IN" data-relevancy-booster="">Indiana</option>
+<option value="STTE_USIA" data-alternative-spellings="IA" data-relevancy-booster="">Iowa</option>
+<option value="STTE_USKS" data-alternative-spellings="KS" data-relevancy-booster="">Kansas</option>
+<option value="STTE_USKY" data-alternative-spellings="KY" data-relevancy-booster="">Kentucky</option>
+<option value="STTE_USLA" data-alternative-spellings="LA" data-relevancy-booster="">Louisiana</option>
+<option value="STTE_USME" data-alternative-spellings="ME" data-relevancy-booster="">Maine</option>
+<option value="STTE_USMD" data-alternative-spellings="MD" data-relevancy-booster="">Maryland</option>
+<option value="STTE_USMA" data-alternative-spellings="MA" data-relevancy-booster="">Massachusetts</option>
+<option value="STTE_USMI" data-alternative-spellings="MI" data-relevancy-booster="">Michigan</option>
+<option value="STTE_USMN" data-alternative-spellings="MN" data-relevancy-booster="">Minnesota</option>
+<option value="STTE_USMS" data-alternative-spellings="MS" data-relevancy-booster="">Mississippi</option>
+<option value="STTE_USMO" data-alternative-spellings="MO" data-relevancy-booster="">Missouri</option>
+<option value="STTE_USMT" data-alternative-spellings="MT" data-relevancy-booster="">Montana</option>
+<option value="STTE_USNE" data-alternative-spellings="NE" data-relevancy-booster="">Nebraska</option>
+<option value="STTE_USNV" data-alternative-spellings="NV" data-relevancy-booster="">Nevada</option>
+<option value="STTE_USNH" data-alternative-spellings="NH" data-relevancy-booster="">New Hampshire</option>
+<option value="STTE_USNJ" data-alternative-spellings="NJ" data-relevancy-booster="">New Jersey</option>
+<option value="STTE_USNM" data-alternative-spellings="NM" data-relevancy-booster="">New Mexico</option>
+<option value="STTE_USNY" data-alternative-spellings="NY" data-relevancy-booster="">New York</option>
+<option value="STTE_USNC" data-alternative-spellings="NC" data-relevancy-booster="">North Carolina</option>
+<option value="STTE_USND" data-alternative-spellings="ND" data-relevancy-booster="">North Dakota</option>
+<option value="STTE_USOH" data-alternative-spellings="OH" data-relevancy-booster="">Ohio</option>
+<option value="STTE_USOK" data-alternative-spellings="OK" data-relevancy-booster="">Oklahoma</option>
+<option value="STTE_USOR" data-alternative-spellings="OR" data-relevancy-booster="">Oregon</option>
+<option value="STTE_USPA" data-alternative-spellings="PA" data-relevancy-booster="">Pennsylvania</option>
+<option value="STTE_USRI" data-alternative-spellings="RI" data-relevancy-booster="">Rhode Island</option>
+<option value="STTE_USSC" data-alternative-spellings="SC" data-relevancy-booster="">South Carolina</option>
+<option value="STTE_USSD" data-alternative-spellings="SD" data-relevancy-booster="">South Dakota</option>
+<option value="STTE_USTN" data-alternative-spellings="TN" data-relevancy-booster="">Tennessee</option>
+<option value="STTE_USTX" data-alternative-spellings="TX" data-relevancy-booster="">Texas</option>
+<option value="STTE_USUT" data-alternative-spellings="UT" data-relevancy-booster="">Utah</option>
+<option value="STTE_USVT" data-alternative-spellings="VT" data-relevancy-booster="">Vermont</option>
+<option value="STTE_USVA" data-alternative-spellings="VA" data-relevancy-booster="">Virginia</option>
+<option value="STTE_USWA" data-alternative-spellings="WA" data-relevancy-booster="">Washington</option>
+<option value="STTE_USWV" data-alternative-spellings="WV" data-relevancy-booster="">West Virginia</option>
+<option value="STTE_USWI" data-alternative-spellings="WI" data-relevancy-booster="">Wisconsin</option>
+<option value="STTE_USWY" data-alternative-spellings="WY" data-relevancy-booster="">Wyoming</option></select>
+</div>
+    </div>
+
+    <div id="contribute-step-2-button" class="i-continue-to-payment-section" style="display: none;">
+      <input class="i-cta-1" id="email_submit" name="commit" type="submit" value="Continue to Payment" />
+    </div>
+</form>
+  <div id="soft-sign-in">
+    <span id="picture_image" class="picture-image no-image-individual fl"></span>
+    <p class="footer-info">
+      <span class="line-1">Have an Indiegogo account?</span>
+      <a href="https://www.indiegogo.com/accounts/sign_up">Log in</a>
+      for personalized options.
+    </p>
+</div>
+
+
+  <p class="i-disclaimer">By clicking 'Continue', you acknowledge that you understand that you are contributing to a work-in-progress and not making a direct purchase. Perks are managed by the campaigners and cannot be guaranteed by Indiegogo. Your click also acknowledges that you agree to the Indiegogo <a href="/about/terms" target="_blank">Terms of Use</a>.</p>
+</div></div>
+
+
+
+    
+
+
+<div class="i-footer js-footer">
+  <div class="container">
+
+    <section class="i-top-lined">
+      <div class="row">
+        <div class="i-footer-legal-links col-xs-12 col-sm-6">
+          <a href="https://www.indiegogo.com/about/terms">Terms of Use</a>
+          <a href="https://www.indiegogo.com/about/privacy">Privacy Policy</a>
+          <a href="https://www.indiegogo.com/about/cookies">Cookie Policy</a>
+          <a href="https://www.indiegogo.com/partners/terms">Partner Terms</a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="i-footer-legal-links i-footer-copyright">
+            © 2014 Indiegogo, Inc. All Rights Reserved
+          </div>
+        </div>
+      </div>
+      <div class="hidden-xs">
+          <div class="i-footer-trust-bbb js-trust-bbb">
+          </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+  <!--[if gte IE 9]-->
+  <script src="https://g1.iggcdn.com/assets/jquery/jquery-2bac5fb81a1c59d1563e12d37e3389fd.js" type="text/javascript"></script>
+  <script src="https://g3.iggcdn.com/assets/hammerjs/hammer-e8c8a4f40d64f68dd18e093812b9a84b.js" type="text/javascript"></script>
+  <!--<![endif]-->
+
+    <script src="//cdn.optimizely.com/js/216430494.js"></script>
+  
+  <script src="https://g2.iggcdn.com/assets/igg/site/common-6bcbeaafbf982ae9e91bf0bb041b9cd1.js" type="text/javascript"></script>
+  
+  
+  <script type="text/javascript">
+    I18n.defaultLocale = "en";
+    I18n.locale = "en";
+    $(document).ready(function() {
+      igg.site.onDocumentReady();
+    });
+        setupLandingPage();
+  $("#pledge_shipping_country").iggSelect2();
+  $("#pledge_shipping_state").iggSelect2();
+  new igg.site.Header({
+    el: $(".i-page-header"),
+    active_search: false
+  }).start();
+
+  $(".i-flash").each(function() {new igg.site.Flash({el: $(this)}).start();});
+  new igg.site.Footer({
+    el: $(".i-footer"),
+    skipTwitterFooterLoad: false,
+    bbbLink: '<a id="bbblink" class="bbb sehzbus" href="http://www.bbb.org/greater-san-francisco/business-reviews/internet-services/indiegogo-in-san-francisco-ca-372843#bbblogo" target="_blank"><img id="bbblinkimg" src="//seal-goldengate.bbb.org/logo/sehzbus/indiegogo-372843.png" width="200" height="38" alt="Read Indiegogo’s Better Business Bureau Review"/></a>',
+    trusteLink: '<div id="f11cda4f-ffd6-4d45-b3c3-dea39f0b8194" class="truste"><a href="//privacy.truste.com/privacy-seal/Indiegogo,-Inc-/validation?rid=6d279abc-bf79-4648-bbc3-ac58bb077a34" title="TRUSTe European Safe Harbor certification" target="_blank"><img style="border: none" src="//privacy-policy.truste.com/privacy-seal/Indiegogo,-Inc-/seal?rid=6d279abc-bf79-4648-bbc3-ac58bb077a34" height="38" alt="TRUSTe European Safe Harbor certification"/></a></div>'
+  }).start();
+
+  </script>
+
+      <script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+
+<script type="text/javascript">
+
+window.igg_criteo_trigger_basket = function() {
+  window.criteo_q = window.criteo_q || [];
+  window.criteo_q.push(
+    { event: "setAccount", account: 12644 },
+    { event: "setCustomerId", id: "" },
+    { event: "setSiteType", type: "d" },
+    { event: "viewBasket",
+      item: [{
+        id: "945106",
+        price: "20",
+        quantity: "1"
+      }]
+    }
+  );
+} 
+
+window.igg_criteo_trigger_transaction = function() {
+  window.criteo_q = window.criteo_q || [];
+  window.criteo_q.push(
+    { event: "setAccount", account: 12644 },
+    { event: "setCustomerId", id: "" },
+    { event: "setSiteType", type: "d" },
+    { event: "trackTransaction", id: "",
+      new_customer: "0",
+      deduplication: "0",
+      item: [{
+        id: "945106",
+        price: "20",
+        quantity: "1"
+      }]
+    }
+  );
+}
+
+</script>
+
+  <script type="text/javascript"> window.igg_criteo_trigger_basket(); </script>
+
+  
+  <!-- Google Code for Main List -->
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1008738018;
+    var google_conversion_label = "pah0CP6GwQQQ4r2A4QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+  </script>
+  <div class="hidden">
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+  </div>
+  <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1008738018/?value=0&amp;label=pah0CP6GwQQQ4r2A4QM&amp;guid=ON&amp;script=0"/>
+    </div>
+  </noscript>
+
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+status: 200
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 16:41:13 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiNTNhMDE0ZTZhZDcyNzRlNDYwNTAwYjYxYmEzMjVkYmYiLCJfY3NyZl90b2tlbiI6Im80OWRsSzNIR0hyVHZrV1E0WkI2U3UyenRsaStvd3VvWDFkYVpnVHQwRWs9In0%3D--c082e9ab0e710dd9194b2015173a648fa59c126b;
+ path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: X-PJAX, Accept-Encoding
+server: GitHub.com
+cache-control: max-age=0, private, must-revalidate
+content-location: https://github.com/blog/1844-say-hello-to-github-for-windows-2-0
+x-runtime: 0.014737
+x-served-by: bc4c952d089501afbfc8f7ff525da31c
+etag: "24eaf015bbc29de5619cf850cdba4eb5"
+x-github-request-id: 60E19123:3B46:D0D1F3D:54283A29
+date: Sun, 28 Sep 2014 16:41:13 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+x-ua-compatible: IE=Edge,chrome=1
+-varied-accept-encoding: gzip, deflate
+

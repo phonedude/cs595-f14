@@ -1,0 +1,52 @@
+\section{Question 1}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+Choose a blog or a newsfeed (or something similar as long as it has
+an Atom or RSS feed).  It should be on a topic or topics of which you
+are qualified to provide classification training data.  In other words,
+choose something that you enjoy and are knowledgable of.  Find a feed
+with at least 100 entries.
+
+Create between four and eight different categories for the entries
+in the feed:
+
+examples: 
+\begin{itemize}
+\item work, class, family, news, deals
+
+\item liberal, conservative, moderate, libertarian
+
+\item sports, local, financial, national, international, entertainment
+
+\item metal, electronic, ambient, folk, hip-hop, pop
+
+\end{itemize}
+
+Download and process the pages of the feed as per the week 12 
+class slides.
+
+\end{flushleft}
+
+
+\subsection{The Answer}
+
+
+A blog from blogspot was chosen based on the topic and how well it could be described with categories. The topic selected is soccer. The categories are: Spain, England, World, Americas, Germany, Africa, because these are the main themes that arise in the posts. A script was written that uses cURL to make a request of the atom feed page with an additional query of 100 results. This is saved as an .xml file. The classification was done manually and written in ``class.txt''.
+
+
+\lstset{
+    language=Bash,
+    label=code:q1,
+    caption={Bash script to retrieve Atom feed from blog}
+}
+\lstinputlisting{../q1/getFeed.sh}
+
+
+
+
+
+
+

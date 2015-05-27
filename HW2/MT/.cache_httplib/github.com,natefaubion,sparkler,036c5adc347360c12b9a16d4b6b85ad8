@@ -1,0 +1,33 @@
+status: 200
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 15:47:06 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiMDg3NzhjY2IxNWU5MTg2NjRkZmMyYjc1MTg5NTExNGUiLCJzcHlfcmVwbyI6Im5hdGVmYXViaW9uL3NwYXJrbGVyIiwic3B5X3JlcG9fYXQiOjE0MTE5MTkyMjYsIl9jc3JmX3Rva2VuIjoicmE4ajRyWFpTMDdCUXBOQWY1YWVwTGNDMGFWcU9rNkhWOUJzU1dLQjZTZz0ifQ%3D%3D--822ace0a2c816af29c4d4133b381812df17dc30c;
+ path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: X-PJAX, Accept-Encoding
+server: GitHub.com
+cache-control: max-age=0, private, must-revalidate
+content-location: https://github.com/natefaubion/sparkler
+x-runtime: 0.034596
+x-served-by: b26767d88b31b8e1e88f61422786ec5e
+etag: "ebff853afa1879b755dd8a9ce042d7f0"
+x-github-request-id: 47FBB1A2:3B41:A1F21FB:54282D7A
+date: Sun, 28 Sep 2014 15:47:06 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+x-ua-compatible: IE=Edge,chrome=1
+-varied-accept-encoding: gzip, deflate
+

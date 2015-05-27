@@ -1,0 +1,277 @@
+   #Bill Higgins' Blog » Feed Bill Higgins' Blog » Comments Feed Bill
+   Higgins' Blog » Architects Comments Feed PS4 Started a podcast with
+   Coté – Under Development
+
+     * Home
+     * about
+     * setup
+     * writing
+
+   Bill Higgins' Blog
+   « PS4
+   Started a podcast with Coté – Under Development »
+
+Architects
+
+   16 March, 2014 //
+   5
+
+   The other night on Twitter, I wrote:
+
+     Note to current and future colleagues: If I ever put the term
+     ‘architect’ in my job title, I encourage you to punch me in the
+     face.
+
+   My Twitter posts, which are public, automatically propagate to my
+   Facebook timeline, which is private. I hadn’t considered “How will
+   people react?” when I tweeted, and I was surprised by the range of
+   reaction across Twitter and Facebook. It ran the gamut from “I’m
+   amused” to “I’m surprised” to “I agree” to “I’m offended”. Whenever you
+   have a range of reaction like this, it usually means you’re on a point
+   that people either find interesting, or care about, or both. Given
+   this, I decided to write my thoughts down more fully.
+
+   I don’t have a full thesis worked out in my head, so I’ll explain my
+   feelings through a series of stories from my career.
+
+   —–
+
+   I distinctly remember meeting Simon Johnston. It was approximately 2003
+   at IBM Research in Hawthorne New York, for an IBM Academy study on some
+   software engineering topic. At the time I worked in the old Application
+   Management Services division and Simon had recently joined IBM through
+   our acquisition of Rational Software. I distinctly remember meeting
+   Simon for two reasons:
+     * I was blown away by his degree of sophistication and articulation
+       when he spoke about software engineering and architecture
+     * I remember him telling me – in a very polite way – that I was
+       basically a bozo for calling myself an architect
+
+   At the time I was about 25 and had been out of college for two years.
+   In that part of IBM, the career progression for software developers was
+   well-defined: you want to get promoted out of development and into
+   architecture. At the time, my primary work goal was always “get
+   promoted, get promoted” so I had managed to move from development to
+   architecture in just a year and a half. Simon’s point was that I hadn’t
+   done anything interesting enough to call myself an architect. Also, at
+   the time I was the breed of architect who spends all his time talking
+   about business requirements and drawing the occasional UML diagram,
+   while eschewing code. I don’t recall his exact words, but Simon made
+   the point that good architects – i.e. non-bozos – are highly technical,
+   work very closely with development, and still write important code.
+
+   I hadn’t thought about it until just now, but Simon’s description of
+   architect in 2003 pretty much describes his role today as CTO of Amazon
+   Fresh.
+
+   —–
+
+   I had an unusual start with the Rational Jazz project, as I described a
+   few years ago. The Jazz team were the descendants of the Eclipse team
+   and thus OTI, a late-1990s IBM acquisition. OTI had a wonderful
+   development culture, which I learned about once I joined the Jazz team
+   and over time embraced fully. The Jazz team leadership had a small
+   presentation called “OTI Culture” that distills the essential values
+   and principles. It’s short enough to include here:
+
+     “People, not organizations, build software.”
+    1. We succeed because of our people.
+    2. Our culture attracts top people and empowers them to succeed.
+    3. Our culture is the impetus for our success. Without it we could not
+       exist.
+
+     Our Culture
+     * If it helps ship products, it’s good. If not, it’s bad.
+     * He who ships gets to speak.
+     * Do the right thing.
+     * Get it done or get out of the way.
+     * Ask: Why are we doing this?
+     * Having fun is survival, not icing.
+     * The team succeeds or fails together.
+     * Everything we do reflects on all of us – a matter of personal
+       pride.
+     * A responsible, caring organization attracts responsible, caring
+       people.
+     * When we ship, we all ship.
+     * You can’t build good software without emotion – you have to care.
+     * What the leaders are, the people will soon become.
+     * You do not learn by agreeing with people.
+     * Convictions are meant to be acted on.
+
+   Now think about these principles in the context of architects you might
+   have known. Did their work help ship products? If you were a developer,
+   did the architect empower you to succeed?
+
+   On Jazz, there were several people who you could call architects, even
+   though they didn’t call themselves architects. They were John Wiegand,
+   Erich Gamma, and Scott Rich. Each of these guys were essential to
+   helping us ship products and each of these guys empowered developers to
+   succeed. I don’t think it was even a conscious thing – it was baked
+   into their DNA.
+
+   The trick was that they only hired really strong developers, not blubs.
+   And because of this, they could confidently delegate quite a bit of
+   technical decision-making – even architectural decisions – to these
+   developers. Their role was to establish priorities, provide light
+   guidance, and to spot patterns and connect dots across different
+   components. By delegating technical decision-making, we were able to
+   move faster, developers felt more of a sense of ownership, and
+   decisions were made closer to the code, and thus reality.
+
+   For instance, my first job on the Jazz team was to create our web UIs.
+   Because this was 2005 at IBM, I started with … oh god I hate to say it
+   … JSF. Let’s just say that in two months of work, it didn’t go well.
+   One Friday afternoon Scott pulled me aside and said that he, John, and
+   Erich had talked, and they were observing that the web UIs weren’t
+   progressing fast enough or with enough pizzazz. He suggested that the
+   team take two weeks to experiment with alternative technologies that
+   were popular outside IBM and come back with a recommendation. They only
+   gave us two requirements: we had to come up with an extensibility story
+   to enable future products and it had to be cool. We looked at several
+   technologies and ultimately chose to have a go with a single page
+   Ajax/REST architecture that was inspired by Gmail, which was new at the
+   time – in fact no one at IBM was using non-trivial Ajax in a product
+   back then. Scott, John, and Erich supported us to give it a try, and it
+   led to a great result that probably tens of thousands of people still
+   use every day for their work.
+
+   To me this is a great example of architects being helpful. Give
+   developers a clear problem statement, provide gentle course correction
+   when something’s not going well, but otherwise let the developers do
+   their thing.
+
+   —–
+
+   A couple of years ago I was at the O’Reilly campus in Sebastopol for
+   some meetings prior to Foo Camp. Mike Loukides was nice enough to pull
+   me into a demo where some O’Reilly web developers were showing an early
+   version of O’Reilly Atlas to Tim. During the demo, I realized that
+   Peter Norvig from Google was also in the room. I’d never met him before
+   but I’d certainly heard of him, since he was and is Director of
+   Research at Google. A few hours later during a Foo Camp barbecue, I
+   introduced myself and asked him how a super senior guy like him was
+   able to keep it real and stay technical.
+
+   His answer was as simple as it was brilliant. Beyond doing his own
+   coding for work and fun, he said that he regularly performs code
+   reviews with his researchers. He said this has bi-directional benefits.
+   For him, it helps him keep current on emerging techniques and
+   technologies since his researchers are always on the cutting edge. And
+   for his developers, he’s able to provide insights based on his deep and
+   broad experience and also connect dots across projects and researchers.
+
+   —–
+
+   The reason I wrote that negative tweet is because recently I’ve been
+   running into a bunch of architecture astronauts. If you’re a little
+   younger and not familiar with this term, take a minute to read this
+   classic 2001 article from Joel Spolsky where he coined it. Maybe read
+   it twice – it’s important.
+
+   My job these days is essentially the same sort of architect as John,
+   Scott, and Erich were on Jazz. But I don’t feel comfortable calling
+   myself an architect because there are so many architecture astronauts
+   running around and I want to avoid guilt by association. Also, somehow
+   I feel that calling myself an architect would be somehow gauche – like
+   I’m sure Wes Anderson doesn’t refer to himself as an auteur and I know
+   John Allspaw doesn’t use the phrase DevOps much.
+
+   All that being said, every day I aspire to be the sort of architect
+   that Simon, Scott, Erich and John are. I try to avoid the trap of
+   endless meetings and PowerPoints. I try very hard to stay connected to
+   the code and the developers. Finally, where it’s within my sphere
+   influence, I try to nuke the astronauts and empower the developers.
+   Hopefully, my sphere of influence will continue to expand.
+   Categories Uncategorized
+
+5 comments Post your own or leave a trackback: Trackback URL
+
+    1. Dejan Glozic says:
+       16 March, 2014 at 5:41 pm
+       See, that’s the key – most of the cool people you mentioned were
+       directors. I have recently met some great people from Yahoo! and
+       PayPal and they all call themselves ‘Directors of Engineering’,
+       ‘Senior Directors of UX’ etc.
+       So I would say I will let people call me an Architect as a painful
+       step to being a Director of Engineering :-). Which will not change
+       what I do every day, but hey, you have to put something on
+       presentations and twitter profile.
+       Cheers, Dejan
+    2. John Allspaw says:
+       17 March, 2014 at 5:30 am
+       Great post, Bill. Underneath, you’re pointing out that language has
+       its limits and that context is critical when we are trying to
+       unpack meaning. In this case, the word ‘architect’ can mean
+       different things to different organizations.
+       Spolsky coins ‘astronaut architects’ as someone too high in the
+       abstraction levels, but doesn’t call them just ‘architects.’ I’ve
+       had similar reactions to the word when I was at Yahoo, which felt
+       like it meant ‘someone who doesn’t have to live with their
+       technology choices, especially when it gets until the weeds.’
+       You do a good job of looking at the term from multiple angles.
+       That’s rare on the internet these days. :)
+       Allspaw
+    3. Craig Johnson says:
+       17 March, 2014 at 10:16 am
+       While semantics matter, I don’t understand why folks continue to
+       attempt to draw such bright lines among basic components of the
+       development process. Conceptual architecture, pattern-culling,
+       frameworking, class design, refactoring, optimizing, build
+       automation, team governance, source management, you name it…all in
+       a days’ work. And even “architecture astronauts” have their place –
+       they’re the folks writing design patterns – an immensely valuable
+       effort. Walking the abstraction ladder isn’t jumping between
+       quantum states – there is space between the rungs. I may never
+       understand the perceived need to cleanly striate/lobotomize a
+       process that seems better suited to a continuum of universals and
+       particulars.
+    4. Roland Whitehead says:
+       17 March, 2014 at 1:07 pm
+       In the UK the term “architect” is restricted – to those who are
+       professionally qualified to practise architecture (ie designing
+       buildings) or naval architecture (ie designing ships). As a Member
+       of the Royal Institute of Naval Architects I could call myself a
+       naval architect. As a director (and founder) of a software
+       development company I never do. It’s almost as redundant as the
+       title “Programme Director” or “Technical Delivery Manager”. Leaders
+       lead, teams deliver.
+    5. Alexey Zimarev says:
+       18 May, 2014 at 3:56 am
+       Instead of avoiding yourself from being called what you really are,
+       wouldn’t it be better to recover the original meaning of this
+       title? There are millions of very bad developers in this world but
+       this stops no one in dev world from calling themselves a
+       “developer”. The same is applicable to anything. Stop calling
+       yourself American or Russian because you’re ashamed of what your
+       politicians do or keep doing this with proud and show the world how
+       it should be? I think the best way is try to recover the image of
+       this title in the industry and don’t let it devolve.
+
+Leave a Reply Cancel reply
+
+   Your email address will not be published. Required fields are marked *
+
+   Name * ______________________________
+
+   Email * ______________________________
+
+   Website ______________________________
+
+   Comment
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+
+   You may use these HTML tags and attributes: <a href="" title=""> <abbr
+   title=""> <acronym title=""> <b> <blockquote cite=""> <cite> <code>
+   <del datetime=""> <em> <i> <q cite=""> <strike> <strong>
+
+   Post Comment
+
+   Theme: Wu Wei by Jeff Ngan
+   Back to the top

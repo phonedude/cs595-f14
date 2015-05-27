@@ -1,0 +1,849 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<script type="text/javascript">
+(function(a){function b(a,b){if(+a)return~a||(d.cookie=h+"=; path=/");j=d.createElement(e),k=d.getElementsByTagName(e)[0],j.src=a,b&&(j.onload=j.onerror=b),k.parentNode.insertBefore(j,k)}function c(){n.api||b(l.shift()||-1,c)}if(this.Mobify)return;var d=document,e="script",f="mobify",g="."+f+".com/",h=f+"-path",i=g+"un"+f+".js",j,k,l=[!1,1],m,n=this.Mobify={points:[+(new Date)],tagVersion:[6,1],ajs:"//a.mobify.com/ieee-spectrum-mobile-edition-1/a.js"},o=/((; )|#|&|^)mobify-path=([^&;]*)/g.exec(location.hash+"; "+d.cookie);o?(m=o[3])&&!+(m=o[2]&&sessionStorage[h]||m)&&(l=[!0,"//preview"+g+escape(m)]):(l=a()||l,l[0]&&l.push("//cdn"+i,"//files01"+i)),l.shift()?(d.write('<plaintext style="display:none;">'),setTimeout(c)):b(l[0])})(function(){
+		if(/ip(hone|od)|android.*(mobile)|blackberry.*applewebkit|bb1\d.*mobile/i.test(navigator.userAgent) || (/iPad/.test(navigator.userAgent) && !/Safari/.test(navigator.userAgent)) ){console.debug("mobify enabled");return[1,"//cdn.mobify.com/sites/ieee-spectrum-mobile-edition-1/production/mobify.js"]}
+		else{console.debug("mobify not enabled");};
+		return[0,Mobify.ajs];
+	})
+</script>
+	<meta charset="utf-8">
+
+	
+
+	<title>Building Mind-Controlled Gadgets Just Got Easier - IEEE Spectrum</title>
+
+	
+	<meta name="viewport" content="width=1024">
+
+	
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE; chrome=1"/>
+	<![endif]-->
+
+    
+
+    
+	<link href="//fnt.webink.com/wfs/webink.css/?project=C258B735-C9E7-45A9-8619-0A725F416F5E&fonts=82DA4627-8191-9CE4-706C-58F3C2615A95:f=Theinhardt-Bold,BA766C3D-9F83-4950-AFCD-AD9F2BF5CEAB:f=Theinhardt-Regular,F77BBDE3-5270-5846-90AD-5529C2FFDA57:f=Theinhardt-Medium" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/sb.css">
+	<link rel="stylesheet" href="/assets/css/slimbox2.css">
+	<link rel="stylesheet" href="/assets/css/site5.css">
+
+	
+
+    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+	
+	<script src="/assets/js/libs/modernizr-2.5.3.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="/assets/js/libs/respond.min.js"></script>
+	<![endif]-->
+
+	
+	
+	
+	<link rel="icon" href="/favicon.png" type="image/png" />
+
+	<!-- begin static module global-head-spectrum4 --><link href="http://spectrum.ieee.org/ns/interactive/temp-styles/temp-styles-04.23.14.css" rel="stylesheet" type="text/css">
+<!-- end static module -->
+	
+<meta name="layout" content="spectrum"/>
+
+
+
+	<meta name="description" content="A new brain-computer interface lets DIYers access their brain waves"/>
+
+
+	<link rel="image_src" href="/img/5tIdmis9M8CY6eatI8iNyxA-1407414185008.jpg" />
+
+
+
+
+
+
+
+
+<script type="text/javascript" class="ga-tag">
+   var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-747464-1']);
+  _gaq.push(['_setCustomVar', 1, 'content-type-slug', 'article-NEWS']);
+_gaq.push(['_setCustomVar', 2, 'from-print', 'false']);
+_gaq.push(['_setCustomVar', 3, 'authors', 'Eliza Strickland ']);
+
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ 	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+ 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<meta name="parsely-page" content='{"title":"Building Mind-Controlled Gadgets Just Got Easier","link":"http://spectrum.ieee.org/biomedical/devices/building-mindcontrolled-gadgets-just-got-easier","image_url":"http://spectrum.ieee.org/img/3Kl0HWH8d2lSBkN6xTHcMJQ-1407414184958.jpg","type":"post","post_id":"/biomedical/devices/building-mindcontrolled-gadgets-just-got-easier","pub_date":"2014-08-11T15:00:00Z","section":"News","author":"Eliza Strickland ","tags":["bci","bmi","brain-computer interface","brain-machine interface","diy","electrophysiology","makers","neural engineering","neurotech","open source hardware","the human os","medium.online-only","type.article","topic.biomedical","subtopic.devices"]}'>
+
+
+
+	<link rel="alternate" title="IEEE Spectrum Recent Content full text" href="http://feeds.feedburner.com/IeeeSpectrumFullText" type="application/rss+xml">
+</head>
+
+<body class="pageBody" onload="">
+	
+	
+		
+<script type="text/template" id="tmpl-interstitial-ad">
+	<div id="tmpl-slashpage">
+		<div id="header" style="background: #5a5a5a;text-align:right; padding:20px; overflow:auto; margin-bottom:25px;">
+			<img src="/assets/img/logo-main.png" alt="IEEE Spectrum logo" style="float: left;height: 40px;">
+			<a href="javascript:splashpage.closeit()">Continue to site&nbsp;➔</a>
+		</div>
+		<div style="color:gray; font-size:18px; text-align:center; margin-bottom:8px;">ADVERTISEMENT</div>
+		<iframe name="splashpage-iframe" src="about:blank" scrolling="no" seamless="seamless" style="overflow:hidden; padding:0; z-index:6000000; width:660px; height:500px; margin:0 auto; display:block;" frameborder="0"></iframe>
+	</div>
+</script>
+		<script src="/assets/js/interstitial-ad.js"></script>
+		
+<script>
+	splashpage.splashenabled=1;
+	splashpage.splashpageurl= '/interstitial?splashType=welcome';
+	splashpage.enablefrequency=1;
+	splashpage.displayfrequency='sessiononly';
+	splashpage.cookiename = ['interstitialpagecookie2465915', 'path=/'];		
+	splashpage.autohidetimer=15;
+	splashpage.enablecounter=true;
+	splashpage.counter=1;
+	splashpage.timeremaining=0;
+	splashpage.sessiononlyCookieLifeTime=24;
+	if (splashpage.browserdetectstr && splashpage.splashenabled==1) {
+        //console.info('initializing interstitial ad');
+        splashpage.init();
+        //console.info('interstitial ad init finished');
+    }
+</script>
+	
+
+	<a href="/" class="backtotop"></a>
+<header id="header">
+	
+		<style>
+	    header #ieee-metanav ul li a:hover {
+               color: #03a6e3;
+            }
+	</style>
+        <div id="ieee-metanav" role="banner">
+		<div class="wrap">
+			<ul class="inline-list">
+				<li><a href="http://www.ieee.org" target="_blank">IEEE.org</a></li>
+				<li class="sep">|</li>
+				<li><a href="http://ieeexplore.ieee.org" target="_blank">IEEE <em>Xplore</em> Digital Library</a></li>
+				<li class="sep">|</li>
+				<li><a href="http://standards.ieee.org" target="_blank">IEEE Standards</a></li>
+				<li class="sep">|</li>
+				<li><a href="/"><span>IEEE Spectrum</span></a></li>
+				<li class="sep">|</li>
+				<li><a href="http://www.ieee.org/sitemap" target="_blank">More Sites</a></li>
+			</ul>
+		</div>
+	</div>
+	<section id="masthead">
+		<div class="masthead-wrap">
+			<div class="brand-space" role="img">
+				<a href="/" id="brand">
+					<img src="/assets/img/logo-main.png" alt="IEEE Spectrum logo">
+				</a>
+				<div id="social-space">
+					<span class="follow">Follow on:</span>
+					<ul class="inline-list social-links">
+						
+						
+						<li><a href="http://www.facebook.com/IEEE.Spectrum" target="_blank"><span class="faceBook"></span></a></li>
+						<li><a href="http://twitter.com/#!/IEEESpectrum" target="_blank"><span class="twitter"></span></a></li>
+						<li><a href="http://www.linkedin.com/groups/IEEE-Spectrum-1982451?home=&gid=1982451&trk=anet_ug_hm" target="_blank"><span class="linkedIn"></span></a></li>
+						<li><a href="https://plus.google.com/105079317383160047042/posts" target="_blank"><span class="google"></span></a></li>
+						<li><a href="/static/rss" target="_blank"><span class="rssFeed"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ad-space" role="img">
+				<span>Advertisement</span>
+				<div class="leaderboard-wrap">
+					
+<script language="JavaScript" type="text/javascript">
+if (typeof dc_tile=='undefined') {dc_tile=1;} else {dc_tile++;}
+if (typeof ord=='undefined') {ord=Math.random()*10000000000000000;}document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/f.site220.tmus/biomedical;pos=1;tile=' + dc_tile +';dcopt=ist;sz=728x90;ord=' + ord + '?" type="text/javascript"><\/script>');</script>
+<noscript><a href="http://ad.doubleclick.net/jump/f.site220.tmus/biomedical;sz=728x90;pos=1;tile=1;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/f.site220.tmus/biomedical;sz=728x90;pos=1;tile=1;ord=123456789?" border="0" alt=""></a></noscript>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<nav id="mainNav" role="navigation">
+
+	
+	<div class="commonwrap">
+		<ul class="primary" role="menubar">
+			<li><a href="#" id="topics"><span class="trunc">Engineering </span>Topics<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="reports"><span class="trunc">Special </span>Reports<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="blogs">Blogs<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="multimedia">Multimedia<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="magazine"><span class="trunc">The </span>Magazine<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="resources"><span class="trunc">Professional </span>Resources<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" class="last" id="searchmenu">Search<span class="arrow-icon">&nbsp;</span></a></li>
+		</ul><!-- /.primary -->
+	</div>	
+	
+	<div class="slider collapsed" role="landmark">
+		<div id="menuCentered">
+			<div id="menuContainer"></div>
+		</div>
+	</div>
+	
+	
+</nav>
+</header>
+	
+	<div id="main" role="main">
+		<div class="wrap">
+			<section id="medium-content">
+				<article class="article-detail">
+					<ul id="breadcrumbs">
+							<li>News
+							</li>
+							<li><a href="/biomedical">Biomedical</a></li>
+							<li><a href="/biomedical/devices">Devices</a></li>
+					</ul>		
+						
+					<h1>Building Mind-Controlled Gadgets Just Got Easier</h1>
+					<h2>A new brain-computer interface lets DIYers access their brain waves</h2>
+						
+					<div class="metadata" role="contentinfo">
+						<div class="metadata" role="contentinfo">
+	<div class="byline">By Eliza Strickland  
+	    <div>Posted <label style='cursor:default' datetime="">11 Aug 2014 | 15:00 GMT</label></div>
+	</div>
+
+	    <div style="float: right;" class="addthis_toolbox addthis_default_style" addthis:title="Building Mind-Controlled Gadgets Just Got Easier"> 	
+	    <ul class="inline-list article-share-options" class="addthis_toolbox addthis_default_style">
+		    <li><a href="#" class="addthis_button_compact"><span class="share icon" id="shareIconTop">&nbsp;</span><span>Share</span></a> </li>
+			<li class="sep">|</li>
+		    <li><a href="#" class="addthis_button_email"><span class="email icon">&nbsp;</span><span class="addthis_button_print">Email</span></a></li>
+			<li class="sep">|</li>
+		    <li><a href="#" class="addthis_button_print"><span class="print icon">&nbsp;</span><span>Print</span></a></li>
+		</ul>
+	</div>
+
+</div>
+		
+						
+
+<script type="text/javascript">
+var addthis_config = {
+	ui_cobrand: "IEEE Spectrum", 
+	data_track_clickback:true, 
+	ui_508_compliant: true, 
+	data_ga_property: 'UA-747464-1'
+}
+
+var addthis_share = {
+	    url_transforms: {
+	        clean: true, 
+	        shorten: {
+				twitter: 'bitly'
+		    }
+	    },
+	    shorteners: {
+			bitly: {
+				login: 'ieeespectrum',
+				apiKey: 'R_b7de0f8b69a2fad0397ee4360bf00ea4'
+			}
+		},
+		templates: { 
+			twitter: '{{title}} {{url}} via @IEEESpectrum'
+		}
+		
+}
+</script>
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f4cf61812d7916f"></script>
+
+
+					</div>
+
+					
+						<div id="artBody">
+							
+							<div class="articleBody entry-content">
+								<figure class="xlrg" role="img">
+	<img alt="Open BCI Set up" src="/img/OpenBCISetup-1407414326641.jpg" style="width: 620px; height: 398px;" />
+	<div class="ai">
+		<figcaption class="hi-cap">Photo: Chip Audette</figcaption> <figcaption>Engineer Chip Audette used the OpenBCI system to control a robot spider with his mind.</figcaption></div>
+</figure>
+<p>
+	The guys who decided to make a mind-reading tool for the masses are not neuroscientists. In fact, they&rsquo;re artists who met at Parsons the New School for Design, in New York City. In this day and age, you don&rsquo;t have to be a neuroscientist to muck around with brain signals.</p>
+<p>
+	With Friday&rsquo;s launch of an online store selling their brain-computer interface (BCI) gear, <a href="http://www.openbci.com/people/">Joel Murphy and Conor Russomanno</a> hope to unleash a wave of neurotech creativity. Their system enables DIYers to use brain waves to control anything they can hack&mdash;a video game, a robot, you name it. &ldquo;It feels like there&rsquo;s going to be a surge,&rdquo; says Russomanno. &ldquo;The floodgates are about to open.&rdquo; And since their technology is open source, the creators hope hackers will also help improve the BCI itself.</p>
+<figure class="med rt" role="img">
+	<img alt="The OpenBCI board takes in data from up to eight electrodes." src="/img/OpenBCI-2-1407767337140.jpg" style="width: 300px; height: 282px;" /> <figcaption class="hi-cap">Photo: OpenBCI</figcaption> <figcaption> The OpenBCI board takes in data from up to eight electrodes.</figcaption></figure>
+<p>
+	Their <a href="http://www.openbci.com/">OpenBCI</a> system makes sense of an electroencephalograph (<a href="http://en.wikipedia.org/wiki/Eeg">EEG</a>), signal, a general measure of electrical activity in the brain captured via electrodes on the scalp. The fundamental hardware component is a relatively <a href="http://www.ti.com/product/ads1299">new chip</a> from Texas Instruments, which takes in analog data from up to eight electrodes and converts it to a digital signal. Russomanno and Murphy used the chip and an Arduino board to create OpenBCI, which essentially amplifies the brain signal and sends it via Bluetooth to a computer for processing. &ldquo;The big issue is getting the data off the chip and making it accessible,&rdquo; Murphy says. Once it&rsquo;s accessible, Murphy expects makers to build things he hasn&rsquo;t even imagined yet.</p>
+<p>
+	The project got its start in 2011, when Russomanno was a student in Murphy&rsquo;s physical computing class at Parsons and told his professor he wanted to hack <a href="http://mindflexgames.com/">an EEG toy</a> made by Mattel. The toy&rsquo;s EEG-enabled headset supposedly registered the user&rsquo;s concentrated attention (which in the game activated a fan that made a ball float upward). But the technology didn&rsquo;t seem very reliable, and since it wasn&rsquo;t open source, Russomanno couldn&rsquo;t study the game&rsquo;s method of collecting and analyzing the EEG data. He decided that an open-source alternative was necessary if he wanted to have any real fun.</p>
+<p>
+	Happily, Russomanno and his professor soon connected with engineer Chip Audette, of the New Hampshire R&amp;D firm <a href="http://creare.com/">Creare</a>, who already had a grant from the U.S. Defense Advanced Research Projects Agency (DARPA) to develop a low-cost, high-quality EEG system for &ldquo;nontraditional users.&rdquo; Once the team had cobbled together a prototype of their OpenBCI system, they decided to offer their gear to the world with a <a href="https://www.kickstarter.com/projects/openbci/openbci-an-open-source-brain-computer-interface-fo">Kickstarter campaign</a>, which ended in January and raised more than twice the goal of US $100,000.</p>
+<p>
+	Murphy and Russomanno soon found that production would be more difficult and take longer than expected (as is the case with so many Kickstarter projects), so they had to push back their shipping date by several months. Now, though, they&rsquo;re in business&mdash;and Russomanno says that shipping a product is only the beginning. &ldquo;We don&rsquo;t just want to sell something; we want to teach people how to use it and also develop a community,&rdquo; he says. OpenBCI wants to be an online portal where experimenters can swap tips and post research projects.</p>
+<p>
+	<iframe allowfullscreen="" frameborder="0" height="465" src="//www.youtube.com/embed/RtM2R-L25W0" width="620"></iframe></p>
+<p>
+	So once a person&rsquo;s brain-wave data is streaming into a computer, what is to be done with it? OpenBCI will make some simple software available, but mostly Russomanno and Murphy plan to watch as inventors come up with new applications for BCIs.</p>
+<p>
+	Audette, the engineer from Creare, is already <a href="http://eeghacker.blogspot.com/2014/06/controlling-hex-bug-with-my-brain-waves.html">hacking robotic &ldquo;battle spiders&rdquo;</a> that are typically steered by remote control. Audette used an OpenBCI prototype to identify three distinct brain-wave patterns that he can reproduce at will, and he sent those signals to a battle spider to command it to turn left or right or to walk straight ahead. &ldquo;The first time you get something to move with your brain, the satisfaction is pretty amazing,&rdquo; Audette says. &ldquo;It&rsquo;s like, &lsquo;I am king of the world because I got this robot to move.&rsquo; &rdquo;</p>
+<p>
+	In Los Angeles, a group is using another prototype to give a paralyzed graffiti artist the ability to practice his craft again. The artist, Tempt One, was diagnosed with Lou Gehrig&rsquo;s disease in 2003 and gradually progressed to the nightmarish &ldquo;locked in&rdquo; state. By 2010 he couldn&rsquo;t move or speak and lay inert in a hospital bed&mdash;but with unimpaired consciousness, intellect, and creativity trapped inside his skull. Now his supporters are developing a system called the <a href="http://www.notimpossiblelabs.com/#!brainwriter/c18ji">BrainWriter</a>: They&rsquo;re using OpenBCI to record the artist&rsquo;s brain waves and are devising ways to use those brain waves to control the computer cursor so Tempt can sketch his designs on the screen.</p>
+<p>
+	Another early collaborator thinks that OpenBCI will be useful in mainstream medicine. <a href="http://www.burke.org/research/faculty/31">David Putrino</a>, director of telemedicine and virtual rehabilitation at the Burke Rehabilitation Center, in White Plains, N.Y., says he&rsquo;s comparing the open-source system to the $60,000 clinic-grade EEG devices he typically works with. He calls the OpenBCI system robust and solid, saying, &ldquo;There&rsquo;s no reason why it shouldn&rsquo;t be producing good signal.&rdquo;</p>
+<p>
+	Putrino hopes to use OpenBCI to build a low-cost EEG system that patients can take home from the hospital, and he imagines a host of applications. Stroke patients, for example, could use it to determine when their brains are most receptive to physical therapy, and Parkinson&rsquo;s patients could use it to find the optimal time to take their medications. &ldquo;I&rsquo;ve been playing around with these ideas for a decade,&rdquo; Putrino says, &ldquo;but they kept failing because the technology wasn&rsquo;t quite there.&rdquo; Now, he says, it&rsquo;s time to start building.</p>
+
+							</div>
+						</div>
+					
+					
+					
+<section class="learn-more" role="menu">
+     <h5>Learn More</h5>
+     
+
+ <style>
+  u {
+	text-decoration: none;
+  }
+</style>
+<span style="text-decoration:underlined;">
+	
+	
+		<a href="/tag/BCI">BCI</a>
+	     
+	
+		<a href="/tag/BMI">BMI</a>
+	     
+	
+		<a href="/tag/DIY">DIY</a>
+	     
+	
+		<a href="/tag/The+Human+OS">The Human OS</a>
+	     
+	
+		<a href="/tag/brain-computer+interface">brain-computer interface</a>
+	     
+	
+		<a href="/tag/brain-machine+interface">brain-machine interface</a>
+	     
+	
+		<a href="/tag/electrophysiology">electrophysiology</a>
+	     
+	
+		<a href="/tag/makers">makers</a>
+	     
+	
+		<a href="/tag/neural+engineering">neural engineering</a>
+	     
+	
+		<a href="/tag/neurotech">neurotech</a>
+	     
+	
+		<a href="/tag/open+source+hardware">open source hardware</a>
+	    
+	
+
+</span>
+</section>
+
+<section id="bottom-share-tools" class="bold-anchor" role="menu">  
+	<div class="metadata" role="contentinfo">
+
+		<div class="social-widget facebook">
+			<a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
+ 		</div>
+		<div class="social-widget twitter">
+			<a class="addthis_button_tweet" tw:count="vertical"></a> 
+		</div>
+		<div class="social-widget linkedin">
+			<a class="addthis_button_linkedin_counter" li:counter="top"></a> 
+		</div>
+		<div style="float:right;" class="addthis_toolbox addthis_default_style" addthis:title="Building Mind-Controlled Gadgets Just Got Easier">  
+			<ul class="inline-list article-share-options">
+				<li><a href="#" class="addthis_button_compact"><span class="share icon" id="shareIconTop">&nbsp;</span><span>Share</span></a> </li>
+				<li class="sep">|</li>
+				<li><a href="#" class="addthis_button_email" title="Email"><span class="email icon">&nbsp;</span><span class="addthis_button_print">Email</span></a></li>
+				<li class="sep">|</li>
+				<li><a href="#" class="addthis_button_print" title="Print"><span class="print icon">&nbsp;</span><span>Print</span></a></li>
+			</ul>                
+			<div class="atclear"></div>
+		</div>
+	</div>
+</section>
+<section id="comments-section" role="complementary">
+  <div class="split">
+    <div class="column">
+      <h6 class="section-title">Comments</h6>
+    </div>
+    <div class="column last align-right">
+      <div class="policy"><a href="/static/comment-policy">Comment Policy</a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  var disqus_shortname = 'ieeespectrum';
+  var disqus_identifier = '/biomedical/devices/building-mindcontrolled-gadgets-just-got-easier';
+  var disqus_title = 'Building Mind-Controlled Gadgets Just Got Easier';
+  var disqus_url = 'http://spectrum.ieee.org/biomedical/devices/building-mindcontrolled-gadgets-just-got-easier';
+
+  
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a
+  href="http://disqus.com/?ref_noscript"&gt;comments powered by
+  Disqus.&lt;/a&gt;</noscript>
+  <a href="http://disqus.com" class="dsq-brlink">Comments powered
+by <span class="logo-disqus">Disqus</span></a>
+</section>
+				
+				</article>
+			</section>
+			<section id="iso-content">
+				<div class="articles" role="article">
+					<article class="item sml_article ad-item-related corner-item recent-item" style="width: 300px; height: 270px;" >
+	<div class="ad-module"><div class="adtext">Advertisement</div><script type="text/javascript">
+if(typeof(cachebuster) == "undefined"){var cachebuster = Math.floor(Math.random()*10000000000)}
+if(typeof(tile) == "undefined"){var tile = 1} else {tile++}
+document.write('<scr'+'ipt src="http://ad.doubleclick.net/adj/f.site220.tmus/biomedical;pos=1;tile=' + tile + ';sz=300x250;ord=' + cachebuster + '?"></scr'+'ipt>');
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/f.site220.tmus/biomedical;pos=1;sz=300x250;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/f.site220.tmus/biomedical;pos=1;sz=300x250;ord=123456789?" border="0" alt="" /></a></noscript></div>
+</article>
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/fda-approval-for-mini-nmrbased-pathogen-detector-"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/5iVXDY8z4Ne_mY4BnTAq_3g-1411608390963.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>FDA Approval For Mini NMR-Based Pathogen Detector </h3>					
+            <p>T2 Biosystems' diagnostic instrument spots infection in a few hours instead of days<span class="pubDate"><time>25&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/nanoclast/biomedical/devices/pucker-up-for-nanowine-tasting-test"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/2J9sw8wx0xWvSfD8dCcfwnw-1411055856128.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Wine Critics Watch Out: Artificial Tongues Are Getting Better</h3>					
+            <p>Nanosensor mimicks the sense of astringency in the human mouth when drinking wine<span class="pubDate"><time>18&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/view-from-the-valley/biomedical/devices/google-takes-on-parkinsons-one-bite-at-a-time"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/30G0NmxyHTaOuuhwfznBdMg-1410816074790.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Google Takes On Parkinson’s One Bite at a Time</h3>					
+            <p>Google’s purchase of fork-and-spoon maker Lift Labs is a practical step in what will be a long journey to understand and cure Parkinson’s<span class="pubDate"><time>17&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/how-an-iphone-6-app-puts-a-health-coach-in-your-pocket"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/9yiS4pdEgeMlOV4vSqmJTgA-1410891476413.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>How an iPhone 6 App Puts a Health Coach in Your Pocket</h3>					
+            <p>RevUp app shows what Apple-enabled health care may look like<span class="pubDate"><time>16&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/graphene-offers-a-better-way-to-capture-trays"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/7BdDSUfg5UeFXoGy19j5paA-1410196879751.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Graphene Offers a Better Way to Capture T-rays</h3>					
+            <p>The result could be better detection of weapons and tumors and better high-speed communication<span class="pubDate"><time>8&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+<article class="item sml_article ad-item  recent-item" style="width: 300px; height: 620px;" >
+	<div class="ad-module"><div class="adtext">Advertisement</div><script type="text/javascript">
+if(typeof(cachebuster) == "undefined"){var cachebuster = Math.floor(Math.random()*10000000000)}
+if(typeof(tile) == "undefined"){var tile = 1} else {tile++}
+document.write('<scr'+'ipt src="http://ad.doubleclick.net/adj/f.site220.tmus/biomedical;tile=' + tile + ';sz=300x600;ord=' + cachebuster + '?"></scr'+'ipt>');
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/f.site220.tmus/biomedical;sz=300x600;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/f.site220.tmus/biomedical;sz=300x600;ord=123456789?" border="0" alt="" /></a></noscript></div>
+</article>
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/computermediated-telepathy"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/2n_lBOHqjyYtAhjVbDwuMkg-1409834469457.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Mind-blowing Advance? Direct Brain-to-Brain Communication Between Humans Demonstrated</h3>					
+            <p>Researchers demonstrate brain-to-brain communication between humans by integrating existing technologies<span class="pubDate"><time>4&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/medtronic-sees-a-hightech-solution-to-global-health-woes"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/1pSd46Zmv7THPLoc9GiA7TQ-1410788116878.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Medtronic Sees a High-Tech Solution to Global Health Woes</h3>					
+            <p>Sensors and smartphones could give 4 billion people access to health care<span class="pubDate"><time>3&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/vagus-nerve-implant-fails-to-fix-heart-failure"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/7rAMevqYh8FBqArcRvw3WiQ-1409676296378.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Vagus Nerve Implant Fails to Fix Heart Failure</h3>					
+            <p>Boston Scientific's stimulator showed no benefit in big European trial, but Cyberonics' smaller, earlier-stage trial succeeded<span class="pubDate"><time>2&nbsp;Sep</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/lasers-switch-memories-from-bad-to-good"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/4G5JQ7aWZcTsT_PeiFHc6Bw-1409150138166.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Lasers Switch Bad Memories to Good in Mice</h3>					
+            <p>Researchers use optogenetics to change a mouse's association with a memory from negative to positive or vice versa<span class="pubDate"><time>27&nbsp;Aug</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/nanoclast/biomedical/devices/graphene-and-elastic-bands-could-revolutionize-health-monitoring"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/0H5pMjvFjSfq5cfNWkJiZzg-1408728639682.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Graphene and Rubber Bands Could Revolutionize Health Monitoring</h3>					
+            <p>Researchers infuse graphene into elastic bands making a cheap and effective strain sensor<span class="pubDate"><time>22&nbsp;Aug</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/nanoclast/biomedical/devices/nanotechnology-to-fight-ebola-virus"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/9wu5UK02exCJ_ZN-jqFFCJA-1407938206702.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>A Research Team Looks to Nanotechnology to Fight Ebola Virus</h3>					
+            <p>With existing medicines unable to stem the Ebola outbreak, researchers turn to nanotech for a solution<span class="pubDate"><time>14&nbsp;Aug</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/nanoclast/biomedical/devices/graphenebased-sensor-brings-new-wrinkle-to-wearable-sensors"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/4eIlfixntc8X-geXnx-H0Vg-1407872088003.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Graphene-based Sensor Brings New Wrinkle to Wearables</h3>					
+            <p>Badge-sized device could offer continuous monitoring for a variety of diseases<span class="pubDate"><time>12&nbsp;Aug</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/nanoclast/biomedical/devices/graphene-transforms-itself-into-a-sphere-opening-up-medical-applications"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/8oJCZCsdvQge1yIa-BVNVuA-1407263012374.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Graphene Transforms Itself Into a Sphere for Drug Delivery</h3>					
+            <p>Researchers serendipitously discover that graphene oxide at a certain pH changes into crystal droplets<span class="pubDate"><time>6&nbsp;Aug</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/an-nmr-device-the-size-of-a-seed"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/5Me-c-W3z-B3moIgZEzbNQg-1407254611031.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>An NMR Chip The Size of a Seed</h3>					
+            <p>Together with a small permanent magnet, the chip could enable cheap NMR analysis in factories and clinics <span class="pubDate"><time>5&nbsp;Aug</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/nanoclast/biomedical/devices/nist-measures-rotation-speed-of-nanorods-used-in-medical-treatments"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/7aIaE5jSc27NytBwy13NhQg-1406204389175.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Spintastic Nanorods Rotate at 150,000 RPM</h3>					
+            <p>Ten-fold increase in rotation speeds opens up potential for spinning nanorods in machining <span class="pubDate"><time>24&nbsp;Jul</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/nanoclast/biomedical/devices/nanoparticles-improve-stroke-treatment"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/16halaZsu_c1nbfMKVleanA-1406056268881.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Nanoparticles Improve Stroke Treatment</h3>					
+            <p>Nanorods that spin inside the bloodstream enhance blood-clot busting drug<span class="pubDate"><time>22&nbsp;Jul</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/contraceptive-implant-hands-women-remote-control"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/6aZiq-iRn62WVfAspHby41Q-1404887189591.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Contraceptive Implant Hands Women Remote Control</h3>					
+            <p>A microchip implant for women containing 16 years worth of contraceptives readies for pre-clinical testing next year<span class="pubDate"><time>9&nbsp;Jul</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/tech-talk/biomedical/devices/google-fit-wants-to-rule-all-your-wearable-health-fitness-devices"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/85PjpCx4_ZnEGeWSUN4SrDQ-1403718774035.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Google Fit Wants to Rule All Your Wearable Health, Fitness Devices</h3>					
+            <p>Google aims to create a service to collect and share data from various fitness and health gadgets<span class="pubDate"><time>25&nbsp;Jun</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/biomedical/devices/biometric-shirt-for-astronauts-gets-an-antarctic-tryout"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/7C4Lfgk6loaI9IXYA6YcOCA-1403034859257.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Biometric Shirt for Astronauts Gets an Antarctic Tryout</h3>					
+            <p>Six explorers wore Astroskin while trekking across icy plateaus<span class="pubDate"><time>19&nbsp;Jun</time></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article related-item recent-item biomedical"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/biomedical/devices/neuroscientists-join-the-opensource-hardware-movement"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/0Snz8w0lR-cJOJjy52HvaBQ-1402432052073.jpg" width="300" height="225"/>
+                <figcaption>Biomedical</figcaption>
+            </figure>
+            <h3>Neuroscientists Join the Open-Source Hardware Movement</h3>					
+            <p>Two MIT grad students offer up DIY brain-recording gear <span class="pubDate"><time>11&nbsp;Jun</time></span></p>
+    	</a>
+    </article>
+
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	
+
+	<footer id="global-footer" role="landmark">
+
+	
+    <div id="topFooter" role="region" >
+        <div class="commonwrap" role="section">
+            <a href="/">
+                
+                <img class="footerLogo lazy" src="/assets/img/x.gif" data-original="/assets/img/footer-logo.png" alt="IEEE Spectrum logo" width="270" role="img" />
+            </a>
+            <div id="footerTopMenu" role="navigation">
+                <ul role="menu">
+                    <h4 class="topics" role="heading">Topics</h4>
+                    
+                    <li role="menuitem"><a href="/aerospace">Aerospace</a></li>
+                    <li role="menuitem"><a href="/at-work">At Work</a></li>
+                    <li role="menuitem"><a href="/biomedical">Biomedical</a></li>
+                    <li role="menuitem"><a href="/computing">Computing</a></li>
+                    <li role="menuitem"><a href="/energy">Energy</a></li>
+                    <li role="menuitem"><a href="/gadgets">Gadgets</a></li>
+                    <li role="menuitem"><a href="/geek-life">Geek Life</a></li>
+                    <li role="menuitem"><a href="/robotics">Robotics</a></li>
+                    <li role="menuitem"><a href="/semiconductors">Semiconductors</a></li>
+                    <li role="menuitem"><a href="/telecom">Telecom</a></li>
+                </ul>
+
+                <ul class="social-links" role="menu">
+                    <h4 role="heading">Connect</h4>
+                    <li role="menuitem"><a href="http://www.facebook.com/IEEE.Spectrum" class="icn-sml" target="_blank"><span class="faceBook"></span>Facebook</a></li>
+                    <li role="menuitem"><a href="http://twitter.com/#!/IEEESpectrum" class="icn-sml" target="_blank"><span class="twitter"></span>Twitter</a></li>
+					<li role="menuitem"><a href="http://www.linkedin.com/groups/IEEE-Spectrum-1982451?home=&gid=1982451&trk=anet_ug_hm" class="icn-sml" target="_blank"><span class="linkedIn"></span>LinkedIn</a></li>
+                    <li role="menuitem"><a href="https://plus.google.com/105079317383160047042/posts" class="icn-sml" target="_blank"><span class="google"></span>Google+</a></li>
+                    <li role="menuitem"><a href="/static/rss" class="icn-sml" target="_blank"><span class="rssFeed"></span>RSS</a></li>
+                </ul>
+
+                <ul class="spectrum-footer-links" role="menu">
+                    <h4 role="heading">IEEE Spectrum</h4>
+                    <li role="menuitem"><a href="/static/contactus">Contact Us</a></li>
+                    <li role="menuitem"><a href="/static/aboutus">About</a></li>
+                    <li role="menuitem"><a href="/static/newsletters">Newsletters</a></li>
+                    <li role="menuitem"><a href="http://m.spectrum.ieee.org/">Mobile Site</a></li>
+                    <h4 class="footerTitle" role="heading">IEEE Partners</h4>
+                    <li role="menuitem"><a href="http://advertise.ieee.org">Advertising &amp; Media Center</a></li>
+                    <li role="menuitem"><a href="http://careers.ieee.org/">IEEE Job Site</a></li>
+                    <li role="menuitem"><a href="http://spectrumsuppliermarketplace.com/">Buyer&rsquo;s Guide</a></li>
+                </ul>
+
+                <ul class="magazine-links" role="menu">
+                    <h4 role="heading">The Magazine</h4>
+                    <li role="menuitem"><a href="/magazine"><img class="lazy" src="/assets/img/x.gif" data-original="/img/09Cover-100px-1409323124560.jpg" width="100" height="133" alt="Magazine cover image"></a></li>
+                    <li role="menuitem"><a href="/static/readerservices">Subscribe Now</a></li>
+                    <li role="menuitem"><a href="http://www.qmags.com/subscribers">Digital Download</a></li>
+                </ul>
+            </div>
+
+            <ul id="footerCopy">
+                <li id="copyrightTag" role="contentinfo">&copy; Copyright 2014 IEEE Spectrum</li>
+                <li role="menu" id="policyNav"><a href="http://www.ieee.org/site_terms_conditions.html?WT.mc_id=hpf_terms">Terms &amp; Conditions</a> | <a href="http://www.ieee.org/privacy">Privacy &amp; Security</a> | <a href="http://www.ieee.org/nondiscrimination">Nondiscrimination Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+	
+    <div id="subFooter" role="navigation">
+        <div class="commonwrap" role="region">
+            <a href="http://www.ieee.org">
+                
+                <img class="footerLogo lazy" src="/assets/img/x.gif" data-original="/assets/img/ieee-logo.png" width="142" height="41" alt="IEEE logo" role="img" />
+            </a>
+
+            <div id="footerSubMenu" role="section">
+                <ul role="menu">
+                    <li role="menuitem"><a href="http://www.ieee.org/about/index.html">About IEEE</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/conferences_events/index.html">Conferences &amp; Events</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/education_careers/index.html">Education &amp; Careers</a></li>
+                </ul>
+
+                <ul role="menu">
+                    <li role="menuitem"><a href="http://www.ieee.org/membership_services/index.html">Membership &amp; Services</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/publications_standards/index.html">Publications and Standards</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/societies_communities/index.html">Societies &amp; Communities</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+	
+
+<script src="/assets/js/libs/plugins.js"></script>
+<script src="/assets/js/libs/jquery.isotope.min.js"></script>
+<script src="/assets/js/slimbox2.min.js"></script>
+
+<script src="/assets/js/libs/autoload.js"></script>
+<script src="/assets/js/masonry-ads-right.min.js"></script>
+<script src="/assets/js/libs/spin.min.js"></script>
+<script src="/assets/js/libs/jquery-lazyload/jquery.lazyload.min.js"></script>
+<script src="/assets/js/libs/jquery.touchwipe.min.js"></script>
+
+<script src="/assets/js/libs/jquery.fitvids.js"></script>
+<script src="/assets/js/script6.js"></script>
+
+
+
+<script type="text/javascript">
+function ss_track(slideshow_image, image_number, image_name, image_caption, path_to_assets){
+	//console.log(slideshow_image);
+	 _gaq.push(['_setAccount', 'UA-747464-1']);
+	 _gaq.push(['_trackEvent','Slideshows', 'Change Slide', '', image_number, true]);
+}
+</script>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+<div id="parsely-cfg" data-parsely-site="spectrum.ieee.org"></div>
+</div>
+<script>
+(function(s, p, d) {
+var h=d.location.protocol, i=p+"-"+s,
+e=d.getElementById(i), r=d.getElementById(p+"-root"),
+u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+:"static."+p+".com";
+if (e) return;
+e = d.createElement(s); e.id = i; e.async = true;
+e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+
+<script type="text/javascript">
+  var _bizo_data_partner_id = "473";
+  var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js.");
+  document.write(unescape("%3Cscript src='" + _bizo_p + "bizographics.com/convert_data.js?partner_id=" + _bizo_data_partner_id + "' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+	<!-- begin static module global-footer-spectrum4 --><script type="text/javascript" src="https://api.swishu.com/publisher/page/load?website_key=TXyQ25oi0jN5"></script>
+<script type="text/javascript">swishu.init();</script>
+
+<!-- end static module -->
+</body>
+</html>

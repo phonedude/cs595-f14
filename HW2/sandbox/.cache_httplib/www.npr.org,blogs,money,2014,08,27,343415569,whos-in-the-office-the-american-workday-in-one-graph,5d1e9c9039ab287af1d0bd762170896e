@@ -1,0 +1,803 @@
+status: 200
+content-length: 64391
+content-location: http://www.npr.org/blogs/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph
+x-powered-by: PHP/5.5.0
+expires: Mon, 22 Sep 2014 17:03:03 GMT
+vary: Accept-Encoding
+server: Apache
+connection: keep-alive
+-content-encoding: gzip
+cache-control: max-age=0
+date: Mon, 22 Sep 2014 17:03:03 GMT
+access-control-allow-origin: *
+content-type: text/html;;charset=UTF-8
+-varied-accept-encoding: gzip, deflate
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]--><head><script>
+   try {var _sf_startpt=(new Date()).getTime();} catch(e){}
+</script>
+<title>Who's In The Office? The American Workday In One Graph : Planet Money : NPR</title><meta charset="utf-8" /><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwcOV1NACwcHVlFbAw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t(3),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(6),t(4),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:"QJf3ax",4:5,5:15,6:6,handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(2),t(1).create()),i=t(3)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:"QJf3ax",2:15,3:16}],5:[function(t,e){var n=(t(3),t(1).create()),r=t(2)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:"QJf3ax",2:16,3:15}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(3),t(1).create()),o=t(2)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:"QJf3ax",2:16,3:15}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t(2).create(),a=t(1),s=t(3),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:"QJf3ax",3:16}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t(3),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(5),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:"QJf3ax",4:7,5:4,handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t(1).create(),o={};e.exports=n,n.ee=r,r.q=o},{1:"QJf3ax"}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t(1),o=t(2),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:"QJf3ax",2:15}]},{},["G9z0Bl",3,8]);</script><![endif]--><meta name="robots" content="noarchive,index,follow" /><meta name="Rating" content="General" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" /><!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /><![endif]-->
+<!--dontvalidate-->
+<meta name="date" content="2014-08-27" />
+<!--/dontvalidate-->
+<link rel="canonical" href="http://www.npr.org/blogs/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph" /><meta name="description" content="What is the typical American workday? We take a look at how working hours change according to job type." /><link rel="alternate" type="application/rss+xml" title="Business" href="/rss/rss.php?id=1006" /><link rel="alternate" type="application/rss+xml" title="Planet Money" href="/rss/rss.php?id=93559255" /><meta property="og:title" content="Who's In The Office? The American Workday In One Graph" /><meta property="og:url" content="http://www.npr.org/blogs/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph" /><meta property="og:type" content="article" /><meta property="og:description" content="What is the typical American workday? We take a look at how working hours change according to job type." /><meta property="og:image" content="http://media.npr.org/assets/img/2014/08/26/commuting-fad916140a2dc4401eac941bb4244c3c7f3d8a98.jpg" /><meta property="og:site_name" content="NPR.org" /><meta property="fb:app_id" content="138837436154588" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@nprnews" /><meta name="twitter:domain" content="npr.org" /><meta name="twitter:image:src" content="http://media.npr.org/assets/img/2014/08/26/commuting_wide-718d8ffbc9dd47f51a727b6e21bb9dab7234f6dd-s4-c85.jpg" /><link type="text/css" rel="stylesheet" media="screen, print" href="http://s.npr.org/templates/css/generated/fingerprint/newsStory-3e72585936ea497da9b606c7cc4dc2f3f4d31e92.css" /><link type="text/css" rel="stylesheet" media="screen" href="http://www.npr.org/branding/blogs/money/branding.css" /><script>
+   window.NPR={};window.NPR.serverVars={"storyId":"343415569","serverType":"prod","facebookAppId":"138837436154588","closeurl":"http:\/\/www.npr.org\/templates\/socialmedia\/close.html","sessionScope":2,"pageScope":3,"breadcrumbs":["Planet Money","Planet Money"],"primaryTopic":1006,"orgId":"1","topics":[1006,1018,1017,1003,1002],"pageTypeId":1,"internalCampaign":null,"campaignSource":null,"campaignName":null,"aggregations":[1006,1018,1017,1003,1002,312150170,191676894,127414874,93559255],"aggregationsText":["Business","Your Money","Economy","U.S.","Home Page Top Stories","Editor\u0027s Picks","Most Popular","Jobs","Planet Money"],"aggExtras":["27Aug2014","Quoctrung+Bui"],"byline":["Quoctrung Bui"],"chartbeatAccount":"18888"};
+</script>
+<script type="text/javascript" src="http://s.npr.org/templates/javascript/generated/fingerprint/fonts-d1815189294aa9ca3800a0638cebb10342103209.js">
+   </script>
+<script type="text/javascript" src="http://s.npr.org/templates/javascript/generated/fingerprint/headerAllPages-67072c80965fe401d347f9d03aca79a48b37f71b.js">
+   </script>
+<script type="text/javascript">
+   document.domain="npr.org";
+</script>
+
+<!-- START UNDERWRITING -->
+<script type="text/javascript">
+   
+googletag.cmd.push(function(){try{if(DFP.shouldRenderForDevice('desktop')){googletag.defineSlot("/6735/n6735.NPR/News_Business",[[300,250],[300,600]],'ad-desktop').addService(googletag.pubads());}
+if(DFP.shouldRenderForDevice('banner')){googletag.defineSlot("/6735/n6735.NPR/News_Business",[175,40],'ad-banner').addService(googletag.pubads());}
+if(DFP.shouldRenderForDevice('88')){googletag.defineSlot("/6735/n6735.NPR/News_Business",[88,31],'ad-88').addService(googletag.pubads()).setCollapseEmptyDiv(true,true);}
+googletag.pubads().setTargeting('agg','93559255');googletag.pubads().setTargeting('theme','93559255');googletag.pubads().setTargeting('storyId','343415569');googletag.pubads().setTargeting('blog','93559255');var deviceString='';var ua=navigator.userAgent.toLowerCase();if(ua.indexOf("android")>-1){googletag.pubads().setTargeting('device','android');}
+else if(ua.match(/(iPad|iPhone|iPod)/i)){googletag.pubads().setTargeting('device','ios');}
+if(typeof DFP.queryParameters.sc==='string'&&DFP.queryParameters.sc.length>0){scValue=DFP.queryParameters.sc;}
+else if(typeof document.referrer==='string'&&document.referrer.search('facebook.com')>-1){scValue='fb';}
+else if(typeof DFP.queryParameters.ft==='string'){scValue=DFP.queryParameters.ft;}
+googletag.pubads().setTargeting('sc',scValue);var utm_source=typeof DFP.queryParameters.utm_source==='string'&&DFP.queryParameters.utm_source.length>0?DFP.queryParameters.utm_source:'';var utm_medium=typeof DFP.queryParameters.utm_medium==='string'&&DFP.queryParameters.utm_medium.length>0?DFP.queryParameters.utm_medium:'';googletag.pubads().setTargeting('utm_source',utm_source);googletag.pubads().setTargeting('utm_medium',utm_medium);var orient='';if(NPR.Devices.isOnPhone()||NPR.Devices.isOnTablet()){if(window.orientation==0||window.orientation==180){orient='portrait';}else if(window.orientation==90||window.orientation==-90){orient='landscape';}}
+googletag.pubads().setTargeting('orient',orient);googletag.pubads().enableSingleRequest();googletag.pubads().collapseEmptyDivs();googletag.enableServices();}catch(e){NPR.messaging.exception(e,'Define Google Publisher Tags',NPR.messaging.constants.SPONSORSHIP_ERROR);}});
+</script>
+
+<!-- END UNDERWRITING -->
+</head><body id="news" class="news tmplBlogNewsStory blog catId127414874 id343415569" data-metrics-scroll ><a href="#mainContent" id="skiplink">Skip to Main Content</a><script type="text/javascript">var pageTrackingCPTV=function(){try{AddNamespace("NPR.metrics");NPR.metrics.pageImpression();}catch(e){NPR.messaging.exception(e,'commonPageTrackView','document.ready',NPR.messaging.constants.METRICS_ERROR);}};if($('docreadybind').length){$('docreadybind').bind('click',pageTrackingCPTV);}else{$(document).ready(pageTrackingCPTV);}</script><header id="globalheader" class="clearfix"><a class="sidebarButton" href="#sidebar" data-action="Toggle OffCanvas" data-metrics='{"action":"Toggle OffCanvas","category":"Global Navigation"}'>
+    <img src="http://media.npr.org/chrome/subnav_toggle.png" alt="subnav toggle" />
+</a>
+
+<a href="/" class="nprhome" data-action="Click Logo" data-metrics='{"action":"Click Header Logo", "category":"Global Navigation"}'>
+    <img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR" />
+</a>
+
+<div class="inner" data-metrics-category="Global Navigation">
+    <form action="/search/index.php" method="get" name="searchForm" id="searchForm" class="search">
+    	<input type="search" name="searchinput" id="searchinput" class="textbox searchbox">
+    </form>
+
+    <a href="#" class="search-toggle">Toggle search</a>
+
+    <nav class="nav-two" id="loginPElm">
+        <ul>
+            <li class="stations"><a href="/templates/stations/stations/" data-metrics='{"action":"Click Business Link"}' data-reveal-id="myModal">Stations</a></li>
+            <li class="donate"><a href="/stations/donate/index.php" data-metrics='{"action":"Click Business Link"}'>Donate</a></li>
+            <li class="nprshop"><a href="http://shop.npr.org" data-metrics='{"action":"Click Business Link"}'>Shop</a></li>
+            <li class="login-reg loggedOut"><a href="/templates/reg/login.php" data-metrics='{"action":"Click Profile Link","label":"Login / Register"}'>Sign In/Register</a></li>
+            <span class="loggedIn">
+	            <li class="userLogin" ><span id="userLogin"></span></li>
+	            <li class="login-reg"><a href="/templates/reg/logout.php" class="logout" data-metrics='{"action":"Click Profile Link","label":"Logout"}'>Logout</a></li>
+            </span>
+        </ul>
+    </nav>
+
+    <nav class="nav-one">
+        <ul>
+            <li class="topics">
+                Topics
+
+                <div class="subnav" data-metrics-action="Click Topics" data-metrics-all>
+                    <ul class="news">
+                        <li class="hdr"><a href="/sections/news/">News</a></li>
+                        <li><a href="/sections/us/">U.S.</a></li>
+                        <li><a href="/sections/world/">World</a></li>
+                        <li><a href="/sections/politics/">Politics</a></li>
+                        <li><a href="/sections/business/">Business</a></li>
+                        <li><a href="/sections/technology/">Technology</a></li>
+                        <li><a href="/sections/science/">Science</a></li>
+                        <li><a href="/sections/health/">Health</a></li>
+                        <li><a href="/blogs/codeswitch/">Race &amp; Culture</a></li>
+                    </ul>
+                     <ul class="arts-life">
+                        <li class="hdr"><a href="/sections/arts/">Arts &amp; Life</a></li>
+                        <li><a href="/sections/movies/">Movies</a></li>
+                        <li><a href="/sections/pop-culture/">Pop Culture</a></li>
+                        <li><a href="/sections/food/">Food</a></li>
+                        <li><a href="/sections/art-design/">Art &amp; Design</a></li>
+                        <li><a href="/sections/performing-arts/">Performing Arts</a></li>
+                        <li><a href="/blogs/pictureshow">Photography</a></li>
+                    </ul>
+                    <ul class="books">
+                        <li class="hdr"><a href="/books/">Books</a></li>
+                        <li><a href="/sections/book-reviews/">Book Reviews</a></li>
+                        <li><a href="/sections/author-interviews/">Author Interviews</a></li>
+                    </ul>
+                    <ul class="music">
+                        <li class="hdr"><a href="/music/">Music</a></li>
+                        <li><a href="/series/98679384/first-listen/">First Listen</a></li>
+                        <li><a href="/series/100920965/music-articles/">Music Articles</a></li>
+                        <li><a href="/series/15667984/favorite-sessions/">Studio Sessions</a></li>
+                        <li><a href="/sections/music-videos/">Videos</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="programs">
+                Programs
+
+                 <div class="subnav" data-metrics-action="Click Programs" data-metrics-all>
+                     <ul>
+                        <li class="hdr">News and Conversations</li>
+                        <li><a href="/programs/morning-edition/">Morning Edition</a></li>
+                        <li><a href="/programs/all-things-considered/">All Things Considered</a></li>
+                        <li><a href="/programs/fresh-air/">Fresh Air</a></li>
+                        <li><a href="http://hereandnow.wbur.org/" target="_blank">Here &amp; Now</a></li>
+                        <li><a href="http://thedianerehmshow.org" target="_blank">The Diane Rehm Show</a></li>
+                        <li><a href="/programs/latino-usa/">Latino USA</a></li>
+                        <li><a href="http://www.onthemedia.org" target="_blank">On The Media</a></li>
+                        <li><a href="http://www.onpointradio.org/" target="_blank">On Point</a></li>
+                        <li><a href="/programs/weekend-edition-saturday/">Weekend Edition Saturday</a></li>
+                        <li><a href="/programs/weekend-edition-sunday/">Weekend Edition Sunday</a></li>
+                     </ul>
+
+                     <ul>
+                        <li class="hdr">Storytelling &amp; Humor</li>
+                        <li><a href="/programs/ask-me-another/">Ask Me Another</a></li>
+                        <li><a href="http://www.cartalk.com" target="_blank">Car Talk</a></li>
+                        <li><a href="http://www.radiolab.org" target="_blank">Radiolab</a></li>
+                        <li><a href="/programs/snap-judgment/" target="_blank">Snap Judgment</a></li>
+                        <li><a href="http://storycorps.org" class="storycorps" target="_blank">StoryCorps</a></li>
+                        <li><a href="/programs/ted-radio-hour/">TED Radio Hour</a></li>
+                        <li><a href="/programs/wait-wait-dont-tell-me/">Wait Wait...Don't Tell Me!</a></li>
+                     </ul>
+
+                     <ul>
+                        <li class="hdr">Music</li>
+                        <li><a href="/programs/all-songs-considered/">All Songs Considered</a></li>
+                        <li><a href="/series/alt-latino/">Alt.Latino</a></li>
+                        <li><a href="/series/98679384/first-listen/">First Listen</a></li>
+                        <li><a href="/blogs/metropolis/">Metropolis</a></li>
+                        <li><a href="/blogs/microphonecheck/">Microphone Check</a></li>
+                        <li><a href="/series/mountain-stage/">Mountain Stage</a></li>
+                        <li><a href="http://www.fromthetop.org/">From The Top</a></li>
+                        <li><a href="/programs/jazzset/">JazzSet</a></li>
+                        <li><a href="/programs/piano-jazz/">Piano Jazz</a></li>
+                        <li><a href="/series/150560513/song-travels/">Song Travels</a></li>
+                        <li><a href="/series/103063413/the-thistle-and-shamrock/">The Thistle &amp; Shamrock</a></li>
+                        <li><a href="/programs/world-cafe/">World Cafe</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="listen"><a href="/listen/" data-metrics='{"action":"Click Listen"}'>Listen</a></li>
+        </ul>
+    </nav>
+</div></header><div id="wrapper">
+      <div id="sectionWrap" class="clearfix">
+            <section role="main"><header class="contentheader" data-metrics-category="Planet Money"><div class="mobileheader">
+    <a class="sidebarButton" href="#sidebar"  data-metrics='{"action":"Toggle OffCanvas","category":"Global Navigation"}'>
+        <img src="http://media.npr.org/chrome/subnav_toggle.png" alt="NPR logo" />
+    </a>
+    
+    <a href="/" class="nprHome" data-metrics='{"action":"Click Logo","category":"Global Navigation"}'>
+        <img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR">        
+    </a>
+</div><div class="branding">
+      <a href="http://www.npr.org/blogs/money/"  data-metrics='{"action":"Click Header Logo","category":"Planet Money"}' ><img src="http://media.npr.org/branding/blogs/money/branding_icon-2049217818157ac661fee05d42b0e8b6894aeaaa.png" class="icon" alt="Planet Money" /><img src="http://media.npr.org/branding/blogs/money/branding_main-62f6743a845d787a40b91f03029c8a19b0edfcba.png" class="main" alt="Planet Money" /><span class="tag">The Economy Explained</span>
+</a>
+</div>
+
+<!-- END CLASS="BRANDING" -->
+</header><div class="subnav-tools-wrap">
+      <div id="subNavigation" class="agglocation linkLocation">
+            <div id="res341873294" class="bucketwrap statichtml">
+                  <div class="subtopics">
+  <ul class="animated fadeInRight">
+    <li><a href="/blogs/money/2011/04/27/135599807/about-planet-money">About</a></li>
+    <li><a href="/blogs/money/127413729/podcast/">Podcast</a></li>
+    <li><a href="/blogs/money/135511603/radio">Radio</a></li>
+    <li><a href="/blogs/money/135573355/this-american-life">This American Life</a></li>
+  </ul>
+</div>
+
+<div class="roller-overlay"></div>
+
+<ul class="subscribe">
+  <li class="twitter"><a href="http://twitter.com/planetmoney" data-metrics='{"action":"Click Twitter"}'>Twitter</a></li>
+  <li class="facebook"><a href="http://www.facebook.com/planetmoney" data-metrics='{"action":"Click Facebook"}'>Facebook</a></li>
+</ul>
+      </div>
+      
+<!-- END ID="RES341873294" CLASS="BUCKETWRAP STATICHTML" -->
+   </div>
+   
+<!-- END ID="SUBNAVIGATION" CLASS="AGGLOCATION LINKLOCATION" -->
+</div>
+<article class="story story-blogpost"><a name="mainContent"></a><p class="category"><a href="http://www.npr.org/blogs/money/127414874/jobs/">Jobs</a></p> <!--googleon: index--><div class="storytitle">
+      <h1>Who's In The Office? The American Workday In One Graph</h1>
+   <input type="hidden" id="title343415569" value="Who's In The Office? The American Workday In One Graph"></input>
+   <input type="hidden" id="modelShortUrl343415569" value="http://n.pr/1vLbVjU"></input>
+   <input type="hidden" id="modelFullUrl343415569" value="http://www.npr.org/blogs/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph"></input>
+</div>
+
+<!-- END CLASS="STORYTITLE" -->
+<div id="story-meta" class="meta-left">
+      <div id="storybyline" class="  linkLocation">
+            <div class="bucketwrap byline" id="res343415572" previewTitle="bylines">
+                  <p class="byline">by <span>Quoctrung Bui</span></p>
+      </div>
+      
+<!-- END CLASS="BUCKETWRAP BYLINE" ID="RES343415572" PREVIEWTITLE="BYLINES" -->
+   </div>
+   
+<!-- END ID="STORYBYLINE" CLASS="  LINKLOCATION" -->
+   <div class="dateblock">
+            <time datetime="2014-08-27"><span class="date">August 27, 2014</span><span class="time">10:56 AM ET</span></time>
+   </div>
+</div>
+
+<!-- END ID="STORY-META" CLASS="META-LEFT" -->
+<div id="storytext" class="storytext storylocation linkLocation">
+      <p>Researchers often look at <a href="http://www.nber.org/papers/w11895">the number of hours worked</a>, but rarely do they ask the question of <em>when. </em>Fortunately, the government conducts an annual study called the <a href="http://www.bls.gov/tus/">American Time Use Survey</a> that tracks how people spend their days.</p>   <p>The interactive graph below shows the share of workers who say they're working in a given hour, grouped by occupation. Play with the different job categories to see how the average workdays differ from one another.</p>   <div id="res343415590" class="bucketwrap statichtml">
+            <div id="responsive-embed-time-industry-night">
+</div>
+<script src="http://apps.npr.org/dailygraphics/graphics/time-industry-night/js/lib/pym.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+    var pymParent = new pym.Parent(
+        'responsive-embed-time-industry-night',
+        'http://apps.npr.org/dailygraphics/graphics/time-industry-night/child.html',
+        {}
+    );
+});
+</script>
+    
+   </div>
+   
+<!-- END ID="RES343415590" CLASS="BUCKETWRAP STATICHTML" -->
+   <p>The conventional workday remains pretty strong. The majority of people are at work from 9 a.m. to 5 p.m., with a small break in the middle of the day for lunch.</p>   <p>The graph shows that <strong>construction workers</strong> take the lunch hour the most seriously, with the largest drop in workers at noon (as measured from peak to midday trough).</p>   <div id="res343491152" class="bucketwrap graphic large">
+            <div class="bucket">
+                  <div class="graphicwrapper">
+                        <img src="/news/graphics/2014/08/construction-graphic.png" alt="Construction workers take lunch seriously." />
+         </div>
+         
+<!-- END CLASS="GRAPHICWRAPPER" -->
+      </div>
+      
+<!-- END CLASS="BUCKET" -->
+   </div>
+   
+<!-- END ID="RES343491152" CLASS="BUCKETWRAP GRAPHIC LARGE" -->
+   <p>Not surprisingly, <strong>servers and cooks</strong> have a schedule that's essentially the opposite of all other occupations. Their hours peak during lunch and hold steady well into the evening.</p>   <div id="res343491096" class="bucketwrap graphic large">
+            <div class="bucket">
+                  <div class="graphicwrapper">
+                        <img src="/news/graphics/2014/08/food-graphic.png" alt="Food preparation and serving" />
+         </div>
+         
+<!-- END CLASS="GRAPHICWRAPPER" -->
+      </div>
+      
+<!-- END CLASS="BUCKET" -->
+   </div>
+   
+<!-- END ID="RES343491096" CLASS="BUCKETWRAP GRAPHIC LARGE" -->
+   <p>The only occupation where a large share of workers are up at 3 a.m. is <strong>protective services</strong> (like police officers, firefighters and private detectives). Even among blue collar workers, working at 3 a.m. is a relatively rare occurrence.</p>   <div id="res343491038" class="bucketwrap graphic large">
+            <div class="bucket">
+                  <div class="graphicwrapper">
+                        <img src="/news/graphics/2014/08/protective-graphic.png" alt="Protective services" />
+         </div>
+         
+<!-- END CLASS="GRAPHICWRAPPER" -->
+      </div>
+      
+<!-- END CLASS="BUCKET" -->
+   </div>
+   
+<!-- END ID="RES343491038" CLASS="BUCKETWRAP GRAPHIC LARGE" -->
+   <p>Still, Americans work more night and weekend hours than people in other advanced economies, according to Dan Hamermesh and Elena Stancanelli's <a href="https://utexas.app.box.com/s/6wridq0f72llb2qywwqd">forthcoming paper</a>. They found that about 27 percent of Americans have worked between 10 p.m. and 6 a.m. at least once a week, compared with 19 percent in the U.K. and 13 percent in Germany.</p>   <p>But there are limits to the data. For white collar work, the line between life and work can be blurred. Tasks like late-night emails and dinners with clients throw a wrench into how work hours are measured overall.</p>
+</div>
+<div class="social-wrap">
+      <div class="social">
+            <ul>
+                  <li class="share"><a class="sharemaintab" href="#" data-metrics='{"action":"Toggle Share Tools","category":"Share Tools"}' >Share</a><div class="sharepop">
+      <ul>
+            <li class="facebookLi"><a class="facebook fbStory343415569" href="javascript:void(0);" onclick="javascript:NPR.socialMedia.shareOnFacebook(343415569);" data-metrics='{"action":"Click Facebook","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/money\/2014\/08\/27\/343415569\/whos-in-the-office-the-american-workday-in-one-graph"}' ><span class="name">Facebook</span></a></li>
+      <li class="twitterLi"><a class="retweetStory story343415569 twitter" href="javascript:void(0);" onclick="javascript:NPR.socialMedia.shareOnTwitter(343415569);" data-metrics='{"action":"Click Twitter","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/money\/2014\/08\/27\/343415569\/whos-in-the-office-the-american-workday-in-one-graph"}' ><span class="name">Twitter</span></a></li>
+      <li class="googlePlusLi"><a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.npr.org%2Fblogs%2Fmoney%2F2014%2F08%2F27%2F343415569%2Fwhos-in-the-office-the-american-workday-in-one-graph%3Futm_campaign%3Dstoryshare%26utm_source%3Dplus.google.com%26utm_medium%3Dsocial" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" data-metrics='{"action":"Click Google Plus","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/money\/2014\/08\/27\/343415569\/whos-in-the-office-the-american-workday-in-one-graph"}' >Google+</a></li>
+      <li class="email"><a href='javascript:void(0);' class='email eaf_link' data-story-id='343415569'  data-metrics='{"action":"Click Email a Friend","category":"Share Tools","label":"http:\/\/www.npr.org\/blogs\/money\/2014\/08\/27\/343415569\/whos-in-the-office-the-american-workday-in-one-graph"}' >Email</a></li>
+   </ul>
+</div>
+
+<!-- END CLASS="SHAREPOP" -->
+</li>
+         <li class="comment"><a class="comment-count" href="http://www.npr.org/blogs/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph#commentBlock" data-storyid="343415569" data-shortname="planetmoney"  data-metrics='{"category":"Share Tools","action":"Click comments"}' ><span class="count"></span><span class="name">Comment</span></a></li>
+      </ul>
+   </div>
+   
+<!-- END CLASS="SOCIAL" -->
+</div>
+
+<!-- END CLASS="SOCIAL-WRAP" -->
+<div class="pnnavwrap">
+      <a id="prev_nav" class="prev" href="http://www.npr.org/blogs/money/2014/08/22/342232976/episode-562-a-mall-divided"  data-metrics='{"action":"Click Previous Story","category":"Story to Story","label":"http:\/\/www.npr.org\/blogs\/money\/2014\/08\/22\/342232976\/episode-562-a-mall-divided"}' >Episode 562: A Mall Divided<span class="date">August 22, 2014</span><span class="icon"></span></a>   <a id="next_nav" class="next" href="http://www.npr.org/blogs/money/2014/08/27/343681894/episode-563-i-was-wrong"  data-metrics='{"action":"Click Next Story","category":"Story to Story","label":"http:\/\/www.npr.org\/blogs\/money\/2014\/08\/27\/343681894\/episode-563-i-was-wrong"}' >Episode 563: "I Was Wrong"<span class="date">August 27, 2014</span><span class="icon"></span></a>
+</div>
+
+<!-- END CLASS="PNNAVWRAP" -->
+<div id="resMore">
+       <!--googleoff: all-->   <div id="relatedstorieswrap">
+            <section id="relatedstories"><h4>More From Planet Money</h4>
+<div id="resMoreAPI" class="bucketwrap apiquery responsive_more">
+      <article id="story349873785" class="story clearfix"><a href="http://www.npr.org/blogs/money/2014/09/22/349873785/why-jewelry-stores-hide-the-price-tags" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/money/2014/09/22/349873785/why-jewelry-stores-hide-the-price-tags"}'><div class="storyinfo">
+<h2 class="slug">Business</h2>
+<h3>Why Jewelry Stores Hide The Price Tags</h3>
+</div>
+<div class="storyimg"><img src="http://media.npr.org/assets/img/2014/09/21/jewelry_sq-5676b71d22f150655b3165e229ad9a5981142e70.jpg?s=16" alt="How much for the blue one?"></div></a></article><article id="story349650496" class="story clearfix"><a href="http://www.npr.org/blogs/money/2014/09/19/349650496/episode-570-the-fine-print" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/money/2014/09/19/349650496/episode-570-the-fine-print"}'><div class="storyinfo">
+<h2 class="slug">Planet Money</h2>
+<h3>Episode 570: The Fine Print</h3>
+</div>
+<div class="storyimg"><img src="http://media.npr.org/assets/img/2014/09/19/homeowners-policy_sq-ff1d7286b223ab5ab0543e690905dca7ede8344d.jpg?s=16" alt="The details in a homeowners insurance policy are amazing"></div></a></article><article id="story349034928" class="story clearfix"><a href="http://www.npr.org/blogs/money/2014/09/17/349034928/episode-569-how-to-divide-an-imaginary-pie" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/money/2014/09/17/349034928/episode-569-how-to-divide-an-imaginary-pie"}'><div class="storyinfo">
+<h2 class="slug">Planet Money</h2>
+<h3>Episode 569: How To Divide An Imaginary Pie</h3>
+</div>
+<div class="storyimg"><img src="http://media.npr.org/assets/img/2014/09/17/alexandmatt31_sq-9629c8d044dbef7bb416fec4bec49bb634de127e.jpg?s=16" alt="Alex Blumberg and Matt Lieber work on their startup"></div></a></article><article id="story348975479" class="story clearfix last"><a href="http://www.npr.org/blogs/money/2014/09/16/348975479/a-tiny-25-million-mistake" data-metrics='{"category" : "Story to Story", "action" : "Click Egg Carton", "label" : "http://www.npr.org/blogs/money/2014/09/16/348975479/a-tiny-25-million-mistake"}'><div class="storyinfo">
+<h2 class="slug">Planet Money</h2>
+<h3>A Tiny, $25 Million Mistake </h3>
+</div>
+<div class="storyimg"><img src="http://media.npr.org/assets/img/2014/09/16/7777982086_ceb032b258_o_sq-64714898fef7bd5a0ee7736116cc1a0620dfaad3.jpg?s=16" alt='Photo of a "wrong way" sign.'></div></a></article>
+</div>
+
+<!-- END ID="RESMOREAPI" CLASS="BUCKETWRAP APIQUERY RESPONSIVE_MORE" -->
+<p class="more"><a href="http://www.npr.org/blogs/money/">More From Planet Money</a></p></section>
+   </div>
+   
+<!-- END ID="RELATEDSTORIESWRAP" -->
+    <!--googleon: all-->
+</div>
+
+<!-- END ID="RESMORE" -->
+<div id="commentBlock">
+      <h3 class="comment-head"><a href="#">Comments <span class="toggle"></span></a></h3>
+   <div id='disqus-npr'
+                                       data-shortname='planetmoney'
+                                       data-identifier='343415569'
+                                       data-url='http://www.npr.org/blogs/money/2014/08/27/343415569/whos-in-the-office-the-american-workday-in-one-graph'
+                                       data-title='Who's In The Office? The American Workday In One Graph'>
+            <a name="commentBlock">&nbsp</a>      <h5 class="commentBoxNotLoggedIn" id="login-overlay-link">You must be signed in to leave a comment. <a href="/templates/reg/login.php?returnUrl=%2Fblogs%2Fmoney%2F2014%2F08%2F27%2F343415569%2Fwhos-in-the-office-the-american-workday-in-one-graph%3F%23commentBlock">Sign In / Register</a></h5>
+      <p data-mod="pre">Please keep your community civil. All comments must follow the <a href="http://npr.org/discussionrules" target="new">NPR.org Community rules</a> and <a href="http://www.npr.org/about/termsofuse.html" target="new">terms of use</a>, and will be moderated prior to posting. NPR reserves the right to use the comments we receive, in whole or in part, and to use the commenter's name and location, in any medium. See also the <a href="http://www.npr.org/about/termsofuse.html" target="new">Terms of Use</a>, <a href="http://www.npr.org/about/privacypolicy.html" target="new">Privacy Policy</a> and <a href="http://npr.org/communityfaq" target="new">Community FAQ</a>.</p>      <div id='disqus_thread'>
+               </div>
+      
+<!-- END ID='DISQUS_THREAD' -->
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>      <div>
+                 <form style="display: hidden" action="#" method="POST" id="janrain-form">
+            <input type="hidden" id="janrain-token" name="token" value=""/>
+        </form>
+      </div>
+   </div>
+   
+<!-- END ID='DISQUS-NPR'
+                                       DATA-SHORTNAME='PLANETMONEY'
+                                       DATA-IDENTIFIER='343415569'
+                                       DATA-URL='HTTP://WWW.NPR.ORG/BLOGS/MONEY/2014/08/27/343415569/WHOS-IN-THE-OFFICE-THE-AMERICAN-WORKDAY-IN-ONE-GRAPH'
+                                       DATA-TITLE='WHO'S IN THE OFFICE? THE AMERICAN WORKDAY IN ONE GRAPH' -->
+</div>
+
+<!-- END ID="COMMENTBLOCK" -->
+ <!--googleoff: index--></article><header class="contentheader reprise" data-metrics-category="Planet Money"><div class="mobileheader">
+    <a class="sidebarButton" href="#sidebar"  data-metrics='{"action":"Toggle OffCanvas","category":"Global Navigation"}'>
+        <img src="http://media.npr.org/chrome/subnav_toggle.png" alt="NPR logo" />
+    </a>
+    
+    <a href="/" class="nprHome" data-metrics='{"action":"Click Logo","category":"Global Navigation"}'>
+        <img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR">        
+    </a>
+</div><div class="branding">
+      <a href="http://www.npr.org/blogs/money/"  data-metrics='{"action":"Click Header Logo","category":"Planet Money"}' ><img src="http://media.npr.org/branding/blogs/money/branding_icon-2049217818157ac661fee05d42b0e8b6894aeaaa.png" class="icon" alt="Planet Money" /><img src="http://media.npr.org/branding/blogs/money/branding_main-62f6743a845d787a40b91f03029c8a19b0edfcba.png" class="main" alt="Planet Money" /><span class="tag">The Economy Explained</span>
+</a>
+</div>
+
+<!-- END CLASS="BRANDING" -->
+</header><footer id="contentfooter" data-metrics-category="Planet Money"><div class="branding">
+      <a href="http://www.npr.org/blogs/money/"  data-metrics='{"action":"Click Footer Logo"}' ><img src="http://media.npr.org/branding/blogs/money/branding_icon-2049217818157ac661fee05d42b0e8b6894aeaaa.png" class="icon" alt="Planet Money" /><img src="http://media.npr.org/branding/blogs/money/branding_main-62f6743a845d787a40b91f03029c8a19b0edfcba.png" class="main" alt="Planet Money" /><span class="tag">The Economy Explained</span>
+</a>
+</div>
+
+<!-- END CLASS="BRANDING" -->
+<div class="modules">
+      <div class="module first">
+            <h3><a href="#"  data-metrics='{"action":"Toggle Footer Dropdown","label":"About","category":"Planet Money"}' >About</a></h3>
+      <div id="footer_module" class="agglocation linkLocation">
+                  <div id="res163939331" class="bucketwrap listtext">
+                        <div class="bucket">
+                              <p>Imagine you could call up a friend and say, "Meet me at the bar and tell me what's going on with the economy." Now imagine that's actually a fun evening. That's what we're going for at <em>Planet Money</em>. Want to know more? <a href="http://www.npr.org/blogs/money/2011/04/27/135599807/about-planet-money">Check out our "about" page</a>. Want to connect with the <em>Planet Money</em> team? <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=planetmoney@npr.org">Send us an email</a>.</p>
+            </div>
+            
+<!-- END CLASS="BUCKET" -->
+         </div>
+         
+<!-- END ID="RES163939331" CLASS="BUCKETWRAP LISTTEXT" -->
+      </div>
+      
+<!-- END ID="FOOTER_MODULE" CLASS="AGGLOCATION LINKLOCATION" -->
+   </div>
+   
+<!-- END CLASS="MODULE FIRST" -->
+   <div class="module second">
+    <h3><a href="#" data-metrics='{"action":"Toggle Footer Dropdown","label":"Subscribe"}'>Subscribe</a></h3>
+    
+    <div>
+        <ul class="subscribe">
+            <li class="podcast"><a href="http://www.npr.org/rss/podcast/podcast_detail.php?siteId=94411890" data-metrics='{"action":"Click Podcast"}'>Podcast</a></li>
+            <li class="rss"><a href="feed://www.npr.org/rss/rss.php?id=93559255" data-metrics='{"action":"Click RSS"}'>RSS</a></li>
+            <li class="twitter"><a href="http://twitter.com/planetmoney" data-metrics='{"action":"Click Twitter"}'>@planetmoney</a></li>
+            <li class="facebook"><a href="http://www.facebook.com/planetmoney" data-metrics='{"action":"Click Facebook"}'>Facebook</a></li>
+        </ul>
+    </div>
+</div>
+<!-- end class="module second" -->
+
+<div class="module third">
+    <h3><a href="#" data-metrics='{"action":"Toggle Footer Dropdown","label":"Planet Money App"}'>Planet Money App</a></h3>
+    
+    <div class="promo-bucket app-promo money-promo" data-metrics-all data-metrics='{"action":"Click Footer Promo"}'>
+        <a href="https://itunes.apple.com/us/app/planet-money/id529827672?mt=8"><img src="http://media.npr.org/images/planet-money-app-blog-promo.png"></a>
+        <h4>A Pocketful of Planet Money</h4>
+        <p class="more"><a href="https://itunes.apple.com/us/app/planet-money/id529827672?mt=8">Get the app</a></p>
+    </div>
+</div>
+<!-- end class="module third" -->
+</div>
+
+<!-- END CLASS="MODULES" -->
+</footer></section>
+   </div>
+   
+<!-- END ID="SECTIONWRAP" CLASS="CLEARFIX" -->
+   <div id="main_sidebar">
+            
+<!-- START UNDERWRITING -->
+      <div id="ad-desktop-wrap">
+    <div id="ad-desktop">
+            <script type="text/javascript">
+            if (DFP.shouldRenderForDevice('desktop')) {
+                googletag.cmd.push(function() { googletag.display('ad-desktop'); });
+            }
+            </script>
+    </div>
+    <p class="left">NPR thanks our sponsors</p><p class="right"><a href="/about/place/corpsupport/">Become an NPR sponsor</a></p>
+</div>      
+<!-- END UNDERWRITING -->
+   </div>
+   
+<!-- END ID="MAIN_SIDEBAR" -->
+</div>
+
+<!-- END ID="WRAPPER" -->
+
+<!--dontvalidate-->
+<section id="navsidebar" role="complementary"><nav id="loginSidebar" data-metrics-category="Global Navigation">
+    <div class="nav-container">
+        <div class="nav-top-level">
+            <form action="/search/index.php" method="get" name="searchForm" id="searchForm_nav" class="search">
+                <label for="searchinput">Search</label>
+                <input type="search" name="searchinput" id="searchinput_nav" class="textbox searchbox">
+            </form>
+
+            <ul>
+                <li class="home"><a href="/" data-metrics='{"action":"Click NPR Home"}'>Home</a></li>
+                <li class="topics"><a href="/" data-metrics='{"action":"Click Topics"}'>Topics</a></li>
+                <li class="programs-sitewide"><a href="/" data-metrics='{"action":"Click Programs"}'>Programs</a></li>
+                <li class="donate"><a href="/stations/donate/index.php" data-metrics='{"action":"Click Business Link"}'>Donate</a></li>
+                <li class="stations" data-metrics='{"action":"Click Business Link"}'><a href="/templates/stations/stations/">Stations</a></li>
+                <li class="nprshop"><a href="http://shop.npr.org" data-metrics='{"action":"Click Business Link"}'>NPR Shop</a></li>
+                <li class="login-reg loggedOut">
+                    <a href="/templates/reg/login.php" data-metrics='{"action":"Click Profile Link"}'>Sign In / Register</a>
+                </li>
+            </ul>
+            <ul class="loggedIn">
+                <li class="userLogin">
+                    <span id="userLoginSidebar"></span>
+                </li>
+                <li class="login-reg">
+                    <a href="/templates/reg/logout.php" class="logout" data-metrics='{"action":"Click Profile Link"}'>Logout</a>
+                </li>
+            </ul>
+        </div> <!-- /.nav-top-level -->
+
+        <div class="subnavs subnavs-topics" data-metrics-all data-metrics-action="Click Topic">
+            <a  class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+            <h1><a href="/sections/news/">News</a></h1>
+            <ul>
+                <li><a href="/sections/us/">U.S.</a></li>
+                <li><a href="/sections/world/">World</a></li>
+                <li><a href="/sections/politics/">Politics</a></li>
+                <li><a href="/sections/business/">Business</a></li>
+                <li><a href="/sections/technology/">Technology</a></li>
+                <li><a href="/sections/science/">Science</a></li>
+                <li><a href="/sections/health/">Health</a></li>
+				<li><a href="/blogs/codeswitch/">Race &amp; Culture</a></li>
+            </ul>
+
+            <h1><a href="/sections/arts/">Arts &amp; Life</a></h1>
+            <ul>
+                <li><a href="/sections/movies/">Movies</a></li>
+                <li><a href="/sections/pop-culture/">Pop Culture</a></li>
+                <li><a href="/sections/food/">Food</a></li>
+                <li><a href="/sections/art-design/">Art &amp; Design</a></li>
+                <li><a href="/sections/performing-arts/">Performing Arts</a></li>
+                <li><a href="/sections/photography/">Photography</a></li>
+
+            </ul>
+
+            <h1><a href="/books/">Books</a></h1>
+            <ul>
+                <li><a href="/sections/book-reviews/">Book Reviews</a></li>
+                <li><a href="/sections/author-interviews/">Author Interviews</a></li>
+            </ul>
+
+            <h1><a href="/music/">Music</a></h1>
+            <ul>
+                <li><a href="/series/98679384/first-listen/">First Listen</a></li>
+                <li><a href="/series/100920965/music-articles/">Music Articles</a></li>
+                <li><a href="/series/15667984/favorite-sessions/">Studio Sessions</a></li>
+                <li><a href="/sections/music-videos/">Videos</a></li>
+            </ul>
+
+            <h1><a href="/about-npr/198341814/npr-blog-directory">Our Blogs</a></h1>
+
+            <h1><a href="/templates/corrections/corrections.php">Corrections</a></h1>
+
+            <h1><a href="/about/aboutnpr/">All About NPR</a></h1>
+        </div> <!-- /.subnavs-topics -->
+
+        <div class="subnavs subnavs-programs-sitewide" data-metrics-all data-metrics-action="Click Program">
+            <div class="subnav subnav-programs-sitewide">
+                <a  class="back back-to-top-level"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a  class="news-talk">news &amp; conversations</a></li>
+                    <li><a  class="entertainment-culture">storytelling &amp; humor</a></li>
+                    <li><a  class="music">music</a></li>
+                    <li><a  class="special-series">also heard on npr stations</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-news-talk">
+                <a  class="back back-to-programs"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/programs/morning-edition/">Morning Edition</a></li>
+                    <li><a href="/programs/all-things-considered/">All Things Considered</a></li>
+                    <li><a href="/programs/fresh-air/">Fresh Air</a></li>
+                    <li><a href="http://hereandnow.wbur.org/">Here &amp; Now</a></li>
+                    <li><a href="http://thedianerehmshow.org">The Diane Rehm Show</a></li>
+                    <li><a href="/programs/latino-usa/">Latino USA</a></li>
+                    <li><a href="http://www.onthemedia.org">On The Media</a></li>
+                    <li><a href="http://www.onpointradio.org/">On Point</a></li>
+                    <li><a href="http://www.sciencefriday.com/">Science Friday</a></li>
+                    <li><a href="/programs/weekend-edition-saturday/">Weekend Edition Saturday</a></li>
+                    <li><a href="/programs/weekend-edition-sunday/">Weekend Edition Sunday</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-entertainment-culture">
+                <a  class="back back-to-programs"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/programs/ask-me-another/">Ask Me Another</a></li>
+                    <li><a href="http://www.cartalk.com">Car Talk</a></li>
+            		<li><a href="http://www.radiolab.org">Radiolab</a></li>
+            		<li><a href="/programs/snap-judgment/">Snap Judgment</a></li>
+                    <li><a href="http://storycorps.org" class="storycorps">StoryCorps</a></li>
+            		<li><a href="/programs/ted-radio-hour/">TED Radio Hour</a></li>
+                    <li><a href="/programs/wait-wait-dont-tell-me/">Wait Wait...Don't Tell Me!</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-music">
+                <a  class="back back-to-programs"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="/programs/all-songs-considered/">All Songs Considered</a></li>
+                    <li><a href="/series/alt-latino/">Alt.Latino</a></li>
+                    <li><a href="/series/98679384/first-listen/">First Listen</a></li>
+                    <li><a href="/blogs/metropolis/">Metropolis</a></li>
+                    <li><a href="/blogs/microphonecheck/">Microphone Check</a></li>
+                    <li><a href="/series/mountain-stage/">Mountain Stage</a></li>
+                    <li><a href="http://www.fromthetop.org/">From The Top</a></li>
+                    <li><a href="/programs/jazzset/">JazzSet</a></li>
+                    <li><a href="/programs/piano-jazz/">Piano Jazz</a></li>
+                    <li><a href="/series/150560513/song-travels/">Song Travels</a></li>
+                    <li><a href="/series/103063413/the-thistle-and-shamrock/">The Thistle &amp; Shamrock</a></li>
+                    <li><a href="/programs/world-cafe/">World Cafe</a></li>
+                </ul>
+            </div>
+
+            <div class="subnav subnav-special-series">
+                <a  class="back back-to-programs"><b class="icn-back"></b>Back</a>
+
+                <ul>
+                    <li><a href="http://prairiehome.publicradio.org">A Prairie Home Companion <b>(APM)</b></a></li>
+					<li><a href="http://marketplace.publicradio.org">Marketplace <b>(APM)</b></a></li>
+                    <li><a href="http://www.sciencefriday.com/">Science Friday</a></li>
+                    <li><a href="http://www.thisamericanlife.org">This American Life <b>(PRX)</b></a></li>
+            		<li><a href="/programs/">Public Radio Programs A to Z</a></li>
+                </ul>
+            </div>
+        </div> <!-- /.subnavs-programs -->
+    </div> <!-- /.nav-container -->
+</nav></section>
+<!--/dontvalidate-->
+
+<!-- START UNDERWRITING -->
+<div id="ad-88-wrap">
+    <div id="ad-88">
+                <div class="ad-88-text">Support comes from:</div>
+            <script type="text/javascript">
+            if (DFP.shouldRenderForDevice('88')) {
+                googletag.cmd.push(function() { googletag.display('ad-88'); });
+            }
+            </script>
+    </div>
+</div>
+<!-- END UNDERWRITING -->
+<div class="adwrapper housead">
+      <div class="adwrap">
+	<h3><a href="#">Support NPR</a></h3>
+	<div>
+		<img src="http://media.npr.org/images/shop_300x150-04.jpg" alt="Support NPR">
+		<h4><a href="http://shop.npr.org/?utm_source=Banners&utm_medium=ResponsiveAd&utm_content=General&utm_campaign=300x150">NPR Shop</a></h4>
+		<p>Support The Programs You Love</p>
+	</div>
+</div>
+</div>
+
+<!-- END CLASS="ADWRAPPER HOUSEAD" -->
+<div id="adhesion">
+      <div id="ad-mobile-wrap">
+    <div id="ad-mobile">
+            <script type="text/javascript">
+              if (DFP.shouldRenderForDevice('mobile')) {
+                var ord = window.ord || Math.floor(Math.random() * 1e16);
+                
+                // use the smaller size for phone, the larger size for tablet
+                var sizes = '640x100';
+                if (Modernizr.mq('only screen and (min-width: 768px)')) {
+                    sizes = '2048x180';
+                }
+                
+                var targets = ';';
+                targets += 'agg=93559255;';
+                targets += 'theme=93559255;';
+                targets += 'storyId=343415569;';
+                targets += 'blog=93559255;';
+                
+                document.write('<scr' + 'ipt type="text/javascript" src="http://ad.doubleclick.net/N6735/adj/n6735.nprmobile/News_Business' + targets + 'sz=' + sizes + ';ord=' + ord + '?"><\/script>');
+              }
+            </script>
+    </div>
+</div> 
+</div>
+
+<!-- END ID="ADHESION" -->
+<footer id="nprfooter"><div class="footer-wrapper">
+      <div class="primary" data-metrics-category="Global Footer" data-metrics-visible="scroll-down end" data-metrics-label="Footer">
+
+    <ul>
+        <li><a href="/" data-action="Click Logo" data-metrics='{"action":"Click Footer Logo"}'></a></li>
+        <li class="news" data-metrics-action="Click News" data-metrics-all>
+            <a href="/sections/news/">News</a>
+
+            <ul>
+                <li><a href="/sections/us/">U.S.</a></li>
+                <li><a href="/sections/world/">World</a></li>
+                <li><a href="/sections/opinion/">Opinion</a></li>
+                <li><a href="/sections/politics">Politics</a></li>
+                <li><a href="/sections/business/">Business</a></li>
+                <li><a href="/sections/technology/">Technology</a></li>
+                <li><a href="/sections/science/">Science</a></li>
+                <li><a href="/sections/health/">Health</a></li>
+                <li><a href="/sections/sports/">Sports</a></li>
+            </ul>
+        </li>
+        <li class="artslife" data-metrics-action="Click Arts &amp; Life" data-metrics-all>
+            <a href="/sections/arts/">Arts &amp; Life</a>
+
+            <ul>
+                <li><a href="/books/">Books</a></li>
+                <li><a href="/sections/movies/">Movies</a></li>
+                <li><a href="/sections/pop-culture/">Pop Culture</a></li>
+                <li><a href="/sections/food/">Food</a></li>
+                <li><a href="/sections/performing-arts/">Performing Arts</a></li>
+                <li><a href="/sections/games-humor/">Games &amp; Humor</a></li>
+            </ul>
+        </li>
+        <li class="music" data-metrics-action="Click Music" data-metrics-all>
+            <a href="/music/">Music</a>
+
+            <ul>
+                <li><a href="/series/100920965/music-articles/">Music Articles</a></li>
+                <li><a href="/sections/music-videos/">Music Videos</a></li>
+                <li><a href="/templates/websites/musicstreams.php">NPR Music Radio</a></li>
+                <li><a href="/templates/artist/artist_index.php?filter=A">Browse Artists A-Z </a></li>
+
+                <li><a href="/programs/all-songs-considered/">All Songs Considered</a></li>
+                <li><a href="/series/alt-latino/">Alt.Latino</a></li>
+                <li><a href="/series/98679384/first-listen/">First Listen</a></li>
+                <li><a href="/blogs/metropolis/">Metropolis</a></li>
+                <li><a href="/blogs/microphonecheck/">Microphone Check</a></li>
+                <li><a href="/series/mountain-stage/">Mountain Stage</a></li>
+                <li><a href="http://www.fromthetop.org/">From The Top</a></li>
+                <li><a href="/programs/jazzset/">JazzSet</a></li>
+                <li><a href="/programs/piano-jazz/">Piano Jazz</a></li>
+                <li><a href="/series/150560513/song-travels/">Song Travels</a></li>
+                <li><a href="/series/103063413/the-thistle-and-shamrock/">The Thistle &amp; Shamrock</a></li>
+                <li><a href="/programs/world-cafe/">World Cafe</a></li>
+            </ul>
+        </li>
+        <li class="programs" data-metrics-action="Click Programs" data-metrics-all>
+            <a href="/programs/">Programs</a>
+
+            <ul>
+                <li><a href="/programs/all-things-considered/">All Things Considered</a></li>
+                <li><a href="/programs/ask-me-another/">Ask Me Another</a></li>
+                <li><a href="http://www.cartalk.com">Car Talk</a></li>
+                <li><a href="http://thedianerehmshow.org">The Diane Rehm Show</a></li>
+                <li><a href="/programs/fresh-air/">Fresh Air</a></li>
+                <li><a href="http://hereandnow.wbur.org/">Here &amp; Now</a></li>
+                <li><a href="/programs/latino-usa/">Latino USA</a></li>
+                <li><a href="/programs/morning-edition/">Morning Edition</a></li>
+                <li><a href="http://www.onthemedia.org">On The Media</a></li>
+                <li><a href="http://www.onpointradio.org/">On Point</a></li>
+                <li><a href="http://www.sciencefriday.com/">Science Friday</a></li>
+                <li><a href="/programs/ted-radio-hour/">TED Radio Hour</a></li>
+                <li><a href="/programs/wait-wait-dont-tell-me/">Wait Wait...Don't Tell Me!</a></li>
+                <li><a href="/programs/weekend-edition-saturday/">Weekend Edition <span>Saturday</span></a></li>
+                <li><a href="/programs/weekend-edition-sunday/">Weekend Edition Sunday</a></li>
+            </ul>
+        </li>
+        <li class="listen" data-metrics-action="Click Listen" data-metrics-all>
+            <a href="/listen/">Listen</a>
+
+            <ul>
+                <li><a href="javascript:NPR.Player.openPlayer(0,0,null,NPR.Player.Action.PLAY_NOW, NPR.Player.Type.NEWSCAST, NPR.Player.Mode.FROM_FILE);" class="hourlyNews">Hourly News</a></li>
+                <li><a href="javascript:NPR.Player.openPlayer(0,0,null,NPR.Player.Action.LIVE_STREAM, NPR.Player.Type.PROGRAM_STREAM, NPR.Player.Mode.FROM_FILE);" class="programStream">NPR Program Stream</a></li>
+                <li><a href="/stations/">Find Station Streams</a></li>
+                <li><a href="/rss/podcast/podcast_directory.php">Podcasts</a></li>
+                <li><a href="/about-npr/187046089/ways-to-listen-to-npr">More Ways To Listen</a></li>
+            </ul>
+        </li>
+        <li class="about" data-metrics-action="Click About" data-metrics-all>
+            <a href="/about/">About</a>
+
+            <ul>
+                <li><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact Us</a></li>
+                <li><a href="http://shop.npr.org">NPR Shop</a></li>
+                <li><a href="http://tours.npr.org/npr/Home/">Visit NPR</a></li>
+                <li><a href="http://www.npr.org/about-npr/181953728/work-at-npr">Careers at NPR</a></li>
+                <li><a href="/about/press/">Press Room</a></li>
+                <li><a href="/blogs/thisisnpr/">'This Is NPR' Blog</a></li>
+				<li><a href="/about/support/">Support and Sponsor</a></li>
+                <li><a href="/templates/corrections/corrections.php">Corrections</a></li>
+                <li><a href="/blogs/ombudsman/">NPR Ombudsman</a></li>
+                <li><a href="/about-npr/179881519/rights-and-permissions-information">Permissions</a></li>
+                <li><a href="/email/">Email Newsletters</a></li>
+                <li><a href="/rss/">RSS Feeds</a></li>
+                <li><a href="/api/">The NPR API</a></li>
+			</ul>
+        </li>
+    </ul>
+</div>
+
+<div class="secondary">
+    <p class="copyright tablet">&copy; 2014 NPR</p>
+    <ul>
+      <li><a href="http://help.npr.org">Help</a></li>
+      <li id="footerContact"><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact</a></li>
+      <li><a href="/about-npr/179876898/terms-of-use">Terms of Use</a></li>
+      <li><a href="/about-npr/179878450/privacy-policy">Privacy</a></li>
+      <li class="sponsorship-choices"><a href="/about-npr/179878450/privacy-policy#opting-out-of-cookies-and-web-beacons">Sponsorship Choices</a></li>
+      <li><a href="http://thin.npr.org/">Text-Only</a></li>
+    </ul>
+    <p class="copyright mobile desktop">&copy; 2014 NPR</p>
+</div>
+</div>
+</footer><script type="text/javascript" src="http://s.npr.org/templates/javascript/generated/fingerprint/baseStory-c8a510e30a332f20f1d9f955bd66a60aa1830f0d.js">
+   </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"ece810d90e","applicationID":"3472094","transactionName":"Y1NRZkQDV0JRAkAPWloZcEdFFlZcHyNYCVJ6U0RBZRZWQ0ktVR9aQUI=","queueTime":0,"applicationTime":195,"ttGuid":"","agentToken":"","atts":"TxRSEAwZREw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-454.min.js"}</script></body></html><!--  Burned on demand at 2014-09-22 13:01:40--><!-- LIVE -->

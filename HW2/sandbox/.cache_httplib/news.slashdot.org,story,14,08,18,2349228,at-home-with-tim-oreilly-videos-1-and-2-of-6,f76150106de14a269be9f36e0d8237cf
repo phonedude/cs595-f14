@@ -1,0 +1,2997 @@
+status: 200
+content-length: 96720
+x-varnish: 1245753497
+content-location: http://news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6
+set-cookie: betagroup=64; path=/;
+ expires=Wed, 21-Sep-2016 17:03:43 GMT, betagroup=64; path=/;
+ domain=.slashdot.org; expires=Wed, 21-Sep-2016 17:03:43 GMT
+age: 0
+vary: Accept-Encoding, User-Agent
+server: Apache/2.2.3 (CentOS)
+connection: Keep-Alive
+-content-encoding: gzip
+pragma: no-cache
+cache-control: no-cache
+date: Mon, 22 Sep 2014 17:03:43 GMT
+content-type: text/html; charset=utf-8
+x-xrds-location: http://slashdot.org/slashdot.xrds
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.8 (gzip)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+<script id="before-content" type="text/javascript">
+(function () {
+    if (typeof window.sdmedia !== 'object') window.sdmedia = {};
+    if (typeof window.sdmedia.site !== 'object') window.sdmedia.site = {};
+
+    var site = window.sdmedia.site;
+    site.rootdir = "//slashdot.org";
+}());
+
+var pageload = {
+	pagemark: '84566526314344022',
+	before_content: (new Date).getTime()
+};
+function pageload_done( $, console, maybe ){
+	pageload.after_readycode	= (new Date).getTime();
+	pageload.content_ready_time	= pageload.content_ready - pageload.before_content;
+	pageload.script_ready_time	= pageload.after_readycode - pageload.content_ready;
+	pageload.ready_time		= pageload.after_readycode - pageload.before_content;
+	// Only report 1% of cases.
+	maybe || (Math.random()>0.01) || $.ajax({ data: {
+		op: 'page_profile',
+		pagemark: pageload.pagemark,
+		dom: pageload.content_ready_time,
+		js: pageload.script_ready_time
+	} });
+}
+</script>
+
+
+	<title>At Home with Tim O'Reilly (Videos 1 and 2 of 6) - Slashdot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<meta name="description" content="Wikipedia says Tim O'Reilly &#34;is the founder of O'Reilly Media (formerly O'Reilly &amp;amp; Associates) and a supporter of the free software and open source movements.&#34; And so he is. O'Reilly Media is also the company from which  Make magazine and the assorted Maker Faires  sprang, before spinning off in...">
+	<meta itemprop="name" content="At Home with Tim O'Reilly (Videos 1 and 2 of 6) - Slashdot">
+	<meta itemprop="description" content="Wikipedia says Tim O'Reilly &#34;is the founder of O'Reilly Media (formerly O'Reilly &amp;amp; Associates) and a supporter of the free software and open source movements.&#34; And so he is. O'Reilly Media is also the company from which  Make magazine and the assorted Maker Faires  sprang, before spinning off in...">
+
+
+	<meta property="fb:admins" content="100000696822412">
+	<meta property="fb:page_id" content="267995220856">
+
+	<meta name="viewport" content="width=1000, user-scalable=yes, minimum-scale=0, maximum-scale=10.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta property="og:image" content="http://a.fsdn.com/sd/topics/opensource_64.png">
+
+
+	<link rel="canonical" href="http://news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6">
+
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//a.fsdn.com/sd/classic.css?release_20140903" >
+<!--[if IE 8]><link rel="stylesheet" type="text/css" media="screen, projection" href="//a.fsdn.com/sd/ie8-classic.css?release_20140903" ><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen, projection" href="//a.fsdn.com/sd/ie7-classic.css?release_20140903" ><![endif]-->
+
+
+
+
+
+
+
+<!--  -->
+
+
+
+
+
+
+
+
+<script src="//a.fsdn.com/sd/all-minified.js?release_20140903" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+(function(){
+var regexp=/\s*(?:\d+|many)\s+more\s*/i;
+
+	
+	var auto_more_count = 1;
+
+	function auto_more(){
+		var $more_link = $('#more-experiment a');
+		$more_link.each(function(){
+			var $lastitem = $('#firehoselist>article.fhitem:visible:last');
+			if ( Bounds.intersect(window, $lastitem) ) {
+			
+			
+				!--auto_more_count && (auto_more=undefined);
+				// don't allow a call till the next paginate gets built and |more_possible|
+				$(document).unbind('scroll', call_auto_more);
+			}
+		});
+	};
+
+	function call_auto_more(){ auto_more && auto_more(); }
+	
+
+$('#more-experiment a').
+	live('more-possible', function( event ){
+		var $more_link=$(this);
+		if ( regexp.test($more_link.text()) ) {
+		
+			$(document).bind('scroll', call_auto_more);
+		} else {
+			$(document).unbind('scroll', call_auto_more);
+		
+		}
+	});
+})();
+</script>
+<!--[if lt IE 9]><script src="//a.fsdn.com/sd/html5.js"></script><![endif]-->
+
+
+<script type="text/javascript">
+(function() {
+    if (typeof window.janrain !== 'object') window.janrain = {};
+    if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
+    
+    /* _______________ can edit below this line _______________ */
+
+    janrain.settings.tokenUrl = 'https://slashdot.org/token_callback.pl';
+    janrain.settings.type = 'embed';
+    janrain.settings.appId = 'ggidemlconlmjciiohla';
+    janrain.settings.appUrl = 'https://login.slashdot.org';
+    janrain.settings.providers = ["google","twitter","facebook", "linkedin"];
+    janrain.settings.providersPerPage = '4';
+    janrain.settings.format = 'one column';
+    janrain.settings.actionText = 'Sign in using your account with';
+    janrain.settings.showAttribution = false;
+    janrain.settings.fontColor = '#666666';
+    janrain.settings.fontFamily = 'lucida grande, Helvetica, Verdana, sans-serif';
+    janrain.settings.backgroundColor = '#ffffff';
+    janrain.settings.width = '308';
+    janrain.settings.borderColor = '#C0C0C0';
+    janrain.settings.borderRadius = '5';    janrain.settings.buttonBorderColor = '#CCCCCC';
+    janrain.settings.buttonBorderRadius = '5';
+    janrain.settings.buttonBackgroundStyle = 'gradient';
+    janrain.settings.language = 'en';
+    janrain.settings.linkClass = 'janrainEngage';
+
+    /* _______________ can edit above this line _______________ */
+
+    function isReady() { janrain.ready = true; };
+    if (document.addEventListener) {
+      document.addEventListener("DOMContentLoaded", isReady, false);
+    } else {
+      window.attachEvent('onload', isReady);
+    }
+
+    var e = document.createElement('script');
+    e.type = 'text/javascript';
+    e.id = 'janrainAuthWidget';
+
+    if (document.location.protocol === 'https:') {
+      e.src = 'https://rpxnow.com/js/lib/login.slashdot.org/engage.js';
+    } else {
+      e.src = 'http://widget-cdn.rpxnow.com/js/lib/login.slashdot.org/engage.js';
+    }
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
+})();
+</script>
+
+<script type="text/javascript">
+(function() {
+    if (typeof window.janrain !== 'object') window.janrain = {};
+    if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
+    if (typeof window.janrain.settings.share !== 'object') window.janrain.settings.share = {};
+    if (typeof window.janrain.settings.packages !== 'object') janrain.settings.packages = [];
+    janrain.settings.packages.push('share');
+
+    /* _______________ can edit below this line _______________ */
+
+    janrain.settings.share.providers = ["facebook","twitter","linkedin"];
+    janrain.settings.share.providersEmail = [];
+    janrain.settings.share.modes = ["broadcast","contact"];
+    janrain.settings.share.attributionDisplay = false;
+    janrain.settings.share.message = "";
+    janrain.settings.share.title = "";
+    janrain.settings.share.url = "";
+    janrain.settings.share.description = "";
+
+    // Modal Styles
+    janrain.settings.share.modalBackgroundColor = "#000000";
+    janrain.settings.share.modalBorderRadius = "5";
+    janrain.settings.share.modalOpacity = "0.5";
+    janrain.settings.share.modalWidth = "5";
+
+    // Body Styles
+    janrain.settings.share.bodyBackgroundColor = "#009DDC";
+    janrain.settings.share.bodyBackgroundColorOverride = false;
+    janrain.settings.share.bodyColor = "#333333";
+    janrain.settings.share.bodyContentBackgroundColor = "#ffffff";
+    janrain.settings.share.bodyFontFamily = "Helvetica";
+    janrain.settings.share.bodyTabBackgroundColor = "#f8f8f8";
+    janrain.settings.share.bodyTabColor = "#000000";
+
+    // Element Styles
+    janrain.settings.share.elementBackgroundColor = "#f6f6f6";
+    janrain.settings.share.elementBorderColor = "#cccccc";
+    janrain.settings.share.elementBorderRadius = "3";
+    janrain.settings.share.elementButtonBorderRadius = "6";
+    janrain.settings.share.elementButtonBoxShadow = "3";
+    janrain.settings.share.elementColor = "#333333";
+    janrain.settings.share.elementHoverBackgroundColor = "#eeeeee";
+    janrain.settings.share.elementLinkColor = "#009DDC";
+
+    /* _______________ can edit above this line _______________ */
+
+    function isReady() { janrain.ready = true; };
+    if (document.addEventListener) {
+        document.addEventListener("DOMContentLoaded", isReady, false);
+    } else {
+        window.attachEvent('onload', isReady);
+    }
+
+    var e = document.createElement('script');
+    e.type = 'text/javascript';
+    e.id = 'janrainWidgets';
+
+    if (document.location.protocol === 'https:') {
+      e.src = 'https://rpxnow.com/js/lib/login.slashdot.org/widget.js';
+    } else {
+      e.src = 'http://widget-cdn.rpxnow.com/js/lib/login.slashdot.org/widget.js';
+    }
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
+})();
+
+$(document).ready(function(){
+    if(janrain) {
+        $("a.janrain").live('click', function () {
+
+            var $anchor = $(this);
+            var provider = $anchor.attr("data-provider");
+            var url = $anchor.attr("data-url");
+            var message = $anchor.attr("data-message");
+            var title = $anchor.attr("data-title");
+
+            janrain.engage.share.reset();
+            janrain.engage.share.showProvider(provider);
+            janrain.engage.share.setTitle(title);
+            janrain.engage.share.setMessage(message);
+            janrain.engage.share.setUrl(url);
+            janrain.engage.share.show();
+            return false;
+         });
+    }
+});
+
+
+</script><link rel="top"       title="News for nerds, stuff that matters" href="//slashdot.org/" >
+<link rel="search"    title="Search Slashdot" href="//news.slashdot.org/search.pl">
+<link rel="alternate" title="Slashdot RSS" href="http://rss.slashdot.org/Slashdot/slashdot" type="application/rss+xml">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!-- load GPT library: asynchronous -->
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+	var gads = document.createElement('script');
+	gads.async = true;
+	gads.type = 'text/javascript';
+	var useSSL = 'https:' == document.location.protocol;
+	gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+
+
+<!-- prep GPT ads -->
+<script type='text/javascript'>
+(function() {
+	function page_type (loc) {
+		/*
+		only four page types:
+		- Story
+		- Poll
+		- Homepage (/ only)
+		- Other (but AdOps wants 'Homepage' again)
+		*/
+		var path = loc.pathname;
+		var just_the_root = /^\/?$/.test(path);
+		var story_or_poll = /^\/(story|submission|poll)\//i.exec(path);
+
+		var page_type = just_the_root ? 'homepage'
+		              : story_or_poll ? story_or_poll[1]
+		              :                 'other'
+
+		// exceptions
+		page_type = page_type.toLowerCase() === 'submission'
+		          ? 'story'  // submissions are like stories, right?
+		          : page_type
+		page_type = page_type.toLowerCase() === 'other'
+		          ? 'homepage'  // this one might move out of here
+		          : page_type;
+
+		return page_type;
+	}
+	function page_section (loc) {
+		var greek = ['alpha', 'beta', 'gamma', 'delta'].join('|');
+		var hostwise = '^([a-z]+)(?:-(?:'+greek+'))?\\.(?:slashdot\\.org|[a-z]+-[0-9]+\\.sb\\.sf\\.net)$';
+		var pathwise = '^/(?:(recent|popular|blog)|stories/([^/]+))';
+		var rootwise = '^\/?$';
+
+		var hostwisely = new RegExp(hostwise,'i').exec(loc.hostname);
+		var pathwisely = new RegExp(pathwise,'i').exec(loc.pathname);
+		var rootwisely = new RegExp(rootwise,'i').exec(loc.pathname);
+
+		var all_greek_to_me = new RegExp( '^(' + greek + ')$' ,'i');
+
+		function no_greek_for_me (barbarian) {
+			return all_greek_to_me.test(barbarian)
+			     ? false
+			     : barbarian
+			     ;
+		}
+
+		var section = (hostwisely && no_greek_for_me(hostwisely[1]))
+		           || (rootwisely && 'homepage')
+		           || (pathwisely && (pathwisely[1] || pathwisely[2]))
+		           || ''
+		            ;
+
+                section.replace(/[^_a-z]/ig, '');
+
+		return section;
+	}
+	function single_size (size) {
+		return '' + size[0] + 'x' + size[1];
+	}
+	function sz_sz (sz) {
+		var str = '';
+		var sizes = [];
+		if (sz[0] instanceof Array) {
+			for (size in sz) {
+				sizes.push(single_size(sz[size]));
+			}
+			return sizes.join(',');
+		} else {
+			return single_size(sz);
+		}
+	}
+
+	function merge_tpc_array_to_str(array1,array2) {
+		var tpc_final = array1.concat(array2);
+		var uniq = tpc_final.reduce(function(a,b){
+		if (a.indexOf(b) < 0 ) a.push(b);
+			return a;
+		},[]);
+  
+		var tpc_str = uniq.join(',');
+		tpc_str = tpc_str.replace(/[^_a-z,]/ig, '');
+		tpc_str = tpc_str.replace(/^,/ig, '');
+		return tpc_str;
+	}
+
+	/* LEGEND: 
+		- 'sz' = "size"
+		- 'npt' = "no page type" in ad unit name
+		- 'oops' = "out-of-page slot" for great justice
+	*/
+	var tags = {
+
+		               '728x90_A': { 'sz': [[728, 90], [970, 90], [970, 250], [980, 66]] }
+
+		,              '728x90_B': { 'sz': [728, 90] }
+		,      'HubIcon_200x90_A': { 'sz': [[200, 90], [220, 90]]}
+		,  'PowerSwitch_980x66_A': { 'sz': [980, 66] }
+		,              'PollPeel': { 'sz': [200, 90] }
+		,   'VideoWidget_300x250': { 'sz': [300, 250], 'npt': 1 }
+		,             '300x250_A': { 'sz': [[300, 250], [300, 600], [300, 1050]] }
+		,             '300x250_B': { 'sz': [[300, 250], [300, 600]] }
+		,             '300x250_C': { 'sz': [[300, 250], [300, 600]] }
+		,             '300x250_D': { 'sz': [[300, 250], [300, 600]] }
+	};
+
+	var network_path = '/4140/ostg.slashdot/';
+	var tag_name_prefix = 'SD';
+	var tag_name_linkage = '_';
+	var tag_name_pagetype = page_type(location);
+	var tag_topic = page_section(location);
+
+	var before_tag_pagetyped    = network_path
+	                            + tag_name_prefix
+	                            + tag_name_linkage
+	                            + tag_name_pagetype
+	                            + tag_name_linkage
+	                            ;
+	var before_tag_pagetypeless = network_path
+	                            + tag_name_prefix
+	                            + tag_name_linkage
+	                         /* + tag_name_pagetype */
+	                         /* + tag_name_linkage */
+	                            ;
+
+
+	googletag.cmd.push(function() {
+		function define_me_a_slot (tag, oops) {
+			var sandbox_regex = /[a-z]+-[0-9]+\.sb\.sf\.net$/i;
+			var beta_regex = /\b(alpha|beta|gamma|delta)\b/i;
+			var full_name = tags[tag].npt  // "no page type"
+			              ? before_tag_pagetypeless + tag
+			              : before_tag_pagetyped    + tag
+			              ;
+			var div_id = 'div-gpt-ad-' + tag.toLowerCase();
+
+			var service;
+			if (oops) {  // out-of-page slot
+				console.log(full_name + ": define out of page slot (" + div_id + "-oops)");
+				service = googletag.defineOutOfPageSlot(
+					  full_name
+					, div_id + '-oops'
+				).addService(googletag.pubads());
+			} else {
+				console.log(full_name + ": define slot (" + div_id + ")");
+				service = googletag.defineSlot(
+					  full_name
+					, tags[tag].sz
+					, div_id
+				).addService(googletag.pubads());
+			}
+			if (!oops) {  // no sizes for out-of-page slots
+				service.setTargeting('sz', tags[tag].sz);
+			}
+
+			
+			var frontend_tpc = tag_topic.split(","); 
+			var backend_tpc = [ "build", "opensource", "media", "news", "books", "interviews", "technology" ];
+
+			var tpc_final = merge_tpc_array_to_str(frontend_tpc,backend_tpc);
+
+			service.setTargeting('tpc', tpc_final);
+			if (location.hostname.match(sandbox_regex)) {
+				service.setTargeting('test', 'adops');
+			}
+			if (location.hostname.match(beta_regex)) {
+				service.setTargeting('site', 'beta');
+			}
+
+			// this is a little hackish: if slot has oops:1
+			//  then do the same slot one more time,
+			//  but set it up as out-of-page
+			if (tags[tag].oops) {  // "out-of-page slot"
+				tags[tag].oops = 0;  // infinite recursion!
+				define_me_a_slot(tag, true);
+			}
+		}
+
+		for (tag in tags) {
+			define_me_a_slot(tag, false);
+		}
+
+		googletag.pubads().enableAsyncRendering();
+
+		//googletag.pubads().enableSingleRequest();
+		googletag.pubads().collapseEmptyDivs();
+		googletag.enableServices();
+	});
+})();
+</script>
+
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-32013-5";
+
+var _gaq = _gaq || [];
+
+
+
+
+
+  _gaq.push(['_setAccount', 'UA-36136016-1']);
+  _gaq.push(['b._setAccount', 'UA-32013-5']);
+  _gaq.push(['_setDomainName', '.slashdot.org']);
+  _gaq.push(['b._setDomainName', '.slashdot.org']);
+
+	
+		_gaq.push(['_addIgnoredRef', 'slashdot.org']);
+		_gaq.push(['b._addIgnoredRef', 'slashdot.org']);
+	
+
+
+  _gaq.push(['_setCustomVar', 1, 'User Type',  'Anon', 3]);
+  _gaq.push(['b._setCustomVar', 1, 'User Type',  'Anon', 3]);		
+	
+	_gaq.push(['_setCustomVar', 2, 'Page','article2', 3]);
+	_gaq.push(['b._setCustomVar', 2, 'Page','article2', 3]);
+
+	
+
+
+
+// track beta behavior for user
+var betamatches = document.cookie.match(/betagroup=(-?\d+)/);
+
+if(betamatches && betamatches[1]) {
+  if(betamatches[1] == -1) {
+    _gaq.push(['_setCustomVar', 3, 'Beta-Usage','opt-out', 3]);
+  } else {
+    _gaq.push(['_setCustomVar', 3, 'Beta-Usage','unredirected', 3]);
+  }
+}
+
+
+
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['b._trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+  _gaq.push(['b._trackPageLoadTime']);
+
+
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body class="anon firehose ">
+
+
+    <div id="top_parent"></div>
+    <a name="topothepage"></a>
+
+    <!-- <div id="topadspace">
+        <table id="topadtable"><tr><td>
+        <div id='div-gpt-ad-728x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a');});</script></div>
+        <div id='div-gpt-ad-728x90_a-oops'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a-oops');});</script></div>
+        </td>
+        <td>
+        <div id='div-gpt-ad-hubicon_200x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-hubicon_200x90_a');});</script></div>
+        </td></tr></table>
+    </div> -->
+
+    <header class="col_wrapper container clearfix h">
+        <hgroup>
+            <section class="grid_9">
+                <div id="logo" >
+                    <a href="//slashdot.org"><span>Slashdot</span></a>
+                    <div id="jump" class="hide">
+                            <a href="#main-articles">Stories</a><br>
+                            <a href="#blocks">Slash Boxes</a><br>
+                            <a href="#comments">Comments</a>
+                    </div>
+                </div>
+                <a class='data-title' href='/slash-stats/week' id='sg_hof_mvtest_title' onclick="showHof('week'); return false;"><span class='ui-icon medal ico-w'></span></a>
+                
+                
+
+                <form id="search" method="get" action="//news.slashdot.org/index2.pl">
+                    <input type="text" name="fhfilter" value="" id="searchquery">
+                    <span class="ui-icon search"></span>
+                    <input type="submit" value="Search">
+                    
+                </form>
+                
+                
+            </section>
+            <nav role="top-navigation" class="grid_15">
+                <ul class="dropnav">
+
+	<li >
+		<a href="//slashdot.org/my/newuser"   onclick="getModalPrefs('newUserModal', 'Create Account', 1); $('#modal_box').addClass('join'); return false;">Join</a>
+		
+	</li>
+
+	<li >
+		<a href="//slashdot.org/my/login"   onclick="show_login_box(); return false;">Login</a>
+		
+	</li>
+
+	<li >
+		<a href="//slashdot.org/submission"    title="Submit a Story to Slashdot">Submit</a>
+		
+	</li>
+
+	<li >
+		<a href="http://beta.slashdot.org/newsletter"  target="_blank"  title="Subscribe to Slashdot Newsletter & Emails">Newsletter</a>
+		
+	</li>
+
+	<li >
+		<a href="//slashdot.org/job_board.pl"   >Jobs</a>
+		
+	</li>
+
+	<li >
+		<a href="//tv.slashdot.org" class="btn link slashtvico"  ><span>SlashTV</span></a>
+		
+	</li>
+
+</ul>
+
+
+<!-- dropnavstyle begin -->
+<style type="text/css">
+
+.dropnav{
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font: "Arial, sans-serif;
+	font-size:1em;
+	font-weight:bold;
+	list-style:none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	}
+.dropnav ul{
+	padding-top:10px;
+	background:none;
+	height:25px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	.dropnav li{
+		float:right;
+		padding:0px;
+		}
+	.dropnav li a{
+		background:none bottom right no-repeat;
+		color:#ffffff;
+		display:block;
+		font-weight:normal;
+		line-height:25px;
+		margin:0px;
+		padding:0px 5px;
+		padding-bottom: 6px;
+		text-align:center;
+		text-decoration:none;
+		}
+		.dropnav li a:hover, .dropnav ul li:hover a{
+			 /* background: #005555 bottom center no-repeat; */
+			  color:#FFFFFF;
+			  text-decoration:underline; 
+			}
+	.dropnav li ul{
+		background:#004242;
+		display:none;
+		height:auto;
+		min-width:100px;
+		margin:0px;
+		padding:0px;
+		border:0px;
+		position:absolute;
+		z-index:200;
+		/*top:1em;
+		/*left:0;*/
+		}
+	.dropnav li:hover ul{
+		display:block;
+		
+		}
+	.dropnav li li {
+		display:block;
+		float:none;
+		min-width:100px;
+		margin:0px;
+		padding:0px;
+		}
+	.dropnav li:hover li a{
+		background:none;
+		
+		}
+	.dropnav li ul a{
+		display:block;
+		height:25px;
+		font-size:12px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+		}
+		.dropnav li ul a:hover, .dropnav li ul li:hover a{
+		 	background:#005555 center left no-repeat; 
+			border:0px;
+			color:#ffffff;
+			text-decoration:none;
+			}
+	.dropnav p{
+		clear:left;
+		}
+
+	.dropnav li.droparrowneeded>a:after {
+		content: "\25BE";
+		margin-left: 5px; 
+		text-decoration: none;
+	}
+
+		
+</style>
+<!-- dropnavstyle end -->
+                
+            </nav>
+        </hgroup>
+    </header>
+
+    
+
+
+    <section>
+        
+            <div id='embbeded_login_modal' class="hide">
+<form action="https://slashdot.org/my/login" method="post" onsubmit="if (global_returnto) { this.returnto.value = global_returnto }" class="embedded"><fieldset style="-webkit-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0">
+<div style='height:25px;'>&nbsp;</div>
+    <input type="hidden" name="returnto" value="">
+    <input type="hidden" name="op" value="userlogin">
+    <p>
+        <label class="fleft" for="unickname">Nickname:</label>
+        <input type="text" name="unickname" value="">
+    </p>
+    <p>
+        <label class="fleft" for="upasswd">Password:</label>
+        <input type="password" name="upasswd" placeholder="6-20 characters long">
+    </p>
+    <label class="checkbox"><input type="checkbox" name="login_temp" value="yes"> Public Terminal</label>
+    <br>
+    <hr>
+    <input type="submit" name="userlogin" value="Log In" class="fno"> <a href="//slashdot.org/my/mailpassword" class="btn link" onclick="getModalPrefs('sendPasswdModal', 'Retrieve Password', 1); return false;">Forgot your password?</a>
+</fieldset></form>
+
+<div id="janrainEngageEmbed"></div>
+<div class="actions">
+ <a class="ico close" onclick="hide_login_slider();" href=""><span>Close</span></a>
+</div>
+</div>
+        
+        
+            <style>
+                .adwrap {
+                    min-width: 980px;
+                    max-width:1180px;
+                    margin:0 auto;
+                    padding-top:10px;
+                }
+                .adwrap:before,
+                .adwrap:after {
+                    content: " ";
+                    display: table;
+                }
+
+                .adwrap:after {
+                    clear: both;
+                }
+                .adwrap [id^="div-gpt-ad-"] { float: left; }
+                #div-gpt-ad-hubicon_200x90_a { margin-left: 15px; }
+            </style>
+            <div class="adwrap">
+                
+                <div id='div-gpt-ad-728x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a');});</script></div>
+                <div id='div-gpt-ad-728x90_a-oops'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_a-oops');});</script></div>
+                <div id='div-gpt-ad-hubicon_200x90_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-hubicon_200x90_a');});</script></div>
+            </div>
+        
+        <a name="main-articles"></a><!-- body begin -->
+
+
+
+
+
+
+	
+
+	<style type="text/css">
+menu, menu * {
+	text-decoration:none;
+}
+
+menu[type=context] {
+	display:none;
+	position:absolute;
+	z-index:10000;
+}
+
+menu[type=context]:not(.brief) {
+	background-color:#dfdfdf;
+	margin:0;
+	padding:2px 0.5em;
+	border-style:solid;
+	border-width:1px;
+	border-color:#eeeeee #aaaaaa #aaaaaa #eeeeee;
+	-moz-border-radius-topright:.7em;
+	-webkit-border-top-right-radius: 0.7em 0.7em;
+}
+
+menu.full[type=context] > a.slash-hover:first-child {
+	-moz-border-radius-topright:.6em;
+	-webkit-border-top-right-radius: 0.6em 0.6em;
+}
+
+
+
+menu.brief[type=context] > a {
+	-moz-border-radius:.6em;
+	-webkit-border-radius: 0.6em;
+	color:#ffffff;
+	background-color:#000000;
+}
+
+/*
+span.briefmenu a.tag:not(.datatype) {
+    padding-left:.5em;
+}
+*/
+
+
+
+
+/* #tag-menu a, #feedback-menu a  { */
+menu.tag-menu a {
+	display:list-item;
+	list-style:none;
+	text-align:left;
+	font-weight:bold;
+	color:black;
+	padding:0.1em 0.5em;
+	margin:-0.1em -0.5em;
+	cursor:pointer;
+}
+
+
+.tags .edit-bar { position:relative; }
+article aside .share .addthis_toolbox { display:block; width:60px; float:left; }
+article aside.view_mode .share { min-width:120px; padding-top:.5em; }
+#firehose.list article header h2 {padding-left: 20px; !important}
+.novote .vote { display:none; }
+.vote > a, .votedup > a, .voteddown > a {border-width:1px; border-style:solid; border-color:rgba(0,0,0,0.25); display:block; height:22px; width:22px; margin:-2px 3px 0 0; color:rgb(255,255,255); text-decoration:none; line-height:22px; text-align:center; font-weight:bold; font-size:14px; float:left; border-width:1px; border-style:solid; border-color:rgba(0,0,0,0.5); }
+.vote > a, .votedup > a, .voteddown > a {color:rgb(0,0,0);}
+article.fhitem-submission h2 .vote > a, article.fhitem-submission h2 .votedup > a, article.fhitem-submission h2 .voteddown > a { border-color:rgba(0,0,0,0.15); }
+.vote .up, .vote .down, .votedup .up, .votedup .down, .voteddown .up, .voteddown .down { border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-shadow:0 0 2px #000000; } 
+article:not(.fhitem-story) .vote .up,article:not(.fhitem-story) .vote .down,article:not(.fhitem-story) .votedup .up,article:not(.fhitem-story) .votedup .down,article:not(.fhitem-story) .voteddown .up,article:not(.fhitem-story) .voteddown .down { text-shadow:none !important; }
+.voteddown .down, .votedup .up { text-indent:2px; line-height:24px; }
+article:not(.fhitem-story) .votedup .up,article:not(.fhitem-story) .voteddown .down {background: rgb(174,174,174);background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(174,174,174)), to(rgb(193,193,193)));background-image: -moz-linear-gradient(100% 100% 90deg,rgb(193,193,193), rgb(174,174,174) 100%);color:rgb(0,0,0);}
+article.fhitem-story .votedup .up,article.fhitem-story .voteddown .down {background: rgb(0,66,66);background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(0,53,53)), to(rgb(0,102,102)));background-image: -moz-linear-gradient(100% 100% 90deg,rgb(0,102,102), rgb(0,53,53) 100%);}
+
+
+
+
+
+#tag-menu span.var-tag {
+font-weight:normal;
+color:#444444;
+}
+
+menu.reasons-menu a {
+padding:0 .25em 0 .25em;
+font-size:80%;
+-moz-border-radius:.5em;
+-webkit-border-radius:.5em;
+cursor:pointer;
+}
+
+menu.reasons-menu a:hover {
+background:rgb(153,153,153);
+background:-moz-linear-gradient(100% 100% 90deg, rgb(102,102,102), rgb(153,153,153) 70%) repeat scroll 0 0 rgb(102,102,102);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(153,153,153)), to(rgb(102,102,102)));
+color:#fff;
+text-decoration:none;
+font-weignt:normal;
+}
+
+article.fhitem-story menu.reasons-menu a:hover {
+background:#002323 !important;
+background:-moz-linear-gradient(100% 100% 90deg, #002323, #005353 70%) repeat scroll 0 0 #002323 !important;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#005353), to(#002323)) !important;
+}
+
+
+menu.reasons-menu {
+	display:none;
+	margin:0;
+	padding:0;
+}
+
+div.fhitem h3 menu.reasons-menu {
+margin:0.25em 0 0;
+}
+
+div.fhitem h3 menu.reasons-menu a.tag {
+font-size:.8em;
+}
+
+#tag-menu a.slash-hover,
+#feedback-menu a.slash-hover,
+
+.tag-display span.tag:hover,
+.tag-display span.tag.trigger {
+	color:white;
+	background-color:rgb(0, 85, 85);
+}
+
+#tag-menu a.slash-hover span.var-tag {
+	color:#eee;
+}
+
+.tag-entry.default {
+        color:#ccc;
+}
+
+.brief .nix {
+	margin-top:-1.35em;
+	margin-left:0px;
+	margin-top:-1.15em;
+	text-decoration:none;
+	line-height:1.35em;
+	padding:0 2px;
+	-moz-border-radius:.6em 0 0 .6em;
+	-webkit-border-radius:.6em 0 0 .6em;
+	-o-border-radius:.6em 0 0 .6em;
+	border-radius:.6em 0 0 .6em;
+    color:#fff !important;
+    background:transparent !important;
+}
+
+.brief .nix:hover {
+    background:rgb(153,153,153) !important;
+    background:-moz-linear-gradient(100% 100% 90deg, rgb(102,102,102), rgb(153,153,153) 70%) repeat scroll 0 0 rgb(102,102,102) !important;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(153,153,153)), to(rgb(102,102,102))) !important;
+}
+
+</style>
+
+<menu id="nix-reasons" style="display:none">
+	<a class="tag">binspam</a><a class="tag">dupe</a><a class="tag">notthebest</a><a class="tag">offtopic</a><a class="tag">slownewsday</a><a class="tag">stale</a><a class="tag">stupid</a>
+</menu>
+<menu id="nod-reasons" style="display:none">
+	<a class="tag">fresh</a><a class="tag">funny</a><a class="tag">insightful</a><a class="tag">interesting</a><a class="tag">maybe</a>
+</menu>
+<menu id="comment-nix-reasons" style="display:none">
+	<a class="tag">offtopic</a><a class="tag">flamebait</a><a class="tag">troll</a><a class="tag">redundant</a><a class="tag">overrated</a>
+</menu>
+<menu id="comment-nod-reasons" style="display:none">
+	<a class="tag">insightful</a><a class="tag">interesting</a><a class="tag">informative</a><a class="tag">funny</a><a class="tag">underrated</a>
+</menu>
+
+<menu id="tag-nod-reasons" style="display:none">
+	<a class="tag">descriptive</a>
+</menu>
+<menu id="feedback-menu" class="tag-menu" type="context">
+	<a class="tag">typo</a><a class="tag">dupe</a><a class="tag">error</a>
+</menu>
+<menu id="tag-menu" class="tag-menu none" type="context">
+
+<!--	<a data-op="!" class="nix">!<span class="var-tag hide"></span></a>-->
+
+</menu>
+
+<script type="text/javascript">
+$(function(){
+var $CURRENT_MENU, $TAG_MENU=$('#tag-menu'), NOTNOT=/^!!/, IE7=/^7\.0/, TAG_PREFIX=/^\/tag\//;
+
+function get_tag_name( $tag ){
+	return ($tag.attr('href') || '').replace(TAG_PREFIX, '') || $tag.text().toLowerCase();
+}
+
+function trigger_menu( e, selector, $menu, menu_content ){
+	var $target=$(original_target(e, selector)), in_use=$target.is('.trigger');
+	if ( $CURRENT_MENU ) {
+		$CURRENT_MENU.menu('cancel', e);
+		$CURRENT_MENU = null;
+	}
+
+	if ( !in_use ) {
+		menu_content && $menu.stop(true, true).hide().html(menu_content);
+		($CURRENT_MENU=$menu).menu('context', e);
+	}
+	return !in_use;
+}
+
+function open_menu( trigger, $menu ){
+	var $trigger=$(trigger), $fhitem=$trigger.closest('.fhitem');
+	$fhitem.length && user_intent('interest', $fhitem[0]);
+
+	$menu.appendTo(document.body).css({ opacity:0 }).show();
+
+	var 	right	= $fhitem.offset().left + $fhitem.width(),
+		global	= $trigger.offset(),
+		local	= $menu.offsetParent().offset();
+
+	// Ugly IE position hack required:
+	$.browser.msie && IE7.test($.browser.version) && (local.top = 0);
+
+	// pin the menu (horizontally) on-screen
+	global.left = Math.min(global.left, right-$menu.width());
+
+	$trigger.addClass('trigger');
+	$menu.css({
+		position:	'absolute',
+		top:		global.top - local.top + $trigger.height(),
+		left:		global.left - local.left,
+		opacity:	1
+	});
+}
+
+function close_menu( trigger, $menu ){
+	$menu.hide();
+	$(trigger).removeClass('trigger');
+	($CURRENT_MENU===$menu) && ($CURRENT_MENU=false);
+}
+
+/* T2 tag context-menu */
+var $TAG_MENU=$('#tag-menu'), NOTNOT=/^!!/;
+
+
+    var user_is_admin = 0;
+
+	
+
+$('a[rel=tag]').live('mousedown',function(ea){
+    window.open(this.href);
+    return false;
+})
+
+$('.tag-bar .disagree').live('mousedown',function(ee){
+	var fhitem = $(original_target(ee)).closest('.fhitem')[0],
+		command = ('!' + $(original_target(ee)).attr("data-tag")).replace(NOTNOT, '');
+    try { Tags.submit(fhitem, command); } catch ( err ) {  }
+    return false;
+})
+
+
+
+$('a[rel=tag]').
+	live('mousedown', function( e ){
+        
+            return true;
+        
+
+	}).
+	live('click', function( e ){
+		if ( !logged_in ) {
+			var	target	= original_target(e),
+				tag	= $(target).text();
+			addfhfilter(tag);
+		}
+		e.preventDefault();
+		return false;
+	});
+
+$TAG_MENU.menu({
+	cssNamespace: 'slash',
+	liveTriggers: true,
+	clickDuration: 300,
+
+	start: function( e, ui ){
+		var	$tag	= $(ui.trigger),
+			tag	= get_tag_name($tag),
+			context	= firehose_settings && firehose_settings.viewtitle;
+
+		// Insert the tagname into the menu items where needed.
+		$TAG_MENU.find('span.var-tag').text(tag);
+		$TAG_MENU.find('a.nix').attr('title','not ' + tag);
+		
+
+			// non-admins may only delete their own tags
+		$TAG_MENU.find('a:[data-op="-"]').toggle($tag.is('.my'));
+	
+
+		// *tagname* in *viewtitle*
+		$TAG_MENU.find('a:[data-op="="]').toggle(!!context);
+		context && $TAG_MENU.find('span.var-view').text(context);
+
+		open_menu($tag, $TAG_MENU);
+	},
+
+	select: function( e, ui ){
+		var	$tag	= $(ui.trigger),
+			tag	= get_tag_name($tag),
+			op	= $(ui.select).attr('data-op'),
+			fhitem,
+			command;
+
+		// Global for positioning other things.
+		$related_trigger = $tag;
+
+		switch ( op ) {
+			case '=':
+				addfhfilter(tag);
+				break;
+
+			default:
+				fhitem = $tag.closest('.fhitem')[0];
+				command = (op + tag).replace(NOTNOT, '');
+				try { Tags.submit(fhitem, command); } catch ( err ) {  }
+				break;
+		}
+	},
+
+	stop: function( e, ui ){ close_menu(ui.trigger, $TAG_MENU); }
+});
+
+
+
+
+/* T2 feedback context-menu */
+
+
+
+/* T2 datatype context-menu (admin-only) */
+
+
+
+
+
+
+});
+</script>
+
+	
+
+
+								  <div class="col_1">
+									<nav role="sections" id="links" class="left_menu">
+										 
+										 <ul class="menu" id="fhtablist_new">
+
+			
+				
+				
+				
+
+				
+				
+					
+				
+				
+				<li class="active Stories">
+				
+				
+				
+				<a href="//slashdot.org/stories">Stories</a>
+				<span></span>
+				</li>
+				
+				
+				
+				
+				
+				<li class="Submissions">
+				
+				<a href="//slashdot.org/recent">Submissions</a>
+				
+				</li>
+				
+				
+				
+				
+				
+				<li class="Popular">
+				
+				<a href="//slashdot.org/popular">Popular</a>
+				
+				</li>
+				
+				
+				
+				
+				
+				<li class="Blog">
+				
+				<a href="//slashdot.org/blog">Blog</a>
+				
+				</li>
+
+		
+	</ul>
+										 
+										<h4 class="hide" id="links-sections-title" >
+			
+				<a class="data-title" href="//slashdot.org" >Slashdot</a>
+				
+				
+				<script type="data">{ color: "", viewname: "stories", filter: "", name: "Main", id: 13 }</script>
+
+			
+		</h4>
+	
+	
+	
+	
+		<ul id="firehose-sections" role="sections" class="left_menu">
+	
+
+	<li class="enhancedspacer"></li>
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-build">
+			<a id="fhsectiontitle-38" class="data-title" href="//build.slashdot.org">Build <span class="new-tag">new</span></a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-askslashdot">
+			<a id="fhsectiontitle-4" class="data-title" href="//ask.slashdot.org">Ask Slashdot</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-bookreview">
+			<a id="fhsectiontitle-6" class="data-title" href="//books.slashdot.org">Book Reviews</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-games">
+			<a id="fhsectiontitle-10" class="data-title" href="//games.slashdot.org">Games</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-idle">
+			<a id="fhsectiontitle-28" class="data-title" href="//idle.slashdot.org">Idle</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-yro">
+			<a id="fhsectiontitle-17" class="data-title" href="//yro.slashdot.org">YRO</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="active" id="fhsection-news">
+			<a id="fhsectiontitle-31" class="data-title" href="//news.slashdot.org">News</a>
+			<span></span>
+		</li>
+		
+	
+	<li class="enhancedspacer"></li>
+	 
+				
+
+		
+		
+		
+		<li class="" id="fhsection-cloud">
+			<a id="fhsectiontitle-cloud" class="data-title" href="//slashdot.org/stories/cloud">Cloud</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-hardware">
+			<a id="fhsectiontitle-21" class="data-title" href="//hardware.slashdot.org">Hardware</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-linux">
+			<a id="fhsectiontitle-19" class="data-title" href="//linux.slashdot.org">Linux</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-it">
+			<a id="fhsectiontitle-18" class="data-title" href="//it.slashdot.org">Management</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-mobile">
+			<a id="fhsectiontitle-29" class="data-title" href="//mobile.slashdot.org">Mobile</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		<li class="" id="fhsection-science">
+			<a id="fhsectiontitle-14" class="data-title" href="//science.slashdot.org">Science</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		
+		<li class="" id="fhsection-security">
+			<a id="fhsectiontitle-security" class="data-title" href="//slashdot.org/stories/security">Security</a>
+			
+		</li>
+		
+	 
+				
+
+		
+		
+		
+		<li class="" id="fhsection-storage">
+			<a id="fhsectiontitle-storage" class="data-title" href="//slashdot.org/stories/storage">Storage</a>
+			
+		</li>
+		
+	
+	</ul>
+									</nav>
+								  </div>
+
+								  <div class="col_2">
+								     <section id="content" class="grid_24 a2 ">
+									<section id="firehose" class="nothumbs">
+
+
+									    <div id="firehoselist" class="fhroot fleft  grid_24">
+										 
+										 <article id="firehose-63708413" data-fhid="63708413" data-fhtype="story" class="fhitem fhitem-story article usermode thumbs grid_24">
+<span class="sd-info-block" style="display: none">
+	<span class="sd-key-firehose-id">63708413</span>
+	<span class="type">story</span>
+	
+</span>
+
+	
+	
+	
+						
+						
+
+	<header>
+		
+			
+			<span class="topic" id="topic-63708413">
+				<a href="//news.slashdot.org/index2.pl?fhfilter=opensource" onclick="return addfhfilter('opensource');">
+			
+				<img src="//a.fsdn.com/sd/topics/opensource_64.png" width="64" height="64" alt="Open Source" title="Open Source">
+			
+		</a>
+		
+	
+		
+		
+		
+		
+
+		
+		<a href="//news.slashdot.org/index2.pl?fhfilter=media" onclick="return addfhfilter('media');">
+			
+				<img src="//a.fsdn.com/sd/topics/media_64.png" width="64" height="64" alt="Media" title="Media">
+			
+		</a>
+		
+	
+		
+		
+
+		
+		<a href="//news.slashdot.org/index2.pl?fhfilter=build" onclick="return addfhfilter('build');">
+			
+				<img src="//a.fsdn.com/sd/topics/build_64.png" width="0" height="0" alt="Build" title="Build">
+			
+		</a>
+			</span>
+			
+		
+		<h2 class="story">
+				
+				
+				
+			<span id="title-63708413"> <a   href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6">At Home with Tim O'Reilly (Videos 1 and 2 of 6)</a></span>
+			
+			
+			<span class="comments commentcnt-63708413" >11</span>
+			
+
+                        
+		</h2>
+		<div class="details" id="details-63708413">
+		
+		Posted
+		by 
+	
+	
+		
+			<a href="http://itknowledgeexchange.techtarget.com/cheap-computing/" rel="nofollow">Roblimo</a>
+		
+	
+	
+
+	
+	
+	<time id="fhtime-63708413" datetime="on Tuesday August 19, 2014 @04:10PM">on Tuesday August 19, 2014 @04:10PM</time>
+	
+	
+		<br>from the not-just-a-man-but-a-vital-force-behind-open-source dept.
+	
+	</div>
+	</header>
+
+	<div class="body" id="fhbody-63708413">
+
+		
+
+
+			<div id="text-63708413" class="p">
+			<a href="http://en.wikipedia.org/wiki/Tim_O'Reilly">Wikipedia says</a> Tim O'Reilly "is the founder of O'Reilly Media (formerly O'Reilly &amp; Associates) and a supporter of the free software and open source movements." And so he is. O'Reilly Media is also the company from which <a href="http://en.wikipedia.org/wiki/Make_(magazine)"> <em>Make</em> magazine</a> and the assorted Maker Faires  sprang, before spinning off into an ongoing presence of their own. (This year's Solid conference, as well as the confluence of hardware and software at OSCON demonstrate O'Reilly's ongoing interest in the world of makers, though.) O'Reilly has been a powerful force in technical book publishing, popularized the term <a href="http://en.wikipedia.org/wiki/Web_2.0">Web 2.0</a>, and has been at least a godfather to the open source movement. He's also an interesting person in general, even more so when he's hanging out at home than when he's on stage at a conference or doing a formal interview. That's why we were glad Timothy Lord was able to get hold of Tim O'Reilly via Hangout while he was in a relaxed mood in a no-pressure environment, happy to give detailed responses based on <a href="http://slashdot.org/index2.pl?fhfilter=O'Reilly">your questions</a>, from small (everyday technology) to big (the Internet as "global brain").
+<br> <br>
+We've run a few two-part videos, but this is the first time we've split one video into six parts -- with two running today, two tomorrow, and two Thursday. But then, how many people do we interview who have had as much of an effect on the nature of information transmission -- as opposed to just publishing -- as Tim O'Reilly? We don't know for sure, but there's a good chance that O'Reilly books are owned by more Slashdot readers than books from any other publisher. That alone makes Tim O'Reilly worth listening to for nearly an hour, total. (Alternate Video Links: <a href="http://tv.slashdot.org/video/?embed=84a2xwbzoEBZtzmUkBax_cBuo6JEBuN9">Video 1</a> ~ <a href="http://tv.slashdot.org/video/?embed=FvdG1wbzpQTU9aYLKYWXdjojYslLZqAk">Video 2</a>; transcript below covers both videos.)
+
+			</div>
+
+			
+
+		
+			
+                       <p class="media" id="media" style="text-align:center">
+                                
+                                        <object width="640" height="360" id="ooyalaPlayer_2025291_1408405397" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab"> <param name="movie" value="http://player.ooyala.com/player.swf?embedCode=84a2xwbzoEBZtzmUkBax_cBuo6JEBuN9&amp;version=2"> <param name="bgcolor" value="#000000"> <param name="allowScriptAccess" value="always"> <param name="allowFullScreen" value="true"> <param name="flashvars" value="embedType=directObjectTag&amp;embedCode=84a2xwbzoEBZtzmUkBax_cBuo6JEBuN9&amp;videoPcode=hhMnI6sYpNLKN_o5hP-1TMfZy1Zz"> <embed src="http://player.ooyala.com/player.swf?embedCode=84a2xwbzoEBZtzmUkBax_cBuo6JEBuN9&amp;version=2" type="application/x-shockwave-flash" width="640" height="360" flashvars="embedCode=84a2xwbzoEBZtzmUkBax_cBuo6JEBuN9&amp;videoPcode=hhMnI6sYpNLKN_o5hP-1TMfZy1Zz" allowfullscreen="true" bgcolor="#000000" name="ooyalaPlayer_2025291_1408405397" align="middle" play="false" loop="false" allowscriptaccess="always" pluginspage="http://www.adobe.com/go/getflashplayer"> </embed> </object>
+
+<br> <br>
+<object width="640" height="360" id="ooyalaPlayer_3386180_1408405660" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab"> <param name="movie" value="http://player.ooyala.com/player.swf?embedCode=FvdG1wbzpQTU9aYLKYWXdjojYslLZqAk&amp;version=2"> <param name="bgcolor" value="#000000"> <param name="allowScriptAccess" value="always"> <param name="allowFullScreen" value="true"> <param name="flashvars" value="embedType=directObjectTag&amp;embedCode=FvdG1wbzpQTU9aYLKYWXdjojYslLZqAk&amp;videoPcode=hhMnI6sYpNLKN_o5hP-1TMfZy1Zz"> <embed src="http://player.ooyala.com/player.swf?embedCode=FvdG1wbzpQTU9aYLKYWXdjojYslLZqAk&amp;version=2" type="application/x-shockwave-flash" width="640" height="360" flashvars="embedCode=FvdG1wbzpQTU9aYLKYWXdjojYslLZqAk&amp;videoPcode=hhMnI6sYpNLKN_o5hP-1TMfZy1Zz" allowfullscreen="true" bgcolor="#000000" name="ooyalaPlayer_3386180_1408405660" align="middle" play="false" loop="false" allowscriptaccess="always" pluginspage="http://www.adobe.com/go/getflashplayer"> </embed> </object>
+
+
+<p><div id="sdtranscript"><p>
+<b>Timothy
+
+Lord:</b>
+
+Really good. Perfect, there we go. Hey Tim first of all thanks very
+
+much for joining us today, I really appreciate it.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+You're welcome I've been a fan of Slashdot for so many years I can't
+
+even count.</p><p> <b>Timothy
+
+Lord:</b>
+
+Well, it can't be more than seventeen I don't think.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Well it can't be more than seventeen I think. I still think you have
+
+the best tagline ever: 'News for nerds, stuff that matters'.</p><p> <b>Timothy
+
+Lord:</b>
+
+Well, we try to keep that.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Yeah.</p><p> <b>Timothy
+
+Lord:</b>
+
+So what we've done we've taken our reader questions and boiled them
+
+down to a list of ten and we're going to try to get them &ndash;
+
+whatever answers you feel like giving today we'll appreciate. Um
+
+we're going to start off with a question about your everyday
+
+interaction with technology. You don't live a flashy techno lifestyle
+
+like some people seem to, as far as I know, as this question says,
+
+you don't drive a Tesla around-</p><p> <b>Tim
+
+O'Reilly:</b>
+
+I do actually drive a Tesla.</p><p> <b>Timothy
+
+Lord:</b>
+
+You do! Alright well there we go, that's why these questions are
+
+good. So what do you, as someone who sees a lot of emerging ideas &ndash;
+
+what interesting bits of technology that you see as especially useful
+
+that you surround yourself with?</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Well, I don't think I use anything more than the usual, you know I
+
+have a MacBook Air, I have an Android phone, I have an IPad, I have a
+
+Nexus 7, I have this new Samsung watch which is probably one of the
+
+nicer new things that I've sort of added to my gadget suite. What I
+
+find really great about it is, I used to always miss my texts and
+
+phone calls. It's really easy on the Android phones to turn off the
+
+sound by accident and you turn face in to protect the glass, the
+
+buzzer&rsquo;s on the back, etc. etc., now my wrist buzzes, so that's
+
+a terrific thing but it's also a step counter. It is also a gateway
+
+into this new world of speech and Google Now, both of which I think
+
+are way, way more important than a lot of people think.
+
+</p><p>What
+
+Siri and Google voice recognition are doing is just the early stages
+
+of something that I think is going to be huge and there are a lot of
+
+implications to that. As we start talking more to our devices, as
+
+they start talking to us, the demands on UI change fairly
+
+dramatically and I'm already finding sometimes I'm sitting there
+
+dictating an email or a text to my phone, an email is even more
+
+dramatic, with my laptop right next to me because I was on my phone,
+
+it was like easy enough. There is a certain optimum length speech
+
+recognition in a noise free, high network environment is pretty good.
+
+I also find it useful for things like: Oh I'm looking for a quote
+
+from a book, I find it in a PDF and I realize: Oh wait I can just
+
+read it from my phone and that's the new voice equivalent of cut and
+
+paste.</p><p>But
+
+more than that, once I got the Moto X phone and now this watch,
+
+really speech is integrated in a whole new way. So, for example,
+
+you're driving &ndash; it's not just speech, it's also the sensors in
+
+the phone, so you're driving, it knows that you're driving because it
+
+can tell from the GPS and from the vibration and all these kind of
+
+different sensors, and so it puts you in driving mode. And so when
+
+you get a text, suddenly your phone talks to you. It says &quot;You
+
+just received a text from Gem, would you like me to read it to you?&quot;
+
+and you say &quot;Yes&quot; and it reads it to you or I can say &quot;Text
+
+Gem, I'm going to be home late&quot;.</p><p> <b>Timothy
+
+Lord:</b>
+
+Now a watch is a fairly subtle and we're used to watches, where do
+
+you put Google Glass or other head worn things like that?</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Well, the thing that I loved about Google Glass, I have one, but I
+
+don't really use it, was the immediacy of the camera and again not
+
+from the point of view &ndash; a lot of people were sort of paranoid,
+
+it's this privacy intrusion and come on it's like a) you can actually
+
+see the screen reflected when it's on and so all the time if you
+
+cannot see the reflected, it is off. So it's really about as visible
+
+as somebody picking up their phone and taking it. It's like once you
+
+get it tuned to the cues. So I don't think this idea am I being
+
+surreptitiously recorded is a real fear, but there was something
+
+wonderful about just being able to reach out, click, take that
+
+picture. And they've got that a little bit of that in the Moto X
+
+where you can just shake the phone and it goes right to the camera.
+
+You can touch anywhere on the screen, so moving towards that
+
+immediacy.</p><p>And
+
+I do think that there's this really interesting thing happening as
+
+people are exploring sensor driven UI, what you can leave out. I
+
+talked a lot about, for example, Uber, people don't think of it as an
+
+Internet of Things app and yet it is, it's because people are
+
+carrying GPS enabled phones that allow both the driver and the
+
+passenger to &ndash; it's like they're both augmented. And the way I
+
+kind of explain it, I go well what if the car were driverless, you'd
+
+be very clear that it was the Internet of Things. It's just human
+
+mediated. We're in this halfway house.</p><p> <b>Timothy
+
+Lord:</b>
+
+It's at what point there is a pilot or not?</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Yeah. And so Google Now is the other half of that and I look at it
+
+and it's still kind of broken. It's like you're telling me that it&rsquo;s
+
+an extra 15 minutes to go where I went yesterday. I'm not going back
+
+there, don't tell me that! So there's things like that but I love
+
+where they're going with that. I love the notion that we're starting
+
+to have anticipatory interfaces that are starting to think about
+
+looking at my patterns. And a lot of times it's like: okay I'm
+
+thinking of going into the office and it's normally 25 minutes and it
+
+suddenly tells me, it's 42 minutes, that's kind of awesome. With the
+
+addition of Waze, Google Maps is getting that same way, sometimes
+
+we're estimating well how bad is the traffic? Do we go this way or
+
+that way? And now Google kind of tells us, take the short cut
+
+effectively just by changing the directions. And so that anticipation
+
+strikes me as really important.</p><p>So
+
+that's why I really love the integration and I think Google Now is
+
+really central in the watch, it's really central in some of the newer
+
+Google phones and I think it's a beginning of something super
+
+interesting. But there's also kind of a thread and maybe this will
+
+come up in one of the later questions too, but might as well tackle
+
+it here, and that is: one of the things I've been thinking about a
+
+lot is that speech is effectively a return to the command line.</p><p> <b>Timothy
+
+Lord:</b>
+
+That's a fair way to put it.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+And one of the things that I always loved about UNIX was the
+
+gradation between the command line and the programming via the shell,
+
+so that somebody tells the computer to do something once and then
+
+somebody says, &quot;Hey, if you want to do that all the time, here's
+
+how you do it&quot; and you write this little script and there was
+
+that and then for long, you're using [OC] and then you're using Perl
+
+and that was how it went in the old days. And I kind of think that
+
+same thing is going to happen with speech. So one of the things that
+
+I'm waiting to see and I've actually lobbied both Apple and Nuance
+
+and Google, when are you guys going to put together Siri or Google
+
+speech recognition with the equivalent of 'If This Then That', and
+
+have a...</p><p> <b>Timothy
+
+Lord:</b>
+
+Incantations of some kind.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Incantations and the fact that was so wonderful about the UNIX shell
+
+was that if you developed an incantation that you liked, you could
+
+save it and then it became a first class citizen.</p><p> <b>Timothy
+
+Lord:</b>
+
+And share it.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Yeah. And so, there's that notion of a) there is some set of internet
+
+objects now and again you do start to have that in the watch, like I
+
+can say &quot;Okay, Google, call me a car.&quot; Sorry, it's going to
+
+do that because it's listening. Right now it only works with Lift. I
+
+don't use Lift, I use Uber, but once they hook up with Uber, &ldquo;call
+
+me a car&rdquo; is an incantation that the watch understands or
+
+actually Google understands, the watch just passes it through to
+
+Google. But there's a set of apps. Here I can say &quot;Okay, Google,
+
+show me my heart rate, show me my steps, send a text, and in the
+
+first incarnation, it was send a text and then it was like &quot;What
+
+the fuck?&quot; It opened up the text messaging app, this is on the
+
+Moto X and now I got to type the text or hit the little microphone
+
+button, now it says &quot;You didn&rsquo;t input any-&quot; because I
+
+can now say &quot;send a text&quot; followed by the text but if I
+
+don't send any, it's smart enough to say, &quot;you didn't have any
+
+text, what would you like me to send?&quot; So you're starting to get
+
+into this sort of &ndash; it's both interactive and the next step is
+
+programmable. I actually think this is probably one of the most
+
+underrated areas, people still kind of scoff at it, it doesn't work
+
+that well, but it's getting better fast enough that we really are
+
+moving not just into design beyond the screen, we're moving into
+
+design after the screen.</p><p> <b>Timothy
+
+Lord:</b>
+
+Now I want to jump back to a slightly different area, a little bit
+
+less future tech, let's say &ndash; some of our readers asked about
+
+electronic publishing. Now we're still putting information in
+
+readable form, there's one place where we don't want voice reading it
+
+to us, we want to be able to scan it visually and search, and one of
+
+our readers asked: what do you use &ndash; rather what do you see or
+
+expect in the future of electronic-centric publishing? This is
+
+something that you're a pioneer of, what are the trends when it comes
+
+to actually putting information in a way that's findable, scannable,
+
+discoverable?</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Yeah. Well, I think your point of: 'findable, scannable,
+
+discoverable' is really a huge, part of the key. We have a generation
+
+that's come to expect that information is available online. It's
+
+available pretty easily and universally. When we launched Safari
+
+books online, our premise was the e-book was going to be a lot bigger
+
+than the print book, i.e. it would be a searchable library of all
+
+books. And of course that leads to a very different consumption
+
+pattern, because you can go kind of look for an answer to a question
+
+and it might be in three or four different versions of that answer,
+
+just like you have out on the web. And in order to do that you have
+
+to enable a big repository.</p><p>But
+
+we also find that as people get used to the notion of random access
+
+online and again, I'm talking really about the kind of books that we
+
+do first, informational or how-to, there's a whole class of
+
+search-driven behaviour, whereas like I need to know about this
+
+particular thing and I'm going to just go look. But there is a kind
+
+of learning behaviour and for that in a lot of cases video really
+
+becomes a first class citizen where people are saying, &quot;I want
+
+to learn this. I want somebody to walk me through it. But just in
+
+general we found in our business as people moved more online, huge
+
+shift away from in print book sales, away from reference towards
+
+tutorial and then of course online we provided a really good
+
+reference product but also then increasingly a tutorial product and
+
+including more and more in Safari...
+
+</p><p>But
+
+when I look at the broader universe of e-books, one of the things
+
+that I always try to encourage publishers to think about is: what's
+
+the user need that you're satisfying? And it's very easy to lump
+
+things together because of the form factor that serve a completely
+
+different user need. I was like: yes we publish computer books and
+
+sure some people read them for entertainment, but we're weird, right?
+
+Actually I have to say this: my friend Mikey Dickerson who is one of
+
+the people who led the healthcare.gov rescue team and is now just
+
+gone to head up this new US digital service in DC to try to [prevent]
+
+more healthcare.govs, he had a great t-shirt that he wore when he was
+
+doing a rescue which said, I think somebody gave it to him but it
+
+said: 'On the planet I come from I'm normal'. And so, yes, all of us
+
+nerds who read computer books for fun, we're weird but on our planet
+
+we're normal.</p><p> <b>Timothy
+
+Lord:</b>
+
+Sure.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+But anyway the point I wanted to make was, like we used to publish
+
+things solely in books that people were going to for information and
+
+they looked like things that people would go use for entertainment.
+
+And so people said: well they're both books, but if you say, well,
+
+it's an entertainment product, then you're in a very, very different
+
+world. And I think that there's going to be a lot more blurring of
+
+the boundaries, and anybody who's in publishing has to actually think
+
+about 'well what job are you doing for your users?' And there's
+
+clearly people who've got this, who understand that Harry Potter is
+
+an entertainment franchise and it has all these aspects that might go
+
+all the way from a book, through a video game, movie, a theme park
+
+ride, Broadway show, whatever it might be. And that cross cutting I
+
+think is a great area for experimentation and I think so many people
+
+who are in the book business aren't thinking broadly enough. I think
+
+you see more of this from people coming &ndash; like Lego, I mean who
+
+would have thought that Lego would be producing movies and TV shows,
+
+but they've figured out: oh wait this is all part of a system and I
+
+think a lot of the revolution that's coming in what you could call
+
+publishing will come from a bunch of different directions of people
+
+who understand: I'm doing a job for a set of customers, what else do
+
+they want from me? How else can I deliver it? How can I make this
+
+whole thing a richer experience?</p><p> <b>Timothy
+
+Lord:</b>
+
+Now on that front, one way that O'Reilly books have distinguished
+
+themselves from some of the publishers is that you have made them
+
+available without DRM. That's another question that a reader raises
+
+is the music industry says that lack of DRM, when music doesn't have
+
+that, for instance, is hurting their bottom line a lot and it asks:
+
+do you feel the same way about your book titles? Why have you taken
+
+that tack?</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Well, first off, I would say that I'm not sure the analogies between
+
+books and music are perfect.</p><p> <b>Timothy
+
+Lord:</b>
+
+Not at all.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+Music first of all is consumed in much smaller increments, much more
+
+like free content is consumed online. I guess it was actually a
+
+shifty album roughly equivalent to the book, a bigger assemblage. But
+
+the thing that I guess I see is you have a set of people who are used
+
+to the idea that I should be able to consume this stuff easily,
+
+without barriers and so there's a set of expectations there and what
+
+the providers want doesn't really matter because if you don't satisfy
+
+user convenience, you're in trouble. And, the music industry waited
+
+too long. If they'd offered like an iTunes-like solution or a
+
+Spotify-like solution a long time ago, they would have been much
+
+better off. And I think for us at O'Reilly we did, that's what we
+
+did, we said users are going to want to have access to this when and
+
+where they want, we're going to try to make it as easy as possible,
+
+we're going to try to make it a compelling value proposition and
+
+people have actually taken us up on that.</p><p>But
+
+I think that there's a further dynamic and some segments of book
+
+publishing are a lot more like music publishing, in that they're very
+
+hit-driven and I do believe that in a hit-driven marketplace, your
+
+monitory returns are lower in a DRM-free environment. And the reason
+
+for that is &ndash; well actually I wrote it all up in a paper I
+
+wrote back in 2002 called &quot;Piracy is progressive taxation.&quot;
+
+It's like &quot;Hey this is the way the system works,&quot; when
+
+stuff is freely available people consume a wider range of content
+
+which is good for people who are lower on the content ladder, because
+
+people will consume more of their content than people who are already
+
+well known. Yeah, maybe some people will get the content for free who
+
+would have paid for it and so you do have &ndash; it's like the
+
+latest hit single , everybody wants to listen to it and they now have
+
+lots of alternatives to buying it, you're going to lose some money.
+
+On the other hand, if nobody ever heard of you, Spotify
+
+gives you all these amazing opportunities to get exposure and then
+
+people will pay you, so it's really one of these things where it
+
+benefits some people and it hurts some others and that's usually the
+
+way things work. And the intermediaries need to figure out how to
+
+adapt to that. There have been huge new intermediary opportunities
+
+that are based on the abundance model, where everything's available
+
+and again Apple's done it one way and people like Spotify have done
+
+it another but we're still in the early stages of figuring out the
+
+right business models.
+
+</p><p>Overall,
+
+I'm not really worried about &ndash; I could be wrong about this but
+
+I'm not really worried about content creators. If it gets to the
+
+point where people stop producing content that other people want
+
+because there's not enough value in it, then people will go &quot;Oh,
+
+I got to pay for that&quot;.</p><p> <b>Timothy
+
+Lord:</b>
+
+Sounds like a self-correcting problem.</p><p> <b>Tim
+
+O'Reilly:</b>
+
+It is and again this is not like perfectly self-correcting in the
+
+sense that some things become harder to monetize because there's less
+
+demand for them and other things become easier to monetize, so it
+
+shifts consumption patterns. You think about classical music, there's
+
+probably not as many classical composers as there are people making
+
+popular music. But on the other hand I look at it and I go well, back
+
+in the day Franz Liszt was a rock star and the people who make
+
+classical music now aren't rock stars and maybe that's the problem.
+
+</p></div>
+                                
+                                
+					<script type="text/javascript">
+function playOoyalaVideo() {
+	if ($('.ooyala_player')) {
+        	document.getElementById('ooyala_player').playMovie();
+	}
+}
+
+function ooyala_callback(playerId, eventName, eventArgs) {
+var ciecc,ttc,ecc,vc;
+
+  switch(eventName) {
+    case "apiReady":
+      if (window.location.hash && window.location.hash == "#media") {
+        setTimeout("playOoyalaVideo()",10);
+      }
+      break;
+  }
+}
+</script>
+				
+                        </p>
+			
+			<script type="text/javascript">
+				$('#sdtranscript').hide();
+				$('#sdtranscript').before("<center><a href='' onclick='$(\"#sdtranscript\").toggle();return false;'>Hide/Show Transcript</a><br></center>");
+			</script>
+		
+		
+			
+		
+	</div>
+	<aside class="grid_24 view_mode">
+	
+			<div class="grid_12 cc">
+				<p>
+				
+
+				<span class="sharethisawrp">
+					<span id="sharethis-63708413" class="">
+						
+                     
+
+		  
+
+
+
+	
+		<a class="janrain t" href="#" data-provider="twitter" data-message="At Home with Tim O'Reilly (Videos 1 and 2 of 6) @slashdot" data-url="http://news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6" data-title="At Home with Tim O'Reilly (Videos 1 and 2 of 6)">twitter</a>
+		<a class="janrain f fb" href="#" data-provider="facebook" data-url="http://news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6" data-message="At Home with Tim O'Reilly (Videos 1 and 2 of 6)" data-title="At Home with Tim O'Reilly (Videos 1 and 2 of 6)">facebook</a>
+        	<a class="janrain l" href="#" data-provider="linkedin" data-url="http://news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6" data-message="At Home with Tim O'Reilly (Videos 1 and 2 of 6)" data-title="At Home with Tim O'Reilly (Videos 1 and 2 of 6)">linkedin</a>
+	        <a class="g" href="http://plus.google.com/share?url=http://news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/></a>
+	
+
+						
+					</span>
+				</span>
+
+				</p>
+			</div>
+        <div class="grid_24 tright tw">
+			<span class="tright tags">
+						
+			</span>
+        </div>
+
+
+
+
+
+       
+       
+       
+        <section class="grid_24" id="newa2footerv2">
+            <div class="grid_6 pr">
+                <h3><a title="Previous story" href="//yro.slashdot.org/story/14/08/19/1755211/german-intelligence-spying-on-allies-recorded-kerry-clinton-and-kofi-annan?sdsrc=prev">&larr;</a></h3>
+            </div>
+            <div class="grid_12 rl">
+                <h3>Related Links</h3>
+            </div>
+            <div class="grid_6 ns">
+                <h3><a title="Next story" href="//news.slashdot.org/story/14/08/19/1936205/ballmer-leaves-microsoft-board?sdsrc=next">&rarr;</a></h3>
+            </div>
+
+
+            <div class="grid_6">
+                <span class="c">
+					<a href="//yro.slashdot.org/story/14/08/19/1755211/german-intelligence-spying-on-allies-recorded-kerry-clinton-and-kofi-annan?sdsrc=prev">German Intelligence Spying On Allies, Recorded Kerry, Clinton, and Kofi Annan </a>
+				</span>
+            </div>
+            <div class="grid_12">
+                <span class="c">
+					
+					
+						<h3><a href="//build.slashdot.org/story/14/08/20/2019212/at-home-with-tim-oreilly-videos-3-and-4-of-6?sdsrc=rel">At Home with Tim O'Reilly (Videos 3 and 4 of 6)</a></h3><h3><a href="//news.slashdot.org/story/14/08/21/192209/at-home-with-tim-oreilly-videos-5-and-6-of-6?sdsrc=rel"> At Home with Tim O'Reilly (Videos 5 and 6 of 6)</a></h3>
+					
+				</span>
+            </div>
+            <div class="grid_6">
+                <span class="c">
+					
+						<a href="//news.slashdot.org/story/14/08/19/1936205/ballmer-leaves-microsoft-board?sdsrc=next">Ballmer Leaves Microsoft Board</a>
+					
+				</span>
+            </div>
+        </section>
+
+
+	
+	</aside>
+	
+	
+
+</article>
+									    </div>
+									    
+									</section>
+
+									<aside id="slashboxes">
+									     
+										  <div class="railad">
+<div id='div-gpt-ad-300x250_a'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-300x250_a');});</script></div>
+</div>
+										  <div id="slashboxesin" class="yui-b">
+										    
+										    
+										    
+										  </div>
+									     
+									</aside>
+
+									<section id="comments" class="a2commentwrap">
+									   <div>
+    									   <a name="comments"></a>
+<div class="commentwrap ">
+<div class="commentBox notice pcna">
+			
+
+		
+			
+				This discussion has been archived.
+			
+			No new comments can be posted.
+		
+	
+</div>
+</div><a name="comments"></a>
+
+	 <section class="d2incommentspl">
+	 <div class="commentwrap" id="commentwrap">
+
+		 
+			 <div class="commentBox">
+				<div class="title hide">	
+					<h4>
+						<span class="escape-link"><a href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6" title="Back to Article - At Home with Tim O'Reilly (Videos 1 and 2 of 6)">At Home with Tim O'Reilly (Videos 1 and 2 of 6)</a></span>
+						<span class="commentBoxLinks"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_d"></span> More</a>
+
+
+
+
+
+	<a class="login"  href="//news.slashdot.org/login.pl" onclick="show_login_box(); return false">Login</a></span>
+					</h4>
+				</div>
+			 </div>
+		 
+
+	 
+
+
+
+<section class="grid_24" id="d2header"><div>
+
+	<h2 class="commentspl test"><a title="Back to Article - At Home with Tim O'Reilly (Videos 1 and 2 of 6)" href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6">At Home with Tim O'Reilly (Videos 1 and 2 of 6)</a></h2>
+
+	<nav class="grid_24">
+		<div class="grid_14 widthauto">
+			
+				<button class="btn" disabled="disabled">Archived Discussion</button>
+			
+			<!-- <a href="//news.slashdot.org/search.pl?op=comments&amp;sid=5549891" class="btn">Search <span class="totalcommentcnt">11</span> Comments</a> -->
+			
+				
+   					<a href="#" onclick="D2.ajaxFetchComments(0,1,'','',-1); return false" class="btn" id="d2loadall">Load All Comments</a>
+				
+			
+        
+		</div>
+		<div class="grid_10 d1or2">
+		
+
+				 
+					 <div id="d2out" class="horizontal rooted grid_15">
+								 <div id="d2act" class="hide">
+									 <div class="loki" id="gods">
+										 <script type="text/javascript">
+										 $(function(){
+											 D2.slider = new D2.Slider(
+												 D2.user_threshold(),
+												 D2.user_highlightthresh(),
+												 'x'
+											 );
+										 });
+										 </script>
+										 <div id="bones" class="grid_12">
+											 <div class="ccw-count-container grid_24">
+												 <span id="ccw-full-count-text" class="grid_8 ccw-count-text tcenter"><span></span><span id="ccw-full-phrase">&nbsp;Full</span></span>
+												 <span id="ccw-abbr-count-text" class="grid_8 ccw-count-text"><span></span><span id="ccw-abbr-phrase">&nbsp;Abbreviated</span></span>
+												 <span id="ccw-hide-count-text" class="grid_8 ccw-count-text tleft"><span></span><span id="ccw-hide-phrase">&nbsp;Hidden</span></span>
+											 </div>
+											 <div id="ccw">
+												 <div id="ccw-body" class="ccw-core">
+													 <div id="ccw-panel-container" class="ccw-core">
+														 <div id="ccw-full-panel" class="ccw-panel">
+															 /Sea<div class="ccw-panel-border"></div>
+															 <div id="ccw-full-count-pos" class="ccw-core-pos ccw-count-pos"></div>
+														 </div>
+														 <div id="ccw-abbr-panel" class="ccw-panel">
+															 <div class="ccw-panel-border"></div>
+															 <div id="ccw-abbr-count-pos" class="ccw-core-pos ccw-count-pos"></div>
+														 </div>
+														 <div id="ccw-hide-panel" class="ccw-panel">
+															 <div id="ccw-hide-count-pos" class="ccw-core-pos ccw-count-pos"></div>
+														 </div>
+													 </div>								
+													 <div id="ccw-control" class="ccw-core">
+														 <div id="ccw-centering-rail" class="ccw-core">
+															 <div id="ccw-hide-bar-pos" class="ccw-core-pos">
+																 <div id="ccw-hide-bar" class="ccw-bar">
+																	 <div id="ccw-hide-bar-tab" class="ccw-bar-tab"></div>
+																	 <div class="ccwa"></div>
+																	 <div class="ccwb"></div>
+																	 <div id="ccw-hide-bar-upzone" class="ccw-upzone" onclick="D2.slider.stepTHT(HIDE_BAR, +1)"></div>
+																	 <div id="ccw-hide-bar-downzone" class="ccw-downzone" onclick="D2.slider.stepTHT(HIDE_BAR, -1)"></div>
+																 </div>
+															 </div>
+															 <div id="ccw-abbr-bar-pos" class="ccw-core-pos">
+																 <div id="ccw-abbr-bar" class="ccw-bar">
+																	 <div id="ccw-abbr-bar-tab" class="ccw-bar-tab"></div>
+																	 <div class="ccwa"></div>
+																	 <div class="ccwb"></div>
+																	 <div id="ccw-abbr-bar-upzone" class="ccw-upzone" onclick="D2.slider.stepTHT(ABBR_BAR, +1)"></div>
+																	 <div id="ccw-abbr-bar-downzone" class="ccw-downzone" onclick="D2.slider.stepTHT(ABBR_BAR, -1)"></div>
+																 </div>
+															 </div>
+														 </div>
+													 </div>
+												 </div>
+												 <div class="ccw-score-label grid_24">
+													 <div class="grid_3"><span class="sc">Score:</span></div>
+													 <div class="grid_3">5<span class="lg"></span></div>
+													 <div class="grid_3">4<span class="lg"></span></div>
+													 <div class="grid_3">3<span class="lg"></span></div>
+													 <div class="grid_3">2<span class="lg"></span></div>
+													 <div class="grid_3">1<span class="lg"></span></div>
+													 <div class="grid_3">0<span class="lg"></span></div>
+													 <div class="grid_3">-1<span class="lg"></span></div>
+												 </div>
+											 </div>
+										 </div>
+										 <div class="commentControlFooter"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_c"></span> More</a>
+
+
+
+
+
+	<a class="login"  href="//news.slashdot.org/login.pl" onclick="show_login_box(); return false">Login</a><div id="login_cover" class="hide" onclick="hide_login_box()"></div>
+<div id="login_box" class="hide">
+	<div id="login_box_content">
+		<div id='embbeded_login_modal' class="hide">
+<form action="https://slashdot.org/my/login" method="post" onsubmit="if (global_returnto) { this.returnto.value = global_returnto }" class="embedded"><fieldset style="-webkit-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0">
+<div style='height:25px;'>&nbsp;</div>
+    <input type="hidden" name="returnto" value="//news.slashdot.org/comments.pl?sid=5549891">
+    <input type="hidden" name="op" value="userlogin">
+    <p>
+        <label class="fleft" for="unickname">Nickname:</label>
+        <input type="text" name="unickname" value="">
+    </p>
+    <p>
+        <label class="fleft" for="upasswd">Password:</label>
+        <input type="password" name="upasswd" placeholder="6-20 characters long">
+    </p>
+    <label class="checkbox"><input type="checkbox" name="login_temp" value="yes"> Public Terminal</label>
+    <br>
+    <hr>
+    <input type="submit" name="userlogin" value="Log In" class="fno"> <a href="//slashdot.org/my/mailpassword" class="btn link" onclick="getModalPrefs('sendPasswdModal', 'Retrieve Password', 1); return false;">Forgot your password?</a>
+</fieldset></form>
+
+<div id="janrainEngageEmbed"></div>
+<div class="actions">
+ <a class="ico close" onclick="hide_login_slider();" href=""><span>Close</span></a>
+</div>
+</div>
+		<div class="actions">
+			<a class="ico close" href="#" onclick="hide_login_box(); return false"><span>Close</span></a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">logged_in = 0</script></div>
+										 <div id="commentControlBoxStatus" class="hide"></div>
+									 </div>
+								 </div>
+					 </div>
+				 
+				 
+
+
+
+				  <a href="//news.slashdot.org/search.pl?op=comments&amp;sid=5549891" class="ui-icon search_comments">Search <span class="totalcommentcnt">11</span> Comments</a>
+
+
+
+
+				  <a class="pref ui-icon-w" href="//news.slashdot.org/users.pl" onclick="show_login_box(); $('#modal_box').addClass('login'); return false;">Log In/Create an Account</a>
+				  
+		</div>
+	</nav>
+	<section id="besttabs" class="grid_24">
+	    <span class="legend">Comments Filter:</span>
+	    <ul class="besttabslist">
+	        <li class="active"><a href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6#comments">All</a></li>
+		
+	        <li ><a href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6/insightful-comments#comments">Insightful</a></li>
+		
+	        <li ><a href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6/informative-comments#comments">Informative</a></li>
+		
+	        <li ><a href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6/interesting-comments#comments">Interesting</a></li>
+		
+	        <li ><a href="//news.slashdot.org/story/14/08/18/2349228/at-home-with-tim-oreilly-videos-1-and-2-of-6/funny-comments#comments">Funny</a></li>
+		
+	    </ul>
+	</section>
+    <aside class="grid_24">
+		<p>
+			<small><strong>The Fine Print:</strong> The following comments are owned by whoever posted them.  We are not responsible for them in any way.</small>
+		</p>
+		<a name="topcomment"></a>
+    </aside>
+
+
+</div></section><script src="//a.fsdn.com/sd/comments-minified.js?release_20140903" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+<!--
+D2.d2_keybindings_disable()[191] = 1;
+D2.boxStatus(1);
+D2.comments({ 47706597: { uid: 1934852, pid: 0, read: 0, points: -1, kids: [ 47707397 ], opid: 0 }, 47711573: { uid: 666, pid: 0, read: 0, points: -1, kids: [  ], opid: 0 }, 47716311: { uid: 442, pid: 47714775, subject: "Re:Who writes these crappy intros?", read: 0, points: 1, kids: [  ], opid: 47714775 }, 47707823: { uid: 666, pid: 47707347, read: 0, points: -1, kids: [  ], opid: 47707347 }, 47707397: { uid: 561346, pid: 47706597, subject: "Re:\"maker\" is the worst fucking word", read: 0, points: 2, kids: [  ], opid: 47706597 }, 47707347: { uid: 565205, pid: 0, read: 0, points: 0, kids: [ 47707715, 47707823 ], opid: 0 }, 47714775: { uid: 565205, pid: 47707715, subject: "Re:Who writes these crappy intros?", read: 0, points: 1, kids: [ 47716311 ], opid: 47707715 }, 47709457: { uid: 2196932, pid: 0, read: 0, points: -1, kids: [  ], opid: 0 }, 47707715: { uid: 442, pid: 47707347, subject: "Re:Who writes these crappy intros?", read: 0, points: -1, kids: [ 47714775 ], opid: 47707347 }, 47706371: { uid: 1021273, pid: 0, read: 0, points: -1, kids: [  ], opid: 0 }, 47716623: { uid: 666, pid: 0, read: 0, points: -1, kids: [  ], opid: 0 } });
+
+D2.thresh_totals({6:{6:{1:11,3:0,2:0}},4:{6:{1:11,3:0,2:0},4:{1:11,3:0,2:0},5:{1:11,3:0,2:0}},1:{6:{1:8,3:0,2:3},4:{1:8,3:0,2:3},1:{1:8,3:3,2:0},3:{1:8,3:0,2:3},2:{1:8,3:1,2:2},5:{1:8,3:0,2:3}},3:{6:{1:11,3:0,2:0},4:{1:11,3:0,2:0},3:{1:11,3:0,2:0},5:{1:11,3:0,2:0}},0:{6:{1:7,3:0,2:4},4:{1:7,3:0,2:4},1:{1:7,3:4,2:0},3:{1:7,3:0,2:4},0:{1:7,3:4,2:0},2:{1:7,3:1,2:3},5:{1:7,3:0,2:4}},2:{6:{1:10,3:0,2:1},4:{1:10,3:0,2:1},3:{1:10,3:0,2:1},2:{1:10,3:1,2:0},5:{1:10,3:0,2:1}},5:{6:{1:11,3:0,2:0},5:{1:11,3:0,2:0}},"-1":{6:{1:0,3:0,2:11},4:{1:0,3:0,2:11},1:{1:0,3:4,2:7},3:{1:0,3:0,2:11},0:{1:0,3:9,2:2},2:{1:0,3:1,2:10},5:{1:0,3:0,2:11},"-1":{1:0,3:11,2:0}}});
+
+D2.root_comment(0);
+D2.root_comments([47706371,47706597,47707347,47709457,47711573,47716623]);
+D2.root_comments_hash({47706597:1,47707347:1,47709457:1,47706371:1,47711573:1,47716623:1});
+
+D2.d2_comment_order(0);
+D2.user_uid(666);
+D2.user_is_anon(1);
+D2.user_is_admin(0);
+D2.user_is_subscriber(0);
+D2.user_smallscreen(0);
+D2.user_threshold(1);
+D2.user_highlightthresh(4);
+D2.user_d2asp(0);
+
+D2.discussion_id(5549891);
+
+D2.d2_seen('47706371,226,750,50,318,108,1634,2116,3202,1536,312');
+D2.more_comments_num(0);
+
+
+//-->
+</script>
+
+
+
+
+	
+	
+	
+	
+		<ul id="commentlisting" class="d2">
+			<li id="tree_47706371" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47706371" class="commentstatus"></div>
+<div id="comment_47706371" class="cw">
+</div>
+
+<div id="replyto_47706371"></div>
+
+<ul id="group_47706371">
+	<li id="hiddens_47706371" class="hide"></li>
+</ul>
+
+</li><li id="tree_47706597" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47706597" class="commentstatus"></div>
+<div id="comment_47706597" class="cw">
+</div>
+
+<div id="replyto_47706597"></div>
+
+<ul id="group_47706597">
+	<li id="hiddens_47706597" class="hide"></li>
+</ul>
+
+<ul id="commtree_47706597"><li id="tree_47707397" class="comment oneline"><span class="ind"></span>
+<div id="comment_status_47707397" class="commentstatus"></div>
+<div id="comment_47707397" class="cw">
+	<div id="comment_top_47707397" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_47707397" name="comment_link_47707397" href="//news.slashdot.org/comments.pl?sid=5549891&amp;cid=47707397" onclick="return D2.setFocusComment(47707397)" >Re:</a>
+
+
+		 	<span id="comment_score_47707397" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 47707397); return false"><span class=opt>Score:</span>2</a>)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~neminem">neminem</a>  <span class="uid"><a href="//slashdot.org/~neminem">(561346)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_47707397"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_47707397"><p>I disagree. Maker is a totally great word. Makers are those with magical anti-entropy powers, who devote their lives to stymying the plots of the Unmaker. It's a pretty common trope, and a good word for that sort of character.</p><p>(On the other hand, the definition used in *this* article, is as dumb as you are arguing. I just like to imagine that people using the word are using it in the OSC definition, thus making articles just *so* much more entertaining.)</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_47707397">
+
+</div>
+</div>
+
+<div id="replyto_47707397"></div>
+
+<ul id="group_47707397">
+	<li id="hiddens_47707397" class="hide"></li>
+</ul>
+
+</li></ul></li><li id="tree_47707347" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47707347" class="commentstatus"></div>
+<div id="comment_47707347" class="cw">
+</div>
+
+<div id="replyto_47707347"></div>
+
+<ul id="group_47707347">
+	<li id="hiddens_47707347" class="hide"></li>
+</ul>
+
+<ul id="commtree_47707347"><li id="tree_47707715" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47707715" class="commentstatus"></div>
+<div id="comment_47707715" class="cw">
+</div>
+
+<div id="replyto_47707715"></div>
+
+<ul id="group_47707715">
+	<li id="hiddens_47707715" class="hide"></li>
+</ul>
+
+<ul id="commtree_47707715"><li id="tree_47714775" class="comment oneline"><span class="ind"></span>
+<div id="comment_status_47714775" class="commentstatus"></div>
+<div id="comment_47714775" class="cw">
+	<div id="comment_top_47714775" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_47714775" name="comment_link_47714775" href="//news.slashdot.org/comments.pl?sid=5549891&amp;cid=47714775" onclick="return D2.setFocusComment(47714775)" >Re:</a>
+
+
+		 	<span id="comment_score_47714775" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 47714775); return false"><span class=opt>Score:</span>1</a>)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~xxxJonBoyxxx">xxxJonBoyxxx</a>  <span class="uid"><a href="//slashdot.org/~xxxJonBoyxxx">(565205)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_47714775"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_47714775"><p>&gt;&gt; don't need embellished intros</p><p>Hmmm..."godfather"..."powerful force"..."as much of an effect on the nature of information transmission" - sounds like a little embellishment to me.<nobr> <wbr></nobr>;)</p><p>So, how do you write an intro that gets more than 8 comments (as of 24 hours) when you're stuck with a full hour of video of some old guy talking at a webcam (yawn).  Do what any good journalist would do: scan the transcripts and pull out the 2-3 most provocative things he said, then build a teaser around it.  Finally, wr<span class="substr"> </span></p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_47714775">
+
+</div>
+</div>
+
+<div id="replyto_47714775"></div>
+
+<ul id="group_47714775">
+	<li id="hiddens_47714775" class="hide"></li>
+</ul>
+
+<ul id="commtree_47714775"><li id="tree_47716311" class="comment oneline"><span class="ind"></span>
+<div id="comment_status_47716311" class="commentstatus"></div>
+<div id="comment_47716311" class="cw">
+	<div id="comment_top_47716311" class="commentTop newcomment">
+		<div class="title">
+			<h4><a id="comment_link_47716311" name="comment_link_47716311" href="//news.slashdot.org/comments.pl?sid=5549891&amp;cid=47716311" onclick="return D2.setFocusComment(47716311)" >Re:</a>
+
+
+		 	<span id="comment_score_47716311" class="score"> (<a href="#" onclick="getModalPrefs('modcommentlog', 'Moderation Comment Log', 47716311); return false"><span class=opt>Score:</span>1</a>)</span></h4>
+		</div>
+		<div class="details">
+			<span class="by"><span class="byby">by </span><a href="//slashdot.org/~caferace">caferace</a>  <span class="uid"><a href="//slashdot.org/~caferace">(442)</a></span></a></span><span class="writes" style="display:none"> writes:</span> 
+			<span class="otherdetails" id="comment_otherdetails_47716311"></span>
+		</div>
+	</div>
+	<div class="commentBody">
+		<div id="comment_body_47716311">TBH, I didn't watch the video and just read the transcript.<nobr> <wbr></nobr>:) <p>An hour with him is worth it. He's been around since before<nobr> <wbr></nobr>/.<nobr> <wbr></nobr>... well worth it.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_47716311">
+
+</div>
+</div>
+
+<div id="replyto_47716311"></div>
+
+<ul id="group_47716311">
+	<li id="hiddens_47716311" class="hide"></li>
+</ul>
+
+</li></ul></li></ul></li><li id="tree_47707823" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47707823" class="commentstatus"></div>
+<div id="comment_47707823" class="cw">
+</div>
+
+<div id="replyto_47707823"></div>
+
+<ul id="group_47707823">
+	<li id="hiddens_47707823" class="hide"></li>
+</ul>
+
+</li><li id="hidestring_47707347"><noscript><b class='more'><span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=5549891&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=47707347">2 replies</a> beneath your current threshold.</b></noscript></li></ul></li><li id="tree_47709457" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47709457" class="commentstatus"></div>
+<div id="comment_47709457" class="cw">
+</div>
+
+<div id="replyto_47709457"></div>
+
+<ul id="group_47709457">
+	<li id="hiddens_47709457" class="hide"></li>
+</ul>
+
+</li><li id="tree_47711573" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47711573" class="commentstatus"></div>
+<div id="comment_47711573" class="cw">
+</div>
+
+<div id="replyto_47711573"></div>
+
+<ul id="group_47711573">
+	<li id="hiddens_47711573" class="hide"></li>
+</ul>
+
+</li><li id="tree_47716623" class="comment hidden"><span class="ind"></span>
+<div id="comment_status_47716623" class="commentstatus"></div>
+<div id="comment_47716623" class="cw">
+</div>
+
+<div id="replyto_47716623"></div>
+
+<ul id="group_47716623">
+	<li id="hiddens_47716623" class="hide"></li>
+</ul>
+
+</li><li id="hidestring_0"><noscript><b class='more'><span class="ind"></span><a href="//news.slashdot.org/comments.pl?sid=5549891&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=0">6 replies</a> beneath your current threshold.</b></noscript></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul>
+	
+	
+	
+	
+
+<noscript><p><b>There may be more comments in this discussion. Without JavaScript enabled, you might want to <a href="//news.slashdot.org/users.pl?op=editcomm">turn on Classic Discussion System</a> in your preferences instead.</b></p></noscript>
+<div id="discussion_buttons" class="clearfix">
+
+
+
+
+
+
+</div>
+
+
+<div class="newcmnt"><div id="replyto_0"></div></div>
+
+
+	<script type="text/javascript">
+<!--
+		D2.currents()['hidden']   = 8;
+		D2.currents()['full']     = 0;
+		D2.currents()['oneline']  = 3;
+		// D2.currents_total(11);
+
+		D2.abbrev_comments({47714775:547});
+		D2.noshow_comments([47706371,47706597,47707347,47707715,47707823,47709457,47711573,47716623]);
+		D2.pieces_comments([47707397,47714775,47716311]);
+		D2.init_hiddens([47707347,0]);
+
+		D2.finishLoading();
+
+
+
+//-->
+	</script>
+
+
+</div>
+
+</section>
+									   </div>
+									</section>
+                                    <section class="grid_24" style="margin-top:20px;">
+                                        <div class="railad">
+<div id='div-gpt-ad-728x90_b'><script type='text/javascript'>
+googletag.cmd.push(function(){
+googletag.display('div-gpt-ad-728x90_b');});</script></div>
+</div>
+                                    </section>
+<div id="InRead" style="margin: 10px auto 0px; width:  465px; padding-bottom: 30px; clear:both;"></div>
+<script type="text/javascript">
+var zflag_parent="InRead";
+var zflag_vast_domain="http://xp1.zedo.com/";
+var zflag_nid="2340";
+var zflag_cid="219";
+var zflag_sz="85";
+var zflag_sid="76";
+var zflag_width="425";
+var zflag_height="330";
+var zflag_bchan="218";
+var zflag_dimension="1";
+var zflag_breplay="1";
+var zflag_preroll="1";
+var zflag_autoclose="1";
+</script>
+<script type="text/javascript" src="//c5.zedo.com/jsc/c5/frd.js"></script>
+
+								     </section>
+								  </div>
+
+	
+
+<script type="text/javascript">
+$(function(){
+$('#firehose-filter').
+	focus(function(event){
+		gFocusedText = this;
+	}).
+	blur(function(event){
+		if ( gFocusedText === this ) {
+			gFocusedText = null;
+		}
+	});
+
+
+apply_updates_when(		'at-end', true);
+});
+</script>
+
+
+<!-- body end --></section>
+
+
+
+
+
+<footer id="fhft" class="grid_24 nf aoc">
+	<div id="logo_nf" class="fleft">
+		<a href="//slashdot.org"><span>Slashdot</span></a>
+	</div>
+	<nav role="firehose footer">
+			
+				
+				
+				
+				
+
+				
+					<button class="btn" disabled="disabled">Archived Discussion</button>
+				
+				<a class="btn hide" id="footer_moderate_button">Moderate</a>
+				<a class="btn hide" id="footer_moderatorhelp_button">Moderator Help</a>
+				<a class="btn hide" id="footer_delete_button" title="Checked comments will be deleted.">Delete</a>
+				<script>
+					(function($){
+						var old_moderate_btn = $("#discussion_moderate_button");
+						if (old_moderate_btn.length) {
+							var moderate_btn = $("#footer_moderate_button");
+							moderate_btn.click(
+								function(){old_moderate_btn.click()}
+							);
+							moderate_btn.removeClass('hide');
+						}
+
+						var old_moderatorhelp_btn = $("#discussion_moderatorhelp_button");
+						if (old_moderatorhelp_btn.length) {
+							var moderatorhelp_btn = $("#footer_moderatorhelp_button");
+							moderatorhelp_btn.click(
+								function(){old_moderatorhelp_btn.click()}
+							);
+							moderatorhelp_btn.attr(
+								'href', old_moderatorhelp_btn.attr('href')
+							);
+							moderatorhelp_btn.removeClass('hide');
+						}
+
+						var old_delete_btn = $("#discussion_delete_button");
+						if (old_delete_btn.length) {
+							var delete_btn = $("#footer_delete_button");
+							delete_btn.click(
+								function(){old_delete_btn.click()}
+							);
+							delete_btn.removeClass('hide');
+						}
+
+						$('#discussion_buttons').addClass('hide');
+					})(Slash.jQuery); // (function($){
+				</script>
+				<ul class="fleft">
+					
+					<li class="fleft selected">
+   						<span class="nbutton btn hide link reset" id="more_comments_button"><a href="#" onclick="D2.ajaxFetchComments(0,1); return false"><span id="more_comments_num_a" class="hide">Get more comments</span></a></span>
+					</li>
+
+					
+					
+					<li class="fleft"><span class="loadedcommentcnt">11</span> of <span class="totalcommentcnt">11</span> loaded</li>
+					
+				</ul>
+				
+					<script type="text/javascript">D2.finishLoading()</script>
+				
+
+<!-- below markup is for D1
+				<ul class="fleft">
+					<li class="fleft"><a href="">Moderator help</a></li>
+					<li class="fleft"><a href="">Delete</a></li>
+					<li class="fleft"><a href="">?</a></li>
+
+					<li class="fleft"><a href="">__1_of_10_loaded__</a></li>
+
+				</ul>
+-->
+
+			
+
+	    
+        <ul class="fright submitstory">
+            <li class="fright"><a href="/submit">Submit<span class="opt"> Story</span></a></li>
+        </ul>
+	</nav>
+</footer>
+	<section class="bq"><blockquote class="msg grid_24" cite="http://slashdot.org"><p>Save the whales.  Collect the whole set.</p><span class="slant"></span></blockquote></section>
+<footer id="ft" class="grid_24">
+		<nav class="grid_10" role="footer">
+		    <ul>
+			<li><a href="//slashdot.org/faq">FAQ</a></li>
+			<li><a href="//slashdot.org/archive.pl">Story Archive</a></li>
+			<li><a href="//slashdot.org/hof.shtml">Hall of Fame</a></li>
+			<li><a href="http://slashdotmedia.com/advertising-and-marketing-services/">Advertising</a></li>
+			<li><a href="http://slashdot.org/job_board.pl">Jobs</a></li>
+			<li><a href="http://slashdotmedia.com/terms-of-use/">Terms</a></li>
+			<li><a href="http://slashdotmedia.com/privacy-statement/">Privacy</a></li>
+			<li id="teconsent"></li>
+			<li><a href="http://slashdotmedia.com/opt-out-choices/">Opt Out Choices</li>
+			<li><a href="//slashdot.org/faq/slashmeta.shtml">About</a></li>
+			<li><a href="mailto:feedback@slashdot.org">Feedback</a></li>
+			<li><a href="http://slashdot.jp">Slashdot Japan</a></li>
+			<li><a href="#" onclick="set_mobile_pref('mobile',1);return false;">Mobile View</a></li>
+			<li><a href="//slashdot.org/?usebeta=1">Slashdot Beta</a></li>
+		    </ul>
+		</nav>
+
+<br>
+                
+	        <div class="grid_14 tright tm">Trademarks property of their respective owners. Comments owned by the poster. <span class="nobr">Copyright &copy; 2014 Dice. All Rights Reserved.</span> <span class="nobr">Slashdot is a <a href="http://www.diceholdingsinc.com/phoenix.zhtml?c=211152&p=irol-landing" title="The Mother Ship">Dice Holdings, Inc.</a> service.</span></div>
+</footer>
+
+ 
+<div class="overlay"></div>
+<div class="modal-box">
+    <a href="#" id="close-modal">Close</a>
+    <article class="modal-content">
+    </article>
+    <footer>
+</div>
+
+
+
+
+<div id="modal_cover" class="hide" onclick="hide_modal_box(); return false;"></div>
+<div id="modal_box" class="hide">
+      <div id="modal_box_content"></div>
+      <header class="n">
+                  <span class="fadeout"></span>
+                  <span class="fadeoutfade"></span>
+		  <span class="pf"><a class="ico close" onclick="hide_modal_box(); return false;" href="#"><span>Close</span></a></span>
+		  <h3 class="pf"><div id="logo"><a href="//slashdot.org">Slashdot</a></div><span id="preference_title"></span></h3>
+      </header>
+</div>
+
+<script type="text/javascript">
+COMSCORE.beacon({
+  c1:2,
+  c2:6035546,
+  c3:"",
+  c4:"",
+  c5:"",
+  c6:"",
+  c15:""
+});
+</script>
+<noscript><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035546&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cj=1" alt="comScore2"></noscript>
+
+
+<!-- Google Remarketing tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1002083962;
+var google_conversion_label = "G_uGCOaBlAQQ-qzq3QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1002083962/?value=0&amp;label=G_uGCOaBlAQQ-qzq3QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script id="after-content" type="text/javascript">
+(function( $, fn, console ){
+	$ && fn && $(function(){ fn($, console); });
+})(window.jQuery, window.pageload_done, window.console);
+</script>
+
+<script type='text/javascript'>
+	if(!document.location.href.match(/source=autorefresh/)) {
+		document.write('<img src="//slashdot.org/images/js.gif?719">');
+	}
+</script>
+<noscript>
+	<img src="//slashdot.org/images/njs.gif?805">
+</noscript>
+<div class="busy genericspinner hide"><span>Working...</span></div>
+<script>
+  if(typeof(Storage)!=="undefined"){
+		window.scrollTo(0,sessionStorage.scrollPos);
+			$(window).scroll(function () { 
+			//You've scrolled this much:
+			sessionStorage.scrollPos = $(window).scrollTop();
+		});
+	}
+	$(function(){
+		$('a').click(function(){
+			delete sessionStorage.scrollPos;
+		})
+	});
+	// window.onbeforeunload = function () {
+	// 	console.log('bakc button clicked');
+	// 	delete sessionStorage.scrollPos;
+	// }
+	window.onpopstate=function() {
+		delete sessionStorage.scrollPos;
+	}
+</script>
+
+</body>
+</html>

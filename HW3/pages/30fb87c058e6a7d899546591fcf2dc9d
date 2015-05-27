@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="fb: http://www.facebook.com/2008/fbml content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema# schema: http://schema.org/"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+<link rel="canonical" href="https://opensource.com/life/14/1/open-hardware-ask-an-engineer" />
+<link rel="shortcut icon" href="https://opensource.com/sites/all/themes/opensource/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="https://opensource.com/node/18206" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link href="https://opensource.com/rss.xml" rel="alternate" title="Opensource.com RSS" />
+<meta name="description" content="Limor Fried of Adafruit Industries writes about women working in the open source industry whether that&#039;s code, education, or any kind of project that relates to &quot;open.&quot; Each person&#039;s unique position and passion is an important part of the open source movement." />
+  <title>How to jump into open hardware movement, tips from Limor Fried, Founder and Engineer of Adafruit Industries | Opensource.com</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="https://opensource.com/sites/default/files/css/css_ogjvJnfni1_P_WxvXAHlUOgCs860b3ip9DNMapcIGeM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://opensource.com/sites/default/files/css/css_dGYDLbc-S6u7-47scH4T23mAMlhJc2u-kQAy1pGqLjw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://opensource.com/sites/default/files/css/css_pRQdCz2rGtn6xDSHdzVJkqOhZu2CiMPNoUMp1dsuQ0s.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://opensource.com/sites/default/files/css/css_sd6Y_dWZ-8pe04gGa94YbBoiXdTBJFYbAsZvSico6WU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://opensource.com/sites/default/files/css/css_sAvvVHg8PUWryUL9ng9rNal0QDvDBpjNztmZQxJHVIs.css" media="all" />
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://opensource.com/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-fonts-ie-open-sans.css?ncdc9g" media="all" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://opensource.com/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-fonts-ie-open-sans-bold.css?ncdc9g" media="all" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://opensource.com/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-fonts-ie-open-sans-italic.css?ncdc9g" media="all" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://opensource.com/profiles/panopoly/modules/panopoly/panopoly_core/css/panopoly-fonts-ie-open-sans-bold-italic.css?ncdc9g" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://opensource.com/sites/default/files/css/css_wigS70piKQxAQ-PhuV0Kv5yYuTDEoD4yq0VyEj5L7HY.css" media="all" />
+  <script src="https://opensource.com/sites/default/files/js/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o.js"></script>
+<script src="https://opensource.com/sites/default/files/js/js_95eYTzR5--PHRUaL8U8rBGIXU0b7aVjjrUVvRBD5BFs.js"></script>
+<script src="https://opensource.com/sites/default/files/js/js_a2lKa8Jp-oi7iYJtuAj6yqziOl3tblsKWBxkWmDAzqg.js"></script>
+<script src="https://opensource.com/sites/default/files/js/js_4_jG1DL2I9M9x0kf0Xm_ms1CTGbQ-N3W7ML57X-tUj4.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-33294138-1"]);_gaq.push(["_setDomainName", ".opensource.com"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="https://opensource.com/sites/default/files/js/js_uVgd4-9yIbwheYQCBcm4HXkUlMT2C5CeLHhMKkf_B9w.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"opensource","theme_token":"LE2KzoHTO7w20YkHYl51BxGMWqWKMbUKoU3GLGVf2bo","js":{"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/comment_notify\/comment_notify.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"profiles\/panopoly\/modules\/contrib\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/modules\/contrib\/loginlogout\/loginlogout.js":1,"sites\/all\/modules\/custom\/os_events\/os_events.js":1,"profiles\/panopoly\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/contrib\/pollanon\/js\/jquery.cookie.min.js":1,"sites\/all\/modules\/contrib\/pollanon\/js\/pollanon.pack.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/fivestar\/js\/fivestar.ajax.js":1,"sites\/all\/modules\/contrib\/fivestar\/js\/fivestar.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/opensource\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/contrib\/comment_notify\/comment_notify.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/custom\/osratings\/hide.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-fonts.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-dropbutton.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-magic.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-modal.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-featured.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-accordian.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_wysiwyg\/panopoly-wysiwyg.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"profiles\/panopoly\/modules\/contrib\/views\/css\/views.css":1,"profiles\/panopoly\/modules\/contrib\/caption_filter\/caption-filter.css":1,"profiles\/panopoly\/modules\/contrib\/ctools\/css\/ctools.css":1,"public:\/\/css\/menu_icons.css":1,"profiles\/panopoly\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/pollanon\/pollanon.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/plugins\/layouts\/burr_flipped\/burr-flipped.css":1,"sites\/all\/modules\/contrib\/fivestar\/css\/fivestar.css":1,"sites\/all\/modules\/custom\/osratings\/widgets\/osratings\/osratings.css":1,"sites\/all\/themes\/opensource\/system.menus.css":1,"sites\/all\/themes\/opensource\/system.messages.css":1,"sites\/all\/themes\/opensource\/system.theme.css":1,"sites\/all\/themes\/opensource\/dist\/css\/styles.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-fonts-ie-open-sans.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-fonts-ie-open-sans-bold.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-fonts-ie-open-sans-italic.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-fonts-ie-open-sans-bold-italic.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.css":1}},"loginlogout":{"urls":{"\/user\/login":"\/user\/login?destination=node\/18206","\/user":"\/user?destination=node\/18206"}},"CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"ajax":{"edit-vote--2":{"callback":"fivestar_ajax_submit","event":"change","url":"\/system\/ajax","submit":{"_triggering_element_name":"vote"}}},"spotlight_settings":{"rotation_time":4000},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackDomainMode":"1"}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-18206 node-type-article region-content section-life page-panels" >
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+<div id="page">
+
+  <header class="header" id="header" role="banner">
+
+    
+      <div class="region region-navigation-top">
+    <div id="block-menu-menu-about-menu" class="block block-menu first odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/about" class="menu__link">About</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://opensource.com/resources/" class="menu__link">Resources</a></li>
+<li class="menu__item is-leaf leaf"><a href="/should-be" title="What should Opensource.com be?" class="menu__link">Community</a></li>
+<li class="menu__item is-leaf leaf"><a href="/participate" class="menu__link">Participate</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://opensource.com/how-submit-article" class="menu__link">Submit your story</a></li>
+<li class="menu__item is-leaf leaf"><a href="/open-source-way" class="menu__link">The open source way</a></li>
+<li class="menu__item is-leaf last leaf"><a href="http://opensource.org/" class="menu__link">Visit opensource.org</a></li>
+</ul>
+</div>
+<div id="block-system-user-menu" class="block block-system block-menu last even" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/user/login" class="menu__link">Log in</a></li>
+<li class="menu__item is-leaf leaf"><a href="/user/register" title="Sign Up" class="menu__link">Sign Up</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/feed" title="Feeds" class="menu__link">Feed</a></li>
+</ul>
+</div>
+  </div>
+
+    <div class="header-banner">
+                  <div class="header__name-and-slogan" id="name-and-slogan">
+                          <div class="header__site-name" id="site-name">
+                <a href="/" title="Home" class="header__site-link" rel="home"><span>Opensource.com</span></a>
+<a href="http://www.redhat.com" title="Home" class="red__site-link" rel="home" style=" "><span>redhat.com</span></a>"
+              </div>
+            
+                      </div>
+        
+        
+          <div class="header__region region region-header">
+    <div id="block-search-form" class="block block-search first last odd" role="search">
+
+      
+  <form action="/life/14/1/open-hardware-ask-an-engineer" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-XZsbTSNJLaUCrTV9J0C2VL5EiZhzug6fGAK_QHi1HCY" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>
+</div>
+  </div>
+    </div>
+
+  </header>
+
+  <div id="main">
+
+    <div id="content" class="column" role="main">
+                  <a id="main-content"></a>
+                    <h1 class="page__title title" id="page-title">Got questions on open hardware? Ask this engineer | Opensource.com</h1>
+                                          
+
+
+
+<div class="panel-display burr-flipped clearfix " id="article-template">
+
+  <div class="burr-flipped-container burr-flipped-content-container clearfix">
+    <div class="burr-flipped-content burr-flipped-content-region panel-panel">
+      <div class="burr-flipped-content-inner burr-flipped-content-region-inner panel-panel-inner">
+        <div class="panel-pane pane-custom pane-1 article-title" >
+  
+      
+  
+  <p>Got questions on open hardware? Ask this engineer</p>
+
+  
+  </div>
+<div class="panel-pane pane-custom pane-2 author-feed" >
+  
+      
+  
+  <p>Posted <span class="created-date">28 Jan 2014 by </span></p>
+
+  
+  </div>
+<div class="panel-pane pane-node-author" >
+  
+      
+  
+  <a href="/users/ladyada" title="View user profile." class="username" xml:lang="" about="/users/ladyada" typeof="sioc:UserAccount" property="foaf:name" datatype=""><a href="/users/ladyada" class="username">Limor Fried</a></a>
+  
+  </div>
+<div class="panel-pane pane-custom pane-3" >
+  
+      
+  
+  <p><span><a href="/user/21155/feed">Feed</a></span></p>
+
+  
+  </div>
+<div class="panel-pane pane-entity-field pane-node-field-rating" >
+  
+      
+  
+  <div class="field field-name-field-rating field-type-fivestar field-label-inline clearfix"><div class="field-label">Rating:&nbsp;</div><div class="field-items"><div class="field-item even" property="schema:aggregateRating" typeof="schema:AggregateReview"><form class="fivestar-widget" action="/life/14/1/open-hardware-ask-an-engineer" method="post" id="fivestar-custom-widget" accept-charset="UTF-8"><div><div  class="clearfix fivestar-average-text fivestar-average-stars fivestar-form-item fivestar-open source ratings"><div class="form-item form-type-fivestar form-item-vote">
+ <div class="form-item form-type-select form-item-vote">
+ <select id="edit-vote--2" name="vote" class="form-select"><option value="-">Select rating</option><option value="20">Give it 1/5</option><option value="40">Give it 2/5</option><option value="60">Give it 3/5</option><option value="80">Give it 4/5</option><option value="100" selected="selected">Give it 5/5</option></select>
+<div class="description"><div class="fivestar-summary fivestar-summary-average-count"> <span class="total-votes">(<span>1</span> vote)</span></div><meta property="schema:average" content="5"/><meta property="schema:count" content="1"/></div>
+</div>
+
+</div>
+</div><input class="fivestar-submit form-submit" type="submit" id="edit-fivestar-submit" name="op" value="Rate" /><input type="hidden" name="form_build_id" value="form-GRLB6MtchlUja5HmS8WTlmoNhiDKzTMlAqxK32EBeKA" />
+<input type="hidden" name="form_id" value="fivestar_custom_widget" />
+</div></form></div></div></div>
+  
+  </div>
+<div class="panel-pane pane-entity-field pane-node-field-lead-image" >
+  
+      
+  
+  <div class="field field-name-field-lead-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="schema:contentUrl" resource="https://opensource.com/sites/default/files/styles/image-full-size/public/images/business/BUS_OSwhy_520x292_ma.png?itok=C5lvw6Yg"><img class="image-full-size" typeof="foaf:Image" src="https://opensource.com/sites/default/files/styles/image-full-size/public/images/business/BUS_OSwhy_520x292_ma.png?itok=C5lvw6Yg" width="520" height="292" alt="open source why" title="open source hardware movement" /></div></div></div>
+  
+  </div>
+<div class="panel-pane pane-entity-field pane-file-field-file-image-caption" >
+  
+      
+  
+  <div class="field field-name-field-file-image-caption field-type-text-long field-label-inline clearfix"><div class="field-label">Image by :&nbsp;</div><div class="field-items"><div class="field-item even"><p>opensource.com</p>
+</div></div></div>
+  
+  </div>
+<div class="panel-pane pane-block pane-os-core-opensource-article-share" >
+  
+      
+  
+  
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+  ​<script type="text/javascript">
+    var addthis_config = addthis_config||{};
+    addthis_config.data_track_clickback = false;
+  </script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><a href="https://twitter.com/share" class="twitter-share-button" data-related="jasoncosta" data-lang="en" data-size="medium" data-count="horizontal" data-url="http://red.ht/1gleO7t" data-text="Got questions on open hardware? Ask this engineer" data-counturl="http://opensource.com/life/14/1/open-hardware-ask-an-engineer">Tweet</a> <a href="http://reddit.com/submit?url=http%3A%2F%2Fopensource.com%2Flife%2F14%2F1%2Fopen-hardware-ask-an-engineer&title=Got questions on open hardware? Ask this engineer" onclick="window.location = 'http://reddit.com/submit?url=http%3A%2F%2Fopensource.com%2Flife%2F14%2F1%2Fopen-hardware-ask-an-engineer&title=Got questions on open hardware? Ask this engineer'; return false"><img src="http://reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /></a> <script src="http://www.stumbleupon.com/hostedbadge.php?s=1&r=http://opensource.com/life/14/1/open-hardware-ask-an-engineer"></script><a class="addthis_button_facebook_like" addthis:url="http://opensource.com/life/14/1/open-hardware-ask-an-engineer" fb:like:layout="button_count"></a><a class="addthis_button_google_plusone" addthis:url="http://opensource.com/life/14/1/open-hardware-ask-an-engineer" g:plusone:size="medium"></a>
+  
+  </div>
+<div class="panel-pane pane-entity-field pane-node-body" >
+  
+      
+  
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="schema:articleBody content:encoded"><p>One of my favorite quotes is "We are what we celebrate." Dean Kamen, founder of FIRST Robotics, says this and it comes up on an almost daily basis one way or another in my work in open source hardware and education. One of the challenges of getting more young people into engineering and computer programming is that we're collectively competing with the high profile status that becoming a famous, professional athlete or musician, or reality show star, promises. I don't expect the mass media to change, because change happens from small groups of motivated people. And, this is where the maker, hacker, and open source software and hardware communities are making great progress.</p>
+<!--break--></p>
+<dl class="alignright wp-caption" style="border: 1px solid #dddddd; margin: 16px; padding: 8px; float: right; text-align: center; background-color: #f3f3f3; width: 175px;"><a href="http://opensource.com/life/14/1/women-open-source-week"><img src="https://opensource.com/sites/default/files/resize/images/life-uploads/OPENHERE_purple.small_-151x84.png" alt="Open Here" title="Open Here" width="151" height="84" class="mceItem" /><br />
+<h4>View the complete collection of Women in Open Source  articles</h4>
+<p></a></dl>
+<p>Maker Faire is a worldwide event that was started almost 10 years ago. On a yearly basis, almost 500,000 people visit a <a title="Maker Faire events" href="http://makezine.com/maker-faire/" target="_blank">Maker Faire or Mini Maker Faire event</a>. It's nearly impossible to classify who is going: it's young people, seniors, men, women, boys and girls. It's a place and event where all makers are celebrated. Sherry Huss and her team at Maker Media created a place, an event, and a platform that has inspired millions of people. If you want to see more makers, participate in a Maker Faire either by attending or exhibiting. If you know a young person that is a maker, it's an excellent way to get them in the spotlight.</p>
+<p>The <a title="Summit 2013" href="http://2013.oshwa.org/" target="_blank">Open Source Hardware Summit</a> was started in 2010 and was co-chaired by Alicia Gibb and Ayah Bdeir. This yearly event has hundreds of open source software and hardware developers coming together to share what is going on in the newly defined world of open hardware. It's been so popular a foundation has spun out: <a title="OSHWA" href="http://www.oshwa.org/" target="_blank">The Open Source Hardware Association</a> (OSHWA), with Alicia Gibb as Executive Director. The Summit is now co-chaired by Addie Wagenknecht. If you're wondering what OSHWA is up to, check out: <em><a title="by Gabriella Levine OSHWA" href="http://www.oshwa.org/wp-content/uploads/2014/01/OSHWA_section_IQT-Quarterly_Winter-2014_The-Other-Open-Source-Reimagining-Hardware.pdf" target="_blank">BROADENING THE OPEN SOURCE LANDSCAPE: Insights from the Open Source Hardware Association</a></em>, by Gabriella Levine, President of the OSHWA board.</p>
+<p>And last up, I have my own personal story of celebrating the change we want to see in the world. Each week I do two live internet video shows:</p>
+<ul>
+<li><span style="letter-spacing: 0px;"><a title="video show: Ask an Engineer" href="http://www.adafruit.com/ask" target="_blank">Ask an Engineer</a>: I answer questions about electronics, coding, and more. And, often I have guests! One of my guests was my friend Amanda aka "W0z"—she is a staff Electrical Engineer at Wyss Institute and formerly an applications Engineer at Analog Devices. She speaks a million words a minute and the community gets to ask a ton of questions about engineering and the new field of biohacking she's involved in. Another time, a parent of a kid emailed us to say that they watch the show, "Ask an Engineer," with their daughter each week, and because she's only seen women talking about engineering on the show she recently asked her parents, "Do boys do engineering too?"</span></li>
+<li><span style="letter-spacing: 0px;"><a title="on Youtube" href="http://www.youtube.com/playlist?list=PL7E1FAA9E63A32FDC" target="_blank">Show-and-Tell</a>: People from around of the world of all skill levels and backgrounds show off their latest projects. </span><span style="letter-spacing: 0px;">This show is my favorite 30 minutes of the week! We showcase everything from net-connected cat feeders to girl scout troops' robotics projects. It's a sampling of all that's going on in the world of makers.</span></li>
+</ul>
+<p><span style="letter-spacing: 0px;">What an interesting world we can create together where perceptions can change just by celebrating each others work, by sharing and putting value back in, and through open software and open hardware.</span></p>
+<p>We are what we celebrate.</p>
+<p> </p>
+<hr />
+<p> <span> </span></p>
+<p style="text-align: center;"><strong><a title="#osswomen" href="https://opensource.com/life/14/1/women-open-source-week" target="_blank">View the complete collection of Women in Open Source Week articles.</a></strong></p>
+<p> </p>
+</div></div></div>
+  
+  </div>
+<div class="panel-pane pane-entity-field pane-node-field-default-license" >
+  
+      
+  
+  <div class="field field-name-field-default-license field-type-text field-label-hidden"><div class="field-items"><div class="field-item even" property="schema:license"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="/sites/all/themes/opensource/images/cc-by-sa-3.png" title="This work is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License." /></a></div></div></div>
+  
+  </div>
+<div class="panel-pane pane-views-panes pane-related-articles-panel-pane-1" >
+  
+        <h2 class="pane-title">Related content</h2>
+    
+  
+  <div class="view view-related-articles view-id-related_articles view-display-id-panel_pane_1 related-content view-dom-id-fe049a5d23fc09a6937344c76996044a">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/life/14/9/weekly-news-roundup-september-26"><img class="related-content-lead-thumbnail" typeof="foaf:Image" src="https://opensource.com/sites/default/files/styles/related-content-lead-thumbnail/public/images/life/osdc_weekly_purple_520x292_0813cd.png?itok=ukhNzlyv" width="140" height="79" /><br />
+Better open source security, learning to code, open home design, and more</a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/life/14/9/open-source-tools-prepare-your-ebooks-publication"><img class="related-content-lead-thumbnail" typeof="foaf:Image" src="https://opensource.com/sites/default/files/styles/related-content-lead-thumbnail/public/images/life/LIFE_art_show.png?itok=YYLj61EK" width="140" height="79" /><br />
+Open source tools to prepare your ebooks for publication</a></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/life/14/8/3-tools-scanners-linux-desktop"><img class="related-content-lead-thumbnail" typeof="foaf:Image" src="https://opensource.com/sites/default/files/styles/related-content-lead-thumbnail/public/images/life/osdc_irc.jpg?itok=rwjN4Dfm" width="140" height="79" /><br />
+3 tools that make scanning on the Linux desktop quick and easy</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-entity-field pane-node-field-tags" >
+  
+        <h2 class="pane-title">Tags</h2>
+    
+  
+  <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even" rel="schema:keywords"><a href="/tags/open-source" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">open source</a></div><div class="field-item odd" rel="schema:keywords"><a href="/tags/open-hardware" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">open hardware</a></div><div class="field-item even" rel="schema:keywords"><a href="/tags/adafruit" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">AdaFruit</a></div><div class="field-item odd" rel="schema:keywords"><a href="/tags/women-open-source-week" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">women in open source week</a></div><div class="field-item even" rel="schema:keywords"><a href="/tags/limor-fried" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">limor fried</a></div><div class="field-item odd" rel="schema:keywords"><a href="/tags/women-tech" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">women in tech</a></div></div></div>
+  
+  </div>
+<div class="panel-pane pane-block pane-os-core-opensource-article-share" >
+  
+      
+  
+  
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+  ​<script type="text/javascript">
+    var addthis_config = addthis_config||{};
+    addthis_config.data_track_clickback = false;
+  </script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><a href="https://twitter.com/share" class="twitter-share-button" data-related="jasoncosta" data-lang="en" data-size="medium" data-count="horizontal" data-url="http://red.ht/1gleO7t" data-text="Got questions on open hardware? Ask this engineer" data-counturl="http://opensource.com/life/14/1/open-hardware-ask-an-engineer">Tweet</a> <a href="http://reddit.com/submit?url=http%3A%2F%2Fopensource.com%2Flife%2F14%2F1%2Fopen-hardware-ask-an-engineer&title=Got questions on open hardware? Ask this engineer" onclick="window.location = 'http://reddit.com/submit?url=http%3A%2F%2Fopensource.com%2Flife%2F14%2F1%2Fopen-hardware-ask-an-engineer&title=Got questions on open hardware? Ask this engineer'; return false"><img src="http://reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /></a> <script src="http://www.stumbleupon.com/hostedbadge.php?s=1&r=http://opensource.com/life/14/1/open-hardware-ask-an-engineer"></script><a class="addthis_button_facebook_like" addthis:url="http://opensource.com/life/14/1/open-hardware-ask-an-engineer" fb:like:layout="button_count"></a><a class="addthis_button_google_plusone" addthis:url="http://opensource.com/life/14/1/open-hardware-ask-an-engineer" g:plusone:size="medium"></a>
+  
+  </div>
+      </div>
+    </div>
+    <div class="burr-flipped-sidebar burr-flipped-content-region panel-panel">
+      <div class="burr-flipped-sidebar-inner burr-flipped-content-region-inner panel-panel-inner">
+        <div class="panel-pane pane-views-panes pane-author-info-panel-pane-1 box-wrapper" >
+  
+      
+  
+  <div class="view view-author-info view-id-author_info view-display-id-panel_pane_1 view-dom-id-baaeee3e066b1c5d5873b284bda16c2f">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-user-picture">        <div class="field-content"><img class="profile-pictures" typeof="foaf:Image" src="https://opensource.com/sites/default/files/styles/profile_pictures/public/limor.fried_.jpg?itok=tRe9a5s_" width="100" height="100" alt="" /></div>  </div>  
+  <div class="views-field views-field-field-user-about">        <div class="field-content"><p><strong>Limor Fried</strong> | Adafruit was founded in 2005 by MIT engineer, Limor "Ladyada" Fried. Her goal was to create the best place online for learning electronics and making the best designed products for makers of all ages and skill levels. Adafruit has grown to over 50 employees in the heart of NYC with a 15,000+ sq ft. factory. Adafruit has expanded offerings to include tools, equipment and electronics that Limor personally selects, tests and approves before going in to the</div>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><a href="/users/ladyada">» More about me</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-custom pane-4 box-wrapper" >
+  
+      
+  
+  </p>
+<p><a href="http://opensource.com/business/14/1/top-project-management-tools-2014?sc_cid=70160000000c9ptAAA" target="_blank" title="Top 5 open source project management tools in 2014"><img src="/sites/default/files/resize/remote/b64d1d67899bde8c1b226f4fa8d265e2-325x125.png" alt="Top 5 open source project management tools in 2014" title="Top 5 open source project management tools in 2014" class="media-element file-default" height="125" width="325" /></a></p>
+
+  
+  </div>
+<div class="panel-pane pane-panels-mini pane-common-1" >
+  
+      
+  
+  <div class="panel-pane pane-menu-tree pane-menu-monthly-favorites box-wrapper" >
+  
+        <h2 class="pane-title">Monthly favorites</h2>
+    
+  
+  <div class="menu-block-wrapper menu-block-ctools-menu-monthly-favorites-1 menu-name-menu-monthly-favorites parent-mlid-menu-monthly-favorites:0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1609"><a href="http://opensource.com/business/14/1/top-project-management-tools-2014" title="" class="menu__link">Top 5 open source project management tools in 2014</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1610"><a href="/business/14/7/why-docker-new-craze-virtualization-and-cloud-computing" title="" class="menu__link">Why is Docker the new craze in virtualization and cloud computing?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1613"><a href="/business/14/7/docker-security-selinux" title="" class="menu__link">Docker security with SELinux</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1611"><a href="/life/14/7/red-hat-intern-sys-admin" title="" class="menu__link">What is a software engineering job really like?</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1614"><a href="/life/14/7/3-open-source-tools-make-your-presentations-pop" title="" class="menu__link">3 open source tools to make your presentations pop</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1612"><a href="http://opensource.com/life/14/6/tools-diagramming-fedora" title="" class="menu__link">Tools for diagramming in Fedora</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1706"><a href="/business/14/6/open-source-cms-joomla-wordpress-drupal" title="" class="menu__link">3 open source content management systems compared</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-1705"><a href="/law/14/7/lawsuit-threatens-break-new-ground-gpl-and-software-licensing-issues" title="" class="menu__link">Lawsuit threatens to break new ground on the GPL and software licensing issues</a></li>
+</ul></div>
+
+  
+  </div>
+<div class="panel-pane pane-block pane-bean-new-to-open-source box-wrapper" >
+  
+      
+  
+  <div class="entity entity-bean bean-generic-block clearfix" about="/block/new-to-open-source" typeof="">
+
+  <div class="content">
+    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="/node/17753"><img class="media-element file-default" src="http://opensource.com/sites/default/files/images/promos/OSDC_New_to_Open_Source_Promo_gray.png" title="New to open source?" alt="New to open source?" height="125" width="325" /></a></p>
+</div></div></div>  </div>
+</div>
+
+  
+  </div>
+<div class="panel-pane pane-block pane-bean-submit-an-article box-wrapper" >
+  
+      
+  
+  <div class="entity entity-bean bean-generic-block clearfix" about="/block/submit-an-article" typeof="">
+
+  <div class="content">
+    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="/node/17733"><img class="media-element file-default" src="http://opensource.com/sites/default/files/images/promos/OSDC_Submit_Article_Promo_0.png" title="Submit an article" alt="Submit an article" height="125" width="325" /></a></p>
+</div></div></div>  </div>
+</div>
+
+  
+  </div>
+<div class="panel-pane pane-block pane-os-core-opensource-social-links box-wrapper signup-email" >
+  
+      
+  
+  <ul class="social-links inline"><li class="twitter first"><a href="http://twitter.com/opensourceway" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/twitter.jpg" alt="" /></a></li>
+<li class="facebook"><a href="http://facebook.com/pages/opensourcecom/162962298056" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/facebook.jpg" alt="" /></a></li>
+<li class="gplus"><a href="https://plus.google.com/108750398488318674353" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/gplus.png" alt="" /></a></li>
+<li class="flickr"><a href="http://www.flickr.com/photos/opensourceway" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/flickr_24x24.jpg" alt="" /></a></li>
+<li class="youtube"><a href="http://www.youtube.com/opensourceway" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/youtube.jpg" alt="" /></a></li>
+<li class="pinterest"><a href="http://pinterest.com/opensourceway/" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/pinterest.png" alt="" /></a></li>
+<li class="linkedin"><a href="http://www.linkedin.com/groups/Open-Source-Professionals-Advocates-2769297?gid=2769297" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/in.jpg" alt="" /></a></li>
+<li class="rss last"><a href="http://opensource.com/feed" target="_blank"><img typeof="foaf:Image" src="https://opensource.com/sites/all/themes/opensource/images/footer-social/osdc_rss_24x24.png" alt="" /></a></li>
+</ul><div class="signup-email-title">Sign-up for weekly email</div><form action="https://secure.eloqua.com/e/f2.aspx" method="post" id="opensourcedotcom-subscription" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-C-EmailAddress">
+ <input type="text" id="edit-c-emailaddress" name="C_EmailAddress" value="" size="24" maxlength="96" class="form-text" />
+</div>
+<input type="hidden" name="elqFormName" value="opensourcedotcom-subscription" />
+<input type="hidden" name="elqSiteID" value="1795" />
+<input type="hidden" name="sendToURL" value="https://opensource.com/thank-you-subscription" />
+<input type="submit" id="edit-submit" name="op" value="Sign Up" class="form-submit" /><input type="hidden" name="form_build_id" value="form-qArMw7CdBa9p2sci_Gq2GybxGaSl71Xlaw4aqGoqusw" />
+<input type="hidden" name="form_id" value="os_core_eloqua_form" />
+</div></form>
+  
+  </div>
+
+  
+  </div>
+      </div>
+    </div>
+  </div>
+    
+</div><!-- /.burr-flipped -->
+          </div>
+
+    <div id="navigation">
+
+              <nav id="main-menu" role="navigation" tabindex="-1">
+          <h2 class="element-invisible">Main menu</h2><ul class="links inline clearfix"><li class="menu-1119 first"><a href="/" title="">Open*</a></li>
+<li class="menu-1261"><a href="/business" title="Open Business">Business</a></li>
+<li class="menu-1262"><a href="/education" title="Open Education">Education</a></li>
+<li class="menu-1263"><a href="/government" title="Open Government">Government</a></li>
+<li class="menu-1264"><a href="/health" title="Open Health">Health</a></li>
+<li class="menu-1265"><a href="/law" title="Open Law">Law</a></li>
+<li class="menu-1266 active-trail last"><a href="/life" title="Open Life" class="active-trail">Life</a></li>
+</ul>        </nav>
+      
+      
+    </div>
+
+    
+    
+  </div>
+
+    <footer id="footer" class="region region-footer">
+    <div id="block-bean-copyrigt-block" class="block block-bean first odd">
+
+      
+  <div class="entity entity-bean bean-generic-block clearfix" about="/block/copyrigt-block" typeof="">
+
+  <div class="content">
+    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>For more discussion on open source and the role of the CIO in the enterprise, join us at <a href="http://enterprisersproject.com">The EnterprisersProject.com</a>.</p>
+<p>The opinions expressed on this website are those of each author, not of the author's employer or of Red Hat.</p>
+<p>Opensource.com aspires to publish all content under a <a href="http://creativecommons.org/licenses/">Creative Commons license</a> but may not be able to do so in all cases. You are responsible for ensuring that you have the necessary permission to reuse any work on this site. Red Hat and the Shadowman logo are trademarks of Red Hat, Inc., registered in the United States and other countries.</p>
+</div></div></div>  </div>
+</div>
+
+</div>
+<div id="block-menu-menu-footer" class="block block-menu even" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="/privacy-policy" class="menu__link">Privacy Policy</a></li>
+<li class="menu__item is-leaf leaf"><a href="/legal" class="menu__link">Terms of Use</a></li>
+<li class="menu__item is-leaf leaf"><a href="/contact" class="menu__link">Contact</a></li>
+<li class="menu__item is-leaf leaf"><a href="/opensourcecom-team" class="menu__link">Meet the Moderators</a></li>
+<li class="menu__item is-leaf leaf"><a href="/media-kit" class="menu__link">Media Kit</a></li>
+<li class="menu__item is-leaf last leaf"><a href="/colophon" class="menu__link">Colophon</a></li>
+</ul>
+</div>
+<div id="block-bean-social-media" class="block block-bean last odd">
+
+      
+  <div class="entity entity-bean bean-generic-block clearfix" about="/block/social-media" typeof="">
+
+  <div class="content">
+    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><span>Find us:</span> <a class="footer-youtube" href="http://www.youtube.com/opensourceway" title="Youtube">Youtube</a> <a class="footer-flickr" href="http://www.flickr.com/photos/opensourceway" title="Flickr">Flickr</a> <a class="footer-gplus" href="https://plus.google.com/108750398488318674353" title="Google Plus">Google Plus</a> <a class="footer-facebook" href="https://www.facebook.com/opensourceway" title="Facebook">Facebook</a> <a class="footer-twitter" href="https://twitter.com/OpenSourceWay" title="Twitter">Twitter</a></p>
+</div></div></div>  </div>
+</div>
+
+</div>
+  </footer>
+
+</div>
+
+    <div class="region region-page-bottom">
+    <!-- begin Eloqua tracking -->
+<script type='text/javascript' language='JavaScript' src='//www.redhat.com/j/elqNow/elqCfg.js'></script>
+<script type='text/javascript' language='JavaScript' src='//www.redhat.com/j/elqNow/elqImg.js'></script>
+<!-- end Eloqua tracking -->
+<!-- begin Adobe Analytics -->
+<script type="text/javascript" src="/sites/all/libraries/sitecatalyst/s_code.js?20100731?ncdc9g"></script>
+<script type="text/javascript" language="JavaScript"><!--
+
+s.pageName="opensource|life|article|got-questions-on-open-hardware?-ask-this-engineer";
+s.server="opensource.com";
+s.channel="opensource";
+s.prop13="osdc 18206";
+s.eVar26="osdc 18206";
+s.prop14="life";
+s.eVar27="life";
+s.prop61="2014-01-28";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+//--></script><script type="text/javascript" src="/sites/all/libraries/sitecatalyst/rh_omni_footer.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="https://smtrcs.redhat.com/b/ss/redhatglobal,redhatopensourcecom/1/H.25--NS/0?[AQB]&amp;amp;amp;cdp=3&amp;amp;amp;[AQE]" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- end Adobe Analytics1 --><!-- begin Google Remarketing -->
+<img height="1" width="1" style="border-style:none;display:block;" alt=""  src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/990030321/?value=0&amp;label=rxV4CN_35QQQ8dOK2AM&amp;guid=ON&amp;script=0" /><!-- end Google Remarketing -->
+  </div>
+<script src="https://opensource.com/sites/default/files/js/js_XpJuEKzwvbEEeDS1Lpt_uOwmb3E94ioLvpFlps8O3rA.js"></script>
+</body>
+</html>

@@ -1,0 +1,830 @@
+status: 200
+content-length: 48283
+content-location: https://www.schneier.com/blog/archives/2013/10/securedrop.html
+-content-encoding: gzip
+x-powered-by: PleskLin
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Apache
+last-modified: Tue, 02 Sep 2014 15:38:38 GMT
+etag: "a2429-bc9b-50216e9c9f6ea"
+date: Wed, 24 Sep 2014 22:16:56 GMT
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html> 
+<html>
+<head>
+
+	
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1"/>
+
+	<link rel="STYLESHEET" type="text/css" href="https://www.schneier.com/main.css?v=20140620">
+	<link rel="alternate" type="application/atom+xml" title="Blog Feed (Atom 1.0)" href="https://www.schneier.com/blog/atom.xml">
+
+
+	<link rel="STYLESHEET" type="text/css" href="/scripts/jquery.socialshareprivacy.css">
+	<script type="text/javascript" src="/scripts/jquery-1.9.1.min.js"></script> 
+	<script type="text/javascript" src="/scripts/jquery.cookies.js"></script>
+	<script type="text/javascript" src="/scripts/jquery.socialshareprivacy.2.js"></script>
+	<script type="text/javascript">
+	// <![CDATA[
+	// define the default order of the buttons:
+	$.fn.socialSharePrivacy.settings.order = ['facebook', 'twitter', 'gplus'];
+	$.fn.socialSharePrivacy.settings.path_prefix = '/';
+	// ]]>
+	</script>
+
+
+
+	
+		<link rel="alternate" type="application/atom+xml" title="Comments on SecureDrop (Atom 1.0)" href="https://www.schneier.com/blog/archives/2013/10/securedrop.xml" >
+	
+	
+		<link rel="prev" href="https://www.schneier.com/blog/archives/2013/10/iphone_sensor_s.html" title="iPhone Sensor Surveillance">
+	
+	
+		<link rel="next" href="https://www.schneier.com/blog/archives/2013/10/a_court_order_i.html" title="&quot;A Court Order Is an Insider Attack&quot;">
+	
+
+	<script type="text/javascript" src="/blog/mt.js"></script>
+
+	<title>Schneier on Security: SecureDrop</title>
+
+</head>
+<body><div id="wrapper"><div id="main">
+	<header><div id="header">
+	<h1><a href="/">Schneier on Security</a></h1>
+	</div></header>
+	<nav><div class="nav" id="header-nav">
+<ul>
+		<li class="menu1 current"><a href="https://www.schneier.com/">Blog</a></li>
+		<li class="menu2"><a href="https://www.schneier.com/crypto-gram.html">Newsletter</a></li>
+		<li class="menu3"><a href="https://www.schneier.com/books.html">Books</a></li>
+    <li class="menu4"><a href="https://www.schneier.com/essays/">Essays</a></li>
+		<li class="menu5"><a href="https://www.schneier.com/news.html">News</a></li>
+		<li class="menu6"><a href="https://www.schneier.com/schedule.html">Schedule</a></li>
+		<li class="menu7"><a href="https://www.schneier.com/cryptography.html">Crypto</a></li>
+		<li class="menu8"><a href="https://www.schneier.com/about.html">About Me</a></li>
+	</ul>
+
+	</div></nav>
+
+
+<aside><div class="sidebar" id="sidebar-one">
+
+		<section><div class="sidesection" id="search-widget">
+		<h3>Search</h3>
+		<p class="small"><em>Powered by <a href="https://duckduckgo.com/">DuckDuckGo</a></em></p>
+		<form method="get" action="https://duckduckgo.com/">
+		<input type="hidden" name="kh" value="1"><!-- use https -->
+		<input id="search" name="q" size="15" maxlength="255">
+		<input type="submit" value="Go"><br>
+		<input type="radio" name="sites" id="searchblog" value="www.schneier.com/blog" checked><label for="searchblog">blog</label> <input type="radio" name="sites" id="searchessays" value="www.schneier.com/essay" ><label for="searchessays">essays</label>
+		<input type="radio" name="sites" id="searchall" value="www.schneier.com" ><label for="searchall">whole site</label>		</form>
+		</div></section>
+	
+		<section><div class="sidesection">
+		<h3>Subscribe</h3>
+		
+			<div id="subscription-buttons">
+				<a href="https://www.schneier.com/blog/atom.xml"><img alt="Atom Feed" src="https://www.schneier.com/images/rss-32px.png"></a>
+				<a href="https://www.facebook.com/bruce.schneier"><img alt="Facebook" src="https://www.schneier.com/images/facebook-32px.png"></a>
+				<a href="http://twitter.com/schneierblog/"><img alt="Twitter" src="https://www.schneier.com/images/twitter-32px.png"></a>
+				<a href="http://www.amazon.com/Schneier-on-Security/dp/B0053HDDWW/"><img alt="Kindle" src="https://www.schneier.com/images/kindle-32px.png"></a>
+				<a href="/crypto-gram-sub.html"><img alt="E-Mail Newsletter (Crypto-Gram)" src="https://www.schneier.com/images/email-32px.png"></a>
+			</div><!--#subscription-buttons-->
+		</div></section>
+
+	</div></aside>
+
+
+	
+	<div id="content">
+    
+ 	<div id="timetravel">
+		
+		<a class="earlier" href="https://www.schneier.com/blog/archives/2013/10/iphone_sensor_s.html">&larr; iPhone Sensor Surveillance</a>
+		
+		
+		<a class="later" href="https://www.schneier.com/blog/archives/2013/10/a_court_order_i.html">"A Court Order Is an Insider Attack" &rarr;</a>
+		
+	</div>
+    
+<article><div class="article">
+	<script type="text/javascript">
+		// <![CDATA[
+		$(document).ready(function () {
+			$('#share005060').socialSharePrivacy({uri: 'https://www.schneier.com/blog/archives/2013/10/securedrop.html', title: 'SecureDrop'});
+			});
+		// ]]>
+	</script>
+	
+	<h2 class="entry" id="a005060">	SecureDrop</h2>
+	
+		
+	
+    
+	    <p><a href="https://pressfreedomfoundation.org/securedrop">SecureDrop</a> is an open-source whistleblower support system, originally written by Aaron Swartz and <a href="https://pressfreedomfoundation.org/blog/2013/10/freedom-press-foundation-launches-securedrop">now run</a> by the Freedom of the Press Foundation.  The first instance of this system was named <a href="http://www.newyorker.com/strongbox/">StrongBox</a> and is being run by <cite>The New Yorker</cite>.  To further add to the naming confusion, Aaron Swartz called the system <a href="http://deaddrop.github.io/">DeadDrop</a> when he wrote the code.</p>
+
+<p>I participated in a <a href="http://homes.cs.washington.edu/~aczeskis/research/pubs/UW-CSE-13-08-02.PDF">detailed security audit</a> of the StrongBox implementation, along with some great researchers from the University of Washington and Jake Applebaum.  The problems we found were largely procedural, and things that the Freedom of the Press Foundation are working to fix.</p>
+
+<p>Freedom of the Press Foundation is not running any instances of SecureDrop.  It has about a half dozen major news organization lined up, and will be helping them install their own starting the first week of November.  So hopefully any would-be whistleblowers will soon have their choice of news organizations to securely communicate with.</p>
+
+<p>Strong technical whistleblower protection is essential, especially given President Obama's <a href="http://www.motherjones.com/politics/2012/06/obamas-whistleblowers-stuxnet-leaks-drones">war</a> <a href="http://www.techdirt.com/articles/20130722/01430523882/architect-obamas-war-whistleblowers-its-good-to-hang-admiral-once-while-as-example.shtml">on</a> <a href="https://www.cpj.org/reports/2013/10/obama-and-the-press-us-leaks-surveillance-post-911.php">whistleblowers</a>. I hope this system is broadly implemented and extensively used.</p>
+    
+	
+	
+	
+
+	<p class="entry-tags">Tags: <a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=Aaron%20Swartz&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1" rel="tag">Aaron Swartz</a>, <a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=academic%20papers&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1" rel="tag">academic papers</a>, <a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=leaks&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1" rel="tag">leaks</a>, <a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=New%20York%20Times&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1" rel="tag">New York Times</a>, <a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=SecureDrop&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1" rel="tag">SecureDrop</a>, <a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=whistleblowers&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1" rel="tag">whistleblowers</a></p>
+
+
+	
+	<p class="posted"><a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html">Posted on October 17, 2013 at  7:15 AM</a>
+	 &#8226; 
+	26 Comments
+	
+	</p>
+	<aside><div class="share" id="share005060"></div></aside>
+	</div></article>
+
+
+
+
+    
+    
+
+<h3 id="comments">Comments</h3>
+
+
+<article><div class="comment by-maxcohen" id="c1937935">
+
+
+<p class="commentcredit"><span class="commenter">maxCohen</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1937935">October 17, 2013  8:06 AM</a>
+</p>
+
+<p>I've been looking forward to this for sometime and I hope the system is correctly implemented by those newspapers.</p>
+</div></article>
+
+
+
+<article><div class="comment by-police-state" id="c1938175">
+
+
+<p class="commentcredit"><span class="commenter">Police State</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938175">October 17, 2013  8:34 AM</a>
+</p>
+
+<p>Privacybox.de used to run a similar service then politics of whoever runs the German Privacy Foundation led to it's closure. I haven't checked out SecureDrop hopefully it also utilizes PFS to prevent a journalist being arrested and everything decrypted.</p>
+
+<p> In other news Adi Shamir won't be attending the history of cryptology conference for suspicious reasons. US purposely delayed his visa and dumped his paper. </p>
+</div></article>
+
+
+
+<article><div class="comment by-paolo" id="c1938355">
+
+
+<p class="commentcredit"><span class="commenter"><a title="http://flowingmail.com" href="http://flowingmail.com" rel="nofollow">Paolo</a></span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938355">October 17, 2013  8:54 AM</a>
+</p>
+
+<p>Isn't it ironic how Obama had a different view just before the election?</p>
+
+<p>"whistleblower protections" paragraph from the Obama Website:</p>
+
+<p>"Often the best source of information about waste, fraud, and abuse in government is an existing government employee committed to public integrity and willing to speak out. Such acts of courage and patriotism, which can sometimes save lives and often save taxpayer dollars, should be encouraged rather than stifled. We need to empower federal employees as watchdogs of wrongdoing and partners in performance. Barack Obama will strengthen whistleblower laws to protect federal workers who expose waste, fraud, and abuse of authority in government. Obama will ensure that federal agencies expedite the process for reviewing whistleblower claims and whistleblowers have full access to courts and due process."</p>
+
+<p>Full article:<br />
+<a href="http://www.huffingtonpost.com/2013/07/26/obama-whistleblower-website_n_3658815.html" rel="nofollow">http://www.huffingtonpost.com/2013/07/26/obama-whistleblower-website_n_3658815.html</a></p>
+</div></article>
+
+
+
+<article><div class="comment by-boyd" id="c1938480">
+
+
+<p class="commentcredit"><span class="commenter">Boyd</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938480">October 17, 2013  9:11 AM</a>
+</p>
+
+<p>Excellent! Very glad to learn more details, just read about SecureDrop a few days ago.</p>
+</div></article>
+
+
+
+<article><div class="comment by-ferret-cannon" id="c1938562">
+
+
+<p class="commentcredit"><span class="commenter">Ferret Cannon</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938562">October 17, 2013  9:19 AM</a>
+</p>
+
+<p>@ Paolo, Gosh I just despair when I read what Obama said he'd do to enable whistleblowing and compare that to what he's done. There is no limit to the lies politicians are willing to tell in order to get power. </p>
+
+<p>These days I don't see any way back from the control by a lying political elite and the collaborators. Even worse, hardly anyone registers that we're dominated by a global surveillance apparatus, and even fewer care. What a bleak future. </p>
+
+<p>It is interesting to note that the Obama quote has now been removed  from the internet, just to tidy up history and make it match the current reality one presumes.</p>
+</div></article>
+
+
+
+<article><div class="comment by-fabio-pietrosanti" id="c1938686">
+
+
+<p class="commentcredit"><span class="commenter"><a title="https://globaleaks.org" href="https://globaleaks.org" rel="nofollow">Fabio Pietrosanti</a></span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938686">October 17, 2013  9:34 AM</a>
+</p>
+
+<p>We'd like to have a similar "big audit" also on GlobaLeaks Project where we also received 3 independent technical penetration test!</p>
+
+<p>The main difference between SecureDrop and GlobaLeaks are:<br />
+* SecureDrop focus mostly on security<br />
+* Globaleaks focus also on usability, easy of deployment, maintenance and flexibility of use (and setup of an ecosystem of software based on submission APIs)</p>
+
+<p>From the software engineering point of view i think that GlobaLeaks is more advanced, while from the architectural point of view SecureDrop is more secure.</p>
+
+<p>It would be nice to see the two projects get together to share the goals of the two :-)</p>
+
+<p>Cheers<br />
+Fabio Pietrosanti<br />
+Hermes Center for Transparency and Digital Human Rights<br />
+<a href="https://globaleaks.org" rel="nofollow">https://globaleaks.org</a></p>
+</div></article>
+
+
+
+<article><div class="comment by-maxcohen" id="c1938733">
+
+
+<p class="commentcredit"><span class="commenter">maxCohen</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938733">October 17, 2013  9:41 AM</a>
+</p>
+
+<p>Having a big audit would be great, but it still leaves open bad implementation by the individual news agencies that provide the service.  Like the big audit of TrueCrypt, it's great, but every future version will still need to be audited because every future version can have changes.  Changes could still be made after the audit as is the case with any software, open or not.  Yes, I'm that paranoid.  Or please let me know if I'm missing something because I'm here to learn.</p>
+</div></article>
+
+
+
+<article><div class="comment by-gecko" id="c1938824">
+
+
+<p class="commentcredit"><span class="commenter">Gecko</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938824">October 17, 2013  9:51 AM</a>
+</p>
+
+<p>The nickname is going to identify you to the N S A on your jailbroken endpoint. I thought you never should send anything twice?</p>
+</div></article>
+
+
+
+<article><div class="comment by-nobodyspecial" id="c1938835">
+
+
+<p class="commentcredit"><span class="commenter">NobodySpecial</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938835">October 17, 2013  9:52 AM</a>
+</p>
+
+<p>Avi Shamir couldn't attend an NSA sponsored crypto conference because he couldn't get a US visa.</p>
+
+<p><a href="http://blogs.fas.org/secrecy/2013/10/shamir/" rel="nofollow">http://blogs.fas.org/secrecy/2013/10/shamir/</a></p>
+
+<p>"I have been to the US close to a hundred times so far (including some multi-year visits), and had never overstayed my visas. In addition, the number of terrorists among the members of the US National Academy of Science is rather small."</p>
+
+<p>Careful, using irony or sarcasm to the US government can be a security issue!</p>
+</div></article>
+
+
+
+<article><div class="comment by-nicholas-weaver" id="c1938880">
+
+
+<p class="commentcredit"><span class="commenter">Nicholas Weaver</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938880">October 17, 2013  9:57 AM</a>
+</p>
+
+<p>I applaud this work, although I think its the wrong initial priority:  The first priority should be for <i><b>every</b></i> press institution (and criminal attorney for that matter) to insource their email.  </p>
+
+<p>The reason why email subpoenas are so attractive in leak hunts (and expect to see them on state & local level leak hunts in the future) is they are silent whenever the press agency uses outsourced email, yet if the press or law firm uses their own email servers, the subpoenas get noticed immediately and there is a chance to fight the subpoenas in court.</p>
+
+<p>Supporting insourced email should be no more difficult than supporting an internal SecureDrop install, especially if there is technical assistance in building a nice, simple to install package, but will provide far more benefit for far more people.</p>
+
+<p>It should be considered a massive violation of journalistic and legal ethics to utilize an outsourced email provider.</p>
+</div></article>
+
+
+
+<article><div class="comment by-nick-p" id="c1938915">
+
+
+<p class="commentcredit"><span class="commenter">Nick P</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938915">October 17, 2013 10:02 AM</a>
+</p>
+
+<p><b>It's not Obama...</b></p>
+
+<p>I wonder why Obama is taking so much heat for this. My understanding of Washington and American power structures is that someone else is coercing Obama to keep certain policies he intended to change. (NSA & Pentagon, perhaps?) The President doesn't control the country: he's just a cog in a machine which is only partly visible to the public. These programs and activities will continue if the real power in Washington wants them to. </p>
+
+<p>We did have a President once who opposed secret societies, the Federal Reserve, and covert ops against American people. He even began the process of printing an alternative currency so he could dismantle the Fed eventually. He threatened the real power. So the real power removed his head from his body via lead traveling at high velocity. His name was John Fitzgerald Kennedy.</p>
+
+<p>And the opponents of the people have vastly more power than they did then.</p>
+
+<p>Bonus Case Study: Wikileaks</p>
+
+<p>I often say the international bankers own the country, esp seeing the Fed Reserve is privately owned corporation. Many politicians have said so over the years. The no-questions-asked-with-criminal-immunity bailout of Goldman Sachs to tune of $1 tril. is also evidence that they have insane levels of influence. Why am I bringing this tangent up? Oh, it's no tangent. Let me explain the vital importance of understanding who has real power before taking action.</p>
+
+<p>Remember that Wikileaks was the first SecureDrop in practice. They were a thorn in the government's side. They embarrassed big corporations, the military, intelligence agencies, state department, foreign countries... you name it. Pentagon, LEO's, etc failed to stop them. Then Wikileaks targeted one of the country's financial owners: Bank of America. The result was that the largest financial processors cut Wikileaks off from financial contributions. With no money, it withered and died. </p>
+
+<p>You mess with Real Power, you get treated like Wikileaks. Just the four main financial institutions behind the Fed could instantly cause a great depression (that they would survive) if they chose. Military-industrial complex has its own... "problem solving methods." Obama can't stop these people. At all. Diverting the freight train that is the current system from its path will take majority of America standing behind Congress w/ National Guard ready just in case, with everyone willing to endure financial ruin if system collapses.</p>
+
+<p>People won't do that. The Owners know that. That's why things are getting worse in obvious ways. They won the war on freedom 12 years ago. Now, they're just mopping up while putting faith in people being too uninformed/weak to revolt against their power. As before, I won't hold my breath although I'll continue to push tools and designs to help them when they do. </p>
+</div></article>
+
+
+
+<article><div class="comment by-nobodyspecial" id="c1938984">
+
+
+<p class="commentcredit"><span class="commenter">NobodySpecial</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1938984">October 17, 2013 10:08 AM</a>
+</p>
+
+<p>@Nick P - in the UK we have the WI who secretly control things behind the scenes</p>
+</div></article>
+
+
+
+<article><div class="comment by-nick-p" id="c1939055">
+
+
+<p class="commentcredit"><span class="commenter">Nick P</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1939055">October 17, 2013 10:16 AM</a>
+</p>
+
+<p>@ NobodySpecial</p>
+
+<p>Who? Google's just giving me Women's Institutes lol. </p>
+</div></article>
+
+
+
+<article><div class="comment by-wb" id="c1939136">
+
+
+<p class="commentcredit"><span class="commenter">wb</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1939136">October 17, 2013 10:24 AM</a>
+</p>
+
+<p>But the NSA can still trace back connections to StrongBox et al. to the devices which connect.  No?<br />
+So whistleblowers still need to make sure their device cannot be traced back to a person ...</p>
+</div></article>
+
+
+
+<article><div class="comment by-maxcohen" id="c1939194">
+
+
+<p class="commentcredit"><span class="commenter">maxCohen</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1939194">October 17, 2013 10:29 AM</a>
+</p>
+
+<p>@wb Right, but with the help of Tor it would give some protection.  This is how <a href="http://www.newyorker.com/strongbox/" rel="nofollow">the New Yorker handles it</a>.</p>
+</div></article>
+
+
+
+<article><div class="comment by-some_guy_in_a_diner" id="c1939304">
+
+
+<p class="commentcredit"><span class="commenter">Some_Guy_In_A_Diner</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1939304">October 17, 2013 10:44 AM</a>
+</p>
+
+<p>More meshnets could help too.</p>
+
+<p>"Let them eat static." - Khan</p>
+</div></article>
+
+
+
+<article><div class="comment by-nobodyspecial" id="c1939429">
+
+
+<p class="commentcredit"><span class="commenter">NobodySpecial</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1939429">October 17, 2013 11:00 AM</a>
+</p>
+
+<p>@wp it's also easier to just go to an internet cafe or wifi in Starbucks and connect to their web page than to maintain a completely safe email address.</p>
+
+<p>The idea is to help both hosts who aren't as technically literate and whistle blowers who don't have the field craft</p>
+</div></article>
+
+
+
+<article><div class="comment by-brian-m" id="c1939648">
+
+
+<p class="commentcredit"><span class="commenter">Brian M.</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1939648">October 17, 2013 11:31 AM</a>
+</p>
+
+<p>@wb:<br />
+<i>But the NSA can still trace back connections to StrongBox et al. to the devices which connect</i></p>
+
+<p>A little wardriving through a neighborhood will come up with open access points.  There's a few around me that are completely open.  When I first powered on my Nexus 7 tablet, it automatically connected to an open WiFi and downloaded updates before I could actually use the device and integrate it into my WiFi.</p>
+</div></article>
+
+
+
+<article><div class="comment by-xkcd" id="c1939682">
+
+
+<p class="commentcredit"><span class="commenter">xkcd</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1939682">October 17, 2013 11:36 AM</a>
+</p>
+
+<p>@wb - some of the new tablets can be a little over-zealous <a href="http://xkcd.com/416/" rel="nofollow">http://xkcd.com/416/</a><br />
+</p>
+</div></article>
+
+
+
+<article><div class="comment by-gonemad" id="c1940120">
+
+
+<p class="commentcredit"><span class="commenter">GoneMad</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1940120">October 17, 2013 12:39 PM</a>
+</p>
+
+<p>What we people need is open scrum and agile for politics! This way politicians can claim doing something, but have to keep their promises backed up up by real data. Hopefully making politicians jobless and enabling us to self-manage our country and ourselves. Ok, ok, let the man dream.. let the man dream..</p>
+</div></article>
+
+
+
+<article><div class="comment by-anon2" id="c1940436">
+
+
+<p class="commentcredit"><span class="commenter">anon2</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1940436">October 17, 2013  1:20 PM</a>
+</p>
+
+<p>@Brian M.</p>
+
+<p>I was thinking the same thing, but your car and its license plate can identify you, and if anybody is paying attention, they might remember you.</p>
+
+<p>Better yet, weather permitting, ride your bicycle to a neighborhood "pocket park", and use the WiFi connection from there.  No car to be seen!</p>
+
+<p><br />
+@Gecko<br />
+"...you should never send anything twice."</p>
+
+<p>I suppose you could add or remove a few spaces, or carriage returns to the document to change its checksum, so it "looks different" to anything watching for that sort of thing.<br />
+</p>
+</div></article>
+
+
+
+<article><div class="comment by-nick-p" id="c1945665">
+
+
+<p class="commentcredit"><span class="commenter">Nick P</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1945665">October 18, 2013 12:19 AM</a>
+</p>
+
+<p>The tips I posted on the court inside attacks thread might be useful to people seeing this one who worry about legalities, anonymity and security all at once. </p>
+
+<p><a href="https://www.schneier.com/blog/archives/2013/10/a_court_order_i.html#c1945655" rel="nofollow">https://www.schneier.com/blog/archives/2013/10/a_court_order_i.html#c1945655</a></p>
+</div></article>
+
+
+
+<article><div class="comment by-mike-the-goat" id="c1952452">
+
+
+<p class="commentcredit"><span class="commenter">Mike the goat</span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1952452">October 18, 2013 11:03 AM</a>
+</p>
+
+<p>Personally I think the biggest risk has to be in letting each individual newspaper implement their own 'strongbox'. No doubt these newspaper IT staff aren't security nuts, and I can see this will end in tears.</p>
+
+<p>If I was going to design this from the ground up I would do it as a cloud service, and here is how it would work:</p>
+
+<ul><li>
+I would ask all participating papers to at least partially enable SSL. Even if they just had one load balancer push people over to the https site so you've got maybe a 1 in 10 chance of getting an SSLized connection. Allow people to force using SSL. The idea here is to ensure that there is enough legitimate SSL traffic so that our whistleblowers do not get spotted.
+<li>
+We would give each newspaper a .tar.gz to extract onto their web server (their main domain otherwise we can't hide these requests in with all the legit stuff), perhaps we make a new subdirectory called newstips/
+<li>
+The 'newstips' section will have a page with some general opsec advice for people intending to leak and importantly some files to download. There will be a windows 32/64 universal .exe file, a MACOSX app, a PDF of how the implementation works and a .deb that has been statically linked to any obscure libraries so it hopefully works for ubuntu and debian users. There will also be a .tgz of the source code for review.
+<li>
+In warzones and areas of civil unrest or civil disobedience rights groups can hand out a CD containing well - just a wget of that newstips/ directory. This is all a stranger needs to start leaking. We may have a script for the newspaper server admin to put in cron that changes the size of the file by adding fluff below the end of the file, etc.. so that traffic analysis is more difficult if the file is constantly changing size. We don't intend for the newspaper site to be the primary place they go to download the files - but it's one option for them. There will be many different ways to distribute, including just going to the cloud strongbox provider's hidden service address with a web browser once you have tor. Or it can be mailed to you - again, all sorts of options.
+<li>
+The downloaded Windows file is intended to be portable and to be put onto a fresh small USB stick. The user runs it off the stick (it doesn't write a single byte to registry, etc.. it tries to keep solely to itself). The windows version of the program doesn't go online until the actual time of submission either, which is good.
+<li>
+So they run the app, select which mode to operate on (via tor or relay through a busy newspaper site using SSL - the latter is riskier but the only real option for those in oppressive regimes where using tor itself is criminal. Ideally you'd be in an internet cafe and use good opsec to ensure you're not IDable). In the latter mode if there is too much info to upload and it is going to look unusually large going upstream versus all the other traffic it might suggest you do one part one day and another in a few days. The newspapers who run the relays can help (even though it is wasteful) by using some AJAX that makes clients using their site and reading the news push up some random junk). 
+<li>
+Once they've set their mode they then need to choose a passphrase. It will suggest a few (ala diceware style word lists) or they can enter Rtheir own. A brief dict run against 100,000 of the worst passwords is done when they click Next.
+<li>
+The next step is key generation and the keypair is saved along with all the other settings that they are setting up in an AES256 encrypted container on the USB disk.
+<li>
+Next they can drag all the files they want to leak into the drag and drop style interface. Going Next brings them to a display of all the hidden metadata that has been found and they can scrub the files if need be. It also gives them a lecture about covert metadata in the form of digital watermarking, steg, etc. There is a redaction tool and you can apply a range of filters to reduce the resolution and/or OCR a text only document and then reformat the text to avoid being caught out by document marking which uses font metrics and spacing. They can then use the redaction tool to securely redact. Finally the data they've chosen to leak is transcoded into an appropriate format and prepared.
+<li>
+An address book is compiled into the binary. This shows all of the news agencies that use the service. They can select a news agency and then select a journalist. If the address book needs updating this can be done but you will be explicitly asked to confirm if you wish to go online (using whatever method you selected) to do this. Many will be preparing their docs at home and will want to defer this bit when they are on a public PC or wardriving. Anyway they can defer now and close the app or click next. Let's assume next.
+At this point all of the queued data is archived into a single file and asymmetrically encrypted to the journalist's public key (which is in the address book) and prepared ready to send.
+<li>
+A summary of everything that is queued is shown. When you are ready you can click SUBMIT. It will go online (through tor if you accept the default) for strictly only long enough to do its bit and get the hell out.
+<li>
+When successfully completed you will get a source codename. It is drawn from an English code book and is two words. This is used to uniquely identify the source should you wish to communicate in future. (ideally OTR style chat will be included at some point also). So, for example - "PATERNOSTER JOE"
+<li>
+When you click FINISH it will inform you that it now wishes to securely erase your USB flash drive. It will also provide some handy hints on how to clean up the computer which you've handled the documents on, depending on the threat level. It will then securely erase the flash drive (as securely as you can erase flash that is) and recommend incineration.
+</li></li></li></li></li></li></li></li></li></li></li></li></li></ul>
+
+<p>IMHO that's how I would handle such a thing. </p>
+
+<p>Once on the cloud server for the strongbox-type service provider it will then be e-mailed to the journalist as a standard GPG encrypted email. Nothing fancy. Email can be split if need be. </p>
+
+<p>By having a 'service provider' do all the hard stuff they can sit back and just let it work and let the experts look after the stuff that needs to be secure. IMHO. I have had a few too many glasses of wine tonight so I hope I am not too incoherent.</p>
+</div></article>
+
+
+
+<article><div class="comment by-anton-sherwood" id="c1953235">
+
+
+<p class="commentcredit"><span class="commenter"><a title="http://bendwavy.org/" href="http://bendwavy.org/" rel="nofollow">Anton Sherwood</a></span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c1953235">October 18, 2013 12:25 PM</a>
+</p>
+
+<p>I imagine that Senator Obama had in mind Proper Channels for whistleblowing, with Strict Policy against retaliation -- rather than encouraging leaks to parties outside the family.</p>
+</div></article>
+
+
+
+<article><div class="comment by-sune-keller" id="c2213012">
+
+
+<p class="commentcredit"><span class="commenter"><a title="http://www.b.dk/nationalt/her-kan-whistleblowere-trygt-lette-hjertet" href="http://www.b.dk/nationalt/her-kan-whistleblowere-trygt-lette-hjertet" rel="nofollow">Sune Keller</a></span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c2213012">November  7, 2013  8:21 AM</a>
+</p>
+
+<p>As can be read (through Google Translate I guess) here, it's being implemented by Danish national radio station Radio 24syv: <a href="http://www.b.dk/nationalt/her-kan-whistleblowere-trygt-lette-hjertet" rel="nofollow">http://www.b.dk/nationalt/her-kan-whistleblowere-trygt-lette-hjertet</a></p>
+</div></article>
+
+
+
+<article><div class="comment by-wwwfancycabinetknobscom" id="c2365928">
+
+
+<p class="commentcredit"><span class="commenter"><a title="http://www.fancycabinetknobs.com/" href="http://www.fancycabinetknobs.com/" rel="nofollow">www.fancycabinetknobs.com</a></span> &bull; <a href="https://www.schneier.com/blog/archives/2013/10/securedrop.html#c2365928">November 17, 2013  8:19 AM</a>
+</p>
+
+<p>Great do the job! That is the kind of information and facts that ought to be embraced over the world-wide-web. Shame on the internet for no for a longer period ranking that submit better! Occur in excess of along with visit my site. Thanks a lot Is equal to)</p>
+</div></article>
+
+
+
+
+<p class="subscribe-comments"><a href="https://www.schneier.com/blog/archives/2013/10/securedrop.xml"><img alt="Atom Feed" src="/images/rss-16px.png">Subscribe to comments on this entry</a></p>
+
+  <div class="postcomment notpreviewed">
+
+    
+    
+    <div class="comments-open" id="comments-open">
+        <h2 class="comments-open-header">Leave a comment</h2>
+        <div class="comments-open-content">
+
+        
+            <div id="comment-greeting"></div>
+
+            <form method="post" action="https://www.schneier.com/cgi-bin/mt/mt-comments.cgi" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
+                <input type="hidden" name="static" value="https://www.schneier.com/blog/archives/2013/10/securedrop.html?nc=26">
+                <input type="hidden" name="entry_id" value="5060" />
+                <input type="hidden" name="__lang" value="en-us" />
+
+                <script language="javascript" type="text/javascript"><!--
+	                document.write('<input type="hidden" name="armor" value="" /><input type="hidden" name="sid" value="" /><input type="hidden" name="preview" value="" />');
+                // --></script>
+                <div id="comments-open-data">
+                    <div id="comment-form-name">
+                        <label for="comment-author">Name (required):</label>
+                        <input id="comment-author" name="author" size="30" value="" onfocus="mtCommentFormOnFocus()" />
+                    </div>
+                    <div id="comment-form-email">
+                        <label for="comment-email">E-mail Address:</label>
+                        <input id="comment-email" name="email" size="30" value="" onfocus="mtCommentFormOnFocus()" />
+                    </div>
+                    <div id="comment-form-url">
+                        <label for="comment-url">URL:</label>
+                        <input id="comment-url" name="url" size="30" value="" onfocus="mtCommentFormOnFocus()" />
+                    </div>
+                <script language="javascript" type="text/javascript"><!--
+                document.write('<div id="comment-form-remember-me"><input type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1" accesskey="r" /><label class="checkbox" for="comment-bake-cookie">Remember personal info?<\/label><\/div>');
+                // --></script>
+                </div>
+<p id="comments-open-challenge"><input type="hidden" id="commchallenge_beacon" name="commchallenge_beacon" value="1" /><label for="commchallenge_answer">Fill in the blank: the name of this blog is Schneier on ___________ <strong>(required)</strong>:</label>
+<input type="text" id="commchallenge_answer" name="commchallenge_answer" size="30" value="" /></p><script type="text/javascript">
+<!--    
+if ((typeof commenter_name != 'undefined') ||
+    (typeof getCommenterName != 'undefined' &&  getCommenterName())) {
+    mtHide('comments-open-challenge');
+} else {
+    mtShow('comments-open-challenge');
+} 
+// -->
+</script>
+
+
+                <div id="comments-open-text">
+                    <label for="comment-text">Comments:</label>
+                    <textarea id="comment-text" name="text" onfocus="mtCommentFormOnFocus()"></textarea>
+                </div>
+		            <p id="allowed"><strong>Allowed HTML:</strong> &lt;a href="URL"&gt; &bull; &lt;em&gt; &lt;cite&gt; &lt;i&gt; &bull; &lt;strong&gt; &lt;b&gt; &bull; &lt;sub&gt; &lt;sup&gt; &bull; &lt;ul&gt; &lt;ol&gt; &lt;li&gt; &bull; &lt;blockquote&gt; &lt;pre&gt;</p>
+                <div id="comments-open-captcha"></div>
+                <div id="comments-open-footer">
+
+  	                <script language="javascript" type="text/javascript"><!--
+										document.write('<input type="submit" accesskey="v" name="preview_button" id="comment-preview" value="Preview" onclick="this.form.preview.value=\'1\';" />');
+		                // --></script>
+		                <noscript><input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview"></noscript>
+                    
+                    <input type="submit" accesskey="s" name="post" id="comment-submit" value="Submit" />
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+    <!--
+    mtAttachEvent("load", mtEntryOnLoad);
+    mtAttachEvent("unload", mtEntryOnUnload);
+    //-->
+    </script>
+    
+    
+  </div>
+
+
+
+
+
+
+
+
+    
+    
+    
+<p id="powered">Photo of Bruce Schneier by Per Ervland.
+	
+	<p id="disclaim">Schneier on Security is a personal website.  Opinions expressed are not necessarily those of <a href="https://www.co3sys.com/">Co3 Systems, Inc.</a>.
+
+
+	
+	</div><!--#content-->
+<aside><div class="sidebar" id="sidebar-two">
+		<section><div class="sidesection" id="about">
+		
+		<h3>About Bruce Schneier</h3>
+		<img id="authorphoto" src="https://www.schneier.com/images/bruce-blog3.jpg" width="150" height="194" alt="Bruce Schneier"><p class="small">I've been writing about security issues on my <a href="https://www.schneier.com/">blog</a> since 2004, and in my monthly <a href="https://www.schneier.com/crypto-gram.html">newsletter</a> since 1998. I write <a href="https://www.schneier.com/books.html">books</a>, <a href="https://www.schneier.com/essays.html">articles</a>, and <a href="https://www.schneier.com/cryptography.html">academic papers</a>. Currently, I'm the Chief Technology Officer of <a href="https://www.co3sys.com/">Co3 Systems</a>, a fellow at Harvard's <a href="http://berkman.harvard.edu/">Berkman Center</a>, and a board member of <a href="https://www.eff.org/">EFF</a>.</p>
+		</div></section>
+
+
+		<section><div class="sidesection">
+			<h3>Related Entries</h3>
+			<ul>
+     			<li><a href="https://www.schneier.com/blog/archives/2013/03/on_secrecy.html">On Secrecy</a></li>
+   			
+     			<li><a href="https://www.schneier.com/blog/archives/2014/01/1971_fbi_burgla.html">1971 FBI Burglary</a></li>
+   			
+     			<li><a href="https://www.schneier.com/blog/archives/2013/11/why_the_governm.html">Why the Government Should Help Leakers</a></li>
+   			
+     			<li><a href="https://www.schneier.com/blog/archives/2013/10/on_anonymous.html">On Anonymous</a></li>
+   			
+     			<li><a href="https://www.schneier.com/blog/archives/2013/09/reforming_the_n.html">Reforming the NSA</a></li>
+   			</ul>
+		</div></section>
+
+
+	<section><div class="sidesection">
+
+    
+
+		<h3>Featured Essays</h3>
+		<ul>
+			<li><a href="https://www.schneier.com/essay-472.html">It's Time to Break Up the NSA</a></li>
+			<li><a href="https://www.schneier.com/essay-469.html">How the NSA Threatens National Security</a></li>
+			<li><a href="https://www.schneier.com/essay-258.html">Terrorists May Use Google Earth, but Fear is No Reason to Ban It</a></li>
+			<li><a href="https://www.schneier.com/essay-154.html">In Praise of Security Theater</a></li>
+			<li><a href="https://www.schneier.com/essay-114.html">The Eternal Value of Privacy</a></li>
+			<li><a href="https://www.schneier.com/essay-087.html">Terrorists Don't Do Movie Plots</a></li>
+		</ul>
+		
+    <p><a href="https://www.schneier.com/essays/">more essays</a></p>
+		</div></section>
+
+
+
+
+		<section><div class="sidesection">
+		
+			<h3>Blog Archives</h3>
+			<ul>
+				<li><a href="https://www.schneier.com/blog/calendar.html">Archives by Date</a></li>
+				<li><a href="https://www.schneier.com/blog/newcomments.html">100 Latest Comments</a></li>
+			</ul>
+		
+
+
+        
+		<h4>Blog Tags</h4>
+<ul class="top-tags">
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=privacy&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">privacy</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=terrorism&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">terrorism</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=surveillance&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">surveillance</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=squid&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">squid</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=air%20travel&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">air travel</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=DHS&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">DHS</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=homeland%20security&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">homeland security</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=law%20enforcement&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">law enforcement</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=academic%20papers&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">academic papers</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=cryptography&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">cryptography</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=NSA&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">NSA</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=economics%20of%20security&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">economics of security</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=crime&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">crime</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=Schneier%20news&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">Schneier news</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=TSA&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">TSA</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=hacking&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">hacking</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=national%20security%20policy&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">national security policy</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=essays&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">essays</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=laws&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">laws</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=malware&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">malware</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=computer%20security&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">computer security</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=encryption&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">encryption</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=fraud&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">fraud</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=psychology%20of%20security&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">psychology of security</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=police&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">police</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=physical%20security&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">physical security</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=cost-benefit%20analysis&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">cost-benefit analysis</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=fear&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">fear</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=bombs&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">bombs</a></li>
+
+		<li><a href="https://www.schneier.com/cgi-bin/mt/mt-search.cgi?search=courts&amp;__mode=tag&amp;IncludeBlogs=2&amp;limit=10&amp;page=1">courts</a></li>
+</ul>
+<p><a href="https://www.schneier.com/blog/tags.html">more tags</a></p>
+
+
+	
+		</div></section>
+		
+		<section><div class="sidesection">
+		<h3>Latest Book</h3>
+		<a href="https://www.schneier.com/book-co.html"><img class="sidepic"  alt="Carry On" src="https://www.schneier.com/images/book-co-175w.jpg"></a>
+		<p><a href="https://www.schneier.com/books.html">more books</a></p>
+		</div></section>
+		
+		<section><div class="sidesection">
+		<a href="https://www.eff.org/issues/bloggers/legal/join"><img id="effbutton" src="https://www.schneier.com/images/eff-150x40.gif" ALT="Support Bloggers' Rights!" width="150" height="40"></a>
+		
+		<a href="https://npo.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=8252"><img src="https://www.schneier.com/images/epic-150w.png" width="150" height="54" alt="Defend Privacy--Support Epic"></a>
+
+		</div></section>
+
+		<section><div class="sidesection">
+		<a href="https://www.co3sys.com/"><img class="sidepic" alt="Co3 Systems" src="https://www.schneier.com/images/co3-logo-175w.jpg"></a>	
+
+		</div></section>
+
+		
+	</div></aside>
+
+
+<footer><nav><div class="nav" id="footer-nav">
+<ul>
+		<li class="menu1 current"><a href="https://www.schneier.com/">Blog</a></li>
+		<li class="menu2"><a href="https://www.schneier.com/crypto-gram.html">Newsletter</a></li>
+		<li class="menu3"><a href="https://www.schneier.com/books.html">Books</a></li>
+    <li class="menu4"><a href="https://www.schneier.com/essays/">Essays</a></li>
+		<li class="menu5"><a href="https://www.schneier.com/news.html">News</a></li>
+		<li class="menu6"><a href="https://www.schneier.com/schedule.html">Schedule</a></li>
+		<li class="menu7"><a href="https://www.schneier.com/cryptography.html">Crypto</a></li>
+		<li class="menu8"><a href="https://www.schneier.com/about.html">About Me</a></li>
+	</ul>
+	
+	</div></nav></footer>
+
+</div><!--#main-->
+</div><!--#wrapper-->
+
+</body>
+</html>
+
+
+

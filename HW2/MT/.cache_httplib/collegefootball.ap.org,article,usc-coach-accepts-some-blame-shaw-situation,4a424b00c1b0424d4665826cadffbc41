@@ -1,0 +1,615 @@
+status: 200
+x-ah-environment: prod
+vary: Accept-Encoding
+content-length: 61417
+x-request-id: v-729cacc0-4733-11e4-ae7c-12313d191a15
+content-language: en
+x-age: 0
+etag: "1411924701"
+cache-control: no-cache, must-revalidate, post-check=0, pre-check=0
+x-varnish: 2217077963
+accept-ranges: bytes
+expires: Sun, 28 Sep 2014 17:18:24 GMT
+last-modified: Sun, 28 Sep 2014 17:18:21 +0000
+-content-encoding: gzip
+link: </node/313426>;
+ rel="shortlink",</article/usc-coach-accepts-some-blame-shaw-situation>;
+ rel="canonical",</node/313426>;
+ rel="shortlink",</article/usc-coach-accepts-some-blame-shaw-situation>;
+ rel="canonical"
+date: Sun, 28 Sep 2014 17:18:24 GMT
+content-location: http://collegefootball.ap.org/article/usc-coach-accepts-some-blame-shaw-situation
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=utf-8
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdADQYFU1NT"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="College Football" />
+<meta property="og:url" content="http://collegefootball.ap.org/berkeleyind/article/usc-coach-accepts-some-blame-shaw-situation" />
+<link rel="shortcut icon" href="http://collegefootball.ap.org/sites/collegefootball/files/AP_Favicon2_0.png" type="image/png" />
+<link href="http://collegefootball.ap.org/profiles/ap/themes/ap_cfootball/touch-icon.png" rel="apple-touch-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="news_keywords" content="college football, NCAA football, AP Top 25" />
+<link rel="shortlink" href="/node/313426" />
+<link rel="canonical" href="http://collegefootball.ap.org/article/usc-coach-accepts-some-blame-shaw-situation" />
+<meta name="description" content="LOS ANGELES (AP) — Southern California coach Steve Sarkisian believes he shares blame with the athletic department for publicizing cornerback Josh" />
+<meta property="og:title" content="USC coach accepts some blame in Shaw situation" />
+<meta property="og:description" content="LOS ANGELES (AP) — Southern California coach Steve Sarkisian believes he shares blame with the athletic department for publicizing cornerback Josh" />
+<meta name="keywords" content="NCAA, AP Top 25, College Football" />
+  <title>USC coach accepts some blame in Shaw situation | College Football</title>
+    <link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_Wd6pSoewqjam2D4kmxT6m1HirDRqLp5CwoDWDev4Q4g.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_N97TX6yJ8keQdGkbKhHE1_E0_iT4t5YlDCJIxhl0aGE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_DAfCg_Fat93dv3lSQDud9dY1vv0u181WxX_GpFwUPFQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_Q-mdKTfBJJhg8-oz53IfqAHz7JPtF28pUjcOHSssvjY.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_GDyPfWxLYAGs0EZ7rrEyCcTUwCza-o_8EwsSKvDXab0.css" media="print" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_R8PE4amFPNStA-aXlEodah4Osz8cZCzeAKuPpPda2HU.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="http://collegefootball.ap.org/sites/collegefootball/files/css/css_lyKYBlPbOSiFc6KXoFYENWG9uB_nJT3omYWq0vC_fVc.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-4";
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_RC7d2_dhfBsqLAPQvLz26Tw_1pi8VuJA8XTLntJVGuM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_Cyc-lC6ixML6RkS4RmBegmTl-vUp8PtXmSZmSGOtAFQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/CollegeFootball/AP/site/node/313426", [728, 90], "dfp-ad-leaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/CollegeFootball/AP/site/node/313426", [300, 50], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/CollegeFootball/AP/site/node/313426", [[300, 600], [300, 250]], "dfp-ad-half_page")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/CollegeFootball/AP/site/node/313426", [300, 250], "dfp-ad-mediumrectangle2")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_wikXwq3fLO6oFthA4Y3w41NkpNfBU36cSQ44ikxXUlA.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_n01iyYgoHd6AmSIjfjIGdb1zDj0Mn5V6I749x9UTF5g.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_IDBX5SzkJ9gGNq7x-qOE_2DZsexqguTJQGMKvi4w-Uw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-27590430-4"]);_gaq.push(['_setCustomVar', 1, "customer", "Rankings, highlights and photos", 3]);_gaq.push(['_setCustomVar', 2, "Item ID", "c87c2bd75ad74e97b9da683cb1835d3d", 3]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_ix99IaKNwg4XQrjVLFsrlxH0Czfb_Wvr8_P-vBK2zQU.js"></script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_aUlRePYNwQ_RqAPv1RG5C4aMrSHUehGa9X9lGTUEXdw.js"></script>
+<script type="text/javascript" src="http://collegefootball.ap.org/sites/collegefootball/files/js/js_diWL3aQY3h6RRBatVIE0RJfaXsBie-hoJ861ArHzvB0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ap_cfootball","theme_token":"2GkNXij2gauz9iLruhCfcrwf2KPxjXe8VN2qgcnbITo","js":{"0":1,"http:\/\/edge.quantserve.com\/quant.js":1,"1":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"2":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"3":1,"4":1,"5":1,"6":1,"7":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"8":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/dynamic-carousel.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/jquery.wmuslider.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_carousel.js":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"9":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"10":1,"http:\/\/use.typekit.com\/uta3cck.js":1,"11":1,"profiles\/ap\/modules\/contrib\/disqus\/disqus.js":1,"profiles\/ap\/themes\/ap_cfootball\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-text.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/ap_cfootball\/css\/global.css":1,"profiles\/ap\/themes\/ap_cfootball\/css\/print.css":1,"ie::normal::profiles\/ap\/themes\/ap_cfootball\/css\/ap-cfootball-alpha-default.css":1,"ie::normal::profiles\/ap\/themes\/ap_cfootball\/css\/ap-cfootball-alpha-default-normal.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::profiles\/ap\/themes\/ap_cfootball\/css\/ap-cfootball-alpha-default.css":1,"narrow::profiles\/ap\/themes\/ap_cfootball\/css\/ap-cfootball-alpha-default-narrow.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::profiles\/ap\/themes\/ap_cfootball\/css\/ap-cfootball-alpha-default.css":1,"normal::profiles\/ap\/themes\/ap_cfootball\/css\/ap-cfootball-alpha-default-normal.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"disqus":{"domain":"APcollegefootball","url":"http:\/\/collegefootball.ap.org\/article\/usc-coach-accepts-some-blame-shaw-situation","title":"USC coach accepts some blame in Shaw situation","identifier":"node\/313426"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-313426 node-type-ap-article context-article">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>  
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+    <div class="clearfix logo-ad">
+                <div class="logo-img">
+                  <img border="0" src="http://collegefootball.ap.org/sites/collegefootball/files/AP_OLY.png" alt="College Football" title="College Football" />              </div>
+              <div class="block block-boxes block-boxes-responsive-dfp block-responsive-leaderboard block-boxes-responsive-leaderboard odd block-without-title" id="block-boxes-responsive-leaderboard">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id='boxes-box-responsive_leaderboard' class='boxes-box'><div class="boxes-box-content"><div id="responsive_leaderboard-responsive-ad" class="responsive-ad"></div></div></div>    </div>
+  </div>
+</div>    </div>
+  </div>
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-vertical-branding" id="region-vertical-branding">
+  <div class="region-inner region-vertical-branding-inner">
+    
+        <div class="branding-data clearfix">
+                        <hgroup class="site-name-slogan">        
+                        <h1 class="site-name"><a href="/" rel="home" title="Home">College Football</a></h1>
+              </hgroup>
+          </div>
+        
+      </div>
+</div>
+  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">    <div class="menu-zone-inner-wrapper">
+	  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+	    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav class="navigation">
+      <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <form action="/article/usc-coach-accepts-some-blame-shaw-situation" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search " type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-ZvSC1I2DgCn66a16zX18Fg7Y4DKEs9WpyOrnKNF95oU" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div><h4 class="sections-menu"><a href="#">Sections</a></h4><ul class="menu"><li class="first leaf"><a href="/">Home</a></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/latest-games" title="">Games</a></li>
+<li class="leaf"><a href="/features" title="">BCS Bowls</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Top 25 Poll</a></li>
+<li class="leaf"><a href="/Galleries" title="">Photos</a></li>
+<li class="last leaf"><a href="/conferences" title="">Conferences</a><div class="conference-flyout clearfix">
+      <a href="/conferences/acc">ACC</a>      <a href="/conferences/big-12">Big 12</a>      <a href="/conferences/big-ten">Big Ten</a>      <a href="/conferences/conference-usa">Conference USA</a>      <a href="/conferences/division-i-fbs-independents">Division I FBS Independents</a>      <a href="/conferences/mid-american">Mid-American</a>      <a href="/conferences/mountain-west">Mountain West</a>      <a href="/conferences/pac-12">Pac-12</a>      <a href="/conferences/sec">SEC</a>      <a href="/conferences/sun-belt">Sun Belt</a>      <a href="/conferences/american">The American</a>  </div></li>
+</ul>    </nav>
+  </div>
+</div>
+	  </div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-8 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                <div class="tabs clearfix"></div>        <div class="block block-system block-main block-system-main even block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-313426" rel="wicked dude">
+  <header>
+        <h1 class="entry-title node-title title" rel="bookmark" id="page-title">USC coach accepts some blame in Shaw situation</h1>
+      <div class="article-data">
+    <div class="field field-name-field-byline-original field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">By <a href="/content/greg-beacham">GREG BEACHAM</a></div></div></div>     &mdash; <span  class="updated" title="2014-08-28T18:39:57-04:00">Aug. 28, 2014 6:39 PM EDT</span>  </div>
+  </header>
+  <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a> &raquo; <a href="/tags/joshua-shaw">Joshua Shaw</a> &raquo; USC coach accepts some blame in Shaw situation</div>  <div class="node-body clearfix">
+	  <div class="block block-ap-misc block-ap-social-media block-ap-misc-ap-social-media odd block-without-title" id="block-ap-misc-ap-social-media">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="ap-article-social clearfix">
+	<h3>Share</h3>
+	<div class="social-widgets clearfix">
+				<div class="social-fbook social-share">
+		<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>    </div>
+  </div>
+</div>	  <div class="node-content">
+		  		  
+        
+        <div class="slideshow">
+          <div class="clearfix">
+            <ul id="article-slider" class="photo-slideshow clearfix">
+                          <li class="photo-item">
+                							    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="http://binaryapi.ap.org/cc996c0646744ef3afe02d34e9f84e10/460x.jpg" alt="Josh Shaw" title="Josh Shaw" /></div></div>
+							    <span class="photo-credit">&nbsp;</span>
+							    							    <div class="photo-caption">
+							      <div class="inner">
+						  	      <div class="field-name-caption"><block><p>FILE - In this Oct. 26, 2013, file photo, Southern California safety Josh Shaw recovers a Utah fumble in an NCAA college football game in Los Angeles. Shaw confessed that he lied to school officials about how he sprained his ankles last weekend, retracting his story about jumping off a balcony to save his drowning nephew. The school swiftly suspended him from all football team activities Wednesday, Aug. 27, 2014, and acknowledged his heroic tale was "a complete fabrication." (AP Photo/Pasadena Star-News, Keith Birmingham, File) NO SALES</p></div>							      </div>
+							    </div>
+							    							                </li>
+                          <li class="photo-item">
+                							    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="http://binaryapi.ap.org/f7485c9c8d3a4d1a818bf464129e892e/460x.jpg" alt="Cody Kessler, Josh Shaw " title="Cody Kessler, Josh Shaw " /></div></div>
+							    <span class="photo-credit">&nbsp;</span>
+							    							    <div class="photo-caption">
+							      <div class="inner">
+						  	      <div class="field-name-caption"><block><p>FILE - In this Dec. 3, 2013, file photo, Southern California quarterback Cody Kessler, left, and Josh Shaw watch a news conference for USC's new football coach Steve Sarkisian in Los Angeles. Shaw has admitted to lying to school officials about how he sprained his ankles last weekend, retracting his story about jumping off a balcony to save his drowning nephew. Shaw has been suspended indefinitely from all of the Trojans' team activities after acknowledging his heroic tale was "a complete fabrication," the school announced in a statement Wednesday, Aug. 27, 2014. (AP Photo/Los Angeles Daily News, Michael Owen Baker, File) NO SALES; MAGAZINES OUT; HILLS OUT, LOS ANGELES TIMES OUT; VENTURA COUNTY STAR OUT; ANTELOPE VALLEY PRESS OUT</p></div>							      </div>
+							    </div>
+							    							                </li>
+                          <li class="photo-item">
+                							    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="http://binaryapi.ap.org/c1b7518014d74c6280cbe95ec4f8f2d2/460x.jpg" alt="Josh Shaw" title="Josh Shaw" /></div></div>
+							    <span class="photo-credit">&nbsp;</span>
+							    							    <div class="photo-caption">
+							      <div class="inner">
+						  	      <div class="field-name-caption"><block><p>In this Dec. 3, 2014 photo, University of Southern California cornerbackback Josh Shaw answers questions at a press conference of USC's new football coach Steve Sarkisian. Shaw confessed that he lied to school officials about how he sprained his ankles last weekend, retracting his story about jumping off a balcony to save his drowning nephew. The school swiftly suspended him from all football team activities Wednesday, Aug. 27, 2014, and acknowledged his heroic tale was "a complete fabrication."  (Photo by Michael Owen Baker/L.A. Daily News)  NO SALES; MAGAZINES OUT; HILLS OUT, LOS ANGELES TIMES OUT; VENTURA COUNTY STAR OUT; ANTELOPE VALLEY PRESS OUT</p></div>							      </div>
+							    </div>
+							    							                </li>
+                          <li class="photo-item">
+                							    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="http://binaryapi.ap.org/635c01ac45d2482ea175813a0ac4b12e/460x.jpg" alt="Josh Shaw" title="Josh Shaw" /></div></div>
+							    <span class="photo-credit">&nbsp;</span>
+							    							    <div class="photo-caption">
+							      <div class="inner">
+						  	      <div class="field-name-caption"><block><p>FILE - In this Aug. 29, 2013 file photo, Southern California cornerback Josh Shaw (26) runs back an interception for a touchdown against Hawaii during the second quarter of an NCAA college football game in Honolulu. Shaw confessed that he lied to school officials about how he sprained his ankles last weekend, retracting his story about jumping off a balcony to save his drowning nephew. The school swiftly suspended him from all football team activities Wednesday, Aug. 27, 2014, and acknowledged his heroic tale was "a complete fabrication." (AP Photo/Eugene Tanner, File)</p></div>							      </div>
+							    </div>
+							    							                </li>
+                          <li class="photo-item">
+                							    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="http://binaryapi.ap.org/174a745210e543a78599f63a4e9c3bb0/460x.jpg" alt="Josh Shaw" title="Josh Shaw" /></div></div>
+							    <span class="photo-credit">&nbsp;</span>
+							    							    <div class="photo-caption">
+							      <div class="inner">
+						  	      <div class="field-name-caption"><block><p>FILE - This undated file photo provided by the University of Southern California sports information office shows cornerback Josh Shaw. Shaw confessed that he lied to school officials about how he sprained his ankles last weekend, retracting his story about jumping off a balcony to save his drowning nephew. The school swiftly suspended him from all football team activities Wednesday, Aug. 27, 2014, and acknowledged his heroic tale was "a complete fabrication." (AP Photo/University of Southern California, File)</p></div>							      </div>
+							    </div>
+							    							                </li>
+                        </ul>
+          </div>
+					<div class="slider-controls clearfix">
+            <ul class="slidecontrols">
+							<li><a href="#article-slider" class="prev">Prev</a></li>
+							<li class="slider-position"></li>
+							<li><a href="#article-slider" class="next">Next</a></li>
+						</ul>
+					</div>
+        </div>
+      		  
+		  
+		  <div class="content clearfix article-body">
+		    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/greg-beacham" class="fn">GREG BEACHAM</a></span> (<span  class="source-org vcard"><span  class="org fn">AP</span></span>)</div><span  class="dateline">LOS ANGELES</span><a  rel="item-license" id="license-5375c1d26654d981b649de071b19e5e4" href="#license-5375c1d26654d981b649de071b19e5e4">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">34.0522</span><span  class="longitude">-118.244</span></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden entry-content"><div class="field-items"><div class="field-item even"><p><block><p>LOS ANGELES (AP) — Southern California coach Steve Sarkisian believes he shares blame with the athletic department for publicizing cornerback Josh Shaw's fictitious story about injuring his ankles while saving his nephew from drowning.</p>
+<p>Sarkisian also said Thursday that the suspended Shaw could "potentially" return to the Trojans at some point this season, news that was welcomed by Shaw's attorney.</p>
+<p>"Obviously there's some other things that need to take place," Sarkisian said Thursday after USC's practice. "But in the meantime, he's got to take care of his health and take care of himself, and when the time is right to bring him back, we will."</p>
+<p>The first-year coach said Shaw still hasn't told the Trojans exactly how he sprained both of his ankles last weekend, extending this curious distraction into the weekend of Sarkisian's debut game. No. 15 USC hosts Fresno State on Saturday.</p>
+<p>Shaw admitted his elaborate story of heroism was a lie Wednesday in a meeting with USC officials, but offered no alternate explanation. Shaw was accompanied by attorney Donald Etra, who said no criminal activity was involved in Shaw's injuries.</p>
+<p>"The injury was caused by a fall from his balcony at his apartment," Etra told The Associated Press on Thursday. "He is very remorseful. He accepted responsibility for telling the untruth. He has apologized to USC, and he's looking forward to putting this behind him."</p>
+<p>Shaw lives at a large apartment complex on Figueroa Street in downtown Los Angeles, sharing a place with teammate Kevon Seymour.</p>
+<p>The Los Angeles Police Department has confirmed that a man named Joshua Shaw was mentioned — but not as a suspect — in a report involving a break-in at a downtown apartment building Saturday night. The department has not made the report public.</p>
+<p>Etra said his office is still "doing further investigations" into the circumstances of Shaw's injury, which is why the fifth-year senior hasn't fully explained his injuries to the school. Etra has represented Rihanna, Snoop Dogg and other prominent clients.</p>
+<p>Shaw still hopes to earn the chance to play for the Trojans this season after his injuries have healed, Etra said: "I think that would be a very positive outcome."</p>
+<p>Sarkisian didn't seem concerned that Shaw hadn't given him the true explanation for his injuries.</p>
+<p>"He was unable to," Sarkisian said. "(When) he actually admitted to us that he was lying, it was in the presence of his attorney, and so really that's a better question for his attorney. He didn't tell us, and we weren't really privy to ask, quite honestly."</p>
+<p>While attempting to move his focus toward his debut game, Sarkisian also expressed regret for USC's decision to publicize Shaw's story, saying it "had as much to do with me as anybody else."</p>
+<p>"Moving forward, we'll be a little bit more patient," Sarkisian added. "I just felt like the last thing we needed was Josh Shaw rolling around in a wheelchair and everybody saying what happened. We tried to get in front of it, and it didn't work out for us. It's disappointing, but we'll always continue to support Josh in his efforts. He's a Trojan. He made a mistake, which kids make, but we've got to be here for them and help them get better."</p>
+<p>USC kept with its usual policy of making no players available to reporters on Thursdays before games. Sarkisian said the Trojans showed no signs of distraction while they went through a spirited practice for Saturday's season opener at the Coliseum.</p>
+<p>Practice had barely ended before Sarkisian faced a new imbroglio: Senior running back Anthony Brown has quit the team and apparently accused Sarkisian of racism on social media. Brown, a former starting cornerback, was unlikely to play a major role for the Trojans this season.</p>
+</block></p></div></div></div>		    		  </div>
+		  
+		  
+
+		  <div class="clearfix share-block">
+		    <div class="ap-article-social clearfix">
+	<h3>Share</h3>
+	<div class="social-widgets clearfix">
+				<div class="social-fbook social-share">
+		<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>		  </div>
+		  
+		  <div class="clearfix tags-block">
+		    <div  class="ap-article-tags categories">
+    
+    
+    
+<h3 class="h3_tags">Tags</h3>
+<div class="tags">
+<a href="/tags/lane-kiffin" rel="tag">Lane Kiffin</a>, <a href="/tags/anthony-brown" rel="tag">Anthony Brown</a>, <a href="/tags/steve-sarkisian" rel="tag">Steve Sarkisian</a>, <a href="/teams/usc" rel="tag">USC</a>, <a href="/tags/coaching" rel="tag">Coaching</a>, <a href="/tags/education" rel="tag">Education</a>, <a href="/tags/athlete-health" rel="tag">Athlete health</a>, <a href="/tags/school-discipline" rel="tag">School discipline</a>, <a href="/tags/hayes-pullard" rel="tag">Hayes Pullard</a>, <a href="/tags/leonard-williams" rel="tag">Leonard Williams</a>, <a href="/tags/rihanna" rel="tag">Rihanna</a>, <a href="/tags/athlete-injuries" rel="tag">Athlete injuries</a>, <a href="/tags/joshua-shaw" rel="tag">Joshua Shaw</a>, <a href="/tags/kevon-seymour" rel="tag">Kevon Seymour</a></div>
+</div>		  </div>  
+		  <a name="comments"></a>
+		  <div class="clearfix comment-block">
+		    <h2 class="block-title">Comments</h2>
+		    <div id="disqus_thread"><noscript><p><a href="http://APcollegefootball.disqus.com/?url=http%3A%2F%2Fcollegefootball.ap.org%2Farticle%2Fusc-coach-accepts-some-blame-shaw-situation">View the discussion thread.</a></p></noscript></div>		  </div>
+	  </div> 
+  </div>
+</article>    </div>
+  </div>
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="ap-recent-articles"><section class="block block-ap-misc block-ap-recent-articles block-ap-misc-ap-recent-articles odd" id="block-ap-misc-ap-recent-articles">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Latest News</h2>
+            
+    <div class="content clearfix">
+      
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-349981">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/k-states-lockett-closing-dads-school-record"><img src="http://binaryapi.ap.org/442e9690af514f5c96f7e76bd3450af5/60x.jpg" alt="Jake Waters" title="Jake Waters" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/k-states-lockett-closing-dads-school-record" title="K-State&#039;s Lockett closing on dad&#039;s school record"><a href="/article/k-states-lockett-closing-dads-school-record">K-State&#039;s Lockett closing on dad&#039;s school record</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">MANHATTAN, Kan.</span><a  rel="item-license" id="license-6d59015c56640675df1bfdd26c760282" href="#license-6d59015c56640675df1bfdd26c760282">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">39.1836</span><span  class="longitude">-96.5717</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:52:03-04:00">Sep. 28, 2014 12:52 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-349971">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/kansas-fires-weis-4-games-third-season"><img src="http://binaryapi.ap.org/043ff9acbc914c0e8e01520d120627ef/60x.jpg" alt="Charlie Strong, Charlie Weis" title="Charlie Strong, Charlie Weis" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/kansas-fires-weis-4-games-third-season" title="Kansas fires Weis 4 games into third season"><a href="/article/kansas-fires-weis-4-games-third-season">Kansas fires Weis 4 games into third season</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">LAWRENCE, Kan.</span><a  rel="item-license" id="license-ddf37b7544350f56865e7e4dbadcc5fb" href="#license-ddf37b7544350f56865e7e4dbadcc5fb">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">38.9717</span><span  class="longitude">-95.2353</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T11:52:45-04:00">Sep. 28, 2014 11:52 AM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-349976">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/fsus-winston-unfazed-latest-field-issue"><img src="http://binaryapi.ap.org/140f6c902fc8402f91f7e73f24f92322/60x.jpg" alt="Jameis Winston" title="Jameis Winston" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/fsus-winston-unfazed-latest-field-issue" title="FSU&#039;s Winston unfazed by latest off-field issue"><a href="/article/fsus-winston-unfazed-latest-field-issue">FSU&#039;s Winston unfazed by latest off-field issue</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">RALEIGH, N.C.</span><a  rel="item-license" id="license-233da4a09f7e117d870c8dc10dfd605f" href="#license-233da4a09f7e117d870c8dc10dfd605f">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">35.7721</span><span  class="longitude">-78.6386</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T11:33:13-04:00">Sep. 28, 2014 11:33 AM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-349961">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/oregon-state-buried-35-10-loss-no-18-usc"><img src="http://binaryapi.ap.org/efc08c9d512b45fe87c757a00d33e6ec/60x.jpg" alt="Ryan Murphy, Andre Heidari" title="Ryan Murphy, Andre Heidari" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/oregon-state-buried-35-10-loss-no-18-usc" title="Oregon State buried in 35-10 loss to No. 18 USC"><a href="/article/oregon-state-buried-35-10-loss-no-18-usc">Oregon State buried in 35-10 loss to No. 18 USC</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">LOS ANGELES</span><a  rel="item-license" id="license-e3350027a7e934be14f97fea8aef83b8" href="#license-e3350027a7e934be14f97fea8aef83b8">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">34.0522</span><span  class="longitude">-118.244</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T04:09:21-04:00">Sep. 28, 2014 4:09 AM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-349926">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/no-18-usc-roars-past-oregon-state-35-10"><img src="http://binaryapi.ap.org/7a1f8fd68ddc4aaf894f266a81924751/60x.jpg" alt="Justin Davis, A.J. Hedgecock" title="Justin Davis, A.J. Hedgecock" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/no-18-usc-roars-past-oregon-state-35-10" title="No. 18 USC roars past Oregon State, 35-10"><a href="/article/no-18-usc-roars-past-oregon-state-35-10">No. 18 USC roars past Oregon State, 35-10</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">LOS ANGELES</span><a  rel="item-license" id="license-6519222942530ccd38b638cb3e8c99dd" href="#license-6519222942530ccd38b638cb3e8c99dd">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">34.0522</span><span  class="longitude">-118.244</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T03:23:45-04:00">Sep. 28, 2014 3:23 AM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>    </div>
+  </div>
+</section></div><div class="block block-dfp block-half-page block-dfp-half-page even block-without-title" id="block-dfp-half-page">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-half_page-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-half_page" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-half_page");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div><div class="block block-block block-1 block-block-1 odd block-without-title" id="block-block-1">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p></p><center><br /><h2 class="block-title"><a href="http://pro32.ap.org/ap-now-pro32-sundays" target="_blank">AP Now: Pro32 Sundays</a></h2>
+<p><a href="http://pro32.ap.org/ap-now-pro32-sundays" target="_blank"><img alt="" src="http://binaryapiqa.ap.org/1ccc3f31f995425295033c7867260fda/460x.jpg" style="width: 300px; height: 185px;" /></a></p>
+<p></p></center>
+<p>Check out live content each Sunday from AP reporters and photographers at every game, including updates, fantasy information, statistics, injury news and behind-the-scenes images and notes.</p>
+<h2><a href="http://pro32.ap.org/ap-now-pro32-sundays" target="_blank">AP Now: Pro32 Sundays</a></h2>
+    </div>
+  </div>
+</div><div class="block block-ap-poll block-top-25-right-rail block-ap-poll-top-25-right-rail even block-without-title" id="block-ap-poll-top-25-right-rail">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <h2 class="block-title">The AP Top 25 Poll</h2>  <div class="poll-header-info clearfix">
+    Poll Released: Sep 21  </div>
+  <table>
+<caption></caption>
+ <thead><tr><th class="trank">Rank</th><th class="tname">team</th><th class="tprev">PV Rank</th> </tr></thead>
+<tbody>
+ <tr class="1 florida-state odd"><td class="trank">1</td><td class="tname"><a href="/teams/florida-state">Florida State</a> (34)</td><td class="tprev">1</td> </tr>
+ <tr class="2 oregon even"><td class="trank">2</td><td class="tname"><a href="/teams/oregon">Oregon</a> (11)</td><td class="tprev">2</td> </tr>
+ <tr class="3 alabama odd"><td class="trank">3</td><td class="tname"><a href="/teams/alabama">Alabama</a> (7)</td><td class="tprev">3</td> </tr>
+ <tr class="4 oklahoma even"><td class="trank">4</td><td class="tname"><a href="/teams/oklahoma">Oklahoma</a> (4)</td><td class="tprev">4</td> </tr>
+ <tr class="5 auburn odd"><td class="trank">5</td><td class="tname"><a href="/teams/auburn">Auburn</a></td><td class="tprev">5</td> </tr>
+ <tr class="6 texas-a-m even"><td class="trank">6</td><td class="tname"><a href="/teams/texas-am">Texas A&amp;M</a> (4)</td><td class="tprev">6</td> </tr>
+ <tr class="7 baylor odd"><td class="trank">7</td><td class="tname"><a href="/teams/baylor">Baylor</a></td><td class="tprev">7</td> </tr>
+ <tr class="8 notre-dame even"><td class="trank">8</td><td class="tname"><a href="/teams/notre-dame">Notre Dame</a></td><td class="tprev">9</td> </tr>
+ <tr class="9 michigan-state odd"><td class="trank">9</td><td class="tname"><a href="/teams/michigan-state">Michigan State</a></td><td class="tprev">11</td> </tr>
+ <tr class="10 mississippi even"><td class="trank">10</td><td class="tname"><a href="/teams/mississippi">Mississippi</a></td><td class="tprev">10</td> </tr>
+</tbody>
+</table>
+<div class="poll-footer-info clearfix"><h4><a href="/poll">View Full Poll</a></h4></div><iframe class="title-ad" scrolling="no" src="http://collegefootball.ap.org/ap_widgets/widget/title-ad/right_rail" frameBorder="0"></iframe>    </div>
+  </div>
+</div><div class="block block-dfp block-mediumrectangle2 block-dfp-mediumrectangle2 odd block-without-title" id="block-dfp-mediumrectangle2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-mediumrectangle2-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-mediumrectangle2" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <h4 class="sections-menu"><a href="#">Sections</a></h4><div class="bottom-menu-frame"><ul class="menu"><li class="first leaf"><a href="/">Home</a></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/latest-games" title="">Games</a></li>
+<li class="leaf"><a href="/features" title="">BCS Bowls</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Top 25 Poll</a></li>
+<li class="leaf"><a href="/Galleries" title="">Photos</a></li>
+<li class="last leaf"><a href="/conferences" title="">Conferences</a></li>
+</ul></div>  </div>
+</div><div class="grid-12 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div id="copyright">AP Sports <span class="pipe">|</span> &#169; 2014 Associated Press</div><ul class="menu"><li class="leaf"><a href="/privacy-policy" title="Privacy Policy for College Football">Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-use" title="Terms of Use for College Football">Terms of Use</a></li>
+<li class="leaf"><a href="http://www.apimages.com" title="Link to AP Images">AP Images</a></li>
+<li class="last leaf"><a href="http://www.ap.org" title="Link to ap.org">ap.org</a></li>
+</ul>  </div>
+</div>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+_qoptions={	qacct:"p-e0GvCy8TRpZ6U"	};
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+  <script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"560baa128a","applicationID":"555721","transactionName":"MlRTYkFSWkNUU0EKDQsecFVHWlteGl5aBwc6QVBRVmxCWVBH","queueTime":0,"applicationTime":2190,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>

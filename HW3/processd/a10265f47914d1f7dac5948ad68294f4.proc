@@ -1,0 +1,301 @@
+     * Bloomberg.com
+     * Businessweek.com
+     * Company
+          + About
+          + Blog
+          + Careers
+          + Diversity & Inclusion
+          + Philanthropy
+          + Press Room
+          + Sustainability
+     * Products
+          + Financial Products
+          + Bloomberg Professional Service
+          + Bloomberg Tradebook
+          + Bloomberg Briefs
+          + Bloomberg Indexes
+          + Bloomberg SEF
+          + Enterprise Products
+          + Enterprise Solutions
+          + Trading Solutions
+          + Industry Products
+          + Bloomberg BNA
+          + Bloomberg Government
+          + Bloomberg Law
+          + Bloomberg Link
+          + Bloomberg New Energy Finance
+          + Bloomberg Sports
+          + Content Licensing
+
+   Bloomberg View
+   Home Editorials
+   Contributors
+     * Pankaj Mishra Pankaj Mishra
+     * Clive Crook Clive Crook
+     * Albert R. Hunt Albert R. Hunt
+     * Barry Ritholtz Barry Ritholtz
+     * Megan McArdle Megan McArdle
+     * Matt Levine Matt Levine
+     * Virginia Postrel Virginia Postrel
+
+   View All Contributors
+   Topics
+     * India
+     * Health
+     * Religion
+     * Politics
+     * Midterm Elections
+     * News Roundup
+     * Real Estate
+
+   View All Topics
+   QuickTake
+   More
+     * Get the View Newsletter
+     * Forward Guidance Newsletter
+     * Like on Facebook
+     * Follow on Twitter
+     * Follow on LinkedIn
+     * Follow on Google+
+     * Follow on SoundCloud
+     * Follow on Tumblr
+     * RSS
+     * Editorial Team
+     * Reader Submissions
+     * Terms of Service
+     * Privacy Policy
+
+   Photographer: Jin Lee/Bloomberg
+   Photographer: Jin Lee/Bloomberg
+   Facebook
+   Twitter
+   LinkedIn
+   Google+
+   Wall Street
+
+Michael Lewis Doesn't Like High-Frequency Traders
+
+   Matt Levine
+   55 Mar 31, 2014 12:25 PM EDT
+   By Matt Levine
+
+   I suppose one way to evaluate your life is to ask yourself, would I be
+   the hero of a Michael Lewis book, or the villain? Am I a clever young
+   outsider applying rigorous quantitative thinking to revolutionize a
+   stodgy stupid business that is bad for its customers, or am I, you
+   know, the stodgy stupid one?
+
+   Brad Katsuyama is the latest Michael Lewis hero, which is nice for him.
+   I haven't read Lewis's new book yet, but "60 Minutes" had a segment on
+   it last night, and here is an excerpt. Katsuyama was an equities trader
+   at Royal Bank of Canada who discovered one day that the equity markets
+   were rigged. Big mutual funds that wanted to buy a lot of shares found
+   that it was hard to do so at displayed prices: As soon as they started
+   buying shares, the price started to go up.
+
+   Being a nice young Canadian -- "60 Minutes" called him "a conformist
+   even by Canadian standards" -- Katsuyama decided to unrig the markets,
+   offering fair trades at a fair price to everyone. So he left RBC and
+   started a IEX, a dark pool^1 with unusual transparency and rules
+   intended to protect orders from being picked off. The idea is that if
+   you're a big mutual fund and you submit an order on IEX, that order
+   will not provide any information to high-frequency traders for almost a
+   whole millisecond. (A shoebox full of wires is involved, which everyone
+   else seems to find more interesting than I do.) The result is that HFTs
+   won't be able to react to your order by moving up prices on other
+   exchanges, and you'll be able to execute more shares at the displayed
+   price.
+
+   Trading on Speed
+
+   Katsuyama was received as a hero by institutional investors, Goldman
+   Sachs and Michael Lewis. The investors you can understand; their
+   favorite pastime seems to be buying a lot of shares at displayed
+   prices. Goldman is a little weirder -- IEX competes with Goldman's own
+   dark pool -- but Goldman is into market-structure fairness these days.
+   Michael Lewis -- I mean, this excerpt has some hurtful things to say
+   about dark pools, so it's odd that his hero is a dark pool operator,^2
+   but the story is actually pretty compelling. Young nice whippersnapper
+   takes on the establishment and makes life better for everyone, etc. I
+   just ordered the book.
+
+   While I wait for it to arrive, though, let me spin for you an
+   alternative Michael Lewis story. This one starts with a bunch of stodgy
+   old banks filled with the sorts of equity traders whom you might
+   recognize from "Liar's Poker." "Liar's Poker" has nothing nice to say
+   about equity traders at big banks. In this story equities, in Dallas or
+   otherwise, is not an intellectual power center.
+
+   But it's a simple operation. A trader quotes a stock, Microsoft say,
+   bidding to buy it for $39.95 and offering to sell it at $40.00.^3 If a
+   big seller hits the bid, the trader owns a bunch of Microsoft stock at
+   $39.95, and then tries to resell it at a profit.^4 He does this using
+   his gut instinct: If there's a big seller, that means the price should
+   move down, so the trader might lower his quote to $39.93 bid, $39.98
+   offered, hoping to sell at $39.98 and make some profit. If the seller
+   is really big and really informed, the trader might move his quote down
+   faster, because you don't want to be on the other side of the market
+   from a big informed seller. On the other hand, if the seller is a small
+   retail order, the trader might not move his quote at all: Uninformed
+   small orders are basically random, so for every one of those who sells
+   to you at $39.95, another will buy from you for $40.00, making you a
+   big profit.^5
+
+   If the trader's instinct is good, he'll make his spread trading with a
+   lot of uninformed orders. If he's less good, or unlucky, he'll get
+   picked off: He'll buy from big smart institutions for $39.95 when the
+   "right" price is $39.90, and he'll end up with a big loss. Overall,
+   though, it's a lucrative business, because the spread is wide enough to
+   make up for the times that the trader loses.
+
+   Then along come some smart young whippersnappers who replace gut
+   instinct with statistical analysis. Instead of relying on some equity
+   trader's ample gut to guess what orders are likely to move the market,
+   you can use a computer to figure it out, and then automate how you
+   trade. If you build your computer right, you won't be blindsided by
+   informed orders that go against you, like a lot of mortgage-backed
+   securities traders were.^6
+
+   And this means that you can quote a much tighter spread: By being
+   smarter than the competition, you can also be leaner and more
+   efficient. You might quote Microsoft at $39.97 bid and $39.98 offered
+   on every exchange, knowing that as soon as someone hits your bid on one
+   exchange, you can instantly move your market down to $39.96/$39.97
+   everywhere else. This reduces your risk of being picked off by trading
+   with informed traders, which lets you make a profit even on much
+   narrower spreads. You can charge less to trade by being more informed.
+
+   There are two ways of characterizing high frequency trading. In one,
+   HFTs are front-running big investors, rigging the game against them and
+   making the stock market illusory. In the other, HFTs are reacting
+   instantly to demand, avoiding being picked off by informed investors
+   and making the stock market more efficient.^7
+
+   In my alternative Michael Lewis story, the smart young whippersnappers
+   build high-frequency trading firms that undercut big banks'
+   gut-instinct-driven market making with tighter spreads and cheaper
+   trading costs. Big HFTs like Knight/Getco and Virtu trade vast volumes
+   of stock while still taking in much less money than the traditional
+   market makers: $688 million and $623 million in 2013 market-making
+   revenue, respectively, for Knight and Virtu, versus $2.6 billion in
+   equities revenue for Goldman Sachs and $4.8 billion for J.P. Morgan.
+   Even RBC made 594 million Canadian dollars trading equities last year.
+   The high-frequency traders make money more consistently than the
+   old-school traders, but they also make less of it.
+
+   You don't have to be absolutist about this either way. Whether or not
+   HFTs' behavior of quickly adjusting quotes to market conditions is
+   "predatory" in some moral sense -- and whether or not it ultimately
+   makes markets more or less efficient on balance -- it is clearly
+   annoying to a lot of institutional investors. So those investors like
+   having the option of trading on IEX. And there's no obvious reason to
+   think that the current market structures and rules are the "right"
+   rules, or that high-frequency traders aren't sometimes gaming those
+   rules in not-so-socially-optimal ways.
+
+   Still, I don't know, I feel a little sorry for the HFTs. They check a
+   lot of the right boxes to be the heroes of their own Michael Lewis
+   stories. It's sad for them that they instead turned out to be the
+   villains of someone else's.
+
+   ^1 Is this a little mean? From the website: "At launch IEX began
+   operations as a non-displayed ATS but, at a date to be announced, IEX
+   plans to convert from an ATS to an ECN and publish a displayed
+   quotation." Bloomberg News called it "a dark pool that plans to convert
+   into a U.S. stock exchange."
+
+   ^2 Again, a little unfair. See footnote 1 above, and also, the hurtful
+   things are about nontransparent dark pools operated by brokers. IEX has
+   transparent rules and isn't owned by a broker; it just happens not to
+   display quotes.
+
+   ^3 Here's a 2001 paper finding 3.5 cent to 7 cent spreads depending on
+   how you count.
+
+   ^4 Lewis on Katsuyama:
+
+     His main role as a trader was to play the middleman between
+     investors who wanted to buy and sell big amounts of stock and the
+     public markets, where the volumes were smaller. Say some investor
+     wanted to sell a block of three million Intel shares, but the
+     markets showed demand for only one million shares: Katsuyama would
+     buy the entire block from the investor, sell off a million shares
+     instantly and then work artfully over the next few hours to unload
+     the other two million.
+
+   ^5 If you're going to Amazon anyway, this is where I learned most of my
+   market microstructure.
+
+   ^6 See what I did there? Some of those were a stretch, though I insist
+   on the Moneyball one.
+
+   ^7 In the New York Times excerpt, Lewis describes three types of
+   predatory HFT behavior:
+
+     The third, and probably by far the most widespread, they called
+     slow-market arbitrage. This occurred when a high-frequency trader
+     was able to see the price of a stock change on one exchange and pick
+     off orders sitting on other exchanges before those exchanges were
+     able to react.
+
+   But his "pick off" is the HFT's "avoid being picked off." If a big
+   informed investor buys Microsoft for $40.00 on one exchange, that
+   should move the price up. An HFT who leaves a $39.99/$40.00 quote on
+   other exchanges is now offering to trade at the wrong price. Trading at
+   the wrong price is bad for business.
+
+   To contact the writer of this article: Matt Levine at
+   mlevine51@bloomberg.net.
+
+   To contact the editor responsible for this article: Tobin Harshaw at
+   tharshaw@bloomberg.net.
+   Matt Levine
+   Matt Levine is a Bloomberg View columnist writing about Wall Street and
+   the financial world. He is a former investment banker, mergers and
+   acquisitions lawyer, and high school Latin teacher. Read more.
+   @matt_levine
+
+Popular
+
+     * Wall Street Michael Lewis Michael Lewis The Secret Goldman Sachs
+       Tapes
+     * Real Estate Megan McArdle Megan McArdle How the Poor Can Afford to
+       Live in New York
+     * Midterm Elections Albert R. Hunt Albert R. Hunt Ignored U.S. House
+       Contests May Hold Surprises
+     * Bonds Megan McArdle Megan McArdle Gross Gets Out of Bonds Just in
+       Time
+     * Wall Street Matt Levine Matt Levine Secret Fed Tapes Recorded
+       Goldman's Capital Game
+     * Wall Street Michael Lewis Michael Lewis Occupational Hazards of
+       Working on Wall Street
+     * Health Mark Buchanan Mark Buchanan Ebola Is Going Global. Or Not.
+
+View Contributors
+
+     * Pankaj Mishra Pankaj Mishra
+     * Clive Crook Clive Crook
+     * Albert R. Hunt Albert R. Hunt
+     * Barry Ritholtz Barry Ritholtz
+     * Megan McArdle Megan McArdle
+     * Matt Levine Matt Levine
+     * Virginia Postrel Virginia Postrel
+
+   Print
+   Facebook
+   Twitter
+   LinkedIn
+   Google+
+   Email
+
+   ©2014 Bloomberg L.P. All Rights Reserved
+
+   *
+
+
+
+Please upgrade your Browser
+
+   Your browser is out-of-date. Please download one of these up-to-date
+   and excellent browsers:
+   Firefox, Chrome, Safari, or Opera

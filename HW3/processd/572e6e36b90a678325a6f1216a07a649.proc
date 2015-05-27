@@ -1,0 +1,384 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » Working like a startup at IBM Comments Feed Four short
+   links: 11 September 2014 Understanding network neutrality
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   Web Ops & Performance
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+Working like a startup at IBM
+
+How a small and passionate team used modern techniques to shift a business on
+a short timeline.
+
+   by Bill Higgins | @BillHiggins | +Bill Higgins | Comments: 4 |
+   September 11, 2014
+   Comments: 4
+
+   http://commons.wikimedia.org/wiki/File:PSM_V04_D595_Blue_yellow_color_m
+   ix_experiment.jpg
+
+   Over the past year, I assisted in creating an application that helped
+   shift a major part of IBM to a software-as-a-service (SaaS) model. I
+   did this with the help of a small but excellent development team that
+   was inspired by the culture and practices of web startups. To be clear,
+   it wasn’t easy – changing how we worked led to frequent friction and
+   conflict – but in the end it worked, and we made a difference.
+
+   In mid-2013, the IBM Service Management business and engineering
+   leaders decided to make a big bet on moving our software to the cloud.
+   Traditionally we have sold “on premises” software products. These are
+   software products that a customer buys, downloads, and installs on
+   their own equipment, in their own data centers and facilities. Although
+   we love the on-premises business, we realized that cloud delivery of
+   software is also a great option, and as our customers evolved to a
+   hybrid on-premises / cloud future, we needed to be there to help them.
+
+   We decided that initially we would make three capabilities –
+   Performance Management, Help Desk and Workload Automation – available
+   on the cloud. We also decided that we wanted a uniform and delightful
+   learn-explore-try-and-buy experience for these capabilities. This
+   implied we needed a common Internet-facing web property. This idea
+   eventually became IBM Service Engage.
+
+   There was only one problem: our imagined web front-end didn’t exist,
+   and we wanted to announce the offerings at our IBM Pulse 2014
+   conference in February 2014, just five months away. This is where my
+   team comes into the story.
+
+Creating a positive culture
+
+   I was fortunate to join a great team when I was a young developer. In
+   the mid-2000s, IBM reassigned many of the developers who had built the
+   Eclipse platform to build a new platform for team-based tools. This
+   became the IBM Rational Jazz platform and resulted in products like IBM
+   Rational Team Concert. I joined this team in the early days and was
+   able to work alongside a tight-knit and talented set of developers,
+   designers, and architects, all very strong in agile development
+   methods.
+
+   In the early 2010s, I left Rational and joined the Tivoli brand, which
+   is responsible for Service Management products. In some ways Rational
+   provides “dev stuff” and Tivoli provides “ops stuff.” This led me to
+   learn about and embrace the DevOps movement.
+
+   When I took a lead development role on our private cloud software, I
+   recruited a small team of passionate and smart developers who, like me,
+   worked for IBM in Raleigh, N.C. I spent a lot of energy on this
+   recruitment because, as I had seen from my Jazz experience and by
+   reading about high-performance software development teams like the team
+   that created the Mac, I believed that a small, gelled group of
+   passionate and smart developers could significantly outperform a large,
+   distributed project team. And long-term, these top developers would
+   recruit other top developers, resulting in a virtuous circle.
+
+   Our team was passionate about software development; we all embraced the
+   ideas of DevOps culture and supporting practices like continuous
+   deployment. In our work on private cloud, we built a continuous
+   integration and deployment system that could take a new level of the
+   private cloud code and deploy all of its components – including
+   OpenStack -– on a set of hardware and then run automated tests against
+   it. This automation was critical to helping us ship important product
+   releases in early 2013.
+
+An opportunity to work like a startup
+
+   In 2013, my wife and I welcomed our third child to the world, but the
+   day of her birth also brought an exciting new project at work. My
+   beeping iPhone indicated it was the CTO of the Service Management
+   division, Dave Lindquist. He had sent me a cryptic but intriguing text
+   message: “We’re starting a new project and we want you to lead it. You
+   just need to build the team.” I was thrilled to hear from Dave since
+   we’d had some great collaborations in the past but hadn’t talked in a
+   while. I replied, “Sounds very interesting. Already have the team.
+   About to have a baby. Will ping you in a few weeks!”
+
+   After I returned from paternity leave, Dave was one of the first people
+   I contacted. He told me about our strategic shift to make SaaS a major
+   focus, and told me about the idea of the new web front-end, which
+   became known as Service Engage. He shared his idea that to have the
+   results of a successful SaaS startup, we should structure the team like
+   a SaaS startup.
+
+   We hadn’t talked in a while so I explained how I had quietly recruited
+   an A-team for the work on private cloud and about our progress adopting
+   modern practices like continuous deployment. Over the next couple of
+   weeks, Dave and the senior leadership team shuffled things around so
+   that we could transition our private cloud work to new developers and
+   we could begin work on Service Engage. Dave and his boss, Chris
+   O’Connor, the VP of Strategy & Engineering for our division, worked
+   with the IBM real estate team to give us a large shared space in which
+   we could physically work like a web startup.
+
+Building the app with less than five months to go
+
+   We moved into the workspace and wrote our first lines of code in
+   mid-September 2013. Interestingly, we spent the first two weeks
+   building a new continuous deployment (CD) system that incorporated all
+   the good stuff from our previous CD system, while chucking the stuff
+   that hadn’t worked.
+
+   Since our team was full of passionate programmers, we had experimented
+   with modern platform-as-a-service (PaaS) systems like Heroku. We heard
+   from people like Dave Lindquist that IBM was investing major resources
+   in our own, at that time unannounced, cloud runtime called Bluemix.
+   Bluemix is a PaaS system based on Cloud Foundry, that accelerates the
+   development of cloud-native apps. We also decided to use a modern
+   database-as-a-service called Cloudant as a backend. To our pleasant
+   surprise, IBM would later acquire Cloudant!
+
+   We made a bet that even though Bluemix was early, it would mature
+   quickly enough that we could make it the foundation for the IBM Service
+   Engage front-end. So we built a continuous deployment system that could
+   do fully-automated zero-downtime deploys to Bluemix. We decided on a
+   team goal of 100% automated test coverage, which helped ensure that the
+   app always improved and never regressed.
+
+   One other safeguard we put in place was an integrated code review
+   system. We learned about this from our work with OpenStack and having
+   read about continuous deployment at places like Facebook. We saw
+   several benefits to encouraging code reviews before delivering:
+     * An extra set of eyes to spot any non-obvious problems that are hard
+       to catch with test automation prior to pushing to production.
+     * Positive peer pressure to align to team standards, e.g. our 100%
+       automated unit test coverage goal.
+     * Improved situational awareness for code moving to production, in
+       case an unexpected problem occurred.
+     * Improved tacit knowledge of the evolving code base.
+
+   We also set a goal for the team that everyone should be full-stack
+   developers, i.e. able to make high-quality contributions to any part of
+   the system – back-end web code, front-end web code, model and
+   persistence logic, authentication, etc. We enabled this in a simple
+   way: If you were weak on any one part of the system, you got the next
+   task related to modifying that part of the system. We used
+   supplementary practices like pair programming to quickly diffuse
+   knowledge.
+
+   Because we only had five months until our conference, we had to be
+   selective about what we worked on. We used the “minimum viable product”
+   concept that we had learned from a team book club reading of Eric Ries’
+   The Lean Startup to help define the simplest possible system that would
+   help us meet our business goals for the conference.
+
+   I won’t lie, this was easier said than done since our definition of
+   “minimum” was often much less than other peoples’ ideas of “minimum.”
+   But we were resolute that we had to ship something of high quality, so
+   we simply had to carve it down to the basics. This was a frequent
+   source of tension and conflict, but we stuck to our guns.
+
+   After five months of work and hundreds of production deploys, we made
+   the site visible on the Internet with three initial SaaS offerings a
+   week before the conference, and announced it on the MGM Grand main
+   stage at the event. We received an enthusiastic reception from both
+   customers and analysts. Many people were frankly stunned by such a
+   seemingly rapid shift in our delivery approach.
+
+Continuous improvement
+
+   No software is ever done and no software team should ever stop growing.
+   Since launching Service Engage at Pulse, the team has made a number of
+   improvements.
+
+   First, we added web analytics instrumentation to the Service Engage
+   site and the SaaS offerings to help us understand how users responded
+   to the user experiences we designed. Our design decisions were
+   initially driven by intuition. While intuition by experienced and
+   talented people is essential, we now use empirical observations of user
+   behavior to help us understand what we get right and what we need to
+   change.
+
+   The second addition was implementation of features not via a staging
+   site, but with techniques that we’ve learned from our friends at Etsy,
+   such as ramp-ups and dark launches. Now, if we’re working on a new
+   version of an experience, we will deliver an early version of that
+   experience to the production site, limit access via various means, and
+   gain confidence in the technical quality of the code and the new user
+   experience via monitoring and instrumentation.
+
+   Finally, from a personal perspective, I recently made a tough decision
+   to take on a new mission in the IBM Design group working on Special
+   Projects. Though I will miss the day-to-day interactions with the
+   Service Engage team, I’m happy that I’ll be able to take our lessons
+   learned and apply them on key mobile, cloud, and cognitive computing
+   projects.
+
+A web app that’s not just a web app for us
+
+   In many ways the IBM Service Engage web app is just another
+   nice-looking web app in a world that has tens of thousands of other
+   nice-looking web apps. But it was a special project for us. We proved
+   to ourselves that a small team could operate like a SaaS startup inside
+   a huge company, and make a big difference in a short amount of time.
+
+   If you’d like to check out Service Engage, it’s here. I hope you like
+   it.
+
+   A version of this post was first published on the IBM Impact Blog.
+   tags: Bluemix, CD, containers, continuous delivery, devops, enterprise,
+   IaaS, ibm, PaaS, SaaS
+   Comments: 4
+
+Get the O’Reilly Web Ops and Performance Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=webops&loc=botpost&emtype=nl
+
+     * Joe Coder
+       Interesting stuff, to be sure, but had to chuckle at “tight-nit”.
+       That would be a drunken louse, perhaps?
+          + Bill Higgins
+            Good catch; fixed :-)
+     * Pauly Will Gamble
+       I wish you made a documentary out of this project!
+     * http://bit.ly/jerryaoverton Jerry Overton
+       Great story. Reminds me of that quote from Margaret Mead: “Never
+       doubt that a small group of thoughtful, committed citizens can
+       change the world; indeed, it’s the only thing that ever has.”
+
+Featured Video
+
+   “These problems are fixable, these problems are important, but they
+   require you to choose to work on them” — Mikey Dickerson looks back on
+   what it took to fix HealthCare.gov.
+
+Recent Posts
+
+     * Python 3: threat or menace?
+     * Four short links: 26 September 2014
+     * Four short links: 25 September 2014
+     * Scaling NoSQL databases: 5 tips for increasing performance
+     * In pursuit of universal IoT standards
+
+   Tweets by @radar
+
+Most Recently Discussed
+
+Featured Download
+
+                                  [cat.gif]
+                         Download the free report >
+                             More free reports >
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee
+
+   close
+
+Get the O’Reilly Web Ops and Performance Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=webops&loc=overlay&emtype=nl

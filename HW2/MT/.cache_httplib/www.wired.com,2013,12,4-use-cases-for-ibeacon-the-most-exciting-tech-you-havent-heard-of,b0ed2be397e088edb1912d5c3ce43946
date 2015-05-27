@@ -1,0 +1,1967 @@
+status: 200
+content-length: 119091
+x-varnish: 1507293714
+content-location: http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of
+x-powered-by: PHP/5.3.3
+accept-ranges: bytes
+-varied-accept-encoding: gzip, deflate
+vary: Accept-Encoding
+x-cacheable: YES
+server: Apache/2.2.15 (Red Hat) mod_ssl/2.2.15 OpenSSL/1.0.0-fips PHP/5.3.3
+x-developers: Conde Nast is hiring. http://www.condenast.com/careers
+last-modified: Sun, 28 Sep 2014 08:47:27 GMT
+connection: keep-alive
+-content-encoding: gzip
+link: <http://www.wired.com/wp-json>; rel="https://github.com/WP-API/WP-API"
+cache-control: must-revalidate, max-age=60
+date: Sun, 28 Sep 2014 15:43:02 GMT
+access-control-allow-origin: *
+content-type: text/html; charset=UTF-8
+x-pingback: http://www.wired.com/xmlrpc.php
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <!--<![endif]-->
+<!-- start wired/views/global/partial-header-meta.php -->
+<head profile="http://gmpg.org/xfn/11" >
+	<!-- MOBIFY - DO NOT ALTER - PASTE IMMEDIATELY AFTER OPENING HEAD TAG -->
+<script type="text/javascript">/*<![CDATA[*/(function(a){function b(a,b){if(+a)return~a||(d.cookie=h+"=; path=/");j=d.createElement(e),k=d.getElementsByTagName(e)[0],j.src=a,b&&(j.onload=j.onerror=b),k.parentNode.insertBefore(j,k)}function c(){n.api||b(l.shift()||-1,c)}if(this.Mobify)return;var d=document,e="script",f="mobify",g="."+f+".com/",h=f+"-path",i=g+"un"+f+".js",j,k,l=[!1,1],m,n=this.Mobify={points:[+(new Date)],tagVersion:[6,1],ajs:"//a.mobify.com/wired/a.js"},o=/((; )|#|&|^)mobify-path=([^&;]*)/g.exec(location.hash+"; "+d.cookie);o?(m=o[3])&&!+(m=o[2]&&sessionStorage[h]||m)&&(l=[!0,"//preview"+g+escape(m)]):(l=a()||l,l[0]&&l.push("//cdn"+i,"//files01"+i)),l.shift()?(d.write('<plaintext style="display:none;">'),setTimeout(c)):b(l[0])})(function(){if(/ip(hone|od)|android.*(mobile)|(mobile).*firefox|blackberry.*applewebkit|bb1\d.+mobile/i.test(navigator.userAgent)){return[1,"//cdn.mobify.com/sites/wired/production/mobify.js"]}return[0,Mobify.ajs]})/*]]>*/</script>
+<!-- END MOBIFY -->
+	<title>4 Reasons Why Apple&#039;s iBeacon Is About to Disrupt Interaction Design | WIRED</title>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="http://www.wired.com/wp-content/themes/wired/assets/js/html5.js"></script>
+	<![endif]-->
+	<!-- WP_HEAD -->
+
+	<meta name="description" content="An emerging, invisible infrastructure will give designers an entirely new technological frontier to explore. "/><meta name="news_keywords" content="Apps, Interaction Design" />	<meta name="keywords" content="Wired.com, Wired News, Wired Blogs, tech news, technology, gadgets, gizmos, reviews, tech, science, politics, culture, electronics">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({D5DuLP:[function(t,n){function e(t,n){var e=r[t];return e?e.apply(this,n):(o[t]||(o[t]=[]),void o[t].push(n))}var r={},o={};n.exports=e,e.queues=o,e.handlers=r},{}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&p&&p.body){l.proto="https"===f.split(":")[0]||t.sslForHttp?"https://":"http://",i("mark",["onload",a()]);var n=p.createElement("script");n.src=l.proto+t.agent,p.body.appendChild(n)}}function r(){"complete"===p.readyState&&o()}function o(){i("mark",["domContent",a()])}function a(){return(new Date).getTime()}var i=t("handle"),u=window,p=u.document,s="addEventListener",c="attachEvent",f=(""+location).split("?")[0],l=n.exports={offset:a(),origin:f,features:[]};p[s]?(p[s]("DOMContentLoaded",o,!1),u[s]("load",e,!1)):(p[c]("onreadystatechange",r),u[c]("onload",e)),i("mark",["firstbyte",a()])},{handle:"D5DuLP"}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}]},{},["G9z0Bl"]);</script>
+	<meta name="viewport" content="width=device-width" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.wired.com/wp-content/themes/wired/assets/images/favicon.ico" />
+	<link rel="alternate" type="application/rss+xml" title="WIRED RSS Feed" href="http://www.wired.com/feed/" />
+	<link rel="pingback" href="http://www.wired.com/xmlrpc.php" />
+	<!-- Facebook -->
+		<meta property="og:locale" content="en_US"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:title" content="4 Reasons Why Apple&#039;s iBeacon Is About to Disrupt Interaction Design | WIRED" />
+	<meta property="og:image" content="http://www.wired.com/wp-content/uploads/images_blogs/design/2013/12/APPLESTORE.jpg" />
+	<meta property="og:description" content="An emerging, invisible infrastructure will give designers an entirely new technological frontier to explore. "/>
+	<meta property="og:url" content="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of"/>
+	<meta property="og:site_name" content="WIRED" />
+	<meta property="fb:admins" content="648235154,789168297,688620285,650984415" />
+	<meta property="fb:page_id" content="19440638720" />
+	<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image:src" content="http://www.wired.com/wp-content/uploads/images_blogs/design/2013/12/APPLESTORE.jpg" />
+	<meta name="twitter:title" content="4 Reasons Why Apple&#039;s iBeacon Is About to Disrupt Interaction Design | WIRED" />
+	<meta name="twitter:description" content="An emerging, invisible infrastructure will give designers an entirely new technological frontier to explore. " />
+	<meta name="twitter:site" content="@wired" />
+	<meta name="twitter:domain" content="WIRED" />
+	<meta name="twitter:creator" content="@wired" />
+
+	<!--  MS/Windows 8 -->
+	<meta name="application-name" content="WIRED: WIRED"/>
+	<meta name="msapplication-tooltip" content="Read in-depth coverage of current and future trends in technology, and how they are shaping business, entertainment, communications, science, politics, and culture at Wired.com."/>
+	<meta name="msapplication-TileColor" content="#cb0004"/>
+	<meta name="msapplication-TileImage" content="http://www.wired.com/wp-content/themes/wired/assets/images/favicon_ie.png" />
+	<meta name="msvalidate.01" content="" />
+
+	<!-- Apple -->
+	<meta name="apple-itunes-app" content="app-id=373903654">
+	<link rel="apple-touch-icon" href="http://www.wired.com/wp-content/themes/wired/assets/images/apple-touch-icon.png" />
+
+	<!-- Google -->
+		<link href="https://plus.google.com/+WIRED" rel="publisher" />
+	<meta name="google-site-verification" content="" />
+	<meta name="gmapkey" content="ABQIAAAAF5yd_X_vTzike6sB6lp3wBQ4h890iMeKvsDZGQOc75SG0lWKAhQW755bw9E_-3ijKe6eqE5sg_NLEw" />
+
+	<!-- Schema.org markup for Google+ on singles for image -->
+	<meta itemprop="image" content="http://www.wired.com/wp-content/uploads/images_blogs/design/2013/12/APPLESTORE-200x100.jpg">
+	<meta itemprop="description" content="An emerging, invisible infrastructure will give designers an entirely new technological frontier to explore. " />
+
+	<meta name="Section" content="Blog" />
+	<meta name="Subsection" content="WIRED" />
+	<meta name="DisplayDate" content="2013-12-11" />
+	<meta name="ExpiryDate" content="2060-12-31" />
+	<meta name="Author" content="Kyle VanHemert" />
+	<meta name="Title" content="4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design" />
+
+<!-- views/stats/partial-parsely-meta -->
+<meta name='parsely-page' content='{"title": "4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design", "link": "http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/", "image_url": "http://www.wired.com/wp-content/uploads/images_blogs/design/2013/12/APPLESTORE-60x60.jpg", "type": "post", "post_id": "361151", "pub_date": "2013-12-11T09:30:07+00:00", "section": "WIRED", "author": "Kyle VanHemert", "tags": ["Apps","Interaction Design"]}'>
+	<link rel="dns-prefetch" href="http://result.wired.com" /><link rel="dns-prefetch" href="http://event.wired.com" /><link rel="dns-prefetch" href="//stats.wired.com" /><link rel="dns-prefetch" href="//sstats.wired.com" />            <!-- Chartbeat -->
+            <script type="text/javascript" class="chartbeat">var _sf_startpt=(new Date()).getTime()</script>
+            
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="An emerging, invisible infrastructure will give designers an entirely new technological frontier to explore."/>
+<link rel="canonical" href="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="WIRED &raquo; 4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design Comments Feed" href="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/feed/" />
+<link rel='stylesheet' id='ning-publisher-style-css'  href='http://www.wired.com/wp-content/plugins/ning-publisher/ning-publisher.css?ver=3.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wired-global-css'  href='http://www.wired.com/wp-content/themes/wired/assets/css/wired-post.css?ver=1411765660' type='text/css' media='screen' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WP_VARS = {"THEME_URI":"http:\/\/www.wired.com\/wp-content\/themes\/wired","ajaxurl":"https:\/\/www.wired.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.wired.com/js/cn-fe-common/cn.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/js/cn-fe-common/cn.mobile.js?ver=1411765660'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var deviceviews = {"mobileMax":"600","tabletMax":"850"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/mu-plugins/cn-wordpress/lib/js/jquery.devices.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://result.wired.com/js/eventTracker.js' async='async'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var s_account = "conde-wired";
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/config/cn-fe-stats/s_code.js?ver=1411765660'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var platformEnvironment = "production";
+var sitehost = "http:\/\/www.wired.com";
+var omniture_init = [];
+CN.omniture = CN.omniture || {};CN.omniture.conf = {"s_account":"conde-wired","server":"stats.wired.com","secureServer":"sstats.wired.com","internalFilters":"javascript:,wired.com,advancemags.com"};;
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/config/cn-fe-stats/omniture.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/config/cn-fe-ads/cn.dart.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/config/cn-fe-ads/cn.ad.aam.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/config/cn-fe-ads/cn.ad.proximic.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/js/cn-fe-ecom/cn.ecom.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/js/cn-fe-ecom/ecomfw.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/js/cn-fe-ecom/promotheus/promotheus.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/themes/wired/assets/js/plugins.min.js?ver=1411765660' async='async'></script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/config/cn-fe-ads/cn.ad.arsaccelerator.js?ver=1411765660'></script>
+<script type='text/javascript' src='http://www.wired.com/wp-content/config/cn-fe-ads/cn.ad.refresh.js?ver=1411765660'></script>
+<link rel='https://github.com/WP-API/WP-API' href='http://www.wired.com/wp-json' />
+            <!-- COMSCORE -->
+	        <script type="text/javascript">
+	        //<!--
+	        	var _comscore = _comscore || [];
+	  			_comscore.push({ c1: "2", c2: "6035094", c4: "http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of"});
+	  			(function() {var s = document.createElement("script"), el =document.getElementsByTagName("script")[0]; s.async = true;
+	    		s.src = (document.location.protocol == "https:" ?"https://sb" : "http://b") +".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);})();
+	  			function slideChangeTrackingFn() {
+	  		         jQuery.ajax({
+	  		         type : 'GET',
+	  		         url : '/pv.xml',
+	  		         success : function(data) {
+	  		                 try {
+	  		                         COMSCORE.beacon({c1:"2", c2: "6035094"});
+	  		                         CN.debug.info("Comscore Non-Conventional(slideshow) Page view triggered.");
+	  		                     } catch(e) {
+	  		                         CN.debug.error('COMSCORE beacon call for slideshow page view failed' + e.message);
+	  		                     }
+	  		                 },
+	  		                 error : function(xhr, textStatus) {
+	  		                         CN.debug.error('page view xml load failed for slideshow, probably 404: ' + textStatus);
+	  		                     }
+	  		                 });
+	  		   }
+	  		//-->
+			</script>
+	            <script type="text/javascript" class="site_init">
+            //<!--
+                CN.site.init({
+                    code:             'WIR',
+                    title:            'WIRED',
+                    name:             'wired',
+                    alias:            'Wired.com',
+                    domain:           'Wired.com',
+                    tld:              'wired.com',
+                    baseUrl:          'http://www.wired.com',
+                    mobilecompatible: 'true',
+                    httpStatusCode:    200,
+            eventServer: 'http://event.wired.com',
+eventTrackingUrl: 'http://result.wired.com',
+eventTrackingEnv: 'PROD',
+userServiceUrl: 'https://user-service.condenastdigital.com',
+userServiceKey: 'd3Vbh/gcAN+GSvYTrIit/uDmPcY=',
+ecomUrl: 'https://subscribe.wired.com/api/circ/xml/Transaction',
+socialRes: 'http://www.wired.com/services/livefyre/userToken',
+                    env: 'PROD'  // Put something consistent last so we don't have a trailing comma (appease IE)
+                });
+
+                CN.isMobile = jQuery.devices.mobile();
+                CN.isTablet = jQuery.devices.tablet();
+                CN.checkDeviceView = jQuery.devices.checkDeviceView;
+            //-->
+            </script>
+                            <!-- AD INIT: CN.dart.init -->
+                <script type="text/javascript">
+                //<!--
+
+                    CN.dartKwsArray = [ "kyle_vanhemert","design","apps","interaction_design","2013","12","4_use_cases_for_ibeacon_the_most_exciting_tech_you_havent_heard_of","kyle_vanhemert","type_post","category_design","subwired_design","single","4_use_cases_for_ibeacon_the_most_exciting_tech_you_havent_heard_of" ];
+
+                
+                    CN.dart.init({
+                        site: CN.isMobile ? 'wiredcom.mobile.dart' : 'wiredcom.dart',
+                        zone: 'design',
+                        kws: CN.dartKwsArray,
+                        charmap : {' ' : '+', '-' : '_'}
+                    });
+                            //-->
+                </script>
+                            <!-- CM: page-ads.js -->
+            <script type="text/javascript">
+            //<!--
+                var _ghearst_vars = (function() {
+                    var commonParams = 'ad_category_prefix=2013'
+                                        + '&amp;browser_path=%2F2013%2F12%2F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of'
+                                        + '&amp;cat_prefixes=%2C2013%2C12%2C4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of'
+                                        + '&amp;site_prefix=wired'
+                                        + '&amp;subdomain=www'
+                                        + '&amp;url_name=4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of';
+
+                                var metaKeyWords = (function() {
+                        var
+                            i                  = 0,
+                            metaKeywordContent = '',
+                            nameAttribute      = null,
+                            metaCollection     = document.getElementsByTagName('meta');
+
+                        for (i=0;i<metaCollection.length;i++) {
+                            nameAttribute = metaCollection[i].name.search(/keywords/);
+                            if (nameAttribute!= -1) {
+                                metaKeywordContent = metaCollection[i].content;
+                                metaKeywordContent = metaKeywordContent.replace(/,/g,'%2C'); // to replace ,
+                                metaKeywordContent = metaKeywordContent.replace(/ /g,''); // to replace space
+                            }
+                        }
+                        return encodeURIComponent(metaKeywordContent);
+                    })();
+            
+                    var deviceParams = (function() {
+                                                if ( ( navigator.userAgent.match(/iPad/i) !== null ) && ( CN.cookie.get('ipadTakeover') !== 'true' ) ) {
+                                return 'AMS_WIR_CONTENTPAGE_HEADERCALLOUT%2CAMS_WIR_CONTENTPAGE_RIGHTRAIL_B%2CAMS_WIR_GLOBAL_NAVBAR%2CAMS_WIR_GLOBAL_NAVBAR_ROLLOVER%2CAMS_WIR_GLOBAL_MAGAZINE_SUBNAV%2CAMS_WIR_GLOBAL_RIGHTRAIL_SUBSERVICES%2CAMS_WIR_BLOGS_RIGHTRAIL_A%2CAMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES%2CAMS_WIR_MOBILE_NAVBAR%2CAMS_WIR_MOBILE_NAV_LINK%2CAMS_WIR_MOBILE_FOOTER_LINK%2CAMS_WIR_POPUP_FLOATINGAD%2CAMS_WIR_GLOBAL_IPAD_TAKEOVER';
+                            } else {
+                                return 'AMS_WIR_CONTENTPAGE_HEADERCALLOUT%2CAMS_WIR_CONTENTPAGE_RIGHTRAIL_B%2CAMS_WIR_GLOBAL_NAVBAR%2CAMS_WIR_GLOBAL_NAVBAR_ROLLOVER%2CAMS_WIR_GLOBAL_MAGAZINE_SUBNAV%2CAMS_WIR_GLOBAL_RIGHTRAIL_SUBSERVICES%2CAMS_WIR_BLOGS_RIGHTRAIL_A%2CAMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES%2CAMS_WIR_MOBILE_NAVBAR%2CAMS_WIR_MOBILE_NAV_LINK%2CAMS_WIR_MOBILE_FOOTER_LINK%2CAMS_WIR_POPUP_FLOATINGAD';
+                            }
+                                                })();
+
+            
+                    return {
+                        'ams_ads_script_src' : 'https://subscribe.wired.com/ams/page-ads.js?'
+                                                + commonParams + ''
+                                                + '&amp;keywords=' + metaKeyWords + ''
+                                                + '&amp;position_list=' + deviceParams + ''
+                    };
+                })();
+
+                if (!window.$h) {window.$h = {}}
+                (function(){
+                    if (!$h.util) {
+                        $h.util = {
+                            buildScriptTag: function(src){
+                                if (!!src){ document.write('<scr' + 'ipt src="'+src+'" type="text/javascript"></scr' + 'ipt>');}
+                            }
+                        }
+                    }
+                    $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+                })();
+            //-->
+            </script>
+            
+	<script type="text/javascript" src="//fonts.condenast.com/ztc8lol.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){console.log("Typekit failed to load! " + e);}</script>
+
+	
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="http://www.wired.com/wp-content/themes/wired/assets/js/selectivizr-min.js"></script>
+	<![endif]-->
+
+</head>
+<body class="single single-post postid-361151 single-format-standard kyle_vanhemert  2013 12 4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of kyle-vanhemert type-post category-design subwired-design">
+<nav id="global-nav">
+	<div id="nav-wrap">
+		<div id='inner-nav'>
+			<div id="logo" itemscope itemtype="http://schema.org/Organization">
+				<a itemprop="url" href="http://www.wired.com"><img nopin="nopin" src="http://www.wired.com/wp-content/themes/wired/assets/images/post_wired_logo_150x60.gif" alt="WIRED" id="logo_home" itemprop="logo" />WIRED</a>
+			</div>
+			<ul id="primary-nav">
+							<!-- nav for GEAR -->
+				<li class="gear">
+				<h2><a class="non-js-menu" href="http://www.wired.com/gear/">
+					GEAR</a></h2>
+				<ul class="subnav">
+										<!-- nav for autopia -->
+					<li class="nav-beat autopia">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/autopia/">Autopia</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/ferrari-458-speciale/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/ferrari-w.jpg" alt="Ferrari Cuts the Top Off of One of the Best Cars It&#039;s Ever Made" />
+		</span>
+		<h4 data-post_time="">Ferrari Cuts the Top Off of One of the Best Cars It&#039;s Ever Made</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/underground-beer-pipeline/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/visit-flanders-w.jpg" alt="Bruges Will Cut Traffic With...an Underground Beer Pipeline" />
+		</span>
+		<h4 data-post_time="">Bruges Will Cut Traffic With...an Underground Beer Pipeline</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/forza-horizon-2-drivatars/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/forza-w.jpg" alt="In Forza Horizon 2, Computers Finally Drive as Crazy as Humans" />
+		</span>
+		<h4 data-post_time="">In Forza Horizon 2, Computers Finally Drive as Crazy as Humans</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for autopia -->
+										<!-- nav for gadget lab -->
+					<li class="nav-beat gadget lab">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/gadgetlab/">Gadget Lab</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/gadget-lab-podcast-224/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/bendgate-w.jpg" alt="Gadget Lab Podcast: We Dig Deep Into the Bendy iPhone Controversy" />
+		</span>
+		<h4 data-post_time="">Gadget Lab Podcast: We Dig Deep Into the Bendy iPhone Controversy</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/apple-rumors-and-reports/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/04/ipadair-w.jpg" alt="This Week&#039;s Apple Rumors, Ranked From Dumbest to Most Plausible" />
+		</span>
+		<h4 data-post_time="">This Week&#039;s Apple Rumors, Ranked From Dumbest to Most Plausible</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/polar-m400-smartwatch/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/polar-w.jpg" alt="Track Your Workout Like a Pro Athlete With This Fancy Smartwatch" />
+		</span>
+		<h4 data-post_time="">Track Your Workout Like a Pro Athlete With This Fancy Smartwatch</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for gadget lab -->
+										<!-- nav for reviews -->
+					<li class="nav-beat reviews">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/reviews/">Reviews</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/iphone-6-review/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/iphone6-gallery-w.jpg" alt="The WIRED iPhone 6 Review: Bigger, Better...and a Little Buggy" />
+		</span>
+		<h4 data-post_time="">The WIRED iPhone 6 Review: Bigger, Better...and a Little Buggy</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/iphone-6-plus-review/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/six-plus-w.jpg" alt="The WIRED iPhone 6 Plus Review: Too Big to Fail, But Not to Bend" />
+		</span>
+		<h4 data-post_time="">The WIRED iPhone 6 Plus Review: Too Big to Fail, But Not to Bend</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/fountain-pen-hi-low/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/inkpens-highlow-w.jpg" alt="When Buying Fountain Pens, Splurging (a Little) Is Totally Worth It" />
+		</span>
+		<h4 data-post_time="86710313515">When Buying Fountain Pens, Splurging (a Little) Is Totally Worth It</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for reviews -->
+									</ul>
+				</li> <!-- /nav for GEAR -->
+							<!-- nav for SCIENCE -->
+				<li class="science">
+				<h2><a class="non-js-menu" href="http://www.wired.com/science/">
+					SCIENCE</a></h2>
+				<ul class="subnav">
+										<!-- nav for science -->
+					<li class="nav-beat science">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/wiredscience/">Science</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/absurd-creature-week-incredible-spider-lives-entire-life-underwater/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/water-spider-w.jpg" alt="Absurd Creature of the Week: The Incredible Spider That Lives Its Entire Life Underwater" />
+		</span>
+		<h4 data-post_time="">Absurd Creature of the Week: The Incredible Spider That Lives Its Entire Life Underwater</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/science-graphic-ice-caps/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/icecaps-graphic-w.jpg" alt="Science Graphic of the Week: Three Ways to Visualize Our Melting Northern Ice Cap" />
+		</span>
+		<h4 data-post_time="">Science Graphic of the Week: Three Ways to Visualize Our Melting Northern Ice Cap</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/new-gm-crops/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/gm-crops-w.jpg" alt="New Generation of GM Crops Puts Agriculture in a &#039;Crisis Situation&#039;" />
+		</span>
+		<h4 data-post_time="">New Generation of GM Crops Puts Agriculture in a &#039;Crisis Situation&#039;</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for science -->
+										<!-- nav for science blogs -->
+					<li class="nav-beat science blogs">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/science-blogs/">Science Blogs</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/double-slit-empzeal/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/plasma-ball-200x100.jpg" alt="Hey There Little Electron, Why Won&#039;t You Tell Me Where You Came From?" />
+		</span>
+		<h4 data-post_time="">Hey There Little Electron, Why Won&#039;t You Tell Me Where You Came From?</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/japans-ontake-erupts-hikers-trapped-injured/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/01-200x100.jpg" alt="Japan&#039;s Ontake Erupts, Hikers Trapped and Injured" />
+		</span>
+		<h4 data-post_time="">Japan&#039;s Ontake Erupts, Hikers Trapped and Injured</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/when-a-giant-asteroid-impact-created-its-own-volcanoes-magma/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/impact-magma-w.jpg" alt="When a Giant Asteroid Impact Created Its Own Magma" />
+		</span>
+		<h4 data-post_time="">When a Giant Asteroid Impact Created Its Own Magma</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for science blogs -->
+									</ul>
+				</li> <!-- /nav for SCIENCE -->
+							<!-- nav for ENTERTAINMENT -->
+				<li class="entertainment">
+				<h2><a class="non-js-menu" href="http://www.wired.com/entertainment/">
+					ENTERTAINMENT</a></h2>
+				<ul class="subnav">
+										<!-- nav for game|life -->
+					<li class="nav-beat game|life">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/gamelife/">Game|Life</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/gamelife-podcast-episode-128/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/hatoful-200x100.jpg" alt="Game|Life Podcast: You and Me Could Write a Bird Romance" />
+		</span>
+		<h4 data-post_time="">Game|Life Podcast: You and Me Could Write a Bird Romance</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/shadow-of-mordor/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/shadow-mordor-w.jpg" alt="Shadow of Mordor Is the Best Lord of the Rings Game Ever" />
+		</span>
+		<h4 data-post_time="">Shadow of Mordor Is the Best Lord of the Rings Game Ever</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/smash-bros-3ds-review/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/3d-smashbros-w.jpg" alt="3DS Smash Bros. Is an Exhilarating Return to Excellence" />
+		</span>
+		<h4 data-post_time="">3DS Smash Bros. Is an Exhilarating Return to Excellence</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for game|life -->
+										<!-- nav for playbook -->
+					<li class="nav-beat playbook">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/playbook/">Playbook</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/man-wired-facebook-helped-build-nfl-stadium-future/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/levis-stadium-w.jpg" alt="How the Man Who Wired Facebook Helped Build the NFL Stadium of the Future" />
+		</span>
+		<h4 data-post_time="184221267051">How the Man Who Wired Facebook Helped Build the NFL Stadium of the Future</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/07/expedition-canoe-gear/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/07/expedition-canoe-w.jpg" alt="Canoeing Through a No-Escape Gauntlet of Whitecaps and Boulders" />
+		</span>
+		<h4 data-post_time="">Canoeing Through a No-Escape Gauntlet of Whitecaps and Boulders</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/07/expedition-mountain-bike-gear/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/07/expeditionbike-w.jpg" alt="How I Survived Biking Through the Mojave Desert for Three Days" />
+		</span>
+		<h4 data-post_time="">How I Survived Biking Through the Mojave Desert for Three Days</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for playbook -->
+										<!-- nav for underwire -->
+					<li class="nav-beat underwire">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/underwire/">Underwire</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/geeks-guide-david-x-cohen/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/davidcohen-w.jpg" alt="Futurama&#039;s Resident Physics Nerd on Math Jokes and Richard Nixon" />
+		</span>
+		<h4 data-post_time="">Futurama&#039;s Resident Physics Nerd on Math Jokes and Richard Nixon</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/radiohead-thom-yorke-bittorrent-album/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/thom-yorke-w.jpg" alt="Thom Yorke Just Released a $6 Album on BitTorrent" />
+		</span>
+		<h4 data-post_time="">Thom Yorke Just Released a $6 Album on BitTorrent</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/brooklyn-nine-nine-primer/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/Brooklyn-Nine-Nine-w.jpg" alt="Everything You Need to Know to Catch Up on Brooklyn Nine-Nine" />
+		</span>
+		<h4 data-post_time="">Everything You Need to Know to Catch Up on Brooklyn Nine-Nine</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for underwire -->
+									</ul>
+				</li> <!-- /nav for ENTERTAINMENT -->
+							<!-- nav for BUSINESS -->
+				<li class="business">
+				<h2><a class="non-js-menu" href="http://www.wired.com/business/">
+					BUSINESS</a></h2>
+				<ul class="subnav">
+										<!-- nav for business -->
+					<li class="nav-beat business">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/business/">Business</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/free-online-classes-still-future-education/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/mooc-w.jpg" alt="Why Free Online Classes Are Still the Future of Education" />
+		</span>
+		<h4 data-post_time="">Why Free Online Classes Are Still the Future of Education</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/facebook-killer-ello-doesnt-care-moneyso-wont-work/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/facebook-killer-w.jpg" alt="&#039;Facebook Killer&#039; Ello Doesn&#039;t Care About Money&mdash;So It Won&#039;t Work" />
+		</span>
+		<h4 data-post_time="">&#039;Facebook Killer&#039; Ello Doesn&#039;t Care About Money&mdash;So It Won&#039;t Work</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/drones-get-ok-feds-shoot-movies-us-airspace/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/film-drones-w.jpg" alt="You Can Now Use Drones to Shoot Movies in the US, Feds Say" />
+		</span>
+		<h4 data-post_time="">You Can Now Use Drones to Shoot Movies in the US, Feds Say</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for business -->
+					<li class="business-conference sponsored nav-beat">
+	<h3 class="feed-title"><a href="http://wiredbusinessconference.com/">Business Conference</a></h3>
+	<ul>
+		<li class="sponsored-hed">
+			<a href="http://wiredbusinessconference.com/"><h4>Promotion</h4></a>
+		</li>
+		<li class="sponsored-content">
+			<a href="http://wiredbusinessconference.com/">
+				<span class="feed-thumbnail"><img nopin="nopin" src="http://www.wired.com/wp-content/themes/wired/assets/images/disruptive_by_design_2012.gif" width="217" height="109" alt="Wired's Disruptive by Design" /></span>
+				<p>
+					In today's business world, disruption is a constant force that never lets up. At the annual WIRED Business Conference: Disruptive by Design, we celebrate the creative power of bold new ideas and the people that make them happen.
+					<br />
+					<br />
+					See the event &gt;
+				</p>
+			</a>
+		</li>
+	</ul>
+</li>					<!-- nav for enterprise -->
+					<li class="nav-beat enterprise">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/wiredenterprise/">Enterprise</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/tech-time-warp-week-tech-giant-saw-future-google-put-business/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/tech-warp-w.jpg" alt="Tech Time Warp of the Week: This Tech Giant Saw the Future. Then Google Put It Out of Business" />
+		</span>
+		<h4 data-post_time="">Tech Time Warp of the Week: This Tech Giant Saw the Future. Then Google Put It Out of Business</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/google-artificial-brain/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/07/brain-w.jpg" alt="You Don&#039;t Have to Be Google to Build an Artificial Brain" />
+		</span>
+		<h4 data-post_time="">You Don&#039;t Have to Be Google to Build an Artificial Brain</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/man-quest-open-source-cancer-research/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/opensource-cancer-w.jpg" alt="The Man on a Quest to Open-Source Cancer Research" />
+		</span>
+		<h4 data-post_time="">The Man on a Quest to Open-Source Cancer Research</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for enterprise -->
+										<!-- nav for innovation insights -->
+					<li class="nav-beat innovation insights">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/insights/">Innovation Insights</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/foxbots/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/iphone_production_660-200x100.jpg" alt="How the iPhone Is Made: &#039;Foxbots&#039; and the World as Stage" />
+		</span>
+		<h4 data-post_time="">How the iPhone Is Made: &#039;Foxbots&#039; and the World as Stage</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/technologies-dominate-2022/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/08/crystalball_660-200x100.jpg" alt="Which Technologies Will Dominate in 2022?" />
+		</span>
+		<h4 data-post_time="">Which Technologies Will Dominate in 2022?</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/venture-capital-for-innovation/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/innovation_wall_660-200x100.jpg" alt="Playing the Field: The Sport of Today’s Venture Capital for Innovation" />
+		</span>
+		<h4 data-post_time="">Playing the Field: The Sport of Today’s Venture Capital for Innovation</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for innovation insights -->
+									</ul>
+				</li> <!-- /nav for BUSINESS -->
+							<!-- nav for SECURITY -->
+				<li class="security">
+				<h2><a class="non-js-menu" href="http://www.wired.com/security/">
+					SECURITY</a></h2>
+				<ul class="subnav">
+										<!-- nav for danger room -->
+					<li class="nav-beat danger room">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/dangerroom/">Danger Room</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/wwis-u-boats-launched-age-unrestricted-warfare/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/uboat-w2.jpg" alt="How WWI&#039;s U-Boats Launched the Age of Unrestricted Warfare" />
+		</span>
+		<h4 data-post_time="-3574057702">How WWI&#039;s U-Boats Launched the Age of Unrestricted Warfare</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/military-grade-drone-can-printed-anywhere/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/3d-printed-drone-w.jpg" alt="A Military-Grade Drone That Can Be Printed Anywhere" />
+		</span>
+		<h4 data-post_time="">A Military-Grade Drone That Can Be Printed Anywhere</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/ww1-fokker-triplane/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/fokker-triplane-w.jpg" alt="How the Red Baron&#039;s Knockoff Aircraft Became the First Great Warplane" />
+		</span>
+		<h4 data-post_time="">How the Red Baron&#039;s Knockoff Aircraft Became the First Great Warplane</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for danger room -->
+										<!-- nav for threat level -->
+					<li class="nav-beat threat level">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/threatlevel/">Threat Level</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/hackers-already-using-shellshock-bug-create-botnets-ddos-attacks/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/images_blogs/threatlevel/2014/01/dark-servers-w.jpg" alt="Hackers Are Already Using the Shellshock Bug to Launch Botnet Attacks" />
+		</span>
+		<h4 data-post_time="">Hackers Are Already Using the Shellshock Bug to Launch Botnet Attacks</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/emv/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/images_blogs/threatlevel/2013/12/visas-w.jpg" alt="Why the Heyday of Credit Card Fraud Is Almost Over" />
+		</span>
+		<h4 data-post_time="">Why the Heyday of Credit Card Fraud Is Almost Over</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/internet-braces-crazy-shellshock-worm/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/04/openssl-w.jpg" alt="The Internet Braces for the Crazy Shellshock Worm" />
+		</span>
+		<h4 data-post_time="">The Internet Braces for the Crazy Shellshock Worm</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for threat level -->
+									</ul>
+				</li> <!-- /nav for SECURITY -->
+							<!-- nav for DESIGN -->
+				<li class="design">
+				<h2><a class="non-js-menu" href="http://www.wired.com/design/">
+					DESIGN</a></h2>
+				<ul class="subnav">
+										<!-- nav for design -->
+					<li class="nav-beat design">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/design/">Design</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/1-5-million-watch-microscopic-sculpture-inside/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/sculpture-watch-w.jpg" alt="This $1.5 Million Watch Has a Microscopic Sculpture Inside" />
+		</span>
+		<h4 data-post_time="">This $1.5 Million Watch Has a Microscopic Sculpture Inside</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/7-strange-art-projects-imagine-life-earth-climate-changes/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/climate-gallery-w.jpg" alt="7 Strange Art Projects Imagine Life After Our Climate Collapses" />
+		</span>
+		<h4 data-post_time="">7 Strange Art Projects Imagine Life After Our Climate Collapses</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/app-fights-acne-nearly-silly-sounds/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/spruce-w.jpg" alt="This App Fights Acne (It&#039;s Not Nearly as Silly as It Sounds)" />
+		</span>
+		<h4 data-post_time="">This App Fights Acne (It&#039;s Not Nearly as Silly as It Sounds)</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for design -->
+										<!-- nav for raw file -->
+					<li class="nav-beat raw file">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/rawfile/">Raw File</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/encountering-the-astronomical-sublime/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/nasa-nostalgia-w.jpg" alt="Old-School NASA Photos Transport You to Space Exploration&#039;s Glory Days" />
+		</span>
+		<h4 data-post_time="">Old-School NASA Photos Transport You to Space Exploration&#039;s Glory Days</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/wet-dogs/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/wet-dogs-w.jpg" alt="Hilarious Photos Capture the Complex Emotions of the Wet Dog" />
+		</span>
+		<h4 data-post_time="">Hilarious Photos Capture the Complex Emotions of the Wet Dog</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/christian-weber-explosions/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/explosions-w.jpg" alt="Beautiful Photos of Explosions Captured at the Perfect Moment" />
+		</span>
+		<h4 data-post_time="197096508706">Beautiful Photos of Explosions Captured at the Perfect Moment</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for raw file -->
+									</ul>
+				</li> <!-- /nav for DESIGN -->
+							<!-- nav for OPINION -->
+				<li class="opinion">
+				<h2><a class="non-js-menu" href="http://www.wired.com/opinion/">
+					OPINION</a></h2>
+				<ul class="subnav">
+										<!-- nav for opinion -->
+					<li class="nav-beat opinion">
+					<h3 class="feed-title">
+						<a href="http://www.wired.com/category/opinion/">Opinion</a>
+					</h3>
+					<ul><!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/im-optimistic-climate-change/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/landscape-w.jpg" alt="I&#039;m Optimistic About Climate Change, and You Should Be Too" />
+		</span>
+		<h4 data-post_time="">I&#039;m Optimistic About Climate Change, and You Should Be Too</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/cargo-drones-in-africa/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/donkey-drones-w.jpg" alt="A Radical But Possible Plan to Connect African Nations With Cargo Drones" />
+		</span>
+		<h4 data-post_time="-3226988902">A Radical But Possible Plan to Connect African Nations With Cargo Drones</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/ebola-can-teach-us-prepare-next-great-pandemic/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/ebola-virus-w.jpg" alt="How Ebola Can Teach Us to Prepare for the Next Great Pandemic" />
+		</span>
+		<h4 data-post_time="">How Ebola Can Teach Us to Prepare for the Next Great Pandemic</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+</ul>					</li> <!-- /nav for opinion -->
+									</ul>
+				</li> <!-- /nav for OPINION -->
+							<!-- nav for MAGAZINE -->
+				<li class="magazine">
+				<h2><a class="non-js-menu" href="http://www.wired.com/subwired/magazine/">
+					MAGAZINE</a></h2>
+				<ul class="subnav">
+					<li class="magazine nav-beat">
+	<h3 class="feed-title"><a href="http://www.wired.com/subwired/magazine">Current Issue</a></h3>
+		<div id="AMS_WIR_GLOBAL_MAGAZINE_SUBNAV" class="ecom-placement">
+		<a target="_blank" href="https://w1.buysub.com/loc/WIR/ATGFailsafe">
+			<img src="http://www.wired.com/images/covers/120x164.jpg" width="110" height="150" alt="Wired Magazine" />
+		</a>
+		<a target="_blank" href="https://w1.buysub.com/loc/WIR/ATGFailsafe">
+			<span>Subscribe</span>
+		</a>
+		            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WIR_GLOBAL_MAGAZINE_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_WIR_GLOBAL_MAGAZINE_SUBNAV" ).html( pageAds.AMS_WIR_GLOBAL_MAGAZINE_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_WIR_GLOBAL_MAGAZINE_SUBNAV not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            	</div>
+		<ul>
+		<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/wrong-theory/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/wrongtheory-w.jpg" alt="Why Getting It Wrong Is the Future of Design" />
+		</span>
+		<h4 data-post_time="198390435106">Why Getting It Wrong Is the Future of Design</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/design-package-2014/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/design-package-w.jpg" alt="13 Lessons for Design&#039;s New Golden Age" />
+		</span>
+		<h4 data-post_time="197475199906">13 Lessons for Design&#039;s New Golden Age</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+<!-- nav for post -->
+<li class="feed-content">
+	<a href="http://www.wired.com/2014/09/zero-theorem/" class="module-globalnav">
+		<span class="feed-thumbnail">
+				<img nopin="nopin" src="http://www.wired.com/wp-content/uploads/2014/09/ut_gilliamqa-w.jpg" alt="Terry Gilliam on His Epic New Dystopian Film The Zero Theorem" />
+		</span>
+		<h4 data-post_time="">Terry Gilliam on His Epic New Dystopian Film The Zero Theorem</h4>
+	</a>
+</li>
+<!-- /nav for post -->
+	</ul>
+</li>				</ul>
+				</li> <!-- /nav for MAGAZINE -->
+						<li class="video secondary">
+	<h2><a href="http://video.wired.com/">Video</a></h2>
+	<ul>
+		<li>
+			<a href="http://video.wired.com/">
+				<img alt="WIRED Video" title="WIRED Video" src="http://www.wired.com/wp-content/themes/wired/assets/images/wired_video_1000x190.jpg">
+			</a>
+		</li>
+	</ul>
+</li><!-- /.video -->
+
+<li class="insider secondary">
+	<h2><a href="http://wiredinsider.com">Insider</a></h2>
+	<ul>
+		<li>
+			<a href="http://wiredinsider.tumblr.com/" alt="insiders"><img alt="WIRED Insider" title="WIRED Insider" src="http://www.wired.com/wp-content/themes/wired/assets/images/wired_insider_1118_1000x190.jpg" /></a>
+		</li>
+	</ul>
+ </li><!-- /.insider.secondary -->
+
+<li class="subscribe secondary">
+		<h2 id="AMS_WIR_GLOBAL_NAVBAR" class="ecom-placement">
+		<a target="_new" class="primaryLink" href="https://w1.buysub.com/loc/WIR/ATGFailsafe">
+			Subscribe
+		</a>
+		            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WIR_GLOBAL_NAVBAR != 'undefined' ) {
+  jQuery( "#AMS_WIR_GLOBAL_NAVBAR" ).html( pageAds.AMS_WIR_GLOBAL_NAVBAR.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WIR_GLOBAL_NAVBAR" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WIR_GLOBAL_NAVBAR not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            	</h2>
+		<ul>
+		<li>	<div id="AMS_WIR_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement">
+		<a id="global_navBar_failsafe" target="_new" href="https://w1.buysub.com/loc/WIR/ATGFailsafe">
+			<img alt="Subscribe to WIRED magazine" src="http://www.wired.com/wp-content/themes/wired/assets/images/subscribe_1000x190.gif" />
+		</a>
+		            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WIR_GLOBAL_NAVBAR_ROLLOVER != 'undefined' ) {
+  jQuery( "#AMS_WIR_GLOBAL_NAVBAR_ROLLOVER" ).html( pageAds.AMS_WIR_GLOBAL_NAVBAR_ROLLOVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_WIR_GLOBAL_NAVBAR_ROLLOVER not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            	</div>
+	</li>
+	</ul>
+</li><!-- /.subscribe.secondary -->			</ul> <!-- end primary nav -->
+			<ul id="nav-extras">
+	<li class="rss"><h2 class="rss-icon"><a href="http://www.wired.com/about/rss_feeds/">RSS</a></h2></li>
+	<li class="search" class='active'>
+
+		<h2 class="search-icon">
+			<a href="http://www.wired.com/search/">Search</a>
+		</h2>
+     </li><!-- /.search.secondary -->
+</ul><!-- /#nav-extras -->		</div>
+	</div> <!-- /#nav-wrap -->
+</nav> <!-- /#global_header -->	<div id="leaderboard">
+		<div class="advertisement"><div id="header728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="header728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "header", { sz: "728x90", kws: [ "top" ], collapse: false } );
+} 
+}</script></div>			<div id="header-ecom">
+				<div id="AMS_WIR_CONTENTPAGE_HEADERCALLOUT" class="ecom-placement">
+		<a target="_new" href="https://w1.buysub.com/loc/WIR/ATGFailsafe">
+			<img alt="Subscribe to WIRED Magazine" src="http://www.wired.com/wp-content/themes/wired/assets/images/subscribe_310x80.gif" />
+		</a>
+		            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WIR_CONTENTPAGE_HEADERCALLOUT != 'undefined' ) {
+  jQuery( "#AMS_WIR_CONTENTPAGE_HEADERCALLOUT" ).html( pageAds.AMS_WIR_CONTENTPAGE_HEADERCALLOUT.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WIR_CONTENTPAGE_HEADERCALLOUT" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WIR_CONTENTPAGE_HEADERCALLOUT not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            	</div>
+				</div>
+			</div>
+
+<div id="shell">
+<!-- end wired/header.php -->
+<div class="schema-wrap" itemscope itemtype="http://schema.org/Article">
+
+<header id="tag-header">
+		<span class="blogName">
+		<a href="http://www.wired.com/category/design/">Design</a>
+	</span>
+		<ul id="tags">
+						<li><a href="http://www.wired.com/tag/apps/">Apps</a></li>
+								<li><a href="http://www.wired.com/tag/interaction-design/">Interaction Design</a></li>
+					</ul>
+	<ul id="follow-wired">
+	<li class="follow">Follow&nbsp;Wired</li>
+	<li><a target="_blank" href="https://twitter.com/#!/Wired" title="Twitter" class="twitter icon">Twitter</a></li>
+	<li><a target="_blank" href="https://www.facebook.com/wired" title="Facebook" class="facebook icon">Facebook</a></li>
+	<li><a target="_blank" href="http://www.wired.com/about/rss_feeds/" title="RSS" class="rss icon">RSS</a></li>
+</ul></header> <!-- end single header -->
+<section>
+
+	<article class='post' id="post-361151" itemscope itemtype="http://schema.org/Article">
+
+		<h1 id="headline" itemprop="url headline name">4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design</h1>
+<link itemprop="url" href="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" />
+<link itemprop="image" href="http://www.wired.com/wp-content/uploads/images_blogs/design/2013/12/APPLESTORE.jpg" />
+
+<ul class="entry-header">
+	
+	<li class="author">By&nbsp;<a rel="author" href="http://www.wired.com/author/kvanhemert/">Kyle VanHemert</a>&nbsp;&nbsp;</li>
+
+	<li class="entryDate"><time itemprop="datePublished" datetime="2013-12-11T09:30:07+00:00">12.11.13</time>&nbsp;&nbsp;&#124;&nbsp;&nbsp;</li>
+	<li class="entryTime">9:30 am&nbsp;&nbsp;&#124;&nbsp;&nbsp;</li>
+
+		<li><a href="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" rel="bookmark" title="4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design">Permalink</a></li></ul> <!-- /#authors entry-header  -->
+
+
+<ul id='social-top' class="social-bookmarking-module ">
+            <li class="facebook-small">
+            <div class="facebook-share-button"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.wired.com%2F2013%2F12%2F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%2F" target="_blank" class="indent">Share on Facebook</a><!-- i have a purpose! i am the counter! delete me at your own peril! --><div>0</div></div>        </li>
+            <li class="twitter-small">
+            <a target="_blank" href="https://twitter.com/share?text=4+Reasons+Why+Apple%27s+iBeacon+Is+About+to+Disrupt+Interaction+Design+%7C+WIRED&url=http%3A%2F%2Fwww.wired.com%2F2013%2F12%2F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%2F" class="twitter-share-button" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>        </li>
+            <li class="google-small">
+            <!--<g:plusone size="medium"></g:plusone>-->
+
+<g:plusone size="medium"></g:plusone>        </li>
+            <li class="linkedin-small">
+            <script src="//platform.linkedin.com/in.js" type="text/javascript">
+  lang: en_US
+</script>
+<script type="IN/Share" data-url="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" data-counter="right"></script>        </li>
+            <li class="pinterest-small">
+            <a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.wired.com%2F2013%2F12%2F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%2F&media=http%3A%2F%2Fwww.wired.com%2Fwp-content%2Fuploads%2Fimages_blogs%2Fdesign%2F2013%2F12%2FAPPLESTORE.jpg&description=4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design" data-pin-do="buttonPin" data-pin-config="beside" target="_blank">
+	<img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
+</a>
+        </li>
+    </ul>
+		<div class="entry">
+			<span itemprop="articleBody"><p><div id="attachment_366571" style="width: 670px" class="wp-caption aligncenter"><a href="http://www.wired.com/design/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/ibeacon660/" rel="attachment wp-att-366571"><img src="http://www.wired.com/design/wp-content/uploads/2013/12/ibeacon660.jpg" alt="" title="ibeacon660" width="660" height="415" class="size-full wp-image-366571"></a><p class="wp-caption-text">iBeacon, a new feature in iOS7 that harnesses the latest version of Bluetooth, comes with all sorts of compelling use cases. <em>Josh Valcarcel/WIRED</em></p></div>
+</p><p>You step inside Walmart and your shopping list is transformed into a personalized map, showing you the deals that&rsquo;ll appeal to you most. You pause in front of a concert poster on the street, pull out your phone, and you&rsquo;re greeted with an option to buy tickets with a single tap. You go to your local watering hole, have a round of drinks, and just leave, having paid&mdash;and tipped!&mdash;with Uber-like ease. Welcome to the world of iBeacon.</p>
+<p>It sounds absurd, but it&rsquo;s true: Here we are in 2013, and one of the most exciting things going on in consumer technology is <em>Bluetooth</em>. Indeed, times have changed. This isn&rsquo;t the maddening, battery-leeching, why-won&rsquo;t-it-stay-paired protocol of yore. Today we have Bluetooth Low Energy which solves many of the technology&rsquo;s perennial problems with new protocols for ambient, continuous, low-power connectivity. It&rsquo;s quickly becoming big deal.</p>
+<div class="pullquote-left">It&rsquo;s a step closer to our gear existing in a truly intelligent ecosystem.</div>
+<p>Why? Because it means we&rsquo;re finally at a place where gadgets can talk to each other wirelessly without demanding that we, the users, make the arrangements at every encounter (also a place where we don&rsquo;t have to sacrifice our batteries to do so). It means we&rsquo;re entering a world where our phones won&rsquo;t just be in continuous contact with satellites and cell towers&mdash;but also potentially with our laptops, our TVs, and the high-tech bangles on our wrists. It&rsquo;s a step closer to our gear existing in a truly intelligent ecosystem.</p>
+<p>And yet, gadgets talking to other gadgets is only part of the allure. Even more novel is the promise of letting our devices talk to the world around us, whether we&rsquo;re in a bar, a bookstore, or a ballpark. That&rsquo;s precisely the future Apple is quietly laying the tracks for with a little-known iOS 7 feature called iBeacon. </p>
+<p>Strictly speaking, iBeacon is a protocol that lets developers harness the latest Bluetooth Low Energy technology in their apps, but the term &ldquo;iBeacon&rdquo; has quickly been adopted for referring to physical things: the nodes in this new wireless network. Effectively, anything that has the latest version of Bluetooth can function as an iBeacon. In some cases, that can mean a smartphone. Google recently jumped on the Bluetooth LE train, baking it into Android 4.3. Apple has been building it into their devices since the iPhone 4, meaning that every iPhone from the last two years is essentially an iBeacon in itself.</p>
+<div id="attachment_366761" style="width: 670px" class="wp-caption aligncenter"><a href="http://www.wired.com/design/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/20130403-htc-one-008edit-660x440/" rel="attachment wp-att-366761"><img src="http://www.wired.com/design/wp-content/uploads/2013/12/20130403-HTC-ONE-008edit-660x440.jpg" alt="" title="20130403-HTC-ONE-008edit-660x440" width="660" height="440" class="size-full wp-image-366761"></a><p class="wp-caption-text">Android 4.3 brings Bluetooth 4.0 support to Android devices. <em>Photo by Ariel Zambelich/Wired</em></p></div>
+<p>More exciting, though, are standalone iBeacons: low-cost gizmos that continually beam out a Bluetooth signal, running for up to a year on a small watch battery. These are the types of transmitters that will open the physical world to our digital devices. The barista at your local coffee shop may already know your face, but with an iBeacon stuck to its front window, that coffee shop will be able to know your smartphone, too. </p>
+<p>Where does that leave us? We&rsquo;re already starting to see hints of the possibilities, and only a handful of them involve coupons.</p>
+<h3>1. Tying Digital Content to the Physical World</h3>
+<p>The most obvious application for iBeacon is tying digital information to physical places. When Apple first presented iBeacon to developers at their WWDC conference this summer, they used the example of an art museum. Instead of punching a three-digit number into a handheld tour guide, you could walk up to a painting, pull out your iPhone, and find additional information on the artwork right there waiting for you. </p>
+<p>That&rsquo;s neat if you like art museums. But undergirding that use case are several of the things that make iBeacon and Bluetooth LE so powerful. For one, the technology can pinpoint you&ndash;indoors or out&ndash;with an astonishing degree of accuracy. Multiple beacons can triangulate your position at distances anywhere from 100 feet down to just a few inches, heralding a new era of digital experiences based on &ldquo;microlocation.&rdquo; That ability to triangulate means museums won&rsquo;t need to stick beacons next to every painting, they&rsquo;d just need to put a handful in every room. </p>
+<p>The other aspect the museum example illustrates is the passive nature of iBeacon. The protocol is designed so that all the triangulating happens constantly and quietly in the background. When you pull out your phone, the right content is there waiting for you. This immediacy is one big advantage Bluetooth now has over clunky predecessors like NFC and QR codes.</p>
+<div class="pullquote-right">All the triangulating happens constantly and quietly in the background.</div>
+<p>The potential for location-based content is huge, and it could take many forms. The Bar Kick pub in London is <a href="http://www.loopinsight.com/2013/12/04/ibeacon-combines-with-ios-newsstand-to-deliver-location-sensitive-content/?utm_source=loopinsight.com&amp;utm_campaign=loopinsight.com&amp;utm_medium=referral">already taking a novel approach</a>. Everyone sitting inside the bar will find the most recent digital editions of two popular magazines ready to read in their device&rsquo;s Newsstand app, free of charge. Yes, iBeacon could spell the end of paging through germy old issues of <em>People</em> magazine before your doctor&rsquo;s appointment.  </p>
+<p>It&rsquo;s easy to imagine other variations on the theme. Digital geocaches could let you drop animated GIFs at obscure hiding spots throughout your city. Intersections could become invisible tour stops augmented with local lore. Citi Field, home of the Mets, is already experimenting with embedded videos, dynamic hot dog coupons, and straight-to-your-seat navigation&mdash;<a href="http://techcrunch.com/2013/09/29/mlbs-ibeacon-experiment-may-signal-a-whole-new-ball-game-for-location-tracking/">the augmented ballpark of the future</a>, all built on iBeacon.</p>
+<h3>2. Seamless Setup for All Your Gadgets</h3>
+<p>Giving devices real world awareness doesn&rsquo;t just herald new interactions. It could be used to smooth out old ones, too. Why type in a password when your person will suffice? Apple&rsquo;s already using the latest version of Bluetooth to eliminate one of the most singularly frustrating experiences in consumer technology today: typing in a Wi-Fi password with the Apple TV&rsquo;s finicky remote. The latest Apple TV software brought <a href="http://techcrunch.com/2013/09/25/apple-turns-apple-tv-into-an-ibeacon-to-enable-touch-to-set-up-with-ios-7-devices/">a fantastically clever workaround</a>. You just tap your iPhone to the Apple TV itself, and it passes your Wi-Fi and iTunes credentials over and sets everything up instantaneously.</p>
+<p>This admittedly is a narrow inconvenience, but the idea here is an important one. Using physical proximity to intelligently pass data between devices will make our lives easier in innumerable ways. In combination with new types of authentication like TouchID, constant device-to-device chatter is a vital step towards a future where your digital identity&mdash;all yours accounts, services, files and preferences&mdash;are tied inextricably to you, instead of being scattered around the cloud, hidden behind myriad logins.</p>
+<p>That could mean something as simple as your car adjusting the seat and mirrors depending on whether you, your spouse, or your kid plunks down in the drivers seat. But it could be far more complex. Imagine this: You sit down at any computer in the world, put your thumb on your iPhone&rsquo;s fingerprint reader, and instantly that computer becomes your machine. Your desktop, your settings, your files. It&rsquo;s like Dropbox turned up to eleven. It&rsquo;s also something for which <a href="http://appleinsider.com/articles/10/11/11/apples_interest_in_simplified_remote_computing_revealed">Apple holds a patent.</a></p>
+<div class="pullquote-left">The latest Apple TV software brought a fantastically clever workaround.</div>
+<h3>3. Retail 2.0</h3>
+<p>So far, the most frenzied activity surrounding iBeacon has been in the world of retail, where there&rsquo;s potential for shops big and small. At one end, you have big name retailers who are eager to push retail into the future with highly tailored digital experiences. Macy&rsquo;s is <a href="http://www.macrumors.com/2013/11/20/shopkick-and-macys-team-up-for-first-retail-based-ibeacons/">already installing iBeacons</a> in their New York City and San Francisco stores with the help of an outfit called Shopkick. Walking into one of those locations will automatically surface the Shopkick app, which can make specialized offers to customers depending on where they are in the store. Apple flipped the switch on iBeacons in its own retail stores last week.</p>
+<div id="attachment_364781" style="width: 670px" class="wp-caption aligncenter"><a href="http://www.wired.com/design/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/estimote1-2/" rel="attachment wp-att-364781"><img src="http://www.wired.com/design/wp-content/uploads/2013/12/estimote1.jpg" alt="" title="estimote1" width="660" height="407" class="size-full wp-image-364781"></a><p class="wp-caption-text">Estimote is one startup already pursuing the standalone iBeacon with an aim of transforming retail. <em>Image: Estimote</em></p></div>
+<p>That&rsquo;s just the beginning, though. Retailers are already talking about things like in-store navigation and dynamic pricing, all made possible by beacon-enhanced retail locations. For independent shops, iBeacon is a chance to jump into the smartphone era with one fell swoop. A $100 beacon is all it takes for even the mustiest book store to track customers, make recommendations, and offer discounts to customers&rsquo; pockets. </p>
+<p>The other area of activity here is in payments. Paypal&rsquo;s already showing off its own &ldquo;Beacon,&rdquo; a USB device that will interface with the Paypal app to let users make totally hands-free transactions. The <a href="http://www.wired.com/design/2013/11/digital-wallets-are-a-huge-ux-challenge-whos-going-to-solve-it/">problem of digital wallets is a tricky one</a>, but the technology is finally starting to make sense. Three years ago, the future of digital wallets rested entirely with NFC. Today it seems like Bluetooth is the one poised to finally bring mobile payments to the mainstream.</p>
+<p><div id="attachment_364791" style="width: 221px" class="wp-caption alignright"><a href="http://www.wired.com/design/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/applestore/" rel="attachment wp-att-364791"><img src="http://www.wired.com/design/wp-content/uploads/2013/12/APPLESTORE.jpg" alt="" title="APPLESTORE" width="211" height="428" class="size-full wp-image-364791"></a><p class="wp-caption-text">Apple flipped the switch on iBeacons in its retail stores last week. <em>Image: Apple</em></p></div>Supercharged retail will likely be the first exposure many have to the powers of iBeacon. It&rsquo;s also in many ways one of its least exciting use cases. Apple&rsquo;s own implementation doesn&rsquo;t extend much beyond greeting you when you walk in the store and pinging you about upgrade availability when you pass by the iPhone section, both of which sound potentially more like interruptions than delightful touches of Apple magic. In other words, businesses will have to be careful not to inundate us with crap, lest they kill the future of retail before it arrives.</p>
+<h3>4. A New Level of Peer-to-Peer Smarts </h3>
+<p>More exciting than turbocharged coupons, however, are the new types of applications that Bluetooth LE could engender. Apps have long had access to location data via GPS, but pinging satellites is a big drain on precious battery life. Just consider how quickly your charge evaporates when you&rsquo;re using Google Maps. iBeacon gives applications a new way to orient themselves in the real world, continuously, without evaporating your charge (new geofencing APIs give apps other new, battery-friendly ways to track).</p>
+<p>When you combine this with the fact that every recent iPhone&mdash;and many new Android devices&mdash;can function as iBeacons themselves, you can envision all sorts of exciting peer-to-peer interactions. Imagine a hook-up app like Tinder for the bar you&rsquo;re in, with Bluetooth facilitating the flirting before you even say hello. (Gross, I know, but is there any doubt that someone will get millions in VC funding for this?) More wholesomely, think of games that let you challenge people waiting at your airport gate. Or spontaneous messaging based on your real-world location&mdash;an update of the old anonymous AOL chat rooms organized not by topic but by wherever you happen to be standing.</p>
+<p>***</p>
+<p>Some of these use cases can flourish today. There are already <a href="http://techcrunch.com/2013/12/07/the-open-secret-of-ibeacon-apple-could-have-250m-units-in-the-wild-by-2014/">nearly 200 million iBeacons in the wild</a> in the form of the phones in our pockets. A handful of startups are aggressively pursuing the standalone iBeacon; deployment will follow soon. <a href="http://www.wired.com/design/2013/08/how-a-startups-cheap-sensors-could-bring-shopping-and-mobile-computing-into-the-future/">These devices are already cheap, ranging anywhere from $40 to $100 a piece</a>.</p>
+<p>In a few years, they&rsquo;ll be considerably cheaper. They&rsquo;re currently small enough to house in paper weight-size enclosures; someday they could be small enough to sew into a jacket or build into the sole of a shoe. They can already survive for a year on a coin cell battery, but life expectancy could expand too. Earlier this year, Apple acquired a company called Passif, one of whose most valuable assets was a technology that charged low-power sensors ambiently using nothing more than the radio waves already saturating the air. Conceivably, Apple could someday sell their own dirt cheap iBeacons that charge themselves indefinitely.</p>
+<p>This emerging, invisible infrastructure will give designers an entirely new technological frontier to explore. There are obstacles. Developers will have to deal with thorny privacy issues, for one, and corporations will have to resist the urge to bombard us with new hyper-localized notifications with our every step. But there&rsquo;s huge potential for Bluetooth LE and iBeacon. They represent a chance to teach our old gadgets some truly new tricks.</p></span>
+					</div>
+
+		
+<div id='social-bottom' class="social-bookmarking-module">
+    <ul>
+        <li class="facebook-small"><div class="facebook-share-button"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.wired.com%2F2013%2F12%2F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%2F" target="_blank" class="indent">Share on Facebook</a><!-- i have a purpose! i am the counter! delete me at your own peril! --><div>0</div></div></li>
+        <li class="twitter-small"><a target="_blank" href="https://twitter.com/share?text=4+Reasons+Why+Apple%27s+iBeacon+Is+About+to+Disrupt+Interaction+Design+%7C+WIRED&url=http%3A%2F%2Fwww.wired.com%2F2013%2F12%2F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%2F" class="twitter-share-button" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+        <li class="google-small"><!--<g:plusone size="medium"></g:plusone>-->
+
+<g:plusone size="medium"></g:plusone></li>
+        <li class="linkedin-small"><script src="//platform.linkedin.com/in.js" type="text/javascript">
+  lang: en_US
+</script>
+<script type="IN/Share" data-url="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" data-counter="right"></script></li>
+    </ul>
+    <ul>
+        <li class="reddit"><a title="Submit to Reddit" href="http://www.reddit.com/submit?url=http%253A%252F%252Fwww.wired.com%252F2013%252F12%252F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%252F&amp;title=4%2BReasons%2BWhy%2BApple%2526%25238217%253Bs%2BiBeacon%2BIs%2BAbout%2Bto%2BDisrupt%2BInteraction%2BDesign" target="_blank"> Reddit </a>
+</li>
+        <li class="digg"><a title="Digg this article" href="http://www.digg.com/submit?url=http%253A%252F%252Fwww.wired.com%252F2013%252F12%252F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%252F&amp;t=4%2BReasons%2BWhy%2BApple%2526%25238217%253Bs%2BiBeacon%2BIs%2BAbout%2Bto%2BDisrupt%2BInteraction%2BDesign" target="_blank">Digg</a></li>
+        <li class="stumbleupon"><a title="Recommend on StumbleUpon" href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fwww.wired.com%252F2013%252F12%252F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of%252F&amp;title=4%2BReasons%2BWhy%2BApple%2526%25238217%253Bs%2BiBeacon%2BIs%2BAbout%2Bto%2BDisrupt%2BInteraction%2BDesign" target="_blank">Stumble Upon</a></li>
+        <li class="email"><a  href="mailto:?subject=Check out this article on Wired.com: 4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design&amp;body=Check out this article on Wired.com.
+
+4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" target="_blank">Email</a></li>
+    </ul>
+</div>
+<div class="entry-tags">
+	Tags: <a href="http://www.wired.com/tag/apps/" rel="tag">Apps</a>, <a href="http://www.wired.com/tag/interaction-design/" rel="tag">Interaction Design</a></div>
+
+<ul class="entry-extra">
+	<li><a href="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/#respond" title="Comment on 4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design"><span class="dsq-postid" rel="361151 http://www.wired.com/design/?p=361151">Discuss</span></a> | </li>
+	<li><a href="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" rel="bookmark" title="Perament Link to 4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design">Permalink</a></li>
+</ul><div class="advertisement"><div id="spot_c300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="spot_c300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "spot_c", { sz: "300x250", kws: [ "spot_c" ], collapse: true } );
+} 
+}</script></div>        <!-- OUTBRAIN -->
+        <div class="OUTBRAIN" data-src="http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" data-widget-id="AR_1" data-ob-template="Wired" ></div>
+        
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/';
+    var disqus_identifier = '361151 http://www.wired.com/design/?p=361151';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'wired';
+    var disqus_title = "4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/www.wired.com\/2013\/12\/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+	</article>
+
+	
+</section><!--end section-->
+</div>
+
+
+<!-- start wired/default-sidebar -->
+<aside id="sidebar">
+				<div class="textwidget"><div class="advertisement"><div id="xrailTop300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="xrailTop300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "xrailTop", { sz: "300x250", kws: [ "top" ], collapse: false } );
+} 
+}</script></div></div>
+					
+					
+					
+					<div class="textwidget"><div id="sidebar-posts-aggregate" class="widget RSSAggregatorWidget"></div>
+<script type="text/javascript">
+	(function( $ ) {
+		var items=[];
+		$.getJSON("http://www.wired.com/wiredcms/most_recent_posts.json", function( data ) {
+			items.push('<li class="promo title"><h4 class="promo-title">MOST RECENT WIRED POSTS</li></h4></li>');
+			// console.log( data );
+			$.each( data, function( idx, post ) {
+				// find a thumbnail
+				var post_thumbnail = 'http://www.wired.com/wp-content/themes/wired/assets/images/200x100-fallback.jpg';
+				if( post.custom_fields.imagePath200x100 != undefined && post.custom_fields.imagePath200x100 != '' ) {
+					var post_thumbnail = post.custom_fields.imagePath200x100;
+				} else if( post.custom_fields.imagePath300x160 != undefined && post.custom_fields.imagePath300x160 != '' )  {
+					var post_thumbnail = post.custom_fields.imagePath300x160;
+				}
+	    		items.push( '<li class="promo-item" id="promo-item-count'+(idx+1)+'"><div class="promo-thumbnail"><a href="'+post.url+'"><img nopin="nopin" src="'+post_thumbnail+'" class="post-thumb" alt="'+post.title_plain+'" /></a></div>');
+	    		items.push( '<div class="promo-wrapper"><div class="promo-headline"><a class="module-rsswidget" href="'+post.url+'">'+post.title+'</a></div></div></li>');
+    		});
+    		$("<ul/>", {
+    			"class":"rss-widget item rss-promo",
+    			html: items.join(""),
+    		}).appendTo($("#sidebar-posts-aggregate"));
+    	});
+    	// console.log('MOST RECENT WIRED POSTS partial-sidebar-promo complete');
+	})(jQuery);
+</script></div>
+					<div class="textwidget"><div class="advertisement"><div id="xrailMiddle300x60_frame" class="displayAd displayAd300x60Js" data-cb-ad-id="xrailMiddle300x60_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "xrailMiddle", { sz: "300x60", kws: [ "middle" ], collapse: true } );
+} 
+}</script></div></div>
+					<div class="textwidget"><div class="advertisement"><div id="xrailBottom300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="xrailBottom300x250_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "xrailBottom", { sz: "300x250", kws: [ "bottom" ], collapse: false } );
+} 
+}</script></div></div>
+					<div class="textwidget"><div id="sidebar-popular-aggregate" class="widget MostPopularWidget"></div>
+<script type="text/javascript">
+    (function( $ ) {
+    	$(document).ready(function() {
+	        var items=[];
+	        $.getJSON('http://www.wired.com/wiredcms/chartbeat.json', function( data ) {
+	            var cnt=0;
+	            items.push('<h4>TRENDING NOW ON WIRED</h4>');
+	            $.each( data.pages, function( idx, page ) {
+	                if( page.path === 'www.wired.com/' ) {
+	                    return true;
+	                }
+
+	                if( cnt === 0 ) {
+	                    most_ppl = page.stats.people;
+	                }
+
+	                ppl = page.stats.people;
+	                var pop_opcty = (ppl/most_ppl);
+	                var pop_width = Math.round( pop_opcty * 250 );
+	                pop_opcty = pop_opcty < 0.25 ? 0.25 : pop_opcty;
+	                pop_width = pop_width < 10 ? 10 : pop_width;
+	                s_title = page.title.split('|');
+	                var row_c = ( cnt % 2 ) === 0 ? 'even' : 'odd';
+	                cnt++;
+
+	                items.push('<a class="module-mostpopular" href="http://'+page.path+'"><div class="'+row_c+'"><div class="sotw_link_popular"><p>'+s_title[0].trim()+'</p></div>');
+	                items.push('<div class="popularity-line" style="width:'+pop_width+'px; opacity:'+pop_opcty+';"><!-- '+ppl+' | '+pop_width+' | '+pop_opcty+'--></div></div></a>');
+	            });
+	            $(items.join('')).appendTo($('#sidebar-popular-aggregate' ) );
+	        });
+	        // console.log('TRENDING NOW ON WIRED partial-sidebar-popular complete');
+        });
+    })(jQuery);
+</script></div>
+					
+					<div class="textwidget"><div><div id="masthead">
+
+    <h3>
+        <span class="kicker">Wired</span>
+        design
+    </h3>
+
+    <dl>
+        <dt>
+            Editor
+        </dt>
+
+        <dd>
+            <a href="/author/cliffkuang/">Cliff Kuang</a>
+        </dd>
+
+        <dt>
+            Staff Writers
+        </dt>
+
+        <dd>
+            <a href="/author/jflaherty/">Joseph Flaherty</a>
+        </dd>
+
+      <dd>
+            <a href="/author/margaret-rhodes/">Margaret Rhodes</a>
+        </dd>
+
+        <dd>
+            <a href="/author/lizstinson/">Liz Stinson</a>
+        </dd>
+
+        <dd>
+            <a href="/author/kvanhemert/"><em>Kyle VanHemert</em></a>
+        </dd>
+
+    </dl>
+
+</div>
+</div></div>
+					<div class="textwidget"><h4>Subscribe to Wired Magazine</h4>
+	<div id="AMS_WIR_BLOGS_RIGHTRAIL_A" class="ecom-placement">
+		<a href="https://w1.buysub.com/loc/WIR/ATGFailsafe" target="_blank">
+			<img alt="Subscribe to WIRED Magazine" src="http://www.wired.com/wp-content/themes/wired/assets/images/subscribe_290x110.gif" />
+		</a>
+		            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WIR_BLOGS_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_WIR_BLOGS_RIGHTRAIL_A" ).html( pageAds.AMS_WIR_BLOGS_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WIR_BLOGS_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WIR_BLOGS_RIGHTRAIL_A not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            	</div>
+	</div>
+					<div class="textwidget">	<div id="AMS_WIR_CONTENTPAGE_RIGHTRAIL_B" class="ecom-placement">
+		<a href="https://w1.buysub.com/loc/WIR/ATGFailsafe" target="_blank">
+			<img alt="Subscribe to WIRED Magazine" src="http://www.wired.com/wp-content/themes/wired/assets/images/subscribe_290x110.gif" />
+		</a>
+		            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WIR_CONTENTPAGE_RIGHTRAIL_B != 'undefined' ) {
+  jQuery( "#AMS_WIR_CONTENTPAGE_RIGHTRAIL_B" ).html( pageAds.AMS_WIR_CONTENTPAGE_RIGHTRAIL_B.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WIR_CONTENTPAGE_RIGHTRAIL_B" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WIR_CONTENTPAGE_RIGHTRAIL_B not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            	</div>
+	</div>
+					<div class="textwidget"><h4>Advertisement</h4>
+<script type="text/javascript">
+<!--
+google_ad_client       = 'ca-conde_wired';
+google_ad_channel      = 'wir_standard_a';
+google_ad_width        = '234';
+google_ad_height       = '180';
+google_image_size      = '234x180';
+google_adtest          = 'off';
+google_ad_type         = 'text';
+google_alternate_color = '#1c9dff';
+google_color_bg        = '#FFFFFF';
+google_color_border    = '#FFFFFF';
+google_color_line      = '#FFFFFF';
+google_color_link      = '#1c9dff';
+google_color_text      = '#3d3d3d';
+google_color_url       = '#aaaaaa';
+google_max_num_ads     = '3';
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+					<div class="textwidget"><h3>Services</h3>
+	<div id="AMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES" class="ecom-placement">
+		<a href="https://w1.buysub.com/loc/WIR/ATGFailsafe" target="_blank">
+			<img alt="Subscribe to WIRED Magazine" src="http://www.wired.com/wp-content/themes/wired/assets/images/subscribe_290x110.gif" />
+		</a>
+		            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( typeof pageAds.AMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES != 'undefined' ) {
+  jQuery( "#AMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES" ).html( pageAds.AMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_WIR_BLOGS_RIGHTRAIL_SUBSERVICES not in pageAds."); }
+                    })();
+                                }
+            //-->
+            </script>
+            	</div>
+	
+<div class="group">
+<strong>Quick Links:</strong>
+<a href="/about/feedback/">Contact Us</a>
+|
+<a id="login_link" href="/user/login" style="display: inline;">Login/Register</a>
+<a id="logout_link" href="/user/logout" style="display: none;">Logout</a>
+|
+<a href="/services/newsletters">Newsletter</a>
+|
+<a href="/about/rss_feeds/">RSS Feeds</a>
+|
+<a href="http://jobs.wired.com">WIRED Jobs</a>
+|
+<a href="/about/mobile/">WIRED Mobile</a>
+|
+<a href="/about/faq">FAQ</a>
+|
+<a href="/about/sitemap/">Sitemap</a>
+</div>
+</div>
+		</aside>
+<!-- end wired/default-sidebar -->
+<!-- start wired/footer.php -->
+
+</div> <!-- close please? -->
+</div> <!-- close shell -->
+
+	<div id="footer-ad">
+	<div class="advertisement"><div id="bottom728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="bottom728x90_frame"></div><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "bottom", { sz: "728x90", kws: [ "bottom" ], collapse: true } );
+} 
+}</script></div>	</div>
+
+<!-- #post-nav-->
+<div id="post-nav" class="hidden fixed">
+	<button type="button" title="Collapse menu (Press m)">Collapse</button>
+		<a href="http://www.wired.com/2013/12/pawncoin/" class="prev  module-prevnext" title="Previous article (Press Shift + j or Shift + [left arrow])">
+		<div>Previous Article</div>
+		<h3>Need Cash, But Don't Want to Lose Your Bitcoins? Pawn Them</h3>
+			</a>
+		<a href="http://www.wired.com/2013/12/qr-code-gif-modern-art/" class="next no-image module-prevnext" title="Next article (Press Shift + k or Shift + [right arrow])">
+		<div>Next Article</div>
+		<h3>Scan These QR Codes to Generate GIF Galleries in Your Phone</h3>
+			</a>
+	</div> <!-- /#post-nav-->
+
+<footer>
+	<ul class='row' id='footer-wired-links'>
+		<li><a href="http://www.wired.com/about/faq/">FAQ</a> | </li>
+		<li><a href="http://www.wired.com/about/feedback/">Contact Us</a> | </li>
+		<li><a href="http://www.wired.com/about/wired-staff/">WIRED Staff</a> | </li>
+		<li><a href="http://www.wired.com/about/staff_publishing/" target="_blank">Advertising</a> | </li>
+		<li><a href="http://www.wired.com/about/press/">Press Center</a> | </li>
+		<li><a href="http://www.wired.com/customerservice" target="_blank">Subscription Services</a> | </li>
+		<li><a href="/services/newsletters/demographics/">Newsletter</a> | </li>
+		<li><a id="footer_rss_icon" href="/about/rss_feeds/">RSS Feeds</a></li>
+	</ul>
+
+	<ul class='row' id='footer-conde-links'>
+		<li><strong>Cond&eacute; Nast Web Sites:</strong></li>
+		<li><a href="http://www.webmonkey.com">Webmonkey</a> |</li>
+		<li><a href="http://www.reddit.com">Reddit</a> | </li>
+		<li><a href="http://www.arstechnica.com">ArsTechnica</a> |</li>
+		<li><a href="http://www.details.com/">Details</a> |</li>
+		<li><a href="http://www.golfdigest.com/">Golf Digest</a> |</li>
+		<li><a href="http://www.gq.com/">GQ</a> |</li>
+		<li><a href="http://www.newyorker.com/">New Yorker</a></li>
+	</ul>
+
+	<div class='row' id='footer-dropdown'>
+		<form>
+			<fieldset>
+				<select id="footer_dropdowns_subscribe" name="footer_dropdowns_subscribe">
+					<option>Subscribe to a magazine:</option>
+					<option value="http://www.magazinestoresubscriptions.com/?source=SITEFOOTER">View All Titles</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?source=SITEFOOTER">Allure</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?source=SITEFOOTER">Architectural Digest</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?source=SITEFOOTER">Bon App&#233;tit</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?source=SITEFOOTER">Brides</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?source=SITEFOOTER">Cond&#233; Nast Traveler</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?source=SITEFOOTER">Details</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?source=SITEFOOTER">Glamour</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?source=SITEFOOTER">Golf Digest</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?source=SITEFOOTER">Golf World</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?source=SITEFOOTER">GQ</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?source=SITEFOOTER">Lucky</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?source=SITEFOOTER">Self</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?source=SITEFOOTER">Teen Vogue</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?source=SITEFOOTER">The New Yorker</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?source=SITEFOOTER">Vanity Fair</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?source=SITEFOOTER">Vogue</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?source=SITEFOOTER">W</option>
+					<option value="http://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?source=SITEFOOTER">WIRED</option>
+				</select>
+				<select id="footer_dropdowns_sites" name="footer_dropdowns_sites">
+					<option>Cond&#233; Nast web sites:</option>
+					<option value="http://www.allure.com/">Allure</option>
+					<option value="http://www.architecturaldigest.com/">Architectural Digest</option>
+					<option value="http://www.arstechnica.com/">ArsTechnica</option>
+					<option value="http://www.bonappetit.com/">Bon App&eacute;tit</option>
+					<option value="http://www.brides.com/">Brides.com</option>
+					<option value="http://www.cntraveler.com/">Cond&eacute; Nast Traveler</option>
+					<option value="http://www.portfolio.com/">Cond&eacute; Nast Portfolio</option>
+					<option value="http://www.concierge.com/">Concierge</option>
+					<option value="http://www.details.com/">Details</option>
+					<option value="http://www.epicurious.com/">Epicurious</option>
+					<option value="http://www.glamour.com/">Glamour</option>
+					<option value="http://www.golfdigest.com">Golf Digest</option>
+					<option value="http://www.golfworld.com">Golf World</option>
+					<option value="http://www.gq.com/">GQ</option>
+					<option value="http://www.hotelchatter.com/">Hotel Chatter</option>
+					<option value="http://www.jaunted.com/">Jaunted</option>
+					<option value="http://www.luckymag.com/">Lucky</option>
+					<option value="http://www.nutritiondata.com/">Nutrition Data</option>
+					<option value="http://www.reddit.com/">Reddit</option>
+					<option value="http://www.self.com/">Self</option>
+					<option value="http://www.style.com">Style.com</option>
+					<option value="http://www.teenvogue.com/">Teen Vogue</option>
+					<option value="http://www.newyorker.com/">The New Yorker</option>
+					<option value="http://www.thescene.com/">The Scene</option>
+					<option value="http://www.vanityfair.com/">Vanity Fair</option>
+					<option value="http://www.vogue.com">Vogue</option>
+					<option value="http://www.webmonkey.com">Webmonkey</option>
+					<option value="http://www.wmagazine.com/">W</option>
+				</select>
+				<select id="footer_dropdowns_international" name="footer_dropdowns_international">
+					<option>International Sites:</option>
+					<option value="http://www.wired.co.uk">Wired UK</option>
+					<option value="http://www.wired.it">Wired Italy</option>
+					<option value="http://wired.jp">Wired Japan</option>
+				</select>
+			</fieldset>
+		</form>
+	</div>
+
+	<div class="row" id="copyright">
+		<p>WIRED.com &copy; 2014 Cond&eacute; Nast. All rights reserved. Use of this Site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy" title="User Agreement" target="_blank">User Agreement</a> <span class="revision-date">(effective 01/02/2014)</span> and <a href="http://www.condenast.com/privacy-policy#privacypolicy" title="Privacy Policy" target="_blank">Privacy Policy</a> <span class="revision-date">(effective 01/02/2014)</span>. <a href="http://www.condenast.com/privacy-policy#privacypolicy-california" title="Privacy Policy" target="_blank">Your California Privacy Rights</a>.</p>
+		<p>The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written <a target="_blank" href="http://www.condenast.com/reprints-permissions">permission of Cond&eacute; Nast</a>.</p>
+		<div class="add-choice"><a class="ac" href="http://www.condenast.com/privacy-policy#privacypolicy-optout" title="Privacy Policy" target="_blank">Ad Choices</a></div>
+	</div>
+
+</footer> <!-- /#footer -->
+
+
+            <script type="text/javascript">
+            //<!--
+                CN.config.set({
+                    title        : document.title,
+                                    isiFrame     : true
+                });
+            //-->
+            </script>
+                        <script type="text/javascript" class="chartbeat">
+            //<!--
+                var _sf_async_config = {
+                    uid:      15455,
+                    sections: "design",
+                    domain:   "www.wired.com",
+            path: "http://www.wired.com/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/",
+authors: "Kyle VanHemert",
+                };
+
+                (function(){
+                    function loadChartbeat() {
+                        window._sf_endpt=(new Date()).getTime();
+                        var e = document.createElement('script');
+                        e.setAttribute('language', 'javascript');
+                        e.setAttribute('type', 'text/javascript');
+                        e.setAttribute('src', (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") + "static.chartbeat.com/js/chartbeat_pub.js");
+                        document.body.appendChild(e);
+                    }
+                    var oldonload = window.onload;
+                    window.onload = (typeof window.onload != 'function') ?
+                    loadChartbeat : function() { oldonload(); loadChartbeat(); };
+                })();
+            //-->
+            </script>
+            	        <!-- COMSCORE noscript -->
+	        <noscript>
+				<img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6035094&amp;c4=http%3A%2F%2Fwww.wired.com%2F2013%2F12%2F4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of" />
+			</noscript>
+	    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'wired';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+
+<!-- views/stats/partial-buzzfeed -->
+<div id="BF_WIDGET_1">&nbsp;</div>
+<script type="text/javascript">
+(function( $ ){
+        BF_WIDGET_JS=document.createElement("script"); BF_WIDGET_JS.type="text/javascript";
+        BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=wired.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+        setTimeout(function() {document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+        })();
+</script>
+<!-- views/stats/partial-parsely -->
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+    <div id="parsely-cfg" data-parsely-site="wired.com"></div>
+</div>
+
+<script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+          if (e) return;
+          e = d.createElement(s); e.id = i; e.async = true;
+          e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+        })("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include --><script type='text/javascript' src='http://www.wired.com/wp-content/themes/wired/assets/js/wp.min.js?ver=1411765660' async='async'></script>
+<script type='text/javascript' src='https://apis.google.com/js/plusone.js?ver=1411765660' async='async'></script>
+<script type='text/javascript' src='http://assets.pinterest.com/js/pinit.js?ver=1411765660' async='async'></script>
+            <script type="text/javascript" class="omniture_block">
+            //<!--
+                CN.stats.omniture.init();
+                CN.stats.omniture.setStatus( CN.site.httpStatusCode );
+
+            CN.stats.omniture.setMobileView( ( CN.isMobile ) ? "Mobile" : "Non-Mobile" );
+
+                if ( CN.cookie.get('amg_user_partner') != '' ) {
+                    CN.stats.omniture.setCustomProp( "52", CN.cookie.get('amg_user_partner') );
+                }
+
+                CN.stats.omniture.setContentType( "Article" );
+
+                if ( CN.stats.omniture.setReferrer !== undefined && document.referrer.match( CN.site.tld ) ) {
+                    var referrer = document.referrer;
+                    referrer=referrer.split("?")[0];
+                    CN.stats.omniture.setReferrer( referrer );
+                }
+
+                if ( CN.stats.omniture.setKeywords !== undefined ) {
+                    CN.stats.omniture.setKeywords( "design|apps|interaction-design|kyle-vanhemert|type-post|category-design|subwired-design|single|2013|12|4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of" );
+                }
+
+            CN.stats.omniture.setAuthorName( "Kyle VanHemert" );
+CN.stats.omniture.setContentId( "361151" );
+if ( CN.url.params('event') == 'loginsuccess' ) {
+ CN.stats.omniture.trackAction( 'login', document, { events: 'event21' } );
+}
+CN.stats.omniture.setCustomProp( '6', 'design' );
+CN.stats.omniture.setCustomProp( '7', 'design/2013' );
+CN.stats.omniture.setCustomProp( '8', 'design/2013/12' );
+CN.stats.omniture.setCustomProp( '9', 'design/' );
+s.hier1 = "design,2013,12,4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of";
+var dont_run_init_again = true;                // Run page tracking (also calls .init() again )
+                if ( CN.preventAutoTrack != true ) {
+                    CN.stats.omniture.doPageTracking();
+                }
+            //-->
+            </script>
+            <noscript>
+                <a href="http://www.omniture.com" title="Web Analytics">
+                    <img src="http://condenast.112.2o7.net/b/ss/conde-wired/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" />
+                </a>
+            </noscript>
+            	        <!-- Outbrain -->
+            <script type="text/javascript">
+	        //<!--
+	    		jQuery(function() {
+                    if ( CN.isMobile ) {
+                        jQuery( '.OUTBRAIN' ).each( function() {
+                            var outbrainwidgetid = jQuery( this ).attr('data-widget-id');
+                            jQuery( this ).attr('data-widget-id', outbrainwidgetid.replace('AR', 'MB') );
+
+                        } );
+                    }
+                });
+                /* Outbrain */
+	    		(function(d){
+	    			var f = d.getElementsByTagName('SCRIPT')[0];
+	    			var outbrain = d.createElement('SCRIPT');
+	    			outbrain.type = 'text/javascript';
+	        		outbrain.async = true;
+	        		outbrain.src = 'http://widgets.outbrain.com/outbrain.js';
+	        		f.parentNode.insertBefore(outbrain, f);
+	        	}(document));
+	        //-->
+	        </script>
+	                <div id="eventListHolder" style="display:none;"></div>
+        <script type="text/javascript">
+        // <!--
+            (function(){
+                var ns= window.CN || window.CNP;
+                ns.site = ns.site || {};
+                ns.site.eventTrackingList = new EventList( "eventListHolder" );
+                ns.site.eventTrackingList.setBaseUrl( "http://event.wired.com/" );
+
+                ns.site.eventTrackingEvent = new EventObject( "WIR", "most_viewed" );
+
+                        ns.site.eventTrackingEvent.setContentId( "361151" );
+                ns.site.eventTrackingEvent.setContentType( "post" );
+
+                        ns.site.eventTrackingEvent.setProperty( "imgurl", "http://www.wired.com/wp-content/uploads/images_blogs/design/2013/12/APPLESTORE.jpg" );
+        
+        
+                ns.site.eventTrackingEvent.setEnvironment( "PROD" );
+                ns.site.eventTrackingEvent.setFullUrl( "/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/" );
+                ns.site.eventTrackingEvent.setContentTitle( "4 Reasons Why Apple&#8217;s iBeacon Is About to Disrupt Interaction Design" );
+
+                var fullContentURL = "/2013/12/4-use-cases-for-ibeacon-the-most-exciting-tech-you-havent-heard-of/";
+                var isAbsoluteURL = fullContentURL.substring(0,8);
+                var allowedTracking = 0;
+
+                if ( ( isAbsoluteURL.indexOf( 'http' ) == -1 && isAbsoluteURL.indexOf( 'https' ) == -1) || allowedTracking == 1 ) {
+                    ns.site.eventTrackingList.addEvent( ns.site.eventTrackingEvent );
+                    ns.site.eventTrackingList.writeImageTags();
+
+                    CN.debug.info('ETF most_viewed Tracked');
+                }
+
+            }())
+
+            function generateId(url) {
+                var urlRegexp;
+                if (url.indexOf("https:") === 0) {
+                    urlRegexp = /https:\/\/[^\/]*\/([^?#]*).*/i;
+                } else {
+                    urlRegexp = /http:\/\/[^\/]*\/([^?#]*).*/i;
+                }
+                url.match(urlRegexp);
+                return RegExp.$1;
+            }
+        // -->
+        </script>
+        
+<!-- POLAR - DO NOT ALTER - PASTE IMMEDIATELY before </body> tag -->
+<script type="text/javascript" id="polar-partial">
+
+(function(){
+
+  var compiledTemplate0 = '';
+
+
+window.NATIVEADS = window.NATIVEADS || {};
+window.NATIVEADS.injectedAt = new Date().getTime();
+window.NATIVEADS.onReady = function(ads) {
+
+  ads.setPropertyID("NA-WIRE-11236120");
+  ads.setSecondaryPageURL("/sponsored");
+
+  // get the section name from the dart zone for targeting, i.e. design, gadgetlab
+  // remove the trailing semicolon
+  var dartzone = CN.dart.get('zone').replace(";", "");
+
+  ads.insertPreview({
+    label: "Right rail",
+    unit: {
+      "server":"dfp",
+      "id": "/3379/wiredcom.dart/" + dartzone,
+      "size":"290x95",
+      "targets": {
+        "category":"news",
+        "placement":"top"
+      }
+    },
+    location: "#promo-item-count3",
+    infoText: "",
+    infoButtonText: "",
+    template: compiledTemplate0,
+    onRender: function($element) { console.log('Right rail Polar rendered.')},
+    onFill: function(data) { console.log(data) },
+    onError: function(error) { console.log('There was a problem with ' + error)}
+  });
+
+  ads.injectCSS(" ", "head");
+
+
+  ads.configureSecondaryPage({
+    binding: {
+      sponsor: {
+        link: "#sponsor-link",
+        logo: "#sponsor-logo",
+        name: "#sponsor-name"
+      },
+      title: "#title",
+      summary: "#summary",
+      content: "#content",
+      author: "#author",
+      pubDate: "#pub-date",
+      image: {
+        href: "",
+        caption: "#media-caption",
+        credits: "#media-credits"
+      }
+    },
+    onFill: function(data) { console.log(data);},
+    onRender: function() { console.log('Sponsored article rendered.'); },
+    onError: function(error) { console.log('Something went wrong with ' + error); },
+    track: function() { }
+  });
+
+};
+
+  /*
+
+   This function represents a pre-compiled Handlebars template. Pre-compiled
+   templates are not pretty, but they provide a very significant performance
+   boost, especially on mobile devices. For more information, see
+   http://handlebarsjs.com/precompilation.html.
+
+   Note that this code has been generated from the following markup:
+
+<li class="promo-item" id="promo-item-count3" style="background:#f7f7f7;">
+    <div class="promo-thumbnail">
+        <a href="{{link}}" onclick="s_objectID=&quot;{{title}}_1&quot;;return this.s_oc?this.s_oc(e):true" rel="nofollow">
+            <img nopin="nopin" src="{{image.href}}" class="post-thumb" alt="undefined" width="140" height="70">
+        </a>
+    </div>
+    <div class="promo-wrapper">
+      <div class="promo-headline"><span style="color:gray;font-size: 13px;font-family: helvetica;line-height: 20px;">Sponsored:</span><br><a class="module-rsswidget" href="{{link}}" onclick="s_objectID=&quot;{{link}}_2&quot;;return this.s_oc?this.s_oc(e):true" rel="nofollow">{{title}}</a>
+        </div>
+    </div>
+</li>
+
+  */
+
+  compiledTemplate0 = function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression;
+
+
+  buffer += "<li class=\"promo-item\" id=\"promo-item-count3\" style=\"background:#f7f7f7;\">\n    <div class=\"promo-thumbnail\">\n        <a href=\"";
+  if (stack1 = helpers.link) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.link; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "\" onclick=\"s_objectID=&quot;";
+  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
+  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
+  buffer += escapeExpression(stack1)
+    + "_1&quot;;return this.s_oc?this.s_oc(e):true\" rel=\"nofollow\">\n            <img nopin=\"nopin\" src=\""
+    + escapeExpression(((stack1 = ((stack1 = depth0.image),stack1 == null || stack1 === false ? stack1 : stack1.href)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" class=\"post-thumb\" alt=\"undefined\" width=\"140\" height=\"70\">\n        </a>\n    </div>\n    <div class=\"promo-wrapper\">\n      <div class=\"promo-headline\"><span style=\"color:gray;font-size: 13px;font-family: helvetica;line-height: 20px;\">Sponsored:</span><br><a class=\"module-rsswidget\" href=\"";
+  if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\" onclick=\"s_objectID=&quot;";
+  if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "_2&quot;;return this.s_oc?this.s_oc(e):true\" rel=\"nofollow\">";
+  if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "</a>\n        </div>\n    </div>\n</li>\n\n\n";
+  return buffer;
+  };
+
+})();
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s);
+  js.id = id; js.type = "text/javascript"; js.async = true;
+  js.src = "http://plugin.mediavoice.com/plugin.js";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "nativeads-plugin");
+
+</script>
+<!-- END POLAR --><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"2907deeb56","applicationID":"3708287","transactionName":"YlIEZhNSXxEAABYNW1sYJ1EVWl4MThALClNZUg==","queueTime":0,"applicationTime":749,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>
+<!-- end wired/footer.php -->

@@ -1,0 +1,212 @@
+status: 200
+content-length: 6330
+date: Mon, 22 Sep 2014 16:47:56 GMT
+content-location: http://opengovhacknight.org/projects.html
+expires: Mon, 22 Sep 2014 16:57:56 GMT
+vary: Accept-Encoding
+server: GitHub.com
+last-modified: Sat, 20 Sep 2014 02:31:10 GMT
+-content-encoding: gzip
+cache-control: max-age=600
+-varied-accept-encoding: gzip, deflate
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      
+      Open Gov Hack Night
+    </title>
+    <meta charset='utf-8' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='Chicago's place to build, share, and learn about civic tech.' name='description' />
+    <meta content='Open Gov Hack Night' name='author' />
+
+    <!-- Facebook metadata -->
+    <meta content="" property="og:site_name">
+    
+      <meta content="" property="og:title">
+    
+    
+      <meta content="website" property="og:type">
+    
+    <!-- 
+      <meta content="Chicago's place to build, share, and learn about civic tech." property="og:description">
+     -->
+    
+      <meta content="http://opengovhacknight.org/projects.html" property="og:url">
+    
+    
+    
+      <meta content="http://opengovhacknight.org/images/logo.png" property="og:image">
+    
+    
+    
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@DataMadeCo">
+    <meta name="twitter:creator" content="@DataMadeCo">
+    
+      <meta name="twitter:title" content="">
+    
+    
+      <meta name="twitter:url" content="http://opengovhacknight.org/projects.html">
+    
+<!--     
+      <meta name="twitter:description" content="Chicago's place to build, share, and learn about civic tech.">
+     -->
+    
+      <meta name="twitter:image:src" content="http://opengovhacknight.org/images/logo.png">
+    
+
+    <link href='/favicon.ico' rel='shortcut icon' />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/analytics_lib.js"></script>
+
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/jquery.dataTables.sorting.js"></script>
+    <script src="/js/jquery.address.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/jquery.spin.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id='primary-content' class='col-md-10 col-md-offset-1'>
+        <div class="header">
+          <ul class="nav nav-pills pull-right">
+            
+              
+              
+
+              <li class="">
+                <a href="/index.html">Home</a>
+              </li>
+            
+              
+              
+
+              <li class="">
+                <a href="/events/index.html">Events</a>
+              </li>
+            
+              
+              
+                
+              
+
+              <li class="active">
+                <a href="/projects.html">Projects</a>
+              </li>
+            
+              
+              
+
+              <li class="">
+                <a href="/people.html">People</a>
+              </li>
+            
+              
+              
+
+              <li class="">
+                <a href="/resources.html">Resources</a>
+              </li>
+            
+              
+              
+
+              <li class="">
+                <a href="/discussion.html">Discussion</a>
+              </li>
+            
+          </ul>
+          <h3 class="text-muted"><a href="/index.html" >Open Gov Hack Night</a></h3>
+        </div>
+      
+        <h1>Projects <small id='project-count'></small></h1>
+<p>Open source civic tech projects from Chicago's open gov community. You can participate in three ways:</p>
+
+<ol>
+  <li>
+    <strong><a href='http://hacknight.hackdash.org/'>Start a new project</a></strong> - Share ideas and Find collaborators for your project on our <a href='http://hacknight.hackdash.org/'>Hack Dash page</a>.
+  </li>
+  <li>
+    <strong><a id='project-needs' href='#'>Join a team</a></strong> - Contribute to an existing team by finding open issues tagged with the <strong>project-needs</strong> label.
+  </li>
+  <li>
+    <strong><a id='share-toggle' href='#'>Share your existing project</a></strong> - If you have a civic app and it's open sourced on <a href='github.com'>Github</a>, share it with us and we will keep track of it below.
+  </li>
+</ol>
+
+<div id='share-project' style='display:none;'>
+  <div class='well'>
+
+    <p>Add a project for us to track. We <a href='https://github.com/open-city/civic-json-worker'>automatically update</a> this list based on your <a href='https://github.com/'>Github</a> activity.</p>
+
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="github-url" class="col-lg-2 control-label">Github URL</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="github-url" placeholder="https://github.com/my-name/my-project">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+          <button  id='submit-project' type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id='submit-message' class="alert" style="display: none;"></div>
+</div>
+
+<hr />
+<table id='hack-night-projects' class='table'>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Description</th>
+      <th>Recent commits</th>
+      <th>Stars</th>
+      <th>Forks</th>
+      <th>Issues</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<script src="/lib/projects.js"></script>
+
+        <div class="footer">
+          <p class='pull-right'>&copy; Open City 2014 | <a href='https://github.com/open-city/open-gov-hack-night'><i class='fa fa-github'></i> Pull requests welcome!</a></p>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  </body>
+</html>

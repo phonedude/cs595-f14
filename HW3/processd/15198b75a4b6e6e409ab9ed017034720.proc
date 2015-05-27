@@ -1,0 +1,324 @@
+   #Andrew Tridgell's Posts - DIY Drones Comments - Lidar landing with
+   APM:Plane - DIY Drones Top Content - DIY Drones
+
+   ____________________ Search
+
+     * Sign Up
+     * Sign In
+
+DIY Drones
+
+     * Home
+     * Store
+          + Ready-to-fly ArduCopter
+          + Ready-to-fly ArduPlane
+          + ArduCopter kits
+          + Autopilots
+          + GPS
+          + RC Electronics
+          + Sensors
+          + Wireless Data
+          + Video/OSD
+          + Dealers around the world
+     * Getting Started
+          + Newbies guide to UAVs
+          + About this site (rules)
+          + How can I contribute?
+     * Forum
+          + Start a Forum topic
+          + See all Forum topics
+     * Blogs
+          + Create a blog post
+          + View all blog posts
+     * ArduCopter
+          + Get it!
+          + ArduCopter Manual
+          + Support Forum
+          + ArduCopter User Group
+          + Developers
+     * ArduPlane
+          + Get it!
+          + ArduPlane Manual
+          + Support Forum
+          + ArduPlane User Group
+          + Developers
+     * ArduRover
+          + Get it!
+          + ArduRover Manual
+          + Support Forum
+          + ArduRover User Group
+          + ArduBoat User Group
+          + Developers
+     * Members
+          + Leaderboards
+          + Local UAV groups
+          + UAV DevBoard
+     * MyPage
+     * Videos
+          + Photos
+          + DIY Drones News Center
+
+     * All Blog Posts
+     * My Blog
+     * Add
+
+   Developer
+
+Lidar landing with APM:Plane
+
+     * Posted by Andrew Tridgell on August 29, 2014 at 2:04am
+     * View Blog
+
+   IFRAME:
+   //www.youtube.com/embed/_J9Vnfzw9os?list=UUJzpx7cFPmzIW1RbGpZesYA&wmode
+   =opaque
+
+   Over the last couple of days I have been testing the Lidar based
+   auto-landing code that will be in the upcoming 3.1.1 release of
+   APM:Plane. I'm delighted to say that it has gone very well!
+
+   Testing has been done on two planes - one is a Meridian sports plane
+   with a OS46 Nitro motor. That is a tricycle undercarriage, so has very
+   easy ground steering. The tests today were with the larger VQ Porter
+   2.7m tail-dragger with a DLE-35 petrol motor. That has a lot of
+   equipment on board for the CanberraUAV OBC entry, so it weighs 14kg at
+   takeoff making it a much more difficult plane to land well.
+
+   The Lidar is a SF/02 from LightWare, a really nice laser rangefinder
+   that works nicely with Pixhawk. It has a 40m range, which is great for
+   landing, allowing the plane plenty of time to lock onto the glide slope
+   in the landing approach.
+
+   APM:Plane has supported these Lidars and other rangefinders for a
+   while, but until now has not been able to use them for landing. Instead
+   they were just being logged to the microSD card, but not actively used.
+   After some very useful discussions with Paul Riseborough we now have
+   the Lidar properly integrated into the landing code.
+
+   The test flights today were an auto-takeoff (with automatic ground
+   steering), a quick auto-circuit then an automatic landing. The first
+   landing went long as I'd forgotten to drop THR_MIN down to zero (I
+   normally have it at 20% to ensure the engine stays at a reasonable
+   level during auto flight). After fixing that we got a series of good
+   auto flights.
+
+   The flight was flown with a 4 second flare time, which is probably a
+   bit long as it allowed the plane to lose too much speed on the final
+   part of the flare. That is why it bounces a bit as it starts losing
+   height. I'll try with a bit shorter flare time tomorrow.
+
+   Here is the video of one of the Meridian flights yesterday. Sorry for
+   missing part of the flight, the video was shot with a cell phone by a
+   friend at the field.
+
+   IFRAME:
+   //www.youtube.com/embed/omR6pmPhzkM?list=UUJzpx7cFPmzIW1RbGpZesYA&wmode
+   =opaque
+
+   Here is another video of the Porter flying today, but taken from the
+   north of the runway
+
+   IFRAME: //www.youtube.com/embed/qQwXbsikHwE?wmode=opaque
+
+   I'd like to thank Charles Wannop from Flying Finish Productions for the
+   video of the Porter today with help from Darrell Burkey.
+
+   Views: 2740
+
+   Tags:
+   Like
+   15 members like this
+
+   Share Twitter
+     * < Previous Post
+     * Next Post >
+
+   Admin Comment by Gary Mortimer on August 29, 2014 at 2:20am
+          Blimey that's cool. Second story containing innovation from
+          Australia ;-)
+
+   Comment by Charles Wannop on August 29, 2014 at 3:11am
+          A heartfelt thanks to Andrew and Darrell for the opportunity to
+          shoot the session this morning :) Very exciting stuff.
+
+          Charles.
+
+   Comment by Vishal on August 29, 2014 at 3:50am
+          Wow, wonderful !
+
+   Comment by Vishal on August 29, 2014 at 4:18am
+          LIDAR is quite expansive. Some times back I saw LIDAR module in
+          just 45US$ on Kikstarter but I do not know the status of that
+          wether it actually manufactured and delivered to customers or
+          not.
+
+   Developer Comment by Andrew Tridgell on August 29, 2014 at 4:26am
+          @Vishal,
+
+          The folks at PulsedLight are working on a really affordable one
+          that looks very promising.
+
+          I tested an early prototype of it which had a range of about
+          10m. The final version should be closer to 40m, which is ideal
+          for landing.
+
+   Developer Comment by Andrew Tridgell on August 29, 2014 at 4:29am
+          @Vishal, also, it isn't really expensive for what you get. The
+          LightWare Lidars are really top quality and very reliable. If
+          you are building a big plane then they are well worth the
+          expense.
+
+   Comment by Darrell Burkey on August 29, 2014 at 5:31am
+          I uploaded some still photos from this morning's test flights to
+          the Canberra UAV Flickr site as well. Have a look to get a peek
+          at all the cool things CUAV are up to these days.
+
+   T3 Comment by Richard Boyhan on August 29, 2014 at 7:24am
+          Congratulations!  Very cool stuff.
+
+   Comment by Vishal on August 29, 2014 at 9:45am
+          Hi Andrew, thanks for clarification.
+
+   Comment by Gisela & Joe Noci on August 29, 2014 at 12:48pm
+          Well done Andrew!
+
+          Good to see you are using the Lightware Laser Rangefinders to
+          benefit here!
+
+          We now have 4 different plane types - from 5kg up to 66kg - all
+          working well in auto takeof and autoland using those LRF's -
+          they certainly have extended the envelope for this mode!
+
+          Just an idea - we gave up on timed flares - the only way to make
+          the autoland 'universal' is to ensure a controlled rate of
+          descent - as the real pilots do...That way the flare is
+          automatic, and lasts as long as it needs, in a closed loop
+          control mode.
+
+          Soft Landings.
+
+          Regards
+
+          Joe and Gisela.
+
+          The Nampilot(s)!
+
+   Comment
+
+You need to be a member of DIY Drones to add comments!
+
+   Join DIY Drones
+     * ‹ Previous
+     * 1
+     * 2
+     * 3
+     * 4
+     * Next ›
+     * Page 2_ [BUTTON Input] (not implemented)__
+
+   RSS
+
+   Welcome to
+   DIY Drones
+
+   Sign Up
+   or Sign In
+
+   Or sign in with:
+     *
+     *
+     *
+     *
+     *
+
+Top Content
+
+   Edit
+   1     PPM mixed up channels
+
+      PPM mixed up channels
+
+   2     ArduIMU V4 on Kickstarter
+
+      ArduIMU V4 on Kickstarter
+
+   3     SUPER DRONE !
+
+      SUPER DRONE !
+
+   4     ArduCopter-3.2 beta testing
+
+      ArduCopter-3.2 beta testing
+
+   5     How to discover a crash reason - APM
+
+      How to discover a crash reason - APM
+
+   6     AUAV-X2 ( the revised version of X1 ) is alive
+
+      AUAV-X2 ( the revised version of X1 ) is alive
+
+   7     AC-3.1 autotune support discussion
+
+      AC-3.1 autotune support discussion
+
+   8     My 3DR Y6 flipped and crashed when a motor died. Isn't the Y6 (and
+         X8) supposed to compensate in this situation?
+
+      My 3DR Y6 flipped and crashed when a motor died. Isn't the Y6 (and X8)
+      supposed to compensate in this situation?
+
+   9     Proposed 8-Prop Configuration - Is this practical or possible?
+
+      Proposed 8-Prop Configuration - Is this practical or possible?
+
+   10    Infrared-tracking Gimbal
+
+      Infrared-tracking Gimbal
+
+     * RSS
+     * View All
+
+Groups
+
+     * PIXHAWK
+
+PIXHAWK
+       189 members
+     * X-UAV Talon
+
+X-UAV Talon
+       58 members
+
+     * ArduPlane User Group
+
+ArduPlane User Group
+       1080 members
+     * Arducopter Y6 Owners
+
+Arducopter Y6 Owners
+       262 members
+
+     * Agricultural UAVs
+
+Agricultural UAVs
+       546 members
+
+     * View All
+
+                                 [INS: :INS]
+
+   [miniuavbadge_MED.jpg?width=120] Season Two of the Trust Time Trial
+   (T3) Contest
+   A list of all T3 contests is here. The current round, the Drone
+   Delivery Challenge, is here
+
+   © 2014   Created by Chris Anderson.   Powered by Ning
+
+   Badges  |  Report an Issue  |  Terms of Service
+
+Hello, you need to enable JavaScript to use DIY Drones.
+
+   Please check your browser settings or contact your system
+   administrator.
+   [p?c1=2&c2=6770185&cv=2.0&cj=1]

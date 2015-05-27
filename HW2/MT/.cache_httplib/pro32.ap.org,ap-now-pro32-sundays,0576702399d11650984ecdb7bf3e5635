@@ -1,0 +1,1105 @@
+status: 200
+x-ah-environment: prod
+vary: Accept-Encoding
+content-length: 108779
+x-request-id: v-b0c18fb6-4733-11e4-b4ee-12313d191a15
+content-language: en
+x-age: 0
+etag: "1411924806"
+cache-control: no-cache, must-revalidate, post-check=0, pre-check=0
+x-varnish: 2217084745
+accept-ranges: bytes
+expires: Sun, 28 Sep 2014 17:21:26 GMT
+last-modified: Sun, 28 Sep 2014 17:20:06 +0000
+-content-encoding: gzip
+link: <http://pro32.ap.org/ap-now-pro32-sundays>;
+ rel="canonical",<http://pro32.ap.org/query_list/ap_nfl_games_1/home>;
+ rel="shortlink",<http://pro32.ap.org/ap-now-pro32-sundays>;
+ rel="canonical",<http://pro32.ap.org/query_list/ap_nfl_games_1/home>;
+ rel="shortlink"
+date: Sun, 28 Sep 2014 17:21:26 GMT
+content-location: http://pro32.ap.org/ap-now-pro32-sundays
+server: nginx
+connection: keep-alive
+content-type: text/html; charset=utf-8
+x-generator: Drupal 7 (http://drupal.org)
+-varied-accept-encoding: gzip, deflate
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdADQYFU1NT"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<meta property="og:url" content="http://pro32.ap.org/ap-now-pro32-sundays" />
+<link rel="shortcut icon" href="http://pro32.ap.org/profiles/ap/themes/ap_pro32/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link href="http://pro32.ap.org/profiles/ap/themes/ap_pro32/touch-icon.png" rel="apple-touch-icon" />
+<meta property="og:site_name" content="Pro32: Head to Head" />
+<meta property="og:title" content="AP Now: Pro32 Sundays" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://pro32.ap.org/ap-now-pro32-sundays" />
+<link rel="shortlink" href="http://pro32.ap.org/query_list/ap_nfl_games_1/home" />
+<meta property="og:type" content="article" />
+  <title>AP Now: Pro32 Sundays | Pro32: Head to Head</title>
+    <style type="text/css" media="all">@import url("http://pro32.ap.org/modules/system/system.base.css?ncmblj");
+@import url("http://pro32.ap.org/modules/system/system.menus.css?ncmblj");
+@import url("http://pro32.ap.org/modules/system/system.messages.css?ncmblj");
+@import url("http://pro32.ap.org/modules/system/system.theme.css?ncmblj");</style>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/css/flyout.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/contrib/date/date_api/date.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/contrib/date/date_popup/themes/datepicker.1.7.css?ncmblj");
+@import url("http://pro32.ap.org/modules/field/theme/field.css?ncmblj");
+@import url("http://pro32.ap.org/modules/node/node.css?ncmblj");
+@import url("http://pro32.ap.org/modules/search/search.css?ncmblj");
+@import url("http://pro32.ap.org/modules/user/user.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/contrib/views/css/views.css?ncmblj");</style>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/modules/contrib/ctools/css/ctools.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/modules/custom/core/ap_microformats/ap_microformats.css?ncmblj");</style>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/alpha-reset.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/alpha-mobile.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/alpha-alpha.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-text.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-branding.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-menu.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/omega/css/omega-visuals.css?ncmblj");</style>
+<style type="text/css" media="screen">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/global.css?ncmblj");</style>
+<style type="text/css" media="print">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/print.css?ncmblj");</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default-normal.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?ncmblj");</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default-narrow.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-12.css?ncmblj");</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/ap_pro32/css/ap-pro32-alpha-default-normal.css?ncmblj");
+@import url("http://pro32.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?ncmblj");</style>
+<!--<![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-5";
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/drupal.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/query_list/ap_nfl_games_1", [728, 90], "dfp-ad-leaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/query_list/ap_nfl_games_1", [300, 50], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/query_list/ap_nfl_games_1", [300, 250], "dfp-ad-mediumrectangle")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("/15786418/Pro32/AP/site/query_list/ap_nfl_games_1", [300, 250], "dfp-ad-mediumrectangle2")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.hoverIntent.minified.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.masonry.min.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_masonry.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_flyout.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/optional/responsive_dfp_box/js/responsive_dfp.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/contrib/google_analytics/googleanalytics.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-27590430-5"]);_gaq.push(['_setCustomVar', 1, "customer", "Rankings, highlights and photos", 3]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/themes/ap_pro32/js/mondernizr.custom.min.js?ncmblj"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/themes/omega/omega/js/omega-mediaqueries.js?ncmblj"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ap_pro32","theme_token":"iDV216jZkGArhj4VSdgpHZL7MWPBMMsjqzdbVEmu-3k","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"1":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"2":1,"3":1,"4":1,"5":1,"6":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"7":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"8":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"9":1,"http:\/\/use.typekit.com\/uta3cck.js":1,"10":1,"profiles\/ap\/themes\/ap_pro32\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-text.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/ap_pro32\/css\/global.css":1,"profiles\/ap\/themes\/ap_pro32\/css\/print.css":1,"ie::normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"ie::normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-normal.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"narrow::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-narrow.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-normal.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-query-list page-query-list-ap-nfl-games-1 page-query-list-ap-nfl-games-1-home context-ap-now-pro32-sundays">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>  
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+    <div class="clearfix logo-ad">
+                <div class="logo-img">
+                  <img border="0" src="http://pro32.ap.org/sites/pro32/files/aplogo_png.png" alt="Pro32: Head to Head" title="Pro32: Head to Head" />              </div>
+              <div class="block block-boxes block-boxes-responsive-dfp block-responsive-leaderboard block-boxes-responsive-leaderboard odd block-without-title" id="block-boxes-responsive-leaderboard">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id='boxes-box-responsive_leaderboard' class='boxes-box'><div class="boxes-box-content"><div id="responsive_leaderboard-responsive-ad" class="responsive-ad"></div></div></div>    </div>
+  </div>
+</div>    </div>
+  </div>
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-vertical-branding" id="region-vertical-branding">
+  <div class="region-inner region-vertical-branding-inner">
+    
+        <div class="branding-data clearfix">
+                        <hgroup class="site-name-slogan">        
+                        <h1 class="site-name"><a href="/" rel="home" title="Home">Pro32: Head to Head</a></h1>
+              </hgroup>
+          </div>
+        
+      </div>
+</div>
+  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">    <div class="menu-zone-inner-wrapper">
+	  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+	    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav class="navigation">
+      <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <form action="/ap-now-pro32-sundays" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search " type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-FhiY9IZxQ_jh652xmKfuw26IkVdHJnOO4qo9pMlv3Dw" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div><h4 class="sections-menu"><a href="#">Sections</a></h4><ul class="menu"><li class="first leaf"><a href="/" title="">Home</a></li>
+<li class="leaf"><a href="/matchups" title="">Matchups</a><div class="matchup-flyout clearfix"><a href="/matchups/week-2-dolphins-1-0-bills-1-0">Week 2: Dolphins (1-0) at Bills (1-0)</a><a href="/matchups/week-2-jets-1-0-packers-0-1">Week 2: Jets (1-0) at Packers (0-1)</a><a href="/matchups/week-2-falcons-1-0-bengals-1-0">Week 2: Falcons (1-0) at Bengals (1-0)</a><a href="/matchups/week-2-patriots-0-1-vikings-1-0">Week 2: Patriots (0-1) at Vikings (1-0)</a><a href="/matchups/week-2-eagles-1-0-colts-0-1-monday">Week 2: Eagles (1-0) at Colts (0-1), Monday</a><a href="/matchups/week-3-redskins-1-1-eagles-2-0">Week 3: Redskins (1-1) at Eagles (2-0)</a><a href="/matchups/week-3-ravens-1-1-browns-1-1">Week 3: Ravens (1-1) at Browns (1-1)</a><a href="/matchups/week-3-broncos-2-0-seahawks-1-1">Week 3: Broncos (2-0) at Seahawks (1-1)</a><a href="/matchups/week-3-bears-1-1-jets-1-1-monday">Week 3: Bears (1-1) at Jets (1-1), Monday</a><a href="/matchups/week-4-giants-1-2-redskins-1-2">Week 4: Giants (1-2) at Redskins (1-2)</a><a href="/matchups/week-4-eagles-3-0-49ers-1-2">Week 4: Eagles (3-0) at 49ers (1-2)</a><a href="/matchups/week-4-packers-1-2-bears-2-1">Week 4: Packers (1-2) at Bears (2-1)</a><a href="/matchups/week-4-bills-2-1-texans-2-1">Week 4: Bills (2-1) at Texans (2-1)</a><a href="/matchups/week-4-patriots-2-1-chiefs-1-2-monday-night">Week 4: Patriots (2-1) at Chiefs (1-2), Monday night</a><div></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Pro32</a></li>
+<li class="leaf"><a href="/divisions" title="">Divisions</a><div class="conference-flyout clearfix">
+      <a href="/conferences/afc-east">AFC East</a>      <a href="/conferences/afc-north">AFC North</a>      <a href="/conferences/afc-south">AFC South</a>      <a href="/conferences/afc-west">AFC West</a>      <a href="/conferences/nfc-east">NFC East</a>      <a href="/conferences/nfc-north">NFC North</a>      <a href="/conferences/nfc-south">NFC South</a>      <a href="/conferences/nfc-west">NFC West</a>  </div></li>
+<li class="last leaf"><a href="/galleries">Photos</a></li>
+</ul>    </nav>
+  </div>
+</div>
+	  </div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-8 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+            <div class="primary-title">
+        <h1  id="page-title" class="title page-title">AP Now: Pro32 Sundays</h1>
+        </div>
+    <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a> &raquo; AP Now: Pro32 Sundays</div>            <div class="tabs clearfix"></div>        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="list-page" class="list-page clearfix">
+  <div class="list-page-content clearfix">
+    
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-454481">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/def-leppard-rocks-wembley-dolphins-raiders"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/dl.jpg?itok=53mWoOUz" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/def-leppard-rocks-wembley-dolphins-raiders" title="Def Leppard rocks Wembley before the Dolphins-Raiders"><a href="/article/def-leppard-rocks-wembley-dolphins-raiders">Def Leppard rocks Wembley before the Dolphins-Raiders</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/chris-lehourites" class="fn">CHRIS LEHOURITES</a></span></div><span  class="dateline">LONDON</span><a  rel="item-license" id="license-fda352680a5c971f3c816956676b8246" href="#license-fda352680a5c971f3c816956676b8246">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:04:47-04:00">Sep. 28, 2014 1:04 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-454451">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/rooney-and-stallworth-and-steelers-glory-days"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/gd1.jpg?itok=wUiuH4Xp" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/rooney-and-stallworth-and-steelers-glory-days" title="Rooney and Stallworth and the Steelers&#039; glory days"><a href="/article/rooney-and-stallworth-and-steelers-glory-days">Rooney and Stallworth and the Steelers&#039; glory days</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PITTSBURGH</span><a  rel="item-license" id="license-62c91ecb516cc231031d8b01f7f18c4b" href="#license-62c91ecb516cc231031d8b01f7f18c4b">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:54:31-04:00">Sep. 28, 2014 12:54 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-454421">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/clipboard-jesus-gets-back-field-locker-injured"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/cj.jpg?itok=VcsTROJl" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/clipboard-jesus-gets-back-field-locker-injured" title="Clipboard Jesus gets back on the field with Locker injured"><a href="/article/clipboard-jesus-gets-back-field-locker-injured">Clipboard Jesus gets back on the field with Locker injured</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">INDIANAPOLIS</span><a  rel="item-license" id="license-862dc0734b4b20ec305737202b9d4865" href="#license-862dc0734b4b20ec305737202b9d4865">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:34:13-04:00">Sep. 28, 2014 12:34 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-447246">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/passing-stars-day-luck-foles-and-brees"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/p1.jpg?itok=mqHJXGcO" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/passing-stars-day-luck-foles-and-brees" title="Passing stars of the day: Luck, Foles and Brees"><a href="/article/passing-stars-day-luck-foles-and-brees">Passing stars of the day: Luck, Foles and Brees</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-d649267292536faecb17fc90f07cdbf6" href="#license-d649267292536faecb17fc90f07cdbf6">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T21:55:31-04:00">Sep. 21, 2014 9:55 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-446816">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/best-images-day-ap-and-member-photographers"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/jme2.jpg?itok=yxWJ5w-5" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/best-images-day-ap-and-member-photographers" title="Best images of the day, by AP and member photographers"><a href="/article/best-images-day-ap-and-member-photographers">Best images of the day, by AP and member photographers</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-a090939e8cb9ae9120a020a9d1a929ed" href="#license-a090939e8cb9ae9120a020a9d1a929ed">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T19:11:02-04:00">Sep. 21, 2014 7:11 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-446776">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/miamis-attempt-aqua-out-goes-awry-when-stadium-runs-out-free-shirts"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/mi.jpg?itok=exdBNXFx" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/miamis-attempt-aqua-out-goes-awry-when-stadium-runs-out-free-shirts" title="Miami&#039;s attempt at an &quot;aqua out&quot; goes awry when stadium runs out of free shirts"><a href="/article/miamis-attempt-aqua-out-goes-awry-when-stadium-runs-out-free-shirts">Miami&#039;s attempt at an &quot;aqua out&quot; goes awry when stadium runs out of free shirts</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/tim-reynolds" class="fn">TIM REYNOLDS</a></span></div><span  class="dateline">MIAMI GARDENS, Fla.</span><a  rel="item-license" id="license-b1f20184f817cfa98f53c9d23910e6bf" href="#license-b1f20184f817cfa98f53c9d23910e6bf">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T18:53:35-04:00">Sep. 21, 2014 6:53 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-446686">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/when-celebrations-go-wrong-crabtree-hartline-and-tulloch"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/st.jpg?itok=KSvEryKh" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/when-celebrations-go-wrong-crabtree-hartline-and-tulloch" title="When celebrations go wrong: Crabtree, Hartline and Tulloch "><a href="/article/when-celebrations-go-wrong-crabtree-hartline-and-tulloch">When celebrations go wrong: Crabtree, Hartline and Tulloch </a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-5ce4b49063c0165b1fe5b0c7efaf6f81" href="#license-5ce4b49063c0165b1fe5b0c7efaf6f81">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T18:18:47-04:00">Sep. 21, 2014 6:18 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-446546">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/backups-no-more-bridgewater-and-bortles-head-top-depth-chart"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/ns3.jpg?itok=UWykrNQC" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/backups-no-more-bridgewater-and-bortles-head-top-depth-chart" title="Backups no more: Bridgewater and Bortles head to the top of the depth chart"><a href="/article/backups-no-more-bridgewater-and-bortles-head-top-depth-chart">Backups no more: Bridgewater and Bortles head to the top of the depth chart</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-daebb2c78fa82369839fe7860296f669" href="#license-daebb2c78fa82369839fe7860296f669">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T17:44:09-04:00">Sep. 21, 2014 5:44 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-446251">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/rematch-starts-another-turnover-broncos"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/fu.jpg?itok=pTUZN5-V" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/rematch-starts-another-turnover-broncos" title="Rematch starts with another turnover by the Broncos"><a href="/article/rematch-starts-another-turnover-broncos">Rematch starts with another turnover by the Broncos</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">SEATTLE</span><a  rel="item-license" id="license-40fcd3ed2777e47dba58bdd57698f321" href="#license-40fcd3ed2777e47dba58bdd57698f321">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T16:41:12-04:00">Sep. 21, 2014 4:41 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-446001">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/baker-takes-shot-foles-and-hockey-game-breaks-out"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/CBA.jpg?itok=-OpuZGRo" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/baker-takes-shot-foles-and-hockey-game-breaks-out" title="Baker takes a shot at Foles, and a hockey game breaks out"><a href="/article/baker-takes-shot-foles-and-hockey-game-breaks-out">Baker takes a shot at Foles, and a hockey game breaks out</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/barry-wilner" class="fn">BARRY WILNER</a></span></div><span  class="dateline">PHILADELPHIA</span><a  rel="item-license" id="license-2fb8b5b407933ea9159a161712f1fa74" href="#license-2fb8b5b407933ea9159a161712f1fa74">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T16:13:49-04:00">Sep. 21, 2014 4:13 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-445496">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/rookie-qbs-get-game-sunday-bortles-bridgewater-and-manziel-all-play"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/rq3.jpg?itok=n2TZEhTb" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/rookie-qbs-get-game-sunday-bortles-bridgewater-and-manziel-all-play" title="Rookie QBs get into the game Sunday: Bortles, Bridgewater and Manziel all play"><a href="/article/rookie-qbs-get-game-sunday-bortles-bridgewater-and-manziel-all-play">Rookie QBs get into the game Sunday: Bortles, Bridgewater and Manziel all play</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/rachel-cohen" class="fn">RACHEL COHEN</a></span></div><a  rel="item-license" id="license-6b42d2ff56a38d24eecd4905949b65be" href="#license-6b42d2ff56a38d24eecd4905949b65be">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T15:17:46-04:00">Sep. 21, 2014 3:17 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-445446">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/lions-kicker-freese-struggling-outside-40-yards"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/li.jpg?itok=9ziACFWP" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/lions-kicker-freese-struggling-outside-40-yards" title="Lions kicker Freese struggling from outside of 40 yards"><a href="/article/lions-kicker-freese-struggling-outside-40-yards">Lions kicker Freese struggling from outside of 40 yards</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/noah-trister" class="fn">NOAH TRISTER</a></span></div><span  class="dateline">DETROIT</span><a  rel="item-license" id="license-d8fc66a3f441e4ee0e2286580d0368f5" href="#license-d8fc66a3f441e4ee0e2286580d0368f5">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T15:09:03-04:00">Sep. 21, 2014 3:09 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-445236">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/two-best-plays-day-didnt-count-manziels-trick-hopkins-one-handed-grab"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/jm1.jpg?itok=pCV6UBOm" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/two-best-plays-day-didnt-count-manziels-trick-hopkins-one-handed-grab" title="Two of the best plays of the day didn&#039;t count: Manziel&#039;s trick; Hopkins&#039; one-handed grab"><a href="/article/two-best-plays-day-didnt-count-manziels-trick-hopkins-one-handed-grab">Two of the best plays of the day didn&#039;t count: Manziel&#039;s trick; Hopkins&#039; one-handed grab</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-c86ae11425696313c61428a385bf5590" href="#license-c86ae11425696313c61428a385bf5590">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T14:49:18-04:00">Sep. 21, 2014 2:49 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-445096">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/matt-cassel-hurt-vikings-and-teddy-bridgwater-gets-first-action"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/mc.jpg?itok=ab_HtQs3" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/matt-cassel-hurt-vikings-and-teddy-bridgwater-gets-first-action" title="Matt Cassel hurt for the Vikings, and Teddy Bridgwater gets first action"><a href="/article/matt-cassel-hurt-vikings-and-teddy-bridgwater-gets-first-action">Matt Cassel hurt for the Vikings, and Teddy Bridgwater gets first action</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">NEW ORLEANS</span><a  rel="item-license" id="license-f6743a4b55cea71309a04f7139ef2067" href="#license-f6743a4b55cea71309a04f7139ef2067">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T14:27:28-04:00">Sep. 21, 2014 2:27 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-444851">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/andy-dalton-catches-touchdown-pass-sanu"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/ad.jpg?itok=uT1fUYa7" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/andy-dalton-catches-touchdown-pass-sanu" title="Andy Dalton catches touchdown pass from Sanu"><a href="/article/andy-dalton-catches-touchdown-pass-sanu">Andy Dalton catches touchdown pass from Sanu</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/joe-kay" class="fn">JOE KAY</a></span></div><span  class="dateline">CINCINNATI</span><a  rel="item-license" id="license-b046479fd2d03316e9ce07aa4da4b0e0" href="#license-b046479fd2d03316e9ce07aa4da4b0e0">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T13:58:15-04:00">Sep. 21, 2014 1:58 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-444726">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/saints-start-fast-against-vikings-brees-completes-first-nine-passes"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/sa.jpg?itok=Gb6ZTQdI" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/saints-start-fast-against-vikings-brees-completes-first-nine-passes" title="Saints start fast against Vikings; Brees completes first nine passes"><a href="/article/saints-start-fast-against-vikings-brees-completes-first-nine-passes">Saints start fast against Vikings; Brees completes first nine passes</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/brett-martel" class="fn">BRETT MARTEL</a></span></div><span  class="dateline">NEW ORLEANS</span><a  rel="item-license" id="license-863059506015184110cc54031f835ec5" href="#license-863059506015184110cc54031f835ec5">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T13:49:56-04:00">Sep. 21, 2014 1:49 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-444606">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/chris-polk-kickoff-return-touchdown-first-eagles-2008"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/CP2.jpg?itok=vBfq5RCF" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/chris-polk-kickoff-return-touchdown-first-eagles-2008" title="Chris Polk kickoff return touchdown is the first for Eagles since 2008 "><a href="/article/chris-polk-kickoff-return-touchdown-first-eagles-2008">Chris Polk kickoff return touchdown is the first for Eagles since 2008 </a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/barry-wilner" class="fn">BARRY WILNER</a></span></div><span  class="dateline">PHILADELPHIA</span><a  rel="item-license" id="license-d777ea7d9a98e7f4ade97a79f1ffba93" href="#license-d777ea7d9a98e7f4ade97a79f1ffba93">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T13:35:31-04:00">Sep. 21, 2014 1:35 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-444536">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/brandon-lafell-finally-gets-first-catch-season"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/bl.jpg?itok=a8WLeNCT" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/brandon-lafell-finally-gets-first-catch-season" title="Brandon LaFell finally gets first catch of the season"><a href="/article/brandon-lafell-finally-gets-first-catch-season">Brandon LaFell finally gets first catch of the season</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/howard-ulman" class="fn">HOWARD ULMAN</a></span></div><span  class="dateline">FOXBORO, Mass.</span><a  rel="item-license" id="license-6945e7f4c35b1cb8ba1b8b7308600547" href="#license-6945e7f4c35b1cb8ba1b8b7308600547">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T13:25:23-04:00">Sep. 21, 2014 1:25 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-444461">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/ozzie-newsome-back-cleveland"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/on.jpg?itok=fYaVqywr" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/ozzie-newsome-back-cleveland" title="Ozzie Newsome back in Cleveland"><a href="/article/ozzie-newsome-back-cleveland">Ozzie Newsome back in Cleveland</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/tom-withers" class="fn">TOM WITHERS</a></span></div><span  class="dateline">CLEVELAND</span><a  rel="item-license" id="license-63c79ec8aed4c556c97e8889c6985c6a" href="#license-63c79ec8aed4c556c97e8889c6985c6a">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T13:17:02-04:00">Sep. 21, 2014 1:17 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso even clearfix" id="node-ap-article-444416">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/desean-jackson-ready-play-his-return-philadelphia"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/djax1.jpg?itok=EYYnzxv-" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/desean-jackson-ready-play-his-return-philadelphia" title="DeSean Jackson ready to play in his return to Philadelphia"><a href="/article/desean-jackson-ready-play-his-return-philadelphia">DeSean Jackson ready to play in his return to Philadelphia</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/barry-wilner" class="fn">BARRY WILNER</a></span></div><span  class="dateline">PHILADELPHIA</span><a  rel="item-license" id="license-8220d8668de96ea412626063e350485a" href="#license-8220d8668de96ea412626063e350485a">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T12:54:50-04:00">Sep. 21, 2014 12:54 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-mgiarrusso odd clearfix" id="node-ap-article-444376">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/high-winds-buffalo-blowing-flags-and-nachos-thunderstorms-may-be-way"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/buf.jpg?itok=ZjyRi3Sf" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/high-winds-buffalo-blowing-flags-and-nachos-thunderstorms-may-be-way" title="High winds in Buffalo blowing flags and nachos; thunderstorms may be on the way "><a href="/article/high-winds-buffalo-blowing-flags-and-nachos-thunderstorms-may-be-way">High winds in Buffalo blowing flags and nachos; thunderstorms may be on the way </a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">BUFFALO, N.Y.</span><a  rel="item-license" id="license-e8372ec331d0c5cde4c3e3019e8599c5" href="#license-e8372ec331d0c5cde4c3e3019e8599c5">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-21T12:38:14-04:00">Sep. 21, 2014 12:38 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia even clearfix" id="node-ap-article-440546">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/comeback-pictured"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP720940512429.jpg?itok=N_WGWmc3" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/comeback-pictured" title="A comeback, pictured"><a href="/article/comeback-pictured">A comeback, pictured</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-857bc513613dccd01681c7ef3ad1c1b8" href="#license-857bc513613dccd01681c7ef3ad1c1b8">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-15T00:07:24-04:00">Sep. 15, 2014 12:07 AM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-article-440481">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/fantasy-standouts"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP732447270840.jpg?itok=-Y5DeRoZ" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/fantasy-standouts" title="Fantasy standouts"><a href="/article/fantasy-standouts">Fantasy standouts</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/oskar-garcia" class="fn">OSKAR GARCIA</a></span></div><a  rel="item-license" id="license-1957e4803ca51ad986edcf0611788577" href="#license-1957e4803ca51ad986edcf0611788577">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T23:13:05-04:00">Sep. 14, 2014 11:13 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia even clearfix" id="node-ap-article-440371">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/woodson-collectively-we-look-bad"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP932157931553.jpg?itok=HHwE3S8s" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/woodson-collectively-we-look-bad" title="Woodson: &#039;Collectively, we look bad&#039;"><a href="/article/woodson-collectively-we-look-bad">Woodson: &#039;Collectively, we look bad&#039;</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-9ddaa62edc2ca18cdb13966e0ed894b2" href="#license-9ddaa62edc2ca18cdb13966e0ed894b2">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T21:32:17-04:00">Sep. 14, 2014 9:32 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-article-440311">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/newton-clears-air-donkey-kong"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP736865600277.jpg?itok=IaoORTGw" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/newton-clears-air-donkey-kong" title="Newton clears air on &#039;Donkey Kong&#039;"><a href="/article/newton-clears-air-donkey-kong">Newton clears air on &#039;Donkey Kong&#039;</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/steve-reed" class="fn">STEVE REED</a></span></div><a  rel="item-license" id="license-a2f49bc98b58db7c5354725be882b8ac" href="#license-a2f49bc98b58db7c5354725be882b8ac">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T20:46:53-04:00">Sep. 14, 2014 8:46 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells even clearfix" id="node-ap-article-440296">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/only-jets"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/Jets.jpg?itok=MlQCP994" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/only-jets" title="Only The Jets"><a href="/article/only-jets">Only The Jets</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/eddie-pells" class="fn">EDDIE PELLS</a></span></div><a  rel="item-license" id="license-1209bd535dd0b2bd79e4fb76d57f6c33" href="#license-1209bd535dd0b2bd79e4fb76d57f6c33">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T20:32:09-04:00">Sep. 14, 2014 8:32 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-article-440276">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/keep-faith"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP500286976983.jpg?itok=EBNbxp02" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/keep-faith" title="&#039;Keep the faith&#039;"><a href="/article/keep-faith">&#039;Keep the faith&#039;</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-7d27a8277fe6b437d3a6772ba54deca6" href="#license-7d27a8277fe6b437d3a6772ba54deca6">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T20:22:29-04:00">Sep. 14, 2014 8:22 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia even clearfix" id="node-ap-article-440196">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/freeze-frame-best-sunday"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP241385173042.jpg?itok=ScJhr-Q9" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/freeze-frame-best-sunday" title="FREEZE FRAME: Best of Sunday"><a href="/article/freeze-frame-best-sunday">FREEZE FRAME: Best of Sunday</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-e584b0151b2e16b75830a1ddf23c4313" href="#license-e584b0151b2e16b75830a1ddf23c4313">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T20:03:52-04:00">Sep. 14, 2014 8:03 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-article-440016">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/getting-rough"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP671726871324.jpg?itok=resaGdG4" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/getting-rough" title="Getting rough"><a href="/article/getting-rough">Getting rough</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/genaro-c-armas" class="fn">GENARO C. ARMAS</a></span></div><a  rel="item-license" id="license-478c6abe7f7bdd9e1042d78df612b52e" href="#license-478c6abe7f7bdd9e1042d78df612b52e">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T19:17:00-04:00">Sep. 14, 2014 7:17 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells even clearfix" id="node-ap-article-440006">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/not-salting-it-away"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/montee.jpg?itok=NGnejUuc" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/not-salting-it-away" title="Not Salting it Away"><a href="/article/not-salting-it-away">Not Salting it Away</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/eddie-pells" class="fn">EDDIE PELLS</a></span></div><a  rel="item-license" id="license-c6c8c2f46be3e99a15574cbe4a1f15ef" href="#license-c6c8c2f46be3e99a15574cbe4a1f15ef">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T19:15:27-04:00">Sep. 14, 2014 7:15 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+<article class="node node-ap-photo node-teaser node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-photo-439931">
+  <div class="article-list-node-content">
+	  <div class="field-name-field-thumbnail"><a href="/photo/grass-factor"><img class="photo" src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/photos/grass%20factor.jpeg?itok=9Da2IiW2" alt="The grass factor" title="The grass factor" /></a></div>	  <div class="article-list-header">
+	    		    <h3 class="node-title title"><a href="/photo/grass-factor" title="The grass factor"><a href="/photo/grass-factor">The grass factor</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+	  
+		<footer>
+		  <div class="article-data">
+		    Sep. 14, 2014 7:02 PM EDT		  </div>
+	  </footer>	  
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells even clearfix" id="node-ap-article-439831">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/broncos-ring-fame"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/ring_0.jpg?itok=UZgHor3h" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/broncos-ring-fame" title="Broncos Ring of Fame"><a href="/article/broncos-ring-fame">Broncos Ring of Fame</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/eddie-pells" class="fn">EDDIE PELLS</a></span></div><a  rel="item-license" id="license-50c0b3f1ac2eb7d177e1e7e11c94aeb9" href="#license-50c0b3f1ac2eb7d177e1e7e11c94aeb9">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T18:40:48-04:00">Sep. 14, 2014 6:40 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-article-439786">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/clemson-connection"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP819849424219%20%281%29.jpg?itok=OP4D8f8M" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/clemson-connection" title="Clemson connection"><a href="/article/clemson-connection">Clemson connection</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-fa32183f975419c39ab977302bca07d9" href="#license-fa32183f975419c39ab977302bca07d9">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T18:34:08-04:00">Sep. 14, 2014 6:34 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells even clearfix" id="node-ap-article-439746">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/more-pain-chiefs"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/chiefs1_0.jpg?itok=Lq1Dak3M" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/more-pain-chiefs" title="More Pain for the Chiefs"><a href="/article/more-pain-chiefs">More Pain for the Chiefs</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/arnie-stapleton" class="fn">ARNIE STAPLETON</a></span></div><a  rel="item-license" id="license-ab872af9c14798e3ae8e4424c6e5c8f9" href="#license-ab872af9c14798e3ae8e4424c6e5c8f9">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T18:26:06-04:00">Sep. 14, 2014 6:26 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-article-439706">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/rams-bucs-back-after-rain-delay" title="Rams-Bucs back on after rain delay"><a href="/article/rams-bucs-back-after-rain-delay">Rams-Bucs back on after rain delay</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-0149f08c1c5e62839dc3d194d1fb2c79" href="#license-0149f08c1c5e62839dc3d194d1fb2c79">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div><div class="field field-name-body field-type-text-with-summary field-label-hidden entry-summary"><div class="field-items"><div class="field-item even"><p><img alt="" src="http://binaryapi.ap.org/120381b4cba5405399bd6d6a54175bb9/preview.jpg" style="width: 450px; height: 251px;" /></p></div></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T18:14:25-04:00">Sep. 14, 2014 6:14 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells even clearfix" id="node-ap-article-439606">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/fantasy-check-late-surprises-update"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/rivers.jpg?itok=GUhlvZX7" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/fantasy-check-late-surprises-update" title="Fantasy Check (Late Surprises, Update)"><a href="/article/fantasy-check-late-surprises-update">Fantasy Check (Late Surprises, Update)</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-8d7d269b29c9b545eab8773eae868705" href="#license-8d7d269b29c9b545eab8773eae868705">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T17:49:49-04:00">Sep. 14, 2014 5:49 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia odd clearfix" id="node-ap-article-439566">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/rgiii-glad-win-no-injury-timetable"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP212232768065.jpg?itok=u10gafZa" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/rgiii-glad-win-no-injury-timetable" title="RGIII glad to win, but no injury timetable"><a href="/article/rgiii-glad-win-no-injury-timetable">RGIII glad to win, but no injury timetable</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-0a393c1c52fc47c69dafbc3e21558e38" href="#license-0a393c1c52fc47c69dafbc3e21558e38">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T17:31:32-04:00">Sep. 14, 2014 5:31 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia even clearfix" id="node-ap-article-439436">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/charles-hurt"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP286541798111.jpg?itok=qFt1LJ7I" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/charles-hurt" title="Charles hurt"><a href="/article/charles-hurt">Charles hurt</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-7d96cd15ffd65a7d00e7fe49d6fc4858" href="#license-7d96cd15ffd65a7d00e7fe49d6fc4858">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T17:09:59-04:00">Sep. 14, 2014 5:09 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells odd clearfix" id="node-ap-article-439361">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/watt-lights-it-offense"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/watt.jpg?itok=LC5muxhn" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/watt-lights-it-offense" title="Watt Lights it up -- On Offense"><a href="/article/watt-lights-it-offense">Watt Lights it up -- On Offense</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/eddie-pells" class="fn">EDDIE PELLS</a></span></div><a  rel="item-license" id="license-498a2d50b805ce98cb287040deea82fa" href="#license-498a2d50b805ce98cb287040deea82fa">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T16:58:00-04:00">Sep. 14, 2014 4:58 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-ogarcia even clearfix" id="node-ap-article-439276">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/replacements"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/AP42393567878%20%281%29.jpg?itok=efUyO9RX" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/replacements" title="The replacements"><a href="/article/replacements">The replacements</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/oskar-garcia" class="fn">OSKAR GARCIA</a></span></div><a  rel="item-license" id="license-b4fae7058af258e0fde9859bac90475b" href="#license-b4fae7058af258e0fde9859bac90475b">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T16:50:14-04:00">Sep. 14, 2014 4:50 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells odd clearfix" id="node-ap-article-439246">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/upside-down-start-season-kc"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/royals1.jpg?itok=C3YwyYHm" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/upside-down-start-season-kc" title="An Upside Down Start to the Season in KC"><a href="/article/upside-down-start-season-kc">An Upside Down Start to the Season in KC</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/pat-graham" class="fn">PAT GRAHAM</a></span></div><a  rel="item-license" id="license-3fdbee7973365207ebea0b5b3a0a72ff" href="#license-3fdbee7973365207ebea0b5b3a0a72ff">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T16:46:20-04:00">Sep. 14, 2014 4:46 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article node-teaser hnews hentry item node-published node-not-promoted node-not-sticky author-epells even clearfix" id="node-ap-article-439016">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/article/chiefs-feeling-pain"><img src="http://pro32.ap.org/sites/pro32/files/styles/ap_list/public/chiefs1.jpg?itok=VMhvNjJ9" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h3 class="entry-title node-title title" rel="bookmark"><a href="/article/chiefs-feeling-pain" title="Chiefs Feeling the Pain"><a href="/article/chiefs-feeling-pain">Chiefs Feeling the Pain</a></a></h3>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/arnie-stapleton" class="fn">ARNIE STAPLETON</a></span></div><a  rel="item-license" id="license-01483d4d87b41d3f3fa609e21e4f8b45" href="#license-01483d4d87b41d3f3fa609e21e4f8b45">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-14T16:20:38-04:00">Sep. 14, 2014 4:20 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>  </div>
+    
+</div><div class="clearfix ap-pager"><div class="ap-pager-prev disabled"></div><div class="ap-pager-data">1 of 4</div><div class="ap-pager-next"><a title="Go to next page" href="/ap-now-pro32-sundays?page=1">next ›</a></div></div><div class="default-pager clearfix element-invisible"><h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager clearfix"><li class="pager-current first">1</li><li class="pager-item"><a title="Go to page 2" href="/ap-now-pro32-sundays?page=1">2</a></li><li class="pager-item"><a title="Go to page 3" href="/ap-now-pro32-sundays?page=2">3</a></li><li class="pager-item"><a title="Go to page 4" href="/ap-now-pro32-sundays?page=3">4</a></li><li class="pager-next"><a title="Go to next page" href="/ap-now-pro32-sundays?page=1">next ›</a></li><li class="pager-last last"><a title="Go to last page" href="/ap-now-pro32-sundays?page=3">last »</a></li></ul></div></div>    </div>
+  </div>
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="block block-dfp block-mediumrectangle block-dfp-mediumrectangle odd block-without-title" id="block-dfp-mediumrectangle">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-mediumrectangle-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div><div class="block block-block block-6 block-block-6 even block-without-title" id="block-block-6">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p></p><center><br /><h2 class="block-title"><a href="/ap-now-pro32-sundays" target="_blank">AP Now: Pro32 Sundays</a></h2>
+<p><a href="/ap-now-pro32-sundays" target="_blank"><img alt="" src="http://binaryapiqa.ap.org/1ccc3f31f995425295033c7867260fda/460x.jpg" style="width: 300px; height: 185px;" /></a></p>
+<p></p></center>
+<p>Check out live content each Sunday from AP reporters and photographers at every game, including updates, fantasy information, statistics, injury news and behind-the-scenes images and notes.</p>
+<h2><a href="/ap-now-pro32-sundays" target="_blank">AP Now: Pro32 Sundays</a></h2>
+    </div>
+  </div>
+</div><div class="ap-recent-articles"><section class="block block-ap-misc block-ap-recent-articles block-ap-misc-ap-recent-articles odd" id="block-ap-misc-ap-recent-articles">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Latest News</h2>
+            
+    <div class="content clearfix">
+      
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-454476">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/orders-devon-still-jersey-approaching-10000" title="Orders for Devon Still jersey approaching 10,000"><a href="/article/orders-devon-still-jersey-approaching-10000">Orders for Devon Still jersey approaching 10,000</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">CINCINNATI</span><a  rel="item-license" id="license-e09159e997e2aa362fd4e42e1b18edc2" href="#license-e09159e997e2aa362fd4e42e1b18edc2">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">39.162</span><span  class="longitude">-84.4569</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:02:43-04:00">Sep. 28, 2014 1:02 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-454441">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/mccown-inactive-bucs-foster-out-steelers" title="McCown inactive for Bucs, Foster out for Steelers"><a href="/article/mccown-inactive-bucs-foster-out-steelers">McCown inactive for Bucs, Foster out for Steelers</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PITTSBURGH</span><a  rel="item-license" id="license-f18baec514c72429d15bbfae30c94d35" href="#license-f18baec514c72429d15bbfae30c94d35">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.4406</span><span  class="longitude">-79.9959</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:43:10-04:00">Sep. 28, 2014 12:43 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-454416">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/belichick-reid-have-history-franchise-qbs"><img src="http://binaryapi.ap.org/a257fc8601b64ed89d2ea4f1d9932be3/60x.jpg" alt="Bill Belichick, Josh McDaniels, Tom Brady" title="Bill Belichick, Josh McDaniels, Tom Brady" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/belichick-reid-have-history-franchise-qbs" title="Belichick, Reid have history with franchise QBs"><a href="/article/belichick-reid-have-history-franchise-qbs">Belichick, Reid have history with franchise QBs</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">KANSAS CITY, Mo.</span><a  rel="item-license" id="license-1aacd378ffec115f84a53f21635b6ecc" href="#license-1aacd378ffec115f84a53f21635b6ecc">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">39.0997</span><span  class="longitude">-94.5786</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:31:55-04:00">Sep. 28, 2014 12:31 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-454396">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/illness-sidelines-bears-allen-packers-game" title="Illness sidelines Bears&#039; Allen for Packers game"><a href="/article/illness-sidelines-bears-allen-packers-game">Illness sidelines Bears&#039; Allen for Packers game</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">CHICAGO</span><a  rel="item-license" id="license-fdc071a3b3a59f84207fcd8c70252113" href="#license-fdc071a3b3a59f84207fcd8c70252113">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">41.85</span><span  class="longitude">-87.65</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:10:41-04:00">Sep. 28, 2014 12:10 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-454391">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/foster-and-lechler-active-texans-against-bills" title="Foster and Lechler active for Texans against Bills"><a href="/article/foster-and-lechler-active-texans-against-bills">Foster and Lechler active for Texans against Bills</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">HOUSTON</span><a  rel="item-license" id="license-4b00ecf6234142fdfad2292fadb2fdb5" href="#license-4b00ecf6234142fdfad2292fadb2fdb5">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">29.7633</span><span  class="longitude">-95.3633</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:09:18-04:00">Sep. 28, 2014 12:09 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>    </div>
+  </div>
+</section></div><div class="block block-ap-poll block-top-25-right-rail block-ap-poll-top-25-right-rail even block-without-title" id="block-ap-poll-top-25-right-rail">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <h2 class="block-title">The AP Pro32</h2>  <div class="poll-header-info clearfix">
+    Poll Released: Sep 23  </div>
+  <table>
+<caption></caption>
+ <thead><tr><th class="trank">Rank</th><th class="tname">team</th><th class="tprev">PV Rank</th> </tr></thead>
+<tbody>
+ <tr class="1 seattle-seahawks odd"><td class="trank">1</td><td class="tname"><a href="/teams/seattle-seahawks">Seattle Seahawks</a> (9)</td><td class="tprev">2</td> </tr>
+ <tr class="2 cincinnati-bengals even"><td class="trank">2</td><td class="tname"><a href="/teams/cincinnati-bengals">Cincinnati Bengals</a> (3)</td><td class="tprev">3</td> </tr>
+ <tr class="3 denver-broncos odd"><td class="trank">3</td><td class="tname"><a href="/teams/denver-broncos">Denver Broncos</a></td><td class="tprev">1</td> </tr>
+ <tr class="4 philadelphia-eagles even"><td class="trank">4</td><td class="tname"><a href="/teams/philadelphia-eagles">Philadelphia Eagles</a></td><td class="tprev">4</td> </tr>
+ <tr class="5 arizona-cardinals odd"><td class="trank">5</td><td class="tname"><a href="/teams/arizona-cardinals">Arizona Cardinals</a></td><td class="tprev">6</td> </tr>
+ <tr class="6 san-diego-chargers even"><td class="trank">6</td><td class="tname"><a href="/teams/san-diego-chargers">San Diego Chargers</a></td><td class="tprev">9</td> </tr>
+ <tr class="7 new-england-patriots odd"><td class="trank">7</td><td class="tname"><a href="/teams/new-england-patriots">New England Patriots</a></td><td class="tprev">7</td> </tr>
+ <tr class="8 chicago-bears even"><td class="trank">8</td><td class="tname"><a href="/teams/chicago-bears">Chicago Bears</a></td><td class="tprev">12</td> </tr>
+ <tr class="9 baltimore-ravens odd"><td class="trank">9</td><td class="tname"><a href="/teams/baltimore-ravens">Baltimore Ravens</a></td><td class="tprev">14</td> </tr>
+ <tr class="10 detroit-lions even"><td class="trank">10</td><td class="tname"><a href="/teams/detroit-lions">Detroit Lions</a></td><td class="tprev">16</td> </tr>
+</tbody>
+</table>
+<div class="poll-footer-info clearfix"><h4><a href="/poll">View Full Poll</a></h4></div>    </div>
+  </div>
+</div><div class="block block-dfp block-mediumrectangle2 block-dfp-mediumrectangle2 odd block-without-title" id="block-dfp-mediumrectangle2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-mediumrectangle2-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle2" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div><div class="block block-ap-misc block-ap-google-adwords block-ap-misc-ap-google-adwords even block-without-title" id="block-ap-misc-ap-google-adwords">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script type="text/javascript"><!--
+google_ad_client = "ca-pub-9888648487304734";
+/* APWhiteLabel_CollegeBasketball_300x250 */
+google_ad_slot = "2873293568";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>    </div>
+  </div>
+</div>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <h4 class="sections-menu"><a href="#">Sections</a></h4><div class="bottom-menu-frame"><ul class="menu"><li class="first leaf"><a href="/" title="">Home</a></li>
+<li class="leaf"><a href="/matchups" title="">Matchups</a></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Pro32</a></li>
+<li class="leaf"><a href="/divisions" title="">Divisions</a></li>
+<li class="last leaf"><a href="/galleries">Photos</a></li>
+</ul></div>  </div>
+</div><div class="grid-12 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div id="copyright">AP Sports <span class="pipe">|</span> &#169; 2014 Associated Press</div><ul class="menu"><li class="leaf"><a href="/privacy-policy" title="">Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-use" title="">Terms of Use</a></li>
+<li class="leaf"><a href="http://www.apimages.com">AP Images</a></li>
+<li class="last leaf"><a href="http://www.ap.org" title="">ap.org</a></li>
+</ul>  </div>
+</div>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div>  <script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"560baa128a","applicationID":"555721","transactionName":"MlRTYkFSWkNUU0EKDQsecFVHWlteGlFFPBMQVENPbFFBWVlUUBE9FVBWU2xfXUNB","queueTime":0,"applicationTime":960,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>

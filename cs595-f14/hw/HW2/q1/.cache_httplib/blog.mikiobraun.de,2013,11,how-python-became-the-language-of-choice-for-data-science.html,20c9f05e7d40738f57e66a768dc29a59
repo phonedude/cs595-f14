@@ -1,0 +1,361 @@
+status: 200
+content-length: 20515
+content-location: http://blog.mikiobraun.de/2013/11/how-python-became-the-language-of-choice-for-data-science.html
+-content-encoding: gzip
+accept-ranges: bytes
+vary: Accept-Encoding
+server: Apache/2.2.22 (Debian)
+last-modified: Fri, 22 Aug 2014 14:19:19 GMT
+etag: "e8140f-5023-5013885d9e7c0"
+date: Wed, 24 Sep 2014 22:11:58 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Marginally Interesting: How Python became the language of choice for data science</title>
+   <meta name="author" content="Mikio L. Braun" />
+   <link rel="alternate" type="application/atom+xml" title="Marginally
+   Interesting - Atom" href="http://feeds.feedburner.com/MarginallyInteresting" />
+   <style type="text/css" media="all">
+     @import "/css/default.css";
+     @import "/css/syntax.css";
+     @import "/css/plots.css";
+   </style>
+
+   <style type="text/css" media="print">
+     @import "/css/print.css";
+   </style>
+
+   <script src="/jsMath/easy/load.js"></script>
+   <script type="text/javascript">
+      /* var disqus_developer = 1; */
+   </script>
+
+    <!-- jquery -->
+    <script language="javascript" type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+    <!-- open graph stuff -->
+    <meta property="og:title" content="How Python became the language of choice for data science" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Marginally Interesting" />
+    <meta property="og:url" content="http://blog.mikiobraun.de/2013/11/how-python-became-the-language-of-choice-for-data-science.html" />
+
+    <meta property="og:description" content="Nowadays Python is probably the programming language of choice (besides R) for data scientists for prototyping, visualization, and running data analyses on small and medium sized data sets. And rightly so, I think, given the large number of available tools (just look at the list at the top of [this article](http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/)). However, it wasn't always like this. In fact, when I started working on my Ph.D. back in 2000 virtually everyone was using [matlab](http://www.mathworks.de/products/matlab/) for this. And again, rightly so. Matlab was very well suited to quickly prototype linear algebra and matrix stuff, came with a nice set of visualizations,..." />
+
+
+    <meta property="article:published_time" content="2013-11-20T17:20:00+01:00" />
+    <meta property="article:author" content="Mikio L. Braun" />
+
+    <!-- Twitter card stuff -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@mikiobraun" />
+    <meta name="twitter:title" content="How Python became the language of choice for data science" />
+
+    <meta name="twitter:description" content="Nowadays Python is probably the programming language of choice (besides R) for data scientists for prototyping, visualization, and running data analyses on small and medium sized data sets. And rightly so, I think, given the large number of available tools (just look at the list at the top of [this article](http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/)). However, it wasn't always like this. In fact, when I started working on my Ph.D. back in 2000 virtually everyone was using [matlab](http://www.mathworks.de/products/matlab/) for this. And again, rightly so. Matlab was very well suited to quickly prototype linear algebra and matrix stuff, came with a nice set of visualizations,..." />
+
+
+    <meta name="twitter:domain" content="blog.mikiobraun.de" />
+
+</head>
+<body>
+  <div id="header">
+  <div style="border: solid #ccc 1px; padding: 3px; margin: 0px">
+  <div style="border: solid #ccc 1px; padding: 3px; margin: 0px">
+    <h1><a href="/">MARGINALLY INTERESTING</a></h1>
+    
+    <p>
+      MACHINE LEARNING, COMPUTER SCIENCE, JAZZ, AND ALL THAT
+    </p>
+  </div>
+</div>
+
+  </div>
+
+  <div id="wrapper">
+    <div id="sidebar">
+  <h1>About Me</h1>
+
+  <p><img style="vertical-align: top; margin-right: 10px" src="/images/me-new-bright.jpg"></p>
+
+  <p>I'm a PostDoc in machine learning at TU Berlin and co-founder and   chief
+data scientist at <a href="http://streamdrill.com">streamdrill</a> (formerly
+<a href="http://twimpact.com">TWIMPACT</a>),   a startup working on real-time
+event analysis for all kinds of   applications.   <a
+href="/about.html">more...</a></p>
+
+  <h1>Links</h1>
+
+  <ul>
+    <li><a href="http://mikiobraun.de">homepage</a></li>
+    <li><a href="http://twitter.com/mikiobraun">@twitter</a></li>
+    <li><a href="http://delicious.com/mikiobraun">@delicious</a></li>
+    <li><a href="http://github.com/mikiobraun">@github</a></li>
+    <li><a href="http://mikiobraun.tumblr.com">@tumblr</a></li>
+    <li><a href="http://profiles.google.com/mikiobraun">@Google+</a></li>
+    <li><a href="http://de.linkedin.com/in/mikiobraun">@LinkedIn</a></li>
+  </ul>
+
+  <h1>Projects</h1>
+
+  <ul>
+    <li><a href="http://twimpact.com">twimpact</a></li>
+    <li><a href="http://jblas.org">jblas</a></li>
+    <li><a href="http://mloss.org">machine learning open source
+    software</a></li>
+    <li><a href="http://mldata.org">machine learning data sets</a></li>
+  </ul>
+
+  <h1>Posts</h1>
+
+  Last ten posts
+  
+  <ul>
+    
+    <li> <a href="/2014/08/big-data-machine-learning-convergence.html">Big Data & Machine Learning Convergence</a></li>
+    
+    <li> <a href="/2014/08/streaming-landscape-2014.html">The Streaming Landscape, 2014 edition: Convergence, APIs, Data Access</a></li>
+    
+    <li> <a href="/2014/07/what-is-scalable-machine-learning.html">What is Scalable Machine Learning?</a></li>
+    
+    <li> <a href="/2014/06/future-big-data-flink-stratosphere.html">The future of Big Data (according to Stratosphere/Flink)</a></li>
+    
+    <li> <a href="/2014/05/bbuzz-realtime-personalization-recommendation-stream-mining.html">Realtime personalization and recommendation with stream mining</a></li>
+    
+    <li> <a href="/2014/05/attending-aws-summit-berlin.html">Attending AWSSummit 2014 in Berlin</a></li>
+    
+    <li> <a href="/2014/04/machine-learning-on-streams-talk.html">Slides for Machine Learning on Streams</a></li>
+    
+    <li> <a href="/2014/04/mikios-guide-real-time-big-data.html">Mikio's Guide To Real-Time Big Data</a></li>
+    
+    <li> <a href="/2014/02/data-analysis-hard-parts.html">Data Analysis: The Hard Parts</a></li>
+    
+    <li> <a href="/2014/01/what-deepmind-google.html">What is going on with DeepMind and Google?</a></li>
+    
+  </ul>
+  <a href="/posts.html">all posts</a>
+
+<h1>Widgets</h1>
+
+<p>
+  <a href="https://twitter.com/mikiobraun" class="twitter-follow-button" data-show-count="true" data-dnt="true">Follow @mikiobraun</a>
+</p>
+
+<p><a href="http://feeds.feedburner.com/MarginallyInteresting"><img width="88" style="border:0" alt="" src="http://feeds.feedburner.com/~fc/MarginallyInteresting?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26"/></a></p>
+
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/mikiobraun"  data-widget-id="335398383722328065">Tweets by @mikiobraun</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<p><a href="http://architects.dzone.com/users/mikiobraun"><img src="/images/big-mvbbutton.png"></a></p>
+
+</div>
+
+
+    <div id="content">
+      <p><em>Wednesday, November 20, 2013</em></p>
+      
+      <h1>How Python became the language of choice for data science</h1>
+
+
+      <h2 class="subtitle"></h2>
+
+
+      
+
+      <!-- share buttons -->
+      <ul class="share">
+        <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="mikiobraun">Tweet</a></li>
+        <li><script type="IN/Share" data-url="http://blog.mikiobraun.de/2013/11/how-python-became-the-language-of-choice-for-data-science.html" data-counter="right"></script></li>
+        <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a></li>
+      </ul>
+
+      <p>Nowadays Python is probably the programming language of choice (besides R) for
+data scientists for prototyping, visualization, and running data analyses on
+small and medium sized data sets. And rightly so, I think, given the large number of available tools (just look at the list at the top of <a href="http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/">this article</a>). </p>
+
+<p>However, it wasn’t always like this. In fact, when I started working on my
+Ph.D. back in 2000 virtually everyone was using <a href="http://www.mathworks.de/products/matlab/">matlab</a> for this. And again,
+rightly so. Matlab was very well suited to quickly prototype linear algebra
+and matrix stuff, came with a nice set of visualizations, and even allowed to
+do some text mining and file parsing if you really needed it to do so.</p>
+
+<p>The problem was, however, that matlab was and is actually very expensive. A
+single license costs a few thousand Euros, and each toolbox costs another few
+thousand Euros. However, matlab was always very cheap for universities, which
+made perfect sense: That way, students could be trained in matlab so that they
+already knew how to use matlab to solve problems and companies would then be
+willing to pay for the licenses.</p>
+
+<p>All of this changed significantly in 2005 or so. At that time I was working at
+the Fraunhofer Institute FIRST, which belongs to a group of German publicly funded
+research institutes focused on applied research. Originally, Fraunhofer
+institutes could get the same cheap licenses, but then Mathworks changed their
+policies to the effect that you could only get the university rate if you are
+an institution which hands out degrees.</p>
+
+<p>This did not hold for most publicly funded research institutes all over the
+world, like the Max-Planck-Institutes (like the one in Tübingen where Bernhard
+Schölkopf is), or the NICTA in Australia where Alex Smola and others were
+working at the time. So we decided something had to change and we started
+looking for alternatives.</p>
+
+<p>Python was clearly one of the possible choices, but at the time other
+opportunities seemed possible as well. For example, <a href="http://www.gnu.org/software/octave/">octave</a> had been around for
+a long time and people wondered whether one should not just help them to make
+octave as good as matlab and fix all remaining compatibility issues. Together
+with <a href="http://people.tuebingen.mpg.de/harmeling/">Stefan Harmeling</a> I started
+phantasizing about a new programming language dubbed <em>rhabarber</em> which would
+allow to extend even the syntax dynamically to be able to have true matrix
+literals (or even other things). Later I would play around with
+<a href="http://jruby.org">JRuby</a> as a basis because it allowed better integration
+with Java to write high performance code where necessary (instead of doing
+painful low-level stuff with C and <a href="http://www.swig.org">swig</a>).</p>
+
+<p>If I remember correctly, the general consensus was already back then that
+Python would the language of choice. I think early versions of
+<a href="http://numpy.org">numpy</a> already existed, as well as early versions of
+<a href="http://matplotlib.org">matplotlib</a>. <a href="http://shogun-toolbox.org/">Shogun</a>,
+which had been developed and used extensively in our lab, had already begun to
+provide Python bindings, and so on.</p>
+
+<p>I personally always felt (and still feel) that there are things where Matlab
+is still superior to Python. Matlab was always a quite dynamic environment
+because you could edit files and it would reload the files automatically.
+Python is also somewhat restrictive with what you can say on a single line. In
+Matlab you would often load some data, start editing the functions and build
+you data analysis step by step, while in Python you tend to have files which
+you start from the command line (or at least that’s how I tend to do it).</p>
+
+<p>In any case, early on there was also the understanding that we should focus
+our efforts on a single project and not have the work scattered over several
+independent projects, so we planned a workshop at <a href="http://nips.cc">NIPS</a> 2005
+on this, but unfortunately the workshop was rejected. However, engagement was
+so high, that we just rented a seminar room in the same hotel where NIPS was
+going to be held on the Sunday before the conference, notified all people we
+thought would be relevant and had the <a href="http://www.raetschlab.org/workshops/MLPython">Machine Learning Tools Satellite
+Workshop</a> the day before the
+NIPS conference.</p>
+
+<p>The hot contender back then was the Elefant toolbox designed by Alex Smola and
+collaborators, which was a pretty ambituous project. The idea was to use
+<a href="http://www.mcs.anl.gov/petsc/petsc-as/">PETSc</a> as the numerical back end.
+PETSc was developed in the area of large scale numerical simulations and had a
+number of pretty advanced features like distributed matrices and similar
+things. I think ultimately, it might have been a bit too advanced. Simple
+things like creating a matrix were already quite complicated.</p>
+
+<p>I also gave a talk together with Stefan on rhabarber, but most people were
+skeptical whether a new language was really the right way to go, as Python
+seemed good enough. In any case, things really started to get going around
+that time and people were starting to build stuff based on Python. Humans are
+always hungry for social proof and having that one day meeting with a bunch of
+people from the same community gave everyone the confidence that he wouldn’t
+be left alone with Python.</p>
+
+<p>A year later, we finally had our first <a href="http://mloss.org/workshop/nips06/">Machine Learning Open Source
+Workshop</a> which eventually led to the
+creation of the <a href="http://jmlr.org/mloss">MLOSS track over at JMLR</a> in an
+attempt to give scientists a better incentive to publish their software. We
+had <a href="http://mloss.org/workshop/">several iterations</a> of our workshop, had Travis Oliphant give an intro to numpy, invited
+John Hunter, the main author of matplotlib who sadly passed away last year, as
+well as John W. Eaton, main author of octave, and also have <a href="http://mloss.org/workshop/nips13/">new
+workshop</a> at this years NIPS (although
+without me). Somehow, the big, open, interoperable framework didn’t emerge,
+but we’re still trying. Instead there exist many framework which are wrapping
+the same basic algorithms and tools again and again.</p>
+
+<p>Eventually, Elefant didn’t make the race, but other toolboxes like <a href="http://scikit-learn.org/stable/">scikit-
+learn</a> became common place, and nowadays we
+luckily have a large body of powerful tools to work with data, without having
+to pay horrenduous licensing fees. Other tools like
+<a href="http://pandas.pydata.org/">Pandas</a> were created in other communities and
+everything came together nicely. I think it’s quite a success story and having
+been minor part of it is nice, although I didn’t directly contribute in terms
+of software.</p>
+
+<p>Interestingly, I never became that much of a Python enthusiast. I wrote my own
+stuff in JRuby, which lead to the development of <a href="http://jblas.org">jblas</a>,
+but at some point started working on real-time analysis stuff where I just
+needed better control over my data structures. So nowadays I’m doing most my
+work in Scala and Java. Visualization is one area where there is really little
+alternatives besides Python and probably R. Sure, there’s
+<a href="http://d3js.org">D3.js</a> but it’s fairly low-level. I still have dreams of a
+plotting library where the type of visualization is decoupled from the data
+(such that you can say “plot this matrix as a scatter plot, or as an image”).
+Maybe I’ll find the time at some point.</p>
+
+<p>So if you have stories to share (or corrections) on the “early years of Data Science”, I’d love to hear from you.</p>
+
+      
+      <p>Posted by Mikio L. Braun at 2013-11-20 17:20:00 +0100</p>
+
+
+      <div class="affiliate">
+        <h4>Some Books related to Python and Data Analysis</h4>
+
+<p>Here are few handpicked books you might find interesting. <i>Learning Python</i> is a pretty comprehensive book on Python, probably too much if you're just interested in data analysis. <i>Python for Data Analysis</i> deals with all the main libraries, including Pandas and matplotlib. The <i>IPython</i> book is by the creators of IPython themselves, so buying it will hopefully give them some support, too. Finally, <i>Visualize this</i> is a general book on different kinds of data visualization, and deals not only with Python but other tools as well.</p>
+
+<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=margiinterblo-20&o=1&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=1449355730" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0">&nbsp;</iframe>
+<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=margiinterblo-20&o=1&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=1449319793" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0">&nbsp;</iframe>
+<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=margiinterblo-20&o=1&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=1782169938" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0">&nbsp;</iframe>
+<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=margiinterblo-20&o=1&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=0470944889" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0">&nbsp;</iframe>
+
+      </div>
+
+      
+      <div id="disqus_thread"></div>
+
+      <script type="text/javascript"
+	      src="http://disqus.com/forums/mikiobraun/embed.js">
+      </script>
+      <noscript>
+	<a href="http://disqus.com/forums/mikiobraun/?url=ref">View the
+	  discussion thread.</a>
+      </noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
+  <div id="footer">
+  <p>This blog is &copy; 2005-2013 by <a href="http://mikiobraun.de">Mikio L. Braun</a>.
+    Powered by
+    <a target="_blank" href="http://wiki.github.com/mojombo/jekyll/">jekyll</a>, 
+    <a target="_blank" href="http://sass-lang.com">Sass</a>, and
+    <a target="_blank"
+    href="http://www.math.union.edu/~dpvc/jsMath/welcome.html">jsMath</a>.
+    <a href="/impressum.html">Impressum</a>
+    </p>
+</div>
+
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-4388735-2");
+    pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+
+  <!-- fancybox -->
+  <script type="text/javascript">
+    $(function() { $(".fancybox").fancybox(); });
+  </script>
+  <!-- twitter -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <!-- linkedin share button -->
+  <script src="//platform.linkedin.com/in.js" type="text/javascript">
+    lang: en_US
+  </script>
+  <!-- pocket -->
+  <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+</body>
+</html>

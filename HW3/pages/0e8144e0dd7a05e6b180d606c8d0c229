@@ -1,0 +1,1316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+    <head>
+<!-- eid:article.5760404 -->        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHUF9ACQcHVVRV"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:17,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:17,2:18,ee:"QJf3ax"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:18,2:17,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:18,2:17,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:18,2:17,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:18,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:11,2:14,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],14:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],17:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],18:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:17,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+        <script>var HDN = HDN || {}; HDN.t_firstbyte = Number(new Date());</script>
+        <!-- generated at 2014-09-28 23:04:30 on prodWCM4 running vr5.22.1.2 -->
+        <meta name="adwiz-site" content="tu" />
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+
+        <script type='text/javascript' src='http://c.amazon-adsystem.com/aax2/amzn_ads.js'></script>
+        <script type='text/javascript'>
+            try {
+                amznads.getAds('3070');
+            } catch(e) { /*ignore*/ }
+        </script>
+
+        <script type="text/javascript">
+        bizobject_identifier = "article_5760404";
+
+        // <![CDATA[
+        var requestTime = new Date(1411963470 * 1000);
+
+                    
+            
+            // bizobject variables
+        var omni_channelPath = "Business";
+        var omni_title = "Looking west for fast track guidance";
+        var omni_bizObjectId = "5760404";
+        var omni_className = "article";
+        var omni_publicationDate = "2014-09-17 01:40:53";
+        var omni_sourceSite="timesunion";
+
+        // article specific variables
+        var omni_authorName = "BY LARRY RULISON";
+        var omni_authorTitle = "";
+        var omni_pageNumber = "1";
+        var omni_breakingNewsFlag = "0";
+        var omni_localNewsFlag = "0";
+
+            var omni_premiumStatus = "wasPremium";
+        var omni_premiumEndDate = "2014-09-17 04:00:00";
+        var omni_originalSource = "AL";
+            // ]]>
+        </script>
+        <!--[if IE 6]><script type="text/javascript" src="/js/hdn/utils/DD_belatedPNG_0.0.8a-min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/external/css/global.sharedmain.r5.22.1.2.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/external/css/global.sharedmodules.r5.22.1.2.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/external/css/global.sharedpages.r5.22.1.2.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/external/css/global.sitemain.r5.22.1.2.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/external/css/global.sitemodules.r5.22.1.2.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/external/css/global.sitepages.r5.22.1.2.css" media="all" />
+        <script type="text/javascript" src="/js/hdn/utils/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="/external/js/global.header.r5.22.1.2.js"></script>
+        <script type="text/javascript" async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+        <title>Looking west for fast track guidance - Times Union</title>
+        <link rel="SHORTCUT ICON" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/apple-touch-icon-128x128.png">
+        
+                                        <link rel="canonical" href="http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php" />
+        <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php" />    
+    
+            <meta name="description" content="General Electric Co.'s launch of its new fuel cell business in Malta last month is part of a larger corporate effort to get the company and its research labs to operate more like companies in Silicon Valley.  Mark Little, the head of GE Global Research in Niskayuna, said Monday during an investor conference in Laguna Beach, Calif., that the creation of GE Fuel Cells was inspired by the company's new FastWorks initiative designed to get products to market faster, cheaper and with more input from customers.  Unlike most GE businesses that traditionally fall under one of the industrial giant's units, GE Fuel Cells was launched as a standalone business with its own board of directors and milestones it must hit to receive funding from GE's venture capital arm.  GE Fuel Cells was created under that new model and employs 22 people in 20,000 square feet of space at Saratoga Technology + Energy Park in Malta, where it is working on pilot manufacturing in close partnership with potential customers.  GE has been working on the technology for decades at its Niskayuna lab but hopes to now get it to market much faster by having SUNY Poly and its corporate partners get it into commercial production." />
+    
+    
+            <meta name="author.name" content="By Larry Rulison" />
+        <meta name="author.title" content="" />
+        <meta name="date.release" content="2014/16/09" />
+        <meta name="time.release" content="21:40" />
+        <meta name="publisher" content="Times Union" />
+        <meta name="sections" content="Business" />
+        <meta name="subject" content="manufacturing and engineering,technology (general),alternative energy,school,corporate officer" />
+        <meta name="news_keywords" content="manufacturing and engineering,technology (general),alternative energy,school,corporate officer" />
+                <script src="http://widget.perfectmarket.com/timesunion/load.js"></script>
+
+        
+    <meta property="og:title" content="Looking west for fast track guidance" />
+            <meta property="og:description" content="General Electric Co.'s launch of its new fuel cell business in Malta last month is part of a larger corporate effort to get the company and its research labs to operate more like companies in Silicon Valley.  Mark Little, the head of GE Global Research in Niskayuna, said Monday during an investor conference in Laguna Beach, Calif., that the creation of GE Fuel Cells was inspired by the company's new FastWorks initiative designed to get products to market faster, cheaper and with more input from customers.  Unlike most GE businesses that traditionally fall under one of the industrial giant's units, GE Fuel Cells was launched as a standalone business with its own board of directors and milestones it must hit to receive funding from GE's venture capital arm.  GE Fuel Cells was created under that new model and employs 22 people in 20,000 square feet of space at Saratoga Technology + Energy Park in Malta, where it is working on pilot manufacturing in close partnership with potential customers.  GE has been working on the technology for decades at its Niskayuna lab but hopes to now get it to market much faster by having SUNY Poly and its corporate partners get it into commercial production." />
+        <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php" />
+    <meta property="og:image" content="http://www.timesunion.com/img/pages/article/opengraph_default.jpg" />
+    <meta property="og:site_name" content="Times Union" />
+                                                                        
+<!-- /business/templates/hearst/home/header_fbpage.tpl-->
+
+
+            <meta property="fb:page_id" content="288240529145" />
+        <meta property="fb:admins" content="12318284,771489839,589635640,100000018647482,582430764,551334080,529681987,100000343521475,100001073444821,710213297,653226748,100001539234772,601331469,480611135405160"/>
+                <meta property="fb:app_id" content="480611135405160"/>
+    
+<!-- e /business/templates/hearst/home/header_fbpage.tpl--><!-- templates/hearst/home/viafouraHeadMeta.tpl -->
+<meta property="vf:unique_id" content="timesunion-article-5760404" />
+<!-- e templates/hearst/home/viafouraHeadMeta.tpl -->
+        
+        <script type="text/javascript" id="adPositionManagerScriptTag" src="http://aps.hearstnp.com/Scripts/loadAds.js"></script>
+        
+<!-- CSS/JS Hotfix freeform -->
+
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.14330 -->
+<!-- Olive e-Edition -->
+<link rel="stylesheet" type="text/css" href="/css/hdn/utils/olive_modal.css">
+<script type="text/javascript" src="/js/hdn/utils/jquery.digitaldoor.js"></script>
+
+<style>
+.body em, .body i { font-style: italic; }
+.hst-articletext img {max-width: 358px;}
+.hst-siteheader .sitenav a {text-transform:capitalize !important;}
+
+/* temp fix for gallery (TU only) - patch coming as part of CFREE-6452 */
+.gallery-grow-wrap.wide .gallery-content li.gallery-slide {
+        margin: 0 10px 0 10px;
+}
+
+.hdn-comments .viafoura .hdn-vf-comment-counts { display: block; }
+#comments { display: block; }
+
+/* CFREE-7075*/
+.hst-billboard {float:none;}
+
+</style>
+
+<!-- Bing Webmaster Tools verification -->
+<meta name="msvalidate.01" content="9451CA04ABC9D1D5C6419C73B4C4F7B7" />
+
+<!-- Twitter analytics -->
+<meta name=”twitter:site” content=”@timesunion”>
+
+
+<!-- CREQ-910 -->
+
+<script type="text/javascript">
+	// <![CDATA[
+	jQuery(function($) {
+		if($("body").hasClass("hst-cmfThirdPartyHeader")){
+			$('.hst-siteheader a').attr('target', '_top');
+		}
+	});
+	// ]]>
+</script>
+
+<!-- Remove default registration links -->
+<style>
+.hst-siteheader #usertools1 {
+    display: none;
+}
+</style>
+
+<!-- CFREE-7328 -->
+<!-- Temporary fix for Viafoura. 'at' cookie name is similar to another cookie '_gat' and function was not robust enough to handle the two. This should be removed once a permanent fix is in place -->
+<script type="text/javascript">
+	// <![CDATA[
+HDN.publishVf = function () {
+    var atC = document.cookie.split(/\bat=/);
+    var lUCookie = '';
+    if (atC.length == 2) {
+        lUCookie = encodeURIComponent(HDN.getAtCookie());
+    }
+    window.viafoura.publish("user.custom_login", {
+        site: "viafouraDefinedCookie",
+        cookie: lUCookie
+    });
+    return;
+};
+HDN.getAtCookie = function () {
+    var atC = document.cookie.split(/\bat=/);
+    var lUCookie = '';
+    if (atC.length == 2) {
+        atC = atC.pop().split(";").shift();
+        // check to see if cookie was stored encoded
+        if (atC.indexOf("=") == -1) { // decode if no equale signs
+            return decodeURIComponent(atC)
+        }
+        return atC;
+    }
+    return '';
+};
+	// ]]>
+</script>
+
+    
+    </head>
+    <body class="body business hst-article">
+    <script type="text/javascript" src="/external/js/global.top.r5.22.1.2.js"></script>
+            <!-- ux/timesunion/tmpl/article_omniture.php -->
+
+<!-- Adobe TagManager: Albany Main -->
+<script type="text/javascript">//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtaGVhcnN0LTMwNzctMzk0OS0=/amc.js\"></sc"+"ript>");
+//]]>
+</script>
+<!-- End Adobe TagManager -->
+
+<!-- e ux/timesunion/tmpl/article_omniture.php -->            <div id="outer_bg_container">
+        <!-- outer gradient background image repeat-y  -->
+        <div id="inner_bg_container">
+            <!-- top fading gradient image fixed  -->
+            <div class="container">
+<!-- ux/timesunion/tmpl/site_first_content.php -->
+<script type="text/javascript">
+if ( typeof iPadShowPromos=='function' ) {
+    iPadShowPromos();
+}
+</script>
+<!-- end ux/timesunion/tmpl/site_first_content.php --><!-- hearst/home/navigation.tpl -->
+	<!-- business/templates/hearst/home/navigation_main.tpl -->
+<div class="hst-siteheader">
+  <p class="skip">(<a href="#skip">skip this header</a>)</p>
+
+  <div class="row1 clearfix">
+    <div class="buttonone" id="buttonone1">
+      <div class="creative">
+            <div id="A120" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A120"); /*]]>*/</script></div>      </div>
+    </div>
+    <div class="leaderboard" id="leaderboard1">
+      <div class="creative">
+        <div class="hst-leaderboard">
+	<div id="A728" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A728"); /*]]>*/</script></div>
+</div>
+      </div>
+    </div>
+      
+      <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.6568 -->
+<div class="hst-topzone">
+    <ul>
+        <li><a href="http://www.timesunion.com/subscribe">Subscribe to Times Union</a></li>
+        <li><a href="http://www.timesunion.com/subscriberservices">Subscriber Services</a></li>
+        <!--<li><a href="/help/">Contact Us</a></li>-->
+        <li><a href="http://web.timesunion.com/ads/onepage/houseads/timesuniondotcom/2012archive/020812.html">Advertise With Us</a></li>
+        <li><a href="https://www.iwantmytvmagazine.com/TimesUnion">Get TV Weekly Magazine</a></li>
+    </ul>
+</div>
+  </div>
+
+  <!-- ux/timesunion/templates/hearst/home/header_branding.tpl -->
+
+ <div class="row2b clearfix" id="row2"><!-- .row2b -->
+     <div id="usertools1" class="usertools">
+         <!-- ux/timesunion/tmpl/header_usertools.php -->
+
+<ul id="reg_nonmember">
+	<li class="first"><a href="http://reg.timesunion.com/signup/">Register</a></li>
+	<li><a href="http://reg.timesunion.com/login/">Sign In</a></li>
+</ul>
+<ul id="reg_member">
+</ul>
+<script type="text/javascript">
+   	/*<![CDATA[*/
+        function initRegLinks (eleId) {
+           	var insitecookie=GetCookie("chron_user_auth");
+           	var hccookie=GetCookie("hc_customize");
+        
+           	if (insitecookie && hccookie) {
+        
+        		var name=insitecookie.replace(/\|.*/,"");
+        
+        		var customarry=hccookie.split("|");
+        		var membername = customarry[10];
+        		var firstname = customarry[0];
+        		var lastname = customarry[1];
+        		var profileurl = "http://reg.timesunion.com/users/";
+        		if ('viafoura' == 'pluck') {
+        			profileurl = "http://www.timesunion.com/profile";
+        		}
+        		document.getElementById(eleId).innerHTML='<li class="first">Hi, <a href="' + profileurl + '">' + firstname + ' ' + lastname + '</a></li> <li><a href="http://reg.timesunion.com/users/">My Account</a></li> <li><a class="regnav" href="http://reg.timesunion.com/logout/">Sign Out</a></li>';
+        		document.getElementById('reg_nonmember').style.display='none';
+        
+        	}
+        }
+        initRegLinks('reg_member');
+	/*]]>*/
+</script>
+
+<!-- e ux/timesunion/tmpl/header_usertools.php -->
+     </div>
+
+			
+			<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.6234 -->
+<ul class="sitelinks">
+    <li class="first"><a href="/weather/"><strong>Weather</strong></a></li> 
+    <li><a href="/closings/"><strong>Closings</strong></a></li>
+    <li><a href="/traffic/"><strong>Traffic</strong></a></li>
+    <li><a href="/help/"><strong>Help</strong></a></li>
+</ul>
+
+    <div class="halfbanner">
+	    <div class="creative">
+			
+	        <div id="A234" class="ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("A234"); /*]]>*/ </script></div>
+			
+	     </div>
+    </div>
+
+    <div class="weather clearfix png" id="weatherbg">
+        <p class="date">Monday, September 29, 2014</p>
+    	<div class="location"><strong><a href="/weather/" id="weatherloc"></a></strong> <a href="/weather/" id="weathercond"></a></div>
+    	<div class="temperature"><a href="/weather/" id="weathertemp"></a><span id="weatherscale"></span></div>
+ 	</div>
+
+	<div class="brand">
+		<a href="/"><img src="/img/modules/siteheader/brand.png" alt="Times Union" class="png"/></a>
+	</div>
+
+    <div class="searchtools">
+		<form id="search_form" action="/search/?" method="get" target="_top">
+  		<input type="hidden" name="action" value="search" />
+	  	<input type="hidden" name="firstRequest" value="1" />
+        
+        
+        <table><tbody><tr>
+	          <td class="text"><input id="search_query" name="query" type="text" value=""></td>
+	          <td class="submit"><input type="image" value="" src="/img/modules/siteheader/searchbutton.png"></td>
+	          <td class="radio"><input type="radio" value="gsa" name="searchindex" checked="checked"></td>
+	          <td class="label">timesunion.com</td>
+	          <td class="radio"><input type="radio" value="businesses" name="searchindex"></td>
+	          <td class="label">Businesses</td>
+	        </tr></tbody></table>
+      	</form>
+    </div>
+
+ </div><!--/.row2b -->
+
+<!-- /ux/timesunion/templates/hearst/home/header_branding.tpl -->
+  <!-- NAV MENU START -->
+
+
+<script type="text/javascript">var defaultSiteNavId = '385';</script>
+<!-- hearst/sitemenu/dynamic.tpl -->
+
+
+<div id="menu_sitenav" class="sitenav clearfix">
+  <ul class="list1"><li id="sitenav_381"><a href="/">Home</a></li><li id="sitenav_382"><a href="/news/">News</a></li><li id="sitenav_384"><a href="/sports/">Sports</a></li><li id="sitenav_385"><a href="/business/">Business</a></li><li id="sitenav_383"><a href="/opinion/">Opinion</a></li><li id="sitenav_386"><a href="/entertainment/">Entertainment</a></li><li id="sitenav_387"><a href="/living/">Living</a></li><li id="sitenav_388"><a href="/blogs/">Blogs</a></li></ul><ul class="list2"><li id="sitenav_390"><a href="/jobs/">Jobs</a></li><li id="sitenav_391"><a href="/realestate/">Real Estate</a></li><li id="sitenav_392"><a href="/cars/">Cars</a></li><li id="sitenav_393"><a href="/classifieds/">Classifieds</a></li></ul>
+  <ul class="list3">
+    <li id="sitenav_0"><a class="list3_index" href="/index/"id="index">Index &#9660;</a></li>
+  </ul>
+  <!-- NavBar Sponsor Image -->
+  
+  <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.25762 -->
+<div class="sponsor"><a href="http://findnsave.timesunion.com/"><img src="/img/hdn/icons/findSave_color.png"></a></div>
+</div>
+
+
+
+<div class="hst-navIndex" id="navIndex">
+    <div class="content">
+        <div class="title clearfix">
+            <div class="indexheader"><a href="#" id="navIndex-close">Close [X]</a></div>
+            Quick links to other pages on this site <span class="pipe">|</span> Still can't find it? see <a href="/index/">Site Index</a>
+        </div>
+        <div class="columns" id="navIndex-columns">
+            <div class="clear"></div>
+        </div>
+        <!--/.columns-->
+    </div>
+    <!--/.content-->
+</div>
+
+<div id="subnav_381" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="/seen-events/">Were You Seen?</a></li><li><a href="/onlinestore/">Buy Photos</a></li><li><a href="http://events.timesunion.com">Calendar</a></li><li><a href="http://events.timesunion.com/search?new=n&sort=0&srad=60.0&srss=10&st=any&st_select=any&svt=text&swhat=tu+events&swhen=&srad=45">TU Events</a></li><li><a href="/7day-all/">Archives</a></li><li><a href="http://www.legacy.com/obituaries/timesunion-albany/">Obits</a></li><li><a href="http://blog.timesunion.com/capitol">Capitol Confidential</a></li><li><a href="http://blog.timesunion.com/kristi/">On the Edge</a></li><li><a href="http://blog.timesunion.com/tablehopping">Table Hopping</a></li><li><a href="/magazines/">Magazines</a></li><li><a href="/lottery/">Lottery</a></li></ul></div>
+<div id="subnav_382" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="/local/">Local</a></li><li><a href="/yourtown/">Your Town</a></li><li><a href="http://blog.timesunion.com/capitol">Capitol Confidential</a></li><li><a href="/newsletters/">Newsletters</a></li><li><a href="/7day-state/">State</a></li><li><a href="/nation/">Nation</a></li><li><a href="/world/">World</a></li><li><a href="/technology/">Technology</a></li><li><a href="/specialreports/">Special Reports</a></li><li><a href="/closings/">School Closings</a></li><li><a href="/7dayarchive/">All Stories</a></li></ul></div>
+<div id="subnav_384" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="/hssports/">HS Sports</a></li><li><a href="http://blog.timesunion.com/sidelines">Sidelines</a></li><li><a href="/sportscolumns/">Columnists</a></li><li><a href="/siena/">Siena</a></li><li><a href="/ualbany/">UAlbany</a></li><li><a href="/hockey/">Hockey</a></li><li><a href="/probaseball/">MLB</a></li><li><a href="/basketball/">NBA</a></li><li><a href="/profootball/">NFL</a></li><li><a href="/golf/">Golf</a></li><li><a href="http://racing.ap.org/timesunion">Auto Racing</a></li><li><a href="http://fanshop.timesunion.com/?sourceid=sec300sports">Fanshop</a></li><li><a href="/7day-sports/">All Stories</a></li></ul></div>
+<div id="subnav_385" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="http://markets.timesunion.com/">Market Summary</a></li><li><a href="http://blog.timesunion.com/business">The Buzz Blog</a></li><li><a href="/womenatwork/">Women@Work</a></li><li><a href="/technology/">Technology News</a></li><li><a href="http://albanyny.salary.com/SalaryWizard/LayoutScripts/Swzl_NewSearch.aspx">Salary Wizard</a></li><li><a href="/business/press-releases/">Press Releases</a></li><li><a href="/sponsoredarticles/business/">Sponsored Content</a></li><li><a href="/7day-business/">All Stories</a></li></ul></div>
+<div id="subnav_383" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="http://blog.timesunion.com/opinion/category/editorials/">Editorials</a></li><li><a href="http://blog.timesunion.com/opinion/category/letters-to-the-editor/">Letters to Editor</a></li><li><a href="/7day-opinion/">Commentary</a></li><li><a href="/columnists/">Columnists</a></li><li><a href="http://blog.timesunion.com/opinion">Observation Deck</a></li><li><a href="http://blog.timesunion.com/editors">Editors' Blog</a></li><li><a href="/lettertoeditor/">Submit Letters & Commentary</a></li><li><a href="/7day-opinion/">All Stories</a></li></ul></div>
+<div id="subnav_386" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="http://events.timesunion.com">Calendar</a></li><li><a href="http://events.timesunion.com/search?new=n&sort=0&srad=60.0&srss=10&st=any&st_select=any&svt=text&swhat=tu+events&swhen=&srad=45">TU Events</a></li><li><a href="/seen-events/">Seen Photos</a></li><li><a href="/movies/">Movies</a></li><li><a href="/tv/">TV</a></li><li><a href="http://web.timesunion.com/restaurants">Restaurants</a></li><li><a href="/localarts/">Local Arts</a></li><li><a href="/celebrities/">Celebrities</a></li><li><a href="/comics/">Comics</a></li><li><a href="/games/">Games</a></li><li><a href="/horoscope/">Horoscope</a></li><li><a href="/lottery/">Lottery</a></li><li><a href="/7day-arts/">All Stories</a></li></ul></div>
+<div id="subnav_387" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="/parenting/">Parenting</a></li><li><a href="/pets/">Pets</a></li><li><a href="/savingssource/">Savings Source</a></li><li><a href="http://blog.timesunion.com/highschool/">High School</a></li><li><a href="/celebrations/">Celebrations</a></li><li><a href="http://events.timesunion.com/search?new=n&sort=0&srad=60.0&srss=10&st=any&st_select=any&svt=text&swhat=tu+events&swhen=&srad=45">TU Events</a></li><li><a href="/518life/">518Life</a></li><li><a href="/womenatwork/">Women@Work</a></li><li><a href="/explore/">Explore</a></li><li><a href="/sponsoredarticles/lifestyle/">Sponsored Content</a></li><li><a href="/7day-living/">All Stories</a></li></ul></div>
+<div id="subnav_388" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="/blogs/">All Blogs</a></li><li><a href="http://blog.timesunion.com/capitol/">Capitol Confidential</a></li><li><a href="http://blog.timesunion.com/kristi/">On the Edge</a></li><li><a href="http://blog.timesunion.com/tablehopping/">Table Hopping</a></li><li><a href="http://blog.timesunion.com/crime/">Crime Confidential</a></li><li><a href="http://blog.timesunion.com/savings">Shopportunist</a></li><li><a href="http://blog.timesunion.com/advocate/">The Advocate</a></li><li><a href="http://blog.timesunion.com/business/">The Buzz</a></li><li><a href="http://blog.timesunion.com/hottopic/">Hot Topics</a></li><li><a href="http://blog.timesunion.com/giving/">Capital Region Gives</a></li></ul></div>
+<div id="subnav_390" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="http://web.timesunion.com/jobs/jobsweekly/">Jobs Weekly</a></li><li><a href="http://web.timesunion.com/jobs/jobfair/">Job Fair</a></li><li><a href="http://web.timesunion.com/jobs/packages/">Place an Ad</a></li><li><a href="http://blog.timesunion.com/careers/">Careers and Worklife Blog</a></li><li><a href="http://blog.timesunion.com/business/">Business Blog</a></li><li><a href="http://albanyny.salary.com/SalaryWizard/LayoutScripts/Swzl_NewSearch.aspx">Salary Wizard</a></li></ul></div>
+<div id="subnav_391" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="/realestate/">For Sale</a></li><li><a href="http://realestate.timesunion.com/section/rentals/">For Rent</a></li><li><a href="http://realestate.timesunion.com/open-houses/?sort_field=total_images&sort_direction=desc&min_baths=Baths&min_beds=Beds&open_house_filter_star">Open Houses</a></li><li><a href="http://www.newhomesource.com/timesunion">New Homes</a></li><li><a href="http://www.landsofamerica.com/landsconnector/Albany-Times-Union/index.cfm">Land & Farms</a></li><li><a href="http://timesunion.ca.kaango.com/feListAds?search=&cat=776&listtype=1">Commercial</a></li><li><a href="http://timesunion.ca.kaango.com/feListAds?search=&cat=3&listtype=1">Services</a></li><li><a href="http://timesunion.ca.kaango.com/feListAds?search=&cat=1244&listtype=1">Auctions</a></li><li><a href="/homestyle/">Home Style</a></li></ul></div>
+<div id="subnav_392" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="http://cars.timesunion.com/new">Search New Cars</a></li><li><a href="http://cars.timesunion.com/used">Search Pre-Owned Cars</a></li><li><a href="/vehiclereviews/">Vehicle Reviews</a></li><li><a href="http://blog.timesunion.com/classiccars">Classic Cars Blog</a></li><li><a href="http://blog.timesunion.com/bike/">The Bike Blog</a></li><li><a href="/carsense/">Car Sense</a></li></ul></div>
+<div id="subnav_393" class="subnav clearfix hidden"><ul class="list1"><li class="first"><a href="http://timesunion.kaango.com/">Shop Classifieds</a></li><li><a href="http://timesunion.kaango.com/ads/create">Place an Ad</a></li><li><a href="http://timesunion.kaango.com/ads/listAdCategories">Find Ads</a></li><li><a href="http://timesunion.kaango.com/help">Help Topics</a></li><li><a href="http://local.timesunion.com/">A-List Business Directory</a></li><li><a href="http://www.savingssource.com/">Shopping & Coupons</a></li><li><a href="/advertising/">How to Advertise</a></li></ul></div>
+
+<div id="subnav_0" class="subnav clearfix hidden"></div>
+
+<!-- e hearst/sitemenu/dynamic.tpl --><!-- hearst/common/channel_subnav.tpl -->
+<!-- e hearst/common/channel_subnav.tpl -->
+
+<!-- NAV MENU END -->
+
+ <div class="hr"><hr /></div> 
+</div>
+<!--/.siteheader -->
+
+<div class="hst-billboard">
+			<div id="RM" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("RM"); /*]]>*/</script></div>
+		<div id="PAGEWIDE" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("PAGEWIDE"); /*]]>*/</script></div>
+</div>
+<!-- e business/templates/hearst/home/navigation_main.tpl -->
+<!-- e hearst/home/navigation.tpl -->
+<!-- commentsOn: 1, commentKey: timesunion-article-5760404 -->
+    <div class="pagecontent faux-21 hst-articlecontent business">
+
+                                        
+
+                                    <!-- templates/design/article/story_page.tpl -->
+
+<div class="faux-21 clearfix">
+    <div class="span-21b clearfix">
+        <!-- hearst/article/types/story.tpl -->
+
+<table class="hst-articleprinter">
+    <tr>
+        <td class="print"><form><input type="submit" value="Print This Article" onclick="print();return false;" /></form></td>
+        <td class="back"><a href="/business/article/Looking-west-for-fast-track-guidance-5760404.php">&laquo; Back to Article</a></td>
+    </tr>
+</table>
+
+<div id="hst-printable-ad" class="hst-printable-ad">
+</div>
+<div class="hnews hentry item">
+
+<!-- src/business/templates/hearst/article/types/standard_title.tpl -->
+
+        <div class="hst-articletitle articletitle">
+            <p class="brand"><!--  BRAND  --></p>
+            <!-- src/business/templates/hearst/article/headline.tpl -->
+    <h1 class="headline entry-title">Looking west for fast track guidance</h1>
+            <h5 class="deck">Company works with Silicon Valley author, sage on product development</h5>
+    <!-- e src/business/templates/hearst/article/headline.tpl -->
+            <!-- src/business/templates/hearst/article/types/byline.tpl -->
+
+	<div style="display:none">
+			<span class="author vcard"><span class="fn">Larry Ruliso</span></span>, <span class="source-org vcard"><span class="org fn">Times Union</span></span>
+		</div>
+<h5 class="byline"><span class="name">By Larry Rulison</span></h5><!-- e src/business/templates/hearst/article/types/byline.tpl -->
+                                                                <h5 class="timestamp updated" title="2014-09-16T21:41:04Z">
+                Published 9:41&nbsp;pm, Tuesday, September 16, 2014
+            </h5>
+        </div>
+
+<!-- e src/business/templates/hearst/article/types/standard_title.tpl -->
+
+<script type="text/javascript" src="/js/hdn/slideshow/refresh.js?r5.22.1.2"></script>
+<iframe style="display:none;" id="galleryrefresher" name="galleryrefresher" src="/tmpl/slideshow_empty.html"></iframe>
+<iframe style="display:none;" id="gallery_pos_refresher" name="gallery_pos_refresher" src="/tmpl/slideshow_empty.html"></iframe>
+<script>HDN.doRefresh = 1;</script>
+  <div class="hst-articlebox">
+        
+        <div class="hst-freeform hdnce-e hdnce-item-19231"><!-- mid:freeform.19231 -->
+          <style type="text/css">
+.hst-articlebox{ 
+width:300px !important; 
+} </style>
+
+<div id="ndn-video-single" class="ndn-widget" style="display: none;"></div>
+      </div>
+  
+    <!-- hearst/article/article_tools.tpl -->
+
+
+
+<!-- temporary inline style, don't judge me! -->
+
+<style type="text/css">
+	.fb_share_count_wrapper {width: 52px;}
+	.FBConnectButton_Small .FBConnectButton_Text {padding:2px 2px 3px 3px;}
+	.FBConnectButton_Small, .FBConnectButton_RTL_Small {font-size:9px;line-height:10px;}
+	.print_link {height: 25px;}
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<div class="hst-articletools">
+
+	<!-- Wrap  -->
+	<div class="inner_social_wrap clearfix" style="margin-bottom:15px;">
+
+	<div id="tweetmeme_1" style="float: left;">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php?cmpid=twitter" data-count="vertical" data-via="TimesUnion">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	</div>
+	
+	<!--
+	<div style="float: left; width:45px; padding-left:8px;">
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.timesunion.com%2Fbusiness%2Farticle%2FLooking-west-for-fast-track-guidance-5760404.php%3Fcmpid%3Dfb&amp;layout=box_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;font=tahoma&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:65px;" allowTransparency="true"></iframe>
+	</div>
+	-->
+	
+	<div style="float: left; padding-left:8px;" class="fb-share-button" data-href="http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php?cmpid=fb" data-type="box_count"></div>
+	
+	<div style="float: left; padding-left: 8px;margin-right:8px;">
+		<g:plusone size="tall" href="http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php?cmpid=gplus"></g:plusone>
+	</div>
+	
+	<script type="text/javascript">
+		(function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+	</script>
+	
+	<div style="float: left; margin-top:40px;">
+		<!-- Pin it -->
+		<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.timesunion.com%2Fbusiness%2Farticle%2FLooking-west-for-fast-track-guidance-5760404.php&media=http://www.timesunion.com/img/pages/article/opengraph_default.jpg&description=Looking+west+for+fast+track+guidance" data-pin-do="buttonPin" data-pin-config="above"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+		<!-- Please call pinit.js only once per page -->
+		<script src="//assets.pinterest.com/js/pinit.js" data-pin-zero="true" async type="text/javascript" /></script>
+		
+	</div>
+	
+	</div><!-- end Wrap -->
+	
+	<!--
+	<div style="clear:both; padding-bottom:10px;"></div>
+	-->
+	
+	<table style="float:left; width:50%;">
+		<tr>
+							<td class="size">
+					<img src="/img/pages/article/tools_size.gif" alt="" />
+					<a class="larger" href="javascript:hst_chsize('plus')">Larger</a> | <a class="text" href="javascript:hst_chsize('minus')">Smaller</a>
+				</td>
+					</tr>
+				<tr><td class="print print_link"><a href="javascript:hst_print();"><img src="/img/pages/article/tools_print.gif" alt="" />Printable Version</a></td></tr>
+	</table>
+	<table style="float:left; width:45%;">
+		<tr>
+			<td class="print size">
+				<a href="mailto:?subject=Looking%20west%20for%20fast%20track%20guidance&body=http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php" /><img src="http://www.newstimes.com/img/pages/article/tools_mail.gif" alt="" />Email This</a>
+				<!-- RM 20174
+				<a href="#" onclick="popup('/?controllerName=emailThis&sitename=timesunion&object=article&objectid=5760404&site=3&title=Looking+west+for+fast+track+guidance&url=http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php'); return false;"><img src="http://www.newstimes.com/img/pages/article/tools_mail.gif" alt="" />Email This</a>
+				-->
+			</td>
+		</tr>
+		<tr>
+			<td class="print size"><div class="poplaunch"><div class="toolspop fontpop" id="hst_articletools_fontpop" onmouseover="popShow(this.id);" onmouseout="popHide(this.id);" style="display:none;"><form action="#"><p class="choice"><input type="radio" id="font_radio_georgia" name="font_radio" value="1" onclick="hst_chfont('georgia');" checked="checked" /> <span class="georgia">Georgia <span class="isdefault">(default)</span></span></p><p class="choice"><input type="radio" id="font_radio_verdana" name="font_radio" value="2" onclick="hst_chfont('verdana');" /> <span class="verdana">Verdana</span></p><p class="choice"><input type="radio" id="font_radio_times" name="font_radio" value="3"   onclick="hst_chfont('times');" /> <span class="times">Times New Roman</span></p><p class="choice"><input type="radio" id="font_radio_arial" name="font_radio" value="4"  onclick="hst_chfont('arial');" /> <span class="arial">Arial</span></p></form></div><a href="#" onclick="popShow('hst_articletools_fontpop', this); return false;"><img src="http://www.newstimes.com/img/pages/article/tools_dropdown.gif" alt="" />Font</a></div></td>
+			<td class="ad"><div class="hst-microbar">
+	<div id="A88" class="ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("A88"); /*]]>*/ </script></div>
+</div></td>
+		</tr>
+	</table>
+	
+	
+	
+	<div style="clear:both;"></div>
+</div><!--/.hst-articletools-->
+<!-- e hearst/article/article_tools.tpl -->    
+    
+	<!-- src/business/templates/hearst/article/relatedStories.tpl -->
+<!-- src/business/templates/hearst/article/relatedStories.tpl -->    
+        
+    <!-- zone ModA -->
+    <!-- / zone ModA -->
+    <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-6590-headline_list_article"><!-- collections/headline_list_article.tpl -->
+<!-- collection.headline_list_article.6590 -->
+<div class="hst-headlinelist hst-headlinelist-article"><div class="edge2"><div class="edge3"><div class="edge4">
+    <div class="header clearfix">
+    <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><a href="/news/"><span class="first-word">Latest</span> News</a></h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->    </div>
+    <ul>
+                    <li class="item">
+                <h4><a   href="/local/article/Details-released-in-fatal-Selkirk-plane-crash-5786725.php">Crash report lacking cause</a></h4>
+                <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->            </li>
+                    <li class="item">
+                <h4><a   href="/local/article/Trash-fire-at-Port-of-Albany-5786562.php">Trash fire at Port of Albany</a></h4>
+                <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->            </li>
+                    <li class="item">
+                <h4><a   href="/local/article/Cuomo-in-Afghanistan-I-m-doing-my-job-as-5786440.php">Cuomo vows homeland defense</a></h4>
+                <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->            </li>
+                    <li class="item last">
+                <h4><a   href="/local/article/Nominate-your-workplace-for-top-honors-5786178.php">Nominate your workplace for top honors</a></h4>
+                <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->            </li>
+            </ul>
+</div></div></div></div><!--/.hst-headlinelist-article -->
+<!-- e headline_list_article.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+  </div>
+
+<div class="hst-articlepager-report" id="articlepagerreport">Page 1 of 1</div>
+<div class="hst-articletext"><div id="fontprefs_top" class="georgia md">
+
+  <div id="text" class="entry-content">
+                    <p><i>Niskayuna</i></p><p>General Electric Co.'s launch of its new fuel cell business in Malta last month is part of a larger corporate effort to get the company and its research labs to operate more like companies in Silicon Valley.</p><p><a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22Mark+Little%22">Mark Little</a>, the head of GE Global Research in Niskayuna, said Monday during an investor conference in Laguna Beach, Calif., that the creation of <a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22GE+Fuel+Cells%22">GE Fuel Cells</a> was inspired by the company's new FastWorks initiative designed to get products to market faster, cheaper and with more input from customers.</p><p>Unlike most GE businesses that traditionally fall under one of the industrial giant's units, GE Fuel Cells was launched as a standalone business with its own board of directors and milestones it must hit to receive funding from GE's venture capital arm.</p><p>"We set up our separate team. We took technology and technologists out of our corporate research center and our business put them aside, letting them run fast and free," Little said at the conference, which was hosted by financial services company <a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22Morgan+Stanley%22">Morgan Stanley</a>. "This is the idea of FastWorks."</p><p>Little said that GE has been working with Silicon Valley entrepreneur and author <a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22Eric+Ries%22">Eric Ries</a>, who wrote the book "The <a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22Lean+Startup%22">Lean Startup</a>," which focuses on developing products more effectively. Little said he was skeptical at first that Ries could teach anything to executives like himself who have decades of experience.</p><p>"We're looking at young Eric and thinking how the hell is this software dude going to have anything to say to us," Little said. "And yet his ideas were transformational for us. I went in completely skeptical about it. I came away completely enthused."</p><p>Little said that GE has already started to change a culture that is used to methodically plodding along as it brings new products to market.</p><p>"Now we say, give me your product spec, try it out with your customers, adjust, get products out fast, and learn, learn, learn," Little said. "This is very exciting to people in our company."</p><p>GE Fuel Cells was created under that new model and employs 22 people in 20,000 square feet of space at Saratoga Technology + Energy Park in Malta, where it is working on pilot manufacturing in close partnership with potential customers. </p><p>It will also test the new fuel cells in partnership with <a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22Hudson+Valley+Community+College%22">Hudson Valley Community College</a>'s Tec-Smart campus next door.</p><p>Little also said GE is thinking differently about partnerships, including its recent plan to work with <a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22SUNY+Polytechnic+Institute%22">SUNY Polytechnic Institute</a> in Albany, formerly <a href="/search/?action=search&channel=business&inlineLink=1&searchindex=gsa&query=%22SUNY+College+of+Nanoscale+Science+and+Engineering%22">SUNY College of Nanoscale Science and Engineering</a>, on power electronics chips made of silicon carbide. GE has been working on the technology for decades at its Niskayuna lab but hopes to now get it to market much faster by having SUNY Poly and its corporate partners get it into commercial production.</p><p>"They're going to build out a capability to give us this in very significant quantities, driving the cost way down," Little said. "That will play in solar, that will play in many other parts of our health care business, our aviation business. It's going to be a great technology for us."</p><p><i><a href="mailto:lrulison@timesunion.com">lrulison@timesunion.com</a></i><i> &bull; </i><i>518-454-5504</i><i> &bull; </i><i>@larryrulison</i></p>
+      	  	<!-- src/business/templates/hearst/article/factbox.tpl -->
+
+    <div class="hst-factbox">
+        <p /><p />
+    </div>
+
+<!-- e src/business/templates/hearst/article/factbox.tpl -->
+  </div>
+  
+  <script type="text/javascript">
+  jQuery(function($) {
+    $('#text').paginator('.hst-articlepager', $('.hst-articlebox').height());
+  });
+  </script>
+  
+
+
+            <!-- usfeed.hearst.articles -->
+      <script type="text/javascript">
+          var ord = window.ord || Math.floor(Math.random() * 1e16);
+          document.write('<script type="text/javascript" src="http://ad.doubleclick.net/N3910/adj/usfeed.hearst.articles;sz=5x5;ord=' + ord + '?"><\/script>');
+      </script>
+      <noscript>
+          <a href="http://ad.doubleclick.net/N3910/jump/usfeed.hearst.articles;sz=5x5;ord=1411963471?"><img src="http://ad.doubleclick.net/N3910/ad/usfeed.hearst.articles;sz=5x5;ord=1411963471?" width="5" height="5" /></a>
+      </noscript>
+  </div></div><!--/.hst-articletext-->
+</div><!--/nlg wrapper-->
+
+<div class="hst-articlefooter">
+<!-- hearst/article/article_tools_2.tpl  -->
+
+
+
+	<!-- temporary inline style below, don't judge me! -->
+	<div class="hst-articletools2">
+	    <!-- Use on sfgate -->
+		<div class="arbox print first">
+			<a href="javascript:hst_print();"><img src="/img/pages/article/tools_print.gif" alt="" style="vertical-align: middle;" /> Printable Version</a>
+		</div>
+		<div class="arbox print">
+			<a href="mailto:?subject=Looking%20west%20for%20fast%20track%20guidance&body=http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php" /><img src="http://www.newstimes.com/img/pages/article/tools_mail.gif" alt="" style="vertical-align: middle;" /> Email This</a>
+			<!-- RM 20174
+			<a href="#" onclick="popup('/?controllerName=emailThis&sitename=timesunion&object=article&objectid=5760404&site=3&title=Looking+west+for+fast+track+guidance&url=http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php'); return false;"><img src="/img/pages/article/tools_mail.gif"  alt="" style="vertical-align: middle;" /> Email This</a>
+			-->
+		</div>
+		
+		
+		<style type="text/css">
+		    .fb_iframe_wrap_hdn .fb_iframe_widget span,  .fb_iframe_wrap_hdn .fb_iframe_widget iframe {
+		        width: 92px !important;
+		    }
+		</style>
+		
+		
+		<div class="arbox facebook fb_iframe_wrap_hdn">
+		
+		<div class="fb-share-button" data-href="http%3A%2F%2Fwww.timesunion.com%2Fbusiness%2Farticle%2FLooking-west-for-fast-track-guidance-5760404.php" data-type="button_count" ></div>
+		
+		</div>
+		<div class="arbox">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php?cmpid=twitter" data-count="horizontal" data-via="TimesUnion">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</div>
+		<div class="arbox">
+			<g:plusone size="medium" href="http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php?cmpid=gplus"></g:plusone>
+		</div>
+		
+		<script type="text/javascript">
+			(function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
+		</script>
+		
+		<!-- CFREE-6902
+		<div class="arbox last">
+			
+			<script type="text/javascript">
+				//hack to fix linkedin JS bug
+				window.name=window.name || "";
+			</script>
+			
+			<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+			<script type="IN/Share" data-counter="right"></script>
+		</div>
+		-->
+		<div class="arbox last">
+			<!-- Pin it -->
+			
+			<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.timesunion.com%2Fbusiness%2Farticle%2FLooking-west-for-fast-track-guidance-5760404.php&media=http://www.timesunion.com/img/pages/article/opengraph_default.jpg&description=Looking+west+for+fast+track+guidance" 
+			data-pin-do="buttonPin" data-pin-config="beside" data-pin-zero="true"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+	        
+	   </div>
+	</div><!--/.hst-articletools2-->
+
+
+<!-- e hearst/article/article_tools_2.tpl -->
+
+        <div class="hst-freeform hdnce-e hdnce-item-19366"><!-- mid:freeform.19366 -->
+          <div class="OUTBRAIN" data-widget-id="AR_2" data-ob-template="albanytimesunion" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+      </div>
+  
+        <div class="hst-freeform hdnce-e hdnce-item-19367"><!-- mid:freeform.19367 -->
+          <div class="OUTBRAIN" data-widget-id="AR_3" data-ob-template="albanytimesunion" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+      </div>
+  
+  <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-6701-promo_gallery"><!-- hearst/collections/promo_gallery.tpl -->
+<!-- collection.promo_gallery.6701 -->
+<div class="hst-spwide"><div class="edge2"><div class="edge3"><div class="edge4 clearfix">
+			<!-- templates/design/collection/promo_gallery/single_zone.tpl  -->
+
+	<div class="header clearfix">
+        <!-- zone1 -->
+        <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><a href="/business/"><span class="first-word">More</span> Business Stories</a></h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->        <!-- e zone1 -->
+        		<p class="nav hidden"><a href="#" class="prev"><img src="/img/modules/slideshow/promo/wide/button-prev.gif" alt="Previous Button" /></a><a href="#" class="next"><img src="/img/modules/slideshow/promo/wide/button-next.gif" alt="Next Button" /></a></p>
+        <span class="rss">
+          <a type="application/rss+xml" target="_blank" class="collection-rss-link" href="/business/collectionRss/Story-Slideshow-Promo-Wide-Business-6701.php">
+            <img src="/img/utils/rss_icon.png" alt="Click to View RSS Feed" />
+          </a>
+        </span>
+    </div>
+
+	<!-- collections/promo_gallery_body.tpl -->
+  <ul class="clearfix">
+                <div class="tab">
+                                                                        
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a   href="/business/article/Efficiency-to-the-rescue-5785161.php"><img src="http://ww2.hdnux.com/photos/32/31/72/6921889/3/landscape_gallery_promo.jpg" alt="Construction continues at Ellis Hospital's new Emergency Care Center Thursday Sept. 18, 2014, in Schenectady, NY.  (John Carl D'Annibale / Times Union)" /></a></p>
+                                                <h4><a   href="/business/article/Efficiency-to-the-rescue-5785161.php">Efficiency to the rescue</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a   href="/business/article/Looking-for-a-bargain-5785159.php"><img src="http://ww4.hdnux.com/photos/32/31/72/6921887/3/landscape_gallery_promo.jpg" alt="David Puckett color illustration of black financial clouds looming over a middle-class population of people standing in field and looking up to the gloomy sky." /></a></p>
+                                                <h4><a   href="/business/article/Looking-for-a-bargain-5785159.php">Looking for a bargain</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item">
+                                                <p class="illo"><a   href="/business/article/Chicago-air-traffic-fire-delayed-hundreds-in-5783916.php"><img src="http://ww3.hdnux.com/photos/32/31/24/6919446/3/landscape_gallery_promo.jpg" alt="Stranded traveler Brian Campbell of Phoenix, Arizona, in line at a ticket counter at Albany Airport after a fire at a suburban air traffic control center in Illinois disrupted flights Friday Sept. 26, 2014.   (John Carl D'Annibale / Times Union)" /></a></p>
+                                                <h4><a   href="/business/article/Chicago-air-traffic-fire-delayed-hundreds-in-5783916.php">Chicago air traffic fire delayed hundreds in Albany</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item last">
+                                                <p class="illo"><a   href="/business/article/Driving-away-business-5783729.php"><img src="http://ww4.hdnux.com/photos/32/31/20/6919195/3/landscape_gallery_promo.jpg" alt="A detour sign is seen on Rt 67 by the turn for Rts. 32 and 4 near the Mechanicville bridge on Friday, Sept. 26, 2014 in Saratoga Springs, N.Y.  (Lori Van Buren / Times Union)" /></a></p>
+                                                <h4><a   href="/business/article/Driving-away-business-5783729.php">Driving away business?</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/30/05/6914382/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/Heat-cost-likely-to-chill-5781611.php">Heat cost likely to chill</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/27/73/6913758/5/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/Photos-SteelDay-2014-5781303.php">Photos: SteelDay 2014</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww3.hdnux.com/photos/32/27/75/6913866/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/554M-settlement-with-U-S-OK-d-5781338.php">$554M settlement with U.S. OK'd</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item last" img="http://ww4.hdnux.com/photos/32/27/72/6913695/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/Bustling-time-for-buses-5781279.php">Bustling time for buses</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                                                        </div>
+                                        <div class="tab hidden">
+                                
+                                                                        <li class="item" img="http://ww1.hdnux.com/photos/32/27/64/6913328/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/Rail-shipments-of-crude-face-tighter-standards-5781092.php">Rail shipments of crude face tighter standards</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/32/27/03/6910183/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/Aisle-seat-middle-seat-mdash-no-seat-5779095.php">Aisle seat, middle seat &mdash; no seat</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item" img="http://ww4.hdnux.com/photos/32/26/73/6909659/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/Living-costs-squeeze-middle-class-5778858.php">Living costs squeeze middle class</a></h4>
+                                        </li>
+                                
+                                
+                                                                                        
+                                
+                                                                        <li class="item last" img="http://ww3.hdnux.com/photos/32/26/73/6909658/3/landscape_gallery_promo.jpg">
+                                                <h4><a   href="/business/article/Wind-energy-company-to-model-L-I-coast-area-5778856.php">Wind energy company to model L.I. coast area</a></h4>
+                                        </li>
+                                
+                                
+                                </div>
+  </ul>
+
+  <script type="text/javascript">
+    //<![CDATA[
+        jQuery(function($) {
+                jQuery('.hst-spwide').slideshow();
+        });
+    //]]>
+  </script>
+
+<!-- e promo_gallery_body.tpl -->
+<!-- e templates/design/collection/promo_gallery/single_zone.tpl -->	</div></div></div></div><!--/.hst-spwide-->
+<!-- e hearst/collections/promo_gallery.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+
+
+      <!-- comments get dynamically inserted here -->
+
+<div id="comments" class="hdn-comments">
+              <!-- /templates/hearst/home/modal_signin_form.tpl -->
+        <script type="text/javascript">HDN.onLoginSuccess = initRegLinks</script>
+        <script src="/js/hdn/utils/jquery.placeholder.js"></script>
+        <script type="text/javascript">
+            jQuery(function(){
+                $("#modal_signin_close").bind("click",function(){
+                    $('#modal_signin_div').hide();
+                    return false;
+                });
+                $('#modal_signin_div .checkbox-div').bind("click",function(){
+                    if ($(this).text() == "X") {
+                        $(this).text("");
+                        $('#modal_signin_rememberme').removeAttr('checked');
+                    } else {
+                        $(this).text("X");
+                        $('#modal_signin_rememberme').attr('checked', 'checked');
+                    }
+                    return false;
+                });
+                $('input, textarea').placeholder();
+            })
+        </script>
+        <div id="modal_signin_div" class="signin">
+            <div id="modal_signin_error_div" style="display:none;"></div>
+            <form data-ajax="false" id="modal_signin_form" action="http://reg.timesunion.com/api/session" method="post">
+                <a href="http://reg.timesunion.com/signup/" class="form-link">Need to Register?</a>
+                <button id="modal_signin_close">X</button>
+                <div class="line_separator"></div>
+                <input type="text" id="modal_signin_user" name="email" selected autocapitalize="off" value="" data-mini="true" placeholder="EMAIL" />
+                <input type="password" id="modal_signin_password" name="password" selected autocapitalize="off" value="" data-mini="true" placeholder="PASSWORD" />
+                <div class="checkbox-container">
+                    <div class="checkbox-div"></div>
+                    <input type="checkbox" id="modal_signin_rememberme" name="remember_me" value="1" class="custom-check" />
+                    <label for="modal_signin_rememberme" data-corners="false">Remember Me</label>
+                </div>
+                <input name="commit" type="submit" value="Sign-in" data-mini="true" data-corners="false" class="submit-btn"></p>
+                <a href="http://reg.timesunion.com/forgot_password" class="form-link forgot">Forgot your password?</a>
+            </form>
+        </div>
+        <!-- e /templates/hearst/home/modal_signin_form.tpl -->
+
+    <div id="hdn-vf-comments"></div>
+</div>  
+</div>
+
+<!-- e hearst/article/types/story.tpl -->    </div><!--/.span-21b-->
+    <!-- templates/hearst/article/types/story_right.tpl  -->
+
+<div class="span-10 last">
+
+            
+    <!-- Handled By Freeform Now -->
+    
+    <!-- hearst/ads/medium_rectangle_ad_first.tpl -->
+
+<div id="hst-mediumrectangle1" class="hst-mediumrectangle clearfix">
+<div id="A300" class="A300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("A300"); /*]]>*/ </script></div>
+</div>
+<!-- e medium_rectangle_ad_first.tpl --> 
+
+    
+
+
+<div class="hst-blogpromo hst-blogpromo-single curvebox_grayedge"><div class="corner2"><div class="corner3"><div class="corner4">
+	<div class="header clearfix">
+		<h2><a class="hdnce-e hdnce-blog-2148" href="http://blog.timesunion.com/business">The Buzz: Business news</a></h2>
+	</div>
+	<ul class="first">
+		<li class="item clearfix">
+			<a class="hdnce-e hdnce-blogPost-1463096" href="http://blog.timesunion.com/business/sagamore-hotel-sewage-spill-fouls-lake-george/61901/"><img class="illo" src="http://ww4.hdnux.com/photos/77/30/259619/4/77x77.jpg" alt=""/></a>
+			<h4><a class="hdnce-e hdnce-blogPost-1463096" href="http://blog.timesunion.com/business/sagamore-hotel-sewage-spill-fouls-lake-george/61901/">Sagamore Hotel sewage spill fouls Lake George</a></h4>
+			<div class="detail"><p>DEC press releases describes the spill:...</div>
+            <p class="timestamp"><!-- subitem_timestamp.tpl -->9/26/2014<!-- e subitem_timestamp.tpl --> | <a class="hdnce-e hdnce-blogPost-1463096" href="http://blog.timesunion.com/business/sagamore-hotel-sewage-spill-fouls-lake-george/61901/#comments">Comments &raquo;</p>
+		</li>
+	</ul>
+	<ul class="last">
+				<li class="item">
+			<h4><a class="hdnce-e hdnce-blogPost-1462886" href="http://blog.timesunion.com/business/guess-which-local-pollster-gets-an-a-from-fivethirtyeight/61899/">Guess which local pollster gets an A- from FiveThirtyEight</a></h4>
+		</li>
+				<li class="item">
+			<h4><a class="hdnce-e hdnce-blogPost-1462878" href="http://blog.timesunion.com/business/chamber-holding-job-fair-in-malta/61897/">Chamber holding job fair in Malta</a></h4>
+		</li>
+				<li class="item">
+			<h4><a class="hdnce-e hdnce-blogPost-1462630" href="http://blog.timesunion.com/business/albany-solar-firm-set-to-merge-with-aussie-company/61893/">Albany solar firm set to merge with Aussie company</a></h4>
+		</li>
+			</ul>
+	<p class="exit"><a class="hdnce-e hdnce-blog-2148"  href="http://blog.timesunion.com/business">View Blog &raquo;</a></p>
+</div></div></div></div><!--/.hst-blogpromo-->
+  
+        <div class="hst-freeform hdnce-e hdnce-item-7644"><!-- mid:freeform.7644 -->
+          <div class="videoplayer" style="margin-bottom:0;"><h3>Featured videos</h3></div><div
+    class="ndn_embed"
+    data-config-widget-id="7854"
+    data-config-type="VideoLauncher/Slider300x250"
+    data-config-tracking-group="90001"
+    data-config-site-section="timesunion2slider_biz_non_sty">
+</div>
+      </div>
+  
+        <div class="hst-freeform hdnce-e hdnce-item-19368"><!-- mid:freeform.19368 -->
+          <div class="OUTBRAIN" data-widget-id="SB_1" data-ob-template="albanytimesunion" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+      </div>
+  
+    <!-- hearst/ads/medium_rectangle_ad_second.tpl -->
+
+<div id="hst-mediumrectangle2" class="hst-mediumrectangle clearfix">
+<div id="B300" class="B300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("B300"); /*]]>*/ </script></div>
+</div>
+<!-- e medium_rectangle_ad_second.tpl -->
+    <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-17714-blockstates_vertical"><!-- collections/blockstates_vertical.tpl -->
+<!-- collection.blockstates_vertical.17714 -->
+<div class="hst-blockstates hst-blockstates-vertical"><div class="edge2"><div class="edge3"><div class="edge4 clearfix">
+
+        
+        <a type="application/rss+xml" target="_blank" class="collection-rss-link" href="/business/collectionRss/Story-Blocks-Latest-Business-News-17714.php">
+                <img src="/img/utils/rss_icon.png" alt="Click to View RSS Feed" />
+        </a>
+        
+        
+</div></div></div></div><!--/.hst-blockstates-vertical -->
+<!-- e blockstates_vertical.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl --><!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-17684-blockstates_vertical"><!-- collections/blockstates_vertical.tpl -->
+<!-- collection.blockstates_vertical.17684 -->
+<div class="hst-blockstates hst-blockstates-vertical"><div class="edge2"><div class="edge3"><div class="edge4 clearfix">
+
+        <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><a href="/news/"><span class="first-word">Latest</span> News</a></h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->
+        <a type="application/rss+xml" target="_blank" class="collection-rss-link" href="/news/collectionRss/Story-Blocks-Latest-News-17684.php">
+                <img src="/img/utils/rss_icon.png" alt="Click to View RSS Feed" />
+        </a>
+        
+                                                <div class="tabcontent">
+                        
+                                                    <div class="hide-rss-link hdnce-e hdnce-collection-17685-blockstates_tab"><!-- collections/blockstates_tab.tpl -->
+<!-- collection.blockstates_tab.17685 -->
+<ul>
+
+                
+            <li class="item first">
+                                        <p class="illo"><a   href="/local/article/Details-released-in-fatal-Selkirk-plane-crash-5786725.php"><img src="http://ww1.hdnux.com/photos/32/32/72/6925992/7/blockstates.jpg" alt="Rescue workers at the scene of a plane crash at the Selkirk rail yard. Tom Heffernan Sr. / Special to the Times  Union ORG XMIT: MER2014090818230069" /></a>
+                                	<br /><span class="credit">Picasa
+					</span>
+</p>
+                
+                    <h4><a class=""  href="/local/article/Details-released-in-fatal-Selkirk-plane-crash-5786725.php">Crash report lacking cause</a></h4>
+                    <div class="detail">A preliminary report gives a more detailed account of the Sept. 8 plane crash that killed two people flying out of the South Albany...</div>
+
+                
+                </li>
+        </ul>
+<!-- e blockstates_tab.tpl -->
+</div>                                        </div>
+                
+</div></div></div></div><!--/.hst-blockstates-vertical -->
+<!-- e blockstates_vertical.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+  
+
+
+
+
+<div class="hst-headlinelist hst-headlinelist-illo hst-headlinelist-inline">
+<div class="header clearfix"><h2><a href="http://web.timesunion.com/classifieds/alljobs.asp">Top Jobs</a></h2></div>
+<ul>
+<li class="item"><h4><a href="http://web.timesunion.com/aspstories/topjobs/jobtext.asp?jobid=29271">PEDIATRIC DENTAL ASSISTANT -</a></h4>
+<div class="detail"><p>P/T Experience required, Great Patients! Please email your resume ...<a href="http://web.timesunion.com/aspstories/topjobs/jobtext.asp?jobid=29271">&nbsp;more&nbsp;&raquo;</a></p></div></li><li class="item"><h4><a href="http://web.timesunion.com/aspstories/topjobs/jobtext.asp?jobid=29272">PROBATION OFFICER US Probation</a></h4>
+<div class="detail"><p>is accepting applications in Albany. Bachelor's degree required. P...<a href="http://web.timesunion.com/aspstories/topjobs/jobtext.asp?jobid=29272">&nbsp;more&nbsp;&raquo;</a></p></div></li></ul><p class="exit"><a href="http://web.timesunion.com/classifieds/alljobs.asp">More&nbsp;&raquo;</a></p>
+</div><!--/.hst-headlinelist hst-headlinelist-illo hst-headlinelist-inline-->
+        <div class="hst-freeform hdnce-e hdnce-item-19232"><!-- mid:freeform.19232 -->
+          <script type="text/javascript" src="http://dmeserv.newsinc.com/repub/albanytimesunion_90001/dynamicWidgets.js"></script>
+ <script type="text/javascript">
+ NDNDynVideoWidgets();
+ </script>
+      </div>
+  
+    <!-- hearst/ads/medium_rectangle_ad_third.tpl -->
+
+<div id="hst-mediumrectangle3" class="hst-mediumrectangle clearfix">
+<div id="S300" class="S300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("S300"); /*]]>*/ </script></div>
+</div>
+<!-- e medium_rectangle_ad_third.tpl -->
+</div><!--/.span-10-->
+
+<!-- e templates/hearst/article/types/story_right.tpl  --></div><!--/.faux-21-->
+<!-- e templates/design/article/story_page.tpl -->                            
+    </div><!--/.content-->
+    
+
+
+<script>
+    var HDN = HDN || {};
+  
+    HDN.ping( {
+        "id": 5760404,
+        "site": "timesunion",
+        "type": "article"
+    });
+    $(document).ready(function () {
+        return hst_get_fprefs(this);
+    });
+</script>
+
+
+
+
+<!-- src/business/templates/hearst/common/footer.tpl -->
+    <!-- src/business/templates/hearst/common/site_footer.tpl -->
+    <!-- THIRDPARTY FOOTER MARKER --><!-- DONT REMOVE -->
+    <div class="hst-sitefooter clearfix">
+
+        <!-- Begin Hearst Ad -->
+        <div id="B728" class="footer_banner">
+            <script type="text/javascript">/*<![CDATA[*/hearstPlaceAd("B728");/*]]>*/</script>
+        </div>
+        <!-- End Hearst Ad -->
+									
+					<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.4239 -->
+<div class="navigation">
+        <table>
+            <tr>
+                <td class="site first">
+                    <h2>Times Union</h2>
+                    <ul>
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/local/">Local News</a></li>
+                        <li><a href="/ytalbany/">Your Town</a></li>
+                        <li><a href="http://blog.timesunion.com/capitol/">Capitol Confidential</a></li>
+                        <li><a href="/nation/">Nation</a></li>
+                        <li><a href="/world/">World</a></li>
+                        <li><a href="/sports/">Sports</a></li>
+                        <li><a href="/hssports/">High School Sports</a></li>
+                        <li><a href="/opinion/">Opinion</a></li>
+                    </ul>
+                </td>
+                <td class="site">
+                    <ul>
+                        <li><a href="/business/">Business</a></li>
+                        <li><a href="/technology/">Technology</a></li>
+                        <li><a href="/living/">Living</a></li>
+                        <li><a href="/entertainment/">Entertainment</a></li>
+                        <li><a href="/movies/">Movies</a></li>
+                        <li><a href="/tvguide/">Television</a></li>
+                        <li><a href="http://web.timesunion.com/restaurants/">Restaurants</a></li>
+                        <li><a href="http://web.timesunion.com/calendar/">Events Calendar</a></li>
+                        <li><a href="/comics/">Comics</a></li>
+                        <li><a href="/games/">Games</a></li>
+                    </ul>
+                </td>
+                <td class="site">
+                    <ul>
+                        <li><a href="http://blog.timesunion.com">Blogs</a></li>
+                        <li><a href="/weather/">Weather</a></li>
+                        <li><a href="http://www.legacy.com/obituaries/timesunion-albany/">Obituaries</a></li>
+                        <li><a href="/celebrations/">Births</a></li>
+                        <li><a href="/celebrations/">Weddings/Celebrations</a></li>
+                        <li><a href="/photos/">Photos and Video</a></li>
+                        <li><a href="/7dayarchive/">Archives</a></li>
+                        <li><a href="/518life/">518 Life</a></li>
+                        <li><a href="/womenatwork/">Women@Work</a></li>
+                        <li><a href="/explore/">Explore/Travel</a></li>
+                    </ul>
+                </td>
+                <td class="corp">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="/help/">Help/Contact Us</a></li>
+                        <li><a href="/copyright/">Copyright/Reprint</a></li>
+                        <li><a href="http://classroomenrichment.org/">Classroom Enrichment</a></li>
+                        <li><a href="/privacypolicy/">Privacy Policy</a></li>
+                        <li><a href="/privacypolicy/#California">California Privacy Rights</a></li>
+                        <li><a href="/termsofservice/">Terms of Service</a></li>
+                        <li><a href="" onClick="hdnToggleMobile(); return false;">Mobile site</a><li>
+                        <li><a href="/eedition/">E-Edition</a></li>
+                        <li><a href="/newsletters/">Newsletters</a></li>
+                   </ul>
+                </td>
+                <td class="corp lim">
+                    <h3>Home Delivery</h3>
+                    <ul>
+                        <li><a href="http://www.timesunion.com/subscribe">Newspaper Subscription</a></li>
+                        <li><a href="https://www.myhearstnewspaper.com/albany/">Subscriber Services</a></li>
+                        <li><a href="http://marketing.timesunion.com/carriers/">Deliver the Paper</a></li>
+
+                        <li class="delimit"><h3>Marketplace</h3></li>
+
+                        <li><a href="http://autos.timesunion.com">Cars</a></li>
+                        <li><a href="http://web.timesunion.com/jobs/">Jobs</a></li>
+                        <li><a href="/homes/">Homes</a></li>
+                        <li><a href="http://timesunion.ca.kaango.com/">Classifieds</a></li>
+  				</ul>
+                </td>
+                <td class="corp last">
+                    <ul>
+                        <li><a href="/hopefund/">Hope Fund</a></li>
+                        <li><a href="http://local.timesunion.com">Business Directory</a></li>
+                        <li><a href="http://www.savingssource.com/">Shopping/Coupons</a></li>
+                        <li><a href="http://www.findnsave.com/" rel="nofollow">Find&amp;Save Local Shopping</a></li> 
+                        <li><a href="http://web.timesunion.com/onlinestore/">Purchase Photos</a></li>
+                        <li><a href="http://web.timesunion.com/adsonline/">Today's Print Ads</a></li>
+                        <li><a href="http://timesunion.ca.kaango.com/">Place an Ad</a></li>
+                        <li><a href="/advertising/">Info for Advertisers</a></li>
+
+                 <li class="quadOne"><a href="http://www.aboutads.info/choices/">Ad Choices </a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div><!--/.navigation-->
+
+
+<style>
+.hst-fpwide .item .detail { display: none;}
+.hst-sitefooter{background:#a0a0a1;}
+.hst-feed {display: block !important;text-align: right;width: 97px;margin: -30px 10px 0 0;float: right;}
+.hst-sitefooter p {height:65px; padding:20px 0 10px 0;}
+</style>
+						
+		<p>&#169; 2014 The Hearst Corporation<br />
+		<img src="/img/modules/sitefooter/hearst_logo.png" class="png" alt="Hearst Newspapers" /><!-- src/business/templates/hearst/common/feed.tpl -->
+
+<span class="hst-feed">
+	<a class="hst-rss-share" href="/rss"><img src="/img/icons/share/rss.gif"></a> &nbsp;&nbsp;
+
+        	
+	<!-- there is a bizobject set -->
+        
+
+	<span class="quadOne"></span>
+	
+                    <a href="http://add.my.yahoo.com/rss?url=http://www.timesunion.com/business/feed/Business-News-213.php"><img src="/img/icons/share/myyahoo.gif"></a>
+        
+	
+    
+</span>
+
+
+<!-- e src/business/templates/hearst/common/feed.tpl --></p>
+		
+
+		 </div><!--/.hst-sitefooter--></div><!--/.container--> 
+
+
+
+<!-- /src/business/templates/hearst/common/opengraph_load.tpl -->
+    <div id="fb-root"></div>
+  
+  <script type="text/javascript">
+  //the window.name is a hack to fix errors in the actual facebook.js file
+  window.name=window.name || "";
+    window.fbAsyncInit = function() {
+      FB.init({
+	appId      : '480611135405160', // App ID
+	channelURL : 'http://www.timesunion.com/channel.html', // Channel File
+	status     : true, // check login status
+	cookie     : true, // enable cookies to allow the server to access the session
+	oauth      : true, // enable OAuth 2.0
+	xfbml      : true  // parse XFBML
+      });
+      
+            		
+	// Additional initialization code
+	FB.Event.subscribe('comment.create', function(response) {	  
+	    HDN.comment_ping( {
+	      "id": 5760404,
+	      "site": "timesunion",
+	      "type": "article"
+	    });      
+	});
+	
+            
+    };
+    // Load the SDK Asynchronously
+    (function(d){
+       var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+       js = d.createElement('script'); js.id = id; js.async = true;
+       js.src = "//connect.facebook.net/en_US/all.js";
+       d.getElementsByTagName('head')[0].appendChild(js);
+     }(document));
+    
+  </script>
+  
+  
+<!-- /src/business/templates/hearst/common/outbrain_silent_tag.tpl -->
+
+
+
+<script type="text/JavaScript">
+    var link = 'http://www.timesunion.com/business/article/Looking-west-for-fast-track-guidance-5760404.php';
+    var OB_permalink= link;
+    var OB_Template="albanytimesunion";
+    var OB_widgetId= 'TR_1';
+    var OB_langJS ='http://widgets.outbrain.com/lang_en.js';
+
+    if ( typeof(OB_Script)!='undefined' )
+        OutbrainStart();
+    else
+    {
+        var OB_Script = true;
+        var str = "<script src='http://widgets.outbrain.com/outbrainWidget.js'; type='text/javascript'></"+"script>";
+        document.write(str);
+    }
+</script>
+
+    <!-- templates/hearst/home/viafouraFooterJS.tpl -->
+<script>
+    
+    
+    (function (v, s) {
+        v.type = 'text/javascript';
+        v.async = !0;
+        v.src = location.protocol !== 'https:' ? '//cdn.viafoura.net/vf.js' : '//api.viafoura.com/app/js/vf.js';
+        s.parentNode.insertBefore(v, s)
+    }(document.createElement('script'), document.getElementsByTagName('script')[0]));
+
+
+    $(document).ready(function () {
+        if ($('#hdn-vf-comments').length) {HDN.authOnReady('free',false)}
+        HDN.getBlogCommentCount();
+    });
+    
+</script>
+<!-- e templates/hearst/home/viafouraFooterJS.tpl -->
+
+<!-- ux/timesunion/templates/hearst/common/footer_bottom.tpl -->
+
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  if (window.getSatisfactionTab)
+    document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+  feedback_widget_options.display = "overlay";
+  feedback_widget_options.company = "timesunion";
+  feedback_widget_options.placement = "left";
+  feedback_widget_options.color = "#E89127";
+  feedback_widget_options.style = "idea";
+  if (window.getSatisfactionTab)
+    var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+<div id="BF_WIDGET_1">&nbsp;</div>
+
+<script type="text/javascript">
+(function( ){
+BF_WIDGET_JS=document.createElement("script"); BF_WIDGET_JS.type="text/javascript";
+BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=timesunion.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+setTimeout(function() {document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script>
+
+<!-- e ux/timesunion/templates/hearst/common/footer_bottom.tpl -->
+
+
+    <script type="text/javascript" src="/external/js/global.bottom.r5.22.1.2.js"></script>
+
+<script src="http://widget.perfectmarket.com/timesunion/load.js"></script>
+
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"3fd06eaac1","applicationID":"147157","transactionName":"MwQBZ0RXV0NTVhBdDgpONkFfGVBeVlAcGhEMEQ==","queueTime":0,"applicationTime":37,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-460.min.js"}</script></body>
+</html><!-- e site_footer.tpl -->
+
+<!-- e src/business/templates/hearst/common/footer.tpl --><!-- hearst/article/main.tpl -->

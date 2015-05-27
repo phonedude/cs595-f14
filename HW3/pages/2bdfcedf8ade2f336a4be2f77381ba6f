@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+<title>Lessons learned from my time at the CFPB - O'Reilly Radar</title>
+<link rel="shortcut icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link  rel="icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/custom.css" />
+<link rel="pingback" href="http://radar.oreilly.com/xmlrpc.php" />
+<link href="https://plus.google.com/105451978536505503907" rel="publisher" />
+	<meta name="search-title" content="Lessons learned from my time at the CFPB"/>
+	<meta property="twitter:account_id" content="10295842" />	
+	
+	<meta name="Category" content="Programming"/> 
+	<meta name="subtitle" content="Confronting the practical barriers to better government web products."/>
+	
+	<meta name="description" content="In December 2010, I joined the Consumer Financial Protection Bureau (CFPB) as an early member of its technology team. I spent the second half of my three years at..." />
+	<meta name="author" content="Matthew Burton" />
+	<meta name="search_date" content="2014-01-10" />
+	<meta name="keywords" content="" />	
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary"> 
+	<meta name="twitter:url" content="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html"> 
+	<meta name="twitter:title" content="Lessons learned from my time at the CFPB"> 
+	<meta name="twitter:description" content="In December 2010, I joined the Consumer Financial Protection Bureau (CFPB) as an early member of its technology team. I spent the second half of my three years at..."> 
+		<meta name="twitter:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-120.png">
+			<meta name="twitter:creator" content="matthewburton"> 
+		<meta name="twitter:site" content="radar">
+			<meta property="og:image" content="http://cdn.oreillystatic.com/radar/images/people/photo_matthewb_m.jpg">
+		<meta property="og:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-200.png" />
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Feed" href="http://radar.oreilly.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Comments Feed" href="http://radar.oreilly.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Lessons learned from my time at the CFPB Comments Feed" href="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html/feed" />
+<link rel='stylesheet' id='inline-tweet-sharer-style-css'  href='http://radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-css'  href='http://radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-plugin-css'  href='http://radar.oreilly.com/wp-content/plugins/videojs-html5-video-player-for-wordpress/plugin-styles.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs-css'  href='//vjs.zencdn.net/4.5/video-js.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=4.0'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/player.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://cdn.oreillystatic.com/search/radar/scripts/jquery-1.10.2.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.6.6","is_admin":"0","ajaxurl":"http:\/\/radar.oreilly.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.6.6'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://radar.oreilly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://radar.oreilly.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Four short links: 10 January 2014' href='http://radar.oreilly.com/2014/01/four-short-links-10-january-2014.html' />
+<link rel='next' title='Code Carabiners: Essential Protection Tools for Safe Programming' href='http://radar.oreilly.com/2014/01/code-carabiners-essential-protection-tools-for-safe-programming.html' />
+<link rel='canonical' href='http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html' />
+<link rel='shortlink' href='http://radar.oreilly.com/?p=58926' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://radar.oreilly.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://radar.oreilly.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+
+		<script type="text/javascript"> document.createElement("video");document.createElement("audio");document.createElement("track"); </script>
+		
+<link rel="stylesheet" type="text/css" href="http://radar.oreilly.com/wp-content/themes/radar/css/lazyYT.css">
+<!-- soasta -->
+<script type='text/javascript'>
+(function(){
+  var dom,doc,where,iframe = document.createElement('iframe');
+  iframe.src = "javascript:false";
+  (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+  where = document.getElementsByTagName('script')[0];
+  where.parentNode.insertBefore(iframe, where);
+
+  try {
+    doc = iframe.contentWindow.document;
+  } catch(e) {
+    dom = document.domain;
+    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+    doc = iframe.contentWindow.document;
+  }
+  doc.open()._l = function() {
+    var js = this.createElement("script");
+    if(dom) this.domain = dom;
+    js.id = "boomr-if-as";
+    js.src = '//c.go-mpulse.net/boomerang/' +
+    'M8AMH-MB6VT-5NB4A-PU4EW-XKNPQ';
+    BOOMR_lstart=new Date().getTime();
+    this.body.appendChild(js);
+  };
+  doc.write('<body onload="document._l();">');
+  doc.close();
+  })();
+</script>
+<!-- #soasta -->
+
+</head>
+<body class="single single-post postid-58926 single-format-standard">
+<div id="fixed-top"><span>Menu</span></div>
+<nav id="mobi" class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-48418" class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li id="menu-item-48419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li id="menu-item-48420" class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a></li>
+<li id="menu-item-48422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li id="menu-item-48423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li id="menu-item-48426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></nav><div id="wrapper" class="hfeed ">
+	<div class="navheaderbg">
+		<div>
+			<div id="header">	
+				<div class="header-top">
+					<a href="http://oreilly.com/" title="oreilly.com">oreilly.com</a>
+					<div class="clear"></div>
+				</div>
+			<div class="head-inner">
+				<div class="logo">
+					<a href="http://radar.oreilly.com/" title="O&#039;Reilly Radar" rel="home">O&#039;Reilly Radar</a>
+				</div>
+	
+				<div id="search-box">
+					<div id="header-social-wrap">
+						<div id="header-social-btn">
+							<a class="rss-btn"  href="http://feeds.feedburner.com/oreilly/radar/atom" >RSS Feed</a>
+							<a class="twitter-btn" href="http://twitter.com/radar">Twitter</a>
+							<a class="fb-btn" href="https://www.facebook.com/OReillyRadar">Facebook</a>
+							<a class="gps-btn" href="https://plus.google.com/105451978536505503907" >Google+</a>
+							<a class="yt-btn" href="http://www.youtube.com/user/OreillyMedia" >Youtube</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<script type="text/javascript"> 
+						function checkIfDefault(keyword) {
+							var defaultSearchTerm = "Search";
+							var defaultEmailTerm = "Enter Email";
+								if((keyword == defaultSearchTerm) || (keyword == defaultEmailTerm)) {
+									return '';
+								}
+								else {
+									return keyword;
+								}
+							}
+					</script>
+					<script type="text/javascript"> 
+					jQuery(document).ready(function($) { 
+						$("#search-form").submit(function() { 
+						window.location = " /search#/search/q="+$("#q").val(); 
+						return false; 
+						}); 
+					}); 
+					</script>
+					<div class="yui-skin-sam">
+						<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/">
+							<div class="search">
+								<fieldset>
+									<span id="search-input">
+										<div class="searchInput">
+											<span id="search-field"><input type="text" value="Search" name="q" maxlength="64" id="q" onfocus="this.value=checkIfDefault(this.value);"></span>           
+										</div>
+										<span id="search-button">
+											<input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/sitewide-headers/search_btn.gif" border="0" style="float:left" alt="Search" align="top">
+											<input type="hidden" name="tmpl" value="radar">                                                                    
+										</span>
+									</span>
+								</fieldset>
+							</div>
+						</form>
+					</div>
+                </div>
+				<div class="clear"></div>
+			</div>
+				<div class="clear"></div>
+			</div><!-- #header -->
+			<div id="access" role="navigation">			  
+				<div class="menu-header"><ul id="menu-main-nav-1" class="menu"><li class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop Books &#038; Videos</a></li>
+<li class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-48420"><a href="http://radar.oreilly.com/">Radar</a>
+<ul class="sub-menu">
+	<li id="menu-item-67912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-67912"><a href="http://radar.oreilly.com/">Radar</a></li>
+	<li id="menu-item-67913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67913"><a href="http://animals.oreilly.com/">Animals</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://www.safaribooksonline.com/?utm_source=oreilly&#038;utm_medium=referral&#038;utm_campaign=publisher&#038;utm_content=nav">Safari Books Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://oreilly.com/conferences/">Conferences</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://www.oreillyschool.com/">IT Courses &#038; Certificates</a></li>
+</ul></div>				<div class="clear"></div>
+			</div><!-- #access -->
+			<div class="clear"></div>
+			<div id="menu-wrap">			
+					            	            		            		            	<div class="catname"><a href="http://radar.oreilly.com/programming">Programming</a></div>
+	            		        		        		            <div id="sub">
+		            <div class="nav">
+		            	<div class="name">More Topics <span class="arrow-down"></span></div>
+		                <div class="sub-menu"><ul class="nav-bar"><li><a href="http://radar.oreilly.com/data">Data</a></li><li><a href="http://radar.oreilly.com/design">Design</a></li><li><a href="http://radar.oreilly.com/emerging-tech">Emerging Tech</a></li><li><a href="http://radar.oreilly.com/iot">IoT+</a></li><li><a href="http://radar.oreilly.com/programming">Programming</a></li><li><a href="http://radar.oreilly.com/webops-perf">Web Ops & Performance</a></li><li><a href="http://radar.oreilly.com/web-platform">Web Platform</a></li></ul></div>		            </div>
+	        	</div>
+	        	        	</div>
+            <div class="clear"></div>
+		</div>
+		
+	</div>
+	<div id="sww-content">
+					<div class="textwidget"><!-- Either there are no banners, they are disabled or none qualified for this location! --></div>
+			
+		<div class="clear"></div>
+	</div>
+	<div id="main">	
+		<style type="text/css">
+		  .single .hentry { padding-bottom:20px; }
+		  #content #newsletter { padding:0; margin:0 0 20px; border-bottom:1px solid #888; }
+		  #content #newsletter > h3 { margin:15px 0 0 0; padding:0; font-size:22px; line-height:1.1em; font-weight:bold; }
+		  #content #newsletter > h4 { margin:0 0 5px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		  #content #newsletter > p { margin:0 0 20px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+		</style>	<div id="container">
+		<div id="content" class="post_block" role="main">			
+							
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/rs_embhl_v2_en_us.js" type="text/javascript"></script>
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.cookie.js" type="text/javascript"></script>
+
+		<div id="post-58926" class="post-58926 post type-post status-publish format-standard hentry category-programming">					
+
+			 
+
+			<ul class="entry-tools">
+
+			<span class="tool-block">
+
+				<li class="button print">
+
+					
+					<a target="_new" href="#" onclick="window.open('http://radar.oreilly.com/print/?print_bc=58926','print','width=800,height=600,menubar=no,status=no,location=yes,toolbar=yes,scrollbars=yes'); return false;" rel="nofollow">Print</a>
+
+				</li>
+
+				<li class="button listen">
+
+					<div id="readspeaker_button1" class="rs_skip en_us"> <a accesskey="L" href="http://app.readspeaker.com/cgi-bin/rsent?customerid=14&amp;lang=en_us&amp;readid=body-content&amp;url=http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" target="_blank" onclick="readpage(this.href, 'content_start'); return false;">Listen</a> </div>
+
+				</li>		
+
+				
+
+				<div id="content_start" style="display: block; "></div>			
+
+			</span>
+
+			</ul>		
+
+		
+
+			
+			
+				
+					<a href="http://radar.oreilly.com/matthewb">
+
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_matthewb_s.jpg" class="au-photo" alt="" title="Matthew Burton" />
+
+					</a>
+
+									
+
+			
+			<!-- RSPEAK_START -->
+
+			<div id="body-content">
+
+			<h1 class="entry-title">Lessons learned from my time at the CFPB</h1>
+
+					
+
+				
+
+				<h2 class="subhead">Confronting the practical barriers to better government web products.</h2>
+
+			
+			
+
+			<div class="entry-meta">				
+
+				
+					<span class="meta-sep">by</span> 	
+
+					
+						<span class="author vcard"><a class="url fn n" rel="author" href="http://radar.oreilly.com/matthewb" title="View all posts by Matthew Burton">
+
+						Matthew Burton</a></span> |								
+
+					
+				<!-- RSPEAK_STOP -->
+
+				
+					<a href="http://twitter.com/matthewburton"> @matthewburton</a> |
+
+				
+				
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html#comments" title="Comment on Lessons learned from my time at the CFPB"><span class="dsq-postid" rel="58926 http://radar.oreilly.com/?p=58926">Comments: 5</span></a></span>
+
+					<span class="meta-sep utility-items"> | </span>
+
+					
+
+				
+				<span class="entry-date">January 10, 2014</span> 				
+
+			</div><!-- .entry-meta -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html#comments" title="Comment on Lessons learned from my time at the CFPB"><span class="dsq-postid" rel="58926 http://radar.oreilly.com/?p=58926">Comments: 5</span></a></span>
+
+					
+
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+
+
+			<div class="entry-content">
+
+				
+			
+
+				
+				
+
+				<!-- RSPEAK_START --><p>In December 2010, I joined the <a href="http://cfpb.gov/">Consumer Financial Protection Bureau</a> (CFPB) as an early member of its technology team. I spent the second half of my three years at the CFPB as the Deputy CIO and Acting CIO. Our team earned lots of praise for its web products (and will continue to do so, I&#8217;m sure). Now that I&#8217;ve left, I&#8217;d like to share some lessons I learned.</p>
+<p>The CFPB is new. You might therefore discount the CFPB&#8217;s online success as a moment-in-time achievement whose lessons will not help any agency that is saddled with legacy culture, legacy systems, and the GS pay scale (the CFPB pays higher salaries than most agencies). Having worked in such agencies, I understand the belief that a fresh start creates a freeway to success. I won&#8217;t lie: the lack of legacy culture was invaluable. (As for legacy systems, we have more of those than you might think.) But instead of seeing the CFPB&#8217;s clean slate as an experiment that nobody can learn from, I see it as a test-bed for ideas that, while technically achievable for any agency, are avoided by any agency unwilling to be the first to do so. The CFPB has dipped the federal government&#8217;s foot into several new pools. I hope other agencies will soon follow, and that the lessons I share here will help them do so.</p>
+<p>Audience note: This is meant to be a practical guide for my fellow civil servants. It includes mundane details on bureaucratic machinations that might bore outsiders who were hoping for a riff on <a href="http://healthcare.gov">healthcare.gov</a>. My primary goal is to help my peers. My secondary goal is to show outside observers that any attempt to improve government technology must ultimately address practical challenges — talent and tools — and that the ongoing press attention regarding poor government IT should be shifted thusly.</p>
+<p><span id="more-58926"></span></p>
+<h2>Lesson 1: Do it yourself</h2>
+<p>Computing used to be ancillary to an organization&#8217;s mission. Now it&#8217;s central to it. If you serve the public and you outsource your web production to contractors, you are outsourcing your mission. Stop doing that. Build your own team of civil technology servants.</p>
+<p>The CFPB has about 45 designers and developers on staff. They are full-time government employees, not contractors. We have some contractors, but they are far outnumbered by government staff. Building software using in-house staff has a few advantages, all of which make this lesson non-negotiable:</p>
+<ol>
+<li><strong>An in-house team lets you own the design process.</strong> That second word — <em>process</em> — is the key. Design is not the act of mocking up a website or making pretty icons. Design is the act of determining what you are building and why, and using that knowledge to guide every product decision. The design process answers the key questions behind your product: Who is our audience? What problem are we solving for them? How will the audience consume our product: With a computer? Over the phone? In person?. And how will we know whether our product is successful? You may think you already know the answers to these questions and do not need to test any of your assumptions. This is a dangerous assumption, and an irresponsible one when working with tax dollars.
+</p>
+<p>It&#8217;s important that civil servants answer these questions instead of asking someone else to do it for them. For one, agencies exist entirely to solve specific problems and/or help specific citizens. Answering fundamental questions about how to do this effectively should be &#8220;Job 1&#8243; for the entire organization. Furthermore, when you outsource product after product, your various services become stratified: If you have &#8220;Contractor A&#8221; build one digital product today and ask &#8220;Contractor B&#8221; to build a different digital product five years from now, your citizen-customers will have to learn a new interface, create a new account, remember another password, and provide the same personal data all over again (which will likely be stored in a facility outside your existing footprint, increasing the odds that data will be breached). Contracting support from specialized firms is fine; when your product is huge, contractors are essential. But all products should tie into an agency&#8217;s overarching digital strategy, and this has to be set and managed by the organization itself.</li>
+<li><strong>When your designers and developers are part of your organization, they work seamlessly with domain experts.</strong> This deepens the technical team&#8217;s understanding of the problem. It also tightens the feedback loop between the builder and the customer. The CFPB recently launched a <a href="http://consumerfinance.gov/eregulations">tool that makes financial regulations easier to navigate</a>. A technical team can&#8217;t pull of that task without understanding how regulations work, or without constant tweaking based on frequent input from regulations attorneys. (<a href="http://www.nextgov.com/emerging-tech/2014/01/want-make-digital-government-work-hire-your-own-coders/76223/">More details on this project here</a>.)
+</p>
+<p>On the other hand, many contractor teams work off-site. This distance from the user keeps them from tailoring their solutions for the problem at hand, just like a suit bought off the rack is not tailored to its buyer. The more contact the maker has with the customer, the better the final product will fit.</li>
+<li><strong>You innovate. You find efficient solutions to meaningful problems. </strong>Innovation is not a requirement; for some organizations, keeping the lights on might be sufficient. But many organizations — both government and corporate — are talking a lot about innovation these days, and they&#8217;re doing it in a way that rings hollow: They are creating &#8220;innovation strategies&#8221; and launching &#8220;innovation initiatives.&#8221;Innovation is not a product or a strategy. It is a culture of efficient problem solving. It is the unexpected, beneficial by-product of an organization that hits the sweet spot between process and lack of process. It happens when you insert curious, creative people into a environment full of interesting problems, and you give those people the freedom to pursue their own ideas. I&#8217;m not talking about letting your staff do whatever they want. I&#8217;m talking, for example, about:
+</p>
+<ul>
+<li>Letting a developer decide that your web site&#8217;s search engine is inadequate, and that to improve it, he can build a Mechanical Turk-like interface for teaching our search algorithm the definitions of various financial terms.</li>
+<li>Building your own <a href="https://github.com/cfpb/django-nudge">content deployment system</a> to quickly resolve a surprise requirement, instead of pausing a major project while a contract is modified to permit the work.</li>
+<li>Building a <a href="https://github.com/cfpb/ec2mapper">dashboard</a> for monitoring your web hosting environment&#8217;s security posture because the service&#8217;s standard tool is inadequate.</li>
+</ul>
+</li>
+</ol>
+<p>Having your own team means that when a problem arises, you have the power to fix it quickly instead of being at the mercy of outside forces. It also means you can fix problems when they&#8217;re small instead of waiting until they are large enough to justify the months of up-front work it takes to award a contract. In the above cases, our team encountered a problem that would have negatively impacted the CFPB&#8217;s mission. Instead of spending weeks sending this problem up the chain, followed by months of procuring talent for a one-off fix (or just letting the problems fester, which is the more common outcome), we were able to fix it ourselves and be on our way. I don&#8217;t think we ever struck the perfect balance, but there is healthy tension between process and ideas.</p>
+<p>People often tell me that contractors are perfectly capable of self-direction, executing their own ideas, and closely collaborating with on-site domain experts. Of course they are. But such behavior is illegal. (If you want to dig into the legal minutia, see Section III of <a href="http://www.acquisition.gov/comp/aap/documents/Chapter6.pdf">this guide from the GSA</a>. Notably, this document recommends that such restrictions be lifted.)</p>
+<h2>Lesson 2: Put immense time into hiring</h2>
+<p>I won&#8217;t lie: Hiring your own team will take a <em>lot</em> of time. And because this industry has high turnover rates, you have to constantly be in recruiting mode. Over the course of my three years at the CFPB, I spent more time talking to my team&#8217;s HR rep than just about anyone else in the bureau, including most of my own teammates. (Lucky for me, he was excellent. He and his successors are the unsung heroes of the CFPB&#8217;s web work.)</p>
+<p>Here&#8217;s some background for readers with no federal experience: It takes about six months to fill a single position, and team managers lack the ultimate authority to hire the best candidates. Their decisions can be overruled by personnel officers who lack domain expertise: if your job description says the applicant must have expertise in a certain field, the personnel officer has the power to strike an applicant from the list simply by judging that the applicant&#8217;s résumé doesn&#8217;t say enough about that field. Hiring web talent is especially difficult, because while the private sector uses somewhat non-traditional metrics to grade web talent, federal teams must adhere to U.S. Government-wide guidelines for evaluating applicants. Here&#8217;s what that means in practice:</p>
+<ol>
+<li><strong>The hiring system values quantity of formal experience over demonstrable expertise</strong>. An applicant with 15 years of experience in bankruptcy law should get preference over someone just out of law school. But apply this rule to web talent: if I need a Git expert, I&#8217;m not going to find anyone with 15 years of experience, because Git — like most other modern web technologies — is less than 10 years old. Plus, it doesn&#8217;t take years to master Git: one can become a Linus-level Git expert from their apartment in a few months. But self-taught expertise doesn&#8217;t count: it needs to be on an applicant&#8217;s résumé as something they did for an actual job. It doesn&#8217;t matter if this person is the world&#8217;s foremost expert in a technology: if they have less than a year of formal experience at it, they have lesser chances of getting an offer. This is bad news for an industry where the state of the art is so quickly usurped by new technologies, the knowledge of which is often acquired through the self-driven experimentation of hobbyists.</li>
+<li><strong>The hiring system will excuse lack of experience for education</strong>. Formal, institutionally-recognized certificates of knowledge say little about one&#8217;s ability to code or build a style guide. Nevertheless, when the federal government hires a Python programmer, an applicant who boasts a Masters in CS will get a salary boost even if their grad program focused on C. Good for them, but it doesn&#8217;t help the kid who eschewed grad school so that he could focus on the Linux core.</li>
+<li><strong>The hiring system insists on quantifiable metrics in the name of objectivity.</strong> This is why the federal evaluation system places a premium on years of experience: Your experience is objectively greater or less than other applicants&#8217;, but the value of that experience is open for debate. And in federal hiring, subjective evaluations are forbidden. (These rules are thanks to a past era when corrupt hiring managers gave jobs to their friends.) This approach makes it especially difficult to assess design candidates: Instead of requesting portfolios and evaluating them for good taste, we must ask &#8220;How many years of Illustrator experience do you have?&#8221; Of course, expertise in Adobe doesn&#8217;t make you a good designer any more than Microsoft Word skills make you a good writer.</li>
+</ol>
+<p>In hiring web talent, we had to fit the square peg of digital culture through the federal government&#8217;s round hole. This is why we spent so much time with our HR counterparts.</p>
+<p>Here are some specific things we did to build a great team:</p>
+<ul>
+<li>We recruited in the true sense of the word. Posting a job announcement to <a href="http://USAJobs.gov">USAJobs.gov</a> does not constitute a recruiting effort, yet I suspect most federal job openings are advertised nowhere else. Given how many technologists want to perform civic service but don&#8217;t know where to look, this is a great shame. To find good people, you have to hunt for them. We posted our design and development positions in places where technologists look for jobs: 37Signals, Stack Overflow, and GitHub were the obvious choices. These job boards gave us vastly more reach, and it cost us only a few hundred dollars. Twitter was also very useful (and free, of course).In addition to job boards, we also got creative. <a href="http://www.theatlantic.com/technology/archive/2012/07/government-agency-recruits-via-the-source-code-of-its-web-page/259605/">Ideas like this one</a> came in the 11<sup>th</sup> hour before application deadlines; they took little time to implement and gave us lots of exposure.</li>
+<li>We built a better process for evaluating applications. First, we made sure the initial review of our applicant pool wasn&#8217;t too restrictive. Traditionally, this first cut — made by non-technical personnel staff — tends to remove many qualified applicants, especially those who expected their résumés to be reviewed by peers who speak the industry lingo. To solve this, we crafted the minimum qualifications to ensure that they were broad enough for anyone with basic web experience to qualify. This shifted a huge burden to our team: we now had to review hundreds of applications instead of the dozens that would have withstood a more restrictive set of minimum qualifications. We also gained the ability to evaluate portfolios. This was harder than it sounds. In order to evaluate portfolios, our HR partners developed a &#8220;competency model&#8221; that established objective metrics for evaluating design and code. We used this model to rate each applicant&#8217;s work on several metrics, with a minimum total score required to qualify for an interview. Each of the hundreds of design portfolios and code samples had to be reviewed independently by two different team members to ensure we were conforming to the competency model&#8217;s scoring system. This was an enormous time commitment, but it was worth it.</li>
+<li>We learned these techniques in the course of a single major recruiting push called the <a href="http://www.consumerfinance.gov/jobs/design-technology-fellows/">Design+Technology Fellowship</a>, which filled 30 new positions. The recruiting campaign and applicant assessment process I&#8217;ve described above are way too much overhead for filling a single position. But with 30 positions at stake, the time commitment became a wise investment. All 30 positions used similar competency models, and all of them could be recruited through the same communities and job boards. I can&#8217;t overstate how successful this recruiting effort was. Our team of designers and developers is not great by government standards. It&#8217;s great, period.</li>
+</ul>
+<p>Two more thoughts about recruiting:</p>
+<ol>
+<li>Talented people care about what they do. They want their work to have a meaningful impact. So don&#8217;t be afraid to inject passion into your pitch. The US Government affects billions of lives. If your team didn&#8217;t play some role in that, your team wouldn&#8217;t exist. So speak from the heart about what makes your team&#8217;s mission so meaningful.</li>
+<li>Give details on the jobs you are filling. Talented recruits want to know how they&#8217;ll be spending their time. So if you don&#8217;t provide a detailed, plain-English job description, talented people won&#8217;t apply. We were very deliberate about the language we used in the <a href="http://www.consumerfinance.gov/jobs/design-technology-fellows/">fellowship recruiting page</a>; some current fellows cite the language on that page as the reason they applied.</li>
+</ol>
+<p>In short: talk like a fellow citizen, not like this:</p>
+<blockquote><p>The incumbent is a senior level information technology specialist serving as a subject matter expert on specialized information technologies and their role within (agency)&#8217;s enterprise architecture. The incumbent typically serves as a project leader or team leader for related information technologies, providing day-to-day guidance to journey and entry-level specialists assigned to support and manage these technologies and applies advanced knowledge to effectively integrate new capabilities and functionality into the infrastructure. <br /><em>— A snippet from a random <a href="http://USAJobs.gov">USAJobs.gov</a> post</em></p></blockquote>
+<h2>Lesson 3: Give your team good tools</h2>
+<p>This rule may as well be part of the talent section, because if you don&#8217;t provide basic capabilities that are essential to any modern tech company, nobody will want to work for you.</p>
+<p>Let your team use the same computers they might use at a private software firm or design agency, and let them install modern code editors and design tools onto those computers. Give them access to Chrome and Firefox and Safari so that they can check their work in something other than Internet Explorer. Allow them to create and destroy their own dev servers at whim. Let them put whatever tools and software libraries they want onto those dev servers. And for God&#8217;s sake, let them use open source software.</p>
+<p>No web team working outside government has to request these things from their employer. But inside government, such tools and practices are rare: dev servers, multiple operating systems, and community-driven software create complexity within the enterprise (along with very real security and stability risks). Some agencies deal with complexity and risk by completely disallowing it. (This is another reason it&#8217;s easier to outsource web work to off-site contractors than do it internally.)</p>
+<p>The CFPB team has tried to strike a better balance. They have GitHub and Jenkins and dev servers, and they have the standard design suite. This is thanks to the broader IT team, which is as passionate about their own work as our designers and developers are about theirs. Cybersecurity, systems, and support all want to set a new standard: instead of shying away from complexity at the expense of productivity, they have made it possible for their teammates to use modern tools. The team still lacks many creative, technical, and collaboration tools that are commonly used by industry. It makes life difficult for them, yet leaping into new capabilities would cause downstream problems for other teams. We are constantly trying to strike the right balance between productivity and stability; both have the public interest on their side. It is a big challenge, and the team confronts it every day.</p>
+<p>Striking this better balance isn&#8217;t something that an established organization can simply start doing tomorrow. If your enterprise infrastructure and policies are firmly in place, then providing these tools might require a massive change in your IT team&#8217;s daily processes and procedures. This can take years. Your agency might look at the cost of providing modern design and development tools and decide that it is too great a risk for the benefit of better web sites. That is fine; I don&#8217;t profess to know what&#8217;s right for your organization.</p>
+<p>But don&#8217;t do it halfway. If you decide it&#8217;s time to start giving your citizen-customers professional-grade products, you can&#8217;t do it without giving your staff professional-grade tools. Do not hire lots of designers and developers and then force them to work with the same tools you provide your accountants and legal staff. They will fail, and you will waste money.</p>
+<p>For agencies that take the plunge, I have hope that the commoditization of infrastructure will make the plunge less painful. Federal IT systems must adhere to a unified set of rules, yet each agency must implement the technical controls largely on its own: much of the work that went into delivering a product to its first federal customer must be repeated by every agency that follows.</p>
+<p>For all the hype surrounding cloud-based services, I am optimistic that Infrastructure-as-a-Service will make it far easier for the federal government to act federated. If an entire stack of infrastructure can be approved by an agency and packaged as a Puppet script or machine image, it can be delivered to another agency within hours. Its security accreditation documentation will have already been vetted by a standard-setting agency like GSA or DHS, and can be thoroughly reviewed by an agency&#8217;s cybersecurity team in far less time than it can today. This is the concept behind <a href="http://www.gsa.gov/fedramp">FedRAMP</a>, a government program to standardize the security assessment and authorization process for cloud services. Once a product is accredited by FedRAMP, agencies will be able to acquire and deploy that product much more quickly.</p>
+<p>In addition to the coordinating role that GSA and DHS are playing, each agency can help by codifying and sharing its infrastructure products, pre-configured to conform to FISMA standards, with other agencies. Open source infrastructure might sound too experimental for the federal government. But when I attended a government open source conference in September, I was struck by how far the conversation had come in the last few years: Government agencies used to debate whether it was even legal to use open source software. I showed up with a slide deck showing off the <a href="http://cfpb.github.io">CFPB&#8217;s GitHub presence</a>, expecting it to cause a stir. But the two preceding presenters — officials from GSA and the Department of Energy — did the same thing! Some agencies still snub open source code, but the tide is shifting irreversibly in its favor. Software code reuse among agencies will soon be commonplace, and infrastructure code will follow. This will have huge benefits for a sector whose use cases and security standards are endemic.</p>
+<p>Agencies and the broader technology community can help improve federal IT infrastructure:</p>
+<p><strong>Agencies</strong>: If you want to dip your foot into the open source pool — be it by sharing your code with your peers, or by reusing their code — contact <a href="mailto:john.scott@codicefoundation.org">John Scott</a> at the <a href="http://www.codice.org">Codice Foundation</a>. He is coordinating a multi-agency group of federal IT staff interested in furthering open source within the U.S. Government. If you have legal questions, refer to <a href="http://dodcio.defense.gov/OpenSourceSoftwareFAQ.aspx">DoD&#8217;s excellent documentation</a> on their own use of open source software, or write to <a href="mailto:dwheeler@ida.org">David A. Wheeler</a>, its primary author. If you want to dive in, check out <a href="http://government.github.com/projects/">GitHub&#8217;s portal for government agencies</a>. Lots of your <a href="http://government.github.com/community">peers</a> are already there.</p>
+<p><strong>Community</strong>: First, watch <a href="http://ada.mbecker.cc/USAxGITHUB/">federal repositories</a> and make valuable contributions to them. Here&#8217;s an idea to get you started: Make it easier for other civic-minded developers to find interesting problems to solve. Build a GitHub API-based tool that lists open issues for federal projects, with filters for programming language and the sector of the owning agency. (For example, if I&#8217;m a Javascript developer interested in national history, show me <a href="https://github.com/LibraryOfCongress/viewshare/issues/36">issues like this</a>.)</p>
+<p>Second, if a federal technology project goes awry, do not use the very forum that is facilitating progress as a platform for mocking them, as many developers did when they trolled the GitHub issues list for the healthcare.gov repository. The entire repository was removed days later. When the federal government engages with the technology community, it does so cautiously. Once bitten, twice shy.</p>
+<h2>Intangible: Have institutional support in the organization&#8217;s DNA</h2>
+<p>The last condition for a strong digital practice cannot be implemented through hard work; it has to preexist: To do any of these things — build your own team, make an honest recruitment effort, and provide infrastructure for that team — your entire organization has to truly care about making good digital products.</p>
+<p>Just like a private organization, a government agency has to answer an existential question in its early days: If we want to succeed, we absolutely have to get <em>X</em> right. For the CFPB, technology is one of the answers. The <a href="http://www.consumerfinance.gov/strategic-plan-budget-and-performance-plan-and-report/">bureau&#8217;s strategy</a> makes it clear how indispensable technology is to each mission. At every level, from educating the public on personal finance to supervising banks, technology is seen as a driving force.</p>
+<p>This is what people mean when they say the CFPB&#8217;s technology team has benefitted from not having legacy culture, and they&#8217;re absolutely right. Had the Bureau been founded 30 years ago (let alone 230), our social infrastructure — the bureaucratic and cultural norms like processes, roles, planning cycles, and expectations that determine how things get done — would not have valued digital products. Once that social infrastructure is set, it is tremendously difficult to change it. It was hard even for private companies to realign their strategies for the Information Age. Now imagine trying to do it in a world where CEOs are reliably replaced every four years, often with successors who have radically different viewpoints on the organization&#8217;s mission. This is the world that government agencies live in.</p>
+<p>Federal leaders know that technology matters. Do not interpret their decision to outsource technology as evidence to the contrary. The trouble is that their agendas are overflowing with things that matter. Most agencies have a hard enough time performing their pre-web, statutorily required operations; wisely, they prioritize improving those operations before taking on new ventures. And because many such operations are required by law and/or the specialized staff performing those operations cannot be easily replaced, it is hard to trade one outdated government function for a new, high-tech one. New initiatives like digital tools have to be layered on top of the existing workload; budgets seldom shift accordingly.</p>
+<p>There is a cost to keeping an agency digitally illiterate. But there is also a cost to reshaping a bureaucracy to do something new. Every time something new becomes a priority, a pre-existing operation, tool, team, or process — one that the organization doesn&#8217;t know how to live without — must end. That has consequences. It creates inefficiency. It confuses staff. It increases the risk that money will go missing or that data will be compromised. Why would a federal leader embrace these risks so that their successor can reap the benefits years later?</p>
+<p>There is no magic selling point that we can offer them, but I have one suggestion: Stop promoting the web as a way to improve public-facing services. Instead, focus on its potential to optimize internal operations. Agency intranets offer more low-hanging fruit than their public counterparts. As hard as it may be to use the average federal web site, civil servants on the inside have it worse. Submitting a timecard, making travel plans, completing a training module, managing performance reviews…these are the kinds of everyday tasks that computers were supposed to make easier. But for those who are subjected to them, they are a constant headache and the source of many hours of lost productivity. In some cases, simple style sheet or layout improvements would lead to huge efficiency gains: bureaucrats would perform their administrative workload more quickly and with fewer calls to the help desk. If updating an agency for the digital era is going to cause cultural upheaval, it&#8217;s only fair that those affected by it derive some of the immediate benefit. Such benefits — a happier, more productive workforce — are more tangible to leaders than their public web site&#8217;s traffic metrics.</p>
+<p>But how does this help federal web sites? Doesn&#8217;t focusing on bureaucrats&#8217; internal web tools distract from the goal of helping citizens? I say it doesn&#8217;t. Instead of building a better web site here and there, our goal should be to build sustainable digital practices throughout the government, and to establish general digital awareness across the federal workforce. The best way to do that is to get a foot in the door by quickly showing the value that this work can have, and by building products that are likely to engage civil servants in the design process.</p>
+<p>Again, this is just one idea. Cracking government culture is notoriously difficult. Please share your own ideas.</p>
+<p>Thank you for reading. If you are a federal employee trying to build your agency&#8217;s digital practice, I hope these tips are useful. Please <a href="mailto:matt@matthewburton.org">contact me</a> if you need more details on anything I&#8217;ve described above. If you are a member of the broader community interested in government technology, I hope this piece informs your contributions to the ongoing debate.</p>
+<!-- RSPEAK_STOP -->
+
+				
+			</div><!-- .entry-content -->
+
+				
+			</div>
+
+			<div class="entry-utility">				
+
+				
+				
+			</div><!-- .entry-utility -->
+
+			
+
+			<div class="entry-utility social">						
+
+				<!-- AddThis Button BEGIN -->					
+
+				<div class="utility-items addthis_toolbox addthis_default_style home  addthis_32x32_style" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB">					
+
+					<a class="addthis_button_twitter"  addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>						
+
+					<a class="addthis_button_google_plusone_share" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>	
+
+					<a class="addthis_button_facebook" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>
+
+					<a class="addthis_button_linkedin" addthis:url="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html" addthis:title="Lessons learned from my time at the CFPB"></a>		
+
+					<div class="clear"></div>
+
+				</div>
+
+				<!-- AddThis Button END -->
+
+				
+				
+					<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html#comments" title="Comment on Lessons learned from my time at the CFPB"><span class="dsq-postid" rel="58926 http://radar.oreilly.com/?p=58926">Comments: 5</span></a></span>
+
+				
+								
+
+				<div class="clear"></div>					
+
+			</div><!-- .entry-utility -->	
+
+			<!-- AddThis Button END -->			
+
+			
+
+			
+
+		</div><!-- #post-## -->		
+
+		
+
+		
+			<div id="post-bottom-widget-area">				
+
+							<div class="textwidget"><!-- programming category newsletter  -->
+ <style type="text/css">
+      #post-bottom-widget-area iframe { height:100px !important;}
+      .single .hentry { padding-bottom:20px; }
+      #content #newsletter { padding:0; margin:0; border-bottom:1px solid #888; }
+      #content #newsletter > h3 { margin:0; padding:0; font-size:22px; line-height:1.1em; font-weight:bold; }
+      #content #newsletter > h4 { margin:0 0 5px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+      #content #newsletter > p { margin:0 0 20px; padding:0; font-size:15px; line-height:1.3em; font-weight:normal; }
+
+      @media only screen and (max-width: 950px) {
+        #post-bottom-widget-area { margin:20px 0 !important;}
+      }
+    </style>
+
+    <div id="newsletter">
+      <h3>Get the O&rsquo;Reilly Programming Newsletter</h3>
+      <p>Weekly insight from industry insiders. Plus exclusive content and offers.</p>
+      <iframe src="//cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?site=radar&amp;topic=prog&amp;loc=botpost&amp;emtype=nl" id="newsletter-popup-frame" width="100%" height="100%"></iframe>
+    </div>
+  <div class="clear"></div></div>
+		
+				<div class="clear"></div>
+
+			</div><!-- #post-bottom-widget -->
+
+		
+		
+
+<a name="comments"></a>
+
+<a name="respond"></a>
+
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-43430">
+        <div id="dsq-comment-header-43430" class="dsq-comment-header">
+            <cite id="dsq-cite-43430">
+http://www.ddmcd.com/                <span id="dsq-author-user-43430">Dennis D. McDonald</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-43430" class="dsq-comment-body">
+            <div id="dsq-comment-message-43430" class="dsq-comment-message"><p>I really like the suggestion &#8220;There is no magic selling point that we can offer them, but I have one suggestion: Stop promoting the web as a way to improve public-facing services. Instead, focus on its potential to optimize internal operations. Agency intranets offer more low-hanging fruit than their public counterparts.&#8221;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-43433">
+        <div id="dsq-comment-header-43433" class="dsq-comment-header">
+            <cite id="dsq-cite-43433">
+                <span id="dsq-author-user-43433">bucksommerkamp</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-43433" class="dsq-comment-body">
+            <div id="dsq-comment-message-43433" class="dsq-comment-message"><p>Excellent thoughts, Matthew &#8211; thank you! I especially resonate with your quote: &#8220;If you decide it’s time to start giving your citizen-customers professional-grade products, you can’t do it without giving your staff professional-grade tools. Do not hire lots of designers and developers and then force them to work with the same tools you provide your accountants and legal staff. They will fail, and you will waste money.&#8221; This could apply almost anywhere&#8230;even to non-governmental employers such as mine. There has to be balance!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-43434">
+        <div id="dsq-comment-header-43434" class="dsq-comment-header">
+            <cite id="dsq-cite-43434">
+http://pediacities.com/                <span id="dsq-author-user-43434">Joel Natividad</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-43434" class="dsq-comment-body">
+            <div id="dsq-comment-message-43434" class="dsq-comment-message"><p>People often complain how inefficient government IT is and what we need is an &#8220;SAP/Salesforce for Government&#8221;.  Back in the early days of IT, everybody built their own payroll and HR systems.  Nowadays, most companies install these de-facto standards, or the small business equivalent of it.</p>
+<p>With Open Data being all the rage, perhaps the OpenGovtPlatform.org collaboration should go #beyondtransparency, to actually building an open-source framework for building Open Government infrastructure.</p>
+<p>At Nextgov Prime, I heard that a lot of agencies are starting to look at Open Data as middleware &#8211;  Interoperability between agencies.  </p>
+<p>Hopefully, we can then have Government as an API and create a very rich Open Gov ecosystem &#8211; where the inhouse team, civic hackers, and the &#8220;govt contractor complex&#8221; can work more productively together on sustainable, standardized, cost-efficient, digital government infrastructure.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-43442">
+        <div id="dsq-comment-header-43442" class="dsq-comment-header">
+            <cite id="dsq-cite-43442">
+                <span id="dsq-author-user-43442">gregelin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-43442" class="dsq-comment-body">
+            <div id="dsq-comment-message-43442" class="dsq-comment-message"><p>Joel Natividad, there might be an important nuance to your point on agencies previously building their own payroll and HR systems.  </p>
+<p>I was at the Federal Communication Commission from 2010 to 2013 in the role of Chief Data Officer. I can give further testimony to Matt&#8217;s assertion: &#8220;Computing used to be ancillary to an organization’s mission. Now it’s central to it.&#8221;</p>
+<p>Paying employees is standardized. Parts of HR are standardized, but then again human resources are an organization&#8217;s most valuable asset. To Matt&#8217;s point &#8220;immense time&#8221; is required to find the right people for an organization. CFPB remolded and extended the HR process (and therefore the &#8220;system&#8221;) to better support its mission goals and its commitment to quality. </p>
+<p>The received wisdom on &#8220;don&#8217;t re-invent the wheel&#8221; does not mean all tires perform equally well on all cars and all terrain. Great tech starts with great elements and assembles optimized solutions through continuous measurement and improvement.  </p>
+<p>I agree with your point regarding how APIs can better empower in-house teams.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-43446">
+        <div id="dsq-comment-header-43446" class="dsq-comment-header">
+            <cite id="dsq-cite-43446">
+                <span id="dsq-author-user-43446">john scott</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-43446" class="dsq-comment-body">
+            <div id="dsq-comment-message-43446" class="dsq-comment-message"><p>One question I&#8217;ve been wrestling with is how long should qualified IT/software folk be government employees? Working in the government cause skills to degrade and I&#8217;ve seen it be very, very hard for smart and very talented developers to keep their skills current + I think a majority of developers would love to jump into the government to help out, solve tough problems and then move forward to other newer opportunities. Matthew hits upon the really hard problem of how best to churn any type of smart and motivated developers, etc. into and out of the government in a timely fashion is really needed. It can&#8217;t take 6+ months to get hired.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://radar.oreilly.com/2014/01/lessons-learned-from-my-time-at-the-cfpb.html';
+    var disqus_identifier = '58926 http://radar.oreilly.com/?p=58926';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'oreillyradar';
+    var disqus_title = "Lessons learned from my time at the CFPB";
+    var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /* Add the ability to add javascript callbacks */
+        
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=58926';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/radar.oreilly.com\/2014\/01\/lessons-learned-from-my-time-at-the-cfpb.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.77';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+
+
+		</div><!-- #content -->
+		<div id="sidebar" class="widget-area">
+	<div id="text-53" class="widget-container widget_text"><h3 class="widget-title">Featured Video</h3>			<div class="textwidget"><div class="js-lazyYT" data-youtube-id="-TMZKznxU64" data-ratio="16:9"></div>
+<p style="padding-top: 5px; font-size: 12px;  line-height: 1.5; font-weight: normal;"><strong>From OSCON 2014 -</strong> Wendy Chisholm, Senior Accessibility Strategist and Universal Design Evangelist at Microsoft talks about coming out as an introvert and what you can do to maintain your energy at conferences.</p>
+</div>
+		<div class="clear"></div></div>		<div id="recent-posts-6" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/python-3-threat-or-menace.html">Python 3: threat or menace?</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/four-short-links-26-september-2014.html">Four short links: 26 September 2014</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/four-short-links-25-september-2014.html">Four short links: 25 September 2014</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/scaling-nosql-databases-5-tips-for-increasing-performance.html">Scaling NoSQL databases: 5 tips for increasing performance</a>
+						</li>
+					<li>
+				<a href="http://radar.oreilly.com/2014/09/in-pursuit-of-universal-iot-standards.html">In pursuit of universal IoT standards</a>
+						</li>
+				</ul>
+		<div class="clear"></div></div><div id="execphp-15" class="widget-container widget_execphp">			<div class="execphpwidget"><a class="twitter-timeline" width="318" data-dnt=true href="https://twitter.com/radar" data-widget-id="251056135732338688">Tweets by @radar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		<div class="clear"></div></div><div id="text-21" class="widget-container widget_text"><h3 class="widget-title">Most Recently Discussed</h3>			<div class="textwidget"><div id="recentcomments" class="dsq-widget"><script type="text/javascript" src="http://oreillyradar.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=100"></script></div></div>
+		<div class="clear"></div></div><div  class="widget-container radar-archives">	
+	<h3 class="widget-title">Archives</h3>	
+		
+	<ul>
+		<li>
+			<select id="archive_id" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			  <option value="">Archives by Month...</option> 
+			  	<option value='http://radar.oreilly.com/2014/09'> September 2014 </option>
+	<option value='http://radar.oreilly.com/2014/08'> August 2014 </option>
+	<option value='http://radar.oreilly.com/2014/07'> July 2014 </option>
+	<option value='http://radar.oreilly.com/2014/06'> June 2014 </option>
+	<option value='http://radar.oreilly.com/2014/05'> May 2014 </option>
+	<option value='http://radar.oreilly.com/2014/04'> April 2014 </option>
+	<option value='http://radar.oreilly.com/2014/03'> March 2014 </option>
+	<option value='http://radar.oreilly.com/2014/02'> February 2014 </option>
+	<option value='http://radar.oreilly.com/2014/01'> January 2014 </option>
+	<option value='http://radar.oreilly.com/2013/12'> December 2013 </option>
+	<option value='http://radar.oreilly.com/2013/11'> November 2013 </option>
+	<option value='http://radar.oreilly.com/2013/10'> October 2013 </option>
+	<option value='http://radar.oreilly.com/2013/09'> September 2013 </option>
+	<option value='http://radar.oreilly.com/2013/08'> August 2013 </option>
+	<option value='http://radar.oreilly.com/2013/07'> July 2013 </option>
+	<option value='http://radar.oreilly.com/2013/06'> June 2013 </option>
+	<option value='http://radar.oreilly.com/2013/05'> May 2013 </option>
+	<option value='http://radar.oreilly.com/2013/04'> April 2013 </option>
+	<option value='http://radar.oreilly.com/2013/03'> March 2013 </option>
+	<option value='http://radar.oreilly.com/2013/02'> February 2013 </option>
+	<option value='http://radar.oreilly.com/2013/01'> January 2013 </option>
+	<option value='http://radar.oreilly.com/2012/12'> December 2012 </option>
+	<option value='http://radar.oreilly.com/2012/11'> November 2012 </option>
+	<option value='http://radar.oreilly.com/2012/10'> October 2012 </option>
+	<option value='http://radar.oreilly.com/2012/09'> September 2012 </option>
+	<option value='http://radar.oreilly.com/2012/08'> August 2012 </option>
+	<option value='http://radar.oreilly.com/2012/07'> July 2012 </option>
+	<option value='http://radar.oreilly.com/2012/06'> June 2012 </option>
+	<option value='http://radar.oreilly.com/2012/05'> May 2012 </option>
+	<option value='http://radar.oreilly.com/2012/04'> April 2012 </option>
+	<option value='http://radar.oreilly.com/2012/03'> March 2012 </option>
+	<option value='http://radar.oreilly.com/2012/02'> February 2012 </option>
+	<option value='http://radar.oreilly.com/2012/01'> January 2012 </option>
+	<option value='http://radar.oreilly.com/2011/12'> December 2011 </option>
+	<option value='http://radar.oreilly.com/2011/11'> November 2011 </option>
+	<option value='http://radar.oreilly.com/2011/10'> October 2011 </option>
+	<option value='http://radar.oreilly.com/2011/09'> September 2011 </option>
+	<option value='http://radar.oreilly.com/2011/08'> August 2011 </option>
+	<option value='http://radar.oreilly.com/2011/07'> July 2011 </option>
+	<option value='http://radar.oreilly.com/2011/06'> June 2011 </option>
+	<option value='http://radar.oreilly.com/2011/05'> May 2011 </option>
+	<option value='http://radar.oreilly.com/2011/04'> April 2011 </option>
+	<option value='http://radar.oreilly.com/2011/03'> March 2011 </option>
+	<option value='http://radar.oreilly.com/2011/02'> February 2011 </option>
+	<option value='http://radar.oreilly.com/2011/01'> January 2011 </option>
+	<option value='http://radar.oreilly.com/2010/12'> December 2010 </option>
+	<option value='http://radar.oreilly.com/2010/11'> November 2010 </option>
+	<option value='http://radar.oreilly.com/2010/10'> October 2010 </option>
+	<option value='http://radar.oreilly.com/2010/09'> September 2010 </option>
+	<option value='http://radar.oreilly.com/2010/08'> August 2010 </option>
+	<option value='http://radar.oreilly.com/2010/07'> July 2010 </option>
+	<option value='http://radar.oreilly.com/2010/06'> June 2010 </option>
+	<option value='http://radar.oreilly.com/2010/05'> May 2010 </option>
+	<option value='http://radar.oreilly.com/2010/04'> April 2010 </option>
+	<option value='http://radar.oreilly.com/2010/03'> March 2010 </option>
+	<option value='http://radar.oreilly.com/2010/02'> February 2010 </option>
+	<option value='http://radar.oreilly.com/2010/01'> January 2010 </option>
+	<option value='http://radar.oreilly.com/2009/12'> December 2009 </option>
+	<option value='http://radar.oreilly.com/2009/11'> November 2009 </option>
+	<option value='http://radar.oreilly.com/2009/10'> October 2009 </option>
+	<option value='http://radar.oreilly.com/2009/09'> September 2009 </option>
+	<option value='http://radar.oreilly.com/2009/08'> August 2009 </option>
+	<option value='http://radar.oreilly.com/2009/07'> July 2009 </option>
+	<option value='http://radar.oreilly.com/2009/06'> June 2009 </option>
+	<option value='http://radar.oreilly.com/2009/05'> May 2009 </option>
+	<option value='http://radar.oreilly.com/2009/04'> April 2009 </option>
+	<option value='http://radar.oreilly.com/2009/03'> March 2009 </option>
+	<option value='http://radar.oreilly.com/2009/02'> February 2009 </option>
+	<option value='http://radar.oreilly.com/2009/01'> January 2009 </option>
+	<option value='http://radar.oreilly.com/2008/12'> December 2008 </option>
+	<option value='http://radar.oreilly.com/2008/11'> November 2008 </option>
+	<option value='http://radar.oreilly.com/2008/10'> October 2008 </option>
+	<option value='http://radar.oreilly.com/2008/09'> September 2008 </option>
+	<option value='http://radar.oreilly.com/2008/08'> August 2008 </option>
+	<option value='http://radar.oreilly.com/2008/07'> July 2008 </option>
+	<option value='http://radar.oreilly.com/2008/06'> June 2008 </option>
+	<option value='http://radar.oreilly.com/2008/05'> May 2008 </option>
+	<option value='http://radar.oreilly.com/2008/04'> April 2008 </option>
+	<option value='http://radar.oreilly.com/2008/03'> March 2008 </option>
+	<option value='http://radar.oreilly.com/2008/02'> February 2008 </option>
+	<option value='http://radar.oreilly.com/2008/01'> January 2008 </option>
+	<option value='http://radar.oreilly.com/2007/12'> December 2007 </option>
+	<option value='http://radar.oreilly.com/2007/11'> November 2007 </option>
+	<option value='http://radar.oreilly.com/2007/10'> October 2007 </option>
+	<option value='http://radar.oreilly.com/2007/09'> September 2007 </option>
+	<option value='http://radar.oreilly.com/2007/08'> August 2007 </option>
+	<option value='http://radar.oreilly.com/2007/07'> July 2007 </option>
+	<option value='http://radar.oreilly.com/2007/06'> June 2007 </option>
+	<option value='http://radar.oreilly.com/2007/05'> May 2007 </option>
+	<option value='http://radar.oreilly.com/2007/04'> April 2007 </option>
+	<option value='http://radar.oreilly.com/2007/03'> March 2007 </option>
+	<option value='http://radar.oreilly.com/2007/02'> February 2007 </option>
+	<option value='http://radar.oreilly.com/2007/01'> January 2007 </option>
+	<option value='http://radar.oreilly.com/2006/12'> December 2006 </option>
+	<option value='http://radar.oreilly.com/2006/11'> November 2006 </option>
+	<option value='http://radar.oreilly.com/2006/10'> October 2006 </option>
+	<option value='http://radar.oreilly.com/2006/09'> September 2006 </option>
+	<option value='http://radar.oreilly.com/2006/08'> August 2006 </option>
+	<option value='http://radar.oreilly.com/2006/07'> July 2006 </option>
+	<option value='http://radar.oreilly.com/2006/06'> June 2006 </option>
+	<option value='http://radar.oreilly.com/2006/05'> May 2006 </option>
+	<option value='http://radar.oreilly.com/2006/04'> April 2006 </option>
+	<option value='http://radar.oreilly.com/2006/03'> March 2006 </option>
+	<option value='http://radar.oreilly.com/2006/02'> February 2006 </option>
+	<option value='http://radar.oreilly.com/2006/01'> January 2006 </option>
+	<option value='http://radar.oreilly.com/2005/12'> December 2005 </option>
+	<option value='http://radar.oreilly.com/2005/11'> November 2005 </option>
+	<option value='http://radar.oreilly.com/2005/10'> October 2005 </option>
+	<option value='http://radar.oreilly.com/2005/09'> September 2005 </option>
+	<option value='http://radar.oreilly.com/2005/08'> August 2005 </option>
+	<option value='http://radar.oreilly.com/2005/07'> July 2005 </option>
+	<option value='http://radar.oreilly.com/2005/06'> June 2005 </option>
+	<option value='http://radar.oreilly.com/2005/05'> May 2005 </option>
+	<option value='http://radar.oreilly.com/2005/04'> April 2005 </option>
+	<option value='http://radar.oreilly.com/2005/03'> March 2005 </option>
+			</select>
+		</li>
+
+		<li>	
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='cat' id='cat' class='postform'  onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Topic&#8230;</option>
+	<option class="level-0" value="3">Data</option>
+	<option class="level-0" value="5443">Design</option>
+	<option class="level-0" value="5444">Emerging Tech</option>
+	<option class="level-0" value="4871">IoT+</option>
+	<option class="level-0" value="9">Programming</option>
+	<option class="level-0" value="12">Web Ops &amp; Performance</option>
+	<option class="level-0" value="5355">Web Platform</option>
+</select>
+					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+
+		<li id="users">
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='author' id='author' class='' onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Author...</option>
+	<option value='507'>A. Sinan Unur</option>
+	<option value='508'>Aaron Sumner</option>
+	<option value='4'>Adam DuVander</option>
+	<option value='376'>Adam Flaherty</option>
+	<option value='3'>Adam Messinger</option>
+	<option value='5'>Adam Witwer</option>
+	<option value='2'>Alasdair Allan</option>
+	<option value='588'>Alex Bordei</option>
+	<option value='7'>Alex Bowyer</option>
+	<option value='9'>Alex Iskold</option>
+	<option value='6'>Alexander Macgillivray</option>
+	<option value='10'>Alistair Croll</option>
+	<option value='471'>Allen Downey</option>
+	<option value='11'>Allen Noren</option>
+	<option value='12'>Allison Randal</option>
+	<option value='482'>Ally MacDonald</option>
+	<option value='477'>Alois Reitbauer</option>
+	<option value='347'>Alysa Hutnik</option>
+	<option value='358'>Amy Heineike</option>
+	<option value='467'>Amy Jollymore</option>
+	<option value='426'>Amy Unruh</option>
+	<option value='13'>Anant Jhingran</option>
+	<option value='414'>Andreas Antonopoulos</option>
+	<option value='501'>Andrew Collette</option>
+	<option value='15'>Andrew Odewahn</option>
+	<option value='14'>Andrew Savikas</option>
+	<option value='16'>Andrew Shafer</option>
+	<option value='510'>Andy Fitzgerald</option>
+	<option value='18'>Andy Kirk</option>
+	<option value='355'>Andy Konwinski</option>
+	<option value='19'>Andy Oram</option>
+	<option value='309'>Ann Spencer</option>
+	<option value='262'>Ann Waldo</option>
+	<option value='359'>Anna Smith</option>
+	<option value='562'>Anne Gentle</option>
+	<option value='574'>Anni Ylagan</option>
+	<option value='21'>Ari Gesher</option>
+	<option value='20'>Aria Haghighi</option>
+	<option value='410'>Ariya Hidayat</option>
+	<option value='22'>Artur Bergman</option>
+	<option value='23'>Audrey Watters</option>
+	<option value='293'>Avi Bryant</option>
+	<option value='571'>Barb Edson</option>
+	<option value='421'>Barbara Bermes</option>
+	<option value='486'>Baron Schwartz</option>
+	<option value='26'>Barry Devlin</option>
+	<option value='390'>Beau Cronin</option>
+	<option value='419'>Ben Christensen</option>
+	<option value='587'>Ben Evans</option>
+	<option value='27'>Ben Lorica</option>
+	<option value='462'>Bill Higgins</option>
+	<option value='591'>Bill Lubanovic</option>
+	<option value='28'>Bill McCoy</option>
+	<option value='461'>Bonnie Feldman</option>
+	<option value='30'>Bradley Voytek</option>
+	<option value='31'>Brady Forrest</option>
+	<option value='539'>Brandon Satrom</option>
+	<option value='32'>Brett McLaughlin</option>
+	<option value='33'>Brett Sandusky</option>
+	<option value='34'>Brett Sheppard</option>
+	<option value='25'>Brian Ahier</option>
+	<option value='35'>Brian Boyer</option>
+	<option value='533'>brian d foy</option>
+	<option value='494'>Brian d&#039;Alessandro</option>
+	<option value='244'>Brian Jepson</option>
+	<option value='481'>Brian MacDonald</option>
+	<option value='36'>Brian O&#039;Leary</option>
+	<option value='38'>Brian Sawyer</option>
+	<option value='37'>Bruce Stewart</option>
+	<option value='39'>Carl Hewitt</option>
+	<option value='40'>Carl Malamud</option>
+	<option value='328'>Cathy O&#039;Neil</option>
+	<option value='483'>Chao (Ray) Feng</option>
+	<option value='448'>Chiu-ki Chan</option>
+	<option value='516'>Chris Cornutt</option>
+	<option value='41'>Chris Meade</option>
+	<option value='284'>Chris Vander Mey</option>
+	<option value='300'>Chris Wiggins</option>
+	<option value='44'>Christine Perey</option>
+	<option value='42'>Ciara Byrne</option>
+	<option value='43'>Cliff Miller</option>
+	<option value='479'>Colt McAnlis</option>
+	<option value='306'>Courtney Nash</option>
+	<option value='45'>Dale Dougherty</option>
+	<option value='422'>Dan Saffer</option>
+	<option value='577'>Danese Cooper</option>
+	<option value='46'>Darren Barefoot</option>
+	<option value='430'>Dave Himrod</option>
+	<option value='47'>Dave McClure</option>
+	<option value='556'>Dave Zwieback</option>
+	<option value='435'>David Elfi</option>
+	<option value='49'>David Leinweber</option>
+	<option value='50'>David Recordon</option>
+	<option value='48'>David Sims</option>
+	<option value='559'>David Stephenson</option>
+	<option value='51'>DC Denison</option>
+	<option value='242'>Deni Auclair</option>
+	<option value='313'>Derek Jacoby</option>
+	<option value='427'>Dino Esposito</option>
+	<option value='53'>DJ Patil</option>
+	<option value='416'>Doug Finke</option>
+	<option value='52'>Doug Hill</option>
+	<option value='512'>Dr. Venkat Subramaniam</option>
+	<option value='575'>Drew Dara-Abrams</option>
+	<option value='348'>Duncan Ross</option>
+	<option value='491'>Dusty Phillips</option>
+	<option value='569'>DW Wheeler</option>
+	<option value='54'>Dylan Field</option>
+	<option value='55'>E.A. Vander Veer</option>
+	<option value='56'>Edd Dumbill</option>
+	<option value='236'>Edie Freedman</option>
+	<option value='465'>Eli Goodman</option>
+	<option value='392'>Elisabeth Robson</option>
+	<option value='58'>Elizabeth Corcoran</option>
+	<option value='544'>Ellen Friedman</option>
+	<option value='570'>Elliott Hauser</option>
+	<option value='514'>Elliotte Rusty Harold</option>
+	<option value='434'>Emma Jane Westby</option>
+	<option value='59'>Eoin Purcell</option>
+	<option value='451'>Eric Redmond</option>
+	<option value='60'>Eric Ries</option>
+	<option value='500'>Ezra Haber Glenn</option>
+	<option value='541'>Faye Williams</option>
+	<option value='578'>Federico Castanedo</option>
+	<option value='503'>Federico Lucifredi</option>
+	<option value='62'>Fred Trotter</option>
+	<option value='515'>Fred van den Bosch</option>
+	<option value='68'>Gabe Zichermann</option>
+	<option value='63'>Gavin Starks</option>
+	<option value='463'>George Reese</option>
+	<option value='519'>Glen Martin</option>
+	<option value='67'>Greg Whisenant</option>
+	<option value='66'>Gretchen Giles</option>
+	<option value='436'>Gustavo Franco</option>
+	<option value='581'>Hadley Wickham</option>
+	<option value='513'>Hari K Gottipati</option>
+	<option value='69'>Heather McCormack</option>
+	<option value='511'>Hew Wolff</option>
+	<option value='70'>Howard Wen</option>
+	<option value='71'>Hugh McGuire</option>
+	<option value='72'>Imran Ali</option>
+	<option value='470'>J. Paul Reed</option>
+	<option value='73'>James Bridle</option>
+	<option value='74'>James Turner</option>
+	<option value='338'>Janaya Williams</option>
+	<option value='558'>Jane Sarasohn-Kahn</option>
+	<option value='75'>Jason Grigsby</option>
+	<option value='573'>Jay Kreps</option>
+	<option value='529'>Jay McGavren</option>
+	<option value='350'>Jayant Shekar</option>
+	<option value='77'>Jeevan Padiyar</option>
+	<option value='429'>Jeff Gothelf</option>
+	<option value='375'>Jeff Needham</option>
+	<option value='530'>Jeffrey Carr</option>
+	<option value='78'>Jeffrey Carr</option>
+	<option value='80'>Jenn Webb</option>
+	<option value='81'>Jennifer Pahlka</option>
+	<option value='583'>Jeremy Freeman</option>
+	<option value='82'>Jeremy Howard</option>
+	<option value='83'>Jesper Andersen</option>
+	<option value='438'>Jesse Anderson</option>
+	<option value='84'>Jesse Robbins</option>
+	<option value='391'>Jessica McKellar</option>
+	<option value='534'>Jez Humble</option>
+	<option value='88'>Jim Stogdill</option>
+	<option value='87'>Jimmy Guterman</option>
+	<option value='342'>Jo Prichard</option>
+	<option value='89'>Jodee Rich</option>
+	<option value='340'>Joe Procopio</option>
+	<option value='413'>Johan Bergström</option>
+	<option value='92'>John Allspaw</option>
+	<option value='93'>John Battelle</option>
+	<option value='457'>John Boxall</option>
+	<option value='349'>John Feland</option>
+	<option value='351'>John Foreman</option>
+	<option value='86'>John Geraci</option>
+	<option value='85'>John Graham-Cumming</option>
+	<option value='94'>John Labovitz</option>
+	<option value='564'>John Lindquist</option>
+	<option value='495'>John Myles White</option>
+	<option value='95'>John Warren</option>
+	<option value='561'>John Wilbanks</option>
+	<option value='255'>Jon Bruner</option>
+	<option value='498'>Jon Callas</option>
+	<option value='555'>Jon Cowie</option>
+	<option value='444'>Jon Roberts</option>
+	<option value='101'>Jon Spinney</option>
+	<option value='98'>Jon Udell</option>
+	<option value='585'>Jonas Luster</option>
+	<option value='96'>Jonathan Alexander</option>
+	<option value='177'>Jonathan Reichental, Ph.D.</option>
+	<option value='499'>Jonathon Thurman</option>
+	<option value='97'>Jono Bacon</option>
+	<option value='90'>Joseph Hellerstein</option>
+	<option value='99'>Joseph J. Esposito</option>
+	<option value='546'>Josh Lockhart</option>
+	<option value='509'>Josh Simmons</option>
+	<option value='100'>Joshua-Michéle Ross</option>
+	<option value='464'>Joy Beatty</option>
+	<option value='103'>Jud Valeski</option>
+	<option value='104'>Julie Steele</option>
+	<option value='106'>Justin Hall</option>
+	<option value='107'>Justo Hidalgo</option>
+	<option value='117'>Karl Fogel</option>
+	<option value='108'>Kassia Krozser</option>
+	<option value='112'>Kat Meyer</option>
+	<option value='109'>Kate Eltham</option>
+	<option value='110'>Kate Pullinger</option>
+	<option value='453'>Kathryn Barrett</option>
+	<option value='111'>Kathy Walrath</option>
+	<option value='458'>Katie Cunningham</option>
+	<option value='557'>Katie Miller</option>
+	<option value='525'>Keith Comito</option>
+	<option value='113'>Keith Fahlgren</option>
+	<option value='114'>Ken Yarmosh</option>
+	<option value='115'>Kevin Shockey</option>
+	<option value='116'>Kevin Smokler</option>
+	<option value='454'>Khaled El Emam</option>
+	<option value='424'>Kipp Bradford</option>
+	<option value='469'>Kit Seeborg</option>
+	<option value='492'>kmatsudaira</option>
+	<option value='118'>Kurt Cagle</option>
+	<option value='523'>Lara Swanson</option>
+	<option value='121'>Laura Dawson</option>
+	<option value='412'>Laura Klein</option>
+	<option value='339'>Laurel Ruma</option>
+	<option value='122'>Laurie Petrycki</option>
+	<option value='123'>Leigh Dodds</option>
+	<option value='125'>Liliana Bounegru</option>
+	<option value='126'>Linda Stone</option>
+	<option value='127'>Liza Daly</option>
+	<option value='128'>Lucy Gray</option>
+	<option value='129'>Lukas Biewald</option>
+	<option value='151'>Mac Slocum</option>
+	<option value='130'>Madhusudhan Konda</option>
+	<option value='396'>Mandi Walls</option>
+	<option value='489'>Manish Lachwani</option>
+	<option value='132'>Marc Goodman</option>
+	<option value='131'>Marc Hedlund</option>
+	<option value='133'>Marie Bjerede</option>
+	<option value='134'>Mark Drapeau</option>
+	<option value='447'>Mark Grover</option>
+	<option value='431'>Mark Lutz</option>
+	<option value='135'>Mark Nelson</option>
+	<option value='554'>Mark Pacelle</option>
+	<option value='150'>Mark Sigal</option>
+	<option value='136'>Marko Gargenta</option>
+	<option value='291'>Mary Treseler</option>
+	<option value='142'>Matt Garrish</option>
+	<option value='567'>Matt Makai</option>
+	<option value='473'>Matt Neuburg</option>
+	<option value='140'>Matt Wood</option>
+	<option value='137'>Matthew Burton</option>
+	<option value='460'>Matthew Gast</option>
+	<option value='408'>Matthew McCullough</option>
+	<option value='138'>Matthew Russell</option>
+	<option value='468'>Matthew Russell</option>
+	<option value='387'>Max Kanat-Alexander</option>
+	<option value='388'>Max Shron</option>
+	<option value='289'>Meghan Blanchette</option>
+	<option value='579'>Mehdi Daoudi</option>
+	<option value='445'>Michael DeHaan</option>
+	<option value='144'>Michael Driscoll</option>
+	<option value='145'>Michael Ferrari</option>
+	<option value='456'>Michael Gold</option>
+	<option value='450'>Michael Hunger</option>
+	<option value='146'>Michael Jon Jensen</option>
+	<option value='476'>Michael Lopp</option>
+	<option value='532'>Michael McMillan</option>
+	<option value='537'>Michael Scroggins</option>
+	<option value='406'>Mike Amundsen</option>
+	<option value='418'>Mike Barlow</option>
+	<option value='147'>Mike Hendrickson</option>
+	<option value='143'>Mike Honda</option>
+	<option value='148'>Mike Loukides</option>
+	<option value='487'>Mike Petrovich</option>
+	<option value='149'>Mike Shatzkin</option>
+	<option value='493'>Mitchell Hashimoto</option>
+	<option value='352'>Naomi Robbins</option>
+	<option value='152'>Nat Torkington</option>
+	<option value='214'>Nate Osit</option>
+	<option value='308'>Nathan Jepson</option>
+	<option value='155'>Nick Bilton</option>
+	<option value='156'>Nick Farina</option>
+	<option value='420'>Nick Kolegraff</option>
+	<option value='157'>Nick Ruffilo</option>
+	<option value='341'>Nicolas Garcia Belmonte</option>
+	<option value='158'>Nikolaj Nyholm</option>
+	<option value='159'>O&#039;Reilly Radar</option>
+	<option value='354'>O&#039;Reilly Strata</option>
+	<option value='497'>Ohad Samet</option>
+	<option value='160'>Osman Rashid</option>
+	<option value='161'>Pablo Francisco Arrieta Gomez</option>
+	<option value='518'>Paco Nathan</option>
+	<option value='162'>Pamela Samuelson</option>
+	<option value='589'>Paris Buttfield-Addison</option>
+	<option value='549'>Patrick Mulder</option>
+	<option value='553'>Patrick Reynolds</option>
+	<option value='163'>Paul Spinrad</option>
+	<option value='524'>Pete Hodgson</option>
+	<option value='167'>Pete Warden</option>
+	<option value='166'>Peter Bennett</option>
+	<option value='307'>Peter Cooper</option>
+	<option value='371'>Peter Krautzberger</option>
+	<option value='294'>Peter Laflin</option>
+	<option value='590'>Peter Lewis</option>
+	<option value='164'>Peter Meyers</option>
+	<option value='521'>Philip Guo</option>
+	<option value='455'>Philipp Janert</option>
+	<option value='404'>Q Ethan McCallum</option>
+	<option value='169'>Quinn Norton</option>
+	<option value='172'>Rachel Roumeliotis</option>
+	<option value='173'>Rael Dornfest</option>
+	<option value='522'>Rajat Bhargava</option>
+	<option value='174'>Ramez Naam</option>
+	<option value='175'>Randy Bias</option>
+	<option value='176'>Raven Zachary</option>
+	<option value='443'>Ray DiGiacomo, Jr.</option>
+	<option value='263'>Renee DiResta</option>
+	<option value='485'>Richard Cook</option>
+	<option value='439'>Richard Dallaway</option>
+	<option value='423'>Richard Reese</option>
+	<option value='552'>Richard Warburton</option>
+	<option value='183'>Rob Tucker</option>
+	<option value='179'>Robbie Allen</option>
+	<option value='182'>Robert Kaye</option>
+	<option value='181'>Robert Passarella</option>
+	<option value='180'>Roberta Cairney</option>
+	<option value='548'>Roger Chen</option>
+	<option value='184'>Roger Magoulas</option>
+	<option value='287'>Ron Miller</option>
+	<option value='178'>Roseanne Fallin</option>
+	<option value='484'>Ryan Bethencourt</option>
+	<option value='551'>Ryan Neufeld</option>
+	<option value='185'>Ryan Stewart</option>
+	<option value='568'>Sam Newman</option>
+	<option value='540'>Samuel Mullen</option>
+	<option value='186'>Sanders Kleinfeld</option>
+	<option value='191'>Sara Peyton</option>
+	<option value='187'>Sara Winge</option>
+	<option value='189'>Sarah Milstein</option>
+	<option value='190'>Sarah Novotny</option>
+	<option value='531'>Scott Jenson</option>
+	<option value='566'>Scott Murray</option>
+	<option value='563'>Scott Rich</option>
+	<option value='192'>Scott Ruthfield</option>
+	<option value='449'>Sean McGregor</option>
+	<option value='194'>Sébastien Pierre</option>
+	<option value='547'>Semmy Purewal</option>
+	<option value='409'>Seth Ladd</option>
+	<option value='195'>Shahid Shah</option>
+	<option value='504'>Shai Almog</option>
+	<option value='586'>Shyam Seshadri</option>
+	<option value='196'>Silona Bonewald</option>
+	<option value='576'>Simon Chan</option>
+	<option value='215'>Simon Phipps</option>
+	<option value='198'>Simon St. Laurent</option>
+	<option value='197'>Simon Wardley</option>
+	<option value='363'>Stephen O&#039;Grady</option>
+	<option value='475'>Stephen O&#039;Grady</option>
+	<option value='199'>Steve Souders</option>
+	<option value='560'>Steven Citron-Pousty</option>
+	<option value='417'>Stoyan Stefanov</option>
+	<option value='200'>Suzanne Axtell</option>
+	<option value='202'>Tara Hunt</option>
+	<option value='572'>Terrence Dorsey</option>
+	<option value='203'>Terry Jones</option>
+	<option value='201'>Tim Anderson</option>
+	<option value='459'>Tim Darling</option>
+	<option value='204'>Tim O&#039;Reilly</option>
+	<option value='205'>Timothy M. O&#039;Brien</option>
+	<option value='206'>Tish Shute</option>
+	<option value='526'>Toby Inkster</option>
+	<option value='207'>Todd Sattersten</option>
+	<option value='432'>Tom Eisenmann</option>
+	<option value='208'>Tom Steinberg</option>
+	<option value='209'>Tony Quartarolo</option>
+	<option value='502'>Trisha Gee</option>
+	<option value='210'>Troy Topnik</option>
+	<option value='211'>Tyler Bell</option>
+	<option value='538'>Valeri Karpov</option>
+	<option value='474'>Vandad Nahvandipoor</option>
+	<option value='212'>Vanessa Fox</option>
+	<option value='535'>Varun Nagaraj</option>
+	<option value='346'>Will Cukierski</option>
+	<option value='580'>William O&#039;Connor</option>
+	<option value='401'>Zigurd Mednieks</option>
+</select>					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div id="text-36" class="widget-container widget_text"><h3 class="widget-title">CONTACT US</h3>			<div class="textwidget"><p style=" font-size: 12px;  line-height: 1.3; font-weight: bold;">Radar managing editor <br /> 
+<a href="mailto:contactradar@oreilly.com?subject=Contact Radar">Jenn Webb</a></p></div>
+		<div class="clear"></div></div>	<div class="clear"></div>
+</div>	</div><!-- #container -->
+	</div><!-- #main -->
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+			<div id="footer-top">			
+							<div class="execphpwidget"><div class="label">
+Sign up today to receive special discounts,<br> product alerts, and news from O'Reilly.</div>
+<div class="form">
+	<form method="POST" id="emailSignUp" action="http://post.oreilly.com/client/o/oreilly/forms/quicksignup.cgi"> 
+		<input type="hidden" name="client_token" value="oreilly" />
+		<input type="hidden" name="subscribe" value="optin" />
+                 <input type="hidden" name="success_url" value="http://oreilly.com/store/newsletter-thankyou.html" /> 
+                  <input type="hidden" name="error_url" value="http://oreilly.com/store/newsletter-signup-error.html" /> 
+                  <input type="hidden" name="news_oreilly" value="1" />
+		  <input type="text" name="email_addr" value="Enter Email" onblur="if (this.value == '')  {this.value = 'Enter Email';}" onfocus="if (this.value == 'Enter Email') {this.value = '';}" widdit="off" autocomplete="off" maxlength="100" size="12" class="email-box" />
+		 <input border="0" type="image" alt="Submit" src="http://cdn.oreillystatic.com/images/sitewide-headers/emailsignup_btn.gif" name="submit" value="submit">
+		<div class="clear"></div>
+	</form>
+</div>
+<div class="privacy">					
+	<a href="http://oreilly.com/oreilly/privacy.html">Privacy Policy &gt;</a>					
+	<a href="http://oreilly.com/pdf/sample-newsletter.pdf">View Sample Newsletter &gt;</a>		
+</div>
+</div>
+			
+				
+				<div class="menu-social-btm"><ul id="menu-social-btn-bottom" class="menu"><li id="menu-item-48494" class="social twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-48494"><a href="http://twitter.com/oreillymedia">Twitter</a></li>
+<li id="menu-item-48491" class="social youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-48491"><a href="http://youtube.com/oreillymedia">YouTube</a></li>
+<li id="menu-item-48492" class="social slideshare menu-item menu-item-type-custom menu-item-object-custom menu-item-48492"><a href="http://slideshare.net/oreillymedia">Slideshare</a></li>
+<li id="menu-item-48493" class="social facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-48493"><a href="https://www.facebook.com/OReillyRadar">Facebook</a></li>
+<li id="menu-item-48495" class="social googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-48495"><a href="https://plus.google.com/105451978536505503907">Google+</a></li>
+<li id="menu-item-48496" class="social rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48496"><a href="http://feeds.feedburner.com/oreilly/news">RSS</a></li>
+<li id="menu-item-48497" class="all-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48497"><a href="http://oreilly.com/feeds">View All RSS Feeds ></a></li>
+</ul></div>				<div class="clear"></div>
+			</div>
+							<div class="execphpwidget"><div id="multiColumnFooter">	
+<div id="footer-branding">
+		<p class="copyright">&copy; 2014, O'Reilly Media, Inc.</p>
+		<p><span class="phone-number">(707) 827-7019</span><span class="phone-number">(800) 889-8969</span></p>
+		<p class="trademarks">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+	</div>
+	
+	<div class="contentSectionBlock">
+		<!-- style="width:25%;" -->
+		<div class="contentSectionContainer">			
+				<h3>About O'Reilly</h3>
+				<div class="menu-about-oreilly-container"><ul id="menu-about-oreilly" class="menu"><li id="menu-item-50110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50110"><a href="http://radar.oreilly.com/about/">About O&#8217;Reilly Radar</a></li>
+<li id="menu-item-67911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67911"><a href="http://radar.oreilly.com/radar-contributors/">Radar Contributors</a></li>
+<li id="menu-item-48510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48510"><a href="http://oreilly.com/academic/">Academic Solutions</a></li>
+<li id="menu-item-48511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48511"><a href="http://oreilly.com/jobs/">Jobs</a></li>
+<li id="menu-item-48512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48512"><a href="http://oreilly.com/contact.html">Contacts</a></li>
+<li id="menu-item-48513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48513"><a href="http://oreilly.com/about/">Corporate Information</a></li>
+<li id="menu-item-48514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48514"><a href="http://press.oreilly.com/index.html">Press Room</a></li>
+<li id="menu-item-48515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48515"><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+<li id="menu-item-48516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48516"><a href="http://oreilly.com/terms/">Terms of Service</a></li>
+<li id="menu-item-48517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48517"><a href="http://oreilly.com/oreilly/author/intro.csp">Writing for O&#8217;Reilly</a></li>
+<li id="menu-item-68743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68743"><a href="http://www.oreilly.com/about/editorial_independence.html">Editorial Independence</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Community</h3>
+				<div class="menu-community-2-container"><ul id="menu-community-2" class="menu"><li id="menu-item-48518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48518"><a href="http://oreilly.com/authors/">Authors</a></li>
+<li id="menu-item-48519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48519"><a href="http://oreilly.com/community/">Community &#038; Featured Users</a></li>
+<li id="menu-item-48520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48520"><a href="http://forums.oreilly.com/">Forums</a></li>
+<li id="menu-item-48521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48521"><a href="https://members.oreilly.com/">Membership</a></li>
+<li id="menu-item-48522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48522"><a href="http://elists.oreilly.com/">Newsletters</a></li>
+<li id="menu-item-48523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48523"><a href="http://answers.oreilly.com/">O&#8217;Reilly Answers</a></li>
+<li id="menu-item-48524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48524"><a href="http://oreilly.com/feeds/">RSS Feeds</a></li>
+<li id="menu-item-56120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56120"><a href="http://chimera.labs.oreilly.com/">O&#8217;Reilly Chimera (beta)</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">	
+                                <h3>Partner Sites</h3>
+				  <div class="menu-partner-sites-container"><ul id="menu-partner-sites" class="menu"><li id="menu-item-48503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48503"><a target="_blank" href="http://makezine.com/">makezine.com</a></li>
+<li id="menu-item-48504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48504"><a target="_blank" href="http://makerfaire.com/">makerfaire.com</a></li>
+<li id="menu-item-55273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55273"><a target="_blank" href="http://craftzine.com/">craftzine.com</a></li>
+<li id="menu-item-55274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55274"><a target="_blank" href="http://igniteshow.com/">igniteshow.com</a></li>
+<li id="menu-item-55275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55275"><a target="_blank" href="https://developer.paypal.com/">PayPal Developer Zone</a></li>
+<li id="menu-item-55276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55276"><a target="_blank" href="http://blogs.forbes.com/oreillymedia/">O&#8217;Reilly Insights on Forbes.com</a></li>
+</ul></div>			
+		</div>
+			
+
+		<!-- style="width:24%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Shop O'Reilly</h3>
+			<div class="menu-shop-oreilly-container"><ul id="menu-shop-oreilly" class="menu"><li id="menu-item-48505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48505"><a href="http://shop.oreilly.com/category/customer-service.do">Customer Service</a></li>
+<li id="menu-item-48506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48506"><a href="http://shop.oreilly.com/category/customer-service.do">Contact Us</a></li>
+<li id="menu-item-48507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48507"><a href="http://shop.oreilly.com/category/customer-service/shipping-information.do">Shipping Information</a></li>
+<li id="menu-item-48508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48508"><a href="http://shop.oreilly.com/category/customer-service/ordering-payment.do">Ordering &#038; Payment</a></li>
+<li id="menu-item-56665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56665"><a href="http://oreilly.com/affiliates/">Affiliate Program</a></li>
+<li id="menu-item-48509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48509"><a href="http://shop.oreilly.com/category/customer-service/oreilly-guarantee.do">The O&#8217;Reilly Guarantee</a></li>
+</ul></div>		
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+<div class="clear"></div>
+</div></div>
+			
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+</div><!-- #wrapper -->
+<script language="JavaScript" type="text/javascript">
+var s_account="orradar,orglobal" // change report suite ID accordingly
+</script>
+<!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://cdn.oreillystatic.com/assets/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+s.pageName="radar:lessons learned from my time at the cfpb"
+s.channel= "radar"
+s.prop1="radar:programming"
+s.prop2="radar:programming:programming"
+s.prop3="radar:programming:programming:programming"
+s.prop4="article"
+s.hier1="radar,programming,programming,programming"
+s.prop5="lessons learned from my time at the cfpb"
+s.prop6="RD58926"
+s.prop7="01/10/2014" // publish date
+//s.prop15=""
+//These props should be set when a blog/article is read, post or reply made.
+s.prop21="matthew burton" // author name
+s.prop22="radar" // blog name
+s.prop23="lessons learned from my time at the cfpb" // entry title
+s.prop24="01/10/2014" // post date
+//s.prop25="" // days since last post
+s.prop26="friday" // day of week
+s.prop27="beginner" // Level
+/* Conversion Variables */
+s.campaign=""
+s.events=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+<script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"radar.oreilly.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<style type="text/css">
+#newsletter-popup-overlay { display: none; position: absolute; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); background: none\9; }
+#newsletter-popup-overlay .popup { overflow: hidden; margin: 10% auto 0; background-color: #f9f9f9; text-align: center; width: 740px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); border: 2px solid #ddd; }
+#newsletter-popup-overlay .popup .popup-header { background-color: #fff; padding: 10px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.3); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+#newsletter-popup-overlay .popup.data .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/data-nl-popup-fish.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.programming .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.solid .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/code-nl-popup-jerboa.jpg') -4px center no-repeat; }
+#newsletter-popup-overlay .popup.velocity .popup-header { background: #fff url('//cdn.oreillystatic.com/oreilly/images/velocity-nl-popup-greyhound.jpg') -4px bottom no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close { font-size: 16px; line-height: 19px; color: #999; display: block; padding-right: 24px; float: right; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right 0 no-repeat; }
+#newsletter-popup-overlay .popup .popup-header a.close:hover { color: #666; text-decoration: none; background: transparent url('//cdn.oreillystatic.com/oreilly/images/close-icon-19x19.png') right -100px no-repeat; }
+#newsletter-popup-overlay .popup .popup-header h3 { max-width: 500px; width: 100%; margin: 20px auto 5px auto; padding: 0; font-size: 40px; line-height: 44px; font-weight: normal; }
+#newsletter-popup-overlay .popup .popup-header p { max-width: 500px; width: 100%; margin: 0 auto 10px; padding: 0; font-size: 20px; line-height: 28px; font-weight: normal; }
+#newsletter-popup-overlay .popup-form { margin: 15px auto 0; padding: 10px 10px 5px 10px; text-align: left; }
+#newsletter-popup-overlay #newsletter-popup-frame { display: block; border: none; padding: 0; margin: 0 auto; width: 100%; max-width: 450px; height: 100px; text-align: left; }
+@media screen and (max-width: 950px) {
+  #newsletter-popup-overlay .popup{ width: 96% !important; }
+}
+@media screen and (max-width:740px) {
+  #newsletter-popup-overlay .popup.data .popup-header, #newsletter-popup-overlay .popup.programming .popup-header, #newsletter-popup-overlay .popup.solid .popup-header, #newsletter-popup-overlay .popup.velocity .popup-header { background: #fff; }
+  #newsletter-popup-overlay .popup .popup-header h3 { font-size:30px; line-height:32px; }
+}
+</style>
+<div id="newsletter-popup-overlay">
+  <div id="newsletter-popup" class="popup programming">
+    <div class="popup-header">
+      <a href="#" class="close">close</a>
+      <h3>Get the O&rsquo;Reilly Programming Newsletter</h3>
+      <p>Weekly insight from industry insiders. Plus exclusive content and offers.</p>
+    </div>
+    <div class="popup-form">
+      <iframe src="//cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?site=radar&amp;topic=prog&amp;loc=overlay&amp;emtype=nl" id="newsletter-popup-frame" width="100%" height="100%"></iframe>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/newsletter.js"></script>
+
+
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'oreillyradar';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<!-- MathJax Latex Plugin installed: Disabled as no shortcodes on this page --><script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/comment-reply.min.js?ver=4.0'></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery('.fluid-width-video-wrapper iframe').each(function(){
+    var youtube_url = jQuery(this).attr('src');
+    if(youtube_url.substring(0,2) == "//"){
+      youtube_url = youtube_url.substring(2);
+    }
+    var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+    if(youtube_url.match(p)){
+      var youtube = youtube_url.split('/');
+      var youtube_last_index = youtube[4].split('?');
+      var youtube_id = youtube_last_index[0];
+      var new_div = document.createElement("div");
+      jQuery(new_div).addClass('js-lazyYT');
+      jQuery(new_div).attr('data-youtube-id',youtube_id);
+      jQuery(new_div).attr('data-ratio','16:9');
+      jQuery(this).after(new_div);
+      jQuery(this).parent().css("padding","0");
+      jQuery(this).remove();
+      jQuery('.lazyYT-title').hide();
+    }
+  });
+  jQuery('.js-lazyYT').lazyYT();
+});
+
+</script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/lazyYT.min.js"></script>
+<script type="text/javascript" src="http://s.radar.oreilly.com/wp-content/themes/radar/js/script.js??ss=1"></script>
+<script> 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() 
+  { (i[r].q=i[r].q||[]).push(arguments)} 
+  ,i[r].l=1*new 
+  Date();a=s.createElement(o), 
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+  ga('create', 'UA-22979035-1', 'auto'); 
+  ga('send', 'pageview'); 
+</script>
+
+
+
+
+</body>
+</html>

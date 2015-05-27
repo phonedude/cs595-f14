@@ -1,0 +1,33 @@
+status: 200
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 15:48:02 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiODZkZjdjMTY1ODg2Nzc1MzBmYTNmYzM2Y2ZmMjc0YTEiLCJzcHlfcmVwbyI6ImNvZ25pdGVjdC90cmFuc2l0LWpzIiwic3B5X3JlcG9fYXQiOjE0MTE5MTkyODIsIl9jc3JmX3Rva2VuIjoiM0g4RXd3eUJqZlVHL293WGpoZElSODhyMDE0TGNOS2N3aVVaZlQvbGRWUT0ifQ%3D%3D--9d82215efd17fc083d7dfd33e622a265828f5907;
+ path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: X-PJAX, Accept-Encoding
+server: GitHub.com
+cache-control: max-age=0, private, must-revalidate
+content-location: https://github.com/cognitect/transit-js/blob/master/src/com/cognitect/transit/types.js
+x-runtime: 0.042430
+x-served-by: e68303a089d42a09a9545cb48f3ff7a6
+etag: "a7c5fb63765c392b4fc6f724aa504a76"
+x-github-request-id: 47FBB1A2:3B45:25533A81:54282DB2
+date: Sun, 28 Sep 2014 15:48:02 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+x-ua-compatible: IE=Edge,chrome=1
+-varied-accept-encoding: gzip, deflate
+

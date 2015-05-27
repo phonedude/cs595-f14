@@ -1,0 +1,433 @@
+
+     * Trending:
+     * Social
+     * Mobile
+     * Analytics
+     * Cloud
+     * Development
+     * Internet of Things
+     * Newsletters
+     * Resources/White Papers
+
+   (BUTTON) Rows citeworld [citeworld-logo-print.png]
+   Most read: descend
+     * 5 must-have Android apps to make you smarter and more productive
+     * Life after TweetDeck: Here are five alternatives
+     * How to access Android's developer options and fake your GPS
+       location
+     * How to choose between the iPhone 6, Plus, and iPad
+     * Office for iPad: Word & Excel are major victories
+     * Microsoft has lost about $1.7 billion on Surface so far
+     * More News navigateright
+
+     * Twitter
+     * LinkedIn
+     * Facebook
+     * Google+
+     * RSS
+
+     * Search
+
+   Search for ____________________ Go
+   Suggestions for you
+   Insider email ____________________
+     * Big Data & Analytics
+     * Business & Money
+     * Cloud Computing
+     * Consumerization
+     * Development
+     * Internet of Things
+     * Mobile & BYOD
+     * Sales & Marketing Tech
+     * Social Collaboration
+     * Tablets
+
+     * CITE Conference & Expo
+     * News
+     * Resources/White Papers
+     * Newsletters
+
+     * Home
+     * Development
+
+     * close
+     * chat
+     * share
+     * twitter Share on Twitter
+     * facebook Like on Facebook
+     * linkedin Share on LinkedIn
+     * googleplus +1 on Google+
+     * out
+          +
+          +
+          + print
+     * email
+
+   Close
+
+Email a friend
+
+To
+
+   ____________________
+
+   Commas separated for multiple addresses
+     __________________________________________________________________
+
+From
+
+   ____________________
+   ____________________
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   Send Privacy Policy
+   Close
+
+Thank you
+
+   Your message has been sent.
+   Close
+
+Sorry
+
+   There was an error emailing this page.
+
+This guy is flying drones and building Arduino temperature sensors to make
+better wine
+
+   More like this
+     * [120413-tablets-100252486-carousel.idge.jpg]
+       Media tablet showdown: Retina iPad Mini faces newly beefed-up
+       challengers
+     * [101813-smartwatch-100252939-carousel.idge.jpg]
+       Why smartwatches, glasses and other wearable tech are no gimmick
+     * [090913-cheetah-100252898-carousel.idge.jpg]
+       4 survival strategies for IT chaos
+
+   Credit: Mary Branscombe
+   Mary Branscombe
+
+   By Mary Branscombe
+   Follow
+     * twitter
+     * googleplus
+     * facebook
+
+   CITEworld | Dec 23, 2013 10:48 AM PT
+     * Arduino
+     * Drones
+     * Internet of Things
+     * IoT
+
+   Ryan Kunde's winery, DRNK Wines, doesn't look like a hub of technology.
+   It's hidden away on a quiet drive on the outskirts of Sebastopol, down
+   an unmarked turning: "We can be hard to find", Kunde warns us, but we
+   only get lost once. When we get the right turn, the winery nestles
+   between vineyards (pinot noir and chardonnay) and a golf course. Wild
+   turkeys roam between the poppies on the meadow slope that conceals
+   DRNK's 320-foot wine cave, dug by one of the borers that made the
+   Channel Tunnel and lined with Shockcrete to control the humidity.
+
+   That's not the only technology on display. The silvery fermentation
+   tank by the doors to the wine cave sprouts cables and power leads -- an
+   Arduino-based temperature sensor loop Kunde slides in so he can monitor
+   what's going on inside the two-ton tank.
+
+   Temperature matters
+
+   What goes into the tank is a mixture of grape skins, grape pulp, and
+   grape seeds. When this starts to ferment it produces CO2 that floats
+   the lighter skins up to the surface, forming what's called a cap over
+   the grape must, while the seeds float to the bottom. The grape pulp
+   gives you water, sugar (which feeds the yeast that causes
+   fermentation), and acid, but that's only part of what gives wine its
+   flavor.
+
+   Tannins from the seeds and skin play an important part, as do the
+   anthocyanin pigments in the skin which give the wine its color. And the
+   tannins you get from the grape skins are different from those in the
+   seeds; they're longer molecules, they're present in different
+   proportions, and they give the wine a different flavor profile and
+   "mouth feel" explains Kunde, giving us a lightning tour of wine
+   science. "It's the way it binds to the saliva in your mouth".
+
+   The temperature inside the tank has a major effect on how the wine
+   turns out. "A higher fermentation temperature means you get more
+   diffusion from the seeds and more extraction of tannins." It also
+   determines how quickly the yeast turns sugar into alcohol. "For every
+   ten degree increase in temperature you get a doubling of the
+   fermentation rate."
+   [sensor-100253395-orig.png] Credit: Mary Branscombe
+
+   Between the energy that comes from fermentation and all that CO2, the
+   temperature isn't the same throughout the tank; the difference between
+   the cap of skins and the liquid must can be as much as 14 degrees.
+   Depending on the style of wine you're making, you might want the cap of
+   skins to be cooler than the grape must, warmer or at the same
+   temperature, and you might want the must to have less contact with the
+   skins in the cap or a wider surface area where it's exposed to oxygen.
+   To control that you might push the cap down into the tank or pump
+   liquid from the bottom of the tank and pour it over the cap. But how do
+   you know when to do that?
+
+   Different wine makers have their own techniques. Kunde wants to measure
+   the temperature inside the tank. Hence the sensor, which he built with
+   parts from a home improvement store and an Arduino board. He can track
+   the temperature at different levels in the tank over time; if the cap
+   is too cool, he knows whether it's been like that for half an hour or
+   all night, so he knows what he needs to do to the tank.
+
+   But it's not just about managing the individual tanks as he makes each
+   wine. He wants to take the temperature measurements from the tanks and
+   use them the way wine makers already use a measurement called "growing
+   degree days": whether grapes have had enough days when the temperature
+   is between 50 and 86 degrees (10 and 30 degrees C) to ripen well. Kunde
+   has USB data loggers monitoring the temperatures in all the vineyards
+   where his grapes grow; the figures go into an Excel spreadsheet he can
+   refer back to. Now he's working on calculating an equivalent
+   temperature calculation, including the range of temperatures for the
+   must and difference in cap temperature, for managing fermentation.
+
+   Using drones to monitor the health of the vineyards
+
+   The data loggers aren't the only way he keeps an eye on his pinot noir
+   and chardonnay grapes, which are not from the slopes around the winery.
+   He buys from contract growers in the Russian River Valley, at the
+   southern end of Napa, in Annapolis in Sonoma, and two hours' drive away
+   in Mendocino. He can't walk through the vines every day, the way a wine
+   maker with his own vineyards can. Instead he regularly flies drones
+   over the vineyards, using cameras to capture video and even infra-red
+   imagery and he uses satellite photography to get the bigger picture.
+
+   One flight the morning after a heavy frost revealed serious problems.
+   The neighboring vineyard had run a wind machine overnight and had no
+   frost damage, and from the road the vineyard Kunde was interested in
+   looked green and healthy. But from the air he could tell that actually,
+   most of the vines had been hit by the frost; the leaves were brown and
+   shriveled.
+
+   Looking at aerial photography of an old vine Zinfandel vineyard planted
+   80 years ago, it's obvious that some vines are healthier and more
+   vigorous than others. The land used to be a river valley and the richer
+   soil from the river bed explains some of the variation, but one
+   particularly green and leafy area turned out to be a broken irrigation
+   line. You can spot it in seconds in the photograph but the farmer
+   hadn't noticed the difference on the ground.
+
+   With the irrigation line fixed, you're left with a vineyard where you
+   might want to harvest the grapes from the sparser vines separately,
+   depending on how consistent you want the grapes to be.
+
+   In addition to looking at the images himself, Kunde is also comparing
+   them to historic photographs of California vineyards from the Cal-Atlas
+   project using MultiSpec software from Purdue University designed to
+   analyze aerial and satellite images. "You can teach it what the canopy
+   looks like and it can see quantitative difference in vegetation over
+   time." So if a vineyard doesn't look as healthy as it used to, you
+   could change the way you treat the vines, checking the way the
+   irrigation and manuring is done and taking samples to check the
+   nutrients they're getting.
+
+   Kunde calls it "farming smarter for the site" and like his temperature
+   sensors, he expects the technology to get cheap enough for any wine
+   maker, not just the big labels. "It's not so much 'why should I do
+   that?' and more that 'I can do that so why wouldn't I?' Pretty soon it
+   will be just another tool you can use."
+
+   But while some wineries are monitoring their vines because they're keen
+   to reduce the amount they irrigate (an expensive thing in Napa) or to
+   push vineyards to deliver more consistent fruit, Kunde is most
+   interested in unlocking the unique flavors in the grapes. "There's a
+   relationship between the vine and the soil; the roots, the soil type,
+   how old the soil is the climate, the organisms in the soil, the
+   exposure. It influences how the vine grows and the fruit it produces.
+   It's called site expression."
+
+   So while he's keen to reduce the variability in the quality of the
+   grapes he buys and understand how the temperatures in fermentation
+   affect the development of flavors, he doesn't want to end up with
+   cookie-cutter formulas for making wine.
+
+   "Wine hasn’t become a commodity; it's still tied directly to the earth.
+   I don’t want to force the wine one way or another." Tasting his first
+   vintages from the barrel in the cool wine cave, it seems as it site
+   expression makes for good wine. And you can decide for yourself
+   -- Kunde's first Arduino-monitored wines went on sale this year.
+     * Arduino
+     * Drones
+     * Internet of Things
+     * IoT
+
+   Mary Branscombe
+
+   Mary Branscombe — Writer
+
+   Mary Branscombe is a freelance journalist who has been covering
+   technology for over two decades.
+     * User
+     * Mail
+     * Twitter
+     * Facebook
+     * Google Plus
+     * RSS
+
+   Recommended
+     * 1024px half open door to heaven 4761478827
+       Hey Amazon Web Services: Time to open up
+     * android kiss doll
+       7 Android apps that I've recommended and still love
+     * mooc
+       How companies can take advantage of the MOOC revolution
+     * apple watch fitness
+       Former iPhone manager: Apple will struggle to analyze watch data
+     * Video/Webcast
+       Sponsored
+       Collaboration 2.0: Death of the Web Conference (As We Know It)
+       You spend a third of your working life in meetings, and most of
+       that is time wasted. Tune into this
+     * [ast-0130360_qualys-six-essential-elements-web-application-security
+       -100441507-small.png]
+       White Paper
+       Cost Effective Web Application Security
+
+   Join the discussion
+   Be the first to comment on this article. Our Commenting Policies
+   Top News
+   imag0116
+   The Motorola Moto 360: The best Android smartwatch you can buy
+
+   But should you spend $250 on a first-generation device or wait for the
+   technology and Android Wear apps
+     * swipify
+       Android Wear apps: Lots of promise, lots of glitches
+     * cat yawn
+       Windows next: So what?
+
+   Get InCite
+   Your regular insight into the consumerization of IT.
+
+   Subscribe today
+   ____________________ (BUTTON) GO
+   Minecraft
+   Buying the next generation of coders: Microsoft’s Minecraft gamble
+
+   Beginners will be able to start creating Minecraft worlds before
+   graduating to the programmable
+   10576017753 36f9039047 k
+   A deep dive into iOS 8 extensions: It's all about new workflows
+
+   One of the biggest changes to iOS 8 is support for extensions that
+   allow apps to communicate and share
+   Popular Resources
+     * Video/Webcast
+       Sponsored
+       Collaboration 2.0: Death of the Web Conference (As We Know It)
+     * [ast-0130360_qualys-six-essential-elements-web-application-security
+       -100441507-small.png]
+       White Paper
+       Cost Effective Web Application Security
+     * [ast-0120143_aiim_trendscape_the_new_mobile_reality-100302430-small
+       .png]
+       White Paper
+       AIIM Trendscape: The New Mobile Reality
+     * White Paper
+       Magic Quadrant for Enterprise Mobility Management Suites
+     * [ast-0120665_accelerating_oracle_with_preferred_reads-100371369-sma
+       ll.png]
+       White Paper
+       Accelerating Oracle with Preferred Reads
+
+   ____________________ (BUTTON) Go
+   Featured Stories
+   1024px half open door to heaven 4761478827
+   Hey Amazon Web Services: Time to open up
+
+   The controversy over Amazon's steps to patch a Xen vulnerability in
+   Amazon EC2 instances highlights the
+   1024px half open door to heaven 4761478827
+   Hey Amazon Web Services: Time to open up
+
+   The controversy over Amazon's steps to patch a Xen vulnerability in
+   Amazon EC2 instances highlights the
+   android kiss doll
+   7 Android apps that I've recommended and still love
+
+   Apps come and apps go, but these are the Android apps I still rely upon
+   all the time.
+   mooc
+   How companies can take advantage of the MOOC revolution
+
+   The consumerization of employee training.
+   Sponsored Links
+     * Need to justify a storage refresh? Get S.M.A.R.T., get modern, get
+       started.
+
+   CITEworld CITEworld delivers the latest Consumerization of IT news,
+   analysis, product reviews, and trends. Follow us
+     * Twitter
+     * LinkedIn
+     * Facebook
+     * Google+
+     * RSS
+
+     * Big Data & Analytics
+     * Business & Money
+     * Cloud Computing
+     * Consumerization
+     * Development
+     * Internet of Things
+     * Mobile & BYOD
+     * Sales & Marketing Tech
+     * Social Collaboration
+     * Tablets
+
+     * How-Tos
+     * Features
+     * News
+     * Blogs
+     * Resources
+     * Newsletters
+
+     * About
+     * Contact
+     * Privacy Policy
+     * Advertising
+     * Careers at IDG
+     * Site Map
+     * Ad Choices
+
+   Copyright © 2014 IDG Enterprise All rights reserved.
+   Explore the IDG Network descend
+     * CFOworld
+     * CIO
+     * CITEworld
+     * Computerworld
+     * CSO
+     * DEMO
+     * Greenbot
+     * IDC
+     * IDG
+     * IDG Connect
+     * IDG Knowledge Hub
+     * IDG TechNetwork
+     * IDG.TV
+     * IDG Ventures
+     * InfoWorld
+     * IT News
+     * ITwhitepapers
+     * ITworld
+     * JavaWorld
+     * LinuxWorld
+     * Macworld
+     * Network World
+     * PC World
+     * TechHive
+
+   This ad will close in 20 seconds. Continue to site »
+
+   [p?c1=2&c2=6035308&cv=2.0&cj=1]
+
+   IFRAME: __bkframe

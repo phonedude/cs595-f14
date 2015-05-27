@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+<title>BRCK | Rugged Internet for People &amp; Things</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o?o:n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({QJf3ax:[function(t,n){function e(t){function n(n,e,o){t&&t(n,e,o),o||(o={});for(var a=i(n),u=a.length,c=o[r]||(o[r]={}),f=0;u>f;f++)a[f].apply(c,e);return c}function o(t,n){u[t]=i(t).concat(n)}function i(t){return u[t]||[]}function a(){return e(n)}var u={};return{on:o,emit:n,create:a,listeners:i,_events:u}}var r="nr@context";n.exports=e()},{}],ee:[function(t,n){n.exports=t("QJf3ax")},{}],D5DuLP:[function(t,n){function e(t,n,e){return r.listeners(t).length?r.emit(t,n,e):(o[t]||(o[t]=[]),void o[t].push(n))}var r=t("ee").create(),o={};n.exports=e,e.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,n){n.exports=t("D5DuLP")},{}],loader:[function(t,n){n.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,n){function e(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var n=c.createElement("script");n.src=l.proto+t.agent,c.body.appendChild(n)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=n.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",e,!1)):(c[s]("onreadystatechange",r),u[s]("onload",e)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="">
+
+
+<!--..........................CSS........................-->
+<link rel="stylesheet" href="http://www.brck.com/wp-content/themes/brcknew/assets/css/normalize.css">
+<link rel="stylesheet" href="http://www.brck.com/wp-content/themes/brcknew/assets/css/foundation.min.css" >
+<link rel="stylesheet/less" type="text/css" href="http://www.brck.com/wp-content/themes/brcknew/assets/css/main.less">
+<link rel="stylesheet" href="http://www.brck.com/wp-content/themes/brcknew/assets/css/font-awesome.css">
+
+<!--..........................JS.........................-->
+<script src="http://www.brck.com/wp-content/themes/brcknew/assets/js/libs/modernizr-2.6.2.js"></script>
+<script src="http://www.brck.com/wp-content/themes/brcknew/assets/js/libs/less-1.3.3.min.js"></script>
+
+<!--.......................FAVICON.......................-->    
+<link href="http://www.brck.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<link rel='stylesheet' id='pressapps_knowledgebase_default-css'  href='http://www.brck.com/wp-content/plugins/pa-knowledgebase/css/default.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tp_twitter_plugin_css-css'  href='http://www.brck.com/wp-content/plugins/recent-tweets-widget/tp_twitter_plugin.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='simple-pagination-css-css'  href='http://www.brck.com/wp-content/plugins/simple-pagination/css/default.css?ver=2.1.7' type='text/css' media='screen' />
+<script type='text/javascript' src='http://www.brck.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.brck.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.brck.com/wp-content/plugins/pa-knowledgebase/js/tooltip.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://www.brck.com/wp-content/plugins/pa-knowledgebase/js/custom.js?ver=4.0'></script>
+<link rel='shortlink' href='http://www.brck.com/' />
+<script type="text/javascript">
+    GT = {"base_url":"http:\/\/www.brck.com"};
+</script>
+    <style text="text/css"id="knowledgebase-style-css">
+.knowledgebase-main h2 a, .knowledgebase-main h2 a:hover, .knowledgebase-main h2 a:visited, .knowledgebase-main h2 i, .knowledgebase-archive a h3, knowledgebase-archive a:hover h3, knowledgebase-archive h3 i,.knowledgebase-single a, .knowledgebase-single a:hover { color: #0a0000}
+</style>
+<style text="text/css" id="knowledgebase-custom-css">
+.knowledgebase-main h2 { font-size: 1.2em; } @media (min-width: 768px) { .knowledgebase-main h2 { font-size: 1.5em; } }
+</style>
+</head>
+
+<body class="home page page-id-89 page-template page-template-templateshome-page-php">
+<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!--.......................................................
+START : HEADER  
+.......................................................-->
+<header>
+  
+  <div class="center row">
+    <div class="large-2 medium-3 small-4 column">
+      <a href="http://www.brck.com" class="top_logo">
+        <span class="symbol"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/brck_symbol.svg"></span>
+        <span class="type"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/brck_type.svg"></span>
+      </a>
+    </div>
+    <div class="large-10 medium-9 small-8 column">
+      <nav>
+        <ul id="menu-main" class="menu-main"><li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://brck.com/#thebrck">BRCK</a></li>
+<li id="menu-item-531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-531"><a href="http://www.brck.com/about/">ABOUT</a></li>
+<li id="menu-item-544" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-544"><a href="http://www.brck.com/specification/">SPECS</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="http://www.brck.com/blog">BLOG</a></li>
+<li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-558"><a href="http://forums.brck.com/">FORUMS</a></li>
+<li id="menu-item-532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-532"><a href="http://brck.com/#connect">CONNECT</a></li>
+<li id="menu-item-394" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-394"><a href="http://www.brck.com/shop/">BUY</a></li>
+<li id="menu-item-584" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-584"><a title="My BRCK" href="https://my.brck.com">CONNECT TO MY BRCK</a></li>
+</ul>        <!--<ul>
+          <li><a href="#thebrck">BRCK</a></li>
+          <li><a href="#thestory" class="scroll">THE STORY</a></li>
+          <li><a href="http://www.brck.com/about">ABOUT</a></li>
+          <li><a href="http://www.brck.com/blog">BLOG</a></li>          
+          <li><a href="http://www.brck.com/forums">FORUMS</a></li>
+          <li><a href="http://www.brck.com/specs">SPECS</a></li>
+          <li><a href="#connect" class="scroll">CONNECT</a></li>
+          <li><a href="http://www.brck.com/buy" class="pill">BUY</a></li>          
+        </ul>-->
+        <a href="#" id="pull">Menu</a>
+      </nav>
+    </div>
+    
+  </div>
+
+</header>
+<!--.......................................................
+END : HEADER  
+.......................................................-->
+
+
+
+<!--.......................................................
+START : CONTENT  
+.......................................................-->
+<div id="wrapper">
+
+  <!--START : HERO+++++++++++++++++-->
+  <div id="hero">
+    <div class="noise">
+      <img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/brck_logo_white_l.svg">
+      <h1>Rugged Internet for People &amp; Things</h1>
+      <h3>The go anywhere, do anything, self-powered, mobile WiFi device.</h3>
+      <hr/>
+      <a href="http://www.brck.com/shop/" class="pill_button">BUY A BRCK</a>
+    </div>
+  </div>
+  <!--END : HERO+++++++++++++++++-->
+  <!--START : CONTENT+++++++++++++++++-->
+  <div id="content">
+    <section class="media_logos">
+      <a href='http://qz.com/82445/ushahidi-brck-of-africa-ensures-the-cloud-works-when-your-connection-doesnt/' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_quartz.svg' /></a><a href='http://www.bbc.co.uk/programmes/p01836t0' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_bbc.svg' /></a><a href='http://www.technologyreview.com/news/514431/this-box-keeps-information-flowing-during-a-crisis/' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_MIT.svg' /></a><a href='http://www.forbes.com/sites/anthonykosner/2013/05/05/brck-keeps-the-internet-on-when-the-power-goes-off-even-in-africa/' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_forbes.svg' /></a><a href='http://www.wired.co.uk/news/archive/2013-05/13/brck' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_wired.svg' /></a><a href='http://www.ted.com/talks/juliana_rotich_meet_brck_internet_access_built_for_africa.html' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_ted.svg' /></a><a href='http://edition.cnn.com/2014/01/14/business/14-african-startups-to-watch-in-2014/index.html' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_cnn.svg' /></a><a href='http://www.spiegel.de/netzwelt/netzpolitik/vorbild-afrika-erik-hersmann-haelt-auftaktrede-auf-der-re-publica-a-898347.html' target='_blank'><img src='http://brck.com/wp-content/themes/brcknew/assets/img/content/media_logos_der-spiegel.svg' /></a>    </section>
+
+    <section class="the_brck">
+      <!--start: gradient-->
+      <div class="gradient" id="thebrck">
+       <div class="center sml-center">
+         <h2>THE BRCK</h2>
+         <hr class="custom" />
+                  <a href="http://www.brck.com/shop/" class="pill_button">BUY YOURS</a>
+       </div>  
+      </div>
+      <!--start: render-->
+      <div class="center"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/render.jpg"></div>
+      <!--start: features-->
+      <ul class="features_nav">
+        <li><a href="#mobility" class="mobility scroll"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_mobile.svg">MOBILITY</a></li>
+        <li><a href="#versatile" class="versatile scroll"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_versatile.svg">VERSATILE</a></li>
+        <li><a href="#power" class="power scroll"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_power.svg">POWER</a></li>
+        <li><a href="#extendability" class="extendability scroll"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_extendability.svg">EXTENDABILITY</a></li>
+
+        <li><a href="#cloud" class="thecloud scroll"><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_cloud.svg">CLOUD</a></li>
+      </ul>
+      <div class="features">
+        <section class="center sml-center mobility" id="mobility">
+          <hr/>
+          <span class="top_icon" ><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_mobile.svg"></span>
+          <h4>MOBILITY</h4>
+          <h5>For when you're mobile</h5>
+            <p>BRCK has mobility in mind, insert a 3G data enabled SIM card in over 140 countries and broadcast a WiFi signal that you can share. If you don’t have a SIM card, BRCK still has you covered, as we have a BRCK vMNO for global connectivity without SIM cards.  We also included an external GSM antenna port for those times that you’re at the edge of the signal range and need to attach an antenna to reach the distance. BRCKs internal enterprise-level 802.11 b/g/n router with a 10/100Mbps WAN/LAN Port gives you plenty of speed that you can share with up to 20 devices.</p>
+            <ul style="background-image:url(http://www.brck.com/wp-content/uploads/2014/07/feature_bg1.jpg)">
+            <li>EASY-CHANGE SIM CARD SLOT.</li><li>BUILT IN GLOBAL SIM.</li><li>WORKS IN 140+ COUNTRIES.</li><li>EXTERNAL 3G/4G ANTENNA CONNECTION.</li><li>SHARE CONNECTION WITH 20 DEVICES SIMULTANEOUSLY.</li>            </ul>
+        </section>
+
+        <section class="center sml-center versatile" id="versatile">
+          <hr/>
+          <span class="top_icon" ><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_versatile.svg"></span>
+          <h4>VERSATILE</h4>
+          <h5>Made to work where others won’t</h5>
+            <p>Most routers and modems are built for New York and London, whereas most of the people connected to the internet today live in places like Nairobi or New Delhi.  The BRCK was designed to work in more harsh environments, where the infrastructure isn’t robust.  The rugged design of the BRCK allows for drops, dust and weather resistance, and dirty voltage charging.  </p>
+            <ul style="background-image:url(http://www.brck.com/wp-content/uploads/2014/07/feature_bg2.jpg)">
+            <li>EASY SETUP.</li><li>TOUGH AND RUGGED CASE.</li><li>EXPEDITION READY.</li><li>WORKS GLOBALLY.</li>            </ul>
+        </section>
+
+        <section class="center sml-center power" id="power">
+          <hr/>
+          <span class="top_icon" ><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_power.svg"></span>
+          <h4>POWER</h4>
+          <h5>Thinking through power as much as connectivity</h5>
+            <p>We’ve spent a great deal of time making sure that the power system in the BRCK can handle everything from reverse voltage and surge protection. If the power goes out, it will work for 8-hours in full power mode, and much longer if in a lower power state.  The smart-power design means that you can charge the BRCK from a solar panel, car battery, your computer or the wall and not worry about burning it out. </p>
+            <ul style="background-image:url(http://www.brck.com/wp-content/uploads/2014/07/feature_bg3.jpg)">
+            <li>BRCK CLOUD ACCESS FROM ANYWHERE.</li><li>EXTENDABLE GPIO PORT (Arduino compatible).</li><li>EXPANDABLE ONBOARD STORAGE (4Gb installed).</li>            </ul>
+        </section>
+
+        <section class="center sml-center extendability" id="extendability">
+          <hr/>
+          <span class="top_icon" ><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_extendability.svg"></span>
+          <h4>EXTENDABILITY</h4>
+          <h5>BRCK is a platform for you to build on</h5>
+            <p>BRCK was designed for you to build on top of with your own software or hardware.  The BRCK cloud allows you to access and manage all of your BRCK devices from one place, anywhere in the world and you can write your own custom software for it through the available API.  Sensors and other machines can be connected through it’s Arduino compatible GPIO port, leaving the possibilities to your imagination. It comes with 4Gb of onboard storage, which you can upgrade. </p>
+            <ul style="background-image:url(http://www.brck.com/wp-content/uploads/2014/07/feature_bg4.jpg)">
+            <li>SOLAR-READY CHARGING.</li><li>8-HOUR BATTERY.</li><li>CHARGE OTHER DEVICES.</li>            </ul>
+        </section>
+
+        <section class="center sml-center thecloud" id="cloud">
+          <hr/>
+            <span class="top_icon" ><img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_cloud.svg"></span>
+          <h4>CLOUD</h4>
+        </section>
+
+      </div>
+
+    </section>
+
+    <section class="cloud"> 
+    
+      <h3 id="cloud">THE HEART OF ALL THIS IS BEING ABLE TO <br/>
+<strong>MANAGE YOUR BRCK FROM <br/>ANYWHERE</strong></h3>
+      <div class="full_width">
+        <p class="center sml-center">The BRCK was designed for you to manage via the Cloud, which means that you can set your preferences, see your BRCKs dashboard of statistics, or top up credit on your local SIM card from anywhere in the world.   This is also where you can push content, and plug in your custom applications to all of the BRCKs you own from one place.<br/><br/>
+
+Your ability to expand the BRCK with custom services, content and application, and your ability to manage multiple devices with your teams around the world, are all made possible via the BRCK Cloud.  It truly is a login from anywhere experience, so you can imagine having your BRCK in Nairobi and managing it from Harare or Paris.  </p><br/>
+        <a href="http://www.brck.com/shop/" class="pill_button">BUY A BRCK</a>
+        <img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/cloud_comp.png">
+      </div> 
+    </section>
+
+    <section class="the_story" id="thestory">
+      <div class="center">
+        <h2>THE STORY</h2>
+        <hr class="custom icon" />
+        
+          <p class="center sml-center">We’re a team of software developers, engineers and technologists who are from Africa and live here. We have a long history of building things, such as Ushahidi, Crowdmap and the iHub. Our expertise runs from cloud software to fingerprint scanners for mobile devices to high-level medical device prototyping and manufacturing.<br><br>
+
+The <strong>BRCK</strong> was designed and prototyped in Nairobi, Kenya. We wanted a connectivity device that fit our needs, where electricity and internet connections are problematic both in urban and rural areas.<br><br>
+
+As we laid out what such a device would look like - <em>physically robust, able to connect to multiple networks, a hub for all local devices, enough backup power to survive a blackout</em> - we realized that the way the entire world is connecting to the web is changing. We no longer only get online via desktops in our office with an ethernet connection, we have multiple devices, and mobile connectivity is crucial.</p>
+
+          <!--start: video-->
+          <div class="center sml-center ted_video" style="background-image:url(http://www.brck.com/wp-content/uploads/2014/07/video_ted_bg.jpg)">
+            <a href="#" data-reveal-id="tedvideo">
+              <i class="fa fa-play"></i>
+              <span class="title">Internet access built for Africa</span>
+              <span class="brand">TED</span>
+            </a>
+          </div>
+
+          <div id="tedvideo" class="reveal-modal medium" data-reveal>
+            <div class="flex-video">
+              <iframe width="560" height="315" src="//www.youtube.com/embed/qsJYrwzfd6w" frameborder="0" allowfullscreen></iframe>            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+
+          <!--start: numbers-->
+          <h3>WHAT IT TOOK</h3>
+          <div class="row numbers">
+            <div class="large-3 medium-3 small-6 column"><h4><a href="https://www.kickstarter.com/projects/1776324009/brck-your-backup-generator-for-the-internet" target="_blank">784 <span>Kickstarter Backers</span></a></h4></div>
+            <div class="large-3 medium-3 small-6 column"><h4><a href="http://www.brck.com/2014/05/problems-perseverance-and-patience/" target="_blank">321 <span>Working Days</span></a></h4></div>
+            <div class="large-3 medium-3 small-6 column"><h4><a href="#">6 <span>Hardware Iterations</span></a></h4></div>
+            <div class="large-3 medium-3 small-6 column"><h4><a href="#">784 <span>Cups of Coffee & Kenyan Chai</span></a></h4></div>
+          </div>  
+      </div> 
+    </section>
+
+    <section class="turkana_video">
+      <div class="full_width" style="background-image: url(http://www.brck.com/wp-content/uploads/2014/07/video_turkana_bg.jpg);">
+            <a href="#" data-reveal-id="turkanavideo">
+              <span class="title">BRCK Eclipse Expedition to Lake Turkana</span>
+              <i class="fa fa-play"></i>
+              <span class="slogan">"If it works in <img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/content/icon_africa.svg"> it will work anywhere"</span>
+            </a>
+
+          <div id="turkanavideo" class="reveal-modal medium" data-reveal>
+            <div class="flex-video">
+              <iframe src="//player.vimeo.com/video/88332778" width="500" height="281" frameborder="0" allowfullscreen=""></iframe>            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+
+      </div>
+    </section> 
+    
+        <section class="connect" id="connect"> 
+      <div class="full_width">
+
+        <div class="smallbox">
+          <h2>CONNECT</h2>
+          <!--+++++++-->
+          <div class="center sml-center">
+            <span>General : <a href="mailto:%69&#110;&#102;o&#64;b&#114;&#99;&#107;&#46;&#99;%6f&#109;" target="_blank">&#105;n&#102;&#111;&#64;&#98;&#114;ck&#46;com</a> - 
+            Media : <a href="mailto:%70&#114;%65%73s%40%62%72&#99;k&#46;co&#109;" target="_blank">&#112;r&#101;ss&#64;b&#114;c&#107;.&#99;&#111;m</a></span>
+            <span><a href="http://forums.brck.com/" target="_blank">Support Forum</a> - <a href="http://www.brck.com/blog/" target="_blank">BRCK Blog</a></span>
+            <hr/>
+            <h5>GET NOTIFIED OF WHAT'S NEW</h5>
+
+            <form action="http://brck.us8.list-manage2.com/subscribe/post" method="POST" class="row">
+             <input type="hidden" name="u" value="4fb8ee29656e5cd04da2b025a">
+             <input type="hidden" name="id" value="e4390ceec0">
+
+              <div class="large-8 medium-8 column">
+                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" value="" placeholder="Enter email address" class="radius">
+              </div>
+              <div class="large-4 medium-4 column">
+                <input type="submit" name="submit" value="SUBSCRIBE" class="radius button">
+              </div>
+            </form>
+          </div>
+          <!--+++++++-->
+          <!--+++++++-->
+          <ul class="social">
+            <li><a href="https://www.facebook.com/brcknet" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/brcknet" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/116132438820499436320/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="http://vimeo.com/search?q=brck" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+          </ul>
+          <!--+++++++-->  
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+  <!--END : CONTENT+++++++++++++++++-->
+
+
+</div>
+
+<!--.......................................................
+END : CONTENT    
+.......................................................-->
+
+
+
+<!--.......................................................
+START : FOOTER    
+.......................................................-->
+
+<footer> 
+  <div class="center sml-center">
+  <img src="http://www.brck.com/wp-content/themes/brcknew/assets/img/brck_logo_white_symbol.svg">
+  <h5>Designed in Nairobi, Kenya. Manufactured in the USA.</h5>
+  <hr/>
+  <h6>BRCK.com © All rights reserved 2014.</h6>
+</footer>
+
+
+<!--.......................................................
+END : FOOTER    
+.......................................................-->
+
+<!-- jQuery: Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://www.brck.com/wp-content/themes/brcknew/assets/js/libs/jquery-1.10.2.min.js"><\/script>')</script>
+
+<!-- Nav -->
+  <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 780 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+      });
+    });
+</script>
+
+<!-- scroll top -->
+<script>
+// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+var mainbottom = $('#hero').offset().top + $('#hero').height();
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > mainbottom) {
+        $('header').addClass('past-main');
+    } else {
+        $('header').removeClass('past-main');
+   }
+
+});
+</script>
+
+<!-- smooth scroll -->
+<script>
+ jQuery(document).ready(function($) {
+  $('.menu-main a[href*="#"], .scroll').on('click', function(e){   
+      $('html,body').animate({scrollTop:$(this.hash).offset().top -50}, 1000);
+      e.preventDefault();
+    });
+  });
+ $('.menu-main').find('li:last a').addClass('pill');
+</script>
+
+<!-- foundation -->  
+<script src="http://www.brck.com/wp-content/themes/brcknew/assets/js/foundation.min.js"></script>
+
+<!-- ga -->  
+<script>// <![CDATA[
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52860226-1', 'auto');
+  ga('send', 'pageview');
+// ]]></script>
+<script>
+  $(document).foundation();
+</script>
+
+    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'brckdotcom';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"42395a1708","applicationID":"10965671","transactionName":"YVRWMUJVCxACBkNcXFgedQZEXQoNTANFWl1CHEQEV1E=","queueTime":0,"applicationTime":319,"ttGuid":"","agentToken":"","atts":"TRNVRwpPGB4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-460.min.js"}</script></body>

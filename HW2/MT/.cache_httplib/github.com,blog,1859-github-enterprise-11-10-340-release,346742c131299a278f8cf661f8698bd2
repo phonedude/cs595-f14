@@ -1,0 +1,400 @@
+status: 200
+content-length: 21309
+vary: X-PJAX, Accept-Encoding
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-runtime: 0.019332
+etag: "f6624eeaaf496e93c20f108984a989c3"
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+x-served-by: a128136e4734a9f74c013356c773ece7
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 17:19:59 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiOTE1N2M3MWQ0NWJjYTBhODY5MDJlNDdlZmZhZDdjNmIiLCJfY3NyZl90b2tlbiI6Ikg1QnVxaXUxVFZLbjNuNTVUaG1JNjF6eHFIRU5FTFZueW5IMHBIYXN2eXc9In0%3D--bcc3bf3e00b7c62038b1ab50e882579c530c723d;
+ path=/; secure; HttpOnly
+-content-encoding: gzip
+x-github-request-id: 60E19123:5B17:243A2AEE:5428433F
+date: Sun, 28 Sep 2014 17:19:59 GMT
+content-location: https://github.com/blog/1859-github-enterprise-11-10-340-release
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+server: GitHub.com
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>GitHub Enterprise 11.10.341 Release · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="GitHub Enterprise 11.10.341 Release" name="twitter:title" /><meta content="GitHub Enterprise releases are all about offering large companies more of GitHub to deploy in their own environments, and today&#39;s release is no exception. We&#39;ve added a number of features that improve" name="twitter:description" />
+<meta content="GitHub" property="og:site_name" /><meta content="article" property="og:type" /><meta content="https://github.com/apple-touch-icon-144.png" property="og:image" /><meta content="GitHub Enterprise 11.10.341 Release" property="og:title" /><meta content="https://github.com/blog/1859-github-enterprise-11-10-341-release" property="og:url" /><meta content="GitHub Enterprise releases are all about offering large companies more of GitHub to deploy in their own environments, and today&#39;s release is no exception. We&#39;ve added a number of features that improve speed, flexibility, security, administration, and more. 
+
+Faster Git operations
+
+Smarter caching on the server side now optimizes the initial counting objects phase of all Git network operations. This drastically reduces the CPU time required by Git network operations, allowing more simultaneous clones and fetches without increasing the load on the Virtual Machine. You&#39;ll also find Git clone, fetch, and pull to be an order of magnitude faster, especially for large repositories.
+
+
+
+Activity data across all your projects
+
+See what&#39;s happening across all projects on GitHub Enterprise in one place, from users and organizations to issues, pull requests, and code review comments. The Activity Dashboard compiles all this data and presents it in easy-to-read graphs, along with past data from the same time period.
+
+
+
+LDAP configuration improvements
+
+You can now better configure GitHub Enterprise to your company&#39;s LDAP setup. Nested user groups are supported, users can change their username and still be mapped to the same distinguished name, and you can specify the name of attributes to map to imported fields.
+
+
+
+Advanced settings for blocking force pushes
+
+More options for blocking force pushes enable you to configure settings as you need. You can now block force pushing for a specific user, on the default branch of an organization&#39;s repositories, and for all branches on a single repository.
+
+
+
+... and so much more!
+
+Better organization and team management
+Mobile line notes and mobile pull request merging
+Two factor authentication status for user reports
+Webhooks configuration and customization improvements
+Updated Services UI
+Releases API
+Enhanced OAuth security for SSH keys
+Recent activity audits for authentication credentials
+Active browser sessions auditing
+Forward secrecy and authenticated encryption ciphers
+Soft-wrapping and rendered views for prose diffs
+Embedded YAML metadata rendering in prose documents
+Expanded task list support and nesting in prose documents
+Expanding context in diffs
+Redesigned conversations
+Wikis UI improvements
+Metadata, sitemaps, build feedback, and pagebuild events in Pages
+3D file rendering and diffing
+If you&#39;re currently using GitHub Enterprise, you can download this release from the Enterprise website. If you want to give GitHub Enterprise a try, request a 45-day free trial.
+
+Update: After this morning&#39;s announcement, we noticed an issue with the original 11.10.340 release and have issued a patch release with a fix. All links in the blog post above now redirect to the correct release notes and download page. We&#39;re sorry for any confusion this may have caused. If you have any issues with the newest release, please contact us at enterprise@github.com." property="og:description" /><meta content="262588213843476" property="article:author" /><meta content="262588213843476" property="article:publisher" /><meta content="blog/enterprise" property="article:section" /><meta content="2014-07-07 10:48:20 -0700" property="article:published_time" />
+
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+    <meta name="pjax-timeout" content="1000">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="enterprise" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="60E19123:5B17:243A2AEE:5428433F" name="octolytics-dimension-request_id" />
+    <meta content="Rails, view, posts#show" name="analytics-event" />
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="48p3P5eN6CTQk+H1QXtwVgFWSq3dz07pzV988wcrMJJYiVXSoo3OKr8hYD75tqdU2qi+xXAYmR1biaQk34VfBQ==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-aac267329edcf91101f8b8afc0575e8e882615cc.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-359fc347dc18b67ad5ddc10dadeb3d11b3a62a7b.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="546ca4c7178760a7b62d7eb3d0866f56">
+
+      <meta name="description" content="Build software better, together.">
+  </head>
+
+
+  <body class="logged_out  env-production">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" ga-data-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Fblog%2F1859-github-enterprise-11-10-340-release" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search  js-site-search">
+      <form accept-charset="UTF-8" action="/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class=""
+    data-hotkey="s"
+    name="q"
+    placeholder="Search GitHub"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+        <div class="site clearfix">
+          <div id="site-container" class="context-loader-container" data-pjax-container>
+            
+            
+
+
+
+  <div id="blog-main" data-pjax-container>
+      <div class="pagehead separation">
+    <div class="container">
+      <form action="/blog/search" class="blog-search" data-pjax>
+        <span class="octicon octicon-search"></span>
+        <input class="blog-search-input" type="text" name="q" id="blog-search" value="" tabindex="2">
+      </form>
+
+      <h1>
+          <a href="/blog" id="blog-home"><span class="octicon octicon-home"></span></a><a href="/blog/1859-github-enterprise-11-10-341-release" class=" blog-title">GitHub Enterprise 11.10.341 Release</a>
+      </h1>
+    </div>
+  </div><!-- /.pagehead -->
+
+  <div class="container" id="blog-main">
+    
+<div class="blog-aside">
+
+  <div class="menu-container" data-pjax>
+    <ul class="menu">
+      <li><a href="/blog" class="js-selected-navigation-item " data-selected-links=" /blog">Featured</a></li>
+      <li><a href="/blog/category/all" class="js-selected-navigation-item " data-selected-links="all /blog/category/all">All Posts</a></li>
+      <li><a href="/blog/category/ship" class="js-selected-navigation-item " data-selected-links="ship /blog/category/ship">New Features</a></li>
+      <li><a href="/blog/category/engineering" class="js-selected-navigation-item " data-selected-links="engineering /blog/category/engineering">Engineering</a></li>
+      <li><a href="/blog/category/enterprise" class="js-selected-navigation-item selected" data-selected-links="enterprise /blog/category/enterprise">Enterprise</a></li>
+      <li><a href="/blog/category/meetup" class="js-selected-navigation-item " data-selected-links="meetup /blog/category/meetup">Meetups</a></li>
+      <li><a href="/blog/category/hire" class="js-selected-navigation-item " data-selected-links="hire /blog/category/hire">New Hires</a></li>
+      <li><a href="/blog/category/watercooler" class="js-selected-navigation-item " data-selected-links="watercooler /blog/category/watercooler">Watercooler</a></li>
+    </ul>
+  </div>
+
+  <a class="rss" href="/blog/subscribe" data-pjax>
+    <span class="octicon octicon-rss"></span>
+    Subscribe
+  </a>
+</div>
+
+    <div class="blog-content">
+        <ul class="blog-post-meta">
+    <li class="meta-item">
+      <span class="octicon octicon-calendar"></span>
+      July  7, 2014
+    </li>
+
+  <li class="vcard fn meta-item">
+    <img alt="Mike McQuaid" class="author-avatar" data-user="125011" height="18" src="https://avatars3.githubusercontent.com/u/125011?v=2&amp;s=36" width="18" /> <a href="/mikemcquaid">mikemcquaid</a>
+  </li>
+
+    <li class="meta-item">
+      <span class="octicon octicon-file-directory"></span>
+      <a href="/blog/category/enterprise">Enterprise</a>
+    </li>
+
+</ul>
+
+
+  <div class="blog-post-body markdown-body">
+    <p><a href="https://enterprise.github.com">GitHub Enterprise</a> releases are all about offering large companies more of GitHub to deploy in their own environments, and <a href="https://enterprise.github.com/releases/11.10.340">today's release</a> is no exception. We've added a number of features that improve speed, flexibility, security, administration, and more. </p>
+
+<h2>Faster Git operations</h2>
+
+<p>Smarter caching on the server side now optimizes the initial counting objects phase of all Git network operations. This drastically reduces the CPU time required by Git network operations, allowing more simultaneous clones and fetches without increasing the load on the Virtual Machine. You'll also find Git <code>clone</code>, <code>fetch</code>, and <code>pull</code> to be an order of magnitude faster, especially for large repositories.</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/4356597/3463469/02c2c300-023a-11e4-9260-bf36e6b0df12.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/4356597/3463469/02c2c300-023a-11e4-9260-bf36e6b0df12.png" alt="performance-graph" style="max-width:100%;"></a></p>
+
+<h2>Activity data across all your projects</h2>
+
+<p>See what's happening across all projects on GitHub Enterprise in one place, from users and organizations to issues, pull requests, and code review comments. The Activity Dashboard compiles all this data and presents it in easy-to-read graphs, along with past data from the same time period.</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/4356597/3425479/3b801ab8-0004-11e4-833a-953c3e08ab9a.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/4356597/3425479/3b801ab8-0004-11e4-833a-953c3e08ab9a.jpg" alt="activity-dashboard" style="max-width:100%;"></a></p>
+
+<h2>LDAP configuration improvements</h2>
+
+<p>You can now better configure GitHub Enterprise to your company's LDAP setup. Nested user groups are supported, users can change their username and still be mapped to the same distinguished name, and you can specify the name of attributes to map to imported fields.</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/4356597/3462447/977c3a56-022d-11e4-936b-87de90705f58.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/4356597/3462447/977c3a56-022d-11e4-936b-87de90705f58.png" alt="authentication" style="max-width:100%;"></a></p>
+
+<h2>Advanced settings for blocking force pushes</h2>
+
+<p>More options for blocking force pushes enable you to configure settings as you need. You can now block force pushing for a specific user, on the default branch of an organization's repositories, and for all branches on a single repository.</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/4356597/3425505/50827cc0-0005-11e4-8cc5-a4813cebe275.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/4356597/3425505/50827cc0-0005-11e4-8cc5-a4813cebe275.png" alt="force-push" style="max-width:100%;"></a></p>
+
+<h2>... and so much more!</h2>
+
+<ul>
+<li>
+<a href="https://github.com/blog/1763-better-organizations">Better organization</a> and team management</li>
+<li>
+<a href="https://github.com/blog/1819-write-line-notes-from-your-phone">Mobile line notes</a> and <a href="https://github.com/blog/1642-merge-pull-requests-from-your-phone">mobile pull request merging</a>
+</li>
+<li>
+<a href="https://enterprise.github.com/help/articles/site-admin-dashboard#reports">Two factor authentication status</a> for user reports</li>
+<li><a href="https://github.com/blog/1778-webhooks-level-up">Webhooks configuration and customization improvements</a></li>
+<li><a href="https://github.com/blog/1827-updated-services-ui">Updated Services UI</a></li>
+<li><a href="https://developer.github.com/v3/repos/releases/">Releases API</a></li>
+<li><a href="https://github.com/blog/1786-enhanced-oauth-security-for-ssh-keys">Enhanced OAuth security for SSH keys</a></li>
+<li><a href="https://github.com/blog/1794-recent-activity-for-authentication-credentials">Recent activity audits for authentication credentials</a></li>
+<li><a href="https://github.com/blog/1658-view-active-browser-sessions">Active browser sessions auditing</a></li>
+<li><a href="https://github.com/blog/1727-introducing-forward-secrecy-and-authenticated-encryption-ciphers">Forward secrecy and authenticated encryption ciphers</a></li>
+<li>
+<a href="https://github.com/blog/1707-soft-wrapping-on-prose-diffs">Soft-wrapping</a> and <a href="https://github.com/blog/1784-rendered-prose-diffs">rendered views</a> for prose diffs</li>
+<li>
+<a href="https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents">Embedded YAML metadata rendering</a> in prose documents</li>
+<li>
+<a href="https://github.com/blog/1825-task-lists-in-all-markdown-documents">Expanded task list support</a> and <a href="https://github.com/blog/1841-nested-task-lists">nesting</a> in prose documents</li>
+<li><a href="https://github.com/blog/1705-expanding-context-in-diffs">Expanding context in diffs</a></li>
+<li><a href="https://github.com/blog/1767-redesigned-conversations">Redesigned conversations</a></li>
+<li><a href="https://github.com/blog/1828-wikis-now-with-more-love">Wikis UI improvements</a></li>
+<li>
+<a href="https://github.com/blog/1833-github-pages-3">Metadata, sitemaps, build feedback, and pagebuild events</a> in Pages</li>
+<li>
+<a href="https://github.com/blog/1465-stl-file-viewing">3D file rendering</a> and <a href="https://github.com/blog/1633-3d-file-diffs">diffing</a>
+</li>
+</ul><hr><p>If you're currently using GitHub Enterprise, you can <a href="https://enterprise.github.com/download">download this release</a> from the Enterprise website. If you want to give GitHub Enterprise a try, <a href="https://enterprise.github.com/trial">request a 45-day free trial</a>.</p>
+
+<hr><p><strong>Update:</strong> After this morning's announcement, we noticed an issue with the original 11.10.340 release and have issued a patch release with a fix. All links in the blog post above now redirect to the correct release notes and download page. We're sorry for any confusion this may have caused. If you have any issues with the newest release, please contact us at <a href="mailto:enterprise@github.com">enterprise@github.com</a>.</p>
+  </div>
+
+  <div class="blog-feedback">
+    <h2 class="blog-feedback-header with-twitter">
+      Have feedback on this post? Let <a href="https://twitter.com/intent/tweet?text=@github%20&amp;related=github&amp;url=https://github.com/blog/1859-github-enterprise-11-10-341-release" target="blank">@github</a> know on Twitter.
+    </h2>
+    <p class="blog-feedback-description">
+      Need help or found a bug? <a href="/contact">Contact us</a>.
+    </p>
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+          </div>
+          <div class="modal-backdrop"></div>
+        </div>
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.01839s from github-fe124-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents js-suggester-field" placeholder=""></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ba50a1ca41995f0b006425c6db96c5669d18fd98.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-718b950d0761c12e31c63a23c232695de9d66fc4.js" type="text/javascript"></script>
+      
+      
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>

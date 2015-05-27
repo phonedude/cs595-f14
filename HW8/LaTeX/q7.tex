@@ -1,0 +1,201 @@
+\section{Question 7}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+Which 5 raters most agreed with each other? Show the raters'
+IDs and Pearson's r, sorted by r.
+
+
+\end{flushleft}
+\subsection{The Answer}
+
+
+\begin{flushleft}
+In order to determine the cluster of 5 most agreed reviewers all permutations of reviewers would have to be considered and some metric of correlation amongst them be computed. For the set of all permutations we wuld use k choose n, where k = 5 and n = 943
+
+\begin{center}
+$ \binom nk = \frac{n!}{k!\,(n-k)!} $ 
+
+${943 \choose 5}  =  \frac{943!}{5!\,(9435)!}  =  6.148432630803 × 10^{12}$
+\end{center}
+
+which is really big and very impractical to have to go through that many iterations. 
+
+The alternative is to use a greedy algorithm that is assumed to converge near the local minimum of this problem. By computing the nearest revierwer for each reviewer we can reduce the number of operations and produce a relationship with each reviewer. 
+
+\begin{center}
+p3,p9 
+
+p9,p23 
+
+p23,p25 
+
+p25,p33 
+
+p33,p77 
+\end{center}
+
+Once these relationship have been computed a chain of five uniques reviewers is produced. Many of these chains are degenerate, pointing to the same reviewers and repeating. 
+
+\begin{center}
+p3,p9 
+
+p9,p3
+
+p3,p9 
+
+p9,p3 
+
+p3,p9 
+\end{center}
+
+
+These can be eliminated easily. From the remaining chains a metric must be devised based on the weighed connections to determine the most agreed 5. The metric chosen was the sum of the correlations of every member to the remaining memebers. The higher the sum the most closely correlated the memebrs are to each other. The group with the highest sum was chosen and the correlation between users shown to be 1. 
+
+
+
+
+
+\begin{lstlisting}[caption={Python code for question 7}]
+def q7():
+    prefs =  loadMovieLens(path='./ml-100k')   
+    c = greedy(prefs, True)
+    x = maths(c, prefs)
+
+    x.sort(key=lambda x:x[5], reverse=True)
+    y = []
+    for i in x:
+        if len(i) == len(set(i)):
+            y.append(i)
+
+    print "Most Agreed Reviewers"
+    for i in range(0,5):
+        print y[i]
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Greddy Algorithm for determining most correlated reviewer}]
+def greedy(prefs, best):
+    c = [[]]*(len(prefs))
+    for i in prefs:
+        e = []
+        for j in prefs:
+            d = []
+            num = sim_pearson(prefs,i,j);
+            d.append(num)
+            d.append(i)
+            d.append(j)
+            if (i != j):
+                e.append(d)
+        e.sort(key=lambda x:x[:][0], reverse=best)
+        c[int(e[0][1])-1] = e[0]       
+    return c 
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Determining chain of 5 reviewers from correlated}]
+def maths(c, prefs):
+    d = []
+    for i in c:
+        e = []
+        e.append(i[1])
+        e.append(i[2])
+        for j in range(2,5):
+            e.append(c[int(e[j-1])-1][2])
+        tSum = 0
+        for j in range (0,5):
+            for k in range (0,5):
+                tSum +=  sim_pearson(prefs, e[j], e[k])
+        e.append(tSum)
+        d.append(e)
+    return d
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Python code for question 7}]
+def q7():
+    prefs =  loadMovieLens(path='./ml-100k')   
+    c = greedy(prefs, True)
+    x = maths(c, prefs)
+
+    x.sort(key=lambda x:x[5], reverse=True)
+    y = []
+    for i in x:
+        if len(i) == len(set(i)):
+            y.append(i)
+
+    print "Most Agreed Reviewers"
+    for i in range(0,5):
+        print y[i]
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Correlation between two reviewers}]
+def sim_pearson(prefs, p1, p2):
+    '''
+    Returns the Pearson correlation coefficient for p1 and p2.
+    '''
+
+    # Get the list of mutually rated items
+    si = {}
+    for item in prefs[p1]:
+        if item in prefs[p2]:
+            si[item] = 1
+    # If they are no ratings in common, return 0
+    if len(si) == 0:
+        return 0
+    # Sum calculations
+    n = len(si)
+    # Sums of all the preferences
+    sum1 = sum([prefs[p1][it] for it in si])
+    sum2 = sum([prefs[p2][it] for it in si])
+    # Sums of the squares
+    sum1Sq = sum([pow(prefs[p1][it], 2) for it in si])
+    sum2Sq = sum([pow(prefs[p2][it], 2) for it in si])
+    # Sum of the products
+    pSum = sum([prefs[p1][it] * prefs[p2][it] for it in si])
+    # Calculate r (Pearson score)
+    num = pSum - sum1 * sum2 / n
+    den = sqrt((sum1Sq - pow(sum1, 2) / n) * (sum2Sq - pow(sum2, 2) / n))
+    if den == 0:
+        return 0
+    r = num / den
+    return r
+\end{lstlisting}
+
+\begin{center}
+Most Agreed Reviewers
+
+
+$656 -> 909$ r =  1.00
+
+$909 -> 869 $ r = 1.00
+
+$869 -> 857$ r = 1.00
+
+$857 -> 748$ r = 1.00
+
+\vspace{10pt}
+
+Highly Agreed Groups
+
+['656', '909', '869', '857', '748', 21.743243005407813]
+
+['520', '694', '306', '188', '732', 20.35143510753761]
+
+['806', '909', '869', '857', '748', 20.28283545995625]
+
+['249', '909', '869', '857', '748', 19.98780466540942]
+
+['251', '909', '869', '857', '748', 19.714669425731906]
+
+
+
+\end{center}
+
+
+\end{flushleft}
+
+
+
+

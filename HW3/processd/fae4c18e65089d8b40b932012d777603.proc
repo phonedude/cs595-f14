@@ -1,0 +1,248 @@
+   #Are you cereal? » Feed Are you cereal? » Comments Feed Are you cereal?
+   » Is my brilliant idea any good? I am not sure, so I've pre-printed it
+   on PeerJ Comments Feed Tailoring univariate probability distributions
+   Species Distribution Models on the right track. Finally.
+
+   Are you cereal?
+   Science, statistics, ecology, R
+   Are you cereal?
+     * Home
+     * About
+     * Blog
+     * Contact
+     * Funding
+     * Publications
+     * Teaching
+
+   Search ____________________ Search
+   Home » Ecology » Is my brilliant idea any good? I am not sure, so I've
+   pre-printed it on PeerJ
+
+Is my brilliant idea any good? I am not sure, so I've pre-printed it on PeerJ
+
+   Posted on July 24, 2014 by Petr Keil · 5 Comments
+
+   As a scientist, what should I do when I encounter a seemingly
+   fundamental problem that also seems strangely unfamiliar? Is it
+   unfamiliar because I am up to something really new, or am I
+   re-discovering something that has been around for centuries, and I have
+   just missed it?
+
+   This is a short story about an exploration that began with such a
+   problem, and led to this manuscript. It began one day when I was
+   pondering the idea of probability:
+
+     Scientists often estimate probability (P) of an event, where the
+     event can be a disease transmission, species extinction, volcano
+     eruption, particle detection, you name it. If the P is estimated,
+     there has to be some uncertainty about the estimate -- every
+     estimate is imperfect, otherwise it is not an estimate. I felt that
+     the uncertainty about P has to be bounded: I couldn't imagine a high
+     estimate of P, say P=0.99, associated with high uncertainty about
+     it. The reason is that an increased uncertainty about P means
+     broader distribution of probability density of P, which means that
+     the mean (expected value) of the probability density shifts towards
+     P=0.5. Inversely, as P approaches 0 or 1, the maximum possible
+     uncertainty about P must decrease. Is there a way to calculate the
+     bounds of uncertainty exactly? Have anybody already calculated this?
+
+   First, I did some research. Wikipedia: nothing. I hit the books:
+   Jaynes's Probability theory, Johnson et al's Continuous univariate
+   distributions, statistical textbooks, all the usual suspects, nothing.
+   Web of Science: A bunch of seemingly related papers, but no exact hit.
+   ArXiv: More seemingly related semi-legible papers by physicists and
+   statisticians, but not exactly what I was looking for. After some time
+   I put the search on hold.
+
+   Then one day, for a completely different reason, I was skimming through
+   John Harte's Maximum Entropy Theory and Ecology, and it struck me.
+   Maybe there is a MaxEnt function that can give the maximum uncertainty
+   about P, given that we only have the value of P and nothing else. Back
+   to the web and, finally, I found something useful by UConn
+   mathematician Keith Conrad: a MaxEnt probability density function on a
+   bounded interval with known mean.
+
+   I adjusted the function for my problem, and I started to implement it
+   in R, drafting some documentation on side, and I realized that I have
+   actually started working on a paper!
+
+   Then the doubts came. I discussed the problem with my colleagues, but I
+   hadn't learnt much -- many well-intentioned suggestions but no advice
+   hit the core of the problem, which is: Is the idea any good? And
+   anyway, as a wee ecologists with little formal mathematical education,
+   can I actually dare to enter the realm of probability theory where the
+   demi-gods have spoken pure math for centuries?
+
+   Then I took the courage and sent my draft to two sharp minds that I
+   admire for the depth of their formal thinking (and for their long
+   beards): Arnost Sizling the mathematician, and Bob O'Hara the
+   biostatistician. For a week nothing happened, then I received two quite
+   different and stimulating opinions, a semi-sceptical review from
+   Arnost, and a semi-optimistic email from Bob. I tried to incorporate
+   their comments, but I am still unsure about the whole thing.
+
+   I don't have a clue whether and where such thing should be published.
+   It feels too long and complex for a blog post, yet somehow trivial for
+   a full-length research paper; it is perhaps too simple for a
+   statistical journal, yet too technical for a biological journal.
+
+   And so I've decided to pre-print it on PeerJ for everybody to see. I
+   guess that it could be the perfect place for it. If it is really new
+   then it is citable and I can claim my primacy. If it is all bullshit,
+   then people will tell me (hopefully), or they will perhaps collaborate
+   and help me to improve the paper, becoming co-authors. It is an
+   experiment, and I am curious to see what happens next.
+   This entry was posted in Ecology, General statistics, Science,
+   Uncategorized. Bookmark the permalink.
+
+Post navigation
+
+   ← Tailoring univariate probability distributions
+   Species Distribution Models on the right track. Finally. →
+
+5 thoughts on “Is my brilliant idea any good? I am not sure, so I've
+pre-printed it on PeerJ”
+
+    1. Ken Butler on July 24, 2014 at 7:43 pm said:
+       The usual way that a frequentist reasoner would go when faced with
+       this is to reason from a repeated sample of events (and obtain the
+       one-sample confidence interval for a proportion), or reason from a
+       model like a logistic regression if the probability depends on
+       covariates, again obtaining a confidence interval for the
+       probability, conditional on values of the covariates.
+       A Bayesian would (or ought to) obtain a posterior distribution for
+       the probability, and then summarize it in some way (eg. a credible
+       interval) that depicts the uncertainty as well as the best
+       estimate.
+       I didn't study the details of your paper, but I didn't immediately
+       see how it adds to what I describe above. I am happy to be
+       enlightened, however!
+       Reply ↓
+          + Petr Keil on July 25, 2014 at 8:40 pm said:
+            Hi Ken,
+            My study is NOT about how to estimate the uncertainty (using
+            either confidence or credible intervals). That is easy and
+            well known.
+            My study is about how to get the maximum possible value of
+            uncertainty for a given P. In other words: I have found that
+            you cannot have very high or very low (say 0.9 or 0.1)
+            estimates of P, and at the same have high uncertainty (span of
+            the confidence or credible intervals) about the estimates. If
+            your mean P=0.9, then you inevitably must have very narrow
+            posterior -- there is no way to have broad posterior (i.e.
+            high uncertainty), and high expected value (mean of the
+            posterior of P) at the same time.
+            Thanks for the comment though -- it shows that my main message
+            may not be entirely clear.
+            Reply ↓
+    2. Brian Clifton on July 28, 2014 at 6:42 pm said:
+       Love the idea of this Petr. I don't have anything to contribute
+       though I do have a gut feeling what you are trying to achieve is a
+       good thing - I just can't help also feeling (form my A-level stats)
+       that this already exists, somewhere...!
+       Reply ↓
+    3. Tom Anderson on July 29, 2014 at 7:38 am said:
+       I think what happens when you get close to 0% or 100% and you have
+       high uncertainty, the distribution is no longer Gaussian. Instead
+       you get a different distribution, for example Poisson. The
+       distribution is lopsided and this keeps it in the 0% to 100%
+       region.
+       Look at a graph called 'probability paper'.
+       Also you can take the log of the measurement on the 0% side to move
+       the graph away from zero. Then you get a realistic result: 99% ->
+       90% to 99.9%.
+       Reply ↓
+    4. laurent apicella on July 29, 2014 at 9:27 am said:
+       Let's take some examples: The probability of drawing an ace from a
+       deck of cards is 4/52 and there is no uncertainty about that
+       probability.
+       Now what's the probability that another tsunami will hit Fukushima
+       within the next 5 years? Suppose that the estimate is 1/10 000 000
+       000. The heart of the problem is: "How in the world do we get such
+       an estimate?"
+       Apart from the trivial theoretical bounds (i.e. a probability is a
+       real number between 0 and 1) you will have to get into the
+       nitty-gritty of your model to refine your predictions, with an
+       optimistic scenario that will give you a lower bound and a
+       pessimistic scenario that will give you an upper bound. There is no
+       universal technique (similar to bootstrap for samples) to extract
+       information for such non-frequentist events that will give you a
+       universal confidence interval.
+       PS: well, did I say that a probability was always in [0;1] ?
+       Apparently there is more to the story, according to Feynman :-)
+       http://cds.cern.ch/record/154856/files/pre-27827.pdf
+       Reply ↓
+
+Leave a Reply Cancel reply
+
+   Your email address will not be published. Required fields are marked *
+
+   Name * ______________________________
+
+   Email * ______________________________
+
+   Website ______________________________
+
+   Comment
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+
+   You may use these HTML tags and attributes: <a href="" title=""> <abbr
+   title=""> <acronym title=""> <b> <blockquote cite=""> <cite> <code>
+   <del datetime=""> <em> <i> <q cite=""> <strike> <strong>
+
+   Send your comment
+
+   Subscribe, follow
+     * RSS Feed for Posts
+     * Twitter
+
+   Most popular - last month
+     * Direct support for hypotheses is finding its way to high-profile
+       journals
+     * Is my brilliant idea any good? I am not sure, so I've pre-printed
+       it on PeerJ
+     * The joy and martyrdom of trying to be a Bayesian
+     * Predictors, responses and residuals: What really needs to be
+       normally distributed?
+     * Data-driven science is a failure of imagination
+     * Not all proportion data are binomial outcomes
+     * The effect of ski-pistes on butterflies
+     * AIC & BIC vs. Crossvalidation
+     * Downscaling species distributions using multi-scale logistic model
+     * Good news for biodiversity: Pollinator and plant declines are
+       slowing down in NW Europe!
+
+   Categories
+   [Select Category__________]
+   Archives
+   [Select Month_______]
+   My favorite reading
+     * Andrew Gelman
+     * Dynamic Ecology
+     * Ecology in Silico
+     * Flowing data
+     * Just Simple Enough
+     * R-bloggers
+     * Simply statistics
+     * The Atlantic
+
+   Blog Traffic
+
+   Unique visitors
+
+   Pages|Hits |Unique visitors
+     * Last 24 hours: 371
+     * Last 7 days: 1,890
+     * Last 30 days: 6,234
+     * Online now: 15
+
+   Powered by WordPress · Theme by Satrya
+
+   © Copyright 2014 Are you cereal?

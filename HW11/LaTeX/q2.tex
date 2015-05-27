@@ -1,0 +1,166 @@
+\section{Question 2}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+Manually classify the first 50 entries, and then classify (using
+the fisher classifier) the remaining 50 entries. Report the cprob()
+values for the 50 titles as well.  From the title or entry itself,
+specify the 1-, 2-, or 3-gram that you used for the string to
+classify.  Do not repeat strings; you will have 50 unique strings.
+For example, in these titles the string used is marked with *s:
+
+*Rachel Goswell* - "Waves Are Universal" (LP Review) 
+The *Naked and Famous* - "Passive Me, Aggressive You" (LP Review)
+*Negativland* - "Live at Lewis's, Norfolk VA, November 21, 1992" (concert)
+Negativland - "*U2*" (LP Review)
+
+Note how "Negativland" is not repeated as a classification string.
+
+Create a table with the title, the string used for classification,
+cprob(), predicted category, and actual category.
+
+\end{flushleft}
+\subsection{The Answer}
+
+The list of entries was classified manually into a text file that was used as input to the code. The code primarily consisted of functions borrowed from the book code and modified to the project. The classifer and feedfilter modules were also imported for their other functionality.
+
+
+\lstset{
+    language=Python,
+    label=code:q1,
+    caption={Python script for training and tesing classfier}
+}
+\lstinputlisting{../q1/q1.py}
+
+The classification using random 1-grams from the title and summary produced very poor results. This is most likely to the fact that the classification is content based and key terms, which would be very effective features, are very sparse. The terms of the classification could be manually selected to convey specific significance and be more appropriate features fo the classification. However, aside from tedious this is also counterproductive. The performance of a classifier should be evaluated under real-world conditions with imperfect data and noise. Therefore, selecting the key terms for classification would only bias the results.
+
+Using only random 1-gram was meaningless and inefficient. There are very few key terms that can differentiate classes in this data, i.e. cup names, player names, football club names. In an attempt to increase accuracy and performance the process was repeated using the title of each entry for the classification. Both results are diaplyed below
+
+In thi situation there were 6 classes making chance accuracy approximately 0.1666. This is the probability of correct classification based on random chance. The classification selects the largest class probability, which is the fischer's probability of belonging to a class. However, because the largest one is always selected there is always aclassification, even with a very small fischer's probability. These types of classifications are the equvalant of guessing and are useless. A restriction was placed in the form of a minimum fischer's probability requirement. The minimum fisher's probability was chosen heuristically at value of p = .16 by using various values and selecting the one that produced the highest f-measure for the classifier
+
+
+\begin{table}[h]
+\centering
+\caption{Results of classification based on random 1-gram}
+\begin{tabular}{l|l|l|l|l}
+title                           & string       & cprob    & pred    & act      \\ \hline \hline
+Belo Horizonte                  & once         & 0.500000 & Spain   & World    \\
+Departure for Brazil            & 400          & 0.500000 & Spain   & World    \\
+Introduction to the 2014 World  & travels      & 0.500000 & Spain   & World    \\
+Fifa World Rankings June 2014   & separator    & 0.500000 & Spain   & World    \\
+Nigeria share goals with Scots  & brown        & 0.500000 & Spain   & World    \\
+International Friendly: Scotla  & off          & 0.500000 & Spain   & World    \\
+Falcao \& Suarez risk World Cup & both         & 0.500000 & Spain   & World    \\
+Donovan dropped from US squad   & bold         & 0.500000 & Spain   & Americas \\
+This is the year for Brazil     & muscular     & 0.500000 & Spain   & Americas \\
+Super Eagles are ready for tak  & cut          & 0.500000 & Spain   & Africa   \\
+Scudamore keeps his job but we  & from          & 0.500000 & Spain   & England  \\
+Cantona aims kick at Platini    & this         & 0.500000 & Spain   & England  \\
+Sepp comes clean on Qatar       & suggesting   & 0.500000 & Spain   & World    \\
+Thiago blow for Spain           & align        & 0.500000 & Spain   & Spain    \\
+C'est la vie says Nasri         & celebrity    & 0.500000 & Spain   & England  \\
+World Cup squad announcements   & arm        & 0.500000 & Spain   & World    \\
+Now if my name were Roy...      & home         & 0.500000 & Spain   & England  \\
+George's Premiership Predictio  & leg          & 0.500000 & Spain   & England  \\
+Fifa World Rankings May 2014    & come         & 0.500000 & Spain   & World    \\
+George's Premiership Predictio  & land          & 0.500000 & Spain   & England  \\
+AFC Champions League Rotation   & season       & 0.500000 & Spain   & World    \\
+Champions League Bayern vs Rea  & crowned      & 0.500000 & Spain   & World    \\
+George's Premiership Predictio  & sees         & 0.500000 & Spain   & England  \\
+EURO 2016 Finals schedule anno  & championship & 0.500000 & Spain   & World    \\
+Scottish Premier League News A  & field         & 0.500000 & Spain   & England  \\
+David Moyes Sacked              & won          & 0.500000 & Spain   & England  \\
+George's Premiership Predictio  & that         & 0.500000 & Spain   & England  \\
+What is wrong with Bara?        & germain      & 0.500000 & Spain   & Spain    \\
+A-League Finals 2014            & screen       & 0.500000 & Spain   & World    \\
+The Meaning of Hillsborough 25  & ignorance    & 0.500000 & Spain   & England  \\
+History Tells Us That Brazil M  & blind        & 0.500000 & Spain   & Americas \\
+George's Premiership Predictio  & former       & 0.500000 & Spain   & England  \\
+Fifa World Rankings April 2014  & right        & 0.500000 & Spain   & World    \\
+A Race that never ends          & their        & 0.500000 & Spain   & England  \\
+40 a goal adds insult to Spur   & wake         & 0.500000 & Spain   & England  \\
+Man U \& Real top replica sales & jerseys      & 0.500000 & Spain   & England  \\
+Weekly Football News April 7 2  & football     & 0.500000 & Spain   & World    \\
+George's Premiership Predictio  & must         & 0.500000 & Spain   & England  \\
+Is the J-League Too Big?        & number       & 0.500000 & Spain   & England  \\
+George's Premiership Predictio  & improved     & 0.500000 & Spain   & England  \\
+Weekly Football News March 25   & front        & 0.500000 & Spain   & World    \\
+Scottish Premier League News M  & dillon       & 0.500000 & Spain   & England  \\
+George's Premiership Predictio  & shown        & 0.500000 & Spain   & England  \\
+George's Premiership Predictio  & struggling   & 0.500000 & Spain   & England  \\
+England \& Italy victims of Eur & injections   & 0.500000 & Spain   & World    \\
+Fifa World Rankings March 2014  & under        & 0.500000 & Spain   & World    \\
+Despite Featuring Many Top Tea  & right   & 0.741745 & England & World    \\
+Revenge served cold on Pohang   & left         & 0.500000 & Spain   & England  \\
+Weekly Football News March 11   & went         & 0.500000 & Spain   & World    \\
+George's Premiership Predictio  & run          & 0.500000 & Spain   & England  \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\begin{table}[h]
+\centering
+\caption{Results of classification based on title string}
+\begin{tabular}{l|l|l|l|l}
+title                           & string & cprob    & pred    & act      \\ \hline \hline
+Belo Horizonte                  &        & 0.999543 & World   & World    \\
+Departure for Brazil            &        & 0.005880 & None    & World    \\
+Introduction to the 2014 World  &        & 0.570638 & World   & World    \\
+Fifa World Rankings June 2014   &        & 0.940018 & World   & World    \\
+Nigeria share goals with Scots  &        & 0.731898 & Spain   & World    \\
+International Friendly: Scotla  &        & 0.839642 & World   & World    \\
+Falcao \& Suarez risk World Cup &        & 0.682801 & World   & World    \\
+Donovan dropped from US squad   &        & 0.007454 & None    & Americas \\
+This is the year for Brazil     &        & 0.000496 & None    & Americas \\
+Super Eagles are ready for tak  &        & 0.355228 & World   & Africa   \\
+Scudamore keeps his job but we  &        & 0.936780 & World   & England  \\
+Cantona aims kick at Platini    &        & 0.698030 & Spain   & England  \\
+Sepp comes clean on Qatar       &        & 0.698030 & Spain   & World    \\
+Thiago blow for Spain           &        & 0.005529 & None    & Spain    \\
+C'est la vie says Nasri         &        & 0.698030 & Spain   & England  \\
+World Cup squad announcements   &        & 0.000048 & None    & World    \\
+Now if my name were Roy...      &        & 0.698030 & Spain   & England  \\
+George's Premiership Predictio  &        & 0.996521 & England & England  \\
+Fifa World Rankings May 2014    &        & 0.940018 & World   & World    \\
+George's Premiership Predictio  &        & 0.996521 & England & England  \\
+AFC Champions League Rotation   &        & 0.839642 & England & World    \\
+Champions League Bayern vs Rea  &        & 0.849562 & England & World    \\
+George's Premiership Predictio  &        & 0.996521 & England & England  \\
+EURO 2016 Finals schedule anno  &        & 0.936879 & World   & World    \\
+Scottish Premier League News A  &        & 0.462349 & England & England  \\
+David Moyes Sacked              &        & 0.655185 & Spain   & England  \\
+George's Premiership Predictio  &        & 0.996521 & England & England  \\
+What is wrong with Bara?        &        & 0.839642 & Africa  & Spain    \\
+A-League Finals 2014            &        & 0.919880 & England & World    \\
+The Meaning of Hillsborough 25  &        & 0.759110 & Germany & England  \\
+History Tells Us That Brazil M  &        & 0.645775 & World   & Americas \\
+George's Premiership Predictio  &        & 0.994320 & England & England  \\
+Fifa World Rankings April 2014  &        & 0.940018 & World   & World    \\
+A Race that never ends          &        & 0.839642 & World   & England  \\
+40 a goal adds insult to Spur   &        & 0.731898 & Spain   & England  \\
+Man U \& Real top replica sales &        & 0.731898 & Spain   & England  \\
+Weekly Football News April 7 2  &        & 0.003232 & None    & World    \\
+George's Premiership Predictio  &        & 0.994320 & England & England  \\
+Is the J-League Too Big?        &        & 0.000207 & None    & England  \\
+George's Premiership Predictio  &        & 0.996521 & England & England  \\
+Weekly Football News March 25   &        & 0.003232 & None    & World    \\
+Scottish Premier League News M  &        & 0.462349 & England & England  \\
+George's Premiership Predictio  &        & 0.996521 & England & England  \\
+George's Premiership Predictio  &        & 0.996521 & England & England  \\
+England \& Italy victims of Eur &        & 0.398828 & England & World    \\
+Fifa World Rankings March 2014  &        & 0.940018 & World   & World    \\
+Despite Featuring Many Top Tea  &        & 0.913444 & World   & World    \\
+Revenge served cold on Pohang   &        & 0.698030 & Spain   & England  \\
+Weekly Football News March 11   &        & 0.003232 & None    & World    \\
+George's Premiership Predictio  &        & 0.996521 & England & England \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+

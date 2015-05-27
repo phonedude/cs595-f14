@@ -1,0 +1,513 @@
+status: 200
+content-length: 16759
+via: 1.1 varnish
+content-location: http://training.github.com/schedule/
+x-cache: MISS
+accept-ranges: bytes
+x-timer: S1411918865.549647,VS0,VE8
+vary: Accept-Encoding
+expires: Sun, 28 Sep 2014 15:51:05 GMT
+server: GitHub.com
+last-modified: Fri, 26 Sep 2014 16:24:41 GMT
+connection: keep-alive
+x-served-by: cache-jfk1024-JFK
+x-cache-hits: 0
+cache-control: max-age=600
+date: Sun, 28 Sep 2014 15:41:05 GMT
+content-type: text/html; charset=utf-8
+age: 0
+-content-encoding: gzip
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Schedule • GitHub Training</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/stylesheets/page.css">
+
+
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <link rel="alternate" type="application/atom+xml" title="Upcoming Events" href="/atom.xml">
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/quotes.js"></script>
+  <script type="text/javascript" src="/js/all.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- google analytics async -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-19']);
+  _gaq.push(['_setDomainName', 'github.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+	var DemandbaseAnalytics=DemandbaseAnalytics||{};
+	DemandbaseAnalytics.demandbaseGA={
+		key:'cd3954907e7b8374c10ebd4f88b757a96541ff8b',
+		fields:["company_name","audience","industry","revenue_range","watch_list_account_status"],
+		dbDataSet: null,
+		track:function(data) {
+	      try {
+	        data=DemandbaseAnalytics.demandbaseGA._flatA(data);
+	        DemandbaseAnalytics.demandbaseGA.dbDataSet = data;  /*allows access to db dataset in JS outside of this namespace */
+	        for(field in DemandbaseAnalytics.demandbaseGA.fields){
+	        	var lbl=DemandbaseAnalytics.demandbaseGA._cA(DemandbaseAnalytics.demandbaseGA._toPC(DemandbaseAnalytics.demandbaseGA.fields[field]));
+	        	var val=data[DemandbaseAnalytics.demandbaseGA.fields[field]]||'(not set)';
+	        	DemandbaseAnalytics.demandbaseGA._var((parseInt(field)+1),lbl,val,1);
+	        	DemandbaseAnalytics.demandbaseGA._logE(lbl + ' : ' + val);
+	        }
+
+	        if(data) {
+	        	var cat=data['audience'] || '(not detected)';
+				var act=data['audience_segment'] || '(not detected)';
+				var lbl=data['company_name'] || '(not detected)';
+				DemandbaseAnalytics.demandbaseGA._p('_trackEvent',cat,act,lbl,0,1);
+				DemandbaseAnalytics.demandbaseGA._logE('Custom Event Tracked: '+cat+' : '+act+' : '+lbl);
+				var cat=data['industry'] || '(not detected)';
+				var act=data['sub_industry'] || '(not detected)';
+				var lbl=data['company_name'] || '(not detected)';
+				DemandbaseAnalytics.demandbaseGA._p('_trackEvent',cat,act,lbl,0,1);
+				DemandbaseAnalytics.demandbaseGA._logE('Custom Event Tracked: '+cat+' : '+act+' : '+lbl);
+				var cat=data['employee_range'] || '(not detected)';
+				var act=data['revenue_range'] || '(not detected)';
+				var lbl=data['company_name'] || '(not detected)';
+				DemandbaseAnalytics.demandbaseGA._p('_trackEvent',cat,act,lbl,0,1);
+				DemandbaseAnalytics.demandbaseGA._logE('Custom Event Tracked: '+cat+' : '+act+' : '+lbl);
+	        }
+	        DemandbaseAnalytics.demandbaseGA._event();
+	      } catch(e){ DemandbaseAnalytics.demandbaseGA._logE('Integration Error: '+e)};
+	    },
+		load:function(){
+			try {
+				if(!window._gaq) window._gaq=[];
+				var db=document.createElement('script');db.type='text/javascript'; db.async=true;
+		        db.src=('https:'==document.location.protocol?'https://':'http://')+'api.demandbase.com/api/v2/ip.json?key='+this.key+'&callback=DemandbaseAnalytics.demandbaseGA.track&page='+document.URL+'&referrer='+document.referrer;
+		        var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(db,s);
+		        _gaq.push(['_addDevId', 'NE7T9']);
+		        DemandbaseAnalytics.demandbaseGA._logE('Loaded Script ' + db.src);
+			} catch(e){ this._logE('Script Error: '+e)};
+		},
+		_cA:function(s){
+			var al=['IP','SID','HQ','DMA','ISP'];
+			for(a in al){
+				s=s.replace(new RegExp(al[a],'ig'),al[a])}return s;
+		},
+		_flatA:function(a){
+			for(d in a){
+				if(typeof a[d]=='object'){
+					for(cd in a[d]){a[d+'_'+cd]=a[d][cd]};
+					delete a[d];
+				}
+			};
+			return a;
+		},
+		_logE:function(m){ if(window['console'] !== 'undefined' && typeof(console) !== 'undefined') { console.log('DB GA '+m); } },
+		_toPC:function(s){
+			return s.replace(/_/g,' ').replace(/\w\S*/g,function(t){ return t.charAt(0).toUpperCase()+t.substr(1).toLowerCase() }); },
+		_p:function(t,v1,v2,v3,v4,v5){ window._gaq.push([t,v1,v2,v3,v4,v5]); },
+		_var:function(i,k,v,s){ this._p('_setCustomVar',i,k,v,s); },
+		_event:function(){ this._p('_trackEvent','Demandbase','API Resolution','IP API',0,1); }
+	};
+	DemandbaseAnalytics.demandbaseGA.load();
+</script>
+
+</head>
+
+<body class="schedule">
+  <header class="colorful">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-2">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="logo"><a href="/" data-escp="">GitHub Training</a></div>
+			</div>
+
+			<div class="col-md-9 col-sm-10">
+				<div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/trainers/">Trainers</a></li>
+						<li><a href="/classes/">Classes</a></li>
+						<li><a class="active" href="/schedule/">Schedule</a></li>
+						<li><a href="/kit/">Kit</a></li>
+						<li><a href="/contact/">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+			<h2>Schedule</h2>
+			<p>Upcoming Git and GitHub classes</p>
+		
+
+
+		
+	</div>
+</header>
+
+
+  
+
+
+  <div class="container">
+  
+  
+
+
+  
+    <div class="panel panel-default open-enrollment">
+      <div class="panel-body">
+
+
+        <a name="October-21-2014"></a>
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <a href="/classes/foundations">Foundations GitHub Class</a>
+            <a href="#October-21-2014"><span class="octicon octicon-link"></span></a>
+          </div>
+
+          <div class="col-md-4 visible-lg visible-md">
+            
+              <small>
+              Instructor
+              <a href="/trainers">Brent Beer</a>
+              </small>
+            
+          </div>
+
+          <div class="col-md-4 col-sm-5">
+            
+              <small>
+                <time itemprop="startDate" datetime="class.event_start_dates[forloop.first]">
+                  <strong><span class="day">October 21, 2014</span></strong>
+                </time>
+
+                <time>
+                  <span class="hour">08:00</span>
+                </time>
+                -
+                <time itemprop="endDate" datetime="class.event_end_dates[forloop.last]">11:00 (<a href="http://www.timeanddate.com/worldclock/difference.html?p1=224">PDT</a>)</time>
+              </small>
+            
+          </div>
+
+          <div class="col-md-1 col-sm-3 col-xs-12 hidden-xs">
+            <a itemprop="url" href="https://github-foundations-oct2014.eventbrite.com" class="btn btn-primary btn-xs pull-right">Register  for $80</a>
+          </div>
+
+          <div class="visible-xs col-xs-6">
+            <a itemprop="url" href="https://github-foundations-oct2014.eventbrite.com" class="btn btn-primary btn-md">Register  for $80</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+  
+  
+
+
+  
+    <div class="panel panel-default open-enrollment">
+      <div class="panel-body">
+
+
+        <a name="October-22-2014"></a>
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <a href="/classes/intermediate">Intermediate GitHub Class</a>
+            <a href="#October-22-2014"><span class="octicon octicon-link"></span></a>
+          </div>
+
+          <div class="col-md-4 visible-lg visible-md">
+            
+              <small>
+              Instructor
+              <a href="/trainers">Brent Beer</a>
+              </small>
+            
+          </div>
+
+          <div class="col-md-4 col-sm-5">
+            
+              <small>
+                <time itemprop="startDate" datetime="class.event_start_dates[forloop.first]">
+                  <strong><span class="day">October 22, 2014</span></strong>
+                </time>
+
+                <time>
+                  <span class="hour">08:00</span>
+                </time>
+                -
+                <time itemprop="endDate" datetime="class.event_end_dates[forloop.last]">11:00 (<a href="http://www.timeanddate.com/worldclock/difference.html?p1=224">PDT</a>)</time>
+              </small>
+            
+          </div>
+
+          <div class="col-md-1 col-sm-3 col-xs-12 hidden-xs">
+            <a itemprop="url" href="https://github-intermediate-oct2014.eventbrite.com" class="btn btn-primary btn-xs pull-right">Register  for $80</a>
+          </div>
+
+          <div class="visible-xs col-xs-6">
+            <a itemprop="url" href="https://github-intermediate-oct2014.eventbrite.com" class="btn btn-primary btn-md">Register  for $80</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+  
+  
+
+
+  
+    <div class="panel panel-default open-enrollment">
+      <div class="panel-body">
+
+
+        <a name="October-23-2014"></a>
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <a href="/classes/advanced">Advanced GitHub Class</a>
+            <a href="#October-23-2014"><span class="octicon octicon-link"></span></a>
+          </div>
+
+          <div class="col-md-4 visible-lg visible-md">
+            
+              <small>
+              Instructor
+              <a href="/trainers">Brent Beer</a>
+              </small>
+            
+          </div>
+
+          <div class="col-md-4 col-sm-5">
+            
+              <small>
+                <time itemprop="startDate" datetime="class.event_start_dates[forloop.first]">
+                  <strong><span class="day">October 23, 2014</span></strong>
+                </time>
+
+                <time>
+                  <span class="hour">08:00</span>
+                </time>
+                -
+                <time itemprop="endDate" datetime="class.event_end_dates[forloop.last]">11:00 (<a href="http://www.timeanddate.com/worldclock/difference.html?p1=224">PDT</a>)</time>
+              </small>
+            
+          </div>
+
+          <div class="col-md-1 col-sm-3 col-xs-12 hidden-xs">
+            <a itemprop="url" href="https://github-advanced-oct2014.eventbrite.com" class="btn btn-primary btn-xs pull-right">Register  for $80</a>
+          </div>
+
+          <div class="visible-xs col-xs-6">
+            <a itemprop="url" href="https://github-advanced-oct2014.eventbrite.com" class="btn btn-primary btn-md">Register  for $80</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+  
+  
+
+
+  
+    <div class="panel panel-default free">
+      <div class="panel-body">
+
+
+        <a name="October-20-2014"></a>
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <a href="/classes/free">GitHub Review: Getting Started with Code Collaboration</a>
+            <a href="#October-20-2014"><span class="octicon octicon-link"></span></a>
+          </div>
+
+          <div class="col-md-4 visible-lg visible-md">
+            
+              <small>
+              Instructor
+              <a href="/trainers">Jordan McCullough</a>
+              </small>
+            
+          </div>
+
+          <div class="col-md-4 col-sm-5">
+            
+              <small>
+                <time itemprop="startDate" datetime="class.event_start_dates[forloop.first]">
+                  <strong><span class="day">October 20, 2014</span></strong>
+                </time>
+
+                <time>
+                  <span class="hour">09:00</span>
+                </time>
+                -
+                <time itemprop="endDate" datetime="class.event_end_dates[forloop.last]">10:00 (<a href="http://www.timeanddate.com/worldclock/difference.html?p1=224">PDT</a>)</time>
+              </small>
+            
+          </div>
+
+          <div class="col-md-1 col-sm-3 col-xs-12 hidden-xs">
+            <a itemprop="url" href="https://www4.gotomeeting.com/register/773270591" class="btn btn-primary btn-xs pull-right">Register  for Free</a>
+          </div>
+
+          <div class="visible-xs col-xs-6">
+            <a itemprop="url" href="https://www4.gotomeeting.com/register/773270591" class="btn btn-primary btn-md">Register  for Free</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>If you are looking for a review of version control concepts, a tour of the GitHub platform, and workflows for optimal collaboration, this is the webinar for you. Discovery how easy it is to login, create and contribute to projects with just a web browser.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="panel panel-default free">
+      <div class="panel-body">
+
+
+        <a name="October-27-2014"></a>
+        <div class="row">
+          <div class="col-md-3 col-sm-4">
+            <a href="/classes/free">GitHub Review: GitHub Deployment Automation</a>
+            <a href="#October-27-2014"><span class="octicon octicon-link"></span></a>
+          </div>
+
+          <div class="col-md-4 visible-lg visible-md">
+            
+              <small>
+              Instructor
+              <a href="/trainers">Matthew McCullough</a>
+              </small>
+            
+          </div>
+
+          <div class="col-md-4 col-sm-5">
+            
+              <small>
+                <time itemprop="startDate" datetime="class.event_start_dates[forloop.first]">
+                  <strong><span class="day">October 27, 2014</span></strong>
+                </time>
+
+                <time>
+                  <span class="hour">09:00</span>
+                </time>
+                -
+                <time itemprop="endDate" datetime="class.event_end_dates[forloop.last]">10:00 (<a href="http://www.timeanddate.com/worldclock/difference.html?p1=224">PDT</a>)</time>
+              </small>
+            
+          </div>
+
+          <div class="col-md-1 col-sm-3 col-xs-12 hidden-xs">
+            <a itemprop="url" href="https://www4.gotomeeting.com/register/750769183" class="btn btn-primary btn-xs pull-right">Register  for Free</a>
+          </div>
+
+          <div class="visible-xs col-xs-6">
+            <a itemprop="url" href="https://www4.gotomeeting.com/register/750769183" class="btn btn-primary btn-md">Register  for Free</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+</div>
+
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <ul class="text-left">
+          <li>&copy; 2014 <span>GitHub</span>, Inc.</li>
+          <li><a href="https://github.com/site/terms">Terms</a></li>
+          <li><a href="https://training.github.com/kit/license.html">License</a></li>
+          <li><a href="https://github.com/security">Security</a></li>
+          <li><a href="https://training.github.com/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <a href="/"><span class="mega-octicon octicon-mark-github"></span></a>
+      </div>
+
+      <div class="col-md-5">
+        <ul class="text-right">
+          <li><a href="https://twitter.com/GitHubTraining"><span class="octicon octicon-mark-twitter"></span>githubtraining</a></li>
+          <li><a href="https://status.github.com">Status</a></li>
+          <li><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="https://github.com/about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+</html>

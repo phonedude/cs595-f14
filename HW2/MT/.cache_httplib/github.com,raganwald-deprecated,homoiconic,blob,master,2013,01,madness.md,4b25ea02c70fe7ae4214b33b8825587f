@@ -1,0 +1,33 @@
+status: 200
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: default-src *; script-src assets-cdn.github.com
+ www.google-analytics.com collector-cdn.github.com;
+ object-src assets-cdn.github.com;
+ style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com;
+ img-src 'self' data: assets-cdn.github.com identicons.github.com
+ www.google-analytics.com collector.githubapp.com *.githubusercontent.com
+ *.gravatar.com *.wp.com; media-src 'none';
+ frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com
+ player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com;
+ connect-src 'self' ghconduit.com:25035 live.github.com uploads.github.com
+ s3.amazonaws.com
+set-cookie: logged_in=no; domain=.github.com; path=/;
+ expires=Thu, 28-Sep-2034 15:44:17 GMT; secure; HttpOnly,
+ _gh_sess=eyJzZXNzaW9uX2lkIjoiNTAzYjIyMDA3MDdiZGYwY2QwYTNiYjI5MTMzMzk0YjIiLCJzcHlfcmVwbyI6InJhZ2Fud2FsZC1kZXByZWNhdGVkL2hvbW9pY29uaWMiLCJzcHlfcmVwb19hdCI6MTQxMTkxOTA1NiwiX2NzcmZfdG9rZW4iOiJIVjZvQm1aTS9VWC9MSUh5WWdkMEpiWHc2UkFkSCtZRVJwanVOc0NTczJjPSJ9--3a924809e8f573c985d11f5071d225f40b4d7070;
+ path=/; secure; HttpOnly
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: X-PJAX, Accept-Encoding
+server: GitHub.com
+cache-control: max-age=0, private, must-revalidate
+content-location: https://github.com/raganwald-deprecated/homoiconic/blob/master/2013/01/madness.md
+x-runtime: 0.065152
+x-served-by: 50b06cef3698e972f044d7dc2cb41530
+etag: "94f306dfb2b087342c96d6cbeff3b6c4"
+x-github-request-id: 47FBB1A2:76F4:13458D1:54282CD0
+date: Sun, 28 Sep 2014 15:44:17 GMT
+x-frame-options: deny
+content-type: text/html; charset=utf-8
+x-ua-compatible: IE=Edge,chrome=1
+-varied-accept-encoding: gzip, deflate
+

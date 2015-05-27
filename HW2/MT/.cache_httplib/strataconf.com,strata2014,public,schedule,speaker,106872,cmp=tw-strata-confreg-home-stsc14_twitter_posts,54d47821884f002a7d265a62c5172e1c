@@ -1,0 +1,1255 @@
+status: 200
+x-request-id: 4178c53ba42f51f32b663a54ce334ae7
+content-location: http://strataconf.com/strata2014/public/schedule/speaker/106872?cmp=tw-strata-confreg-home-stsc14_twitter_posts
+set-cookie: oreilly_enation_session=8a4b43eff5cb4d5e5f91cb639d629a1c; path=/;
+ HttpOnly
+x-powered-by: Phusion Passenger 4.0.45
+vary: Accept-Encoding
+content-length: 68898
+server: Apache/2.2.14 (Ubuntu)
+x-runtime: 0.301127
+-content-encoding: gzip
+x-ua-compatible: IE=Edge,chrome=1
+cache-control: max-age=0, private, must-revalidate
+date: Sun, 28 Sep 2014 08:46:40 GMT
+content-type: text/html; charset=utf-8
+x-rack-cache: miss
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://www.w3.org/2002/12/cal/hcal http://www.w3.org/2006/03/hcard">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"61e2f91637","applicationID":"349946","transactionName":"dAxbFxYNWlpXRBxEEFUPXABLEVVeV1JGWAAYEEUGBQlTRA==","queueTime":0,"applicationTime":247,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-460.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAIPV15ACwcJXVVU"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+	<!-- L:S content/theme/html_system_head  (0) -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  	<link href="/stylesheets/general.css?1411597258" media="screen" rel="stylesheet" type="text/css" />
+
+	<!-- controller_js -->
+	<script src="//cdn.oreillystatic.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="/javascripts/application.js?1411597258" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery_star_rating_pack.js?03" type="text/javascript"></script>
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.form.min.js" type="text/javascript"></script>
+	<!-- extra_external_javascript -->
+	
+	<!-- extra_styles -->
+  <link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/jquery.rating-3.14.css" media="screen" rel="stylesheet" type="text/css" />
+	<!-- extra_javascript -->
+	<script type="text/javascript">
+<!--
+
+      function survey_select_show_hide(what) {
+        var tid = $(what).attr("id") + "_other";
+        if ($(what).val() == "Other (please specify)") {
+          $("input#"+tid).show();
+          $("input#"+tid).focus();
+        } else {
+          $("input#"+tid).hide();
+        }
+      };
+      $(document).ready(function() {
+              $("div.en_rating_wrapper").each(function() {
+          $(this).find("input.en_rating").rating({
+            cancel: 'Remove rating'
+          });
+        });
+      $("input.en_other").each(function() {
+        $(this).keypress(function() {
+          var tid = $(this).attr("id").replace("_other", "");
+          var that = $("input#"+tid);
+          if (that.length > 0) {
+            $(that).attr("checked", "checked");
+          }
+        });
+      });
+      $("select.en_select_other").each(function () {
+        $(this).change(function() {
+          survey_select_show_hide(this);
+        });
+        survey_select_show_hide(this);
+      });
+
+      });
+      function init_eval_js() {
+              $("div.en_grade_buttons").each(function() {
+        $(this).find('input[name="evaluation[grade]"]').rating({
+          captionEl: $(this).parent().find("span.en_grade_label"),
+          cancelValue: ""
+        });
+        $(this).find("label").css("display", "none");
+      });
+
+              $("div.en_rating_wrapper").each(function() {
+          $(this).find("input.en_rating").rating({
+            cancel: 'Remove rating'
+          });
+        });
+      $("input.en_other").each(function() {
+        $(this).keypress(function() {
+          var tid = $(this).attr("id").replace("_other", "");
+          var that = $("input#"+tid);
+          if (that.length > 0) {
+            $(that).attr("checked", "checked");
+          }
+        });
+      });
+      $("select.en_select_other").each(function () {
+        $(this).change(function() {
+          survey_select_show_hide(this);
+        });
+        survey_select_show_hide(this);
+      });
+
+      }
+      
+      function loaded_eval_form(d, thelink) {
+        init_eval_js();
+        d.find('form').submit(function (){
+          $(this).ajaxSubmit({
+            success: function(data){
+              if (/en_eval_dialog_contents/.test(data)) {
+                d.html(data);
+                loaded_eval_form(d, thelink);
+              } else {
+                thelink.parent("div.en_detail_eval").
+                  html(data).
+                  find("a.en_eval_link").each(function() {
+                    
+    activate_reviewing_link($(this));
+                  });
+}
+var propid = thelink.attr('href').match(/\d+$/g); //get proposal ID
+$('div#en_grade_block_'+propid).hide();
+
+            }
+          });
+          $(this).find('input.en_eval_save').attr("disabled", "disabled").
+            after(' <img src="/images/loading.gif" alt="Saving" />');
+          return false;
+        });
+      }
+      
+      function run_eval_dialog(thelink) {
+        
+        var d = $('<div id="en_eval_dialog" class="en_eval_dialog" title="Evaluate session"></div>');
+        d.appendTo(thelink.parent()).load(thelink.attr("href"), function() {
+          loaded_eval_form(d, thelink);
+        });
+       thelink.css('display', 'none');
+
+      }
+      
+      function activate_reviewing_link(thelink) {
+        thelink.click(function() {
+          run_eval_dialog($(this));
+          return false;
+        });
+      }
+      
+      function activate_login_link(thelink) {
+        thelink.attr("href", thelink.attr("href")+"?eval="+thelink.attr('id').
+          replace('en_eval_link_', ''));
+      }
+      
+      $(document).ready(function (){
+        $('a.en_eval_link').each(function() {
+          activate_login_link($(this));
+        });
+      });
+
+//-->
+</script>	
+	<!-- theme_external_javascript -->
+	
+
+
+
+  <style>
+  .en_eval_link { vertical-align:top; }
+  </style>
+
+	<!-- L:E content/theme/html_system_head  (0) -->
+	<!-- L:S content/theme/html_head  (0) -->
+	<title>
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+Speaker: Jake Porway: Strata 2014 - O&#x27;Reilly Conferences, February 11 - 13, 2014, Santa Clara, CA
+
+</title>
+
+
+  <!-- content/head_extra -->
+
+
+
+<!--VWO-->
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+var _vwo_code=(function(){
+var account_id=27304,
+settings_tolerance=2000,
+library_tolerance=1500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+<!--metadata-->
+<meta property="og:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_og200x200.png" />
+<meta name="twitter:image" content="http://cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_og120x120.png?01" />
+<meta name="twitter:site" content="@strataconf" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" /> 
+
+
+
+
+<link rel="canonical" href="http://strataconf.com/strata2014/public/schedule/speaker/106872" />
+<meta property="og:url" name="twitter:url" content="http://strataconf.com/strata2014/public/schedule/speaker/106872" /> 
+<meta property="og:title" name="twitter:title" content="Jake Porway Is Speaking at Strata 2014" /> 
+<meta property="og:description" name="twitter:description" content="Jake Porway is a machine learning and technology enthusiast who loves nothing more than seeing good values in data.  He is the founder and executive director of DataKind, an organization that bring..." />
+
+
+
+
+
+
+<!-- Chartbeat Head -->
+<script type="text/javascript">
+<!--
+// js/charbeat_head
+var _sf_startpt=(new Date()).getTime()
+-->
+</script>
+        
+
+<link href="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/2014v1_min_css.css" media="screen" rel="Stylesheet" type="text/css" />
+  
+<link href="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_inside_refresh_min_css.css" media="screen" rel="Stylesheet" type="text/css" />
+       
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body, p, ol, ul, td { font-family: 'Open Sans', Arial, Verdana, Helvetica, sans-serif; font-size: small; }
+div#en_header { background: #fff; height: 207px; margin: 0; }
+/* for cross-links ribbon at top of page */
+div#strata_links { background-color: #000; padding: 5px 0; font-weight:bold; width:100%; text-align: right; font-size: 0.9em; line-height: 0.9em; color: #919191; text-transform: uppercase; box-shadow: none; position: relative; }
+div#strata_links a { color: #D3002D;}
+div#strata_links .current { color: #919191;}
+div#strata_links .current a { color: #919191;text-decoration: none;}
+div#strata_links .pending { color: #D3002D;}
+.branding_bar { background-color: #d3002d; width: 100%; }
+#logo { padding: 7px 0; }
+.event_logo { padding: 14px 0 0 0; display: inline-block; }
+.tagline_date_location { display: inline-block; margin: 47px 0 0 40px; float: none; font-size: 1.2em; text-transform: uppercase; }
+.tagline { color: #d3002d; font-weight: bold;  }
+div.date_location { color: #333; margin: 0; letter-spacing: 0; float: none; font-size: inherit; }
+div#top_level_nav { color: #333; margin-top: 20px; padding: 0; height: 30px; }
+div#top_level_nav ul#nav li { border-left: 1px solid #333; font-weight: bold; padding: 0 20px; }
+#nav_headlining.row { margin-top: 0; }
+#headlining > div.content_row { position: relative; }
+#widget-column { float: right; margin-top: 20px; }
+</style>
+
+
+
+
+
+
+
+
+
+<style>
+#sponsors_contacts.row { clear: both; }
+</style>
+
+
+
+
+<style>
+.wf-loading .typewriter {
+  font-family: Courier New;
+  color: rgba(0, 0, 0, 0); 
+}
+
+.wf-loading body, p, ol, ul, td { 
+  font-family: Arial, Verdana, Helvetica, sans-serif; 
+}
+ 
+.wf-active .typewriter {
+  font-family: 'oreilly-urw-typewriter-narro', Courier New;
+}
+
+.wf-active body, p, ol, ul, td { 
+  font-family: 'open-sans', Arial, Verdana, Helvetica, sans-serif;
+}
+</style>
+
+
+
+
+
+
+
+<style>
+.sold_out {background-color: #D3002D; padding: 2px 4px 2px; font-size: 11.049999999999999px; font-weight: bold; color: #FFF; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; width: 59px; float: right; margin: 2px 0; }
+.en_detail_tools .sold_out {float: left; }
+
+
+</style>
+
+
+
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/javascripts/supersleight-min.js"></script>
+  <![endif]-->
+
+
+
+
+
+<link rel="apple-touch-icon" href="//cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_iphone_icon.png" type="image/png" />
+<link rel="icon" type="image/png" href="//cdn.oreillystatic.com/en/assets/1/eventseries/23/strata_favicon.png">
+
+
+
+
+<meta name="description" content="Jake Porway is a machine learning and technology enthusiast who loves nothing more than seeing good values in data.  He is the founder and executive director of DataKind, an organization that brings together leading data scientists with high impact social organizations to better collect, analyze, and visualize data in the service of humanity.  Jake was most recently the data scientist in the New York Times R&amp;D lab and remains an active member of the data science community, bringing his technical experience from his past work with groups like NASA, DARPA, Google, and Bell Labs to bear on the social sector.  Jake&#x27;s work has been featured in leading academic journals and conferences (PAMI, ICCV), the Guardian, the Stanford Social Innovation Review, and he has been honored as a 2011 PopTech Social Innovation Fellow and a 2012 National Geographic Emerging Explorer.  He holds a B.S. in Computer Science from Columbia University and his M.S. and Ph.D. in Statistics from UCLA.  " />
+<meta name="Category" content="Conferences" />
+
+
+<meta name="search_date" content="2014-02-11" />
+
+
+<meta name="search-conf-name" content="Strata 2014" />
+
+
+
+
+
+
+<meta name="search-title" content="Jake Porway Is Speaking at Strata 2014"/>
+
+
+
+
+
+<!--for Google Webmaster Tools -->
+<meta name="verify-v1" content = "ejKlkisc2aaHXLk+37fMPNCfcsC5GdJYO2qoBXRRM7g=" />
+
+<!--
+<link rel="image_src" href="http://oreilly.com/images/oreilly/oreilly_large.gif" />
+-->
+
+
+<script type="text/javascript">
+window._umbel = window._umbel || [];
+(function()
+{ var u = document.createElement('script'); u.type = 'text/javascript'; u.async = true; u.src = document.location.protocol + '//tags.api.umbel.com/fnhibijmwrhmldyn/w.js?d=' + new Date().getMonth() + '' + new Date().getDate(); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(u, s); }
+
+)();
+</script>
+
+
+	<!-- L:E content/theme/html_head  (0) -->
+</head>
+<body class='en_c_schedule en_a_speaker' id='en_schedule_speaker'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visuallyhidden"><a href="#mid">Skip to main content</a></div>
+<div id="en_content" itemscope itemtype="http://data-vocabulary.org/Event"><!-- closed in after_main-->
+<meta itemprop="startDate" datetime="2014-02-11T00:00-00:00" content="February 11, 2014" />
+<meta itemprop="endDate" datetime="2014-02-13T00:00-00:00" content="February 13, 2014"/>
+<meta itemprop="location" content="Santa Clara, CA" />
+<meta itemprop="summary" content="Speaker: Jake Porway - Strata 2014" />
+
+<div id="en_main_parts"><!-- closed in after_main -->      
+       
+  <div id="en_header">
+      <div id="strata_links">
+          <div class="content_row">
+            Strata Conference:&nbsp;&nbsp;<span class="current">California</span>&nbsp; &bull; &nbsp;<a href="http://strataconf.com/ny">New York</a>&nbsp; &bull; &nbsp;<a href="http://strataconf.com/eu">Europe</a>  
+          </div>          
+        </div>
+      <div class="branding_bar">
+      <div class="content_row">
+        <a href="http://oreilly.com"><img id="logo" src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/oreilly_branding_bar_transparent_logo.png" alt="O'Reilly Media, Inc" width="99" height="18" border="0" /></a></div><!-- div.content_row -->
+    </div><!-- div.branding_bar -->
+    <div id="inside_header" class="row">
+      <div class="content_row">
+        <div class="event_logo"><a href="/strata2014"><img src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_refresh_logo.png" width="288" height="84" alt="O'Reilly Strata Conference" border="0"></a></div>
+        <div class="tagline_date_location">
+          <div class="tagline">Making Data Work</div>
+          <div class="date_location">February 11&ndash;13, 2014 &bull; Santa Clara, CA</div>
+        </div><!--div.date_location-->
+        <div id="top_level_nav">
+          <ul id="nav" class="superfish">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="/strata2014/public/schedule/grid/public" class="level_one">Program</a>
+  <ul class="level_two">	
+        <li><a href="/strata2014/public/schedule/grid/public">Schedule</a></li>
+        <li><a href="/strata2014/public/schedule/stype/tutorial" class="level_two">Tutorials</a></li>
+         <li><a href="/strata2014/public/content/data-driven-business" class="level_two">Data Driven Business Day</a></li>
+	<li><a href="/strata2014/public/content/hardcore-data-science" class="level_two">Hardcore Data Science</a></li>
+	<li>
+    	<a class="level_two">Sessions by Track</a>
+        <ul class="level_three">
+            <li><a href="/strata2014/public/schedule/topic/1069" class="level_two">Connected World</a></li>
+            <li><a href="/strata2014/public/schedule/topic/1044" class="level_two">Data Science</a></li>
+	    <li><a href="/strata2014/public/schedule/topic/1106" class="level_two">Data in Action</a></li>
+	    <li><a href="/strata2014/public/schedule/topic/1067" class="level_two">Design</a></li>
+            <li><a href="/strata2014/public/schedule/topic/1045" class="level_two">Ethics, Privacy, &amp; Policy</a></li>
+            <li><a href="/strata2014/public/schedule/topic/1107" class="level_two">Hadoop and Beyond</a></li>
+            <li><a href="/strata2014/public/schedule/topic/1062" class="level_two">Machine Data</a></li>
+            <li><a href="/strata2014/public/schedule/topic/1137" class="level_two">Sponsored Sessions</a></li>
+            
+            
+        </ul>
+    </li>	
+
+        <li><a href="/strata2014/public/schedule/stype/keynote" class="level_two">Keynote Speakers</a></li>
+	<li><a href="/strata2014/public/schedule/speakers" class="level_two">All Speakers</a></li>
+        <li><a href="/strata2014/public/schedule/stype/event" class="level_two">Events</a>
+               <ul class="level_three">
+            <li><a href="/strata2014/public/schedule/stype/event" class="level_two">All Events</a></li>
+            <li><a href="/strata2014/public/schedule/detail/33474" class="level_two">Startup Showcase</a></li>
+	    <li><a href="/strata2014/public/content/office-hours" class="level_two">Office Hours</a></li>
+            <li><a href="/strata2014/public/content/author-signings" class="level_two">Author Signings</a></li>
+              </ul>
+        </li>
+        
+        
+  	
+    <li><a href="/strata2014/public/schedule/proceedings" class="level_two">Speaker Slides &amp; Video</a></li>
+	<li><a href="/strata2014/public/content/onsite" class="level_two">Onsite Information</a></li>
+
+  </ul>
+</li>
+
+<li><a href="/strata2014/public/content/video" class="level_one">Video</a></li>
+
+<li><a href="/strata2014/public/content/sponsors" class="level_one">Sponsors</a>
+  <ul class="level_two">
+    <li><a href="/strata2014/public/content/sponsors" class="level_two">Sponsors</a></li>
+    <li><a href="/strata2014/public/content/exhibitors" class="level_two">Exhibitors</a></li>
+    
+    <li><a href="/strata2014/public/content/media-partners" class="level_two">Media Partners</a></li>
+    <li><a href="/strata2014/public/content/exhibitor-resource-center" class="level_two">Exhibitor Resource Center</a></li>
+  </ul>
+</li>
+<li><a href="/strata2014/public/content/contact" class="level_one">Connect</a>
+  <ul class="level_two">
+    <li><a href="/strata2014/public/content/contact" class="level_two">Contact Us</a></li>
+    <li class="title"><a class="level_two title">External Links</a></li>
+    <li><a href="http://strata.oreilly.com/?intcmp=il-strata-stny13-homepage-link" target="_blank">Data Blog</a></li>
+    <!--li><a href="http://oreilly.com/webcasts/data/index.html?intcmp=il-strata-stca14-homepage-link" target="_blank">Strata Data Webcasts</a></li-->
+  </ul>
+</li>
+
+<li><a href="/strata2014/public/content/about" class="level_one">About</a>
+  <ul class="level_two">
+    <li><a href="/strata2014/public/content/about" class="level_two">About Strata</a></li>
+     
+    <li><a href="/strata2014/public/content/all-access" class="level_two">All-Access Pass</a></li>
+    <li><a href="/strata2014/public/content/hotel" class="level_two">Venue, Hotel &amp; Travel</a></li>
+     
+    <li class="title"><a class="level_two title">External Links</a></li>
+     <li><a href="/strata2013" class="level_two" target="_blank">Strata 2013</a></li>
+   
+    <li><a href="http://oreilly.com/conferences/diversity.html" class="level_two" target="_blank">Conference Diversity</a></li>
+    <li><a href="http://oreilly.com/conferences/code-of-conduct.html" class="level_two" target="_blank">Code of Conduct</a></li>
+  </ul>
+</li>
+
+
+<li><a href="/strata2014/user/account" class="level_one">Your Account</a>
+    <ul class="level_two">
+        <li><a href="/strata2014/user/account" class="level_two">Log in</a></li>
+    
+        <li><a href="/strata2014/public/content/attendee-directory" class="level_two">Attendee Directory</a></li>
+    
+    </ul>
+</li>
+</ul>
+          </div><!--div#top_level_nav-->
+      <hr />
+      </div>  <!-- div.content_row -->
+    </div><!-- div#inside_header -->
+    
+  </div><!-- //en_header -->
+     
+  <div id="en_body">
+    <div id="en_main">
+    <div id="mid">
+    
+    
+	<div class="en_user_photo">
+		<img alt="Jake Porway" height="100" src="http://cdn.oreillystatic.com/en/assets/1/eventprovider/1/_@user_106872.jpg" width="75" />
+	</div>
+
+<div class="vcard">
+	<h1 class="fn">Jake Porway
+			<br /><span class="info">Data Scientist, DataKind</span>
+		</h1>
+
+	<div id="en_schedule_speaker">
+
+		<div class="en_speaker_bio note">
+		<p>
+						
+			<a href="http://datakind.org/aboutus" class="url" target="_blank">Website</a> | <a href="http://twitter.com/jakeporway" target="_blank">@jakeporway</a>
+
+
+ | <a href="/strata2014/profile/106872">Attendee Directory Profile</a>
+		</p>
+			<p>Jake Porway is a machine learning and technology enthusiast who loves nothing more than seeing good values in data.  He is the founder and executive director of DataKind, an organization that brings together leading data scientists with high impact social organizations to better collect, analyze, and visualize data in the service of humanity.  Jake was most recently the data scientist in the New York Times R&amp;D lab and remains an active member of the data science community, bringing his technical experience from his past work with groups like <span class="caps">NASA</span>, <span class="caps">DARPA</span>, Google, and Bell Labs to bear on the social sector.  Jake&#8217;s work has been featured in leading academic journals and conferences (<span class="caps">PAMI</span>, <span class="caps">ICCV</span>), the Guardian, the Stanford Social Innovation Review, and he has been honored as a 2011 PopTech Social Innovation Fellow and a 2012 National Geographic Emerging Explorer.  He holds a B.S. in Computer Science from Columbia University and his M.S. and Ph.D. in Statistics from <span class="caps">UCLA</span>.</p>
+		</div>
+
+		<h3>Sessions</h3>
+		
+		<div class="en_session vevent">
+		  <div class="session_time">
+	
+	<a href="/strata2014/public/schedule/full#s2014-02-13-14:20">2:20pm</a>
+	<a href="/strata2014/public/schedule/grid/2014-02-13">Thursday, 02/13/2014</a>
+	
+</div>
+
+		  
+    
+<div class="en_session_title summary">
+     
+	<a href="/strata2014/public/schedule/detail/33169" class="url uid"
+	name="session33169">Data for Good</a>
+    
+</div>
+
+<div class="en_session_roominfo">
+
+	
+	  <span class="en_session_topics category">
+		
+			<a href="/strata2014/public/schedule/topic/Ethics,%20Policy,%20and%20Privacy">Ethics, Policy, and Privacy</a>
+		
+	  </span>
+	
+<br />
+
+
+	<span class="en_session_room location">Ballroom E</span>
+	<span class="uf_timing">
+		 <abbr class="dtstart dtstamp" title="20140213T1420"></abbr>
+		 <abbr class="dtend" title="20140213T1500"></abbr>
+	</span>
+	
+
+
+
+
+</div>
+
+<div class="en_session_speakers">
+    
+	    
+	
+<div class="moderated_by">Moderated by:</div>
+		<a href="/strata2014/public/schedule/speaker/106872">Jake Porway</a> (DataKind)<div class="panelists">Panelists:</div>
+	    
+	
+
+		<a href="/strata2014/public/schedule/speaker/104414">Drew Conway</a> (IA Ventures), 
+	    
+	
+
+		<a href="/strata2014/public/schedule/speaker/151391">Rayid Ghani</a> (Edgeflip | University of Chicago ), 
+	    
+	
+
+		<a href="/strata2014/public/schedule/speaker/172999">Elena Eneva</a> (Accenture)
+	
+
+
+
+    
+
+</div>
+<div class="en_grade_block" id="en_grade_block_33169" style="border:none;">
+
+<div class="en_grade_average" style="padding:0;display:inline;float:none;margin:0;vertical-align:top;">Average rating: 
+<img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-on.gif" class="en_rating_on" height="16" width="16" alt="*" /><img src="/images/rating-off.gif"  class="en_rating_off" height="16" width="16" alt="." />
+<div class="en_grade_average_detail" style="display:inline;vertical-align:top;">(4.75, 8 ratings)</div>
+</div>
+<script>
+var rounded_grade = Math.round(4.75);
+var num_stars = $('div#en_grade_block_33169 img.en_rating_on').length;
+if (rounded_grade !== num_stars) { //find last filled star and fill the next one
+  var star_to_fill = $('div#en_grade_block_33169 img.en_rating_off').first();
+  star_to_fill.attr('src', '/images/rating-on.gif');
+  star_to_fill.addClass('en_rating_on').removeClass('en_rating_off');
+  star_to_fill.attr('alt', '*');
+}
+</script>
+
+
+
+	
+
+</div>
+<div class="en_detail_eval" id="en_detail_eval_33169" style="vertical-align:top;">
+
+</div>
+<div class="en_session_description description">
+	In this session, Edgeflip and Data Science for the Social Good’s Rayid Ghani, IA Ventures Scientist-in-residence and Datakind co-founder Drew Conway, and Datakind co-founder and executive director Jake Porway look at where data is making a difference today, what it promises tomorrow, and what’s holding it back.
+	<span class="en_read_more">
+              
+		<a href="/strata2014/public/schedule/detail/33169">Read more</a>.
+            
+	</span>
+</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+
+</div><!-- #mid -->
+
+    
+          
+            <style>#sponsors_contacts.row { border-top: 2px solid #cacaca; }</style>
+          
+
+        <style>
+#sponsor_title { background: #cacaca url(//cdn.oreillystatic.com/en/assets/1/eventprovider/1/sponsors_vertical.gif) 97% center no-repeat; }
+</style>
+<div id="sponsors_contacts" class="row">
+<div id="sponsor_container">
+<div id="sponsor_title">&nbsp;</div>
+<!--sponsors title image-->
+<div class="spacer">&nbsp;</div>
+<div id="sponsors">
+
+
+
+
+<div class="big_sponsor_level">Elite Sponsor</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.microsoft.com/bigdata" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/microsoft150.jpg" data-img-alt="Microsoft" data-img-width="150">Microsoft</a></li><li><a href="http://gopivotal.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/pivotal150.jpg" data-img-alt="Pivotal" data-img-width="150">Pivotal</a></li></ul>
+
+<div class="big_sponsor_level">Strategic Sponsors</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.cloudera.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/cloudera150.gif" data-img-alt="Cloudera" data-img-width="150">Cloudera</a></li><li><a href="http://www.ibm.com/us/en/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/ibm150.gif" data-img-alt="IBM" data-img-width="150">IBM</a></li><li><a href="http://hadoop.intel.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/intel150.jpg" data-img-alt="Intel" data-img-width="150">Intel</a></li><li><a href="http://www.mapr.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/mapr_150.gif" data-img-alt="MapR Technologies" data-img-width="150">MapR Technologies</a></li><li><a href="http://www.sap.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/sap150.jpg" data-img-alt="SAP" data-img-width="150">SAP</a></li></ul>
+
+<div class="big_sponsor_level">Zettabyte Sponsors</div>
+<ul class="sponsor_listings">
+<li><a href="http://www.memsql.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/memsql150.gif" data-img-alt="MemSQL" data-img-width="150">MemSQL</a></li><li><a href="http://www.sas.com/en_us/software/hadoop-big-data.html" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/sas150.gif" data-img-alt="SAS" data-img-width="150">SAS</a></li><li><a href="http://www.teradata.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/teradata150.gif" data-img-alt="Teradata" data-img-width="150">Teradata</a></li></ul>
+
+<div class="sponsor_list_heading">Contributing Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.accenture.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/accenture_new.jpg" data-img-alt="Accenture" data-img-width="120" data-img-height="35">Accenture</a></li><li><a href="http://www.actian.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/actian.gif" data-img-alt="Actian" data-img-width="120" data-img-height="40">Actian</a></li><li><a href="http://www.pentahobigdata.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/pentaho_new2.gif" data-img-alt="Pentaho" data-img-width="120" data-img-height="32">Pentaho</a></li><li><a href="http://www.wandisco.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/wandisco_2.gif" data-img-alt="WANdisco" data-img-width="120" data-img-height="13">WANdisco</a></li><li><a href="http://www.yarcdata.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/yarcdata.gif" data-img-alt="YarcData" data-img-width="120" data-img-height="24">YarcData</a></li></ul>
+
+<div class="sponsor_list_heading">Exabyte Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.alpinedatalabs.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/apline.gif" data-img-alt="Alpine Data Labs" data-img-width="120" data-img-height="46">Alpine Data Labs</a></li><li><a href="http://www.amazon.com/gp/jobs/ref=j_sq_btn?jobSearchKeywords=248686&category=*&location=*&x=0&y=0" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/amazon-1.gif" data-img-alt="Amazon" data-img-width="120" data-img-height="37">Amazon</a></li><li><a href="http://www.centurylinktechnology.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/centurylink.gif" data-img-alt="CenturyLink Technology Solutions" data-img-width="120" data-img-height="31">CenturyLink Technology Solutions</a></li><li><a href="http://www.clustrix.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/clustrix-1.gif" data-img-alt="Clustrix" data-img-width="120" data-img-height="25">Clustrix</a></li><li><a href="http://www.hortonworks.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/hortonworks.gif" data-img-alt="Hortonworks" data-img-width="120" data-img-height="47">Hortonworks</a></li><li><a href="http://www8.hp.com/us/en/software-solutions/big-data-platform-haven.html?jumpid=va_r11374_us/en/large/eb/go_HAVEn" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/hp_haven.gif" data-img-alt="HP" data-img-width="150" data-img-height="50">HP</a></li><li><a href="http://www.infinidb.co" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/infiniDB.gif" data-img-alt="InfiniDB" data-img-width="120" data-img-height="28">InfiniDB</a></li><li><a href="http://www.marklogic.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/marklogic.gif" data-img-alt="MarkLogic" data-img-width="120" data-img-height="24">MarkLogic</a></li><li><a href="http://www.platfora.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/platfora-3.gif" data-img-alt="Platfora" data-img-width="120" data-img-height="77">Platfora</a></li><li><a href="http://www.rackspace.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/rackspace.gif" data-img-alt="Rackspace Hosting" data-img-width="120" data-img-height="35">Rackspace Hosting</a></li><li><a href="http://www.softlayer.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/softlayer-ibm.gif" data-img-alt="SoftLayer, an IBM Company" data-img-width="120" data-img-height="21">SoftLayer, an IBM Company</a></li><li><a href="http://www.splunk.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/splunk-1.gif" data-img-alt="Splunk" data-img-width="120" data-img-height="36">Splunk</a></li><li><a href="http://www.tibco.com/products/analytics/default.jsp" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/tibco.gif" data-img-alt="TIBCO Software Inc." data-img-width="120" data-img-height="32">TIBCO Software Inc.</a></li><li><a href="http://wso2.com/landing/strata-2014" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/ws02.gif" data-img-alt="WSO2" data-img-width="120" data-img-height="46">WSO2</a></li></ul>
+
+<div class="sponsor_list_heading">Terabyte Sponsor</div>
+<ul class="plain sponsorList"><li><a href="http://vmware.com/bde" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/vmware_2.gif" data-img-alt="VMware" data-img-width="120" data-img-height="20">VMware</a></li></ul>
+
+<div class="sponsor_list_heading">Gigabyte Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.citusdata.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/citusdata-1.gif" data-img-alt="Citus Data" data-img-width="120" data-img-height="32">Citus Data</a></li><li><a href="http://www.paxata.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/paxata.gif" data-img-alt="Paxata" data-img-width="120" data-img-height="98">Paxata</a></li><li><a href="http://www.trifacta.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/trifacta2.gif" data-img-alt="Trifacta" data-img-width="120" data-img-height="62">Trifacta</a></li></ul>
+
+<div class="sponsor_list_heading">Impact Sponsors</div>
+<ul class="plain sponsorList"><li><a href="http://www.atigeo.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/atigeo.gif" data-img-alt="Atigeo" data-img-width="120" data-img-height="32">Atigeo</a></li><li><a href="http://www.basho.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/basho.gif" data-img-alt="Basho Technologies" data-img-width="98" data-img-height="100">Basho Technologies</a></li><li><a href="http://www.microstrategy.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/microstrategy-1.gif" data-img-alt="MicroStrategy" data-img-width="120" data-img-height="20">MicroStrategy</a></li><li><a href="http://www.syncsort.com/" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/syncsort_2.gif" data-img-alt="Syncsort" data-img-width="120" data-img-height="30">Syncsort</a></li><li><a href="http://www.treasure-data.com" target="_blank" data-defer="view" data-img-src="//cdn.oreillystatic.com/conferences/images/logos/treasure.gif" data-img-alt="Treasure Data" data-img-width="120" data-img-height="12">Treasure Data</a></li></ul>
+
+
+
+</div>
+<div id="contacts">
+<div>
+<h3>Sponsorship Opportunities</h3>
+<p>For exhibition and sponsorship opportunities, contact Susan Stewart at&nbsp;<a href="mailto:sstewart@oreilly.com">sstewart@oreilly.com</a></p>
+</div>
+<div>
+<h3>Partner Opportunities</h3>
+<p>For information on trade opportunities with O'Reilly conferences, email&nbsp;<a href="mailto:partners@oreilly.com">partners@oreilly.com</a></p>
+</div>
+<div>
+<h3>Press and Media</h3>
+<p>For media-related inquiries, contact Maureen Jennings at <a href="mailto:maureen@oreilly.com">maureen@oreilly.com</a></p>
+</div>
+<div>
+<h3>Contact Us</h3>
+<p>View a complete list of <a href="/strata2014/public/content/contact">Strata contacts</a></p>
+</div>
+</div><!-- /contacts -->
+</div><!-- /#sponsor_container -->
+</div><!--div#sponsors_contacts-->
+    
+
+    </div><!-- en_main -->
+        
+            
+
+        
+            <div id="en_footerwrap">
+                <div id="en_footer">
+                    <!-- after_main -->
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+    div.banner_ad a[data-defer="random"] { display: none; }
+</style>
+
+<div class="banner_ad" id="banner_location_16">
+   
+
+
+
+<div class="banners">
+<a href="http://www.actian.com" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_actian_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Actian - Strata 2014">Actian - Strata 2014</a>
+<a href="http://alpinenow.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_alpine_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Alpine - Strata 2014">Alpine - Strata 2014</a>
+<a href="http://aws.amazon.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_aws_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Amazon - Strata 2014">Amazon - Strata 2014</a>
+<a href="http://www.analystone.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_analystone_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="Analyst One - Strata 2014">Analyst One - Strata 2014</a>
+<a href="http://atigeo.com/strataconf/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_atigeo_banner.gif" data-img-width="728" data-img-height="90" data-img-alt="Atigeo - Strata 2014">Atigeo - Strata 2014</a>
+<a href="http://bigdata-startups.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_bigdata_startup_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="BigData Startups - Strata 2014">BigData Startups - Strata 2014</a>
+<a href="http://www.centurylinktechnology.com/big-data" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_centurylink_banner.png" data-img-width="728" data-img-height="90" data-img-alt="CenturyLink - Strata 2014">CenturyLink - Strata 2014</a>
+<a href="http://www.ctovision.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_ctovision_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="CTOvision - Strata 2014">CTOvision - Strata 2014</a>
+<a href="http://tci.taborcommunications.com/SlicingBigData" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_datanami_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="datanami - Strata 2014">datanami - Strata 2014</a>
+<a href="http://www.vertica.com/strata2014" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_hp_banner.png" data-img-width="728" data-img-height="90" data-img-alt="HP Vertica - Strata 2014">HP Vertica - Strata 2014</a>
+<a href="http://www-01.ibm.com/software/data/bigdata/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_ibm_banner.png" data-img-width="728" data-img-height="90" data-img-alt="IBM - Strata 2014">IBM - Strata 2014</a>
+<a href="http://bigdata.infochimps.com/infochimps-platform-technical-overview/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_TechWP_infochimps_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="Infochimps - Strata 2014">Infochimps - Strata 2014</a>
+<a href="http://hadoop.intel.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_intel_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Intel - Strata 2014">Intel - Strata 2014</a>
+<a href="http://www.kdnuggets.com/2013/12/top-news-2013.html?st14" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_kdnuggets_banner.png" data-img-width="728" data-img-height="90" data-img-alt="kdnuggets - Strata 2014">kdnuggets - Strata 2014</a>
+<a href="http://www.mapr.com/hadoopbuyersguide" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_map4_banner.png" data-img-width="728" data-img-height="90" data-img-alt="MapR - Strata 2014">MapR - Strata 2014</a>
+<a href="http://www.marklogic.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_marklogic_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="MarkLogic - Strata 2014">MarkLogic - Strata 2014</a>
+<a href="http://www.memsql.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_memSQL_banner.png" data-img-width="728" data-img-height="90" data-img-alt="MemSQL - Strata 2014">MemSQL - Strata 2014</a>
+<a href="http://www.windowsazure.com/en-us/services/hdinsight/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_microsoft_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="Microsoft - Strata 2014">Microsoft - Strata 2014</a>
+<a href="http://www.microstrategy.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_microstrategy_banner.png" data-img-width="728" data-img-height="90" data-img-alt="MicroStrategy - Strata 2014">MicroStrategy - Strata 2014</a>
+<a href="http://www.nosqlweekly.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_nosql_weekly_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="NoSQL Weekly - Strata 2014">NoSQL Weekly - Strata 2014</a>
+<a href="http://www.pentaho.com/bring-your-big-data-to-life" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_pentaho_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Pentaho - Strata 2014">Pentaho - Strata 2014</a>
+<a href="http://www.rackspace.com/big-data/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_rackspace_banner.png" data-img-width="728" data-img-height="91" data-img-alt="Rackspace - Strata 2014">Rackspace - Strata 2014</a>
+<a href="http://www.sap.com/bigdata" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_sap_banner.gif" data-img-width="728" data-img-height="90" data-img-alt="SAP - Strata 2014">SAP - Strata 2014</a>
+<a href="http://www.sas.com/apps/sim/redirect.jsp?detail=SIM119003-18670" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_sas_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="sas - Strata 2014">sas - Strata 2014</a>
+<a href="http://www.softlayer.com" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_softlayer_banner.png" data-img-width="728" data-img-height="90" data-img-alt="SoftLayer - Strata 2014">SoftLayer - Strata 2014</a>
+<a href="http://bit.ly/1fWCIFT" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_syncsort_banner.png" data-img-width="728" data-img-height="90" data-img-alt="syncsort - Strata 2014">syncsort - Strata 2014</a>
+<a href="http://www.teradata.com/stratabanner?" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_teradata_banner.png" data-img-width="728" data-img-height="90" data-img-alt="Teradata - Strata 2014">Teradata - Strata 2014</a>
+<a href="http://inside-bigdata.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_insidebigdata_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="Teradata - Strata 2014">Teradata - Strata 2014</a>
+<a href="http://www.wandisco.com/" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_wandisco_banner.jpg" data-img-width="728" data-img-height="90" data-img-alt="WANdisco - Strata 2014">WANdisco - Strata 2014</a>
+<a href="http://wso2.com/landing/strata-2014" target="_blank" data-defer="random" data-img-src="//cdn.oreillystatic.com/en/assets/1/event/105/strata2014_wso2_banner.png" data-img-width="728" data-img-height="90" data-img-alt="wso2 - Strata 2014">wso2 - Strata 2014</a>
+</div>
+
+
+</div> <!-- .banner_ad -->
+
+
+<script language="javascript" type="text/javascript">
+<!--
+    // Initialize Banners
+    $( function () {
+            $( "div.banner_ad" ).each( function ( i, e ) {
+                    var banners = new Array();
+                    $( e ).find( 'a[data-defer="random"]' ).each( function( i0, e0 ) {
+                            banners.push( $( e0 ) );
+                        });
+                    
+                    var b = banners[ Math.floor( Math.random() * banners.length ) ];
+                    var i = $( "<img />" );
+                    i.load( function() { b.html( i ); b.fadeIn( 1000 ); } );
+                    i.attr( "src", b.attr( "data-img-src" ) );
+                    i.attr( "alt", b.attr( "data-img-alt" ) );
+                });
+        });
+//-->
+</script>
+
+<div id="footer_logo">
+     
+    
+	<div class="copyright">
+		&copy;2014, O'Reilly Media, Inc.<br />(800) 889-8969 or (707) 827-7019 <br />Monday-Friday 7:30am-5pm PT<br /> All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.<br />
+<a href="mailto:conf-webmaster@oreilly.com" class="webmaster">conf-webmaster@oreilly.com</a>
+	</div>
+</div> <!-- div#footer_logo-->
+<div class="footercol">
+    <ul>
+        <li><strong>Strata Conference</strong></li>
+        <li><a href="/strata2014/public/content/about">About</a></li>
+
+
+        <li><a href="http://strataconf.com">More Strata Events</a></li>
+        <li><a href="http://oreilly.com/conferences/diversity.html" target="_blank">Diversity</a></li>
+        <li><a href="http://oreilly.com/conferences/code-of-conduct.html" target="_blank">Code of Conduct</a></li>
+        <li><a href="/strata2014/public/content/sitemap">Sitemap</a></li>
+        <li><a href="http://oreilly.com/oreilly/privacy.html" target="_blank">Privacy Policy</a></li>
+    </ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>Stay Connected</strong></li>
+  <li><a href="/strata2014/public/content/contact">Contact Us</a></li>
+  <li><a href="http://elists.oreilly.com/" target="_blank">Strata Bulletin</a></li>
+  <li><a href="http://strata.oreilly.com/?intcmp=il-strata-stca14-homepage-link" target="_blank">Strata News &amp; Commentary</a></li> 
+  <li><a href="http://oreilly.com/webcasts/data/index.html?intcmp=il-strata-stca14-homepage-link" target="_blank">Strata Data Webcasts</a></li>
+  <li><a href="http://twitter.com/strataconf" target="_blank">Twitter</a></li>
+  <li><a href="http://strataconf.com/go/strata_fb" target="_blank">Facebook</a></li>
+  <li><a href="https://plus.google.com/u/0/108539139864366919600/posts" target="_blank">Google+</a></li>
+  <li><a href="http://strataconf.com/go/strata_li" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>More O'Reilly Sites</strong></li>
+  <li><a href="http://conferences.oreilly.com" target="_blank">O'Reilly Conferences</a></li>
+  <li><a href="http://oreilly.com" target="_blank">oreilly.com</a></li>
+  <li><a href="http://radar.oreilly.com" target="_blank">O'Reilly Radar</a></li>
+  <li><a href="http://oreilly.com/videos/" target="_blank">O'Reilly Video</a></li>
+  <li><a href="http://answers.oreilly.com/" target="_blank">O'Reilly Answers</a></li>
+  <li><a href="http://oreilly.com/webcasts/" target="_blank">O'Reilly Webcasts</a></li>
+  <li><a href="http://oreillyschool.com/" target="_blank">School of Technology</a></li>
+  <li><a href="http://igniteshow.com" target="_blank">Ignite</a></li>
+</ul>
+</div>  
+                </div>
+            </div>
+        </div><!-- div#en_body -->
+    </div><!-- en_main_parts -->
+    
+    
+</div><!-- en_content -->
+
+
+
+
+<script type="text/javascript">
+$(function() {
+
+
+
+
+
+
+
+
+
+
+
+});
+</script>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function () {
+
+  /* init nav */
+  $("#top_level_nav #nav").superfish();
+
+  /* accordian mainly used on speaker resources */
+  $(".accordion .module h2").accordion({clickTitle: 'h2', slideTime: '30'});
+  
+  /* make links with class=external open up external */
+  $("a.external").click(function (e) {
+    e.preventDefault();
+    window.open($(this).attr("href"));
+  });
+
+  $('#stay_informed iframe').attr('src', 'http://oreilly.com/conferences/bulletin_form.html?conference=strata&locationSource=strata14_ca_widget&colorLink=d3002d&colorText=eee'); 
+ 
+         $('div.stay_connected a.chicklet').css({'background-color': '#000', 'background-image': 'url(//cdn.oreillystatic.com/conferences/velocity/assets2012/social-buttons/social.png)', 'background-repeat': 'no-repeat'});
+         $('#sponsor_title').css('background', '#cacaca url(//cdn.oreillystatic.com/en/assets/1/eventprovider/1/sponsors_vertical.gif) 97% center no-repeat');
+
+
+    
+
+    
+});    
+</script>
+
+
+<!--lazy load images -->
+<script type="text/javascript" charset="utf-8">
+	( function( $ ) {
+		if ( typeof $.proxy == 'undefined' ) {
+			$.proxy = function( callback, context ) {
+				var proxy = function() {
+					callback.apply( context, arguments );
+				}
+			
+				return proxy;
+			};
+		}
+		
+		var vController = function() {
+			this.init();
+		};
+		
+		vController.prototype = {
+			init: function() {
+				var that = this;
+				var s = $( '[data-defer="view"]' );
+			
+				s.each( function() {
+					var t = $( this ), p = t.parent(), w = Number( t.attr( "data-img-width" ) ), h = Number( t.attr( "data-img-height" ) );
+					p.css( { width: w, height: h } );
+				});
+			
+				this.objs = [];
+				var w = $( window ), top = w.scrollTop(), bottom = top + w.height(), i;
+				
+				s.each( function() {
+					var t = $( this ), p = t.parent(), off = p.offset();
+					var o = {
+						a: t,
+						p: p,
+						top: off.top,
+						bottom: off.top + p.innerHeight()
+					};
+					
+					if ( o.top < bottom && o.bottom > top ) {
+						that.load( o );
+					}
+					else {
+						that.objs.push( o );
+					}
+				});
+				
+				$( window ).scroll( $.proxy( this.scroll, this ) );
+			},
+			
+			scroll: function() {
+				var w = $( window ), top = w.scrollTop(), bottom = top + w.height(), i;
+				
+				for ( i = this.objs.length - 1; i >= 0; i-- ) {
+					if ( this.objs[i].top < bottom ) {
+						this.load( this.objs[i] );
+					}
+				}
+			},
+			
+			load: function( o ) {
+				var t = o.a;
+				var c = $( "<img />" );
+				var f = function() { t.html( c ); };
+			
+				c.load( f );
+				c.attr( "src", t.attr( "data-img-src" ) );
+				c.attr( "alt", t.attr( "data-img-alt" ) );
+				c.attr( "border", 0 );
+			}
+		};
+		
+		$( function() {
+			var vC = new vController();
+			
+		})
+	}) ( jQuery );
+</script>
+
+<!-- effects -->
+<script src="//cdn.oreillystatic.com/en/assets/1/eventprovider/1/scripts_functions2013.js?01" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+  (function() {
+    document.getElementsByTagName("html")[0].setAttribute("class","wf-loading")
+    document.getElementsByTagName("html")[0].setAttribute("className","wf-loading") // for IE
+    var config = {
+      kitId: 'bmj2nsh',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//fonts.oreillystatic.com/'+config.kitId+'.js';tk.type="text/javascript";tk.async="false";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+<!-- site catalyst -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var localScAcct = "orstratasc"; 
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--//
+ /* Specify the Report Suite ID(s) to track here */ 
+/* localScAcct is specified in content/scripts/sitecatalyst_cfg */
+//var globalScAcct = "ororeillyglobaldev";
+var globalScAcct = "orglobal";
+
+var s_account = localScAcct + "," + globalScAcct;
+/*s_code.js must be called via the current protocol to avoid mixed content warnings */
+var s_code_protocol;
+var s_code_url = "cdn.oreillystatic.com/assets/js/s_code.js";
+if (window.location.protocol == "https:"){
+document.write('<script id="s_code_script" type="text/javascript" src="https://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' + '/script>');
+}else{
+document.write('<script id="s_code_script" type="text/javascript" src="http://' + 'cdn.oreillystatic.com/assets/js/s_code.js' + '"><' +'/script>');
+}
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var myChannel, myPageName, myTitle, mySeries, myEvent, myEventTitle, mySection, mySection2, mySection3, myLoggedStatus,myEventPhase,localScAcct,myPubDate,mySystemPageType;
+
+if(typeof(myTitleAppend) == 'undefined')
+var myTitleAppend = "";
+else myTitleAppend = ": " + myTitleAppend;
+
+myChannel = "confs";
+
+myTitle       = "speaker: jake porway" + myTitleAppend;
+
+
+mySection   = new Array(myChannel);
+mySeries = "strata";
+
+mySection.push(mySeries);
+mySection2 = mySection.slice(); 
+
+
+
+var myEventStartDate = new Date ("February 11, 2014");
+var today            = new Date();
+if (today > myEventStartDate){
+     myEventPhase = "post-conference";
+}
+ myPubDate = "02/11/2014"; 
+myEventTitle = "Strata 2014";
+myEvent      = "strata2014";
+mySection2.push(myEvent)
+
+mySection3 = mySection2.slice(); 
+mySystemPageType = "schedule";
+
+
+mySection3.push(mySystemPageType)
+myPageName   = myChannel + ":" + myEvent + " " + myTitle;
+mySection    = mySection.join(":");
+mySection2   = mySection2.join(":");
+mySection3   = mySection3.join(":");
+
+myLoggedStatus = "logged out";
+
+/* You may give each page an identifying name, server, and channel on
+the next lines..... */
+s.pageName = myPageName.toLowerCase(); 
+//s.server   = ""; OK TO DELETE THIS LINE?
+s.channel  = myChannel;
+//s.pageType = "";OK TO DELETE THIS LINE?
+s.prop1  = mySection;
+s.prop2  = mySection2;
+s.prop3  = mySection3;
+s.prop4  = mySystemPageType; //not using this currently
+s.prop5  = myTitle;
+s.prop7  = myPubDate;
+s.prop15 = s.eVar24 = myLoggedStatus;
+s.prop29 = myEventPhase;//this has more work to do.
+s.prop38 = myEventTitle;
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";  // need way to distinguish amongst these
+s.products="";     // only put products on for purchases.
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ororeillyglobaldev.122.2O7.net/b/ss/ororeillyglobaldev/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+
+<!-- crazy egg heatmap -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script"); var b=document.getElementsByTagName('script')[0]; a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000); a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-3144621-33']);
+_gaq.push(['_setSiteSpeedSampleRate', 50]);
+_gaq.push(['_trackPageview']);
+
+(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+
+</script>
+<!-- js/chartbeat_footer --> 
+<script type="text/javascript">
+	var _sf_async_config={uid:1632,domain:"strataconf.com"};
+	(function(){
+		function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			(("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			"js/chartbeat.js");
+			document.body.appendChild(e);
+		}
+		
+		var oldonload = window.onload;
+		window.onload = (typeof window.onload != 'function') ?
+		loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+
+</body>
+</html>

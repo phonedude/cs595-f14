@@ -1,0 +1,373 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » Operations: The secret sauce revisited Comments Feed
+   Four short links: 2 August 2010 On Covers
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+Operations: The secret sauce revisited
+
+The forces of "technical debt" apply to computational infrastructure.
+
+   by Andrew Shafer | @littleidea | August 2, 2010
+
+   Guest blogger Andrew Clay Shafer is helping telcos and hosting
+   providers implement cloud services at Cloudscaling. He co-founded
+   Reductive Labs, creators of Puppet, the configuration management
+   framework. Andrew preaches the “infrastructure is code” gospel, and he
+   supports approaches for applying agile methods to infrastructure and
+   operations. Some of those perspectives were captured in his chapter in
+   the O’Reilly book “Web Operations.”
+     __________________________________________________________________
+
+   “Technical debt” is used two ways in the analysis of software systems.
+   The phrase was first introduced in 1992 by Ward Cunningham to describe
+   the premise that increased speed of delivery provides other advantages,
+   and that the debt leveraged to gain those advantages should be
+   strategically paid back.
+
+   Somewhere along the way, technical debt also became synonymous with
+   poor implementation; reflecting the difference between the current
+   state of a code base and an idealized one. I have used the term both
+   ways, and I think they both have merit.
+
+   Technical debt can be extended and discussed along several additional
+   axes: process debt, personnel debt, experience debt, user experience
+   debt, security debt, documentation debt, etc. For this discussion, I
+   won’t quibble about the nuances of categorization. Instead, I want to
+   take a high-level look at operations and infrastructure choices people
+   make and the impact of those choices.
+
+The technical debt metaphor
+
+   Debts are created by some combination of choice and circumstance.
+   Modern economies are predicated on the flow of debt as much as anything
+   else, but not all debt is created equal. There is a qualitative
+   difference between a mortgage and carrying significant debt on
+   maxed-out credit cards. The point being that there are a variety of
+   ways to incur debt, and the quality of debts have different
+   consequences.
+
+   Jesse Robbins’ Radar post about operations as the secret sauce talked
+   about boot strapping web startups in 80 hours. It included the
+   following infographic showing the time cost of traditional versus
+   special sauce operations:
+
+                  [Ops-ROI-jesserobbins-thumb-600x285.png]
+
+   I contend that the ongoing difference in time cost between the two
+   solutions is the interest being paid on technical debt.
+
+   Understanding is really the crux of the matter. No one who really
+   understands compound interest would intentionally make frivolous
+   purchases on a credit card and not make every effort to pay down high
+   interest debt. Just as no one who really understands web operations
+   would create infrastructure with an exponentially increasing cost of
+   maintenance. Yet, people do both of these things.
+
+   As the graph is projected out, the ongoing cost of maintenance in both
+   projects reflects the maxim of “the rich get richer.” One project can
+   focus on adding value and differentiating itself in the market while
+   the other will eventually be crushed under the weight of its own
+   maintenance.
+
+Technical debt and the Big Ball of Mud
+
+   Without a counterbalancing investment, system and software
+   architectures succumb to entropy and become more difficult to
+   understand. The classic “Big Ball of Mud” by Brian Foote and Joseph
+   Yoder catalogs forces that contribute to the creation of haphazard and
+   undifferentiated software architectures. They are:
+     * Time
+     * Cost
+     * Experience
+     * Skill
+     * Visibility
+     * Complexity
+     * Change
+     * Scale
+
+   These same forces apply just as much to infrastructure and operations,
+   especially if you understand the “infrastructure is code” mantra. If
+   you look at the original “Tale of Two Ops Teams” graphic, both teams
+   spent almost the same amount of time before the launch. If we assume
+   that these are representative, then the difference between the two
+   approaches is essentially experience and skill, which is likely to be
+   highly correlated with cost. As the project moves forward, the
+   difference in experience and skill reflects itself in how the teams
+   spend time, provide visibility and handle complexity, change and scale.
+
+   Using this list, and the assumption that balls of mud are synonymous
+   with high technical debt, combating technical debt becomes an exercise
+   in minimizing the impact of these forces.
+     * Time and cost are what they are, and often have an inverse
+       relationship. From a management perspective, I would like
+       everything now and for free, so everything else is a compromise.
+       Undue time pressure will always result in something else being
+       compromised. That compromise will often start charging interest
+       immediately.
+     * Experience is invaluable, but sometimes hard to measure and
+       overvalued in technology. Doing the same thing over and over with a
+       technology is not 10 years of experience, it is the first year of
+       experience 10 times. Intangible experience should not be measured
+       in time, and experience in this sense is related to skill.
+     * Visibility has two facets in ops work: Visibility into the design
+       and responsibilities of the systems, and real-time metrics and
+       alerting on the state of the system. The first allows us to take
+       action, the second informs us that we should.
+     * Complex problems can require complex solutions. Scale and change
+       add complexity. Complexity obscures visibility and understanding.
+
+   Each of these forces and specific examples of how they impact
+   infrastructure would fill a book, but hopefully that is enough to get
+   people thinking and frame a discussion.
+
+   There is a force that may be missing from the “Big Ball of Mud”: tools
+   (which might be an oversight, might be an attempt to remain
+   tool-agnostic, or might be considered a cross-cutting aspect of cost,
+   experience and skill). That’s not to say that tools don’t add some
+   complexity and the potential for technical debt as well. But done well,
+   tools provide ongoing insight into how and why systems are configured
+   the way they are, illumination of the complexity and connections of the
+   systems, and a mechanism to rapidly implement changes. That is just an
+   example. Every tool choice, from the operating system, to the web
+   server, to the database, to the monitoring and more, has an impact on
+   the complexity, visibility and flexibility of the systems, and
+   therefore impacts operations effectiveness.
+
+   Many parallels can be drawn between operations and fire departments.
+   One big difference is most fire departments don’t spend much time
+   actually putting out fires. If operations is reacting all the time,
+   that indicates considerable technical debt. Furthermore, in reactive
+   environments, the probability is high that the solutions of today are
+   contributing to the technical debt and the fires of tomorrow.
+
+   Focus must be directed toward getting the fires under control in a way
+   that doesn’t contribute to future fires. The coarse metric of time
+   spent reactively responding to incidents versus the time spent
+   proactively completing ops-related projects is a great starting point
+   for understanding the situation. One way to insure operations is always
+   a cost center is to keep treating it like one. When the flow of
+   technical debt is understood and well managed, operations is certainly
+   a competitive advantage.
+
+   Related:
+     * Operations is a competitive advantage … (Secret Sauce for
+       Startups!)
+     * Web operators are brain surgeons
+     * More on how web performance impacts revenue
+     * How SEO and site speed are related
+     * Google’s Urs Holzle on speed and optimization
+
+   tags: business, operations, ops, speed
+     * Patrick Debois
+       Hi Andrew,
+       great post. Indeed technical debts is something often lives in a
+       lot of operational aspects: people don’t install patches, avoid
+       major upgrades of software, have these legacy systems nobody wants
+       to touch. Software development has learned us that reproduceability
+       of things greatly help in becoming more confident to change things.
+       Also doing things in smaller changes makes more sense. All this
+       requires a good testing strategy to see if things don’t break. If
+       you live in a world that avoid these kind of changes, technical
+       debt will creep in.
+       You mention the loan and morgage. I’ve experienced sometimes that
+       the they don’t care about technical debt because they know the
+       systems only has live for X more years. They think that there will
+       be no cost associated with not changing things. I’ve they are lucky
+       and things keep working and customers are happy, they are right and
+       might get away with it. Something you don’t have to try with a bank
+       :)
+       In the original article by Jesse, he talks a lot of tools. Good
+       tools will help you doing your job more efficient but they are now
+       less vulnerable from technical debt too. Often once you have chosen
+       your tools and your architecture that is very difficult to change.
+       We need to be aware of what we choose that these things can change
+       too. Switching from php to rails or chef to puppet.
+       Someone once said to me that for every new thing you introduce you
+       should look for something that you can remove. This keeps things
+       simple, and might help you get over changes more easily to remove
+       technical debt.
+       Thanks for your insights!
+     * Steve Conover
+       “Somewhere along the way, technical debt also became synonymous
+       with poor implementation; reflecting the difference between the
+       current state of a code base and an idealized one.”
+       Another way I like to express this “problem” (in scare quotes
+       because it’s a pretty natural/normal situation) is in terms of a
+       fitness landscape:
+       “A fitness landscape, first conceptualized by Sewall Wright, is a
+       way of visualising fitness in terms of a three-dimensional surface
+       on which peaks correspond to local fitness maxima; it is often said
+       that natural selection always progresses uphill but can only do so
+       locally. This can result in suboptimal local maxima becoming
+       stable, because natural selection cannot return to the less-fit
+       “valleys” of the landscape on the way to reach higher peaks.”
+       http://en.wikipedia.org/wiki/Fitness_(biology)
+       You’re likely at a local maximum – It’s the moment the fog clears
+       around a higher peak that this kind of technical debt comes into
+       being. IOW it has to do with a team’s awareness at a given point in
+       time.
+       It ought to be emphasized that one can rationally choose to stay at
+       a local maximum, if the cost of climbing the hill to the better
+       maximum is too high relative to the payoff…
+     * Andrew Clay Shafer
+       @Patrick
+       Thanks for the kinds words.
+       In another context I’ve made the comment that ‘Technical Debt is
+       vendor lock-in with your own past’.
+       There are times you might not need to fully repay technical debt.
+       This is especially true in startups, where you are exploring
+       hypothesis about what people are even interested in and even if the
+       market likes something, to scale effectively might require a total
+       re-architecting of the infrastructure. Again, I think there are
+       different kinds of debt.
+       You can open up a lot of options with the prudent use of student
+       loans, but carrying a significant balance on high interest credit
+       card tends to curtail options.
+       I’m not saying anyone can or should avoid all debt, just that we
+       can be aware of it and manage debt strategically.
+       @Steve
+       Thanks for your comments. I’m not convinced debt maps to fitness
+       100% and I believe you are mixing metaphors a bit when you add in
+       the notion of ‘rational choice’, but let’s explore the idea.
+       The part I do think makes sense in the fitness context is that the
+       difference contributes to natural select due to Darwinian pressure.
+       That’s the nature of a competitive advantage.
+       I personally think the fitness landscape is upside down and the
+       stable equilibrium should be at the bottom, but that is just my
+       sensibility about how natural forces should be modeled, but I
+       digress.
+       The part that doesn’t make sense in the context of a biological
+       fitness is the notion of choice and the ability to change the
+       ‘phenotype’.
+       The technical debt doesn’t come into being because the fog cleared
+       around some other option. The time being spent maintaining the
+       infrastructure doesn’t suddenly increase because you are aware of a
+       better way to do it. What does change is the understanding of what
+       is possible and raising of the expectations.
+       I also don’t believe the transitions are best modeled by a fitness
+       landscape surface for a variety of other reasons. The transitions
+       tend to be much more discontinuous and there are real forces that
+       push away from the local maxima.
+       I do believe that this space is rapidly advancing and that what we
+       consider best practice today will probably be considered quaint
+       debt ridden legacy approaches in a few years. There will still be
+       technical debt but what we consider cutting edge state of the art
+       today will be table stakes or even outmoded tomorrow.
+
+Featured Video
+
+   By People, For People: Tim O'Reilly on the human side of DevOps and the
+   connection between DevOps and user experience design.
+   Tweets by @radar
+
+Most Recently Discussed
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><script language="javascript" type="text/javascript" src="//cdn.optimizely.com/js/754231730.js"></script><title>: Safari Books Online</title><link rel="stylesheet" type="text/css" href="/static/201409-7857-my/files/6.0/global_r.css"/><script type="text/javascript">
+    var _gaq=_gaq||[];
+    _gaq.push(['_setAccount','UA-408700-1']);
+    </script><script type="text/javascript" async="async" src="http://www.google-analytics.com/ga.js"></script><link rel="canonical" href="http://www.safaribooksonline.com/library/view/title//"/><meta http-equiv="X-UA-Compatible" content="chrome=1"/><meta name="viewport" content="width=1000px,initial-width=device-width"/><meta name="description" content=" -  - "/><meta name="keywords" content=","/><meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@safari"/><meta name="twitter:url" content="http://www.safaribooksonline.com/library/view/title//"/><meta name="twitter:title" content=""/><meta name="twitter:description" content=""/><meta name="twitter:image:src" content="http://my.safaribooksonline.com/images//"/><script language="javascript" type="text/javascript">
+    function s_getDomainName(s)
+    {
+        if (!s)
+            return s;
+        if (s.indexOf("http://" == 0))
+            return s.substring(7);
+        if (s.indexOf("https://" == 0))
+            return s.substring(8);
+        return s;
+    }
+
+    var s_account = "safaribooksglobal,safaribooksb2c"; self.linkInternalFilters = "javascript:,my.safaribooksonline.com,my.safaribooksonline.com,ssl.safaribooksonline.com";
+</script><script language="javascript" type="text/javascript">
+    var CookieState = 'cid=201404\u002Dtwitter\u002Dstrata\u002Dvideo\u002Dsocial&xmlid=9781491900321&aph=ITSnCJbWFONJGIKRQUEIYTDUDQKktNQPWIAOJLwALCNVUPCHgHtFiHgWPGdv&reader=html&displaygrbooks=0&isbn=9781491900321&portal=my';
+    var Xsl =
+    {
+         _1 : '/static/201409\u002D7857\u002Dmy',
+         _2 : '2014/09/29T03/53/09',
+         _3 : '',
+         _4 : 'my',
+         _5 : '',
+         _6 : '3f704b5a\u002D4af8\u002D4700\u002D80ee\u002Dd7c241a9490f',
+         _7 : 'Undefined',
+         _8 : '6.0.3',
+         _9 : 'ITSnCJbWFONJGIKRQUEIYTDUDQKktNQPWIAOJLwALCNVUPCHgHtFiHgWPGdv',
+         _10 : '135',
+         _11 : '/book',
+         _12 : '',
+         _13 : '',
+         _14 : '0',
+         _15 : '0',
+         _16 : '',
+         _17 : '',
+         _18 : '1',
+         _19 : 'UA\u002D408700\u002D1'
+    };
+    var BvD_StaticPath = Xsl._1;
+</script><script type="text/javascript" language="javascript">
+    (function()
+    {
+        MobileTest = function()
+        {
+            var winWidth = window.screen.width;
+            var winHeight = window.screen.height;
+            var maxWidth = 1023;
+            var maxHeight = 768;
+            
+            return (maxWidth > winWidth && maxHeight > winHeight)
+                || (maxWidth > winHeight && maxHeight > winWidth);
+        };
+
+        MobileCheckForRedirect = function()
+        {
+            if (MobileTest())
+            {
+                var portalName = Xsl._4;
+                
+                // Do not allow redirect for the following portals.
+                switch (portalName)
+                {
+                    case "safariselect":
+                    case "proquestselect":
+                    case "proquestpubliclibrary":
+                    case "academic":
+                        return false;
+                }
+
+                var queryString = '';
+                queryString += 'portal=' + encodeURIComponent(portalName);
+
+                if (Xsl._13)
+                {
+                    queryString += '&key=' + encodeURIComponent(Xsl._5);
+                    queryString += '&sessionid=' + encodeURIComponent(Xsl._6);
+                }
+                
+                try
+                {
+                    // get promocode from cookie
+                    var re1 = new RegExp('State=([^;]+)');
+                    var cookie = re1.exec(document.cookie)[0];
+                    var re2 = new RegExp('[&=]promocode=([^&]+)', 'gi');
+                    var val = re2.exec(cookie)[1];
+                       
+                    if (val !== null && val.length > 0)
+                        queryString += '&promocode=' + val;
+                }
+                catch(ex)
+                {
+                }
+                
+                var path = '';
+                if (Xsl._11 == '/book')
+                {
+                    var fpid = Xsl._3;
+                    var pos = fpid.indexOf('/');
+                    if (pos > -1)
+                        fpid = fpid.subStr(0, pos);
+                    
+                    queryString += '&fpid=' + encodeURIComponent(fpid);
+                    path = 'public/content';
+                }
+                else
+                {
+                    path = 'login';
+                }
+                
+                var subDomain = '';
+                if (Xsl._18 != '1')
+                    subDomain += 'rel2';
+
+                switch (portalName)
+                {
+                    case "proquest":
+                    case "proquestcombo":
+                    case "proquestbus":
+                    case "connect":
+                    case "proquest_tech_de":
+                    case "proquest_techbus_de":
+                    case "proquest_business_de":
+                        subDomain += ".proquest";
+                        break;
+                }
+                
+                if (portalName == "cedge")
+                    window.location.replace('http://m' + subDomain + '.creativeedge.com/hd/' + path + '?' + queryString);
+                else
+                    window.location.replace('http://m' + subDomain + '.safaribooksonline.com/hd/' + path + '?' + queryString);
+
+                return true;
+            }
+            
+            return false;
+        };
+        
+        MobileCheckForRedirect();
+    })();
+    </script><script type="text/javascript">
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/4200.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script><meta name="robots" content="noindex,follow,noarchive"/><link rel="alternate" type="application/rss+xml" title="RSS" href="/rss"/></head><body><div><input value="1" type="hidden" name="__checkmobileredirect" id="checkmobileredirect"/><a class="skiplink" href="#lefttabtoc">Table of Contents</a><div id="bvdtop100"><div><div class="topNav " style=""><div class="toppromo"><a href="#" class="exBtn"></a><h4>Download Safari Books Online apps: <a href="http://itunes.apple.com/us/app/safari-to-go/id385824712?mt=8" target="_blank">Apple iOS</a> | <a href="https://play.google.com/store/apps/details?id=com.safaribooksonline" target="_blank">Android</a> | <a href="http://appworld.blackberry.com/webstore/content/132080/" target="_blank">BlackBerry</a></h4></div><div class="upper"><div class="wrap"><div class="right"><div class="searchModule"><span id="searchOptionsToggle" class="dropdownToggle"><span class="currentValue">Entire Site</span><input type="button" class="icon" role="button" aria-label="Limit your search" /></span><div id="searchOptionsDropdown" class="dropdown tabless selectable"><div class="inner"><div class="dropdownBody"><ul><li class="selected"><a title="Search entire site" href="">Entire Site</a></li><li><a title="Search book titles only" href="BOOKTITLE" rel="nofollow">Titles Only</a></li><li><a title="Search short cuts" href="SHORTCUTS" rel="nofollow">Short Cuts</a></li><li><a title="Search rough cuts" href="ROUGHCUTS" rel="nofollow">Rough Cuts</a></li></ul></div></div></div><div class="searchWrap"><form data-nk-monitor="true" action="/search" method="post" id="topsearchform" role="search"><input type="text" id="searchtextbox" name="__searchtextbox" class="searchBox" autocomplete="off" aria-required="true" /><input type="submit" id="searchsubmit" name="searchsubmit" class="searchSubmit" value="" role="button" aria-label="Search submit button" /><input type="hidden" id="searchmode" name="searchmode" value="newsimple" /><input type="hidden" id="searchlistbox" name="searchlistbox" value="" /><div id="recentSearchesDropdown" class="dropdown tabless nodisplay"><div class="inner"><p class="advSearchLink"><a title="Advanced search" id="advoptsbtn" href="#" aria-haspopup="true">Advanced Search</a></p></div></div><div id="ssdd" class="ssdd"><div class="inner"><div id="ssdd_inner"></div><p class="advSearchLink"><a id="advoptsbtn2" href="#" title="Advanced search">Advanced Search</a></p></div></div></form></div></div></div><div class="left"><h1 class="logo" style="" itemprop="provider"><a href="/"><img src="/static/201409-7857-my/images/6.0/logo_white.png" alt="Safari Books Online" /></a></h1></div></div></div><div class="nav"><div class="wrap"><ul class="leftLinks"></ul><ul class="rightLinks"><li><a href="#" class="dropdownToggle" id="helpLink"><span class="text">Help</span><span class="icon"></span></a><div id="helpDropdown" class="dropdown"><div class="top"><div class="tab"><div class="dropdownToggle"><span class="text">Help</span><span class="icon"></span></div></div></div><div class="dropdownBody"><div class="inner"><ul><li class="level1"><a href="http://support.safaribooksonline.com/home?prod=safari" target="_blank">Support Home</a></li><li class="level1"><a href="http://support.safaribooksonline.com/alerts?prod=safari" target="_blank">Alerts</a></li><li class="level1"><a href="http://support.safaribooksonline.com/top?prod=safari" target="_blank">Top Knowledge Items</a></li><li class="level1"><a href="http://support.safaribooksonline.com/faqs?prod=safari" target="_blank">Frequently Asked Questions</a></li><li class="level2"><a href="http://support.safaribooksonline.com/viewCat?cat=Account_Management&amp;prod=safari" target="_blank">Account Management</a></li><li class="level2"><a href="http://support.safaribooksonline.com/viewCat?cat=Billing&amp;prod=safari" target="_blank">Billing</a></li><li class="level2"><a href="http://support.safaribooksonline.com/viewCat?cat=Content&amp;prod=safari" target="_blank">Content</a></li><li class="level2"><a href="http://support.safaribooksonline.com/viewCat?cat=Content_Reader&amp;prod=safari" target="_blank">Content Reader</a></li><li class="level2"><a href="http://support.safaribooksonline.com/viewCat?cat=Mobile&amp;prod=safari" target="_blank">Mobile</a></li><li class="level2"><a href="http://support.safaribooksonline.com/viewCat?cat=FAQ_Offline_Reading&amp;prod=safari" target="_blank">Offline Reading</a></li></ul></div></div></div></li><li><a href="/login?targetpage=/9781491900321"><span class="text">Sign In</span><span class="icon"></span></a></li><li><a href="/login?iid=reactivate-link&amp;targetpage=/reactivation" class=""><span class="text">Reactivate</span></a></li><li><a href="&#xA;								    https://www.safaribooksonline.com/register/?utm_campaign=Classic&amp;utm_medium=referral&amp;utm_source=my&amp;utm_content=sign+up&#xA;								  " class=""><span class="text">Sign Up</span></a></li></ul></div></div></div><div class="tongue_promo_1"><div class="wrap"><a href="&#xA;  	  https://www.safaribooksonline.com/register/?utm_campaign=Classic&amp;utm_medium=referral&amp;utm_source=my&amp;utm_content=header_banner&#xA;		" class="trial-btn-top" alt="Free Trial">Free Trial</a><p>Safari is a digital library providing on-demand subscription access to thousands of learning resources.</p></div></div><style>
+.tongue_promo_trial {
+width: 566px;
+height: 50px;
+margin: 0 auto;
+overflow: hidden;
+
+/* You have   5   days : */
+
+font-size: 18px;
+color: #FFFFFF;
+line-height: 18px;
+
+/* Rectangle 184: */
+
+border-radius: 0 0 8px 8px;
+
+background-image: -o-linear-gradient(-90deg, #0E548B 0%, #003764 100%);
+background-image: -moz-linear-gradient(-90deg, #0E548B 0%, #003764 100%);
+background-image: -webkit-linear-gradient(-90deg, #0E548B 0%, #003764 100%);
+background-image: -ms-linear-gradient(-90deg, #0E548B 0%, #003764 100%);
+background-image: linear-gradient(-180deg, #0E548B 0%, #003764 100%);
+
+/* margin-top: -20px; */
+margin-bottom: 20px;
+}
+
+.tongue_promo_trial .subscribeButton {
+
+	width: 200px;
+	height: 50px !important;
+	margin: 0;
+	border-radius: 0;
+	text-transform: uppercase;
+	line-height: 2.5;
+	text-align: center;
+	padding: 0 !important;
+/* 	background-color: #299310; */
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'DIN',verdana,sans-serif;
+	cursor: pointer;
+	font-size: 22px;
+	font-weight: normal;
+	color: #FFF;
+	box-shadow: 0 2px 3px #333;
+	border: none;
+	float: right;
+	
+	background-image: -o-linear-gradient(-90deg, #31A715 0%, #195B09 100%);
+	background-image: -moz-linear-gradient(-90deg, #31A715 0%, #195B09 100%);
+	background-image: -webkit-linear-gradient(-90deg, #31A715 0%, #195B09 100%);
+	background-image: -ms-linear-gradient(-90deg, #31A715 0%, #195B09 100%);
+	background-image: linear-gradient(-180deg, #31A715 0%, #195B09 100%);
+}
+.tongue_promo_trial .subscribeButton:hover {opacity: .9;}
+.tongue_promo_trial .subscribeButton:active {opacity: 1;}
+
+
+.tongue_promo_trial p {
+	font-size: 19px;
+	line-height: 1.7;
+	font-family: 'DIN', verdana, sans-serif;
+	text-align: center;
+}
+
+.trialDaysLeft {
+	background: #fff;
+	display: inline-block;
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+	margin-top: 11px;
+	color: #0B5188;
+	text-align: center;
+	font-weight: bold;
+	margin-left: -1px;
+	margin-right: -2px;
+	padding-right: 1px;
+}
+.threeplusDigits {
+	width: auto;
+	padding: 3px 5px;
+	margin-top: 9px;
+}
+
+</style></div></div><div class="pagewrap_reader" id="pagewrapid"><div id="pagetopid"></div><div class="reader_container " id="readercontainer"><div class="paneL" id="readerleft"><div class="paneL_cap" id="leftbookinfotop"><h5 class="h5"><a href="/" title="This Book">This Book</a></h5></div><div id="leftbookinfopanel" data-bow-ajaxcomponent="[&quot;/_ajax_leftbookinfopanel_1_449930&quot;,&quot;leftbookinfopanel&quot;,0,1,1,&quot;__className=bookinfopanel&quot;,&quot;&quot;]"><div class="paneContent"><div class=""><a href="/" title=""><img class="meta_image" alt="" title="" width="76" src="/static/201409-7857-my/images//"/></a></div><p class="p meta_title"><a href="/" title=""></a></p><span class="clearfloats"></span></div></div><div class="bucket_cap" id="bucketsearch"><h5 class="h5 closed" id="leftbtnsearch"><a href="/?bookview=search" title="Search">Search</a></h5></div><div class="nodisplay" id="lefttabsearch"><div class="search_constant" id="leftsearchform"><form method="post" action="/searchbook" id="form_454859"><input type="hidden" name="__formName" value="454859"/><div style="display:none;" id="leftsearchparameters"><input value="" type="hidden" name="__parentsection" id="parentsection"/><input value="" type="hidden" name="__xmlid" id="xmlid"/></div><label class="hide_label" for="booksearchfor"><span>search in</span></label><select id="booksearchfor" name="__booksearchfor"><option value="">This Book</option><option value="chapter">This Chapter</option></select><br/><label class="hide_label" for="query"><span>search for</span></label><input id="query" type="text" name="query"/><input type="text" style="visibility:hidden;display:none;"/><input class="sbmt_go" id="searchreadersubmit" alt="Go" value="Go" src="/static/201409-7857-my/images/6.0/reader/btn_search_go.gif" type="image" name="__searchreadersubmit" title="Go"/></form><span class="clearfloats"></span></div><div><input value="" type="hidden" name="__initialquery" id="initialquery"/><div id="searchresulttop" data-bow-ajaxcomponent="[&quot;/_ajax_searchtable_1_513366&quot;,&quot;SearchTable&quot;,0,1,1,&quot;__className=SearchBook&amp;__bookisbn=&amp;__isreader=1&amp;sort=rank&amp;order=desc&amp;page=0&quot;,&quot;&quot;]"></div><div class="paneContent_search" style="overflow: auto; " id="searchresulttable"><div id="searchlist" data-bow-ajaxcomponent="[&quot;/_ajax_searchtable_1_513366&quot;,&quot;SearchTable&quot;,0,1,1,&quot;__className=SearchBook&amp;__bookisbn=&amp;__isreader=1&amp;sort=rank&amp;order=desc&amp;page=0&quot;,&quot;&quot;]"></div></div><div id="searchresultbottom" data-bow-ajaxcomponent="[&quot;/_ajax_searchtable_1_513366&quot;,&quot;SearchTable&quot;,0,1,1,&quot;__className=SearchBook&amp;__bookisbn=&amp;__isreader=1&amp;sort=rank&amp;order=desc&amp;page=0&quot;,&quot;&quot;]"></div></div></div><div class="bucket_cap" id="buckettoc"><h5 class="h5 open" id="leftbtntoc"><a href="/?bookview=contents" title="Contents">Contents</a></h5></div><div class="paneContent " id="lefttabtoc"><input value="" type="hidden" name="__TOCJson" id="TOCJson"/><ul class="toc"><li class="pre_chap"><a href="/" title="Table of Contents">Table of Contents</a></li><li class="spacer"></li></ul><div id="lefttoc"><input value="" type="hidden" name="__toccurrentxmlid" id="toccurrentxmlid"/><div class="toc"></div></div></div><div id="readerleft_spacer"></div></div><div class="paneR" id="readerright"><div class="colHideTab" id="leftmenubtn"></div><div id="readermarketing"><div id="flashreadermarketing"></div></div><div id="ReturnToSearch" data-bow-ajaxcomponent="[&quot;/_ajax_returntosearch_1_474021&quot;,&quot;ReturnToSearch&quot;,0,1,1,&quot;&quot;,&quot;&quot;]"></div><div class="toolbar " id="readertoolbar"><span class="rightcap"></span><div class="fltlft" id="topbuttons"><ul class="toolbar_btn_list"><li id="toolbar_logo"><img alt="Safari Books Online" title="Safari Books Online" src="/static/201409-7857-my/images/6.0/rdr_toolbar/logo_toolbar_full.gif"/></li><li class="w24"><span class="bookmarkDisabled">Create Bookmark</span><span class="bookmark disabled">Create Bookmark</span></li><li class="w24"><span class="noteDisabled">Create Note or Tag</span><span class="rnote disabled">Create Note or Tag</span></li><li class="w24"><span class="printDisabled">Print</span><span class="print disabled">Print</span></li></ul></div><div class="fltrght"><ul class="toolbar_btn_list"><li class="w68"><a class="html active" id="html" href="/?reader=" title="Html View (Key: h)">Html View (Key: h)</a></li><li class="w27a" id="zoomOutBtns"><a class="fontdn" id="fontdn" href="#" title="Zoom Out (Key: -)">Zoom Out (Key: -)</a><span class="fontdnDisabled">Zoom Out</span></li><li class="w27" id="zoomInBtns"><a class="fontup" id="fontup" href="#" title="Zoom In (Key: +)">Zoom In (Key: +)</a><span class="fontupDisabled">Zoom In</span></li><li class="screen"><a class="fullscreen " id="fullscreenbtn" href="#" title="Toggle to Full Screen (Key: f)">Toggle to Full Screen (Key: f)</a></li><li class="w24 navigationDisabled" id="prevBtns"><a class="prev" id="prev" accesskey="1" href="/" title="Previous (Key: p)">Previous (Key: p)</a><span class="prevDisabled">Previous</span></li><li class="w24 navigationDisabled" id="nextBtns"><a class="next" id="next" accesskey="3" href="/" title="Next (Key: n)">Next (Key: n)</a><span class="nextDisabled">Next</span></li></ul></div></div><div class="locationbar "><div class="fltrght"><a href="#" title="Share this Page"><img id="sharelink" alt="Share this Page" title="Share this Page" width="77" height="22" src="/static/201409-7857-my/images/6.0/reader/btn_reader_share.gif"/></a><span> </span><a href="/" title="URL"><img class="urlbtn" alt="URL" title="URL" src="/static/201409-7857-my/images/6.0/reader/btn_reader_url.gif"/></a><span> </span><form action=" " id="form_474730"><input type="hidden" name="__formName" value="474730"/><input id="showterms" type="checkbox" name="__showterms" checked="checked" value="true" disabled="disabled"/><input type="hidden" name="__showterms" id="showterms_hidden" value="" disabled="disabled"/><span> </span><label for="showterms"><span><img class="showterms" alt="Show search terms" title="Show search terms" src="/static/201409-7857-my/images/6.0/reader/txt_showterms_disabled.gif"/></span></label></form><a href="#" title="Help"><img class="help" id="contextualHelp" alt="Help" title="Help" src="/static/201409-7857-my/images/6.0/reader/btn_help.gif" data-helpcode="readerbook"/></a></div><div class="fltlft" id="readerlocation"><h1 class="h1 breadcrumb"><span></span></h1></div></div><div class="readerContent htmlreadercontent showhighlights" id="readercontent" data-reader-allowbookmarks="0" data-reader-allownotes="0" data-reader-508enabled="0" data-reader-showsoms="1" data-reader-link="" data-reader-somstate="2" data-reader-flashzoom="" data-reader-htmlzoom="" data-reader-pfzoom="" data-reader-flashprintheader-username=" " data-reader-flashprintheader-booktitle="" data-reader-allowhighlights="1" data-reader-htmlpercentage="" data-reader-iframe="0"><a class="navigations" id="navbarleft" href="/" title="Previous"><div class="navtop_left"></div><div class="navcenter_left"></div><div class="navbottom_left"></div></a><a class="navigations navigationsRight" id="navbarright" href="/" title="Next"><div class="navtop_right"></div><div class="navcenter_right"></div><div class="navbottom_right"></div></a><div id="HtmlView" data-bow-ajaxcomponent="[&quot;/_ajax_htmlview&quot;,&quot;HtmlView&quot;,0,1,0,&quot;__className=bookhtmlcontent&amp;reader=html&amp;xmlid=&quot;,&quot;&quot;]"><div class="htmlcontent"><input value="" type="hidden" name="__Reader_CurrentXmlId" id="Reader_CurrentXmlId"/><input value="" type="hidden" name="__Reader_PreviousXmlId" id="Reader_PreviousXmlId"/><input value="" type="hidden" name="__Reader_NextXmlId" id="Reader_NextXmlId"/><input value="" type="hidden" name="__Reader_IndexPage" id="Reader_IndexPage"/><input value="" type="hidden" name="__Reader_PreviousIndex" id="Reader_PreviousIndex"/><input value="" type="hidden" name="__Reader_NextIndex" id="Reader_NextIndex"/><input value="" type="hidden" name="__Reader_Query" id="Reader_Query"/></div></div></div><div class="toolbar " id="readertoolbar2"><span class="rightcap"></span><div class="fltlft" id="topbuttons2"><ul class="toolbar_btn_list"><li id="toolbar_logo2"><img alt="Safari Books Online" title="Safari Books Online" src="/static/201409-7857-my/images/6.0/rdr_toolbar/logo_toolbar_full.gif"/></li><li class="w24"><span class="bookmarkDisabled">Create Bookmark</span><span class="bookmark disabled">Create Bookmark</span></li><li class="w24"><span class="noteDisabled">Create Note or Tag</span><span class="rnote disabled">Create Note or Tag</span></li><li class="w24"><span class="printDisabled">Print</span><span class="print disabled">Print</span></li></ul></div><div class="fltrght"><ul class="toolbar_btn_list"><li class="w68"><a class="html active" id="html2" href="/?reader=" title="Html View (Key: h)">Html View (Key: h)</a></li><li class="w27a" id="zoomOutBtns2"><a class="fontdn" id="fontdn2" href="#" title="Zoom Out (Key: -)">Zoom Out (Key: -)</a><span class="fontdnDisabled">Zoom Out</span></li><li class="w27" id="zoomInBtns2"><a class="fontup" id="fontup2" href="#" title="Zoom In (Key: +)">Zoom In (Key: +)</a><span class="fontupDisabled">Zoom In</span></li><li class="screen"><a class="fullscreen " id="fullscreenbtn2" href="#" title="Toggle to Full Screen (Key: f)">Toggle to Full Screen (Key: f)</a></li><li class="w24 navigationDisabled" id="prevBtns2"><a class="prev" id="prev2" accesskey="1" href="/" title="Previous (Key: p)">Previous (Key: p)</a><span class="prevDisabled">Previous</span></li><li class="w24 navigationDisabled" id="nextBtns2"><a class="next" id="next2" accesskey="3" href="/" title="Next (Key: n)">Next (Key: n)</a><span class="nextDisabled">Next</span></li></ul></div></div><div id="SomsView" data-bow-ajaxcomponent="[&quot;/_ajax_htmlview&quot;,&quot;HtmlView&quot;,0,0,1,&quot;__className=bookhtmlcontent&amp;reader=html&quot;,&quot;query=&quot;]"></div></div></div></div><div id="bvdfooter100"><div></div></div><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/js/jquery.1.7.2.min.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/js/mscorlib.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/js/bvdepscript.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/js/bvdreader.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/js/safari.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/6.0/omniture.js"></script><script language="javascript" type="text/javascript"> if (self.s) { s.pageName='/book/9781491900321//';s.channel='Catalog Page';s.server='10.11.34.166';s.campaign='201404\u002Dtwitter\u002Dstrata\u002Dvideo\u002Dsocial';s.prop11='';s.prop12='';s.prop13='';s.prop14=': 9781491900321';s.prop15='';s.prop38='XHTML';s.prop44='BookCatalogPage';s.prop46='Typed/Bookmarked';s.prop47='NotLoggedIn';s.prop48='PreviewFromBrowse';s.pageURL='/9781491900321?cid=201404\u002Dtwitter\u002Dstrata\u002Dvideo\u002Dsocial';s_account='safaribooksglobal,safaribooksb2c';s.events='event3';s.eVar11 = s.prop11; s.eVar12 = s.prop12; s.eVar13 = s.prop13; s.eVar14 = s.prop14; s.eVar15 = s.prop15; s.eVar38 = s.prop38; s.eVar47 = s.prop47; s.eVar48 = s.prop48; }</script><script type="text/javascript">
+    /* ================================================
+    Ideally the following object would be declared
+    externally, but XSL is not parsed in external JS
+    files. */
+    var xml = {
+      'isLogged'      : function(){                                                                 // used by dyncats.js and uitweaks.js
+                          if('NotLogged'=='Logged') return true;
+                          else return false;
+                        },
+      'uicode'        : '',                     // used by dyncats.js
+      'is508'         : '',                // used by topnav.js
+      'isRejected'    : 'false', // used by aui.js
+      'subpage'       : '',                     // used by dyncats and aui.js
+      'productCat'    : 'Tech',          // "
+      'viewedTour'    : '',            // used by helptour.js
+      'printParam'    : '',                        // used by ekjs.js in elementk
+      'displaygrbooks': '0'
+    }
+  </script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/6.0/js/sbo.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/6.0/js/topnav.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/6.0/js/omnitureevents.js"></script><script language="javascript" type="text/javascript" src="/static/201409-7857-my/files/6.0/js/plugins.js"></script><script type="text/javascript">
+		//console.log("Run");
+		//function init() { 
+/*
+			var hostURL = 'https://ssl.safaribooksonline.com';
+			var randNumber = 1 + Math.floor(Math.random() * 6);
+			if (randNumber == 1 || randNumber == 3 || randNumber == 5) { //Default Promo
+			console.log("A2");
+				$('.tongue_promo_1').css('display','block');
+				$('.tongue_promo_flow').css('display','none');
+				$(".trial-link, .newTrialBtn").attr("href", hostURL + "/trial?iid=preview-box-without-flow&portal=my&promocode=");
+				$(".trial-btn-top").attr("href", hostURL + "/trial?iid=headerBanner-reader-withoutflow-link&portal=my&promocode=");
+				}
+			if (randNumber == 2 || randNumber == 4 || randNumber == 6) { //Price test A
+			console.log("B2");
+			$('.tongue_promo_1').css('display','none !important');
+			$('.tongue_promo_flow').css('display','block !important');
+			$(".trial-link, .newTrialBtn").attr("href", hostURL + "/trial?iid=preview-box-with-flow&portal=my&promocode=");
+				}
+*/
+		//	}
+		//window.onload = init;	
+		</script><script type="text/javascript">
+		function init() { 
+		  
+			  mixpanel.track("C: Viewed Book Preview");
+			  mixpanel.register_once(
+				{ initial_landing_page: "C: Book Preview" }
+			
+				);
+		  
+  		}
+		window.onload = init;
+		</script><script type="text/javascript">
+  var _kiq = _kiq || [];
+  (function(){
+    setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+    s.async = true; s.src = '//s3.amazonaws.com/ki.js/52692/brA.js'; f.parentNode.insertBefore(s, f);
+    }, 1);
+  })();
+	</script>
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("fe42a3507c097e9a9d1e9f881d833cfb");</script><!-- end Mixpanel -->
+<script language="javascript" type="text/javascript">if (self.customOmnitureHandling) self.customOmnitureHandling(); var s_code=s.t(); if(s_code)document.write(s_code);</script></div><span id="BowEndOfDocument" style="display:none" hidden="hidden"></span></body></html>

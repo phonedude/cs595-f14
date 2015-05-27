@@ -1,0 +1,944 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+<head><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQAUlBRGwEHXFRaBwc="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,o){t&&t(e,n,o),o||(o={});for(var a=i(e),s=a.length,c=o[r]||(o[r]={}),f=0;s>f;f++)a[f].apply(c,n);return c}function o(t,e){s[t]=i(t).concat(e)}function i(t){return s[t]||[]}function a(){return n(e)}var s={};return{on:o,emit:e,create:a,listeners:i,_events:s}}var r="nr@context";e.exports=n()},{}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:15,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o);if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var a=document;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&n(a);for(var s=XMLHttpRequest.prototype;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=i(e,"fn-",null,e.name||"anonymous"):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:16,ee:"QJf3ax"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:16,2:15,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:16,2:15,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",r)}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:16,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(1),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(2);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:9,2:12,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],12:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],15:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],16:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper";e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,f,u;try{i=this,n=o(arguments),f=r&&r(n,i)||{}}catch(d){c([d,"",[n,i,a],f])}s(e+"start",[n,i,a],f);try{return u=t.apply(i,n)}catch(p){throw s(e+"err",[n,i,p],f),p}finally{s(e+"end",[n,i,u],f)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,nrWrapper)}function a(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function s(e,n,r){try{t.emit(e,n,r)}catch(o){c([o,e,n,r])}}function c(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=a,e.flag=i,e}},{1:15,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+    <meta property="og:title" content="Digital Book World Conference 2014" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://conference.digitalbookworld.com/ehome/70445/conference schedule/?&" />
+            <meta property="og:image" content="https://conference.digitalbookworld.com/file_uploads/baa719a70f6a1f3affde5a9b7c3c0541_DBW-14---Main-Logo-LT.jpg" />
+        <title>Digital Book World Conference 2014</title>
+<meta HTTP-EQUIV="REFRESH" content="1; url=http://conference.digitalbookworld.com/index.php"><link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700|Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css" />
+<style>
+#main_section {padding:20px;}</style><script language="javascript" type="text/javascript" src="/include/scripts/scripts.js"></script>
+<script language="javascript" type="text/javascript" src="/ehome/include/scripts.js"></script>
+<!--[if IE 7]>
+<style type="text/css">
+.ehsm ul ul ul {margin-left:-1px;}
+.ehsm ul ul ul.left {margin-left:1px;}
+.ehtm li { white-space:nowrap; };
+</style>
+<![endif]-->
+<style type="text/css">
+html, body { 
+	margin:10px 0 0;
+	background-image: url('http://www.eiseverywhere.com/image.php?acc=1736&amp;id=192433'), url('http://www.eiseverywhere.com/image.php?acc=1736&amp;id=192053'); 
+	background-repeat: repeat-x, repeat;
+	background-attachment:fixed;
+	color:#777; 
+	line-height:1.6;
+font-family:Arial, Helvetica; }
+
+.eh_outer_div .bio_hide {
+        display: none;
+}
+
+td,div,font,p { font-family: Arial, Helvetica, sans-serif;font-size:15px; margin:0; color:#222; }
+p { margin:0 0 15px 0; }
+select,input,textarea { font-family:Arial;font-size:12px; }
+.standard { font-family:Arial;font-size:12px; }
+.header { font-family:Arial;font-size:13px;color:#000000;font-weight:bold; }
+.on { font-family:Arial;color:#eeeeee;font-size:14px;font-weight:bold; }
+.off { font-family:Arial;color:#eeeeee;font-size:12px; }
+.red { font-family:Arial;font-size:12px;color:red; font-weight:bold; text-transform:uppercase; }
+.selectbox { color:#000;font-family:arial;font-size:8pt;background-color:#FFF; }
+.headercell { font-family:arial;font-size:8pt;font-weight:bold;color:#000000; }
+.maincell { font-family:arial;font-size:8pt;color:#000;background:#FFF;text-align:center;height:22px; }
+.maincellover { font-family:arial;font-size:8pt;font-weight:bold;color:#FFF;background:#000066;text-align:center;cursor:pointer; }
+.tablerow1 { background:#DDD; border:1px solid grey; }
+.tablerow2 { background:#EEE; border:1px solid grey; }
+a, a:link,a:visited { text-decoration:none;color:#FF9065; outline:none; cursor:pointer;font-weight:bold; }
+a:hover { color:#FC6C35; }
+a.menu:link,a.menu:visited { font-family:Arial;font-size:13px;text-decoration:none;color:#FF9065; font-weight:bold; }
+a.menu:hover { color:#FC6C35; }
+a.footer:link,a.footer:visited { font-family:Arial;font-size:12px;text-decoration:underline;color:#ffffff; }
+a.footer:hover { text-decoration:none;color:#FF9065; }
+.poweredBy { margin:0; padding:16px 0 0 10px; }
+
+/**CUSTOM**/
+
+/**Global Styles**/
+
+/* ==================
+FONT CLASSES
+=====================*/
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:30px;
+	text-transform:uppercase;
+	color:#333;
+	line-height:1em;
+	margin:0 0 5px 0;
+}	
+
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	margin:0 0 3px 0;
+	line-height:1.3em;
+    text-transform:uppercase;
+}
+
+
+h3 {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin:0 0 15px;
+	color:#222;
+}
+
+h4 { 
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:12px;
+}
+
+h5 { font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+font-weight: bold;
+margin: 0 0 3px 0;
+line-height: 1.3em;
+text-transform: uppercase; }
+
+.signup_stayconnected {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size:10px;
+	letter-spacing:1px;
+	font-weight:100;
+	text-transform:uppercase;
+}
+
+ul {
+	margin:0 0 0 15px;
+	padding:0;
+	list-style-type:disc;
+}
+
+a.more {
+	text-transform:uppercase;
+	font-size:14px;
+	padding:0 0 0 20px;
+	color:#0089CB;
+}
+
+a.moreVideo {
+	text-transform:uppercase;
+	font-size:14px;
+	padding:2px 0 4px 28px;
+	background:transparent url(/image.php?acc=1736&amp;id=32989) no-repeat 0 0;
+}
+
+img.alignleft {
+	float:left;
+	padding:0 10px 10px 0;
+}
+
+img.alignright {
+	float:right;
+	padding:0 0 10px 10px;
+}
+
+#speakersHome {
+	margin-bottom:35px;
+	text-align:center;
+}
+
+#speakersHome td {
+	vertical-align:top;
+}
+
+#speakersHome img {
+	margin-bottom:5px;
+}
+
+p.name {
+	font-size:14px;
+	margin:0;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+#speakersHome p.name {
+	font-weight:normal;
+}
+
+p.title {
+	margin:0;
+}
+
+p.company {
+	margin:0;
+	font-style:italic;
+}
+
+p.rssincl-itemtitle {
+	font-size:14px;
+	padding:0 0 0 25px;
+	background:transparent url(/image.php?acc=1736&amp;id=32988) no-repeat 0 5px;
+}
+
+.city {
+	width:325px;
+	text-transform:uppercase;
+	font-size:22px;
+	font-weight:bold;
+	float:right;
+	padding:5px 0 0 0;
+ 	text-align:center;
+}
+
+img.alignleft {
+	float:left;
+	margin:0 15px 0 0;
+}
+
+img.alignright {
+	float:right;
+	margin:0 0 0 15px;
+}
+
+hr {
+	border:0;	
+	background:#999;
+	height:1px;
+	clear:both;
+}
+
+p.intro {
+	font-weight:bold;
+	font-size:14px;
+}
+
+p.bold {
+font-weight:bold;
+font-size:19px;
+color:black;
+line-height: 130%;
+margin-top:0px;
+}
+p.orange {
+font-weight:bold;
+font-size:16px;
+color:#F46C39;
+line-height: 130%;
+margin-top:0px;
+}
+p.orange_big {
+font-weight:bold;
+font-style:italic;
+font-size:18px;
+color:#F46C39;
+line-height: 130%;
+margin-top:0px;
+margin-bottom:0px;
+}
+.bigger {
+font-weight:bold;
+font-size:18px;
+color:#F46C39;
+line-height: 130%;
+margin-top:0px;
+}
+a.readmore {
+color:#1074ba;
+font-size:16px;
+}
+.big {
+color:black;
+margin-bottom:10px;
+letter-spacing:1px;
+font-size:26px;
+
+}
+.bigger {
+color:black;
+letter-spacing:1px;
+font-size:30px;
+padding-bottom:10px;
+}
+#container {
+width:420px;
+}
+#container2 {
+margin-top:10px;
+width:420px;
+float:left;
+}
+.social {
+padding: 7px 0 0 0;
+}
+img {border:0 ;}
+
+/* ==================
+HEADER
+=====================*/
+
+#header {
+	background:transparent;
+	width:100%;
+	height:auto;
+	padding-top:10px;
+	text-align:center;
+}
+
+#header .logo {
+	float:left;
+	width:148px;
+	height:134px;
+	margin:8px 0 -45px 0;
+	background:url("/image.php?acc=1736&amp;id=47857") no-repeat scroll 0 0 transparent;
+	position:relative;
+display:none;
+}
+
+#inner_content #header_section {
+	
+}
+
+#header ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#header  ul li a:hover{
+	color:#FC6C35; background:transparent;
+}
+#header ul li {
+	margin:0;
+	padding:0;
+	font-size:17px;
+	margin:0 0 6px 0;
+	color:#00A0C5;
+	font-weight:bold;
+	background:none;
+}
+
+#header .topNav a {
+	color:#00A0C5;
+	text-decoration:none;	
+	font-weight:bold;
+}
+
+#header .topNav a:hover {
+	color:#9DC237;
+}
+
+#header .blurb {
+	font-size:14px;
+	text-transform:uppercase;
+	width:425px;
+	float:right;
+	font-weight:bold;
+	margin:50px 0 0 0;
+	text-align:right;
+	}
+
+.blurb {
+	position: fixed;
+	top: 0;
+	left: 77%;
+	z-index: 100000;
+	background: url('http://www.eiseverywhere.com/image.php?acc=1736&amp;id=192065');
+	color: #fff;
+	width: 130px;
+	height:88px;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;	
+}
+
+.blurbtext {
+	padding-top:30px
+}
+
+.blurbtext a {
+	color:#fff;
+}
+	
+
+/* ==================
+BODY LAYOUT
+=====================*/
+
+.eh_outer_div {
+	width:961px !important;
+	margin:0;
+}
+
+#main_section {
+
+width:900px !important;
+font-family:  Arial, Helvetica, sans-serif;
+padding-left: 15px;
+
+}
+
+#main_section &gt; div { margin-left:30px;}
+
+td.header {
+	display:none;
+}
+
+#inner_content td.header {
+        display:block;
+}
+
+#Feature {
+	margin:0 0 5px 0;
+	padding:0 0 35px 0;
+	background:url(/image.php?acc=1736&amp;id=32986) left bottom no-repeat;
+	font-size:16px;
+}
+
+/* ==================
+STAY CONNECTED
+=====================*/
+
+#StayConnected {
+	margin:15px 0 0;
+	background:#909090;
+	width:100%;
+}
+
+/* ==================
+SPONSORS
+=====================*/
+
+#Sponsors {
+	margin:15px 0 0;
+	background:#f5f5f5;
+	width:100%;
+}
+
+#sponsor_logo {
+	padding:5px;
+	text-align:center;
+	border:0px;
+}
+
+#sponsor_line {
+	border-top:1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	height:7px;	
+}
+
+#sponsor_label {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#aaa;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+
+/* ==================
+FOOTER
+=====================*/
+
+#Footer {
+	margin:0;
+	width:100%;
+	text-align:center;
+	color:#0089CB;
+	background:#333;
+	height:50px;
+	}	
+
+#Footer a:link, #Footer a:visited {
+	color:#999;
+	font-weight:normal;
+}
+
+#Footer a:hover{
+	color:#666666;
+}
+	
+#Footer td.border {
+	height:20px;
+	background: transparent url(/image.php?acc=1736&amp;id=32986) no-repeat 0 0;
+}
+
+#Footer td.content {
+	background:transparent url(/image.php?acc=1736&amp;id=33177) no-repeat bottom left;
+	padding:0 0 15px 0;
+}
+
+#Footer td.foot {
+	background:transparent url(/image.php?acc=1736&amp;id=33180) no-repeat 0 0;
+	height:91px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+#Footer td.foot a , #Footer td.foot a:link, #Footer td.foot a:visited {
+	color:#FFFFFF;
+}
+
+#Footer td.foot a:hover {
+	text-decoration:underline;
+}/* ==================
+NAVBAR
+=====================*/
+
+.ehtm { 
+	font-size: 12px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	z-index: 3;
+	font-weight: normal;
+	letter-spacing: 1px;
+	width: 961px;
+	height: 37px;
+	padding: 0 0 15px;
+	margin-bottom: 30px;
+	position: fixed;
+	top: 0;
+	
+	
+	-webkit-box-shadow: 0px 0px 3px 1px #444; /* box shadow */
+	box-shadow: 0px 0px 3px 1px #444;
+	
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
+}
+	
+tr.tabmenu {
+	background:transparent !important;
+}
+
+.ehtm ul { 
+	padding:10px 0 0 0; 
+	margin:0; 
+	list-style-type:none; 
+	background:none; 
+	z-index:1000000; 
+	font-weight:bold;
+
+}
+.ehtm ul ul { 
+	width:12em; 
+	z-index:1000000;
+visibility:hidden; 
+position:fixed; 
+height:0; 
+top:30px; 
+width:14em; 	
+z-index:1000000; 
+display:block;
+ }
+ 
+.ehtm ul li { 
+	float:left; 
+	height:2em; 
+	line-height:2em; 
+	z-index:1000000; 
+	text-transform:uppercase; 
+	background:none; 
+	padding:0; 
+}
+	
+.ehtm ul ul li { 
+	display:block; 
+	width:12em; 
+	height:auto; 
+	position:relative; 
+	line-height:1em;
+	z-index:1000000; 
+ }
+ 
+.ehtm a,.ehtm a:visited { 
+	display:block; 
+	float:left; 
+	height:100%; 
+	text-decoration:none; 
+	background:transparent; 
+	color:#D3D3D3; 
+	padding:0 0 0 1.2em;  
+	z-index:1000000;
+}
+.ehtm ul ul a, .ehtm ul ul a:visited { 
+	display:block; 
+	background:#333; 
+	color:#D3D3D3; 
+	width:12em; 
+	height:100%; 
+	line-height:1em; 
+	padding:0.5em 1em;
+	z-index:1000000; }
+
+.ehtml ul ul a:active {
+	color:#fff;
+}
+	
+.ehtm ul table ul a,.ehtm ul table ul a:visited { width:12em; }
+.ehtm table {position:absolute; left:0; top:0; font-size:1em; z-index:-1;}
+.ehtm ul ul table {lef	:-1px;}
+.ehtm li:hover { position:relative; }
+* html .ehtm a:hover { position:relative; }
+.ehtm a:hover { 
+	color:#FC6C35; 
+	background:transparent; 
+	-moz-transition: all 0.2s linear; /*webkit color fade */
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear; 
+	}
+.ehtm :hover &gt; a { 
+	color:#FC6C35; 
+	background:transparent;
+	-moz-transition: all 0.2s linear; /*webkit color fade */
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear; 
+}
+.ehtm ul ul a:hover{ color:#FC6C35; background:#444; }
+.ehtm ul ul :hover &gt; a { color:#FC6C35; background:#444; }
+.ehtm ul ul ul a:hover { background:#FC6C35; }
+.ehtm ul ul ul :hover &gt; a { background:#FC6C35; }
+.ehtm ul ul ul ul a:hover { background:#FC6C35; }
+.ehtm ul ul ul{ left:14em; top:0; width:14em; 	z-index:1000000;  }
+.ehtm ul li:hover ul, .ehtm ul a:hover ul { visibility:visible; padding-bottom:3em; height:auto; background:transparent url(/images/trans.gif); }
+.ehtm ul :hover ul ul{ visibility:visible; }
+.ehtm ul :hover ul :hover ul ul{ visibility:visible; }
+.ehtm ul :hover ul :hover ul{ visibility:visible; }
+.ehtm ul :hover ul :hover ul :hover ul { visibility:visible; }
+#ehsm { margin:0 auto; position:relative; }
+#ehsm ul {margin:0; padding:0; list-style:none; white-space:nowrap; z-index:500000; }
+#ehsm li {margin:0; padding:0; list-style:none;}
+#ehsm li {display:inline-block; display:inline;}
+#ehsm ul {position:absolute; left:-9999px;}
+#ehsm ul.level1 { position:absolute; left:0px; top:0px; width:190px; background:#2c476a; }
+#ehsm a { display:block; color:#ffffff; line-height:22px; text-decoration:none; }
+#ehsm ul li:hover &gt; ul {visibility:visible; left:100%; margin-top:-22px; margin-left:-1px; }
+#ehsm a:hover ul,
+#ehsm a:hover a:hover ul,
+#ehsm a:hover a:hover a:hover ul {left:100%; visibility:visible;}
+#ehsm a:hover ul ul,
+#ehsm a:hover a:hover ul ul {left:-9999px;}
+#ehsm li a:hover { background:#001437; color:#FC6C35; }
+#ehsm li:hover &gt; a {background:#001437; color:#FC6C35; }
+#ehsm li a.fly { background:#2c476a; color:#ffffff; padding-left:1em; padding-right:2em; }
+#ehsm li a.fly:hover { background:#a8b7c6; color:#ffffff; }
+#ehsm li:hover &gt; a.fly { background:#a8b7c6; color:#ffffff; }
+#ehsm table {position:absolute; left:99%; height:0; width:0; border-collapse:collapse; margin-top:-5px; margin-left:-1px;}
+.sel_top { color:#FC6C35 !important; background:transparent; }
+.sel_side { color:#ffffff; background:#001437; }
+
+/* ==================
+AGENDA TABLE
+=====================*/
+.agenda_table { background:#fff; width:920px;}
+.agenda_table.td { padding:2px; }
+.agenda_table td.header  {
+	display:block;
+	font-size:20px;
+        font-weight:bold
+        
+}
+
+.eh_outer_div { overflow:hidden; }
+.dates { clear:both; }
+.dates a { margin:0 0.2em 0.5em; padding:0.5em; background:#a8b7c6; display:block; float:left; }
+.dates .selected{ color:#ffffff; background:#2c476a; }
+
+
+/* ==================
+AMY CODE - IGNORE THIS
+=====================*/
+
+.trythis {
+	    text-shadow: -1px 0px 0px rgba(0, 0, 0, 1);
+		font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+		text-align:center;
+		font-size:40px;
+		color:#333;
+}
+
+.twitter_handle {
+	font-weight:bold;
+	font-size:15px;
+	color:#fc6035;
+	text-transform:lowercase;
+}
+
+/* ==================
+INFOBOXES - MAIN PAGE
+=====================*/
+
+.infobox {
+	background-color: transparent;
+	font-family: 'Open Sans', Arial, Helvetica;
+	font-size:13px;
+	border: 1px solid #fff;
+	border-radius:5px;
+	height:175px;
+	color:#333;
+	padding:15px;
+	font-weight:bold;
+	text-align:left;
+	
+	transition:background 2s;
+	-webkit-transition:background 2s; /* Safari */
+}
+
+.infobox h1 {
+	font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	transition: background 2s;
+	-webkit-transition: background 2s;
+	display: block;
+	text-transform: none;
+}
+
+.infobox p {
+	font-family:'Open Sans Condensed', Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	line-height:125%;	
+}
+
+.infobox:hover {
+	background-color:#CCC;
+}
+
+/*--- nevermind! 
+.infobox a {
+background-color: #fc6c35;
+color: #fff;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 11px;
+letter-spacing: 1px;
+text-transform: uppercase;
+padding: 7px 7px 7px 7px;
+border: 1px solid #ff9065;
+}
+--- */
+
+.infobox a {
+color:#fc6c35;
+font-weigh:bold;
+text-decoration:underline;
+}
+
+infobox a:hover {
+	background:#ff9065;
+}
+
+/* ==================
+BUTTON STYLING
+=====================*/
+
+.button {
+	background-color: #FC6035;
+	font-family: 'Open Sans', Arial, Helvetica;
+	font-size:11px;
+	border: 1px solid #fff;
+	color:#FFF;
+	padding:4px;
+	font-weight:bold;
+	text-align:center;
+        text-transform:uppercase;
+        letter-spacing:1px;
+}
+
+.button:hover { background-color:#ff9035; }
+
+.button a { color:#fff }
+
+.button a:hover {color:#fff;}
+
+/* ==================
+OUTER TABLE - GIVES DROPSHADOW
+=====================*/
+#outer_table {
+	background-color: rgba(255, 255, 255, .3);
+	-webkit-box-shadow:  0px 0px 10px 2px rgba(0, 0, 0, .3);
+	box-shadow:  0px 0px 10px 2px rgba(0, 0, 0, .3);
+}
+
+/*===========================
+SLIDER
+============================*/
+.banner { 
+	position: relative; 
+	overflow: hidden;
+	width:100%;
+	height:400px;
+	text-align:center;
+	background-color:#fff;
+ }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+
+/*===========================
+OTHER CUST.
+============================*/
+
+.sponsor_description { font-size:12px; line-height:120%; font-weight:normal; }
+</style>
+<style type="text/css" media="print">
+.eh_outer_div { overflow:visible; }
+</style>
+<script type="text/javascript" src="/include/scripts/prototype.js"></script>
+<script type="text/javascript" src="/include/scripts/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="/include/scripts/lightbox-web.js?v=1"></script>
+<link rel="stylesheet" href="/ehome/include/lightbox.css" type="text/css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/themes/global/fonts.css"></head>
+<body>
+<input type="hidden" id="module" value="ehome" /><input type="hidden" id="eventid" value="70445" /><table id="outer_table" width="961" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff"><tr><td><div class="blurb">
+<div class="blurbtext"><a href="registernow.com">register</a></div>
+</div></td></tr><tr bgcolor="#212121" class="tabmenu"><td style="height:20px;"><div class="ehtm">
+<ul >
+<li><a href="/ehome/70445/home/?&"  >Home</a></li>
+<li><a href="/ehome/70445/conference schedule/?&"  class="sel_top">SCHEDULE<!--[if gte IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+
+<ul>
+<li><a  href="http://conference.digitalbookworld.com/ehome/70445/conference%20schedule/?&amp;" >PROGRAM OVERVIEW</a></li>
+<li><a  href="/ehome/70445/153278/?&" >Digital Book Awards Gala</a></li>
+</ul>
+
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="/ehome/70445/145653/?&"  >Speakers</a></li>
+<li><a href="/ehome/70445/144368/?&"  >Pre-Conference Events<!--[if gte IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+
+<ul>
+<li><a  href="/ehome/70445/139012/?&" >Launch Kids</a></li>
+<li><a  href="/ehome/70445/Digital Design and Production/?&" >Digital Design and Production</a></li>
+<li><a  href="/ehome/70445/152148/?&" >Making Information Pay</a></li>
+<li><a  href="/ehome/70445/workshops/?&" >Workshops</a></li>
+<li><a  href="/ehome/70445/162406/?&" >“OUT OF PRINT” Film Screening</a></li>
+</ul>
+
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="/ehome/70445/sponsors and exhibitors/?&"  >Sponsors/Exhibitors<!--[if gte IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+
+<ul>
+<li><a  href="/ehome/70445/sponsors/?&" >Digital Book World Sponsors</a></li>
+<li><a  href="/ehome/70445/MIPSPONSORS/?&" >Making Information Pay Sponsors</a></li>
+</ul>
+
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="/ehome/70445/travel/?&"  >Travel</a></li>
+<li><a href="/ehome/70445/pricing/?&"  >Pricing</a></li>
+<li><a href="/ehome/70445/139010/?&"  >About<!--[if gte IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+
+<ul>
+<li><a  href="/ehome/70445/148950/?&" >Press Room</a></li>
+<li><a  href="/ehome/70445/165877/?&" >Companies Attending</a></li>
+<li><a  href="/ehome/70445/167306/?&" >DBW Fellowship</a></li>
+</ul>
+
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+</ul>
+</div></td></tr><tr bgcolor="#BFBFBF" class="languages"><td class="header" align="right">
+&nbsp;</td>
+</tr><tr><td id="inner_content" valign="top" style="padding:0px;"><div class="eh_outer_div" style="width:961px;"><div id="header_section" style="width:961px;float:left;margin-bottom:0px;"><div><div style="width:100%;overflow:hidden"><div>
+<div style="width:100%;overflow:hidden"><a id="top"></a>
+<div id="header" style="background-color:#fff; padding-top:20px;">
+<img src="http://www.eiseverywhere.com/image.php?acc=1736&id=199486" alt="" /></div>
+</div>
+</div></div></div><div><div style="width:100%;overflow:hidden"><div class="white" style="padding:20px;">
+<span style="color:#fc6c35; font-weight:bold; font-size:15px;">#DBW14</span>    
+<a href="http://twitter.com/#!/DigiBookWorld"><img src="http://www.eiseverywhere.com/image.php?acc=1736&id=199492" onmouseover="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199535'" onmouseout="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199492'"></a>
+<a href="http://www.facebook.com/digitalbookworld"><img src="http://www.eiseverywhere.com/image.php?acc=1736&id=199488" onmouseover="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199532'" onmouseout="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199488'"></a>
+<a href="http://www.linkedin.com/groups?home=&gid=2176661"><img src="http://www.eiseverywhere.com/image.php?acc=1736&id=199490" onmouseover="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199533'" onmouseout="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199490'"></a>
+<a href="http://www.digitalbookworld.com/feed"><img src="http://www.eiseverywhere.com/image.php?acc=1736&id=199491" onmouseover="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199534'" onmouseout="this.src='http://www.eiseverywhere.com/image.php?acc=1736&id=199491'"></a>
+</div></div></div></div><div id="main_section" style="width:961px;float:left;margin-bottom:0px;"><div><div style="width:100%;overflow:hidden"><h1>SESSIONS</h1>
+<span style="font-weight: normal; font-size: 12pt;"></span><span style="font-size: 12pt;">Digital Book World’s sessions strive to offer you the most practical, relevant and actionable programming on everything from eBook publishing and internet marketing to digital solutions for selling and marketing your books. </span><br />
+<br />
+<span style="font-size: 12pt;">This year’s programming reflects the most informed analysis of four hot-button issues facing book-industry professionals today. <a target="_self" href="http://conference.digitalbookworld.com/ehome/70445/153234/?&">Click here</a> to find out more about why these topics need to be on your radar:</span><br />
+<br />
+<ul>
+    <li><span style="font-size: 12pt;">Analyzing Amazon: A New View</span></li>
+    <li><span style="font-size: 12pt;">Change is Good: Change Management for Today’s Book Publisher</span></li>
+    <li><span style="font-size: 12pt;">Start-Ups & You: Worth the Investment?</span></li>
+    <li><span style="font-size: 12pt;">Data-Driven Decision-making</span></li>
+</ul>
+<br />
+<span style="font-weight: normal; font-size: 12pt;"></span><hr style="font-weight: normal;" /></div></div><div><table width="100%" cellspacing="1" class="agenda_table"><tr class="day_header"><td colspan="6" class="header">01.13.2014</td></tr><tr><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:30 am - 5:00 pm</td><td valign="top" colspan="5"  ><a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4271365&sessionchoice=1','','400','400');"></a><br /><span style="font-size: 12pt;"><strong style="font-weight: bold"><a target="_blank" href="http://conference.digitalbookworld.com/ehome/70445/Digital%20Design%20and%20Production/">Digital Design & Production Conference: The Mechanics of E-Book Implementation (DDPC)</a></strong></span></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:45 am - 5:00 pm</td><td valign="top" colspan="5"  ><a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4271334&sessionchoice=1','','400','400');"></a><br /><span style="font-size: 12pt;"><strong><a href="http://conference.digitalbookworld.com/ehome/70445/Launch%20Kids/">Launch Kids Conference</a></strong></span></td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:00 am - 5:30 pm</td><td valign="top" colspan="5"  ><a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4271364&sessionchoice=1','','400','400');"></a><br /><a href="http://conference.digitalbookworld.com/ehome/70445/Making%20Information%20Pay/?&"<span style="font-size: 12pt; font-weight: bold">Making Information Pay for Higher Ed</span></a></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />5:30 pm</td><td valign="top" colspan="5"  ><a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4512100&sessionchoice=1','','400','400');"><b>Reception:  “Out of Print” – A Screening of the Award-Winning Book Industry Documentary</b></a><br /><font face="arial">
+<div class="bio_hide">Narrated by Meryl Streep, “Out of Print” draws us into the topsy-turvy world of words, illuminating the turbulent and exciting journey from the book through the digital revolution. Jeff Bezos, Jane Friedman, Ray Bradbury, Scott Turow, Darcie Chan, Jeffrey Toobin, Ira Wolfman – parents, students, educators, scientists – all highlight how this revolution is changing everything about the printed word – and changing us.</div>
+<div><br />
+</div>
+<div><strong style="font-weight: bold">All proceeds from this reception and screening benefit Goddard Riverside Community Center.</strong></div>
+</font></td></tr></table><br /></div><div><table width="100%" cellspacing="1" class="agenda_table"><tr class="day_header"><td colspan="4" class="header">Workshops</td></tr><tr><td width="25%"></td><td width="25%"></td><td width="25%"></td><td width="25%"></td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:00 am - 12:00 pm</td><td valign="top" bgcolor="" ><b>Driving Agency Growth: Fresh Case Studies, Models, &amp; Tools for Agents &amp; Managers</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4288250&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117740&&','Jason Allen Ashlock','400','400');">Jason Allen Ashlock</a>, Strategist with Movability, Movable Type Management</td><td valign="top" bgcolor="" ><b>Finding and Building an Audience: On Discovery and Discoverability </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4288250&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118548&&','Andrew Rhomberg','400','400');">Andrew Rhomberg</a>, Founder, Jellybooks.com<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117400&&','Ashleigh Gardner','400','400');">Ashleigh Gardner</a>, Head of Content, Wattpad</td><td valign="top" bgcolor="" ><b>Licensing Copyright in the Digital Age</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4288250&sessionchoice=3','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124493&&','Michael Healy','400','400');">Michael Healy</a>, Executive Director (Author and Publisher Relations), Copyright Clearance Center<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124494&&','Skott Klebe','400','400');">Skott Klebe</a>, Product Evangelist, Copyright Clearance Center<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123371&&','Devereux Chatillon','400','400');">Devereux Chatillon</a>, Attorney, Chatillon Law<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129409&&','Bill Rosenblatt','400','400');">Bill Rosenblatt</a>, President, GiantSteps Media Technology Strategies <br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=130760&&','Kimberly Potvin','400','400');">Kimberly Potvin</a>, Director of Content Acquisition and Intellectual Property Practices, Cengage Learning</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />2:00 pm - 3:00 pm</td><td valign="top" colspan="3"  ><b>Workshop: SPi Global - Content Development and Production for Multi-Platform Use</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4288252&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119197&&','John  Wheeler','400','400');">John  Wheeler</a>, Senior Vice President, Strategy and Emerging Technologies , SPi Global</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />3:00 pm - 4:00 pm</td><td valign="top" colspan="3"  ><b>Workshop: SPi Global - EDUPUB: Next Steps for Content Standards for Digital Publishing in Education</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4359470&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117406&&','BIll McCoy','400','400');">BIll McCoy</a>, Executive Director, IDPF<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124499&&','Paul Belfanti','400','400');">Paul Belfanti</a>, Director of Content Architecture, Pearson Education North America<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=128674&&','Dan Haynam','400','400');">Dan Haynam</a>, Implementation Manager, Inkling</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />4:00 pm - 5:00 pm</td><td valign="top" colspan="3"  ><b>Workshop: SPi Global - Smart Content – From Discovery to Engagement</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4359471&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117991&&','John  Prabhu','400','400');">John  Prabhu</a>, VP, Solutions Architect, SPi Global<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119197&&','John  Wheeler','400','400');">John  Wheeler</a>, Senior Vice President, Strategy and Emerging Technologies , SPi Global<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=128685&&','Nathan Schultz','400','400');">Nathan Schultz</a>, Chief Content Officer, Chegg<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129899&&','Richard Rubin','400','400');">Richard Rubin</a>, Executive Director, Editorial &amp; Content Re-engineering Programs, Wolters Kluwer Law &amp; Business</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />2:00 pm - 5:00 pm</td><td valign="top" bgcolor="" ><b>Boosting eBook Exposure and Discovery Through Libraries</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4359445&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129644&&','Alan Inouye','400','400');">Alan Inouye</a>, Director of the Office for Information Technology Policy, American Library Association<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129645&&','Wendy Bartlett','400','400');">Wendy Bartlett</a>, Collection Development Manager, Cuyahoga County Public Library <br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129676&&','Larra Clark','400','400');">Larra Clark</a>, Program Director - Office for Information Technology Policy, American Library Association<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129677&&','Maja Thomas','400','400');">Maja Thomas</a>, Consultant<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129678&&','Nora Rawlinson','400','400');">Nora Rawlinson</a>, Founder and Editor, EarlyWord.com</td><td valign="top" bgcolor="" ><b>Ebooks and the Law: The Ebook Impact  On Contracts, Content and Consumers</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4359445&sessionchoice=4','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119998&&','Judith B. Bass','400','400');">Judith B. Bass</a>, Owner, Law Offices of Judith B. Bass<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120001&&','Kim Schefler','400','400');">Kim Schefler</a>, Partner, Levine Plotkin &amp; Menin, LLP</td><td valign="top" bgcolor="" ><b>Ebook Publishing for Everyone: How Non-Book-Publishing Companies Can Profit from Ebook-Publishing Initiatives</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4359445&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117740&&','Jason Allen Ashlock','400','400');">Jason Allen Ashlock</a>, Strategist with Movability, Movable Type Management<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122648&&','Jack Perry','400','400');">Jack Perry</a>, Owner, 38enso Inc.</td></tr></table><br /></div><div><table width="100%" cellspacing="1" class="agenda_table"><tr class="day_header"><td colspan="6" class="header">01.14.2014</td></tr><tr><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:30 am - 8:35 am</td><td valign="top" colspan="5"  ><b>Welcome and Opening Remarks</b></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:35 am - 8:50 am</td><td valign="top" colspan="5"  ><b>The Past, Present, and Future of the Publishing Industry </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241082&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112504&&','Mike Shatzkin','400','400');">Mike Shatzkin</a>, Conference Council Chair, Founder &amp; CEO, The Idea Logical Company</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:50 am - 9:30 am</td><td valign="top" colspan="5"  ><b>CEO Roundtable: The Executive’s View of the Future </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241091&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112505&&','Michael  Cader','400','400');">Michael  Cader</a>, Creator, Publishers Lunch<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112506&&','David Nussbaum','400','400');">David Nussbaum</a>, Chairman and Chief Executive Officer, F+W Media, Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115142&&','Tim O\'Reilly','400','400');">Tim O'Reilly</a>, Founder &amp; CEO, O'Reilly Media, Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120361&&','Carolyn  Reidy','400','400');">Carolyn  Reidy</a>, President &amp; CEO, Simon &amp; Schuster<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122379&&','Dominique Raccah','400','400');">Dominique Raccah</a>, CEO &amp; Publisher, Sourcebooks</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:30 am - 9:45 am</td><td valign="top" colspan="5"  ><b>Change Is Good: How to Get Your Organization Moving Faster</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241083&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112507&&','Carolyn Pittis','400','400');">Carolyn Pittis</a>, Managing Director, Welman Digital LLC</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:45 am - 10:15 am</td><td valign="top" colspan="5"  ><b>Morning Break and Exhibits</b></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:45 am - 10:15 am</td><td valign="top" colspan="5"  ><b>Case Study: Aptara - Building a Baseline EPUB 3 Production Template</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4414714&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=125124&&','Jean Kaplansky','400','400');">Jean Kaplansky</a>, Digital Content Solutions Architect, Aptara<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=125125&&','Tzviya Siegman','400','400');">Tzviya Siegman</a>, Senior Content Technology Specialist, John Wiley and Sons</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />10:15 am - 10:40 am</td><td valign="top" colspan="5"  ><b>The Winds of Change: Understanding the Global Book Market </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241085&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119825&&','Jonathan Nowell','400','400');">Jonathan Nowell</a>, President, Nielsen Book<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119826&&','Jo Henry','400','400');">Jo Henry</a>, Director, Nielsen Book</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />10:40 am - 10:55 am</td><td valign="top" colspan="5"  ><b>The Real Ebook Revolution is Just Beginning</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241090&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115142&&','Tim O\'Reilly','400','400');">Tim O'Reilly</a>, Founder &amp; CEO, O'Reilly Media, Inc.</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />10:55 am - 11:05 am</td><td valign="top" colspan="5"  ><b>Results of DBW’s Publishing Technology and Start-up Survey </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241088&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112504&&','Mike Shatzkin','400','400');">Mike Shatzkin</a>, Conference Council Chair, Founder &amp; CEO, The Idea Logical Company</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />11:05 am - 11:20 am</td><td valign="top" colspan="5"  ><b>Publishers in a Tech-Driven World – Partner or Perish </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241089&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118548&&','Andrew Rhomberg','400','400');">Andrew Rhomberg</a>, Founder, Jellybooks.com</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />11:20 am - 11:30 am</td><td valign="top" colspan="5"  ><b> Branded Authors: What Every Publisher Needs to Know</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4522789&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=128936&&','Peter Hildick-Smith','400','400');">Peter Hildick-Smith</a>, Founder &amp; CEO, Codex Group</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />11:30 am - 12:00 pm</td><td valign="top" colspan="5"  ><b>Data-Driven Decision-Making: Publishing Smarter </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241086&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115126&&','Ken Brooks','400','400');">Ken Brooks</a>, SVP, Global Supply Management, McGraw-Hill<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120362&&','Chantal Restivo-Alessi','400','400');">Chantal Restivo-Alessi</a>, Chief Digital Officer , HarperCollins Publishers<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120364&&','Chad Phelps','400','400');">Chad Phelps</a>, Chief Digital Officer, F+W Media, Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121893&&','Ken  Michaels','400','400');">Ken  Michaels</a>, Global COO, Macmillan Science and Education</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />12:00 pm - 1:30 pm</td><td valign="top" colspan="9"  ><b>Lunch Break and Exhibits</b></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />12:00 pm - 12:30 pm</td><td valign="top" colspan="3"  ><b>Case Study: Inkling - The Culinary Revolution Goes Digital: How Modernist Cuisine at Home Broke the Mold </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4303131&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129406&&','Rachel Castillo','400','400');">Rachel Castillo</a>, Content Architect, Inkling</td><td valign="top" colspan="2"  ><b>Case Study: Impelsys - Maximizing Revenue Potential of Your Content Assets Through Innovative Business Models</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4303131&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120396&&','Sameer Shariff','400','400');">Sameer Shariff</a>, Founder &amp; CEO, Impelsys Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129646&&','Terri Lynn Soutor','400','400');">Terri Lynn Soutor</a>, President, Brain Hive, LLC</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />12:30 pm - 1:00 pm</td><td valign="top" colspan="3"  ><b>Case Study: Gutenberg Technology - Epub3 &amp; Adaptive Ebooks. Change the Reader's Experience</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4326831&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129402&&','François-Xavier Hussherr','400','400');">François-Xavier Hussherr</a>, Founder &amp; CEO, Gutenberg Technology<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129534&&','David Liu','400','400');">David Liu</a>, COO, Knewton</td><td valign="top" colspan="2"  ><b>Case Study: SPi Global: Print to Digital, Digital First, Simultaneous Publishing - What’s Your Strategy?</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4326831&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117991&&','John  Prabhu','400','400');">John  Prabhu</a>, VP, Solutions Architect, SPi Global<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124499&&','Paul Belfanti','400','400');">Paul Belfanti</a>, Director of Content Architecture, Pearson Education North America<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129667&&','Matthew Cavnar','400','400');">Matthew Cavnar</a>, VP of Business Development, Vook</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />1:00 pm - 1:30 pm</td><td valign="top" colspan="3"  ><b>Case Study: Aptara - Producing Highly-Interactive eBooks at Scale - Featuring Case Studies from Elsevier, Pearson, and Rowman &amp; Littlefield</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4326836&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129405&&','Maria Bartoszewicki','400','400');">Maria Bartoszewicki</a>, Director of Interactive eBooks, Aptara</td><td valign="top" colspan="2"  ><b>Case Study: Ingram - Making the Data Make Sense – How to use Analytics to Drive Digital and Print Decisions</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4326836&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115126&&','Ken Brooks','400','400');">Ken Brooks</a>, SVP, Global Supply Management, McGraw-Hill<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129411&&','Kelly Gallagher','400','400');">Kelly Gallagher</a>, Vice President, Content Acquisition North America, Ingram Content Group</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />1:30 pm - 2:20 pm</td><td valign="top" bgcolor="#CCCCCC" ><b>Investing in Publishing Innovation </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241095&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=114863&&','Adam Salomone','400','400');">Adam Salomone</a>, Associate Publisher, The Harvard Common Press<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117954&&','Troy Williams','400','400');">Troy Williams</a>, President, Macmillan New Ventures<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118537&&','David Roland','400','400');">David Roland</a>, Chief Venture Capital Officer, Ingram Content Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119831&&','Clare Peeters','400','400');">Clare Peeters</a>, VP, Managing Director - Corporate Development, Axel Johnson</td><td valign="top" bgcolor="#FFFFFF" ><b>Change People - How to Design a Culture of Growth </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241095&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121900&&','Martin Klopstock','400','400');">Martin Klopstock</a>, Digital &amp; Operations Director, Kogan Page Ltd.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121903&&','Wendy Elman','400','400');">Wendy Elman</a>, Founder &amp; President, Welman Digital LLC<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120360&&','Laura Baldwin','400','400');">Laura Baldwin</a>, President, O'Reilly Media<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112506&&','David Nussbaum','400','400');">David Nussbaum</a>, Chairman and Chief Executive Officer, F+W Media, Inc.</td><td valign="top" bgcolor="#CCCCCC" ><b>Kids Launchpad: New Ways to Reach Young Readers</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241095&sessionchoice=3','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119820&&','Rebecca Levey','400','400');">Rebecca Levey</a>, Co-Founder, KidzVuz.com<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122359&&','Marjan Ghara','400','400');">Marjan Ghara</a>, Founder &amp; CEO, BiblioNasium<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124119&&','Shira Schindel','400','400');">Shira Schindel</a>, Content Acquisitions Manager, Qlovi<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129541&&','Jess Johns','400','400');">Jess Johns</a>, Director of Operations, The Idea Logical Company<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119082&&','Eric Huang','400','400');">Eric Huang</a>, Development Director, Made in Me</td><td valign="top" bgcolor="#FFFFFF" ><b>What Consumers Want: Utilizing Data for Acquisitions and Marketing </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241095&sessionchoice=4','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115122&&','Peter McCarthy','400','400');">Peter McCarthy</a>, Founder, McCarthy Digital<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115130&&','David Boyle','400','400');">David Boyle</a>, SVP of Consumer Insight, HarperCollins Publishers<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117750&&','Suzie Sisoler','400','400');">Suzie Sisoler</a>, Senior Director of Consumer Engagement, Penguin Random House<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123353&&','James McQuivey','400','400');">James McQuivey</a>, Vice President, Principal Analyst, Forrester Research<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=128369&&','Rebecca Smart','400','400');">Rebecca Smart</a>, CEO, Osprey Group</td><td valign="top" bgcolor="#CCCCCC" ><b>HTML5 is the Future of Book Authorship</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4241095&sessionchoice=5','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115142&&','Tim O\'Reilly','400','400');">Tim O'Reilly</a>, Founder &amp; CEO, O'Reilly Media, Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117962&&','Sanders  Kleinfeld','400','400');">Sanders  Kleinfeld</a>, Publishing Technology Engineer, O'Reilly Media</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />2:30 pm - 3:20 pm</td><td valign="top" bgcolor="#CCCCCC" ><b>Start-Ups Working with Publishers</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245690&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118548&&','Andrew Rhomberg','400','400');">Andrew Rhomberg</a>, Founder, Jellybooks.com<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124122&&','Jason Illian','400','400');">Jason Illian</a>, Founder &amp; CEO, BookShout<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124148&&','Henrik Berggren','400','400');">Henrik Berggren</a>, Founder, Readmill<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129540&&','Joanna Stone Herman','400','400');">Joanna Stone Herman</a>, Co-Founder/CEO , Librify<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=126200&&','Jeremy  Greenfield','400','400');">Jeremy  Greenfield</a>, Editorial Director, Digital Book World</td><td valign="top" bgcolor="#FFFFFF" ><b>Change Process - How to Improve Team Productivity</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245690&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118545&&','Kevin Sullivan','400','400');">Kevin Sullivan</a>, Editor in Chief, Digital Products, F.A. Davis Company<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121887&&','Daryl Lubin','400','400');">Daryl Lubin</a>, Vice President, Digital Program and Portfolio Management, McGraw-Hill Education<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122377&&','Bill Bosak','400','400');">Bill Bosak</a>, President, Graymatr Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129538&&','Julie Blattberg','400','400');">Julie Blattberg</a>, Executive Director, Consumer Engagement, Open Road Integrated Media Inc.</td><td valign="top" bgcolor="#CCCCCC" ><b>New Opportunities with Common Core and Digital Content in the Classroom</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245690&sessionchoice=3','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115310&&','Neal Goff','400','400');">Neal Goff</a>, President, Egremont Associates, LLC<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117961&&','Roy Kaufman','400','400');">Roy Kaufman</a>, Managing Director of New Ventures, Copyright Clearance Center<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118540&&','Michelle Luhtala','400','400');">Michelle Luhtala</a>, Library Department Chair, New Canaan High School<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122346&&','Jeff Livingston','400','400');">Jeff Livingston</a>, SVP, Education Policy and Strategic Alliances, McGraw-Hill Education<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122375&&','Mary-Alice Moore','400','400');">Mary-Alice Moore</a>, VP, Editorial Director, Book Publishing, Boyds Mills Press and Highlights For Children</td><td valign="top" bgcolor="#FFFFFF" ><b>Supply Chain – Managing Print Inventory and Sales in the Digital Age</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245690&sessionchoice=5','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115126&&','Ken Brooks','400','400');">Ken Brooks</a>, SVP, Global Supply Management, McGraw-Hill<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118544&&','Craig Bauer','400','400');">Craig Bauer</a>, SVP, Publishing Operations &amp; Strategic Planning, Hachette Book Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118547&&','Larry Goldberg','400','400');">Larry Goldberg</a>, Executive Director of Inventory and Operations, Abrams<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122648&&','Jack Perry','400','400');">Jack Perry</a>, Owner, 38enso Inc.</td><td valign="top" bgcolor="#CCCCCC" ><b>Emerging Strategies for eBook Production </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245690&sessionchoice=4','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117406&&','BIll McCoy','400','400');">BIll McCoy</a>, Executive Director, IDPF<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120397&&','Liisa McCloy-Kelley','400','400');">Liisa McCloy-Kelley</a>, VP, Director eBook Development &amp; Innovation, Penguin Random House Publishing Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120398&&','Sesha Bolisetty','400','400');">Sesha Bolisetty</a>, VP, Content Management, John Wiley and Sons<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121890&&','Samantha Cohen','400','400');">Samantha Cohen</a>, Director, Digital Content Development, Simon &amp; Schuster<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121894&&','Paul O\'Neill','400','400');">Paul O'Neill</a>, Production Developer, Sourcebooks</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />3:30 pm - 4:00 pm</td><td valign="top" colspan="5"  ><b>Afternoon Coffee Break and Exhibits</b></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />3:30 pm - 4:00 pm</td><td valign="top" colspan="9"  ><b>Case Study: De Marque - The New Library Model</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4414716&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124124&&','Marc Boutet','400','400');">Marc Boutet</a>, Co-Founder/President and CEO, DeMarque</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />4:00 pm - 4:50 pm</td><td valign="top" bgcolor="#CCCCCC" ><b>Publishers Working with Start-Ups </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245746&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117957&&','Rick Joyce','400','400');">Rick Joyce</a>, Chief Marketing Officer, Perseus Books Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120395&&','Leslie Hulse','400','400');">Leslie Hulse</a>, SVP, Digital Business Development, HarperCollins Publishers<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122354&&','Edward Nawotka','400','400');">Edward Nawotka</a>, Founder, Editor-in-Chief, Publishing Perspectives<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123350&&','Stephen Laster','400','400');">Stephen Laster</a>, Chief Digital Officer, McGraw-Hill Education<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129546&&','Andrea Fleck-Nisbet','400','400');">Andrea Fleck-Nisbet</a>, Executive Director, Digital Publishing, Workman Publishing</td><td valign="top" bgcolor="#FFFFFF" ><b>Change Tech - How to Find And Select (The Right) Tools</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245746&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122347&&','Steve Kasdin','400','400');">Steve Kasdin</a>, Director of Digital Strategy, Curtis Brown<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124143&&','Don Seitz','400','400');">Don Seitz</a>, SVP of Business Development, Author Solutions, Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112507&&','Carolyn Pittis','400','400');">Carolyn Pittis</a>, Managing Director, Welman Digital LLC<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129671&&','Matthew Bennett','400','400');">Matthew Bennett</a>, Director, Strategic Publishing Operations, Hachette Book Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129672&&','Donna Ketler','400','400');">Donna Ketler</a>, Director, Content Management &amp; Technology , John Wiley and Sons</td><td valign="top" bgcolor="#CCCCCC" ><b>Understanding and Reaching the YA Market</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245746&sessionchoice=3','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124131&&','Sean  Moss','400','400');">Sean  Moss</a>, Digital Marketing Officer, Walker Books<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124132&&','Marianna Ricciuto','400','400');">Marianna Ricciuto</a>, Digital Commerce Manager &amp; Online Marketer, Harlequin Teen<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124147&&','Alvina Ling','400','400');">Alvina Ling</a>, Executive Editorial Director, Little, Bown Books for Young Readers<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123351&&','Jean  Feiwel','400','400');">Jean  Feiwel</a>, Publisher, Swoon Reads, Macmillan <br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119115&&','Kristen McLean','400','400');">Kristen McLean</a>, Founder &amp; CEO, Bookigee.com</td><td valign="top" bgcolor="#CCCCCC" ><b>Beyond Representation: Building New Businesses From an Agenting Base</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245746&sessionchoice=5','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117740&&','Jason Allen Ashlock','400','400');">Jason Allen Ashlock</a>, Strategist with Movability, Movable Type Management<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129543&&','Scott Waxman','400','400');">Scott Waxman</a>, Chairman and Co-founder , Diversion Books<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129544&&','Richard Curtis','400','400');">Richard Curtis</a>, President, Richard Curtis Associates, Inc<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129545&&','Joe Regal','400','400');">Joe Regal</a>, CEO, Zola Books<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129682&&','Brenda  Marsh','400','400');">Brenda  Marsh</a>, Consultant, Clinton Street Consulting</td><td valign="top" bgcolor="#FFFFFF" ><b>Crossing the Chasm: Finding Digital Solutions for Non-Narrative Content </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245746&sessionchoice=4','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119837&&','Pavan Arora','400','400');">Pavan Arora</a>, Chief Innovation Officer, Aptara<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123377&&','Gus Gostyla','400','400');">Gus Gostyla</a>, VP, Business Development, Inkling<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123379&&','David Wilk','400','400');">David Wilk</a>, Owner, Booktrix<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117942&&','Ron Martinez','400','400');">Ron Martinez</a>, Founder, Aerbook.com<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=128370&&','Bill Kasdorf','400','400');">Bill Kasdorf</a>, Vice President, Content Solutions, Apex CoVantage</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />5:00 pm - 7:00 pm</td><td valign="top" colspan="5"  ><b>Networking Reception - Sponsored by 3M</b></td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />7:00 pm - 9:30 pm</td><td valign="top" colspan="9"  ><b>Digital Book Awards Gala - Additional Fee Required</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4312280&sessionchoice=1','','400','400');">[More Info]</a></td></tr></table><br /><table width="100%" cellspacing="1" class="agenda_table"><tr class="day_header"><td colspan="6" class="header">01.15.2014</td></tr><tr><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td><td width="17%"></td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:30 am - 8:35 am</td><td valign="top" colspan="5"  ><b>Welcome</b></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:35 am - 8:50 am</td><td valign="top" colspan="5"  ><b>Amazon’s “Everything” Strategy</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245752&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115124&&','Brad Stone','400','400');">Brad Stone</a>, Journalist/Author, The Everything Store: Jeff Bezos and the Age of Amazon</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />8:50 am - 9:05 am</td><td valign="top" colspan="5"  ><b>Deconstructing Amazon </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245755&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115121&&','Benedict Evans','400','400');">Benedict Evans</a>, Consultant, Enders Analysis</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:05 am - 9:15 am</td><td valign="top" colspan="5"  ><b>Amazon’s Growing Share of the Institutional Market</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245802&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117939&&','Joseph Esposito','400','400');">Joseph Esposito</a>, Independent Management Consultant</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:15 am - 9:45 am</td><td valign="top" colspan="5"  ><b>The Future of Amazon and the Publishing Business </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245804&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112504&&','Mike Shatzkin','400','400');">Mike Shatzkin</a>, Conference Council Chair, Founder &amp; CEO, The Idea Logical Company<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115124&&','Brad Stone','400','400');">Brad Stone</a>, Journalist/Author, The Everything Store: Jeff Bezos and the Age of Amazon<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115121&&','Benedict Evans','400','400');">Benedict Evans</a>, Consultant, Enders Analysis<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117939&&','Joseph Esposito','400','400');">Joseph Esposito</a>, Independent Management Consultant</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:45 am - 10:15 am</td><td valign="top" colspan="5"  ><b>Morning Break and Exhibits</b></td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />9:45 am - 10:15 am</td><td valign="top" colspan="5"  ><b>Case Study: Jouve - Smart, Lean, Agile: A series of Mini-case Studies About Solving Real-World Workflow, Business, and Technology Challenges</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4470306&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129517&&','Thomas Riendeau','400','400');">Thomas Riendeau</a>, Director of Business Development, Jouve North America</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />10:15 am - 10:30 am</td><td valign="top" colspan="5"  ><b>What Really Influences Customers in the Age of (Nearly) Perfect Information</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245801&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118256&&','Emanuel Rosen','400','400');">Emanuel Rosen</a>, Author, The Anatomy of Buzz</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />10:30 am - 10:45 am</td><td valign="top" colspan="5"  ><b>What Authors Want: Understanding Author Priorities in the Self-Publishing Era </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245806&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117956&&','Phil  Sexton','400','400');">Phil  Sexton</a>, Publisher, Writer's Digest</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />10:45 am - 11:00 am</td><td valign="top" colspan="5"  ><b>Should Traditional Publishers Feel Threatened by the Potential of Self-Publishing? </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245809&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115157&&','Dana Beth Weinberg, Ph.D.','400','400');">Dana Beth Weinberg, Ph.D.</a>, Professor of Sociology and Director of the MA in Data Analytics &amp; Applied Social Research, Queens College - CUNY</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />11:00 am - 11:15 am</td><td valign="top" colspan="5"  ><b>Mad Money's Jim Cramer Reports on Investment Prospects for the Publishing Industry</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4383838&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121067&&','Jim Cramer','400','400');">Jim Cramer</a>, Author of the new book: "Get Rich Carefully", CNBC's Mad Money</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />11:25 am - 12:15 am</td><td valign="top" bgcolor="#CCCCCC" ><b>Amazon Q &amp; A</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245812&sessionchoice=5','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115124&&','Brad Stone','400','400');">Brad Stone</a>, Journalist/Author, The Everything Store: Jeff Bezos and the Age of Amazon<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117939&&','Joseph Esposito','400','400');">Joseph Esposito</a>, Independent Management Consultant<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115121&&','Benedict Evans','400','400');">Benedict Evans</a>, Consultant, Enders Analysis<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129547&&','Laura Hazard Owen','400','400');">Laura Hazard Owen</a>, Book Publishing Reporter, GigaOM</td><td valign="top" bgcolor="#CCCCCC" ><b>Reaching Book Reading Communities Online</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245812&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117400&&','Ashleigh Gardner','400','400');">Ashleigh Gardner</a>, Head of Content, Wattpad<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=114862&&','Patrick Brown','400','400');">Patrick Brown</a>, Director of Author Marketing, Goodreads<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122351&&','Sarah Wendell','400','400');">Sarah Wendell</a>, Co-Founder, Smart Bitches, Trashy Books<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129680&&','Jane Litte','400','400');">Jane Litte</a>, Founder, Dear Author</td><td valign="top" bgcolor="#FFFFFF" ><b>Examining New Business Models</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245812&sessionchoice=4','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120399&&','John  Tayman','400','400');">John  Tayman</a>, Founder and CEO, Byliner<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119834&&','Karl Weber','400','400');">Karl Weber</a>, Chairman, Editorial Board, LID Publishing<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122387&&','Chris Kenneally','400','400');">Chris Kenneally</a>, Director, Business Development &amp; Author Relations, Copyright Clearance Center<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124136&&','Lyron  Bennett','400','400');">Lyron  Bennett</a>, Business Development Manager, Sourcebooks<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129675&&','Brandi Larsen','400','400');">Brandi Larsen</a>, Book Country Director, Penguin Random House</td><td valign="top" bgcolor="#CCCCCC" ><b>The Future of Bookstores </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245812&sessionchoice=3','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118503&&','Roxanne Coady','400','400');">Roxanne Coady</a>, CEO, RJJulia Booksellers<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118542&&','Margot Sage-EL','400','400');">Margot Sage-EL</a>, Owner, Watchung Booksellers<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118543&&','Sarah McNally','400','400');">Sarah McNally</a>, Owner, McNally Jackson Books<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118546&&','Chris Kerr','400','400');">Chris Kerr</a>, Owner, Parson Weems LLC<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118549&&','Bradley Graham','400','400');">Bradley Graham</a>, Owner, Politics &amp; Prose</td><td valign="top" bgcolor="#FFFFFF" ><b>Subscriptions for Books: Publishers Putting Books into Subscription Models</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245812&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115144&&','Sara Domville','400','400');">Sara Domville</a>, President, F+W Media, Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117960&&','Deborah Forte','400','400');">Deborah Forte</a>, EVP/President, Scholastic Inc./Scholastic Media<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119116&&','Lorraine Shanley','400','400');">Lorraine Shanley</a>, President, Market Partners International<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129542&&','Mary Cummings','400','400');">Mary Cummings</a>, Editorial Director , Diversion Books<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120362&&','Chantal Restivo-Alessi','400','400');">Chantal Restivo-Alessi</a>, Chief Digital Officer , HarperCollins Publishers</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />12:15 pm - 1:45 pm</td><td valign="top" colspan="5"  ><b>Lunch Break and Exhibits</b></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />12:15 pm - 12:45 pm</td><td valign="top" colspan="3"  ><b>Case Study: Bowker - Metadata and Identifiers Driving New Business Models</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4384205&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123347&&','Laura Dawson','400','400');">Laura Dawson</a>, Product Manager for Identifiers, Bowker<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124495&&','Han Huang','400','400');">Han Huang</a>, Product Manager, Data Licensing, Bowker<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124496&&','Patricia Payton','400','400');">Patricia Payton</a>, Senior Manager, Publisher Relations and Content Development, Bowker</td><td valign="top" colspan="2"  ><b>Case Study: Innodata - National Fire Protection Association and Innodata Create Highly Interactive Digital Products with Optional Back-to-Print Workflow</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4384205&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129403&&','Angela Burke','400','400');">Angela Burke</a>, Product Manager, National Fire Protection Association<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129404&&','Gayle Hart','400','400');">Gayle Hart</a>, Content Architect, Innodata</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />12:45 pm - 1:15 pm</td><td valign="top" colspan="3"  ><b>Case Study: Datamatics - Tools for Seeing What’s Next</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4384214&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=130121&&','Gordon Laws','400','400');">Gordon Laws</a>, Senior Vice President, Datamatics-PMG</td><td valign="top" colspan="2"  ><b>Case Study: Qbend - Selling Direct and Building Your Community</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4384214&sessionchoice=1','','400','400');">[More Info]</a></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />1:15 pm - 1:45 pm</td><td valign="top" colspan="3"  ><b>Case Study: Inkling - Create a Complete Digital Library: Build Beautiful, Structured Collaborative Content at Scale </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4384218&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129408&&','Paul Dever','400','400');">Paul Dever</a>, Elsevier<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129407&&','Dana Lindsay','400','400');">Dana Lindsay</a>, Manager - Content Process &amp; Training Team, Inkling</td><td valign="top" colspan="2"  ><b>Case Study: Blurb - Print or Digital: Authors Create, Readers Decide</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4384218&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129410&&','Donna Boyer','400','400');">Donna Boyer</a>, Chief Product Officer, Blurb</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />1:45 pm - 2:35 pm</td><td valign="top" bgcolor="#FFFFFF" ><b>Optimizing Metadata for Global Impact </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245937&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117395&&','Cameron Drew','400','400');">Cameron Drew</a>, Director, Global Content Acquisition, Kobo, Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117404&&','Len  Vlahos','400','400');">Len  Vlahos</a>, Executive Director, BISG<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122378&&','Phil Madans','400','400');">Phil Madans</a>, Director, Publishing Standards and Practices, Hachette Book Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123347&&','Laura Dawson','400','400');">Laura Dawson</a>, Product Manager for Identifiers, Bowker<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129548&&','Noah Genner','400','400');">Noah Genner</a>, President &amp; CEO, BookNet Canada</td><td valign="top" bgcolor="#CCCCCC" ><b>Panning for Gold: Marketing the Backlist </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245937&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115122&&','Peter McCarthy','400','400');">Peter McCarthy</a>, Founder, McCarthy Digital<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120357&&','Anne Marie  Tallberg','400','400');">Anne Marie  Tallberg</a>, VP, Associate Publisher, St. Martin's Press<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120358&&','Jennifer Weltz','400','400');">Jennifer Weltz</a>, Vice President, Jean Naggar Literary Agency<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120359&&','Sanj Kharbanda','400','400');">Sanj Kharbanda</a>, VP, Digital Strategy, Houghton Mifflin Harcourt</td><td valign="top" bgcolor="#CCCCCC" ><b>Agile Content: Developing Responsive Publishing Models</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245937&sessionchoice=3','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117408&&','Michael Cairns','400','400');">Michael Cairns</a>, Chief Operating Officer - Online Division, Publishing Technology<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124134&&','Amanda D\'Acierno','400','400');">Amanda D'Acierno</a>, SVP, Publisher, Penguin Random House Audio, Fodor's and Living Language<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129536&&','Pip Tannenbaum','400','400');">Pip Tannenbaum</a>, Digital Product Development Director, Parragon Books</td><td valign="top" bgcolor="#FFFFFF" ><b>Digital Experiments: How University Presses Are Reinventing Publishing    </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245937&sessionchoice=4','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118550&&','Gita Manaktala','400','400');">Gita Manaktala</a>, Editorial Director, MIT Press<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117913&&','Marlie Wasserman','400','400');">Marlie Wasserman</a>, Director , Rutgers University Press<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117914&&','Greg Britton','400','400');">Greg Britton</a>, Editorial Director, Johns Hopkins University Press<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119830&&','John Sherer','400','400');">John Sherer</a>, Director, University of North Carolina Press<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121888&&','Peter  Berkery','400','400');">Peter  Berkery</a>, Executive Director, Association of American University Presses</td><td valign="top" bgcolor="#CCCCCC" ><b>Building Direct Sales Relationships: Suppliers Helping Publishers Get There</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245937&sessionchoice=5','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120396&&','Sameer Shariff','400','400');">Sameer Shariff</a>, Founder &amp; CEO, Impelsys Inc.<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120401&&','Ted Hill','400','400');">Ted Hill</a>, President, THA Consulting<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122364&&','Doug Lessing','400','400');">Doug Lessing</a>, President, Firebrand Technologies<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122376&&','Micah Bowers','400','400');">Micah Bowers</a>, Founder and CEO, Bluefire Productions<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124124&&','Marc Boutet','400','400');">Marc Boutet</a>, Co-Founder/President and CEO, DeMarque</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />2:45 pm - 3:35 pm</td><td valign="top" bgcolor="#CCCCCC" ><b>Future of Libraries </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245939&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118541&&','Brian Kenney','400','400');">Brian Kenney</a>, Library Director, White Plains Public Library<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121886&&','Jamie Watson','400','400');">Jamie Watson</a>, Collection Development Coordinator, Baltimore Public Library<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121889&&','Meredith Schwartz','400','400');">Meredith Schwartz</a>, Senior Editor, News &amp; Features, Library Journal<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123349&&','Chris Fischbach','400','400');">Chris Fischbach</a>, Publisher, Coffee House Press<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129679&&','Christopher Platt','400','400');">Christopher Platt</a>, Director of BookOps, New York Public Library</td><td valign="top" bgcolor="#FFFFFF" ><b>Social Media: What Matters, What Doesn’t, and How to Know the Difference</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245939&sessionchoice=2','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117749&&','Kristin Fassler','400','400');">Kristin Fassler</a>, Director of Marketing, Penguin Random House<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117959&&','Rachel Chou','400','400');">Rachel Chou</a>, Chief Marketing Officer, Open Road Integrated Media<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=117958&&','Brad  Parsons','400','400');">Brad  Parsons</a>, Director of Culinary Marketing, Houghton Mifflin Harcourt<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119824&&','Murray Izenwasser','400','400');">Murray Izenwasser</a>, Co-Managing Partner/Strategy Practice Lead, Biztegra<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124133&&','Penny Sansevieri','400','400');">Penny Sansevieri</a>, Founder and CEO, Author Marketing Experts, Inc.</td><td valign="top" bgcolor="#FFFFFF" ><b>Publishing Without Inventory</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245939&sessionchoice=4','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=119827&&','Marcello Vena','400','400');">Marcello Vena</a>, General Manager of the Digital Trade Book Business, RCS Libri<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=120400&&','Allison  Dobson','400','400');">Allison  Dobson</a>, VP, Business Development, Random House<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124121&&','Phil Ollila','400','400');">Phil Ollila</a>, Chief Content Officer, Ingram Content Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124137&&','Arthur Klebanoff','400','400');">Arthur Klebanoff</a>, CEO, RosettaBooks</td><td valign="top" bgcolor="#CCCCCC" ><b>Publishers Building Vertical Communities </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245939&sessionchoice=3','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=114861&&','Randy Petway','400','400');">Randy Petway</a>, Chief Operating Officer, Publishing Technology<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124144&&','Lucille Rettino','400','400');">Lucille Rettino</a>, Vice President, Director of Marketing, Simon &amp; Schuster Children's Publishing Division<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124145&&','Jeanenne Ray','400','400');">Jeanenne Ray</a>, Senior Marketing Manager, John Wiley and Sons<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129535&&','Erin  Cox','400','400');">Erin  Cox</a>, Business Development Director , Publishing Perspectives<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129673&&','Irene Gallo','400','400');">Irene Gallo</a>, Associate Publisher, Tor.com</td><td valign="top" bgcolor="#CCCCCC" ><b>Subscription Service Providers </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245939&sessionchoice=5','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123371&&','Devereux Chatillon','400','400');">Devereux Chatillon</a>, Attorney, Chatillon Law<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124138&&','Bryan Batten','400','400');">Bryan Batten</a>, Founder, eReatah<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124141&&','Andrew Weinstein','400','400');">Andrew Weinstein</a>, Vice President, Content Acquisition, Scribd<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=124146&&','Matthew  Shatz','400','400');">Matthew  Shatz</a>, Head of Strategy and Partnerships, Oyster<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=128446&&','Justo Hidalgo','400','400');">Justo Hidalgo</a>, Co-Founder, 24symbols</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />3:35 pm - 4:05 pm</td><td valign="top" colspan="5"  ><b>Afternoon Coffee Break and Exhibits</b></td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />3:35 pm - 4:05 pm</td><td valign="top" colspan="5"  ><b>Case Study: App Annie - Big data to the rescue! Set your data free with App Annie Analytics</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4503460&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=129550&&','Nick McIntosh','400','400');">Nick McIntosh</a>, Senior Product Manager, App Annie</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />4:05 pm - 4:20 pm</td><td valign="top" colspan="5"  ><b>Putting Publishers Back in the Driver’s Seat </b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245943&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=123142&&','Matt MacInnis','400','400');">Matt MacInnis</a>, Founder &amp; CEO, Inkling</td></tr><tr class="agenda_time_slot tablerow1"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />4:20 pm - 4:35 pm</td><td valign="top" colspan="5"  ><b>Rethinking Failure: Finding the opportunities in our challenges</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4437405&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=122379&&','Dominique Raccah','400','400');">Dominique Raccah</a>, CEO &amp; Publisher, Sourcebooks</td></tr><tr class="agenda_time_slot tablerow2"><td nowrap="nowrap" valign="top"><img src="/images/spacer.gif" height="45" width="1" align="left" />4:35 pm - 5:15 pm</td><td valign="top" colspan="5"  ><b>Looking Forward/Looking Back</b> <a href="javascript:load_url('/ereg/popups/sessiondetails.php?eventid=70445&sessionid=4245944&sessionchoice=1','','400','400');">[More Info]</a><br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112505&&','Michael  Cader','400','400');">Michael  Cader</a>, Creator, Publishers Lunch<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=112504&&','Mike Shatzkin','400','400');">Mike Shatzkin</a>, Conference Council Chair, Founder &amp; CEO, The Idea Logical Company<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=115131&&','Simon Lipskar','400','400');">Simon Lipskar</a>, President, Writers House<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=118504&&','John Ingram','400','400');">John Ingram</a>, Chairman and CEO, Ingram Content Group<br /><a href="javascript:load_url('/ereg/popups/speakerdetails.php?eventid=70445&speakerid=121891&&','Mary Ann Naples','400','400');">Mary Ann Naples</a>, VP, Publisher, Rodale</td></tr></table><br /></div></div><div id="footer_section" style="width:961px;float:left;margin-bottom:0px;"><div><div style="width:100%;overflow:hidden"><div id="Footer" style="padding-top: 5px;">
+<div><a href="https://www.eiseverywhere.com/ehome/70445/139001/">Home</a> | <a href="http://digitalbookworld.com">Digital Book World</a> | <a href="https://www.eiseverywhere.com/ehome/70445/139011/">Conference Council</a> | <a href="http://www.eiseverywhere.com/ehome/index.php?eventid=70445&tabid=139009">Contact Us</a> | <a href="http://www.fwmedia.com/privacy" target="_blank">Privacy Policy</a> | <a href="http://www.eiseverywhere.com/ehome/index.php?eventid=70445&tabid=139018" target="_blank">FAQ</a></div>
+<p><span style="color: #c0c0c0;">Copyright © 2013 </span><a href="http://www.fwmedia.com" target="_blank">F+W Media</a><span style="color: #c0c0c0;">, Inc. All rights reserved.</span></p>
+</div>
+<!--
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-445948-16']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>--></div></div></div></div></td>
+</tr>
+
+<script type="text/javascript">
+//Add iframe param to youtube src in order to work in all browsers
+var iframes = document.getElementsByTagName('iframe');
+for (var i = 0; i < iframes.length; i++) {
+    if (iframes[i].src.substr(0,22) == "http://www.youtube.com") {
+        iframes[i].src += iframes[i].src.indexOf('?') == -1 ? '?' : '&';
+        iframes[i].src += 'enablejsapi=1';
+    }
+}
+
+</script>
+
+</table>
+<div id="overlay" style="display:none;position:absolute;top:0px;left:0px;z-index:1000000;width:100%;height:100%;background-color:#000000;filter:alpha(opacity=75);-moz-opacity:.75;opacity:.75;"></div>
+
+<div id="home_od" style="display:none;position:absolute;top:0px;left:0px;z-index:1000001;background-color:#FFFFFF;border-1px solid #CCCCCC;">
+<table cellspacing="0" cellpadding="0" height="100%" width="100%">
+<tr bgcolor="#BFBFBF">
+<td height="25">
+<img src="/images/spacer.gif" height="25" width="1" align="left" />
+<span id="title" style="position:absolute;top:4px;left:10px;font-weight:bold;color:#000000;"></span>
+<img src="/images/close.png" border="0" onclick="close_overlay();" style="position:absolute;top:4px;right:4px;cursor:pointer;" />
+</td>
+</tr>
+<tr>
+<td height="100%" align="center" valign="top">
+<div id="home_id" style="overflow:scroll;">
+<img id="image" src="/images/spinner.gif" border="0" />
+<iframe src="/ereg/popups/sessiondetails.php" name="url" id="url" frameborder="0" style="display:none;"></iframe>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"4d875d840e","applicationID":"2785806,2812500","transactionName":"NVUAYhdQC0RWV0ZcDAwfN0QMHgBfWFlXGgoMVAdOS0ENRw==","queueTime":0,"applicationTime":2156,"ttGuid":"","agentToken":"","atts":"GRIDFF9KGEo=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-460.min.js"}</script></body>
+</html>
+
+
+

@@ -1,0 +1,98 @@
+\section{Question 3}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+Assess the performance of your classifier in each of your categories
+by computing precision, recall, and F1.  Note that the definitions
+of precisions and recall are slightly different in the context of
+classification; see:
+
+\vspace{10pt}
+\url{http://en.wikiedia.org/wiki/Precision_and_recall#Definition_.28classification_context.29}
+
+and
+
+\url{http://en.wikipedia.org/wiki/F1_score}
+
+\end{flushleft}
+\subsection{The Answer}
+
+In information retreival and other classification scenarios it is important to be able to assign a value to the performance of a techniques based on accuracy of the reulting queries. Being able to understand  and measure the relevance of the results produced allows for a better understanding of the functionality of the classifier and how it fails in certain circumstances. 
+
+
+Precision measures how closely the retreived documents fit the query that was placed. Precision is the fraction of retrieved documents that are relevant. High precision produces a high proportion of relevant results. 
+
+\begin{center}
+\Large
+$  \text{precision}=\frac{|\{\text{relevant documents}\}\cap\{\text{retrieved documents}\}|}{|\{\text{retrieved documents}\}|}    $
+\end{center}
+
+Recall measures how effectively the relevant documents can be retreived. Recall is the fraction of the documents that are relevant to the query that are succesfully retrieved. This provides a counterbalance to precision. It is possible to produce documents that are all relevant to the query and therefore have high precision. However, the ability to retrieve all documents relevant from the corpus is recall. If strict restrictions are placed to provide a high precision, the recall may suffer in return. However, in the context of classification it is possible to train a classifier to produce both high recall and precision
+
+\begin{center}
+\Large
+$   \text{recall}=\frac{|\{\text{relevant documents}\}\cap\{\text{retrieved documents}\}|}{|\{\text{relevant documents}\}|}    $
+\end{center}
+
+
+The consideration of both precision and recall produces the F-score, or F-measure. The F-measure is a metric of a tests overll accuracy, factoring in both precision adn recall. 
+
+\begin{center}
+\Large
+$  F_1 = 2 \cdot \frac{\mathrm{precision} \cdot \mathrm{recall}}{\mathrm{precision} + \mathrm{recall}}  $
+\end{center}
+
+In addition to these definitions precision and recall can be defined from the confusion matrix of the classifier as follows. 
+
+\begin{center}
+\Large
+$ \text{Precision}=\frac{tp}{tp+fp} \ \text{, }   \text{Recall}=\frac{tp}{tp+fn}  $
+\end{center}
+
+
+
+In this situation true positive(tp) represent that posts that were classified correctly. False positive (fp) are the results that are misclassified. False negative (fn) are the results that were not classified at all due to their low probability of belonging in any class. This is expressed in the follwing function that computes precision, recall and the f-measure for the classifier. 
+
+
+\begin{lstlisting}[caption=Python implementation of F-measure]
+def fmeasure(f, num):
+	tp, fp, fn = 0, 0, 0
+	for i in range(num, 100):
+		if(f.entries[i].pred == f.entries[i].cls):
+			tp +=1
+		if(f.entries[i].pred != f.entries[i].cls):
+			fp +=1
+		if(not f.entries[i].pred):
+			fn +=1
+
+	prec = float(tp)/(tp + fp)
+	recl = float(tp)/(tp +fn)
+
+	fmeasure = 2*(prec*recl)/(prec+recl)
+	print prec, recl
+	print fmeasure
+\end{lstlisting}
+
+
+As mentioned previously, two different classification procedures were chosen. One followed the assignment instructions using n-grams from the title and entry. This consistently produced low results as shown below
+
+\begin{center}
+Precision = 0.08, Recall = 1.0
+
+F-measure = 0.148148148148
+\end{center}
+
+It appeared that experimenting with other classification inputs the accuracy could be improved. The title of the posts presents a lot of information that is relavant to the class of the post. Using the entire title as an input the following results were measured.
+
+\begin{center}
+Precision = 0.48, Recall =  0.857142857143
+
+F-measure = 0.615384615385
+\end{center}
+
+This seems reasonable and intuitive in a sense. Expecting classification off a single word or two is very stringent. However, expanding the input features the possibilities can be narrowed down. In one of the attempts to select useful features the title and summary were both used are input string. This was unsuccessful as the probability of the entire string went to zero and all infomation was lost. Clearly feature size and performance do not have a linear relationship, but there is some region were increasing or decreasing the size of features used can produce a roughly linear response. This region is typically were the maxima of classifier performance if located. It takes some tinkering to fine tune it may never converge, given that input should be changing all the time. 
+
+
+

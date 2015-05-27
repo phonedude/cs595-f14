@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="Cache-Control" content="no-cache,must-revalidate,no-transform" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, target-densityDpi=medium-dpi, user-scalable=no"/>
+		<meta http-equiv="pragma" content="no-cache" />
+		<title>Issue #34, Fall 2014 | Democracy Journal</title>
+		<style type="text/css">
+html { margin: 0; padding: 0; }
+body {
+	margin: 0; 
+	padding: .0;
+	font-size: medium;
+	background-color: #fffff3;
+	color: #000000;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+a {
+	color: #333333;
+	text-decoration: underline;
+	}
+
+
+#site_header p { margin: 0 0 0 0 !important; }
+
+.header a {
+	font-size: xx-large;
+	color: #000000;
+	text-decoration: none;	
+}
+
+.header {
+	font-size: xx-large;
+	background-color: #fffff3;
+	color: #000000;
+	text-decoration: none;
+	margin: 0;
+	padding: .25em 0 .25em 0;
+	text-align: center;
+	}
+.sub_header {
+	font-size: x-large;
+	background-color: #cccccc;
+	color: #000000;
+	margin: 0 0 .5em 0;
+	padding: .25em;
+	}
+h1 {
+	font-size: large;
+	color: css_body_text;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	margin: 0 0 .5em 0;
+	}
+h2 {
+	font-size: large;
+	color: css_body_text;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	margin: 0 0 .1em 0;
+	}
+h3 {
+	font-size: medium;
+	color: css_body_text;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	margin: 0 0 .1em 0;
+	}	
+.link {
+	background-color: #cccccc;
+	margin: .75em 0 .25em 0;
+	font-weight: bold;
+	padding: .30em;
+	}
+.rss_link_bg {
+	background-color: #fffff3;
+	}
+a.category {
+	color: #000000;
+	font-size: large !important;
+	font-weight: bold;
+	text-decoration: none;
+	}
+a {
+	color: #333333;
+	font-size: medium;
+	text-decoration: underline;
+	}
+a.rss_link {
+	color: #0066cc;
+	margin: 0 0 .45em 0;
+	text-decoration: none;
+	}
+	a.rss_sub_link {
+		color: #0066cc;
+		margin-bottom: .45em;
+		text-decoration: none;
+	}
+	.link_on_main_menu { padding-left: .35em; }
+a.search_link {
+	color: #0066cc;
+	margin: 0 0 .45em 0;
+	text-decoration: underline;
+}
+.search_summary {
+	margin: 0;
+	font-size: small;
+}
+.search_date {
+	font-size: x-small;
+	color: gray;
+	margin: -.45em 0 0 0;
+}
+.search_item { background-color: #fffff3; padding: .25em .25em .75em .25em; }
+#search_results { margin: 0 0 .5em 0; }
+#search_bottom {
+	margin: 0 0 .5em 0;
+	font-size: small;	
+}
+#search_bottom a { font-size: small !important; }
+#search_top { margin: 1em 0 1em 0; }
+#search_form { margin: .45em 0 .45em 0; }
+#search_form_menu_top { margin: 0 0 0 0; padding: 0 0 0 0; }
+#search_form q { width: 60%; padding: .25em; }
+#search_form s { width: 35%; padding: .25em; }
+#search_sort { font-size: small; }
+#search_sort a { font-size: small !important; }
+p {
+	margin: 0 0 .45em 0;
+	}
+#post_share {
+	margin-top: .0em;
+	padding: .5em;
+	border-top: thin solid #cccccc;
+	color: #000000;
+}
+#footer {
+	margin-top: .5em;
+	padding: .25em 0 .25em 0;
+	border-top: thin solid #cccccc;
+	text-align: center;
+	background-color: #fffff3;
+	color: #000000;
+	font-size: small;
+}
+#footer a {
+	color: #0066cc;
+	text-decoration: underline;
+	font-size: small;
+	}
+#copyright { font-size:small; }
+#content {
+	font-size: medium;
+	margin: 0 0.5em 0 0.5em;
+	}
+.content {
+	font-size: medium;
+	margin: 0 0.5em;
+	}
+#content_gui {
+	font-size: medium; background-color: #fffff3; padding: .30em 0 .30em 0; border: thin solid #000000; margin: .35em; padding: .25em; }
+#content_gui .post_date { margin-top: 0; }
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+.menu_summary {	margin: -.45em 0 .45em .85em; font-size: small; }
+.nomargin { margin: 0 0 0 0; }
+p.image { margin: .45em 0; text-align: center; }
+.map { margin: .45em 0 .45em 0;	text-align: center; }
+#menu_search_box { margin: 0 0 0 0; }
+#menu_search_box input[type=text] { font-size: medium; }
+#menu_search_box input[type=submit] { font-size: medium; }
+.ad_code { position: relative; margin: 0; text-align: center; z-index: 999; }
+.content_block { margin: 0.75em 0.5em 0.25em 0.5em; clear: both; }
+.post_date {
+	font-size: small;
+	font-weight: bold;
+	margin: -.45em 0 .55em 0;	
+}
+#enclosure { padding: .25em; border: 1px solid #cccccc; margin-top: .5em; background-color: #ffffff; }
+#enclosure p.sub_header { margin: -.25em -.25em .45em -.25em; font-size: large;}
+
+#mofuse_logo { margin: .45em 0 0 0; text-align: center; font-size: small; color: #000000; }
+
+.mobile_form { margin: 0.75em 0.5em 0.25em 0.5em; clear: both; }
+.mobile_form p { margin: 0 0 .45em 0; }
+.mobile_form input[type=text] {
+	width: 98%;
+	padding: 0.1em;
+	border: 1px solid #c1c1c1;
+	font-size: medium;
+}
+.mobile_form select {
+	width: 98%;
+	padding: 0.1em;
+	border: 1px solid #c1c1c1;
+	font-size: medium;
+}
+.mobile_form input[type=password] {
+	width: 98%;
+	padding: 0.1em;
+	border: 1px solid #c1c1c1;
+	font-size: medium;
+}
+.mobile_form textarea {
+	width: 98%;
+	padding: 0.1em;
+	border: 1px solid #c1c1c1;
+	font-size: medium;
+	height: 3em;
+}
+.mobile_form input[type=submit] {
+	width: 98%;
+	padding: 0.1em;
+	font-size: medium;
+}
+
+.locator_form { margin: 0.75em 0.5em 0.25em 0.5em; clear: both; }
+.locator_form p { margin: 0 0 .45em 0; }
+.locator_form input[type=text] {
+	width: 8em;
+	padding: 0.1em;
+	border: 1px solid #c1c1c1;
+	font-size: medium;
+}
+.locator_form select {
+	width: 4em;
+	padding: 0.1em;
+	border: 1px solid #c1c1c1;
+	font-size: medium;
+}
+.locator_form input[type=submit] {
+	width: 10em;
+	padding: 0.1em;
+	font-size: medium;
+}
+
+.padding-left { padding-left: .35em; }
+#error { background-color: #FFF2F2; padding: .35em; margin: 0 0 .45em 0; color: red; }
+#saved { background-color: #EDF5E2; color: #000; padding: .35em; margin: 0 0 .45em 0; }
+#form_thank_you { margin-top: .45em; margin-bottom: .45em; }
+
+#page_navigation { font-size: small; color: #000000; margin: 1em 0 0 .45em; }
+#page_number { margin-bottom: .22em; }
+#page_navigation a { margin-right: 1em; font-size: small; }
+
+#post_navigation { color: #000000; margin-top: .5em; padding: .5em; border-top: thin solid #cccccc; }
+#post_number { margin-bottom: .22em; }
+#post_navigation a { margin-right: 1em; }
+
+.gui_link_wrap { background-color: #fffff3; padding: .30em 0 .30em 0; border: thin solid #000000; margin: .35em; padding: .25em; }
+.gui_link_wrap a { margin: 0; }
+.gui_link_wrap .menu_summary { margin: -.1em 0 .45em 0; }
+.gui_link_wrap_left { width: 21%; float: left; }
+.gui_link_wrap_right { width: 76%; float: right; }
+.gui_link_clear { clear: both; }
+
+.radio-group-button { padding-left: 1em; margin: 0 0 .25em 0 !important; }
+.border-top { border-top: thin solid #cccccc; }
+.padding-top { padding: .30em 0 0 0; }
+.blue_bg { background: #0066cc; }
+.green_bg { background: #558825; }
+.red_bg { background: #9C0F09; }
+.small { font-size: small; }
+
+.store_location_wrap { margin: 0 0 .35em 0; padding: 0 0 .35em 0; border-bottom: thin solid #cccccc; }
+ol.store_locations li{ margin-left: -20px; }
+
+#webapp_status_bar { 
+	position: fixed;
+	bottom: 0; 
+	margin: 0 auto; 
+	color: #fff; 
+	text-shadow: 0 1px 1px #333; 
+	padding: 0px 0; 
+	text-align: center; 
+	width: 100%; 
+	z-index: 999; 
+	display: none; 
+}
+#webapp_status_bar p { margin: 0; font-size: 16px; padding: 5px 0; background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222)); line-height: 16px; }
+
+#iphone_bookmark_wrap { position: fixed; bottom: 0; margin-left: 50px; width: 220px; z-index: 999; display: none; }
+	#iphone_bookmark { margin: 0 auto; background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #8092AC), color-stop(0.02, #B0C8EC), color-stop(1, #fff)); color: #333; text-shadow: 0 1px 1px #fff; padding: 10px; text-align: center; width: 200px; -webkit-border-radius: 5px; -webkit-box-shadow: 0px 0px 20px #333; font-size: 16px; }
+
+	#iphone_bookmark_top { text-align: left; }
+	#iphone_bookmark_top .left { width: 49%; float: left; }
+	#iphone_bookmark_top .right { width: 49%; float: right; }
+	#iphone_bookmark_top .left img { -webkit-border-radius: 5px; }
+	
+	.landscape { margin-left: 130px !important; }
+	
+	#iphone_bookmark_arrow { background: url(/images/iphone_bookmark_arrow.png) no-repeat; width: 23px; height: 15px; margin: 0 auto; }
+.clear {
+	 clear: both;
+}
+.wrapper { height:480px; position:fixed; z-index:1;	width:100%;	overflow:hidden; }
+.scroller {	float:left;	width:100%;	padding:0; }
+
+.draft_mode_message {
+	color: #3a87ad;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	padding: 1em;
+	text-align: center;
+	margin-bottom: 10px;
+	border-radius: 0em 0em 0.5em 0.5em;
+}
+
+		</style>
+
+		<style type="text/css">
+/*
+ * Democracy Journal-- Custom CSS Code Starts Below
+*/
+
+body {
+background-color: #fffff3 !important;
+}
+
+/* headers to hide on landing page  */
+
+#a-690330, #a-690944 , #a-690962, #a-691204, #a-695709, #a-695724, #a-695725, #a-730854 {
+	display: none;
+}
+
+em, a em
+{
+	font-style: italic;
+}
+
+br {
+	content: "A" !important;
+    display: block !important;
+    margin-bottom: .5em !important;
+}
+
+/* header and text for article stack */
+	
+div#webapp_wrap p.rss_link_bg {
+	margin: .75em .5em 0 .75em;
+	padding: 0;
+	}
+
+.rss_sub_link {
+	color: #0088cc !important;
+	font-family: Georgia, serif;
+	font-size: 19px;
+	line-height:21px;		
+	text-align: left;
+	font-weight: bold;
+	background-color: #fffff3;
+	text-decoration: none;
+	padding-left: 0px;
+	
+	}
+	
+.menu_summary {
+	font-family: verdana, arial, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	background-color: #fffff3; 
+	padding: 0; 
+	/* border-bottom: thin #666666; */
+	border: none;
+	margin: .20em .75em .30em .85em; 
+	/* padding: 0; */
+	}
+
+
+/* header and text for an article */
+
+.header {
+	font-size: xx-large;
+	background-color: #fffff3 !important;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0;
+	padding: .25em 0 .25em 0;
+	text-align: center;
+}
+
+
+
+/* landing page header  */
+
+#a-689527 {
+	background-color:transparent !important;
+}
+
+#a-689527 a {
+	color: #333 !important;
+	font-family: georgia, serif;
+	font-size: 23px !important;
+	line-height:27px !important;	
+	text-align: left;
+	font-weight: bold !important;
+	background-color: transparent !important;
+	margin: .35em 0 0 .35em;
+	padding: 0px !important;
+	text-decoration: none;
+}
+
+a.category {
+	/* padding: 0px !important; */
+}
+
+
+.sub_header {
+	color: #333 !important;
+	font-family: georgia, serif;
+	font-size: 23px !important;
+	line-height:27px !important;		
+	text-align: left;
+	font-weight: bold !important;
+	background-color: #fffff3;
+	margin: .35em 0 0 .35em;
+	padding: .25em;
+	text-decoration: none;
+	}
+
+/*
+.feed-id-164111, .feed-id-164108, .feed-id-164070, .feed-id-164109, .feed-id-164098, .feed-id-164110, .feed-id-164112, .feed-id-164100, .feed-id-164116, .feed-id-164118, .feed-id-164229, .feed-id-164228 {
+	color: #000000;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	line-height:19px;		
+	text-align: left;
+	font-weight: bold;
+	background-color: #fffff3;
+	margin: .35em 0 0 .35em;
+	padding: .25em;
+	text-decoration: none;
+	}
+*/
+
+.post_date {
+	color: #776;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height:18px;		
+	font-weight: bold;
+	margin: -.45em 0 .55em 0;	
+}
+	
+#content, #content .p, #content_gui {
+	font-family: Georgia, serif;
+	font-size: 19px;
+	line-height: 25px;
+	background-color: #fffff3; 
+	padding: .30em 0 .30em 0; 
+	border: none; 
+	margin: .5em; 
+	padding: .25em;
+	}
+	
+#content a, #content_gui a {
+	font-family: Georgia, serif;
+	font-size: 19px;
+	line-height: 25px;
+	}
+	
+#content_gui {
+	padding: .30em 0 .30em 0; 
+	border: none; 
+	margin: 0 .5em .5em .5em; 
+	padding: .25em; 
+	}
+	
+.gui_link_wrap { 
+	padding: .30em 0 .30em 0; 
+	border: none; 
+	margin: .35em; 
+	padding: .25em; 
+	}
+
+#site_header p { margin: 0 0 0 0 !important; }
+
+#jumpmenu {
+   	font-size: 14px !important;
+	font-family: Arial,Helvetica,sans-serif;
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+  	padding-top: 0px !important;
+}
+
+#jumpmenu a.jumpmenu_title {
+	color: #0088cc;
+	background: #cfcfcf !important;
+	text-decoration: none;
+	padding: 5px;
+	font-size: 14px !important;
+	font-weight: bold;
+}
+	
+#jumpmenu_links {
+	background-color: #e8e8e8;
+	/* display: none; */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+/* Bottom page links */
+
+div#post_share p a, div#post_navigation a.prev_post, div#post_navigation a.next_post {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	line-height:32px;
+}
+
+div#page_navigation p, div#page_navigation a.rss_sub_link {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	line-height:19px;
+	margin-bottom: 10px;
+}
+
+div#footer p, div#footer p a {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	line-height:19px;
+}
+/* -- start page css head block */ 
+
+/* -- end page css head block */
+		</style>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="/lib/js/geo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/lib/js/gps.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+		var actionTrackingUrl = 'http://Services-958882750.us-east-1.elb.amazonaws.com/action-tracking/';
+		</script>
+		<script src="/lib/js/atrk.js?v=1411964079" type="text/javascript"></script>
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function()
+{ var gads = document.createElement('script'); gads.async = true; gads.type = 'text/javascript'; var useSSL = 'https:' == document.location.protocol; gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';; var node = document.getElementsByTagName('script')[0]; node.parentNode.insertBefore(gads, node); }
+)();
+</script>
+<script type='text/javascript'>
+googletag.cmd.push(function()
+{ googletag.defineSlot('/3562084/Mobile_overlay_DAJOI', [320, 288], 'div-gpt-ad-1386176842064-0').addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices(); }
+);
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://democracyjournal.org/_resources/css/interstitial_mobile.css" />
+<script type="text/javascript" src="http://democracyjournal.org/interstitial_mobile.js"></script>	</head>
+<body>
+	<div id="pagewrap">
+    <div class="header" id="site_header">
+    	<p><a href="/?t=bd7bi39ieurkpamfltmi2d3kh4"><img src="http://premium.mofusecdn.com/bb411c0a7753af79b800012c1c96b34d/cache/site-logos/27d59b2aa891c5a94e117b48bee77bf5.200.0.0.png" alt="logo" border="0"/></a></p>
+    
+</div>
+
+	<style>
+	#jumpmenu {
+		text-align: right;
+		font-size: x-small;
+		margin-top: -20px;
+		margin-bottom: -1px;
+		padding: 5px;
+	}
+	#jumpmenu a.jumpmenu_title {
+		color: #0088cc;
+		background: #F2F0EC;
+		text-decoration: none;
+		padding: 5px;
+		font-size: x-small;
+		font-weight: bold;
+	}
+	#jumpmenu_links {
+		background-color: #F2F0EC;
+		display: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+	#jumpmenu_links a {
+		color: #33bbff;
+		text-decoration: none;
+		padding: 5px 0 5px 10px;
+		display: block;
+		font-size: small;
+		font-weight: bold;
+	}
+		#jumpmenu_links a.full_site {
+			color: #ffffff;
+			text-align: right; 
+			padding-right: 5px;
+		}
+	#jumpmenu_search {
+		padding: 10px 5px 5px 5px;
+	}
+		#jumpmenu_search input[type=text] {
+			width: 65%;
+		}
+		#jumpmenu_search input[type=submit] {
+			width:  25%;
+			margin-left: 10px;
+		}
+	</style>
+	<div id="jumpmenu">
+		<a href="javascript:;" class="jumpmenu_title no_webapp">         Read Back Issues and Blog »      </a>
+	</div>
+	
+	<div id="jumpmenu_links" style="clear: both; background-color: #404040;">
+		<div style="width: 49%; float: left;">
+							<a href="/arguments?t=bd7bi39ieurkpamfltmi2d3kh4">Arguments Blog</a>	
+								<a href="/archive_31_40?t=bd7bi39ieurkpamfltmi2d3kh4">Issues 31+</a>	
+								<a href="/archive_21_30?t=bd7bi39ieurkpamfltmi2d3kh4">Issues 30 - 21</a>	
+								<a href="/archive_11_20?t=bd7bi39ieurkpamfltmi2d3kh4">Issues 20 - 11</a>	
+								<a href="/archive_1_10?t=bd7bi39ieurkpamfltmi2d3kh4">Issues 10 - 1</a>	
+						</div>
+		<div style="width: 49%; float: right;">
+							<a href="/690944?t=bd7bi39ieurkpamfltmi2d3kh4">About Democracy</a>	
+								<a href="/690962?t=bd7bi39ieurkpamfltmi2d3kh4">Contact Us</a>	
+								<a href="/691204?t=bd7bi39ieurkpamfltmi2d3kh4">Sign Up for Email Alerts</a>	
+						</div>
+		<div class="clear"></div>
+		
+				
+			<div class="clear"></div>
+	</div>
+	
+	<script>
+		$('.jumpmenu_title').bind('click', function() {
+			$('#jumpmenu_links').slideToggle('slow');
+		});
+	</script>
+<div id="webapp_wrap">
+    
+<p class="sub_header" id="title-689527">Issue #34, Fall 2014</p>
+
+<div id="content" class="content-689527">
+		
+	</div>    <div id="post_share" class="share-689527">
+		        <p class="share-email-689527 nomargin">
+        	<img src="http://premium.mofusecdn.com/0000res/img/email.png" width="16" height="16" alt="email icon" /> <a href="/689527/email/f79305c91525d3396b94a9fa03927a22?t=bd7bi39ieurkpamfltmi2d3kh4">Email this to a friend</a>
+        </p>
+        		        <p class="share-twitter-689527 nomargin">
+        	<img src="http://premium.mofusecdn.com/0000res/img/twitter.png" width="16" height="16" alt="twitter icon" /> <a href="http://twitter.com/share/?url=http%3A%2F%2Fm.democracyjournal.org%2F689527%2Fshow%2Ff79305c91525d3396b94a9fa03927a22%2F">Post to Twitter</a>
+        </p>
+                
+		        <p class="share-fb-689527 nomargin">
+            <img src="http://premium.mofusecdn.com/0000res/img/facebook.png" width="16" height="16" alt="facebook icon" /> <a href="http://m.facebook.com/sharer.php?u=http%3A%2F%2Fm.democracyjournal.org%2F689527%2Fshow%2Ff79305c91525d3396b94a9fa03927a22%2F" class="no_webapp">Share on Facebook</a>
+        </p>
+            </div>
+    <div id="footer">
+			<p><a onClick="event.preventDefault();window.history.back();" href="/0?t=bd7bi39ieurkpamfltmi2d3kh4">Go Back</a> | <a href="/?t=bd7bi39ieurkpamfltmi2d3kh4">Go Home</a></p>
+        
+			<p>Mobile | <a href="http://democracyjournal.org/?nomobile=1" class="no_webapp">Desktop</a></p>
+	    
+        	<p id="copyright">&copy; 2006-2014 Democracy: A Journal of Ideas, Inc. All Rights Reserved</p>
+    </div>
+
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['mofuse._setAccount', 'UA-249256-20']);
+	_gaq.push(['mofuse._setCustomVar', 1, 'siteHash', 'bb411c0a7753af79b800012c1c96b34d', 2]);
+	_gaq.push(['mofuse._trackPageview']);
+	_gaq.push(['_setAccount', 'MO-2442246-18']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<noscript>
+<img src="/lib/google_analytics_pixel.php?utmac=UA-249256-20&utmn=2019413274&utmr=-&utmp=%2F689527%2Fshow%2Ff79305c91525d3396b94a9fa03927a22%2F&guid=ON" /><img src="/lib/google_analytics_pixel.php?utmac=MO-2442246-18&utmn=599625678&utmr=-&utmp=%2F689527%2Fshow%2Ff79305c91525d3396b94a9fa03927a22%2F&guid=ON" /> 
+</noscript>
+<!-- Mofuse Analytics --><!-- Analytics Logger Pixel --><img src="http://Services-958882750.us-east-1.elb.amazonaws.com/analytics/pixel/?request_ip=96.225.140.39&request_url=%2F689527%2Fshow%2Ff79305c91525d3396b94a9fa03927a22%2F&request_ua=curl%2F7.35.0&timestamp=1411964079&token=bd7bi39ieurkpamfltmi2d3kh4&page_id=689527&site_id=44177&page_type=&referer=&x_forwarded_for=96.225.140.39" alt="mofuse.com" /></div>
+</div>
+</body>
+</html>

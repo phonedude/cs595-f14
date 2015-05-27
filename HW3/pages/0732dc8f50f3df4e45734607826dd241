@@ -1,0 +1,685 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"> (hack for IE8 to display ping - probably shouldn't use -->
+  <title>Data Structures and Algorithms -- O&#039;Reilly School of Technology  </title>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <link href="https://plus.google.com/113839215895775232669" rel="publisher">
+  <link rel="shortcut icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+   
+  	    
+	<link rel="stylesheet" href="http://www.oreillyschool.com/wp-content/themes/oreilly-school/style.css?v=1.1.4" type="text/css">
+
+    
+		<!--[if lte IE 8]><script src="http://www.oreillyschool.com/wp-content/themes/oreilly-school/js/respond.min.js" type="text/javascript"></script><![endif]-->
+	<script>
+	   var s_account="orost,orglobal";
+	</script>
+	<!-- AdRoll script -->
+	<script type="text/javascript">
+		adroll_adv_id = "7V2KFODJAJGWFJ2ULZ5TPQ";
+		adroll_pix_id = "ESH2DRSQMJAAHDDFDR27GB";
+		(function () {
+			var oldonload = window.onload;
+			window.onload = function(){
+				__adroll_loaded=true;
+				var scr = document.createElement("script");
+				var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+				scr.setAttribute('async', 'true');
+				scr.type = "text/javascript";
+				scr.src = host + "/j/roundtrip.js";
+				((document.getElementsByTagName('head') || [null])[0] ||
+				document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+				if(oldonload){oldonload()}};
+			}());
+	</script>
+	<script src='http://cdn.oreillystatic.com/assets/js/s_code.js'></script>
+
+	<script>
+	s.pageName="oreillyschool:individual-courses:data structures algorithms"; // The first colon is part of $pageName_parent, if not empty string
+	s.channel="oreillyschool";
+	s.pageType="";
+	s.hier1="oreillyschool,individual-courses,individual-courses,individual-courses";
+	s.prop1="oreillyschool:individual-courses";
+	s.prop2="oreillyschool:individual-courses:individual-courses";
+	s.prop3="oreillyschool:individual-courses:individual-courses:individual-courses";
+	s.prop4="";
+	s.prop5="data structures algorithms";
+
+	
+	var s_code=s.t();
+	if (s_code) {
+		document.write(s_code) };
+	</script>
+	
+	
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.oreillyschool.com/individual-courses/data-structures-algorithms/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Data Structures and Algorithms - O&#039;Reilly School of Technology" />
+<meta property="og:description" content="NEW COURSE! Data Structures and Algorithms In this sixth course of our Java series you will work with the core data structures and algorithms needed to write efficient code. In many circumstances, the proper answer comes down to choosing the right data structure and implementing the right algorithm. Throughout the course, students are shown how &hellip;" />
+<meta property="og:url" content="http://www.oreillyschool.com/individual-courses/data-structures-algorithms/" />
+<meta property="og:site_name" content="O&#039;Reilly School of Technology" />
+<meta property="og:image" content="http://www.oreillyschool.com/wp-files/9/2014/01/Algorithms-in-a-Nutshell-Cover-200x300.jpg" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly School of Technology &raquo; Feed" href="http://www.oreillyschool.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly School of Technology &raquo; Comments Feed" href="http://www.oreillyschool.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly School of Technology &raquo; Data Structures and Algorithms Comments Feed" href="http://www.oreillyschool.com/individual-courses/data-structures-algorithms/feed/" />
+<link rel='stylesheet' id='ubermenu_basic-css'  href='http://www.oreillyschool.com/wp-content/themes/oreilly-school/css/ubermenu_basic.css?ver=1.0' type='text/css' media='' />
+<link rel='stylesheet' id='dry_awp_theme_style-css'  href='http://www.oreillyschool.com/wp-content/plugins/advanced-wp-columns/assets/css/awp-columns.css?ver=4.0' type='text/css' media='all' />
+<style type='text/css'>
+@media screen and (max-width: 1024px) {	.csColumn {		clear: both !important;		float: none !important;		text-align: center !important;		margin-left:  10% !important;		margin-right: 10% !important;		width: 80% !important;	}	.csColumnGap {		display: none !important;	}}
+</style>
+<link rel='stylesheet' id='fancybox-css'  href='http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.6.pack.css?ver=1.5.6' type='text/css' media='screen' />
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-content/themes/oreilly-school/js/modernizr.custom.js?ver=2.6.2'></script>
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.6.pack.js?ver=1.5.6'></script>
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-content/themes/oreilly-school/js/ost.js?v=1.1.2&#038;ver=1.0'></script>
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-content/themes/oreilly-school/js/global_script.js?ver=1.0'></script>
+<link rel='shortlink' href='http://www.oreillyschool.com/?p=5541' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+	<!-- Easy FancyBox 1.5.6 using FancyBox 1.3.6 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	var fb_timeout = null;
+	var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'width' : 420, 'height' : 500, 'padding' : 2, 'centerOnScroll' : false, 'enableEscapeButton' : true, 'autoScale' : true };
+	var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox), area[href*=".jpg"]:not(.nofancybox), a[href*=".gif"]:not(.nofancybox), area[href*=".gif"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox').attr('rel', 'gallery');
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : false, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* SWF */
+	jQuery('a[href*=".swf"]:not(.nofancybox), area[href*=".swf"]:not(.nofancybox)').addClass('fancybox-swf');
+	jQuery('a.fancybox-swf, area.fancybox-swf, li.fancybox-swf a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'swf', 'width' : 680, 'height' : 495, 'padding' : 0, 'titleShow' : false, 'titlePosition' : 'float', 'titleFromAlt' : true, 'swf' : {'wmode':'opaque','allowfullscreen':true} }) );
+	/* YouTube */
+	jQuery('a[href*="youtube.com/watch"]:not(.nofancybox), area[href*="youtube.com/watch"]:not(.nofancybox)').addClass('fancybox-youtube');
+	jQuery('a.fancybox-youtube, area.fancybox-youtube, li.fancybox-youtube a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'type' : 'iframe', 'titleShow' : false, 'titlePosition' : 'float', 'titleFromAlt' : false, 'onStart' : function(selectedArray, selectedIndex, selectedOpts) { selectedOpts.href = selectedArray[selectedIndex].href.replace(new RegExp('youtu.be', 'i'), 'www.youtube.com/embed').replace(new RegExp('watch\\?(.*)v=([a-z0-9\_\-]+)(&|\\?)?(.*)', 'i'), 'embed/$2?$1$4') } }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+	}
+	/* ]]> */
+	</script>
+	<style type="text/css">
+.fancybox-hidden{display:none}.rtl #fancybox-left{left:auto;right:0px}.rtl #fancybox-right{left:0px;right:auto}.rtl #fancybox-right-ico{background-position:-40px -30px}.rtl #fancybox-left-ico{background-position:-40px -60px}.rtl .fancybox-title-over{text-align:right}.rtl #fancybox-left-ico,.rtl #fancybox-right-ico{right:-9999px}.rtl #fancybox-right:hover span{right:auto;left:20px}.rtl #fancybox-left:hover span{right:20px}#fancybox-img{max-width:none;max-height:none}
+	</style>
+	<!--[if lt IE 8]>            
+		<style type="text/css">
+.fancybox-ie6 #fancybox-close{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_close.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-left-ico{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_nav_left.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-right-ico{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_nav_right.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-title-over{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_title_over.png",sizingMethod="scale");zoom:1}
+.fancybox-ie6 #fancybox-title-float-left{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_title_left.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-title-float-main{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_title_main.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-title-float-right{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_title_right.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-bg-w,.fancybox-ie6 #fancybox-bg-e,.fancybox-ie6 #fancybox-left,.fancybox-ie6 #fancybox-right,#fancybox-hide-sel-frame{height:expression(this.parentNode.clientHeight+"px")}
+#fancybox-loading.fancybox-ie6{position:absolute;margin-top:0;top:expression((-20+(document.documentElement.clientHeight ? document.documentElement.clientHeight/2 : document.body.clientHeight/2)+(ignoreMe=document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+"px")}
+#fancybox-loading.fancybox-ie6 div{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_loading.png", sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-n{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_n.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-ne{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_ne.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-e{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_e.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-se{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_se.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-s{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_s.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-sw{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_sw.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-w{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_w.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-nw{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_nw.png",sizingMethod="scale")}
+		</style>
+	<![endif]-->
+	<!--[if IE 8]>            
+		<style type="text/css">
+.fancybox-ie #fancybox-bg-n{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_n.png",sizingMethod="scale")'}
+.fancybox-ie #fancybox-bg-ne{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_ne.png",sizingMethod="scale")'}
+.fancybox-ie #fancybox-bg-e{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_e.png",sizingMethod="scale")'}
+.fancybox-ie #fancybox-bg-se{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_se.png",sizingMethod="scale")'}
+.fancybox-ie #fancybox-bg-s{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_s.png",sizingMethod="scale")'}
+.fancybox-ie #fancybox-bg-sw{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_sw.png",sizingMethod="scale")'}
+.fancybox-ie #fancybox-bg-w{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_w.png",sizingMethod="scale")'}
+.fancybox-ie #fancybox-bg-nw{-ms-filter:'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/fancybox/fancy_shadow_nw.png",sizingMethod="scale")'}
+		</style>
+	<![endif]-->
+		<!-- Start Visual Website Optimizer Asynchronous Code -->
+	<script type='text/javascript'>
+		var _vwo_code=(function(){
+		var account_id=44198,
+		settings_tolerance=2000,
+		library_tolerance=2500,
+		use_existing_jquery=false,
+		// DO NOT EDIT BELOW THIS LINE
+		f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+	</script>
+	<!-- End Visual Website Optimizer Asynchronous Code -->
+	</head>
+
+<body class="page page-id-5541 page-child parent-pageid-14 page-template page-template-page-no-title-php inner">
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+	<div class="row" style="background-color: #b9002d !important;" href="http://www.oreillyschool.com/">
+		<div class="outer-wrap clearfix">
+			<img src="http://www.oreillyschool.com/wp-content/themes/oreilly-school/img/header_logo_oreilly_sm.png" alt="O'Reilly logo" width="200" height="22">
+		</div>
+	</div>
+	<div class="row" style="background-color:#FFF;">
+		<div class="outer-wrap clearfix">
+			<a style="float:left;display:block;" href="http://www.oreillyschool.com/">
+				<img class="ost_logo" src="http://www.oreillyschool.com/wp-content/themes/oreilly-school/img/header_logo_ost.png" alt="School of Technology logo" width="500" height="68">
+									<p class="visuallyhidden">O'Reilly School of Technology</p>
+							</a>
+      <a id="login-button" class="btn btn-default" type="button" href="https://students.oreillyschool.com/">Log In</a>
+			<p id="header-phone">Call 707-827-7288  <span class="glyphicon glyphicon-earphone"></span></p>
+			<a id="menu-item-1520" class="liveAdvizor">Live Chat <span class="glyphicon glyphicon-comment"></span></a>
+		</div>
+		<div id="menu-search-container" class="outer-wrap clearfix">
+			<nav id="main_menu">
+				<div id="menu-small">
+					<a id="login-button" class="btn btn-default" type="button" href="https://students.oreillyschool.com/">Log In</a>
+					<p id="header-phone-small">707-827-7288  <span class="glyphicon glyphicon-earphone"></span></p>
+			    <a id="menu-item-1520" class="liveAdvizor">Live Chat <span class="glyphicon glyphicon-comment"></span></a>
+				</div>
+				<nav id="megaMenu" class="megaMenuContainer megaMenu-nojs megaResponsive megaResponsiveToggle megaMenuHorizontal megaMenuOnHover wpmega-withjs wpmega-noconflict">
+					<div id="megaMenuToggle" class="megaMenuToggle">
+						<button id="menu-phone" class="btn btn-default megaMenuToggle-icon"><span class="glyphicon glyphicon-align-justify"></span> Menu</button>
+						<button id="search-phone" class="btn btn-default search-toggle"><span class="glyphicon glyphicon-search"></span> Search</button>
+					</div>
+					<div id="mobile_search">
+						<form method="get" id="searchform" action="http://www.oreillyschool.com/search/">
+							<label for="msearch" class="visuallyhidden">Search</label>
+							<input type="search" name="search" id="msearch" value="" size="12">
+							<input type="submit" value="Search">
+						</form>
+					</div>
+					<ul id="menu-main-nav" class="nav-menu megaMenu"><li id="menu-item-1253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1253"><a href="http://www.oreillyschool.com/certificate-programs/">Online Certificate Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-1303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1303"><a href="http://www.oreillyschool.com/certificate-programs/c-net-programming/">C#.NET Programming Certificate</a></li>
+	<li id="menu-item-1263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1263"><a href="http://www.oreillyschool.com/certificate-programs/client-side-programming/">Client-Side Programming Certificate</a></li>
+	<li id="menu-item-1265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1265"><a href="http://www.oreillyschool.com/certificate-programs/database-administration/">Database Administration Certificate</a></li>
+	<li id="menu-item-1264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1264"><a href="http://www.oreillyschool.com/certificate-programs/java-programming/">Java Programming Certificate</a></li>
+	<li id="menu-item-6150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6150"><a href="http://www.oreillyschool.com/certificate-programs/advanced-java-programming/">Advanced Java Programming Certificate</a></li>
+	<li id="menu-item-6149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6149"><a href="http://www.oreillyschool.com/certificate-programs/javascript-programming/">JavaScript Programming Certificate</a></li>
+	<li id="menu-item-1262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1262"><a href="http://www.oreillyschool.com/certificate-programs/linuxunix-administration/">Linux Systems Administration Certificate</a></li>
+	<li id="menu-item-1260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1260"><a href="http://www.oreillyschool.com/certificate-programs/open-source-programming/">Open Source Programming Certificate</a></li>
+	<li id="menu-item-1266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1266"><a href="http://www.oreillyschool.com/certificate-programs/perl-programming/">Perl Programming Certificate</a></li>
+	<li id="menu-item-1268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1268"><a href="http://www.oreillyschool.com/certificate-programs/php-sql-programming/">PHP/SQL Programming Certificate</a></li>
+	<li id="menu-item-1267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1267"><a href="http://www.oreillyschool.com/certificate-programs/python-programming/">Python Programming Certificate</a></li>
+	<li id="menu-item-1261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1261"><a href="http://www.oreillyschool.com/certificate-programs/web-programming/">Web Programming Certificate</a></li>
+</ul>
+</li>
+<li id="menu-item-1254" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-1254"><a href="http://www.oreillyschool.com/individual-courses/">Online Courses</a>
+<ul class="sub-menu">
+	<li id="menu-item-1705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1705"><a href="http://www.oreillyschool.com/browse-by-subject/">IT Courses by Subject</a></li>
+	<li id="menu-item-1284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="http://www.oreillyschool.com/browse-by-level/">IT Courses by Skill Level</a></li>
+</ul>
+</li>
+<li id="menu-item-1255" class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1255"><a href="http://www.oreillyschool.com/whyost/">Why Us?</a>
+<ul class="sub-menu">
+	<li id="menu-item-1277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1277"><a href="http://www.oreillyschool.com/whyost/your-schedule-your-way/">Your Schedule, Your Way</a></li>
+	<li id="menu-item-1310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1310"><a href="http://www.oreillyschool.com/whyost/learn-by-making/">Learn By Making</a></li>
+	<li id="menu-item-1276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1276"><a href="http://www.oreillyschool.com/whyost/one-on-one-instruction/">One-on-One Online Instruction</a></li>
+	<li id="menu-item-1280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1280"><a href="http://www.oreillyschool.com/whyost/benefits-for-it-managers/">Benefits for IT Managers</a></li>
+	<li id="menu-item-1312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1312"><a href="http://www.oreillyschool.com/whyost/your-career-in-a-changing-world/">Your IT Career in a Changing World</a></li>
+	<li id="menu-item-1285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285"><a href="http://www.oreillyschool.com/browse-by-topic/">Relevant Topics in IT</a></li>
+</ul>
+</li>
+<li id="menu-item-1256" class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1256"><a href="http://www.oreillyschool.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1282"><a href="http://www.oreillyschool.com/about-us/mission-goals-and-objectives/">Mission, Goals, and Objectives</a></li>
+	<li id="menu-item-1283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="http://www.oreillyschool.com/about-us/our-history/">Our History</a></li>
+	<li id="menu-item-1278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="http://www.oreillyschool.com/about-us/our-faculty/">Our Faculty</a></li>
+	<li id="menu-item-6309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6309"><a href="http://www.oreillyschool.com/about-us/administrators-authors/">Our Administrators and Authors</a></li>
+	<li id="menu-item-1314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1314"><a href="http://www.oreillyschool.com/about-us/admission-information/">Admission Information</a></li>
+	<li id="menu-item-1315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1315"><a href="http://www.oreillyschool.com/about-us/academic-policies/">Academic Policies</a></li>
+	<li id="menu-item-1316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1316"><a href="http://www.oreillyschool.com/about-us/student-services/">Student Services</a></li>
+	<li id="menu-item-1281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1281"><a href="http://www.oreillyschool.com/about-us/tuition-and-fees/">Tuition and Fees</a></li>
+	<li id="menu-item-1717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1717"><a href="http://www.oreillyschool.com/about-us/consumer-information/">Consumer Information</a></li>
+	<li id="menu-item-1826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1826"><a href="http://www.oreillyschool.com/about-us/licensingaffiliations/">Licensing/Affiliations</a></li>
+	<li id="menu-item-1275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1275"><a href="http://www.oreillyschool.com/about-us/faq/">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-1257" class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1257"><a href="http://www.oreillyschool.com/community/">Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-2582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2582"><a href="http://www.oreillyschool.com/blog/">OST Blog</a></li>
+	<li id="menu-item-1696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1696"><a target="_blank" href="http://www.facebook.com/oreillyschool">Facebook</a></li>
+	<li id="menu-item-1697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1697"><a target="_blank" href="https://twitter.com/OReillySchool">Twitter</a></li>
+	<li id="menu-item-1698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1698"><a target="_blank" href="https://plus.google.com/113839215895775232669/">Google+</a></li>
+	<li id="menu-item-1699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1699"><a target="_blank" href="http://www.linkedin.com/company/o%27reilly-school-of-technology">LinkedIn</a></li>
+</ul>
+</li>
+<li id="menu-item-3813" class="last menu-item menu-item-type-custom menu-item-object-custom menu-item-3813"><a href="https://enroll.oreillyschool.com">Enroll</a></li>
+</ul>				</nav>
+			</nav>
+			<div id="search-sprite" class="search sprite">
+				<form method="get" id="searchform" action="http://www.oreillyschool.com/search/">
+					<label for="search" class="visuallyhidden">Search</label>
+					<input type="search" name="search" id="search" value="" placeholder="Search">
+					<div id="search-button" class="search-button sprite"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	
+
+	<div id="main" role="main">
+	  	<div class="outer-wrap clearfix">
+	  		<div class="content-wrap">
+				<article>
+					<div class="breadcrumbs">
+					    					</div>
+		
+					<p style="margin: 1em 0 0.3em;color: #a50309;font-size: 1.3em">NEW COURSE!</p>
+<h1>Data Structures and Algorithms</h1>
+<p style="color: #A50309; font-size: 1.3em; font-weight: bold; margin: 0;">For a limited time, <strong>save 25%</strong> on this course</p>
+		<p style='font-size: 0.8em; margin: 0.2em 0 1.7em;'>* This offer expires October 6, 2014 at 11:59pm PT 
+		and cannot be combined with any other discounts.</p>
+<p>In this sixth course of our Java series you will work with the core data structures and algorithms needed to write efficient code. In many circumstances, the proper answer comes down to choosing the right data structure and implementing the right algorithm. Throughout the course, students are shown how to connect their growing knowledge of data structures with algorithms so they can design their own algorithms effectively. It will cover the core data structures in computer science including fixed arrays, linked lists, maps, queues and <span class="hiddenSpellError">dequeues</span>, trees and graphs, and will use existing implementations in the <span class="hiddenSpellError">JDK</span> to solve real problems.</p>
+<p>Upon completion of this course, you will be able to:</p>
+<ul>
+<li>Work effectively with the Java Collections Framework.</li>
+<li>Analyze the performance of your algorithms.</li>
+<li>Demonstrate mastery of core data structures, such as trees, graphs, maps, queues and <span class="hiddenSpellError">dequeus</span>.</li>
+<li>Design complex data structures and algorithms based on these core data structures.</li>
+</ul>
+<p>From beginning to end, you will learn by doing your own Java projects within our Eclipse Learning Sandbox, which we affectionately call “Ellipse.” The projects give students the opportunity to solve real-world problems using a variety of algorithms covered in the course. Throughout the course, students are shown how to connect their growing knowledge of data structures with algorithms so they can design their own algorithms effectively. Besides a browser and internet connection, all software is provided online by the O’Reilly School of Technology.</p>
+<p><strong>Prerequisites:</strong><a title="Java 4: Java Application Building" href="/individual-courses/java4/"> <em>Java 4: Java Application Building</em></a>, or equivalent skills. This course is meant for the intermediate or advanced programmer. It is also recommended that students have a strong working knowledge of <a title="Discrete Mathematics" href="http://en.wikipedia.org/wiki/Discrete_mathematics" target="_blank">discrete mathematics</a> and/or <a title="Linear Algebra" href="http://en.wikipedia.org/wiki/Linear_algebra" target="_blank">linear algebra.</a></p>
+<p>135 Clock-hours</p>
+<strike style="color:red">&nbsp;<span style="color:#222">$498.00</span>&nbsp;</strike>&nbsp;&nbsp;<span style="color:red">$373.50</span><span class="smallprint_link"> (<a href="http://www.oreillyschool.com/about-us/tuition-and-fees/"><span style="white-space:nowrap">plus fees</span>)</a></span>
+<p><a class="gold-button" href="https://enroll.oreillyschool.com/enroll/?courses=171">Enroll in Course</a></p>
+<h3 class="accordion_heading arrow_right">Course Details and Syllabus</h3>
+<table class="accordion_section" style="width: 100%" border="0" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Course:</b></td>
+<td bgcolor="#F5F5F5"><a title="Data Structures and Algorithms" href="http://www.oreillyschool.com/individual-courses/data-structures-algorithms">Data Structures and Algorithms</a></td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Tuition:</b></td>
+<td bgcolor="#F5F5F5"><strike style="color:red">&nbsp;<span style="color:#222">$498.00</span>&nbsp;</strike>&nbsp;&nbsp;<span style="color:red">$373.50</span><span class="smallprint_link"> (<a href="http://www.oreillyschool.com/about-us/tuition-and-fees/"><span style="white-space:nowrap">plus fees</span>)</a></span> <del></del></td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Time Frame:</b></td>
+<td bgcolor="#F5F5F5">This course is online and self-paced. You can expect to work approximately 135 hours on this course.</td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Technical Requirements:</b></td>
+<td bgcolor="#F5F5F5">As long as you have a web browser and internet connection, you can take this course from anywhere.</td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"></td>
+<td bgcolor="#F5F5F5"></td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Software:</b></td>
+<td bgcolor="#F5F5F5">The Ellipse Learning Sandbox™ provided for you will contain all your lessons, projects, quizzes, account files, editors, and compiling tools necessary to build your skills from beginning to end, even beyond coursework. No other software is needed.</td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Instructor:</b></td>
+<td bgcolor="#F5F5F5">You will have one instructor throughout the course who will evaluate your projects and quizzes, hand them back for improvement when necessary, and coach you throughout your skills advancement.</td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Book:</b></td>
+<td bgcolor="#F5F5F5">All required course materials and software are included online within the Learning Sandbox&trade;. However, within a few weeks of enrolling, you&#8217;ll receive the e-book <a title="Algorithms in a Nutshell" href="http://shop.oreilly.com/product/9780596516246.do" target="_blank">Algorithms in a Nutshell</a> as a reference resource from O&#8217;Reilly.<a href="http://www.oreillyschool.com/wp-files/9/2014/01/Algorithms-in-a-Nutshell-Cover.jpg"><img class="aligncenter size-medium wp-image-5542" src="http://www.oreillyschool.com/wp-files/9/2014/01/Algorithms-in-a-Nutshell-Cover-200x300.jpg" alt="Algorithms in a Nutshell Cover" width="200" height="300" /></a></td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Certificates:</b></td>
+<td bgcolor="#F5F5F5">This does course does not currently count towards a certificate.</td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Prerequisites:</b></td>
+<td bgcolor="#F5F5F5"><a title="Java 4: Java Application Building" href="http://www.oreillyschool.com/individual-courses/java4/">Java 4: Java Application Building</a>, or equivalent skills. This course is meant for the intermediate or advanced programmer. It is also recommended that students have a strong working knowledge of <a title="Discrete Mathematics" href="http://en.wikipedia.org/wiki/Discrete_mathematics" target="_blank">discrete mathematics</a> and/or <a title="Linear Algebra" href="http://en.wikipedia.org/wiki/Linear_algebra" target="_blank">linear algebra.</a></td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Topics:</b></td>
+<td bgcolor="#F5F5F5"> Core data structures, fixed arrays, linked lists, maps, queues and <span class="hiddenSpellError">dequeues</span>, trees and graphs, and use of the <span class="hiddenSpellError">JDK</span>.</td>
+</tr>
+<tr>
+<td align="right" valign="top" bgcolor="#E5E5E5"><b>Syllabus:</b></td>
+<td bgcolor="#F5F5F5">
+<ul>
+<li>Lesson 1: Data Structures and Algorithms Overview
+<ul>
+<li>Algorithm Performance</li>
+<li>Constant Performance</li>
+<li>Logarithmic Performance</li>
+<li>Linear <span class="hiddenSpellError">Perfomance</span></li>
+<li>Quadratic <span class="hiddenSpellError">Perfomance</span></li>
+<li>Comparing Classification Families</li>
+<li><span class="hiddenSpellError">ArrayList</span> Amortized Reallocation</li>
+</ul>
+</li>
+<li>Lesson 2: Data Structures and the Java Collections Framework
+<ul>
+<li>Introduction to Java Collections Framework</li>
+<li>Set Interface</li>
+<li>List Interface</li>
+<li>Queue Interface</li>
+<li>Map Interface</li>
+<li>Summarizing the Implementations You Need to Know</li>
+<li>Important Methods For Keys and Values</li>
+</ul>
+</li>
+<li>Lesson 3: Algorithms Using Java
+<ul>
+<li>Designing Algorithms</li>
+<li>Skyline Problem</li>
+</ul>
+</li>
+<li>Lesson 4: Working With Big Data
+<ul>
+<li>Sorting Large Sets Using External Storage</li>
+<li>Characterizing Storage Requirements for an Algorithm</li>
+<li><span class="hiddenSpellError">MergeSort</span> with O(n) Storage Requirements</li>
+<li>Working with Large Datasets</li>
+<li>Never Be Satisfied</li>
+</ul>
+</li>
+<li>Lesson 5: Representing Graph Data Structures
+<ul>
+<li>Using <span class="hiddenSpellError">Adacency</span> <span class="hiddenSpellError">Matric</span> To Represent Graph</li>
+<li>Searching a Graph</li>
+<li>Practical Application</li>
+</ul>
+</li>
+<li>Lesson 6: Graph <span class="hiddenSpellError">Adjacency</span> Lists and Shortest Path Algorithms
+<ul>
+<li>Searching for Optimal Paths</li>
+<li>Representing Graph by <span class="hiddenSpellError">Adjacency</span> List</li>
+<li>Breadth-First Search</li>
+</ul>
+</li>
+<li>Lesson 7: Priority Queues
+<ul>
+<li>Priority Queue Data Structure</li>
+<li>Minimum Spanning Tree</li>
+<li>Heap Data Structure</li>
+<li>Prim&#8217;s Algorithm Implementation</li>
+<li>Evaluating Minimum Spanning Tree Implementations</li>
+</ul>
+</li>
+<li>Lesson 8: Binary Tree Data Structure
+<ul>
+<li>Naive Binary Tree Implementation</li>
+<li>Evaluating Binary Tree Implementation</li>
+<li>Rebalancing Binary Trees</li>
+<li>Using Collections <span class="hiddenSpellError">TreeSet</span></li>
+</ul>
+</li>
+<li>Lesson 9: Multidimensional Algorithms
+<ul>
+<li>A Data Structure for Multidimensional Algorithms</li>
+<li>Traversing a <span class="hiddenSpellError">kd-tree</span></li>
+<li>Using <span class="hiddenSpellError">kd-trees</span> to Search for Points</li>
+</ul>
+</li>
+<li>Lesson 10: Mathematical Algorithms and Floating Point Computations
+<ul>
+<li>Gauss Jordan Elimination</li>
+<li>Rounding Errors</li>
+<li>Partial Input Data</li>
+<li>Matrix Determinant</li>
+</ul>
+</li>
+<li>Lesson 11: Brute Force Algorithms
+<ul>
+<li>Using Brute Force to Solve Permutation Problems</li>
+<li>Finding All Five-Letter Words in PALINDROME</li>
+<li>N Queens Problem</li>
+</ul>
+</li>
+<li>Lesson 12: Path Finding for Single-Player Games
+<ul>
+<li>Breadth-First Search</li>
+<li>Evaluating Search Tree Algorithms</li>
+</ul>
+</li>
+<li>Lesson 13: Path Finding for Two-Player Games
+<ul>
+<li>Minimax Implementation</li>
+</ul>
+</li>
+<li>Lesson 14: Algorithms On Sound Data
+<ul>
+<li>Composed Wave Forms</li>
+<li>Analyzing Composed Wave Forms</li>
+<li>Using <span class="hiddenSpellError">FFT</span> on WAV file samples</li>
+</ul>
+</li>
+<li>Lesson 15: Conclusion
+<ul>
+<li>Removing Elements From a Sorted Array</li>
+<li>Removing Elements From a <a href="http://binaryreviewer.com/">Binary options broker</a> Search Trees</li>
+<li>Removing Elements From <span class="hiddenSpellError">AVL</span> Trees</li>
+<li>Removing Elements From KD-trees</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+				</article>
+	  		</div>
+			
+			<aside>
+		<h2>
+		Make Code.<br>
+		Master a Career.
+	</h2>
+	<div class="points">
+		<p>At O'Reilly School of Technology you can master IT skills online, using coding to learn coding.</p>
+		<nav class="clearfix">
+		<ul id="menu-right-sub-menu-column-3" class="menu-1"><li id="menu-item-3985" class="no-background menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.oreillyschool.com/it-programming-certificate-programs-and-courses/">Advance your career</a><br /><span class="sub">Gain in-demand IT skills with an online course or O’Reilly Certificate program. <a href="http://www.oreillyschool.com/it-programming-certificate-programs-and-courses/">More &gt;</a></span></li>
+<li id="menu-item-3988" class="no-background menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.oreillyschool.com/whyost/your-schedule-your-way/">Your schedule, your way</a><br /><span class="sub">Learn online at your own pace, and start programming from Day One. <a href="http://www.oreillyschool.com/whyost/your-schedule-your-way/">More &gt;</a></span></li>
+</ul><ul id="menu-right-sub-menu-column-4" class="menu-2"><li id="menu-item-3987" class="no-background menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.oreillyschool.com/whyost/learn-by-making/">Learn by making</a><br /><span class="sub">Our unique method has you coding in a real-world environment. <a href="http://www.oreillyschool.com/whyost/learn-by-making/">More &gt;</a></span></li>
+<li id="menu-item-3986" class="no-background menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.oreillyschool.com/whyost/one-on-one-instruction/">One-on-One Instruction</a><br /><span class="sub">Our dedicated instructors coach you with valuable feedback, instead of lecturing at you. <a href="http://www.oreillyschool.com/whyost/one-on-one-instruction/">More &gt;</a></span></li>
+</ul>		</nav>
+	</div>
+		<div class="inner">
+		<div class="contact clearfix">
+			<div class="sprite enroll_button">
+				<a href="https://enroll.oreillyschool.com/enroll/">Enroll Now</a>
+			</div>
+			<div class="phone clearfix">
+				<span class="phone_number">707-827-7288</span>
+				<div class="call-hours">
+					<p class="chlabel">Call M-F</p>
+					<div class="hours">
+						<p class="hours-top">8-5 PM</p>
+						<p class="hours-btm">PST</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="clearfix">
+		<ul id="menu-right-sub-menu-column-1" class="menu-1"><li id="menu-item-1520" class="icon_chat menu-item menu-item-type-custom menu-item-object-custom menu-item-1520"><a href="/">Chat Live</a></li>
+<li id="menu-item-1333" class="icon_email menu-item menu-item-type-custom menu-item-object-custom menu-item-1333"><a href="/email-us/">Email Us</a></li>
+<li id="menu-item-1247" class="icon_catalog menu-item menu-item-type-custom menu-item-object-custom menu-item-1247"><a href="/get-a-catalog/">Get a Catalog</a></li>
+</ul><ul id="menu-right-sub-menu-column-2" class="menu-2"><li id="menu-item-1248" class="icon_news fancybox menu-item menu-item-type-custom menu-item-object-custom menu-item-1248"><a href="/get-a-newsletter/">Stay Connected</a></li>
+</ul>		</nav>
+	</div>
+
+			<div class="expand-widget"><div class="expand-top"><div class="expand-inner clearfix"><p class="expand-title">From our students</p><p class="expand-icon">+</p></div></div><div class="expand-text clearfix"><div class="expand-quote 2nd_quotemarks sprite"><p>&#8220;Because of the Sandbox environment where I could learn by doing, I felt I learned so much more and it took less of my time.&#8221;-Mary Trunk</p>
+</div><img width="160" height="160" src="http://www.oreillyschool.com/wp-files/9/2013/04/testimonial6.jpg" class="attachment-post-thumbnail wp-post-image" alt="testimonial6" /></div></div>	
+	<div class="hidden fancybox-hidden">
+		<div id="newsletterForm" class="modal_form modal_form_pop_up">
+	<div class="modal_form_container">
+		<div class="email_submitted">
+			<h2>Thank you!</h2>
+			<p>You have been added to the mailing list.</p>
+		</div>
+		<div id="newsletter_form_content">
+			<h2>Stay Connected by Email</h2>
+			<p>Be the first to hear about new courses, certificate programs, and special offers.</p>
+			<iframe src="http://oreilly.com/school/email-sidebar.csp?5" id="email-sidebar-frame"></iframe>
+		</div><!-- #newsletter_form_content -->
+	</div><!-- #modal_form_container -->
+</div><!-- #newsletterForm -->    </div>
+
+</aside>
+			
+	  	</div>
+	</div>
+	
+<div class="clearfix"></div>
+
+<div class="home-row" id="row-nav">
+  <div class="content">
+
+    <div class="col1">
+      <ul>
+        <li class="title"><a href="http://www.oreillyschool.com/">Home</a></li>
+      </ul>
+      <ul>
+        <li class="title"><a href="http://www.oreillyschool.com/individual-courses/">Individual Courses</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/html5css/">Intro to HTML and CSS</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/python1/">Beginning Python</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/python4/">Advanced Python</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/introjavascript/">Modern JavaScript</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/csharp1/">Intro to C#</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/dba1/">Intro to DBA</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/introphp/">Intro to PHP</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/java1/">Intro to Java</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/jquery/">jQuery</a></li>
+        <li><a href="http://www.oreillyschool.com/individual-courses/perl1/">Intro to Perl</a></li>
+
+        <li><a href="http://www.oreillyschool.com/complete-course-catalog/">+ Over 30 More</a></li>
+      </ul>
+
+      <ul>
+        <li class="title"><a href="http://www.oreillyschool.com/certificate-programs/">Certificate Programs</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/c-net-programming/">C#.NET Programming</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/client-side-programming/">Client-Side Programming</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/database-administration/">Database Administration</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/java-programming/">Java Programming</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/linuxunix-administration/">Linux Systems Administration</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/open-source-programming/">Open Source Programming</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/perl-programming/">Perl Programming</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/php-sql-programming/">PHP/SQL Programming</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/python-programming/">Python Programming</a></li>
+        <li><a href="http://www.oreillyschool.com/certificate-programs/web-programming/">Web Programming</a></li>
+      </ul>
+
+      <ul>
+        <li class="title"><a href="http://www.oreillyschool.com/about-us/">Prospective Students</a></li>
+        <li><a href="http://www.oreillyschool.com/about-us/mission-objectives-and-goals/">Mission, Objectives and Goals</a></li>
+        <li><a href="http://www.oreillyschool.com/about-us/our-history/">Our History</a></li>
+        <li><a href="http://www.oreillyschool.com/about-us/our-faculty/">Our Faculty</a></li>
+        <li><a href="http://www.oreillyschool.com/admission-information/">Admission Information</a></li>
+        <li><a href="http://www.oreillyschool.com/academic-policies/">Academic Policies</a></li>
+        <li><a href="http://www.oreillyschool.com/student-services/">Student Services</a></li>
+        <li><a href="http://www.oreillyschool.com/about-us/tuition-and-fees/">Tuition and Fees</a></li>
+        <li><a href="http://www.oreillyschool.com/consumer-information/">Consumer Information Disclosure Form</a></li>
+        <!-- MAL: WEB-1406 DETC modification. -->
+        <li><a href="http://www.oreillyschool.com/licensingaffiliations/">Licensing/Affiliations</a></li>
+        <!-- MAL: WEB-1406 Removed and replaced with line above: <li><a href="< ?php echo home_url(); ?>/licensingaffiliations/">Licensing/Affiliations</a></li> -->
+        <li><a href="http://www.oreillyschool.com/about-us/faq/">FAQ</a></li>
+      </ul>
+
+      <ul>
+        <li class="title"><a href="http://www.oreillyschool.com/blog/">Blog</a><br /><br /></li>
+        <li>Connect with us</li>
+        <li>
+          <a href="https://www.facebook.com/oreillyschool" target="_blank" rel="nofollow"><span class="social_icon facebook" title="Follow Us on Facebook"></span></a>
+          <a href="https://plus.google.com/b/113839215895775232669/" target="_blank" rel="publisher"><span class="social_icon googlePlus" title="Follow Us on Google+"></span></a>
+          <a href="https://twitter.com/OReillySchool" target="_blank" rel="nofollow"><span class="social_icon twitter" title="Follow Us on Twitter"></span></a>
+          <a href="https://www.linkedin.com/company/o%27reilly-school-of-technology" target="_blank" rel="nofollow"> <span class="social_icon linkedIn" title="Follow Us on LinkedIn"></span></a>
+          <a href="https://www.youtube.com/user/oreillyschooltech" target="_blank" rel="nofollow"><span class="social_icon youtube" title="Follow Us on YouTube"></span></a>
+        </li>
+      </ul>
+<!-- MAL: WEB-1406 -->
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<footer>
+  <div class="content">
+    <div class="col1">
+      <p>O&rsquo;Reilly School of Technology, A Division of O&rsquo;Reilly Media, Inc.</p>
+      <p>1005 Gravenstein Hwy North | Sebastopol, CA 95472 US</p>
+      <p>Phone: 707-827-7288 | Email: info@oreillyschool.com | Hours: M-F 8am - 5pm Pacific Time</p>
+      <p><a href="http://www.oreillyschool.com/privacy-policy/">Privacy Policy</a> | <a href="http://www.oreillyschool.com/email-us/">Email Us</a></p>
+    </div>
+    <div class="col2">
+      <p>&copy;2014, O&rsquo;Reilly Media, Inc.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><script type='text/javascript' src='http://www.oreillyschool.com/wp-content/themes/oreilly-school/js/innerpage_script.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/jquery.easing.pack.js?ver=1.3'></script>
+<script type='text/javascript' src='http://www.oreillyschool.com/wp-content/plugins/easy-fancybox/jquery.mousewheel.pack.js?ver=3.1.3'></script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3331370-1"); pageTracker._initData(); pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1060170871;
+var google_conversion_label = "sFGzCLmt5AEQ99jD-QM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1060170871/?value=0&amp;label=sFGzCLmt5AEQ99jD-QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"oreillyschool.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+
+
+<script type="text/javascript">
+
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<iframe name="submitFrame" border="0" style="border: 0px; height:1px;width:1px"></iframe>
+</body>
+</html>

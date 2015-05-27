@@ -1,0 +1,141 @@
+\section{Question 8}
+
+\subsection{The Question}
+
+\begin{flushleft}
+
+Which 5 raters most disagreed with each other (negative
+correlation)? Show the raters' IDs and Pearson's r, sorted by r.
+
+
+\end{flushleft}
+\subsection{The Answer}
+
+
+\begin{flushleft}
+
+
+The solution for this question is similar to that of question 7. However the main different being that the goal is to find the users that disagree the most with each other, being least correlated. The main difference in the coe implementing this solution is the order of sorting. The sorting was reverese from question 7, so that the least correlated naighbors are chosen from the greedy algorithm. The least correlated group was chosen using the same metric as previously.
+
+
+
+
+\begin{lstlisting}[caption={Python code for question 8}]
+def q8():
+    prefs =  loadMovieLens(path='./ml-100k')
+    c = greedy(prefs, False)
+    x = maths(c, prefs)
+
+    x.sort(key=lambda x:x[5], reverse=False)
+    y = []
+    for i in x:
+        if len(i) == len(set(i)):
+            y.append(i)
+    print "Least Agreed Reviewers"
+    for i in range(0,5):
+        print y[i]
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Greddy Algorithm for determining most correlated reviewer}]
+def greedy(prefs, best):
+    c = [[]]*(len(prefs))
+    for i in prefs:
+        e = []
+        for j in prefs:
+            d = []
+            num = sim_pearson(prefs,i,j);
+            d.append(num)
+            d.append(i)
+            d.append(j)
+            if (i != j):
+                e.append(d)
+        e.sort(key=lambda x:x[:][0], reverse=best)
+        c[int(e[0][1])-1] = e[0]       
+    return c 
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Determining chain of 5 reviewers from correlated}]
+def maths(c, prefs):
+    d = []
+    for i in c:
+        e = []
+        e.append(i[1])
+        e.append(i[2])
+        for j in range(2,5):
+            e.append(c[int(e[j-1])-1][2])
+        tSum = 0
+        for j in range (0,5):
+            for k in range (0,5):
+                tSum +=  sim_pearson(prefs, e[j], e[k])
+        e.append(tSum)
+        d.append(e)
+    return d
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Correlation between two reviewers}]
+def sim_pearson(prefs, p1, p2):
+    '''
+    Returns the Pearson correlation coefficient for p1 and p2.
+    '''
+
+    # Get the list of mutually rated items
+    si = {}
+    for item in prefs[p1]:
+        if item in prefs[p2]:
+            si[item] = 1
+    # If they are no ratings in common, return 0
+    if len(si) == 0:
+        return 0
+    # Sum calculations
+    n = len(si)
+    # Sums of all the preferences
+    sum1 = sum([prefs[p1][it] for it in si])
+    sum2 = sum([prefs[p2][it] for it in si])
+    # Sums of the squares
+    sum1Sq = sum([pow(prefs[p1][it], 2) for it in si])
+    sum2Sq = sum([pow(prefs[p2][it], 2) for it in si])
+    # Sum of the products
+    pSum = sum([prefs[p1][it] * prefs[p2][it] for it in si])
+    # Calculate r (Pearson score)
+    num = pSum - sum1 * sum2 / n
+    den = sqrt((sum1Sq - pow(sum1, 2) / n) * (sum2Sq - pow(sum2, 2) / n))
+    if den == 0:
+        return 0
+    r = num / den
+    return r
+\end{lstlisting}
+
+\begin{center}
+Least Agreed Reviewers
+
+$853 -> 336$ r =  -1.00
+
+$336 -> 414$ r = -1.00
+
+$414 -> 641$ r = -1.00
+
+$641 -> 134$ r = -1.00
+
+\vspace{10pt}
+
+Highly Disagreed Groups
+
+['853', '336', '414', '641', '134', -8.178267558914557]
+
+['359', '760', '928', '432', '180', -5.94077103218698]
+
+['895', '760', '928', '432', '180', -5.847371703822146]
+
+['425', '477', '811', '441', '475', -5.381056081661583]
+
+['67', '698', '898', '599', '19', -5.246363309059925]
+
+\end{center}
+
+\end{flushleft}
+
+
+
+

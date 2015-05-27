@@ -1,0 +1,310 @@
+
+\documentclass[]{svmono}
+
+\usepackage{fancybox}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage[margin=1in, vmargin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{caption}
+
+\usepackage{subcaption}
+
+
+\usepackage{enumerate}
+
+\usepackage{bashful}
+
+\usepackage{multicol}
+
+
+\usepackage{textcomp}
+\usepackage{hyperref}
+%\usepackage[hyphenbreaks]{breakurl}
+%\usepackage[hyphens]{url}
+
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{20pt}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,                    % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+
+\setlength{\parindent}{10pt}
+
+
+\begin{document}
+
+
+
+
+\begin{titlepage}    
+\begin{center}
+\vspace*{0in}
+\huge{\sc  Old Dominion Univeristy\\  }
+
+
+
+\vspace{1in}
+\Large{\sc CS 495: Introduction to Web Science \\ Instructor: Michael L. Nelson, Ph.D \\ Fall 2014 4:20pm - 7:10pm R, ECSB 2120\\}
+
+\vspace{1in}
+\Large{Assignment \# 8\\}
+
+\vspace{.5cm}
+\Large{ \sc George C.  Micros  UIN: 00757376\\ }
+
+
+
+\vspace {7cm}
+
+{\large \bf {Honor Pledge}}\\
+{I pledge to support the Honor System of Old Dominion University. I will refrain from any form of academic dishonesty or deception, such as cheating or plagIiarism. I am aware that as a member of the academic community it is my responsibility to turn in all suspected violations of the Honor Code. I will report to a hearing if summoned. }\\
+\vspace {.5cm}
+
+{Signed \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+
+
+\today
+\end{center}
+\end{titlepage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{George C. Micros}
+\title{Written Assignment 8}
+\subtitle{Fall 2014 \newline  CS 495: Introduction to Web Science\newline Dr. Michael Nelson}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+
+\chapter{Written Assignment 8}
+
+\noindent
+
+
+The goal of this project is to use the basic recommendation principles
+we have learned for user-collected data. You will modify the code
+given to you which performs movie recommendations from the MovieLense
+data sets.The MovieLense data sets were collected by the GroupLens Research
+Project at the University of Minnesota during the seven-month period
+from September 19th, 1997 through April 22nd, 1998. It is available
+for download from \url{http://www.grouplens.org/node/73}
+
+There are three files which we will use:
+
+
+\begin{itemize}
+
+\item  u.data: 100,000 ratings by 943 users on 1,682 movies. Each
+user has rated at least 20 movies. Users and items are numbered
+consecutively from 1. The data is randomly ordered. This is a tab
+separated list of 
+
+user id | item id | rating | timestamp
+
+The time stamps are unix seconds since 1/1/1970 UTC.
+
+Example:
+
+196	242	3	881250949
+
+186	302	3 	891717742
+
+22	377	1 	878887116
+
+244	51	2 	880606923
+
+166	346	1 	886397596
+
+298	474	4 	884182806
+
+115	265	2	881171488
+
+\item  u.item: Information about the 1,682 movies. This is a tab separated list of
+
+movie id | movie title | release date | video release date | IMDb URL | unknown | Action | Adventure | Animation |Children's | Comedy | Crime | Documentary | Drama | Fantasy | Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi | Thriller | War | Western |
+
+The last 19 fields are the genres, a 1 indicates the movie is of that genre, a 0 indicates it is not; movies can be in several genres at once. The movie ids are the ones used in the u.data data set.
+
+Example:
+
+161|Top Gun (1986)|01-Jan-1986||http://us.imdb.com/M/title-exact?Top%20Gun%20(1986)|0|1|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0 
+162|On Golden Pond (1981)|01-Jan-1981||http://us.imdb.com/M/title-exact?On%20Golden%20Pond%20(1981)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0 
+163|Return of the Pink Panther, The (1974)|01-Jan-1974||http://us.imdb.com/M/title-exact?Return%20of%20the%20Pink%20Panther,%20The%20(1974)|0|0|0|0|0|1|0|0|0|0|0|0|0|0| 0|0|0|0|0
+
+\item   u.user: Demographic information about the users. This is a tab
+separated list of:
+
+user id | age | gender | occupation | zip code
+
+The user ids are the ones used in the u.data data set.
+
+Example:
+
+1|24|M|technician|85711 
+2|53|F|other|94043 
+3|23|M|writer|32067 
+4|24|M|technician|43537 
+5|33|F|other|15213
+
+\end{itemize}
+
+The code for reading from the u.data and u.item files and creating
+recommendations is described in the book Programming Collective
+Intelligence (check email for more details). You are to modify
+recommendations.py to answer the following questions. Each question your
+program answers correctly will award you 1 point.
+
+
+
+The data was organized using classes for the movies, users and reviews. This helped organized the data in a way that was similar to the way it was represented in the files.
+
+\begin{lstlisting}[caption={Class definitions for movies, users and reviews}]
+class movie:
+	def __init__(self, data):
+		data = data.strip('\n').split('|')		
+		self.id 	= int(data[0])
+		self.title 	= data[1].replace(',', '')
+		self.data 	= data[2]
+		self.vid 	= data[3]
+		self.url 	= data[4]
+		self.genre 	= data[5:len(data)]
+		self.scores	= []
+		self.cnt	= 0
+		self.avg 	= 0
+		self.rvwrs	= []
+
+	def avgr(self):
+		if self.cnt > 0:
+			self.avg = sum(self.scores)/self.cnt
+		else:
+			self.avg = 0
+
+class user:
+	def __init__(self,data):
+		data = data.strip('\n').split('|')
+		self.id 	= int(data[0])
+		self.age	= int(data[1])
+		self.sex	= data[2]
+		self.job	= data[3]
+		self.zip 	= data[4]
+		self.film   = {}
+		self.cnt	= 0
+
+class review:
+	def __init__(self, data):
+		data = data.strip('\n').split('\t')
+		self.user 	= int(data[0])
+		self.item	= int(data[1])
+		self.score	= int(data[2])
+		self.time	= int(data[3])
+\end{lstlisting}
+
+Data was loaded from its respective files, parced and initialized into a new object that was appened to and list of similar objects.
+
+\begin{lstlisting}[caption={Loading data from files to list of objects}]
+f = open("./ml-100k/u.item")
+for i in f:
+	movies.append(movie(i))
+
+f = open("./ml-100k/u.user")
+for i in f:
+	users.append(user(i))
+
+f = open("./ml-100k/u.data")	
+for i in f:
+	reviews.append(review(i))
+\end{lstlisting}
+
+
+
+\include{q1}
+\include{q2}
+\include{q3}
+\include{q4}
+\include{q5}
+\include{q6}
+\include{q7}
+\include{q8}
+\include{q9}
+\include{q10}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\nocite{*}
+\bibliography{sources}
+\bibliographystyle{unsrt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{document}
+
+

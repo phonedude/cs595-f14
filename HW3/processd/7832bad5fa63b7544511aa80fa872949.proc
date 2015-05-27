@@ -1,0 +1,665 @@
+    #publisher CityLab RSS
+
+   From The Atlantic
+
+CityLab
+
+   Menu
+     * Commute
+     * Work
+     * Housing
+     * Weather
+     * Crime
+     * Politics
+     * Design
+     * Tech
+
+     * Navigator
+     * CityFixer
+     * Maps
+     * Photos
+     * Videos
+     * Search
+     *
+          +
+          +
+          +
+          +
+          +
+
+   ____________________ (BUTTON)
+
+The First Look at How Google's Self-Driving Car Handles City Streets
+
+   The vehicle has now moved beyond highways to its next phase: roaming
+   the roads of Mountain View.
+     * Eric Jaffe
+     * @e_jaffe
+     * Apr 28, 2014
+     * Comments
+
+     *
+     * Share on Facebook
+     * Tweet
+     *
+     *
+     *
+     *
+
+   Image Google
+
+   MOUNTAIN VIEW, Calif.—The first rule of riding in Google's self-driving
+   car, says Dmitri Dolgov, is not to compliment Google's self-driving
+   car. We've been cruising the streets of Mountain View for about ten
+   minutes. Dolgov, the car's software lead, is sitting shotgun. Brian
+   Torcellini, the project's lead test driver (read: "driver"), is sitting
+   behind the wheel (yes, there is a wheel). He is doing no more to guide
+   the vehicle than I'm doing from the backseat. I have just announced
+   that so far the trip has been "amazingly smooth."
+
+   "The car knows," says Dolgov.
+
+   He means I have violated some code of robotic superstition, calling the
+   contest too early. Or maybe he means my praise serves no function here.
+   If I can tell how well the car is driving itself, so can the car.
+
+   Google's self-driving car project began in 2009. The vehicle's early
+   life was confined almost entirely to California highways. Hundreds of
+   thousands of test miles later, the car more or less has mastered the
+   art — rather, the computer science — of staying in its lane and keeping
+   its speed. So about a year and a half ago, Google's team shifted focus
+   from the predictable sweep of freeways to the unpredictable maze of
+   city streets. I was invited along as the first journalist to witness
+   how the car is handling its new urban lifestyle.
+     __________________________________________________________________
+
+Series
+
+The Future of Transportation
+
+   Go
+     __________________________________________________________________
+
+   Over the next few minutes the autonomous vehicle makes several
+   maneuvers that someone less privy to Dolgov's first rule would have
+   been tempted to compliment. We go through a yellow light, the car
+   having calculated in a fraction of a second that stopping would have
+   been more dangerous. We push past a nearby car waiting to merge into
+   our lane, because our vehicle's computer knows we have the
+   right-of-way. We change into the right lane for a seemingly pointless
+   reason until, a minute later, the car signals a right turn. We go the
+   exact speed limit because maps the car consults tell it this road's
+   exact speed limit. The car identifies orange cones in the shoulder and
+   we drift laterally in our lane, to give any road workers more space.
+
+   Between you and me: amazingly smooth.
+
+   Equally amazing is that people around us are going about their daily
+   lives. I'd read that drivers tend to gawk at the Google car from their
+   own cars, but that is not the case today. At one intersection I look at
+   the cars flanking us. The driver to our right finds her cell phone more
+   fascinating than we are; the driver to our left rests his head in his
+   palm, and may or may not be falling asleep. There is a banality to
+   vehicle autonomy in this place.
+
+   It can't be that they've missed us. If the spinning bucket suspended by
+   four metal arms on the roof doesn't give us away, the words
+   "Self-Driving Car" on the rear bumper should. We're in a white Lexus RX
+   450H, part of a fleet of about two dozen prototypes, all of which now
+   spend most of their time on surface streets. The bucket spins ten times
+   a second, emitting 64 lasers that generate 3D information on objects
+   all around us; the car also has radar that bounces 150 meters or so in
+   every direction to perceive things a human driver never could. The
+   Lexus's interior is standard with the following exceptions: a camera
+   facing out from the windshield capable of reading traffic lights,
+   street signs, etc.; an ON and OFF button on the steering wheel to
+   engage or disengage "auto" mode; a driver's side display panel showing
+   our speed and position; and a big red button on the wooden console — a
+   kill switch they've never had to use.
+
+   "Every robot has a big red button," says Dolgov.
+
+   Dolgov is holding a laptop running a map that effectively displays what
+   the car is "seeing." There is a comment box on the screen where he can
+   record notes should something of interest occur during the ride. Right
+   now he is not recording any notes. "Not much interesting stuff is
+   happening," he says. I had actually been promised ahead of time that
+   "interesting things" would happen during the ride, so I could feel a
+   bit misled at this moment. Except I'm riding in a car that's driving
+   itself through a city so amazingly smoothly that people around us are
+   falling asleep.
+
+   In that sense this uninteresting ride feels profoundly, even
+   unimaginably, interesting.
+
+                 •       •       •       •       •
+
+   The head of Google's self-driving car project is Chris Urmson, a tall
+   man with tousled blond hair and a boyish grin to match an idealistic
+   spirit. We met at a Google X building just before my test ride. Google
+   X is the company's tight-lipped (but loosening) innovation lab that
+   both oversees and emerged out of the self-driving car project. It is
+   known for impossibly lofty goals with a sci-fi twist; its director,
+   Astro Teller, is officially titled Captain of Moonshots. Urmson shares
+   a resistance to incremental advance.
+
+   "You make so much more progress when you’re thinking about changing the
+   world rather than making this minor delta improvement on something," he
+   says. "You can get fired up in the morning."
+   A map of the Google car's route through Mountain View during my ride
+   along.
+
+   Urmson came into driverless cars like so many in the field: via three
+   autonomous vehicle challenges held by DARPA in the mid-2000s. The first
+   Grand Challenge, in 2004, was a legendary disaster. Urmson was part of
+   a team from the robotics institute at Carnegie Mellon led by former
+   Marine William "Red" Whittaker. They made the contest's best showing
+   despite traveling just 7 of 150 miles before getting stuck in an
+   embankment. "Almost literally burst into flames," says Urmson. At the
+   next Grand Challenge, in 2005, they placed second and third, losing to
+   a Stanford group led by Sebastian Thrun, who later started Google's
+   self-driving program. Urmson's team did win the 2007 race — an "Urban
+   Challenge," notably, through 60 miles of a city environment.
+
+   He came to Google in 2009 to develop the self-driving car because it
+   felt like something "that might change the world." Urmson knows the
+   statistics on metro area congestion. Americans spend 52 minutes a day
+   commuting, he says, which works out to 4 percent of their lives. ("If I
+   could give you 4 percent more life, you'd take it.") His bigger goal is
+   safety, and he recites these numbers, too: 33,000 people a year die on
+   U.S. roads; car crashes are the leading cause of death for people age 4
+   to 34; at least 90 percent of collisions are the result of human error.
+   "So this is kind of a big deal," he says.
+
+   After accomplishing two baseline goals in its first 18 months — one, to
+   drive 100,000 miles on public roads; the other, to complete ten
+   100-mile courses on challenging routes throughout California — the
+   Google car spent the next couple years conquering freeways. That seemed
+   a "simpler problem" to tackle first compared to city streets, says
+   Urmson. Yes, higher speeds make the potential cost of any mistake that
+   much bigger, but the fundamentals of freeway driving are pretty easy
+   for programmers to model. Cars move in one direction, making minor
+   adjustments to speed and position.
+
+   "To grossly simplify it," Andrew Chatham, the project's mapping leader,
+   later tells me, "you follow the curve and don't hit the guy in front of
+   you."
+   It's not just that surface street driving is far more complex than
+   freeway driving, it's also unpredictably complex.
+
+   Cars move at slower speeds on city streets, but the number of variables
+   are almost endless, and they require vigilant attention in every
+   direction. There are tight lanes and traffic lights, pedestrians and
+   cyclists, oncoming cars and double-parked trucks, unprotected turns and
+   unexpected road work — the external elements are infinite, and
+   configured differently each trip. So it's not just that surface street
+   driving is far more complex than freeway driving, it's also
+   unpredictably complex.
+
+   Take the problem of crosswalks at intersections. Sometimes pedestrians
+   wait for the crossing signal and walk inside the lines. But sometimes
+   they ignore the signal and cross as they please, and sometimes they're
+   just waiting on the curb for a friend and don't mean to cross at all.
+   Early on, the Google car had trouble categorizing these varying
+   intentions and deciding how to respond. Now it's graduated to subtler
+   problems, like spotting a pedestrian who might be standing behind a
+   utility pole at the corner.
+
+   "It's the rarer and rarer situations we're working towards," says
+   Urmson. "The complexity of the problem is substantially harder. But
+   basically over the last year we’ve come to the conclusion it’s doable,
+   and that this intuition we had about making a vehicle that was fully
+   self-driving was correct. That it was possible. That we actually think
+   we can make one that really is safer than human driving."
+
+                 •       •       •       •       •
+
+   An interesting thing has happened in the car. We are in the left lane
+   on Mountain View's West Middlefield Road when some road work appears up
+   ahead. A dozen or so orange cones guide traffic to the right. The
+   self-driving car slows down and announces the obstruction — "lane
+   blocked" — but seems confused what to do next. It won't merge right,
+   even though no cars are coming up behind us. After a few false starts,
+   Brian Torcellini takes the wheel and steers around the cones before
+   reengaging auto mode.
+
+   "It detected the cones and it tried to go around them, but it wasn't
+   confident," says Dmitri Dolgov, typing at the laptop. "The car is
+   capable of a lot of things, but unless it's absolutely sure that it can
+   handle some situation well, it will err on the conservative side."
+   A screenshot of what the Google car (in red) saw before getting stuck
+   in a road work zone.
+
+   Boiled down, the Google car goes through six steps to make each
+   decision on the road. The first is to locate itself — broadly in the
+   world via GPS, and more precisely on the street via special maps
+   embedded with detailed data on lane width, traffic light formation,
+   crosswalks, lane curvature, and so on. Urmson says the value of maps is
+   one of the key insights that emerged from the DARPA challenges. They
+   give the car a baseline expectation of its environment; they're the
+   difference between the car opening its eyes in a completely new place
+   and having some prior idea what's going on around it.
+
+   Next the car collects sensor data from its radar, lasers, and cameras.
+   That helps track all the moving parts of a city no map can know about
+   ahead of time. The third step is to classify this information as actual
+   objects that might have an impact on the car's route — other cars,
+   pedestrians, cyclists, etc. — and to estimate their size, speed, and
+   trajectory. That information then enters a probabilistic prediction
+   model that considers what these objects have been doing and estimates
+   what they will do next. For step five, the car weighs those predictions
+   against its own speed and trajectory and plans its next move.
+
+   That leads to the sixth and final step: turning the wheel this much (if
+   at all), and braking or accelerating this much (if at all). It's the
+   entirety of human progress distilled to two actions.
+
+   The map on Dolgov's laptop screen offers the best visual window into
+   the car's mind's eye. Take the screenshot from one of our right turns
+   (below). The baseline image is the detailed area map in grayscale.
+   Layered atop that are objects identified by the car's sensors, depicted
+   in colorful geometric boxes: purple for vehicles, red for cyclists,
+   yellow for pedestrians. The red and green ladders are objects that have
+   an immediate impact on the car's speed; in this case, though the
+   traffic light is green, pedestrians prevent a turn, as does a cyclist
+   coming up on the right — in a spot a human driver might easily miss.
+   The flat green line shows the car's planned route.
+   A screenshot of what the Google car sees approaching a right turn;
+   inset, the view from inside the car.
+
+   Dolgov logs the road work incident in the computer. He explains that
+   feedback from the driving teams is critical to the car's development.
+   "Every disengage has a severity associated with it," he says. "That was
+   not the end of the world. We would have gotten through the cones. But
+   it was a problem. Once we go back we'll pull the disk out of the car.
+   We'll import the log from this run. This will get flagged to
+   developers. It will go into our database of scenarios and test cases we
+   track. We'll have more information about this on the desktops, but from
+   what I saw on the screen it looks like we detected [the cones]
+   correctly, but for some reason the planner was conservative and decided
+   not to change lanes. We'll create a scenario that says, here, the right
+   thing would have been to change lanes, and the next versions will have
+   it addressed."
+
+   A few minutes later we turn left across five lanes of oncoming traffic
+   onto California Street and reach our destination: an open-air market
+   called the Milk Pail. Rather than stop, though, we continue back toward
+   the Google campus. At one point Dolgov and Torcellini realized
+   air wasn't coming out of the A/C system because the vents weren't on.
+   That was the biggest problem the car encountered until we'd just about
+   reached campus. I had about closed out hope for more excitement when
+   Dolgov makes an announcement.
+
+   "We wanted to make the ride a little more interesting for you," he
+   says.
+
+                 •       •       •       •       •
+
+   Dmitri Dolgov is soft-spoken with (at least on the day we met) biblical
+   patience for a reporter's repetitive questions. He arrived at Google in
+   2009 at the same time as Chris Urmson. They'd known each other from
+   their DARPA challenge days, then as adversaries. Dolgov was part of
+   Sebastian Thrun's group at Stanford. Evidently the rivalry still
+   lingers; when I met everyone later that day to discuss my ride, they
+   brought it up unprompted.
+
+   "I was on a team that was not Chris's," says Dolgov.
+
+   "Came in second," says Urmson.
+
+   "Different years, different places."
+
+   "Same year, different places."
+
+   "Well," says Dolgov. "At least we didn't flip our car upside down."
+
+   Race history aside, they share a clear belief that the self-driving car
+   will have a transformative impact on road safety. Dolgov has been
+   quoted as saying that if the car has to fail, he hopes it will "fail
+   gracefully." When I ask him to elaborate, he brings up the incident
+   with the road work cones.
+
+   "It didn't handle it as well as you would want to," he says. "But it
+   kind of failed gracefully. It saw the cones early, it slowed down
+   smoothly." One could imagine a less graceful car, say, plowing right
+   through them. "The car needs to recognize its limitations and do the
+   conservative thing given its limitations," he says. "Even when that
+   means being slower or being stuck."
+   What the Google car sees as it approaches a railroad crossing. Top: the
+   car in surface street traffic.
+
+   The Google car is programmed to be the prototype defensive driver on
+   city streets. It won't go above the speed limit and avoids driving in a
+   blind spot if possible. It gives a wide berth to trucks and
+   construction zones by shifting in its lane, a process called "nudging."
+   It's extremely cautious crossing double yellows and won't cross
+   railroad tracks until the car ahead clears them. It hesitates for a
+   moment after a light turns green, because studies have shown that
+   red-light runners tend to strike just after the signal changes. It
+   turns very slowly in general, accounting for everything in the area,
+   and won't turn right on red at all — at least for now. Many of the
+   car's capabilities remain locked in test mode before they're brought
+   out live.
+
+   "We have lots of things we turn off until we're confident," says
+   Dolgov. "And if you had a self-driving car that handled everything else
+   well but didn't do right on red? That's still a useful thing."
+
+   Google's self-driving "drivers" are programmed for caution, too.
+   Torcellini, who's been behind the wheel since 2009, may have logged
+   more driverless miles than anyone on the planet. He has a breezy manner
+   — in the Google car movie he'll be played by Paul Rudd — but the driver
+   training program he's designing is a rigorous one. He recruits
+   detail-oriented and disciplined individuals, several with military
+   backgrounds. ("You can't have a Craigslist ad for people with that type
+   of experience," he says.) He screens them with a driving interview.
+   Once hired, drivers go through at least a month of training in both
+   classroom and car, and must pass regular performance tests to ensure a
+   steady development.
+   We're hugging the curve when suddenly we jam on the brakes — a utility
+   truck has cut us off on the left.
+
+   "It seemed like I had the easiest job in the world, just sitting around
+   in a Lexus, but in fact we're paying really close attention to what the
+   system is doing," he says. "We know we have the reputation of not only
+   Google but also the technology [on the line] every time we take a car
+   out of the garage."
+
+   This safety-first culture gets a big assist from Google's developers,
+   who don't need the cars to leave the garage to put them through several
+   types of off-road simulation. They can invent a world using their
+   CarCraft system to test out any road scenarios imaginable. They can
+   tweak the code and model hundreds of thousands of miles to determine
+   what effect a change would have over time. They can even take an
+   instance when the driver disengaged and see what would have happened if
+   the car had been left alone.
+
+   Inside the car, I found out what that means in practical terms: Google
+   drivers don't have to get into an accident to learn from one.
+
+                 •       •       •       •       •
+
+   When Dolgov said they'd made the ride "a little more interesting" for
+   me, he meant the team had staged a series of scenarios to demonstrate
+   the full scope of the car's city street capabilities. First we turned
+   down a road and came upon a woman riding a red, green, and yellow
+   Google bicycle in the shoulder. She held out her left arm, which the
+   car's windshield camera detected, which the software then identified as
+   a turn signal. A little yield sign appeared above the cyclist on
+   Dolgov's laptop, and the car slowed down until the cyclist cut left and
+   out of harm's way.
+
+
+   The car then passed a few more staged tests. We slowed for a group of
+   jaywalkers and a rogue car turning in front of us from out of nowhere.
+   We stopped at a construction worker holding a temporary STOP sign and
+   proceeded when he flipped it to SLOW — proof the car can read and
+   respond to dynamic surroundings, making it less reliant on
+   pre-programmed maps. We merged away from a lane blocked by cones not
+   unlike the one that stumped us earlier.
+   The Google car can now recognize temporary stop signs, making it less
+   reliant on pre-programmed maps.
+
+   Urmson cites three big technological advances that have facilitated the
+   car's shift to surface streets. The first is its ability to classify
+   the objects around it. Early on, he says, they would be lucky to
+   distinguish a car from a pedestrian; now they can not only tell the
+   difference but determine their travel paths. The second (and related)
+   improvement has been in machine vision. That helps the car not only
+   react to signals it expects, such as traffic lights, but those it
+   doesn't, such as the STOP/SLOW sign. The third step forward is in
+   machine learning — the system's ability to interpret data and resolve a
+   problem on its own.
+
+   One of the clearest examples of its progress is the way the car turns
+   left. Andrew Chatham, the mapping lead, explains that two years ago,
+   the car made all left turns the same way: it drew a fixed path through
+   the intersection and adjusted its speed accordingly. But over time the
+   team realized that cars approaching a left turn at a green light follow
+   a very different path than those starting from a stopped position. So
+   now the computer recognizes this situation and computes a new route on
+   the fly. It's those little tweaks that bridge the gap between a jerky
+   robotic ride and an amazingly smooth one.
+
+
+   Toward the end of my test run, after about a half hour of uneventful
+   city driving, the car enters a cul-de-sac at the end of Charleston
+   Street. We're hugging the curve when suddenly we jam on the brakes — a
+   utility truck has cut us off on the left. A few moments later it
+   becomes clear that Torcellini had disengaged auto mode and hit the
+   brakes manually; the car probably had another second to decide on its
+   own whether or not to stop, but rather than take the chance it
+   wouldn't, Torcellini performed what he calls a "conservative takeover."
+   I certainly hadn't seen the truck coming, and the palpable release of
+   tension in the car suggested this wasn't one of the staged events.
+
+   "It's very easy for us to go back and simulate what the car would have
+   done, had we not disengaged," says Dolgov, logging the incident. Later
+   on I ask Torcellini what he thought would have happened if he hadn't
+   taken over, and instead left the car to its own devices. "I think it
+   would have stopped," he says. "It would have done the exact same thing
+   I did."
+
+                 •       •       •       •       •
+
+   Urmson met us after the ride to see how it went. I said I knew I wasn't
+   supposed to compliment the car, but that the ride had felt amazingly
+   smooth. He turned to Dolgov.
+
+   "Oh," he says, "you told him the first rule of self-driving."
+
+   Urmson seemed a little disappointed that we'd needed to take manual
+   control of the car twice. He says it took about six months of focusing
+   on surface streets to get the basic foundation in place, but that
+   accounting for all the nuances of city driving will take more time.
+   "Driving where you did today, it's unusual that we would have
+   disengaged twice," he says. "Compared to some of the situations you'll
+   see on the road, a lot of what you saw today was pretty benign. It's
+   stuff in your daily life, you might drive it without worrying about it
+   too much. So now we’ve still got room to grow there, but we're pushing
+   again on a few more of these longer problems. Trying to deal with
+   smaller streets, less room to maneuver, more difficult intersections —
+   that kind of thing."
+   A screenshot of the Google car identifying the utility truck that cut
+   it off. Google's simulators determined that the car would have stopped
+   before hitting the truck on its own.
+
+   It's still too soon to declare victory in the race for driverless cars,
+   but that hasn't stopped some experts from saying they expect autonomous
+   vehicles on the road by 2030 (Nissan has pushed up its timeline to
+   2020). The history of self-driving technology is filled with premature
+   confidence. At the 1939 World's Fair, the famed General Motors'
+   Futurama exhibit predicted a world of radio-guided cars by 1960. In his
+   recent New Yorker story on the Google car, Burkhard Bilger writes that
+   one of the team's lead engineers, Anthony Levandowski, keeps reminders
+   "of all the failed schemes and fizzled technologies of the past."
+
+   Urmson knows all too well the hurdles that still remain. One of the
+   main limiting factors is that any city where the self-driving car can
+   go must first be mapped with a precision far greater than what even
+   Google Maps achieves. That's doable in Urmson's mind: "We know how to
+   deal with that scale of data," he says, referring to Maps and Street
+   View. A greater challenge may be processing and codifying the myriad
+   subtle social cues that remain so vital to navigating crowded city
+   streets. Right now the car can't detect a driver trying to wave it into
+   a lane, for instance, or someone requesting a merge through eye
+   contact. And it still can't understand that universal language of urban
+   traffic: honking. (It is, however, developing an "ear" for sirens.)
+
+   Then there is the matter of scale. Google has a goal of roaming all of
+   Mountain View in the self-driving car by the end of this summer. That
+   would be no small feat: the city has the feel of a typical college
+   town, which makes it a great launching point for many midsized U.S.
+   cities, and its population of 74,000 no doubt rises considerably during
+   the daytime hours, when the car roams its streets. But no one is
+   mistaking it for San Francisco or New York or any major metro area
+   where traffic is so tightly packed and street behavior so wildly
+   unpredictable that a super defensive driver might suffer from paralysis
+   by indecision.
+   "There'll be lots of little wins between here and there, but that's the
+   big one."
+
+   Still, Google is keenly aware what's at stake. There's the safety
+   component, with cities recognizing the need to strive for zero traffic
+   fatalities. The nature of urban mobility itself is also on the line.
+   Larry Burns, a former vice president for research and design at G.M.
+   who's now a paid Google consultant, says taxi-like fleets of shared
+   autonomous vehicles can become viable business models if they can
+   capture just 10 percent of all city trips. "I think that should be
+   viewed as a new form of public transportation," he says. Having
+   recently invested in the ride-sharing service Uber, Google no doubt
+   senses that marrying urban travel demand with autonomous vehicles could
+   transform car-ownership as we know it.
+
+   I asked Urmson when he'll consider the car a success. "I think it's a
+   success when people are using it in their daily lives," he says. "When
+   we have cars out there and people are moving around and we have
+   statistical data that says we're saving more lives than had these
+   people been driving themselves. The first time somebody who doesn't
+   work for Google is riding in one of these cars, getting to Grandma's
+   house or to work in the morning, or moving when they couldn't otherwise
+   move around the city, that'll be a huge day for us. There'll be lots of
+   little wins between here and there, but that's the big one."
+
+   A few days later I got an email from the Google press staff saying the
+   self-driving car team had run a computer model on the near-miss with
+   the utility truck. Turns out the car would have stopped on its own with
+   "room to spare." That sounds like one of those "little wins" Urmson
+   mentioned, but I doubt if he celebrated much. There's a rule about
+   that, and besides, the car already knew.
+
+   All images courtesy Google.
+
+   This article is part of 'The Future of Transportation,' a CityLab
+   series made possible with support from The Rockefeller Foundation.
+     *
+     * Share on Facebook
+     * Tweet
+     *
+     *
+     *
+     *
+
+   Presented by
+     * Previous
+       Why Americans Are Moving Less: New Jobs Aren't Worth It
+     * Next
+       A Striking New Way to Visualize Mobility
+
+About the Author
+
+     * [author-headshot.jpeg?537a0f98]
+       Eric Jaffe is a contributing writer to CityLab and the author of A
+       Curious Madness (2014) and The King's Best Highway (2010). He lives
+       in New York.
+          + All Posts
+          + @e_jaffe
+
+Most Popular
+
+    1. A Strange Cloud Over St. Louis Turns Out to Be an Enormous Swarm of
+       Butterflies
+    2. 10 Big Ideas From CityLab 2014 Attendees
+    3. My 5 Favorite Maps: Bill Rankin
+    4. The Photography Book London Officials Never Wanted You to See
+    5. Wait Your Turn for the Swings at Boston's Adult Playground
+    6. So Long, Shaker Pint: The Rise and Fall of America's Awful Beer
+       Glass
+    7. Singapore's Marina Barrage Is Much More Than a Reservoir
+    8. The Social Side Effects of Mobile Wallets
+    9. A Universal Lesson in Breaking the Habit of Car Commuting
+   10. The Devastating Impact of Persistent Crime on Teens
+
+   See All Stories
+    1. Event [thumb.png]
+
+CityLab 2014 Is Live in Los Angeles, September 28-30
+       Go
+
+    1. Newsletters [thumb.jpg]
+
+Don't Miss a Thing: Sign Up Here for Email Newsletters
+       Go
+    2. Store [thumb.jpg]
+
+T-Shirts, Mugs, and More
+       Go
+
+   Back To Top
+     * CityLab
+     * Share
+     * Tweet
+     * Menu
+
+   Through original reporting, sharp analysis, and visual storytelling,
+   CityLab informs and inspires the people who are creating the cities of
+   the future—and those who want to live there.
+
+Follow
+
+     *
+     *
+     *
+     *
+     *
+
+Newsletter sign up
+
+   ____________________ Go
+
+   [X] Today’s Top Stories
+
+   [X] This Week’s Most Popular Stories
+
+   [X] I want to receive updates from partners and sponsors.
+
+More About CityLab
+
+     * Special Reports
+     * FAQ
+     * Masthead
+     * Contact Us
+     * Store
+     * Atlantic Media
+     * Jobs
+     * Advertise
+     * Advertising Guidelines
+     * Privacy
+     * Terms & Conditions
+
+Elsewhere at Atlantic Media
+
+The Atlantic
+
+     * The Health Effects of Leaving Religion
+     * "Can a TV Show Save Lives?"
+     * When Everything Works Like Your Cell Phone
+
+Quartz
+
+     * “Hands up, don’t shoot” comes to Hong Kong’s pro-democracy movement
+     * Democracy activists’ plan to disrupt Hong Kong is starting to work
+     * Why global commodity prices are crashing and what it means for
+       India
+
+The Atlantic Wire
+
+     * Al Qaida Leader Vows Revenge for Airstrikes in Syria
+     * Hong Kong Police Unleash Tear Gas on Protesters
+     * Ferguson Police Officer Shot, Two Suspects Wanted
+
+National Journal
+
+     * Political TV Ads Will Soon Reach Facebook-Level Creepiness
+     * Ted Cruz Banks on Foreign Policy as His 2016 Differentiator
+     * Democratic House Candidates Are Walloping Republicans in the
+       Small-Money Game
+
+   Copyright 2014 The Atlantic Monthly Group. CDN powered by Edgecast
+   Networks. Insights powered by Parsely.
+
+   CityLab
+   Continue ()
+   Advertisement
+
+   Powered by the Parse.ly Publisher Platform (P3).

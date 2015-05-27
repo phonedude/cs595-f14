@@ -1,0 +1,273 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » The new PHP Comments Feed Four short links: 4 March
+   2014 Death to the screen
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   Programming
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+The new PHP
+
+PHP's experiencing a renaissance, with improvements and new standards
+
+   by Josh Lockhart | Comments: 68 | March 4, 2014
+   Comments: 68
+
+   elephant-2
+   The programming language many love to hate is experiencing a
+   renaissance. This is not your parents’ PHP. The new PHP is a more
+   mature language with community standards, a growing affinity for
+   interoperable components, and a passionate movement to improve
+   performance. If you have bypassed PHP for alternative languages, or if
+   you are a PHP veteran unaware of recent changes, you owe it to yourself
+   to give PHP a second look.
+
+Language Features
+
+   PHP 5.5 (the latest stable build as of this writing) has made major
+   progress from earlier versions. Recent PHP releases contain powerful
+   new features and helpful developer tools, such as a built-in web
+   server, generators for simpler iteration, and namespaces. With PHP 5.4,
+   traits were introduced (a la Scala or Perl) to allow code reuse in
+   single inheritance languages, as well as closures, which allow you to
+   code PHP in a functional style. Other important features include the
+   built-in FastCGI process manager and phpdbg debugger, and a new
+   password hashing API that makes it easy to hash and securely manage
+   passwords in PHP.
+
+Interoperable Components
+
+   A few years ago, PHP had several large frameworks (e.g. CakePHP,
+   CodeIgniter, and so on). Each framework was an island and provided its
+   own implementation of features commonly found in other frameworks.
+   Unfortunately, these insular implementations were likely not compatible
+   with each other and forced developers to lock themselves in with a
+   specific framework for a given project.
+
+   Today the story is different. The new PHP community uses package
+   management and component libraries to mix and match the best available
+   tools. I like to compare it to grocery shopping. If I need to consume a
+   remote API, I’ll visit aisle 3 and pick up Guzzle. Do I need a request
+   router? SymfonyRouting, AuraRouter, Slim, Pux, and nikic/fast-route are
+   on aisle 4. You get the gist. The new PHP is about interoperable
+   components using their comparative advantage to provide the best
+   combination of ingredients for your project.
+
+   The easiest way to start using PHP components is to install the
+   Composer package manager and start browsing the Packagist component
+   repository.
+
+Community Standards
+
+   Because the new PHP community is large and diverse with a myriad of
+   components, it is important that components adhere to a set of code
+   style guidelines and shared interfaces. This lets developers start
+   using new components with a lower learning curve, and it lets
+   components work together more easily via shared interfaces.
+
+   The PHP Framework Interop Group (PHP-FIG for short) is an unofficial
+   but authoritative group of framework developers and PHP community
+   representatives whose goal is “to talk about the commonalities between
+   our projects and find ways we can work together.” The PHP-FIG has
+   passed four standards so far: PSR-0, PSR-1, PSR-2, and PSR-3. These
+   standards propose file, class, and namespace conventions, code style
+   guidelines, and a set of shared interfaces to encourage component and
+   framework interoperability.
+
+   The PHP-FIG is by no means the law of the land, but its suggested
+   standards are being adopted by many of the most popular PHP frameworks.
+   Its goals are admirable, and it welcomes feedback. I highly encourage
+   you to consider implementing the PHP-FIG standards in your PHP code and
+   to submit feedback on future PHP-FIG proposals.
+
+Performance
+
+   There are also exciting things happening with PHP under the hood, too.
+   The PHP Zend Engine recently introduced memory usage optimizations. The
+   memory usage in PHP 5.5 is far less than earlier versions. The PHP Zend
+   Engine also provides a built-in FastCGI process manager that typically
+   sits behind a reverse proxy (e.g. nginx) and will take of process
+   spawning and management for you. This alleviates the need to embed new
+   PHP instances in each Apache process using the Apache mod_php module.
+
+   Facebook has also made great progress on its alternative open-source
+   PHP engine, the HipHop Virtual Machine (HHVM). HHVM uses a just-in-time
+   compilation technique to provide incredible performance while still
+   allowing the ease-of-use to which PHP developers are accustomed. Like
+   the PHP Zend Engine, HHVM also includes FastCGI support. HHVM’s goal in
+   early 2014 is to have 100% unit test pass for the top twenty PHP
+   frameworks, and it recently announced a development roadmap for the
+   next six months. Keep an eye on HHVM. I have a feeling it will
+   drastically change the PHP landscape over the next few years.
+
+Resources
+
+   Here are a few more resources to help you learn more about PHP.
+     * PHP Documentation
+     * PHP User Groups
+     * PHP Mentoring
+     * PHP Framework Interop Group
+     * Code Academy PHP Track
+     * PHP The Right Way
+     * websec.io
+     * Nomad PHP
+
+   Image via drewm
+
+   Josh Lockhart is the creator of the Slim Framework for PHP. He also
+   created and maintains PHP The Right Way, a popular initiative in the
+   PHP community to encourage best practices and provide quality
+   information. Josh Lockhart is a senior developer at New Media
+   Campaigns, a full service web design, development, and marketing agency
+   in Carrboro, North Carolina.
+
+   Find out more about the new PHP. Browse PHP ebooks and videos at
+   shop.oreilly.com
+   tags: best practices, php, programmingblog
+   Comments: 68
+
+Get the O’Reilly Programming Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=prog&loc=botpost&emtype=nl
+
+Featured Video
+
+   From OSCON 2014 - Wendy Chisholm, Senior Accessibility Strategist and
+   Universal Design Evangelist at Microsoft talks about coming out as an
+   introvert and what you can do to maintain your energy at conferences.
+
+Recent Posts
+
+     * Python 3: threat or menace?
+     * Four short links: 26 September 2014
+     * Four short links: 25 September 2014
+     * Scaling NoSQL databases: 5 tips for increasing performance
+     * In pursuit of universal IoT standards
+
+   Tweets by @radar
+
+Most Recently Discussed
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee
+
+   close
+
+Get the O’Reilly Programming Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=prog&loc=overlay&emtype=nl

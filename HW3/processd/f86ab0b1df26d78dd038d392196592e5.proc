@@ -1,0 +1,704 @@
+   #publisher O'Reilly Radar » Feed O'Reilly Radar » Comments Feed
+   O'Reilly Radar » Lessons learned from my time at the CFPB Comments Feed
+   Four short links: 10 January 2014 Code Carabiners: Essential Protection
+   Tools for Safe Programming
+
+   Menu
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   oreilly.com
+   O'Reilly Radar
+   RSS Feed Twitter Facebook Google+ Youtube
+
+   Search______________
+   SEARCH
+
+     * Home
+     * Shop Books & Videos
+     * Radar
+          + Radar
+          + Animals
+     * Safari Books Online
+     * Conferences
+     * IT Courses & Certificates
+
+   Programming
+   More Topics
+     * Data
+     * Design
+     * Emerging Tech
+     * IoT+
+     * Programming
+     * Web Ops & Performance
+     * Web Platform
+
+     * Print
+     * Listen
+
+Lessons learned from my time at the CFPB
+
+Confronting the practical barriers to better government web products.
+
+   by Matthew Burton | @matthewburton | Comments: 5 | January 10, 2014
+   Comments: 5
+
+   In December 2010, I joined the Consumer Financial Protection Bureau
+   (CFPB) as an early member of its technology team. I spent the second
+   half of my three years at the CFPB as the Deputy CIO and Acting CIO.
+   Our team earned lots of praise for its web products (and will continue
+   to do so, I’m sure). Now that I’ve left, I’d like to share some lessons
+   I learned.
+
+   The CFPB is new. You might therefore discount the CFPB’s online success
+   as a moment-in-time achievement whose lessons will not help any agency
+   that is saddled with legacy culture, legacy systems, and the GS pay
+   scale (the CFPB pays higher salaries than most agencies). Having worked
+   in such agencies, I understand the belief that a fresh start creates a
+   freeway to success. I won’t lie: the lack of legacy culture was
+   invaluable. (As for legacy systems, we have more of those than you
+   might think.) But instead of seeing the CFPB’s clean slate as an
+   experiment that nobody can learn from, I see it as a test-bed for ideas
+   that, while technically achievable for any agency, are avoided by any
+   agency unwilling to be the first to do so. The CFPB has dipped the
+   federal government’s foot into several new pools. I hope other agencies
+   will soon follow, and that the lessons I share here will help them do
+   so.
+
+   Audience note: This is meant to be a practical guide for my fellow
+   civil servants. It includes mundane details on bureaucratic
+   machinations that might bore outsiders who were hoping for a riff on
+   healthcare.gov. My primary goal is to help my peers. My secondary goal
+   is to show outside observers that any attempt to improve government
+   technology must ultimately address practical challenges — talent and
+   tools — and that the ongoing press attention regarding poor government
+   IT should be shifted thusly.
+
+Lesson 1: Do it yourself
+
+   Computing used to be ancillary to an organization’s mission. Now it’s
+   central to it. If you serve the public and you outsource your web
+   production to contractors, you are outsourcing your mission. Stop doing
+   that. Build your own team of civil technology servants.
+
+   The CFPB has about 45 designers and developers on staff. They are
+   full-time government employees, not contractors. We have some
+   contractors, but they are far outnumbered by government staff. Building
+   software using in-house staff has a few advantages, all of which make
+   this lesson non-negotiable:
+    1. An in-house team lets you own the design process. That second word
+       — process — is the key. Design is not the act of mocking up a
+       website or making pretty icons. Design is the act of determining
+       what you are building and why, and using that knowledge to guide
+       every product decision. The design process answers the key
+       questions behind your product: Who is our audience? What problem
+       are we solving for them? How will the audience consume our product:
+       With a computer? Over the phone? In person?. And how will we know
+       whether our product is successful? You may think you already know
+       the answers to these questions and do not need to test any of your
+       assumptions. This is a dangerous assumption, and an irresponsible
+       one when working with tax dollars.
+       It’s important that civil servants answer these questions instead
+       of asking someone else to do it for them. For one, agencies exist
+       entirely to solve specific problems and/or help specific citizens.
+       Answering fundamental questions about how to do this effectively
+       should be “Job 1″ for the entire organization. Furthermore, when
+       you outsource product after product, your various services become
+       stratified: If you have “Contractor A” build one digital product
+       today and ask “Contractor B” to build a different digital product
+       five years from now, your citizen-customers will have to learn a
+       new interface, create a new account, remember another password, and
+       provide the same personal data all over again (which will likely be
+       stored in a facility outside your existing footprint, increasing
+       the odds that data will be breached). Contracting support from
+       specialized firms is fine; when your product is huge, contractors
+       are essential. But all products should tie into an agency’s
+       overarching digital strategy, and this has to be set and managed by
+       the organization itself.
+    2. When your designers and developers are part of your organization,
+       they work seamlessly with domain experts. This deepens the
+       technical team’s understanding of the problem. It also tightens the
+       feedback loop between the builder and the customer. The CFPB
+       recently launched a tool that makes financial regulations easier to
+       navigate. A technical team can’t pull of that task without
+       understanding how regulations work, or without constant tweaking
+       based on frequent input from regulations attorneys. (More details
+       on this project here.)
+       On the other hand, many contractor teams work off-site. This
+       distance from the user keeps them from tailoring their solutions
+       for the problem at hand, just like a suit bought off the rack is
+       not tailored to its buyer. The more contact the maker has with the
+       customer, the better the final product will fit.
+    3. You innovate. You find efficient solutions to meaningful problems.
+       Innovation is not a requirement; for some organizations, keeping
+       the lights on might be sufficient. But many organizations — both
+       government and corporate — are talking a lot about innovation these
+       days, and they’re doing it in a way that rings hollow: They are
+       creating “innovation strategies” and launching “innovation
+       initiatives.”Innovation is not a product or a strategy. It is a
+       culture of efficient problem solving. It is the unexpected,
+       beneficial by-product of an organization that hits the sweet spot
+       between process and lack of process. It happens when you insert
+       curious, creative people into a environment full of interesting
+       problems, and you give those people the freedom to pursue their own
+       ideas. I’m not talking about letting your staff do whatever they
+       want. I’m talking, for example, about:
+          + Letting a developer decide that your web site’s search engine
+            is inadequate, and that to improve it, he can build a
+            Mechanical Turk-like interface for teaching our search
+            algorithm the definitions of various financial terms.
+          + Building your own content deployment system to quickly resolve
+            a surprise requirement, instead of pausing a major project
+            while a contract is modified to permit the work.
+          + Building a dashboard for monitoring your web hosting
+            environment’s security posture because the service’s standard
+            tool is inadequate.
+
+   Having your own team means that when a problem arises, you have the
+   power to fix it quickly instead of being at the mercy of outside
+   forces. It also means you can fix problems when they’re small instead
+   of waiting until they are large enough to justify the months of
+   up-front work it takes to award a contract. In the above cases, our
+   team encountered a problem that would have negatively impacted the
+   CFPB’s mission. Instead of spending weeks sending this problem up the
+   chain, followed by months of procuring talent for a one-off fix (or
+   just letting the problems fester, which is the more common outcome), we
+   were able to fix it ourselves and be on our way. I don’t think we ever
+   struck the perfect balance, but there is healthy tension between
+   process and ideas.
+
+   People often tell me that contractors are perfectly capable of
+   self-direction, executing their own ideas, and closely collaborating
+   with on-site domain experts. Of course they are. But such behavior is
+   illegal. (If you want to dig into the legal minutia, see Section III of
+   this guide from the GSA. Notably, this document recommends that such
+   restrictions be lifted.)
+
+Lesson 2: Put immense time into hiring
+
+   I won’t lie: Hiring your own team will take a lot of time. And because
+   this industry has high turnover rates, you have to constantly be in
+   recruiting mode. Over the course of my three years at the CFPB, I spent
+   more time talking to my team’s HR rep than just about anyone else in
+   the bureau, including most of my own teammates. (Lucky for me, he was
+   excellent. He and his successors are the unsung heroes of the CFPB’s
+   web work.)
+
+   Here’s some background for readers with no federal experience: It takes
+   about six months to fill a single position, and team managers lack the
+   ultimate authority to hire the best candidates. Their decisions can be
+   overruled by personnel officers who lack domain expertise: if your job
+   description says the applicant must have expertise in a certain field,
+   the personnel officer has the power to strike an applicant from the
+   list simply by judging that the applicant’s résumé doesn’t say enough
+   about that field. Hiring web talent is especially difficult, because
+   while the private sector uses somewhat non-traditional metrics to grade
+   web talent, federal teams must adhere to U.S. Government-wide
+   guidelines for evaluating applicants. Here’s what that means in
+   practice:
+    1. The hiring system values quantity of formal experience over
+       demonstrable expertise. An applicant with 15 years of experience in
+       bankruptcy law should get preference over someone just out of law
+       school. But apply this rule to web talent: if I need a Git expert,
+       I’m not going to find anyone with 15 years of experience, because
+       Git — like most other modern web technologies — is less than 10
+       years old. Plus, it doesn’t take years to master Git: one can
+       become a Linus-level Git expert from their apartment in a few
+       months. But self-taught expertise doesn’t count: it needs to be on
+       an applicant’s résumé as something they did for an actual job. It
+       doesn’t matter if this person is the world’s foremost expert in a
+       technology: if they have less than a year of formal experience at
+       it, they have lesser chances of getting an offer. This is bad news
+       for an industry where the state of the art is so quickly usurped by
+       new technologies, the knowledge of which is often acquired through
+       the self-driven experimentation of hobbyists.
+    2. The hiring system will excuse lack of experience for education.
+       Formal, institutionally-recognized certificates of knowledge say
+       little about one’s ability to code or build a style guide.
+       Nevertheless, when the federal government hires a Python
+       programmer, an applicant who boasts a Masters in CS will get a
+       salary boost even if their grad program focused on C. Good for
+       them, but it doesn’t help the kid who eschewed grad school so that
+       he could focus on the Linux core.
+    3. The hiring system insists on quantifiable metrics in the name of
+       objectivity. This is why the federal evaluation system places a
+       premium on years of experience: Your experience is objectively
+       greater or less than other applicants’, but the value of that
+       experience is open for debate. And in federal hiring, subjective
+       evaluations are forbidden. (These rules are thanks to a past era
+       when corrupt hiring managers gave jobs to their friends.) This
+       approach makes it especially difficult to assess design candidates:
+       Instead of requesting portfolios and evaluating them for good
+       taste, we must ask “How many years of Illustrator experience do you
+       have?” Of course, expertise in Adobe doesn’t make you a good
+       designer any more than Microsoft Word skills make you a good
+       writer.
+
+   In hiring web talent, we had to fit the square peg of digital culture
+   through the federal government’s round hole. This is why we spent so
+   much time with our HR counterparts.
+
+   Here are some specific things we did to build a great team:
+     * We recruited in the true sense of the word. Posting a job
+       announcement to USAJobs.gov does not constitute a recruiting
+       effort, yet I suspect most federal job openings are advertised
+       nowhere else. Given how many technologists want to perform civic
+       service but don’t know where to look, this is a great shame. To
+       find good people, you have to hunt for them. We posted our design
+       and development positions in places where technologists look for
+       jobs: 37Signals, Stack Overflow, and GitHub were the obvious
+       choices. These job boards gave us vastly more reach, and it cost us
+       only a few hundred dollars. Twitter was also very useful (and free,
+       of course).In addition to job boards, we also got creative. Ideas
+       like this one came in the 11^th hour before application deadlines;
+       they took little time to implement and gave us lots of exposure.
+     * We built a better process for evaluating applications. First, we
+       made sure the initial review of our applicant pool wasn’t too
+       restrictive. Traditionally, this first cut — made by non-technical
+       personnel staff — tends to remove many qualified applicants,
+       especially those who expected their résumés to be reviewed by peers
+       who speak the industry lingo. To solve this, we crafted the minimum
+       qualifications to ensure that they were broad enough for anyone
+       with basic web experience to qualify. This shifted a huge burden to
+       our team: we now had to review hundreds of applications instead of
+       the dozens that would have withstood a more restrictive set of
+       minimum qualifications. We also gained the ability to evaluate
+       portfolios. This was harder than it sounds. In order to evaluate
+       portfolios, our HR partners developed a “competency model” that
+       established objective metrics for evaluating design and code. We
+       used this model to rate each applicant’s work on several metrics,
+       with a minimum total score required to qualify for an interview.
+       Each of the hundreds of design portfolios and code samples had to
+       be reviewed independently by two different team members to ensure
+       we were conforming to the competency model’s scoring system. This
+       was an enormous time commitment, but it was worth it.
+     * We learned these techniques in the course of a single major
+       recruiting push called the Design+Technology Fellowship, which
+       filled 30 new positions. The recruiting campaign and applicant
+       assessment process I’ve described above are way too much overhead
+       for filling a single position. But with 30 positions at stake, the
+       time commitment became a wise investment. All 30 positions used
+       similar competency models, and all of them could be recruited
+       through the same communities and job boards. I can’t overstate how
+       successful this recruiting effort was. Our team of designers and
+       developers is not great by government standards. It’s great,
+       period.
+
+   Two more thoughts about recruiting:
+    1. Talented people care about what they do. They want their work to
+       have a meaningful impact. So don’t be afraid to inject passion into
+       your pitch. The US Government affects billions of lives. If your
+       team didn’t play some role in that, your team wouldn’t exist. So
+       speak from the heart about what makes your team’s mission so
+       meaningful.
+    2. Give details on the jobs you are filling. Talented recruits want to
+       know how they’ll be spending their time. So if you don’t provide a
+       detailed, plain-English job description, talented people won’t
+       apply. We were very deliberate about the language we used in the
+       fellowship recruiting page; some current fellows cite the language
+       on that page as the reason they applied.
+
+   In short: talk like a fellow citizen, not like this:
+
+     The incumbent is a senior level information technology specialist
+     serving as a subject matter expert on specialized information
+     technologies and their role within (agency)’s enterprise
+     architecture. The incumbent typically serves as a project leader or
+     team leader for related information technologies, providing
+     day-to-day guidance to journey and entry-level specialists assigned
+     to support and manage these technologies and applies advanced
+     knowledge to effectively integrate new capabilities and
+     functionality into the infrastructure.
+     — A snippet from a random USAJobs.gov post
+
+Lesson 3: Give your team good tools
+
+   This rule may as well be part of the talent section, because if you
+   don’t provide basic capabilities that are essential to any modern tech
+   company, nobody will want to work for you.
+
+   Let your team use the same computers they might use at a private
+   software firm or design agency, and let them install modern code
+   editors and design tools onto those computers. Give them access to
+   Chrome and Firefox and Safari so that they can check their work in
+   something other than Internet Explorer. Allow them to create and
+   destroy their own dev servers at whim. Let them put whatever tools and
+   software libraries they want onto those dev servers. And for God’s
+   sake, let them use open source software.
+
+   No web team working outside government has to request these things from
+   their employer. But inside government, such tools and practices are
+   rare: dev servers, multiple operating systems, and community-driven
+   software create complexity within the enterprise (along with very real
+   security and stability risks). Some agencies deal with complexity and
+   risk by completely disallowing it. (This is another reason it’s easier
+   to outsource web work to off-site contractors than do it internally.)
+
+   The CFPB team has tried to strike a better balance. They have GitHub
+   and Jenkins and dev servers, and they have the standard design suite.
+   This is thanks to the broader IT team, which is as passionate about
+   their own work as our designers and developers are about theirs.
+   Cybersecurity, systems, and support all want to set a new standard:
+   instead of shying away from complexity at the expense of productivity,
+   they have made it possible for their teammates to use modern tools. The
+   team still lacks many creative, technical, and collaboration tools that
+   are commonly used by industry. It makes life difficult for them, yet
+   leaping into new capabilities would cause downstream problems for other
+   teams. We are constantly trying to strike the right balance between
+   productivity and stability; both have the public interest on their
+   side. It is a big challenge, and the team confronts it every day.
+
+   Striking this better balance isn’t something that an established
+   organization can simply start doing tomorrow. If your enterprise
+   infrastructure and policies are firmly in place, then providing these
+   tools might require a massive change in your IT team’s daily processes
+   and procedures. This can take years. Your agency might look at the cost
+   of providing modern design and development tools and decide that it is
+   too great a risk for the benefit of better web sites. That is fine; I
+   don’t profess to know what’s right for your organization.
+
+   But don’t do it halfway. If you decide it’s time to start giving your
+   citizen-customers professional-grade products, you can’t do it without
+   giving your staff professional-grade tools. Do not hire lots of
+   designers and developers and then force them to work with the same
+   tools you provide your accountants and legal staff. They will fail, and
+   you will waste money.
+
+   For agencies that take the plunge, I have hope that the commoditization
+   of infrastructure will make the plunge less painful. Federal IT systems
+   must adhere to a unified set of rules, yet each agency must implement
+   the technical controls largely on its own: much of the work that went
+   into delivering a product to its first federal customer must be
+   repeated by every agency that follows.
+
+   For all the hype surrounding cloud-based services, I am optimistic that
+   Infrastructure-as-a-Service will make it far easier for the federal
+   government to act federated. If an entire stack of infrastructure can
+   be approved by an agency and packaged as a Puppet script or machine
+   image, it can be delivered to another agency within hours. Its security
+   accreditation documentation will have already been vetted by a
+   standard-setting agency like GSA or DHS, and can be thoroughly reviewed
+   by an agency’s cybersecurity team in far less time than it can today.
+   This is the concept behind FedRAMP, a government program to standardize
+   the security assessment and authorization process for cloud services.
+   Once a product is accredited by FedRAMP, agencies will be able to
+   acquire and deploy that product much more quickly.
+
+   In addition to the coordinating role that GSA and DHS are playing, each
+   agency can help by codifying and sharing its infrastructure products,
+   pre-configured to conform to FISMA standards, with other agencies. Open
+   source infrastructure might sound too experimental for the federal
+   government. But when I attended a government open source conference in
+   September, I was struck by how far the conversation had come in the
+   last few years: Government agencies used to debate whether it was even
+   legal to use open source software. I showed up with a slide deck
+   showing off the CFPB’s GitHub presence, expecting it to cause a stir.
+   But the two preceding presenters — officials from GSA and the
+   Department of Energy — did the same thing! Some agencies still snub
+   open source code, but the tide is shifting irreversibly in its favor.
+   Software code reuse among agencies will soon be commonplace, and
+   infrastructure code will follow. This will have huge benefits for a
+   sector whose use cases and security standards are endemic.
+
+   Agencies and the broader technology community can help improve federal
+   IT infrastructure:
+
+   Agencies: If you want to dip your foot into the open source pool — be
+   it by sharing your code with your peers, or by reusing their code —
+   contact John Scott at the Codice Foundation. He is coordinating a
+   multi-agency group of federal IT staff interested in furthering open
+   source within the U.S. Government. If you have legal questions, refer
+   to DoD’s excellent documentation on their own use of open source
+   software, or write to David A. Wheeler, its primary author. If you want
+   to dive in, check out GitHub’s portal for government agencies. Lots of
+   your peers are already there.
+
+   Community: First, watch federal repositories and make valuable
+   contributions to them. Here’s an idea to get you started: Make it
+   easier for other civic-minded developers to find interesting problems
+   to solve. Build a GitHub API-based tool that lists open issues for
+   federal projects, with filters for programming language and the sector
+   of the owning agency. (For example, if I’m a Javascript developer
+   interested in national history, show me issues like this.)
+
+   Second, if a federal technology project goes awry, do not use the very
+   forum that is facilitating progress as a platform for mocking them, as
+   many developers did when they trolled the GitHub issues list for the
+   healthcare.gov repository. The entire repository was removed days
+   later. When the federal government engages with the technology
+   community, it does so cautiously. Once bitten, twice shy.
+
+Intangible: Have institutional support in the organization’s DNA
+
+   The last condition for a strong digital practice cannot be implemented
+   through hard work; it has to preexist: To do any of these things —
+   build your own team, make an honest recruitment effort, and provide
+   infrastructure for that team — your entire organization has to truly
+   care about making good digital products.
+
+   Just like a private organization, a government agency has to answer an
+   existential question in its early days: If we want to succeed, we
+   absolutely have to get X right. For the CFPB, technology is one of the
+   answers. The bureau’s strategy makes it clear how indispensable
+   technology is to each mission. At every level, from educating the
+   public on personal finance to supervising banks, technology is seen as
+   a driving force.
+
+   This is what people mean when they say the CFPB’s technology team has
+   benefitted from not having legacy culture, and they’re absolutely
+   right. Had the Bureau been founded 30 years ago (let alone 230), our
+   social infrastructure — the bureaucratic and cultural norms like
+   processes, roles, planning cycles, and expectations that determine how
+   things get done — would not have valued digital products. Once that
+   social infrastructure is set, it is tremendously difficult to change
+   it. It was hard even for private companies to realign their strategies
+   for the Information Age. Now imagine trying to do it in a world where
+   CEOs are reliably replaced every four years, often with successors who
+   have radically different viewpoints on the organization’s mission. This
+   is the world that government agencies live in.
+
+   Federal leaders know that technology matters. Do not interpret their
+   decision to outsource technology as evidence to the contrary. The
+   trouble is that their agendas are overflowing with things that matter.
+   Most agencies have a hard enough time performing their pre-web,
+   statutorily required operations; wisely, they prioritize improving
+   those operations before taking on new ventures. And because many such
+   operations are required by law and/or the specialized staff performing
+   those operations cannot be easily replaced, it is hard to trade one
+   outdated government function for a new, high-tech one. New initiatives
+   like digital tools have to be layered on top of the existing workload;
+   budgets seldom shift accordingly.
+
+   There is a cost to keeping an agency digitally illiterate. But there is
+   also a cost to reshaping a bureaucracy to do something new. Every time
+   something new becomes a priority, a pre-existing operation, tool, team,
+   or process — one that the organization doesn’t know how to live without
+   — must end. That has consequences. It creates inefficiency. It confuses
+   staff. It increases the risk that money will go missing or that data
+   will be compromised. Why would a federal leader embrace these risks so
+   that their successor can reap the benefits years later?
+
+   There is no magic selling point that we can offer them, but I have one
+   suggestion: Stop promoting the web as a way to improve public-facing
+   services. Instead, focus on its potential to optimize internal
+   operations. Agency intranets offer more low-hanging fruit than their
+   public counterparts. As hard as it may be to use the average federal
+   web site, civil servants on the inside have it worse. Submitting a
+   timecard, making travel plans, completing a training module, managing
+   performance reviews…these are the kinds of everyday tasks that
+   computers were supposed to make easier. But for those who are subjected
+   to them, they are a constant headache and the source of many hours of
+   lost productivity. In some cases, simple style sheet or layout
+   improvements would lead to huge efficiency gains: bureaucrats would
+   perform their administrative workload more quickly and with fewer calls
+   to the help desk. If updating an agency for the digital era is going to
+   cause cultural upheaval, it’s only fair that those affected by it
+   derive some of the immediate benefit. Such benefits — a happier, more
+   productive workforce — are more tangible to leaders than their public
+   web site’s traffic metrics.
+
+   But how does this help federal web sites? Doesn’t focusing on
+   bureaucrats’ internal web tools distract from the goal of helping
+   citizens? I say it doesn’t. Instead of building a better web site here
+   and there, our goal should be to build sustainable digital practices
+   throughout the government, and to establish general digital awareness
+   across the federal workforce. The best way to do that is to get a foot
+   in the door by quickly showing the value that this work can have, and
+   by building products that are likely to engage civil servants in the
+   design process.
+
+   Again, this is just one idea. Cracking government culture is
+   notoriously difficult. Please share your own ideas.
+
+   Thank you for reading. If you are a federal employee trying to build
+   your agency’s digital practice, I hope these tips are useful. Please
+   contact me if you need more details on anything I’ve described above.
+   If you are a member of the broader community interested in government
+   technology, I hope this piece informs your contributions to the ongoing
+   debate.
+   Comments: 5
+
+Get the O’Reilly Programming Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=prog&loc=botpost&emtype=nl
+
+     * http://www.ddmcd.com/ Dennis D. McDonald
+       I really like the suggestion “There is no magic selling point that
+       we can offer them, but I have one suggestion: Stop promoting the
+       web as a way to improve public-facing services. Instead, focus on
+       its potential to optimize internal operations. Agency intranets
+       offer more low-hanging fruit than their public counterparts.”
+     * bucksommerkamp
+       Excellent thoughts, Matthew – thank you! I especially resonate with
+       your quote: “If you decide it’s time to start giving your
+       citizen-customers professional-grade products, you can’t do it
+       without giving your staff professional-grade tools. Do not hire
+       lots of designers and developers and then force them to work with
+       the same tools you provide your accountants and legal staff. They
+       will fail, and you will waste money.” This could apply almost
+       anywhere…even to non-governmental employers such as mine. There has
+       to be balance!
+     * http://pediacities.com/ Joel Natividad
+       People often complain how inefficient government IT is and what we
+       need is an “SAP/Salesforce for Government”. Back in the early days
+       of IT, everybody built their own payroll and HR systems. Nowadays,
+       most companies install these de-facto standards, or the small
+       business equivalent of it.
+       With Open Data being all the rage, perhaps the OpenGovtPlatform.org
+       collaboration should go #beyondtransparency, to actually building
+       an open-source framework for building Open Government
+       infrastructure.
+       At Nextgov Prime, I heard that a lot of agencies are starting to
+       look at Open Data as middleware – Interoperability between
+       agencies.
+       Hopefully, we can then have Government as an API and create a very
+       rich Open Gov ecosystem – where the inhouse team, civic hackers,
+       and the “govt contractor complex” can work more productively
+       together on sustainable, standardized, cost-efficient, digital
+       government infrastructure.
+          + gregelin
+            Joel Natividad, there might be an important nuance to your
+            point on agencies previously building their own payroll and HR
+            systems.
+            I was at the Federal Communication Commission from 2010 to
+            2013 in the role of Chief Data Officer. I can give further
+            testimony to Matt’s assertion: “Computing used to be ancillary
+            to an organization’s mission. Now it’s central to it.”
+            Paying employees is standardized. Parts of HR are
+            standardized, but then again human resources are an
+            organization’s most valuable asset. To Matt’s point “immense
+            time” is required to find the right people for an
+            organization. CFPB remolded and extended the HR process (and
+            therefore the “system”) to better support its mission goals
+            and its commitment to quality.
+            The received wisdom on “don’t re-invent the wheel” does not
+            mean all tires perform equally well on all cars and all
+            terrain. Great tech starts with great elements and assembles
+            optimized solutions through continuous measurement and
+            improvement.
+            I agree with your point regarding how APIs can better empower
+            in-house teams.
+     * john scott
+       One question I’ve been wrestling with is how long should qualified
+       IT/software folk be government employees? Working in the government
+       cause skills to degrade and I’ve seen it be very, very hard for
+       smart and very talented developers to keep their skills current + I
+       think a majority of developers would love to jump into the
+       government to help out, solve tough problems and then move forward
+       to other newer opportunities. Matthew hits upon the really hard
+       problem of how best to churn any type of smart and motivated
+       developers, etc. into and out of the government in a timely fashion
+       is really needed. It can’t take 6+ months to get hired.
+
+Featured Video
+
+   From OSCON 2014 - Wendy Chisholm, Senior Accessibility Strategist and
+   Universal Design Evangelist at Microsoft talks about coming out as an
+   introvert and what you can do to maintain your energy at conferences.
+
+Recent Posts
+
+     * Python 3: threat or menace?
+     * Four short links: 26 September 2014
+     * Four short links: 25 September 2014
+     * Scaling NoSQL databases: 5 tips for increasing performance
+     * In pursuit of universal IoT standards
+
+   Tweets by @radar
+
+Most Recently Discussed
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic…_]
+       View
+     * [Archives by Author...________]
+       View
+
+CONTACT US
+
+   Radar managing editor
+   Jenn Webb
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   Enter Email_ submit
+   Privacy Policy > View Sample Newsletter >
+     * Twitter
+     * YouTube
+     * Slideshare
+     * Facebook
+     * Google+
+     * RSS
+     * View All RSS Feeds >
+
+   © 2014, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * About O’Reilly Radar
+     * Radar Contributors
+     * Academic Solutions
+     * Jobs
+     * Contacts
+     * Corporate Information
+     * Press Room
+     * Privacy Policy
+     * Terms of Service
+     * Writing for O’Reilly
+     * Editorial Independence
+
+Community
+
+     * Authors
+     * Community & Featured Users
+     * Forums
+     * Membership
+     * Newsletters
+     * O’Reilly Answers
+     * RSS Feeds
+     * O’Reilly Chimera (beta)
+
+Partner Sites
+
+     * makezine.com
+     * makerfaire.com
+     * craftzine.com
+     * igniteshow.com
+     * PayPal Developer Zone
+     * O’Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * Customer Service
+     * Contact Us
+     * Shipping Information
+     * Ordering & Payment
+     * Affiliate Program
+     * The O’Reilly Guarantee
+
+   close
+
+Get the O’Reilly Programming Newsletter
+
+   Weekly insight from industry insiders. Plus exclusive content and
+   offers.
+
+   IFRAME:
+   //cdn.oreillystatic.com/oreilly/email/forms/email_signup_widget.html?si
+   te=radar&topic=prog&loc=overlay&emtype=nl

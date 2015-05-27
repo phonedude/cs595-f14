@@ -1,0 +1,1020 @@
+status: 200
+x-request-id: v-61a8fa42-4731-11e4-9414-12313d191a15
+x-varnish: 2217023218
+content-location: http://bigstory.ap.org/article/3-killed-5-wounded-donetsk-eastern-ukraine
+content-language: en
+x-age: 0
+accept-ranges: bytes
+vary: Accept-Encoding
+x-ah-environment: prod
+content-length: 86764
+server: nginx
+last-modified: Sun, 28 Sep 2014 17:03:34 +0000
+connection: keep-alive
+etag: "1411923814"
+link: </article/3-killed-5-wounded-donetsk-eastern-ukraine>;
+ rel="canonical",</node/8962801>;
+ rel="shortlink",</article/3-killed-5-wounded-donetsk-eastern-ukraine>;
+ rel="canonical",</node/8962801>; rel="shortlink"
+expires: Sun, 28 Sep 2014 17:03:35 GMT
+cache-control: no-cache, must-revalidate, post-check=0, pre-check=0
+date: Sun, 28 Sep 2014 17:03:35 GMT
+content-type: text/html; charset=utf-8
+-content-encoding: gzip
+-varied-accept-encoding: gzip, deflate
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> 
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdADQYFU1NT"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e){function n(t,e,n){n||(n={});for(var r=o[t],a=r&&r.length||0,s=n[i]||(n[i]={}),u=0;a>u;u++)r[u].apply(s,e);return s}function r(t,e){var n=o[t]||(o[t]=[]);n.push(e)}var o={},i="nr@context";e.exports={on:r,emit:n}},{}],2:[function(t){function e(t,e,n,i,s){return u?u-=1:r("err",[s||new UncaughtException(t,e,n)]),"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t(5),a=window.onerror,s=!1,u=0;t("loader").features.push("err"),window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(d){"stack"in d&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(4),s=!0)}i.on("fn-start",function(){s&&(u+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&u>0&&(u-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:4,3:3,4:6,5:1,6:14,handle:"D5DuLP",loader:"G9z0Bl"}],3:[function(t){function e(t){r.inPlace(t,["addEventListener","removeEventListener"],"-",n)}function n(t){return t[1]}var r=t(1),o=(t(3),t(2));if(e(window),"getPrototypeOf"in Object){for(var i=document;i&&!i.hasOwnProperty("addEventListener");)i=Object.getPrototypeOf(i);i&&e(i);for(var a=XMLHttpRequest.prototype;a&&!a.hasOwnProperty("addEventListener");)a=Object.getPrototypeOf(a);a&&e(a)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&e(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=e["nr@wrapped"]?t[1]=e["nr@wrapped"]:e["nr@wrapped"]=t[1]=r(e,"fn-"):"function"==typeof e.handleEvent&&r.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:15,2:1,3:14}],4:[function(t){var e=(t(3),t(1)),n=t(2);e.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=e(t[0],"fn-")})},{1:15,2:1,3:14}],5:[function(t){function e(t){var e=t[0];"string"==typeof e&&(e=new Function(e)),t[0]=n(e,"fn-")}var n=(t(3),t(1)),r=t(2);n.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",e)},{1:15,2:1,3:14}],6:[function(t){function e(){o.inPlace(this,s,"fn-")}function n(t,e){o.inPlace(e,["onreadystatechange"],"fn-")}function r(t,e){return e}var o=t(1),i=t(2),a=window.XMLHttpRequest,s=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];window.XMLHttpRequest=function(t){var n=new a(t);try{i.emit("new-xhr",[],n),o.inPlace(n,["addEventListener","removeEventListener"],"-",function(t,e){return e}),n.addEventListener("readystatechange",e,!1)}catch(r){try{i.emit("internal-error",r)}catch(s){}}return n},window.XMLHttpRequest.prototype=a.prototype,o.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:15,2:1}],7:[function(t){function e(){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;u>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,d="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(d);if(f&&(r.rxSize=f),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}t("loader").features.push("xhr");var o=t("handle"),i=t(1),a=t(5),s=["load","error","abort","timeout"],u=s.length,d=t(2);t(3),t(4),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var d=e(o);d&&(r.txSize=d)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",e)}catch(r){}}};for(var f=0;u>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&e()},{1:8,2:11,3:3,4:6,5:1,handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e){var n=r[t];return n?n.apply(this,e):(o[t]||(o[t]=[]),void o[t].push(e))}var r={},o={};e.exports=n,n.queues=o,n.handlers=r},{}],11:[function(t,e){function n(t){if(!t||"object"!=typeof t&&"function"!=typeof t)return-1;if(t===window)return 0;if(o.call(t,"__nr"))return t.__nr;try{return Object.defineProperty(t,"__nr",{value:r,writable:!0,enumerable:!1}),r}catch(e){return t.__nr=r,r}finally{r+=1}}var r=1,o=Object.prototype.hasOwnProperty;e.exports=n},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&u&&u.body){p.proto="https"===c.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=p.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,u=s.document,d="addEventListener",f="attachEvent",c=(""+location).split("?")[0],p=e.exports={offset:i(),origin:c,features:[]};u[d]?(u[d]("DOMContentLoaded",o,!1),s[d]("load",n,!1)):(u[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],14:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],15:[function(t,e){function n(t,e,r,s){function nrWrapper(){try{var n,a=u(arguments),d=this,f=r&&r(a,d)||{}}catch(c){i([c,"",[a,d,s],f])}o(e+"start",[a,d,s],f);try{return n=t.apply(d,a)}catch(p){throw o(e+"err",[a,d,p],f),p}finally{o(e+"end",[a,d,n],f)}}return a(t)?t:(e||(e=""),nrWrapper[n.flag]=!0,nrWrapper)}function r(t,e,r,o){r||(r="");var i,s,u,d="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],i=t[s],a(i)||(t[s]=n(i,d?s+r:r,o,s,t))}function o(t,e,n){try{s.emit(t,e,n)}catch(r){i([r,t,e,n])}}function i(t){try{s.emit("internal-error",t)}catch(e){}}function a(t){return!(t&&"function"==typeof t&&t.apply&&!t[n.flag])}var s=t(1),u=t(2);e.exports=n,n.inPlace=r,n.flag="nr@wrapper"},{1:1,2:14}]},{},["G9z0Bl",2,7]);</script>
+<meta property="twitter:title" content="Ukraine lawmakers ratify landmark deal with Europe" />
+<meta property="twitter:description" content="KIEV, Ukraine (AP) — Ukraine moved to resolve months of crisis Tuesday by strengthening ties to Europe and loosening some controls over the country&#039;s rebellious eastern regions where it has been fighting Russian-backed…" />
+<meta property="twitter:image" content="http://binaryapi.ap.org/078f1f9ce0224aa199b8f1268887f9e8/460x.jpg" />
+<meta property="twitter:site" content="@ap" />
+<meta property="article:publisher" content="https://www.facebook.com/APNews" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="twitter:url" content="http://bigstory.ap.org/article/3-killed-5-wounded-donetsk-eastern-ukraine" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta name="twitter:app:name:iphone" content="AP Mobile" />
+<meta name="twitter:app:name:googleplay" content="AP Mobile" />
+<meta name="twitter:app:id:googleplay" content="mnn.Android" />
+<meta name="twitter:app:url:googleplay" content="apmobile://article/14438dc540254bb591ad1d9c385340bd" />
+<link href="http://bigstory.ap.org/profiles/ap/themes/ap_vertical/touch-icon.png" rel="apple-touch-icon" />
+<meta name="twitter:app:url:ipad" content="apmobile://article/14438dc540254bb591ad1d9c385340bd" />
+<meta name="twitter:app:id:ipad" content="284901416" />
+<meta name="twitter:app:id:iphone" content="284901416" />
+<meta name="twitter:app:url:iphone" content="apmobile://article/14438dc540254bb591ad1d9c385340bd" />
+<meta name="twitter:app:name:ipad" content="AP Mobile" />
+<meta property="fb:app_id" content="118162278248556" />
+<meta property="og:image" content="http://binaryapi.ap.org/078f1f9ce0224aa199b8f1268887f9e8/460x.jpg" />
+<link rel="shortcut icon" href="http://bigstory.ap.org/sites/bigstory/files/AP_Favicon_0_0.png" type="image/png" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta property="al:ios:url" content="apmobile://article/14438dc540254bb591ad1d9c385340bd" />
+<meta name="copyright" content="2012 Associated Press" />
+<meta name="keywords" content="Ukraine, Donetsk, War and unrest, Cease fires, Europe, Ukraine government, European Union, Viktor Yanukovych, Bills, Legislature, Legislation, Crimea, Russia, Petro Poroshenko, Rebellions and uprisings, Moscow, Kiev, European Parliament, Martin Schulz, Peace process, Diplomacy, International relations, Municipal governments, Local governments, U.S. Department of State, Sergei Shoigu, Protests and demonstrations, Economy, Political and civil unrest, Minsk, Russia government, Joe Biden, Arseniy Yatsenyuk" />
+<link rel="canonical" href="http://bigstory.ap.org/article/3-killed-5-wounded-donetsk-eastern-ukraine" />
+<link rel="shortlink" href="/node/8962801" />
+<meta name="description" content="KIEV, Ukraine (AP) — Ukraine moved to resolve months of crisis Tuesday by strengthening ties to Europe and loosening some controls over the country&#039;s rebellious eastern regions where it has been fighting Russian-backed separatists.
+The actions by lawmakers began to flesh out the emerging picture of a new Ukraine, where a determined pivot toward Europe has come at great cost: concessions to Russia and a war with rebels that killed more than 3,000 people and pushed the West&#039;s relations with Moscow to Cold War-era lows.
+The measure deepening the economic and political ties with Europe was the issue that sparked the crisis last fall, when then-President Viktor Yanukovych&#039;s decision to shelve the deal in favor of closer ties with Russia sparked protests by hundreds of thousands. Those demonstrations eventually drove him from power in February and led to the annexation of Crimea by Moscow and the rebellion in the east, where a shaky cease-fire began Sept. 5.
+The deal lowers trade tariffs between Europe and Ukraine, requires Ukrainian goods to meet European regulatory standards and forces the Kiev government to undertake major political and economic reforms.
+After parliament ratified the measure, lawmakers leapt to their feet to applaud and sing the Ukrainian national anthem. A live broadcast of the session was beamed to the European parliament.
+President Petro Poroshenko called the vote a &quot;first but very decisive step&quot; toward bringing Ukraine fully into the European Union.
+He said the protesters who died in clashes with riot police in Kiev and the government troops killed by rebels in the east &quot;have died not only for their motherland. They gave up their lives for us to take a dignified place among the European family.&quot;
+&quot;After World War II, not a single nation has paid such a high price for their right to be European,&quot; he said. &quot;Can you tell me, who now after this will be brave enough to shut the doors to Europe in front of Ukraine?&quot;
+Earlier Tuesday, the parliament also approved laws granting temporary self-rule to rebellious, pro-Russian regions in the east, as well as amnesty for many of those involved in the fighting.
+The lawmakers took that action behind closed doors, in stark contrast to the patriotic fanfare of that vote on the European agreement. In his thunderous speech, Poroshenko did not mention those two measures, which are likely to generate far more controversy among Ukrainians.
+One of the laws calls for three years of self-rule in parts of eastern Ukraine and for local elections in November. It grants concessions that were not offered in a peace plan that Poroshenko put forward three months ago when he became president, such as local oversight of court and prosecutor appointments and local control of police.
+A separate bill calls for amnesty for those involved in the eastern fighting, although not for persons suspected or charged with crimes including murder, sabotage, rape, kidnapping and terrorism. The law also does not grant amnesty to those who have tried to kill Ukrainian law enforcement officials and servicemen — meaning that most of the separatists, who have waged war for five months on government forces, could not be eligible.
+The decision to hold a closed-door session — an anomaly in the Ukrainian parliament — underscored the political challenges of the measures. Although Poroshenko did not mention the bills in his speech, he was later quoted by Interfax-Ukraine as saying that he felt &quot;we are obliged to take a step to ensure that the other side takes corresponding steps&quot; toward peace.
+Alexander Zakharchenko, the leader of the rebels in the Donetsk region, told Russia&#039;s RIA Novosti news agency that the separatist leadership would study the measures, an unusually conciliatory statement compared to the rebels&#039; previous assertions that they aim for complete independence.
+The U.S. State Department and Vice President Joe Biden congratulated Ukrainian lawmakers and leaders.
+&quot;By forging ahead with this agreement in the face of great challenges, Ukraine&#039;s leaders have carried out the will of the Ukrainian people, who demonstrated their overwhelming support for further integration with Europe last winter and with their votes in the May 25 presidential elections,&quot; said Marie Harf, deputy spokeswoman at the  State Department.
+Harf also applauded the passage of the amnesty and self-rule measures, saying they were &quot;two important commitments Ukraine made in the Minsk cease-fire agreement on Sept. 5.&quot; She urged Russia and the separatists to begin immediate and full implementation of the cease-fire agreement.
+Vice President Joe Biden and Ukrainian Prime Minister Arseniy Yatsenyuk, in a telephone conversation, agreed that Russia and its &quot;separatist proxies&quot; should do their part in immediately implementing all the provisions of the Minsk agreement, including &quot;the removal of all Russian troops from Ukraine and the creation of a security area in the border regions&quot; of Ukraine and Russia, according to a statement released by Biden&#039;s office.
+The passage of the measures came as Poroshenko begins his first state visit to Canada and the U.S., where he will address a joint session of Congress on Thursday and is also scheduled to speak to the U.N. General Assembly next week.
+The EU association agreement was long sought by Ukrainians who want their country to turn westward and out of Russia&#039;s sphere of influence, and its passage was welcomed by many in Kiev, even if they also were worried about some of the government&#039;s actions.
+&quot;I participated in the protests, and we&#039;ve been waiting for this for so long,&quot; said Rostislav Sezov, adding that he didn&#039;t oppose greater autonomy for regions in the east.
+&quot;Let us be smaller but better. Let us be a core that is oriented toward Europe,&quot; he said.
+During the protests in February, the EU&#039;s flag — the same blue and yellow as Ukraine&#039;s — was seen everywhere. That symbol faded into the background as demonstrators, who set up camp on Kiev&#039;s Independence Square, fended off riot police night after gripping night with barricades of bricks and burning tires.
+But even after Russia annexed Ukraine&#039;s Black Sea peninsula of Crimea in March and a pro-Russian rebellion broke out in eastern Ukraine in April, the new Kiev government made it clear that it would not back down from the EU deal.
+In Brussels, EU lawmakers overwhelmingly ratified the agreement.
+&quot;The message this sends could not be clearer: the European Parliament supports Ukraine in its European vocation,&quot; said Martin Schulz, the president of the EU Parliament. &quot;The European Parliament will continue defending a united and sovereign Ukraine.&quot;
+Russia has strongly opposed Ukraine&#039;s tilt toward the EU and it has threatened that the reduction of tariffs on Western goods would force it to limit the influx of Ukrainian products into Russia.
+In a significant concession to Moscow, Ukraine and the EU agreed last week to delay the full reciprocal implementation of a reduced-tariff regime until at least 2016.
+Both Brussels and Kiev have asserted that other parts of the agreement, such as major political and economic reforms in Ukraine, will not be delayed, but those compromise efforts have many Ukrainians worried that its government is giving away too much to Moscow.
+Alexander Sinegub, an entrepreneur who was walking in downtown Kiev, said he had &quot;mixed feelings&quot; about the EU deal.
+&quot;Nothing has been cleaned up. They&#039;ve put a bunch of more-or-less patriots at the top of the government, but beneath them everybody has stayed the same. Half a year has passed and yet it&#039;s somehow sad to look at all of this,&quot; he said.
+Also on Tuesday, Russian Defense Minister Sergei Shoigu said the military will increase its forces in Crimea due to the &quot;exacerbation of situation in Ukraine and increased foreign military presence near our borders.&quot; He said Russia will have a &quot;full-fledged&quot; force deployed to Crimea, but wouldn&#039;t give any details.
+The cease-fire in eastern Ukraine has been riddled by violations from the start. On Tuesday, the city council in Donetsk said three people died and five were wounded in shelling overnight.
+Col. Andriy Lysenko, a spokesman for Ukraine&#039;s national security council, said three Ukrainian servicemen were killed in the past day. Clashes continue in the area around the airport in Donetsk, the largest city under rebel control.
+On Monday, a shell hit a municipal bus in downtown Donetsk, killing one person and injuring another. Evgeniy Medvedev said his mother, Tatiana, was killed on the bus, and he covered her body with a jacket. He said she had been at work when the firing started, and got on the municipal bus to get out of the neighborhood.
+&quot;She tried to escape from there, but the shell caught up with her anyway,&quot; he said.
+___
+Mstyslav Chernov in Donetsk, Ukraine, Juergen Baetz in Brussels, and Nataliya Vasilyeva, Jim Heintz and Vladimir Isachenkov in Moscow contributed to this report." />
+<meta property="al:ios:app_store_id" content="284901416" />
+<meta property="al:ios:app_name" content="AP Mobile" />
+<meta property="og:title" content="Ukraine lawmakers ratify landmark deal with Europe" />
+<meta property="og:site_name" content="The Big Story" />
+<meta property="og:url" content="http://bigstory.ap.org/article/3-killed-5-wounded-donetsk-eastern-ukraine" />
+<meta property="al:web:url" content="http://bigstory.ap.org/article/3-killed-5-wounded-donetsk-eastern-ukraine" />
+<meta property="al:android:class" content="com.ap.facebook.FacebookShareActivity" />
+<meta property="al:android:url" content="apmobile://article/14438dc540254bb591ad1d9c385340bd" />
+<meta property="al:android:app_name" content="AP Mobile" />
+<meta property="al:android:package" content="mnn.Android" />
+<meta property="og:description" content="KIEV, Ukraine (AP) — Ukraine moved to resolve months of crisis Tuesday by strengthening ties to Europe and loosening some controls over the country&#039;s rebellious eastern regions where it has been fighting Russian-backed…" />
+    <title>Ukraine lawmakers ratify landmark deal with Europe</title>  
+  <link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_Wd6pSoewqjam2D4kmxT6m1HirDRqLp5CwoDWDev4Q4g.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_p69lZbWUy3tnxSLKPWqUnUfG0F2tSCrnOkNR4QRch-I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_jI2xa-mb4AyO5H6mMUNw-RV2CxpXHE9XU9JRNbpUsms.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_LSHsoZF7jquocBUwsskOBTpxrHPtiNoy7kfY7C0_24g.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_GDyPfWxLYAGs0EZ7rrEyCcTUwCza-o_8EwsSKvDXab0.css" media="print" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="http://bigstory.ap.org/sites/bigstory/files/css/css_KCNZ7YudgplVMn0e5YXrEptF8K7nkEFZt5Yrs5EjYM0.css" media="all" />
+<![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/profiles/ap/themes/bigstory_v2/assets/js/responsive_ads.js"></script>
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-2";
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_RC7d2_dhfBsqLAPQvLz26Tw_1pi8VuJA8XTLntJVGuM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_Cyc-lC6ixML6RkS4RmBegmTl-vUp8PtXmSZmSGOtAFQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8962801", [300, 250], "dfp-ad-topic_box_2")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8962801", [728, 90], "dfp-ad-leaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8962801", [[300, 50], [320, 50]], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8962801", [[300, 600], [300, 250]], "dfp-ad-half_page")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("15786418/BigStory/AP/site/node/8962801", [300, 250], "dfp-ad-mediumrectangle")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _sf_startpt=(new Date()).getTime()
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_wikXwq3fLO6oFthA4Y3w41NkpNfBU36cSQ44ikxXUlA.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+<!--Visual Revenue Reader Response Tracking Script (v6) -->
+    var _vrq = _vrq || [];
+    _vrq.push(["id", 113]);
+    _vrq.push(["automate", false]);
+    _vrq.push(["track", function(){}]);
+    (function(d, a){
+        var s = d.createElement(a),
+        x = d.getElementsByTagName(a)[0];
+        s.async = true;
+        s.src = "http://a.visualrevenue.com/vrs.js";
+        x.parentNode.insertBefore(s, x);
+    })(document, "script");
+<!-- End of VR RR Tracking Script - All rights reserved -->
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://content.zemanta.com/static/custom/bigstory/js/loader.js"></script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_n01iyYgoHd6AmSIjfjIGdb1zDj0Mn5V6I749x9UTF5g.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_IDBX5SzkJ9gGNq7x-qOE_2DZsexqguTJQGMKvi4w-Uw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-27590430-2"]);_gaq.push(['_setCustomVar', 2, "Item ID", "14438dc540254bb591ad1d9c385340bd", 3]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_8vU6a88TXGUrVK8buVJc2ADAKmxebvkwpTcDvFZvTbA.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var AP_SOCIAL = {"refresh_delay":"60","node_id":"8962801"}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_9LZhWmfkuLP10rmN9X812-PfPgMlX-tgFbabWDLcE_0.js"></script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_diWL3aQY3h6RRBatVIE0RJfaXsBie-hoJ861ArHzvB0.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bigstory_v2","theme_token":"T_1AE2OHuiQu2PJJmTBHB7x3ibEIvaY7Cmv6MFHi0PI","js":{"0":1,"profiles\/ap\/modules\/custom\/optional\/ap_social\/js\/ap_social.min.js":1,"1":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"2":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"10":1,"11":1,"http:\/\/content.zemanta.com\/static\/custom\/bigstory\/js\/loader.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/dynamic-carousel.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/jquery.wmuslider.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_carousel.js":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"12":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"13":1,"http:\/\/use.typekit.com\/uta3cck.js":1,"14":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/package-quojs-2.3.6\/quo.js":1,"profiles\/ap\/modules\/contrib\/disqus\/disqus.js":1,"15":1,"profiles\/ap\/themes\/bigstory_v2\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/vendor\/modernizr.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/jquery-scrolltofixed.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/custom.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/jquery.magnific-popup.min.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/core.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/gallery.js":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/js\/magnific-popup\/image.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"profiles\/ap\/themes\/bigstory_v2\/css\/siro.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/glyphicon.css":1,"profiles\/ap\/themes\/bigstory_v2\/css\/fonts.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/foundation.min.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/styles-bigStory.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/style.css":1,"profiles\/ap\/themes\/bigstory_v2\/assets\/css\/magnific-popup.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/bigstory_v2\/css\/print.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n  \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"disqus":{"domain":"thebigstory","url":"http:\/\/bigstory.ap.org\/article\/3-killed-5-wounded-donetsk-eastern-ukraine","title":"Ukraine lawmakers ratify landmark deal with Europe","identifier":"node\/8962801"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" href="/profiles/ap/themes/bigstory_v2/assets/css/fix-ie8.css"><![endif]-->
+  <!--[if lt IE 10]><link rel="stylesheet" href="/profiles/ap/themes/bigstory_v2/assets/css/fix-ie9.css"><![endif]-->
+  <!--[if lt IE 9]><script src="/profiles/ap/themes/bigstory_v2/assets/js/fix-ie8.js"></script><![endif]-->
+  <!--[if IE 9]><script src="/profiles/ap/themes/bigstory_v2/assets/js/fix-ie9.js"></script><![endif]-->
+  <!--[if lt IE 10]><script src="/profiles/ap/themes/bigstory_v2/assets/js/css3-multi-column.js"></script><![endif]-->
+  <script type="text/javascript">
+      $(function(){
+          if( $('body').hasClass("node-type-ap-article") ){
+              var script_quo = document.createElement('script')
+              script_quo.src = '/assets/js/package-quojs-2.3.6/quo.js'
+              document.documentElement.firstChild.appendChild(script_quo);
+          }
+      });
+  </script>
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-8962801 node-type-ap-article context-article">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <header>
+    <nav class="top-bar" data-topbar="">
+        <ul class="title-area">
+            <li class="name">
+                <a class="logo" href="/">
+                    <!--[if gte IE 9]><!-->
+                    <img src="/profiles/ap/themes/bigstory_v2/assets/images/ap_logo_bigstory.svg" width="291" alt="">
+                    <!--<![endif]-->
+                    <!--[if lte IE 8]>
+                      <img class="fix-ie8-logo" src="/profiles/ap/themes/bigstory_v2/assets/images/ap_logo_bigstory.png" width="291" alt="">
+                    <![endif]-->
+                </a>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span><!-- menu --></span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <!--<nav id="nav">-->
+            <!--menu dinamico-->
+            <ul class="right medium-3 menuLinks">
+                
+                            <li class="hide-for-medium">
+            
+                            <a href="http://bigstory.ap.org/latest">
+                    Latest News                </a>
+            
+
+                        </li>
+           
+                        <li class="hide-for-small search-li dividerbigstory">
+                    <a id="idsearchform" type="button" data-options="align:left" data-dropdown="headerSearch" data-options="is_hover:false">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                    <div data-dropdown-content="" class="small content searchform drop-left open" id="headerSearch" style="display: none; position: absolute; left: -295px; top: 3px;">
+                        
+                        <form action="/" method="post" id="search-block-form" accept-charset="UTF-8">
+                                
+                                    <!--<div class="container-inline">
+                                    <div class="form-item form-type-textfield form-item-search-block-form">-->
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <div class="row collapse">
+                                    <div class="small-10 colu">
+                                        <input title="Enter the terms you wish to search for." placeholder="Search..." type="text" id="edit-search-block-form--2" name="search_block_form" value=""  maxlength="128" class="form-text">
+                                    </div>
+                                    <div  class="small-2 colu" id="edit-actions">
+                                        <input id="butonsearch" class="button postfix" type="submit" name="op" value="Go" >
+                                    </div>
+                                    <input type="hidden" name="form_id" value="search_block_form">
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="searchForm show-for-small">
+                    <form action="/" method="post" id="search-block-form" accept-charset="UTF-8" >
+                            <!--<div class="container-inline">-->
+                        <div class="">
+                            <div class="small-12 columns">
+                                <div class="row collapse" style="float:left">
+                                    <div class="small-10 columns">
+                                        <input title="Enter the terms you wish to search for." placeholder="Search..." type="text" id="edit-search-block-form--2" name="search_block_form" value=""  maxlength="128" class="form-text"/>
+                                    </div>
+                                    <div  class="small-2 columns" id="edit-actions2">
+                                        <input id="butonsearch" class="button postfix" type="submit" name="op" value="Go" />
+                                    </div>
+                                <input type="hidden" name="form_id" value="search_block_form"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="divider show-for-small"></li>
+                <!--<li class="ad_nav">
+                    <a href="#"><img src="/profiles/ap/themes/bigstory_v2/assets/sample/ad_88x31.png" alt=""></a>
+                </li>-->
+            </ul>
+            <!--</nav>-->
+        </section>
+    </nav>
+</header>
+<div class="block block-boxes block-boxes-responsive-dfp block-responsive-leaderboard block-boxes-responsive-leaderboard odd block-without-title" id="block-boxes-responsive-leaderboard">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id='boxes-box-responsive_leaderboard' class='boxes-box'><div class="boxes-box-content"><div id="responsive_leaderboard-responsive-ad" class="responsive-ad"></div></div></div>    </div>
+  </div>
+
+</div>  </div>
+</div><!--<div>    <div id="whitelabel_header" class="clearfix">
+      </div>
+    <div class="menu-zone-inner-wrapper">
+	  <div>
+	    	  </div>
+  </div>
+</div>--></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+            <div id="section-article-full">
+
+
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                 
+            <div class="tabs clearfix"></div>        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    
+<section class="row article">
+<!-- Main article BEGIN -->
+<article class="large-9 medium-8 columns">
+    <section class="articleHeader">
+        
+        <div class="byline-dateline">
+            <!--
+                        <a href="/tags/europe">Europe</a>
+                        -->
+        </div>
+
+                          <h1 class="story-heading">Ukraine lawmakers ratify landmark deal with Europe <span></span></h1>
+                
+      <div class="story-meta-footer">
+          
+        <div class="byline-dateline"> 
+            <div id="byline"><div class="field field-name-field-byline-original field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">By <a href="/author/laura-mills">LAURA MILLS</a></div></div></div></div>
+            <div id="dateline">
+                   <span  class="updated" title="2014-09-16T20:04:21-04:00">Sep. 16, 2014 8:04 PM EDT</span> 
+            </div>
+        </div>
+          
+      </div>
+
+    </section>
+
+    <!-- sticky Tool-bar BEGIN -->
+    <section class="article_toolbar sticky" id="sticky-article-toolbar">
+        <div class="small-12 left">
+            
+<a class="share_bt hide-for-small" id="facebook" href="#"><i></i></a>
+<a class="share_bt hide-for-small" id="twitter" href="#"><i></i></a>
+<a class="share_bt hide-for-small" id="email" href="mailto:?subject=AP Big Story: Ukraine lawmakers ratify landmark deal with Europe&body=From AP, %0D%0A %0D%0AUkraine lawmakers ratify landmark deal with Europe. %0D%0A %0D%0AKIEV, Ukraine (AP) &#x2014; Ukraine moved to resolve months of crisis Tuesday by strengthening ties to Europe and loosening some controls over the country's rebellious eastern regions where it has been fighting Russian-backed separatists.  %0D%0A %0D%0Ahttp://bigstory.ap.org/article/3-killed-5-wounded-donetsk-eastern-ukraine"><i></i></a>
+<a href="#" class="share_bt" id="shareAll" data-dropdown="social-dropdown" onclick="javascript:return false;"><i></i>
+  <span class="share_bt" id="sharesTotal"></span>
+</a>
+
+<div class="right">
+  <a href="#" class="share_bt right" id="commentsAnchor"><i></i><span id="comments-count"></span></a>
+</div>
+
+<div id="social-dropdown-parent">
+  <div id="social-dropdown" class="f-dropdown">
+    <h6>Share article</h6>
+    <ul class="small-block-grid-3">
+      <li><a class="share_bt" id="facebook" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="twitter" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="linkedin" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="googleplus" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="reddit" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="tumblr" href="#"><i></i></a></li>
+      <li><a class="share_bt" id="email" href="mailto:?subject=AP Big Story: Ukraine lawmakers ratify landmark deal with Europe&body=From AP, %0D%0A %0D%0AUkraine lawmakers ratify landmark deal with Europe. %0D%0A %0D%0AKIEV, Ukraine (AP) &#x2014; Ukraine moved to resolve months of crisis Tuesday by strengthening ties to Europe and loosening some controls over the country's rebellious eastern regions where it has been fighting Russian-backed separatists.  %0D%0A %0D%0Ahttp://bigstory.ap.org/article/3-killed-5-wounded-donetsk-eastern-ukraine"><i></i></a></li>
+    </ul>
+  </div>
+</div>
+        </div>
+    </section>
+    
+ <script type="text/javascript">var only_one_photo = 0;</script> 
+<section class="slideshow lead-photo" id="lead-photo-slideshow">
+    <div class="photo-count">
+        10 photos    </div>
+    <script>var total_imgs =10</script>
+
+    <ul class="gallery popup-gallery" id="ul-gallery">
+        
+                                                <li class="visible">
+                            <a class="open_gallery" href="http://binaryapi.ap.org/078f1f9ce0224aa199b8f1268887f9e8/460x.jpg" title="Ukrainian President Petro Poroshenko shows the Ukraine-EU Association Agreement to lawmakers  after its signing it in parliament in Kiev, Ukraine Tuesday, Sept. 16, 2014. Ukraine&#39s parliament ratified an agreement to deepen economic and political ties with the European Union on Tuesday, and passed legislation to grant autonomy to the rebellious east as part of a peace deal. (AP Photo/Mykola Lazarenko)"><img src="http://binaryapi.ap.org/078f1f9ce0224aa199b8f1268887f9e8/460x.jpg" alt="Petro Poroshenko" title="Petro Poroshenko" /></a>                        </li>                      
+                    
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            </ul>
+    
+    <script type="text/javascript">      
+        var imgArray = new Array();
+         imgArray[1] = '<a class="open_gallery" href="http://binaryapi.ap.org/3de7a17af53446a7b4737169e935c942/460x.jpg" title="Ukrainian President Petro Poroshenko shows the Ukraine-EU Association Agreement to lawmakers after its signing in parliament in Kiev, Ukraine Tuesday, Sept. 16, 2014. Ukraine&#39s parliament ratified an agreement to deepen economic and political ties with the European Union on Tuesday, and passed legislation to grant autonomy to the rebellious east as part of a peace deal. (AP Photo/Efrem Lukatsky)"><img src="http://binaryapi.ap.org/3de7a17af53446a7b4737169e935c942/460x.jpg" alt="Petro Poroshenko" title="Petro Poroshenko" /></a>'; 
+             imgArray[2] = '<a class="open_gallery" href="http://binaryapi.ap.org/0cae8b053c8f460296f67a65e0db86c4/460x.jpg" title="A Pro-Russian rebel arranges a flag of the self-proclaimed Federal State of Novorossiya in the town of Donetsk, eastern Ukraine, Tuesday, Sept. 16, 2014. The city council in Donetsk says three people have been killed and five wounded in shelling overnight in the city in eastern Ukraine. The casualties come as Ukraine&#39s parliament plans to review a bill that would give greater autonomy to the eastern regions of Donetsk and Luhansk, where fighting between separatists and Kiev&#39s forces has claimed at least 3,000 civilian lives. (AP Photo/Darko Vojinovic)"><img src="http://binaryapi.ap.org/0cae8b053c8f460296f67a65e0db86c4/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             imgArray[3] = '<a class="open_gallery" href="http://binaryapi.ap.org/7821405647624107a803e0d8e52a4257/460x.jpg" title="Residents of Donetsk line up in front of a bank in the town of Donetsk, eastern Ukraine, Tuesday, Sept. 16, 2014. The city council in Donetsk says three people have been killed and five wounded in shelling overnight in the city in eastern Ukraine. The casualties come as Ukraine&#39s parliament plans to review a bill that would give greater autonomy to the eastern regions of Donetsk and Luhansk, where fighting between separatists and Kiev&#39s forces has claimed at least 3,000 civilian lives. (AP Photo/Darko Vojinovic)"><img src="http://binaryapi.ap.org/7821405647624107a803e0d8e52a4257/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             imgArray[4] = '<a class="open_gallery" href="http://binaryapi.ap.org/694d2d75a26c481aa27a1a97a724b49e/460x.jpg" title="A man observes damage done to a car after shelling in the town of Donetsk, eastern Ukraine, Tuesday, Sept. 16, 2014. The city council in Donetsk says three people have been killed and five wounded in shelling overnight in the city in eastern Ukraine. The casualties come as Ukraine&#39s parliament plans to review a bill that would give greater autonomy to the eastern regions of Donetsk and Luhansk, where fighting between separatists and Kiev&#39s forces has claimed at least 3,000 civilian lives. (AP Photo/Darko Vojinovic)"><img src="http://binaryapi.ap.org/694d2d75a26c481aa27a1a97a724b49e/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             imgArray[5] = '<a class="open_gallery" href="http://binaryapi.ap.org/4f29c75ae61c433eb9db13163d5092a7/460x.jpg" title="A man observes damage done to a shop after shelling in the town of Donetsk, eastern Ukraine, Tuesday, Sept. 16, 2014. The city council in Donetsk says three people have been killed and five wounded in shelling overnight in the city in eastern Ukraine. The casualties come as Ukraine&#39s parliament plans to review a bill that would give greater autonomy to the eastern regions of Donetsk and Luhansk, where fighting between separatists and Kiev&#39s forces has claimed at least 3,000 civilian lives. (AP Photo/Darko Vojinovic)"><img src="http://binaryapi.ap.org/4f29c75ae61c433eb9db13163d5092a7/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             imgArray[6] = '<a class="open_gallery" href="http://binaryapi.ap.org/b4d3f36b940f44b3980eba1fd74757ec/460x.jpg" title="Ukrainian activists rejoice outside the Ukrainian parliament after legislators pass a key reform bill in Kiev, Ukraine Tuesday, Sept. 16, 2014. On Tuesday, Ukraine passed a landmark deal strengthening its ties to Europe while moving to resolve the bloody crisis unraveling in country&#39s east, granting temporary self-rule to regions roiled by a pro-Russian insurgency. (AP Photo/Sergei Chuzavkov)"><img src="http://binaryapi.ap.org/b4d3f36b940f44b3980eba1fd74757ec/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             imgArray[7] = '<a class="open_gallery" href="http://binaryapi.ap.org/8f4c1af434f0449b89f03e6cc98cca02/460x.jpg" title="Ukrainian protesters burn tires outside the Ukrainian parliament in Kiev, Ukraine Tuesday, Sept. 16, 2014. The demonstrators rallied in support of a bill that would introduce extra checks for senior government officials.  (AP Photo/Sergei Chuzavkov)"><img src="http://binaryapi.ap.org/8f4c1af434f0449b89f03e6cc98cca02/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             imgArray[8] = '<a class="open_gallery" href="http://binaryapi.ap.org/0843f418af19423d8e91ab6aa731b791/460x.jpg" title="Ukrainian protesters burn tires outside the Ukrainian parliament in Kiev, Ukraine Tuesday, Sept. 16, 2014. The demonstrators rallied in support of a bill that would introduce extra checks for senior government officials. (AP Photo/Sergei Chuzavkov)"><img src="http://binaryapi.ap.org/0843f418af19423d8e91ab6aa731b791/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             imgArray[9] = '<a class="open_gallery" href="http://binaryapi.ap.org/b810dd364e8a42b8acddaa5f02771e37/460x.jpg" title="Ukrainian protesters burn tires outside the Ukrainian parliament in Kiev, Ukraine Tuesday, Sept. 16, 2014. The demonstrators rallied in support of a bill that would introduce extra checks for senior government officials. (AP Photo/Sergei Chuzavkov)"><img src="http://binaryapi.ap.org/b810dd364e8a42b8acddaa5f02771e37/460x.jpg" alt="Ukraine" title="Ukraine" /></a>'; 
+             
+    </script> 
+    
+        
+    <div class="field-name-caption"><block><p>Ukrainian President Petro Poroshenko shows the Ukraine-EU Association Agreement to lawmakers  after its signing it in parliament in Kiev, Ukraine Tuesday, Sept. 16, 2014. Ukraine's parliament ratified an agreement to deepen economic and political ties with the European Union on Tuesday, and passed legislation to grant autonomy to the rebellious east as part of a peace deal. (AP Photo/Mykola Lazarenko)</p></div>    
+
+    <div id="information-small" class="small-12 show-for-small-only">
+	<div class="small-10 columns byline-dateline">
+            	</div>
+        <a id="infoGallery"><span class="caption overlay-caption" data-thumb-index="0">i</span></a>
+    </div>
+</section>
+ 
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        if (total_imgs == 1) {
+            var aImg = $('.popup-gallery li a');
+            
+            var text = aImg.attr('title');
+            
+            $('.field-name-caption').html('<block><p>' + text + '</p></block>');
+        }     
+        
+        var chrMax = 100;
+        
+        var origText = $('.field-name-caption block p').text();
+
+        var charLength = $('.field-name-caption block p').text().length;
+        
+        var screen_width = $( window ).width();
+        var width_mobile = 650;
+        
+        var pAbsoluteShow = 0;
+        
+        if (charLength > chrMax) {
+            var shortText = jQuery.trim(origText).substring(0, chrMax).split(" ").slice(0, -1).join(" ") + "... ";
+            $('.field-name-caption block p').text(shortText);            
+            $('.field-name-caption block p').append('<a id="readMore">Read more</a>');
+        }
+        
+
+        var screen_width = $( window ).width();
+
+        if (screen_width <= width_mobile) {  
+        
+        $$('.mfp-figure figure').tap(function() { 
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {  
+                switchPDescription(); 
+            }
+        }); 
+
+        $$('#p-absolute').unbind('tap').tap(function() { 
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {                      
+                switchPDescription(); 
+            }
+        }); 
+
+        $$('.mfp-figure figure').unbind('swipeLeft').swipeLeft(function() { 
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {                      
+                if (mfp.index == (total_imgs - 1)) {
+                    mfp.index = 0;
+                }
+                else {
+                    mfp.index = mfp.index + 1;
+                }      
+                mfp.updateItemHTML();
+            }
+        });
+
+        $$('.mfp-figure figure').unbind('swipeRight').swipeRight(function() {                
+            var screen_width = $( window ).width();
+
+            if (screen_width <= width_mobile) {                   
+                if (mfp.index == 0) {
+                    mfp.index = total_imgs - 1;
+                }
+                else {
+                    mfp.index = mfp.index -1;
+                }
+                mfp.updateItemHTML();
+            }
+        });    
+        
+        }
+
+       function configMobile() {
+            var screen_width = $( window ).width();
+            
+            if (screen_width <= width_mobile) {        
+                showDescription(pAbsoluteShow);        
+            }
+        }
+
+
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            
+            gallery: {
+              enabled: true,
+              navigateByImgClick: true,
+              preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr('title');
+                }
+            },
+
+            callbacks: {
+                
+                open: function() {
+
+                    $('.mfp-bottom-carrousel').html("");
+
+                    var img_total = 0;
+
+                    $('.popup-gallery li a').each(function(idx,el){
+
+                        img_total = img_total + 1;
+                        var _img = document.createElement('img');
+
+                        $(_img).attr('id', 'thumb-gallery-'+idx );
+                        $(_img).attr('src', $(el).attr('href'));
+                        $(_img).attr('alt', $(el).attr('title'));
+
+
+                        if (idx == 0) $(_img).addClass('select');
+
+                        $(_img).click(function(){
+                            mfp.direction = (idx >= mfp.index);
+                            mfp.index = idx;
+                            mfp.updateItemHTML();
+
+                            updateCarousel(idx);
+                        });
+
+                        if (only_one_photo == 0) {
+                            $('.mfp-bottom-carrousel').append(_img);
+                        }
+
+                    })
+
+                    var width_img_total = (img_total * 120) + 3;
+
+                    $('.mfp-bottom-carrousel').width(width_img_total + 'px');
+                    
+                    configMobile();
+                },
+                close: function() {
+                    $('#p-absolute').hide();
+                    pAbsoluteShow = 0;
+                }
+                // e.t.c.
+            }
+        });
+        
+        $('#readMore').click(function(){
+            $('.open_gallery').click();
+            mfp.index = 0;
+            mfp.updateItemHTML();
+            updateCarousel(0);
+        });  
+        
+        $('#infoGallery').click(function(){
+            pAbsoluteShow = 1;
+            $('.open_gallery').click();
+            mfp.index = 0;
+            mfp.updateItemHTML();
+            updateCarousel(0);
+        });   
+        
+        $('#button_comments').click(function(){
+            if( $('#articleComments').is(":visible") ) {
+                $('#articleComments').css('cssText', 'display: none !important');
+                $('#button_comments').removeClass('comments_visible');
+                $('#button_comments').html('SEE COMMENTS');
+            }
+            else {
+                $('#articleComments').css('cssText', 'display: block !important');
+                $('#button_comments').addClass('comments_visible');
+                $('#button_comments').html('HIDE COMMENTS');                
+            }
+        });
+        
+        
+    });
+    </script>
+
+ 
+
+<div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/author/laura-mills" class="fn">LAURA MILLS</a></span> (<span  class="source-org vcard"><span  class="org fn">AP</span></span>)</div><span  class="dateline">KIEV, Ukraine</span><a  rel="item-license" id="license-d2b74f091f70619385e709879c938430" href="#license-d2b74f091f70619385e709879c938430">Copyright 2014 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">50.4547</span><span  class="longitude">30.5238</span></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden entry-content"><div class="field-items"><div class="field-item even"><p><block><p>KIEV, Ukraine (AP) — Ukraine moved to resolve months of crisis Tuesday by strengthening ties to Europe and loosening some controls over the country's rebellious eastern regions where it has been fighting Russian-backed separatists.</p>
+<p>The actions by lawmakers began to flesh out the emerging picture of a new Ukraine, where a determined pivot toward Europe has come at great cost: concessions to Russia and a war with rebels that killed more than 3,000 people and pushed the West's relations with Moscow to Cold War-era lows.</p>
+<p>The measure deepening the economic and political ties with Europe was the issue that sparked the crisis last fall, when then-President Viktor Yanukovych's decision to shelve the deal in favor of closer ties with Russia sparked protests by hundreds of thousands. Those demonstrations eventually drove him from power in February and led to the annexation of Crimea by Moscow and the rebellion in the east, where a shaky cease-fire began Sept. 5.</p>
+<p>The deal lowers trade tariffs between Europe and Ukraine, requires Ukrainian goods to meet European regulatory standards and forces the Kiev government to undertake major political and economic reforms.</p>
+<p>After parliament ratified the measure, lawmakers leapt to their feet to applaud and sing the Ukrainian national anthem. A live broadcast of the session was beamed to the European parliament.</p>
+<p>President Petro Poroshenko called the vote a "first but very decisive step" toward bringing Ukraine fully into the European Union.</p>
+<p>He said the protesters who died in clashes with riot police in Kiev and the government troops killed by rebels in the east "have died not only for their motherland. They gave up their lives for us to take a dignified place among the European family."</p>
+<p>"After World War II, not a single nation has paid such a high price for their right to be European," he said. "Can you tell me, who now after this will be brave enough to shut the doors to Europe in front of Ukraine?"</p>
+<p>Earlier Tuesday, the parliament also approved laws granting temporary self-rule to rebellious, pro-Russian regions in the east, as well as amnesty for many of those involved in the fighting.</p>
+<p>The lawmakers took that action behind closed doors, in stark contrast to the patriotic fanfare of that vote on the European agreement. In his thunderous speech, Poroshenko did not mention those two measures, which are likely to generate far more controversy among Ukrainians.</p>
+<p>One of the laws calls for three years of self-rule in parts of eastern Ukraine and for local elections in November. It grants concessions that were not offered in a peace plan that Poroshenko put forward three months ago when he became president, such as local oversight of court and prosecutor appointments and local control of police.</p>
+<p>A separate bill calls for amnesty for those involved in the eastern fighting, although not for persons suspected or charged with crimes including murder, sabotage, rape, kidnapping and terrorism. The law also does not grant amnesty to those who have tried to kill Ukrainian law enforcement officials and servicemen — meaning that most of the separatists, who have waged war for five months on government forces, could not be eligible.</p>
+<p>The decision to hold a closed-door session — an anomaly in the Ukrainian parliament — underscored the political challenges of the measures. Although Poroshenko did not mention the bills in his speech, he was later quoted by Interfax-Ukraine as saying that he felt "we are obliged to take a step to ensure that the other side takes corresponding steps" toward peace.</p>
+<p>Alexander Zakharchenko, the leader of the rebels in the Donetsk region, told Russia's RIA Novosti news agency that the separatist leadership would study the measures, an unusually conciliatory statement compared to the rebels' previous assertions that they aim for complete independence.</p>
+<p>The U.S. State Department and Vice President Joe Biden congratulated Ukrainian lawmakers and leaders.</p>
+<p>"By forging ahead with this agreement in the face of great challenges, Ukraine's leaders have carried out the will of the Ukrainian people, who demonstrated their overwhelming support for further integration with Europe last winter and with their votes in the May 25 presidential elections," said Marie Harf, deputy spokeswoman at the  State Department.</p>
+<p>Harf also applauded the passage of the amnesty and self-rule measures, saying they were "two important commitments Ukraine made in the Minsk cease-fire agreement on Sept. 5." She urged Russia and the separatists to begin immediate and full implementation of the cease-fire agreement.</p>
+<p>Vice President Joe Biden and Ukrainian Prime Minister Arseniy Yatsenyuk, in a telephone conversation, agreed that Russia and its "separatist proxies" should do their part in immediately implementing all the provisions of the Minsk agreement, including "the removal of all Russian troops from Ukraine and the creation of a security area in the border regions" of Ukraine and Russia, according to a statement released by Biden's office.</p>
+<p>The passage of the measures came as Poroshenko begins his first state visit to Canada and the U.S., where he will address a joint session of Congress on Thursday and is also scheduled to speak to the U.N. General Assembly next week.</p>
+<p>The EU association agreement was long sought by Ukrainians who want their country to turn westward and out of Russia's sphere of influence, and its passage was welcomed by many in Kiev, even if they also were worried about some of the government's actions.</p>
+<p>"I participated in the protests, and we've been waiting for this for so long," said Rostislav Sezov, adding that he didn't oppose greater autonomy for regions in the east.</p>
+<p>"Let us be smaller but better. Let us be a core that is oriented toward Europe," he said.</p>
+<p>During the protests in February, the EU's flag — the same blue and yellow as Ukraine's — was seen everywhere. That symbol faded into the background as demonstrators, who set up camp on Kiev's Independence Square, fended off riot police night after gripping night with barricades of bricks and burning tires.</p>
+<p>But even after Russia annexed Ukraine's Black Sea peninsula of Crimea in March and a pro-Russian rebellion broke out in eastern Ukraine in April, the new Kiev government made it clear that it would not back down from the EU deal.</p>
+<p>In Brussels, EU lawmakers overwhelmingly ratified the agreement.</p>
+<p>"The message this sends could not be clearer: the European Parliament supports Ukraine in its European vocation," said Martin Schulz, the president of the EU Parliament. "The European Parliament will continue defending a united and sovereign Ukraine."</p>
+<p>Russia has strongly opposed Ukraine's tilt toward the EU and it has threatened that the reduction of tariffs on Western goods would force it to limit the influx of Ukrainian products into Russia.</p>
+<p>In a significant concession to Moscow, Ukraine and the EU agreed last week to delay the full reciprocal implementation of a reduced-tariff regime until at least 2016.</p>
+<p>Both Brussels and Kiev have asserted that other parts of the agreement, such as major political and economic reforms in Ukraine, will not be delayed, but those compromise efforts have many Ukrainians worried that its government is giving away too much to Moscow.</p>
+<p>Alexander Sinegub, an entrepreneur who was walking in downtown Kiev, said he had "mixed feelings" about the EU deal.</p>
+<p>"Nothing has been cleaned up. They've put a bunch of more-or-less patriots at the top of the government, but beneath them everybody has stayed the same. Half a year has passed and yet it's somehow sad to look at all of this," he said.</p>
+<p>Also on Tuesday, Russian Defense Minister Sergei Shoigu said the military will increase its forces in Crimea due to the "exacerbation of situation in Ukraine and increased foreign military presence near our borders." He said Russia will have a "full-fledged" force deployed to Crimea, but wouldn't give any details.</p>
+<p>The cease-fire in eastern Ukraine has been riddled by violations from the start. On Tuesday, the city council in Donetsk said three people died and five were wounded in shelling overnight.</p>
+<p>Col. Andriy Lysenko, a spokesman for Ukraine's national security council, said three Ukrainian servicemen were killed in the past day. Clashes continue in the area around the airport in Donetsk, the largest city under rebel control.</p>
+<p>On Monday, a shell hit a municipal bus in downtown Donetsk, killing one person and injuring another. Evgeniy Medvedev said his mother, Tatiana, was killed on the bus, and he covered her body with a jacket. He said she had been at work when the firing started, and got on the municipal bus to get out of the neighborhood.</p>
+<p>"She tried to escape from there, but the shell caught up with her anyway," he said.</p>
+<p>___</p>
+<p>Mstyslav Chernov in Donetsk, Ukraine, Juergen Baetz in Brussels, and Nataliya Vasilyeva, Jim Heintz and Vladimir Isachenkov in Moscow contributed to this report.</p>
+</block></p></div></div></div>
+</article>
+
+
+
+  <div class="loadMore show-full-article">
+    <section id="articleExpand">
+        <div class="fade"></div>
+	<button>SEE FULL ARTICLE</button>
+
+	<!-- ad -->
+        <section class="columns ad-block">
+            <div class="block block-dfp block-topic-box-2 block-dfp-topic-box-2 odd block-without-title" id="block-dfp-topic-box-2">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-topic_box_2-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-topic_box_2" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-topic_box_2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div>            <!--<img src="/profiles/ap/themes/bigstory_v2/assets/sample/ad_300x250.png" alt="" />-->
+        </section>
+    </section>
+  </div>
+
+<!-- Pagination BEGIN -->
+<!--    <section id="pagination" class="large-8 medium-8 small-12 columns">
+        <a class="article-prev" href="#">
+            <span class="arrow"><img src="assets/images/pagination_arrows_prev.png" alt="" /></span>
+            <div class="title">
+                <span>&#60; Previous</span>
+                Article title Lorem ipsum dolor aner xculis Article title Lorem ipsum dolor
+                long Article title
+            </div>
+        </a>
+
+        <a class="article-next right" href="#">
+            <span class="arrow"><img src="assets/images/pagination_arrows_next.png" alt="" /></span>
+            <div class="title">
+                <span>Next &#62;</span>
+                Article title Lorem ipsum dolor aner xculis Article title Lorem ipsum dolor
+            </div>
+        </a>
+    </section> -->
+    <!-- Pagination END -->
+
+    <div class="loadMore hide-for-medium-up">
+        <button id="button_comments" class="small-12 left">SEE COMMENTS</button>
+    </div>
+    
+    <section id="articleComments" class="large-8 medium-8 left columns hide-for-small">
+	<h4>Comments</h4>
+	<div id="disqus_thread"><noscript><p><a href="http://thebigstory.disqus.com/?url=http%3A%2F%2Fbigstory.ap.org%2Farticle%2F3-killed-5-wounded-donetsk-eastern-ukraine">View the discussion thread.</a></p></noscript></div>    </section>    
+
+</section>
+
+    </div>
+  </div>
+
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="ap-recent-articles"><section class="block block-ap-misc block-ap-recent-articles block-ap-misc-ap-recent-articles odd" id="block-ap-misc-ap-recent-articles">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Latest News</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Latest News'>
+       <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-9096306">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/8e1013ef02194945a82ef66c4fde5839/orders-devon-still-jersey-approaching-10000" title="Orders for Devon Still jersey approaching 10,000"><a href="/article/8e1013ef02194945a82ef66c4fde5839/orders-devon-still-jersey-approaching-10000">Orders for Devon Still jersey approaching 10,000</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T13:02:43-04:00">Sep. 28, 2014 1:02 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-9096246">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/1fa6e1713f354ad8b1f004a8a48cb5b1/slight-shift-search-trooper-ambush-suspect" title="Slight shift in search for trooper ambush suspect"><a href="/article/1fa6e1713f354ad8b1f004a8a48cb5b1/slight-shift-search-trooper-ambush-suspect">Slight shift in search for trooper ambush suspect</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:57:54-04:00">Sep. 28, 2014 12:57 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-9096281">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+            <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden">
+        <div class="field-items" >
+          <div class="field-item even">
+              <a href="/article/89676c5db7ce4fb9b825f8da4b4b12ba/astros-change-course-put-altuve-back-lineup"><img src="http://binaryapi.ap.org/cc0652ee47134e8c8e3c86f92f3fe2a5/115x.jpg" alt="Jose Altuve" title="Jose Altuve"></a>
+          </div>
+        </div>
+      </div>
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/89676c5db7ce4fb9b825f8da4b4b12ba/astros-change-course-put-altuve-back-lineup" title="Astros change course, put Altuve back in lineup"><a href="/article/89676c5db7ce4fb9b825f8da4b4b12ba/astros-change-course-put-altuve-back-lineup">Astros change course, put Altuve back in lineup</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:55:36-04:00">Sep. 28, 2014 12:55 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-9096276">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/5e4b8270d4d5472aaf53d757f9a37db9/chicago-airports-trying-resume-normal-flights" title="Chicago airports trying to resume normal flights"><a href="/article/5e4b8270d4d5472aaf53d757f9a37db9/chicago-airports-trying-resume-normal-flights">Chicago airports trying to resume normal flights</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:55:28-04:00">Sep. 28, 2014 12:55 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+   <!-- sidebar BEGIN -->
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-9096166">
+  <div class="article-list-node-content clearfix" data-vr-contentbox="">
+
+            <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden">
+        <div class="field-items" >
+          <div class="field-item even">
+              <a href="/article/2dc1aa2ac9224ab69edbd137f5bca28f/madoff-son-was-under-scrutiny-until-day-he-died"><img src="http://binaryapi.ap.org/1c8c961ab71d45959c6e5817ef3610da/115x.jpg" alt="Ruth Madoff; Morley Safer" title="Ruth Madoff; Morley Safer"></a>
+          </div>
+        </div>
+      </div>
+      	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/2dc1aa2ac9224ab69edbd137f5bca28f/madoff-son-was-under-scrutiny-until-day-he-died" title="Madoff son was under scrutiny until day he died"><a href="/article/2dc1aa2ac9224ab69edbd137f5bca28f/madoff-son-was-under-scrutiny-until-day-he-died">Madoff son was under scrutiny until day he died</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2014-09-28T12:53:12-04:00">Sep. 28, 2014 12:53 PM EDT</span>		  </div>
+	  </footer>
+  </div>
+</article>
+
+    </div>
+  </div>
+
+</section></div><div class="block block-dfp block-half-page block-dfp-half-page even block-without-title" id="block-dfp-half-page">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-half_page-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-half_page" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-half_page");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div><div class="block block-ap-misc block-ap-tags-detail block-ap-misc-ap-tags-detail odd block-without-title" id="block-ap-misc-ap-tags-detail">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div  class="ap-article-tags categories">
+    
+    
+    
+<h3 class="h3_tags">Topics</h3>
+<div class="tags">
+<a href="/tags/europe" rel="tag">Europe</a>, <a href="/tags/municipal-governments" rel="tag">Municipal governments</a>, <a href="/tags/local-governments" rel="tag">Local governments</a>, <a href="/tags/legislature" rel="tag">Legislature</a>, <a href="/tags/war-and-unrest" rel="tag">War and unrest</a>, <a href="/tags/international-relations" rel="tag">International relations</a>, <a href="/tags/protests-and-demonstrations" rel="tag">Protests and demonstrations</a>, <a href="/tags/political-and-civil-unrest" rel="tag">Political and civil unrest</a>, <a href="/tags/economy" rel="tag">Economy</a>, <a href="/tags/us-department-state" rel="tag">U.S. Department of State</a>, <a href="/tags/legislation" rel="tag">Legislation</a>, <a href="/tags/european-union" rel="tag">European Union</a>, <a href="/tags/rebellions-and-uprisings" rel="tag">Rebellions and uprisings</a>, <a href="/tags/joe-biden" rel="tag">Joe Biden</a>, <a href="/tags/bills" rel="tag">Bills</a>, <a href="/tags/russia" rel="tag">Russia</a>, <a href="/tags/ukraine" rel="tag">Ukraine</a>, <a href="/tags/kiev" rel="tag">Kiev</a>, <a href="/tags/viktor-yanukovych" rel="tag">Viktor Yanukovych</a>, <a href="/tags/moscow" rel="tag">Moscow</a>, <a href="/tags/peace-process" rel="tag">Peace process</a>, <a href="/tags/diplomacy" rel="tag">Diplomacy</a>, <a href="/tags/martin-schulz" rel="tag">Martin Schulz</a>, <a href="/tags/european-parliament" rel="tag">European Parliament</a>, <a href="/tags/cease-fires" rel="tag">Cease fires</a>, <a href="/tags/donetsk" rel="tag">Donetsk</a>, <a href="/tags/russia-government" rel="tag">Russia government</a>, <a href="/tags/minsk" rel="tag">Minsk</a>, <a href="/tags/ukraine-government" rel="tag">Ukraine government</a>, <a href="/tags/arseniy-yatsenyuk" rel="tag">Arseniy Yatsenyuk</a>, <a href="/tags/sergei-shoigu" rel="tag">Sergei Shoigu</a>, <a href="/tags/crimea" rel="tag">Crimea</a>, <a href="/tags/petro-poroshenko" rel="tag">Petro Poroshenko</a></div>
+</div>    </div>
+  </div>
+
+</div><div class="block block-dfp block-mediumrectangle block-dfp-mediumrectangle even block-without-title" id="block-dfp-mediumrectangle">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-mediumrectangle-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    
+<footer>
+  <div id="siteFooter">
+    <div class="row">
+        <div class="medium-4 columns">
+            <h5>Get the AP Mobile app</h5>
+<a href="http://www.ap.org/apmobile/"><img src="http://bigstory.ap.org/sites/bigstory/files/Mobile%20App%20Download.png"></a>
+        </div>
+        <div class="medium-4 columns">
+            <h5>AP Sites</h5>
+            <ul class="">
+                <li><a href="http://wintergames.ap.org" >Winter Games</a></li>
+                <li><a href="http://collegebasketball.ap.org" >College Basketball</a></li>
+                <li><a href="http://racing.ap.org" >Auto Racing</a></li>
+                <li><a href="http://pro32.ap.org" >Football</a></li>
+            </ul>
+        </div>
+        <div class="medium-4 columns">
+            <h5>Follow AP</h5>
+            <ul class="">
+                <li><a href="https://www.facebook.com/pages/Associated-Press/107751995914945">Facebook</a></li>
+                <li><a href="https://twitter.com/AP">Twitter</a></li>
+                <li><a href="https://plus.google.com/+AP/">Google+</a></li>
+                <li><a href="https://www.linkedin.com/company/associated-press">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+        <div class="medium-12 columns"> 
+            AP News | 
+           &copy; 2014 Associated Press  | 
+            <a href="/content/privacy-policy">Privacy Policy</a>  |  
+            <a href="/content/terms-use">Terms of Use</a>  |  
+            <a href="http://www.apimages.com/">AP Images</a>  |  
+            <a href="http://www.ap.org/">ap.org</a>
+        </div>
+    </div>
+</div></footer>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _sf_async_config={uid:11689,domain:""};(function() {function loadChartbeat() { window._sf_endpt=(new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src', (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js"); document.body.appendChild(e); }var oldonload = window.onload;window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); };})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://bigstory.ap.org/sites/bigstory/files/js/js_1xyxBPtya7Z1kN__YPPS4FSePbVgm5Zajzeth6fz4Ck.js"></script>
+  <script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","licenseKey":"560baa128a","applicationID":"555721","transactionName":"MlRTYkFSWkNUU0EKDQsecFVHWlteGl5aBwc6QVBRVmxCWVBH","queueTime":0,"applicationTime":940,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-411.min.js"}</script></body>
+</html>
